@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
-    background: url('bg_grad.png') left top repeat-x, url('triangles.svg') left top repeat;
+    background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat;
     background-color: #edeeef;
     font-weight: normal;
 }
@@ -12,21 +12,28 @@ body {
     box-shadow: 0px -7px 7px #cbcbcb;
 }
 /*оформление панелей*/
+
+.panel {
+    background-color: #F9FAFB;
+}
+
+.panel > .panel-heading h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
 .col-main > .panel > .panel-heading h3 {
     font-size: 27px;
-    font-weight: 300;
     padding: 7px 0 9px 10px;
 }
 
 .col-mid > .panel > .panel-heading h3 {
     font-size: 25px;
-    font-weight: 300;
     padding: 3px 0 5px 7px;
 }
 
 .sidebar > .panel > .panel-heading h3 {
     font-size: 25px;
-    font-weight: 300;
     padding: 1px 0 3px 5px;
 }
 
@@ -34,6 +41,102 @@ body {
     font-size: 20px;
     font-weight: 400;
     padding: 0px 0 2px 4px;
+}
+
+.panel-news > .panel-heading {
+    background-color: #1fa6f2;
+    background-image: url("img/panel-news.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-mails > .panel-heading {
+    background-color: #52be7f;
+    background-image: url("img/panel-mails.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-video > .panel-heading {
+    background-color: #ff6e0b;
+    background-image: url("img/panel-video.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-global > .panel-heading {
+    background-color: #2ebcb7;
+    background-image: url("img/panel-global.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-congrats > .panel-heading {
+    background-color: #ff794c;
+    background-image: url("img/panel-congrats.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-official > .panel-heading {
+    background-color: #4a76bb;
+    background-image: url("img/panel-official.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-guest > .panel-heading {
+    background-color: #00a1d3;
+    background-image: url("img/panel-guest.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-rphoto > .panel-heading {
+    background-color: #01bc85;
+    background-image: url("img/panel-rphoto.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-event > .panel-heading {
+    background-color: #52be7f;
+    background-image: url("img/panel-event.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-vote > .panel-heading {
+    background-color: #3db65a;
+    background-image: url("img/panel-vote.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-comments > .panel-heading {
+    background-color: #46a2f9;
+    background-image: url("img/panel-comments.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-necro > .panel-heading {
+    background-color: #707070;
+}
+
+.panel-notice > .panel-heading {
+    background-color: #FF4B3D;
 }
 
 a.list-group-item {
@@ -142,25 +245,27 @@ p.media-text {
 }*/
 
 /* панель Новости */
-.panel-prime {
+.panel-news {
     border: none;
 }
-.panel-prime > .panel-heading {
+
+.panel-news > .panel-heading {
     color: #ffffff;
     background-color: #1FA6F2;
     border: none;
 }
-.panel-prime > .panel-heading + .panel-collapse .panel-body {
+
+.panel-news > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
-.panel-prime > .panel-footer + .panel-collapse .panel-body {
+
+.panel-news > .panel-footer + .panel-collapse .panel-body {
     border-bottom: none;
 }
 /* панель локальные новости */
 .panel-local {
     border: none;
 }
-
 .panel-local > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -170,11 +275,6 @@ p.media-text {
 
 /* панель Письмо */
 .panel-mails {
-    border: none;
-}
-.panel-mails > .panel-heading {
-    color: #ffffff;
-    background-color: #52BE7F;
     border: none;
 }
 .panel-mails > .panel-heading + .panel-collapse .panel-body {
@@ -187,11 +287,6 @@ p.media-text {
 .panel-video {
     border: none;
 }
-.panel-video > .panel-heading {
-    color: #ffffff;
-    background-color: #FF6E0B;
-    border: none;
-}
 .panel-video > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -201,11 +296,6 @@ p.media-text {
 
 /* панель Областные новости */
 .panel-global {
-    border: none;
-}
-.panel-global > .panel-heading {
-    color: #ffffff;
-    background-color: #52BE7F;
     border: none;
 }
 .panel-global > .panel-heading + .panel-collapse .panel-body {
@@ -229,11 +319,6 @@ p.media-text {
 .panel-congrats {
     border: none;
 }
-.panel-congrats > .panel-heading {
-    color: #ffffff;
-    background-color: #FF794C;
-    border: none;
-}
 .panel-congrats > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -242,11 +327,6 @@ p.media-text {
 }
 /*Панель некролог*/
 .panel-necro {
-    border: none;
-}
-.panel-necro > .panel-heading {
-    color: #ffffff;
-    background-color: #707070;
     border: none;
 }
 .panel-necro > .panel-heading + .panel-collapse .panel-body {
@@ -259,11 +339,6 @@ p.media-text {
 .panel-official {
     border: none;
 }
-.panel-official > .panel-heading {
-    color: #ffffff;
-    background-color: #4A76BB;
-    border: none;
-}
 .panel-official > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -272,12 +347,6 @@ p.media-text {
 }
 /* панель Гость на сайте */
 .panel-guest {
-    border: none;
-}
-
-.panel-guest > .panel-heading {
-    color: #ffffff;
-    background-color: #00A1D3;
     border: none;
 }
 /*панель Ближайших событий*/
@@ -290,11 +359,6 @@ p.media-text {
 .panel-event {
     border: none;
 }
-.panel-event > .panel-heading {
-    color: #ffffff;
-    background-color: #52BE7F;
-    border: none;
-}
 .panel-event > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -303,11 +367,6 @@ p.media-text {
 }
 /* панель Важно */
 .panel-notice {
-    border: none;
-}
-.panel-notice > .panel-heading {
-    color: #ffffff;
-    background-color: #FF4B3D;
     border: none;
 }
 .panel-notice > .panel-heading + .panel-collapse .panel-body {
@@ -320,11 +379,6 @@ p.media-text {
 .panel-vote {
     border: none;
 }
-.panel-vote > .panel-heading {
-    color: #ffffff;
-    background-color: #3DB65A;
-    border: none;
-}
 .panel-vote > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -333,11 +387,6 @@ p.media-text {
 }
 /* панель Комментарии */
 .panel-comments {
-    border: none;
-}
-.panel-comments > .panel-heading {
-    color: #ffffff;
-    background-color: #46A2F9;
     border: none;
 }
 .panel-comments > .panel-heading + .panel-collapse .panel-body {
