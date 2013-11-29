@@ -41,8 +41,10 @@ a.list-group-item {
 }
 
 h4.media-heading {
-    font-size: 21px;
-    color: #008BD5;
+    font-size: 1.5em;
+    color: #2590d8;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 h4.list-group-item-heading {
@@ -52,9 +54,66 @@ h4.list-group-item-heading {
 }
 
 p.media-text {
-    color: #3d3d56;
-    font-size: 14;
+    color: #4c4c56;
+    font-size: 14px;
+    font-weight: 400;
+    text-indent: 5px;
+    line-height: 1.4em;
 }
+
+.news-slide-block > p.media-text {
+    padding: 10px;
+    /*font-size: 0.95em;*/
+    line-height: 1.3em;
+}
+
+.media-main > h4.media-heading {
+    color: #4a76bb;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.media-main > p.media-text {
+    text-indent: 10px;
+}
+
+.btn-action {
+    color: #ffffff;
+    background-color: #3db65a;
+    border-color: #32a049;
+}
+
+.btn-action:hover,
+.btn-action:focus,
+.btn-action:active,
+.btn-action.active,
+.open .dropdown-toggle.btn-success {
+    color: #ffffff;
+    background-color: #34a34c;
+    border-color: #2b993d;
+}
+
+.panel-comments > .panel-body {
+    background-color: #c7d1e0;
+    color: #47475f;
+}
+
+.panel-nav {
+    /*color: #0d3349;*/
+    background-color: #C7D1E0;
+    border: none;
+    padding: 10px 15px;
+}
+
+.panel-nav > ul > li > a {
+    color: #47475f;
+}
+
+/*.panel-comments > .panel-body > .nav-pills >*/
+
+/*.panel-local a {*/
+/*color:  #0d3349;*/
+/*}*/
 
 /* Свойства панелей */
 /* Исправить отступ у row в панели */
@@ -64,7 +123,7 @@ p.media-text {
 }
 
 /* панель Фильмы */
-.panel-movie {
+/*.panel-movie {
     border: none;
 }
 .panel-movie > .panel-heading {
@@ -80,7 +139,8 @@ p.media-text {
 }
 .panel-movie > .panel-footer + .panel-collapse .panel-body {
     border-bottom: none;
-}
+}*/
+
 /* панель Новости */
 .panel-prime {
     border: none;
@@ -100,20 +160,14 @@ p.media-text {
 .panel-local {
     border: none;
 }
-.panel-local > .panel-heading {
-    color: #0d3349;
-    background-color: #C7D1E0;
-    border: none;
-}
+
 .panel-local > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
 .panel-local > .panel-footer + .panel-collapse .panel-body {
     border-bottom: none;
 }
-.panel-local a {
-    color:  #0d3349;
-}
+
 /* панель Письмо */
 .panel-mails {
     border: none;
@@ -170,6 +224,7 @@ p.media-text {
 /*padding: 10px 25px 16px;*/
 /*margin-bottom: 18px;*/
 /*line-height: 100%;*/
+
 /* панель Поздравлений */
 .panel-congrats {
     border: none;
@@ -429,12 +484,14 @@ a.list-event-item:focus {
     background-color: transparent;
     color: inherit;
     border: none;
+    font-size: 13px;
+    font-weight: 600;
 }
 .badge-pos {
-    color: forestgreen;
+    color: #1dac3b;
 }
 .badge-neg {
-    color: red;
+    color: #ff4b3d;
 }
 /* уменьшенный отступ с низу понесли*/
 .panel {
