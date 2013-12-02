@@ -816,3 +816,21 @@ a.link-neutral:focus {
 .btn {
     border-radius: 3px;
 }
+    /* кнопка продолжить */
+.btn-active {
+color: #ffffff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    float: right;
+    margin: 5px 0;
+}
+
+.btn-active:hover,
+.btn-active:focus,
+.btn-active:active,
+.btn-active.active,
+.open .dropdown-toggle.btn-active {
+    color: #ffffff;
+    background-color: #47a447;
+    border-color: #398439;
+}
