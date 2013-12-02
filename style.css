@@ -7,6 +7,14 @@ body {
     background-color: #edeeef;
     font-weight: normal;
 }
+
+.news-slide > .news-slide-block {
+    padding-bottom: 10px;
+}
+
+.img-prime {
+    padding-bottom: 7px;
+}
 .container {
     background-color: #ffffff;
     box-shadow: 0px -7px 7px #cbcbcb;
@@ -182,6 +190,11 @@ p.media-text {
 
 .media-main > p.media-text {
     text-indent: 10px;
+}
+
+.media-main-secondary > h4.media-heading {
+    color: #4a76bb;
+    font-weight: 600;
 }
 
 .btn-action {
