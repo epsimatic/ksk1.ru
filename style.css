@@ -8,7 +8,20 @@ body {
     font-weight: normal;
 }
 
-.fa-angle-right {
+/*.nav-pills > li.active > a,*/
+/*.nav-pills > li.active > a:hover {*/
+    /*color: #0d3349;*/
+    /*background-color: #f9f9f9;*/
+/*}*/
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #8392a8;
+}
+
+.link-neutral > .fa-angle-right {
     color: #bcbec0;
 }
 
@@ -544,12 +557,6 @@ a.list-event-item:focus {
     color: #47475F;
     background-color: #ffffff;
     /*border-color: #428bca;*/
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-    color: #0d3349;
-    background-color: #f9f9f9;
 }
 
 /* Убрать закругления элементов */
