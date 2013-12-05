@@ -5,7 +5,7 @@
     <title>Тестовый HTML-файл</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="http://ksk1.ru/osans/osans.css"/>
-    <link href="http://ksk1.ru/bootstrap-20px/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://ksk1.ru/bootstrap-20px/css/bootstrap.css" rel="stylesheet">
     <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -75,7 +75,7 @@
                                             <img width="100%"src="http://fpoimg.com/270x202">
                                             <div class="date-vis hidden-xs hidden-sm">
                                                 <div class="text-left">
-                                                    <span class="text-muted"><i class="fa fa-clock-o"></i><em> Сегодня</em></span>
+                                                    <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> Сегодня</em></span>
                                                     <span class="badge badge-clean badge-pos">+2</span>
                                                     <span><i class="fa fa-eye label-views"></i> 735</span>
                                                     <span class=""><i class="fa fa-comment-o label-comment"></i> 2</span>
@@ -90,7 +90,7 @@
                                         29 июля. 19-00. Рабочую смену принимают дежурная по станции Ольга Лыкова, составитель поездов Владимир Шонохов и машинист маневрового локомотива Андрей Баннов
                                     </p>
                                     <div class="post-info hidden-md hidden-lg">
-                                        <span class="text-muted"><i class="fa fa-clock-o"></i><em> Сегодня</em></span>
+                                        <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> Сегодня</em></span>
                                         <span class="badge badge-clean badge-pos">+2</span>
                                         <span class=""><i class="fa fa-eye label-views"></i> 735</span>
                                         <span class=""><i class="fa fa-comment-o label-comment"></i> 2</span>
@@ -106,7 +106,7 @@
                                             <img class="media-object" width="100%" src="http://fpoimg.com/270x202">
                                             <div class="date-vis hidden-xs hidden-sm">
                                                 <div class="text-left">
-                                                    <span class="text-muted"><i class="fa fa-clock-o"></i><em> Вчера</em></span>
+                                                    <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> Вчера</em></span>
                                                     <span class="badge badge-clean badge-pos">+2</span>
                                                     <span class=""><i class="fa fa-eye label-views"></i> 642</span>
                                                     <span class=""><i class="fa fa-comment-o label-comment"></i> 1</span>
@@ -121,7 +121,7 @@
                                         Новый мост через реку Уфу в районе п.Сарана планировали сдать в эксплуатацию в октябре 2012 года. Однако уже осенью прошлого года стало ясно, что в срок не уложиться
                                     </p>
                                     <div class="post-info hidden-md hidden-lg">
-                                        <span class="text-muted"><i class="fa fa-clock-o"></i><em> Вчера</em></span>
+                                        <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> Вчера</em></span>
                                         <span class="badge badge-clean badge-pos">+2</span>
                                         <span class=""><i class="fa fa-eye label-views"></i> 642</span>
                                         <span class=""><i class="fa fa-comment-o label-comment"></i> 1</span>
@@ -138,7 +138,7 @@
                                                  src="http://fpoimg.com/270x202">
                                             <div class="date-vis hidden-xs hidden-sm">
                                                 <div class="text-left">
-                                                    <span class="text-muted"><i class="fa fa-clock-o"></i><em> 22 апреля</em></span>
+                                                    <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> 22 апреля</em></span>
                                                     <span class="badge badge-clean badge-pos">+7</span>
                                                     <span class=""><i class="fa fa-eye label-views"></i> 933</span>
                                                     <span class=""><i class="fa fa-comment-o label-comment"></i> 5</span>
@@ -153,7 +153,7 @@
                                         Житель села Бакряж избил полицейского мотоциклетным шлемом, чтобы тот скорее нашел его угнанный скутер, а не расспрашивал о подробностях угона
                                     </p>
                                     <div class="post-info hidden-md hidden-lg">
-                                        <span class="text-muted"><i class="fa fa-clock-o"></i><em> 22 апреля</em></span>
+                                        <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> 22 апреля</em></span>
                                         <span class="badge badge-clean badge-pos">+7</span>
                                         <span class=""><i class="fa fa-eye label-views"></i> 933</span>
                                         <span class=""><i class="fa fa-comment-o label-comment"></i> 5</span>
@@ -239,14 +239,16 @@
                                 сожалению своему, я не помню, кто именно был в составе локомотивной бригады. На подготовку того
                                 рейса работало много людей. Руководил процессом тогдашний начальник депо Николай Анатольевич Некрасов
                             </p>
+
                         </div>
                     </div>
                 </div>
+                <div class="panel-more hidden-sm hidden-md hidden-lg"><a class="btn btn-block link-neutral" href="#">Еще новости <i class="fa fa-angle-down"></i></a></div>
                 <div class="panel-footer text-center">
                     <div class="row">
-                        <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-bullhorn"></i> Сообщить новость</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral" href="#">Еще новости</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">Архив новостей</a></div>
+                        <div class="col-md-4 col-sm-4"><a class="btn btn-block" href="#"><i class="fa fa-bullhorn"></i> Сообщить новость</a></div>
+                        <div class="col-md-4 col-sm-4 hidden-xs"><a class="btn btn-block link-neutral" href="#">Еще новости <i class="fa fa-angle-down"></i></a></div>
+                        <div class="col-md-4 col-sm-4"><a class="btn btn-block link-neutral" href="#">Архив новостей</a></div>
                     </div>
                 </div>
             </div>
@@ -256,7 +258,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="post-info">
-                        <span class="text-muted">Опубликовано 9 августа 2013</span>
+                        <span class="text-muted"><em>Опубликовано 9 августа 2013</em></span>
                         <span class="badge badge-clean badge-pos">+12</span>
                         <span class="text-muted"><i class="fa fa-eye label-views"></i> 1204</span>
                         <span class="text-muted"><i class="fa fa-comment-o label-comment"></i> 1</span>
@@ -271,9 +273,10 @@
                 </div>
                 <div class="panel-footer">
                     <div class="row">
-                        <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-envelope"></i> Прислать письмо</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral" href="#">Что такое "Письмо  в редакцию"</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">Архив писем</a></div>
+                        <div class="col-md-6 col-xs-12"><a class="btn btn-block" href="#"><i class="fa fa-envelope"></i> Прислать письмо</a></div>
+                        <div class="col-md-3 col-xs-12"><a class="btn btn-block link-neutral" href="#">Что такое «Письмо в редакцию»</a></div>
+                        <div class="col-md-3 hidden-xs hidden-sm"><a class="btn btn-block link-neutral" href="#">Архив писем</a></div>
+                        <div class="col-xs-12 hidden-lg hidden-md"><a class="btn btn-block link-neutral" href="#">Архив писем</a></div>
                     </div>
                 </div>
             </div>
@@ -282,7 +285,7 @@
                     <h3>Красноуфимское ТВ</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <a href="#">
                             <img class="media-object"
                                  src="http://fpoimg.com/180x102"
@@ -296,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 hidden-xs hidden-sm">
+                    <div class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
                         <a href="#">
                             <img class="media-object"
                                  src="http://fpoimg.com/180x102"
@@ -310,7 +313,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 hidden-xs hidden-sm">
+                    <div class="col-lg-3 col-md-4 hidden-xs hidden-sm">
                         <a href="#">
                             <img class="media-object"
                                  src="http://fpoimg.com/180x102"
@@ -324,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 hidden-xs hidden-sm">
+                    <div class="col-lg-3 hidden-xs hidden-sm hidden-md">
                         <a href="#">
                             <img class="media-object"
                                  src="http://fpoimg.com/180x102"
@@ -340,13 +343,20 @@
                 </div>
                 <div class="panel-footer text-center">
                     <div class="row">
-                        <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-plus-circle"></i> Добавить видео</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral" href="#">Все фотографии</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">Все видеозаписи</a></div>
+                        <div class="col-md-4"><a class="btn btn-block" href="#"><i class="fa fa-plus-circle"></i> Добавить видео</a></div>
+                        <div class="col-md-4 hidden-xs hidden-sm"></div>
+                        <div class="col-md-4 hidden-xs hidden-sm">
+                            <div class="row">
+                                <div class="col-md-6"><a class="btn btn-block link-neutral" href="#">Все фотографии</a></div>
+                                <div class="col-md-6"><a class="btn btn-block link-neutral pull-right" href="#">Все видеозаписи</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6 hidden-lg hidden-md"><a class="btn link-neutral " href="#">Все фотографии</a></div>
+                        <div class="col-md-4 col-xs-6 hidden-lg hidden-md"><a class="btn link-neutral" href="#">Все видеозаписи</a></div>
                     </div>
                 </div>
             </div>
-            <div class="panel panel-global">
+            <div class="panel panel-global panel-collapse-xs">
                 <div class="panel-heading">
                     <h3>Областные, скучные новости</h3>
                 </div>
@@ -421,50 +431,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="panel-more hidden-sm hidden-md hidden-lg"><a class="btn btn-block link-neutral" href="#">Еще новости <i class="fa fa-angle-down"></i></a></div>
                 <div class="panel-footer text-center">
                     <div class="row">
-                        <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-globe"></i> Поделиться ссылкой</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral" href="#">Еще новости</a></div>
-                        <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">Все скучные новости</a></div>
+                        <div class="col-md-4 col-xs-6"><a class="btn btn-block" href="#"><i class="fa fa-globe"></i> Поделиться ссылкой</a></div>
+                        <div class="col-md-4 hidden-xs"><a class="btn btn-block link-neutral" href="#">Еще новости</a></div>
+                        <div class="col-md-4 col-xs-6"><a class="btn btn-block link-neutral" href="#">Все скучные новости</a></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 col-mid">
-                    <div class="panel panel-congrats">
-                        <div class="panel-heading">
-                            <h3>Поздравления</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row media">
-                                <div class="col-xs-4 col-sm-3">
-                                    <a class="" href="#">
-                                        <img class="media-object img-responsive"
-                                             src="http://fpoimg.com/150x150"
-                                             width="300px">
-                                    </a>
-                                </div>
-                                <div class="col-xs-8 col-sm-9">
-                                    <div class="media-body">
-                                        <p>
-                                            А Язык, как и прежде, живет своею собственной жизнью, медленной и непостижимой, непрерывно
-                                            меняясь и при этом всегда оставаясь самим собой. С русским языком может произойти все, что
-                                            угодно: перестройка, преображение, превращение, – но только не вымирание. Он слишком велик,
-                                            могуч, гибок, динамичен и непредсказуем, чтобы взять и вдруг исчезнуть. Разве что – вместе с нами...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-footer text-center">
-                            <div class="row">
-                                <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-plus-circle"></i> Прислать поздравление</a></div>
-                                <div class="col-md-4"><a class="btn link-neutral" href="#">27 читателей</a></div>
-                                <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">присоеденилось</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-official">
+                    <div class="panel panel-official hidden-sm hidden-md hidden-lg panel-collapse-xs">
                         <div class="panel-heading"><h3>Официальная информация</h3></div>
                         <div class="list">
                             <a href="#" class="list-group-item">
@@ -517,7 +495,188 @@
                             <div class="btn"><a class="link-neutral" href="#">Все документы</a></div>
                         </div>
                     </div>
-                    <div class="panel panel-necro">
+                    <div class="panel panel-vote hidden-lg hidden-md">
+                        <div class="panel-heading"><h3>Голосование</h3>
+                        </div>
+                        <div class="panel-body text-left">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="btn-toolbar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a class="btn pull-left" href="#"><i class="fa fa-check-circle-o"></i> Прислать голосование</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a class="btn link-neutral pull-right" href="#">Архив</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-comments hidden-lg hidden-md">
+                        <div class="panel-heading"><h3>Комментарии</h3></div>
+                        <div class="panel-nav">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#">Последние</a></li>
+                                <li><a href="#">Популярные</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-striped table-hover">
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Как ГИБДД, бэдэдило</strong> </a>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-clean badge-neg pull-right">-3</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Администрация косячит</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-pos pull-right">+3</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">123</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Футбольные вести</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-pos pull-right">+1</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">ТралиВали</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Футбольные вести</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-pos pull-right">+2</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Дорожник</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Пятитысячный...</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-neg pull-right">-3</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Это Я</strong> <i class="fa fa-angle-right"></i> <strong class="comment">По уральскому морозу...</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-pos pull-right">+7</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Вася</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Сроки сдачи в эксплу...</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-neg pull-right">-5</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="list-event-item-text">
+                                            <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Как ГИБДД, бэдэдило</strong></a>
+                                        </td>
+                                        <td><span class="badge badge-clean badge-neg pull-right">-1</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-congrats">
+                        <div class="panel-heading">
+                            <h3>Поздравления</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row media">
+                                <div class="col-xs-4 col-sm-3">
+                                    <a class="" href="#">
+                                        <img class="media-object img-responsive"
+                                             src="http://fpoimg.com/150x150"
+                                             width="300px">
+                                    </a>
+                                </div>
+                                <div class="col-xs-8 col-sm-9">
+                                    <div class="media-body">
+                                        <p>
+                                            А Язык, как и прежде, живет своею собственной жизнью, медленной и непостижимой, непрерывно
+                                            меняясь и при этом всегда оставаясь самим собой. С русским языком может произойти все, что
+                                            угодно: перестройка, преображение, превращение, – но только не вымирание. Он слишком велик,
+                                            могуч, гибок, динамичен и непредсказуем, чтобы взять и вдруг исчезнуть. Разве что – вместе с нами...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <div class="row">
+                                <div class="col-md-4"><a class="btn btn-block" href="#"><i class="fa fa-plus-circle"></i> Прислать поздравление</a></div>
+                                <div class="col-md-4 col-xs-6"><a class="btn link-neutral btn-block" href="#">27 читателей</a></div>
+                                <div class="col-md-4 col-xs-6"><a class="btn link-neutral btn-block" href="#">присоеденилось</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-official hidden-xs">
+                        <div class="panel-heading"><h3>Официальная информация</h3></div>
+                        <div class="list">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">Постановление Главы ГО Красноуфимск от 26.08.2013 №983</h4>
+                                <p class="list-group-item-text">
+                                    О внесении изменений в постановление главы городского округа Красноуфимск от 08.08.2013
+                                    № 902 "О создании оргкомитета и проведении мероприятий, посвященных Дню пенсионера
+                                    Свердловской области в 2013 году"
+                                </p>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">Постановление Главы администрации ГО Красноуфимск от 25.07.2013 № 862</h4>
+                                <p class="list-group-item-text">
+                                    О внесении изменений в Постановление № 129 от 06.02.2013г. "Об утверждении перечня
+                                    земельных участков для размещения временных объектов и мест дислокации временных объектов"
+                                </p>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    Ежеквартальный отчёт о результатах проведения
+                                    мониторинга качества предоставления государственных
+                                    (муниципальных) услуг за 2 квартал 2013 г.
+                                </h4>
+                                <p class="list-group-item-text"></p>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    Доклад главы городского округа Красноуфимск о
+                                    достигнутых значениях показателей для оценки эффективности
+                                    деятельности органов местного самоуправления городских округов и муниципальных районов
+                                    за 2012 год и планируемых значениях на трехлетний период
+                                </h4>
+                                <p class="list-group-item-text">
+                                    Город Красноуфимск расположен на 56°36'55" с.ш. и 57°46'28" в. д. на
+                                    юго-западе Свердловской области. Муниципальное образование
+                                    городской округ Красноуфимск расположено в 206 км от областного центра.
+                                    Протяженность территории муниципального образования составляет: с севера
+                                    на юг – 19,3 километра, с запада на восток – 25,5 километров.
+                                    Городской округ Красноуфимск граничит с Октябрьским районом Пермского края…
+                                </p>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <div class="btn"><a class="link-neutral" href="#">Все документы</a></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-necro hidden-sm hidden-xs">
                         <div class="panel-heading">
                             <h3>Некролог</h3>
                         </div>
@@ -553,22 +712,26 @@
                         </div>
                         <div class="panel-footer">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <a href="#" class="btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
+                                <div class="col-md-10 col-xs-5">
+                                    <a href="#" class="btn btn-block"><i class="fa fa-question-circle"></i> Задать вопрос</a>
                                 </div>
-                                <div class="col-md-6 text-right post-info">
-                                    <i class="fa fa-question-circle"></i> 7<i class="fa fa-comment-o label-comment"></i> 12
+                                <div class="col-md-10 col-xs-3"></div>
+                                <div class="col-md-1 col-xs-2 text-right post-info">
+                                    <a href="#" class="btn btn-block link-neutral"><i class="fa fa-question-circle"></i> 7</a>
+                                </div>
+                                <div class="col-md-1 col-xs-2 text-right post-info">
+                                    <a href="#" class="btn btn-block link-neutral"><i class="fa fa-comment-o label-comment"></i> 12</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-rphoto hidden-xs hidden-sm">
+                    <div class="panel panel-rphoto hidden-xs panel-collapse-sm">
                         <div class="panel-heading"><h3>Случайное фото</h3></div>
                         <img width="100%" src="http://fpoimg.com/252x336">
                         <div class="panel-footer">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="#" class="btn pull-left"><i class="fa fa-plus-circle"></i> Прислать</a>
+                                    <a href="#" class="btn"><i class="fa fa-plus-circle"></i> Прислать</a>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="#" class="btn link-neutral pull-right">Все фото</a>
@@ -611,6 +774,26 @@
                                     <a href="#" class="btn link-neutral pull-right">Все события</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-necro hidden-lg hidden-md">
+                        <div class="panel-heading">
+                            <h3>Некролог</h3>
+                        </div>
+                        <div class="panel-body">
+                            <img class="media-object pull-left" src="http://fpoimg.com/150x210">
+                            <p style="color: #4e4e4e">
+                                Умер российский писатель Борис Стругацкий сообщает "Эхо Москвы" со ссылкой на его друга Бориса Вишневского. Стругацкий скончался
+                                19 ноября в больнице - по словам Вишневского, в последние несколько дней врачи оценивали состояние его здоровья как крайне тяжелое.
+                                По данным РИА Новости, причиной смерти стала болезнь сердца. Писателю было 79 лет. Борис Стругацкий был одним из самых известных
+                                советских и российских писателей-фантастов XX века. В соавторстве с братом Аркадием он написал около 30 романов и повестей, в том
+                                числе ставшие культовыми "Понедельник начинается в субботу", "Трудно быть богом" и "Пикник на обочине". Произведения Стругацких
+                                неоднократно экранизировались. Наиболее известен фильм "Сталкер", снятый Андреем Тарковским по "Пикнику на обочине" в 1979 году;
+                                также известны картины "Дни затмения" Александра Сокурова и "Обитаемый остров" Федора Бондарчука.
+                            </p>
+                        </div>
+                        <div class="panel-footer text-left">
+                            <div class="btn"><a class="link-neutral" href="#"><i class="fa fa-pencil-square-o"></i> Написать некролог</a></div>
                         </div>
                     </div>
                 </div>

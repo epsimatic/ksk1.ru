@@ -7,6 +7,11 @@ body {
     background-color: #edeeef;
     font-weight: normal;
 }
+.panel-more {
+    background-color: #f6f6f6;
+}
+
+
 .post-info > .badge-clean {
     font-size: 1em;
 }
@@ -215,13 +220,12 @@ p.media-text {
 
 .news-slide-block > p.media-text {
     padding: 10px;
-    /*font-size: 0.95em;*/
     line-height: 1.3em;
 }
 
 .media-main > h4.media-heading {
     color: #4a76bb;
-    font-size: 25px;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
@@ -232,6 +236,11 @@ p.media-text {
 .media-main-secondary > h4.media-heading {
     color: #4a76bb;
     font-weight: 600;
+    font-size: 1.4em;
+    margin: -5px 5px 9px;
+}
+.media-main-secondary > p.media-text {
+    margin: 0 5px;
 }
 
 .btn-action {
@@ -793,6 +802,10 @@ a.news-slide-block {
     background-color: rgba(222,222,222,0.9);
     overflow: hidden;
 }
+.label-post {
+    padding-left: 5px;
+}
+
 .label-views {
     color: #4A76BB;
     padding-left: 5px;
@@ -880,4 +893,25 @@ color: #ffffff;
     color: #ffffff;
     background-color: #47a447;
     border-color: #398439;
+}
+
+/* Стили для размера -sm- */
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+
+/* Стили для размера -md- */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Стили для размера -lg- */
+@media (min-width: 1200px) {
+    .container {
+        width: 1160px;
+    }
 }
