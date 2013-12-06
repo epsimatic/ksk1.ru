@@ -7,16 +7,51 @@ body {
     background-color: #edeeef;
     font-weight: normal;
 }
+a.list-group-item {
+    color: #4d4d60  ;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+    background-color: #f6f6f8;
+}
+
+.panel-guest > .panel-body > .media-object-md {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.panel-video > .panel-body {
+    background-color: #848787;
+}
+
+.panel-necro > panel-body p {
+    color: #47475f;
+}
 .panel-more {
     background-color: #f6f6f6;
 }
-
 
 .post-info > .badge-clean {
     font-size: 1em;
 }
 
+.panel-local > .panel-body > .media,
+.panel-global > .panel-body > .media {
+    padding: 5px;
+}
+
+.panel-local > .panel-body > .media:hover,
+.panel-local > .panel-body > .media:focus,
+.panel-global > .panel-body > .media:hover,
+.panel-global > .panel-body > .media:focus {
+    background-color: #f5f8fa;
+}
+
 .panel-notice > .panel-body > .media-object,
+.panel-guest > .panel-body > .media-object,
+.panel-congrats > .panel-body > .media-object,
 .panel-necro > .panel-body > .media-object {
     padding: 3px;
 }
@@ -50,7 +85,7 @@ body {
 }
 
 .news-slide > .news-slide-block {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .img-prime {
@@ -318,6 +353,10 @@ p.media-text {
     border: none;
 }
 
+.panel-news > .panel-body {
+    padding-bottom: 0;
+}
+
 .panel-news > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -442,6 +481,36 @@ p.media-text {
 .panel-vote {
     border: none;
 }
+.panel-vote > .panel-question {
+    background-color: #f1f1f2;
+    color: #47475f;
+    /*font-size: 15px;*/
+}
+.panel-vote > .panel-result > .progress > .progress-bar > .result {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    color: #111;
+}
+.panel-vote > .panel-question p {
+    padding-left: 3px;
+    margin: -2px 0 0;
+}
+.panel-vote > .panel-input label.item {
+    color: #525256;
+    font-weight: 400;
+    padding: 3px 10px;
+}
+.panel-vote > .panel-result {
+    padding-top: 10px;
+}
+.panel-vote > .panel-result > .item {
+    color: #525256;
+    padding: 5px 10px;
+}
+.panel-vote > .panel-result > .progress {
+    margin-bottom: 15px;
+}
 .panel-vote > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
@@ -482,7 +551,7 @@ p.media-text {
 
 /* Подвал панели */
 .panel-footer {
-    padding: 3px 10px;
+    padding: 3px 7px;
     background-color: #EDEDED;
     border-top: none;
     border-bottom-right-radius: 0;
@@ -812,7 +881,7 @@ a.news-slide-block {
 }
 .label-comment {
     color: #46A2F9;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 /*Ссылки в подвале ней*/
 a.link-neutral {
@@ -876,42 +945,33 @@ a.link-neutral:focus {
 .btn {
     border-radius: 3px;
 }
-    /* кнопка продолжить */
-.btn-active {
-color: #ffffff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    float: right;
-    margin: 5px 0;
-}
 
-.btn-active:hover,
-.btn-active:focus,
-.btn-active:active,
-.btn-active.active,
-.open .dropdown-toggle.btn-active {
-    color: #ffffff;
-    background-color: #47a447;
-    border-color: #398439;
+/*.panel > .panel-footer > .row > div > a {*/
+    /*font-size: 1em;*/
+/*}*/
+
+.btn-footer {
+    /*font-size: 0.9em;*/
+    /*letter-spacing: -0.02em;*/
+    /*margin-left: -2px;*/
+    /*margin-right: -2px;*/
+    /*padding: 6px 7px;*/
 }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    .container {
-        width: 740px;
+    .media-main-secondary > h4.media-heading {
+        font-size: 1.3em;
     }
 }
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .container {
-        width: 960px;
-    }
 }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .container {
-        width: 1160px;
+    .media-main-secondary > h4.media-heading {
+        font-size: 1.4em;
     }
 }
