@@ -164,6 +164,25 @@ p.media-text {
     background-color: #34a34c;
     border-color: #2b993d;
 }
+.btn-reply {
+    color: #dce0e2;
+    background-color: rgba(255,255,255,0.0);
+    border: none;
+    border-radius: 0;
+    padding: 6px 20px;
+    font-size: 13px;
+}
+.btn-reply:hover,
+.btn-reply:focus,
+.btn-reply:active,
+.btn-reply.active,
+.open .dropdown-toggle.btn-success {
+    color: #34495e;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 13px;
+}
 
 .panel-comments > .panel-body {
     background-color: #c7d1e0;
@@ -182,7 +201,17 @@ p.media-text {
 }
 
 /* Свойства панелей */
+.panel {
+    border: none;
+}
+.panel > .panel-heading + .panel-collapse .panel-body {
+    border-top: none;
+}
+.panel > .panel-footer + .panel-collapse .panel-body {
+    border-bottom: none;
+}
 /* Исправить отступ у row в панели */
+
 .panel-body .row {
     margin-left: -15px;
     margin-right: -15px;
@@ -208,16 +237,11 @@ p.media-text {
 }*/
 
 /* панель Новости */
-.panel-news {
-    border: none;
-}
-
 .panel-news > .panel-heading {
     color: #ffffff;
     background-color: #1FA6F2;
     border: none;
 }
-
 .panel-news > .panel-body {
     padding-bottom: 0;
 }
@@ -230,15 +254,6 @@ p.media-text {
     border-bottom: none;
 }
 /* панель локальные новости */
-.panel-local {
-    border: none;
-}
-.panel-local > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-local > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
 .panel-local > .panel-body > .media,
 .panel-global > .panel-body > .media {
     padding: 5px;
@@ -251,39 +266,12 @@ p.media-text {
 }
 
 /* панель Письмо */
-.panel-mails {
-    border: none;
-}
-.panel-mails > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-mails > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* панель Красноуфимск ТВ */
-.panel-video {
-    border: none;
-}
-.panel-video > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-video > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 
 /* панель Областные новости */
-.panel-global {
-    border: none;
-}
-.panel-global > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-global > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
-.panel-developments {
-    border: none;
-}
+
 /*.panel-developments >*/
 /*color: #fff;*/
 /*background-color: #FF6473;*/
@@ -293,69 +281,18 @@ p.media-text {
 /*line-height: 100%;*/
 
 /* панель Поздравлений */
-.panel-congrats {
-    border: none;
-}
-.panel-congrats > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-congrats > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /*Панель некролог*/
-.panel-necro {
-    border: none;
-}
-.panel-necro > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-necro > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* панель Официальная информация */
-.panel-official {
-    border: none;
-}
-.panel-official > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-official > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* панель Гость на сайте */
-.panel-guest {
-    border: none;
-}
+
 /*панель Ближайших событий*/
-.panel-event > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-event > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
-.panel-event {
-    border: none;
-}
-.panel-event > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-event > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* панель Важно */
-.panel-notice {
-    border: none;
-}
-.panel-notice > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-notice > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* панель Голосование */
-.panel-vote {
-    border: none;
-}
 .panel-vote > .panel-question {
     background-color: #f1f1f2;
     color: #47475f;
@@ -386,26 +323,111 @@ p.media-text {
 .panel-vote > .panel-result > .progress {
     margin-bottom: 15px;
 }
-.panel-vote > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-vote > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
 /* панель Комментарии */
-.panel-comments {
-    border: none;
+
+/* панель Тело новости*/
+
+/* панель Читать ещё*/
+
+/* панель Список комментраиев*/
+.panel-neutral,
+.panel-positive,
+.panel-negative {
 }
-.panel-comments > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
+.panel-neutral > .panel-body p,
+.panel-positive > .panel-body p,
+.panel-negative > .panel-body p {
+    color: #50575e;
+    padding: 2px 20px;
+    margin-bottom: 0;
+    font-size: 0.98em;
 }
-.panel-comments > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
+.panel-neutral > .panel-body,
+.panel-positive > .panel-body,
+.panel-negative > .panel-body {
+    padding: 0px;
+}
+.panel-neutral > .panel-body blockquote,
+.panel-positive > .panel-body blockquote,
+.panel-negative > .panel-body blockquote {
+    background-color: #FFF;
+    margin: 0 25px 5px 20px;
+    color: #717c7c;
+    border-left: 5px solid #dadee1;
+    font-size: 13px;
+}
+.nic {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3498db;
+}
+.anonymous {
+    color: #434c56;
+}
+.comment-info {
+    margin-top: 25px;
+}
+.comment-rating {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 7px;
+}
+.fa-arrow-up,
+.fa-arrow-down {
+    color: #d1d3d4;
+}
+.fa-arrow-up:hover,
+.fa-arrow-up:focus {
+    color: #8cbf94;
+}
+.fa-arrow-down:hover,
+.fa-arrow-down:focus{
+    color: #f4a39f;
+}
+.fa-pencil,
+.fa-eye-slash,
+.fa-minus-circle,
+.fa-link {
+    color: #98a3a3;
+}
+.fa-minus-circle:hover,
+.fa-minus-circle:focus{
+    color: #e85638;
+}
+.fa-link:hover,
+.fa-link:focus{
+    color: #1996f4;
+}
+.fa-eye-slash:hover,
+.fa-eye-slash:focus{
+    color: #334daa;
+}
+.fa-pencil:hover,
+.fa-pencil:focus{
+    color: #1f8689;
+}
+.nic {
+    line-height: 40px;
+    padding-left: 7px;
+}
+
+.panel-neutral > .panel-body,
+.panel-neutral > .panel-heading {
+    background-color: #f9fafb;
+}
+.panel-positive > .panel-body,
+.panel-positive > .panel-heading {
+    background-color: #f6fcf7;
+}
+.panel-negative > .panel-body,
+.panel-negative > .panel-heading {
+    background-color: #fff8f7;
+}
+.comments-list {
+    list-style: none outside none;
 }
 /* панель Стандарт */
-.panel-standard {
-    border: none;
-}
+
 .panel-standard > .panel-heading {
     color: #ffffff;
     background-color: #FCFCFC;
@@ -413,12 +435,7 @@ p.media-text {
     margin:  0;
     padding: 5px 0;
 }
-.panel-standard > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel-standard > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
+
 /* Тело панели */
 .panel-body {
     background-color: #fcfcfc;
@@ -547,6 +564,9 @@ a.list-event-item:focus {
 .panel {
     margin-bottom: 15px;}
 
+.panel-positive, .panel-negative, .panel-neutral {
+    margin-bottom: 10px;
+}
 /* Переопредилить шрифт заголовков Bootstrap */
 h1,
 h2,
@@ -920,21 +940,8 @@ a.link-neutral:focus {
 .panel-comments-list > .panel-heading {
     background-color: #f0f0f0;
 }
-
-.panel-comments-list {
+.panel-comments-list > .panel-body {
     background-color: #FFF;
-}
-.panel-neutral > .panel-body,
-.panel-neutral > .panel-heading, {
-    background-color: #fbfcfc;
-}
-.panel-positive > .panel-body,
-.panel-positive > .panel-heading, {
-    background-color: #f6fcf7;
-}
-.panel-negative > .panel-body,
-.panel-negative > .panel-heading, {
-    background-color: #fff8f7;
 }
 .panel-comments-list > .panel-heading h2 {
     color: #777d82;
