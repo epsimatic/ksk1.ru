@@ -10,84 +10,39 @@ body {
 a.list-group-item {
     color: #4d4d60  ;
 }
-
 a.list-group-item:hover,
 a.list-group-item:focus {
     background-color: #f6f6f8;
 }
-
-.panel-guest > .panel-body > .media-object-md {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-}
-
-.panel-video > .panel-body {
-    background-color: #848787;
-}
-
-.panel-necro > panel-body p {
-    color: #47475f;
-}
-.panel-more {
-    background-color: #f6f6f6;
-}
-
 .post-info > .badge-clean {
     font-size: 1em;
 }
-
-.panel-local > .panel-body > .media,
-.panel-global > .panel-body > .media {
-    padding: 5px;
-}
-
-.panel-local > .panel-body > .media:hover,
-.panel-local > .panel-body > .media:focus,
-.panel-global > .panel-body > .media:hover,
-.panel-global > .panel-body > .media:focus {
-    background-color: #f5f8fa;
-}
-
-.panel-notice > .panel-body > .media-object,
-.panel-guest > .panel-body > .media-object,
-.panel-congrats > .panel-body > .media-object,
-.panel-necro > .panel-body > .media-object {
-    padding: 3px;
-}
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #fff;
     background-color: #8392a8;
 }
-
 .link-neutral > .fa-angle-right {
     color: #bcbec0;
 }
-
 .nick {
     font-weight: 600;
     color: #1f2a26;
 }
-
 .comment {
     font-weight: 400;
     color: #47475f;
 }
-
 .list > .list-group-item > .list-group-item-heading {
     color: #1a4f8e;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.25em;
 }
-
 .news-slide > .news-slide-block {
     padding-bottom: 25px;
 }
-
 .img-prime {
     padding-bottom: 7px;
 }
@@ -95,138 +50,54 @@ a.list-group-item:focus {
     background-color: #ffffff;
     box-shadow: 0px -7px 7px #cbcbcb;
 }
-/*оформление панелей*/
-
+/*Оформление панелей*/
 .panel {
     background-color: #F9FAFB;
 }
-
 .panel > .panel-heading h3 {
     color: #fff;
     font-weight: 300;
 }
-
 .panel-heading {
     border: none;
 }
-
+.panel-notice > .panel-body > .media-object,
+.panel-guest > .panel-body > .media-object,
+.panel-congrats > .panel-body > .media-object,
+.panel-necro > .panel-body > .media-object {
+    padding: 3px;
+}
+.panel-guest > .panel-body > .media-object-md {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+.panel-video > .panel-body {
+    background-color: #848787;
+}
+.panel-necro > panel-body p {
+    color: #47475f;
+}
+.panel-more {
+    background-color: #f6f6f6;
+}
 .col-main > .panel > .panel-heading h3 {
     font-size: 27px;
     padding: 7px 0 9px 10px;
 }
-
 .col-mid > .panel > .panel-heading h3 {
     font-size: 25px;
     padding: 3px 0 5px 7px;
 }
-
 .sidebar > .panel > .panel-heading h3 {
     font-size: 25px;
     padding: 1px 0 3px 5px;
 }
-
 .inset > .panel > .panel-heading h3 {
     font-size: 20px;
     font-weight: 400;
     padding: 0px 0 2px 4px;
 }
-
-.panel-news > .panel-heading {
-    background-color: #1fa6f2;
-    background-image: url("img/panel-news.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-mails > .panel-heading {
-    background-color: #52be7f;
-    background-image: url("img/panel-mails.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-video > .panel-heading {
-    background-color: #ff6e0b;
-    background-image: url("img/panel-video.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-global > .panel-heading {
-    background-color: #2ebcb7;
-    background-image: url("img/panel-global.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-congrats > .panel-heading {
-    background-color: #ff794c;
-    background-image: url("img/panel-congrats.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-official > .panel-heading {
-    background-color: #4a76bb;
-    background-image: url("img/panel-official.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-guest > .panel-heading {
-    background-color: #00a1d3;
-    background-image: url("img/panel-guest.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-rphoto > .panel-heading {
-    background-color: #01bc85;
-    background-image: url("img/panel-rphoto.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-event > .panel-heading {
-    background-color: #52be7f;
-    background-image: url("img/panel-event.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-vote > .panel-heading {
-    background-color: #3db65a;
-    background-image: url("img/panel-vote.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-comments > .panel-heading {
-    background-color: #46a2f9;
-    background-image: url("img/panel-comments.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.panel-necro > .panel-heading {
-    background-color: #707070;
-}
-
-.panel-notice > .panel-heading {
-    background-color: #FF4B3D;
-}
-
 a.list-group-item {
     background-color: #fcfcfc;
 }
@@ -310,12 +181,6 @@ p.media-text {
     color: #47475f;
 }
 
-/*.panel-comments > .panel-body > .nav-pills >*/
-
-/*.panel-local a {*/
-/*color:  #0d3349;*/
-/*}*/
-
 /* Свойства панелей */
 /* Исправить отступ у row в панели */
 .panel-body .row {
@@ -373,6 +238,16 @@ p.media-text {
 }
 .panel-local > .panel-footer + .panel-collapse .panel-body {
     border-bottom: none;
+}
+.panel-local > .panel-body > .media,
+.panel-global > .panel-body > .media {
+    padding: 5px;
+}
+.panel-local > .panel-body > .media:hover,
+.panel-local > .panel-body > .media:focus,
+.panel-global > .panel-body > .media:hover,
+.panel-global > .panel-body > .media:focus {
+    background-color: #f5f8fa;
 }
 
 /* панель Письмо */
@@ -956,6 +831,118 @@ a.link-neutral:focus {
     /*margin-left: -2px;*/
     /*margin-right: -2px;*/
     /*padding: 6px 7px;*/
+}
+/*Стили панелей переопределить место потом*/
+.panel-news > .panel-heading {
+    background-color: #1fa6f2;
+    background-image: url("img/panel-news.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-mails > .panel-heading {
+    background-color: #52be7f;
+    background-image: url("img/panel-mails.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-video > .panel-heading {
+    background-color: #ff6e0b;
+    background-image: url("img/panel-video.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-global > .panel-heading {
+    background-color: #2ebcb7;
+    background-image: url("img/panel-global.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-congrats > .panel-heading {
+    background-color: #ff794c;
+    background-image: url("img/panel-congrats.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-official > .panel-heading {
+    background-color: #4a76bb;
+    background-image: url("img/panel-official.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-guest > .panel-heading {
+    background-color: #00a1d3;
+    background-image: url("img/panel-guest.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-rphoto > .panel-heading {
+    background-color: #01bc85;
+    background-image: url("img/panel-rphoto.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-event > .panel-heading {
+    background-color: #52be7f;
+    background-image: url("img/panel-event.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-vote > .panel-heading {
+    background-color: #3db65a;
+    background-image: url("img/panel-vote.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-comments > .panel-heading {
+    background-color: #46a2f9;
+    background-image: url("img/panel-comments.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel-necro > .panel-heading {
+    background-color: #707070;
+}
+.panel-notice > .panel-heading {
+    background-color: #FF4B3D;
+}
+.panel-comments-list > .panel-heading {
+    background-color: #f0f0f0;
+}
+
+.panel-comments-list {
+    background-color: #FFF;
+}
+.panel-neutral > .panel-body,
+.panel-neutral > .panel-heading, {
+    background-color: #fbfcfc;
+}
+.panel-positive > .panel-body,
+.panel-positive > .panel-heading, {
+    background-color: #f6fcf7;
+}
+.panel-negative > .panel-body,
+.panel-negative > .panel-heading, {
+    background-color: #fff8f7;
+}
+.panel-comments-list > .panel-heading h2 {
+    color: #777d82;
+    font-size: 23px;
+    padding: 7px 12px;
+}
+.ad {
+    padding-bottom: 10px;
 }
 
 /* Стили для размера -sm- */
