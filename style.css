@@ -50,9 +50,123 @@ a.list-group-item:focus {
     background-color: #ffffff;
     box-shadow: 0px -7px 7px #cbcbcb;
 }
+.panel-news-body > .panel-body img {
+    padding: 5px 0 15px;
+}
+.panel-news-body > .panel-body p {
+    padding-bottom: 4px;
+    color: #434c56;
+}
+.panel-news-body > .panel-body h1 {
+    color: #4a76bb;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px 0 20px;
+}
+.panel-news-body > .panel-footer {
+    background-color: #fcfcfc;
+    padding: 0;
+}
+.panel-news-body > .panel-footer > .row {
+    margin: 0;
+}
+
+.news-meta {
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.news-meta > .post-info {
+    padding: 0;
+    margin: 0;
+}
+.news-meta > .post-info > .badge-clean {
+    color: #fff;
+    border-radius: 0;
+    width: 8%;
+    padding: 9px 5px 9px 1px;
+    margin-right: 3px;
+}
+.news-meta > .post-info > .badge-pos {
+    background-color: #1DAC3B;
+}
+.news-meta > .post-info > .badge-neg {
+    background-color: #FF4B3D;
+}
+.news-meta > .post-info > .btn-group > .btn {
+    border-radius: 0;
+    border: none;
+}
+
+.news-more {
+    background-color: #f7f9f9;
+}
+.news-more h4 {
+    color: #0080c7;
+    font-size: 1.12em;
+    margin-top: 2px;
+}
+.news-more p {
+    color: #2b2b38;
+    font-size: 0.95em;
+}
+.news-more > .news-more-item {
+    padding: 7px 15px;
+}
+
+
+.panel-read-more > .panel-heading {
+    background-color: #efefef;
+}
+.panel-read-more > .panel-body {
+    padding: 0 15px;
+}
+.panel-read-more > .panel-heading h2 {
+    font-size: 21px;
+    color: #777d82;
+    padding: 7px 12px 9px;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 {
+    padding: 0px;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 > .media {
+    background-color: #f2f5f5;
+    margin: 2px;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 > .media > h5.media-heading {
+    color: #0080c7;
+    margin: 7px 0 0;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 > .media > .post-info {
+    margin: 0;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 > .media p {
+    color: #2b2b38;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.panel-read-more > .panel-body > .row > .col-md-6 > .media > a >.media-object {
+    padding: 7px;
+    margin: 0;
+}
+.panel-respond {
+}
+.panel-respond > .panel-body {
+    background-color: #fff;
+}
+.panel-respond > .panel-body > .form-inline {}
+.panel-respond > .panel-footer {
+    padding: 0 15px 25px 25px;
+    background-color: #fff;
+}
+.panel-respond > .panel-footer > .form-inline > .form-group {
+    padding-top: 5px;
+}
+
 /*Оформление панелей*/
 .panel {
     background-color: #F9FAFB;
+    box-shadow: none;
 }
 .panel > .panel-heading h3 {
     color: #fff;
@@ -183,19 +297,16 @@ p.media-text {
     border-radius: 0;
     font-size: 13px;
 }
-
 .panel-comments > .panel-body {
     background-color: #c7d1e0;
     color: #47475f;
 }
-
 .panel-nav {
     /*color: #0d3349;*/
     background-color: #C7D1E0;
     border: none;
     padding: 10px 15px;
 }
-
 .panel-nav > ul > li > a {
     color: #47475f;
 }
@@ -211,12 +322,10 @@ p.media-text {
     border-bottom: none;
 }
 /* Исправить отступ у row в панели */
-
 .panel-body .row {
     margin-left: -15px;
     margin-right: -15px;
 }
-
 /* панель Фильмы */
 /*.panel-movie {
     border: none;
@@ -385,14 +494,17 @@ p.media-text {
     color: #f4a39f;
 }
 .fa-pencil,
-.fa-eye-slash,
-.fa-minus-circle,
-.fa-link {
+.fa-eye-slash {
     color: #98a3a3;
 }
-.fa-minus-circle:hover,
-.fa-minus-circle:focus{
-    color: #e85638;
+.fa-exclamation-triangle:hover,
+.fa-exclamation-triangle:focus{
+    color: #ff6f36;
+}
+.fa-link,
+.fa-exclamation-triangle {
+    color: #cacece;
+    padding-left: 7px;
 }
 .fa-link:hover,
 .fa-link:focus{
@@ -795,6 +907,10 @@ a.link-neutral:focus {
     margin: 0;
     padding: 0 0 3px;
 }
+.news-more-item > .post-info {
+    margin: 3px 0 1px;
+    padding: 0;
+}
 .sub-panel {
     padding: 7px 15px;
     margin: 0;
@@ -949,8 +1065,9 @@ a.link-neutral:focus {
     padding: 7px 12px;
 }
 .ad {
-    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
+
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {

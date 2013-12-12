@@ -8,6 +8,11 @@
     <link href="http://ksk1.ru/bootstrap-20px/css/bootstrap.css" rel="stylesheet">
     <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-includes/js/jquery/jquery-migrate.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/includes/resources/bootstrap/js/bootstrap.min.js?ver=3.7.1'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/includes/js/bootstrap-wp.js?ver=3.7.1'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-includes/js/comment-reply.js?ver=3.7.1'></script>
 </head>
 <body>
 <div class="container">
@@ -23,7 +28,21 @@
             <img class="ad" width="100%" src="http://fpoimg.com/826x90">
             <div class="panel panel-news-body">
                 <div class="panel-body">
-                    <h1>Сроки сдачи в эксплуатацию моста через р. Уфу в районе п.Сарана сдвинулись. <i class="fa fa-play"></i> Видео</h1>
+                    <h1>Сроки сдачи в эксплуатацию моста через р. Уфу в районе п.Сарана сдвинулись. <i class="fa fa-film fa-fw"></i> Видео</h1>
+                    <div class="post-info">
+                        <span class="text-muted"><i class="fa fa-clock-o label-post"></i><em> Опубликовано 19 сентября</em></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-link dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-share-square-o fa-fw"></i> Поделиться <span class="caret"></span>
+                                <span class="sr-only"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Одноклассники</a></li>
+                                <li><a href="#">В Контакте</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <p>На очередном заседании городской Думы был заслушан председатель комитета по физической культуре и спорту Виктор Тисленко о выполнении муниципальной программы, рассчитанной до 2015 года.</p>
                     <p>В 2012 году проведено освещение на стадионе «Центральный», оборудованы поля для мини-футбола во второй и девятой школах. В этом году подготовлен проект на строительство покрытия легкоатлетических дорожек центрального стадиона. Потрачено 110,5 тысячи рублей.</p>
                     <p>Известие по дорожкам вызвало удивление депутата Макарова:</p>
@@ -31,7 +50,7 @@
                     <p>Пришлось докладчику объяснять, что на дорожках положили асфальт, а сейчас требуется нанести слой каучукового покрытия для того, чтобы можно бегать по ним в шиповках.</p>
                     <p>-Там резиновые коврики были, - не унимался депутат. - Куда делись?</p>
                     <p>-Истёрлись, - бросил реплику другой депутат, вызвав смех присутствовавших.</p>
-                    <img class="" width="100%" src="http://fpoimg.com/780x622">
+                    <img class="news-pic" width="100%" src="http://fpoimg.com/780x622">
                     <p>На эти цели было выделено пять миллионов рублей, но проект пришлось менять, и его стоимость выросла до девяти миллионов. Дорожки собирались доводить до совершенства на условиях софинансирования с областью - 70 на 30. В местном бюджете на эти цели заложили 2 миллиона 879 тысяч. Сейчас, после повышения стоимости, требуется искать дополнительные средства.</p>
                     <p>Строительство физкультурно-оздоровительного комплекса планировалось начать в 2012 году, но сроки были перенесены. Сейчас определено место для его расположения и приобретён проект за 99 тысяч. Разместится ФОК на улице Металлистов.</p>
                     <p>На проведение топографии места расположения лыжероллерной трассы в 2013 году потратили 45 тысяч рублей. Кроме того, поступило предложение от Заксобрания области построить в Красноуфимске лыжный стадион стоимостью 70 миллионов рублей. Надеются сдать его до конца следующего года, если мы успеем сделать проектно-сметную документацию.</p>
@@ -54,22 +73,52 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md news-meta">
                                     <div class="post-info">
                                         <span class="badge badge-clean badge-pos">+12</span>
-                                        <span class="text-muted">
+                                        <span style="padding-right: 7px">
                                             <i class="fa fa-arrow-up"></i>
                                             <i class="fa fa-arrow-down"></i>
-                                            <i class="fa fa-pencil fa-fw"></i>
-                                            <i class="fa fa-clock-o label-post"></i><em> 19 сентября</em>
                                         </span>
-                                        <span class=""><i class="fa fa-eye label-views"></i> 1642</span>
-                                        <!--<span class=""><i class="fa fa-comment-o label-comment"></i> 1</span>-->
-                                        <span class=""><small><em class="text-muted"> Нашли опечатку?</em> <i class="fa fa-share-square-o"></i> Рассказать друзьям</small></span>
+                                        <small>
+                                            <span class="text-muted">
+                                                <i class="fa fa-pencil fa-fw"></i>
+                                                <i class="fa fa-clock-o fa-fw label-post"></i><em> 19 сентября</em>
+                                            </span>
+                                            <span class=""><i class="fa fa-eye label-views"></i> 1642</span>
+                                            <!--<span class=""><i class="fa fa-comment-o label-comment"></i> 1</span>-->
+                                        </small>
+                                        <span style="padding: 0 5px 0 12px">
+                                            <small><em class="text-muted"> Нашли опечатку?</em></small>
+                                        </span>
+                                        <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-primary btn-link dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-share-square-o fa-fw"></i> Рассказать друзьям <span class="caret"></span>
+                                                <span class="sr-only"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Одноклассники</a></li>
+                                                <li><a href="#">В Контакте</a></li>
+                                                <li><a href="#">Facebook</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    233
+                                <div class="col-md news-more">
+                                    <div class="news-more-item">
+                                        <span><h4>В 2011 году 3 мин. рублей выделено на строитель...</h4></span>
+                                        <div class="post-info">
+                                            <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 22 апреля 2011</em> <i class="fa fa-eye label-views"></i> 731</small>
+                                        </div>
+                                        <p>Строительство и ремонт спортивных площадок на территории городского округа Красноуфимск начнется уже в ближайшее...</p>
+                                    </div>
+                                    <div class="news-more-item">
+                                        <span><h4>Сразу все не предусмотришь</h4></span>
+                                        <div class="post-info">
+                                            <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 17 марта 2009</em> <i class="fa fa-eye label-views"></i> 731</small>
+                                        </div>
+                                        <p>Депутаты в очередной раз перетряхнули городской кошелек: перекинули деньги с одних нужд на другие. В частности...</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -89,6 +138,58 @@
             <div class="panel panel-read-more">
                 <div class="panel-heading"><h2>Читать ещё</h2></div>
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="http://fpoimg.com/100x67">
+                                </a>
+                                <h5 class="media-heading">В 2011 году 3 мин. рублей выделено...</h5>
+                                <div class="post-info">
+                                    <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 19 апреля 2009</em><span class="badge badge-clean badge-pos">+2</span> <i class="fa fa-eye label-views"></i> 531</small>
+                                </div>
+                                <p>Строительство и ремонт спортивных площадок на территории городского округа...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="http://fpoimg.com/100x67">
+                                </a>
+                                <h5 class="media-heading">Сразу все не предусмотришь</h5>
+                                <div class="post-info">
+                                    <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 9 июля 2012</em><span class="badge badge-clean badge-pos">+3</span> <i class="fa fa-eye label-views"></i> 970 <i class="fa fa-comment label-comment"></i> 6</small>
+                                </div>
+                                <p>Депутаты в очередной раз перетряхнули городской кошелек: перекинули деньги...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="http://fpoimg.com/100x67">
+                                </a>
+                                <h5 class="media-heading">В Красноуфимске строят новые...</h5>
+                                <div class="post-info">
+                                    <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 14 октября 2012</em><span class="badge badge-clean badge-pos">+7</span> <i class="fa fa-eye label-views"></i> 1231</small>
+                                </div>
+                                <p>В Красноуфимске началось строительство четырех спортивных площадок</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="http://fpoimg.com/100x67">
+                                </a>
+                                <h5 class="media-heading">Стройка на стадионе</h5>
+                                <div class="post-info">
+                                    <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 10 июня 2009</em> <i class="fa fa-eye label-views"></i> 478</small>
+                                </div>
+                                <p>Три КамАЗа, заполненных щебнем, проходят по центральному стадиону Красноуфимска...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -99,14 +200,14 @@
                 <div class="panel-body">
                     <div class="panel panel-neutral">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 03:39</em>
+                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 03:39 </em><i class="fa fa-link fa-fw"></i> <i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                             </span>
                         </div>
                         <div class="panel-body">
@@ -116,14 +217,14 @@
                     </div>
                     <div class="panel panel-positive">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/02.png"> <strong class="nic">2,</strong> <em class="text-muted">вчера в 08:22</em>
+                            <img class="" src="img/identicon/02.png"> <strong class="nic">2,</strong> <em class="text-muted">вчера в 08:22 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-pos comment-rating">+1</span>
                             </span>
                         </div>
@@ -134,14 +235,14 @@
                     </div>
                     <div class="panel panel-negative">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/03.png"> <strong class="nic">3,</strong> <em class="text-muted">вчера в 08:38</em>
+                            <img class="" src="img/identicon/03.png"> <strong class="nic">3,</strong> <em class="text-muted">вчера в 08:38 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-neg comment-rating">-1</span>
                             </span>
                         </div>
@@ -152,14 +253,14 @@
                     </div>
                     <div class="panel panel-negative">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/04.png"> <strong class="nic">Игорешка,</strong> <em class="text-muted">вчера в 10:18</em>
+                            <img class="" src="img/identicon/04.png"> <strong class="nic">Игорешка,</strong> <em class="text-muted">вчера в 10:18 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-neg comment-rating">-1</span>
                             </span>
                         </div>
@@ -172,14 +273,14 @@
                         <li>
                             <div class="panel panel-neutral">
                                 <div class="panel-heading">
-                                    <img class="" src="img/identicon/05.png"> <strong class="nic">Долорес,</strong> <em class="text-muted">вчера в 10:26</em>
+                                    <img class="" src="img/identicon/05.png"> <strong class="nic">Долорес,</strong> <em class="text-muted">вчера в 10:26 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                     <span class="pull-right">
-                                        <i class="fa fa-pencil fa-fw"></i>
+                                        <span style="padding: 0 7px">
+                                            <i class="fa fa-arrow-up"></i>
+                                            <i class="fa fa-arrow-down"></i>
+                                        </span>
                                         <i class="fa fa-eye-slash fa-fw"></i>
-                                        <i class="fa fa-minus-circle fa-fw"></i>
-                                        <i class="fa fa-link fa-fw"></i>
-                                        <i class="fa fa-arrow-up"></i>
-                                        <i class="fa fa-arrow-down"></i>
+                                        <i class="fa fa-pencil fa-fw"></i>
                                     </span>
                                 </div>
                                 <div class="panel-body">
@@ -191,14 +292,14 @@
                     </ul>
                     <div class="panel panel-positive">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/06.png"> <strong class="nic">Интересно,</strong> <em class="text-muted">вчера в 10:41</em>
+                            <img class="" src="img/identicon/06.png"> <strong class="nic">Интересно,</strong> <em class="text-muted">вчера в 10:41 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-pos comment-rating">+1</span>
                             </span>
                         </div>
@@ -209,14 +310,14 @@
                     </div>
                     <div class="panel panel-negative">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/17.png"> <strong class="nic anonymous">Аноним,</strong> <em class="text-muted">вчера в 13:21</em>
+                            <img class="" src="img/identicon/17.png"> <strong class="nic anonymous">Аноним,</strong> <em class="text-muted">вчера в 13:21 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-neg comment-rating">-1</span>
                             </span>
                         </div>
@@ -227,14 +328,14 @@
                     </div>
                     <div class="panel panel-neutral">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 14:40</em>
+                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 14:40 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                             </span>
                         </div>
                         <div class="panel-body">
@@ -244,14 +345,14 @@
                     </div>
                     <div class="panel panel-positive">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/07.png"> <strong class="nic">123,</strong> <em class="text-muted">вчера в 14:32</em>
+                            <img class="" src="img/identicon/07.png"> <strong class="nic">123,</strong> <em class="text-muted">вчера в 14:32 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-pos comment-rating">+1</span>
                             </span>
                         </div>
@@ -262,14 +363,14 @@
                     </div>
                     <div class="panel panel-neutral">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/08.png"> <strong class="nic anonymous">Наблюдатель бардака в спорте,</strong> <em class="text-muted">вчера в 15:30</em>
+                            <img class="" src="img/identicon/08.png"> <strong class="nic anonymous">Наблюдатель бардака в спорте,</strong> <em class="text-muted">вчера в 15:30 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                             </span>
                         </div>
                         <div class="panel-body">
@@ -279,14 +380,14 @@
                     </div>
                     <div class="panel panel-neutral">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/09.png"> <strong class="nic">111,</strong> <em class="text-muted">вчера в 16:17</em>
+                            <img class="" src="img/identicon/09.png"> <strong class="nic">111,</strong> <em class="text-muted">вчера в 16:17 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                             </span>
                         </div>
                         <div class="panel-body">
@@ -296,14 +397,14 @@
                     </div>
                     <div class="panel panel-positive">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/10.png"> <strong class="nic">БОЛЬлельшик,</strong> <em class="text-muted">вчера в 16:33</em>
+                            <img class="" src="img/identicon/10.png"> <strong class="nic">БОЛЬлельшик,</strong> <em class="text-muted">вчера в 16:33 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-pos comment-rating">+1</span>
                             </span>
                         </div>
@@ -314,14 +415,14 @@
                     </div>
                     <div class="panel panel-negative">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 18:05</em>
+                            <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 18:05 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-neg comment-rating">-2</span>
                             </span>
                         </div>
@@ -332,14 +433,14 @@
                     </div>
                     <div class="panel panel-negative">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/11.png"> <strong class="nic">Pablo,</strong> <em class="text-muted">вчера в 22:45</em>
+                            <img class="" src="img/identicon/11.png"> <strong class="nic">Pablo,</strong> <em class="text-muted">вчера в 22:45 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                                 <span class="badge-neg comment-rating">-1</span>
                             </span>
                         </div>
@@ -350,14 +451,14 @@
                     </div>
                     <div class="panel panel-neutral">
                         <div class="panel-heading">
-                            <img class="" src="img/identicon/12.png"> <strong class="nic">за тисленко,</strong> <em class="text-muted">сегодня в 00:55</em>
+                            <img class="" src="img/identicon/12.png"> <strong class="nic">за тисленко,</strong> <em class="text-muted">сегодня в 00:55 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                             <span class="pull-right">
-                                <i class="fa fa-pencil fa-fw"></i>
+                                <span style="padding: 0 7px">
+                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="fa fa-arrow-down"></i>
+                                </span>
                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                <i class="fa fa-minus-circle fa-fw"></i>
-                                <i class="fa fa-link fa-fw"></i>
-                                <i class="fa fa-arrow-up"></i>
-                                <i class="fa fa-arrow-down"></i>
+                                <i class="fa fa-pencil fa-fw"></i>
                             </span>
                         </div>
                         <div class="panel-body">
@@ -369,14 +470,14 @@
                         <li>
                             <div class="panel panel-neutral">
                                 <div class="panel-heading">
-                                    <img class="" src="img/identicon/13.png"> <strong class="nic">НИВа,</strong> <em class="text-muted">сегодня в 07:54</em>
+                                    <img class="" src="img/identicon/13.png"> <strong class="nic">НИВа,</strong> <em class="text-muted">сегодня в 07:54 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                     <span class="pull-right">
-                                        <i class="fa fa-pencil fa-fw"></i>
+                                        <span style="padding: 0 7px">
+                                            <i class="fa fa-arrow-up"></i>
+                                            <i class="fa fa-arrow-down"></i>
+                                        </span>
                                         <i class="fa fa-eye-slash fa-fw"></i>
-                                        <i class="fa fa-minus-circle fa-fw"></i>
-                                        <i class="fa fa-link fa-fw"></i>
-                                        <i class="fa fa-arrow-up"></i>
-                                        <i class="fa fa-arrow-down"></i>
+                                        <i class="fa fa-pencil fa-fw"></i>
                                     </span>
                                 </div>
                                 <div class="panel-body">
@@ -388,14 +489,14 @@
                         <li>
                             <div class="panel panel-neutral">
                                 <div class="panel-heading">
-                                    <img class="" src="img/identicon/14.png"> <strong class="nic">АЛЕКСЕЙ 2,</strong> <em class="text-muted">сегодня в 09:49</em>
+                                    <img class="" src="img/identicon/14.png"> <strong class="nic">АЛЕКСЕЙ 2,</strong> <em class="text-muted">сегодня в 09:49 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                     <span class="pull-right">
-                                        <i class="fa fa-pencil fa-fw"></i>
+                                        <span style="padding: 0 7px">
+                                            <i class="fa fa-arrow-up"></i>
+                                            <i class="fa fa-arrow-down"></i>
+                                        </span>
                                         <i class="fa fa-eye-slash fa-fw"></i>
-                                        <i class="fa fa-minus-circle fa-fw"></i>
-                                        <i class="fa fa-link fa-fw"></i>
-                                        <i class="fa fa-arrow-up"></i>
-                                        <i class="fa fa-arrow-down"></i>
+                                        <i class="fa fa-pencil fa-fw"></i>
                                     </span>
                                 </div>
                                 <div class="panel-body">
@@ -407,14 +508,14 @@
                                 <li>
                                     <div class="panel panel-neutral">
                                         <div class="panel-heading">
-                                            <img class="" src="img/identicon/15.png"> <strong class="nic anonymous">местная,</strong> <em class="text-muted">сегодня в 11:05</em>
+                                            <img class="" src="img/identicon/15.png"> <strong class="nic anonymous">местная,</strong> <em class="text-muted">сегодня в 11:05 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                             <span class="pull-right">
-                                                <i class="fa fa-pencil fa-fw"></i>
+                                                <span style="padding: 0 7px">
+                                                    <i class="fa fa-arrow-up"></i>
+                                                    <i class="fa fa-arrow-down"></i>
+                                                </span>
                                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                                <i class="fa fa-minus-circle fa-fw"></i>
-                                                <i class="fa fa-link fa-fw"></i>
-                                                <i class="fa fa-arrow-up"></i>
-                                                <i class="fa fa-arrow-down"></i>
+                                                <i class="fa fa-pencil fa-fw"></i>
                                             </span>
                                         </div>
                                         <div class="panel-body">
@@ -426,14 +527,14 @@
                                         <li>
                                             <div class="panel panel-neutral">
                                                 <div class="panel-heading">
-                                                    <img class="" src="img/identicon/16.png"> <strong class="nic">Вася,</strong> <em class="text-muted">сегодня в 11:28</em>
+                                                    <img class="" src="img/identicon/16.png"> <strong class="nic">Вася,</strong> <em class="text-muted">сегодня в 11:28 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                                     <span class="pull-right">
-                                                        <i class="fa fa-pencil fa-fw"></i>
+                                                        <span style="padding: 0 7px">
+                                                            <i class="fa fa-arrow-up"></i>
+                                                            <i class="fa fa-arrow-down"></i>
+                                                        </span>
                                                         <i class="fa fa-eye-slash fa-fw"></i>
-                                                        <i class="fa fa-minus-circle fa-fw"></i>
-                                                        <i class="fa fa-link fa-fw"></i>
-                                                        <i class="fa fa-arrow-up"></i>
-                                                        <i class="fa fa-arrow-down"></i>
+                                                        <i class="fa fa-pencil fa-fw"></i>
                                                     </span>
                                                 </div>
                                                 <div class="panel-body">
@@ -447,14 +548,14 @@
                                                     <div class="panel panel-negative">
                                                         <div class="panel-heading">
                                                             <span class="">
-                                                                <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 18:05</em>
+                                                                <img class="" src="img/identicon/01.png"> <strong class="nic">1,</strong> <em class="text-muted">вчера в 18:05 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                                                 <span class="pull-right">
-                                                                    <i class="fa fa-pencil fa-fw"></i>
+                                                                    <span style="padding: 0 7px">
+                                                                        <i class="fa fa-arrow-up"></i>
+                                                                        <i class="fa fa-arrow-down"></i>
+                                                                    </span>
                                                                     <i class="fa fa-eye-slash fa-fw"></i>
-                                                                    <i class="fa fa-minus-circle fa-fw"></i>
-                                                                    <i class="fa fa-link fa-fw"></i>
-                                                                    <i class="fa fa-arrow-up"></i>
-                                                                    <i class="fa fa-arrow-down"></i>
+                                                                    <i class="fa fa-pencil fa-fw"></i>
                                                                     <span class="badge-neg comment-rating">-2</span>
                                                                 </span>
                                                             </span>
@@ -470,16 +571,15 @@
                                                                 <div class="panel-heading">
                                                                     <span><img class="" src="img/identicon/08.png"></span>
                                                                     <span class="pull-right">
-                                                                        <i class="fa fa-pencil fa-fw"></i>
+                                                                        <span style="padding: 0 7px">
+                                                                            <i class="fa fa-arrow-up"></i>
+                                                                            <i class="fa fa-arrow-down"></i>
+                                                                        </span>
                                                                         <i class="fa fa-eye-slash fa-fw"></i>
-                                                                        <i class="fa fa-minus-circle fa-fw"></i>
-                                                                        <i class="fa fa-link fa-fw"></i>
-                                                                        <i class="fa fa-arrow-up"></i>
-                                                                        <i class="fa fa-arrow-down"></i>
+                                                                        <i class="fa fa-pencil fa-fw"></i>
                                                                     </span>
                                                                     <span>
-                                                                        <strong class="nic anonymous">Наблюдатель бардака в спорте,</strong>
-                                                                        <em class="text-muted">вчера в 15:30</em>
+                                                                        <strong class="nic anonymous">Наблюдатель бардака в спорте,</strong> <em class="text-muted">вчера в 15:30 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                                                     </span>
                                                                 </div>
                                                                 <div class="panel-body">
@@ -497,14 +597,14 @@
                                 <li>
                                     <div class="panel panel-neutral">
                                         <div class="panel-heading">
-                                            <img class="" src="img/identicon/15.png"> <strong class="nic anonymous">местная,</strong> <em class="text-muted">сегодня в 11:05</em>
+                                            <img class="" src="img/identicon/15.png"> <strong class="nic anonymous">местная,</strong> <em class="text-muted">сегодня в 11:05 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                             <span class="pull-right">
-                                                <i class="fa fa-pencil fa-fw"></i>
+                                                <span style="padding: 0 7px">
+                                                    <i class="fa fa-arrow-up"></i>
+                                                    <i class="fa fa-arrow-down"></i>
+                                                </span>
                                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                                <i class="fa fa-minus-circle fa-fw"></i>
-                                                <i class="fa fa-link fa-fw"></i>
-                                                <i class="fa fa-arrow-up"></i>
-                                                <i class="fa fa-arrow-down"></i>
+                                                <i class="fa fa-pencil fa-fw"></i>
                                             </span>
                                         </div>
                                         <div class="panel-body">
@@ -523,16 +623,16 @@
                             </div>
                             <ul class="comments-list">
                                 <li>
-                                    <div class="panel comment-neutral">
+                                    <div class="panel panel-neutral">
                                         <div class="panel-heading">
-                                            <img class="" src="img/identicon/15.png"> <strong class="nic">местная,</strong> <em class="text-muted">сегодня в 11:05</em>
+                                            <img class="" src="img/identicon/15.png"> <strong class="nic">местная,</strong> <em class="text-muted">сегодня в 11:05 </em><i class="fa fa-link fa-fw"></i><i class="fa fa-exclamation-triangle fa-fw"></i>
                                             <span class="pull-right">
-                                                <i class="fa fa-pencil fa-fw"></i>
+                                                <span style="padding: 0 7px">
+                                                    <i class="fa fa-arrow-up"></i>
+                                                    <i class="fa fa-arrow-down"></i>
+                                                </span>
                                                 <i class="fa fa-eye-slash fa-fw"></i>
-                                                <i class="fa fa-minus-circle fa-fw"></i>
-                                                <i class="fa fa-link fa-fw"></i>
-                                                <i class="fa fa-arrow-up"></i>
-                                                <i class="fa fa-arrow-down"></i>
+                                                <i class="fa fa-pencil fa-fw"></i>
                                             </span>
                                         </div>
                                         <div class="panel-body">
@@ -547,23 +647,27 @@
                 </div>
             </div>
             <div class="panel panel-respond">
-                <div class="panel-heading">
-                    <h2>Оставить комментарий</h2>
-                </div>
                 <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="input-group">
-                                <span class="input-group-addon"><img class="" src="img/identicon/blank.png"></span>
-                                <input type="text" class="form-control" placeholder="Ваше имя">
-                            </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <img class="" src="img/identicon/blank.png">
                         </div>
-                        <div class="col-md-9">
-                            <p>
-                                <textarea id="comment" class="form-control" aria-required="true" rows="8" cols="45" name="comment" placeholder="Ваш комментарий"></textarea>
-                            </p>
-                            <button type="button" class="btn btn-action pull-right">Отправить</button>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
                         </div>
+                        <div class="form-group">
+                            <button class="btn btn-link">Вход/Регистрация</span>
+                        </div>
+                    </div>
+                    <textarea id="comment" class="form-control" aria-required="true" rows="8" cols="45" name="comment" placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="panel-footer">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <i class="fa fa-picture-o"></i> Добавить фотографию
+                        </div>
+                        <div class="form-group"><input type="file"></div>
+                        <button type="button" class="btn btn-action pull-right">Отправить</button>
                     </div>
                 </div>
             </div>
@@ -748,7 +852,13 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="jumbotron">
+            <h1>Красноуфимск Онлайн</h1>
+            <p>Городские новости, Объявления, Афиша мероприятий.</p>
+            <p><a class="btn btn-primary btn-lg">Войти</a></p>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
