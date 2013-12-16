@@ -130,6 +130,12 @@ a.list-group-item:focus {
     font-weight: 400;
     padding: 0px 0 2px 4px;
 }
+.fa-arrow-down {
+    padding-right: 7px;
+}
+.panel-news-body > .panel-body .fa {
+    padding-top:4px;
+}
 .panel-news-body > .panel-body {
     padding: 20px;
 }
@@ -161,6 +167,27 @@ strong.author {
     font-weight: 600;
     color: #2c3033;
 }
+.prev-article, .next-article {
+    padding: 0 10px;
+}
+.prev-article .media-heading > .fa {
+    padding-top: 1px;
+}
+
+.prev-article .media-heading,
+.next-article .media-heading {
+    padding-bottom: 7px;
+}
+.prev-article a:hover,
+.prev-article a:focus,
+.next-article a:focus,
+.next-article a:hover {
+    text-decoration: none;
+}
+.prev-article p,
+.next-article p {
+    color: #2B2B38;
+}
 .news-meta {
     background-color: #f9f9f9;
     margin-bottom: 5px;
@@ -176,9 +203,6 @@ strong.author {
 .news-meta > .post-info > .btn-group > .btn {
     border-radius: 0;
     border: none;
-}
-.news-more {
-    margin: 0 -10px;
 }
 .news-more p {
     color: #2b2b38;
@@ -733,9 +757,6 @@ a.list-event-item:focus {
 .panel-positive, .panel-negative, .panel-neutral, .panel-deleted {
     margin-bottom: 10px;
 }
-.news-more {
-    margin-bottom: 0;
-}
 /* Переопредилить шрифт заголовков Bootstrap */
 h1,
 h2,
@@ -1129,7 +1150,10 @@ a.link-neutral:focus {
 .ad {
     margin-bottom: 15px;
 }
-
+a.media-heading:hover,
+a.media-heading:focus {
+    text-decoration: none;
+}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
