@@ -169,21 +169,23 @@ strong.author {
 }
 .prev-article, .next-article {
     padding: 0 10px;
+    background-color: #fbfbfb;
+    margin-top: 3px;
 }
-.prev-article .media-heading > .fa {
+.prev-article .media-heading > .fa-2x,
+.next-article .media-heading > .fa-2x {
     padding-top: 1px;
+}
+.prev-article .media-heading > .fa-3x,
+.next-article .media-heading > .fa-3x {
+    padding: 12px 10px;
 }
 
 .prev-article .media-heading,
 .next-article .media-heading {
     padding-bottom: 7px;
 }
-.prev-article a:hover,
-.prev-article a:focus,
-.next-article a:focus,
-.next-article a:hover {
-    text-decoration: none;
-}
+
 .prev-article p,
 .next-article p {
     color: #2B2B38;
@@ -651,6 +653,24 @@ p.media-text {
 }
 .panel-footer > .btn-link:hover {
     text-decoration: none;
+}
+.prev-article:hover,
+.prev-article:focus,
+.next-article:focus,
+.next-article:hover {
+    background-color: #f5f6f7;
+}
+.prev-article a,
+.next-article a {
+    color: #308fe0;
+}
+
+.prev-article a:hover,
+.prev-article a:focus,
+.next-article a:focus,
+.next-article a:hover {
+    text-decoration: none;
+    color: #1e6db0;
 }
 
 /* кнопки фильмов */

@@ -98,10 +98,7 @@
                                     <i class="fa fa-clock-o fa-fw label-post"></i><em> 19 сентября</em>
                                 </span>
                                 <span class=""><i class="fa fa-eye label-views"></i> 1642</span>
-                                <a href="#" style="padding: 0 5px 0 12px">
-                                    <em class="text-muted"> Нашли опечатку?</em>
-                                </a>
-                                <div class="btn-group pull-right">
+                                <div class="btn-group pull-right hidden-xs">
                                     <button type="button" class="btn btn-action dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-share-square-o fa-fw"></i> Рассказать друзьям <span class="caret"></span>
                                     </button>
@@ -111,43 +108,57 @@
                                         <li><a href="#">Facebook</a></li>
                                     </ul>
                                 </div>
+                                <span class="pull-right" style="padding: 7px 15px;"><a href="#"><em class="text-muted"> Нашли опечатку?</em></a></span>
                             </div>
+                            <div class="btn-group pull-left hidden-lg hidden-md hidden-sm">
+                                <button type="button" class="btn btn-action dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-share-square-o fa-fw"></i> Рассказать друзьям <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Одноклассники</a></li>
+                                    <li><a href="#">В Контакте</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 prev-article">
+                            <a href="#">
+                                <div class="media">
+                                    <h3 class="media-heading">
+                                        <i class="fa fa-angle-left fa-3x pull-left hidden-md hidden-lg hidden-xs"></i>
+                                        <i class="fa fa-angle-left fa-2x pull-left fa-fw hidden-sm"></i>
+                                        В 2011 году 3 мин. рублей выделено...
+                                    </h3>
+                                    <img class="media-object pull-left" src="http://fpoimg.com/100x67">
+                                    <div class="post-info">
+                                        <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 19 апреля 2009</em><span class="badge badge-clean badge-pos">+2</span> <i class="fa fa-eye label-views"></i> 531</small>
+                                    </div>
+                                    <p>Строительство и ремонт спортивных площадок на территории городского...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 next-article">
+                            <a href="#">
+                                <div class="media">
+                                    <h3 class="media-heading">
+                                        <i class="fa fa-angle-right fa-3x pull-right hidden-md hidden-lg hidden-xs"></i>
+                                        <i class="fa fa-angle-right fa-2x pull-right fa-fw hidden-sm"></i>
+                                        Сразу все не предусмотришь
+                                    </h3>
+                                    <img class="media-object pull-left" src="http://fpoimg.com/100x67">
+                                    <div class="post-info">
+                                        <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 9 июля 2012</em><span class="badge badge-clean badge-pos">+3</span> <i class="fa fa-eye label-views"></i> 970 <i class="fa fa-comment label-comment"></i> 6</small>
+                                    </div>
+                                    <p>Депутаты в очередной раз перетряхнули городской кошелек: перекинули деньги...</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 prev-article">
-                    <a href="#">
-                            <div class="media">
-                                <h3 class="media-heading">
-                                    <i class="fa fa-angle-left fa-2x pull-left fa-fw"></i>
-                                    В 2011 году 3 мин. рублей выделено...
-                                </h3>
-                                <img class="media-object pull-left" src="http://fpoimg.com/100x67">
-                                <div class="post-info">
-                                    <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 19 апреля 2009</em><span class="badge badge-clean badge-pos">+2</span> <i class="fa fa-eye label-views"></i> 531</small>
-                                </div>
-                                <p>Строительство и ремонт спортивных площадок на территории городского...</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-12 next-article">
-                    <a href="#">
-                        <div class="media">
-                            <h3 class="media-heading">
-                                <i class="fa fa-angle-right fa-2x pull-right fa-fw"></i>
-                                Сразу все не предусмотришь
-                            </h3>
-                            <img class="media-object pull-left" src="http://fpoimg.com/100x67">
-                            <div class="post-info">
-                                <small><em class="text-muted"><i class="fa fa-clock-o label-post"></i> 9 июля 2012</em><span class="badge badge-clean badge-pos">+3</span> <i class="fa fa-eye label-views"></i> 970 <i class="fa fa-comment label-comment"></i> 6</small>
-                            </div>
-                            <p>Депутаты в очередной раз перетряхнули городской кошелек: перекинули деньги...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
 
             <img class="ad" width="100%" src="http://fpoimg.com/826x90">
             <div class="panel news-more">
@@ -281,7 +292,10 @@
                         <div class="col-md-4">
                             <h2>19 комментариев</h2>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                            <div class="btn btn-grey pull-left">Добавить комментарий</div>
+                        </div>
+                        <div class="col-md-8 hidden-xs">
                             <div class="btn btn-grey pull-right">Добавить комментарий</div>
                         </div>
                     </div>
