@@ -1174,7 +1174,56 @@ a.media-heading:hover,
 a.media-heading:focus {
     text-decoration: none;
 }
-
+h3.cat-title {
+    color: #0275d3;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 20px 10px 30px 23px;
+    margin: 0;
+}
+.cat a.list-group-item {
+    /*margin-bottom: 1px;*/
+    background-color: #fcfcfc;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #f6f7f8;
+    margin-bottom: 1px;
+}
+.cat a.list-group-item:hover,
+.cat a.list-group-item:focus {
+    background-color: #f5f6f7;
+    border-left: 1px solid #56c4f4;
+}
+.list-group {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    /*border-bottom: 2px solid #f0f0f0;*/
+}
+.cat a {
+    font-size: 1.1em;
+    color: #232528;
+}
+.subcat > .badge {
+    background-color: #808284;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 3px 7px;
+}
+.navbar {
+    background-color: #1fa7f2;
+    margin: 0 -10px;
+    border: none;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+    color: #1fa7f2;
+    background-color: #fff;
+}
+.navbar a {
+    color: #fff;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .media-main-secondary > h4.media-heading {
