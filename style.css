@@ -1,5 +1,3 @@
-/* Commit test 1 */
-
 body {
     font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
     font-size: 14px;
@@ -15,7 +13,6 @@ ul.comments-list {
 div > ul.comments-list:first-child{
     padding-left: 0;
 }
-
 .btn-grey {
     color: #333638;
     background-color: #f7f7f7;
@@ -36,7 +33,6 @@ div > ul.comments-list:first-child{
     /*background-color: rgba(255,255,255,1);*/
     opacity: 1;
 }
-
 .comments-list .btn-reply {
     opacity: 0.1;
 }
@@ -215,7 +211,6 @@ strong.author {
     background-color: #95a5a6;
     padding: 8px 20px;
 }
-
 .news-more > .panel-heading h3 {
     padding-bottom: 3px;
     color: #fff;
@@ -268,7 +263,6 @@ strong.author {
     padding: 7px;
     margin: 0;
 }
-
 .panel-respond > .panel-body {
     background-color: #fff;
     padding: 10px 0;
@@ -289,13 +283,11 @@ strong.author {
 a.list-group-item {
     background-color: #fcfcfc;
 }
-
 h4.media-heading {
     font-size: 1.5em;
     color: #2590d8;
     font-weight: 600;
 }
-
 h5.media-heading {
     font-size: 1em;
     font-weight: 400;
@@ -303,7 +295,6 @@ h5.media-heading {
     color: #415256;
     line-height: 1.3em;
 }
-
 p.media-text {
     color: #4c4c56;
     font-size: 14px;
@@ -311,22 +302,18 @@ p.media-text {
     text-indent: 5px;
     line-height: 1.4em;
 }
-
 .news-slide-block > p.media-text {
     padding: 10px;
     line-height: 1.3em;
 }
-
 .media-main > h4.media-heading {
     color: #4a76bb;
     font-size: 1.7em;
     font-weight: 700;
 }
-
 .media-main > p.media-text {
     text-indent: 10px;
 }
-
 .media-main-secondary > h4.media-heading {
     color: #4a76bb;
     font-weight: 600;
@@ -336,13 +323,11 @@ p.media-text {
 .media-main-secondary > p.media-text {
     margin: 0 5px;
 }
-
 .btn-action {
     color: #ffffff;
     background-color: #3db65a;
     border-color: #32a049;
 }
-
 .btn-action .caret {
     border-top-color: #fff;
 }
@@ -362,7 +347,6 @@ p.media-text {
     padding: 6px 20px;
     font-size: 13px;
 }
-
 .panel-comments > .panel-body {
     background-color: #c7d1e0;
     color: #47475f;
@@ -376,7 +360,6 @@ p.media-text {
 .panel-nav > ul > li > a {
     color: #47475f;
 }
-
 /* Свойства панелей */
 .panel {
     border: none;
@@ -448,14 +431,6 @@ p.media-text {
 
 
 /* панель Областные новости */
-
-/*.panel-developments >*/
-/*color: #fff;*/
-/*background-color: #FF6473;*/
-/*font-size: 34px;*/
-/*padding: 10px 25px 16px;*/
-/*margin-bottom: 18px;*/
-/*line-height: 100%;*/
 
 /* панель Поздравлений */
 
@@ -1243,8 +1218,20 @@ h3.cat-title {
     background-color: #fff;
 }
 .contacts {
+    /*font-size: 0.9em;*/
     font-size: 0.9em;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #416484;
+    white-space:nowrap;
+}
+.fa-mobile-phone,
+.fa-phone {
+    /*color: #7d8689;*/
+}
+strong.ob {
     font-weight: 600;
+    color: #d34100;
 }
 header .btn-link {
     margin-top: 7px;
@@ -1259,7 +1246,6 @@ header .btn-group {
         font-size: 1.3em;
     }
 }
-
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 }
