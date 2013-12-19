@@ -41,7 +41,7 @@ a.list-group-item {
 }
 a.list-group-item:hover,
 a.list-group-item:focus {
-    background-color: #f6f6f8;
+    background-color: #f0f1f2;
 }
 .post-info > .badge-clean {
     font-size: 1em;
@@ -1208,7 +1208,8 @@ h3.cat-title {
 }
 .cat a.list-group-item:hover,
 .cat a.list-group-item:focus {
-    background-color: #f5f6f7;
+    background-color: #f0f1f2;
+    color: #404145;
     border-left: 1px solid #56c4f4;
 }
 .list-group {
@@ -1232,7 +1233,7 @@ h3.cat-title {
     font-weight: 600;
     font-size: 0.8em;
     letter-spacing: 0.04em;
-    padding: 3px 7px;
+    padding: 3px 7px 4px;
 }
 .quick-nav .active .badge,
 .quick-nav > .btn > .badge {
@@ -1285,7 +1286,11 @@ a.paid:hover,
 a.paid:focus {
     background-color: #f9ec71;
 }
-.col-mid > .list-group > .list-group-item {
+.col-mid .list-group > .list-group-item {
+    padding-right: 10px;
+    margin: 0;
+}
+.col-mid .list-group > .paid {
     padding-right: 10px;
     margin-bottom: 7px;
     margin-top: 0;
@@ -1295,7 +1300,10 @@ a.paid:focus {
 }
 .panel-notice a.list-group-item {
     text-decoration: none;
-    margin-bottom: 3px;
+    /*margin-bottom: 3px;*/
+}
+.panel-notice .list-group {
+    padding-bottom: 0;
 }
 .panel-notice ul {
     background-color: #fff;
@@ -1335,9 +1343,24 @@ a.paid:focus {
     color: #32A049;
     margin-left: 5px;
 }
+.btn-primary .badge {
+    color: #428BCA;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+.yummies {
+    margin-bottom: 7px;
+    width: 100%;
+    height: auto;
+}
 strong.ob {
     font-weight: 600;
     color: #d34100;
+    /*color: #6e3941;*/
+    /*color: #773f67;*/
 }
 header .btn-link {
     margin-top: 7px;
