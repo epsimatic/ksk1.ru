@@ -357,8 +357,47 @@ p.media-text {
     border: none;
     padding: 10px 15px;
 }
+.nav > li > a:focus,
+.nav > li > a:hover {
+    color: #1fa7f2;
+    background-color: #fff;
+}
 .panel-nav > ul > li > a {
     color: #47475f;
+}
+.panel-nav > ul > li > a:hover,
+.panel-nav > ul > li > a:focus {
+    background-color: #eeeeee;
+    color: #47475f;
+}
+.panel-ob .price,
+.panel-ob .bargain {
+    text-align: center;
+    width: 95%;
+    padding: 2px 0;
+    margin: 0 -10px;
+}
+.panel-ob .bargain {
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #bbbfc2;
+}
+.panel-ob .price {
+    background-color: #ECF0F1;
+}
+.panel-payment .list-group-item {
+    background-color: transparent;
+    padding: 0;
+}
+.panel-payment > .panel-heading {
+    color: #6D6E71;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
 }
 /* Свойства панелей */
 .panel {
@@ -1186,7 +1225,8 @@ h3.cat-title {
     margin-right: 10px;
 }
 
-.subcat .badge {
+.subcat .badge,
+.quick-nav .badge {
     background-color: #909293;
     border-radius: 6px;
     font-weight: 600;
@@ -1194,18 +1234,61 @@ h3.cat-title {
     letter-spacing: 0.04em;
     padding: 3px 7px;
 }
+.quick-nav .active .badge,
+.quick-nav > .btn > .badge {
+    background-color: #FFFFFF;
+    color: #428BCA;
+}
 .navbar {
     background-color: #42baea;
-    margin: 0 -10px;
+    margin: 0 -10px 10px;
     border: none;
 }
-.nav > li > a:focus,
-.nav > li > a:hover {
-    color: #1fa7f2;
-    background-color: #fff;
+.quick-nav .dropdown-header {
+    text-transform: uppercase;
+    color: #0275D3;
+    font-size: 1.1em;
+}
+.quick-nav li > a {
+    width: 100%;
+}
+.quick-nav li > a:hover,
+.quick-nav li > a:focus,
+.panel-payment .dropdown-menu > li .btn:hover,
+.panel-payment .dropdown-menu > li .btn:focus{
+    background-color: #FAFBFC;
+}
+.quick-nav .btn-link {
+    color: #fff;
+}
+.quick-nav {
+    background-color: #428bca;
 }
 .navbar a {
     color: #fff;
+}
+.panel-cat {
+    margin-top: 10px;
+}
+.col-mid .btn-group {
+    margin: 10px 0;
+}
+.col-mid .btn-group > h4 {
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: #777;
+}
+a.paid {
+    background-color: #FFF385;
+}
+a.paid:hover,
+a.paid:focus {
+    background-color: #f9ec71;
+}
+.col-mid > .list-group > .list-group-item {
+    padding-right: 10px;
+    margin-bottom: 7px;
+    margin-top: 0;
 }
 .form-control {
     border-radius: 3px;
@@ -1223,11 +1306,34 @@ h3.cat-title {
     font-weight: 400;
     padding-top: 5px;
     color: #416484;
+}
+.contacts > span{
     white-space:nowrap;
+}
+.ob-meta {
+    margin-top: 5px;
+    color: #57346b;
+}
+.ob-meta .fa-clock-o {
+    margin-left: 7px;
 }
 .fa-mobile-phone,
 .fa-phone {
     /*color: #7d8689;*/
+}
+.panel-payment .btn-group {
+    margin: 0;
+}
+.panel-payment > .panel-body > .list-group > .list-group-item {
+    margin-bottom: 15px;
+}
+.panel-payment > .panel-body > .list-group > .list-group-item > .row {
+    margin: 0 -10px;
+}
+.btn-action .label {
+    background-color: #fff;
+    color: #32A049;
+    margin-left: 5px;
 }
 strong.ob {
     font-weight: 600;
