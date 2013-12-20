@@ -94,8 +94,9 @@ a.list-group-item:focus {
 .panel-notice > .panel-body > .media-object,
 .panel-guest > .panel-body > .media-object,
 .panel-congrats > .panel-body > .media-object,
-.panel-necro > .panel-body > .media-object {
-    padding: 3px;
+.panel-necro > .panel-body > .media-object,
+.panel-notice > .list-group > .list-group-item > .media-object {
+    padding: 3px 7px 0px 0;
 }
 .panel-guest > .panel-body > .media-object-md {
     width: 100%;
@@ -302,6 +303,12 @@ p.media-text {
     text-indent: 5px;
     line-height: 1.4em;
 }
+.news-slide-block:first-child {
+    width: 33.3333%;
+}
+.news-slide-block:first-child .media-main-secondary {
+    width: 100%;
+}
 .news-slide-block > p.media-text {
     padding: 10px;
     line-height: 1.3em;
@@ -370,6 +377,9 @@ p.media-text {
     background-color: #eeeeee;
     color: #47475f;
 }
+.panel-ob > .panel-footer {
+    background-color: #fcfcfc;
+}
 .panel-ob .price,
 .panel-ob .bargain {
     text-align: center;
@@ -385,6 +395,22 @@ p.media-text {
 .panel-ob .price {
     background-color: #ECF0F1;
 }
+.panel-ob .price .fa-rub {
+    font-size: 90%;
+    margin-left: 2px;
+    color: #777;
+}
+.panel-payment > .panel-body > .list-group .badge {
+    background-color: #428bca;
+    color: #fff;
+    border-radius: 0.5em;
+    font-weight: 400;
+    padding: 0.4em 0.8em 0.5em;
+    font-size: 1em;
+}
+.panel-payment > .panel-body > .list-group .badge > strong {
+    font-weight: 700;
+}
 .panel-payment .list-group-item {
     background-color: transparent;
     padding: 0;
@@ -398,6 +424,13 @@ p.media-text {
     text-align: center;
     text-decoration: underline;
     white-space: nowrap;
+}
+.ob-list img {
+    margin: 0;
+}
+.col-mid .btn-group .fa-play {
+    color: #bbb;
+    font-size: 0.9em;
 }
 /* Свойства панелей */
 .panel {
@@ -908,9 +941,9 @@ h6 {
     font-size: 14px;
     font-weight: 300;
 }
-img {
-    margin-right: 5px;
-}
+/*img {*/
+    /*margin-right: 5px;*/
+/*}*/
 /*анонс фильма*/
 .movie-announce {
     margin-top: 15px;
@@ -1190,6 +1223,7 @@ a.media-heading:hover,
 a.media-heading:focus {
     text-decoration: none;
 }
+/* СТИЛИ ДЛЯ УДАЛЕНИЯ*/
 h3.cat-title {
     color: #0275d3;
     font-size: 1.7em;
@@ -1212,6 +1246,69 @@ h3.cat-title {
     color: #404145;
     border-left: 1px solid #56c4f4;
 }
+.cat .btn {
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+/* КОНЕЦ СТИЛЕЙ ДЛЯ УДАЛЕНИЯ*/
+.panel-cat {
+    margin: 5px 0 25px;
+    background-color: #fafbfc;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.panel-cat .panel-heading{
+    /*border-top: 7px solid #0275d3;*/
+    /*border-top: 7px solid #0275d3;*/
+}
+.panel-cat > h3.panel-heading {
+    color: #0A79DB;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 25px 10px 30px 33px;
+    margin: 0;
+    background-color: #F7F8F9;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.panel-cat > .panel-body a.list-group-item {
+    /*margin-bottom: 1px;*/
+    background-color: #fcfcfc;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #f6f7f8;
+    margin-bottom: 1px;
+}
+.panel-cat > .panel-body a.list-group-item:hover,
+.panel-cat > .panel-body a.list-group-item:focus {
+    background-color: #f0f1f2;
+    color: #404145;
+    border-left: 1px solid #56c4f4;
+}
+a.sponsor{
+    /*margin: 0 10px;*/
+    background-color: #0275D3;
+    height: 60px;
+}
+a.sponsor:hover,
+a.sponsor:focus {
+    background-color: #0284e4;
+    /*background-color: rgba(255,255,255,0.1);*/
+    /*border-left: 1px solid transparent;*/
+}
+.panel-cat > .panel-body {
+    padding: 0;
+    background-color: transparent;
+}
+.panel-cat .list-group {
+    padding: 0;
+    margin: 0;
+}
+.panel-cat .btn {
+    /*padding-bottom: 10px;*/
+    margin-right: 10px;
+    width: 30%;
+
+}
 .list-group {
     margin-bottom: 15px;
     padding-bottom: 25px;
@@ -1221,25 +1318,34 @@ h3.cat-title {
     font-size: 1.1em;
     color: #525459;
 }
-.cat .btn {
-    padding: 10px 25px;
-    margin-right: 10px;
-}
-
-.subcat .badge,
+.panel-cat > .panel-body .badge,
 .quick-nav .badge {
     background-color: #909293;
-    border-radius: 6px;
+    border-radius: 0.45em;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.9em;
     letter-spacing: 0.04em;
-    padding: 3px 7px 4px;
+    padding: 0.3em 0.7em 0.35em;
 }
 .quick-nav .active .badge,
-.quick-nav > .btn > .badge {
+.quick-nav .btn > .badge{
     background-color: #FFFFFF;
     color: #428BCA;
 }
+.quick-nav .btn > .badge {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+.panel-cat > .panel-body .btn-primary .badge {
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.8);
+    color: #428BCA;
+    padding: 0.3em 0.9em 0.4em;
+    margin-left: 3px;
+}
+
 .navbar {
     background-color: #42baea;
     margin: 0 -10px 10px;
@@ -1268,13 +1374,10 @@ h3.cat-title {
 .navbar a {
     color: #fff;
 }
-.panel-cat {
-    margin-top: 10px;
-}
 .col-mid .btn-group {
     margin: 10px 0;
 }
-.col-mid .btn-group > h4 {
+.col-mid .btn-toolbar > h4 {
     padding-bottom: 5px;
     font-size: 1em;
     color: #777;
@@ -1294,6 +1397,9 @@ a.paid:focus {
     padding-right: 10px;
     margin-bottom: 7px;
     margin-top: 0;
+}
+.col-mid .list-group > .sponsor {
+    margin-bottom: 10px;
 }
 .form-control {
     border-radius: 3px;
@@ -1329,11 +1435,15 @@ a.paid:focus {
 .fa-phone {
     /*color: #7d8689;*/
 }
+.panel-payment > .panel-body {
+    /*padding: 10px;*/
+}
 .panel-payment .btn-group {
     margin: 0;
 }
 .panel-payment > .panel-body > .list-group > .list-group-item {
     margin-bottom: 15px;
+    padding: 0;
 }
 .panel-payment > .panel-body > .list-group > .list-group-item > .row {
     margin: 0 -10px;
@@ -1342,18 +1452,25 @@ a.paid:focus {
     background-color: #fff;
     color: #32A049;
     margin-left: 5px;
+    padding: 0.2em 0.6em 0.15em;
 }
-.btn-primary .badge {
-    color: #428BCA;
-    background-color: #fff;
-    font-size: 14px;
-    padding: 4px 10px;
-    border-radius: 6px;
-    margin-left: 3px;
+.panel > .quick-nav .btn-link {
+    font-size: 20px;
+    margin-top: -3px;
+    font-weight: 600;
+}
+.panel > .quick-nav .btn-group {
+    margin: 0;
+}
+.quick-nav .btn > .badge {
+    margin-top: 6px;
+}
+.quick-nav .fa-plus-circle {
+    margin-right: -6px;
 }
 .yummies {
-    margin-bottom: 7px;
     width: 100%;
+    margin-bottom: 7px;
     height: auto;
 }
 strong.ob {

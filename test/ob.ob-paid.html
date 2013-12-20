@@ -599,7 +599,7 @@
         </nav>
         <div class="row">
             <!--левая колонка-->
-            <div class="hidden-xs hidden-sm col-md-3 left_column">
+            <div class="hidden-xs hidden-sm col-md-3">
                 <div class="helper"
                      style="
                      display: none;
@@ -1273,11 +1273,11 @@
                 </div>
                 <gcse:searchresults></gcse:searchresults>
                 <div class='add-ob__yours-ob' id='add-ob__yours-ob'></div>
-                <div class='panel panel-cat'>
-                    <div class='col-xs-12'>
-                        <div class='row quick-nav'>
-                            <a class='col-md-3 btn btn-default dropdown-toggle' data-toggle='dropdown'><i class='fa fa-list-ul'></i>
-                                Категории <span class='caret'></span>
+                <div class='panel'>
+                    <div class='quick-nav'>
+                        <div class="btn-group">
+                            <a class='btn btn-default btn-lg dropdown-toggle pull-left' data-toggle='dropdown'>
+                                <i class='fa fa-list-ul'></i> Категории <span class='caret'></span>
                             </a>
                             <ul class='dropdown-menu nav nav-stacked'>
                                 <li class=''>
@@ -1287,168 +1287,282 @@
                                     <strong>Услуги</strong>
                                 </li>
                                 <li>
-                                    <a href='/c428.html'>Транспорт<span class='badge'>10</span></a>
+                                    <a href='/c428.html'>Транспорт
+                                        <span class='badge pull-right'>10</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c446.html'>Спецтехника<span class='badge'>2</span></a>
+                                    <a href='/c446.html'>Спецтехника
+                                        <span class='badge pull-right'>2</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c429.html'>Строительство и ремонт<span class='badge'>10</span></a>
+                                    <a href='/c429.html'>Строительство и ремонт
+                                        <span class='badge pull-right'>12</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c430.html'>Бытовые услуги, ремонт техники<span class='badge'>1</span></a>
+                                    <a href='/c430.html'>Бытовые услуги, ремонт техники
+                                        <span class='badge pull-right'>1</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c431.html'>Образование<span class='badge'>4</span></a>
+                                    <a href='/c431.html'>Образование
+                                        <span class='badge pull-right'>6</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c433.html'>Прочие услуги<span class='badge'>15</span></a>
-                                </li>
-                                <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Авто. Мото. Транспорт</strong></li>
-                                <li>
-                                    <a href='/c435.html'>ВАЗ 2101-07: Лада классика<span class='badge'>65</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c436.html'>ВАЗ 2108-09, 2113-15: Лада Самара<span class='badge'>104</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c437.html'>ВАЗ 2110-12: Лада десятка<span class='badge'>80</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c438.html'>Лада Калина, Приора, Гранта, Ларгус<span class='badge'>38</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c50.html'>Нива, Ока, Волга и другие<span class='badge'>58</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c401.html'>Иностранные легковые авто<span class='badge'>175</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c423.html'>Грузовые, спецтехника, мотоблоки<span class='badge'>60</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c52.html'>Мотоциклы, скутеры, велосипеды<span class='badge'>10</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c55.html'>Запчасти и принадлежности<span class='badge'>80</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c444.html'>Шины и диски<span class='badge'>57</span></a>
+                                    <a href='/c433.html'>Прочие услуги
+                                        <span class='badge pull-right'>16</span>
+                                    </a>
                                 </li>
                                 <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Недвижимость</strong></li>
+                                <li class='dropdown-header'>
+                                    <strong>Авто. Мото. Транспорт</strong>
+                                </li>
                                 <li>
-                                    <a href='/c405.html'>1-комн. квартиры<span class='badge'>71</span></a>
+                                    <a href='/c435.html'>ВАЗ 2101-07: Лада классика
+                                        <span class='badge pull-right'>65</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c436.html'>ВАЗ 2108-09, 2113-15: Лада Самара
+                                        <span class='badge pull-right'>105</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c437.html'>ВАЗ 2110-12: Лада десятка
+                                        <span class='badge pull-right'>83</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c438.html'>Лада Калина, Приора, Гранта, Ларгус
+                                        <span class='badge pull-right'>36</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c50.html'>Нива, Ока, Волга и другие
+                                        <span class='badge pull-right'>61</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c401.html'>Иностранные легковые авто
+                                        <span class='badge pull-right'>172</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c423.html'>Грузовые, спецтехника, мотоблоки
+                                        <span class='badge pull-right'>59</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c52.html'>Мотоциклы, скутеры, велосипеды
+                                        <span class='badge pull-right'>9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c55.html'>Запчасти и принадлежности
+                                        <span class='badge pull-right'>83</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c444.html'>Шины и диски
+                                        <span class='badge pull-right'>57</span>
+                                    </a>
+                                </li>
+                                <li class='divider'></li>
+                                <li class='dropdown-header'>
+                                    <strong>Недвижимость</strong>
+                                </li>
+                                <li>
+                                    <a href='/c405.html'>1-комн. квартиры
+                                        <span class='badge pull-right'>77</span>
+                                    </a>
                                 </li>
                                 <li class='active'>
-                                    <a href='/c408.html'>2-комн. квартиры<span class='badge'>86</span></a>
+                                    <a href='/c408.html'>2-комн. квартиры
+                                        <span class='badge pull-right'>85</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c407.html'>3,4-комн. квартиры<span class='badge'>66</span></a>
+                                    <a href='/c407.html'>3,4-комн. квартиры
+                                        <span class='badge pull-right'>68</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c185.html'>Дома, коттеджи<span class='badge'>124</span></a>
+                                    <a href='/c185.html'>Дома, коттеджи
+                                        <span class='badge pull-right'>127</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c184.html'>Аренда жилья<span class='badge'>88</span></a>
+                                    <a href='/c184.html'>Аренда жилья
+                                        <span class='badge pull-right'>94</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c439.html'>Дачи, садовые и земельные участки<span class='badge'>74</span></a>
+                                    <a href='/c439.html'>Дачи, садовые и земельные участки
+                                        <span class='badge pull-right'>77</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c442.html'>Коммерческая недвижимость и оборудование<span class='badge'>25</span></a>
+                                    <a href='/c442.html'>Коммерческая недвижимость и оборудование
+                                        <span class='badge pull-right'>24</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c186.html'>Гаражи и стоянки<span class='badge'>42</span></a>
-                                </li>
-                                <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Работа и образование</strong></li>
-                                <li>
-                                    <a href='/c191.html'>Предлагаю работу<span class='badge'>47</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c192.html'>Ищу работу<span class='badge'>127</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c426.html'>Красноуфимский центр занятости<span class='badge'>5</span></a>
-                                </li>
-                                <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Техника, компьютеры и электроника</strong></li>
-                                <li>
-                                    <a href='/c221.html'>Техника для дома и кухни<span class='badge'>41</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c211.html'>Автомобильная и домашняя аппаратура<span class='badge'>28</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c230.html'>Компьютеры, оргтехника, комплектующие<span class='badge'>42</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c248.html'>Телефоны, планшеты, фото<span class='badge'>62</span></a>
+                                    <a href='/c186.html'>Гаражи и стоянки
+                                        <span class='badge pull-right'>44</span>
+                                    </a>
                                 </li>
                                 <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Всё для дома</strong></li>
-                                <li>
-                                    <a href='/c277.html'>Мебель, посуда, интерьер<span class='badge'>72</span></a>
+                                <li class='dropdown-header'>
+                                    <strong>Работа и образование</strong>
                                 </li>
                                 <li>
-                                    <a href='/c360.html'>Стройматериалы и инструменты<span class='badge'>43</span></a>
+                                    <a href='/c191.html'>Предлагаю работу
+                                        <span class='badge pull-right'>39</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c263.html'>Одежда, обувь, аксессуары<span class='badge'>155</span></a>
+                                    <a href='/c192.html'>Ищу работу
+                                        <span class='badge pull-right'>132</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c443.html'>Детская одежда и обувь<span class='badge'>87</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c272.html'>Всё для детей<span class='badge'>99</span></a>
-                                </li>
-                                <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Сад, огород, животные</strong></li>
-                                <li>
-                                    <a href='/c346.html'>Кошки и собаки<span class='badge'>63</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c355.html'>Другие животные, корма, клетки<span class='badge'>50</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c441.html'>Растения<span class='badge'>3</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c422.html'>Продукты питания<span class='badge'>21</span></a>
-                                </li>
-                                <li>
-                                    <a href='/c434.html'>С/х и садовый инвентарь<span class='badge'>4</span></a>
+                                    <a href='/c426.html'>Красноуфимский центр занятости
+                                        <span class='badge pull-right'>3</span>
+                                    </a>
                                 </li>
                                 <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Всё остальное</strong></li>
-                                <li>
-                                    <a href='/c293.html'>Отдых, спорт, здоровье и праздники<span class='badge'>32</span></a>
+                                <li class='dropdown-header'>
+                                    <strong>Техника, компьютеры и электроника</strong>
                                 </li>
                                 <li>
-                                    <a href='/c308.html'>Знакомства и контакты по интересам<span class='badge'>23</span></a>
+                                    <a href='/c221.html'>Техника для дома и кухни
+                                        <span class='badge pull-right'>43</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c420.html'>Поздравления<span class='badge'>0</span></a>
+                                    <a href='/c211.html'>Автомобильная и домашняя аппаратура
+                                        <span class='badge pull-right'>27</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c311.html'>Некролог<span class='badge'>0</span></a>
+                                    <a href='/c230.html'>Компьютеры, оргтехника, комплектующие
+                                        <span class='badge pull-right'>42</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='/c415.html'>Разное<span class='badge'>50</span></a>
+                                    <a href='/c248.html'>Телефоны, планшеты, фото
+                                        <span class='badge pull-right'>65</span>
+                                    </a>
                                 </li>
                                 <li class='divider'></li>
-                                <li class='dropdown-header'><strong>Потери и находки</strong></li>
-                                <li>
-                                    <a href='/c397.html'>Потеряно<span class='badge'>5</span></a>
+                                <li class='dropdown-header'>
+                                    <strong>Всё для дома</strong>
                                 </li>
                                 <li>
-                                    <a href='/c396.html'>Найдено<span class='badge'>3</span></a>
+                                    <a href='/c277.html'>Мебель, посуда, интерьер
+                                        <span class='badge pull-right'>72</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c360.html'>Стройматериалы и инструменты
+                                        <span class='badge pull-right'>44</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c263.html'>Одежда, обувь, аксессуары
+                                        <span class='badge pull-right'>155</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c443.html'>Детская одежда и обувь
+                                        <span class='badge pull-right'>85</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c272.html'>Всё для детей
+                                        <span class='badge pull-right'>106</span>
+                                    </a>
+                                </li>
+                                <li class='divider'></li>
+                                <li class='dropdown-header'>
+                                    <strong>Сад, огород, животные</strong>
+                                </li>
+                                <li>
+                                    <a href='/c346.html'>Кошки и собаки
+                                        <span class='badge pull-right'>58</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c355.html'>Другие животные, корма, клетки
+                                        <span class='badge pull-right'>49</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c441.html'>Растения
+                                        <span class='badge pull-right'>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c422.html'>Продукты питания
+                                        <span class='badge pull-right'>20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c434.html'>С/х и садовый инвентарь
+                                        <span class='badge pull-right'>4</span>
+                                    </a>
+                                </li>
+                                <li class='divider'></li>
+                                <li class='dropdown-header'>
+                                    <strong>Всё остальное</strong>
+                                </li>
+                                <li>
+                                    <a href='/c293.html'>Отдых, спорт, здоровье и праздники
+                                        <span class='badge pull-right'>27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c308.html'>Знакомства и контакты по интересам
+                                        <span class='badge pull-right'>22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c420.html'>Поздравления
+                                        <span class='badge pull-right'>0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c311.html'>Некролог
+                                        <span class='badge pull-right'>0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c415.html'>Разное
+                                        <span class='badge pull-right'>51</span>
+                                    </a>
+                                </li>
+                                <li class='divider'></li>
+                                <li class='dropdown-header'>
+                                    <strong>Потери и находки</strong>
+                                </li>
+                                <li>
+                                    <a href='/c397.html'>Потеряно
+                                        <span class='badge pull-right'>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/c396.html'>Найдено
+                                        <span class='badge pull-right'>4</span>
+                                    </a>
                                 </li>
                                 <li class='divider'></li>
                             </ul>
-                            <a class='col-md-9 btn btn-link name_cat' style='overflow: hidden; text-overflow: ellipsis' href='/c408.html' >2-комн. квартиры</a>
+                            <a class='btn btn-link btn-lg' style='overflow: hidden; text-overflow: ellipsis' onclick='window.location.reload();' title='Перезагрузить страницу'>
+                                2-комн. квартиры
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1458,7 +1572,7 @@
                     </div>
                     <div class="panel-body">
                         <div class='col-xs-6'>
-                            <div class='price'>Цена: <i class="fa fa-rub fa-fw"></i><strong>900 000</strong></div>
+                            <div class='price'>Цена: <strong>900 000</strong> <i class="fa fa-rub"></i></div>
                             <div class='bargain'>Возможен торг</div>
                         </div>
                         <div class='col-xs-6'>
@@ -1475,21 +1589,21 @@
                                  src="http://ob.ksk66.ru/upload/normal/-2_komn__pb_kvartiru_v_kirpichnom_dome_na_1_etazhe_52919.jpeg"/>
                         </a>
                     </div>
-                </div>
-                <!--пожаловаться и поделиться-->
-                <div class="" style="text-align: right;">
-                    <div class="btn btn-default" id="addabuse">
-                        <a class="abuse_link" href="#" onclick="addabuse(0,94458);return false;">Сообщить о проблеме</a>
+                    <!--пожаловаться и поделиться-->
+                    <div class="panel-footer">
+                        <button class="btn btn-default" id="addabuse" title="Сообщить о проблеме"
+                                onclick="addabuse(0,94458);return false;">Сообщить о проблеме
+                        </button>
+                        <div class='btn btn-default' id='ya_share1' ></div>
+                        <button  class="btn btn-default" title="Удалить объявление"
+                                 onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление?')) { parent.location='/cpanel-94458-del.html'}">
+                            <i class="fa fa-times"></i> Удалить</button>
+                        <button  class="btn btn-default show-admin" title="Удалить объявление как админ"
+                                 onclick="if (confirm('Это объявление будет удалено с сайта. Удалить объявление?')) {parent.location='/a/?action=ads&amp;op=del&amp;id_mess=94458'}">
+                            <i class="fa fa-times"></i> Удалить</button>
+                        <button class="btn btn-default" title="Редактировать объявление" onclick="location.href='/cpanel-94458-edit.html'"> <i class="fa fa-edit"></i> Редактировать</button>
+                        <button class="btn btn-default show-admin" title="Редактировать объявление как админ" onclick="location.href='/a/?action=ads&op=edit&id_mess=94458'"> <i class="fa fa-edit"></i> Редактировать</button>
                     </div>
-                    <div class='btn btn-default' id='ya_share1' ></div>
-                    <button  class="btn btn-default show-owner hide-owner" title="Удалить объявление"
-                             onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление?')) { parent.location='/cpanel-94458-del.html'}">
-                        <i class="fa fa-times"></i> Удалить</button>
-                    <button  class="btn btn-default show-admin" title="Удалить объявление как админ"
-                             onclick="if (confirm('Это объявление будет удалено с сайта. Удалить объявление?')) {parent.location='/a/?action=ads&amp;op=del&amp;id_mess=94458'}">
-                        <i class="fa fa-times"></i> Удалить</button>
-                    <button class="btn btn-default show-owner hide-owner" title="Редактировать объявление" onclick="location.href='/cpanel-94458-edit.html'"> <i class="fa fa-edit"></i> Редактировать</button>
-                    <button class="btn btn-default show-admin" title="Редактировать объявление как админ" onclick="location.href='/a/?action=ads&op=edit&id_mess=94458'"> <i class="fa fa-edit"></i> Редактировать</button>
                 </div>
                 <style>
                     .b-share__handle{
@@ -1517,8 +1631,8 @@
                                 <div class='row'>
                                     <div class="col-sm-5 col-md-5 col-lg-6">
                                         <strong>Выделенное объявление</strong>
-                                        <div class='payment-panel__paid payment-panel__paid_selected'>
-                                            Осталось <strong>12</strong> дней.
+                                        <div class='badge'>
+                                            <strong>12</strong> дней
                                         </div>
                                         <p><small>показывается в рамке и размещается над остальными</small></p>
                                     </div>
@@ -1670,11 +1784,11 @@
                     });
                 }
             </script>
-            <div class=" col-sm-4 col-md-3 right_column sidebar" style="margin-top:10px;">
+            <div class=" col-sm-4 col-md-3 sidebar">
                 <div class="row ">
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1690,7 +1804,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1705,7 +1819,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1721,7 +1835,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1736,7 +1850,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1752,7 +1866,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1768,7 +1882,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1784,7 +1898,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1800,7 +1914,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
-                            style="
+                             style="
                                 display: none;
                                 border: 1px #88C425 solid;
                                 background-color: #BEF202;
@@ -1842,7 +1956,7 @@
                     <ul class="list-group">
                         <a class="list-group-item" href="http://ob.ksk66.ru/97538.html">
                             <div class="">
-                                <strong class="ob">Требуется  компьютерный дизайнер. В офис</strong>, полная рабочая неделя. Хорошее знание графических редакторов обяза…
+                                <strong class="ob">Требуется  компьютерный дизайнер.</strong> В офис, полная рабочая неделя. Хорошее знание графических редакторов обяза…
                             </div>
                             <div class="contacts text-right">
                                 <span style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span> , <span style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;922&nbsp;199-81-76</span>
@@ -1853,7 +1967,7 @@
                                  alt="2-комн. п/бл квартиру в кирпичном доме, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …"
                                  src="ob_files/-2_komn__pb_kvartiru_v_kirpichnom_dome_na_1_etazhe_52919.jpg">
                             <div class="">
-                                <strong class="ob">Продам 2-комн. п/бл квартиру в кирпичном доме</strong>, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …
+                                <strong class="ob">Продам 2-комн.</strong> п/бл квартиру в кирпичном доме, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;272-43-87</span>
@@ -1869,7 +1983,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/94162.html">
                             <div class="">
-                                <strong class="ob">Услуги Срочный выкуп квартир. Требования: бл. в центре</strong>, цена до 1 млн. руб
+                                <strong class="ob">Услуги Срочный выкуп квартир.</strong> Требования: бл. в центре, цена до 1 млн. руб
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span>
@@ -1885,7 +1999,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96628.html">
                             <div class="">
-                                <strong class="ob">Отдам котика пушистого рыжего в добрые руки. Ест все</strong>, к туалету приучен
+                                <strong class="ob">Отдам котика пушистого</strong> рыжего в добрые руки. Ест все, к туалету приучен
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;912&nbsp;049-02-70</span>
@@ -1893,7 +2007,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96604.html">
                             <div class="">
-                                <strong class="ob">Куплю з/у для ноутбука. Недорого. Срочно</strong>
+                                <strong class="ob">Куплю з/у для ноутбука.</strong> Недорого. Срочно
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;652-96-99</span> ,
@@ -1902,7 +2016,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/95335.html">
                             <div class="">
-                                <strong class="ob">Услуги Грузоперевозки. ГАЗель 4,2 м</strong>, Ларгус, мини-фургон. От 12 руб/км район, от 300 руб/час по городу. …
+                                <strong class="ob">Услуги Грузоперевозки.</strong> ГАЗель 4,2 м, Ларгус, мини-фургон. От 12 руб/км район, от 300 руб/час по городу. …
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;541-01-01</span> ,
@@ -1911,7 +2025,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/90815.html">
                             <div class="">
-                                <strong class="ob">Продам 1-комн. бл. квартиру</strong>, пл. 24 м?. Микрорайон Лесозавод. Выделенный с/у, душевая кабина, кафель. Ку…
+                                <strong class="ob">Продам 1-комн.</strong> бл. квартиру, пл. 24 м?. Микрорайон Лесозавод. Выделенный с/у, душевая кабина, кафель. Ку…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;002-71-28</span> ,
@@ -1920,7 +2034,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96176.html">
                             <div class="">
-                                <strong class="ob">Продам дом в Ачитском р-не п. Ялым ул. Дружбы</strong>, 4. Есть канализация (с/у в доме) , х/вода, печное отоплен…
+                                <strong class="ob">Продам дом</strong> в Ачитском р-не п. Ялым ул. Дружбы, 4. Есть канализация (с/у в доме) , х/вода, печное отоплен…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;904&nbsp;160-33-44</span> ,
@@ -1929,7 +2043,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/95694.html">
                             <div class="">
-                                <strong class="ob">Продам зем. участок 14 соток</strong>, под ИЖС, в д. Крылово в центре. Есть вода, свет, асфальт. Рядом школа, д/с…
+                                <strong class="ob">Продам зем.</strong> участок 14 соток, под ИЖС, в д. Крылово в центре. Есть вода, свет, асфальт. Рядом школа, д/с…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;952&nbsp;729-95-19</span>
@@ -1937,7 +2051,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/92692.html">
                             <div class="">
-                                <strong class="ob">Услуги Перезапись любых видеокассет на DVD</strong>, флешкарту. Быстро, на проф. оборудовании. Наш адрес: ул. Лен…
+                                <strong class="ob">Услуги Перезапись</strong> любых видеокассет на DVD, флешкарту. Быстро, на проф. оборудовании. Наш адрес: ул. Лен…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span> ,
@@ -1946,7 +2060,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/97445.html">
                             <div class="">
-                                <strong class="ob">Отдам в добрые руки котёнка</strong>, мальчик, тигровой окраски, 3,5 мес. Добрый, ласковый. Ждёт своего хозяина.…
+                                <strong class="ob">Отдам в добрые руки</strong> котёнка, мальчик, тигровой окраски, 3,5 мес. Добрый, ласковый. Ждёт своего хозяина.…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span>
@@ -1954,7 +2068,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/97465.html">
                             <div class="">
-                                <strong class="ob">Продам Chevrolet Lacetti 10</strong>, 2007 г., цвет синий, пробег 75 тыс. км, полный комплект, дв. 1,6, о/с, 1 хо…
+                                <strong class="ob">Продам Chevrolet Lacetti</strong> 10, 2007 г., цвет синий, пробег 75 тыс. км, полный комплект, дв. 1,6, о/с, 1 хо…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;006-88-86</span>

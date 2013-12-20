@@ -599,7 +599,7 @@
         </nav>
         <div class="row">
             <!--левая колонка-->
-            <div class="hidden-xs hidden-sm col-md-3 left_column">
+            <div class="hidden-xs hidden-sm col-md-3">
                 <div class="helper"
                      style="
                      display: none;
@@ -1273,10 +1273,10 @@
                 </div>
                 <gcse:searchresults></gcse:searchresults>
                 <div class='add-ob__yours-ob_stub' id='add-ob__yours-ob'></div>
-                <div class='panel panel-cat'>
-                    <div class='col-xs-12'>
-                        <div class='row quick-nav'>
-                            <a class='col-md-3 btn btn-default dropdown-toggle' data-toggle='dropdown'>
+                <div class='panel'>
+                    <div class='quick-nav'>
+                        <div class="btn-group">
+                            <a class='btn btn-default btn-lg dropdown-toggle pull-left' data-toggle='dropdown'>
                                 <i class='fa fa-list-ul'></i> Категории <span class='caret'></span>
                             </a>
                             <ul class='dropdown-menu nav nav-stacked'>
@@ -1286,7 +1286,7 @@
                                 <li class='dropdown-header'>
                                     <strong>Услуги</strong>
                                 </li>
-                                <li  class='active' >
+                                <li class='active' >
                                     <a href='/c428.html'>Транспорт
                                         <span class='badge pull-right'>10</span>
                                     </a>
@@ -1496,7 +1496,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='/c355.html'>Другие животные, корма, клетки
+                                        <a href='/c355.html'>Другие животные, корма, клетки
                                         <span class='badge pull-right'>49</span>
                                     </a>
                                 </li>
@@ -1560,14 +1560,13 @@
                                 </li>
                                 <li class='divider'></li>
                             </ul>
-                            <a class='col-md-8 btn btn-link'
-                               style='overflow: hidden; text-overflow: ellipsis' onclick='window.location.reload();' title='Перезагрузить страницу'>
+                            <a class='btn btn-link btn-lg' style='overflow: hidden; text-overflow: ellipsis' onclick='window.location.reload();' title='Перезагрузить страницу'>
                                 Транспорт
                             </a>
-                            <span class='col-md-1 btn'>
-                                <span class='badge'>10</span>
-                            </span>
                         </div>
+                        <a class='btn pull-right' onclick='window.location.reload();'>
+                            <span class='badge'>10</span> <i class="fa fa-plus-circle fa-lg fa-fw" style="color:#fff;"></i>
+                        </a>
                     </div>
                 </div>
                 <div style="width:94%"></div>
@@ -1615,33 +1614,23 @@
                     .selectmess .ob-meta:hover { color: #442; }
                     .selectmess{background-color: #FFF385 !important;margin-bottom: 5px; }
                 </style>
-                <div class='row'>
-                    <div class='col-xs-12  col-sm-12 col-md-6 col-lg-7'></div>
-                    <div class='col-xs-12 col-sm-12 col-md-6 col-lg-5 subcat-img'>
-                        <div class=helper
-                             style='
-                                display: none;
-                                border: 1px #88C425 solid;
-                                background-color: #BEF202;
-                                border-radius: 20px 20px 0 0;
-                                padding: 5px 0;
-                                color: #519548;
-                                width: 100%;
-                                text-align: center;
-                                font-weight: bold'>
-                            ../ob.ksk66.ru/sponsor-services
-                        </div>
-                        <img class='yummies' src='http://ob.ksk66.ru/yummies/sponsor-services/sponsor.png?please' alt='advertisement' width='209' height='120'  data-zone-info='zone: sponsor, sized 210x120' />
+                <div class="btn-toolbar">
+                    <h4>Сортировать</h4>
+                    <div class="btn-group">
+                        <a rel="nofollow" href="/index.php?id_cat=428&amp;sort=date" class="btn btn-default btn-sm active">По дате</a>
+                        <a rel="nofollow" href="/index.php?id_cat=428&amp;sort=price_desc" class="btn btn-default btn-sm">Цена<i class="fa fa-play fa-rotate-90 fa-fw"></i></a>
+                        <a rel="nofollow" href="/index.php?id_cat=428&amp;sort=price_asc" class="btn btn-default btn-sm">Цена<i class="fa fa-play fa-rotate-270 fa-fw"></i></a>
+                        <a rel="nofollow" href="/index.php?id_cat=428&amp;sort=name" class="btn btn-default btn-sm">По алфавиту</a>
                     </div>
-                    <div class='col-xs-12 btn-group'>
-                        <h4>Сортировать объявления</h4>
-                        <a class='btn btn-default active' href='/index.php?id_cat=428&sort=date' rel='nofollow'>По дате</a>
-                        <a class='btn btn-default' href='/index.php?id_cat=428&sort=price_desc' rel='nofollow'>Цена↓</a>
-                        <a class='btn btn-default' href='/index.php?id_cat=428&sort=price_asc' rel='nofollow'>Цена↑</a>
-                        <a class='btn btn-default' href='/index.php?id_cat=428&sort=name' rel='nofollow'  >По алфавиту</a>
+                    <div class="btn-group pull-right">
+                        <a class="btn btn-action btn-sm hidden-xs hidden-sm"><i class="fa fa-plus-circle fa-fw"></i>Добавить объявление</a>
+                        <!--<a class="btn btn-default btn-sm hidden-lg hidden-md"><i class="fa fa-plus-circle fa-fw"></i></a>-->
                     </div>
                 </div>
-                <ul class='list-group'>
+                <ul class='list-group ob-list'>
+                    <a class="list-group-item sponsor">
+                        .
+                    </a>
                     <a class='list-group-item paid media' href="c428-97689.html">
                         <div class='media-body'>
                             <div class='pull-right'>
@@ -1818,7 +1807,7 @@
                 </div>
             </div>
             <!--правая колонка-->
-            <div class=" col-sm-4 col-md-3 right_column sidebar">
+            <div class=" col-sm-4 col-md-3 sidebar">
                 <div class="row ">
                     <div class="col-xs-6 col-sm-12">
                         <div class="helper"
@@ -1990,7 +1979,7 @@
                     <ul class="list-group">
                         <a class="list-group-item" href="http://ob.ksk66.ru/97538.html">
                             <div class="">
-                                <strong class="ob">Требуется  компьютерный дизайнер. В офис</strong>, полная рабочая неделя. Хорошее знание графических редакторов обяза…
+                                <strong class="ob">Требуется  компьютерный дизайнер.</strong> В офис, полная рабочая неделя. Хорошее знание графических редакторов обяза…
                             </div>
                             <div class="contacts text-right">
                                 <span style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span> , <span style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;922&nbsp;199-81-76</span>
@@ -2001,7 +1990,7 @@
                                  alt="2-комн. п/бл квартиру в кирпичном доме, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …"
                                  src="ob_files/-2_komn__pb_kvartiru_v_kirpichnom_dome_na_1_etazhe_52919.jpg">
                             <div class="">
-                                <strong class="ob">Продам 2-комн. п/бл квартиру в кирпичном доме</strong>, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …
+                                <strong class="ob">Продам 2-комн.</strong> п/бл квартиру в кирпичном доме, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;272-43-87</span>
@@ -2017,7 +2006,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/94162.html">
                             <div class="">
-                                <strong class="ob">Услуги Срочный выкуп квартир. Требования: бл. в центре</strong>, цена до 1 млн. руб
+                                <strong class="ob">Услуги Срочный выкуп квартир.</strong> Требования: бл. в центре, цена до 1 млн. руб
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span>
@@ -2033,7 +2022,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96628.html">
                             <div class="">
-                                <strong class="ob">Отдам котика пушистого рыжего в добрые руки. Ест все</strong>, к туалету приучен
+                                <strong class="ob">Отдам котика пушистого</strong> рыжего в добрые руки. Ест все, к туалету приучен
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;912&nbsp;049-02-70</span>
@@ -2041,7 +2030,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96604.html">
                             <div class="">
-                                <strong class="ob">Куплю з/у для ноутбука. Недорого. Срочно</strong>
+                                <strong class="ob">Куплю з/у для ноутбука.</strong> Недорого. Срочно
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;652-96-99</span> ,
@@ -2050,7 +2039,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/95335.html">
                             <div class="">
-                                <strong class="ob">Услуги Грузоперевозки. ГАЗель 4,2 м</strong>, Ларгус, мини-фургон. От 12 руб/км район, от 300 руб/час по городу. …
+                                <strong class="ob">Услуги Грузоперевозки.</strong> ГАЗель 4,2 м, Ларгус, мини-фургон. От 12 руб/км район, от 300 руб/час по городу. …
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;541-01-01</span> ,
@@ -2059,7 +2048,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/90815.html">
                             <div class="">
-                                <strong class="ob">Продам 1-комн. бл. квартиру</strong>, пл. 24 м?. Микрорайон Лесозавод. Выделенный с/у, душевая кабина, кафель. Ку…
+                                <strong class="ob">Продам 1-комн.</strong> бл. квартиру, пл. 24 м?. Микрорайон Лесозавод. Выделенный с/у, душевая кабина, кафель. Ку…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;002-71-28</span> ,
@@ -2068,7 +2057,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/96176.html">
                             <div class="">
-                                <strong class="ob">Продам дом в Ачитском р-не п. Ялым ул. Дружбы</strong>, 4. Есть канализация (с/у в доме) , х/вода, печное отоплен…
+                                <strong class="ob">Продам дом</strong> в Ачитском р-не п. Ялым ул. Дружбы, 4. Есть канализация (с/у в доме) , х/вода, печное отоплен…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;904&nbsp;160-33-44</span> ,
@@ -2077,7 +2066,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/95694.html">
                             <div class="">
-                                <strong class="ob">Продам зем. участок 14 соток</strong>, под ИЖС, в д. Крылово в центре. Есть вода, свет, асфальт. Рядом школа, д/с…
+                                <strong class="ob">Продам зем.</strong> участок 14 соток, под ИЖС, в д. Крылово в центре. Есть вода, свет, асфальт. Рядом школа, д/с…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;952&nbsp;729-95-19</span>
@@ -2085,7 +2074,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/92692.html">
                             <div class="">
-                                <strong class="ob">Услуги Перезапись любых видеокассет на DVD</strong>, флешкарту. Быстро, на проф. оборудовании. Наш адрес: ул. Лен…
+                                <strong class="ob">Услуги Перезапись</strong> любых видеокассет на DVD, флешкарту. Быстро, на проф. оборудовании. Наш адрес: ул. Лен…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span> ,
@@ -2094,7 +2083,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/97445.html">
                             <div class="">
-                                <strong class="ob">Отдам в добрые руки котёнка</strong>, мальчик, тигровой окраски, 3,5 мес. Добрый, ласковый. Ждёт своего хозяина.…
+                                <strong class="ob">Отдам в добрые руки</strong> котёнка, мальчик, тигровой окраски, 3,5 мес. Добрый, ласковый. Ждёт своего хозяина.…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span>
@@ -2102,7 +2091,7 @@
                         </a>
                         <a class="list-group-item" href="http://ob.ksk66.ru/97465.html">
                             <div class="">
-                                <strong class="ob">Продам Chevrolet Lacetti 10</strong>, 2007 г., цвет синий, пробег 75 тыс. км, полный комплект, дв. 1,6, о/с, 1 хо…
+                                <strong class="ob">Продам Chevrolet Lacetti</strong> 10, 2007 г., цвет синий, пробег 75 тыс. км, полный комплект, дв. 1,6, о/с, 1 хо…
                             </div>
                             <div class="contacts text-right">
                                 <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;006-88-86</span>
