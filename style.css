@@ -1268,3 +1268,153 @@ header .btn-group {
         font-size: 1.4em;
     }
 }
+
+
+/*Шапка сайта*/
+.karta a[title='Карта Красноуфимска и других городов'],
+.timetable a[title='Расписание автобусов и ж/д'],
+.cat a[title='Каталог предприятий, телефонов и адресов'],
+.photo a[title='Фото.Новости'],
+.video a[title='Видео.Новости'],
+.news a[title='Свежие городские новости'],
+.ob a[title='Бесплатные объявления на сайте и в газете']{
+    background-color: #ffffff;
+    color: #0080C8;
+}
+/* Re-define Google search widget: */
+.gsc-search-button-v2
+{
+    margin-left: 0 !important;
+    padding: 5px 16px !important;
+    height: 29px !important;
+    width: auto !important;
+}
+.gsc-input {
+    padding-right: 0 !important;
+}
+.gsc-input-box {
+    height: auto !important;
+}
+.searchbox{
+    width: 210px;
+    margin-top: 7px;
+}
+.header-line__logo {
+    display: inline-block;
+    position: relative;
+    height: 67px;
+    width: 352px;
+    font-size: 45px;
+}
+
+.header-line__logo__arrow {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225.75%22%20height%3D%2226.531%22%3E%3Cpath%20d%3D%22m-57.804-106.677v20.188000000000002l2.406-2.094%205.156-4.469%204.375%2011.531.531%201.375%201.375-.531%205.313-2.063%201.344-.531-.5-1.344-4.406-11.625%207.156-.313%203-.125-1.969-2.281-6.563-7.719h-3.844l6.219%207.312-6.156.281-2.031.094.719%201.875%204.625%2012.188-2.594.969-4.594-12.094-.75-1.969-1.594%201.375-4.281%203.719v-13.75h-2.938z%22%20fill%3D%22%23007cc3%22%20transform%3D%22translate%2857.804%20106.677%29%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 30px auto;
+    background-origin: padding-box;
+    bottom: -3px;
+    height: 32px;
+    position: absolute;
+    right: -1px;
+    width: 32px;
+}
+
+.header-line__logo__subtitle,
+.header-line__logo__title {
+    color: #3eb75b;
+    font-family: "URW Gothic L", "urw_gothic_lbook", sans-serif;
+    font-size: inherit;
+    font-weight: 300;
+    margin: 0;
+    bottom: 22px;
+    position: absolute;
+    right: 11px;
+}
+
+.header-line__logo__subtitle {
+    color: #0081c8;
+    font-size: 50%;
+    position: absolute;
+    right: 43px;
+    bottom: 2px;
+}
+.header-line__weather-block__icon {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 44px;
+    width: 100%;
+}
+.header-line__weather-block__temp {
+    bottom: 13px;
+    font-weight: 600;
+}
+
+.header-line__weather-block__label {
+    color: #808080;
+    font-size: 56%;
+    font-weight: 300;
+    text-align: center;
+}
+.row_header {
+    background-image: url("http://ob.ksk66.ru/images/header_bg_1400_140.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    height: auto;
+    position: relative;
+    min-height: 110px;
+    text-align: center;
+}
+.header-line__logo__weather-block__temp {
+    bottom: -11px;
+    font-size: 40%;
+    left: 45px;
+    opacity: 0;
+    position: absolute;
+    font-weight: 600;
+}
+@media only screen and (max-width : 1200px) {
+    .header-line__logo__weather-block__temp {
+        opacity: 1;
+    }
+    .kaleidoscope__item__tooltip{
+        height: 74px;
+    }
+
+}
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+    .header-line__logo__arrow {
+        background-size: 18px auto;
+        bottom: -6px;
+        right: -9px;
+    }
+
+    .header-line__logo {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .header-line__logo__weather-block__temp {
+        bottom: 2px;
+        left: 11px;
+    }
+}
+/* Выровнять элементы в шапке по вертикали и горизонтали */
+
+.row_header > div {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.row_header > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row_header > div:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 140px;
+}
+/*Конец шапки сайта*/
