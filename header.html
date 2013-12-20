@@ -1,0 +1,109 @@
+<header class="row row_header">
+    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+        <div class="header-line__logo">
+            <a href="/" title="На главную страницу" >
+                <h1 class="header-line__logo__title">Красноуфимск</h1>
+
+                <div class="header-line__logo__arrow"></div>
+                <h2 class="header-line__logo__subtitle"><span id="logo"></span> онлайн</h2>
+            </a>
+            <a class="header-line__logo__weather-block__temp" rel="nofollow" target="_blank"
+               href="http://m.pogoda.yandex.ru/20691/?mode=short"></a>
+        </div>
+    </div>
+    <div class="header-line__weather-block-col hidden-xs hidden-sm hidden-md col-lg-1 "><a
+            class="header-line__weather-block" rel="nofollow" target="_blank"
+            href="http://m.pogoda.yandex.ru/20691/?mode=short">
+            <div class="header-line__weather-block__icon"></div>
+            <div class="header-line__weather-block__temp"></div>
+            <div class="header-line__weather-block__label"></div>
+        </a></div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+        <!--# include virtual="/yummies/special/" -->
+        <!--<img width="" alt="advertisement" src="http://ob.ksk66.ru/yummies/special/nam-5-let.png?please" class="yummies">-->
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" id="user-panel"></div>
+
+
+</header>
+
+<nav class="navbar " role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand  hidden-sm hidden-md hidden-lg" href="#">Меню</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="http://ksk66.ru/" title="Свежие городские новости">Новости</a></li>
+            <li><a href="/" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+            <li><a href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и других городов'>Карта</a></li>
+            <li><a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a></li>
+            <li><a href="http://photo.kskmedia.ru"  title="Фото.Новости">Фото</a></li>
+            <li><a href="http://video.kskmedia.ru/" title="Видео.Новости">Видео</a></li>
+            <li><a href="http://cat.ksk66.ru/"      title='Каталог предприятий, телефонов и адресов'>Товары и услуги</a></li>
+            <!-- <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ещё<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li><a href="#">Separated link</a></li>
+                     <li><a href="#">One more separated link</a></li>
+                 </ul>
+             </li>-->
+            <li><a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228"  title="Интернет-магазин бытовой техники">Е96</a></li>
+            <li class='searchbox'>
+                <gcse:searchbox></gcse:searchbox>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<script>
+    (function(){
+      url = document.location.href;
+      ob = /^[http:\/\/]+ob/;
+      news = /^[http:\/\/]+news/;
+      cat =  /^[http:\/\/]+cat/;
+      video = /^[http:\/\/]+video/;
+      pfoto =  /^[http:\/\/]+pfoto/;
+      timetable = /timetable/;
+      karta = /karta/;
+      subtitle = document.getElementById("logo");
+      body = document.getElementsByTagName("body")[0];
+
+      if(url.match(ob)) {
+          // сайт объявлений
+          body.classList.add('ob');
+          subtitle.innerHTML = "Объявления ";
+      } else if (url.match(news)) {
+          // Сайт новостей
+          body.classList.add('news');
+          subtitle.innerHTML = "Новости ";
+      } else if (url.match(cat)){
+          body.classList.add('cat');
+          subtitle.innerHTML = "Товары ";
+      }else if (url.match(video)){
+          body.classList.add('video');
+          subtitle.innerHTML = "Видео ";
+      }else if (url.match(pfoto)){
+          body.classList.add('photo');
+          subtitle.innerHTML = "Фото ";
+      }else if (url.match(timetable)){
+          body.classList.add('timetable');
+          subtitle.innerHTML = "Расписание ";
+      }else if (url.match(karta)){
+          body.classList.add('karta');
+          subtitle.innerHTML = "Карта ";
+      }
+  })();
+
+</script>
