@@ -1105,17 +1105,7 @@ a.link-neutral:focus {
     border-radius: 3px;
 }
 
-/*.panel > .panel-footer > .row > div > a {*/
-    /*font-size: 1em;*/
-/*}*/
-
-.btn-footer {
-    /*font-size: 0.9em;*/
-    /*letter-spacing: -0.02em;*/
-    /*margin-left: -2px;*/
-    /*margin-right: -2px;*/
-    /*padding: 6px 7px;*/
-}
+.btn-footer {}
 /*Стили панелей переопределить место потом*/
 .panel-news > .panel-heading {
     background-color: #1fa6f2;
@@ -1485,6 +1475,9 @@ header .btn-link {
 }
 header .btn-group {
     margin-top: 10px;
+}
+footer {
+    margin: 20px -10px 0 -10px;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
