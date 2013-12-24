@@ -400,6 +400,10 @@ p.media-text {
     margin-left: 2px;
     color: #777;
 }
+.panel-ob > .panel-body img {
+    width: 100%;
+    margin-top: 10px;
+}
 .panel-payment > .panel-body > .list-group .badge {
     background-color: #428bca;
     color: #fff;
@@ -1241,37 +1245,7 @@ h3.cat-title {
     margin-right: 10px;
 }
 /* КОНЕЦ СТИЛЕЙ ДЛЯ УДАЛЕНИЯ*/
-.panel-cat {
-    margin: 5px 0 25px;
-    background-color: #fafbfc;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
-}
-.panel-cat .panel-heading{
-    padding: 10px 0 0;
-    margin: 0;
-    background-color: #F7F8F9;
-}
-.panel-cat > .panel-heading h3 {
-    color: #0A79DB;
-    font-size: 1.7em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 10px 5px 10px 0 ;
-}
-.panel-cat > .panel-body a.list-group-item {
-    /*margin-bottom: 1px;*/
-    background-color: #fcfcfc;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #f6f7f8;
-    margin-bottom: 1px;
-}
-.panel-cat > .panel-body a.list-group-item:hover,
-.panel-cat > .panel-body a.list-group-item:focus {
-    background-color: #f0f1f2;
-    color: #404145;
-    border-left: 1px solid #56c4f4;
-}
+
 a.sponsor{
     /*margin: 0 10px;*/
     background-color: #0275D3;
@@ -1597,6 +1571,39 @@ footer {
     opacity: 0;
     position: absolute;
     font-weight: 600;
+}
+.panel-cat {
+    margin: 5px 0 25px;
+    background-color: #fafbfc;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.panel-cat .panel-heading{
+    padding: 10px 0 0;
+    margin: 0;
+    background-color: #F7F8F9;
+}
+.panel-cat > .panel-heading > .row > div > h3 {
+/*.panel-cat > .panel-heading h3 {*/
+    margin: 0;
+    color: #0A79DB;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 10px 5px 20px 20px ;
+}
+.panel-cat > .panel-body a.list-group-item {
+    /*margin-bottom: 1px;*/
+    background-color: #fcfcfc;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #f6f7f8;
+    margin-bottom: 1px;
+}
+.panel-cat > .panel-body a.list-group-item:hover,
+.panel-cat > .panel-body a.list-group-item:focus {
+    background-color: #f0f1f2;
+    color: #404145;
+    border-left: 1px solid #56c4f4;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
