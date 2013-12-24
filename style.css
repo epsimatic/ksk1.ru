@@ -1643,3 +1643,7 @@ footer {
     height: 140px;
 }
 /*Конец шапки сайта*/
+.is_owner .panel-ob img{
+    width: 40px;
+    height: auto;
+}
