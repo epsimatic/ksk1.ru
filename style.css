@@ -1586,7 +1586,7 @@ footer {
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 200px 5px 200px 20px ;
+    padding: 20px 5px 20px 20px ;
 }
 .panel-cat > .panel-body a.list-group-item {
     /*margin-bottom: 1px;*/
