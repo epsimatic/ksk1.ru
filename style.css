@@ -1623,6 +1623,38 @@ footer {
 .alert {
     padding: 20px;
 }
+.panel-my-ob {
+    color: #4c657f;
+}
+.panel-my-ob .fa-eye-slash {
+    margin-top: 3px;
+}
+.panel-my-ob .fa-edit {
+    margin-left: 1px;
+}
+.panel-my-ob .fa-edit,
+.panel-my-ob .fa-times {
+    color: #21272d;
+}
+.panel-my-ob .fa-edit:hover,
+.panel-my-ob .fa-edit:focus,
+.panel-my-ob .fa-times:hover,
+.panel-my-ob .fa-times:focus {
+    color: #025695;
+}
+.panel-my-ob .panel-heading {
+    background-color: #d9dddf;
+}
+.panel-my-ob .fa-picture-o {
+    margin-left: 3px;
+    color: #2c3e50;
+}
+.panel-my-ob a {
+    color: #2c3e50;
+}
+.panel-my-ob .fa-clock-o {
+    color: #8c8c8f;
+}
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
@@ -1630,7 +1662,6 @@ footer {
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
-
 }
 @media only screen and (min-width : 768px) and (max-width : 992px) {
     .header-line__logo__arrow {
@@ -1638,7 +1669,6 @@ footer {
         bottom: -6px;
         right: -9px;
     }
-
     .header-line__logo {
         font-size: 28px;
         width: 100%;
