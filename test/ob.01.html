@@ -1,0 +1,2947 @@
+<!DOCTYPE html>
+<html class=" -moz- -moz-" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="ob_files/cse.js" async="" type="text/javascript"></script>
+<script async="true" src="ob_files/context.js" type="text/javascript"></script>
+<title>ТЕСТ_Объявлений список</title>
+<!-- <meta name="keywords" content="" />
+<meta name="description" content="" />-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<link rel="alternate" type="application/rss+xml" href="rss.html" title="" />-->
+<link type="image/vnd.microsoft.icon" rel="shortcut icon" href="http://ob.ksk66.ru/images/favicon.ico">
+<script type="text/javascript">var servername = 'http://ob.ksk66.ru/';</script>
+<script type="text/javascript" src="ob_files/main_002.js"></script>
+<meta name="viewport" content="width=device-width">
+<link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<!--<link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>-->
+<link id="rootstrap-bootstrap-additions-css" media="all" type="text/css"
+      href="http://news.kskmedia.ruincludes/css/bootstrap-wp.css?ver=3.8" rel="stylesheet">
+<link id="rootstrap-style-css" media="all" type="text/css"
+      href="http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/style.css?ver=3.8" rel="stylesheet">
+<link href="http://ksk1.ru/opensans/osans.css" rel="stylesheet" type="text/css"/>
+<link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script type='text/javascript' src='http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js?ver=3.8'></script>
+<link href="http://ob.ksk66.ru/style.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="http://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="http://google-analytics.com/">
+<link rel="dns-prefetch" href="http://ksk1.ru/">
+<link rel="dns-prefetch" href="http://mc.yandex.ru/">
+<link rel="dns-prefetch" href="http://an.yandex.ru/">
+<link rel="dns-prefetch" href="http://openstat.net/">
+<script src="ob_files/jquery-1.js" type="text/javascript"></script>
+<script>
+    function UpdateLabelPrice() {
+        var input = $(".add-ob__right-input_type :selected").val();
+        var label_price = $(".add-ob__label_price");
+        if (input == "r" || input == "i") {
+            label_price.text("Заработная плата");
+        }
+        else {
+            label_price.text("Цена");
+        }
+    }
+    function DisabledButton() {
+        var submitButton = $(".add-ob__submit-button");
+        var dropdownButton = $(".add-ob__dropdown");
+        if ($(".add-ob__text-input").val()) {
+            submitButton.removeClass("disabled");
+            dropdownButton.removeClass("disabled");
+        }
+        else {
+            submitButton.addClass("disabled");
+            dropdownButton.addClass("disabled");
+        }
+    }
+    function changeTextInputbutton() {
+        var submit_button = $(".add-ob__submit-button");
+        var cat = $(".add-ob__right-input_category").val();
+        //TODO: переделать с кодогенерацией
+        if (cat == 428 || cat == 429 || cat == 430 || cat == 431 || cat == 433 || cat == 191 || cat == 311 || cat == 420 || cat == 446) {
+            $(".add-ob__dropdown").css("display", "none");
+            submit_button.text(submit_button.attr("data-paid-text"));
+        }
+        else {
+            $(".add-ob__dropdown").css("display", "block");
+            submit_button.text(submit_button.attr("data-free-text"));
+        }
+    }
+    function cleanPhoto() {
+        var linePhoto = $(".add-ob__line__photo");
+        $(".preview div").remove();
+        var typeFileLabel = linePhoto.html();
+        $(".add-ob__label-photo").detach();
+        $(".add-ob__hide__photo__file").detach();
+        linePhoto.append(typeFileLabel);
+        $(".textFistImage").hide();
+        $(".add-ob__cleanPhoto-button").hide();
+        $(".add-ob__line__mane-photo").css("display", "none");
+    }
+    function UpdateTypePrefix(letter) {
+        var newPrefix = "";
+        var exampleText = "";
+        if (letter == 'p') {
+            newPrefix = 'Продам';
+            exampleText = '(щёлкните сюда и напишите, что вы продаёте)';
+        }
+        if (letter == 'k') {
+            newPrefix = 'Куплю';
+            exampleText = '(щёлкните сюда и напишите, что вы хотите купить)';
+        }
+        if (letter == 'm') {
+            newPrefix = 'Меняю';
+            exampleText = '(щёлкните сюда и напишите, что и на что вы хотите обменять)';
+        }
+        if (letter == 's') {
+            newPrefix = 'Сдам';
+            exampleText = '(щёлкните сюда и напишите, что вы сдаёте в аренду)';
+        }
+        if (letter == 'q') {
+            newPrefix = 'Арендую';
+            exampleText = '(щёлкните сюда и напишите, что вы хотите арендовать)';
+        }
+        if (letter == 'o') {
+            newPrefix = 'Услуги';
+            exampleText = '(щёлкните сюда и опишите ваши услуги)';
+        }
+        if (letter == 'i') {
+            newPrefix = 'Требуется';
+            exampleText = '(щёлкните сюда и опишите вашу вакансию и требования к работнику)';
+        }
+        if (letter == 'r') {
+            newPrefix = 'Ищу работу';
+            exampleText = '(щёлкните сюда и напишите, какую работу вы ищете)';
+        }
+        if (letter == 'd') {
+            newPrefix = 'Отдам';
+            exampleText = '(щёлкните сюда и напишите, что вы хотите подарить)';
+        }
+        if (letter == 'b') {
+            newPrefix = 'Приму в дар';
+            exampleText = '(щёлкните сюда и напишите, что вы хотите принять в дар)';
+        }
+        if (letter == '-') {
+            newPrefix = '';
+            exampleText = '(щёлкните сюда, чтобы написать ваше объявление)';
+        }
+        var prefixLabel = $(".add-ob__type-prefix");
+        var inputBox = $(".add-ob__text-input");
+        prefixLabel.css("border-width", inputBox.css("border-width"))
+                .css("border-right-width", "0")
+                .css("padding-right", "0.3em"); //Hack to add a space
+        prefixLabel.text(newPrefix);
+
+//  TODO: Обрабатывать выбор особых пунктов списка
+        inputBox.css("padding-left", prefixLabel.outerWidth())
+                .css("padding-left", "-=" + inputBox.css("border-left-width"))
+                .attr("placeholder", exampleText);
+        inputBox.val(inputBox.val()); // HACK for ie to update padding.
+        /* if (window.sidebar) {
+         inputBox.css("padding-top", "0px");
+         } // firebox*/
+    }
+</script>
+<script type="text/javascript" src="ob_files/jsapi"></script>
+<link rel="stylesheet" href="ob_files/defaultru.css" type="text/css">
+<link rel="stylesheet" href="ob_files/default.css" type="text/css">
+<script src="ob_files/defaultru.js" type="text/javascript"></script>
+<script src="ob_files/search.js" type="text/javascript"></script>
+<style type="text/css">
+    .gsc-control-cse {
+        font-family: Arial, sans-serif;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .gsc-control-cse .gsc-table-result {
+        font-family: Arial, sans-serif;
+    }
+
+    input.gsc-input,
+    .gsc-input-box,
+    .gsc-input-box-hover,
+    .gsc-input-box-focus {
+        border-color: #D9D9D9;
+    }
+
+    input.gsc-search-button,
+    input.gsc-search-button:hover,
+    input.gsc-search-button:focus {
+        border-color: #666666;
+        background-color: #CECECE;
+        background-image: none;
+        filter: none;
+    }
+
+    .gsc-tabHeader .gsc-tabhInactive {
+        border-color: #E9E9E9;
+        background-color: #E9E9E9;
+    }
+
+    .gsc-tabHeader.gsc-tabhActive {
+        border-color: #FF9900;
+        border-bottom-color: #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .gsc-tabsArea {
+        border-color: #FF9900;
+    }
+
+    .gsc-webResult.gsc-result,
+    .gsc-results .gsc-imageResult {
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .gsc-webResult.gsc-result:hover,
+    .gsc-imageResult:hover {
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .gs-webResult.gs-result a.gs-title:link,
+    .gs-webResult.gs-result a.gs-title:link b,
+    .gs-imageResult a.gs-title:link,
+    .gs-imageResult a.gs-title:link b {
+        color: #0000CC;
+    }
+
+    .gs-webResult.gs-result a.gs-title:visited,
+    .gs-webResult.gs-result a.gs-title:visited b,
+    .gs-imageResult a.gs-title:visited,
+    .gs-imageResult a.gs-title:visited b {
+        color: #0000CC;
+    }
+
+    .gs-webResult.gs-result a.gs-title:hover,
+    .gs-webResult.gs-result a.gs-title:hover b,
+    .gs-imageResult a.gs-title:hover,
+    .gs-imageResult a.gs-title:hover b {
+        color: #0000CC;
+    }
+
+    .gs-webResult.gs-result a.gs-title:active,
+    .gs-webResult.gs-result a.gs-title:active b,
+    .gs-imageResult a.gs-title:active,
+    .gs-imageResult a.gs-title:active b {
+        color: #0000CC;
+    }
+
+    .gsc-cursor-page {
+        color: #0000CC;
+    }
+
+    a.gsc-trailing-more-results:link {
+        color: #0000CC;
+    }
+
+    .gs-webResult .gs-snippet,
+    .gs-imageResult .gs-snippet,
+    .gs-fileFormatType {
+        color: #000000;
+    }
+
+    .gs-webResult div.gs-visibleUrl,
+    .gs-imageResult div.gs-visibleUrl {
+        color: #008000;
+    }
+
+    .gs-webResult div.gs-visibleUrl-short {
+        color: #008000;
+    }
+
+    .gs-webResult div.gs-visibleUrl-short {
+        display: none;
+    }
+
+    .gs-webResult div.gs-visibleUrl-long {
+        display: block;
+    }
+
+    .gs-promotion div.gs-visibleUrl-short {
+        display: none;
+    }
+
+    .gs-promotion div.gs-visibleUrl-long {
+        display: block;
+    }
+
+    .gsc-cursor-box {
+        border-color: #FFFFFF;
+    }
+
+    .gsc-results .gsc-cursor-box .gsc-cursor-page {
+        border-color: #E9E9E9;
+        background-color: #FFFFFF;
+        color: #0000CC;
+    }
+
+    .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+        border-color: #FF9900;
+        background-color: #FFFFFF;
+        color: #0000CC;
+    }
+
+    .gsc-webResult.gsc-result.gsc-promotion {
+        border-color: #336699;
+        background-color: #FFFFFF;
+    }
+
+    .gsc-completion-title {
+        color: #0000CC;
+    }
+
+    .gsc-completion-snippet {
+        color: #000000;
+    }
+
+    .gs-promotion a.gs-title:link,
+    .gs-promotion a.gs-title:link *,
+    .gs-promotion .gs-snippet a:link {
+        color: #0000CC;
+    }
+
+    .gs-promotion a.gs-title:visited,
+    .gs-promotion a.gs-title:visited *,
+    .gs-promotion .gs-snippet a:visited {
+        color: #0000CC;
+    }
+
+    .gs-promotion a.gs-title:hover,
+    .gs-promotion a.gs-title:hover *,
+    .gs-promotion .gs-snippet a:hover {
+        color: #0000CC;
+    }
+
+    .gs-promotion a.gs-title:active,
+    .gs-promotion a.gs-title:active *,
+    .gs-promotion .gs-snippet a:active {
+        color: #0000CC;
+    }
+
+    .gs-promotion .gs-snippet,
+    .gs-promotion .gs-title .gs-promotion-title-right,
+    .gs-promotion .gs-title .gs-promotion-title-right * {
+        color: #000000;
+    }
+
+    .gs-promotion .gs-visibleUrl,
+    .gs-promotion .gs-visibleUrl-short {
+        color: #008000;
+    }
+</style>
+<style type="text/css">
+    .gscb_a {
+        display: inline-block;
+        font: 27px/13px arial, sans-serif
+    }
+
+    .gsst_a .gscb_a {
+        color: #a1b9ed;
+        cursor: pointer
+    }
+
+    .gsst_a:hover .gscb_a,
+    .gsst_a:focus .gscb_a {
+        color: #36c
+    }
+
+    .gsst_a {
+        display: inline-block
+    }
+
+    .gsst_a {
+        cursor: pointer;
+        padding: 0 4px;
+    }
+
+    .gsst_a:hover {
+        text-decoration: none !important
+    }
+
+    .gsst_b {
+        font-size: 16px;
+        padding: 0 2px;
+        position: relative;
+        user-select: none;
+        -moz-user-select: none;
+        white-space: nowrap;
+    }
+
+    .gsst_e {
+        opacity: 0.55;
+    }
+
+    .gsst_a:hover
+    .gsst_e,
+    .gsst_a:focus
+    .gsst_e {
+        opacity: 0.72;
+    }
+
+    .gsst_a:active
+    .gsst_e {
+        opacity: 1;
+    }
+
+    .gsst_f {
+        background: white;
+        text-align: left
+    }
+
+    .gsst_g {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-top-color: #d9d9d9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: -1px -3px;
+        padding: 0 6px
+    }
+
+    .gsst_h {
+        background-color: white;
+        height: 1px;
+        margin-bottom: -1px;
+        position: relative;
+        top: -1px
+    }
+
+    .gsib_a {
+        width: 100%;
+        padding: 4px 6px 0
+    }
+
+    .gsib_a, .gsib_b {
+        vertical-align: top
+    }
+
+    .gssb_c {
+        border: 0;
+        position: absolute;
+        z-index: 989
+    }
+
+    .gssb_e {
+        border: 1px solid #ccc;
+        border-top-color: #d9d9d9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: default
+    }
+
+    .gssb_f {
+        visibility: hidden;
+        white-space: nowrap
+    }
+
+    .gssb_k {
+        border: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 988
+    }
+
+    .gsdd_a {
+        border: none !important
+    }
+
+    .gsq_a {
+        padding: 0
+    }
+
+    .gscsep_a {
+        display: none
+    }
+
+    .gssb_a {
+        padding: 0 7px
+    }
+
+    .gssb_a, .gssb_a td {
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 22px
+    }
+
+    #gssb_b {
+        font-size: 11px;
+        color: #36c;
+        text-decoration: none
+    }
+
+    #gssb_b:hover {
+        font-size: 11px;
+        color: #36c;
+        text-decoration: underline
+    }
+
+    .gssb_g {
+        text-align: center;
+        padding: 8px 0 7px;
+        position: relative
+    }
+
+    .gssb_h {
+        font-size: 15px;
+        height: 28px;
+        margin: 0.2em
+    }
+
+    .gssb_i {
+        background: #eee
+    }
+
+    .gss_ifl {
+        visibility: hidden;
+        padding-left: 5px
+    }
+
+    .gssb_i .gss_ifl {
+        visibility: visible
+    }
+
+    a.gssb_j {
+        font-size: 13px;
+        color: #36c;
+        text-decoration: none;
+        line-height: 100%
+    }
+
+    a.gssb_j:hover {
+        text-decoration: underline
+    }
+
+    .gssb_l {
+        height: 1px;
+        background-color: #e5e5e5
+    }
+
+    .gssb_m {
+        color: #000;
+        background: #fff
+    }
+
+    .gsfe_a {
+        border: 1px solid #b9b9b9;
+        border-top-color: #a0a0a0;
+        box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .gsfe_b {
+        border: 1px solid #4d90fe;
+        outline: none;
+        box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .gssb_a {
+        padding: 0 9px
+    }
+
+    .gsib_a {
+        padding-right: 8px;
+        padding-left: 8px
+    }
+
+    .gsst_a {
+        padding-top: 3px
+    }
+
+    .gssb_e {
+        border: 0
+    }
+
+    .gssb_l {
+        margin: 5px 0
+    }
+
+    .gssb_c .gsc-completion-container {
+        position: static
+    }
+
+    .gssb_c {
+        z-index: 5000
+    }
+
+    .gsc-completion-container table {
+        background: transparent;
+        font-size: inherit;
+        font-family: inherit
+    }
+
+    .gssb_c > tbody > tr,
+    .gssb_c > tbody > tr > td,
+    .gssb_d,
+    .gssb_d > tbody > tr,
+    .gssb_d > tbody > tr > td,
+    .gssb_e, .gssb_e > tbody > tr,
+    .gssb_e > tbody > tr > td {
+        padding: 0;
+        margin: 0;
+        border: 0
+    }
+
+    .gssb_a table,
+    .gssb_a table tr,
+    .gssb_a table tr td {
+        padding: 0;
+        margin: 0;
+        border: 0
+    }
+</style>
+</head>
+<body>
+<script type="text/javascript"> const obId = '';</script>
+<div class="container">
+<div class="row banner-top" style="text-align: center;max-width: 100%;">
+    <div class="helper"
+         style="
+                    display: none;
+                    border: 1px #88C425 solid;
+                    background-color: #BEF202;
+                    border-radius: 20px 20px 0 0;
+                    padding: 5px 0;
+                    color: #519548;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: bold">
+        ../ob.ksk66.ru/stripe
+    </div>
+    <object type="application/x-shockwave-flash" data="ob_files/980x90_NY_KN__Ekt_vostochny-express.swf"
+            style="width:980px;height:90px;"></object>
+</div>
+<header class="row row_header">
+    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+        <div class="header-line__logo">
+            <a href="http://ob.ksk66.ru/" title="На главную страницу">
+                <h1 class="header-line__logo__title">Красноуфимск</h1>
+
+                <div class="header-line__logo__arrow"></div>
+                <h2 class="header-line__logo__subtitle">Объявления онлайн</h2>
+            </a>
+            <a class="header-line__logo__weather-block__temp" rel="nofollow" target="_blank"
+               href="http://m.pogoda.yandex.ru/20691/?mode=short">-24°</a>
+        </div>
+    </div>
+    <div class="header-line__weather-block-col hidden-xs hidden-sm hidden-md col-lg-1 "><a
+            class="header-line__weather-block" rel="nofollow" target="_blank"
+            href="http://m.pogoda.yandex.ru/20691/?mode=short">
+        <div style="background-image: url(&quot;http://www.gismeteo.ru/static/images/informer2/icons/clip_art/d0.png&quot;);"
+             class="header-line__weather-block__icon"></div>
+        <div class="header-line__weather-block__temp">-24°</div>
+        <div class="header-line__weather-block__label">Подробнее</div>
+    </a></div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+        <!--XXXXX# include virtual="/yummies/special/" -->
+        <img alt="advertisement" src="ob_files/nam-5-let.png" class="yummies" width="">
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+        <div>
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-default" href="http://ob.ksk66.ru/newlist.html"><i class="fa fa-file fa-lg fa-fw"></i>
+                    Свежие<br>объявления</a>
+                <a class="btn btn-primary" href="http://ob.ksk66.ru/new.html"> <i
+                        class="fa fa-plus-circle fa-lg fa-fw"></i> Добавить<br>объявление</a>
+            </div>
+            <a class="btn btn-link btn-lg" href="http://ob.ksk66.ru/p11.html">Как пользоваться сайтом?</a>
+        </div>
+    </div>
+</header>
+<nav class="navbar " role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand  hidden-sm hidden-md hidden-lg" href="#">Меню</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="http://ksk66.ru/" title="Свежие городские новости">Новости</a></li>
+            <li><a href="http://ob.ksk66.ru/" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+            <li><a href="http://ksk66.ru/karta.html" title="Карта Красноуфимска и других городов">Карта</a></li>
+            <li><a href="http://ksk66.ru/timetable.html" title="Расписание автобусов и ж/д">Расписание</a></li>
+            <li><a href="http://photo.kskmedia.ru/" title="Фото.Новости">Фото</a></li>
+            <li><a href="http://video.kskmedia.ru/" title="Видео.Новости">Видео</a></li>
+            <li><a href="http://cat.ksk66.ru/" title="Каталог предприятий, телефонов и адресов">Товары и услуги</a></li>
+            <li><a href="http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228"
+                   title="Интернет-магазин бытовой техники">Е96</a></li>
+            <!--<li>
+                <div dir="ltr" id="___gcse_0">
+                    <form accept-charset="utf-8" class="gsc-search-box gsc-search-box-tools">
+                        <table class="gsc-search-box" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="gsc-input">
+                                        <div id="gsc-iw-id1" class="gsc-input-box">
+                                            <table class="gstl_50 " id="gs_id50" style="width: 100%; padding: 0px;" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gsib_a" id="gs_tti50">
+                                                            <input spellcheck="false"
+                                                                   dir="ltr"
+                                                                   id="gsc-i-id1"
+                                                                   style="
+                                                                    width: 100%;
+                                                                    padding: 0px;
+                                                                    border: medium none;
+                                                                    margin: 0px;
+                                                                    height: auto;
+                                                                    outline:
+                                                                    medium none;
+                                                                    background: url(&quot;http://www.google.com/cse/intl/ru/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);"
+                                                                   title="поиск"
+                                                                   name="search"
+                                                                   class="gsc-input"
+                                                                   size="10"
+                                                                   autocomplete="off"
+                                                                   type="text">
+                                                        </td>
+                                                        <td class="gsib_b">
+                                                            <div dir="ltr" id="gs_st50" class="gsst_b">
+                                                                <a style="display: none;" href="javascript:void(0)" class="gsst_a">
+                                                                    <span id="gs_cb50" class="gscb_a">×</span>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                    <td class="gsc-search-button">
+                                        <input title="поиск" class="gsc-search-button gsc-search-button-v2" src="ob_files/search_box_icon.png" type="image">
+                                    </td>
+                                    <td class="gsc-clear-button">
+                                        <div title="удалить результаты" class="gsc-clear-button">&nbsp;</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="gsc-branding" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="gsc-branding-user-defined"></td>
+                                    <td class="gsc-branding-text">
+                                        <div class="gsc-branding-text">технология</div>
+                                    </td>
+                                    <td class="gsc-branding-img">
+                                        <img class="gsc-branding-img" src="ob_files/small-logo.png">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </li>-->
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <!--<div class="form-group input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <!--<span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search fa-fw"></i></button>-->
+            <!--<span class="input-group-btn"><a href="#" class="btn btn-default"><i class="fa fa-search fa-fw"></i></a></span>
+            </span>
+        </div>-->
+            <div class="input-group">
+                <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+            </div>
+            <!--<button type="submit" class="btn btn-default">Submit</button>-->
+        </form>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+<div class="row">
+<!--левая колонка-->
+<div class="hidden-xs hidden-sm col-md-3">
+<div class="helper"
+     style="
+                     display: none;
+                     border: 1px #88C425 solid;
+                     background-color: #BEF202;
+                     border-radius: 20px 20px 0 0;
+                     padding: 5px 0;
+                     color: #519548;
+                     width: 100%;
+                     text-align: center;
+                     font-weight: bold">
+    ../ob.ksk66.ru/left-1
+</div>
+<img class="yummies" src="ob_files/Universal-stroi.gif" alt="advertisement" data-zone-info="zone: left, sized 240x240"
+     height="240" width="240">
+
+<div class="helper"
+     style="
+                        display: none;
+                        border: 1px #88C425 solid;
+                        background-color: #BEF202;
+                        border-radius: 20px 20px 0 0;
+                        padding: 5px 0;
+                        color: #519548;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold">
+    ../ob.ksk66.ru/left-2
+</div>
+<img class="yummies" src="ob_files/komp-as_20131210.png" alt="advertisement" data-zone-info="zone: left, sized 240x240"
+     height="240" width="240">
+<style type="text/css">
+    .titlebutton:hover img {
+        visibility: hidden;
+    }
+
+    .titlebutton {
+        display: inline-block;
+    }
+
+    .obsbutton {
+        background: url("/images/buttons/obsbutton-wide-hover.png") no-repeat scroll center top transparent;
+    }
+
+    .addbutton {
+        background: url("/images/buttons/addbutton-wide-hover.png") no-repeat scroll center top transparent;
+    }
+</style>
+<div class="helper"
+     style="
+                        display: none;
+                        border: 1px #88C425 solid;
+                        background-color: #BEF202;
+                        border-radius: 20px 20px 0 0;
+                        padding: 5px 0;
+                        color: #519548;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold">
+    ../ob.ksk66.ru/left-3
+</div>
+<img class="yummies" src="ob_files/uta2.png" alt="advertisement" data-zone-info="zone: left, sized 240x240" height="240"
+     width="240">
+
+<div class="helper"
+     style="
+                        display: none;
+                        border: 1px #88C425 solid;
+                        background-color: #BEF202;
+                        border-radius: 20px 20px 0 0;
+                        padding: 5px 0;
+                        color: #519548;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold">
+    ../ob.ksk66.ru/left-4
+</div>
+<img class="yummies" src="ob_files/fuzunbao.gif" alt="advertisement" data-zone-info="zone: left, sized 240x240"
+     height="240" width="240">
+<a href="http://svetodom.ru/" rel="nofollow">
+    <img class="yummies" src="ob_files/svetodom5.gif" alt="advertisement">
+</a>
+<a href="http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228&amp;returnUrl=%2Fkids" rel="nofollow">
+    <img class="yummies" src="ob_files/e96_detskie_tovary.gif" alt="advertisement">
+</a>
+
+<div id="kaleidoscope__left-column" class="kaleidoscope__left-column">
+<div class="kaleidoscope">
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-94414.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-byd_f3_muz_signaliz_s_obratnoy_svyazyu_kozh_salon__52876.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> BYD F3, 2008 г., музыка, сигнализация с о/с, кожаный салон, пробег 55 тыс. км,
+                4 ЭСП, э. зеркала, не битая, ра ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 250000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c437-96809.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-21011_2000g_54488.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> ВАЗ-21011, 2000 г.</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 98000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c211-96107.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-prodam_moschnyy_usilitel_dd_m1c_otlichno_podoydet__54028.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> мощный усилитель dd m1c, отлично подойдет к любому звену сабвфуера. Стоит в
+                машине, можно послушать. Шатает вс ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 12000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c443-91667.html">
+    <img class="kaleidoscope__item__img"
+         src="ob_files/krasnoufimsk-salon_detskogo_platyamiled_priglashaet_roditele.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong> </strong> Салон детского платья«МиЛеди» приглашает родителей приобрести для своих маленьких
+                принцесс самое красивое плат ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 0 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c221-94731.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-maslyanyy_radiator_POLARIS_PRE_M_0920_2000vt_mosch_53133.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> масляный радиатор «Polaris PRE M 0920», мощность 2000 Вт. Режимы мощности:
+                2000/1200/800 Вт. Кол-во режимов мо ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 1500 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c437-95416.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-21124_2007_g__gidrousilitel_rulya_avtozapu_53564.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-21124, 2007 г., ГУР, а/з, резина R14 з/л, все расходники поменяны, в о/с
+                ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 177000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c439-94989.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-zemelnyy_uchastok_raspolozhennyy_v_krasnoufimsko_53285.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> зем. участок, расположенный в Красноуфимском районе, Свердловской области,
+                северо-восточнее д. Приданниково, о ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 5000000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c277-97250.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-prodam_chuchelo_vzroslogo_gluharya_54817.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> чучело взрослого глухаря</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 10000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-94435.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-ford_fokus_-_2_restayling__08_g_v__noyabr_dvig___52903.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Ford Focus 2 рестайлинг, ноябрь 2008 г., дв. 1.8. -125 л/с, комплектация
+                -комфорт+зимний пакет, пробег 43000 к ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 420000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c436-95610.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-2114_2010_god_dekabr_mesyac_sostoyanie_novo_53736.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2114, 12.2010 г, состояние новой машины, не битая, не крашеная. Или меняю
+                на ВАЗ-2107 с доплатой ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 200000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c438-96443.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-kalina_hetchbek_2007_g__cvet_krasnyy_1600_8kl_54268.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Ладу Калину, хэтчбэк, 2007 г., цвет красный, 1600, 8-клап., пробег 53 тыс. км,
+                музыка USB, MP3, эл. зеркала, ч ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 190000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c277-96111.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-servant_starinnyy_iz_dereva_ruchnoy_raboty_restav_54030.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> сервант старинный из дерева ручной работы, реставрированный ...
+            </div>
+            <div class="tooltip_price">
+                <strong>Цена:</strong> 8000 руб.
+            </div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c437-97383.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-2112_03g_v_16-ti_klap__h_s_muzyka_c_z__54953.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2112, 2003г., 16-клап., х/с, музыка, ц/з, подогрев сидений, климат-контроль
+                ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 120000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c443-96518.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-krasivoe_naryadnoe_beloe_plate_dlya_devochki__plat_54309.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> красивое нарядное белое платье для девочки. Платье расшито пайетками и украшено
+                объемными цветами. В о/с (б/у ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 300 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c230-95877.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-prodam_srochno_igrovuyu_mysh_i_klaviaturu__pokupal_53865.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> игровую мышь и клавиатуру. Клавиатура и мышь с расширенным функционалом.
+                Состояние нового. Срочно. Цена за все ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 1000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c277-94631.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-stenku_v_horoshem_sostoyanie_bez_kakih_libo_videmy_53092.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> стенку в х/с, без каких-либо дефектов</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 12000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c346-96742.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-dvuh_krasivyh_igrivyh_koshechek_ot_umnoy_mamy_mysh_54443.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Отдам:</strong> 2-х красивых игривых кошечек от умной мамы-мышеловки. Котята дымчатой окраски,
+                полупушистые, одна леопардовой ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 0 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c272-96478.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-krovatku_s_lyulkoy_baldahinom_s_pelenalnym_st_54278.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> кроватку с люлькой, балдахином, с пеленальным столиком
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 4000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c436-95044.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-2109_2001_gv_est_vse_vse_voprosy_pri_osmotr_53344.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2109, 2001 г., есть все. Все вопросы при осмотре и по телефону в любое
+                время ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 100000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c50-96873.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-am_Chevrolet_NIVA_2011_g__cvet_-_grafit_prob_54513.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> Chevrolet Niva, 2011 г., цвет - графит, пробег 15 тыс.
+                км, в и/с
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 430000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c437-96930.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-21122003_g_cvet_chernyy_grafit_bez_zimney_re_54550.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2112, 2003 г., цвет черный графит, без з/резины. Причина продажи - лишение
+                прав. Машина на ходу ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 120000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c55-96050.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-spoler_na_vaz-2112_so_stop_signalom_chernyy_pochti_53990.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> сполер на ВАЗ-2112, со стоп-сигналом, чёрный, почти новый
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 800 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c435-95182.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-21074i_2005_g__hor_sostoyanie_podrobnosti_p_53443.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> ВАЗ-21074i, 2005 г., х/с. Подробности по телефону</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 75000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-97012.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-deu_neksiya_1997_g__sostoyanie_horoshee_salon_ne__54640.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Daewoo Nexia, 1997 г., х/с, салон не прокуреный, небитая, некрашеная. Возможен
+                вариант обмена ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 99000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c293-96446.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-konki_belye_razmer_34_54269.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> коньки, белые, р-р 34</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 500 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-94080.html">
+    <img class="kaleidoscope__item__img" src="ob_files/_54395.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Opel Astra, хэтчбек, 2008 г., цвет серый, пробег 66 тыс. км, МКПП, сборка
+                Германия, о/с ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 375000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c263-96058.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-prodayu_shubu_norkovuyu_novuyu_r_46_-_48_dlinna_do_k_53993.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> шубу норковую новую, р. 46 - 48, длина до колен</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 50000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c415-94629.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-detskie_manekeny_2_malchika_i_2_devochki_v_polnyy_53088.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> детские манекены: 2 мальчика и 2 девочки, в полный рост - 700 руб. шт., и
+                манекены полутела -60 шт. по 30 руб. ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 0 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-96411.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-avtomobil_v_otlichnom_sostoyanii_ne_bit_ne_krashe_54230.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> а/м, в о/с, не бит, не крашен, расходники заменены, вложений не требует, 2
+                комплекта колёс з/л R15, оба на лит ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 318000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c192-97173.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-ya_fink_aleksey_arnovich_mne_20_let_prozhivayu_v_g_k_54748.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Ищу работу:</strong> связанную с техникой, есть права категории «В, С», закончил училище по
+                профессии: Машинист дорожных и строител ...
+            </div>
+            <div class="tooltip_price"><strong>Заработная плата:</strong> 15000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c436-96422.html">
+    <img class="kaleidoscope__item__img" src="ob_files/_55070.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2114, 2009 г., пробег 62 тыс. км, 2-й хозяин. 2 ЭСП, бортовой компьютер,
+                подогрев передних сидений, з/рези ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 175000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-96429.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-DAIHATSU-STORIA1999g_v_kondicionerklimat-kont_54249.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Daihatsu Storia, 1999 г., кондиционер, климат-контроль, ГУР, 4 ЭСП, эл.
+                зеркала, АКПП, очень экономная, дв. 1 ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 123000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c277-94604.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-starinnyy_pismennyy_stolmozhno_slomannyyprime_53059.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Куплю:</strong> старинный письменный стол, можно сломанный (примерное фото стола прилагается) .
+                Вывезу сам ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 0 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c308-94958.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-ischu_naparnika_dlya_ohoty__est_niva44_i_russkaya__53265.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong> </strong> Ищу напарника для охоты. Есть Нива 4x4 и русская гончая
+                (работает по зайцу) ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 0 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-94491.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-mitsubisi_speys_star__mashina_k_zime_podgotovlena_52951.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Mitsubishi Space Star. Машина к зиме подготовлена. Приобретая данный автомобиль
+                Вы делаете отличный выбор (мин ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 315000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c263-96259.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-svadebnoe_plate_42-46_r-r_regulirovka_na_spink_54142.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> свадебное платье, 42-46 р-р (регулировка на спинке) .
+                Фата, перчатки ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 4500 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-95900.html">
+    <img class="kaleidoscope__item__img" src="ob_files/_53974.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Seat Leon, 2003 г., 1 хозяин, куплен в салоне, без ДТП, 2 комплекта резина на
+                литых дисках ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 270000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c50-96969.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-uaz_3163_PATRIOT-LIMITED_konec_2011_g__probeg_54590.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> УАЗ-3163, Patriot Limited, конец 2011 г., пробег 40 тыс. км, цвет белый,
+                максимальная комплектация, 1 хозяин, ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 480000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c436-95003.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-2115_2006_g__v_otlichnom_sostoyanii_gotov_k__53295.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-2115, 2006 г., в о/с, готов к зиме, замена все жидкости, пробег 120000 км
+                реальный, авто эксплуатировалось ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 152000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c263-96358.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-shuba_muton_vorotnik_pisec_v_horoshem_sostoyanii_54190.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> шубу мутон, воротник писец, в х/с, р-р 48-50</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 10000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c272-96888.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-detskie_konki_v_otlichnom_sostoyanii__transformer_54527.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> детские коньки в о/с. Трансформеры, р-р с 29 по 32
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 900 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c435-95624.html">
+    <img class="kaleidoscope__item__img"
+         src="ob_files/krasnoufimsk-vaz-21074_2011_g__v_is_2_hozyaina_ne_bitaya_ne_.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-21074, 2011 г., в и/с, 2 хозяина, небитая, некрашеная, пробег 44 тыс. км,
+                музыка, литьё на R15 + подарю л/ ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 135000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c50-95980.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-nivu_21213_1999goda_probeg_80_000_-_90_000_km_53951.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Ниву 21213 (1999 г.) . Пробег 80 000 - 90 000 км, 1.7 МТ, бензин-газ, полный
+                привод, внедорожник, левый руль, ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 125000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c230-97506.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-noutbuk_HP_sostoyanie_novogo_god_nazad_pokupali__55042.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ноутбук «HP», состояние нового, год назад покупали за 26000 руб., отдам за 9000
+                руб ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 9000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c436-94236.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-vaz-21093_2001_g__inzhektor_v_hs_cvet_rapsodi_52751.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> ВАЗ-21093, 2001 г., инжектор в х/с, цвет рапсодия, сигнализация, музыка, масло
+                поменяно, полностью деревянный ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 95000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c263-95914.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-shikarnoe_plate__cvet_rozovyy__na_grudi_cvetok_53876.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> шикарное платье. Цвет: розовый. На груди цветок, с пояском, сзади разрез ( 7-8
+                см) размер: 42-44. Б/у 2 раза. ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 800 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c272-97483.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-kacheli_detskie_feya_55030.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> качели детские «Фея»</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 800 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c277-94974.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-myagkuyu_mebel_divan_i_dva_kresla_v_ochen_horoshe_53274.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> мягкую мебель, диван и 2 кресла, в очень х/с, вместе с
+                накидками ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 6000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c401-94632.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-prodam_Hyundai_Accent_2007_g__v_otlichnom_sosto_53094.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text">
+                <strong>Продам:</strong> Hyundai Accent, 2007 г., в о/с, авто вложений не требует, все расходники
+                поменяны, кондиционер, ГУР, газовое о ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 260000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c248-96828.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-sotovyy_telefon_FLY_IQ442__vsya_bolee_podrobnaya_i_54500.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> сотовый телефон «Fly IQ442». Вся более подробная
+                информация по телефону ...
+            </div>
+            <div class="tooltip_price"><strong>Цена:</strong> 5000 руб.</div>
+        </div>
+    </div>
+</a>
+<a class="kaleidoscope__item" href="http://ob.ksk66.ru/c360-97401.html">
+    <img class="kaleidoscope__item__img" src="ob_files/-dver_s_korobkoy_vhodnaya_bu_samovyvoz_54956.jpg">
+
+    <div class="kaleidoscope__item__tooltip">
+        <div class="kaleidoscope__tooltip">
+            <div class="tooltip_text"><strong>Продам:</strong> дверь входная, с коробкой, бу, самовывоз</div>
+            <div class="tooltip_price"><strong>Цена:</strong> 2000 руб.</div>
+        </div>
+    </div>
+</a>
+</div>
+</div>
+</div>
+<div class="col-sm-8 col-md-6 col-mid">
+<div class="standard">
+    <div class="helper"
+         style="
+                            display: none;
+                            border: 1px #88C425 solid;
+                            background-color: #BEF202;
+                            border-radius: 20px 20px 0 0;
+                            padding: 5px 0;
+                            color: #519548;
+                            width: 100%;
+                            text-align: center;
+                            font-weight: bold">
+        ../ob.ksk66.ru/standard-top
+    </div>
+    <img class="yummies"
+         src="%D0%9C%D0%B5%D0%BD%D1%8F%D1%8E%20%D1%82%D0%B5%D1%81%D1%82%20%D1%82%D0%B5%D1%81%D1%82_files/avtorazbor2.png"
+         alt="advertisement" data-zone-info="zone: standard, sized 468x60" height="60" width="468">
+</div>
+<div class="row row-center-yummies hidden-lg hidden-md">
+    <div class="col-xs-4">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/left-1
+        </div>
+        <img class="yummies"
+             src="%D0%9C%D0%B5%D0%BD%D1%8F%D1%8E%20%D1%82%D0%B5%D1%81%D1%82%20%D1%82%D0%B5%D1%81%D1%82_files/uta2.png"
+             alt="advertisement" data-zone-info="zone: left, sized 240x240" height="240" width="240">
+    </div>
+    <div class="col-xs-4">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/left-2
+        </div>
+        <img class="yummies"
+             src="%D0%9C%D0%B5%D0%BD%D1%8F%D1%8E%20%D1%82%D0%B5%D1%81%D1%82%20%D1%82%D0%B5%D1%81%D1%82_files/komp-as_20131210.png"
+             alt="advertisement" data-zone-info="zone: left, sized 240x240" height="240" width="240">
+    </div>
+    <div class="col-xs-4">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/left-3
+        </div>
+        <img class="yummies"
+             src="%D0%9C%D0%B5%D0%BD%D1%8F%D1%8E%20%D1%82%D0%B5%D1%81%D1%82%20%D1%82%D0%B5%D1%81%D1%82_files/autoteplo.png"
+             alt="advertisement" data-zone-info="zone: left, sized 240x240" height="240" width="240">
+    </div>
+</div>
+<div id="___gcse_1">
+    <div class="gsc-control-cse gsc-control-cse-ru">
+        <div dir="ltr" class="gsc-control-wrapper-cse">
+            <div class="gsc-results-wrapper-nooverlay">
+                <div class="gsc-tabsAreaInvisible">
+                    <div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Пользовательский поиск</div>
+                    <span class="gs-spacer"> </span>
+                </div>
+                <div class="gsc-tabsAreaInvisible"></div>
+                <div class="gsc-above-wrapper-area-invisible">
+                    <table class="gsc-above-wrapper-area-container" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td class="gsc-result-info-container">
+                                <div class="gsc-result-info-invisible"></div>
+                            </td>
+                            <td class="gsc-orderby-container">
+                                <div class="gsc-orderby-invisible">
+                                    <div class="gsc-orderby-label gsc-inline-block">Упорядочить:</div>
+                                    <div class="gsc-option-menu-container gsc-inline-block">
+                                        <div class="gsc-selected-option-container gsc-inline-block">
+                                            <div class="gsc-selected-option">Relevance</div>
+                                            <div class="gsc-option-selector"></div>
+                                        </div>
+                                        <div class="gsc-option-menu-invisible">
+                                            <div class="gsc-option-menu-item gsc-option-menu-item-highlighted">
+                                                <div class="gsc-option">Relevance</div>
+                                            </div>
+                                            <div class="gsc-option-menu-item">
+                                                <div class="gsc-option">Date</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="gsc-adBlockInvisible"></div>
+                <div class="gsc-wrapper">
+                    <div class="gsc-adBlockInvisible"></div>
+                    <div class="gsc-resultsbox-invisible">
+                        <div class="gsc-resultsRoot gsc-tabData gsc-tabdActive">
+                            <table class="gsc-resultsHeader" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td class="gsc-twiddleRegionCell">
+                                        <div class="gsc-twiddle">
+                                            <div class="gsc-title">Интернет</div>
+                                        </div>
+                                        <div class="gsc-stats"></div>
+                                        <div class="gsc-results-selector gsc-all-results-active">
+                                            <div title="показать один результат"
+                                                 class="gsc-result-selector gsc-one-result">&nbsp;</div>
+                                            <div title="показать другие результаты"
+                                                 class="gsc-result-selector gsc-more-results">&nbsp;</div>
+                                            <div title="показать все результаты"
+                                                 class="gsc-result-selector gsc-all-results">&nbsp;</div>
+                                        </div>
+                                    </td>
+                                    <td class="gsc-configLabelCell"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <div class="gsc-expansionArea"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="add-ob__yours-ob_stub" id="add-ob__yours-ob">
+    <div class="panel panel-default ">
+        <div class="panel-heading">Мои объявления<i class="fa fa-eye-slash pull-right"
+                                                    title="Не показывать эти объявления" onclick="hideYoursOb();"
+                                                    style="cursor:pointer;"></i>
+        </div>
+        <table class="table" style="table-layout: fixed;">
+
+
+            <tbody>
+            <tr id="c-98287" class="">
+                <td style="width:60px;"><img class="add-ob__yours-ob__image-hide"
+                                             src="%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE_files/pictures.png"><img
+                        class="add-ob__yours-ob__image-hide"
+                        src="%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE_files/pictures.png">
+                </td>
+                <td style="width:74%;">
+                    <div class="add-ob__yours-ob__text"><a href="http://ob.ksk66.ru/98287.html"><strong>Меняю</strong>
+                        тест тест</a></div>
+                </td>
+                <td>
+                    <div class="add-ob__yours-ob__box pull-right">
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__days-output"
+                              title="До завершения выхода объявления осталось 5 дней">                          <i
+                                class="fa fa-clock-o"></i>5</span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__edit"
+                              title="Редактировать объявление"><a class="add-ob__yours-ob__link"
+                                                                  href="http://ob.ksk66.ru/cpanel-98287-edit.html"><i
+                                class="fa fa-edit"></i></a>                        </span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__delete" title="Удалить объявление">  <a
+                                class="add-ob__yours-ob__link"
+                                onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление ?')) { parent.location='/cpanel-98287-del.html'; }"><i
+                                class="fa fa-times"></i></a> </span>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr id="c-98285" class="">
+                <td style="width:60px;"><span class="add-ob__yours-ob__image" title="Объявление с&nbsp;1 фото"><i
+                        class="fa fa-picture-o"></i></span><img class="add-ob__yours-ob__image-hide"
+                                                                src="%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE_files/pictures.png">
+                </td>
+                <td style="width:74%;">
+                    <div class="add-ob__yours-ob__text"><a href="http://ob.ksk66.ru/98285.html"><strong>Продам</strong>
+                        тест укцеукецу</a></div>
+                </td>
+                <td>
+                    <div class="add-ob__yours-ob__box pull-right">
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__days-output"
+                              title="До завершения выхода объявления осталось 28 дней">                          <i
+                                class="fa fa-clock-o"></i>28</span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__edit"
+                              title="Редактировать объявление"><a class="add-ob__yours-ob__link"
+                                                                  href="http://ob.ksk66.ru/cpanel-98285-edit.html"><i
+                                class="fa fa-edit"></i></a>                        </span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__delete" title="Удалить объявление">  <a
+                                class="add-ob__yours-ob__link"
+                                onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление ?')) { parent.location='/cpanel-98285-del.html'; }"><i
+                                class="fa fa-times"></i></a> </span>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr id="c-98288" class="">
+                <td style="width:60px;"><img class="add-ob__yours-ob__image-hide"
+                                             src="%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE_files/pictures.png"><img
+                        class="add-ob__yours-ob__image-hide"
+                        src="%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE_files/pictures.png">
+                </td>
+                <td style="width:74%;">
+                    <div class="add-ob__yours-ob__text"><a href="http://ob.ksk66.ru/98288.html"><strong>Арендую</strong>
+                        тест джлождло</a></div>
+                </td>
+                <td>
+                    <div class="add-ob__yours-ob__box pull-right">
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__days-output"
+                              title="До завершения выхода объявления осталось 28 дней">                          <i
+                                class="fa fa-clock-o"></i>28</span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__edit"
+                              title="Редактировать объявление"><a class="add-ob__yours-ob__link"
+                                                                  href="http://ob.ksk66.ru/cpanel-98288-edit.html"><i
+                                class="fa fa-edit"></i></a>                        </span>
+                        <span class="add-ob__yours-ob__column add-ob__yours-ob__delete" title="Удалить объявление">  <a
+                                class="add-ob__yours-ob__link"
+                                onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление ?')) { parent.location='/cpanel-98288-del.html'; }"><i
+                                class="fa fa-times"></i></a> </span>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel ">
+    <div class="quick-nav">
+        <div class="btn-group">
+            <a class="btn btn-default btn-lg dropdown-toggle pull-left" data-toggle="dropdown"><i class="fa fa-list-ul"></i>
+                Категории <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu nav nav-stacked">
+                <li class="">
+                    <a href="http://ob.ksk66.ru/">На главную страницу</a>
+                </li>
+                <li class="dropdown-header"><strong>Услуги</strong></li>
+                <li>
+                    <a href="http://ob.ksk66.ru/c428.html">Транспорт
+                    <span class="badge">9</span>
+                </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c446.html">Спецтехника
+        <span class="badge">2</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c429.html">Строительство и ремонт
+        <span class="badge">7</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c430.html">Бытовые услуги, ремонт техники
+        <span class="badge">2</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c431.html">Образование
+        <span class="badge">4</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c433.html">Прочие услуги
+        <span class="badge">13</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Авто. Мото. Транспорт</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c435.html">ВАЗ 2101-07: Лада классика
+        <span class="badge">60</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c436.html">ВАЗ 2108-09, 2113-15: Лада Самара
+        <span class="badge">86</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c437.html">ВАЗ 2110-12: Лада десятка
+        <span class="badge">76</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c438.html">Лада Калина, Приора, Гранта, Ларгус
+        <span class="badge">43</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c50.html">Нива, Ока, Волга и другие
+        <span class="badge">55</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c401.html">Иностранные легковые авто
+        <span class="badge">166</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c423.html">Грузовые, спецтехника, мотоблоки
+        <span class="badge">52</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c52.html">Мотоциклы, скутеры, велосипеды
+        <span class="badge">13</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c55.html">Запчасти и принадлежности
+        <span class="badge">88</span>
+    </a>
+</li>
+<li class="active">
+    <a href="http://ob.ksk66.ru/c444.html">Шины и диски
+        <span class="badge">60</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Недвижимость</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c405.html">1-комн. квартиры
+        <span class="badge">76</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c408.html">2-комн. квартиры
+        <span class="badge">85</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c407.html">3,4-комн. квартиры
+        <span class="badge">70</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c185.html">Дома, коттеджи
+        <span class="badge">114</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c184.html">Аренда жилья
+        <span class="badge">95</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c439.html">Дачи, садовые и земельные участки
+        <span class="badge">67</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c442.html">Коммерческая недвижимость и оборудование
+        <span class="badge">25</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c186.html">Гаражи и стоянки
+        <span class="badge">43</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Работа и образование</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c191.html">Предлагаю работу
+        <span class="badge">38</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c192.html">Ищу работу
+        <span class="badge">121</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c426.html">Красноуфимский центр занятости
+        <span class="badge">5</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Техника, компьютеры и электроника</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c221.html">Техника для дома и кухни
+        <span class="badge">35</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c211.html">Автомобильная и домашняя аппаратура
+        <span class="badge">33</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c230.html">Компьютеры, оргтехника, комплектующие
+        <span class="badge">50</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c248.html">Телефоны, планшеты, фото
+        <span class="badge">73</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Всё для дома</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c277.html">Мебель, посуда, интерьер
+        <span class="badge">83</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c360.html">Стройматериалы и инструменты
+        <span class="badge">43</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c263.html">Одежда, обувь, аксессуары
+        <span class="badge">142</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c443.html">Детская одежда и обувь
+        <span class="badge">91</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c272.html">Всё для детей
+        <span class="badge">101</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Сад, огород, животные</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c346.html">Кошки и собаки
+        <span class="badge">75</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c355.html">Другие животные, корма, клетки
+        <span class="badge">48</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c441.html">Растения
+        <span class="badge">2</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c422.html">Продукты питания
+        <span class="badge">21</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c434.html">С/х и садовый инвентарь
+        <span class="badge">3</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Всё остальное</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c293.html">Отдых, спорт, здоровье и праздники
+        <span class="badge">37</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c308.html">Знакомства и контакты по интересам
+        <span class="badge">20</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c420.html">Поздравления
+        <span class="badge">0</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c311.html">Некролог
+        <span class="badge">0</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c415.html">Разное
+        <span class="badge">47</span>
+    </a>
+</li>
+<li class="divider"></li>
+<li class="dropdown-header"><strong>Потери и находки</strong></li>
+<li>
+    <a href="http://ob.ksk66.ru/c397.html">Потеряно
+        <span class="badge">1</span>
+    </a>
+</li>
+<li>
+    <a href="http://ob.ksk66.ru/c396.html">Найдено
+        <span class="badge">2</span>
+    </a>
+</li>
+<li class="divider"></li>
+</ul>
+<a class="btn btn-link btn-lg"
+   style="overflow: hidden; text-overflow: ellipsis"
+   onclick="window.location.reload();" title="Перезагрузить страницу">
+    Шины и диски
+</a>
+</div>
+<a class="btn pull-right" onclick="window.location.reload();">
+    <span class="badge"></span>
+</a>
+</div>
+</div>
+<div class="message-one__panel message-one__publish-not message-one__panel_alert-info">
+    <div class="alert alert-info">
+        <h3>Это объявление <strong> ещё не опубликовано</strong></h3>
+        <p>
+            Наши сотрудники проверят его
+            <nobr>в ближайшее время.</nobr>
+        </p>
+        <p>
+            <strong>Частное объявление</strong> будет опубликовано бесплатно после проверки.
+        </p>
+
+        <p>
+            <strong>Коммерческое объявление</strong> размещается платно. Мы&nbsp;позвоним вам.
+        </p>
+
+        <p>
+            После проверки объявление будет доступно всем и появится в общем списке
+        </p>
+
+        <div class="message-one__block-content">
+            <div class="row message-one_text" style="margin-top: 5px;"></div>
+        </div>
+    </div>
+    <div style="width:100%; clear: both;"></div>
+</div>
+<output class="add-ob_output" name="echo">
+    <div class="alert alert-success">
+        <h2>Ваше объявление добавлено</h2>
+        <h4>и откроется через пару секунд... <a class="btn btn-link" href="http://ob.ksk66.ru/c444-98290.html">Открыть</a></h4>
+        <!--<h4></h4>
+        <h4><a href="http://ob.ksk66.ru/">На главную страницу Доски объявлений →</a></h4>
+        <h4><a href="http://ob.ksk66.ru/new.html">← Добавить новое объявление</a></h4>-->
+    </div>
+</output>
+<div class="panel panel-ob">
+    <div class="panel-heading"><strong>Меняю</strong> тест тест</div>
+    <div class="panel-body">
+        <div class="col-xs-6">
+            <div class="price">Цена: <strong>354 345</strong> <i class="fa fa-rub"></i></div>
+            <div class="bargain">Возможен торг</div>
+        </div>
+        <div class="col-xs-6">
+            <div class="pull-right">
+                <a class="tel" title="Позвонить автору" href="callto:+79023455631">
+                    <i class="fa fa-mobile-phone fa-fw"></i> +7&nbsp;902&nbsp;345‑56‑31</a> <br>
+                <a class="tel" title="Позвонить автору" href="callto:+79023456782">
+                    <i class="fa fa-mobile-phone fa-fw"></i> +7&nbsp;902&nbsp;345‑67‑82</a> <br>
+                <a class="tel" title="Позвонить автору" href="callto:+73439493433">
+                    <i class="fa fa-phone fa-fw"></i> +7&nbsp;(34394)&nbsp;9‑34‑33</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--пожаловаться и поделиться-->
+<div class="" style="text-align: right;">
+    <div class="btn btn-default" id="addabuse">
+        <a class="abuse_link" href="#" onclick="addabuse(0,98287);return false;">Сообщить о проблеме</a>
+    </div>
+    <div class="btn btn-default" id="ya_share1">
+                        <span class="b-share">
+                            <a class="b-share__handle" id="ya-share-0.5688840066434565-1387887383562" data-hdirection=""
+                               data-vdirection="">
+                                <span class="b-share__text">Поделиться</span>
+                            </a>
+                        </span>
+    </div>
+    <button class="btn btn-default show-owner hide-owner"
+            title="Удалить объявление"
+            onclick="if (confirm('Ваше объявление будет удалено с сайта и не будет опубликовано в следующих выпусках газеты. Удалить объявление?')) { parent.location='/cpanel-98287-del.html'}">
+        <i class="fa fa-times"></i> Удалить
+    </button>
+    <button class="btn btn-default show-admin"
+            title="Удалить объявление как админ"
+            onclick="if (confirm('Это объявление будет удалено с сайта. Удалить объявление?')) {parent.location='/a/?action=ads&amp;op=del&amp;id_mess=98287'}">
+        <i class="fa fa-times"></i> Удалить
+    </button>
+    <button class="btn btn-default show-owner hide-owner"
+            title="Редактировать объявление" onclick="location.href='/cpanel-98287-edit.html'">
+        <i class="fa fa-edit"></i> Редактировать
+    </button>
+    <button class="btn btn-default show-admin"
+            title="Редактировать объявление как админ"
+            onclick="location.href='/a/?action=ads&amp;op=edit&amp;id_mess=98287'"><i class="fa fa-edit"></i>
+        Редактировать
+    </button>
+</div>
+<style>
+    .b-share__handle {
+        padding: 0 !important;
+    }
+
+    .b-share__text {
+        color: #333333;
+        text-decoration: none;
+        margin-right: 0;
+    }
+
+    .b-share__text:hover {
+        text-decoration: none !important;
+        color: #333333 !important;
+    }
+</style>
+<div class="payment-panel_block-header">Оплатить дополнительные услуги
+    <i class="fa fa-angle-down" style="text-decoration: none;margin-left:8px;"></i>
+</div>
+<div class="payment-panel_block">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div class="row payment-panel payment-panel_selected ">
+                <div class=" col-sm-5 col-md-4 col-lg-6">
+                    <strong>Выделить объявление</strong>
+
+                    <p>
+                        <small>показывается в рамке и размещается над остальными</small>
+                    </p>
+                </div>
+                <div class="col-sm-7 col-md-8 col-lg-6 payment-panel__buttons payment-panel__buttons_selected">
+                    <div class="btn-group">
+                        <form accept-charset="utf-8" method="post" action="https://merchant.roboxchange.com/Index.aspx">
+                            <input name="MrchLogin" value="infotek" type="hidden">
+                            <input name="OutSum" value="100" type="hidden">
+                            <input name="InvId" value="9828711" type="hidden">
+                            <input name="Desc" value="Выделить объявление №98287 на 1 неделю" type="hidden">
+                            <input name="SignatureValue" value="669a6afe162d29c1e6d1aff6585b725b" type="hidden">
+                            <input name="IncCurrLabel" value="WMR" type="hidden">
+                            <input name="Culture" value="ru" type="hidden">
+                            <input name="Encoding" value="utf-8" type="hidden">
+                            <input name="shp_service" value="selected" type="hidden">
+                            <input name="shp_weeks" value="1" type="hidden">
+                            <button class="btn btn-success" type="submit" disabled="disabled">Оплатить 1 неделю <span
+                                    class="label label-default">100 р</span></button>
+                        </form>
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                disabled="disabled">
+                            <span style="visibility:hidden;"> </span><span class="caret"></span><span
+                                style="visibility:hidden;"> </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form accept-charset="utf-8" method="post"
+                                      action="https://merchant.roboxchange.com/Index.aspx">
+                                    <input name="MrchLogin" value="infotek" type="hidden">
+                                    <input name="OutSum" value="200" type="hidden">
+                                    <input name="InvId" value="9828711" type="hidden">
+                                    <input name="Desc" value="Выделить объявление №98287 на 2 недели" type="hidden">
+                                    <input name="SignatureValue" value="351b311dab6b7d5baebe6b3668c808b7" type="hidden">
+                                    <input name="IncCurrLabel" value="WMR" type="hidden">
+                                    <input name="Culture" value="ru" type="hidden">
+                                    <input name="Encoding" value="utf-8" type="hidden">
+                                    <input name="shp_service" value="selected" type="hidden">
+                                    <input name="shp_weeks" value="2" type="hidden">
+                                    <button class="btn btn-link" type="submit">Оплатить 2 недели <span
+                                            class="label label-default">200 р</span></button>
+                                </form>
+                            </li>
+                            <li>
+                                <form accept-charset="utf-8" method="post"
+                                      action="https://merchant.roboxchange.com/Index.aspx">
+                                    <input name="MrchLogin" value="infotek" type="hidden">
+                                    <input name="OutSum" value="300" type="hidden">
+                                    <input name="InvId" value="9828711" type="hidden">
+                                    <input name="Desc" value="Выделить объявление №98287 на 3 недели" type="hidden">
+                                    <input name="SignatureValue" value="e2c1e5c9cd804d04d9e4e7641b154ba8" type="hidden">
+                                    <input name="IncCurrLabel" value="WMR" type="hidden">
+                                    <input name="Culture" value="ru" type="hidden">
+                                    <input name="Encoding" value="utf-8" type="hidden">
+                                    <input name="shp_service" value="selected" type="hidden">
+                                    <input name="shp_weeks" value="3" type="hidden">
+                                    <button class="btn btn-link" type="submit">Оплатить 3 недели <span
+                                            class="label label-default">300 р</span></button>
+                                </form>
+                            </li>
+                            <li>
+                                <form accept-charset="utf-8" method="post"
+                                      action="https://merchant.roboxchange.com/Index.aspx">
+                                    <input name="MrchLogin" value="infotek" type="hidden">
+                                    <input name="OutSum" value="400" type="hidden">
+                                    <input name="InvId" value="9828711" type="hidden">
+                                    <input name="Desc" value="Выделить объявление №98287 на 4 недели" type="hidden">
+                                    <input name="SignatureValue" value="c525cc7f6bed4dbbf44e050bacc002cf" type="hidden">
+                                    <input name="IncCurrLabel" value="WMR" type="hidden">
+                                    <input name="Culture" value="ru" type="hidden">
+                                    <input name="Encoding" value="utf-8" type="hidden">
+                                    <input name="shp_service" value="selected" type="hidden">
+                                    <input name="shp_weeks" value="4" type="hidden">
+                                    <button class="btn btn-link" type="submit">Оплатить 4 недели <span
+                                            class="label label-default">400 р</span></button>
+                                </form>
+                            </li>
+                        </ul>
+                        <p style="color:grey;">Можно заказать после одобрения</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row payment-panel payment-panel_newspaper ">
+                <div class=" col-sm-5 col-md-4 col-lg-6 ">
+                    <p><strong>Размещение в газете</strong><br>
+                        <small>Опубликовать объявление в газете
+                            <span class="payment-panel_header-tvoy">твой</span><span
+                                    class="payment-panel_header-posrednik">посредник</span></small>
+                    </p>
+                </div>
+                <div class=" col-sm-7 col-md-8 col-lg-6 payment-panel__buttons payment-panel__buttons_newspaper">
+                    <style>
+                        .btn-group > form {
+                            position: relative;
+                            float: left;
+                            margin-bottom: 0;
+                        }
+
+                        .dropdown-menu > li .btn:hover {
+                            text-decoration: none;
+                        }
+                    </style>
+                    <div class="btn-group">
+                        <form accept-charset="utf-8" method="post" action="https://merchant.roboxchange.com/Index.aspx">
+                            <input name="MrchLogin" value="infotek" type="hidden">
+                            <input name="OutSum" value="20" type="hidden">
+                            <input name="InvId" value="9828711" type="hidden">
+                            <input name="Desc" value="Разместить в газете объявление №98287 на 1 неделю" type="hidden">
+                            <input name="SignatureValue" value="7fc67b07213b41662e877994dd05fdfb" type="hidden">
+                            <input name="IncCurrLabel" value="WMR" type="hidden">
+                            <input name="Culture" value="ru" type="hidden">
+                            <input name="Encoding" value="utf-8" type="hidden">
+                            <input name="shp_service" value="newspaper" type="hidden">
+                            <input name="shp_weeks" value="1" type="hidden">
+                            <button class="btn btn-success" type="submit" disabled="disabled">Оплатить 1 выпуск <span
+                                    class="label label-default">20 р</span></button>
+                        </form>
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                disabled="disabled">
+                            <span style="visibility:hidden;"> </span><span class="caret"></span><span
+                                style="visibility:hidden;"> </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form accept-charset="utf-8" method="post"
+                                      action="https://merchant.roboxchange.com/Index.aspx">
+                                    <input name="MrchLogin" value="infotek" type="hidden">
+                                    <input name="OutSum" value="40" type="hidden">
+                                    <input name="InvId" value="9828711" type="hidden">
+                                    <input name="Desc" value="Разместить в газете объявление №98287 на 2 недели"
+                                           type="hidden">
+                                    <input name="SignatureValue" value="d2f9c7171479048345d34563098b34a4" type="hidden">
+                                    <input name="IncCurrLabel" value="WMR" type="hidden">
+                                    <input name="Culture" value="ru" type="hidden">
+                                    <input name="Encoding" value="utf-8" type="hidden">
+                                    <input name="shp_service" value="newspaper" type="hidden">
+                                    <input name="shp_weeks" value="2" type="hidden">
+                                    <button class="btn btn-link" type="submit">Оплатить 2 выпуска <span
+                                            class="label label-default">40 р</span></button>
+                                </form>
+                            </li>
+                            <li>
+                                <form accept-charset="utf-8" method="post"
+                                      action="https://merchant.roboxchange.com/Index.aspx">
+                                    <input name="MrchLogin" value="infotek" type="hidden">
+                                    <input name="OutSum" value="60" type="hidden">
+                                    <input name="InvId" value="9828711" type="hidden">
+                                    <input name="Desc" value="Разместить в газете объявление №98287 на 4 недели"
+                                           type="hidden">
+                                    <input name="SignatureValue" value="23aabbd43559b8b9e9f2c9bda41acf60" type="hidden">
+                                    <input name="IncCurrLabel" value="WMR" type="hidden">
+                                    <input name="Culture" value="ru" type="hidden">
+                                    <input name="Encoding" value="utf-8" type="hidden">
+                                    <input name="shp_service" value="newspaper" type="hidden">
+                                    <input name="shp_weeks" value="4" type="hidden">
+                                    <button class="btn btn-link" type="submit">Оплатить 4 выпуска <span
+                                            class="label label-default">60 р</span></button>
+                                </form>
+                            </li>
+                        </ul>
+                        <p style="color:grey;">Можно заказать после одобрения</p>
+                    </div>
+                    <p class="help-block"><strong>Бесплатно!</strong><br>В обмен на купон из газеты</p></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="add-ob__yours-ob-services"><img
+        src="%D0%9C%D0%B5%D0%BD%D1%8F%D1%8E%20%D1%82%D0%B5%D1%81%D1%82%20%D1%82%D0%B5%D1%81%D1%82_files/delete_48.png"
+        hidden="hidden">
+
+    <div class="services_wrapp"><p class="journal__header">История объявления № 98287:</p>
+        <table class="table table-condensed journal_user" style="clear:both;">
+            <tbody>
+            <tr class="journal__header"></tr>
+            <tr class="journal__row">
+                <td class="journal_date">24.12, 18:14</td>
+                <td style="padding-left: 10px;">Создано объявление, категория: Шины и диски</td>
+            </tr>
+            </tbody>
+        </table>
+        <form role="form" name="coupon" class="form-horizontal">
+            <div class="form-group">
+                <label for="code" class="col-sm-4">Введите код купона:</label>
+
+                <div class="input-group col-sm-8">
+                    <input class="form-control" name="code" id="code" pattern="[0-9А-Яа-я]{1,16}"
+                           onkeyup="document.coupon.send.disabled = ! document.coupon.code.value.length" type="text">
+      <span class="input-group-btn">
+        <button class="btn btn-default" disabled="disabled" type="button" name="send"
+                onclick='addownerblockbootstrap(98287,"add-ob__yours-ob-services","coupon",document.coupon.code.value);'>
+            Отправить купон
+        </button>
+      </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="message-one_yummes" class="message_yummies"></div>
+
+
+<output class="hidden add-ob_output" name="echo"></output>
+<div class="standard">
+    <div id="y-st1">
+        <div id="ya_partner_y-st1-flat"
+             style="background:transparent none no-repeat scroll 0 0 !important;border:none !important;border-radius:none !important;border-spacing:0 !important;border-collapse:collapse !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;clear:none !important;clip:auto !important;color:inherit !important;cursor:auto !important;empty-cells:show !important;float:none !important;font:inherit !important;font-variant:normal !important;font-weight:normal !important;height:auto !important;letter-spacing:normal !important;line-height:normal !important;margin:0 !important;max-height:none !important;max-width:none !important;min-height:0 !important;min-width:0 !important;outline:none !important;overflow:visible !important;padding:0 !important;position:static !important;table-layout:auto !important;text-align:left !important;text-decoration:none !important;text-indent:0 !important;text-transform:none !important;vertical-align:baseline !important;visibility:visible !important;white-space:normal !important;width:auto !important;word-spacing:normal !important;z-index:auto !important;display:block !important;">
+            <yatag class="ya-partner_theme_flat ya-partner_border  ya-partner ya-partner_type_flat ya-partner_type_flat-simple">
+                <yatag class="ya-partner__ads">
+                    <yatag class="ya-partner__ads-l"><a href="http://direct.yandex.ru/?partner"
+                                                        class="ya-partner__ads-link ya-partner__ads-link-l"
+                                                        target="_blank">Яндекс.Директ</a></yatag>
+                </yatag>
+                <yatag class="ya-partner__list">
+                    <yatag class="ya-partner__item ya-partner__item-1 ya-partner__item_sitelinks_no ya-partner__item_pos_first ya-partner__item_pos_last">
+                        <a href="http://an.yandex.ru/count/GWCpc3da2ZW40000ZhYnboi5XPwJ49K2cm5kGxS2Am68kE8LO0Q9fDs70vYbIBo-dQ4p0mYwypOJ_X47c3G7clwHW3r2tU4z1wPbYgfZoxszeoFfzQe1fQmCdmAHkNoapWUFkpbunmMVjumZcGAJcha2cHH2Z9Ym7xQSWGcrc0u8e9NlCQ-Oi1-paB8Cj9WE29ILfn6dcFa1gAKf1nIai00002Ykync0fOgsHku4iBHVa8S2iG6oW12veJC32BlcNk8xftMqwdiN?test-tag=1249"
+                           class="ya-partner__title-link" title="crusher.apishops.ru" target="_blank">
+                            <yatag class="ya-partner__title-link-text">Овощерезка Найсер Дайсер, за&nbsp;790р</yatag>
+                        </a>
+                        <yatag class="ya-partner__text">Овощерезка Найсер Дайсер Плюс, набор из&nbsp;12 предметов!
+                            Оригинал за&nbsp;790&nbsp;руб.!
+                        </yatag>
+                        <yatag class="ya-partner__url">
+                            <yatag class="ya-partner__domain"><a class="ya-partner__domain-link"
+                                                                 href="http://an.yandex.ru/count/GWCpc3da2ZW40000ZhYnboi5XPwJ49K2cm5kGxS2Am68kE8LO0Q9fDs70vYbIBo-dQ4p0mYwypOJ_X47c3G7clwHW3r2tU4z1wPbYgfZoxszeoFfzQe1fQmCdmAHkNoapWUFkpbunmMVjumZcGAJcha2cHH2Z9Ym7xQSWGcrc0u8e9NlCQ-Oi1-paB8Cj9WE29ILfn6dcFa1gAKf1nIai00002Ykync0fOgsHku4iBHVa8S2iG6oW12veJC32BlcNk8xftMqwdiN?test-tag=1249"
+                                                                 target="_blank">crusher.apishops.ru</a></yatag>
+                            &nbsp;
+                            <yatag class="ya-partner__region"></yatag>
+                        </yatag>
+                    </yatag>
+                </yatag>
+            </yatag>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function (w, d, n, s, t) {
+            w[n] = w[n] || [];
+            w[n].push(function () {
+                Ya.Direct.insertInto(67902, "y-st1", {
+                    site_charset: "utf-8",
+                    ad_format: "direct",
+                    font_size: 1,
+                    type: "flat",
+                    border_type: "block",
+                    limit: 1,
+                    title_font_size: 3,
+                    site_bg_color: "FFFFFF",
+                    border_color: "FBE5C0",
+                    title_color: "773300",
+                    url_color: "773300",
+                    text_color: "000000",
+                    hover_color: "CC6600",
+                    favicon: false
+                });
+            });
+            t = d.documentElement.firstChild;
+            s = d.createElement("script");
+            s.type = "text/javascript";
+            s.src = "http://an.yandex.ru/system/context.js";
+            s.setAttribute("async", "true");
+            t.insertBefore(s, t.firstChild);
+        })(window, document, "yandex_context_callbacks");
+    </script>
+
+</div>
+<hr class="visible-xs">
+</div>
+<!--правая колонка-->
+<div class=" col-sm-4 col-md-3 sidebar">
+<div class="row ">
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-1
+        </div>
+        <img class="yummies" src="ob_files/a.gif" alt="advertisement" data-zone-info="zone: right, sized 240x80"
+             height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0; color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-2
+        </div>
+        <img class="yummies" src="ob_files/Taxi-20188.png" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-3
+        </div>
+        <img class="yummies" src="ob_files/mebel-na-zakaz2.gif" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0; color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-4
+        </div>
+        <img class="yummies" src="ob_files/%2520-0001.png" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-5
+        </div>
+        <img class="yummies" src="ob_files/taxi_7-77-77.png" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-6
+        </div>
+        <img class="yummies" src="ob_files/auto-prichal2.png" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-7
+        </div>
+        <img class="yummies" src="ob_files/neposedy.gif" alt="advertisement" data-zone-info="zone: right, sized 240x80"
+             height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-8
+        </div>
+        <img class="yummies" src="ob_files/Autovikyp.png" alt="advertisement" data-zone-info="zone: right, sized 240x80"
+             height="80" width="240">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-9
+        </div>
+        <img class="yummies" src="ob_files/hutor.png" alt="advertisement" data-zone-info="zone: right, sized 240x80"
+             height="90" width="270">
+    </div>
+    <div class="col-xs-6 col-sm-12">
+        <div class="helper"
+             style="
+                                display: none;
+                                border: 1px #88C425 solid;
+                                background-color: #BEF202;
+                                border-radius: 20px 20px 0 0;
+                                padding: 5px 0;
+                                color: #519548;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: bold">
+            ../ob.ksk66.ru/right-10
+        </div>
+        <img class="yummies" src="ob_files/prokat-kostumov1.png" alt="advertisement"
+             data-zone-info="zone: right, sized 240x80" height="90" width="270">
+    </div>
+    <div class="col-xs-6 col-sm-12"></div>
+</div>
+<div class="panel panel-notice">
+    <div class="panel-heading">
+        <h3>Срочно</h3>
+    </div>
+    <div class="panel-footer text-right">
+        <div class="btn"><a class="link-neutral block_paid__link" href="http://ob.ksk66.ru/p11.html">Как сюда
+            попасть?</a></div>
+    </div>
+    <ul class="list-group">
+        <a class="list-group-item" href="http://ob.ksk66.ru/97538.html">
+            <div class="">
+                <strong class="ob">Требуется  компьютерный дизайнер.</strong> В офис, полная рабочая неделя. Хорошее
+                знание графических редакторов обяза…
+            </div>
+            <div class="contacts text-right">
+                <span style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span> , <span
+                    style=""><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;922&nbsp;199-81-76</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/94458.html">
+            <img class="media-object pull-left"
+                 alt="2-комн. п/бл квартиру в кирпичном доме, 1-й этаж, по ул. Пролетарская, вода, канализация, печное …"
+                 src="ob_files/-2_komn__pb_kvartiru_v_kirpichnom_dome_na_1_etazhe_52919.jpg">
+
+            <div class="">
+                <strong class="ob">Продам 2-комн.</strong> п/бл квартиру в кирпичном доме, 1-й этаж, по ул.
+                Пролетарская, вода, канализация, печное …
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;272-43-87</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/94903.html">
+            <div class="">
+                <strong class="ob">Продам коляску «Geoby»</strong>, цвет розовый, б/у 1 год. Есть дождевик,
+                сумка-переноска, сумка для мамы. В о/с
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;442-07-29</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/94162.html">
+            <div class="">
+                <strong class="ob">Услуги Срочный выкуп квартир.</strong> Требования: бл. в центре, цена до 1 млн. руб
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;909&nbsp;018-73-22</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/94360.html">
+            <div class="">
+                <strong class="ob">Продам дом</strong>, деревянный, в связи с переездом, пл. 34,9 м?, в райне шк. № 7,
+                газовое отопление, г/х вода, …
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;264-68-78</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/96628.html">
+            <div class="">
+                <strong class="ob">Отдам котика пушистого</strong> рыжего в добрые руки. Ест все, к туалету приучен
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;912&nbsp;049-02-70</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/96604.html">
+            <div class="">
+                <strong class="ob">Куплю з/у для ноутбука.</strong> Недорого. Срочно
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;652-96-99</span> ,
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;908&nbsp;927-75-22</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/95335.html">
+            <div class="">
+                <strong class="ob">Услуги Грузоперевозки.</strong> ГАЗель 4,2 м, Ларгус, мини-фургон. От 12 руб/км
+                район, от 300 руб/час по городу. …
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;950&nbsp;541-01-01</span> ,
+                <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-45</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/90815.html">
+            <div class="">
+                <strong class="ob">Продам 1-комн.</strong> бл. квартиру, пл. 24 м?. Микрорайон Лесозавод. Выделенный
+                с/у, душевая кабина, кафель. Ку…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;002-71-28</span> ,
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;922&nbsp;136-00-38</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/96176.html">
+            <div class="">
+                <strong class="ob">Продам дом</strong> в Ачитском р-не п. Ялым ул. Дружбы, 4. Есть канализация (с/у в
+                доме) , х/вода, печное отоплен…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;904&nbsp;160-33-44</span> ,
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;904&nbsp;161-16-00</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/95694.html">
+            <div class="">
+                <strong class="ob">Продам зем.</strong> участок 14 соток, под ИЖС, в д. Крылово в центре. Есть вода,
+                свет, асфальт. Рядом школа, д/с…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;952&nbsp;729-95-19</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/92692.html">
+            <div class="">
+                <strong class="ob">Услуги Перезапись</strong> любых видеокассет на DVD, флешкарту. Быстро, на проф.
+                оборудовании. Наш адрес: ул. Лен…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span> ,
+                <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-10</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/97445.html">
+            <div class="">
+                <strong class="ob">Отдам в добрые руки</strong> котёнка, мальчик, тигровой окраски, 3,5 мес. Добрый,
+                ласковый. Ждёт своего хозяина.…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-phone fa-fw"></i>+7&nbsp;(34394)&nbsp;7-97-00</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/97465.html">
+            <div class="">
+                <strong class="ob">Продам Chevrolet Lacetti</strong> 10, 2007 г., цвет синий, пробег 75 тыс. км, полный
+                комплект, дв. 1,6, о/с, 1 хо…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;953&nbsp;006-88-86</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/97551.html">
+            <img class="media-object pull-left"
+                 alt="Peugeot 308, 2010 г., цвет серебристый, в о/с, пробег 50 тыс. км, резина з/л. Замечательный динам…"
+                 src="ob_files/-Peugeot_308_2010_g__cvet_serebristyy_v_os_p_55092.jpg">
+
+            <div class="">
+                <strong class="ob">Продам Peugeot 308</strong>, 2010 г., цвет серебристый, в о/с, пробег 50 тыс. км,
+                резина з/л. Замечательный динам…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;912&nbsp;658-05-78</span> ,
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;441-19-54</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/96857.html">
+            <div class="">
+                <strong class="ob">Продам ВАЗ-2111</strong>, 2000 г., зеленый металлик, литье, пороги и днище меняны
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;904&nbsp;162-82-59</span>
+            </div>
+        </a>
+        <a class="list-group-item" href="http://ob.ksk66.ru/94623.html">
+            <img class="media-object pull-left"
+                 alt="дубленку женскую, размер L, коричневого цвета, современный покрой. Длина до колена. Цена новой 38…"
+                 src="ob_files/krasnoufimsk-dublenku_zhenskuyu_razmer_L_korichnevogo_cveta_.jpg">
+
+            <div class="">
+                <strong class="ob">Продам дубленку женскую</strong>, размер L, коричневого цвета, современный покрой.
+                Длина до колена. Цена новой 38…
+            </div>
+            <div class="contacts text-right">
+                <span><i class="fa fa-mobile-phone fa-fw"></i>+7&nbsp;902&nbsp;275-97-14</span>
+            </div>
+        </a>
+    </ul>
+    <div class="panel-footer text-right">
+        <div class="btn"><a class="link-neutral block_paid__link" href="http://ob.ksk66.ru/p11.html">Как сюда
+            попасть?</a></div>
+    </div>
+</div>
+</div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-sm-6" style="text-align:right;">
+            <h3>© 2008-2013 Красноуфимск Онлайн</h3>
+            <h5>Свидетельство о регистрации СМИ Эл № ФС 77 - 42292 от 30.09.2010 года, выдано Федеральной службой по
+                надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).</h5>
+            <h5>При использовании материалов сайта ссылка обязательна.</h5>
+            <h5>Мнение редакции может не совпадать с мнением авторов материалов, а также комментариев к ним.</h5>
+
+            <div>
+                <img src="ob_files/digits.gif" style="width:8%;">
+                        <span>
+                            <a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
+                        <span>
+                            <a href="http://ob.ksk66.ru/p10.html">Платные услуги</a></span> •
+                        <span>
+                            <a href="http://ksk66.ru/Preiskurant.html">Реклама на сайте</a></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h5>Связаться с нами:</h5>
+
+            <h3>8 (34394) 7-97-10 <br> infotek66@gmail.com</h3>
+            <h4><a href="http://ksk66.ru/index.php?do=feedback&amp;user=1">Форма обратной связи</a></h4>
+            <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- Скрипты и всё прочее -->
+
+<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+<script src="ob_files/bootstrap.js" type="text/javascript"></script>
+<script src="ob_files/autoNumeric-2.js" type="text/javascript"></script>
+
+<!-- Gismeteo informer -->
+<div id="gsInformerID-Rreu7g47" class="gsInformer"
+     style="display: none; width: 241px; height: auto; font-family: Arial; border: 0px none;">
+    <div class="gsIContent">
+
+        <a alt="Погода в Красноуфимске" title="Погода в Красноуфимске" target="_blank"
+           href="http://www.gismeteo.ru/city/daily/4515/" class="nolink">
+            <div id="gs-moduleCurrentBlock">
+                <div class="gsInfoWrapper">
+                    <div class="main_wrap" id="main_wrap">
+                        <div style="background-color: rgb(1, 240, 13); color: rgb(254, 13, 162);" class="secondaryWrap">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="text-align:center" align="center" width="100%">
+                                        <div class="gsWeatherIcon  display"><img src="ob_files/d0.png"></div>
+                                        <div class="gsTemp display"><span>-24°C</span></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgb(250, 250, 250); color: rgb(250, 250, 250);"
+                     class="gsAddInfo2 padding2">
+                    <div class="gsAddInfo3"></div>
+                </div>
+            </div>
+        </a>
+
+        <div style="background-color: rgb(255, 255, 255);" class="gsLinks">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="leftCol"><a href="http://www.gismeteo.ru/" target="_blank">
+                            <img alt="Gismeteo" title="Gismeteo" src="ob_files/logo-mini2.png" align="absmiddle"
+                                 border="0">
+                            <span>Gismeteo</span></a></div>
+                        <div class="rightCol"><a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз
+                            на 2 недели</a></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="ob_files/a" type="text/javascript"></script>
+<script src="ob_files/main.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+        // Вызываем доп. функцию onload
+        if (typeof(load_func_message) != "undefined") {
+            load_func_message();
+        }
+        if (typeof(load_func_add_obb) != "undefined") {
+            load_func_add_obb();
+        }
+        if (typeof(load_func_edit_obb) != "undefined") {
+            load_func_edit_obb();
+        }
+
+        if (IsPageOwner(obId) > -1) {
+            $("body").addClass(" is_owner");
+
+        }
+        if (GetAssetsIds().length) {
+            addmyobbbootstrap("add-ob__yours-ob");
+        }
+
+        if ($(window).width() > 992) {
+            addkaleidoscope("51", "kaleidoscope__left-column");
+        }
+
+    });
+
+    (function () {
+        var cx = '003704283744183876190:qchgmzsmjkc';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    window.setTimeout(function () {
+        $('.header-line__weather-block__icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
+
+        $('.tsp').remove();
+        var tempArray = $(".gsTemp > span").text().split('C');
+        $('.header-line__logo__weather-block__temp').text(tempArray[0]);
+        $('.header-line__weather-block__temp').text(tempArray[0]);
+        $('.header-line__weather-block__label').text('Подробнее');
+    }, 1000);
+    // меню
+    $(function () {
+        var pull = $('#pull');
+        var menu = $('.menu_line');
+        //  menuHeight	= menu.height();
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+    $(function () {
+        $('.add-ob__right__input__price').autoNumeric('init', {aSep: ' ', mDec: '0', vMin: '0', vMax: '100000000'});
+    });
+    function setCookie(key, value) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + 2600000000 * 3);
+        /* 2'600'000'000 is 1 month */
+        document.cookie = key + '=' + escape(value || '') + ';expires=' + expires.toUTCString();
+    }
+    function hideYoursOb() {
+        // TODO: Использовать множественное число, когда нужно
+        if (!confirm('Вы собираетесь скрыть этот блок и потерять возможность редактировать  эти объявления.\n Действительно продолжить?')) {
+            return false
+        }
+        else {
+            $(".add-ob__yours-ob_stub tr").each(function () {
+                setCookie(this.id, "");
+            });
+
+            var YoursOb = $(".add-ob__yours-ob_stub");
+            YoursOb.css("max-height", 0);
+            YoursOb.css("visibility", "hidden");
+        }
+    }
+    $(".payment-panel_block-header").click(function () {
+        $(".payment-panel_block").css("display", "block");
+    });
+
+</script>
+<table class="gstl_50 gssb_c" style="width: 131px; display: none; top: 267px; left: 1106px; position: absolute;"
+       cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td class="gssb_f"></td>
+        <td style="width: 100%;" class="gssb_e"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
