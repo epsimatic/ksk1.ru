@@ -1495,7 +1495,7 @@ footer {
     height: auto !important;
 }
 .searchbox{
-    width: 210px;
+    width: 270px;
     margin-top: 7px;
 }
 .header-line__logo {
@@ -1668,3 +1668,7 @@ footer {
     height: 140px;
 }
 /*Конец шапки сайта*/
+.is_owner .panel-ob img{
+    width: 40px;
+    height: auto;
+}
