@@ -2106,40 +2106,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: #825135;
 
 }
-div.pagination a {
-    margin-right:2px;
-    border:1px solid #2C2C2C;
-    text-decoration:none;
-    color:#fff;
-    background:#2C2C2C url('http://ksk1.ru/img/poff.gif');
-    padding:2px 5px;
-}
 
-div.pagination a:hover,div.pagination a:active {
-    border:1px solid #B30000;
-    color:#FFF;
-    background:#B30000 url('http://ksk1.ru/img/pon.gif');
-}
-
-div.pagination a:visited {
-    color:#FFF;
-}
-
-div.pagination span.current {
-    margin-right:2px;
-    border:1px solid #B30000;
-    font-weight:700;
-    background:#B30000 url('http://ksk1.ru/img/pon.gif');
-    color:#FFF;
-    padding:2px 5px;
-}
-
-div.pagination span.disabled {
-    margin-right:2px;
-    border:1px solid #f3f3f3;
-    color:#ccc;
-    padding:2px 5px;
-}
 .subcat-sort{
     margin: 6px 0;
 }
