@@ -1654,3 +1654,662 @@ footer {
     width: 40px;
     height: auto;
 }
+/*Из ob.ksk66.ru/style.css */
+/* Исправляем косяки Bootstrap */
+.alert > h3:first-child { margin-top: 0; }
+
+/* Авто-подбор размеров */
+.col-special img {
+    max-width: 100%;
+}
+
+.navbar-toggle {
+    border-color: #dddddd;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #cccccc;
+}
+
+/*noinspection ALL*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.left_column .yummies,
+.right_column .yummies{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+/* Компактно выводим рекламу плиткой */
+.row-small-margins > div { padding: 1%; }
+.row-small-margins > div:empty { display: none; }
+
+/* Стили для трёх квадратов рекламы в средней колонке */
+.row-center-yummies{ margin-top: 10px;}
+.row-center-yummies > div:empty { display: none; }
+.row-center-yummies img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.banner-top object{
+    width: 100% !important;
+}
+
+.kaleidoscope__item__img, .kaleidoscope__item__tooltip {
+    background-color: #FFFFFF;
+    padding: 3px;
+}
+.kaleidoscope__item{
+    position: relative;
+    float: right;
+    width: 33%;
+}
+.kaleidoscope__item__img {
+    width: 100%;
+    height: auto;
+    border: 1px white solid;
+    border-right-width: 0;
+}
+.kaleidoscope__item__tooltip {
+    border: 1px gray solid;
+    border-left-width: 0;
+    display: none;
+    position: absolute;
+    height: 91px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    width: 230px;
+    /*  margin: 1px 0 0 -1px;*/
+    text-align: left;
+    color: black;
+}
+.kaleidoscope__item__img:hover {
+    border-color: gray;
+}
+
+.kaleidoscope__item__img:hover + .kaleidoscope__item__tooltip {
+    display: block;
+}
+
+.kaleidoscope__tooltip{
+    font-size: 80%;
+}
+
+/*для message*/
+.subcat-header {
+    background-color: #DEE5EA;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+.subcat-header__line-icon {
+    background-color: #0080C8;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+}
+.subcat-header__line-icon a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.subcat-header__line-icon_arrow {
+    border-bottom: 20px solid #DEE5EA;
+    border-left: 10px solid #0080c8;
+    border-top: 20px solid #DEE5EA;
+    display: inline-block;
+}
+.subcat-header__select-icon{
+    float: right;
+    height: 40px;
+    overflow: hidden;
+    width: 20px;
+    text-align: center;
+    color: #0080c8;
+}
+.subcat-header__select-icon select{
+    background: none ;
+    border: 0 none;
+    font-size: 16px;
+    height: 40px;
+    padding-right: 54px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    opacity: 0;
+}
+.cat-subcat-line__subcat{
+    color: #757D85;
+    display: inline-block;
+    font-size: 120%;
+    padding-left: 16px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cat-subcat-line__subcat:hover{color: #009;
+    text-decoration: none;}
+.btn-group > .btn + .dropdown-toggle{
+
+}
+.name_cat{
+    padding-left: 20px;
+}
+.name_cat:hover{
+    text-decoration: none;
+}
+
+.quick-nav ul li { position: relative; }
+.quick-nav ul li a { padding-right: 60px; }
+.quick-nav ul li .badge { position: absolute; right: 15px; }
+.cat-panel{
+    white-space: nowrap;
+}
+.message-one_phone{
+    float: right;
+}
+.message-one_block-label_bargain,
+.message-one_block-label_price{
+    width: 95%;
+    padding: 4px 0;
+    text-align: center;
+}
+.message-one_block-label_bargain{
+    color: #ffffff;
+    background-color: #bdc3c7;
+    font-size: 13px;
+}
+.message-one_block-label_price{
+    background-color: #ecf0f1;
+    font-size: 14px;
+}
+.message-one__edit-button{
+    background-color: #20324D;
+    border: 0 none;
+    color: #FFFFFF;
+    padding: 5px 11px;
+    display: none;
+    float: right;
+    margin-left: 2px;
+    font-size: 12px;
+}
+.message-one__edit-button {display: none !important;}
+/* Кнопка «Редактировать» */
+.is_owner .message-one__edit-button_edit-owner {display: block !important;}
+.is_admin .message-one__edit-button_edit-admin {display: block !important;}
+.is_admin.is_owner .message-one__edit-button_edit-owner {display: none !important;}
+/* Кнопка «Удалить объявление» */
+.is_owner .message-one__edit-button_remove-owner,
+.is_admin .message-one__edit-button_remove-admin {display: block !important;}
+.is_admin.is_owner .message-one__edit-button_remove-admin {display: none !important;}
+
+.show-owner,
+.show-admin {display: none !important;}
+.is_owner .show-owner,
+.is_admin .show-admin {display: inline-block !important;}
+.is_admin.is_owner .hide-owner {display: none !important;}
+
+
+.payment-panel_block-header{
+    font-size: 18px;
+    margin:35px 20px 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #6d6e71;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.is_owner .payment-panel_block-header{
+    cursor: default;
+}
+.is_owner .message-one__photo-style {width: 60px;}
+.message-one__photo-style {width:100%}
+.payment-panel_block{
+    display: block;
+}
+.display_none{
+    display: none;
+}
+.is_owner .payment-panel_block{
+    display: block;
+}
+.payment-panel__header {
+    font-size: 12px;
+    width: 46%;
+}
+.payment-panel_header-tvoy,
+.payment-panel_header-posrednik{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
+.payment-panel_header-tvoy{
+    color: #0080C8;
+}
+.payment-panel_header-posrednik{
+    color: #43B65C;
+}
+.payment-panel_before-paid{
+    text-align: center;
+    border: 1px dotted grey;
+}
+.payment-panel__coupon{
+    margin-top: 3px;
+    padding: 16px 0 20px;
+    text-align: center;
+    clear: both;
+}
+.btn-group > form { position: relative; float: left;margin-bottom:0; }
+.dropdown-menu > li .btn:hover { text-decoration: none; }
+.standard{clear: both;}
+.standard img {width: 100%;height: auto;}
+.payment-panel__buttons .btn-group{
+    float: right;
+}
+.message-one_impressions{
+    margin-top: 10px;
+}
+.red{
+    color: red;
+}
+.journal__header{
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.help-block{
+    text-align: center;
+}
+.add-ob__yours-ob__image-hide {
+    opacity: 0;
+}
+.add-ob__type-prefix {
+    position: absolute;
+    left: 11px;
+    top: -3px;
+    padding: 0.3em;
+    font-weight: bold;
+    border: 0 solid transparent;
+}
+.block_paid,
+.block_congrats,
+.block_necro {
+    /* border: solid 1px #bcbcbc;*/
+    /* background-color: #F0F0F0;*/
+    margin: 5px 0;
+    width: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.block_paid__element img{
+    padding: 0;
+}
+.block_paid__contacts{
+    display: inline-block;
+    text-align: right;
+    font-size: 11px;
+}
+.block_paid__element{
+    border: solid 1px #bcbcbc;
+    background-color: #F0F0F0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.add-ob__line__photo__container {
+    width: 100%;
+    overflow: hidden;
+}
+.preview div {
+    background: no-repeat center;
+    background-size: cover;
+    float: left;
+    height: 71px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    width: 71px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0;
+    display: inline-block;
+    line-height: 1.42857;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.preview div > div {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    line-height: 1.42857;
+    max-width: 100%;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.preview div {
+    font-size: 0px;
+}
+
+.preview div:hover {
+    font-size: 80px;
+    text-align: center;
+    line-height: 71px;
+    color: red;
+}
+.cat__banner-block {width: auto;}
+.cat__subcats{
+
+}
+.subcat__title_396 , .subcat__title_397{
+    background-color: #0080C8;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin:12px 15px 12px 0;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 9em;
+}
+
+.subcat__title_396:hover , .subcat__title_397:hover{
+    color: #ffffff;
+}
+.subcat__title:hover{
+    text-decoration: none;
+}
+.cat__banner-block img{
+    width: 211px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.quick-nav__btn{
+    background-color: #0080C8;
+    color: #ffffff;
+}
+
+.block_paid__type{
+    font-weight: bold;
+    color: #825135;
+
+}
+div.pagination a {
+    margin-right:2px;
+    border:1px solid #2C2C2C;
+    text-decoration:none;
+    color:#fff;
+    background:#2C2C2C url('http://ksk1.ru/img/poff.gif');
+    padding:2px 5px;
+}
+
+div.pagination a:hover,div.pagination a:active {
+    border:1px solid #B30000;
+    color:#FFF;
+    background:#B30000 url('http://ksk1.ru/img/pon.gif');
+}
+
+div.pagination a:visited {
+    color:#FFF;
+}
+
+div.pagination span.current {
+    margin-right:2px;
+    border:1px solid #B30000;
+    font-weight:700;
+    background:#B30000 url('http://ksk1.ru/img/pon.gif');
+    color:#FFF;
+    padding:2px 5px;
+}
+
+div.pagination span.disabled {
+    margin-right:2px;
+    border:1px solid #f3f3f3;
+    color:#ccc;
+    padding:2px 5px;
+}
+.subcat-sort{
+    margin: 6px 0;
+}
+.add-ob__yours-ob__link{
+    cursor: pointer;
+}
+.block_necro img,
+.block_congrats img{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+.block_necro__all_ob_link{
+    display: block;
+}
+.message-one_complain:hover,
+.message-one_complain{
+    text-decoration: none;
+    color: #333333;
+}
+.add-ob__yours-ob__text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-left: 4px;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.add-ob__yours-ob__box{
+    width: 66px;
+}
+.add-ob__text-input{
+
+}
+
+#addabuse {
+    text-align: left;
+}
+.abuse_link:hover,
+.abuse_link{
+    text-decoration: none;
+    color: #333333;
+}
+
+
+.display_block{
+    display: block;
+}
+footer {
+    background-image: url("http://ob.ksk66.ru/images/footer_bg.png");
+    background-size: cover;
+}
+.b-share{
+    font-size: 100% !important;
+    line-height: 1.1em !important;
+}
+.subcat__title_396,.subcat__title_397{
+    color: #ffffff !important;
+}
+#openstat2173092 img{
+    width: 8%;
+}
+/*для файла header_2013.html*/
+.karta a[title='Карта Красноуфимска и других городов'],
+.timetable a[title='Расписание автобусов и ж/д'],
+.cat a[title='Каталог предприятий, телефонов и адресов'],
+.photo a[title='Фото.Новости'],
+.video a[title='Видео.Новости'],
+.news a[title='Свежие городские новости'],
+.ob a[title='Бесплатные объявления на сайте и в газете']{
+    background-color: #ffffff;
+    color: #0080C8;
+}
+/* Re-define Google search widget: */
+.gsc-search-button-v2
+{
+    margin-left: 0 !important;
+    padding: 5px 16px !important;
+    height: 29px !important;
+    width: auto !important;
+}
+.gsc-input {
+    padding-right: 0 !important;
+}
+.gsc-input-box {
+    height: auto !important;
+}
+.searchbox{
+    width: 210px;
+    margin-top: 7px;
+}
+.header-line__logo {
+    display: inline-block;
+    position: relative;
+    height: 67px;
+    width: 352px;
+    font-size: 45px;
+}
+
+.header-line__logo__arrow {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225.75%22%20height%3D%2226.531%22%3E%3Cpath%20d%3D%22m-57.804-106.677v20.188000000000002l2.406-2.094%205.156-4.469%204.375%2011.531.531%201.375%201.375-.531%205.313-2.063%201.344-.531-.5-1.344-4.406-11.625%207.156-.313%203-.125-1.969-2.281-6.563-7.719h-3.844l6.219%207.312-6.156.281-2.031.094.719%201.875%204.625%2012.188-2.594.969-4.594-12.094-.75-1.969-1.594%201.375-4.281%203.719v-13.75h-2.938z%22%20fill%3D%22%23007cc3%22%20transform%3D%22translate%2857.804%20106.677%29%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background-size: 30px auto;
+    background-origin: padding-box;
+    bottom: -3px;
+    height: 32px;
+    position: absolute;
+    right: -1px;
+    width: 32px;
+}
+
+.header-line__logo__subtitle,
+.header-line__logo__title {
+    color: #3eb75b;
+    font-family: "URW Gothic L", "urw_gothic_lbook", sans-serif;
+    font-size: inherit;
+    font-weight: 300;
+    margin: 0;
+    bottom: 22px;
+    position: absolute;
+    right: 11px;
+}
+
+.header-line__logo__subtitle {
+    color: #0081c8;
+    font-size: 50%;
+    position: absolute;
+    right: 43px;
+    bottom: 2px;
+}
+.header-line__weather-block__icon {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 44px;
+    width: 100%;
+}
+
+.header-line__weather-block__temp {
+    bottom: 13px;
+    font-weight: 600;
+}
+
+.header-line__weather-block__label {
+    color: #808080;
+    font-size: 56%;
+    font-weight: 300;
+    text-align: center;
+}
+.row_header {
+    background-image: url("http://ob.ksk66.ru/images/header_bg_1400_140.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    height: auto;
+    position: relative;
+    min-height: 110px;
+    text-align: center;
+}
+.header-line__logo__weather-block__temp {
+    bottom: -11px;
+    font-size: 40%;
+    left: 45px;
+    opacity: 0;
+    position: absolute;
+    font-weight: 600;
+}
+@media only screen and (max-width : 1200px) {
+    .header-line__logo__weather-block__temp {
+        opacity: 1;
+    }
+    .kaleidoscope__item__tooltip{
+        height: 74px;
+    }
+
+}
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+    .header-line__logo__arrow {
+        background-size: 18px auto;
+        bottom: -6px;
+        right: -9px;
+    }
+
+    .header-line__logo {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .header-line__logo__weather-block__temp {
+        bottom: 2px;
+        left: 11px;
+    }
+}
+@media only screen and (max-width : 435px){
+    .btn_badge{
+        display: none !important;
+    }
+
+}
+/* Выровнять элементы в шапке по вертикали и горизонтали */
+
+.row_header > div {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.row_header > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row_header > div:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 140px;
+}
+
+.photo_block{
+    clear: both;
+}
+/*Конец (начало строка 1657:"Из ob.ksk66.ru/style.css")*/
