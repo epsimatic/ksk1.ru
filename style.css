@@ -2195,8 +2195,8 @@ footer {
     height: auto !important;
 }
 .searchbox{
-    width: 210px;
-    margin-top: 7px;
+    width: 268px;
+    margin: 7px 11px 0 0;
 }
 .header-line__logo {
     display: inline-block;
