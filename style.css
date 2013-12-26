@@ -429,12 +429,6 @@ p.media-text {
     text-decoration: underline;
     white-space: nowrap;
 }
-.ob-list img {
-    margin: 0;
-}
-.ob-list {
-    padding-bottom: 0;
-}
 .col-mid .btn-group .fa-play {
     color: #bbb;
     font-size: 0.9em;
@@ -2279,6 +2273,30 @@ footer {
     position: absolute;
     font-weight: 600;
 }
+.ob-list img {
+    margin: 0;
+}
+.ob-list {
+    padding-bottom: 0;
+}
+/* Выровнять элементы в шапке по вертикали и горизонтали */
+.row_header > div {
+    text-align: center;
+    white-space: nowrap;
+}
+.row_header > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.row_header > div:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 140px;
+}
+.photo_block{
+    clear: both;
+}
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
@@ -2286,7 +2304,6 @@ footer {
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
-
 }
 @media only screen and (min-width : 768px) and (max-width : 992px) {
     .header-line__logo__arrow {
@@ -2294,12 +2311,10 @@ footer {
         bottom: -6px;
         right: -9px;
     }
-
     .header-line__logo {
         font-size: 28px;
         width: 100%;
     }
-
     .header-line__logo__weather-block__temp {
         bottom: 2px;
         left: 11px;
@@ -2309,28 +2324,4 @@ footer {
     .btn_badge{
         display: none !important;
     }
-
 }
-/* Выровнять элементы в шапке по вертикали и горизонтали */
-
-.row_header > div {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.row_header > div > * {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.row_header > div:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 140px;
-}
-
-.photo_block{
-    clear: both;
-}
-/*Конец (начало строка 1657:"Из ob.ksk66.ru/style.css")*/
