@@ -1257,6 +1257,9 @@ a.sponsor:focus {
     /*background-color: rgba(255,255,255,0.1);*/
     /*border-left: 1px solid transparent;*/
 }
+.panel-cat .yummies {
+    padding-left: 5px;
+}
 .panel-cat > .panel-body {
     padding: 0;
     background-color: transparent;
