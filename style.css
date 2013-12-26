@@ -432,6 +432,9 @@ p.media-text {
 .ob-list img {
     margin: 0;
 }
+.ob-list {
+    padding-bottom: 0;
+}
 .col-mid .btn-group .fa-play {
     color: #bbb;
     font-size: 0.9em;
