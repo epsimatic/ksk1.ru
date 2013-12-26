@@ -2326,6 +2326,7 @@ footer h3 {
     font-size: 2em;
     font-weight: 300;
     color: #0080c7;
+    margin-top: 0;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
