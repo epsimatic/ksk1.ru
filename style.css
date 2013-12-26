@@ -2297,6 +2297,36 @@ footer {
 .photo_block{
     clear: both;
 }
+footer p {
+    font-size: 0.9em;
+    color: #444f56;
+    padding: 0 0 5px 30px;
+    margin-bottom: 5px;
+    /*max-width: 95%;*/
+}
+footer h5 {
+    color: #00212c;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+footer h4 {
+    color: #185481;
+    font-size: 16px;
+}
+footer h4 {
+    padding-bottom: 15px;
+    margin: 0;
+}
+footer h4 a {
+    color: #444f56;
+    font-size: 21px;
+    font-weight: 300;
+}
+footer h3 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #0080c7;
+}
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
