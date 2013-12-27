@@ -2178,8 +2178,6 @@ footer {
     width: 268px;
     margin: 7px 11px 0 0;
 }
-
-.header-line__logo img{width: 100%;}
 .ob-list img {
     margin: 0;
 }
@@ -2241,6 +2239,11 @@ footer h3 {
     .header-line__logo__weather-block__temp {
         bottom: 2px;
         left: 11px;
+    }
+}
+@media only screen and (max-width : 992px){
+    .header-line__logo img{
+        width:100%;
     }
 }
 @media only screen and (max-width : 435px){
