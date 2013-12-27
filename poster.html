@@ -2,670 +2,824 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="ob_files/cse.js" async="" type="text/javascript"></script>
+    <script async="true" src="ob_files/context.js" type="text/javascript"></script>
     <title>Афиша Красноуфимска</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="http://ksk1.ru/osans/osans.css"/>
-    <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="http://ksk1.ru/bootstrap-20px/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/jquery.js" type="text/javascript"></script>
-    <script src="dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="http://ob.ksk66.ru/images/favicon.ico">
+    <script type="text/javascript">var servername='http://ob.ksk66.ru/';</script>
+    <script type="text/javascript" src="ob_files/main_002.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link id="rootstrap-bootstrap-additions-css" media="all" type="text/css" href="http://news.kskmedia.ruincludes/css/bootstrap-wp.css?ver=3.8" rel="stylesheet">
+    <link id="rootstrap-style-css" media="all" type="text/css" href="http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/style.css?ver=3.8" rel="stylesheet">
+    <link href="http://ksk1.ru/opensans/osans.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <script type='text/javascript' src='http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js?ver=3.8'></script>
+    <link href="http://ob.ksk66.ru/style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="http://ajax.googleapis.com/">
+    <link rel="dns-prefetch" href="http://google-analytics.com/">
+    <link rel="dns-prefetch" href="http://ksk1.ru/">
+    <link rel="dns-prefetch" href="http://mc.yandex.ru/">
+    <link rel="dns-prefetch" href="http://an.yandex.ru/">
+    <link rel="dns-prefetch" href="http://openstat.net/">
+    <script src="ob_files/jquery-1.js" type="text/javascript"></script>
+    <script>
+        function UpdateLabelPrice(){
+            var input=  $(".add-ob__right-input_type :selected").val();
+            var label_price =  $(".add-ob__label_price");
+            if (input=="r" || input=="i"){
+                label_price.text("Заработная плата");
+            }
+            else {label_price.text("Цена");}
+        }
+        function DisabledButton() {
+            var submitButton = $(".add-ob__submit-button");
+            var dropdownButton = $(".add-ob__dropdown");
+            if ($(".add-ob__text-input").val())
+            {
+                submitButton.removeClass("disabled");
+                dropdownButton.removeClass("disabled");
+            }
+            else
+            {
+                submitButton.addClass("disabled");
+                dropdownButton.addClass("disabled");
+            }
+        }
+        function changeTextInputbutton() {
+            var submit_button = $(".add-ob__submit-button");
+            var cat = $(".add-ob__right-input_category").val();
+            //TODO: переделать с кодогенерацией
+            if (cat == 428 || cat == 429 || cat == 430 || cat == 431 || cat == 433 || cat == 191 || cat == 311 || cat == 420 || cat == 446) {
+                $(".add-ob__dropdown").css("display", "none");
+                submit_button.text(submit_button.attr("data-paid-text"));
+            }
+            else {
+                $(".add-ob__dropdown").css("display", "block");
+                submit_button.text(submit_button.attr("data-free-text"));
+            }
+        }
+        function cleanPhoto() {
+            var linePhoto = $(".add-ob__line__photo");
+            $(".preview div").remove();
+            var typeFileLabel = linePhoto.html();
+            $(".add-ob__label-photo").detach();
+            $(".add-ob__hide__photo__file").detach();
+            linePhoto.append(typeFileLabel);
+            $(".textFistImage").hide();
+            $(".add-ob__cleanPhoto-button").hide();
+            $(".add-ob__line__mane-photo").css("display", "none");
+        }
+        function UpdateTypePrefix(letter) {
+            var newPrefix = "";
+            var exampleText = "";
+            if ( letter == 'p' ) { newPrefix = 'Продам'; exampleText = '(щёлкните сюда и напишите, что вы продаёте)'; }
+            if ( letter == 'k' ) { newPrefix = 'Куплю'; exampleText = '(щёлкните сюда и напишите, что вы хотите купить)'; }
+            if ( letter == 'm' ) { newPrefix = 'Меняю'; exampleText = '(щёлкните сюда и напишите, что и на что вы хотите обменять)'; }
+            if ( letter == 's' ) { newPrefix = 'Сдам'; exampleText = '(щёлкните сюда и напишите, что вы сдаёте в аренду)'; }
+            if ( letter == 'q' ) { newPrefix = 'Арендую'; exampleText = '(щёлкните сюда и напишите, что вы хотите арендовать)'; }
+            if ( letter == 'o' ) { newPrefix = 'Услуги'; exampleText = '(щёлкните сюда и опишите ваши услуги)'; }
+            if ( letter == 'i' ) { newPrefix = 'Требуется'; exampleText = '(щёлкните сюда и опишите вашу вакансию и требования к работнику)'; }
+            if ( letter == 'r' ) { newPrefix = 'Ищу работу'; exampleText = '(щёлкните сюда и напишите, какую работу вы ищете)'; }
+            if ( letter == 'd' ) { newPrefix = 'Отдам'; exampleText = '(щёлкните сюда и напишите, что вы хотите подарить)'; }
+            if ( letter == 'b' ) { newPrefix = 'Приму в дар'; exampleText = '(щёлкните сюда и напишите, что вы хотите принять в дар)'; }
+            if ( letter == '-' ) { newPrefix = ''; exampleText = '(щёлкните сюда, чтобы написать ваше объявление)'; }
+            var prefixLabel = $(".add-ob__type-prefix");
+            var inputBox = $(".add-ob__text-input");
+            prefixLabel.css("border-width", inputBox.css("border-width"))
+                    .css("border-right-width", "0")
+                    .css("padding-right", "0.3em"); //Hack to add a space
+            prefixLabel.text(newPrefix);
 
+//  TODO: Обрабатывать выбор особых пунктов списка
+            inputBox.css("padding-left", prefixLabel.outerWidth())
+                    .css("padding-left", "-=" + inputBox.css("border-left-width"))
+                    .attr("placeholder", exampleText);
+            inputBox.val(inputBox.val()); // HACK for ie to update padding.
+            /* if (window.sidebar) {
+             inputBox.css("padding-top", "0px");
+             } // firebox*/
+        }
+    </script>
+    <script type="text/javascript" src="ob_files/jsapi"></script>
+    <link rel="stylesheet" href="ob_files/defaultru.css" type="text/css">
+    <link rel="stylesheet" href="ob_files/default.css" type="text/css">
+    <script src="ob_files/defaultru.js" type="text/javascript"></script>
+    <script src="ob_files/search.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="container">
-<header>
-    <div class="jumbotron">
-        <h1>Красноуфимск Онлайн</h1>
-
-        <p>Городские новости, Объявления, Афиша мероприятий.</p>
-
-        <p><a class="btn btn-primary btn-lg">Войти</a></p>
-    </div>
-</header>
-<div class="row">
-<div class="col-lg-9 col-md-8 col-main">
-<!--<div class="panel panel-movie">-->
-<!--<div class="panel-heading">-->
-<!--<nav class="navbar navbar-blue" role="navigation">-->
-<!--<div class="navbar-header">-->
-<!--<a class="navbar-brand" href="#">Киноафиша</a>-->
-<!--</div>-->
-<!--<div class="collapse navbar-collapse">-->
-<!--<ul class="nav navbar-nav">-->
-<!--<li class="active"><a href="#">Сегодня</a></li>-->
-<!--<li><a href="#">Завтра</a></li>-->
-<!--<li><a href="#">Сб</a></li>-->
-<!--<li><a href="#">Вс</a></li>-->
-<!--<li><a href="#">Пн</a></li>-->
-<!--<li><a href="#">Вт</a></li>-->
-<!--<li><a href="#">Ср</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</nav>-->
-<!--</div>-->
-<!--<div class="panel-body"></div>-->
-<!--<div class="panel-footer"></div>-->
-<!--</div>-->
-<div class="panel panel-movie">
-<div class="panel-heading">
-    <div class="row  btn-toolbar" style="font-weight: normal">
-        <div class="col-xs-12 col-sm-4">
-            <div class="btn-group lead">
-                <h3>Киноафиша</h3>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-            <div class="btn-group pull-right">
-                <button class="btn btn-movie active">Сегодня</button>
-                <button class="btn btn-movie">Завтра</button>
-                <button class="btn btn-movie">Сб</button>
-                <button class="btn btn-movie">Вс</button>
-                <button class="btn btn-movie">Пн</button>
-                <button class="btn btn-movie">Вт</button>
-                <button class="btn btn-movie">Ср</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="panel-body">
-    <span class="text-left">Сегодня, четверг, 7 ноября 2013</span>
-
-    <div class="row">
-        <div class="col-sm-6 col-xs-12 movie-announce">
-            <div class="list-group">
-                <div class="list-group-item media media-panel media-hover" style="padding: 0;">
-                    <a class="pull-left" href="#">
-                        <img class="movie-announce__poster" src="602373.jpg"/>
-                        <span class="movie-announce__age-restriction">12</span>
-                    </a>
-
-                    <div class="media-body">
-                        <h4>Голодные игры: И вспыхнет пламя</h4>
-
-                        <div class="movie-announce__genres">
-                            <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png"
-                                 class="movie-announce__country">
-                            <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
-                            ,
-                            <a href="#">драма</a>
-                            ,
-                            <a href="#">триллер</a>
-                        </div>
-                        <div class="movie-announce__rating kinopoisk" data-movie="468466">
-                        </div>
-                        <div class="movie-announce__price">
-                            Цена билета: <b>150-200 руб.</b>
-                        </div>
-                        <div class="movie-announce__session">
-                            Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
-                        </div>
-                        <div class="btn-group-xs text-right ">
-                            <a class="btn btn-primary ">Трейлер</a>
-                            <a class="btn btn-success">Подробнее</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <header class="row row_header">
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+                <div class="header-line__logo">
+                    <!--<a href="http://ob.ksk66.ru/" title="На главную страницу">
+                        <h1 class="header-line__logo__title">Красноуфимск</h1>
+                        <div class="header-line__logo__arrow"></div>
+                        <h2 class="header-line__logo__subtitle">Объявления онлайн</h2>
+                    </a>-->
+                    <img src="img/ksk-logo-0.svg"
+                         style="
+                            position: absolute;
+                            left: 5px;
+                            z-index: 1;
+                         ">
+                    <img src="img/ksk-logo-ob.svg"
+                         style="
+                            position: absolute;
+                            left: 5px;
+                            z-index: 0;
+                         ">
+                    <a class="header-line__logo__weather-block__temp" rel="nofollow" target="_blank" href="http://m.pogoda.yandex.ru/20691/?mode=short">-24°</a>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 movie-announce">
-            <div class="list-group">
-                <div class="list-group-item media media-panel media-hover" style="padding: 0;">
-                    <a class="pull-left" href="#">
-                        <img class="movie-announce__poster" src="sm_2225205.jpg"/>
-                        <span class="movie-announce__age-restriction">12</span>
-                    </a>
-
-                    <div class="media-body">
-                        <h4>Да здравствует Франция!</h4>
-
-                        <div class="movie-announce__genres">
-                            <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png"
-                                 class="movie-announce__country">
-                            <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
-                            ,
-                            <a href="#">драма</a>
-                            ,
-                            <a href="#">триллер</a>
-                        </div>
-                        <div class="movie-announce__rating kinopoisk" data-movie="468466">
-                        </div>
-                        <div class="movie-announce__price">
-                            Цена билета: <b>180-200 руб.</b>
-                        </div>
-                        <div class="movie-announce__session">
-                            Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
-                        </div>
-                        <div class="btn-group-xs text-right">
-                            <a class="btn btn-warning"><i class="fa fa-caret-square-o-right"></i></a>
-                            <a class="btn btn-success">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 movie-announce">
-            <div class="list-group">
-                <div class="list-group-item media media-panel media-hover" style="padding: 0;">
-                    <a class="pull-left" href="#">
-                        <img class="movie-announce__poster" src="sm_2225205.jpg"/>
-                        <span class="movie-announce__age-restriction">12</span>
-                    </a>
-
-                    <div class="media-body">
-                        <h4>Да здравствует Франция!</h4>
-
-                        <div class="movie-announce__genres">
-                            <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png"
-                                 class="movie-announce__country">
-                            <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
-                            ,
-                            <a href="#">драма</a>
-                            ,
-                            <a href="#">триллер</a>
-                        </div>
-                        <div class="movie-announce__rating kinopoisk" data-movie="468466">
-                        </div>
-                        <div class="movie-announce__price">
-                            Цена билета: <b>180-200 руб.</b>
-                        </div>
-                        <div class="movie-announce__session">
-                            Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
-                        </div>
-                        <div class="btn-group-xs text-right">
-                            <a class="btn btn-warning"><i class="fa fa-caret-square-o-right"></i></a>
-                            <a class="btn btn-success">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 movie-announce">
-            <div class="list-group">
-                <div class="list-group-item media media-panel media-hover" style="padding: 0;">
-                    <a class="pull-left" href="#">
-                        <img class="movie-announce__poster" src="sm_2225205.jpg"/>
-                        <span class="movie-announce__age-restriction">12</span>
-                    </a>
-
-                    <div class="media-body">
-                        <h4>Да здравствует Франция!</h4>
-
-                        <div class="movie-announce__genres">
-                            <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png"
-                                 class="movie-announce__country">
-                            <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
-                            ,
-                            <a href="#">драма</a>
-                            ,
-                            <a href="#">триллер</a>
-                        </div>
-                        <div class="movie-announce__rating kinopoisk" data-movie="468466">
-                        </div>
-                        <div class="movie-announce__price">
-                            Цена билета: <b>180-200 руб.</b>
-                        </div>
-                        <div class="movie-announce__session">
-                            Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
-                        </div>
-                        <div class="btn-group-xs text-right">
-                            <a class="btn btn-warning"><i class="fa fa-caret-square-o-right"></i></a>
-                            <a class="btn btn-success">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 movie-announce">
-            <div class="list-group">
-                <div class="list-group-item media media-panel media-hover" style="padding: 0;">
-                    <a class="pull-left" href="#">
-                        <img class="movie-announce__poster" src="sm_2225205.jpg"/>
-                        <span class="movie-announce__age-restriction">12</span>
-                    </a>
-
-                    <div class="media-body">
-                        <h4>Да здравствует Франция!</h4>
-
-                        <div class="movie-announce__genres">
-                            <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png"
-                                 class="movie-announce__country">
-                            <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
-                            ,
-                            <a href="#">драма</a>
-                            ,
-                            <a href="#">триллер</a>
-                        </div>
-                        <div class="movie-announce__rating kinopoisk" data-movie="468466">
-                        </div>
-                        <div class="movie-announce__price">
-                            Цена билета: <b>180-200 руб.</b>
-                        </div>
-                        <div class="movie-announce__session">
-                            Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
-                        </div>
-                        <div class="btn-group-xs text-right">
-                            <a class="btn btn-warning"><i class="fa fa-caret-square-o-right"></i></a>
-                            <a class="btn btn-success">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="panel panel-local">
-    <div class="panel-heading">
-        <ul class="nav nav-pills nav-justified">
-            <li class="active"><a href="#">Все&#32;события</a></li>
-            <li class=""><a href="#">Культура</a></li>
-            <li><a href="#">Спорт</a></li>
-            <li><a href="#">Выставки</a></li>
-            <li><a href="#">Кино</a></li>
-        </ul>
-    </div>
-    <div class="panel-footer">
-        <div class="row">
-            <div class="col-md-8 text-muted post-info"><em>Знаете о событии в городе? Организуете событие сами? </em>
-            </div>
-            <div class="col-md-4 text-right"><a class="btn btn-link"><i class="fa fa-plus-circle"></i> Добавить событие</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="panel panel-events panel-today_in">
-    <div class="panel-heading">
-        <h3>Сегодня в городе</h3>
-    </div>
-    <div class="panel-body">
-        <div class="row media">
-            <div class="col-xs-4 col-sm-3">
-                <a class="" href="#">
-                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
+            <div class="header-line__weather-block-col hidden-xs hidden-sm hidden-md col-lg-1 ">
+                <a class="header-line__weather-block" rel="nofollow" target="_blank" href="http://m.pogoda.yandex.ru/20691/?mode=short">
+                    <div style="background-image: url(&quot;http://www.gismeteo.ru/static/images/informer2/icons/clip_art/d0.png&quot;);" class="header-line__weather-block__icon"></div>
+                    <div class="header-line__weather-block__temp">-24°</div>
+                    <div class="header-line__weather-block__label">Подробнее</div>
                 </a>
             </div>
-            <div class="col-xs-8 col-sm-9">
-                <div class="media-body">
-                    <h4 class="media-heading">Встреча любителей фантастики</h4>
-                    Место проведения:<a class="btn btn-link">Центральная библиотека</a>
-
-                    <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
-                    <a class="text-muted" href="#">Комментировать •</a><i class="fa fa-comment label-comment"></i>
-                </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+                <!--XXXXX# include virtual="/yummies/special/" -->
+                <img alt="advertisement" src="ob_files/nam-5-let.png" class="yummies" width="">
             </div>
-        </div>
-        <div class="row media">
-            <div class="col-xs-4 col-sm-3">
-                <a class="" href="#">
-                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
-                </a>
-            </div>
-            <div class="col-xs-8 col-sm-9">
-                <div class="media-body">
-                    <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики</h4>
-
-                    <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
-
-                    <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
-                    <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i>
-                </div>
-            </div>
-        </div>
-        <div class="row media">
-            <div class="col-xs-4 col-sm-3">
-                <a class="" href="#">
-                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
-                </a>
-            </div>
-            <div class="col-xs-8 col-sm-9">
-                <div class="media-body">
-                    <h4 class="media-heading"><span class="label-time">18:00</span> Вечерние посиделки</h4>
-
-                    <p><span class="age-restriction">+18</span> Вход свободный</p>
-                    <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i> 1
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="panel panel-events panel-prime">
-    <div class="panel-heading">
-        <h3>Скоро</h3>
-    </div>
-
-    <h4 class="post-info">8 ноября, пятница</h4>
-    <ul class="list-group">
-        <li class="list-event-item">
-            <div class="row media">
-                <div class="col-xs-3 col-sm-2">
-                    <div class="list-date">8
-                        <div class="list-month">ноября</div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div>
+                    <div class="btn-group btn-group-justified">
+                        <a class="btn btn-default" href="http://ob.ksk66.ru/newlist.html"><i class="fa fa-file fa-lg fa-fw"></i> Свежие<br>объявления</a>
+                        <a class="btn btn-primary" href="http://ob.ksk66.ru/new.html"> <i class="fa fa-plus-circle fa-lg fa-fw"></i> Добавить<br>объявление</a>
                     </div>
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                    <div class="media-body">
-                        <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики
-                        </h4>
-
-                        <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
-
-                        <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
-                        <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i>
-                    </div>
+                    <a class="btn btn-link btn-lg" href="http://ob.ksk66.ru/p11.html">Как пользоваться сайтом?</a>
                 </div>
             </div>
-        </li>
-        <li class="list-event-item">
-            <div class="row media">
-                <div class="col-xs-3 col-sm-2">
-                    <div class="list-date">8
-                        <div class="list-month">ноября</div>
-                    </div>
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                    <div class="media-body">
-                        <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики
-                        </h4>
-
-                        <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
-
-                        <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
-                        <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i>
-                    </div>
-                </div>
+        </header>
+        <nav class="navbar " role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand  hidden-sm hidden-md hidden-lg" href="#">Меню</a>
             </div>
-        </li>
-    </ul>
-    <h4 class="post-info">9 ноября, суббота</h4>
-    <ul class="list-group">
-        <li class="list-event-item">
-            <div class="row media">
-                <div class="col-xs-3 col-sm-2">
-                    <div class="list-date">9
-                        <div class="list-month">ноября</div>
-                    </div>
-                </div>
-                <div class="col-xs-9 col-sm-10">
-                    <div class="media-body">
-                        <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики
-                        </h4>
-
-                        <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
-
-                        <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
-                        <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="list-event-item">
-            <div class="row media">
-                <div class="col-xs-3 col-sm-2">
-                    <a class="" href="#">
-                        <img class="media-object img-responsive" src="http://fpoimg.com/115x70">
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-10 media-body">
-                    <h4 class="media-heading"><span class="label-time">18:00</span> Вечерние посиделки</h4>
-
-                    <p><span class="age-restriction">+18</span> Вход свободный</p>
-                    <a class="text-muted" href="#">Комментировать •</a> <i class="fa fa-comment label-comment"></i> 1
-                </div>
-            </div>
-        </li>
-    </ul>
-
-</div>
-<img class="ad" src="http://fpoimg.com/728x90" style="height: auto; width:100%; margin:5px 0;">
-
-<div class="row">
-    <div class="col-md-8 col-mid">
-        <div class="panel panel-congrats">
-            <div class="panel-heading">
-                <h3>Поздравления</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row media">
-                    <div class="col-xs-4 col-sm-3">
-                        <a class="" href="#">
-                            <img class="media-object img-responsive"
-                                 src="https://app.divshot.com/img/placeholder-64x64.gif"
-                                 width="300px">
-                        </a>
-                    </div>
-                    <div class="col-xs-8 col-sm-9">
-                        <div class="media-body">
-                            <p>А Язык, как и прежде, живет своею собственной жизнью, медленной и непостижимой,
-                                непрерывно
-                                меняясь и при этом всегда оставаясь самим собой. С русским
-                                языком может произойти все, что угодно: перестройка, преображение, превращение, – но
-                                только
-                                не
-                                вымирание. Он слишком велик, могуч, гибок, динамичен
-                                и непредсказуем, чтобы взять и вдруг исчезнуть. Разве что – вместе с нами...</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://ksk66.ru/" title="Свежие городские новости">Новости</a></li>
+                    <li><a href="http://ob.ksk66.ru/" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+                    <li><a href="http://ksk66.ru/karta.html" title="Карта Красноуфимска и других городов">Карта</a></li>
+                    <li><a href="http://ksk66.ru/timetable.html" title="Расписание автобусов и ж/д">Расписание</a></li>
+                    <li><a href="http://photo.kskmedia.ru/" title="Фото.Новости">Фото</a></li>
+                    <li><a href="http://video.kskmedia.ru/" title="Видео.Новости">Видео</a></li>
+                    <li><a href="http://cat.ksk66.ru/" title="Каталог предприятий, телефонов и адресов">Товары и услуги</a></li>
+                    <li><a href="http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228" title="Интернет-магазин бытовой техники">Е96</a></li>
+                    <!--<li>
+                        <div dir="ltr" id="___gcse_0">
+                            <form accept-charset="utf-8" class="gsc-search-box gsc-search-box-tools">
+                                <table class="gsc-search-box" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="gsc-input">
+                                                <div id="gsc-iw-id1" class="gsc-input-box">
+                                                    <table class="gstl_50 " id="gs_id50" style="width: 100%; padding: 0px;" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="gsib_a" id="gs_tti50">
+                                                                    <input spellcheck="false"
+                                                                           dir="ltr"
+                                                                           id="gsc-i-id1"
+                                                                           style="
+                                                                            width: 100%;
+                                                                            padding: 0px;
+                                                                            border: medium none;
+                                                                            margin: 0px;
+                                                                            height: auto;
+                                                                            outline:
+                                                                            medium none;
+                                                                            background: url(&quot;http://www.google.com/cse/intl/ru/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);"
+                                                                           title="поиск"
+                                                                           name="search"
+                                                                           class="gsc-input"
+                                                                           size="10"
+                                                                           autocomplete="off"
+                                                                           type="text">
+                                                                </td>
+                                                                <td class="gsib_b">
+                                                                    <div dir="ltr" id="gs_st50" class="gsst_b">
+                                                                        <a style="display: none;" href="javascript:void(0)" class="gsst_a">
+                                                                            <span id="gs_cb50" class="gscb_a">×</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                            <td class="gsc-search-button">
+                                                <input title="поиск" class="gsc-search-button gsc-search-button-v2" src="ob_files/search_box_icon.png" type="image">
+                                            </td>
+                                            <td class="gsc-clear-button">
+                                                <div title="удалить результаты" class="gsc-clear-button">&nbsp;</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="gsc-branding" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="gsc-branding-user-defined"></td>
+                                            <td class="gsc-branding-text">
+                                                <div class="gsc-branding-text">технология</div>
+                                            </td>
+                                            <td class="gsc-branding-img">
+                                                <img class="gsc-branding-img" src="ob_files/small-logo.png">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-footer text-center">
-                <div class="row">
-                    <div class="col-md-4"><a class="btn pull-left" href="#"><i class="fa fa-plus-circle"></i> Прислать
-                        поздравление</a></div>
-                    <div class="col-md-4"><a class="btn link-neutral" href="#">27 читателей</a></div>
-                    <div class="col-md-4"><a class="btn link-neutral pull-right" href="#">присоеденилось</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 inset">
-        <div class="panel panel-guest hidden-xs hidden-sm">
-            <div class="panel-heading"><h3>Гость на сайте</h3></div>
-            <div class="panel-body">
-                <div class="row media">
-                    <div class="col-xs-4 col-sm-3">
-                        <a class="" href="#">
-                            <img width="300px" height="100px" class="media-object img-responsive"
-                                 src="https://app.divshot.com/img/placeholder-64x64.gif">
-                        </a>
-                    </div>
-                    <div class="col-xs-8 col-sm-9">
-                        <h6 class="">Император пироженого</h6> <h5 class="name-guest">Роман Бисквитный</h5>
-                        <em><span class="panel_events__time">Тема:</span><span class="text-muted"> Повышение цены на сахар, как фактор краха системы</span></em>
-
-                        <p>Вступив в бой с шипящими змеями — эфой и гадюкой — маленький, цепкий, храбрый ёж съел их.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="panel-footer">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#" class="btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
-                    </div>
-                    <div class="col-md-6 text-right post-info">
-                        <i class="fa fa-question-circle"></i> 7<i class="fa fa-comment-o label-comment"></i> 12
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-event hidden-xs hidden-sm">
-            <div class="panel-heading"><h3>Случайное фото</h3></div>
-            <img width="100%"
-                 src="file:///home/ruslan/Dropbox/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2/ksk66.ru/201308%20%D0%A0%D0%B5%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD/%D0%A1%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%BE/img/random_photo.png">
-
-            <div class="panel-footer">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#" class="btn pull-left"><i class="fa fa-plus-circle"></i> Прислать</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="btn link-neutral pull-right">Все фото</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-event">
-            <div class="panel-heading"><h3>Ближайшие события</h3></div>
-            <div class="sub-panel">Сегодня, 12 августа</div>
-            <div class="list-event">
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">13:00</span> Кто-то что-то зачем-то почему-то.
-                </a>
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">14:00</span> Экс граф? Плюш изъят. Бьём чуждый цен хвощ!
-                </a>
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">15:00</span> Южно-эфиопский грач увёл мышь за хобот на съезд
-                    ящериц.
-                </a>
-            </div>
-            <div class="sub-panel">Завтра, 13 августа</div>
-            <div class="list-event">
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">12:00</span> Кто-то что-то зачем-то почему-то.
-                </a>
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">13:00</span> Экс граф? Плюш изъят. Бьём чуждый цен хвощ!
-                </a>
-                <a class="list-event-item" href="#">
-                    <span class="panel_events__time">14:00</span> Южно-эфиопский грач увёл мышь за хобот на съезд
-                    ящериц.
-                </a>
-            </div>
-            <div class="panel-footer">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#" class="btn pull-left"><i class="fa fa-calendar"></i> Рассказать</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="btn link-neutral pull-right">Все события</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="col-lg-3 col-md-4 sidebar">
-    <div class="panel panel-notice hidden-xs">
-        <div class="panel-heading">
-            <h3>Важно</h3>
-        </div>
-        <div class="panel-body text-left">
-            <img class="media-object pull-left"
-                 src="file:///home/ruslan/Dropbox/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2/ksk66.ru/201308%20%D0%A0%D0%B5%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD/%D0%A1%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%BE/img/notice-pic.png">
-            8 августа будет произведено отключение холодного водоснабжения
-            по адресам: ул. Б.Луговая,11; Селекционная,7; Селекционная,9;
-            Куйбышева,81; Горького,5; Саргинская,21; 8 Марта,51; Советская,52
-        </div>
-    </div>
-    <div class="panel panel-vote">
-        <div class="panel-heading"><h3>Голосование</h3>
-        </div>
-        <div class="panel-body text-left">
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </div>
-        <div class="panel-footer">
-            <div class="btn-toolbar">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="btn pull-left" href="#"><i class="fa fa-check-circle-o"></i> Прислать голосование</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="btn link-neutral pull-right" href="#">Архив</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-comments">
-        <div class="panel-heading"><h3>Комментарии</h3>
-        </div>
-        <div class="panel-footer">
-            <div class="btn-toolbar">
-                <ul class="nav nav-pills">
-                    <li class="active"><a href="#">Последние</a></li>
-                    <li><a href="#">Популярные</a></li>
+                    </li>-->
                 </ul>
-
+                <form class="navbar-form navbar-right" role="search">
+                    <!--<div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <!--<span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search fa-fw"></i></button>-->
+                    <!--<span class="input-group-btn"><a href="#" class="btn btn-default"><i class="fa fa-search fa-fw"></i></a></span>
+                    </span>
+                </div>-->
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                    <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                </form>
             </div>
-        </div>
+            <!-- /.navbar-collapse -->
+        </nav>
         <div class="row">
-            <div class="col-md-12">
-                <table class="table table-striped">
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Бабай</b> <i class="fa fa-chevron-right"></i> Как ГИБДД,
-                                бэдэдило </a>
-                        </td>
-                        <td>
-                            <span class="badge badge-clean badge-neg pull-right">-3</span>
-                        </td>
-
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Бабай</b> <i class="fa fa-chevron-right"></i>
-                                Администрация косячит</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-pos pull-right">+3</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>123</b> <i class="fa fa-chevron-right"></i> Футбольные
-                                вести</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-pos pull-right">+1</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>ТралиВали</b> <i class="fa fa-chevron-right"></i>
-                                Футбольные вести</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-pos pull-right">+2</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Дорожник</b><i class="fa fa-chevron-right"></i>
-                                Пятитысячный тяжело</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-neg pull-right">-3</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Это Я</b> <i class="fa fa-chevron-right"></i> По
-                                уральскому морозу прошел первый тяжеловес</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-pos pull-right">+7</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Вася</b> <i class="fa fa-chevron-right"></i> Сроки сдачи
-                                в эксплуатацию</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-neg pull-right">-5</span></td>
-                    </tr>
-                    <tr class="">
-                        <td class="list-event-item-text">
-                            <a href="#" class="link-neutral"><b>Бабай</b> <i class="fa fa-chevron-right"></i> Как ГИБДД,
-                                бэдэдило</a>
-                        </td>
-                        <td><span class="badge badge-clean badge-neg pull-right">-1</span></td>
-                    </tr>
-                </table>
+            <div class="col-lg-9 col-md-8 col-main">
+                <div class="panel panel-movie">
+                    <div class="panel-heading">
+                        <div class="row  btn-toolbar" style="font-weight: normal">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="btn-group lead">
+                                    <h3>Киноафиша</h3>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="btn-group pull-right">
+                                    <button class="btn btn-movie btn-lg active">Сегодня</button>
+                                    <button class="btn btn-movie btn-lg">Завтра</button>
+                                    <button class="btn btn-movie btn-lg">Сб</button>
+                                    <button class="btn btn-movie btn-lg">Вс</button>
+                                    <button class="btn btn-movie btn-lg">Пн</button>
+                                    <button class="btn btn-movie btn-lg">Вт</button>
+                                    <button class="btn btn-movie btn-lg">Ср</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <span class="text-left text-muted"><em>Сегодня, четверг, 7 ноября 2013</em></span>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 movie-announce">
+                                <div class="list-group">
+                                    <div class="list-group-item media media-panel media-hover" style="padding: 0;">
+                                        <a class="pull-left" href="#">
+                                            <img class="movie-announce__poster" src="602373.jpg"/>
+                                            <span class="movie-announce__age-restriction">12</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>Голодные игры: И вспыхнет пламя</h4>
+                                            <div class="movie-announce__genres">
+                                                <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png" class="movie-announce__country">
+                                                <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
+                                                ,
+                                                <a href="#">драма</a>
+                                                ,
+                                                <a href="#">триллер</a>
+                                            </div>
+                                            <div class="movie-announce__rating kinopoisk" data-movie="468466"></div>
+                                            <div class="movie-announce__price">
+                                                Цена билета: <b>150-200 руб.</b>
+                                            </div>
+                                            <div class="movie-announce__session">
+                                                Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
+                                            </div>
+                                            <div class="btn-group-xs text-right ">
+                                                <a class="btn btn-primary ">Трейлер</a>
+                                                <a class="btn btn-success">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 movie-announce">
+                                <div class="list-group">
+                                    <div class="list-group-item media media-panel media-hover" style="padding: 0;">
+                                        <a class="pull-left" href="#">
+                                            <img class="movie-announce__poster" src="602373.jpg"/>
+                                            <span class="movie-announce__age-restriction">12</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>Голодные игры: И вспыхнет пламя</h4>
+                                            <div class="movie-announce__genres">
+                                                <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png" class="movie-announce__country">
+                                                <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
+                                                ,
+                                                <a href="#">драма</a>
+                                                ,
+                                                <a href="#">триллер</a>
+                                            </div>
+                                            <div class="movie-announce__rating kinopoisk" data-movie="468466"></div>
+                                            <div class="movie-announce__price">
+                                                Цена билета: <b>150-200 руб.</b>
+                                            </div>
+                                            <div class="movie-announce__session">
+                                                Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
+                                            </div>
+                                            <div class="btn-group-xs text-right ">
+                                                <a class="btn btn-primary ">Трейлер</a>
+                                                <a class="btn btn-success">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 movie-announce">
+                                <div class="list-group">
+                                    <div class="list-group-item media media-panel media-hover" style="padding: 0;">
+                                        <a class="pull-left" href="#">
+                                            <img class="movie-announce__poster" src="602373.jpg"/>
+                                            <span class="movie-announce__age-restriction">12</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>Голодные игры: И вспыхнет пламя</h4>
+                                            <div class="movie-announce__genres">
+                                                <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png" class="movie-announce__country">
+                                                <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
+                                                ,
+                                                <a href="#">драма</a>
+                                                ,
+                                                <a href="#">триллер</a>
+                                            </div>
+                                            <div class="movie-announce__rating kinopoisk" data-movie="468466"></div>
+                                            <div class="movie-announce__price">
+                                                Цена билета: <b>150-200 руб.</b>
+                                            </div>
+                                            <div class="movie-announce__session">
+                                                Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
+                                            </div>
+                                            <div class="btn-group-xs text-right ">
+                                                <a class="btn btn-primary ">Трейлер</a>
+                                                <a class="btn btn-success">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 movie-announce">
+                                <div class="list-group">
+                                    <div class="list-group-item media media-panel media-hover" style="padding: 0;">
+                                        <a class="pull-left" href="#">
+                                            <img class="movie-announce__poster" src="602373.jpg"/>
+                                            <span class="movie-announce__age-restriction">12</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>Голодные игры: И вспыхнет пламя</h4>
+                                            <div class="movie-announce__genres">
+                                                <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png" class="movie-announce__country">
+                                                <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
+                                                ,
+                                                <a href="#">драма</a>
+                                                ,
+                                                <a href="#">триллер</a>
+                                            </div>
+                                            <div class="movie-announce__rating kinopoisk" data-movie="468466"></div>
+                                            <div class="movie-announce__price">
+                                                Цена билета: <b>150-200 руб.</b>
+                                            </div>
+                                            <div class="movie-announce__session">
+                                                Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
+                                            </div>
+                                            <div class="btn-group-xs text-right ">
+                                                <a class="btn btn-primary ">Трейлер</a>
+                                                <a class="btn btn-success">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 movie-announce">
+                                <div class="list-group">
+                                    <div class="list-group-item media media-panel media-hover" style="padding: 0;">
+                                        <a class="pull-left" href="#">
+                                            <img class="movie-announce__poster" src="602373.jpg"/>
+                                            <span class="movie-announce__age-restriction">12</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>Голодные игры: И вспыхнет пламя</h4>
+                                            <div class="movie-announce__genres">
+                                                <img src="http://cat.ksk66.ru/sites/all/modules/countryicons_shiny/images/us.png" class="movie-announce__country">
+                                                <a class="" href="http://www.kinopoisk.ru/lists/m_act%5Bgenre%5D/2/">фантастика</a>
+                                                ,
+                                                <a href="#">драма</a>
+                                                ,
+                                                <a href="#">триллер</a>
+                                            </div>
+                                            <div class="movie-announce__rating kinopoisk" data-movie="468466"></div>
+                                            <div class="movie-announce__price">
+                                                Цена билета: <b>150-200 руб.</b>
+                                            </div>
+                                            <div class="movie-announce__session">
+                                                Сеансы в:<b> 11:00, 12:30, 17:00, 20:00, 23:00</b>
+                                            </div>
+                                            <div class="btn-group-xs text-right ">
+                                                <a class="btn btn-primary ">Трейлер</a>
+                                                <a class="btn btn-success">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-local">
+                    <div class="panel-nav">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Все&#32;новости</a></li>
+                            <li class=""><a href="#">Культура</a></li>
+                            <li><a href="#">Спорт</a></li>
+                            <li><a href="#">Выставки</a></li>
+                            <li><a href="#">Кино</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-8 text-muted post-info" style="padding-left: 20px;">
+                                <em>Знаете о событии в городе? Организуете событие сами? </em>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <a class="btn"><i class="fa fa-plus-circle"></i> Добавить событие</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-events panel-today">
+                    <div class="panel-heading">
+                        <h3>Сегодня в городе</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row media">
+                            <div class="col-xs-4 col-sm-3">
+                                <a class="" href="#">
+                                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
+                                </a>
+                            </div>
+                            <div class="col-xs-8 col-sm-9">
+                                <div class="media-body">
+                                    <h4 class="media-heading">Встреча любителей фантастики</h4>
+                                    Место проведения:<a class="btn btn-link">Центральная библиотека</a>
+                                    <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
+                                    <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment-o label-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row media">
+                            <div class="col-xs-4 col-sm-3">
+                                <a class="" href="#">
+                                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
+                                </a>
+                            </div>
+                            <div class="col-xs-8 col-sm-9">
+                                <div class="media-body">
+                                    <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики</h4>
+                                    <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
+                                    <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
+                                    <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment-o label-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row media">
+                            <div class="col-xs-4 col-sm-3">
+                                <a class="" href="#">
+                                    <img class="media-object img-responsive" width="300px" src="http://fpoimg.com/115x70">
+                                </a>
+                            </div>
+                            <div class="col-xs-8 col-sm-9">
+                                <div class="media-body">
+                                    <h4 class="media-heading"><span class="label-time">18:00</span> Вечерние посиделки</h4>
+                                    <p><span class="age-restriction">+18</span> Вход свободный</p>
+                                    <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment label-comment"></i> 1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-events panel-soon">
+                    <div class="panel-heading">
+                        <h3>Скоро</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4 class="post-info">8 ноября, пятница</h4>
+                        <ul class="list-group">
+                            <li class="list-event-item">
+                                <div class="row media">
+                                    <div class="col-xs-3 col-sm-2">
+                                        <div class="list-date">8
+                                            <div class="list-month">ноября</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-9 col-sm-10">
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики</h4>
+                                            <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
+                                            <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
+                                            <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment-o label-comment"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-event-item">
+                                <div class="row media">
+                                    <div class="col-xs-3 col-sm-2">
+                                        <div class="list-date">8
+                                            <div class="list-month">ноября</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-9 col-sm-10">
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики</h4>
+                                            <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
+                                            <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
+                                            <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment-o label-comment"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h4 class="post-info">9 ноября, суббота</h4>
+                        <ul class="list-group">
+                            <li class="list-event-item">
+                                <div class="row media">
+                                    <div class="col-xs-3 col-sm-2">
+                                        <div class="list-date">9
+                                            <div class="list-month">ноября</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-9 col-sm-10">
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><span class="label-time">13:00</span> Встреча любителей фантастики</h4>
+                                            <p>Место проведения:<a class="btn btn-link">Центральная библиотека</a></p>
+                                            <p><span class="age-restriction">+12</span> Цена посещения: <b>120-250 руб.</b></p>
+                                            <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment-o label-comment"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-event-item">
+                                <div class="row media">
+                                    <div class="col-xs-3 col-sm-2">
+                                        <a class="" href="#">
+                                            <img class="media-object img-responsive" src="http://fpoimg.com/115x70">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-10 media-body">
+                                        <h4 class="media-heading"><span class="label-time">18:00</span> Вечерние посиделки</h4>
+                                        <p><span class="age-restriction">+18</span> Вход свободный</p>
+                                        <a class="text-muted" href="#">Комментировать</a> <i class="fa fa-comment label-comment"></i> 1
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 sidebar hidden-xs hidden-sm">
+                <div class="panel panel-notice">
+                    <div class="panel-heading">
+                        <h3>Важно</h3>
+                    </div>
+                    <div class="panel-body text-left">
+                        <img class="media-object pull-left " src="http://fpoimg.com/80x60">
+                        <p>
+                            8 августа будет произведено отключение холодного водоснабжения
+                            по адресам: ул. Б.Луговая,11; Селекционная,7; Селекционная,9;
+                            Куйбышева,81; Горького,5; Саргинская,21; 8 Марта,51; Советская,52
+                        </p>
+                        <a class="btn btn-warning pull-right">Подробнее</a>
+                    </div>
+                </div>
+                <div class="panel panel-vote">
+                    <div class="panel-heading">
+                        <h3>Голосование</h3>
+                    </div>
+                    <div class="panel-body panel-question text-left">
+                        <p>В чем прибыл чебурашка? Ещё какой-то текст, для большего размера блока. Пара слов бла-бла-бла?</p>
+                    </div>
+                    <div class="panel-body panel-input text-left">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="item">
+                                    <input type="radio" name="item" value="0">
+                                        Какая такая рашка?
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="col-xs-12">
+                                <label class="item">
+                                    <input type="radio" name="item" value="1">
+                                        На космическом корабле дополнительная строка
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="col-xs-12">
+                                <label class="item">
+                                    <input type="radio" name="item" value="2">
+                                        В коробке с апельсинами
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn btn-sm btn-action pull-right">Голосовать</div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn pull-left" href="#"><i class="fa fa-check-square-o"></i> Прислать голосование</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn link-neutral pull-right" href="#">Архив</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-vote">
+                    <div class="panel-heading">
+                        <h3>Голосование</h3>
+                    </div>
+                    <div class="panel-body panel-question text-left">
+                        <p>В чем прибыл чебурашка? Ещё какой-то текст, для большего размера блока. Пара слов бла-бла-бла?</p>
+                    </div>
+                    <div class="panel-body panel-result text-left">
+                        <div class="item">Какая такая рашка?</div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="55" style="width: 55%; background-color: #68d9a6;"><span class="result pull-left">55%</span></div>
+                        </div>
+                        <div class="item">На космическом корабле дополн ит ель ная строка</div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="12" style="width: 12%; background-color: #68d9c2;"><span class="result pull-left">12%</span></div>
+                        </div>
+                        <div class="item">В коробке с апельсинами</div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="22" style="width: 22%; background-color: #68c8d9;"><span class="result pull-left">22%</span></div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn pull-left" href="#"><i class="fa fa-check-square-o"></i> Прислать голосование</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn link-neutral pull-right" href="#">Архив</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-comments">
+                    <div class="panel-heading"><h3>Комментарии</h3></div>
+                    <div class="panel-nav">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Последние</a></li>
+                            <li><a href="#">Популярные</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-striped table-hover">
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Как ГИБДД, бэдэдило</strong> </a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-neg pull-right">-3</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Администрация косячит</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-pos pull-right">+3</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">123</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Футбольные вести</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-pos pull-right">+1</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">ТралиВали</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Футбольные вести</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-pos pull-right">+2</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Дорожник</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Пятитысячный...</strong></a>
+                                    </td>
+                                    <td><span class="badge badge-clean badge-neg pull-right">-3</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Это Я</strong> <i class="fa fa-angle-right"></i> <strong class="comment">По уральскому морозу...</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-pos pull-right">+7</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Вася</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Сроки сдачи в эксплу...</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-neg pull-right">-5</span>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="list-event-item-text">
+                                        <a href="#" class="link-neutral"><strong class="nick">Бабай</strong> <i class="fa fa-angle-right"></i> <strong class="comment">Как ГИБДД, бэдэдило</strong></a>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-clean badge-neg pull-right">-1</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-rphoto hidden-xs hidden-sm hidden-lg">
+                    <div class="panel-heading"><h3>Случайное фото</h3></div>
+                    <img width="100%" src="http://fpoimg.com/252x336">
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="btn pull-left"><i class="fa fa-plus-circle"></i> Прислать</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn link-neutral pull-right">Все фото</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer>
+            <div class="row">
+                <div class="col-sm-6" style="text-align:right;">
+                    <h3>© 2008-2013 Красноуфимск Онлайн</h3>
+                    <p>Свидетельство о регистрации СМИ Эл № ФС 77 - 42292 от 30.09.2010 года, выдано Федеральной службой по
+                        надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).</p>
+                    <p>При использовании материалов сайта ссылка обязательна.</p>
+                    <p>Мнение редакции может не совпадать с мнением авторов материалов, а также комментариев к ним.</p>
+                    <div>
+                        <img src="ob_files/digits.gif" style="width:8%;">
+                        <span>
+                            <a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a>
+                        </span> •
+                        <span>
+                            <a href="http://ob.ksk66.ru/p10.html">Платные услуги</a></span> •
+                        <span>
+                            <a href="http://ksk66.ru/Preiskurant.html">Реклама на сайте</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Связаться с нами:</h5>
+                    <h3>8 (34394) <strong>7-97-10</strong> <br> infotek66@gmail.com</h3>
+                    <h4><a href="http://ksk66.ru/index.php?do=feedback&amp;user=1">Форма обратной связи</a></h4>
+                    <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
-</div>
-</div>
 </body>
 
 

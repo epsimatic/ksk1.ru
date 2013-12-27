@@ -449,24 +449,19 @@ p.media-text {
     margin-right: -15px;
 }
 /* панель Фильмы */
-/*.panel-movie {
-    border: none;
-}
 .panel-movie > .panel-heading {
     color: #ffffff;
     background-color: #FF6F4D;
-    background-image: ;
-    background-position: right;
-    background-repeat: no-repeat;
-    border: none;
 }
-.panel-movie > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
+.panel-movie .btn-group {
+    magin-top: 15px;
 }
-.panel-movie > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}*/
-
+.panel-today > .panel-heading{
+    background-color: #ff6372;
+}
+.panel-soon > .panel-heading{
+    background-color: #1fa6f2;
+}
 /* панель Новости */
 .panel-news > .panel-heading {
     color: #ffffff;
