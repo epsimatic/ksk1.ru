@@ -2269,6 +2269,7 @@ footer {
     position: absolute;
     font-weight: 600;
 }
+.header-line__logo img{width: 100%;}
 .ob-list img {
     margin: 0;
 }
