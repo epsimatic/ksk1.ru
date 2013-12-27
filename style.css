@@ -2198,7 +2198,7 @@ footer {
     display: inline-block;
     position: relative;
     height: 67px;
-    width: 352px;
+    width: 100%;
     font-size: 45px;
 }
 
