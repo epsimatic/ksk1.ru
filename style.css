@@ -917,7 +917,7 @@ h6,
 .navbar-blue .navbar-nav > .open > a:focus .caret {
     border: none;
 }
-.navbar .active {
+.navbar .active a {
     background-color: #fff;
     color: #3276B1;
 }
