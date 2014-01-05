@@ -2041,10 +2041,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .preview div {
     font-size: 0px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
 }
 
 .preview div:hover {
-    font-size: 80px;
+    font-size: 40px;
     text-align: center;
     line-height: 71px;
     color: red;
