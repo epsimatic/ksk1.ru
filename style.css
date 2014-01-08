@@ -2260,3 +2260,7 @@ footer h3 {
         display: none !important;
     }
 }
+.ob .footer_registration,
+.ob .footer_opinion{
+    display: none;
+}
