@@ -1420,6 +1420,10 @@ a.paid:focus {
     margin-top: -3px;
     font-weight: 600;
 }
+.panel > .quick-nav .btn-link:hover {
+    text-decoration: none;
+    color: #f3f3f3;
+}
 .panel > .quick-nav .btn-group {
     margin: 0;
 }
