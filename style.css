@@ -1267,7 +1267,7 @@ a.sponsor:focus {
 .panel-cat .btn {
     /*padding-bottom: 10px;*/
     margin-right: 10px;
-    width: 30%;
+    /*width: 30%;*/
 }
 .panel-cat .btn:first-child {
     margin-left: 12px;
