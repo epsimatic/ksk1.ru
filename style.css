@@ -1326,7 +1326,7 @@ a.sponsor:focus {
 .quick-nav li > a:focus,
 .panel-payment .dropdown-menu > li .btn:hover,
 .panel-payment .dropdown-menu > li .btn:focus{
-    background-color: #FAFBFC;
+    background-color: #f7f8f9;
 }
 .quick-nav .btn-link {
     color: #fff;
