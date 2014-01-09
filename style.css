@@ -1266,7 +1266,7 @@ a.sponsor:focus {
 }
 .panel-cat .btn {
     /*padding-bottom: 10px;*/
-    margin-right: 10px;
+    margin: 12px;
     width: 30%;
 
 }
@@ -1420,7 +1420,8 @@ a.paid:focus {
     margin-top: -3px;
     font-weight: 600;
 }
-.panel > .quick-nav .btn-link:hover {
+.panel > .quick-nav .btn-link:hover,
+.panel > .quick-nav .btn-link:focus {
     text-decoration: none;
     color: #b0d7f4;
 }
