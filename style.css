@@ -1441,6 +1441,9 @@ a.paid:focus {
     margin-bottom: 7px;
     height: auto;
 }
+.banner-top .yummies {
+    margin-bottom: 0px;
+}
 strong.ob {
     font-weight: 600;
     color: #da4200;
