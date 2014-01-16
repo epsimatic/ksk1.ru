@@ -1001,6 +1001,11 @@ h6 {
 .news-slide .list-group-item {
     padding: 10px 10px 0;
 }
+.news-slide .list-group-item:hover,
+.news-slide .list-group-item:focus {
+    color: #0f0f0f;
+    text-decoration: none;
+}
 a.news-slide-block {
     color: #0f0f0f;
     text-decoration: none;
