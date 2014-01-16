@@ -2275,7 +2275,7 @@ footer h3 {
     text-decoration: none;
 }
 .news-slide .news-slide-block {
-    padding: 0;
+    margin: -10px;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
