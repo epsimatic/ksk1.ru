@@ -366,8 +366,8 @@ p.media-text {
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
-    color: #1fa7f2;
-    background-color: #fff;
+    color: #fff;
+    background-color: #2CB3E9;
 }
 .panel-nav > ul > li > a {
     color: #47475f;
@@ -899,6 +899,9 @@ h6,
 .navbar-blue .navbar-collapse,
 .navbar-blue .navbar-form {
     border-color: #101010;
+}
+.navbar-collapse {
+    margin-right: -40px;
 }
 .navbar-blue .navbar-nav > .open > a,
 .navbar-blue .navbar-nav > .open > a:hover,
@@ -1504,8 +1507,8 @@ footer {
     height: auto !important;
 }
 .searchbox{
-    width: 270px;
-    margin-top: 7px;
+    width: 100%;
+    /*margin-top: 7px;*/
 }
 .header-line__logo {
     display: inline-block;
@@ -2239,6 +2242,34 @@ footer h3 {
     font-weight: 300;
     color: #0080c7;
     margin-top: 0;
+}
+.panel-ob-nav {
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.panel-ob-nav > .panel-body {
+    padding: 0;
+    background-color: #fff;
+}
+.panel-ob-nav > .panel-body > div {
+    padding: 0 5px;
+    background-color: #fdfdfd;
+}
+.panel-ob-nav > .panel-body > div:first-child {
+    /*margin-right: 5px;*/
+}
+.panel-ob-nav a {
+    color: #e1e1e1;
+}
+.panel-ob-nav a:hover,
+.panel-ob-nav a:focus {
+    text-decoration: none;
+    color: #adadad;
+    background-color: #F9FAFB;
+}
+
+.panel-ob-nav .fa {
+    padding-right: 7px;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
