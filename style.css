@@ -1506,10 +1506,6 @@ footer {
 .gsc-input-box {
     height: auto !important;
 }
-.searchbox{
-    width: 100%;
-    /*margin-top: 7px;*/
-}
 .header-line__logo {
     display: inline-block;
     position: relative;
@@ -2270,6 +2266,10 @@ footer h3 {
 
 .panel-ob-nav .fa {
     padding-right: 7px;
+}
+.searchbox{
+    width: 100%;
+    /*margin-top: 7px;*/
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
