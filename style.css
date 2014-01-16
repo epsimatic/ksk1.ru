@@ -1001,14 +1001,10 @@ h6 {
 .news-slide .list-group-item {
     padding: 10px 10px 0;
 }
-.news-slide .list-group-item:hover,
-.news-slide .list-group-item:focus {
-    /*color: #0f0f0f;*/
-    background-color: #fcfcfc;
-}
-.news-slide .media:hover,
-.news-slide .media:focus {
+.news-slide a.list-group-item:hover,
+.news-slide a.list-group-item:focus {
     text-decoration: none;
+    background-color: #fcfcfc;
 }
 a.news-slide-block {
     color: #0f0f0f;
