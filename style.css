@@ -1006,7 +1006,8 @@ h6 {
     /*color: #0f0f0f;*/
     background-color: #fcfcfc;
 }
-.news-slide .media {
+.news-slide .media:hover,
+.news-slide .media:focus {
     text-decoration: none;
 }
 a.news-slide-block {
