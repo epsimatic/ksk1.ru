@@ -1001,8 +1001,8 @@ h6 {
 .news-slide .list-group-item {
     padding: 10px 10px 0;
 }
-.news-slide a.list-group-item:hover,
-.news-slide a.list-group-item:focus {
+.news-slide .media:hover,
+.news-slide .media:focus {
     text-decoration: none;
     background-color: #fcfcfc;
 }
