@@ -998,17 +998,6 @@ h6 {
     overflow: hidden;
     max-width: 240px;
 }
-.news-slide .list-group-item {
-    padding: 10px 10px 0;
-}
-.news-slide .list-group-item:hover,
-.news-slide .list-group-item:focus {
-    background-color: #fcfcfc;
-}
-.news-slide .list-group-item:hover h4,
-.news-slide .list-group-item:focus h4 {
-    text-decoration: none;
-}
 a.news-slide-block {
     color: #0f0f0f;
     text-decoration: none;
@@ -2273,6 +2262,20 @@ footer h3 {
 .searchbox{
     width: 100%;
     margin-top: 7px;
+}
+.news-slide .list-group-item {
+    padding: 10px 10px 0;
+}
+.news-slide .list-group-item:hover,
+.news-slide .list-group-item:focus {
+    background-color: #fcfcfc;
+}
+.news-slide .list-group-item:hover h4,
+.news-slide .list-group-item:focus h4 {
+    text-decoration: none;
+}
+.news-slide .news-slide-block {
+    padding: 0;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
