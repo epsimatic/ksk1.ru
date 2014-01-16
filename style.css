@@ -303,12 +303,6 @@ p.media-text {
     text-indent: 5px;
     line-height: 1.4em;
 }
-.news-slide-block:first-child {
-    width: 33.3333%;
-}
-.news-slide-block:first-child .media-main-secondary {
-    width: 100%;
-}
 .news-slide-block > p.media-text {
     padding: 10px;
     line-height: 1.3em;
