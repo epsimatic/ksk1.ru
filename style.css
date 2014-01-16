@@ -998,8 +998,8 @@ h6 {
     overflow: hidden;
     max-width: 240px;
 }
-.news-slide {
-    margin-top: 20px;
+.news-slide .list-group-item {
+    padding: 10px 10px;
 }
 a.news-slide-block {
     color: #0f0f0f;
