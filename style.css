@@ -2265,7 +2265,7 @@ footer h3 {
 }
 .searchbox{
     width: 100%;
-    /*margin-top: 7px;*/
+    margin-top: 7px;
 }
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
