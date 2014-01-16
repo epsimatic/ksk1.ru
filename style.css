@@ -2264,7 +2264,7 @@ footer h3 {
     margin-top: 7px;
 }
 .news-slide .list-group-item {
-    padding: 10px 10px 0;
+    /*padding: 10px 10px 0;*/
 }
 .news-slide .list-group-item:hover,
 .news-slide .list-group-item:focus {
