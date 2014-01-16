@@ -69,9 +69,6 @@ a.list-group-item:focus {
     font-weight: 400;
     line-height: 1.25em;
 }
-.news-slide > .news-slide-block {
-    padding-bottom: 25px;
-}
 .img-prime {
     padding-bottom: 7px;
 }
