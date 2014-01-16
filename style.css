@@ -2246,12 +2246,20 @@ footer h3 {
 }
 .panel-ob-nav a {
     color: #e1e1e1;
+    background-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 10px;
 }
 .panel-ob-nav a:hover,
 .panel-ob-nav a:focus {
     text-decoration: none;
     color: #adadad;
     background-color: #F9FAFB;
+}
+.panel-ob-nav a:hover .fa,
+.panel-ob-nav a:focus .fa {
+    color: #adadad;
 }
 
 .panel-ob-nav .fa {
