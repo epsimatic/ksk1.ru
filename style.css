@@ -1318,6 +1318,7 @@ a.sponsor:focus {
 .panel-payment .dropdown-menu > li .btn:hover,
 .panel-payment .dropdown-menu > li .btn:focus{
     background-color: #f5f6f7;
+    color: #333333;
 }
 .quick-nav .btn-link {
     color: #fff;
@@ -2264,7 +2265,7 @@ footer h3 {
     margin-top: 8px;
 }
 .news-slide .list-group-item {
-    padding: 10px 10px 0;
+    /*padding: 10px 10px 0;*/
 }
 .news-slide .list-group-item:hover,
 .news-slide .list-group-item:focus {
