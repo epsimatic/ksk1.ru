@@ -2280,7 +2280,7 @@ footer h3 {
 .news-slide .media-main-primary {
     padding: 0;
 }
-.news-slide .media-main-secondary:first-child {
+.news-slide .media-main-secondary {
     padding-left: 20px;
 }
 @media only screen and (max-width : 1200px) {
