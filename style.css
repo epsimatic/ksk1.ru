@@ -2304,6 +2304,12 @@ footer h3 {
     margin: 0 !important;
     border: none !important;
 }
+.lcp_paginator a:active {
+    background-image: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    outline: 0 none;
+}
+
 /*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
