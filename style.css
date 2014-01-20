@@ -2307,6 +2307,10 @@ footer h3 {
 .lcp_paginator li:last-child {
     border-radius: 0 4px 4px 0;
 }
+.lcp_paginator li:hover,
+.lcp_paginator li:focus {
+    background-color: #cfcfcf;
+}
 .lcp_paginator li {
     padding: 4px 10px !important;
     margin: 3px 1px !important;
