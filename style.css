@@ -2309,7 +2309,7 @@ footer h3 {
 }
 .lcp_paginator li:hover,
 .lcp_paginator li:focus {
-    background-color: #cfcfcf;
+    background-color: #d1d1d1;
 }
 .lcp_paginator li {
     padding: 4px 10px !important;
