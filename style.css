@@ -2284,6 +2284,47 @@ footer h3 {
 .news-slide .media-main-secondary {
     /*padding-left: 20px;*/
 }
+.lcp_paginator a {
+    color: #333;
+}
+.lcp_paginator a:hover,
+.lcp_paginator a:focus {
+    text-decoration: none;
+    color: #2590de;
+}
+/*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.lcp_paginator > li:first-child {
+    margin-left: 0;
+}
+.lcp_paginator > li:last-child {
+    margin-right: 0;
+}
+.lcp_paginator > li > a {
+    float: left;
+    position: relative;
+}
+.lcp_paginator > li > a {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+    color: #333333;
+}
+.lcp_paginator > li > a {
+    -moz-user-select: none;
+    background-image: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}*/
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
