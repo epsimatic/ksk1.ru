@@ -2284,14 +2284,14 @@ footer h3 {
 .news-slide .media-main-secondary {
     /*padding-left: 20px;*/
 }
-/*.lcp_paginator a {
+.lcp_paginator {
     color: #333;
 }
 .lcp_paginator a:hover,
 .lcp_paginator a:focus {
     text-decoration: none;
     color: #3B437D;
-}*/
+}
 .lcp_paginator {
     display: inline-block;
     position: relative;
