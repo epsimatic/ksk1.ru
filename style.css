@@ -2284,13 +2284,23 @@ footer h3 {
 .news-slide .media-main-secondary {
     /*padding-left: 20px;*/
 }
-.lcp_paginator a {
+/*.lcp_paginator a {
     color: #333;
 }
 .lcp_paginator a:hover,
 .lcp_paginator a:focus {
-    /*text-decoration: none;*/
+    text-decoration: none;
     color: #3B437D;
+}*/
+.lcp_paginator {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: none;
+}
+.lcp_paginator {
+    padding: 6px 12px;
+    margin: 0;
 }
 /*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
