@@ -2298,9 +2298,9 @@ footer h3 {
     vertical-align: middle;
 }
 .lcp_paginator li {
-    padding: 6px 12px; !important
-    margin: 0; !important
-    border: none; !important
+    padding: 6px 12px !important;
+    margin: 0 !important;
+    border: none !important;
 }
 /*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
