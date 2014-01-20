@@ -2301,6 +2301,12 @@ footer h3 {
     margin: 0;
     padding: 0;
 }
+.lcp_paginator li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.lcp_paginator li:last-child {
+    border-radius: 0 4px 4px 0;
+}
 .lcp_paginator li {
     padding: 4px 10px !important;
     margin: 3px 2px !important;
