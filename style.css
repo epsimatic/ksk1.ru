@@ -2315,7 +2315,7 @@ footer h3 {
     padding: 4px 10px !important;
     margin: 3px 1px !important;
     border: none !important;
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;*/
 }
 .lcp_paginator li:active {
     background-image: none;
