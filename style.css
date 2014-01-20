@@ -2296,11 +2296,11 @@ footer h3 {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    border: none;
 }
 .lcp_paginator li {
     padding: 6px 12px;
     margin: 0;
+    border: none;
 }
 /*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
