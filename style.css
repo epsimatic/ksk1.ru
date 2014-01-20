@@ -2318,6 +2318,9 @@ footer h3 {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
     outline: 0 none;
 }
+.not-really-panel {
+    background-color: transparent;
+}
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
