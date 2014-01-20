@@ -2312,40 +2312,6 @@ footer h3 {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
     outline: 0 none;
 }
-
-/*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-.lcp_paginator > li:first-child {
-    margin-left: 0;
-}
-.lcp_paginator > li:last-child {
-    margin-right: 0;
-}
-.lcp_paginator > li > a {
-    float: left;
-    position: relative;
-}
-.lcp_paginator > li > a {
-    background-color: #FFFFFF;
-    border-color: #CCCCCC;
-    color: #333333;
-}
-.lcp_paginator > li > a {
-    -moz-user-select: none;
-    background-image: none;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 6px 12px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-}*/
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
