@@ -2289,7 +2289,7 @@ footer h3 {
 }
 .lcp_paginator a:hover,
 .lcp_paginator a:focus {
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: #3B437D;
 }
 /*.lcp_paginator > li:first-child:not(:last-child):not(.dropdown-toggle) {
