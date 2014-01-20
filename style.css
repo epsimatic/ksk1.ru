@@ -2286,6 +2286,8 @@ footer h3 {
 }
 .lcp_paginator {
     color: #333;
+    font-weight: normal;
+    line-height: 1.42857;
 }
 .lcp_paginator a:hover,
 .lcp_paginator a:focus {
