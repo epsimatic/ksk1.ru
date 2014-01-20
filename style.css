@@ -2296,6 +2296,7 @@ footer h3 {
     display: inline-block;
     position: relative;
     vertical-align: middle;
+    margin: 0;
 }
 .lcp_paginator li {
     padding: 6px 12px !important;
