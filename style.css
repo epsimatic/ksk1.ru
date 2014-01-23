@@ -346,11 +346,16 @@ p.media-text {
     font-size: 13px;
 }
 .panel-comments {
-    background-color: #c7d1e0;
+    /*background-color: #c7d1e0;*/
     color: #47475f;
 }
 .panel-comments td.list-event-item-text{
     padding-left: 12px;
+}
+.panel-comments td.list-event-item-text a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .panel-nav {
     /*color: #0d3349;*/
