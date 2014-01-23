@@ -359,7 +359,7 @@ p.media-text {
 }
 .panel-comments tr:hover,
 .panel-comments tr:focus {
-    background-color: #c7d1e0;
+    background-color: #d1dae9;
 }
 .panel-comments td.list-event-item-text .fa {
     padding-left: 4px;
