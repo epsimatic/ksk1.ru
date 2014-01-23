@@ -351,14 +351,15 @@ p.media-text {
 }
 .panel-comments td.list-event-item-text{
     padding-left: 12px;
-}
-.panel-comments td.list-event-item-text {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     position: absolute;
-    width: 76%;
+    width: 77%;
+}
+.panel-comments td.list-event-item-text .fa {
+    padding-left: 3px;
 }
 .panel-nav {
     /*color: #0d3349;*/
