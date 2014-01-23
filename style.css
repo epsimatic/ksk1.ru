@@ -345,7 +345,7 @@ p.media-text {
     padding: 6px 20px;
     font-size: 13px;
 }
-.panel-comments > .panel-body {
+.panel-comments {
     background-color: #c7d1e0;
     color: #47475f;
 }
