@@ -121,6 +121,9 @@ a.list-group-item:focus {
     font-size: 25px;
     padding: 1px 0 3px 5px;
 }
+.sidebar {
+    padding-left: 0;
+}
 .inset .panel > .panel-heading h3 {
     font-size: 20px;
     font-weight: 400;
