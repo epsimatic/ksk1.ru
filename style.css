@@ -346,7 +346,6 @@ p.media-text {
     font-size: 13px;
 }
 .panel-comments {
-    /*background-color: #c7d1e0;*/
     color: #47475f;
 }
 .panel-comments td.list-event-item-text{
@@ -357,6 +356,10 @@ p.media-text {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 76%;
+}
+.panel-comments td.list-event-item-text:hover,
+.panel-comments td.list-event-item-text:focus {
+    background-color: #c7d1e0;
 }
 .panel-comments td.list-event-item-text .fa {
     padding-left: 4px;
