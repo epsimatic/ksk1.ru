@@ -349,6 +349,9 @@ p.media-text {
     background-color: #c7d1e0;
     color: #47475f;
 }
+.panel-comments td.list-event-item-text{
+    padding-left: 12px;
+}
 .panel-nav {
     /*color: #0d3349;*/
     background-color: #C7D1E0;
