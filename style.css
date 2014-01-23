@@ -2343,6 +2343,9 @@ footer h3 {
 .not-really-panel {
     background-color: transparent;
 }
+.textwidget .panel-body {
+    padding: 0;
+}
 @media only screen and (max-width : 1200px) {
     .header-line__logo__weather-block__temp {
         opacity: 1;
