@@ -356,6 +356,7 @@ p.media-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 80%;
 }
 .panel-nav {
     /*color: #0d3349;*/
