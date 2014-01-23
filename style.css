@@ -352,7 +352,7 @@ p.media-text {
 .panel-comments td.list-event-item-text{
     padding-left: 12px;
 }
-.panel-comments td.list-event-item-text a {
+.panel-comments td.list-event-item-text div {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
