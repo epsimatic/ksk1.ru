@@ -2364,7 +2364,7 @@ a.news-slide-block {
         padding: 0 10px 0 0;
     }*/
     .news-slide-block:first-child h4 {
-        font-size: 1.7em;
+        font-size: 1.7em !important;
         font-weight: 700;
     }
     .news-slide-block:first-child .list-group-item {
