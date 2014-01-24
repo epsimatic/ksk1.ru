@@ -2274,6 +2274,10 @@ a.news-slide-block {
 .news-slide-block:first-child h4 {
     margin-bottom: 0px !important;
 }
+.news-slide-block:first-child a.list-group-item:hover,
+.news-slide-block:first-child a.list-group-item:focus {
+    background-color: transparent;
+}
 /*
 .media-main h4 {
     color: #4a76bb;
