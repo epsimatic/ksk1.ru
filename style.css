@@ -2350,7 +2350,7 @@ footer h3 {
         bottom: 2px;
         left: 11px;
     }
-    .news-slide-block {
+    .news-slide-block:first-child {
         padding-top: 10px;
     }
 }
