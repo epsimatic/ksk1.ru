@@ -2424,18 +2424,19 @@ a.news-slide-block {
         bottom: 2px;
         left: 11px;
     }
+    .header-line__logo__weather-block__temp {
+        opacity: 1;
+    }
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
     .header-line__logo__weather-block__temp {
-        opacity: 1;
+        opacity: 0;
     }
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
-    .header-line__logo__weather-block__temp {
-        opacity: 1;
-    }
+
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
