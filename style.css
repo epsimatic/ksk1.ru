@@ -2285,6 +2285,9 @@ a.news-slide-block {
 .news-slide .list-group-item {
     padding: 10px;
 }
+.media-main-primary {
+    padding-right: 0;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
