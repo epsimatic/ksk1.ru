@@ -2296,6 +2296,9 @@ footer h3 {
 .news-slide .news-slide-block {
     margin: 0;
 }
+.news-slide-block {
+    padding: 0;
+}
 .news-slide .media-main-primary {
     /*padding: 0;*/
 }
