@@ -2308,12 +2308,15 @@ footer h3 {
 .btn_badge{
     display: none !important;
 }
-.news-slide .list-group-item:first-child {
-    padding: 0px;
-}
 .ob .footer_registration,
 .ob .footer_opinion{
     display: none;
+}
+.news-slide .list-group-item:first-child {
+    padding: 0px;
+}
+.media-main-secondary {
+    padding-right: 20px;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
