@@ -2271,8 +2271,13 @@ a.news-slide-block {
     color: #0f0f0f;
     text-decoration: none;
 }
+.news-slide-block h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 .news-slide-block:first-child h4 {
     margin-bottom: 0px !important;
+    font-weight: 700;
 }
 .news-slide-block:first-child a.list-group-item:hover,
 .news-slide-block:first-child a.list-group-item:focus {
