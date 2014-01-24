@@ -2277,7 +2277,6 @@ a.news-slide-block {
 }
 .news-slide-block:first-child h4 {
     margin-bottom: 0px !important;
-    font-weight: 700;
 }
 .news-slide-block:first-child a.list-group-item:hover,
 .news-slide-block:first-child a.list-group-item:focus {
@@ -2364,6 +2363,10 @@ a.news-slide-block {
     .news-slide-block:last-child {
         padding: 0 10px 0 0;
     }*/
+    .news-slide-block:first-child h4 {
+        font-size: 1.7em;
+        font-weight: 700;
+    }
     .news-slide-block:first-child .list-group-item {
         padding: 20px 10px 10px;
     }
