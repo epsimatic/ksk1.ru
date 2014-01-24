@@ -2283,7 +2283,9 @@ footer h3 {
     margin-top: 8px;
 }
 .news-slide .list-group-item {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 }
 .news-slide .list-group-item:hover,
 .news-slide .list-group-item:focus {
@@ -2382,7 +2384,7 @@ footer h3 {
         display: none !important;
     }
     .news-slide .list-group-item:first-child {
-        padding-top: 0px;
+        padding: 0px;
     }
 }
 .ob .footer_registration,
