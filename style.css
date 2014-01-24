@@ -2291,6 +2291,9 @@ a.news-slide-block {
 .main-content-inner {
     padding: 0;
 }
+.news-slide-block:first-child .btn-action {
+    margin: 0 !important;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
@@ -2330,9 +2333,6 @@ a.news-slide-block {
 }
 .media-main-secondary {
     padding-right: 20px;
-}
-.news-slide-block:first-child .btn-action {
-    margin: 0 !important;
 }
 */
 /* Стили для размера -sm- */
