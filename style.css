@@ -2294,6 +2294,9 @@ a.news-slide-block {
 .news-slide-block:first-child .btn-action {
     margin: 0 !important;
 }
+.news-slide-block {
+    padding: 0;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
