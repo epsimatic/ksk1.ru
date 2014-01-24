@@ -2283,7 +2283,7 @@ footer h3 {
     margin-top: 8px;
 }
 .news-slide .list-group-item {
-    /*padding: 10px 10px 0;*/
+    padding: 0;
 }
 .news-slide .list-group-item:hover,
 .news-slide .list-group-item:focus {
@@ -2295,9 +2295,6 @@ footer h3 {
 }
 .news-slide .news-slide-block {
     margin: 0;
-}
-.news-slide-block {
-    padding: 0;
 }
 .news-slide .media-main-primary {
     /*padding: 0;*/
@@ -2356,9 +2353,6 @@ footer h3 {
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
-    .news-slide-block:first-child {
-        padding: 0 10px;
-    }
 }
 @media only screen and (min-width : 768px) and (max-width : 992px) {
     .header-line__logo__arrow {
@@ -2383,9 +2377,6 @@ footer h3 {
 @media only screen and (max-width : 435px){
     .btn_badge{
         display: none !important;
-    }
-    .news-slide-block:first-child {
-        padding: 0;
     }
 }
 .ob .footer_registration,
