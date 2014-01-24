@@ -2313,8 +2313,8 @@ footer h3 {
     display: none;
 }
 
-.news-slide-block:first-child .media-main-primary {
-
+.news-slide-block .media-main-primary {
+    padding-left: 10px;
 }
 .media-main-secondary {
     padding-right: 20px;
@@ -2327,6 +2327,12 @@ footer h3 {
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .news-slide-block:first-child .media-main-primary {
+        padding-left: 10px;
+    }
+    .news-slide-block:last-child .media-main-primary {
+        padding-right: 10px;
+    }
     .main-content-inner {
         padding: 0 10px;
     }
