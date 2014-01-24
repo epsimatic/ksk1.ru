@@ -2352,6 +2352,11 @@ a.news-slide-block {
     padding-right: 20px;
 }
 */
+.header-line__logo__weather-block__temp {
+    bottom: 2px;
+    left: 11px;
+    opacity: 1;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*.news-slide-block {
@@ -2415,18 +2420,9 @@ a.news-slide-block {
         font-size: 28px;
         width: 100%;
     }
-
-    .header-line__logo__weather-block__temp {
-        bottom: 2px;
-        left: 11px;
-        opacity: 1;
-    }
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .header-line__logo__weather-block__temp {
-        opacity: 0;
-    }
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
@@ -2438,6 +2434,9 @@ a.news-slide-block {
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .header-line__logo__weather-block__temp {
+        opacity: 0;
+    }
     /*
     .media-main-secondary > h4 {
         font-size: 1.4em;
