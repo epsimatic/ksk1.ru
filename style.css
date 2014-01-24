@@ -2312,14 +2312,24 @@ footer h3 {
 .ob .footer_opinion{
     display: none;
 }
+
+.news-slide-block:first-child .media-main-primary {
+
+}
 .media-main-secondary {
     padding-right: 20px;
 }
 .news-slide-block:first-child .btn-action {
     margin: 0 !important;
 }
+.main-content-inner {
+    padding: 0;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .main-content-inner {
+        padding: 0 10px;
+    }
     .media-main-secondary > h4 {
         font-size: 1.3em;
     }
