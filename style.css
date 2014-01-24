@@ -2337,7 +2337,7 @@ a.news-slide-block {
 */
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    .news-slide-block {
+    /*.news-slide-block {
         padding: 0;
     }
     .news-slide-block:first-child {
@@ -2345,7 +2345,7 @@ a.news-slide-block {
     }
     .news-slide-block:last-child {
         padding: 0 10px 0 0;
-    }
+    }*/
     .media-main-primary {
         padding-right: 10px;
     }
