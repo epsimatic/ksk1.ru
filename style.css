@@ -2316,7 +2316,7 @@ footer h3 {
     padding-right: 20px;
 }
 .news-slide-block:first-child .btn-action {
-    margin: 0;
+    margin: 0 !important;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
