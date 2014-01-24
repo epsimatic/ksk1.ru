@@ -2312,9 +2312,6 @@ footer h3 {
 .ob .footer_opinion{
     display: none;
 }
-.news-slide .list-group-item:first-child {
-    padding: 0px;
-}
 .media-main-secondary {
     padding-right: 20px;
 }
@@ -2355,6 +2352,9 @@ footer h3 {
     }
     .news-slide-block:first-child {
         padding-top: 10px;
+    }
+    .news-slide .list-group-item:first-child {
+        padding: 0px;
     }
 }
 /* Стили для размера -md- */
