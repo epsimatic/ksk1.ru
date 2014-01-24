@@ -315,7 +315,7 @@ p.media-text {
 .media-main > p.media-text {
     text-indent: 10px;
 }
-.media-main-secondary > h4.media-heading {
+.media-main-secondary > h4 {
     color: #4a76bb;
     font-weight: 600;
     font-size: 1.4em;
@@ -2320,7 +2320,7 @@ footer h3 {
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    .media-main-secondary > h4.media-heading {
+    .media-main-secondary > h4 {
         font-size: 1.3em;
     }
     .header-line__logo img{
@@ -2378,7 +2378,7 @@ footer h3 {
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .media-main-secondary > h4.media-heading {
+    .media-main-secondary > h4 {
         font-size: 1.4em;
     }
 }
