@@ -2344,7 +2344,7 @@ a.news-slide-block {
         padding: 0 10px;
     }
     .news-slide-block:last-child {
-        padding-right: 10px;
+        padding: 0 10px 0 0;
     }
     .media-main-primary {
         padding-right: 10px;
