@@ -2356,6 +2356,9 @@ footer h3 {
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
+    .news-slide-block:first-child {
+        padding: 0 10px;
+    }
 }
 @media only screen and (min-width : 768px) and (max-width : 992px) {
     .header-line__logo__arrow {
@@ -2380,6 +2383,9 @@ footer h3 {
 @media only screen and (max-width : 435px){
     .btn_badge{
         display: none !important;
+    }
+    .news-slide-block:first-child {
+        padding: 0;
     }
 }
 .ob .footer_registration,
