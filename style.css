@@ -1470,23 +1470,6 @@ header .btn-group {
 footer {
     margin: 20px -10px 0 -10px;
 }
-/* Стили для размера -sm- */
-@media (min-width: 768px) {
-    .media-main-secondary > h4.media-heading {
-        font-size: 1.3em;
-    }
-}
-/* Стили для размера -md- */
-@media (min-width: 992px) {
-}
-
-/* Стили для размера -lg- */
-@media (min-width: 1200px) {
-    .media-main-secondary > h4.media-heading {
-        font-size: 1.4em;
-    }
-}
-
 
 /*Шапка сайта*/
 .karta a[title='Карта Красноуфимска и других городов'],
@@ -1672,30 +1655,6 @@ footer {
 }
 .panel-my-ob .fa-clock-o {
     color: #8c8c8f;
-}
-@media only screen and (max-width : 1200px) {
-    .header-line__logo__weather-block__temp {
-        opacity: 1;
-    }
-    .kaleidoscope__item__tooltip{
-        height: 74px;
-    }
-}
-@media only screen and (min-width : 768px) and (max-width : 992px) {
-    .header-line__logo__arrow {
-        background-size: 18px auto;
-        bottom: -6px;
-        right: -9px;
-    }
-    .header-line__logo {
-        font-size: 28px;
-        width: 100%;
-    }
-
-    .header-line__logo__weather-block__temp {
-        bottom: 2px;
-        left: 11px;
-    }
 }
 /* Выровнять элементы в шапке по вертикали и горизонтали */
 
@@ -2348,18 +2307,24 @@ footer h3 {
 .textwidget .panel-body {
     padding: 0;
 }
-@media only screen and (max-width : 1200px) {
-    .header-line__logo__weather-block__temp {
-        opacity: 1;
-    }
-    .kaleidoscope__item__tooltip{
-        height: 74px;
-    }
-    .news-slide .list-group-item:first-child {
-        padding-top: 10px;
-    }
+.btn_badge{
+    display: none !important;
 }
-@media only screen and (min-width : 768px) and (max-width : 992px) {
+.news-slide .list-group-item:first-child {
+    padding: 0px;
+}
+.ob .footer_registration,
+.ob .footer_opinion{
+    display: none;
+}
+/* Стили для размера -sm- */
+@media (min-width: 768px) {
+    .media-main-secondary > h4.media-heading {
+        font-size: 1.3em;
+    }
+    .header-line__logo img{
+        width:100%;
+    }
     .header-line__logo__arrow {
         background-size: 18px auto;
         bottom: -6px;
@@ -2373,21 +2338,43 @@ footer h3 {
         bottom: 2px;
         left: 11px;
     }
-}
-@media only screen and (max-width : 992px){
-    .header-line__logo img{
-        width:100%;
+    .header-line__logo__arrow {
+        background-size: 18px auto;
+        bottom: -6px;
+        right: -9px;
+    }
+    .header-line__logo {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .header-line__logo__weather-block__temp {
+        bottom: 2px;
+        left: 11px;
     }
 }
-@media only screen and (max-width : 435px){
-    .btn_badge{
-        display: none !important;
+/* Стили для размера -md- */
+@media (min-width: 992px) {
+    .header-line__logo__weather-block__temp {
+        opacity: 1;
+    }
+    .kaleidoscope__item__tooltip{
+        height: 74px;
     }
     .news-slide .list-group-item:first-child {
-        padding: 0px;
+        padding-top: 10px;
+    }
+    .header-line__logo__weather-block__temp {
+        opacity: 1;
+    }
+    .kaleidoscope__item__tooltip{
+        height: 74px;
     }
 }
-.ob .footer_registration,
-.ob .footer_opinion{
-    display: none;
+
+/* Стили для размера -lg- */
+@media (min-width: 1200px) {
+    .media-main-secondary > h4.media-heading {
+        font-size: 1.4em;
+    }
 }
