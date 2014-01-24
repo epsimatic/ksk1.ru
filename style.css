@@ -2291,6 +2291,9 @@ a.news-slide-block {
 .main-content-inner {
     padding: 0;
 }
+.news-slide-block {
+    padding: 0;
+}
 .news-slide-block:first-child .btn-action {
     margin: 0 !important;
 }
