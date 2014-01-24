@@ -2242,9 +2242,7 @@ footer h3 {
     margin-top: 8px;
 }
 .news-slide .list-group-item {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0;
 }
 .news-slide .list-group-item:hover,
 .news-slide .list-group-item:focus {
@@ -2351,6 +2349,9 @@ footer h3 {
     .header-line__logo__weather-block__temp {
         bottom: 2px;
         left: 11px;
+    }
+    .news-slide-block {
+        padding-top: 10px;
     }
 }
 /* Стили для размера -md- */
