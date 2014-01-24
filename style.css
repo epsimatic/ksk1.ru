@@ -2282,6 +2282,9 @@ a.news-slide-block {
     font-size: 1.4em;
     /*margin: -5px 5px 9px;*/
 }
+.news-slide .list-group-item {
+    padding: 10px;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
