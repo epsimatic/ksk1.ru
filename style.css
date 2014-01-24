@@ -2271,7 +2271,11 @@ a.news-slide-block {
     color: #0f0f0f;
     text-decoration: none;
 }
-.media-main > h4.media-heading {
+.news-slide-block:first-child h4 {
+    margin-bottom: 0px !important;
+}
+/*
+.media-main h4 {
     color: #4a76bb;
     font-size: 1.7em;
     font-weight: 700;
@@ -2280,8 +2284,9 @@ a.news-slide-block {
     color: #4a76bb;
     font-weight: 600;
     font-size: 1.4em;
-    /*margin: -5px 5px 9px;*/
+    margin: -5px 5px 9px;
 }
+*/
 .news-slide .list-group-item {
     padding: 10px;
 }
