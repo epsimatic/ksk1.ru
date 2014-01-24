@@ -2362,9 +2362,6 @@ footer h3 {
     .kaleidoscope__item__tooltip{
         height: 74px;
     }
-    .news-slide .list-group-item:first-child {
-        padding-top: 10px;
-    }
     .header-line__logo__weather-block__temp {
         opacity: 1;
     }
