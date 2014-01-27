@@ -2358,7 +2358,7 @@ a.news-slide-block {
     opacity: 1;
 }
 .header-line__logo img{
-    width:90%;
+    width:96%;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
@@ -2419,6 +2419,15 @@ a.news-slide-block {
 @media (min-width: 992px) {
     .kaleidoscope__item__tooltip{
         height: 74px;
+    }
+    .header-line__logo img{
+        width:80%;
+    }
+    .header-line__logo__weather-block__temp {
+        bottom: 1px;
+        left: 39px;
+        opacity: 1;
+        font-size: 55%;
     }
 }
 
