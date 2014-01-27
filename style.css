@@ -2402,17 +2402,22 @@ a.news-slide-block {
         padding: 0px;
     }
     */
-    .header-line__logo img{
-        width:100%;
-    }
     .header-line__logo__arrow {
         background-size: 18px auto;
         bottom: -6px;
         right: -9px;
     }
+    .header-line__logo__weather-block__temp {
+        bottom: 0px;
+        left: 3px;
+        opacity: 1;
+    }
     .header-line__logo {
         font-size: 28px;
         width: 100%;
+    }
+    .header-line__logo img{
+        width:100%;
     }
 }
 /* Стили для размера -md- */
