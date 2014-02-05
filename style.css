@@ -1251,12 +1251,12 @@ a.sponsor:focus {
 }
 .panel-cat .btn {
     /*padding-bottom: 10px;*/
-    margin-right: 10px;
+    margin-left: 12px;
     /*width: 30%;*/
 }
-.panel-cat .btn:first-child {
+/*.panel-cat .btn:first-child {
     margin-left: 12px !important;
-}
+}*/
 .list-group {
     margin-bottom: 15px;
     padding-bottom: 25px;
