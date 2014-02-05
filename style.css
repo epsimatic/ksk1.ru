@@ -2310,7 +2310,9 @@ a.news-slide-block {
 .news-slide-block {
     padding: 0;
 }
-
+label.control-label {
+    font-weight: 600 !important;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
