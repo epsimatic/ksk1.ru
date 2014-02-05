@@ -1255,7 +1255,7 @@ a.sponsor:focus {
     /*width: 30%;*/
 }
 .panel-cat .btn:first-child {
-    margin-left: 12px;
+    margin-left: 12px !important;
 }
 .list-group {
     margin-bottom: 15px;
