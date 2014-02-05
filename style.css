@@ -2313,6 +2313,12 @@ a.news-slide-block {
 label.control-label {
     font-weight: 600 !important;
 }
+.input-group-addon label {
+    font-weight: 600;
+}
+.add-ob__form h3 {
+    font-weight: 600;
+}
 /*
 .news-slide-block > p.media-text {
     padding: 10px;
