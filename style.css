@@ -2380,7 +2380,9 @@ label.control-label {
     padding: 0 10px;
 }
 .news_full h2 {
-    color: #0A79DB;
+    color: #3d54ca;
+    font-size: 28px;
+    font-weight: 600;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
