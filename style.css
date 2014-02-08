@@ -2376,6 +2376,9 @@ label.control-label {
 .header-line__logo img{
     width:96%;
 }
+.news_full {
+    padding: 0 10px
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*.news-slide-block {
