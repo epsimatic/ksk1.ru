@@ -2391,6 +2391,9 @@ label.control-label {
 .news_full .panel-default > .panel-body {
     background-color: #f8f8f8;
 }
+.news_full .panel-default h2:first-child {
+    margin-top: 0;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*.news-slide-block {
