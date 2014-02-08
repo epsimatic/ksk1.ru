@@ -2384,6 +2384,13 @@ label.control-label {
     font-size: 28px;
     font-weight: 600;
 }
+.news_full .panel-default > .panel-heading {
+    background-color: #d9e0e6;
+    padding: 16px 22px;
+}
+.news_full .panel-default > .panel-body {
+    background-color: #f8f8f8;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*.news-slide-block {
