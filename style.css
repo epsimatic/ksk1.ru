@@ -2374,7 +2374,7 @@ label.control-label {
     width:96%;
 }
 .news_full {
-    padding: 0 10px;
+    padding: 0;
 }
 .news_full h2 {
     color: #0b6dc3;
@@ -2403,6 +2403,9 @@ label.control-label {
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .news_full {
+        padding: 0 10px;
+    }
     .sidebar {
         padding-right: 10px;
     }
