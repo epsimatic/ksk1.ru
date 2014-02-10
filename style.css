@@ -2387,14 +2387,14 @@ label.control-label {
 .news_full h3 {
     color: #0676d9;
 }
-.news_full .panel-default > .panel-heading {
+.panel-default > .panel-heading {
     background-color: #dce3e9;
     padding: 16px 22px;
 }
-.news_full .panel-default > .panel-body {
-    background-color: #ebedf0 !important;
+.panel-default .panel-body {
+    background-color: #f7f8fa;
 }
-.news_full .panel-default h2:first-child {
+.panel-default h2:first-child {
     margin-top: 0;
 }
 .panel-default .panel-collapse {
