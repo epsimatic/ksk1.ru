@@ -2397,6 +2397,10 @@ label.control-label {
 .news_full .panel-default h2:first-child {
     margin-top: 0;
 }
+.panel-default .panel-collapse {
+    border-bottom: 1px solid #dce3e9;
+}
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*.news-slide-block {
