@@ -2384,6 +2384,9 @@ label.control-label {
     font-size: 28px;
     font-weight: 600;
 }
+.news_full h2 {
+    color: #0676d9;
+}
 .news_full .panel-default > .panel-heading {
     background-color: #dce3e9;
     padding: 16px 22px;
