@@ -75,6 +75,7 @@ a.list-group-item:focus {
 .container {
     background-color: #ffffff;
     box-shadow: 0 -7px 7px #cbcbcb;
+    padding-right: 0;
 }
 /*Оформление панелей*/
 .panel {
@@ -2403,6 +2404,9 @@ label.control-label {
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .container {
+        padding-right: 10px;
+    }
     .news_full {
         padding: 0 10px;
     }
