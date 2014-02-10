@@ -74,7 +74,7 @@ a.list-group-item:focus {
 }
 .container {
     background-color: #ffffff;
-    box-shadow: 0px -7px 7px #cbcbcb;
+    box-shadow: 0 -7px 7px #cbcbcb;
 }
 /*Оформление панелей*/
 .panel {
@@ -93,7 +93,7 @@ a.list-group-item:focus {
 .panel-congrats > .panel-body > .media-object,
 .panel-necro > .panel-body > .media-object,
 .panel-notice > .list-group > .list-group-item > .media-object {
-    padding: 3px 7px 0px 0;
+    padding: 3px 7px 0 0;
 }
 .panel-guest > .panel-body > .media-object-md {
     width: 100%;
@@ -127,7 +127,7 @@ a.list-group-item:focus {
 .inset .panel > .panel-heading h3 {
     font-size: 20px;
     font-weight: 400;
-    padding: 0px 0 2px 4px;
+    padding: 0 0 2px 4px;
 }
 .fa-arrow-down {
     padding-right: 7px;
@@ -238,7 +238,7 @@ strong.author {
     padding: 7px 12px 9px;
 }
 .panel-read-more > .panel-body > .row > div {
-    padding: 0px;
+    padding: 0;
 }
 .panel-read-more > .panel-body .media {
     background-color: #f9fafb;
@@ -442,7 +442,7 @@ p.media-text {
     background-color: #FF6F4D;
 }
 .panel-movie .btn-group {
-    magin-top: 15px;
+    margin-top: 15px;
 }
 .panel-today > .panel-heading{
     background-color: #ff6372;
@@ -567,7 +567,7 @@ p.media-text {
 .panel-neutral > .panel-body,
 .panel-positive > .panel-body,
 .panel-negative > .panel-body {
-    padding: 0px;
+    padding: 0;
 }
 .panel-neutral > .panel-body blockquote,
 .panel-positive > .panel-body blockquote,
@@ -956,7 +956,7 @@ h6 {
 .movie-announce__age-restriction {
     position: absolute;
     top: 95px;
-    left: 0px;
+    left: 0;
     display: inline-block;
     background-color: #9CA2A5;
     color: #fff;
@@ -1252,7 +1252,7 @@ a.sponsor:focus {
 .panel-cat .btn {
     /*padding-bottom: 10px;*/
     margin-left: 12px;
-    margin-right: 0px;
+    margin-right: 0;
     /*width: 30%;*/
 }
 /*.panel-cat .btn:first-child {
@@ -1429,7 +1429,7 @@ a.paid:focus {
     height: auto;
 }
 .banner-top .yummies {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 strong.ob {
     font-weight: 600;
@@ -1553,7 +1553,7 @@ footer {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
 }
 .panel-cat:hover {
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 .panel-cat .panel-heading{
     padding: 10px 0 0;
@@ -1995,7 +1995,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .preview div {
-    font-size: 0px;
+    font-size: 0;
     width: 45px;
     height: 45px;
     background-size: cover;
@@ -2277,7 +2277,7 @@ a.news-slide-block {
     margin-bottom: 5px;
 }
 .news-slide-block:first-child h4 {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 .news-slide-block:first-child a.list-group-item:hover,
 .news-slide-block:first-child a.list-group-item:focus {
@@ -2379,7 +2379,7 @@ label.control-label {
 .news_full {
     padding: 0 10px;
 }
-.news_full h2 {
+.news_full h3 {
     color: #0b6dc3;
     font-size: 28px;
     font-weight: 600;
@@ -2445,7 +2445,7 @@ label.control-label {
         right: -9px;
     }
     .header-line__logo__weather-block__temp {
-        bottom: 0px;
+        bottom: 0;
         left: 3px;
         opacity: 1;
     }
