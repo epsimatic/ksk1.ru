@@ -2379,12 +2379,12 @@ label.control-label {
 .news_full {
     padding: 0 10px;
 }
-.news_full h3 {
+.news_full h2 {
     color: #0b6dc3;
     font-size: 28px;
     font-weight: 600;
 }
-.news_full h2 {
+.news_full h3 {
     color: #0676d9;
 }
 .news_full .panel-default > .panel-heading {
