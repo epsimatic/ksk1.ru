@@ -2405,6 +2405,11 @@ label.control-label {
 .page-header h1 {
     margin: 0 !important;
 }
+.company-page h2 {
+    color: #345993;
+    font-size: 25px;
+    font-weight: 600;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
