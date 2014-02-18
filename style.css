@@ -2411,6 +2411,19 @@ label.control-label {
     font-weight: 600;
     padding-top: 25px;
 }
+.company-page strong {
+    font-weight: 600;
+    line-height: 21px;
+}
+.company-page .fa-home {
+    color: #8d73ac;
+}
+.company-page .fa-phone {
+    color: #76d682;
+}
+.company-page .schedule {
+    color: #ad2100;
+}
 .fotorama__stage {
     background-color: #333 !important;
 }
