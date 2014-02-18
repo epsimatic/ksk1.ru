@@ -2411,8 +2411,8 @@ label.control-label {
     font-weight: 600;
     padding-top: 25px;
 }
-.fotorama-overlay {
-    background-color: red !important;
+.fotorama__stage {
+    background-color: #333 !important;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
