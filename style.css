@@ -2409,6 +2409,10 @@ label.control-label {
     color: #345993;
     font-size: 25px;
     font-weight: 600;
+    padding-top: 25px;
+}
+.fotorama-overlay {
+    background-color: red !important;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
