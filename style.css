@@ -2415,10 +2415,12 @@ label.control-label {
     font-weight: 600;
     line-height: 21px;
 }
-.company-page .fa-home {
+.company-page .fa-home,
+.content-brief .fa-home {
     color: #8d73ac;
 }
-.company-page .fa-phone {
+.company-page .fa-phone,
+.content-brief .fa-phone{
     color: #76d682;
 }
 .company-page .schedule {
