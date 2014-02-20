@@ -2416,11 +2416,11 @@ label.control-label {
     line-height: 21px;
 }
 .company-page .fa-home,
-.content-brief .fa-home {
+.entry-meta_address .fa-home {
     color: #8d73ac;
 }
 .company-page .fa-phone,
-.content-brief .fa-phone{
+.content-brief_phone .fa-phone{
     color: #76d682;
 }
 .company-page .schedule {
