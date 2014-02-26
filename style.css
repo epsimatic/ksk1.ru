@@ -2529,3 +2529,6 @@ label.control-label {
 .add-ob__info-law{
     display: none;
 }
+.gsc-control-cse{
+    padding: 0 !important;
+}
