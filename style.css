@@ -2531,4 +2531,5 @@ label.control-label {
 }
 .gsc-control-cse{
     padding: 0 !important;
+    border: none !important;
 }
