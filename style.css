@@ -2526,7 +2526,8 @@ label.control-label {
     }
     */
 }
-.add-ob__info-law{
+.add-ob__info-law,
+.add-ob__info-license{
     display: none;
 }
 .gsc-control-cse{
