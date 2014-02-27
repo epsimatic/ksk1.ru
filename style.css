@@ -1717,7 +1717,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-left-width: 0;
     display: none;
     position: absolute;
-    height: 91px;
+    height: 77px;
     left: 100%;
     top: 0;
     z-index: 10;
@@ -2499,7 +2499,7 @@ label.control-label {
 /* Стили для размера -md- */
 @media (min-width: 992px) {
     .kaleidoscope__item__tooltip{
-        height: 74px;
+        height: 93px;
     }
     .header-line__logo img{
         width:80%;
