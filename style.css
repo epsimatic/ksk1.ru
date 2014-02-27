@@ -2498,9 +2498,7 @@ label.control-label {
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .kaleidoscope__item__tooltip{
-        height: 93px;
-    }
+
     .header-line__logo img{
         width:80%;
     }
@@ -2514,6 +2512,9 @@ label.control-label {
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .kaleidoscope__item__tooltip{
+        height: 93px;
+    }
     .header-line__logo__weather-block__temp {
         opacity: 0;
     }
