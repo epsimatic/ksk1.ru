@@ -1067,6 +1067,11 @@ a.link-neutral:focus {
     vertical-align: top;
     border-top: 0;
 }
+.table tbody > tr.info > td,
+.table tbody > tr.info > td {
+
+}
+
 .comment-link:hover {
     cursor: pointer;
 }
@@ -2421,7 +2426,7 @@ label.control-label {
 }
 .company-page .fa-phone,
 .content-brief_phone .fa-phone{
-    color: #76d682;
+    color: #76d682 !important;
 }
 .company-page .schedule {
     color: #ad2100;
