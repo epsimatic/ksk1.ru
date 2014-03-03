@@ -132,9 +132,6 @@ a.list-group-item:focus {
 .panel-news-body > .panel-body .fa {
     padding-top:4px;
 }
-.panel-news-body > .panel-body {
-    padding: 20px;
-}
 .panel-news-body > .panel-body img {
     padding: 5px 0 15px;
 }
