@@ -1691,12 +1691,18 @@ input[type=number]::-webkit-outer-spin-button {
 .row-small-margins > div:empty { display: none; }
 
 /* Стили для трёх квадратов рекламы в средней колонке */
-.row-center-yummies{ margin-top: 10px;}
+/*.row-center-yummies{ margin-top: 10px;}*/
 .row-center-yummies > div:empty { display: none; }
 .row-center-yummies img {
     display: block;
     height: auto;
     max-width: 100%;
+}
+.row-center-yummies .col-xs-4 {
+    padding-right: 0;
+}
+.row-center-yummies .col-xs-4:last-child {
+    padding-right: 10px;
 }
 .banner-top object{
     width: 100% !important;
