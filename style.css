@@ -2441,6 +2441,12 @@ label.control-label {
 .fotorama__stage {
     background-color: #333 !important;
 }
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #2CB3E9;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
