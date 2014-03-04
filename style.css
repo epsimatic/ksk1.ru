@@ -2446,6 +2446,9 @@ label.control-label {
 .nav .open > a:focus {
     background-color: #2CB3E9;
 }
+header .yummies {
+    margin: 0;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
