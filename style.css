@@ -2452,11 +2452,12 @@ header .yummies {
 }
 ul.page-cat {
     padding: 0;
-    background-color: #F7F8F9;
 }
 ul.page-cat > li.cat-item {
     padding: 0;
-    border-bottom: 25px solid #ffffff;
+    /*border-bottom: 25px solid #ffffff;*/
+    background-color: #F7F8F9;
+    margin-bottom: 25px;
 }
 ul.page-cat > li.cat-item:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
