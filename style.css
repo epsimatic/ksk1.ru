@@ -43,6 +43,9 @@ a.list-group-item:hover,
 a.list-group-item:focus {
     background-color: #f0f1f2;
 }
+.btn-default .badge {
+    background-color: #909293;
+}
 .post-info > .badge-clean {
     font-size: 1em;
 }
