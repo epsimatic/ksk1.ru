@@ -2454,7 +2454,7 @@ ul.page-cat {
     padding: 0;
 }
 ul.page-cat > li.cat-item {
-    /*padding: 20px 0 0;*/
+    padding: 20px 0 0;
     background-color: #F7F8F9;
     margin-bottom: 25px;
 }
@@ -2467,7 +2467,7 @@ ul.page-cat > li.cat-item > a {
     font-weight: 700;
     font-size: 1.1em;
     letter-spacing: 0.04em;
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 ul.page-cat ul.children > li.cat-item {
     padding: 10px 15px;
