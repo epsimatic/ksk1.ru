@@ -394,7 +394,7 @@ p.media-text {
     padding: 0.4em 0.8em 0.5em;
     font-size: 1em;
 }
-.panel-payment > .panel-body > .list-group .badge > strong {
+.badge strong {
     font-weight: 700;
 }
 .panel-payment .list-group-item {
@@ -1266,8 +1266,7 @@ a.sponsor:focus {
     font-size: 1.1em;
     color: #525459;
 }
-.panel-cat > .panel-body .badge,
-.quick-nav .badge {
+.badge {
     background-color: #909293;
     border-radius: 0.45em;
     font-weight: 600;
