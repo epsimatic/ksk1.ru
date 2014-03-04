@@ -2454,8 +2454,7 @@ ul.page-cat {
     padding: 0;
 }
 ul.page-cat > li.cat-item {
-    padding: 0;
-    /*border-bottom: 25px solid #ffffff;*/
+    /*padding: 20px 0 0;*/
     background-color: #F7F8F9;
     margin-bottom: 25px;
 }
@@ -2468,11 +2467,13 @@ ul.page-cat > li.cat-item > a {
     font-weight: 700;
     font-size: 1.1em;
     letter-spacing: 0.04em;
-    padding: 10px 5px 20px 20px;
+    padding: 20px;
 }
 ul.page-cat ul.children > li.cat-item {
     padding: 10px 15px;
     border-left: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #F6F7F8;
+    margin-bottom: 1px;
     background-color: #FCFCFC;
 }
 ul.page-cat ul.children > li.cat-item > a:focus,
