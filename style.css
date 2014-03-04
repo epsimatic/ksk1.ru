@@ -2443,12 +2443,45 @@ label.control-label {
 
 .nav .open > a,
 .nav .open > a:hover,
+.nav .open > a:hover,
 .nav .open > a:focus {
     background-color: #2CB3E9;
 }
 header .yummies {
     margin: 0;
 }
+ul.page-cat {
+    padding: 0;
+    background-color: #F7F8F9;
+}
+ul.page-cat > li.cat-item {
+    padding: 0;
+    border-bottom: 25px solid rgba(255, 255, 255);
+}
+ul.page-cat > li.cat-item:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+ul.page-cat > li.cat-item > a {
+    color: #0A79DB;
+    font-weight: 700;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 10px 5px 20px 20px;
+}
+ul.page-cat ul.children > li.cat-item {
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    background-color: #FCFCFC;
+    color: #4D4D60;
+}
+ul.page-cat ul.children > li.cat-item:hover,
+ul.page-cat ul.children > li.cat-item:focus {
+    background-color: #F0F1F2;
+    border-left: 1px solid #56C4F4;
+    color: #404145;
+}
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
