@@ -2544,6 +2544,10 @@ ul.page-cat ul.children > li.cat-item:focus {
 .btn-group_my-ob{
     display: none;
 }
+.cat__banner-block .yummies {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
