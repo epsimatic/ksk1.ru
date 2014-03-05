@@ -2428,18 +2428,31 @@ label.control-label {
     font-weight: 600;
     line-height: 21px;
 }
+
 .company-page .fa-home,
 .entry-meta_address .fa-home {
     color: #8d73ac;
 }
+.entry-meta_email {
+    background-color: transparent;
+    padding: 6px 12px;
+    margin: 0 -13px;
+    color: #666666;
+}
+.entry-meta_email:hover {
+    color: #006048;
+}
+
 .company-page .fa-phone,
 .content-brief_phone .fa-phone{
     color: #76d682 !important;
 }
+
 .company-page .schedule {
     color: #ad2100;
     display: inline;
 }
+
 .fotorama__stage {
     background-color: #333 !important;
 }
