@@ -1325,6 +1325,9 @@ a.sponsor:focus {
 .navbar a {
     color: #fff;
 }
+.btn-toolbar {
+    margin: 0;
+}
 .col-mid .btn-group {
     margin: 10px 0;
 }
@@ -2465,7 +2468,7 @@ ul.page-cat > li.cat-item:hover {
 ul.page-cat > li.cat-item > a {
     color: #0A79DB;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 21px;
     letter-spacing: 0.04em;
     padding: 0 20px 20px;
 }
