@@ -2439,6 +2439,7 @@ label.control-label {
     margin: 0 -13px;
     color: #666666;
 }
+.entry-meta_email:focus,
 .entry-meta_email:hover {
     color: #006048;
 }
