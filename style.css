@@ -2592,3 +2592,35 @@ ul.page-cat ul.children > li.cat-item:focus {
     padding: 0 !important;
     border: none !important;
 }
+
+
+.popover-content .panel-heading {
+    color: #FFFFFF;
+    display: block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+.popover-content {
+    overflow: hidden;
+    padding: 0;
+    table-layout: fixed;
+    width: 500px;
+}
+.popover-content .panel-heading .fa {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.popover-content .table {
+    margin: 0;
+}
+.popover{
+    left: -490px !important;
+    max-width: none ;
+}
+.btn-group_my-ob{margin-top: 5px;}
+.btn-group_my-ob{
+    display: none;
+}
