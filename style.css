@@ -2434,8 +2434,8 @@ label.control-label {
     color: #8d73ac;
 }
 .entry-meta_email {
-    background-color: transparent;
-    padding: 6px 12px;
+    background-color: transparent !important;
+    padding: 6px 12px !important;
     margin: 0 -13px;
     color: #666666;
 }
