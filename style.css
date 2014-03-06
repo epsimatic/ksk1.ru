@@ -2547,6 +2547,14 @@ ul.page-cat ul.children > li.cat-item:focus {
     margin: 0 !important;
     padding: 0 !important;
 }
+a.content-brief_title-commerce:hover,
+a.content-brief_title-commerce:focus {
+    color: #ff2a00;
+    text-decoration: none;
+}
+.typography h5 {
+    margin-bottom: 15px;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
