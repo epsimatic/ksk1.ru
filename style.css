@@ -2553,6 +2553,9 @@ a.content-brief_title-commerce:focus {
 }
 /*a.content-brief*/
 
+.typography table {
+    text-align: center;
+}
 .table td:first-child {
     color: #222266;
     text-align: left;
@@ -2563,6 +2566,18 @@ a.content-brief_title-commerce:focus {
 .typography small {
     font-size: 80%;
 }
+
+.badge.paper-format {
+    background-color: white;
+    border:  1px solid #aaa;
+    border-radius: 0;
+    font-weight: 300;
+    color: #666;
+    text-transform: uppercase;
+    padding: 2px 4px;
+}
+
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
