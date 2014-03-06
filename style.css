@@ -2567,7 +2567,9 @@ a.content-brief_title-commerce:focus {
     font-size: 80%;
 }
 
-.badge.paper-format {
+
+/* Бэджи формата бумаги для типографии */
+.paper-format {
     background-color: white;
     border:  1px solid #aaa;
     border-radius: 0;
@@ -2576,7 +2578,17 @@ a.content-brief_title-commerce:focus {
     text-transform: uppercase;
     padding: 2px 4px;
 }
+.paper-format-a3 {
+    font-size: 110%;
+    padding: 3px 6px;
+}
+.paper-format-small {
+    font-size: 90%;
+    padding: 1px 2px;
+}
 
+.table .overline-me  { border-top:    1px solid #ddd; }
+.table .underline-me { border-bottom: 1px solid #ddd; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
