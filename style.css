@@ -2549,8 +2549,7 @@ ul.page-cat ul.children > li.cat-item:focus {
 }
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus {
-    color: #ff2a00;
-    text-decoration: none;
+    color: #ff9c00;
 }
 .typography h5 {
     margin-bottom: 15px;
