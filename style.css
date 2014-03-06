@@ -2551,8 +2551,17 @@ a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus {
     color: #ff9c00;
 }
+/*a.content-brief*/
+
+.table td:first-child {
+    color: #222266;
+    text-align: left;
+}
 .typography h5 {
     margin-bottom: 15px;
+}
+.typography small {
+    font-size: 80%;
 }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
