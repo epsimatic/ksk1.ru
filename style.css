@@ -2586,7 +2586,11 @@ a.content-brief_title-commerce:focus {
     padding: 3px 6px;
 }
 .paper-format-a5 {
-    font-size: 12%;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+.paper-format-a6 {
+    font-size: 11px;
     padding: 1px 2px;
 }
 .header-table {
