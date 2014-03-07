@@ -2582,7 +2582,7 @@ a.content-brief_title-commerce:focus {
     margin-bottom: 40px;
 }
 .typography col-md-2 {
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
