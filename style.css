@@ -2585,14 +2585,14 @@ a.content-brief_title-commerce:focus {
     padding-left: 0 !important;
 }
 .typography .nav > li > a {
-    border-left: 1px solid transparent;
+    border-left: 2px solid transparent;
 }
 
 .typography .nav > li > a:focus,
 .typography .nav > li > a:hover {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #428BCA;
-    border-left: 1px solid #2cb3e9;
+    border-left: 2px solid #2cb3e9;
 }
 
 .table-hover > tbody > tr:hover > td,
