@@ -2581,7 +2581,7 @@ a.content-brief_title-commerce:focus {
 .typography .table {
     margin-bottom: 40px;
 }
-.typography col-md-2 {
+.typography .col-md-2 {
     padding-left: 0 !important;
 }
 .table-hover > tbody > tr:hover > td,
