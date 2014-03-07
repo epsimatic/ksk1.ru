@@ -2558,7 +2558,6 @@ a.content-brief_title-commerce:focus {
 }
 .table td:first-child {
     color: #222266;
-    text-align: left;
 }
 .typography h5 {
     margin-bottom: 15px;
@@ -2577,13 +2576,14 @@ a.content-brief_title-commerce:focus {
     color: #666;
     text-transform: uppercase;
     padding: 2px 4px;
+    font-size: 12px;
 }
 .paper-format-a3 {
-    font-size: 110%;
+    font-size: 13px;
     padding: 3px 6px;
 }
-.paper-format-small {
-    font-size: 90%;
+.paper-format-a5 {
+    font-size: 12%;
     padding: 1px 2px;
 }
 .header-table {
