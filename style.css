@@ -2558,6 +2558,7 @@ a.content-brief_title-commerce:focus {
 }
 .table td:first-child {
     color: #222266;
+    text-align: left;
 }
 .typography h5 {
     margin-bottom: 15px;
@@ -2565,7 +2566,9 @@ a.content-brief_title-commerce:focus {
 .typography small {
     font-size: 80%;
 }
-
+.typography .table th {
+    text-align: center;
+}
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {
