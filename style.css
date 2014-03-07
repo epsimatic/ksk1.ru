@@ -2566,6 +2566,9 @@ a.content-brief_title-commerce:focus {
 .typography small {
     font-size: 80%;
 }
+.typography .table th:first-child {
+    text-align: left;
+}
 .typography .table th {
     text-align: center;
 }
