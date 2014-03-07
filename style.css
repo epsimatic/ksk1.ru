@@ -2572,6 +2572,12 @@ a.content-brief_title-commerce:focus {
 .typography .table th {
     text-align: center;
 }
+.typography .table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: #ebebed;
+}
+.typography .table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #d4d4d7;
+}
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {
