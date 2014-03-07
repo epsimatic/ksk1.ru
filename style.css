@@ -2573,10 +2573,14 @@ a.content-brief_title-commerce:focus {
     text-align: center;
 }
 .typography .table-striped > tbody > tr:nth-child(odd) > td {
-    background-color: #ebebed;
+    background-color: #f9f9f9;
 }
 .typography .table-striped > tbody > tr:nth-child(even) > td {
-    background-color: #d4d4d7;
+    background-color: #f0f0f0;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+    background-color: #F2F2F2 !important;
 }
 
 /* Бэджи формата бумаги для типографии */
