@@ -2573,10 +2573,10 @@ a.content-brief_title-commerce:focus {
     text-align: center;
 }
 .typography .table-striped > tbody > tr:nth-child(odd) > td {
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
 }
 .typography .table-striped > tbody > tr:nth-child(even) > td {
-    background-color: #f0f0f0;
+    background-color: #f3f3f3;
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
