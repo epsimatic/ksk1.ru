@@ -2584,6 +2584,12 @@ a.content-brief_title-commerce:focus {
 .typography .col-md-2 {
     padding-left: 0 !important;
 }
+.typography .nav > li > a:focus,
+.typography .nav > li > a:hover {
+    background-color: #e9f7fd;
+    color: #428BCA;
+}
+
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
     background-color: #e3eef8 !important;
