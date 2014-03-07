@@ -2578,6 +2578,12 @@ a.content-brief_title-commerce:focus {
 .typography .table-striped > tbody > tr:nth-child(even) > td {
     background-color: #f3f3f3;
 }
+.typography .table {
+    margin-bottom: 40px;
+}
+.typography col-md-2 {
+    padding-left: 0;
+}
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
     background-color: #e3eef8 !important;
