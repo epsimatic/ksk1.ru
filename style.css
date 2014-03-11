@@ -2417,11 +2417,11 @@ label.control-label {
     border-bottom: 3px solid #dce3e9;
 }
 .panel-success > .panel-heading {
-    background-color: #dff0d8;
+    background-color: #5cb85c;
+    /*background-color: #dff0d8;*/
     padding: 16px 22px;
 }
 .panel-success .panel-title {
-    background-color: #5cb85c;
     color: #fff;
 }
 .panel-success .list-group-item {
