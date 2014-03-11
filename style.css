@@ -2431,11 +2431,14 @@ label.control-label {
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.alert-warning {
+.panel-success {
     margin-bottom: 10px;
 }
 .cat-panel .quick-nav {
     margin-bottom: 15px;
+}
+.dropdown-menu.nav {
+    margin-top: -13px;
 }
 .sidebar {
     padding-left: 0;
