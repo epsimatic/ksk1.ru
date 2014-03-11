@@ -2041,9 +2041,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .cat__banner-block img{
     height: auto;
-    margin-bottom: 10px;
 }
-
+.cat__banner-block img {
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #F6F7F8;
+    background-color: #fcfcfc;
+}
+.cat__banner-block:hover img,
+.cat__banner-block:focus img {
+    border-left: 1px solid #56C4F4;
+    background-color: #f0f1f2;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+}
 
 .quick-nav__btn{
     background-color: #0080C8;
