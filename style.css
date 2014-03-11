@@ -2434,6 +2434,9 @@ label.control-label {
 .alert-warning {
     margin-bottom: 10px;
 }
+.cat-panel .quick-nav {
+    margin-bottom: 15px;
+}
 .sidebar {
     padding-left: 0;
     padding-right: 0;
