@@ -2194,9 +2194,6 @@ footer h3 {
     color: #0080c7;
     margin-top: 0;
 }
-.btn_badge{
-    display: none !important;
-}
 .ob .footer_registration,
 .ob .footer_opinion{
     display: none;
