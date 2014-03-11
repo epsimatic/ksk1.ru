@@ -2586,6 +2586,7 @@ a.content-brief_title-commerce:focus {
 }
 .typography .nav > li > a {
     border-left: 2px solid transparent;
+    padding: 8px 12px;
 }
 
 .typography .nav > li > a:focus,
