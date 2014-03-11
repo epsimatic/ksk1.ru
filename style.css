@@ -2600,6 +2600,9 @@ a.content-brief_title-commerce:focus {
 .table-hover > tbody > tr:hover > th {
     background-color: #e3eef8 !important;
 }
+.btn .badge_my-ob {
+    top: 0 !important;
+}
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {
