@@ -2416,6 +2416,10 @@ label.control-label {
 .panel-default .panel-collapse {
     border-bottom: 3px solid #dce3e9;
 }
+.panel-succes > .panel-heading {
+    background-color: #dff0d8;
+    padding: 16px 22px;
+}
 .sidebar {
     padding-left: 0;
     padding-right: 0;
