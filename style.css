@@ -2244,18 +2244,29 @@ footer h3 {
     color: #333;
     font-weight: normal;
     line-height: 1.42857;
-}
-.lcp_paginator a:hover,
-.lcp_paginator a:focus {
-    text-decoration: none;
-    color: #252525;
-}
-.lcp_paginator {
     display: inline-block;
     position: relative;
     vertical-align: middle;
     margin: 0;
     padding: 0;
+    top: 2px;
+}
+.lcp_paginator li {
+    margin: 3px 1px !important;
+    padding: 2px 0 !important;
+    cursor: default;
+    border: none !important;
+    background-color: #e5e5e5;
+    min-width: 28px;
+    min-height: 20px;
+}
+.lcp_paginator a {
+    padding: 4px 10px !important;
+}
+.lcp_paginator a:hover,
+.lcp_paginator a:focus {
+    text-decoration: none;
+    color: #252525;
 }
 .lcp_paginator li:first-child {
     border-radius: 4px 0 0 4px;
@@ -2266,12 +2277,6 @@ footer h3 {
 .lcp_paginator li:hover,
 .lcp_paginator li:focus {
     background-color: #d1d1d1;
-}
-.lcp_paginator li {
-    padding: 4px 10px !important;
-    margin: 3px 1px !important;
-    border: none !important;
-    background-color: #e5e5e5;
 }
 .lcp_paginator li:active {
     background-image: none;
@@ -2516,6 +2521,10 @@ ul.page-cat ul.children > li.cat-item {
     border-bottom: 1px solid #F6F7F8;
     margin-bottom: 1px;
     background-color: #FCFCFC;
+}
+ul.page-cat ul.children > li.cat-item > a {
+    min-width: 80%;
+    display: inline-block;
 }
 ul.page-cat ul.children > li.cat-item > a:focus,
 ul.page-cat ul.children > li.cat-item > a:hover,
