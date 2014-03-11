@@ -2429,6 +2429,10 @@ label.control-label {
 }
 .panel-success .list-group {
     padding-bottom: 0;
+    margin-bottom: 0;
+}
+.alert-warning {
+    margin-bottom: 10px;
 }
 .sidebar {
     padding-left: 0;
