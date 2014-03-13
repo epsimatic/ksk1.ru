@@ -2683,18 +2683,8 @@ ul.page-cat > li.cat-item > .badge {
 .typography .col-md-2 {
     padding-left: 0 !important;
 }
-.typography .nav > li > a {
-    border-left: 2px solid transparent;
-    padding: 8px 12px;
-}
 /* </editor-fold> */
 
-.typography .nav > li > a:focus,
- .typography .nav > li > a:hover {
-     background-color: #f9f9f9;
-     color: #428BCA;
-     border-left: 2px solid #2cb3e9;
-}
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
