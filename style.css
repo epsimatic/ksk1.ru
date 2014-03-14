@@ -1133,14 +1133,14 @@ ul.page-cat > li.cat-item > a {
     padding: 0 20px 20px;
 }
 ul.page-cat ul.children > li.cat-item {
-    padding: 10px 15px;
     border-left: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid #F6F7F8;
     margin-bottom: 1px;
     background-color: #FCFCFC;
 }
 ul.page-cat ul.children > li.cat-item > a {
-    min-width: 80%;
+    padding-left: 15px;
+    min-width: 100%;
     display: inline-block;
 }
 ul.page-cat ul.children > li.cat-item > a:focus,
