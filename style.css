@@ -383,7 +383,6 @@ header .yummies {
     overflow: hidden;
     padding: 0;
     table-layout: fixed;
-    width: 500px;
     font-size: 14px;
 }
 .popover-content .panel-heading .fa {
@@ -882,6 +881,10 @@ a.paid:focus {
 .panel-my-ob a {
     color: #2c3e50;
 }
+.btn-group_my-ob .popover-content {
+    width: 500px;
+}
+
 
 /*Калейдоскоп*/
 .kaleidoscope__item__img, .kaleidoscope__item__tooltip {
