@@ -1137,9 +1137,10 @@ ul.page-cat ul.children > li.cat-item {
     border-bottom: 1px solid #F6F7F8;
     margin-bottom: 1px;
     background-color: #FCFCFC;
+    padding: 0;
 }
 ul.page-cat ul.children > li.cat-item > a {
-    padding-left: 15px;
+    padding: 10px 5px 10px 15px;
     min-width: 100%;
     display: inline-block;
 }
