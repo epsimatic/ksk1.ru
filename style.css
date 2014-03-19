@@ -2155,20 +2155,14 @@ a.content-brief_title-commerce:focus {
 
 
 /* Поддержка скрытия столбцов */
-.site-copy .table-print tr > *:nth-child(5),
-.site-copy .table-print tr > *:nth-child(6),
-.site-copy .table-print tr > *:nth-child(7),
-.site-copy .table-copy tr > *:nth-child(5),
-.site-copy .table-copy tr > *:nth-child(6),
-.site-copy .table-copy tr > *:nth-child(7) {
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(5),
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(6),
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(7),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(5),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(6),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {
     display: none;
 }
-
-.site-copy .table-print.show tr > *,
-.site-copy .table-copy.show  tr > * {
-    display: table-cell;
-}
-
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {
