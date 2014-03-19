@@ -2162,9 +2162,10 @@ a.content-brief_title-commerce:focus {
 
 .site-copy .table-print tr > *,
 .site-copy .table-copy  tr > * {
-    -webkit-transition: all 1s;-moz-transition: all 1s;-ms-transition: all 1s;-o-transition: all 1s;transition: all 1s;
+    -webkit-transition: max-width 2s;-moz-transition: max-width 2s;-ms-transition: max-width 2s;-o-transition: max-width 2s;transition: max-width 2s;
     max-width: 200px;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .site-copy .table-print.hide-extra-cols tr > *:nth-child(5),
