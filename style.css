@@ -1457,12 +1457,13 @@ a.link-neutral:focus {
 .site-ob .footer_opinion {
     display: none;
 }
-.site-ob .panel-congrats img.block_congrats__img,
-.site-ob .panel-necro img.block_necro__img {
+.site-ob .block_congrats__img,
+.site-ob .block_necro__img {
     height: 200px !important;
     width: auto !important;
 }
-.site-ob .panel-necro .list-group-item {
+.site-ob .panel-necro .list-group-item,
+.site-ob .panel-congrats .list-group-item {
     text-align: center !important;
 }
 
