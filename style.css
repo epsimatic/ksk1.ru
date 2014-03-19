@@ -1462,8 +1462,8 @@ a.link-neutral:focus {
     height: 200px !important;
     width: auto !important;
 }
-.site-ob .panel-necro .list-group-item,
-.site-ob .panel-congrats .list-group-item {
+.site-ob .block_necro .list-group-item,
+.site-ob .block_congrats .list-group-item {
     text-align: center !important;
 }
 
