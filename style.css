@@ -1563,6 +1563,17 @@ a.link-neutral:focus {
 }
 /* </editor-fold> */
 
+/* <editor-fold desc="Правая колонка"> */
+.ob .panel-congrats img,
+.ob .panel-necro img {
+    height: 200px;
+    width: auto;
+}
+.ob .panel-necro .list-group-item {
+    text-align: center;
+}
+/* </editor-fold> */
+
 /* <editor-fold desc="Реклама"> */
 /* Стили для трёх квадратов рекламы в средней колонке */
 /*.row-center-yummies{ margin-top: 10px;}*/
