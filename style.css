@@ -2163,7 +2163,7 @@ a.content-brief_title-commerce:focus {
 
 .site-copy .table-print tr > *,
 .site-copy .table-copy  tr > * {
-    -webkit-transition: max-width 2s;-moz-transition: max-width 2s;-ms-transition: max-width 2s;-o-transition: max-width 2s;transition: max-width 2s;
+    transition: max-width 2s, color 3s, padding 2s;
     max-width: 200px;
     overflow: hidden;
     white-space: nowrap;
@@ -2176,6 +2176,9 @@ a.content-brief_title-commerce:focus {
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(6),
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {
     max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
 }
 
 /* Бэджи формата бумаги для типографии */
