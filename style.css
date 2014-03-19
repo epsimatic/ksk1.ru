@@ -1453,16 +1453,16 @@ a.link-neutral:focus {
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Объявления"> */
-.ob-site .footer_registration,
-.ob-site .footer_opinion {
+.site-ob .footer_registration,
+.site-ob .footer_opinion {
     display: none;
 }
-.ob-site .panel-congrats img,
-.ob-site .panel-necro img {
+.site-ob .panel-congrats img,
+.site-ob .panel-necro img {
     height: 200px;
     width: auto;
 }
-.ob-site .panel-necro .list-group-item {
+.site-ob .panel-necro .list-group-item {
     text-align: center;
 }
 
