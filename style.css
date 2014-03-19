@@ -2167,13 +2167,13 @@ a.content-brief_title-commerce:focus {
     transition: max-width 1s ease, width 2s ease;
 }
 
-.site-copy.show .table-print tr > *,
-.site-copy.show .table-copy tr > * {
+.site-copy .table-print.show tr > *,
+.site-copy .table-copy.show  tr > * {
     max-width: 100px;
 }
 
-.site-copy.show .table-print tr > *:first-child,
-.site-copy.show .table-copy tr > *:first-child {
+.site-copy .table-print.show tr > *:first-child,
+.site-copy .table-copy.show  tr > *:first-child {
     max-width: none;
 }
 
