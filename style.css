@@ -2108,49 +2108,49 @@ a.content-brief_title-commerce:focus {
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр"> */
-.typography table {
+.site-copy table {
     text-align: center;
 }
 
-.table td:first-child {
+.site-copy .table td:first-child {
     color: #222266;
     text-align: left;
 }
 
-.typography h5 {
+.site-copy h5 {
     margin-bottom: 15px;
 }
 
-.typography small {
+.site-copy small {
     font-size: 80%;
 }
 
-.typography .table th:first-child {
+.site-copy .table th:first-child {
     text-align: left;
 }
 
-.typography .table th {
+.site-copy .table th {
     text-align: center;
 }
 
-.typography .table-striped > tbody > tr:nth-child(odd) > td {
+.site-copy .table-striped > tbody > tr:nth-child(odd) > td {
     background-color: #f8f8f8;
 }
 
-.typography .table-striped > tbody > tr:nth-child(even) > td {
+.site-copy .table-striped > tbody > tr:nth-child(even) > td {
     background-color: #f3f3f3;
 }
 
-.typography .table {
+.site-copy .table {
     margin-bottom: 40px;
 }
 
-.typography .col-md-2 {
+.site-copy .col-md-2 {
     padding-left: 0 !important;
 }
 
-.typography .table-hover > tbody > tr:hover > td,
-.typography .table-hover > tbody > tr:hover > th {
+.site-copy .table-hover > tbody > tr:hover > td,
+.site-copy .table-hover > tbody > tr:hover > th {
     background-color: #e3eef8 !important;
 }
 
