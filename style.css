@@ -418,6 +418,22 @@ footer h3 {
 
 /* <editor-fold desc="Другие общие элементы"> */
 
+.btn-home {
+    padding: 0px 20px 5px 17px;
+    position: fixed;
+    bottom: 151px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
+    color: rgb(153, 153, 153);
+    display: none;
+}
+
+.btn-home:hover {
+    color: #333;
+    background-color: #fff;
+}
+
 /* Убрать закругления элементов */
 .navbar,
 .panel,
@@ -3265,6 +3281,10 @@ a.news-slide-block {
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .btn-home {
+        display: block;
+        margin-left: 960px;
+    }
 
     .header-line__logo img {
         width:80%;
@@ -3280,6 +3300,9 @@ a.news-slide-block {
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .btn-home {
+        margin-left: 1150px;
+    }
 
     .kaleidoscope__item__tooltip {
         height: 93px;
