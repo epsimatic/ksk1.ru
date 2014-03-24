@@ -1197,18 +1197,14 @@ a.list-group-item:focus {
     background-size: contain;
 }
 
-.panel-vote .panel-result {
-    padding-top: 0px;
-}
-
-.panel-vote .btn-action {
-    margin-top: 10px;
-}
-
 .panel-vote .panel-question {
     background-color: #f1f1f2;
     color: #47475f;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
+}
+
+.panel-vote .panel-result {
+    padding-top: 12px;
 }
 
 .panel-vote label {
@@ -1216,6 +1212,10 @@ a.list-group-item:focus {
     font-weight: 600;
     position: relative;
     top: -2px;
+}
+
+.panel-vote .btn-action {
+    margin-top: 10px;
 }
 
 .panel-vote .result {
