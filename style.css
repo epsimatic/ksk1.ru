@@ -1367,6 +1367,23 @@ a.link-neutral:focus {
     margin: 10px 0 20px;
 }
 
+.panel-news-body .wp-caption {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.panel-news-body .wp-caption img {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-news-body .wp-caption .wp-caption-text {
+    margin: 0;
+    padding: 7px 0 10px;
+}
+
 .panel-news-body > .panel-footer {
     background-color: #fcfcfc;
     padding: 0;
