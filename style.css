@@ -2795,7 +2795,6 @@ ul.page-cat > li.cat-item > .badge {
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-
     .header-line__logo img{
         width:80%;
     }
