@@ -1220,6 +1220,10 @@ a.list-group-item:focus {
     padding-left: 9px;
 }
 
+.panel-vote .wp-polls-ul {
+    margin: 0;
+}
+
 .panel-vote .votes-num {
     display: none;
 }
