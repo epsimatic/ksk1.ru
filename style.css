@@ -1224,24 +1224,24 @@ a.list-group-item:focus {
     padding-left: 9px;
 }
 
-.panel-vote .wp-polls-ul li:first-child .progress-bar {
-    background-color: #88c540;
+.panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {
+    background-color: #e35764 !important;
 }
 
 .panel-vote .wp-polls-ul li:nth-child(2) .progress-bar {
-    background-color: #e35764;
+    background-color: #12dbd6 !important;
 }
 
 .panel-vote .wp-polls-ul li:nth-child(3) .progress-bar {
-    background-color: #12dbd6;
+    background-color: #f7922c !important;
 }
 
 .panel-vote .wp-polls-ul li:nth-child(4) .progress-bar {
-    background-color: #f7922c;
+    background-color: #656ccf !important;
 }
 
 .panel-vote .wp-polls-ul li:nth-child(5) .progress-bar {
-    background-color: #656ccf;
+    background-color: #36e796 !important;
 }
 
 /*
