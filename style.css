@@ -2676,6 +2676,9 @@ ul.page-cat > li.cat-item > .badge {
 .table .overline-me  { border-top:    1px solid #ddd; }
 .table .underline-me { border-bottom: 1px solid #ddd; }
 
+#add_congrats3{
+    display: none;
+}
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .news_full {
@@ -2741,6 +2744,9 @@ ul.page-cat > li.cat-item > .badge {
     .header-line__logo img{
         width:100%;
     }
+    #add_congrats3{
+        display: block;
+    }
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
@@ -2753,6 +2759,9 @@ ul.page-cat > li.cat-item > .badge {
         left: 39px;
         opacity: 1;
         font-size: 55%;
+    }
+    #add_congrats3{
+        display: none;
     }
 }
 
