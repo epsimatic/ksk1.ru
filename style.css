@@ -1203,10 +1203,6 @@ a.list-group-item:focus {
     padding-bottom: 3px;
 }
 
-.panel-vote .panel-result {
-    padding-top: 12px;
-}
-
 .panel-vote label {
     color: #525256;
     font-weight: 600;
