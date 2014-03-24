@@ -1224,6 +1224,10 @@ a.list-group-item:focus {
     padding-left: 9px;
 }
 
+.panel-vote .votes-num {
+    display: none;
+}
+
 .panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {
     background-color: #e35764 !important;
 }
@@ -1410,6 +1414,7 @@ a.link-neutral:focus {
 .panel-news-body .wp-caption img {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .panel-news-body .wp-caption .wp-caption-text {
@@ -1486,6 +1491,7 @@ a.link-neutral:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    display: block;
 }
 
 .news-more .crp_date {
