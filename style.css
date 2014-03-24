@@ -1197,25 +1197,57 @@ a.list-group-item:focus {
     background-size: contain;
 }
 
-.panel-vote > .panel-question {
-    background-color: #f1f1f2;
-    color: #47475f;
-    /*font-size: 15px;*/
+.panel-vote .panel-result {
+    padding-top: 0px;
 }
 
+.panel-vote .btn-action {
+    margin-top: 10px;
+}
+
+.panel-vote .panel-question {
+    background-color: #f1f1f2;
+    color: #47475f;
+    padding-bottom: 7px;
+}
+
+.panel-vote label {
+    color: #525256;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
+}
+
+.panel-vote .result {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 9px;
+}
+
+.panel-vote .result:first-child {
+    background-color: #88c540;
+}
+
+.panel-vote .result:nth-child(2) {
+    background-color: #e35764;
+}
+
+.panel-vote .result:nth-child(3) {
+    background-color: #12dbd6;
+}
+
+.panel-vote .result:nth-child(4) {
+    background-color: #f7922c;
+}
+
+.panel-vote .result:nth-child(5) {
+    background-color: #656ccf;
+}
+
+/*
 .panel-vote > .panel-question p {
     padding-left: 3px;
     margin: -2px 0 0;
-}
-
-.panel-vote > .panel-input label.item {
-    color: #525256;
-    font-weight: 400;
-    padding: 3px 10px;
-}
-
-.panel-vote > .panel-result {
-    padding-top: 10px;
 }
 
 .panel-vote > .panel-result > .item {
@@ -1233,6 +1265,7 @@ a.list-group-item:focus {
     padding-left: 10px;
     color: #111;
 }
+*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Комментарии»"> */
