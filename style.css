@@ -1224,23 +1224,23 @@ a.list-group-item:focus {
     padding-left: 9px;
 }
 
-.panel-vote .result:first-child {
+.panel-vote .wp-polls-ul li:first-child .progress-bar {
     background-color: #88c540;
 }
 
-.panel-vote .result:nth-child(2) {
+.panel-vote .wp-polls-ul li:nth-child(2) .progress-bar {
     background-color: #e35764;
 }
 
-.panel-vote .result:nth-child(3) {
+.panel-vote .wp-polls-ul li:nth-child(3) .progress-bar {
     background-color: #12dbd6;
 }
 
-.panel-vote .result:nth-child(4) {
+.panel-vote .wp-polls-ul li:nth-child(4) .progress-bar {
     background-color: #f7922c;
 }
 
-.panel-vote .result:nth-child(5) {
+.panel-vote .wp-polls-ul li:nth-child(5) .progress-bar {
     background-color: #656ccf;
 }
 
