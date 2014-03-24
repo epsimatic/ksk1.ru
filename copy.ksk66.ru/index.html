@@ -22,9 +22,8 @@
     <script src="http://ksk1.ru/tocify/libs/jqueryui/jquery-ui.custom.min.js"></script>
     <script src="http://ksk1.ru/tocify/src/javascripts/jquery.tocify.min.js"></script>
 </head>
-<!-- border-radius: 3px; no glyphicons; @grid-gutter-width: 20px -->
-<body>
-    <div class="container typography">
+<body class="site-copy">
+    <div class="container">
         <header class="row row_header hidden-print">
             <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
                 <div class="header-line__logo">
@@ -91,8 +90,9 @@
                         <p><strong>Копирование</strong> - черно-белые и цветные копии с любых оригиналов: распечаток, статей, брошюр,
                             справок, бланков, документов и многого другого
                         </p>
-                        <h5 class="header-table">Цены на копирование</h5>
-                        <table class="table table-striped table-hover table-responsive text-center">
+                        <button class="btn btn-primary pull-right" data-toggle="button" onclick="jQuery('.table-copy, .table-print').toggleClass('hide-extra-cols')">>300 копий</button>
+                        <h5 class="header-table clearfix">Цены на копирование</h5>
+                        <table class="table-copy table table-striped table-hover table-responsive text-center">
                             <thead>
                                 <tr>
                                     <th>Бумага</th>
@@ -113,6 +113,9 @@
                                     <td>1,<small>80</small></td>
                                     <td>1,<small>60</small></td>
                                     <td>1,<small>40</small></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center !important;" colspan="7">Стоимость 2-сторонней копии увеличивается в 2 раза</td>
                                 </tr>
                                 <tr>
                                     <td><span class="badge paper-format">A4</span> Белая, Россия (80 г/м²)</td>
@@ -149,6 +152,15 @@
                                     <td>5,<small>80</small></td>
                                     <td>5,<small>10</small></td>
                                     <td>3,<small>70</small></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge paper-format">A4</span> Вторая сторона</td>
+                                    <td>2,<small>60</small></td>
+                                    <td>2,<small>50</small></td>
+                                    <td>2,<small>40</small></td>
+                                    <td>2,<small>10</small></td>
+                                    <td>1,<small>90</small></td>
+                                    <td>1,<small>50</small></td>
                                 </tr>
                                 <tr>
                                     <td><span class="badge paper-format">A4</span> Самоклеящаяся бумага</td>
@@ -196,6 +208,15 @@
                                     <td>8</td>
                                 </tr>
                                 <tr>
+                                    <td><span class="badge paper-format paper-format-a3">A3</span> Вторая сторона</td>
+                                    <td>5,<small>90</small></td>
+                                    <td>5,<small>40</small></td>
+                                    <td>5,<small>20</small></td>
+                                    <td>4,<small>80</small></td>
+                                    <td>4,<small>30</small></td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
                                     <td><span class="badge paper-format paper-format-a3">A3</span> Самоклеящаяся бумага</td>
                                     <td>16,<small>90</small></td>
                                     <td>15,<small>50</small></td>
@@ -210,13 +231,11 @@
                             <em>*При необходимости возможно масштабирование (уменьшение/увеличение), стоимость - от 25% в зависимости от сложности работы</em>
                         </p>
                         <p>
-                            <em>*Стоимость двусторонних копий увеличивается в 2 раза</em>
-                        </p>
-                        <p>
                             <em>*Оригиналы предварительно должны быть расстеплированы</em>
                         </p>
-                        <h5 class="header-table">Полноцветная печать и копирование</h5>
-                        <table class="table table-striped table-hover table-responsive text-center">
+                        <button class="btn btn-primary pull-right" data-toggle="button" onclick="jQuery('.table-copy, .table-print').toggleClass('hide-extra-cols')">>200 копий</button>
+                        <h5 class="header-table clearfix">Полноцветная печать и копирование</h5>
+                        <table class="table-print table table-striped table-hover table-responsive text-center">
                             <thead>
                             <tr>
                                 <th>Бумага</th>
@@ -911,6 +930,8 @@
                                 многие из этих цветов не могут быть напечатаны адекватно.
                             </em>
                         </p>
+
+                        <script>jQuery('.table-copy, .table-print').addClass('hide-extra-cols')</script>
 
                         <h3>Листовки, буклеты, флаеры, визитки</h3>
                         <p>
