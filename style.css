@@ -3427,6 +3427,9 @@ a.news-slide-block {
         font-size: 14px;
         font-weight: 300;
     }
+    .kaleidoscope__item__tooltip{
+        height:77px ;
+    }
 }
 
 /* Стили для размера -lg- */
