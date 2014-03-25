@@ -1507,7 +1507,7 @@ a.link-neutral:focus {
     display: block;
     font-size: 13px;
     font-weight: 300;
-    height: 3em;
+    height: 4em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
