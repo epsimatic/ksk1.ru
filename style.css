@@ -1502,12 +1502,12 @@ a.link-neutral:focus {
     margin: 5px 0;
 }
 
-.news-more .crp_exerpt {
+.news-more .crp_excerpt {
     color: #2b2b38;
     display: block;
     font-size: 13px;
     font-weight: 300;
-    height: 3em;
+    height: 4em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -3392,7 +3392,7 @@ a.news-slide-block {
     .news-more .crp_date {
         font-size: 13px;
     }
-    .news-more .crp_exerpt {
+    .news-more .crp_excerpt {
         font-size: 14px;
         font-weight: 400;
     }
@@ -3423,7 +3423,7 @@ a.news-slide-block {
     .news-more .crp_title {
         font-size: 14px;
     }
-    .news-more .crp_exerpt {
+    .news-more .crp_excerpt {
         font-size: 14px;
         font-weight: 300;
     }
@@ -3457,7 +3457,7 @@ a.news-slide-block {
     .news-more .crp_title {
         font-size: 16px;
     }
-    .news-more .crp_exerpt {
+    .news-more .crp_excerpt {
         font-weight: 400;
     }
 }
