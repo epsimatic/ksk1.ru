@@ -2789,6 +2789,9 @@ ul.page-cat > li.cat-item > .badge {
     .kaleidoscope__item{
         width: 20%;
     }
+    .kaleidoscope__item__tooltip{
+        height:96px ;
+    }
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
