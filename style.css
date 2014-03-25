@@ -3475,3 +3475,9 @@ a.news-slide-block {
     }
 }
 
+.ob-short__sub-header{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: green;
+}
