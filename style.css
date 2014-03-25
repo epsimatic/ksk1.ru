@@ -1,7 +1,10 @@
 /* <editor-fold desc="Оформление панелей"> */
 /* </editor-fold> */
 
+
 /* <editor-fold desc="Общие стили"> */
+/* <editor-fold desc="Колонки и основные элементы страницы"> */
+
 body {
     font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
     font-size: 14px;
@@ -10,43 +13,6 @@ body {
     background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat;
     background-color: #edeeef;
     font-weight: normal;
-}
-footer {
-    margin: 20px -10px 0 -10px;
-    background-image: url("http://ob.ksk66.ru/images/footer_bg.png");
-    background-size: cover;
-    padding: 25px 0;
-}
-footer p {
-    font-size: 0.9em;
-    color: #444f56;
-    padding: 0 0 5px 30px;
-    margin-bottom: 5px;
-    /*max-width: 95%;*/
-}
-footer h5 {
-    color: #00212c;
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-footer h4 {
-    color: #185481;
-    font-size: 16px;
-}
-footer h4 {
-    padding-bottom: 15px;
-    margin: 0;
-}
-footer h4 a {
-    color: #444f56;
-    font-size: 21px;
-    font-weight: 300;
-}
-footer h3 {
-    font-size: 2em;
-    font-weight: 300;
-    color: #0080c7;
-    margin-top: 0;
 }
 
 .container {
@@ -63,373 +29,70 @@ footer h3 {
     padding-right: 0;
 }
 
-.page-header {
-    border: none;
-    margin: 0;
-}
-.page-header h1 {
-    margin: 0 !important;
-}
-.banner-top .yummies {
-    margin-bottom: 0;
-}
+/* </editor-fold> */
 
-/* Убрать закругления элементов */
-/*.btn,*/ .navbar,
-          .panel, .panel-heading,
-          .nav-pills > li > a,
-          .list-group-item {
-              border-radius: 0 !important;
-          }
+/* <editor-fold desc="Шапка"> */
 
-.panel {
-    border: none;
-    background-color: #F9FAFB;
-    box-shadow: none;
-    margin-bottom: 15px;
-}
-
-.panel > .panel-heading + .panel-collapse .panel-body {
-    border-top: none;
-}
-.panel > .panel-footer + .panel-collapse .panel-body {
-    border-bottom: none;
-}
-
-.panel-heading {
-    border: none;
-}
-
-.panel-body {
-    background-color: #fcfcfc;
-}
-.panel-body .row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.panel-footer {
-    padding: 3px 7px;
-    background-color: #EDEDED;
-    border-top: none;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.panel > .panel-heading h3 {
-    color: #fff;
-    font-weight: 300;
-}
-.panel-footer a {
-    color: #006048;
-}
-.panel-footer a:hover {
-    color: forestgreen;
-    text-decoration: none;
-}
-.panel-footer > .btn:hover {
-    text-decoration: none;
-}
-.panel-footer > .btn-link:hover {
-    text-decoration: none;
-}
-
-.col-main .panel > .panel-heading h3 {
-    font-size: 27px;
-    padding: 7px 0 9px 10px;
-}
-.col-mid .panel > .panel-heading h3 {
-    font-size: 25px;
-    padding: 3px 0 5px 7px;
-}
-.sidebar .panel > .panel-heading h3 {
-    font-size: 25px;
-    padding: 1px 0 3px 5px;
-}
-.inset .panel > .panel-heading h3 {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 0 0 2px 4px;
-}
-
-.panel-default > .panel-heading {
-    background-color: #dce3e9;
-    padding: 16px 22px;
-}
-.panel-default .panel-body {
-    background-color: #f7f8fa;
-}
-.panel-default h2:first-child {
-    margin-top: 0;
-}
-.panel-default .panel-collapse {
-    border-bottom: 3px solid #dce3e9;
-}
-.panel-success > .panel-heading {
-    background-color: #5cb85c;
-    /*background-color: #dff0d8;*/
-    padding: 16px 22px;
-}
-.panel-success .panel-title {
-    color: #fff;
-}
-.panel-success .list-group-item {
-    background-color: transparent;
-}
-.panel-success .list-group {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.panel-success {
-    margin-bottom: 10px;
-}
-
-
-.navbar-collapse {
-    margin-right: -40px;
-}
-
-.navbar .active a {
-    background-color: #fff;
-    color: #42BAEA;
-}
-/* <editor-fold desc="Стили элементов"> */
-.nav > li > a:focus,
-.nav > li > a:hover {
-    color: #fff;
-    background-color: #2CB3E9;
-}
-
-.badge strong {
-    font-weight: 700;
-}
-.btn-toolbar {
-    margin: 0;
-}
-
-h4.media-heading {
-    font-size: 1.5em;
-    color: #2590d8;
-    font-weight: 600;
-}
-h5.media-heading {
-    font-size: 1em;
-    font-weight: 400;
-    margin: 3px 3px 5px;
-    color: #415256;
-    line-height: 1.3em;
-}
-p.media-text {
-    color: #4c4c56;
-    font-size: 14px;
-    font-weight: 400;
-    text-indent: 5px;
-    line-height: 1.4em;
-}
-.list-group-item {
-    border: none;
-}
-
-/* Переопредилить шрифт заголовков Bootstrap */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
-    font-weight: normal;
-}
-
-h4 {
-    margin-top: 5px;
-    margin-bottom: 0;
-    /*color: #008BD5;*/
-    color: #202020;
-    font-size: 18px;
-}
-h5 {
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: #202020;
-    font-size: 18px;
-}
-h6 {
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: #202020;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.table thead > tr > th,
-.table tbody > tr > th,
-.table tfoot > tr > th,
-.table thead > tr > td,
-.table tbody > tr > td,
-.table tfoot > tr > td {
-    padding: 8px;
-    line-height: 1.428571429;
-    vertical-align: top;
-    border-top: 0;
-}
-.table tbody > tr.info > td,
-.table tbody > tr.info > td {}
-
-.btn {
-    border-radius: 3px;
-}
-
-.ad {
-    margin-bottom: 15px;
-}
-
-a.media-heading:hover,
-a.media-heading:focus {
-    text-decoration: none;
-}
-
-.list-group {
-    margin-bottom: 15px;
-    padding-bottom: 25px;
-    /*border-bottom: 2px solid #f0f0f0;*/
-}
-a.list-group-item {
-    color: #4d4d60  ;
-}
-a.list-group-item:hover,
-a.list-group-item:focus {
-    background-color: #f0f1f2;
-}
-.list > .list-group-item > .list-group-item-heading {
-    color: #1a4f8e;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.25em;
-}
-a.list-group-item {
-    background-color: #f9fafb;
-}
-
-.badge {
-    background-color: #909293;
-    border-radius: 0.45em;
-    font-weight: 600;
-    font-size: 0.9em;
-    letter-spacing: 0.04em;
-    padding: 0.3em 0.7em 0.35em;
-}
-
-.navbar {
-    background-color: #42baea;
-    margin: 0 -10px 10px;
-    border: none;
-}
-
-.navbar a {
-    color: #fff;
-}
-
-.col-mid .btn-group {
-    margin: 10px 0;
-}
-
-.col-mid .btn-toolbar > h4 {
-    padding-bottom: 5px;
-    font-size: 1em;
-    color: #777;
-}
-
-.col-mid .list-group > .list-group-item {
-    padding-right: 10px;
-    margin: 0;
-}
+/* <editor-fold desc="Блоки"> */
 
 header .btn-link {
     margin-top: 7px;
     color: #333333;
 }
+
 header .btn-group {
     margin-top: 10px;
 }
-.alert h3,
-.alert h2 {
-    margin: 0 0 15px;
-}
-.yummies {
-    width: 100%;
-    margin-bottom: 7px;
-    height: auto;
-}
-.helper {
-    display: none;
-    border: 1px #88C425 solid;
-    background-color: #BEF202;
-    border-radius: 20px 20px 0 0;
-    padding: 5px 0;
-    color: #519548;
-    width: 100%;
-    text-align: center;
-    font-weight: bold
-}
 
-.btn-group > form { position: relative; float: left;margin-bottom:0; }
-.dropdown-menu > li .btn:hover { text-decoration: none; }
-
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:hover,
-.nav .open > a:focus {
-    background-color: #2CB3E9;
-}
 header .yummies {
     margin: 0;
 }
-.popover-content .panel-heading {
-    color: #FFFFFF;
-    display: block;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    width: 0;
-}
-.popover-content {
-    overflow: hidden;
-    padding: 0;
-    table-layout: fixed;
-    font-size: 14px;
-}
-.popover-content .panel-heading .fa {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-.popover-content .table {
-    margin: 0;
-}
-.popover{
-    max-width: none ;
+
+.row_header {
+    background-image: url("http://ksk1.ru/img/spring_header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    height: auto;
+    position: relative;
+    min-height: 110px;
+    text-align: center;
 }
 
-.shops img {padding: 20px 25px;}
+/* Выровнять элементы в шапке по вертикали и горизонтали */
 
-#openstat2173092 img{
-    width: 8%;
+.row_header > div {
+    text-align: center;
+    white-space: nowrap;
 }
 
-/*Шапка*/
+.row_header > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row_header > div:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 140px;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Логотип"> */
+
 .header-line__logo {
     display: inline-block;
     position: relative;
     height: auto;
     width: 100%;
     font-size: 45px;
+}
+
+.header-line__logo img {
+    width:96%;
 }
 
 .header-line__logo__arrow {
@@ -462,12 +125,18 @@ header .yummies {
     right: 43px;
     bottom: 2px;
 }
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Погода"> */
+
 .header-line__weather-block__icon {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 44px;
     width: 100%;
 }
+
 .header-line__weather-block__temp {
     bottom: 13px;
     font-weight: 600;
@@ -479,17 +148,7 @@ header .yummies {
     font-weight: 300;
     text-align: center;
 }
-.row_header {
-    background-image: url("http://ksk1.ru/img/spring_header.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 18px;
-    height: auto;
-    position: relative;
-    min-height: 110px;
-    text-align: center;
-}
+
 .header-line__logo__weather-block__temp {
     bottom: -11px;
     font-size: 40%;
@@ -499,57 +158,35 @@ header .yummies {
     font-weight: 600;
 }
 
-/* Выровнять элементы в шапке по вертикали и горизонтали */
-
-.row_header > div {
-    text-align: center;
-    white-space: nowrap;
+.header-line__logo__weather-block__temp {
+    bottom: 2px;
+    left: 11px;
+    opacity: 1;
 }
 
-.row_header > div > * {
-    display: inline-block;
-    vertical-align: middle;
+/* </editor-fold> */
+
+/* </editor-fold> */
+
+/* <editor-fold desc="navbar"> */
+
+.navbar {
+    background-color: #42baea;
+    margin: 0 -10px 10px;
+    border: none;
 }
 
-.row_header > div:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 140px;
-}
-/*Конец шапки сайта*/
-
-/* Re-define Google search widget: */
-.gsc-search-button-v2
-{
-    margin-left: 0 !important;
-    padding: 5px 16px !important;
-    height: 29px !important;
-    width: auto !important;
-}
-.gsc-input {
-    padding-right: 0 !important;
-}
-.gsc-input-box {
-    height: auto !important;
+.navbar a {
+    color: #fff;
 }
 
-.gsc-control-cse{
-    padding: 0 !important;
-    border: none !important;
+.navbar-collapse {
+    margin-right: -40px;
 }
 
-.searchbox{
-    width: 100%;
-    margin-top: 8px;
-}
-
-/* Исправляем косяки Bootstrap */
-.alert > h3:first-child { margin-top: 0; }
-
-/* Авто-подбор размеров */
-.col-special img {
-    max-width: 100%;
+.navbar .active a {
+    background-color: #fff;
+    color: #42BAEA;
 }
 
 .navbar-toggle {
@@ -560,14 +197,462 @@ header .yummies {
     background-color: #cccccc;
 }
 
+.shops img {
+    padding: 20px 25px;
+}
+
+/*для файла header_2013.html*/
+.karta a [title='Карта Красноуфимска и других городов'],
+.timetable a [title='Расписание автобусов и ж/д'],
+.cat a [title='Каталог предприятий, телефонов и адресов'],
+.photo a [title='Фото.Новости'],
+.video a [title='Видео.Новости'],
+.news a [title='Свежие городские новости'],
+.ob a [title='Бесплатные объявления на сайте и в газете'] {
+    background-color: #ffffff;
+    color: #0080C8;
+}
+
+/* Re-define Google search widget: */
+.gsc-search-button-v2 {
+    margin-left: 0 !important;
+    padding: 5px 16px !important;
+    height: 29px !important;
+    width: auto !important;
+}
+
+.gsc-input {
+    padding-right: 0 !important;
+}
+
+.gsc-input-box {
+    height: auto !important;
+}
+
+.gsc-control-cse {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.searchbox {
+    width: 100%;
+    margin-top: 8px;
+}
+
+
 /* </editor-fold> */
 
-/* <editor-fold desc="Оформление кнопок"> */
+/* <editor-fold desc="Панели"> */
+
+.panel {
+    border: none;
+    background-color: #F9FAFB;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.panel > .panel-heading + .panel-collapse .panel-body {
+    border-top: none;
+}
+
+.panel > .panel-footer + .panel-collapse .panel-body {
+    border-bottom: none;
+}
+
+.panel-heading {
+    border: none;
+}
+
+.panel-body {
+    background-color: #fcfcfc;
+}
+
+.panel-body .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.panel-footer {
+    padding: 3px 7px;
+    background-color: #EDEDED;
+    border-top: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.panel > .panel-heading h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.panel-footer a {
+    color: #006048;
+}
+
+.panel-footer a:hover {
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.panel-footer > .btn:hover {
+    text-decoration: none;
+}
+
+.panel-footer > .btn-link:hover {
+    text-decoration: none;
+}
+
+.col-main .panel > .panel-heading h3 {
+    font-size: 27px;
+    padding: 7px 0 9px 10px;
+}
+
+.col-mid .panel > .panel-heading h3 {
+    font-size: 25px;
+    padding: 3px 0 5px 7px;
+}
+
+.sidebar .panel > .panel-heading h3 {
+    font-size: 25px;
+    padding: 1px 0 3px 5px;
+}
+
+.inset .panel > .panel-heading h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 0 2px 4px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #dce3e9;
+    padding: 16px 22px;
+}
+
+.panel-default .panel-body {
+    background-color: #f7f8fa;
+}
+
+.panel-default h2:first-child {
+    margin-top: 0;
+}
+
+.panel-default .panel-collapse {
+    border-bottom: 3px solid #dce3e9;
+}
+
+.panel-success > .panel-heading {
+    background-color: #5cb85c;
+    padding: 16px 22px;
+}
+
+.panel-success .panel-title {
+    color: #fff;
+}
+
+.panel-success .list-group-item {
+    background-color: transparent;
+}
+
+.panel-success .list-group {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.panel-success {
+    margin-bottom: 10px;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Подвал"> */
+
+footer {
+    margin: 20px -10px 0 -10px;
+    background-image: url("http://ob.ksk66.ru/images/footer_bg.png");
+    background-size: cover;
+    padding: 25px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #444f56;
+    padding: 0 0 5px 30px;
+    margin-bottom: 5px;
+    /*max-width: 95%;*/
+}
+
+footer h5 {
+    color: #00212c;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+footer h4 {
+    color: #185481;
+    font-size: 16px;
+}
+
+footer h4 {
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+footer h4 a {
+    color: #444f56;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+footer h3 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #0080c7;
+    margin-top: 0;
+}
+
+#openstat2173092 img {
+    width: 8%;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Другие общие элементы"> */
+
+.btn-home {
+    padding: 0px 20px 5px 17px;
+    position: fixed;
+    bottom: 151px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
+    color: rgb(153, 153, 153);
+    display: none;
+}
+
+.btn-home:hover {
+    color: #666;
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+/* Убрать закругления элементов */
+.navbar,
+.panel,
+.panel-heading,
+.nav-pills > li > a,
+.list-group-item {
+    border-radius: 0 !important;
+}
+
+.col-special img {
+    max-width: 100%;
+}
+
+.badge {
+    background-color: #909293;
+    border-radius: 0.45em;
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.04em;
+    padding: 0.3em 0.7em 0.35em;
+}
+
+.badge strong {
+    font-weight: 700;
+}
+
+
+a.media-heading:hover,
+a.media-heading:focus {
+    text-decoration: none;
+}
+
+.dropdown-menu > li .btn:hover {
+    text-decoration: none;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    color: #fff;
+    background-color: #2CB3E9;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #2CB3E9;
+}
+
+/*Таблицы*/
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 0;
+}
+
+.table .overline-me  {
+    border-top: 1px solid #ddd;
+}
+
+.table .underline-me {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* <editor-fold desc="Типографика"> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #202020;
+    font-size: 18px;
+}
+
+h5 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #202020;
+    font-size: 18px;
+}
+
+h6 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #202020;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h4.media-heading {
+    font-size: 1.5em;
+    color: #2590d8;
+    font-weight: 600;
+}
+
+h5.media-heading {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 3px 3px 5px;
+    color: #415256;
+    line-height: 1.3em;
+}
+
+p.media-text {
+    color: #4c4c56;
+    font-size: 14px;
+    font-weight: 400;
+    text-indent: 5px;
+    line-height: 1.4em;
+}
+
+.page-header {
+    border: none;
+    margin: 0;
+}
+
+.page-header h1 {
+    margin: 0 !important;
+}
+
+.alert h3,
+.alert h2 {
+    margin: 0 0 15px;
+}
+
+/* Исправляем косяки Bootstrap */
+.alert > h3:first-child {
+    margin-top: 0;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Списки"> */
+.list-group {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+a.list-group-item {
+    color: #4d4d60;
+    background-color: #f9fafb;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+    background-color: #f0f1f2;
+}
+
+.list > .list-group-item > .list-group-item-heading {
+    color: #1a4f8e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+.col-mid .list-group > .list-group-item {
+    padding-right: 10px;
+    margin: 0;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Кнопки, группы и панели кнопок"> */
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-toolbar {
+    margin: 0;
+}
+
+.btn-group > form {
+    position: relative;
+    float: left;
+    margin-bottom:0;
+}
+
+.col-mid .btn-group {
+    margin: 10px 0;
+}
+
+.col-mid .btn-toolbar > h4 {
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: #777;
+}
+
 .btn-grey {
     color: #333638;
     background-color: #f7f7f7;
     border-color: #d5d8db;
 }
+
 .btn-grey:hover,
 .btn-grey:focus,
 .btn-grey:active,
@@ -575,20 +660,25 @@ header .yummies {
 .open .dropdown-toggle.btn-grey {
     background-color: #fbfbfb;
 }
+
 .btn-default .badge {
     background-color: #909293;
 }
+
 .comments-list .btn-reply {
     opacity: 0.1;
 }
+
 .btn-action {
     color: #ffffff;
     background-color: #3db65a;
     border-color: #32a049;
 }
+
 .btn-action .caret {
     border-top-color: #fff;
 }
+
 .btn-action:hover,
 .btn-action:focus,
 .btn-action:active,
@@ -598,6 +688,7 @@ header .yummies {
     background-color: #34a34c;
     border-color: #2b993d;
 }
+
 .btn-action .label {
     background-color: #fff;
     color: #32A049;
@@ -619,6 +710,7 @@ header .yummies {
     background-color: #FF6F4D;
     border-color: #D7583C;
 }
+
 .btn-movie:hover,
 .btn-movie:focus,
 .btn-movie:active,
@@ -628,28 +720,289 @@ header .yummies {
     background-color: #EE6243;
     border-color: #EB6142;
 }
-/* </editor-fold> */
-
 
 /* </editor-fold> */
 
-/* <editor-fold desc="Стили главной новостной страницы"> */
+/* <editor-fold desc="Popover"> */
+.popover-content .panel-heading {
+    color: #FFFFFF;
+    display: block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
 
-/*Панель «Главные новости»*/
+.popover-content {
+    overflow: hidden;
+    padding: 0;
+    table-layout: fixed;
+    font-size: 14px;
+}
+
+.popover-content .panel-heading .fa {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.popover-content .table {
+    margin: 0;
+}
+
+.popover {
+    max-width: none ;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Реклама"> */
+.ad {
+    margin-bottom: 15px;
+}
+.yummies {
+    width: 100%;
+    margin-bottom: 7px;
+    height: auto;
+}
+
+.helper {
+    display: none;
+    border: 1px #88C425 solid;
+    background-color: #BEF202;
+    border-radius: 20px 20px 0 0;
+    padding: 5px 0;
+    color: #519548;
+    width: 100%;
+    text-align: center;
+    font-weight: bold
+}
+
+.banner-top .yummies {
+    margin-bottom: 0;
+}
+/* </editor-fold> */
+
+/*Кастыли*/
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+/* <editor-fold desc="Панель навигации по категориям"> */
+.cat-panel {
+    white-space: nowrap;
+}
+
+.quick-nav {
+    background-color: #428bca;
+}
+
+.quick-nav .dropdown-header {
+    text-transform: uppercase;
+    color: #0275D3;
+    font-size: 1.1em;
+}
+
+.quick-nav ul li {
+    position: relative;
+}
+
+.quick-nav ul li a {
+    padding-right: 60px;
+}
+
+.quick-nav ul li .badge {
+    position: absolute;
+    right: 15px;
+}
+
+.quick-nav li > a {
+    width: 100%;
+}
+
+.quick-nav li > a:hover,
+.quick-nav li > a:focus,
+.panel-payment .dropdown-menu > li .btn:hover,
+.panel-payment .dropdown-menu > li .btn:focus {
+    background-color: #f5f6f7;
+    color: #333333;
+}
+
+.panel > .quick-nav .btn-link {
+    font-size: 20px;
+    margin-top: -3px;
+    font-weight: 600;
+}
+
+.panel > .quick-nav .btn-link:hover,
+.panel > .quick-nav .btn-link:focus {
+    text-decoration: none;
+    color: #b0d7f4;
+}
+
+.panel > .quick-nav .btn-group {
+    margin: 0;
+}
+
+.quick-nav .btn-link {
+    color: #fff;
+}
+
+.quick-nav .btn > .badge {
+    margin-top: 6px;
+}
+
+.quick-nav .active .badge,
+.quick-nav .btn > .badge {
+    background-color: #FFFFFF;
+    color: #428BCA;
+}
+
+.quick-nav .btn > .badge {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+
+.quick-nav .fa-plus-circle {
+    margin-right: -6px;
+}
+
+.name_cat {
+    padding-left: 20px;
+}
+
+.name_cat:hover {
+    text-decoration: none;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Оформление ссылок с номерами страниц"> */
+.lcp_paginator {
+    color: #333;
+    font-weight: normal;
+    line-height: 1.42857;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    top: 2px;
+}
+
+.lcp_paginator li {
+    margin: 3px 1px !important;
+    padding: 2px 0 !important;
+    cursor: default;
+    border: none !important;
+    background-color: #e5e5e5;
+    min-width: 28px;
+    min-height: 20px;
+}
+
+.lcp_paginator a {
+    padding: 4px 10px !important;
+}
+
+.lcp_paginator a:hover,
+.lcp_paginator a:focus {
+    text-decoration: none;
+    color: #252525;
+}
+
+.lcp_paginator li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.lcp_paginator li:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.lcp_paginator li:hover,
+.lcp_paginator li:focus {
+    background-color: #d1d1d1;
+}
+
+.lcp_paginator li:active {
+    background-image: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    outline: 0 none;
+}
+/* </editor-fold> */
+/* </editor-fold> */
+/* </editor-fold> */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* <editor-fold desc="Новостной сайт"> */
+/* <editor-fold desc="Главная новостная"> */
+.main-content-inner {
+    padding: 0;
+}
+
+.not-really-panel {
+    background-color: transparent;
+}
+
+/* <editor-fold desc="Панель навигации по категориям"> */
+.panel-nav {
+    /*color: #0d3349;*/
+    background-color: #C7D1E0;
+    border: none;
+    padding: 10px 15px;
+}
+
+.panel-nav > ul > li > a {
+    color: #47475f;
+}
+
+.panel-nav > ul > li > a:hover,
+.panel-nav > ul > li > a:focus {
+    background-color: #eeeeee;
+    color: #47475f;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #8392a8;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Оформление панелей"> */
+/*Общие стили для некоторых панелей на странице*/
+.panel-notice > .panel-body > .media-object,
+.panel-guest > .panel-body > .media-object,
+.panel-congrats > .panel-body > .media-object,
+.panel-necro > .panel-body > .media-object,
+.panel-notice > .list-group > .list-group-item > .media-object {
+    padding: 3px 7px 0 0;
+}
+
+/* <editor-fold desc="Панель «Главные новости»"> */
 .panel-news > .panel-heading {
     color: #ffffff;
     background-color: #1FA6F2;
     border: none;
 }
+
 .panel-news > .panel-body {
     padding-bottom: 0;
 }
+
 .panel-news > .panel-heading + .panel-collapse .panel-body {
     border-top: none;
 }
+
 .panel-news > .panel-footer + .panel-collapse .panel-body {
     border-bottom: none;
 }
+
 .panel-news > .panel-heading {
     background-color: #1fa6f2;
     background-image: url("img/panel-news.png");
@@ -658,33 +1011,43 @@ header .yummies {
     background-size: contain;
 }
 
-/*Панель навигации по категориям*/
-.panel-nav {
-    /*color: #0d3349;*/
-    background-color: #C7D1E0;
-    border: none;
-    padding: 10px 15px;
-}
-.panel-nav > ul > li > a {
-    color: #47475f;
-}
-.panel-nav > ul > li > a:hover,
-.panel-nav > ul > li > a:focus {
-    background-color: #eeeeee;
-    color: #47475f;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-    color: #fff;
-    background-color: #8392a8;
+.news-slide .list-group-item {
+    padding: 10px;
 }
 
-/*Панель «Местные новости» */
+.news-slide-block {
+    padding: 0;
+}
+
+.news-slide-block h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.news-slide-block:first-child h4 {
+    margin-bottom: 0 !important;
+}
+
+.news-slide-block:first-child a.list-group-item:hover,
+.news-slide-block:first-child a.list-group-item:focus {
+    background-color: #f9fafb;
+}
+
+.news-slide-block:first-child .btn-action {
+    margin: 0 !important;
+}
+
+.media-main-primary {
+    padding-right: 5px;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Панель «Местные новости»"> */
 .panel-local > .panel-body > .media,
 .panel-global > .panel-body > .media {
     padding: 5px;
 }
+
 .panel-local > .panel-body > .media:hover,
 .panel-local > .panel-body > .media:focus,
 .news-more > .panel-body > .media:hover,
@@ -693,8 +1056,9 @@ header .yummies {
 .panel-global > .panel-body > .media:focus {
     background-color: #f5f8fa;
 }
+/* </editor-fold> */
 
-/*Панель «Письмо в редакцию»*/
+/* <editor-fold desc="Панель «Письмо в редакцию»"> */
 .panel-mails > .panel-heading {
     background-color: #52be7f;
     background-image: url("img/panel-mails.png");
@@ -702,8 +1066,9 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Красноуфимское-ТВ»*/
+/* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
 .panel-video > .panel-heading {
     background-color: #ff6e0b;
     background-image: url("img/panel-video.png");
@@ -711,11 +1076,13 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .panel-video > .panel-body {
     background-color: #848787;
 }
+/* </editor-fold> */
 
-/*Панель «Областные новости»*/
+/* <editor-fold desc="Панель «Областные новости»"> */
 .panel-global > .panel-heading {
     background-color: #2ebcb7;
     background-image: url("img/panel-global.png");
@@ -723,8 +1090,9 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Поздравления»*/
+/* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading {
     background-color: #ff794c;
     background-image: url("img/panel-congrats.png");
@@ -732,8 +1100,9 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Официальная информация»*/
+/* <editor-fold desc="Панель «Официальная информация»"> */
 .panel-official > .panel-heading {
     background-color: #4a76bb;
     background-image: url("img/panel-official.png");
@@ -741,16 +1110,19 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Некролог»*/
+/* <editor-fold desc="Панель «Некролог»"> */
 .panel-necro > .panel-heading {
     background-color: #707070;
 }
+
 .panel-necro > panel-body p {
     color: #47475f;
 }
+/* </editor-fold> */
 
-/*Панель «Гость не сайте»*/
+/* <editor-fold desc="Панель «Гость не сайте»"> */
 .panel-guest > .panel-heading {
     background-color: #00a1d3;
     background-image: url("img/panel-guest.png");
@@ -758,23 +1130,26 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .panel-guest > .panel-body > .media-object-md {
     width: 100%;
     height: auto;
     max-height: 300px;
 }
+
 .panel_events__time {
     display: inline-block;
     color: #0b1c14;
     font-weight: 600;
 }
+
 .name-guest {
     color: #1865B3;
     padding: 3px 10px 8px;
 }
+/* </editor-fold> */
 
-
-/*Панель «Случайное фото»*/
+/* <editor-fold desc="Панель «Случайное фото»"> */
 .panel-rphoto > .panel-heading {
     background-color: #01bc85;
     background-image: url("img/panel-rphoto.png");
@@ -782,8 +1157,9 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Ближайшие события»*/
+/* <editor-fold desc="Панель «Ближайшие события»"> */
 .panel-event > .panel-heading {
     background-color: #52be7f;
     background-image: url("img/panel-event.png");
@@ -791,23 +1167,28 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* </editor-fold> */
 
-/*Панель «Важно»*/
+/* <editor-fold desc="Панель «Важно»"> */
 .panel-notice > .panel-heading {
     background-color: #FF4B3D;
 }
+
 .panel-notice ul {
     background-color: #fff;
 }
+
 .panel-notice .list-group {
     padding-bottom: 0;
 }
+
 .panel-notice a.list-group-item {
     text-decoration: none;
     /*margin-bottom: 3px;*/
 }
+/* </editor-fold> */
 
-/*Панель «Голосование»*/
+/* <editor-fold desc="Панель «Голосование»"> */
 .panel-vote > .panel-heading {
     background-color: #3db65a;
     background-image: url("img/panel-vote.png");
@@ -815,38 +1196,83 @@ header .yummies {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.panel-vote > .panel-question {
+
+.panel-vote .panel-question {
     background-color: #f1f1f2;
     color: #47475f;
-    /*font-size: 15px;*/
+    padding-bottom: 3px;
 }
+
+.panel-vote label {
+    color: #525256;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
+}
+
+.panel-vote .btn-action {
+    margin-top: 10px;
+}
+
+.panel-vote .result {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 9px;
+}
+
+.panel-vote .wp-polls-ul {
+    margin: 0;
+}
+
+.panel-vote .votes-num {
+    display: none;
+}
+
+.panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {
+    background-color: #e35764 !important;
+}
+
+.panel-vote .wp-polls-ul li:nth-child(2) .progress-bar {
+    background-color: #12dbd6 !important;
+}
+
+.panel-vote .wp-polls-ul li:nth-child(3) .progress-bar {
+    background-color: #f7922c !important;
+}
+
+.panel-vote .wp-polls-ul li:nth-child(4) .progress-bar {
+    background-color: #656ccf !important;
+}
+
+.panel-vote .wp-polls-ul li:nth-child(5) .progress-bar {
+    background-color: #36e796 !important;
+}
+
+/*
 .panel-vote > .panel-question p {
     padding-left: 3px;
     margin: -2px 0 0;
 }
-.panel-vote > .panel-input label.item {
-    color: #525256;
-    font-weight: 400;
-    padding: 3px 10px;
-}
-.panel-vote > .panel-result {
-    padding-top: 10px;
-}
+
 .panel-vote > .panel-result > .item {
     color: #525256;
     padding: 5px 10px;
 }
+
 .panel-vote > .panel-result > .progress {
     margin-bottom: 15px;
 }
+
 .panel-vote > .panel-result > .progress > .progress-bar > .result {
     font-size: 16px;
     font-weight: 400;
     padding-left: 10px;
     color: #111;
 }
+*/
+/* </editor-fold> */
 
-/*Панель «Комментарии»*/
+/* <editor-fold desc="Панель «Комментарии»"> */
 .panel-comments {
     color: #47475f;
 }
@@ -880,64 +1306,26 @@ header .yummies {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/* </editor-fold> */
 
-/*«Листалка» на странице новостей*/
-.lcp_paginator {
-    color: #333;
-    font-weight: normal;
-    line-height: 1.42857;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    top: 2px;
-}
-.lcp_paginator li {
-    margin: 3px 1px !important;
-    padding: 2px 0 !important;
-    cursor: default;
-    border: none !important;
-    background-color: #e5e5e5;
-    min-width: 28px;
-    min-height: 20px;
-}
-.lcp_paginator a {
-    padding: 4px 10px !important;
-}
-.lcp_paginator a:hover,
-.lcp_paginator a:focus {
-    text-decoration: none;
-    color: #252525;
-}
-.lcp_paginator li:first-child {
-    border-radius: 4px 0 0 4px;
-}
-.lcp_paginator li:last-child {
-    border-radius: 0 4px 4px 0;
-}
-.lcp_paginator li:hover,
-.lcp_paginator li:focus {
-    background-color: #d1d1d1;
-}
-.lcp_paginator li:active {
-    background-image: none;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
-    outline: 0 none;
-}
+/*Панель «Мы в соцсетях»*/
+/* </editor-fold> */
 
-/*Элементы*/
+/* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {
     margin: 5px 0;
     padding: 2px 10px;
 }
+
 .post-info > .badge-clean {
     font-size: 1em;
 }
+
 .panel-footer > .post-info {
     margin: 0;
     padding: 0 0 3px;
 }
+
 .date-vis {
     height: 0;
     width: 100%;
@@ -946,41 +1334,33 @@ header .yummies {
     position: relative;
     bottom: 30px;
 }
+
 .date-vis > * {
     height: 30px;
     padding: 5px;
     background-color: rgba(222,222,222,0.9);
     overflow: hidden;
 }
+
 .label-views {
     color: #4A76BB;
     padding-left: 5px;
 }
+
 .label-comment {
     color: #46A2F9;
     padding-left: 5px;
 }
+
 a.link-neutral {
     color: #0f0f0f;
     text-decoration: none;
 }
+
 a.link-neutral:hover,
 a.link-neutral:focus {
     color: #3b437d;
 }
-
-/*Панель «Мы в соцсетях»*/
-
-
-/*Общие стили для некоторых панелей на странице*/
-.panel-notice > .panel-body > .media-object,
-.panel-guest > .panel-body > .media-object,
-.panel-congrats > .panel-body > .media-object,
-.panel-necro > .panel-body > .media-object,
-.panel-notice > .list-group > .list-group-item > .media-object {
-    padding: 3px 7px 0 0;
-}
-
 
 /* Бэджи без фона */
 .badge-clean {
@@ -990,87 +1370,177 @@ a.link-neutral:focus {
     font-size: 13px;
     font-weight: 600;
 }
+
 .badge-pos {
     color: #1dac3b;
 }
+
 .badge-neg {
     color: #ff4b3d;
 }
-
+/* </editor-fold> */
 /* </editor-fold> */
 
-/* <editor-fold desc="Стили страницы новости"> */
-/*Панель тела новости*/
+/* <editor-fold desc="Страница новости"> */
+/* <editor-fold desc="Панель тела новости"> */
 .panel-news-body > .panel-body .fa {
     padding-top:4px;
 }
+
 .panel-news-body > .panel-body img {
     padding: 5px 0 15px;
 }
+
 .panel-news-body > .panel-body p {
     padding-bottom: 4px;
     color: #32393f;
     font-size: 1.1em;
 }
+
 .panel-news-body > .panel-body h1 {
     color: #4a76bb;
     font-weight: 700;
     font-size: 28px;
     margin: 10px 0 20px;
 }
+
+.panel-news-body .wp-caption {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.panel-news-body .wp-caption img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.panel-news-body .wp-caption .wp-caption-text {
+    margin: 0;
+    padding: 7px 0 10px;
+}
+
 .panel-news-body > .panel-footer {
     background-color: #fcfcfc;
     padding: 0;
 }
+
 .panel-news-body > .panel-footer > .row {
     margin: 0;
 }
+/* </editor-fold> */
 
-/*Панель «Ещё по теме»*/
+/* <editor-fold desc="Панель «Ещё по теме»"> */
+/*Старые стили*/
+/*
 .news-more p {
     color: #2b2b38;
 }
+
 .news-more > .panel-heading {
     background-color: #95a5a6;
     padding: 8px 20px;
 }
+
 .news-more > .panel-heading h3 {
     padding-bottom: 3px;
     color: #fff;
     font-size: 23px;
     font-weight: 400;
 }
+
 .news-more-item {
     padding: 9px 15px 7px;
     background-color: #f9fafb;
 }
+
 .news-more-item:hover,
 .news-more-item:focus {
     background-color: #f4f6f7;
 }
 
-/*Панель комментариев*/
+.news-more-item > .post-info {
+    margin: 3px 0 1px;
+    padding: 0;
+}
+*/
+.news-more > .panel-heading {
+    background-color: #6b75d8;
+}
+
+.news-more > .panel-body {
+    padding: 0;
+}
+
+.news-more .col-xs-12:hover,
+.news-more .col-xs-12:focus,
+.news-more .col-md-6:hover,
+.news-more .col-md-6:focus {
+    background-color: #f3f3f3;
+}
+
+.news-more .crp_thumb {
+    width: 30%;
+}
+
+.news-more .crp_title {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.news-more .crp_date {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    font-style: oblique;
+    margin: 5px 0;
+}
+
+.news-more .crp_exerpt {
+    color: #2b2b38;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Панель комментариев"> */
 .panel-comments-list > .panel-heading {
     background-color: #f0f0f0;
 }
+
 .panel-comments-list > .panel-body {
     background-color: #FFF;
     padding: 5px 0;
 }
+
 .panel-comments-list > .panel-heading h2 {
     color: #777d82;
     font-size: 23px;
     padding: 7px 12px;
 }
+
 .panel-comments-list .btn-grey {
     margin-top: 3px;
 }
+/* </editor-fold> */
 
-/*Элементы*/
+/* <editor-fold desc="Элементы страницы новости"> */
 .comment {
     font-weight: 400;
     color: #47475f;
 }
+
 .nic {
     font-size: 16px;
     font-weight: 600;
@@ -1078,158 +1548,128 @@ a.link-neutral:focus {
     line-height: 40px;
     padding-left: 7px;
 }
+
 .news-meta {
     background-color: #f9f9f9;
     margin-bottom: 5px;
     padding: 0;
 }
+
 .news-meta > .post-info {
     padding: 0;
     margin: 0;
 }
+
 .news-meta > .post-info > .badge-clean {
     padding: 9px 5px 9px 15px;
 }
+
 .news-meta > .post-info > .btn-group > .btn {
     border-radius: 0;
     border: none;
 }
+
 .form-control {
     border-radius: 3px;
 }
 /* </editor-fold> */
+/* </editor-fold> */
+/* </editor-fold> */
 
-/* <editor-fold desc="Стили страницы объявлений"> */
+/*------------------------------------------------------------------------------------------*/
 
-/*Панель категории*/
-.panel-cat {
-    margin: 5px 0 25px;
-    background-color: #fafbfc;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+/* <editor-fold desc="Объявления"> */
+.site-ob .footer_registration,
+.site-ob .footer_opinion {
+    display: none;
 }
-.panel-cat:hover {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+.site-ob .block_congrats__img,
+.site-ob .block_necro__img {
+    height: 200px !important;
+    width: auto !important;
 }
-.panel-cat .panel-heading{
-    padding: 10px 0 0;
-    margin: 0;
-    background-color: #F7F8F9;
-}
-.panel-cat > .panel-heading > .row > div > h3 {
-    /*.panel-cat > .panel-heading h3 {*/
-    margin: 0;
-    color: #0A79DB;
-    font-size: 1.7em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 10px 5px 20px 20px ;
-}
-.panel-cat > .panel-body {
-    padding: 0;
-    background-color: transparent;
-}
-.panel-cat .yummies {
-    padding-left: 5px;
-}
-.panel-cat .list-group {
-    padding: 0;
-    margin: 0;
-}
-.panel-cat > .panel-body a.list-group-item {
-    /*margin-bottom: 1px;*/
-    background-color: #fcfcfc;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #f6f7f8;
-    margin-bottom: 1px;
-}
-.panel-cat > .panel-body a.list-group-item:hover,
-.panel-cat > .panel-body a.list-group-item:focus {
-    background-color: #f0f1f2;
-    color: #404145;
-    border-left: 1px solid #56c4f4;
-}
-.panel-cat .btn {
-    margin-left: 12px;
-    margin-right: 0;
-}
-.panel-cat > .panel-body .btn-primary .badge {
-    font-weight: 600;
-    background-color: rgba(255,255,255,0.8);
-    color: #428BCA;
-    padding: 0.3em 0.9em 0.4em;
-    margin-left: 3px;
+.site-ob .block_necro .list-group-item,
+.site-ob .block_congrats .list-group-item {
+    text-align: center !important;
 }
 
-a.paid {
-    background-color: #FFF385;
-}
-a.paid:hover,
-a.paid:focus {
-    background-color: #f9ec71;
-}
-
-.col-mid .list-group > .paid {
-    padding-right: 10px;
-    margin-bottom: 7px;
-    margin-top: 0;
-}
-.col-mid .list-group > .sponsor {
-    margin-bottom: 10px;
-}
-/*.panel-cat .btn:first-child {margin-left: 12px !important;}*/
+/* <editor-fold desc="Стили user-bar и панели «Мои объявления»"> */
 
 /*Панель «Мои объявления»*/
 .panel-my-ob {
     color: #4c657f;
 }
+
 .panel-my-ob .fa-eye-slash {
     margin-top: 3px;
 }
+
 .panel-my-ob .fa-edit {
     margin-left: 1px;
 }
+
 .panel-my-ob .fa-edit,
 .panel-my-ob .fa-times {
     color: #21272d;
 }
+
 .panel-my-ob .fa-edit:hover,
 .panel-my-ob .fa-edit:focus,
 .panel-my-ob .fa-times:hover,
 .panel-my-ob .fa-times:focus {
     color: #025695;
 }
+
 .panel-my-ob .panel-heading {
     background-color: #d9dddf;
 }
+
 .panel-my-ob .fa-picture-o {
     margin-left: 3px;
     color: #2c3e50;
 }
+
 .panel-my-ob a {
     color: #2c3e50;
 }
+
 .btn-group_my-ob .popover-content {
     width: 500px;
 }
 
+.btn .badge_my-ob {
+    top: 0 !important;
+}
 
+.btn-group_my-ob {
+    margin-top: 5px;
+}
+
+.btn-group_my-ob {
+    display: none;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Левая колонка"> */
 /*Калейдоскоп*/
 .kaleidoscope__item__img, .kaleidoscope__item__tooltip {
     background-color: #FFFFFF;
     padding: 3px;
 }
-.kaleidoscope__item{
+
+.kaleidoscope__item {
     position: relative;
     float: right;
     width: 33%;
 }
+
 .kaleidoscope__item__img {
     width: 100%;
     height: auto;
     border: 1px white solid;
     border-right-width: 0;
 }
+
 .kaleidoscope__item__tooltip {
     border: 1px gray solid;
     border-left-width: 0;
@@ -1244,6 +1684,7 @@ a.paid:focus {
     text-align: left;
     color: black;
 }
+
 .kaleidoscope__item__img:hover {
     border-color: gray;
 }
@@ -1252,219 +1693,36 @@ a.paid:focus {
     display: block;
 }
 
-.kaleidoscope__tooltip{
+.kaleidoscope__tooltip {
     font-size: 80%;
 }
+/* </editor-fold> */
 
-/*Панель объявления*/
-.panel-ob > .panel-footer {
-    background-color: #fcfcfc;
-}
-.panel-ob .price,
-.panel-ob .bargain {
-    text-align: center;
-    width: 95%;
-    padding: 2px 0;
-    margin: 0 -10px;
-}
-.panel-ob .bargain {
-    margin-bottom: 10px;
-    color: #fff;
-    background-color: #bbbfc2;
-}
-.panel-ob .price {
-    background-color: #ECF0F1;
-}
-.panel-ob .price .fa-rub {
-    font-size: 90%;
-    margin-left: 2px;
-    color: #777;
-}
-.panel-ob > .panel-body img {
-    width: 100%;
-    margin-top: 10px;
-}
-.is_owner .panel-ob img{
-    width: 40px;
-    height: auto;
-}
-
-/*Панели навигации «Следующее объявление» и «Предыдущее объявление»*/
-.panel-ob-nav {
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-.panel-ob-nav > .panel-body {
-    padding: 0;
-    background-color: #fff;
-}
-.panel-ob-nav > .panel-body > div {
-    padding: 0;
-    background-color: #fdfdfd;
-}
-.panel-ob-nav > .panel-body > div:first-child {
-    /*margin-right: 5px;*/
-}
-.panel-ob-nav a {
-    color: #e1e1e1;
-    background-color: #fff;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 5px 10px;
-}
-.panel-ob-nav a:hover,
-.panel-ob-nav a:focus {
-    text-decoration: none;
-    color: #adadad;
-    background-color: #F9FAFB;
-}
-.panel-ob-nav a:hover .fa,
-.panel-ob-nav a:focus .fa {
-    color: #adadad;
-}
-.panel-ob-nav .fa {
-    padding-right: 7px;
-}
-
-/*Панель навигации по категориям*/
-.cat-panel{
-    white-space: nowrap;
-}
-.quick-nav {
-    background-color: #428bca;
-}
-.quick-nav .dropdown-header {
-    text-transform: uppercase;
-    color: #0275D3;
-    font-size: 1.1em;
-}
-.quick-nav ul li { position: relative; }
-.quick-nav ul li a { padding-right: 60px; }
-.quick-nav ul li .badge { position: absolute; right: 15px; }
-
-.quick-nav li > a {
-    width: 100%;
-}
-.quick-nav li > a:hover,
-.quick-nav li > a:focus,
-.panel-payment .dropdown-menu > li .btn:hover,
-.panel-payment .dropdown-menu > li .btn:focus{
-    background-color: #f5f6f7;
-    color: #333333;
-}
-.panel > .quick-nav .btn-link {
-    font-size: 20px;
-    margin-top: -3px;
-    font-weight: 600;
-}
-.panel > .quick-nav .btn-link:hover,
-.panel > .quick-nav .btn-link:focus {
-    text-decoration: none;
-    color: #b0d7f4;
-}
-.panel > .quick-nav .btn-group {
-    margin: 0;
-}
-.quick-nav .btn-link {
-    color: #fff;
-}
-.quick-nav .btn > .badge {
-    margin-top: 6px;
-}
-.quick-nav .active .badge,
-.quick-nav .btn > .badge{
-    background-color: #FFFFFF;
-    color: #428BCA;
-}
-.quick-nav .btn > .badge {
-    font-size: 14px;
-    padding: 4px 10px;
-    border-radius: 6px;
-    margin-left: 3px;
-}
-.quick-nav .fa-plus-circle {
-    margin-right: -6px;
-}
-
-
-
-/*Стили для объявлений*/
-.payment-panel_block-header{
-    font-size: 18px;
-    margin:35px 20px 20px;
-    text-align: center;
-    text-decoration: underline;
-    color: #6d6e71;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.is_owner .payment-panel_block-header{
-    cursor: default;
-}
-.payment-panel_block{
-    display: block;
-}
-.is_owner .payment-panel_block{
-    display: block;
-}
-.payment-panel__header {
-    font-size: 12px;
-    width: 46%;
-}
-.payment-panel_header-tvoy,
-.payment-panel_header-posrednik{
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
-}
-.payment-panel_header-tvoy{
-    color: #0080C8;
-}
-.payment-panel_header-posrednik{
-    color: #43B65C;
-}
-.payment-panel_before-paid{
-    text-align: center;
-    border: 1px dotted grey;
-}
-.payment-panel__coupon{
-    margin-top: 3px;
-    padding: 16px 0 20px;
-    text-align: center;
-    clear: both;
-}
-.payment-panel__buttons .btn-group{
-    float: right;
-}
-
-/*Этот стиль убирает стрелки прокуртки в числовых полях*/
-/*noinspection ALL*/
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
+/* <editor-fold desc="Реклама"> */
 /* Стили для трёх квадратов рекламы в средней колонке */
 /*.row-center-yummies{ margin-top: 10px;}*/
-.row-center-yummies > div:empty { display: none; }
+.row-center-yummies > div:empty {
+    display: none;
+}
+
 .row-center-yummies img {
     display: block;
     height: auto;
     max-width: 100%;
 }
+
 .row-center-yummies .col-xs-4 {
     padding-right: 0;
 }
+
 .row-center-yummies .col-xs-4:last-child {
     padding-right: 10px;
 }
 
 /*Стили для баннеров спонсоров*/
-
-.cat__banner-block {width: auto;}
+.cat__banner-block {
+    width: auto;
+}
 
 .cat__banner-block img {
     height: auto;
@@ -1472,6 +1730,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-bottom: 1px solid #F6F7F8;
     background-color: #fcfcfc;
 }
+
 .cat__banner-block:hover img,
 .cat__banner-block:focus img {
     border-left: 1px solid #56C4F4;
@@ -1480,34 +1739,94 @@ input[type=number]::-webkit-outer-spin-button {
     filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
-
-/*Неотсортированные*/
-.ob-meta {
-    margin-top: 5px;
-    color: #57346b;
-}
-.ob-meta .fa-clock-o {
-    margin-left: 7px;
-}
-.name_cat{
-    padding-left: 20px;
-}
-.name_cat:hover{
-    text-decoration: none;
-}
-.standard{clear: both;}
-.standard img {width: 100%;height: auto;}
-
-.help-block{
-    text-align: center;
+.cat__banner-block .yummies {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.add-ob__line__photo__container {
+/*Баннер-стандарт*/
+.standard {
+    clear: both;
+}
+
+.standard img {
     width: 100%;
-    overflow: hidden;
+    height: auto;
 }
 
-.subcat__title_396 , .subcat__title_397{
+/* </editor-fold> */
+
+/* <editor-fold desc="Страница категорий объявлений"> */
+/*Панель категории*/
+.panel-cat {
+    margin: 5px 0 25px;
+    background-color: #fafbfc;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.panel-cat:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.panel-cat .panel-heading {
+    padding: 10px 0 0;
+    margin: 0;
+    background-color: #F7F8F9;
+}
+
+.panel-cat > .panel-heading > .row > div > h3 {
+    margin: 0;
+    color: #0A79DB;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 10px 5px 20px 20px ;
+}
+
+.panel-cat > .panel-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.panel-cat .yummies {
+    padding-left: 5px;
+}
+
+.panel-cat .list-group {
+    padding: 0;
+    margin: 0;
+}
+
+.panel-cat > .panel-body a.list-group-item {
+    background-color: #fcfcfc;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #f6f7f8;
+    margin-bottom: 1px;
+}
+
+.panel-cat > .panel-body a.list-group-item:hover,
+.panel-cat > .panel-body a.list-group-item:focus {
+    background-color: #f0f1f2;
+    color: #404145;
+    border-left: 1px solid #56c4f4;
+}
+
+.panel-cat .btn {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.panel-cat > .panel-body .btn-primary .badge {
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.8);
+    color: #428BCA;
+    padding: 0.3em 0.9em 0.4em;
+    margin-left: 3px;
+}
+
+/*Кнопки потеряно найдено*/
+.subcat__title_396 , .subcat__title_397 {
     background-color: #0080C8;
     color: #FFFFFF !important;
     display: block;
@@ -1520,966 +1839,188 @@ input[type=number]::-webkit-outer-spin-button {
     width: 9em;
 }
 
-.subcat__title_396:hover , .subcat__title_397:hover{
+.subcat__title_396:hover , .subcat__title_397:hover {
     color: #ffffff;
 }
+/* </editor-fold> */
+
+/* <editor-fold desc="Страница списка объявлений"> */
+.ob-list img {
+    margin: 0;
+}
+
+.ob-list {
+    padding-bottom: 0;
+}
+
+a.paid {
+    background-color: #FFF385;
+}
+
+a.paid:hover,
+a.paid:focus {
+    background-color: #f9ec71;
+}
+
+.ob-meta {
+    margin-top: 5px;
+    color: #57346b;
+}
+
+.ob-meta .fa-clock-o {
+    margin-left: 7px;
+}
+
+.col-mid .list-group > .paid {
+    padding-right: 10px;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Страница объявления"> */
+/* <editor-fold desc="Панель объявления"> */
+.panel-ob > .panel-footer {
+    background-color: #fcfcfc;
+}
+
+.panel-ob .price,
+.panel-ob .bargain {
+    text-align: center;
+    width: 95%;
+    padding: 2px 0;
+    margin: 0 -10px;
+}
+
+.panel-ob .bargain {
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #bbbfc2;
+}
+
+.panel-ob .price {
+    background-color: #ECF0F1;
+}
+
+.panel-ob .price .fa-rub {
+    font-size: 90%;
+    margin-left: 2px;
+    color: #777;
+}
+
+.panel-ob > .panel-body img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.is_owner .panel-ob img {
+    width: 40px;
+    height: auto;
+}
+
+.photo_block {
+    clear: both;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Панели навигации «Следующее объявление» и «Предыдущее объявление»"> */
+.panel-ob-nav {
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.panel-ob-nav > .panel-body {
+    padding: 0;
+    background-color: #fff;
+}
+
+.panel-ob-nav > .panel-body > div {
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+.panel-ob-nav a {
+    color: #e1e1e1;
+    background-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 10px;
+}
+
+.panel-ob-nav a:hover,
+.panel-ob-nav a:focus {
+    text-decoration: none;
+    color: #adadad;
+    background-color: #F9FAFB;
+}
+
+.panel-ob-nav a:hover .fa,
+.panel-ob-nav a:focus .fa {
+    color: #adadad;
+}
+
+.panel-ob-nav .fa {
+    padding-right: 7px;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Оформление логотипа «Твой Посредник» текстом"> */
+.payment-panel_header-tvoy,
+.payment-panel_header-posrednik {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
+
+.payment-panel_header-tvoy {
+    color: #0080C8;
+}
+
+.payment-panel_header-posrednik {
+    color: #43B65C;
+}
+/* </editor-fold> */
 
 #addabuse {
     text-align: left;
 }
+
 .abuse_link:hover,
-.abuse_link{
+.abuse_link {
     text-decoration: none;
     color: #333333;
 }
 
-.ob-list img {
-    margin: 0;
-}
-.ob-list {
-    padding-bottom: 0;
-}
-.btn .badge_my-ob {
-    top: 0 !important;
-}
-
-/* </editor-fold> */
-
-/* <editor-fold desc="Стили каталога"> */
-ul.page-cat {
-    padding: 0;
-}
-ul.page-cat > li.cat-item {
-    padding: 20px 0 0;
-    background-color: #F7F8F9;
-    margin-bottom: 25px;
-}
-ul.page-cat > li.cat-item:hover {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-}
-
-ul.page-cat > li.cat-item > a {
-    color: #0A79DB;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: 0.04em;
-    padding: 0 20px 20px;
-}
-ul.page-cat ul.children > li.cat-item {
-    border-left: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #F6F7F8;
-    margin-bottom: 1px;
-    background-color: #FCFCFC;
-    padding: 0;
-}
-ul.page-cat ul.children > li.cat-item > a {
-    padding: 10px 5px 10px 15px;
-    min-width: 100%;
-    display: inline-block;
-}
-ul.page-cat ul.children > li.cat-item > a:focus,
-ul.page-cat ul.children > li.cat-item > a:hover,
-ul.page-cat ul.children > li.cat-item > a {
-    color: #4D4D60;
-}
-ul.page-cat ul.children > li.cat-item:hover,
-ul.page-cat ul.children > li.cat-item:focus {
-    background-color: #F0F1F2;
-    border-left: 1px solid #56C4F4;
-}
-
-.company-page h2 {
-    color: #345993;
-    font-size: 25px;
-    font-weight: 600;
-    padding-top: 25px;
-}
-.company-page strong {
-    font-weight: 600;
-    line-height: 21px;
-}
-
-.company-page .fa-home,
-.entry-meta_address .fa-home {
-    color: #8d73ac;
-}
-.entry-meta_email {
-    background-color: transparent !important;
-    padding: 6px 12px !important;
-    margin: 0 -13px;
-    color: #666666;
-}
-.entry-meta_email:focus,
-.entry-meta_email:hover {
-    color: #006048;
-}
-
-.company-page .fa-phone,
-.content-brief_phone .fa-phone{
-    color: #76d682 !important;
-}
-
-.company-page .schedule {
-    color: #ad2100;
-    display: inline;
-}
-
-.fotorama__stage {
-    background-color: #333 !important;
-}
-/* </editor-fold> */
-
-/* <editor-fold desc="стили Афиши"> */
-.panel-movie > .panel-heading {
-    color: #ffffff;
-    background-color: #FF6F4D;
-}
-.panel-movie .btn-group {
-    margin-top: 15px;
-}
-.panel-today > .panel-heading{
-    background-color: #ff6372;
-}
-.panel-soon > .panel-heading{
-    background-color: #1fa6f2;
-}
-/* </editor-fold> */
-
-/* <editor-fold desc="Оформление значков Font Awesome"> */
-.fa-arrow-down {
-    padding-right: 7px;
-}
-.link-neutral > .fa-angle-right {
-    color: #bcbec0;
-}
-.prev-article .media-heading > .fa-2x,
-.next-article .media-heading > .fa-2x {
-    padding-top: 1px;
-}
-.prev-article .media-heading > .fa-3x,
-.next-article .media-heading > .fa-3x {
-    padding: 12px 10px;
-}
-.col-mid .btn-group .fa-play {
-    color: #bbb;
-    font-size: 0.9em;
-}
-.fa-arrow-up,
-.fa-arrow-down {
-    color: #d1d3d4;
-}
-.fa-arrow-up:hover,
-.fa-arrow-up:focus {
-    color: #8cbf94;
-}
-.fa-arrow-down:hover,
-.fa-arrow-down:focus{
-    color: #f4a39f;
-}
-.fa-pencil,
-.fa-eye-slash {
-    color: #98a3a3;
-}
-.fa-exclamation-triangle:hover,
-.fa-exclamation-triangle:focus{
-    color: #ff6f36;
-}
-.fa-link,
-.fa-exclamation-triangle {
-    color: #cacece;
-    padding-left: 7px;
-}
-.fa-link:hover,
-.fa-link:focus{
-    color: #1996f4;
-}
-.fa-eye-slash:hover,
-.fa-eye-slash:focus{
-    color: #334daa;
-}
-.fa-pencil:hover,
-.fa-pencil:focus{
-    color: #1f8689;
-}
-/* </editor-fold> */
-
-
-
-/* <editor-fold desc="Оформление панелей в оформление не используются, кроме panel-positive"> */
-
-
-.panel-more {
-    background-color: #f6f6f6;
-}
-
-.panel-read-more > .panel-heading {
-    background-color: #efefef;
-}
-.panel-read-more > .panel-body {
-    padding: 0 15px;
-}
-.panel-read-more > .panel-heading h2 {
-    font-size: 21px;
-    color: #777d82;
-    padding: 7px 12px 9px;
-}
-.panel-read-more > .panel-body > .row > div {
-    padding: 0;
-}
-.panel-read-more > .panel-body .media {
-    background-color: #f9fafb;
-    margin: 2px;
-}
-.panel-read-more > .panel-body .media:hover,
-.panel-read-more > .panel-body .media:focus {
-    background-color: #f2f5f5;
-}
-.panel-read-more > .panel-body .media > h5.media-heading {
-    color: #0080c7;
-    margin: 7px 0 0;
-}
-.panel-read-more > .panel-body .media > .post-info {
-    margin: 0;
-}
-.panel-read-more > .panel-body .media p {
-    color: #2b2b38;
-    font-size: 12px;
-    padding-right: 5px;
-}
-.panel-read-more > .panel-body .media > a >.media-object {
-    padding: 7px;
-    margin: 0;
-}
-.panel-respond > .panel-body {
-    background-color: #fff;
-    padding: 10px 0;
-}
-.panel-respond > .panel-footer {
-    padding: 0 0 25px 5px;
-    background-color: #fff;
-}
-.panel-respond > .panel-body > .form-inline {
-    margin-bottom: 10px;
-}
-.panel-respond > .panel-body > .form-inline > .checkbox {
-    padding-left: 15px;
-}
-.panel-respond > .panel-footer > .form-inline > .form-group {
-    padding-top: 5px;
-}
-.comments-list :hover > .panel {
-    background-color: #d9eefa;
-}
-
-.comments-list li .panel:hover .btn-reply {
-    /*background-color: rgba(255,255,255,1);*/
-    opacity: 1;
-}
-
-
-.panel-payment > .panel-body > .list-group .badge {
-    background-color: #428bca;
-    color: #fff;
-    border-radius: 0.5em;
-    font-weight: 400;
-    padding: 0.4em 0.8em 0.5em;
-    font-size: 1em;
-}
-.panel-payment .list-group-item {
-    background-color: transparent;
-    padding: 0;
-}
-.panel-payment > .panel-heading {
-    color: #6D6E71;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 25px;
-    text-align: center;
-    text-decoration: underline;
-    white-space: nowrap;
-}
-
-
-
-/* панель Список комментраиев*/
-.panel-deleted > .panel-heading {
-    background-color: #f2f5f5;
-    color: #737475;
-}
-.panel-neutral:hover,
-.panel-neutral:focus,
-.panel-positive:hover,
-.panel-positive:focus,
-.panel-negative:hover,
-.panel-negative:focus {
-    /*border-left: solid #d9eefa 2px;*/
-}
-.panel-neutral > .panel-body p,
-.panel-positive > .panel-body p,
-.panel-negative > .panel-body p {
-    color: #50575e;
-    padding: 2px 20px;
-    margin-bottom: 0;
-    font-size: 0.98em;
-}
-.panel-neutral,
-.panel-positive,
-.panel-negative {
-    border-left: solid transparent 2px;
-}
-
-.panel-neutral > .panel-body,
-.panel-positive > .panel-body,
-.panel-negative > .panel-body {
-    padding: 0;
-}
-.panel-neutral > .panel-body blockquote,
-.panel-positive > .panel-body blockquote,
-.panel-negative > .panel-body blockquote {
-    background-color: #FFF;
-    margin: 0 25px 5px 20px;
-    color: #717c7c;
-    border-left: 5px solid #dadee1;
-    font-size: 13px;
-}
-.panel-neutral > .panel-body,
-.panel-neutral > .panel-heading {
-    background-color: #f9fafb;
-}
-.panel-positive > .panel-body,
-.panel-positive > .panel-heading {
-    background-color: #f6fcf7;
-}
-.panel-negative > .panel-body,
-.panel-negative > .panel-heading {
-    background-color: #fff8f7;
-}
-.comments-list {
-    list-style: none outside none;
-}
-/* панель Стандарт */
-
-.panel-standard > .panel-heading {
-    color: #ffffff;
-    background-color: #FCFCFC;
-    border: none;
-    margin:  0;
-    padding: 5px 0;
-}
-
-
-.panel-positive, .panel-negative, .panel-neutral, .panel-deleted {
-    margin-bottom: 10px;
-}
-/* Никаких отступов у заголовков панелей */
-.panel-heading .lead,
-.panel-heading h6,
-.panel-heading h5,
-.panel-heading h4,
-.panel-heading h3,
-.panel-heading h2,
-.panel-heading h1 { margin: 0 1em 0 0; }
-/* ...и у Navbar'ов в панели */
-.panel-heading .navbar { margin: -10px -15px; }
-
-
-.media-panel {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-    background-color: #ffffff;
-    border: none;
-}
-
-
-
-.panel-payment > .panel-body {
-    /*padding: 10px;*/
-}
-.panel-payment .btn-group {
-    margin: 0;
-}
-.panel-payment > .panel-body > .list-group > .list-group-item {
-    margin-bottom: 15px;
-    padding: 0;
-}
-.panel-payment > .panel-body > .list-group > .list-group-item > .row {
-    margin: 0 -10px;
-}
-
-ul.comments-list {
-    padding-left: 5%;
-}
-div > ul.comments-list:first-child{
-    padding-left: 0;
-}
-
-
-
-/* </editor-fold> */
-
-
-/* <editor-fold desc="Стили не найдены на использованных страницах"> */
-.nick {
-    font-weight: 600;
-    color: #1f2a26;
-}
-.anonymous {
-    color: #34495e;
-}
-.comment-info {
-    margin-top: 25px;
-}
-.comment-rating {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 3px 7px;
-}
-
-.img-prime {
-    padding-bottom: 7px;
-}
-.author {
-    color: #4d5359;
-}
-strong.author {
-    font-weight: 600;
-    color: #2c3033;
-}
-.prev-article, .next-article {
-    padding: 0 10px;
-    background-color: #fbfbfb;
-    margin-top: 3px;
-}
-.prev-article .media-heading,
-.next-article .media-heading {
-    padding-bottom: 7px;
-}
-
-.prev-article p,
-.next-article p {
-    color: #2B2B38;
-}
-.prev-article:hover,
-.prev-article:focus,
-.next-article:focus,
-.next-article:hover {
-    background-color: #f5f6f7;
-}
-.prev-article a,
-.next-article a {
-    color: #308fe0;
-}
-
-.prev-article a:hover,
-.prev-article a:focus,
-.next-article a:focus,
-.next-article a:hover {
-    text-decoration: none;
-    color: #1e6db0;
-}
-
-.list-event {
-    padding-left: 0;
-    margin-bottom: 0;
-    font-weight: 300;
-    color: #0f0f0f;
-}
-.list-event-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: 2px;
-    background-color: #F5F7F7;
-    border: none;
-    text-decoration: none;
-}
-a.list-event-item{
-    color: #3d3d3d;
-}
-a.list-event-item:hover,
-a.list-event-item:focus {
-    color: #0f0f0f;
-    text-decoration: none;
-    background-color: #fcfcfc;
-    cursor: pointer;
-}
-
-/*список новостей*/
-.list-prime {
-    padding-left: 0;
-    margin-bottom: 5px;
-    font-weight: 300;
-    color: #47475F;
-    border: none;
-}
-.list-prime-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: 2px;
-    background-color: #EDEFEF;
-    border: none;
-}
-.list-prime-item.active,
-.list-prime-item.active:hover,
-.list-prime-item.active:focus {
-    z-index: 2;
-    color: #47475F;
-    background-color: #ffffff;
-    /*border-color: #428bca;*/
-}
-
-/* Голубенький Navbar */
-.navbar-blue {
-    background-color: transparent;
-    border: none;
-}
-.navbar-blue .navbar-brand {
-    color: #ffffff;
-}
-.navbar-blue .navbar-brand:hover,
-.navbar-blue .navbar-brand:focus {
-    color: #ffffff;
-    background-color: transparent;
-}
-.navbar-blue .navbar-text {
-    color: #ffffff;
-}
-.navbar-blue .navbar-nav > li > a {
-    color: #ffffff;
-}
-.navbar-blue .navbar-nav > li > a:hover,
-.navbar-blue .navbar-nav > li > a:focus {
-    color: #ffffff;
-    background-color: #3276B1;
-}
-.navbar-blue .navbar-nav > .active > a,
-.navbar-blue .navbar-nav > .active > a:hover,
-.navbar-blue .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: #3276B1;
-}
-.navbar-blue .navbar-nav > .disabled > a,
-.navbar-blue .navbar-nav > .disabled > a:hover,
-.navbar-blue .navbar-nav > .disabled > a:focus {
-    color: #444444;
-    background-color: transparent;
-}
-.navbar-blue .navbar-toggle {
-    border-color: #333333;
-}
-.navbar-blue .navbar-toggle:hover,
-.navbar-blue .navbar-toggle:focus {
-    background-color: #333333;
-}
-.navbar-blue .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-}
-.navbar-blue .navbar-collapse,
-.navbar-blue .navbar-form {
-    border-color: #101010;
-}
-.navbar-blue .navbar-nav > .open > a,
-.navbar-blue .navbar-nav > .open > a:hover,
-.navbar-blue .navbar-nav > .open > a:focus {
-    color: #ffffff;
-    background-color: #080808;
-}
-.navbar-blue .navbar-nav > .dropdown > a:hover .caret {
-    border: 1px;
-}
-.navbar-blue .navbar-nav > .dropdown > a .caret {
-    border: none;
-}
-.navbar-blue .navbar-nav > .open > a .caret,
-.navbar-blue .navbar-nav > .open > a:hover .caret,
-.navbar-blue .navbar-nav > .open > a:focus .caret {
-    border: none;
-}
-
-/*анонс фильма*/
-.movie-announce {
-    margin-top: 15px;
-    overflow: hidden;
-}
-.movie-announce__poster {
-    width: 80px;
-    height: 110px;
-}
-.movie-announce h4 {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 10px;
-}
-
-/* Показывать название при наведении */
-.movie-announce:hover h4 { width: auto; margin-right: -50px; }
-.movie-announce__age-restriction {
-    position: absolute;
-    top: 95px;
-    left: 0;
-    display: inline-block;
-    background-color: #9CA2A5;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-    margin: 0;
-    padding: 2px;
-}
-.movie-announce__age-restriction:after {
-    content: "+";
-}
-.movie-announce__genres {
-    display: inline-block;
-    font-size: 12px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 10px;
-}
-.movie-announce__genres a {
-    color: #988D8D;
-}
-.movie-announce__rating {
-    display: inline;
-}
-
-.movie-announce__price {
-    font-size: 12px;
-    font-weight: 300;
-}
-.movie-announce__session {
-    font-size: 12px;
-    font-weight: 300;
-    overflow: hidden;
-    max-width: 240px;
-}
-
-.news-more-item > .post-info {
-    margin: 3px 0 1px;
-    padding: 0;
-}
-.label-post {
-    padding-left: 5px;
-}
-.sub-panel {
-    padding: 7px 15px;
-    margin: 0;
-    color: #0f0f0f;
-    background-color: #D8EEED;
-}
-.comment-link:hover {
-    cursor: pointer;
-}
-
-.media-hover:hover {
-    z-index: 2;
-    background-color: #f5f5f5;
-}
-
-
-/* СТИЛИ ДЛЯ УДАЛЕНИЯ*/
-/* h3.cat-title {
-    color: #0275d3;
-    font-size: 1.7em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 20px 10px 30px 23px;
-    margin: 0;
-}
-.cat a.list-group-item {
-    background-color: #fcfcfc;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #f6f7f8;
-    margin-bottom: 1px;
-}
-.cat a.list-group-item:hover,
-.cat a.list-group-item:focus {
-    background-color: #f0f1f2;
-    color: #404145;
-    border-left: 1px solid #56c4f4;
-}
-.cat .btn {
-    padding: 10px 25px;
-    margin-right: 10px;
-}*/
-
-
-/* КОНЕЦ СТИЛЕЙ ДЛЯ УДАЛЕНИЯ*/
-
-a.sponsor{
-    /*margin: 0 10px;*/
-    background-color: #0275D3;
-    height: 60px;
-}
-a.sponsor:hover,
-a.sponsor:focus {
-    background-color: #0284e4;
-    /*background-color: rgba(255,255,255,0.1);*/
-    /*border-left: 1px solid transparent;*/
-}
-.cat a {
-    font-size: 1.1em;
-    color: #525459;
-}
-.contacts {
-    /*font-size: 0.9em;*/
-    font-size: 0.9em;
-    font-weight: 400;
-    padding-top: 5px;
-    color: #416484;
-}
-.contacts > span{
-    white-space:nowrap;
-}
-strong.ob {
-    font-weight: 600;
-    color: #da4200;
-    /*color: #6e3941;*/
-    /*color: #773f67;*/
-}
-
-.left_column .yummies,
-.right_column .yummies{
-    width: 100%;
-    height: auto;
-    margin-bottom: 1%;
-}
-
-/* Компактно выводим рекламу плиткой */
-.row-small-margins > div { padding: 1%; }
-.row-small-margins > div:empty { display: none; }
-
-.banner-top object{
-    width: 100% !important;
-}
-
-.subcat-header {
-    background-color: #DEE5EA;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-}
-.subcat-header__line-icon {
-    background-color: #0080C8;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    font-size: 15px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 120px;
-}
-.subcat-header__line-icon a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.subcat-header__line-icon_arrow {
-    border-bottom: 20px solid #DEE5EA;
-    border-left: 10px solid #0080c8;
-    border-top: 20px solid #DEE5EA;
-    display: inline-block;
-}
-.subcat-header__select-icon{
-    float: right;
-    height: 40px;
-    overflow: hidden;
-    width: 20px;
-    text-align: center;
-    color: #0080c8;
-}
-.subcat-header__select-icon select{
-    background: none ;
-    border: 0 none;
-    font-size: 16px;
-    height: 40px;
-    padding-right: 54px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    top: -40px;
-    opacity: 0;
-}
-.cat-subcat-line__subcat{
-    color: #757D85;
-    display: inline-block;
-    font-size: 120%;
-    padding-left: 16px;
-    text-align: left;
-    text-decoration: none;
-    vertical-align: middle;
-    width: 60%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.cat-subcat-line__subcat:hover{color: #009;
-    text-decoration: none;}
-
-
-.message-one_phone{
+.payment-panel__buttons .btn-group {
     float: right;
 }
-.message-one_block-label_bargain,
-.message-one_block-label_price{
-    width: 95%;
-    padding: 4px 0;
+
+.help-block {
     text-align: center;
 }
-.message-one_block-label_bargain{
-    color: #ffffff;
-    background-color: #bdc3c7;
-    font-size: 13px;
+/* </editor-fold> */
+
+/* <editor-fold desc="Форма добаления объявления"> */
+/*Этот стиль убирает стрелки прокуртки в числовых полях*/
+/*noinspection ALL*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-.message-one_block-label_price{
-    background-color: #ecf0f1;
-    font-size: 14px;
+
+.add-ob__form h3 {
+    font-weight: 600;
+    padding-left: 14px;
+    color: #0a79db;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
-.message-one__edit-button{
-    background-color: #20324D;
-    border: 0 none;
-    color: #FFFFFF;
-    padding: 5px 11px;
+
+.add-ob__info-law,
+.add-ob__info-license {
     display: none;
-    float: right;
-    margin-left: 2px;
-    font-size: 12px;
-}
-.message-one__edit-button {display: none !important;}
-.message-one_impressions{
-    margin-top: 10px;
-}
-
-.journal__header{
-    font-size: 15px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.block_paid,
-.block_congrats,
-.block_necro {
-    /* border: solid 1px #bcbcbc;*/
-    /* background-color: #F0F0F0;*/
-    margin: 5px 0;
-    width: 100%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-.block_paid__element img{
-    padding: 0;
-}
-.block_paid__contacts{
-    display: inline-block;
-    text-align: right;
-    font-size: 11px;
-}
-.block_paid__element{
-    border: solid 1px #bcbcbc;
-    background-color: #F0F0F0;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-.subcat__title:hover{
-    text-decoration: none;
-}
-
-.quick-nav__btn{
-    background-color: #0080C8;
-    color: #ffffff;
-}
-
-.block_paid__type{
-    font-weight: bold;
-    color: #825135;
-}
-.subcat-sort{
-    margin: 6px 0;
-}
-
-.add-ob__yours-ob__link{
-    cursor: pointer;
-}
-
-.block_necro img,
-.block_congrats img{
-    width: 100%;
-    padding: 10px;
-    height: auto;
-}
-.block_necro__all_ob_link{
-    display: block;
-}
-
-.message-one_complain:hover,
-.message-one_complain{
-    text-decoration: none;
-    color: #333333;
-}
-.add-ob__yours-ob__text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    float: left;
-    margin-left: 4px;
-    white-space: nowrap;
-    max-width: 100%;
-}
-.add-ob__yours-ob__box{
-    width: 66px;
-}
-
-/* </editor-fold> */
-
-
-
-/*Из ob.ksk66.ru/style.css */
-
-
-
-
-/* Кнопка «Редактировать» */
-.is_owner .message-one__edit-button_edit-owner {display: block !important;}
-.is_admin .message-one__edit-button_edit-admin {display: block !important;}
-.is_admin.is_owner .message-one__edit-button_edit-owner {display: none !important;}
-/* Кнопка «Удалить объявление» */
-.is_owner .message-one__edit-button_remove-owner,
-.is_admin .message-one__edit-button_remove-admin {display: block !important;}
-.is_admin.is_owner .message-one__edit-button_remove-admin {display: none !important;}
-
-.show-owner,
-.show-admin {display: none !important;}
-.is_owner .show-owner,
-.is_admin .show-admin {display: inline-block !important;}
-.is_admin.is_owner .hide-owner {display: none !important;}
-
-
-
-.is_owner .message-one__photo-style {width: 60px;}
-.message-one__photo-style {width:100%}
-
-
-.display_none{
-    display: none;
-}
-.display_block{
-    display: block;
-}
-
-
-
-.add-ob__yours-ob__image-hide {
-    opacity: 0;
 }
 
 .add-ob__type-prefix {
@@ -2491,6 +2032,64 @@ strong.ob {
     border: 0 solid transparent;
 }
 
+.add-ob__line__photo__container {
+    width: 100%;
+    overflow: hidden;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="FAQ"> */
+.news_full {
+    padding: 0;
+}
+
+.news_full h2 {
+    color: #0b6dc3;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.news_full h3 {
+    color: #0676d9;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Непонятно что делающие стили объявлений"> */
+.payment-panel_block-header {
+    font-size: 18px;
+    margin:35px 20px 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #6d6e71;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.is_owner .payment-panel_block-header {
+    cursor: default;
+}
+
+.payment-panel_block {
+    display: block;
+}
+
+.is_owner .payment-panel_block {
+    display: block;
+}
+
+.show-owner,
+.show-admin {
+    display: none !important;
+}
+
+.is_owner .show-owner,
+.is_admin .show-admin {
+    display: inline-block !important;
+}
+
+.is_admin.is_owner .hide-owner {
+    display: none !important;
+}
 
 .preview div > div {
     background-color: #FFFFFF;
@@ -2519,173 +2118,193 @@ strong.ob {
     line-height: 40px;
     color: red;
 }
+/* </editor-fold> */
+/* </editor-fold> */
 
-.b-share{
-    font-size: 100% !important;
-    line-height: 1.1em !important;
+/*------------------------------------------------------------------------------------------*/
+
+/* <editor-fold desc="Каталог"> */
+/* <editor-fold desc="Страница списка категорий каталога"> */
+ul.page-cat {
+    padding: 0;
 }
 
-/*для файла header_2013.html*/
-.karta a[title='Карта Красноуфимска и других городов'],
-.timetable a[title='Расписание автобусов и ж/д'],
-.cat a[title='Каталог предприятий, телефонов и адресов'],
-.photo a[title='Фото.Новости'],
-.video a[title='Видео.Новости'],
-.news a[title='Свежие городские новости'],
-.ob a[title='Бесплатные объявления на сайте и в газете']{
-    background-color: #ffffff;
-    color: #0080C8;
+ul.page-cat > li.cat-item {
+    padding: 20px 0 0;
+    background-color: #F7F8F9;
+    margin-bottom: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.photo_block{
-    clear: both;
+ul.page-cat > li.cat-item:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
-.ob .footer_registration,
-.ob .footer_opinion{
+ul.page-cat > li.cat-item > a {
+    color: #0A79DB;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    padding: 0 20px 20px;
+}
+
+ul.page-cat ul.children > li.cat-item {
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #F6F7F8;
+    margin-bottom: 1px;
+    background-color: #FCFCFC;
+    padding: 0;
+}
+
+ul.page-cat ul.children > li.cat-item > a {
+    padding: 10px 5px 10px 15px;
+    min-width: 100%;
+    display: inline-block;
+}
+
+ul.page-cat ul.children > li.cat-item > a:focus,
+ul.page-cat ul.children > li.cat-item > a:hover,
+ul.page-cat ul.children > li.cat-item > a {
+    color: #4D4D60;
+}
+
+ul.page-cat ul.children > li.cat-item:hover,
+ul.page-cat ul.children > li.cat-item:focus {
+    background-color: #F0F1F2;
+    border-left: 1px solid #56C4F4;
+}
+
+ul.page-cat > li.cat-item > .badge {
     display: none;
 }
+/* </editor-fold> */
 
-
-.not-really-panel {
-    background-color: transparent;
-}
-a.news-slide-block {
-    color: #0f0f0f;
-    text-decoration: none;
-}
-.news-slide-block h4 {
+.company-page h2 {
+    color: #345993;
+    font-size: 25px;
     font-weight: 600;
-    margin-bottom: 5px;
-}
-.news-slide-block:first-child h4 {
-    margin-bottom: 0 !important;
-}
-.news-slide-block:first-child a.list-group-item:hover,
-.news-slide-block:first-child a.list-group-item:focus {
-    background-color: #f9fafb;
+    padding-top: 25px;
 }
 
-.news-slide .list-group-item {
-    padding: 10px;
+.company-page strong {
+    font-weight: 600;
+    line-height: 21px;
 }
-.media-main-primary {
-    padding-right: 5px;
+
+.company-page .fa-home,
+.entry-meta_address .fa-home {
+    color: #8d73ac;
 }
-.main-content-inner {
-    padding: 0;
+
+.entry-meta_email {
+    background-color: transparent !important;
+    padding: 6px 12px !important;
+    margin: 0 -13px;
+    color: #666666;
 }
-.news-slide-block:first-child .btn-action {
-    margin: 0 !important;
+
+.entry-meta_email:focus,
+.entry-meta_email:hover {
+    color: #006048;
 }
-.news-slide-block {
-    padding: 0;
+
+.company-page .fa-phone,
+.content-brief_phone .fa-phone{
+    color: #76d682 !important;
 }
+
+.company-page .schedule {
+    color: #ad2100;
+    display: inline;
+}
+
+.fotorama__stage {
+    background-color: #333 !important;
+}
+
 label.control-label {
     font-weight: 600 !important;
 }
-.input-group-addon label {
-    font-weight: 600;
-}
-.add-ob__form h3 {
-    font-weight: 600;
-    padding-left: 14px;
-    color: #0a79db;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
 
-
-.header-line__logo__weather-block__temp {
-    bottom: 2px;
-    left: 11px;
-    opacity: 1;
-}
-.header-line__logo img{
-    width:96%;
-}
-.news_full {
-    padding: 0;
-}
-.news_full h2 {
-    color: #0b6dc3;
-    font-size: 28px;
-    font-weight: 600;
-}
-.news_full h3 {
-    color: #0676d9;
-}
-
-
-.add-ob__info-law,
-.add-ob__info-license{
-    display: none;
-}
-
-.btn-group_my-ob{margin-top: 5px;}
-.btn-group_my-ob{
-    display: none;
-}
-.cat__banner-block .yummies {
-    margin: 0 !important;
-    padding: 0 !important;
-}
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus {
     color: #ff9c00;
 }
-ul.page-cat > li.cat-item > .badge {
-    display: none;
-}
-/*a.content-brief*/
+/* </editor-fold> */
 
+/*------------------------------------------------------------------------------------------*/
 
-/* <editor-fold desc="Стили страницы копицентра"> */
-.typography table {
+/* <editor-fold desc="Копицентр"> */
+.site-copy table {
     text-align: center;
 }
-.table td:first-child {
+
+.site-copy .table td:first-child {
     color: #222266;
     text-align: left;
 }
-.typography h5 {
+
+.site-copy h5 {
     margin-bottom: 15px;
 }
-.typography small {
+
+.site-copy small {
     font-size: 80%;
 }
-.typography .table th:first-child {
+
+.site-copy .table th:first-child {
     text-align: left;
 }
-.typography .table th {
+
+.site-copy .table th {
     text-align: center;
 }
-.typography .table-striped > tbody > tr:nth-child(odd) > td {
+
+.site-copy .table-striped > tbody > tr:nth-child(odd) > td {
     background-color: #f8f8f8;
 }
-.typography .table-striped > tbody > tr:nth-child(even) > td {
+
+.site-copy .table-striped > tbody > tr:nth-child(even) > td {
     background-color: #f3f3f3;
 }
-.typography .table {
+
+.site-copy .table {
     margin-bottom: 40px;
 }
-.typography .col-md-2 {
+
+.site-copy .col-md-2 {
     padding-left: 0 !important;
 }
 
-.typography .table-hover > tbody > tr:hover > td,
-.typography .table-hover > tbody > tr:hover > th {
+.site-copy .table-hover > tbody > tr:hover > td,
+.site-copy .table-hover > tbody > tr:hover > th {
     background-color: #e3eef8 !important;
+}
+
+
+/* Поддержка скрытия столбцов */
+.site-copy .table-print tr > *:first-child,
+.site-copy .table-copy  tr > *:first-child {
+    max-width: none;
+}
+
+.site-copy .table-print tr > *,
+.site-copy .table-copy  tr > * {
+    transition: max-width 2s, color 3s, padding 2s;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(5),
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(6),
+.site-copy .table-print.hide-extra-cols tr > *:nth-child(7),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(5),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(6),
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
 }
 
 /* Бэджи формата бумаги для типографии */
@@ -2699,122 +2318,1140 @@ ul.page-cat > li.cat-item > .badge {
     padding: 2px 4px;
     font-size: 12px;
 }
+
 .paper-format-a3 {
     font-size: 13px;
     padding: 3px 6px;
 }
+
 .paper-format-a5 {
     font-size: 11px;
     padding: 2px 4px;
 }
+
 .paper-format-a6 {
     font-size: 11px;
     padding: 1px 2px;
 }
-/* </editor-fold> */
 
 
 .header-table {
     margin-bottom: 7px !important;
     margin-left: 7px;
 }
-.table .overline-me  { border-top:    1px solid #ddd; }
-.table .underline-me { border-bottom: 1px solid #ddd; }
+/* </editor-fold> */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* <editor-fold desc="стили Афиши"> */
+
+.panel-movie > .panel-heading {
+    color: #ffffff;
+    background-color: #FF6F4D;
+}
+
+.panel-movie .btn-group {
+    margin-top: 15px;
+}
+
+.panel-today > .panel-heading {
+    background-color: #ff6372;
+}
+
+.panel-soon > .panel-heading {
+    background-color: #1fa6f2;
+}
+
+/* </editor-fold> */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* <editor-fold desc="Оформление значков Font Awesome"> */
+.fa-arrow-down {
+    padding-right: 7px;
+}
+
+.link-neutral > .fa-angle-right {
+    color: #bcbec0;
+}
+
+.prev-article .media-heading > .fa-2x,
+.next-article .media-heading > .fa-2x {
+    padding-top: 1px;
+}
+
+.prev-article .media-heading > .fa-3x,
+.next-article .media-heading > .fa-3x {
+    padding: 12px 10px;
+}
+
+.col-mid .btn-group .fa-play {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.fa-arrow-up,
+.fa-arrow-down {
+    color: #d1d3d4;
+}
+
+.fa-arrow-up:hover,
+.fa-arrow-up:focus {
+    color: #8cbf94;
+}
+
+.fa-arrow-down:hover,
+.fa-arrow-down:focus {
+    color: #f4a39f;
+}
+
+.fa-pencil,
+.fa-eye-slash {
+    color: #98a3a3;
+}
+
+.fa-exclamation-triangle:hover,
+.fa-exclamation-triangle:focus {
+    color: #ff6f36;
+}
+
+.fa-link,
+.fa-exclamation-triangle {
+    color: #cacece;
+    padding-left: 7px;
+}
+
+.fa-link:hover,
+.fa-link:focus {
+    color: #1996f4;
+}
+
+.fa-eye-slash:hover,
+.fa-eye-slash:focus {
+    color: #334daa;
+}
+
+.fa-pencil:hover,
+.fa-pencil:focus {
+    color: #1f8689;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Оформление панелей в оформление не используются, кроме panel-positive"> */
+.panel-more {
+    background-color: #f6f6f6;
+}
+
+.panel-read-more > .panel-heading {
+    background-color: #efefef;
+}
+
+.panel-read-more > .panel-body {
+    padding: 0 15px;
+}
+
+.panel-read-more > .panel-heading h2 {
+    font-size: 21px;
+    color: #777d82;
+    padding: 7px 12px 9px;
+}
+
+.panel-read-more > .panel-body > .row > div {
+    padding: 0;
+}
+
+.panel-read-more > .panel-body .media {
+    background-color: #f9fafb;
+    margin: 2px;
+}
+
+.panel-read-more > .panel-body .media:hover,
+.panel-read-more > .panel-body .media:focus {
+    background-color: #f2f5f5;
+}
+
+.panel-read-more > .panel-body .media > h5.media-heading {
+    color: #0080c7;
+    margin: 7px 0 0;
+}
+
+.panel-read-more > .panel-body .media > .post-info {
+    margin: 0;
+}
+
+.panel-read-more > .panel-body .media p {
+    color: #2b2b38;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.panel-read-more > .panel-body .media > a >.media-object {
+    padding: 7px;
+    margin: 0;
+}
+
+.panel-respond > .panel-body {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.panel-respond > .panel-footer {
+    padding: 0 0 25px 5px;
+    background-color: #fff;
+}
+
+.panel-respond > .panel-body > .form-inline {
+    margin-bottom: 10px;
+}
+
+.panel-respond > .panel-body > .form-inline > .checkbox {
+    padding-left: 15px;
+}
+
+.panel-respond > .panel-footer > .form-inline > .form-group {
+    padding-top: 5px;
+}
+
+.comments-list :hover > .panel {
+    background-color: #d9eefa;
+}
+
+.comments-list li .panel:hover .btn-reply {
+    opacity: 1;
+}
+
+
+.panel-payment > .panel-body > .list-group .badge {
+    background-color: #428bca;
+    color: #fff;
+    border-radius: 0.5em;
+    font-weight: 400;
+    padding: 0.4em 0.8em 0.5em;
+    font-size: 1em;
+}
+
+.panel-payment .list-group-item {
+    background-color: transparent;
+    padding: 0;
+}
+
+.panel-payment > .panel-heading {
+    color: #6D6E71;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+
+
+/* панель Список комментраиев*/
+.panel-deleted > .panel-heading {
+    background-color: #f2f5f5;
+    color: #737475;
+}
+
+.panel-neutral:hover,
+.panel-neutral:focus,
+.panel-positive:hover,
+.panel-positive:focus,
+.panel-negative:hover,
+.panel-negative:focus {
+    /*border-left: solid #d9eefa 2px;*/
+}
+
+.panel-neutral > .panel-body p,
+.panel-positive > .panel-body p,
+.panel-negative > .panel-body p {
+    color: #50575e;
+    padding: 2px 20px;
+    margin-bottom: 0;
+    font-size: 0.98em;
+}
+
+.panel-neutral,
+.panel-positive,
+.panel-negative {
+    border-left: solid transparent 2px;
+}
+
+.panel-neutral > .panel-body,
+.panel-positive > .panel-body,
+.panel-negative > .panel-body {
+    padding: 0;
+}
+
+.panel-neutral > .panel-body blockquote,
+.panel-positive > .panel-body blockquote,
+.panel-negative > .panel-body blockquote {
+    background-color: #FFF;
+    margin: 0 25px 5px 20px;
+    color: #717c7c;
+    border-left: 5px solid #dadee1;
+    font-size: 13px;
+}
+
+.panel-neutral > .panel-body,
+.panel-neutral > .panel-heading {
+    background-color: #f9fafb;
+}
+
+.panel-positive > .panel-body,
+.panel-positive > .panel-heading {
+    background-color: #f6fcf7;
+}
+
+.panel-negative > .panel-body,
+.panel-negative > .panel-heading {
+    background-color: #fff8f7;
+}
+
+.comments-list {
+    list-style: none outside none;
+}
+
+/* панель Стандарт */
+
+.panel-standard > .panel-heading {
+    color: #ffffff;
+    background-color: #FCFCFC;
+    border: none;
+    margin:  0;
+    padding: 5px 0;
+}
+
+
+.panel-positive, .panel-negative, .panel-neutral, .panel-deleted {
+    margin-bottom: 10px;
+}
+
+/* Никаких отступов у заголовков панелей */
+.panel-heading .lead,
+.panel-heading h6,
+.panel-heading h5,
+.panel-heading h4,
+.panel-heading h3,
+.panel-heading h2,
+.panel-heading h1 {
+    margin: 0 1em 0 0;
+}
+
+/* ...и у Navbar'ов в панели */
+.panel-heading .navbar {
+    margin: -10px -15px;
+}
+
+
+.media-panel {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: none;
+}
+
+
+.panel-payment .btn-group {
+    margin: 0;
+}
+
+.panel-payment > .panel-body > .list-group > .list-group-item {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.panel-payment > .panel-body > .list-group > .list-group-item > .row {
+    margin: 0 -10px;
+}
+
+ul.comments-list {
+    padding-left: 5%;
+}
+
+div > ul.comments-list:first-child {
+    padding-left: 0;
+}
+
+
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Не найдены"> */
+.nick {
+    font-weight: 600;
+    color: #1f2a26;
+}
+
+.anonymous {
+    color: #34495e;
+}
+
+.comment-info {
+    margin-top: 25px;
+}
+
+.comment-rating {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 7px;
+}
+
+.img-prime {
+    padding-bottom: 7px;
+}
+
+.author {
+    color: #4d5359;
+}
+
+strong.author {
+    font-weight: 600;
+    color: #2c3033;
+}
+
+.prev-article, .next-article {
+    padding: 0 10px;
+    background-color: #fbfbfb;
+    margin-top: 3px;
+}
+
+.prev-article .media-heading,
+.next-article .media-heading {
+    padding-bottom: 7px;
+}
+
+.prev-article p,
+.next-article p {
+    color: #2B2B38;
+}
+
+.prev-article:hover,
+.prev-article:focus,
+.next-article:focus,
+.next-article:hover {
+    background-color: #f5f6f7;
+}
+
+.prev-article a,
+.next-article a {
+    color: #308fe0;
+}
+
+.prev-article a:hover,
+.prev-article a:focus,
+.next-article a:focus,
+.next-article a:hover {
+    text-decoration: none;
+    color: #1e6db0;
+}
+
+.list-event {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #0f0f0f;
+}
+
+.list-event-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 2px;
+    background-color: #F5F7F7;
+    border: none;
+    text-decoration: none;
+}
+
+a.list-event-item {
+    color: #3d3d3d;
+}
+
+a.list-event-item:hover,
+a.list-event-item:focus {
+    color: #0f0f0f;
+    text-decoration: none;
+    background-color: #fcfcfc;
+    cursor: pointer;
+}
+
+/*список новостей*/
+.list-prime {
+    padding-left: 0;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #47475F;
+    border: none;
+}
+
+.list-prime-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 2px;
+    background-color: #EDEFEF;
+    border: none;
+}
+
+.list-prime-item.active,
+.list-prime-item.active:hover,
+.list-prime-item.active:focus {
+    z-index: 2;
+    color: #47475F;
+    background-color: #ffffff;
+    /*border-color: #428bca;*/
+}
+
+/* Голубенький Navbar */
+.navbar-blue {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-blue .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-blue .navbar-brand:hover,
+.navbar-blue .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-blue .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-blue .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-blue .navbar-nav > li > a:hover,
+.navbar-blue .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #3276B1;
+}
+
+.navbar-blue .navbar-nav > .active > a,
+.navbar-blue .navbar-nav > .active > a:hover,
+.navbar-blue .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #3276B1;
+}
+
+.navbar-blue .navbar-nav > .disabled > a,
+.navbar-blue .navbar-nav > .disabled > a:hover,
+.navbar-blue .navbar-nav > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+}
+
+.navbar-blue .navbar-toggle {
+    border-color: #333333;
+}
+
+.navbar-blue .navbar-toggle:hover,
+.navbar-blue .navbar-toggle:focus {
+    background-color: #333333;
+}
+
+.navbar-blue .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-blue .navbar-collapse,
+.navbar-blue .navbar-form {
+    border-color: #101010;
+}
+
+.navbar-blue .navbar-nav > .open > a,
+.navbar-blue .navbar-nav > .open > a:hover,
+.navbar-blue .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #080808;
+}
+
+.navbar-blue .navbar-nav > .dropdown > a:hover .caret {
+    border: 1px;
+}
+
+.navbar-blue .navbar-nav > .dropdown > a .caret {
+    border: none;
+}
+
+.navbar-blue .navbar-nav > .open > a .caret,
+.navbar-blue .navbar-nav > .open > a:hover .caret,
+.navbar-blue .navbar-nav > .open > a:focus .caret {
+    border: none;
+}
+
+/*анонс фильма*/
+.movie-announce {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.movie-announce__poster {
+    width: 80px;
+    height: 110px;
+}
+
+.movie-announce h4 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+/* Показывать название при наведении */
+.movie-announce:hover h4 {
+    width: auto;
+    margin-right: -50px;
+}
+
+.movie-announce__age-restriction {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    display: inline-block;
+    background-color: #9CA2A5;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 0;
+    padding: 2px;
+}
+
+.movie-announce__age-restriction:after {
+    content: "+";
+}
+
+.movie-announce__genres {
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+.movie-announce__genres a {
+    color: #988D8D;
+}
+
+.movie-announce__rating {
+    display: inline;
+}
+
+.movie-announce__price {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.movie-announce__session {
+    font-size: 12px;
+    font-weight: 300;
+    overflow: hidden;
+    max-width: 240px;
+}
+
+.label-post {
+    padding-left: 5px;
+}
+
+.sub-panel {
+    padding: 7px 15px;
+    margin: 0;
+    color: #0f0f0f;
+    background-color: #D8EEED;
+}
+
+.comment-link:hover {
+    cursor: pointer;
+}
+
+.media-hover:hover {
+    z-index: 2;
+    background-color: #f5f5f5;
+}
+
+
+/* СТИЛИ ДЛЯ УДАЛЕНИЯ*/
+/*
+
+h3.cat-title {
+    color: #0275d3;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 20px 10px 30px 23px;
+    margin: 0;
+}
+
+.cat a.list-group-item {
+    background-color: #fcfcfc;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #f6f7f8;
+    margin-bottom: 1px;
+}
+
+.cat a.list-group-item:hover,
+.cat a.list-group-item:focus {
+    background-color: #f0f1f2;
+    color: #404145;
+    border-left: 1px solid #56c4f4;
+}
+.cat .btn {
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+*/
+/* КОНЕЦ СТИЛЕЙ ДЛЯ УДАЛЕНИЯ*/
+
+a.sponsor {
+    background-color: #0275D3;
+    height: 60px;
+}
+
+a.sponsor:hover,
+a.sponsor:focus {
+    background-color: #0284e4;
+}
+
+.cat a {
+    font-size: 1.1em;
+    color: #525459;
+}
+
+.contacts {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #416484;
+}
+
+.contacts > span {
+    white-space:nowrap;
+}
+
+strong.ob {
+    font-weight: 600;
+    color: #da4200;
+}
+
+.left_column .yummies,
+.right_column .yummies {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+/* Компактно выводим рекламу плиткой */
+.row-small-margins > div {
+    padding: 1%;
+}
+
+.row-small-margins > div:empty {
+    display: none;
+}
+
+.banner-top object {
+    width: 100% !important;
+}
+
+.subcat-header {
+    background-color: #DEE5EA;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.subcat-header__line-icon {
+    background-color: #0080C8;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+}
+
+.subcat-header__line-icon a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.subcat-header__line-icon_arrow {
+    border-bottom: 20px solid #DEE5EA;
+    border-left: 10px solid #0080c8;
+    border-top: 20px solid #DEE5EA;
+    display: inline-block;
+}
+
+.subcat-header__select-icon {
+    float: right;
+    height: 40px;
+    overflow: hidden;
+    width: 20px;
+    text-align: center;
+    color: #0080c8;
+}
+
+.subcat-header__select-icon select {
+    background: none ;
+    border: 0 none;
+    font-size: 16px;
+    height: 40px;
+    padding-right: 54px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    opacity: 0;
+}
+
+.cat-subcat-line__subcat {
+    color: #757D85;
+    display: inline-block;
+    font-size: 120%;
+    padding-left: 16px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cat-subcat-line__subcat:hover {
+    color: #009;
+    text-decoration: none;
+}
+
+.message-one_phone {
+    float: right;
+}
+
+.message-one_block-label_bargain,
+.message-one_block-label_price {
+    width: 95%;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.message-one_block-label_bargain {
+    color: #ffffff;
+    background-color: #bdc3c7;
+    font-size: 13px;
+}
+
+.message-one_block-label_price {
+    background-color: #ecf0f1;
+    font-size: 14px;
+}
+
+.message-one__edit-button {
+    background-color: #20324D;
+    border: 0 none;
+    color: #FFFFFF;
+    padding: 5px 11px;
+    display: none;
+    float: right;
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+.message-one__edit-button {
+    display: none !important;
+}
+
+.message-one_impressions {
+    margin-top: 10px;
+}
+
+.journal__header {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.block_paid,
+.block_congrats,
+.block_necro {
+    margin: 5px 0;
+    width: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.block_paid__element img {
+    padding: 0;
+}
+
+.block_paid__contacts {
+    display: inline-block;
+    text-align: right;
+    font-size: 11px;
+}
+
+.block_paid__element {
+    border: solid 1px #bcbcbc;
+    background-color: #F0F0F0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.subcat__title:hover {
+    text-decoration: none;
+}
+
+.quick-nav__btn {
+    background-color: #0080C8;
+    color: #ffffff;
+}
+
+.block_paid__type {
+    font-weight: bold;
+    color: #825135;
+}
+
+.subcat-sort {
+    margin: 6px 0;
+}
+
+.add-ob__yours-ob__link {
+    cursor: pointer;
+}
+
+.block_necro img,
+.block_congrats img {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.block_necro__all_ob_link {
+    display: block;
+}
+
+.message-one_complain:hover,
+.message-one_complain {
+    text-decoration: none;
+    color: #333333;
+}
+
+.add-ob__yours-ob__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-left: 4px;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.add-ob__yours-ob__box {
+    width: 66px;
+}
+
+/* Кнопка «Редактировать» */
+.is_owner .message-one__edit-button_edit-owner {
+    display: block !important;
+}
+
+.is_admin .message-one__edit-button_edit-admin {
+    display: block !important;
+}
+
+.is_admin.is_owner .message-one__edit-button_edit-owner {
+    display: none !important;
+}
+
+/* Кнопка «Удалить объявление» */
+.is_owner .message-one__edit-button_remove-owner,
+.is_admin .message-one__edit-button_remove-admin {
+    display: block !important;
+}
+
+.is_admin.is_owner .message-one__edit-button_remove-admin {
+    display: none !important;
+}
+
+.is_owner .message-one__photo-style {
+    width: 60px;
+}
+
+.message-one__photo-style {
+    width:100%
+}
+
+
+a.news-slide-block {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.b-share{
+    font-size: 100% !important;
+    line-height: 1.1em !important;
+}
+
+.payment-panel__header {
+    font-size: 12px;
+    width: 46%;
+}
+
+.add-ob__yours-ob__image-hide {
+    opacity: 0;
+}
+
+.payment-panel__coupon {
+    margin-top: 3px;
+    padding: 16px 0 20px;
+    text-align: center;
+    clear: both;
+}
+
+.payment-panel_before-paid {
+    text-align: center;
+    border: 1px dotted grey;
+}
+
+.col-mid .list-group > .sponsor {
+    margin-bottom: 10px;
+}
+
+/* </editor-fold> */
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+
     .news_full {
         padding: 0 10px;
     }
+
     .sidebar {
         padding-right: 10px;
     }
-    /*.news-slide-block {
-        padding: 0;
-    }
-    .news-slide-block:first-child {
-        padding: 0 10px;
-    }
-    .news-slide-block:last-child {
-        padding: 0 10px 0 0;
-    }*/
+
     .news-slide-block:first-child h4 {
         font-size: 1.7em !important;
         font-weight: 700;
     }
+
     .news-slide-block:first-child .list-group-item {
         padding: 20px 10px 10px;
     }
+
     .media-main-primary {
         padding-right: 10px;
     }
+
     .main-content-inner {
         padding: 0 10px;
     }
-    /*
-    .news-slide-block:first-child .media-main-primary {
-        padding-left: 20px;
-    }
-    .news-slide-block:last-child .media-main-primary {
-        padding-right: 20px;
-    }
 
-    .media-main-secondary > h4 {
-        font-size: 1.3em;
-    }
-    .news-slide-block:first-child {
-        padding-top: 10px;
-    }
-    .news-slide .list-group-item:first-child {
-        padding: 0px;
-    }
-    */
     .header-line__logo__arrow {
         background-size: 18px auto;
         bottom: -6px;
         right: -9px;
     }
+
     .header-line__logo__weather-block__temp {
         bottom: 0;
         left: 3px;
         opacity: 1;
     }
+
     .header-line__logo {
         font-size: 28px;
         width: 100%;
     }
-    .header-line__logo img{
+
+    .header-line__logo img {
         width:100%;
     }
+
+    /*панель «читать ещё» на странице новости*/
+    .news-more .crp_title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .news-more .crp_date {
+        font-size: 13px;
+    }
+    .news-more .crp_exerpt {
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
+
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .header-line__logo img{
+    .btn-home {
+        display: block;
+        margin-left: 960px;
+    }
+
+    .header-line__logo img {
         width:80%;
     }
+
     .header-line__logo__weather-block__temp {
         bottom: 1px;
         left: 39px;
         opacity: 1;
         font-size: 55%;
     }
+
+    /*панель «читать ещё» на странице новости*/
+    .news-more .crp_title {
+        font-size: 14px;
+    }
+    .news-more .crp_exerpt {
+        font-size: 14px;
+        font-weight: 300;
+    }
 }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .kaleidoscope__item__tooltip{
+    .btn-home {
+        margin-left: 1150px;
+    }
+
+    .kaleidoscope__item__tooltip {
         height: 93px;
     }
+
     .header-line__logo__weather-block__temp {
         opacity: 0;
     }
-    .header-line__logo img{
+
+    .header-line__logo img {
         width:75%;
     }
-    /*
-    .media-main-secondary > h4 {
-        font-size: 1.4em;
+
+    /*панель «читать ещё» на странице новости*/
+    .news-more .crp_thumb {
+        /*width: 30%;*/
     }
-    */
+    .news-more .crp_title {
+        font-size: 16px;
+    }
+    .news-more .crp_exerpt {
+        font-weight: 400;
+    }
 }
 
