@@ -2786,6 +2786,9 @@ ul.page-cat > li.cat-item > .badge {
     .header-line__logo img{
         width:100%;
     }
+    .kaleidoscope__item{
+        width: 20%;
+    }
 }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
@@ -2797,6 +2800,9 @@ ul.page-cat > li.cat-item > .badge {
         left: 39px;
         opacity: 1;
         font-size: 55%;
+    }
+    .kaleidoscope__item{
+        width: 33%;
     }
 }
 
