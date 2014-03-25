@@ -1276,6 +1276,7 @@ a.list-group-item:focus {
 .panel-comments {
     color: #47475f;
 }
+
 .panel-comments > .panel-heading {
     background-color: #46a2f9;
     background-image: url("img/panel-comments.png");
@@ -1283,6 +1284,7 @@ a.list-group-item:focus {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .panel-comments td.list-event-item-text{
     padding-left: 12px;
     position: absolute;
@@ -1292,13 +1294,20 @@ a.list-group-item:focus {
     text-overflow: ellipsis;
     width: 76%;
 }
+
+.panel-comments tr td:nth-child(2) {
+    width: 24%;
+}
+
 .panel-comments tr:hover,
 .panel-comments tr:focus {
     background-color: #e0e6f0;
 }
+
 .panel-comments td.list-event-item-text .fa {
     padding-left: 4px;
 }
+
 .list-event-item-text {
     color: #202020;
     font-size: 13px;
