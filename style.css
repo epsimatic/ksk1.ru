@@ -3481,3 +3481,9 @@ a.news-slide-block {
     text-transform: uppercase;
     color: green;
 }
+
+/*Tab drop for Bootstrap*/
+.nav-tabs,
+.nav-pills {
+    position: relative;
+}
