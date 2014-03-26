@@ -95,6 +95,50 @@
     <!-- /.navbar-collapse -->
 </nav>
 
+<div class="tabbable ">
+
+    <ul class="nav nav-pills">
+        <li class="dropdown pull-right tabdrop"> … </li>
+        <li class=""> … </li>
+        <li> … </li>
+        <li>
+            <a data-toggle="tab" href="#ptab3"> … </a>
+        </li>
+        <li> … </li>
+        <li> … </li>
+        <li> … </li>
+        <li> … </li>
+        <li class="active"> … </li>
+    </ul>
+    <div class="tab-content">
+        <div id="ptab1" class="tab-pane">
+            <p> … </p>
+        </div>
+        <div id="ptab2" class="tab-pane">
+            <p>
+
+                Howdy, I'm in Section 2.
+
+            </p>
+        </div>
+        <div id="ptab3" class="tab-pane">
+            <p>
+
+                Howdy, I'm in Section 3.
+
+            </p>
+        </div>
+        <div id="ptab4" class="tab-pane"> … </div>
+        <div id="ptab5" class="tab-pane"> … </div>
+        <div id="ptab6" class="tab-pane"> … </div>
+        <div id="ptab7" class="tab-pane"> … </div>
+        <div id="ptab8" class="tab-pane active"> … </div>
+        <div id="ptab9" class="tab-pane"> … </div>
+    </div>
+
+</div>
+
+
 <script>
     (function(){
       url = document.location.href;
@@ -133,5 +177,5 @@
           subtitle.innerHTML = "Карта ";
       }
   })();
-
+    $('.nav-pills').tabdrop();
 </script>
