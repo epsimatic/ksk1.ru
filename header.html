@@ -144,7 +144,7 @@
 
   </div>
 </div>
-    <div class="col-sm-2 col-md-2 col-lg-1 col-xs-12">
+    <div class="col-sm-2 col-md-2 col-lg-1 col-xs-12" style="padding-bottom: 14px;padding-top:14px;">
         <div class="nav_shopping btn btn-primary  btn-block"><a href=""  title="Магазины">Магазины</a></div>
     </div>
     <div class="col-sm-4 col-md-3 col-lg-3 col-xs-12">
@@ -194,5 +194,16 @@
 
   })();
     $('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    // поиск google
+    (function () {
+        var cx = '003704283744183876190:qchgmzsmjkc';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
 
 </script>
