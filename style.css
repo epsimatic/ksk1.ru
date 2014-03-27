@@ -3485,3 +3485,6 @@ a.news-slide-block {
 .nav-pills {
     position: relative;
 }
+.pop-btn-shopping a{
+    text-decoration: none;
+}
