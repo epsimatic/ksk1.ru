@@ -136,7 +136,7 @@
       karta = /karta/;
       subtitle = document.getElementById("logo");
       body = document.getElementsByTagName("body")[0];
-        subtitle.innerHTML = '<img style="position: absolute" src="http://ksk1.ru/img/ksk-logo-ob.svg">';
+
       if(url.match(ob)) {
           // сайт объявлений
           body.classList.add('ob');
@@ -161,7 +161,7 @@
           body.classList.add('karta');
           subtitle.innerHTML = "Карта ";
       }
-
+        subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
   })();
     $('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
     // поиск google
