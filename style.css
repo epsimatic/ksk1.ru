@@ -1477,6 +1477,7 @@ a.link-neutral:focus {
 */
 .news-more > .panel-heading {
     background-color: #6b75d8;
+    display: none;
 }
 
 .news-more > .panel-body {
