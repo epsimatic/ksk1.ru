@@ -3431,8 +3431,8 @@ a.news-slide-block {
     }
 
     .header-line__logo__weather-block__temp {
-        bottom: 1px;
-        left: 39px;
+        bottom: 22px;
+        left: 43px;
         opacity: 1;
         font-size: 55%;
     }
@@ -3488,4 +3488,7 @@ a.news-slide-block {
 .nav-tabs,
 .nav-pills {
     position: relative;
+}
+.pop-btn-shopping a{
+    text-decoration: none;
 }
