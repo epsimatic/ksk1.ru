@@ -17,7 +17,7 @@
  * limitations under the License.
  * ========================================================= */
  
-+function( $ ) {
+!function( $ ) {
 
 	var WinReszier = (function(){
 		var registered = [];
