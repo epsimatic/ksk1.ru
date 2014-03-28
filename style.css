@@ -1678,6 +1678,10 @@ a.link-neutral:focus {
     width: 33%;
 }
 
+.kaleidoscope__item__tooltip{
+    height:96px ;
+}
+
 .kaleidoscope__item__img {
     width: 100%;
     height: auto;
@@ -3410,13 +3414,6 @@ a.news-slide-block {
         font-size: 14px;
         font-weight: 400;
     }
-    .kaleidoscope__item__tooltip{
-        height:96px ;
-    }
-    .kaleidoscope__item{
-        width: 20%;
-    }
-
 }
 
 /* Стили для размера -md- */
