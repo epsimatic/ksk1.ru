@@ -774,6 +774,14 @@ a.list-group-item:focus {
     margin-bottom: 7px;
     height: auto;
 }
+.cat__banner-block:hover img,
+.cat__banner-block:focus img,
+#popover-shopping img:hover,
+#popover-shopping img:focus {
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
 
 .helper {
     display: none;
@@ -1760,8 +1768,6 @@ a.link-neutral:focus {
 .cat__banner-block:focus img {
     border-left: 1px solid #56C4F4;
     background-color: #f0f1f2;
-    opacity:0.7;
-    filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
 .cat__banner-block .yummies {
