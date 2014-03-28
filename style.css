@@ -3417,6 +3417,9 @@ a.news-slide-block {
     .kaleidoscope__item{
         width: 20%;
     }
+    .kaleidoscope__item__tooltip{
+        width: 95px;
+    }
 }
 
 /* Стили для размера -md- */
