@@ -757,12 +757,6 @@ a.list-group-item:focus {
 .popover {
     max-width: none ;
 }
-
-#popover-shopping .popover {
-    display: block;
-    top: 40px;
-    left: 0;
-}
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
@@ -3420,10 +3414,6 @@ a.news-slide-block {
         font-size: 14px;
         font-weight: 400;
     }
-
-    #popover-shopping .popover {
-        left: -58px;
-    }
 }
 
 /* Стили для размера -md- */
@@ -3452,13 +3442,8 @@ a.news-slide-block {
         font-size: 14px;
         font-weight: 300;
     }
-
     .kaleidoscope__item__tooltip{
         height:77px ;
-    }
-
-    #popover-shopping .popover {
-        left: -38px;
     }
 }
 
@@ -3486,10 +3471,6 @@ a.news-slide-block {
     }
     .news-more .crp_excerpt {
         font-weight: 400;
-    }
-
-    #popover-shopping .popover {
-        left: -21px;
     }
 }
 
