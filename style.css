@@ -3418,7 +3418,7 @@ a.news-slide-block {
         width: 20%;
     }
     .kaleidoscope__item__tooltip{
-        width: 95px;
+        height: 95px;
     }
 }
 
