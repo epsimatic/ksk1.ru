@@ -3448,6 +3448,9 @@ a.news-slide-block {
     .kaleidoscope__item__tooltip{
         height:77px ;
     }
+    .kaleidoscope__item{
+        width: 33%;
+    }
 }
 
 /* Стили для размера -lg- */
