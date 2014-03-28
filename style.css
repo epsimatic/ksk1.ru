@@ -3414,6 +3414,9 @@ a.news-slide-block {
         font-size: 14px;
         font-weight: 400;
     }
+    .kaleidoscope__item{
+        width: 20%;
+    }
 }
 
 /* Стили для размера -md- */
