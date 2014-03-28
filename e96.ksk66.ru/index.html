@@ -508,7 +508,8 @@
             {
             $("body").addClass(" is_owner");
             }
-            var  cookies = document.cookie.split(/[\|;=] /),i;
+            var  cookies = document.cookie.split(/[\|;=] /);
+            var i;
             for ( i in cookies) {
                 if ( cookies[i] =="is_admin=1")
                 $("body").addClass("is_admin");
