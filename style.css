@@ -760,8 +760,8 @@ a.list-group-item:focus {
 
 #popover-shopping .popover {
     display: block;
-    left: -10px;
-    top: 40px;
+    left: -10px !important;
+    top: 40px !important;
 }
 /* </editor-fold> */
 
@@ -3422,7 +3422,7 @@ a.news-slide-block {
     }
 
     #popover-shopping .popover {
-        left: -58px;
+        left: -58px !important;
     }
 }
 
@@ -3457,7 +3457,7 @@ a.news-slide-block {
     }
 
     #popover-shopping .popover {
-        left: -41px;
+        left: -41px !important;
     }
 }
 
@@ -3488,7 +3488,7 @@ a.news-slide-block {
     }
 
     #popover-shopping .popover {
-        left: -23px;
+        left: -23px !important;
     }
 }
 
