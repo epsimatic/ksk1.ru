@@ -90,21 +90,27 @@
           // Сайт новостей
           body.classList.add('news');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
+          document.getElementsByTagName("li")[0].classList.add("activ_li");
       } else if (url.match(cat)){
           body.classList.add('cat');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-tu.svg'>";
+          document.getElementsByTagName("li")[6].classList.add("activ_li");
       }else if (url.match(video)){
           body.classList.add('video');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
+          document.getElementsByTagName("li")[5].classList.add("activ_li");
       }else if (url.match(pfoto)){
           body.classList.add('photo');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
+          document.getElementsByTagName("li")[4].classList.add("activ_li");
       }else if (url.match(timetable)){
           body.classList.add('timetable');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+          document.getElementsByTagName("li")[3].classList.add("activ_li");
       }else if (url.match(karta)){
           body.classList.add('karta');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
+          document.getElementsByTagName("li")[2].classList.add("activ_li");
       }
   })();
 
