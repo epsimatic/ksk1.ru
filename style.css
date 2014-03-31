@@ -1518,7 +1518,7 @@ a.link-neutral:focus {
     background-color: #f0f0f0;
 }
 
-.panel-comments-list > .panel-body {
+.panel-comments-list .comment-list {
     background-color: #FFF;
     padding: 5px 0;
 }
@@ -1535,6 +1535,23 @@ a.link-neutral:focus {
 
 .panel-comments-list .media-body {
     border-left: solid transparent 2px;
+    margin: 3px 0 0;
+}
+
+.panel-comments-list .media-body .panel-heading {
+    padding: 10px 10px 10px 15px;
+}
+
+.panel-comments-list .media-body .panel-body {
+    display: none;
+}
+
+.panel-comments-list ul.children {
+    margin-top: 0;
+}
+
+.panel-comments-list .children li:hover {
+    background-color: transparent;
 }
 
 .panel-comments-list .panel-neutral {
@@ -1561,7 +1578,7 @@ a.link-neutral:focus {
 
 .panel-comments-list .comment-content p {
     color: #50575e;
-    padding: 2px 20px;
+    padding: 10px 0 5px;
     margin-bottom: 0;
     font-size: 0.98em;
 }
