@@ -1560,7 +1560,12 @@ a.link-neutral:focus {
 
 .panel-comments-list .media-body .thumblock .gdthumbtext .badge {
     font-size: 14px;
+    font-weight: 400;
     padding-top: 1px;
+}
+
+.panel-comments-list .comment-awaiting-moderation {
+    margin: 10px 0 0;
 }
 
 .panel-comments-list .media-body .panel-body {
@@ -1615,7 +1620,7 @@ a.link-neutral:focus {
 
 .btn-reply:hover,
 .btn-reply:focus {
-    color: #34495e;
+    color: #383f44;
 }
 
 /*
