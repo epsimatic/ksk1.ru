@@ -700,14 +700,6 @@ a.list-group-item:focus {
     padding: 0.2em 0.6em 0.15em;
 }
 
-.btn-reply {
-    background-color: #fff;
-    border: none;
-    border-radius: 0;
-    padding: 6px 20px;
-    font-size: 13px;
-}
-
 /* кнопки фильмов */
 .btn-movie {
     color: #ffffff;
@@ -1551,6 +1543,18 @@ a.link-neutral:focus {
     top: 12px;
 }
 
+.panel-comments-list .media-body .thumblock .gddw,
+.panel-comments-list .media-body .thumblock .gdup {
+    color: #d1d3d4;
+}
+
+.panel-comments-list .media-body .thumblock .hover,
+.panel-comments-list .media-body .thumblock .hover,
+.panel-comments-list .media-body .thumblock .focus,
+.panel-comments-list .media-body .thumblock .focus {
+    color: #7f8c8d;
+}
+
 .panel-comments-list .media-body .thumblock .gdthumbtext .badge {
     font-size: 14px;
     padding-top: 1px;
@@ -1595,6 +1599,20 @@ a.link-neutral:focus {
     padding: 10px 0 5px;
     margin-bottom: 0;
     font-size: 0.98em;
+}
+
+.btn-reply {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 6px 20px;
+    font-size: 13px;
+    color: #858d93;
+}
+
+.btn-reply:hover,
+.btn-reply:focus {
+    color: #34495e;
 }
 
 /*
