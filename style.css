@@ -3517,5 +3517,8 @@ a.news-slide-block {
 }
 .activ_li{
     background-color: #ffffff;
+
+}
+.activ_li a{
     color: #2cb3e9;
 }
