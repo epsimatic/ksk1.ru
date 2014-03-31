@@ -51,6 +51,7 @@
         <li><a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a></li>
         <li><a href="http://photo.kskmedia.ru"  title="Фото.Новости">Фото</a></li>
         <li><a href="http://video.kskmedia.ru/" title="Видео.Новости">Видео</a></li>
+        <li><a href="http://copy.ksk66.ru/"      title='Копицентр'>Копицентр</a></li>
         <li><a href="http://cat.ksk66.ru/"      title='Каталог предприятий, телефонов и адресов'>Товары и услуги</a></li>
     </ul>
 
@@ -77,6 +78,7 @@
       pfoto =  /^[http:\/\/]+pfoto/;
       timetable = /timetable/;
       karta = /karta/;
+      copy = /copy/;
       subtitle = document.getElementById("logo");
       body = document.getElementsByTagName("body")[0];
 
@@ -94,7 +96,7 @@
       } else if (url.match(cat)){
           body.classList.add('cat');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-tu.svg'>";
-          document.getElementsByTagName("li")[6].classList.add("activ_li");
+          document.getElementsByTagName("li")[7].classList.add("activ_li");
       }else if (url.match(video)){
           body.classList.add('video');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
@@ -111,6 +113,11 @@
           body.classList.add('karta');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
           document.getElementsByTagName("li")[2].classList.add("activ_li");
+      }
+      else if (url.match(copy)){
+          body.classList.add('copy');
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
+          document.getElementsByTagName("li")[6].classList.add("activ_li");
       }
   })();
 
