@@ -1592,6 +1592,18 @@ a.link-neutral:focus {
     background-color: #fff8f7;
 }
 
+.panel-comments-list .panel-neutral .badge {
+    color: #47475F;
+}
+
+.panel-comments-list .panel-positive .badge {
+    color: #1ead3c;
+}
+
+.panel-comments-list .panel-negative .badge {
+    color: #ff4b3d;
+}
+
 .panel-comments-list img.avatar {
     width: 40px;
     height: 40px;
