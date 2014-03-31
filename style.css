@@ -3484,6 +3484,8 @@ a.news-slide-block {
     width: 100%;
 }
 .activ_li{
-    background-color: #008000;
+    background-color: #ffffff;
 }
-
+.activ_li a{
+    color: #428BCA;
+}
