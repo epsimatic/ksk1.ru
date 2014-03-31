@@ -1539,7 +1539,21 @@ a.link-neutral:focus {
 }
 
 .panel-comments-list .media-body .panel-heading {
-    padding: 10px 10px 10px 15px;
+    padding: 10px 10px 10px 20px;
+}
+
+.panel-comments-list .media-body .edit-link {
+    padding-left: 4px;
+}
+
+.panel-comments-list .media-body .thumblock {
+    right: 5px;
+    top: 12px;
+}
+
+.panel-comments-list .media-body .thumblock .gdthumbtext .badge {
+    font-size: 14px;
+    padding-top: 1px;
 }
 
 .panel-comments-list .media-body .panel-body {
