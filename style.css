@@ -1413,6 +1413,11 @@ a.link-neutral:focus {
     padding-top:4px;
 }
 
+.panel-news-body > .panel-body .post-info {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
 .panel-news-body > .panel-body img {
     padding: 5px 0 15px;
 }
@@ -1459,39 +1464,6 @@ a.link-neutral:focus {
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ещё по теме»"> */
-/*Старые стили*/
-/*
-.news-more p {
-    color: #2b2b38;
-}
-
-.news-more > .panel-heading {
-    background-color: #95a5a6;
-    padding: 8px 20px;
-}
-
-.news-more > .panel-heading h3 {
-    padding-bottom: 3px;
-    color: #fff;
-    font-size: 23px;
-    font-weight: 400;
-}
-
-.news-more-item {
-    padding: 9px 15px 7px;
-    background-color: #f9fafb;
-}
-
-.news-more-item:hover,
-.news-more-item:focus {
-    background-color: #f4f6f7;
-}
-
-.news-more-item > .post-info {
-    margin: 3px 0 1px;
-    padding: 0;
-}
-*/
 .news-more > .panel-heading {
     background-color: #6b75d8;
     display: none;
@@ -1539,7 +1511,6 @@ a.link-neutral:focus {
     text-overflow: ellipsis;
     white-space: normal;
 }
-
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель комментариев"> */
@@ -1561,6 +1532,93 @@ a.link-neutral:focus {
 .panel-comments-list .btn-grey {
     margin-top: 3px;
 }
+
+.panel-comments-list .media-body {
+    border-left: solid transparent 2px;
+}
+
+.panel-comments-list .panel-neutral {
+    background-color: #f9fafb;
+}
+
+.panel-comments-list .panel-positive {
+    background-color: #f6fcf7;
+}
+
+.panel-comments-list .panel-negative {
+    background-color: #fff8f7;
+}
+
+.panel-comments-list img.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.panel-comments-list time {
+    color: #888888;
+    font-weight: 400;
+}
+
+.panel-comments-list .comment-content p {
+    color: #50575e;
+    padding: 2px 20px;
+    margin-bottom: 0;
+    font-size: 0.98em;
+}
+
+/*
+.panel-deleted > .panel-heading {
+    background-color: #f2f5f5;
+    color: #737475;
+}
+
+.panel-neutral > .panel-body,
+.panel-positive > .panel-body,
+.panel-negative > .panel-body {
+    padding: 0;
+}
+
+.panel-neutral > .panel-body blockquote,
+.panel-positive > .panel-body blockquote,
+.panel-negative > .panel-body blockquote {
+    background-color: #FFF;
+    margin: 0 25px 5px 20px;
+    color: #717c7c;
+    border-left: 5px solid #dadee1;
+    font-size: 13px;
+}
+
+.panel-respond > .panel-body {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.panel-respond > .panel-footer {
+    padding: 0 0 25px 5px;
+    background-color: #fff;
+}
+
+.panel-respond > .panel-body > .form-inline {
+    margin-bottom: 10px;
+}
+
+.panel-respond > .panel-body > .form-inline > .checkbox {
+    padding-left: 15px;
+}
+
+.panel-respond > .panel-footer > .form-inline > .form-group {
+    padding-top: 5px;
+}
+
+.comments-list :hover > .panel {
+    background-color: #d9eefa;
+}
+
+.comments-list li .panel:hover .btn-reply {
+    opacity: 1;
+}
+
+*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Элементы страницы новости"> */
@@ -2521,37 +2579,6 @@ a.content-brief_title-commerce:focus {
     margin: 0;
 }
 
-.panel-respond > .panel-body {
-    background-color: #fff;
-    padding: 10px 0;
-}
-
-.panel-respond > .panel-footer {
-    padding: 0 0 25px 5px;
-    background-color: #fff;
-}
-
-.panel-respond > .panel-body > .form-inline {
-    margin-bottom: 10px;
-}
-
-.panel-respond > .panel-body > .form-inline > .checkbox {
-    padding-left: 15px;
-}
-
-.panel-respond > .panel-footer > .form-inline > .form-group {
-    padding-top: 5px;
-}
-
-.comments-list :hover > .panel {
-    background-color: #d9eefa;
-}
-
-.comments-list li .panel:hover .btn-reply {
-    opacity: 1;
-}
-
-
 .panel-payment > .panel-body > .list-group .badge {
     background-color: #428bca;
     color: #fff;
@@ -2580,66 +2607,6 @@ a.content-brief_title-commerce:focus {
 
 
 /* панель Список комментраиев*/
-.panel-deleted > .panel-heading {
-    background-color: #f2f5f5;
-    color: #737475;
-}
-
-.panel-neutral:hover,
-.panel-neutral:focus,
-.panel-positive:hover,
-.panel-positive:focus,
-.panel-negative:hover,
-.panel-negative:focus {
-    /*border-left: solid #d9eefa 2px;*/
-}
-
-.panel-neutral > .panel-body p,
-.panel-positive > .panel-body p,
-.panel-negative > .panel-body p {
-    color: #50575e;
-    padding: 2px 20px;
-    margin-bottom: 0;
-    font-size: 0.98em;
-}
-
-.panel-neutral,
-.panel-positive,
-.panel-negative {
-    border-left: solid transparent 2px;
-}
-
-.panel-neutral > .panel-body,
-.panel-positive > .panel-body,
-.panel-negative > .panel-body {
-    padding: 0;
-}
-
-.panel-neutral > .panel-body blockquote,
-.panel-positive > .panel-body blockquote,
-.panel-negative > .panel-body blockquote {
-    background-color: #FFF;
-    margin: 0 25px 5px 20px;
-    color: #717c7c;
-    border-left: 5px solid #dadee1;
-    font-size: 13px;
-}
-
-.panel-neutral > .panel-body,
-.panel-neutral > .panel-heading {
-    background-color: #f9fafb;
-}
-
-.panel-positive > .panel-body,
-.panel-positive > .panel-heading {
-    background-color: #f6fcf7;
-}
-
-.panel-negative > .panel-body,
-.panel-negative > .panel-heading {
-    background-color: #fff8f7;
-}
-
 .comments-list {
     list-style: none outside none;
 }
