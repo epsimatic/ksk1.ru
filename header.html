@@ -87,28 +87,27 @@
       if(url.match(ob)) {
           // сайт объявлений
           body.classList.add('ob');
-          subtitle.innerHTML = "Объявления ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
       } else if (url.match(news)) {
           // Сайт новостей
           body.classList.add('news');
-          subtitle.innerHTML = "Новости ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
       } else if (url.match(cat)){
           body.classList.add('cat');
-          subtitle.innerHTML = "Товары ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-tu.svg'>";
       }else if (url.match(video)){
           body.classList.add('video');
-          subtitle.innerHTML = "Видео ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
       }else if (url.match(pfoto)){
           body.classList.add('photo');
-          subtitle.innerHTML = "Фото ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
       }else if (url.match(timetable)){
           body.classList.add('timetable');
-          subtitle.innerHTML = "Расписание ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
       }else if (url.match(karta)){
           body.classList.add('karta');
-          subtitle.innerHTML = "Карта ";
+          subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
       }
-        subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
   })();
 
     $('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
