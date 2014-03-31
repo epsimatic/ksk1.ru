@@ -1543,15 +1543,15 @@ a.link-neutral:focus {
     top: 12px;
 }
 
-.panel-comments-list .media-body .thumblock .gddw,
-.panel-comments-list .media-body .thumblock .gdup {
+.panel-comments-list .media-body .thumblock .gddw .gdt-classical,
+.panel-comments-list .media-body .thumblock .gdup .gdt-classical {
     color: #d1d3d4;
 }
 
-.panel-comments-list .media-body .thumblock .hover,
-.panel-comments-list .media-body .thumblock .hover,
-.panel-comments-list .media-body .thumblock .focus,
-.panel-comments-list .media-body .thumblock .focus {
+.panel-comments-list .media-body .thumblock .gddw .gdt-classical:hover,
+.panel-comments-list .media-body .thumblock .gdup .gdt-classical:hover,
+.panel-comments-list .media-body .thumblock .gddw .gdt-classical:focus,
+.panel-comments-list .media-body .thumblock .gdup .gdt-classical:focus {
     color: #7f8c8d;
 }
 
