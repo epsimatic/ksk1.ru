@@ -1549,10 +1549,13 @@ a.link-neutral:focus {
 }
 
 .panel-comments-list .media-body .thumblock .gddw .gdt-classical:hover,
+.panel-comments-list .media-body .thumblock .gddw .gdt-classical:focus {
+    color: #ff9087;
+}
+
 .panel-comments-list .media-body .thumblock .gdup .gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gddw .gdt-classical:focus,
 .panel-comments-list .media-body .thumblock .gdup .gdt-classical:focus {
-    color: #7f8c8d;
+    color: #74cd87;
 }
 
 .panel-comments-list .media-body .thumblock .gdthumbtext .badge {
