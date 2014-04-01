@@ -1585,7 +1585,7 @@ a.link-neutral:focus {
 
 .panel-comments-list .media-body .thumblock .gdthumbtext .badge {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     padding-top: 1px;
 }
 
@@ -2627,7 +2627,7 @@ a.content-brief_title-commerce:focus {
 
 /* </editor-fold> */
 
-/* <editor-fold desc="Оформление панелей в оформление не используются, кроме panel-positive"> */
+/* <editor-fold desc="Оформление панелей в оформление не используются"> */
 .panel-more {
     background-color: #f6f6f6;
 }
