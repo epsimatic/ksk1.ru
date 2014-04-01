@@ -1512,7 +1512,6 @@ a.link-neutral:focus {
 
 .panel-comments-list .comment-list {
     background-color: #FFF;
-    padding: 5px 0;
 }
 
 .panel-comments-list > .panel-heading h2 {
@@ -1555,13 +1554,13 @@ a.link-neutral:focus {
     color: #d1d3d4;
 }
 
-.panel-comments-list .media-body .thumblock .gddw .gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gddw .gdt-classical:focus {
+.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:hover,
+.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:focus {
     color: #ff9087;
 }
 
-.panel-comments-list .media-body .thumblock .gdup .gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gdup .gdt-classical:focus {
+.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:hover,
+.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:focus {
     color: #74cd87;
 }
 
