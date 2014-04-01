@@ -542,7 +542,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    /*font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;*/
     font-weight: normal;
 }
 
@@ -1145,7 +1145,7 @@ a.list-group-item:focus {
     background-color: #707070;
 }
 
-.panel-necro > panel-body p {
+.panel-necro > .panel-body p {
     color: #47475f;
 }
 /* </editor-fold> */
@@ -3292,7 +3292,7 @@ strong.ob {
 .block_necro {
     margin: 5px 0;
     width: 100%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
 }
 
 .block_paid__element img {
@@ -3308,7 +3308,7 @@ strong.ob {
 .block_paid__element {
     border: solid 1px #bcbcbc;
     background-color: #F0F0F0;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
 }
 
 .subcat__title:hover {
