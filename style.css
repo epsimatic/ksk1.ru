@@ -1525,8 +1525,15 @@ a.link-neutral:focus {
     margin-top: 3px;
 }
 
-.panel-comments-list .media-body {
+.panel-comments-list .comment > .panel {
     border-left: solid transparent 2px;
+}
+
+.panel-comments-list .comment:hover > .panel {
+    border-left: solid #c3e6f9 2px;
+}
+
+.panel-comments-list .media-body {
     margin: 3px 0 0;
 }
 
