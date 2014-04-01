@@ -1126,7 +1126,7 @@ a.list-group-item:focus {
     background-color: #707070;
 }
 
-.panel-necro > panel-body p {
+.panel-necro > .panel-body p {
     color: #47475f;
 }
 /* </editor-fold> */
