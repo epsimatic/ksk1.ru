@@ -1526,11 +1526,11 @@ a.link-neutral:focus {
 }
 
 .panel-comments-list .comment > .panel > .panel-heading {
-    border-left: 2px solid transparent;
+    border-left: 1px solid transparent;
 }
 
 .panel-comments-list .comment:hover > .panel > .panel-heading {
-    border-left: 2px solid #c3e6f9;
+    border-left: 1px solid #9ed7f7;
 }
 
 .panel-comments-list .media-body {
