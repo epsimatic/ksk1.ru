@@ -1525,12 +1525,12 @@ a.link-neutral:focus {
     margin-top: 3px;
 }
 
-.panel-comments-list .comment > .panel {
-    border-left: solid transparent 2px;
+.panel-comments-list .comment > .panel > .panel-heading {
+    border-left: 2px solid transparent;
 }
 
-.panel-comments-list .comment:hover > .panel {
-    border-left: solid #c3e6f9 2px;
+.panel-comments-list .comment:hover > .panel > .panel-heading {
+    border-left: 2px solid #c3e6f9;
 }
 
 .panel-comments-list .media-body {
