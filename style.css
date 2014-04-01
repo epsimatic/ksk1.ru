@@ -205,6 +205,25 @@ header .yummies {
     padding: 20px 25px;
 }
 
+/*Tab drop for Bootstrap*/
+.nav-tabs,
+.nav-pills {
+    position: relative;
+}
+#pop-btn-shopping a{
+    text-decoration: none;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+.activ_li{
+    background-color: #ffffff;
+}
+.activ_li a{
+    color: #428BCA;
+}
+
 /*для файла header_2013.html*/
 .karta a [title='Карта Красноуфимска и других городов'],
 .timetable a [title='Расписание автобусов и ж/д'],
@@ -2162,6 +2181,13 @@ a.paid:focus {
 .help-block {
     text-align: center;
 }
+
+.ob-short__sub-header{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: green;
+}
 /* </editor-fold> */
 
 /* <editor-fold desc="Форма добаления объявления"> */
@@ -3537,30 +3563,4 @@ a.news-slide-block {
     #popover-shopping .popover {
         left: -23px !important;
     }
-}
-
-.ob-short__sub-header{
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: green;
-}
-
-/*Tab drop for Bootstrap*/
-.nav-tabs,
-.nav-pills {
-    position: relative;
-}
-#pop-btn-shopping a{
-    text-decoration: none;
-}
-
-.navbar-nav{
-    width: 100%;
-}
-.activ_li{
-    background-color: #ffffff;
-}
-.activ_li a{
-    color: #428BCA;
 }
