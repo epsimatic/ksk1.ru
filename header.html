@@ -121,7 +121,10 @@
       }
   })();
 
-    $('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    (function () {
+        $('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    })();
+
     // поиск google
     (function () {
         var cx = '003704283744183876190:qchgmzsmjkc';
@@ -133,10 +136,12 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
     })();
-    var pop_btn = $('#pop-btn-shopping');
-    pop_btn.popover({content:"<div class='shops text-center'><a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'><img src='http://ksk1.ru/img/logo-e96.png'></a><a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a><a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a><a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a><img src='http://ksk1.ru/img/logo-aquaphor.png'></div>",
-        html: true,
-        placement: "bottom"});
 
+    (function () {
+        var pop_btn = $('#pop-btn-shopping');
+        pop_btn.popover({content:"<div class='shops text-center'><a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'><img src='http://ksk1.ru/img/logo-e96.png'></a><a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a><a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a><a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a><img src='http://ksk1.ru/img/logo-aquaphor.png'></div>",
+            html: true,
+            placement: "bottom"});
+    })();
 
 </script>
