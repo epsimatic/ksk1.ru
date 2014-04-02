@@ -640,7 +640,7 @@ a.list-group-item:focus {
 
 .col-mid .list-group > .list-group-item {
     padding-right: 10px;
-    margin: 0;
+    margin-bottom: 5px;
 }
 /* </editor-fold> */
 
