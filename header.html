@@ -73,6 +73,7 @@
       url = document.location.href;
       ob = /^[http:\/\/]+ob/;
       news = /^[http:\/\/]+news/;
+      oldnews = /^[http:\/\/]+ksk66/;
       cat =  /^[http:\/\/]+cat/;
       video = /^[http:\/\/]+video/;
       pfoto =  /^[http:\/\/]+pfoto/;
@@ -88,7 +89,7 @@
           body.classList.add('ob');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
           document.getElementsByTagName("li")[1].classList.add("activ_li");
-      } else if (url.match(news)) {
+      } else if (url.match(news) || url.match(oldnews)) {
           // Сайт новостей
           body.classList.add('news');
           subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
