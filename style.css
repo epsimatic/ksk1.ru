@@ -2423,6 +2423,16 @@ a.content-brief_title-commerce:focus {
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр"> */
+.site-copy img {
+    margin-bottom: 30px;
+}
+
+.site-copy .divider {
+    height: 3px;
+    background-color: #77cce4;
+    margin-bottom: 20px;
+}
+
 .site-copy table {
     text-align: center;
 }
@@ -2430,6 +2440,14 @@ a.content-brief_title-commerce:focus {
 .site-copy .table td:first-child {
     color: #222266;
     text-align: left;
+}
+
+.site-copy h3 {
+    font-weight: 600;
+    letter-spacing: 0.035em;
+    margin: 50px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .site-copy h5 {
