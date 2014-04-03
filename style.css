@@ -2441,8 +2441,11 @@ a.content-brief_title-commerce:focus {
     color: #222266;
     text-align: left;
 }
+.site-copy h1, .site-copy h2 {
+    text-align: center;
+}
 
-.site-copy h3 {
+.site-copy .h3 {
     font-weight: 600;
     letter-spacing: 0.035em;
     margin: 50px 0 20px;
