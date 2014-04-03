@@ -793,6 +793,29 @@ a.list-group-item:focus {
     filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
+#popover-shopping br {
+    display: none;
+}
+
+#popover-shopping .nav_shopping {
+    display: table-row;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#popover-shopping i {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+#popover-shopping span {
+    line-height: 1;
+    display: table-cell;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
 .helper {
     display: none;
     border: 1px #88C425 solid;
@@ -2425,6 +2448,8 @@ a.content-brief_title-commerce:focus {
 /* <editor-fold desc="Копицентр"> */
 .site-copy img {
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .site-copy .divider {
@@ -3517,6 +3542,10 @@ a.news-slide-block {
 
     #popover-shopping .popover {
         left: -58px !important;
+    }
+
+    #popover-shopping br {
+        display:block;
     }
 }
 
