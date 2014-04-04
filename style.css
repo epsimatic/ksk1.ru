@@ -854,6 +854,10 @@ a.list-group-item:focus {
     opacity: 1;
 }
 
+#lastcomments .tooltip.left .tooltip-arrow {
+    border-left-color: #FBF8F7;
+}
+
 /* <editor-fold desc="Панель навигации по категориям"> */
 .cat-panel {
     white-space: nowrap;
