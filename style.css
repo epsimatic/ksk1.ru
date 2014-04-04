@@ -2446,7 +2446,7 @@ a.content-brief_title-commerce:focus {
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр"> */
-.site-copy img {
+.site-copy img.pic {
     margin-bottom: 30px;
     width: 100%;
     max-width: 500px;
