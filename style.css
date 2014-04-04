@@ -842,6 +842,18 @@ a.list-group-item:focus {
     display: block;
 }
 
+#lastcomments .tooltip-inner {
+    background-color: #FBF8F7;
+    box-shadow: -1px 0 12px rgba(0,0,0,0.5);
+    color:#000000;
+    max-width: 250px;
+    padding: 10px;
+}
+
+#lastcomments .tooltip.in {
+    opacity: 1;
+}
+
 /* <editor-fold desc="Панель навигации по категориям"> */
 .cat-panel {
     white-space: nowrap;
