@@ -84,6 +84,15 @@
             jQuery('.weather-block').show();
 //        }
     });
+    window.setTimeout(function () {
+        $('.header-line__weather-block__icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
+
+        $('.tsp').remove();
+        var tempArray = $(".gsTemp > span").text().split('C');
+        $('.header-line__logo__weather-block__temp').text(tempArray[0]);
+        $('.header-line__weather-block__temp').text(tempArray[0]);
+        $('.header-line__weather-block__label').text('Подробнее');
+    }, 1000);
 </script>
 
 <!--suppress HtmlUnknownAnchorTarget -->
