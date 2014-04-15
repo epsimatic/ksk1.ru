@@ -5,7 +5,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sass-stdlib" level="application" />
-    <orderEntry type="library" name="bootstrap-tabdrop" level="application" />
+    <orderEntry type="library" name="jquery-ui.custom" level="application" />
+    <orderEntry type="library" name="jquery.tocify" level="application" />
   </component>
 </module>
 
