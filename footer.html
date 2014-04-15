@@ -75,14 +75,14 @@
 <script>
     jQuery(document).ready(function () {
 
-//        $('.tsp').remove();
+        $('.tsp').remove();
         var temp = $(".gsTemp > span").text().split('C');
         temp = temp[0];
-        if ( typeof myVar !== "undefined") {
+//        if ( typeof myVar !== "undefined") {
             jQuery('.weather-icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
             jQuery('.weather-temp').text(temp);
             jQuery('.weather-block').show();
-        }
+//        }
     });
 </script>
 
