@@ -62,3 +62,6 @@
 .nav-list > li > a {
     padding: 5px;
 }
+.tocify-extend-page{
+    display: none;
+}
