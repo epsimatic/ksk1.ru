@@ -189,7 +189,7 @@ header .yummies {
 }
 
 .navbar .active a,
-.nav .active a{
+.nav-list .active a{
     background-color: #fff;
     color: #42BAEA;
 }
