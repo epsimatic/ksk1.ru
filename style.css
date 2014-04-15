@@ -2092,11 +2092,16 @@ a.paid:focus {
     margin-left: 7px;
 }
 
-.col-mid .list-group > .paid {
+.ob-list > .paid {
     padding-right: 10px;
     margin-bottom: 7px;
     margin-top: 0;
 }
+
+.ob-list > .list-group-item {
+    margin: 0 0 3px !important;
+}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница объявления"> */
