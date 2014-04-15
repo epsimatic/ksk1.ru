@@ -2308,9 +2308,11 @@
     s.parentNode.insertBefore(g, s)
 }(document, 'script'));</script>
 </div>
-<div class="col-md-2 hidden-print" data-spy="affix" data-offset-top="200">
-    <div class="btn btn-link btn-block">Наверх</div>
-    <div id="toc"></div>
+<div class="col-md-2 hidden-print">
+    <div class="affixed-block" data-spy="affix" data-offset-top="200">
+        <div class="btn btn-link btn-block btn-scroll-up">Наверх</div>
+        <div id="toc"></div>
+    </div>
 </div>
 </div>
 <!--# include virtual="/footer.html" -->
@@ -2346,7 +2348,7 @@
 <script>
     jQuery(document).ready(function () {
 
-        $("#toc").tocify({ selectors: "h2, h3, h4", showAndHide: false });
+        $("#toc").tocify({ selectors: "h3, h4"}); // showAndHide: false
 
         $('.header-line__weather-block__icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
         $('.tsp').remove();
