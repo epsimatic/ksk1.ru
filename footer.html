@@ -1,9 +1,9 @@
 <script type="application/javascript">
     // поиск google
     (function () {
+        var ob = /^[http:\/\/]+ob/;
         var cx;
-        url = document.location.href;
-        ob = /^[http:\/\/]+ob/;
+        var url = document.location.href;
         if(url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
         } else { // Поиск по новостям
@@ -46,3 +46,51 @@
         </div>
     </div>
 </footer>
+
+<!-- Gismeteo informer -->
+<div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
+    <div class="gsIContent">
+        <div id="cityLink">
+            <a href="http://www.gismeteo.ru/city/daily/4515/" target="_blank">Погода в Красноуфимске</a>
+        </div>
+        <div class="gsLinks" style="width: 100%; overflow: hidden;">
+            <table>
+                <tr>
+                    <td>
+                        <div class="leftCol"><a href="http://www.gismeteo.ru" target="_blank">
+                            <img alt="Gismeteo" title="Gismeteo"
+                                 src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"
+                                 align="absmiddle" border="0"/>
+                            <span>Gismeteo</span></a></div>
+                        <div class="rightCol">
+                            <a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз на 2 недели</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+
+//        $('.tsp').remove();
+        var temp = $(".gsTemp > span").text().split('C');
+        temp = temp[0];
+        if ( typeof myVar !== "undefined") {
+            jQuery('.weather-icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
+            jQuery('.weather-temp').text(temp);
+            jQuery('.weather-block').show();
+        }
+    });
+</script>
+
+
+<a href="#header" class="btn-home text-center" style="display: block;" onclick="jQuery">
+    <i class="fa fa-angle-up fa-5x"></i>
+    <div style="position:relative; top:-15px;">
+        НАВЕРХ
+    </div>
+</a>
+
