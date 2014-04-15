@@ -13,15 +13,9 @@
     top: 0;
 }
 
+/*TODO: Плавно прятать и показывать кнопку */
 .affix-top .btn-scroll-up {
-    height: 0;
-    padding: 0;
-}
-
-.btn-scroll-up {
-    height: 34px;
-    overflow: hidden;
-    transition: all 0.5s ease 0s;
+    display: none;
 }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
