@@ -3630,3 +3630,21 @@ a.news-slide-block {
         left: -23px !important;
     }
 }
+/*копицентр*/
+#album-table th {
+    width: 33%;
+}
+
+#album-table td,
+#album-table th {
+    text-align: center;
+    border: 5px white solid;
+}
+
+.better {
+    background-color: #c1ffb0 !important;
+}
+
+tr:hover .better {
+    background-color: #cdffd7 !important;
+}
