@@ -188,7 +188,8 @@ header .yummies {
     margin-right: -40px;
 }
 
-.navbar .active a {
+.navbar .active a,
+.nav .active a{
     background-color: #fff;
     color: #42BAEA;
 }
