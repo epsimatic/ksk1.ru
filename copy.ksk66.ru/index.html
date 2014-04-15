@@ -2310,7 +2310,9 @@
 </div>
 <div class="col-md-2 hidden-print">
     <div class="affixed-block" data-spy="affix" data-offset-top="200">
-        <div class="btn btn-link btn-block btn-scroll-up">Наверх</div>
+        <!--suppress HtmlUnknownAnchorTarget -->
+        <a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); return false;"
+           class="btn btn-link btn-block btn-scroll-up">Наверх</a>
         <div id="toc"></div>
     </div>
 </div>
