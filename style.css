@@ -445,6 +445,7 @@ footer h3 {
 
 /* <editor-fold desc="Другие общие элементы"> */
 
+/* --- Кнопка «Наверх» --- */
 .btn-home {
     padding: 0 20px 5px 17px;
     position: fixed;
@@ -456,16 +457,21 @@ footer h3 {
     display: block;
     transition: opacity 0.7s ease;
 }
-
 .btn-home.inactive {
     opacity: 0;
     cursor: default;
 }
-
 .btn-home:hover {
     color: #666;
     background-color: #F9F9F9;
 }
+
+
+/* --- Alt-режим --- */
+html.alt .hide-alt ,
+.show-alt { display: none; }
+html.alt .show-alt{ display: block; }
+
 
 /* Убрать закругления элементов */
 .navbar,
@@ -778,17 +784,9 @@ a.list-group-item:focus {
     max-width: none ;
 }
 
-#popover-shopping .popover {
-    display: block;
-    left: -10px !important;
-    top: 40px !important;
-}
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.ad {
-    margin-bottom: 15px;
-}
 .yummies {
     width: 100%;
     margin-bottom: 7px;
@@ -800,6 +798,12 @@ a.list-group-item:focus {
 #popover-shopping img:focus {
     opacity:0.7;
     filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#popover-shopping .popover {
+    display: block;
+    left: -10px !important;
+    top: 40px !important;
 }
 
 #popover-shopping br {
@@ -3640,6 +3644,8 @@ a.news-slide-block {
         left: -23px !important;
     }
 }
+
+
 /*копицентр*/
 #album-table th {
     width: 33%;

@@ -18,6 +18,25 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
     })();
+
+    // Alt-режим
+    var alt=false;
+
+    document.onkeydown = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 18) {
+            alt = true;
+            jQuery('html').addClass('alt');
+        }
+    }
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 18) {
+            alt = false;
+            jQuery('html').removeClass('alt');
+        }
+    }
+
 </script>
 
 <footer class="visible-print text-right">
