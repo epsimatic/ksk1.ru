@@ -468,9 +468,10 @@ footer h3 {
 
 
 /* --- Alt-режим --- */
-html.alt .hide-alt ,
-.show-alt { display: none; }
-html.alt .show-alt{ display: block; }
+body.alt .hide-alt,
+.show-alt { display: none; !important}
+body.alt .show-alt { display: block !important; }
+body.alt .show-alt-inline { display: inline !important; }
 
 
 /* Убрать закругления элементов */

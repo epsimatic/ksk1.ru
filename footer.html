@@ -26,14 +26,14 @@
         e = e || window.event;
         if (e.keyCode === 18) {
             alt = true;
-            jQuery('html').addClass('alt');
+            jQuery('body').addClass('alt');
         }
     }
     document.onkeyup = function (e) {
         e = e || window.event;
         if (e.keyCode === 18) {
             alt = false;
-            jQuery('html').removeClass('alt');
+            jQuery('body').removeClass('alt');
         }
     }
 
