@@ -24,7 +24,7 @@
     document.onkeydown = function (e) {
         e = e || window.event;
         if (e.keyCode === 18)
-            if (((+new Date) - time) < 200) {
+            if (((+new Date) - time) < 400) {
                 jQuery('body').toggleClass('alt');
                 time=null;
             } else {
