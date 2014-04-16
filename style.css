@@ -454,7 +454,7 @@ footer h3 {
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
     color: rgb(153, 153, 153);
     display: block;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.7s ease;
 }
 
 .btn-home.inactive {
@@ -465,7 +465,6 @@ footer h3 {
 .btn-home:hover {
     color: #666;
     background-color: #F9F9F9;
-    cursor: pointer;
 }
 
 /* Убрать закругления элементов */
