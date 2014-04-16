@@ -459,6 +459,7 @@ footer h3 {
 
 .btn-home.inactive {
     opacity: 0;
+    cursor: default;
 }
 
 .btn-home:hover {
