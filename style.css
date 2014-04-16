@@ -468,10 +468,9 @@ footer h3 {
 
 
 /* --- Alt-режим --- */
-body.alt .hide-alt,
-.show-alt { display: none; !important}
-body.alt .show-alt { display: block !important; }
-body.alt .show-alt-inline { display: inline !important; }
+body.alt .hide-alt.hide-alt.hide-alt,
+.show-alt.show-alt.show-alt { display: none !important; position: absolute; width: 0; overflow: hidden;}
+body.alt .show-alt.show-alt.show-alt { display: block !important; position: static; width: auto; overflow: visible; }
 
 
 /* Убрать закругления элементов */
@@ -798,7 +797,6 @@ a.list-group-item:focus {
 #popover-shopping img:hover,
 #popover-shopping img:focus {
     opacity:0.7;
-    filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
 #popover-shopping .popover {
