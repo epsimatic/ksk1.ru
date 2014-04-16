@@ -73,7 +73,7 @@
 </div>
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
 <script>
-    jQuery(window).ready(function () {
+    (function () {
         jQuery('.header-line__weather-block__icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
         jQuery('.tsp').remove();
         var temp = jQuery(".gsTemp > span").text().split('C');
@@ -83,7 +83,7 @@
             jQuery('.weather-temp').text(temp);
             jQuery('.weather-block').show();
 //        }
-    });
+    })(window);
 
 </script>
 
