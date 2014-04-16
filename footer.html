@@ -88,7 +88,6 @@
 
 
 <!-- Кнопка «Наверх» -->
-
 <!--suppress HtmlUnknownAnchorTarget -->
 <a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); jQuery(this).blur(); return false;"
    class="btn-home inactive text-center">
@@ -97,19 +96,18 @@
         НАВЕРХ
     </div>
 </a>
+
 <script>
-    jQuery(window).load(function () {
-        var offset = 600;
-        if (jQuery('.btn-scroll-up').length) {
-            jQuery('.btn-home').remove();
-        } else {
-            jQuery(window).scroll(function() {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery('.btn-home').removeClass("inactive");
-                } else {
-                    jQuery('.btn-home').addClass("inactive");
-                }
-            });
-        }
-    });
+    var offset = 600;
+    if (jQuery('.btn-scroll-up').length) {
+        jQuery('.btn-home').remove();
+    } else {
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.btn-home').removeClass("inactive");
+            } else {
+                jQuery('.btn-home').addClass("inactive");
+            }
+        });
+    }
 </script>
