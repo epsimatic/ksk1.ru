@@ -1811,13 +1811,9 @@ a.link-neutral:focus {
 .site-ob .footer_opinion {
     display: none;
 }
-.site-ob .block_congrats__img,
-.site-ob .block_necro__img {
-    height: 200px !important;
-    width: auto !important;
-}
-.site-ob .block_necro .list-group-item,
-.site-ob .block_congrats .list-group-item {
+
+.block_necro .list-group-item,
+.block_congrats .list-group-item {
     text-align: center !important;
 }
 
@@ -3411,9 +3407,9 @@ strong.ob {
 
 .block_necro img,
 .block_congrats img {
-    width: 100%;
+    max-height: 200px;
+    max-width: 100%;
     padding: 10px;
-    height: auto;
 }
 
 .block_necro__all_ob_link {
