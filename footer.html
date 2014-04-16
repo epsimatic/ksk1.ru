@@ -20,21 +20,15 @@
     })();
 
     // Alt-режим
-    var alt=false;
-
+    var time=null;
     document.onkeydown = function (e) {
         e = e || window.event;
-        if (e.keyCode === 18) {
-            alt = true;
-            jQuery('body').addClass('alt');
-        }
-    }
-    document.onkeyup = function (e) {
-        e = e || window.event;
-        if (e.keyCode === 18) {
-            alt = false;
-            jQuery('body').removeClass('alt');
-        }
+        if (e.keyCode === 18)
+            if (((+new Date) - time) < 100) {
+                jQuery('body').toggleClass('alt');
+            } else {
+                time = + new Date;
+            }
     }
 
 </script>
