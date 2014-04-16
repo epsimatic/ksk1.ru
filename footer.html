@@ -84,28 +84,26 @@
             jQuery('.weather-block').show();
 //        }
     });
-
-
-  // показать кнопку вверх при прокрутке
-        var offset = 600;
-        var duration = 500;
-        jQuery(window).scroll(function() {
-            if (jQuery(this).scrollTop() > offset) {
-                jQuery('.btn-home').fadeIn(duration);
-            } else {
-                jQuery('.btn-home').fadeOut(duration);
-            }
-        });
-
-
 </script>
+
+<!-- Кнопка «Наверх» -->
 
 <!--suppress HtmlUnknownAnchorTarget -->
 <a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); return false;"
-   class="btn-home text-center" style="display: block;">
+   class="btn-home inactive text-center">
     <i class="fa fa-angle-up fa-5x"></i>
     <div style="position:relative; top:-15px;">
         НАВЕРХ
     </div>
 </a>
 
+<script>
+    var offset = 600;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.btn-home').removeClass("inactive");
+        } else {
+            jQuery('.btn-home').addClass("inactive");
+        }
+    });
+</script>

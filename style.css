@@ -446,14 +446,19 @@ footer h3 {
 /* <editor-fold desc="Другие общие элементы"> */
 
 .btn-home {
-    padding: 0px 20px 5px 17px;
+    padding: 0 20px 5px 17px;
     position: fixed;
     bottom: 151px;
     background-color: rgb(246, 246, 246);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
     color: rgb(153, 153, 153);
-    display: none;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.btn-home.inactive {
+    opacity: 0;
 }
 
 .btn-home:hover {
