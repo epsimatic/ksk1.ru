@@ -85,6 +85,19 @@
 //        }
     });
 
+
+    jQuery(document).ready(function() {
+        var offset = 600;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.btn-home').fadeIn(duration);
+            } else {
+                jQuery('.btn-home').fadeOut(duration);
+            }
+        });
+    });
+
 </script>
 
 <!--suppress HtmlUnknownAnchorTarget -->
