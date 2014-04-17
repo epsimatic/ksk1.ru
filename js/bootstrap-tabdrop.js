@@ -78,7 +78,7 @@
 					}
 				});
 			if (collection.length > 0) {
-			//	collection = $(collection);
+				collection = $(collection);
 				this.dropdown
 					.find('ul')
 					.empty()
