@@ -70,7 +70,7 @@
 			this.dropdown.removeClass('hide');
 			this.element
 				.append(this.dropdown.find('li'))
-				.find('>li')
+				.find('li')
 				.not('.tabdrop')
 				.each(function(){
 					if(this.offsetTop > 0) {

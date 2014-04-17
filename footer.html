@@ -88,8 +88,10 @@
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
 <script>
     jQuery(window).load(function () {
-        jQuery('.header-line__weather-block__icon').css("background-image", "url(" + $('.gsWeatherIcon img').attr('src') + ")");
+        jQuery('.header-line__weather-block__icon').css("background-image", "url(" + jQuery('.gsWeatherIcon img').attr('src') + ")");
         jQuery('.tsp').remove();
+
+
         var temp = jQuery(".gsTemp > span").text().split('C');
         temp = temp[0];
 //        if ( typeof myVar !== "undefined") {
@@ -97,6 +99,8 @@
             jQuery('.weather-temp').text(temp);
             jQuery('.weather-block').show();
 //        }
+        // TabDrop
+        jQuery('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
     });
 </script>
 
