@@ -53,7 +53,7 @@
 
 	var TabDrop = function(element, options) {
 		this.element = $(element);
-		this.dropdown = $('<li class="dropdown  pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">'+options.text+' <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>')
+		this.dropdown = $('<li class="dropdown hide pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">'+options.text+' <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>')
 							.prependTo(this.element);
 		if (this.element.parent().is('.tabs-below')) {
 			this.dropdown.addClass('dropup');
@@ -70,7 +70,7 @@
 			this.dropdown.removeClass('hide');
 			this.element
 				.append(this.dropdown.find('li'))
-				.find('>li')
+				.find('li')
 				.not('.tabdrop')
 				.each(function(){
 					if(this.offsetTop > 0) {
