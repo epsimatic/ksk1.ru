@@ -89,7 +89,7 @@
 					this.dropdown.removeClass('active');
 				}
 			} else {
-				this.dropdown.addClass('hide');
+				//this.dropdown.addClass('hide');
 			}
 		}
 	}
