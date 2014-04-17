@@ -18,6 +18,20 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
     })();
+
+    // Alt-режим
+    var time=null;
+    document.onkeydown = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 18)
+            if (((+new Date) - time) < 400) {
+                jQuery('body').toggleClass('alt');
+                time=null;
+            } else {
+                time = + new Date;
+            }
+    }
+
 </script>
 
 <footer class="visible-print text-right">
