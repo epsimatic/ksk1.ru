@@ -16,8 +16,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================= */
- 
-!function( $ ) {
+
+(function( $ ) {
 
 	var WinReszier = (function(){
 		var registered = [];
@@ -115,4 +115,4 @@
 
 	$.fn.tabdrop.Constructor = TabDrop;
 
-}( window.jQuery );
+}( window.jQuery ));
