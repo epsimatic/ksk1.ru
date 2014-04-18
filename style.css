@@ -15,10 +15,9 @@ body {
     font-weight: normal;
 }
 
-.container {
-    background-color: #ffffff;
-    box-shadow: 0 -7px 7px #cbcbcb;
-}
+#header {margin-bottom: 0}
+
+.container {background-color: #ffffff; box-shadow: 0 -7px 7px #cbcbcb;}
 
 .leftbar {
     padding-right: 0;
