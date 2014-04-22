@@ -3505,7 +3505,9 @@ a.news-slide-block {
 .col-mid .list-group > .sponsor {
     margin-bottom: 10px;
 }
-
+.weather-temp-sm{
+    font-size: 100%;
+}
 /* </editor-fold> */
 
 /* Стили для размера -sm- */
