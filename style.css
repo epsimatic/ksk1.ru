@@ -3668,3 +3668,7 @@ a.news-slide-block {
 tr:hover .better {
     background-color: #cdffd7 !important;
 }
+
+.nav-local a{
+    cursor: pointer;
+}
