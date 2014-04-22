@@ -3506,7 +3506,9 @@ a.news-slide-block {
     margin-bottom: 10px;
 }
 .weather-temp-sm{
-    font-size: 100%;
+    bottom: 0;
+    left: 38px;
+    position: absolute;
 }
 /* </editor-fold> */
 
