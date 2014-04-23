@@ -15,7 +15,7 @@ body {
     font-weight: normal;
 }
 
-#header {margin-bottom: 0}
+header#header {margin-bottom: 0 !important;}
 
 .container {background-color: #ffffff; box-shadow: 0 -7px 7px #cbcbcb;}
 
