@@ -23,7 +23,7 @@
     var time=null;
     document.onkeydown = function (e) {
         e = e || window.event;
-        if (e.keyCode === 18)
+        if (e.keyCode === 17)
             if (((+new Date) - time) < 400) {
                 jQuery('body').toggleClass('alt');
                 time=null;
@@ -88,19 +88,23 @@
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
 <script>
     jQuery(window).load(function () {
-        jQuery('.header-line__weather-block__icon').css("background-image", "url(" + jQuery('.gsWeatherIcon img').attr('src') + ")");
+
+        var iconlink = jQuery('.gsWeatherIcon img').attr('src');
+
+        jQuery('.header-line__weather-block__icon').css("background-image", "url(" + iconlink + ")");
         jQuery('.tsp').remove();
 
 
         var temp = jQuery(".gsTemp > span").text().split('C');
         temp = temp[0];
 //        if ( typeof myVar !== "undefined") {
-            jQuery('.weather-icon').css("background-image", "url(" + jQuery('.gsWeatherIcon img').attr('src') + ")");
+            jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
             jQuery('.weather-temp').text(temp);
+            jQuery('.weather-temp-sm').text(temp);
             jQuery('.weather-block').show();
 //        }
         // TabDrop
-        jQuery('.nav-pills').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+        jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
     });
 </script>
 
