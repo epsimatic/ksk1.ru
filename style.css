@@ -457,6 +457,7 @@ footer h3 {
     color: rgb(153, 153, 153);
     display: block;
     transition: opacity 0.7s ease;
+    visibility: hidden;
 }
 .btn-home.inactive {
     opacity: 0;
@@ -3588,6 +3589,7 @@ a.news-slide-block {
     .btn-home {
         display: block;
         margin-left: 960px;
+        visibility: visible;
     }
 
     .header-line__logo img {
