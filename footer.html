@@ -4,7 +4,7 @@
         var ob = /^[http:\/\/]+ob/;
         var cx;
         var url = document.location.href;
-        if(url.match(ob)) { // Поиск по объявлениям
+        if (url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
@@ -20,31 +20,72 @@
     })();
 
     // Alt-режим
-    var time=null;
+    var time = null;
     document.onkeydown = function (e) {
         e = e || window.event;
         if (e.keyCode === 17)
             if (((+new Date) - time) < 400) {
                 jQuery('body').toggleClass('alt');
-                time=null;
+                time = null;
             } else {
-                time = + new Date;
+                time = +new Date;
             }
-    }
+    };
+
+    // Yandex.Metrika counter
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
+                    webvisor: true,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true});
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+    <!-- /Yandex.Metrika counter -->
 
 </script>
 
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+
 <footer class="visible-print text-right">
-    <em>Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>. При использовании материалов ссылка обязательна.</em>
+    <em>Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>. При использовании материалов
+        ссылка обязательна.</em>
 </footer>
 <footer class="hidden-print" style="margin-top:20px;">
     <div class="row">
         <div class="col-sm-6" style="text-align:right;">
             <h3>18+ • &copy; 2008-2014 Красноуфимск Онлайн</h3>
-            <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77 - 42292 от 30.09.2010 года, выдано Федеральной службой по
+
+            <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77 - 42292 от 30.09.2010 года, выдано
+                Федеральной службой по
                 надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).</p>
+
             <p>При использовании материалов сайта ссылка обязательна.</p>
-            <p class="footer_opinion">Мнение редакции может не совпадать с мнением авторов материалов, а также комментариев к ним.</p>
+
+            <p class="footer_opinion">Мнение редакции может не совпадать с мнением авторов материалов, а также
+                комментариев к ним.</p>
+
             <div>
                 <span id="openstat2173092"></span>
                 <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> • <span><a
@@ -54,6 +95,7 @@
         </div>
         <div class="col-sm-6">
             <h5>Связаться с нами:</h5>
+
             <h3>8 (34394) <strong>7-97-10 </strong><br> infotek66@gmail.com</h3>
             <h4><a href="http://ksk66.ru/index.php?do=feedback&user=1">Форма обратной связи</a></h4>
             <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
@@ -98,10 +140,10 @@
         var temp = jQuery(".gsTemp > span").text().split('C');
         temp = temp[0];
 //        if ( typeof myVar !== "undefined") {
-            jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
-            jQuery('.weather-temp').text(temp);
-            jQuery('.weather-temp-sm').text(temp);
-            jQuery('.weather-block').show();
+        jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
+        jQuery('.weather-temp').text(temp);
+        jQuery('.weather-temp-sm').text(temp);
+        jQuery('.weather-block').show();
 //        }
         // TabDrop
         jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
@@ -114,6 +156,7 @@
 <a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); jQuery(this).blur(); return false;"
    class="btn-home inactive text-center">
     <i class="fa fa-angle-up fa-5x"></i>
+
     <div style="position:relative; top:-15px;">
         НАВЕРХ
     </div>
@@ -124,7 +167,7 @@
     if (jQuery('.btn-scroll-up').length) {
         jQuery('.btn-home').remove();
     } else {
-        jQuery(window).scroll(function() {
+        jQuery(window).scroll(function () {
             if (jQuery(this).scrollTop() > offset) {
                 jQuery('.btn-home').removeClass("inactive");
             } else {
