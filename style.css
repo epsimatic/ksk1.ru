@@ -799,9 +799,11 @@ a.list-group-item:focus {
     margin-bottom: 10px;
 }
 
-.sidebar .textwidget .yu:first-child {
-    padding: 0;
+.sidebar .textwidget .yu,
+.sidebar .textwidget .yu {
+    padding: 0 !important;
 }
+
 
 .site-ob .sidebar .yummies {
     margin-bottom: 7px !important;
