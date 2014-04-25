@@ -271,7 +271,7 @@ header .btn-group {
 /* </editor-fold> */
 
 /* <editor-fold desc="Панели"> */
-.widget {margin-bottom: 0 !important;}
+.widget {margin-bottom: 10px !important;}
 
 .panel {
     border: none;
@@ -792,9 +792,17 @@ a.list-group-item:focus {
 /* <editor-fold desc="Реклама"> */
 .yummies {
     width: 100%;
-    margin-bottom: 10px !important;
     height: auto;
 }
+
+.sidebar .yummies {
+    margin-bottom: 10px;
+}
+
+.site-ob .sidebar .yummies {
+    margin-bottom: 7px !important;
+}
+
 .cat__banner-block:hover img,
 .cat__banner-block:focus img,
 #popover-shopping img:hover,
