@@ -271,12 +271,13 @@ header .btn-group {
 /* </editor-fold> */
 
 /* <editor-fold desc="Панели"> */
+.widget {margin-bottom: 0;}
 
 .panel {
     border: none;
     background-color: #F9FAFB;
     box-shadow: none;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .panel > .panel-heading + .panel-collapse .panel-body {
@@ -1028,6 +1029,8 @@ a.list-group-item:focus {
 .not-really-panel {
     background-color: transparent;
 }
+
+.textwidget .yu:first-child {margin-bottom: 10px;}
 
 /* <editor-fold desc="Панель навигации по категориям"> */
 .panel-nav {
@@ -3515,6 +3518,10 @@ a.news-slide-block {
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+
+    .textwidget .yu:first-child {margin-bottom: 0; padding-right: 5px;}
+
+    .textwidget .yu:last-child {padding-left: 5px;}
 
     .news_full {
         padding: 0 10px;
