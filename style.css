@@ -799,6 +799,10 @@ a.list-group-item:focus {
     margin-bottom: 10px;
 }
 
+.sidebar .textwidget .yu:first-child {
+    padding: 0;
+}
+
 .site-ob .sidebar .yummies {
     margin-bottom: 7px !important;
 }
@@ -1050,7 +1054,7 @@ a.list-group-item:focus {
     /*color: #0d3349;*/
     background-color: #C7D1E0;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .panel-nav > ul > li > a {
@@ -1269,6 +1273,8 @@ a.list-group-item:focus {
 .panel-notice > .panel-heading {
     background-color: #FF4B3D;
 }
+
+.panel-notice .list-group-item {background-color: #fcfcfc;}
 
 .panel-notice ul {
     background-color: #fff;
