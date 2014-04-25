@@ -271,7 +271,7 @@ header .btn-group {
 /* </editor-fold> */
 
 /* <editor-fold desc="Панели"> */
-.widget {margin-bottom: 0;}
+.widget {margin-bottom: 0 !important;}
 
 .panel {
     border: none;
@@ -1034,9 +1034,9 @@ a.list-group-item:focus {
 
 /* <editor-fold desc="Панель навигации по категориям"> */
 
-#text-11 .page-heading {padding: 0;}
+#text-11 .page-heading {padding: 0 !important;}
 
-#text-11 .page-body {padding: 0;}
+#text-11 .page-body {padding: 0 !important;}
 
 .panel-nav {
     /*color: #0d3349;*/
@@ -3552,10 +3552,6 @@ a.news-slide-block {
     .news-slide-block:first-child h4 {
         font-size: 1.7em !important;
         font-weight: 700;
-    }
-
-    .news-slide-block:first-child .list-group-item {
-        padding: 20px 10px 10px;
     }
 
     .media-main-primary {
