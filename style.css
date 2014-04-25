@@ -277,7 +277,7 @@ header .btn-group {
     border: none;
     background-color: #F9FAFB;
     box-shadow: none;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 .panel > .panel-heading + .panel-collapse .panel-body {
@@ -792,7 +792,7 @@ a.list-group-item:focus {
 /* <editor-fold desc="Реклама"> */
 .yummies {
     width: 100%;
-    margin-bottom: 7px;
+    margin-bottom: 10px !important;
     height: auto;
 }
 .cat__banner-block:hover img,
@@ -1111,10 +1111,6 @@ a.list-group-item:focus {
 .news-slide-block h4 {
     font-weight: 600;
     margin: 10px 0;
-}
-
-.news-slide-block:first-child h4 {
-    margin-bottom: 0 !important;
 }
 
 .news-slide-block:first-child a.list-group-item:hover,
