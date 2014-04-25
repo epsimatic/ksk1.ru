@@ -796,6 +796,10 @@ a.list-group-item:focus {
     margin-bottom: 10px;
 }
 
+.col-main .yummies {
+    max-height: 105px ;
+}
+
 .sidebar .textwidget .yu,
 .sidebar .textwidget .yu {
     padding: 0 !important;
