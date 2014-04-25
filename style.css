@@ -795,7 +795,9 @@ a.list-group-item:focus {
     height: auto;
 }
 
-.sidebar .yummies {
+.sidebar .yummies,
+.leftbar .yummies,
+.site-ob .standart .yummies {
     margin-bottom: 10px;
 }
 
