@@ -793,11 +793,6 @@ a.list-group-item:focus {
 .yummies {
     width: 100%;
     height: auto;
-}
-
-.sidebar .yummies,
-.leftbar .yummies,
-.standart .yummies {
     margin-bottom: 10px;
 }
 
@@ -805,7 +800,6 @@ a.list-group-item:focus {
 .sidebar .textwidget .yu {
     padding: 0 !important;
 }
-
 
 .site-ob .sidebar .yummies {
     margin-bottom: 7px !important;
