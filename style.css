@@ -1033,6 +1033,11 @@ a.list-group-item:focus {
 .textwidget .yu:first-child {margin-bottom: 10px;}
 
 /* <editor-fold desc="Панель навигации по категориям"> */
+
+#text-11 .page-heading {padding: 0;}
+
+#text-11 .page-body {padding: 0;}
+
 .panel-nav {
     /*color: #0d3349;*/
     background-color: #C7D1E0;
