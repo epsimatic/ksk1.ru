@@ -1110,7 +1110,7 @@ a.list-group-item:focus {
 
 .news-slide-block h4 {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin: 10px 0;
 }
 
 .news-slide-block:first-child h4 {
@@ -1129,6 +1129,9 @@ a.list-group-item:focus {
 .media-main-primary {
     padding-right: 5px;
 }
+
+.news-slide-block:first-child .list-group-item {padding: 10px;}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Местные новости»"> */
@@ -3528,6 +3531,16 @@ a.news-slide-block {
 
     .textwidget .yu:last-child {padding-left: 5px;}
 
+    .news-slide-block:first-child .media-main-primary {padding-right: 5px;}
+
+    .news-slide-block:first-child h4 {margin-top: 0;}
+
+    .news-slide-block .list-group-item {padding: 0 5px;}
+
+    .news-slide-block:nth-child(2) .list-group-item {padding-right: 5px; padding-left: 10px;}
+
+    .news-slide-block:nth-child(4) .list-group-item {padding-right: 10px; padding-left: 5px;}
+
     .news_full {
         padding: 0 10px;
     }
@@ -3634,6 +3647,11 @@ a.news-slide-block {
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+
+    .news-slide-block:nth-child(4) .list-group-item {padding-right: 5px;}
+
+    .news-slide-block:last-child .list-group-item {padding-right: 10px; padding-left: 5px;}
+
     .btn-home {
         margin-left: 1150px;
     }
