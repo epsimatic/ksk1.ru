@@ -200,6 +200,8 @@ header .btn-group {margin-top: 10px;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панели"> */
+.alert {margin-bottom: 0;}
+
 .widget {margin-bottom: 10px !important;}
 
 .panel {border: none; background-color: #F9FAFB; box-shadow: none; margin-bottom: 10px;}
@@ -761,7 +763,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     background-image: url("img/panel-official.png");
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;}
+    background-size: contain;
+}
 
 /* </editor-fold> */
 
@@ -814,7 +817,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-notice ul {background-color: #fff;}
 
-.panel-notice .list-group {padding-bottom: 0;}
+.panel-notice .list-group {padding-bottom: 0; margin-bottom: 10px}
 
 .panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
 /* </editor-fold> */
@@ -950,6 +953,8 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-news-body > .panel-footer {background-color: #fcfcfc; padding: 0;}
 
 .panel-news-body > .panel-footer > .row {margin: 0;}
+
+.b-share__handle {padding: 0 !important;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ещё по теме»"> */
