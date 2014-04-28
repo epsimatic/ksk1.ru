@@ -800,8 +800,7 @@ a.list-group-item:focus {
     max-height: 105px ;
 }
 
-.sidebar .textwidget .yu,
-.sidebar .textwidget .yu {
+.sidebar .yu {
     padding: 0 !important;
 }
 
@@ -1044,7 +1043,7 @@ a.list-group-item:focus {
     background-color: transparent;
 }
 
-.textwidget .yu:first-child {margin-bottom: 10px;}
+.row-yu-half .yu:first-child {margin-bottom: 10px;}
 
 /* <editor-fold desc="Панель навигации по категориям"> */
 
@@ -3539,9 +3538,9 @@ a.news-slide-block {
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
 
-    .textwidget .yu:first-child {margin-bottom: 0; padding-right: 5px;}
+    .row-yu-half .yu:first-child {margin-bottom: 0; padding-right: 5px;}
 
-    .textwidget .yu:last-child {padding-left: 5px;}
+    .row-yu-half .yu:last-child {padding-left: 5px;}
 
     .news-slide-block:first-child .media-main-primary {padding-right: 5px;}
 
