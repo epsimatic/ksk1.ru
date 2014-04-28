@@ -831,7 +831,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     background-size: contain;
 }
 
-.panel-vote .panel-question {background-color: #f1f1f2; color: #47475f; padding-bottom: 3px;}
+.panel-vote .panel-question {background-color: #f1f1f2; color: #47475f;}
+.panel-vote .panel-question .btn {white-space: normal;}
 
 .panel-vote label {color: #525256; font-weight: 600; position: relative; top: -2px;}
 
@@ -910,9 +911,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-footer > .post-info {margin: 0; padding: 0 0 3px;}
 
-.date-vis {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
-
-.date-vis > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9); overflow: hidden;}
+.date-vis > * {height: auto; padding: 5px; background-color: transparent;}
+.date-vis span {display: block;}
+.date-vis .label-views, .date-vis .label-comment {padding: 0;}
 
 .label-views {color: #4A76BB; padding-left: 5px;}
 
@@ -1972,6 +1973,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+
+    .date-vis {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
+
+    .date-vis > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9); overflow: hidden;}
 
     .row-yu-half .yu:first-child {margin-bottom: 0; padding-right: 5px;}
 
