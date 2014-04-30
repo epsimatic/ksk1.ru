@@ -887,7 +887,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     padding-left: 20px;
     padding-right: 10px;
 }
-.comment #respond {
+#respond {
     padding-top: 10px;
 }
 
