@@ -929,7 +929,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     line-height: 1;
 }
 
-.post-info-comments {
+.post-info-comments:before {
     content: "";
     color: #47a3f9;
     display: inline-block;
