@@ -883,23 +883,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Комментарии»"> */
 
-.panel-comments-list > #respond {
-    padding-left: 20px;
-    padding-right: 10px;
-}
-#respond {
-    padding-top: 10px;
-}
-
 .panel-comments {color: #47475f;}
 
-.panel-comments > .panel-heading {
-    background-color: #46a2f9;
-    background-image: url("img/panel-comments.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+.panel-comments > .panel-heading {background-color: #46a2f9; background-image: url("img/panel-comments.png"); background-position: right; background-repeat: no-repeat; background-size: contain;}
 
 .panel-comments td.list-event-item-text {padding-left: 12px; position: absolute; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 76%;}
 
@@ -1604,6 +1590,14 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* панель Список комментраиев*/
 .comments-list {list-style: none outside none;}
+
+.panel-comments-list > #respond {padding-left: 20px; padding-right: 10px;}
+
+#respond {padding-top: 10px;}
+
+h5.comment-notes-before {font-size: 16px; padding-bottom: 10px;}
+
+input#author, textarea#comment {padding: 5px 10px;}
 
 /* панель Стандарт */
 
