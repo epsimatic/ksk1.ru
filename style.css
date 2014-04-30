@@ -909,6 +909,36 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .post-info span {display: block;}
 .post-info .label-views, .post-info .label-comment {padding: 0;}
 
+.post-info-date:before {
+    content: "";
+    color: #747474;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.post-info-views:before {
+    content: "";
+    color: #4a76bb;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.post-info-comments {
+    content: "";
+    color: #47a3f9;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
 .label-views {color: #4A76BB; padding-left: 5px;}
 
 .label-comment {color: #46A2F9; padding-left: 5px;}
