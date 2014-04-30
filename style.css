@@ -820,7 +820,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-notice ul {background-color: #fff;}
 
-.panel-notice .list-group {padding-bottom: 0; margin-bottom: 10px}
+.panel-notice .list-group {padding-bottom: 0; margin-bottom: 0px}
 
 .panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
 /* </editor-fold> */
