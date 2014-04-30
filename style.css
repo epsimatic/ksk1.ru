@@ -882,6 +882,15 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Комментарии»"> */
+
+.panel-comments-list > #respond {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.comment #respond {
+    padding-top: 10px;
+}
+
 .panel-comments {color: #47475f;}
 
 .panel-comments > .panel-heading {
