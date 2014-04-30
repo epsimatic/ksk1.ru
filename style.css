@@ -648,6 +648,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 #text-11 .panel-heading {padding: 0 !important;}
 
 #text-11 .panel-body {padding: 0 !important;}
+#text-11 .panel-body h3 {font-size: 18px; font-weight: 600;}
 
 .panel-nav {/*color: #0d3349;*/ background-color: #C7D1E0; border: none; padding: 10px;}
 
@@ -910,7 +911,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .post-info span {display: block;}
 /*.post-info .label-views, .post-info .label-comment {padding: 0;}*/
 
-.post-info-date {white-space: nowrap;}
+.post-info-date {white-space: nowrap; text-transform: lowercase;}
 
 .post-info-date:before {content: ""; color: #747474; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1;}
 
