@@ -2043,7 +2043,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .btn-home {display: block; margin-left: 960px; visibility: visible;}
+    .btn-home {display: block; margin-left: 950px; visibility: visible;}
 
     .header-line__logo img {width:80%;}
 
