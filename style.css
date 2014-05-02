@@ -974,8 +974,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info > * {background-color: transparent;}
 
-.panel-news-body .panel-footer.post-info .post-info-info {text-align: center;}
-
 .panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
