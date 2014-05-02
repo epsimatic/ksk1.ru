@@ -889,11 +889,21 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Комментарии»"> */
 
-.panel-comments {color: #47475f;}
-
 .panel-comments > .panel-heading {background-color: #46a2f9; background-image: url("img/panel-comments.png"); background-position: right; background-repeat: no-repeat; background-size: contain;}
 
-.panel-comments td.list-event-item-text {padding-left: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /*width: 76%;*/}
+.panel-comments .comment-author {color: #1f2a26;}
+
+.panel-comments .td,
+.panel-comments .th {background-color: #fcfcfc;}
+
+.panel-comments .comment-author:after {content: "  "; color: #bcbec0; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1;}
+
+.panel-comments .comment-link {color: #47475f; font-weight: 300;}
+
+.panel-comments .table-striped > tbody > tr:nth-child(2n+1) > td,
+.panel-comments .table-striped > tbody > tr:nth-child(2n+1) > th {background-color: #f7f8f9;}
+
+/*.panel-comments td.list-event-item-text > div {padding-left: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; *//*width: 76%;*//* width: 100%;}*/
 
 /*.panel-comments tr td:nth-child(2) {width: 24%;}*/
 
