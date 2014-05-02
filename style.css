@@ -654,7 +654,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 #text-11 .panel-body {padding: 0 !important;}
 #text-11 .panel-body h3 {font-size: 18px; font-weight: 600;}
 
-#text-11 .yu {max-height: 72px; padding-left: 10px;}
+#text-11 .yu {max-height: 72px; padding-left: 10px; background-color: #f9fafb;}
 
 .panel-nav {/*color: #0d3349;*/ background-color: #C7D1E0; border: none; padding: 10px;}
 
