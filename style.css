@@ -2072,6 +2072,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-news-body .panel-footer.post-info .post-info-cats {text-align: left;}
 
+    .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-bottom: 3px !important; padding-left: 1px !important;}
+
     .news-slide-block img {max-height: 144px;}
 
     .news-slide-block:first-child img {max-height: none;}
@@ -2094,6 +2096,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+
+    .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
     .news-slide-block:nth-child(4) .list-group-item {padding-right: 5px;}
 
