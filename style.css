@@ -944,6 +944,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Страница новости"> */
 /* <editor-fold desc="Панель тела новости"> */
+.panel-news-body > .panel-body {padding: 10px;}
+
 .panel-news-body > .panel-body .fa {padding-top:4px;}
 
 .panel-news-body > .panel-body img {padding: 5px 0 15px;}
@@ -958,9 +960,29 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .wp-caption .wp-caption-text {margin: 0; padding: 7px 0 10px;}
 
-.panel-news-body > .panel-footer {background-color: #fcfcfc; padding: 0;}
+.panel-news-body .entry-meta {color:#434C56; font-style: oblique;}
 
-.panel-news-body > .panel-footer > .row {margin: 0;}
+.panel-news-body .entry-meta .meta-label {font-weight: 300;}
+
+.panel-news-body .entry-meta .meta-value {font-weight: 600;}
+
+.panel-news-body .panel-footer.post-info {background-color:#eee; bottom: 0; height: auto; margin: 0; padding: 0;}
+
+.panel-news-body .panel-footer.post-info > * {background-color: transparent;}
+
+.panel-news-body .panel-footer .post-info-share {background-color:#2B67B2; text-align: center;}
+
+.panel-news-body .panel-footer .post-info-share a {color: #fff;}
+
+.panel-news-body .panel-footer .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
+
+.panel-news-body .panel-footer .post-info-share .b-share {font: inherit; padding: 0;}
+
+.panel-news-body .panel-footer .post-info-share .b-share .b-share__handle {float: none;}
+
+.panel-news-body .panel-footer .post-info-share .b-share a.b-share__handle:hover .b-share__text {color: #fff;}
+
+/*.panel-news-body > .panel-footer {background-color: #fcfcfc; padding: 0;}*/
 
 .b-share__handle {padding: 0 !important;}
 /* </editor-fold> */
