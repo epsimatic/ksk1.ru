@@ -654,6 +654,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 #text-11 .panel-body {padding: 0 !important;}
 #text-11 .panel-body h3 {font-size: 18px; font-weight: 600;}
 
+#text-11 .yu {max-height: 72px; padding-left: 10px;}
+
 .panel-nav {/*color: #0d3349;*/ background-color: #C7D1E0; border: none; padding: 10px;}
 
 .panel-nav > ul > li > a {color: #47475f;}
@@ -978,7 +980,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;}
 
-.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; /*font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;*/}
+.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; *font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
