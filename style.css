@@ -749,7 +749,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Областные новости»"> */
 .panel-global > .panel-heading {
     background-color: #2ebcb7;
-    background-image: url("img/panel-global.png");
+    background-image: url(img/panel-global.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -759,7 +759,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading {
     background-color: #ff794c;
-    background-image: url("img/panel-congrats.png");
+    background-image: url(img/panel-congrats.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -769,7 +769,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Официальная информация»"> */
 .panel-official > .panel-heading {
     background-color: #4a76bb;
-    background-image: url("img/panel-official.png");
+    background-image: url(img/panel-official.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -777,7 +777,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* </editor-fold> */
 
-/* <editor-fold desc="Панель «Некролог»"> */1
+/* <editor-fold desc="Панель «Некролог»"> */
 .panel-necro > .panel-heading {background-color: #707070;}
 
 .panel-necro > .panel-body p {color: #47475f;}
@@ -893,9 +893,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-comments > .panel-heading {background-color: #46a2f9; background-image: url("img/panel-comments.png"); background-position: right; background-repeat: no-repeat; background-size: contain;}
 
-.panel-comments td.list-event-item-text {padding-left: 12px; position: absolute; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 76%;}
+.panel-comments td.list-event-item-text {padding-left: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /*width: 76%;*/}
 
-.panel-comments tr td:nth-child(2) {width: 24%;}
+/*.panel-comments tr td:nth-child(2) {width: 24%;}*/
 
 .panel-comments tr:hover,
 .panel-comments tr:focus {background-color: #e0e6f0;}
