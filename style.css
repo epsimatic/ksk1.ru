@@ -956,7 +956,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-body h1 {color: #4a76bb; font-weight: 700; font-size: 28px; margin: 10px 0 20px;}
 
-.panel-news-body .panel-body .entry-content {margin-bottom: 20px;}
+.panel-news-body .panel-body .map.map-post {margin-bottom: 20px;}
 
 .panel-news-body .wp-caption {border: none; border-radius: 0; padding: 0; background-color: #f0f0f0;}
 
