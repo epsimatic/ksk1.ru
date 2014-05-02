@@ -946,13 +946,17 @@ a.link-neutral:focus {color: #3b437d;}
 /* <editor-fold desc="Панель тела новости"> */
 .panel-news-body > .panel-body {padding: 10px;}
 
-.panel-news-body > .panel-body .fa {padding-top:4px;}
+.panel-news-body .panel-body .row {margin-left: -10px; margin-right: -10px}
 
-.panel-news-body > .panel-body img {padding: 5px 0 15px;}
+.panel-news-body .panel-body .fa {padding-top:4px;}
 
-.panel-news-body > .panel-body p {padding-bottom: 4px; color: #32393f; font-size: 1.1em;}
+.panel-news-body .panel-body img {padding: 5px 0 15px;}
 
-.panel-news-body > .panel-body h1 {color: #4a76bb; font-weight: 700; font-size: 28px; margin: 10px 0 20px;}
+.panel-news-body .panel-body p {padding-bottom: 4px; color: #32393f; font-size: 1.1em;}
+
+.panel-news-body .panel-body h1 {color: #4a76bb; font-weight: 700; font-size: 28px; margin: 10px 0 20px;}
+
+.panel-news-body .panel-body .map.map-post {margin-bottom: 10px;}
 
 .panel-news-body .wp-caption {border: none; border-radius: 0; padding: 0; background-color: #f0f0f0;}
 
@@ -969,6 +973,12 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-news-body .panel-footer.post-info {background-color:#eee; bottom: 0; height: auto; margin: 0; padding: 0;}
 
 .panel-news-body .panel-footer.post-info > * {background-color: transparent;}
+
+.panel-news-body .panel-footer.post-info .post-info-info {text-align: center;}
+
+.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
+
+.panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
 .panel-news-body .panel-footer .post-info-share {background-color:#2B67B2; text-align: center;}
 
