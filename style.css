@@ -976,9 +976,9 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info span {display: inline;}
 
-.panel-news-body .panel-footer.post-info .post-info-cats {text-align: center;}
+.panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;}
 
-.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
+.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; font-size: 13px; letter-spacing: 0.03em;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
@@ -988,7 +988,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
 
-.panel-news-body .panel-footer .post-info-share .b-share {font: inherit; padding: 0;}
+.panel-news-body .panel-footer .post-info-share .b-share {font: inherit; padding-bottom: 3px !important;}
 
 .panel-news-body .panel-footer .post-info-share .b-share .b-share__handle {float: none;}
 
@@ -2070,9 +2070,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 
-    .panel-news-body .panel-footer.post-info .post-info-cats {text-align: left;}
-
-    .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-bottom: 3px !important; padding-left: 1px !important;}
+    .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
     .news-slide-block img {max-height: 144px;}
 
