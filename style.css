@@ -898,7 +898,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-comments .comment-author:after {content: "  "; color: #bcbec0; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1;}
 
-.panel-comments .comment-link {color: #47475f; font-weight: 300;}
+.panel-comments .comment-link {color: #47475f; font-weight: 300; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 .panel-comments .table-striped > tbody > tr:nth-child(2n+1) > td,
 .panel-comments .table-striped > tbody > tr:nth-child(2n+1) > th {background-color: #f7f8f9;}
