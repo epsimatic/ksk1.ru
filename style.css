@@ -893,28 +893,24 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-comments .comment-author {color: #1f2a26;}
 
-.panel-comments .td,
-.panel-comments .th {background-color: #fcfcfc;}
+.panel-comments .comment-author:after {content: ""; color: #bcbec0; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1;}
 
-.panel-comments .comment-author:after {content: "  "; color: #bcbec0; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1;}
-
-.panel-comments td > div {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;}
+.panel-comments a.list-group-item {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;}
 
 .panel-comments .comment-link {color: #47475f; font-weight: 300;}
 
-.panel-comments .table-striped > tbody > tr:nth-child(2n+1) > td,
-.panel-comments .table-striped > tbody > tr:nth-child(2n+1) > th {background-color: #f7f8f9;}
+.panel-comments a.list-group-item:nth-child(2n+1) {background-color: #f7f8f9;}
 
 /*.panel-comments td.list-event-item-text > div {padding-left: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; *//*width: 76%;*//* width: 100%;}*/
 
 /*.panel-comments tr td:nth-child(2) {width: 24%;}*/
 
-.panel-comments tr:hover,
-.panel-comments tr:focus {background-color: #e0e6f0;}
+.panel-comments a.list-group-item:hover,
+.panel-comments a.list-group-item:focus {background-color: #e0e6f0 !important;}
 
-.panel-comments td.list-event-item-text .fa {padding-left: 4px;}
+/*.panel-comments td.list-event-item-text .fa {padding-left: 4px;}*/
 
-.list-event-item-text {color: #202020; font-size: 13px; font-weight: 400; overflow: hidden; text-overflow: ellipsis;}
+/*.list-event-item-text {color: #202020; font-size: 13px; font-weight: 400; overflow: hidden; text-overflow: ellipsis;}*/
 /* </editor-fold> */
 
 /*Панель «Мы в соцсетях»*/
