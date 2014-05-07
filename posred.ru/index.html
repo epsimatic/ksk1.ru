@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Газета «Твой посредник»</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/opensans/osans.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="dns-prefetch" href="//google-analytics.com"/>
+    <link rel="dns-prefetch" href="//ksk1.ru">
+    <link rel="dns-prefetch" href="//openstat.net">
+    <script src="http://ksk1.ru/js/jquery-1.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <!-- Tocify -->
+    <script src="http://ksk1.ru/tocify/libs/jqueryui/jquery-ui.custom.min.js"></script>
+    <script src="http://ksk1.ru/tocify/src/javascripts/jquery.tocify.min.js"></script>
+</head>
+<body class="site-copy" data-spy="scroll" data-target="nav-list">
+<div class="container">
+    <div id="user-panel-content" style="display: none;">
+        <img src="http://p-hold.com/newspaper/270/140">
+    </div>
+    <!--# include virtual="/header.html" -->
+    <div class="row">
+        <div class="col-main col-md-10">
+            <div class="panel panel-news-body">
+                <div class="panel-body">
+                    <div class="news_full">
+                        <h1 class="page-header">Here be dragons</h1>
+
+
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                // Инициализация шапки сайта
+                (function () {
+                    var user_panel_content = document.getElementById('user-panel-content');
+                    var user_panel = document.getElementById('user-panel');
+                    user_panel.innerHTML = user_panel_content.innerHTML;
+                    user_panel_content.remove();
+                })();
+            </script>
+            <script>var _gaq = [
+                ['_setAccount', 'UA-12107611-3'],
+                ['_trackPageview']
+            ];
+            (function (d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));</script>
+        </div>
+
+        <div class="col-md-2 hidden-print">
+            <div class="affixed-block" data-spy="affix" data-offset-top="200">
+                <!--suppress HtmlUnknownAnchorTarget -->
+                <a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); return false;"
+                   class="btn btn-link btn-block btn-scroll-up">Наверх</a>
+
+                <div id="toc"></div>
+            </div>
+        </div>
+    </div>
+    <!--# include virtual="/footer.html" -->
+</div>
+<!-- /container -->
+
+<!-- Скрипты и всё прочее -->
+
+<script>
+    jQuery(document).ready(function () {
+
+        jQuery("#toc").tocify({ selectors: "h3, h4, h5"}); // showAndHide: false
+
+    });
+</script>
+
+<!--Openstat-->
+<script type="text/javascript">
+    var openstat = { counter: 2173092, image: 5041, next: openstat };
+    (function (d, t) {
+        var j = d.createElement(t);
+        j.async = true;
+        j.type = "text/javascript";
+        j.src = "//openstat.net/cnt.js";
+        var s = d.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(j, s);
+    })(document, "script");
+    $('body').scrollspy({ target: '.nav-list' });
+
+</script>
+<!--/Openstat-->
+</body>
+</html>
