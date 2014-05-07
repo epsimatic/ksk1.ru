@@ -499,6 +499,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
+.news #page > #header object {width: 1160px; height: 107px; margin-left: -10px; margin-bottom: -4px;}
+
 .yummies {width: 100%; height: auto; margin-bottom: 10px;}
 
 .col-main .yummies {max-height: 105px ;}
