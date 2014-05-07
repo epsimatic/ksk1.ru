@@ -1600,7 +1600,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
     /*line-height: 30px;*/
 }
 
-.tocify .tocify-item > a {background-color: #ecf8fd; color: #4a76bb;}
+.tocify .tocify-item > a:focus,
+.tocify .tocify-item > a:hover {background-color: #ecf8fd; color: #4a76bb;}
 
 .tocify-header > .tocify-item > a {padding: 5px 10px; /*text-indent: 10px;*/}
 
