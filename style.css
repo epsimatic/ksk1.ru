@@ -1586,6 +1586,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
     top: 0;
 }
 
+.tocify .active a {background-color: #428bca;}
+
 /*TODO: Плавно прятать и показывать кнопку*/
 .affix-top .btn-scroll-up {
     display: none;
