@@ -652,7 +652,6 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 #text-11 .panel-heading {padding: 0 !important;}
 
 #text-11 .panel-body {padding: 0 !important;}
-#text-11 .panel-body h3 {font-size: 18px; font-weight: 600;}
 
 #text-11 .yu {max-height: 72px; padding-left: 10px; background-color: #f9fafb;}
 
@@ -713,6 +712,27 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Местные новости»"> */
+.content-padder > header {background-color: #f0f1f2; padding-bottom: 10px}
+
+.content-padder > header > .page-title {font-size: 27px; font-weight: 300; color: #666666; font-size: 30px; font-weight: 300; padding: 10px 20px 0px;}
+
+.content-padder > header p {color: #999999; margin: 0; padding-left: 22px;}
+
+.content-padder .media {margin: 0; padding: 10px 0;}
+
+.content-padder .media:hover {background-color: #f0f1f2;}
+
+.content-padder .media p {margin: 0;}
+
+#text-11 .panel-body h3,
+.content-padder .media .page-title a {font-size: 18px; font-weight: 600;}
+
+.content-padder .media .page-title a:hover {color: #428bca;}
+
+.content-padder .media .page-header {padding: 0;}
+
+.content-padder .media .page-header h2 {font-size: 18px;}
+
 .panel-local > .panel-body > .media,
 .panel-global > .panel-body > .media {padding: 5px;}
 
