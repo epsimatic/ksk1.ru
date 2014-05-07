@@ -1574,6 +1574,74 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .header-table {margin-bottom: 7px !important; margin-left: 7px;}
 /* </editor-fold> */
 
+/* <editor-fold desc="Навигация по разделам Tocify"> */
+/* The Table of Contents container element */
+.tocify {
+    max-height: 90%;
+    width: 186px;
+    font-size: 15px;
+}
+
+.affix {
+    top: 0;
+}
+
+/*TODO: Плавно прятать и показывать кнопку*/
+.affix-top .btn-scroll-up {
+    display: none;
+}
+
+/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
+.tocify ul, .tocify li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*line-height: 30px;*/
+}
+
+.tocify .tocify-item > a {background-color: #ecf8fd; color: #4a76bb;}
+
+.tocify-header > .tocify-item > a {padding: 5px 10px; /*text-indent: 10px;*/}
+
+/* Top level subheader elements.  These are the first nested items underneath a header element. */
+.tocify-subheader {
+    /*text-indent: 10px;*/
+    display: none;
+}
+
+.tocify-subheader > .tocify-item > a {padding-left: 15px !important;}
+
+/* Makes the font smaller for all subheader elements. */
+.tocify-subheader li {
+    font-size: 13px;
+}
+
+/* Further indents second level subheader elements. */
+/*.tocify-subheader .tocify-subheader {
+    text-indent: 30px;
+}*/
+
+/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
+/*.tocify-subheader .tocify-subheader .tocify-subheader {
+    text-indent: 40px;
+}*/
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a, .nav-list .nav-header {
+    margin: 0px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a {
+    padding: 5px;
+}
+.tocify-extend-page{
+    display: none;
+}
+/* </editor-fold> */
+
+
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="стили Афиши"> */
