@@ -1604,7 +1604,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .tocify-subheader > .tocify-item > a {padding-left: 15px !important;}
 
 /* Makes the font smaller for all subheader elements. */
-.tocify-subheader li {font-size: 13px;}
+.tocify-subheader li {font-size: 12px;}
 
 /* Further indents second level subheader elements. */
 /*.tocify-subheader .tocify-subheader {
