@@ -1524,7 +1524,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .table-striped > tbody > tr:nth-child(even) > td {background-color: #f3f3f3;}
 
-.site-copy .table-notes {font-style: oblique; color: #333; margin: -30px 0 40px; padding: 0 20px 0 40px;}
+.site-copy .table-notes {font-style: oblique; color: #999; margin: -30px 0 40px; padding: 0 20px 0 40px;}
 
 .site-copy .col-md-2 {padding-left: 0 !important;}
 
