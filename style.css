@@ -10,7 +10,8 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
-    background: #edeeef url('img/bg_grad.png') url('img/triangles.svg') repeat-x repeat left top left top;
+    background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat;
+    background-color: #edeeef;
     font-weight: normal;
 }
 
