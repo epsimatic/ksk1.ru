@@ -1535,7 +1535,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .copy-header {background-color: #75cee4; text-align: center; margin: 50px 0 30px;}
 
-.site-copy .copy-header h3 {color: #FFFFFF; font-size: 27px; font-weight: 600; letter-spacing: 0.035em; margin: 0; padding: 30px 20px; text-transform: uppercase;}
+.site-copy h3.copy-header {color: #FFFFFF; font-size: 27px; font-weight: 600; letter-spacing: 0.035em; margin: 0; padding: 30px 20px; text-transform: uppercase;}
 
 .site-copy .copy-header img {margin-top: -30px;}
 
