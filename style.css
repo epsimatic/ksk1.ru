@@ -1557,9 +1557,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* <editor-fold desc="Навигация по разделам Tocify"> */
 /* The Table of Contents container element */
-.tocify {max-height: 90%; font-size: 15px; display: none;}
+.tocify {max-height: 90%; font-size: 15px;}
 
-.affix {top: 0;}
+.affix {top: 0; display: none;}
 
 .tocify .active a {background-color: #56a9f0;}
 
@@ -2133,7 +2133,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .tocify {display: block; width: 218px;}
+    .tocify {width: 218px;}
+
+    .affix {display: block}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
