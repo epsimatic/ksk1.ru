@@ -1504,9 +1504,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .copy-header {background-color: #75cee4; text-align: center; margin-bottom: 30px;}
 
-.site-copy div.copy-header {margin-top: -30px;}
+.site-copy div.copy-header {margin-top: -30px; margin-left: -20px; margin-right: -20px;}
 
-.site-copy h3.copy-header {color: #FFFFFF; font-size: 27px; font-weight: 600; letter-spacing: 0.035em; margin: 30px 0; padding: 30px 20px; text-transform: uppercase;}
+.site-copy h3.copy-header {color: #FFFFFF; font-size: 27px; font-weight: 600; letter-spacing: 0.035em; margin: 30px -20px; padding: 30px 20px; text-transform: uppercase;}
 
 .site-copy .copy-header img {margin-top: -30px;}
 
@@ -2133,6 +2133,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .site-copy div.copy-header,
+    .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
+
     .tocify {width: 218px;}
 
     .affix {display: block}
