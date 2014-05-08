@@ -610,6 +610,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     margin: 0;
     padding: 0;
     top: 2px;
+    text-align: center;
 }
 
 .lcp_paginator li {
