@@ -10,8 +10,7 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
-    background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat;
-    background-color: #edeeef;
+    background: #edeeef url('img/bg_grad.png') url('img/triangles.svg') repeat-x repeat left top left top;
     font-weight: normal;
 }
 
@@ -36,9 +35,7 @@ header .btn-group {margin-top: 10px;}
 .header .yummies {margin: 0;}
 
 .row_header {
-    background-image: url("http://ksk1.ru/img/spring_header.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url("http://ksk1.ru/img/spring_header.png") no-repeat center center;
     background-size: cover;
     font-size: 18px;
     height: auto;
@@ -688,10 +685,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-news > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
 
 .panel-news > .panel-heading {
-    background-color: #1fa6f2;
-    background-image: url("img/panel-news.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #1fa6f2 url("img/panel-news.png") no-repeat right;
     background-size: contain;
 }
 
@@ -717,7 +711,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Местные новости»"> */
 .content-padder > header {background-color: #f0f1f2; padding-bottom: 10px}
 
-.content-padder > header > .page-title {font-size: 27px; font-weight: 300; color: #666666; font-size: 30px; font-weight: 300; padding: 10px 20px 0px;}
+.content-padder > header > .page-title {color: #666666; font-size: 30px; font-weight: 300; padding: 10px 20px 0;}
 
 .content-padder > header p {color: #999999; margin: 0; padding-left: 22px;}
 
@@ -749,20 +743,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Письмо в редакцию»"> */
 .panel-mails > .panel-heading {
-    background-color: #52be7f;
-    background-image: url("img/panel-mails.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #52be7f url("img/panel-mails.png") no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
 .panel-video > .panel-heading {
-    background-color: #ff6e0b;
-    background-image: url("img/panel-video.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #ff6e0b url("img/panel-video.png") no-repeat right;
     background-size: contain;
 }
 
@@ -771,30 +759,21 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Областные новости»"> */
 .panel-global > .panel-heading {
-    background-color: #2ebcb7;
-    background-image: url(img/panel-global.png);
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #2ebcb7 url(img/panel-global.png) no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading {
-    background-color: #ff794c;
-    background-image: url(img/panel-congrats.png);
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #ff794c url(img/panel-congrats.png) no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Официальная информация»"> */
 .panel-official > .panel-heading {
-    background-color: #4a76bb;
-    background-image: url(img/panel-official.png);
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #4a76bb url(img/panel-official.png) no-repeat right;
     background-size: contain;
 }
 
@@ -808,10 +787,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Гость не сайте»"> */
 .panel-guest > .panel-heading {
-    background-color: #00a1d3;
-    background-image: url("img/panel-guest.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #00a1d3 url("img/panel-guest.png") no-repeat right;
     background-size: contain;
 }
 
@@ -824,20 +800,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Случайное фото»"> */
 .panel-rphoto > .panel-heading {
-    background-color: #01bc85;
-    background-image: url("img/panel-rphoto.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #01bc85 url("img/panel-rphoto.png") no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ближайшие события»"> */
 .panel-event > .panel-heading {
-    background-color: #52be7f;
-    background-image: url("img/panel-event.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #52be7f url("img/panel-event.png") no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
@@ -849,17 +819,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-notice ul {background-color: #fff;}
 
-.panel-notice .list-group {padding-bottom: 0; margin-bottom: 0px}
+.panel-notice .list-group {padding-bottom: 0; margin-bottom: 0}
 
 .panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Голосование»"> */
 .panel-vote > .panel-heading {
-    background-color: #3db65a;
-    background-image: url("img/panel-vote.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    background: #3db65a url("img/panel-vote.png") no-repeat right;
     background-size: contain;
 }
 
@@ -912,7 +879,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Панель «Комментарии»"> */
 
-.panel-comments > .panel-heading {background-color: #46a2f9; background-image: url("img/panel-comments.png"); background-position: right; background-repeat: no-repeat; background-size: contain;}
+.panel-comments > .panel-heading {background: #46a2f9 url("img/panel-comments.png") no-repeat right;
+    background-size: contain;}
 
 .panel-comments .comment-author {color: #1f2a26;}
 
@@ -1626,7 +1594,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 }*/
 
 /* Twitter Bootstrap Override Style */
-.nav-list > li > a, .nav-list .nav-header {margin: 0px;}
+.nav-list > li > a, .nav-list .nav-header {margin: 0;}
 
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a {padding: 5px;}
