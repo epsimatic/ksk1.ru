@@ -2158,7 +2158,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .tocify {width: 186px;}
+    .tocify {width: 172px;}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
