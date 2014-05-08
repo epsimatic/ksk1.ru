@@ -1556,7 +1556,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* <editor-fold desc="Навигация по разделам Tocify"> */
 /* The Table of Contents container element */
-.tocify {max-height: 90%; width: 186px; font-size: 15px; display: none;}
+.tocify {max-height: 90%; font-size: 15px; display: none;}
 
 .affix {top: 0;}
 
@@ -2132,7 +2132,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .tocify {display: block}
+    .tocify {display: block; width: 218px;}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
@@ -2158,6 +2158,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .tocify {width: 186px;}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
