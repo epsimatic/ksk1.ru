@@ -982,7 +982,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info span {display: inline;}
 
-.panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;}
+.panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;overflow: hidden;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; *font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
 
