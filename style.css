@@ -721,7 +721,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .content-padder .media p {margin: 0;}
 
 #text-11 .panel-body h3,
-.content-padder .media .page-title a {font-size: 18px; font-weight: 600;}
+.content-padder .media .page-title h3 {font-size: 18px; font-weight: 600;}
 
 .content-padder .media .page-title a:hover {color: #428bca;}
 
