@@ -660,6 +660,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-nav > ul > li > a {color: #47475f;}
 
+.nav-pills .open > a, .nav-pills .open > a:hover, .nav-pills .open > a:focus,
 .panel-nav > ul > li > a:hover,
 .panel-nav > ul > li > a:focus {background-color: #eeeeee; color: #47475f;}
 
