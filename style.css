@@ -834,6 +834,13 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-vote label {color: #525256; font-weight: 600; position: relative; top: -2px;}
 
+.panel-vote .vote-link {color: #333; display: block; text-align: center;}
+
+.panel-vote .vote-link:hover,
+.panel-vote .vote-link:focus {color: #000;}
+
+.panel-vote .vote-link:after {content: "";}
+
 .panel-vote .btn-action {margin-right: 0; border-radius: 0;}
 
 .panel-vote .result {font-size: 16px; font-weight: 600; padding-left: 9px;}
