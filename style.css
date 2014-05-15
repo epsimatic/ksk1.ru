@@ -829,18 +829,25 @@ a.list-group-item:focus {background-color: #f0f1f2;}
     background-size: contain;
 }
 
-.panel-vote .panel-question {background-color: #f1f1f2; color: #47475f;}
+.panel-vote .panel-question {padding-bottom: 0;}
 .panel-vote .panel-question .btn {white-space: normal;}
 
 .panel-vote label {color: #525256; font-weight: 600; position: relative; top: -2px;}
 
-.panel-vote .btn-action {margin-top: 10px;}
+.panel-vote .btn-action {margin-right: 0; border-radius: 0;}
 
 .panel-vote .result {font-size: 16px; font-weight: 600; padding-left: 9px;}
 
 .panel-vote .wp-polls-ul {margin: 0;}
 
 .panel-vote .votes-num {display: none;}
+
+.panel-vote .panel-footer {padding: 0 0 0 7px;}
+
+.panel-vote .panel-footer a {color: #fff;}
+
+.panel-vote .panel-footer a:focus,
+.panel-vote .panel-footer a:hover {color: #fff;}
 
 .panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {background-color: #e35764 !important;}
 
