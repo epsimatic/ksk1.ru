@@ -844,10 +844,10 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-vote .panel-footer {padding: 0 0 0 7px;}
 
-.panel-vote .panel-footer a {color: #fff;}
+.panel-vote .panel-footer a.btn-action {color: #fff;}
 
-.panel-vote .panel-footer a:focus,
-.panel-vote .panel-footer a:hover {color: #fff;}
+.panel-vote .panel-footer a.btn-action:focus,
+.panel-vote .panel-footer a.btn-action:hover {color: #fff;}
 
 .panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {background-color: #e35764 !important;}
 
