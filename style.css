@@ -2210,3 +2210,5 @@ tr:hover .better {background-color: #cdffd7 !important;}
 
 /*категории новостей*/
 .nav-local a {cursor: pointer;}
+/*Прислать голосование*/
+.send-vote{display: none;}
