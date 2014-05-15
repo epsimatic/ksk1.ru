@@ -839,7 +839,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-vote .vote-link:hover,
 .panel-vote .vote-link:focus {color: #000;}
 
-.panel-vote .vote-link:after {content: "";}
+.panel-vote .vote-link:after {content: ""; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 5px;}
 
 .panel-vote .btn-action {margin-right: 0; border-radius: 0;}
 
