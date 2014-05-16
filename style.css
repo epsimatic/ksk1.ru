@@ -956,8 +956,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {color: #777;}
-.post-info > * {height: auto; padding: 5px; background-color: transparent;}
-.post-info span {display: block;}
+.post-info > * {height: auto; padding: 5px 0; background-color: transparent;}
+.post-info span {display: inline-block;}
 /*.post-info .label-views, .post-info .label-comment {padding: 0;}*/
 
 .post-info-date {white-space: nowrap; text-transform: lowercase;}
