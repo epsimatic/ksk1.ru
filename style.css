@@ -688,6 +688,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
 
+.panel-week > .panel-heading,
 .panel-news > .panel-heading {background: #1fa6f2 url("img/panel-news.png") no-repeat right; background-size: contain;}
 
 .panel-news {background-color: transparent;}
@@ -704,17 +705,17 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news .col-lg-5 {padding: 0 25px 0 5px;}
 
-.panel-news .col-lg-3 {background-color: #F9FAFB; padding: 0; margin-left: -10px;}
+.panel-week .textwidget > div {background-color: #F9FAFB; padding: 0; margin-left: -10px;}
 
-.panel-news a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
+.panel-week a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
 
-.panel-news a.news-link:hover {background-color: #f0f1f2;}
+.panel-week a.news-link:hover {background-color: #f0f1f2;}
 
-.panel-news .tooltip-inner {background-color: #FDFDFD; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color: #4D4D60; max-width: 300px; padding: 10px 15px; text-align: left;}
+.panel-week .tooltip-inner {background-color: #FDFDFD; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color: #4D4D60; max-width: 300px; padding: 10px 15px; text-align: left;}
 
-.panel-news .tooltip.in {opacity: 1; font-size: 13px; left: -310px !important;}
+.panel-week .tooltip.in {opacity: 1; font-size: 13px; left: -310px !important;}
 
-.panel-news .tooltip.left .tooltip-arrow {border-left-color: #FDFDFD;}
+.panel-week .tooltip.left .tooltip-arrow {border-left-color: #FDFDFD;}
 
 /*.news-slide .list-group-item {padding: 10px;}
 
@@ -2205,11 +2206,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    /*.post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
+    .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
 
-    .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
+    .panel-news .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
 
-    .post-info span {display: inline;}*/
+    .panel-news .post-info span {display: inline;}
 
     .tocify {width: 172px;}
 
