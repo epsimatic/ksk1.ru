@@ -2254,3 +2254,9 @@ tr:hover .better {background-color: #cdffd7 !important;}
 .nav-local a {cursor: pointer;}
 /*Прислать голосование*/
 .send-vote{display: none;}
+/*в контакте и однокласники*/
+
+.widget-vk, .widget-vk iframe, .widget-ok iframe{
+    width: 100% !important;
+    height: 250px !important;
+}
