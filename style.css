@@ -2257,6 +2257,6 @@ tr:hover .better {background-color: #cdffd7 !important;}
 /*в контакте и однокласники*/
 
 .widget-vk iframe, .widget-ok iframe{
-    width: 100%;
-    height: 250px;
+    width: 100% !important;
+    height: 250px !important;
 }
