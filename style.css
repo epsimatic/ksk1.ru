@@ -693,19 +693,22 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news {background-color: transparent;}
 
-.panel-news a {color: #4D4D60;}
+.panel-news .row {margin-right: 0;}
 
-.panel-news h4 {font-weight: 600; margin: 0 0 10px; color: #2590D8;}
+.panel-news h4 {color: #2590D8; font-size: 25px; font-weight: 600; margin: 5px 0 15px;}
+
+.panel-news a:hover h4 {text-decoration: underline;}
+
+.panel-news a {color: #4D4D60;}
 
 .panel-news a:hover,
 .panel-news a:focus {text-decoration: none;}
 
-.panel-news a:hover h4 {text-decoration: underline;}
+.panel-news .btn-action {margin-top: 30px;}
 
+/*.panel-news .col-lg-5 {padding: 0 25px 0 5px;}*/
 
-.panel-news .col-lg-5 {padding: 0 25px 0 5px;}
-
-.panel-week .textwidget > div {background-color: #F9FAFB; padding: 0; margin-left: -10px;}
+.panel-week .textwidget > div {background-color: #F9FAFB; padding: 0;}
 
 .panel-week a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
 
