@@ -708,7 +708,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news a.news-link:hover {background-color: #f0f1f2;}
 
-.panel-news .tooltip-inner {background-color: #FCFCFC; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color:#333; max-width: 250px; padding: 10px 15px; text-align: left;}
+.panel-news .tooltip-inner {background-color: #FCFCFC; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color: #4D4D60; max-width: 300px; padding: 10px 15px; text-align: left;}
 
 .panel-news .tooltip.in {opacity: 1; font-size: 13px;}
 
