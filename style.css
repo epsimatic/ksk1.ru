@@ -1593,7 +1593,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(6),
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {max-width: 0; padding-left: 0; padding-right: 0; color: white;}
 
-.site-copy .thumbnail img {box-shadow: 0 0 12px rgba(0,0,0,0.5);}
+.site-copy .thumbnail {border: none;}
+
+.site-copy .thumbnail img {box-shadow: 0 0 12px rgba(0,0,0,0.5); padding: 0; margin-top: 20px;}
+
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {background-color: white; border: 1px solid #aaa; border-radius: 0; font-weight: 300; color: #666; text-transform: uppercase; padding: 2px 4px; font-size: 12px;}
