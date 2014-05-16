@@ -1597,6 +1597,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .thumbnail img {box-shadow: 0 0 12px rgba(0,0,0,0.3); padding: 0; margin-top: 20px;}
 
+.site-copy .thumbnail h4 {color: #0080C7;}
+
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {background-color: white; border: 1px solid #aaa; border-radius: 0; font-weight: 300; color: #666; text-transform: uppercase; padding: 2px 4px; font-size: 12px;}
