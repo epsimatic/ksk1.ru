@@ -704,7 +704,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news .col-lg-3 {background-color: #F9FAFB; padding: 0; margin-left: -10px;}
 
-.panel-news a.news-link {display: block; padding: 5px 10px; color: #2590D8;}
+.panel-news a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
 
 .panel-news a.news-link:hover {background-color: #f0f1f2;}
 
