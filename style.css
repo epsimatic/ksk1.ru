@@ -708,6 +708,12 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news a.news-link:hover {background-color: #f0f1f2;}
 
+.panel-news .tooltip-inner {background-color: #FCFCFC; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color:#333; max-width: 250px; padding: 10px;}
+
+.panel-news .tooltip.in {opacity: 1;}
+
+/*.panel-news .tooltip.left .tooltip-arrow {border-left-color: #FBF8F7;}*/
+
 /*.news-slide .list-group-item {padding: 10px;}
 
 .news-slide-block {padding: 0;}
