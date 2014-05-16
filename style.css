@@ -2256,7 +2256,7 @@ tr:hover .better {background-color: #cdffd7 !important;}
 .send-vote{display: none;}
 /*в контакте и однокласники*/
 
-.widget-vk iframe, .widget-ok iframe{
+.widget-vk , .widget-ok iframe{
     width: 100% !important;
     height: 250px !important;
 }
