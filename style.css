@@ -2173,11 +2173,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
-
-    .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
-
-    .post-info span {display: inline;}
 
     .site-copy div.copy-header,
     .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
@@ -2210,6 +2205,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    /*.post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
+
+    .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
+
+    .post-info span {display: inline;}*/
+
     .tocify {width: 172px;}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
