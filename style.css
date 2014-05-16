@@ -712,7 +712,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news .tooltip.in {opacity: 1;}
 
-/*.panel-news .tooltip.left .tooltip-arrow {border-left-color: #FBF8F7;}*/
+.panel-news .tooltip.left .tooltip-arrow {border-left-color: #FCFCFC;}
 
 /*.news-slide .list-group-item {padding: 10px;}
 
