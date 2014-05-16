@@ -1595,7 +1595,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .thumbnail {border: none;}
 
-.site-copy .thumbnail img {box-shadow: 0 0 12px rgba(0,0,0,0.3); padding: 0; margin-top: 20px;}
+.site-copy .thumbnail img {box-shadow: 0 3px 6px rgba(0, 0, 0, 0.41); opacity: 0.7; padding: 0; margin-top: 20px; margin-bottom: 15px;}
 
 .site-copy .thumbnail h4 {color: #0080C7;}
 
