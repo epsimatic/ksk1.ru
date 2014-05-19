@@ -956,6 +956,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* </editor-fold> */
 
 /*Панель «Мы в соцсетях»*/
+.panel-social .panel-heading {background-color: #dfe6eb;}
+
+.panel-social .panel-heading h3 {color: #484860;}
 /* </editor-fold> */
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
