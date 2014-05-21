@@ -974,7 +974,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-social .social-tabs li a:hover,
 .panel-social .social-tabs li a:focus {background-color: #CFDAE2;}
 
-.panel-social .widget-ok {margin: -1px;}
+.panel-social .widget-ok {margin: -1px -1px -4px;}
 
 
 /* </editor-fold> */
