@@ -1372,6 +1372,8 @@ a.super {background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15p
 a.super:hover,
 a.super:focus {background-color: #fbea2d;}
 
+.super .ob-date {display: none;}
+
 .ob-meta {margin-top: 5px; color: #57346b;}
 
 .ob-meta .fa-clock-o {margin-left: 7px;}
