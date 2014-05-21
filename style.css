@@ -1358,12 +1358,12 @@ a.link-neutral:focus {color: #3b437d;}
 
 .ob-list {padding-bottom: 0;}
 
-a.paid, a.selectmess {background-color: #FFF385;}
+a.paid, a.selectmess {background-color: #FFF7A9;}
 
 a.selectmess:hover,
 a.selectmess:focus,
 a.paid:hover,
-a.paid:focus {background-color: #f9ec71;}
+a.paid:focus {background-color: #FFF385;}
 
 .list-group-item.super {margin: 0 0 10px !important;}
 
