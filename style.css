@@ -1365,8 +1365,6 @@ a.selectmess:focus,
 a.paid:hover,
 a.paid:focus {background-color: #FFF385;}
 
-.list-group-item.super {margin: 0 0 10px !important;}
-
 a.super {background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15px 20px !important;}
 
 a.super:hover,
@@ -1381,6 +1379,8 @@ a.super:focus {background-color: #fbea2d;}
 .ob-list > .paid {padding-right: 10px; margin-bottom: 7px; margin-top: 0;}
 
 .ob-list > .list-group-item {margin: 0 0 3px !important;}
+
+.ob-list > .list-group-item.super {margin: 0 0 10px !important;}
 
 /* </editor-fold> */
 
