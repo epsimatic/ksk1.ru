@@ -969,8 +969,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-social .social-tabs li a {padding: 4px 4px 0;}
 
-.panel-social .social-tabs li.active a:hover,
-.panel-social .social-tabs li.active a:focus,
+.panel-social .social-tabs li.active a {background-color: #F1F1F1;}
+
 .panel-social .social-tabs li a:hover,
 .panel-social .social-tabs li a:focus {background-color: #CFDAE2;}
 
