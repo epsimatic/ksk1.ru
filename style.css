@@ -958,7 +958,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /*Панель «Мы в соцсетях»*/
 .panel-social .panel-heading {background-color: #dfe6eb; padding: 10px 15px 4px;}
 
-.panel-social .panel-heading h3 {color: #484860; padding: 0 0 2px;}
+.panel-social .panel-heading h3 {color: #484860; padding: 0 0 2px !important;}
 
 .panel-social .social-tabs {height: 0; position: relative; text-align: right; top: -43px;}
 
