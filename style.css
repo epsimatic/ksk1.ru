@@ -846,7 +846,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-notice .list-group-item {background-color: #fcfcfc;}
 
-.panel-notice ul {background-color: #fff;}
+.panel-notice ul li.list-group-item {background-color: #f9fafb;}
 
 .panel-notice .list-group {padding-bottom: 0; margin-bottom: 0}
 
@@ -928,6 +928,15 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-comments > .panel-heading {background: #46a2f9 url("img/panel-comments.png") no-repeat right;
     background-size: contain;}
+
+.panel-comments ul.nav {background-color: #fcfeff;}
+
+.panel-comments .nav > li > a {color: #999;}
+
+.panel-comments .nav > li.active > a {color: #333;}
+
+.panel-comments .nav > li > a:focus,
+.panel-comments .nav > li > a:hover {background-color: #F6F7F8; color: #777;}
 
 .panel-comments .comment-author {color: #1f2a26;}
 
@@ -1017,7 +1026,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Страница новости"> */
 /* <editor-fold desc="Панель тела новости"> */
-.panel-news-body > .panel-body {padding: 10px;}
+.panel-news-body > .panel-body {padding: 20px;}
 
 .panel-news-body .panel-body .row {margin-left: -10px; margin-right: -10px}
 
@@ -1118,10 +1127,10 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-comments-list .media-body .thumblock .gdup .gdt-classical {color: #d1d3d4;}
 
 .panel-comments-list .media-body .thumblock .gddw a.gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:focus {color: #ff9087;}
+.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:focus {color: #ff9087; text-decoration: none;}
 
 .panel-comments-list .media-body .thumblock .gdup a.gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:focus {color: #74cd87;}
+.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:focus {color: #74cd87; text-decoration: none;}
 
 .panel-comments-list .media-body .thumblock .gdthumbtext .badge {font-size: 14px; font-weight: 300; padding-top: 1px;}
 
@@ -1782,9 +1791,11 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* панель Список комментраиев*/
 .comments-list {list-style: none outside none;}
 
-.panel-comments-list > #respond {padding-left: 20px; padding-right: 10px;}
+.panel-comments-list > #respond {padding: 10px 10px 10px 20px;}
 
 #respond {padding-top: 10px;}
+
+#respond p.form-submit {margin-bottom: 0;}
 
 h5.comment-notes-before {font-size: 16px; padding-bottom: 10px;}
 
