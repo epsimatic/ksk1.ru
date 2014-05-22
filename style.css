@@ -931,14 +931,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-comments > .panel-heading {background: #46a2f9 url("img/panel-comments.png") no-repeat right;
     background-size: contain;}
 
-.panel-comments ul.nav {background-color: #fcfeff;}
+.panel-comments ul.nav {background-color: #c7d1e0; padding: 5px;}
 
-.panel-comments .nav > li > a {color: #999;}
+.panel-comments .nav > li > a {color: #47475F;}
 
-.panel-comments .nav > li.active > a {color: #333;}
+.panel-comments .nav > li.active > a {color: #fff; background-color: #8392a8;}
 
 .panel-comments .nav > li > a:focus,
-.panel-comments .nav > li > a:hover {background-color: #F6F7F8; color: #777;}
+.panel-comments .nav > li > a:hover {background-color: #EEE; color: #47475F;}
 
 .panel-comments .comment-author {color: #1f2a26;}
 
