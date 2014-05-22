@@ -933,7 +933,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-comments ul.nav {background-color: #c7d1e0; padding: 5px;}
 
-.panel-comments .nav > li > a {color: #47475F;}
+.panel-comments .nav > li > a {color: #47475F; border-radius: 0; border: none;}
 
 .panel-comments .nav > li.active > a {color: #fff; background-color: #8392a8;}
 
