@@ -2318,6 +2318,3 @@ tr:hover .better {background-color: #cdffd7 !important;}
     width: 100% !important;
     height: 250px !important;
 }
-/*для разработки поднять вверх*/
-.admin_show{display: none;}
-.is_admin .admin_show{display: block;}
