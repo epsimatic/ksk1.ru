@@ -875,7 +875,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-vote .btn-action {margin-right: 0; border-radius: 0;}
 
-.panel-vote .result {font-size: 16px; font-weight: 600; padding-left: 9px;}
+.panel-result .result {font-size: 16px; font-weight: 600; padding-left: 9px;}
 
 .panel-vote .wp-polls-ul {margin: 0;}
 
@@ -892,15 +892,15 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-vote .panel-result {padding: 10px 15px;}
 
-.panel-vote .wp-polls-ul li:nth-child(1) .progress-bar {background-color: #e35764 !important;}
+.panel-result .wp-polls-ul li:nth-child(1) .progress-bar {background-color: #e35764 !important;}
 
-.panel-vote .wp-polls-ul li:nth-child(2) .progress-bar {background-color: #12dbd6 !important;}
+.panel-result .wp-polls-ul li:nth-child(2) .progress-bar {background-color: #12dbd6 !important;}
 
-.panel-vote .wp-polls-ul li:nth-child(3) .progress-bar {background-color: #f7922c !important;}
+.panel-result .wp-polls-ul li:nth-child(3) .progress-bar {background-color: #f7922c !important;}
 
-.panel-vote .wp-polls-ul li:nth-child(4) .progress-bar {background-color: #656ccf !important;}
+.panel-result .wp-polls-ul li:nth-child(4) .progress-bar {background-color: #656ccf !important;}
 
-.panel-vote .wp-polls-ul li:nth-child(5) .progress-bar {background-color: #36e796 !important;}
+.panel-result .wp-polls-ul li:nth-child(5) .progress-bar {background-color: #36e796 !important;}
 
 /*
 .panel-vote > .panel-question p {
@@ -1037,6 +1037,9 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-news-body .panel-body img {padding: 5px 0 15px;}
 
 .panel-news-body .panel-body p {padding-bottom: 4px; color: #4D4D60; font-size: 1.2em;}
+
+
+.panel-page .panel-body header.page-header {margin-bottom: 10px;}
 
 .panel-page .panel-body h1,
 .panel-news-body .panel-body h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
