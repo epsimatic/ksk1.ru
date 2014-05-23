@@ -637,6 +637,46 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .lcp_paginator li:active {background-image: none; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset; outline: 0 none;}
 /* </editor-fold> */
+
+/* <editor-fold desc="Таблица сравнения тарифов"> */
+
+.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
+
+.table-comparison.table-bordered > thead > tr > th,
+.table-comparison.table-bordered > tbody > tr > th,
+.table-comparison.table-bordered > tfoot > tr > th,
+.table-comparison.table-bordered > thead > tr > td,
+.table-comparison.table-bordered > tbody > tr > td,
+.table-comparison.table-bordered > tfoot > tr > td {border: 1px solid #FFFFFF;}
+
+.table-comparison td {width: 21%;}
+
+.table-comparison td:first-child {width: auto;}
+
+.table-comparison .fa {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);}
+
+.table-comparison .positive {background-color: #D4F9DC;}
+
+.table-comparison .neutral {background-color: #F4FFF6;}
+
+.table-comparison .negative {background-color: #FFF3F1;}
+
+.table-comparison .positive .fa {color: #1DAC3B;}
+
+.table-comparison .negative .fa {color: #FA7A70;}
+
+.table-comparison .basic {color: #999999;}
+
+.table-comparison .good {text-transform: uppercase;}
+
+.table-comparison .good.neutral {color: #6B6F6C;}
+
+.table-comparison .positive.better {color: #056E1B; text-transform: uppercase;}
+
+.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
+
+/* </editor-fold> */
+
 /* </editor-fold> */
 /* </editor-fold> */
 
@@ -1648,6 +1688,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .thumbnail p {font-size: 14px;}
 
+.site-copy #album-table th {width: 33%;}
+
+.site-copy #album-table td,
+.site-copy #album-table th {text-align: center; border: 5px white solid;}
+
+.site-copy .better {background-color: #c1ffb0 !important;}
+
+.site-copy tr:hover .better {background-color: #cdffd7 !important;}
+
 
 /* Бэджи формата бумаги для типографии */
 .paper-format {background-color: white; border: 1px solid #aaa; border-radius: 0; font-weight: 300; color: #666; text-transform: uppercase; padding: 2px 4px; font-size: 12px;}
@@ -2298,17 +2347,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #popover-shopping .popover {left: -23px !important;}
 }
-
-
-/*копицентр*/
-#album-table th {width: 33%;}
-
-#album-table td,
-#album-table th {text-align: center; border: 5px white solid;}
-
-.better {background-color: #c1ffb0 !important;}
-
-tr:hover .better {background-color: #cdffd7 !important;}
 
 /*категории новостей*/
 .nav-local a {cursor: pointer;}
