@@ -649,6 +649,10 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .table-comparison.table-bordered > tbody > tr > td,
 .table-comparison.table-bordered > tfoot > tr > td {border: 1px solid #FFFFFF;}
 
+.table-comparison tbody > tr > td {vertical-align: middle;}
+
+.table-comparison thead > tr > th {text-align: center;}
+
 .table-comparison td {width: 21%;}
 
 .table-comparison td:first-child {width: auto;}
@@ -667,11 +671,11 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .basic {color: #999999;}
 
-.table-comparison .good {text-transform: uppercase;}
+.table-comparison .good {color: #6B6F6C; text-transform: uppercase;}
 
-.table-comparison .good.neutral {color: #6B6F6C;}
+.table-comparison .good.neutral {text-transform: inherit;}
 
-.table-comparison .positive.better {color: #056E1B; text-transform: uppercase;}
+.table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
 
 .table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
 
