@@ -2320,5 +2320,6 @@ tr:hover .better {background-color: #cdffd7 !important;}
     width: 100% !important;
     height: 250px !important;
 }
+/*для отладки супер выделение*/
 .admin {display: none;}
 .is_admin .admin{display: block;}
