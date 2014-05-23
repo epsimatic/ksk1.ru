@@ -2358,5 +2358,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     width: 100% !important;
     height: 250px !important;
 }
+/*для отладки супер выделение*/
 .admin {display: none;}
 .is_admin .admin{display: block;}
