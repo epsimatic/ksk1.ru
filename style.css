@@ -1374,6 +1374,8 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list {padding-bottom: 0;}
 
 a.paid, a.selectmess {background-color: #FFF7A9;}
+a.super_paid{background-color: #ffc91d;}
+a.super_paid:hover, a.super_paid:focus{background-color: orange;}
 
 a.selectmess:hover,
 a.selectmess:focus,
