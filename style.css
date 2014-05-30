@@ -1541,14 +1541,14 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
     white-space: nowrap;
 }
 
-.is_owner .payment-panel_block-header {cursor: default;}
-
 .payment-panel_block {display: block;}
 
 .is_owner .payment-panel_block {display: block;}
 
 .show-owner,
 .show-admin {display: none !important;}
+
+.is_admin .hide-admin {display: none !important;}
 
 .is_owner .show-owner,
 .is_admin .show-admin {display: inline-block !important;}
