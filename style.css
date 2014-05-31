@@ -679,6 +679,15 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
 
+/* Новая таблица на .col: */
+.table-comparison .row > div {
+    text-align: center;
+}
+
+.table-comparison .row > div:first-child {
+    text-align: right;
+}
+
 /* </editor-fold> */
 
 /* </editor-fold> */
