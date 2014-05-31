@@ -680,9 +680,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
 
 /* Новая таблица на .col: */
-.table-comparison .row > div { text-align: center; height: 2em; }
+.table-comparison .row > div { text-align: center; min-height: 3em; }
 .table-comparison .row > div:first-child { text-align: right; font-size: 80%; hyphens: auto; }
-.table-comparison .comparison-header { font-weight: bold; }
+.table-comparison .row-header { font-weight: bold; }
 
 /* </editor-fold> */
 
