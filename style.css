@@ -2371,4 +2371,4 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .admin {display: none;}
 .is_admin .admin{display: block;}
 /*загрузка аяксом Хотите продать быстрее*/
-.row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 10px; }
+.row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 20px; }
