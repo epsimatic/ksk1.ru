@@ -640,6 +640,75 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
 
+
+/* Для -XS- */
+
+.table-comparison > .row > .col-sm-4:first-child {font-size: 16px; color: #888; min-height: 36px; padding: 16px 10px 10px; text-align: left;}
+
+.table-comparison > .row > .col-sm-4:after {content: ":";}
+@media (min-width: 768px) {
+    .table-comparison > .row > .col-sm-4:first-child {font-size: 14px; text-align: right;}
+    .table-comparison > .row > div.col-sm-4:after {content: "";}
+}
+
+/* Другие */
+
+
+.table-comparison > .row {text-align: center; margin: 0 -10px;}
+
+.table-comparison > .row > div:first-child {text-align: left;}
+
+.table-comparison > .row div.col-sm-offset-4 {padding: 0;}
+
+.table-comparison > .row > div:first-child,
+.table-comparison > .row .row > div {height: 56px;}
+
+.table-comparison > .row .row > div {padding-top: 16px; border: 1px solid #FFFFFF;}
+
+.table-comparison > .row-publish .row > div {padding-top: 9px;}
+
+/*.table-comparison > .row-current-tariff .row > div { text-align: center; }*/
+.table-comparison > .row-current-tariff .row > div {color: #333;}
+
+.table-comparison > .row-current-tariff .row > div > .fa {display: block; margin-left: -4px; margin-right: 15px; margin-top: 10px;}
+
+.table-comparison > .row-current-tariff .row > div > span {display: block; line-height: 1.1; padding: 2px 20px 0 4px;}
+
+.table-comparison > .row-marked .row > div.better,
+.table-comparison > .row-topmost .row > div.good  {padding-top: 8px}
+
+.table-comparison > .row-attention .row > div.better {padding-top: 7px;}
+
+.table-comparison .fa {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);}
+
+.table-comparison .fa-check {color: #1DAC3B;}
+
+.table-comparison .fa-times {color: #FA7A70;}
+
+.table-comparison .basic {color: #999999;}
+
+.table-comparison .positive {background-color: #D4F9DC;}
+
+.table-comparison .neutral {background-color: #F4FFF6;}
+
+.table-comparison .negative {background-color: #FFF3F1;}
+
+.table-comparison > .row-header .row > div {color: #333; font-weight: 700; text-align: center;}
+
+.table-comparison .good {color: #6B6F6C; text-transform: uppercase;}
+
+.table-comparison .good.neutral {text-transform: inherit;}
+
+.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; text-transform: uppercase;}
+
+.table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
+
+.table-comparison .row-buttons .row {background-color: #fff;}
+
+
+
+
+
 /*.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
 
 .table-comparison.table-bordered > thead > tr > th,
@@ -657,27 +726,10 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison td:first-child {width: auto;}
 
-.table-comparison .fa {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);}
+.row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 20px; }
 
-.table-comparison .positive {background-color: #D4F9DC;}
 
-.table-comparison .neutral {background-color: #F4FFF6;}
-
-.table-comparison .negative {background-color: #FFF3F1;}
-
-.table-comparison .positive .fa {color: #1DAC3B;}
-
-.table-comparison .negative .fa {color: #FA7A70;}
-
-.table-comparison .basic {color: #999999;}
-
-.table-comparison .good {color: #6B6F6C; text-transform: uppercase;}
-
-.table-comparison .good.neutral {text-transform: inherit;}
-
-.table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
-
-.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;} */
+ */
 
 /* Новая таблица на .col: */
 /*.table-comparison .row > div { text-align: center; min-height: 3em; }
@@ -2371,4 +2423,3 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .admin {display: none;}
 .is_admin .admin{display: block;}
 /*загрузка аяксом Хотите продать быстрее*/
-.row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 20px; }
