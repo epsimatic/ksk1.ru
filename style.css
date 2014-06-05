@@ -679,6 +679,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;} */
 
+/* Новая таблица на .col: */
+.table-comparison .row > div { text-align: center; min-height: 3em; }
+.table-comparison .row-header { font-weight: bold; }
+.table-comparison .row > div:first-child { text-align: left; font-size: 130%; hyphens: auto; }
+@media (min-width: 768px) {
+    .table-comparison .row > div:first-child { text-align: right; font-size: 80%; hyphens: auto; }
+}
+
 /* </editor-fold> */
 
 /* </editor-fold> */
@@ -2362,3 +2370,5 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 /*для отладки супер выделение*/
 .admin {display: none;}
 .is_admin .admin{display: block;}
+/*загрузка аяксом Хотите продать быстрее*/
+.row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 20px; }
