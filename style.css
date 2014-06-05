@@ -640,7 +640,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
 
-.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
+/*.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
 
 .table-comparison.table-bordered > thead > tr > th,
 .table-comparison.table-bordered > tbody > tr > th,
@@ -677,7 +677,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
 
-.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
+.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;} */
 
 /* </editor-fold> */
 
