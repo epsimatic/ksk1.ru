@@ -640,24 +640,52 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
 
-.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
 
-.table-comparison.table-bordered > thead > tr > th,
-.table-comparison.table-bordered > tbody > tr > th,
-.table-comparison.table-bordered > tfoot > tr > th,
-.table-comparison.table-bordered > thead > tr > td,
-.table-comparison.table-bordered > tbody > tr > td,
-.table-comparison.table-bordered > tfoot > tr > td {border: 1px solid #FFFFFF;}
+/* Для -XS- */
 
-.table-comparison tbody > tr > td {vertical-align: middle;}
+.table-comparison > .row > .col-sm-4:first-child {font-size: 16px; color: #888; min-height: 36px; padding: 16px 10px 10px; text-align: left;}
 
-.table-comparison thead > tr > th {text-align: center;}
+.table-comparison > .row > .col-sm-4:after {content: ":";}
+@media (min-width: 768px) {
+    .table-comparison > .row > .col-sm-4:first-child {font-size: 14px; text-align: right;}
+    .table-comparison > .row > div.col-sm-4:after {content: "";}
+}
 
-.table-comparison td {width: 21%;}
+/* Другие */
 
-.table-comparison td:first-child {width: auto;}
+
+.table-comparison > .row {text-align: center; margin: 0 -10px;}
+
+.table-comparison > .row > div:first-child {text-align: left;}
+
+.table-comparison > .row div.col-sm-offset-4 {padding: 0;}
+
+.table-comparison > .row > div:first-child,
+.table-comparison > .row .row > div {height: 56px;}
+
+.table-comparison > .row .row > div {padding-top: 16px; border: 1px solid #FFFFFF;}
+
+.table-comparison > .row-publish .row > div {padding-top: 9px;}
+
+/*.table-comparison > .row-current-tariff .row > div { text-align: center; }*/
+.table-comparison > .row-current-tariff .row > div {color: #333;}
+
+.table-comparison > .row-current-tariff .row > div > .fa {display: block; margin-left: -4px; margin-right: 15px; margin-top: 10px;}
+
+.table-comparison > .row-current-tariff .row > div > span {display: block; line-height: 1.1; padding: 2px 20px 0 4px;}
+
+.table-comparison > .row-marked .row > div.better,
+.table-comparison > .row-topmost .row > div.good  {padding-top: 8px}
+
+.table-comparison > .row-attention .row > div.better {padding-top: 7px;}
 
 .table-comparison .fa {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);}
+
+.table-comparison .fa-check {color: #1DAC3B;}
+
+.table-comparison .fa-times {color: #FA7A70;}
+
+.table-comparison .basic {color: #999999;}
 
 .table-comparison .positive {background-color: #D4F9DC;}
 
@@ -665,27 +693,25 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .negative {background-color: #FFF3F1;}
 
-.table-comparison .positive .fa {color: #1DAC3B;}
-
-.table-comparison .negative .fa {color: #FA7A70;}
-
-.table-comparison .basic {color: #999999;}
+.table-comparison > .row-header .row > div {color: #333; font-weight: 700; text-align: center;}
 
 .table-comparison .good {color: #6B6F6C; text-transform: uppercase;}
 
 .table-comparison .good.neutral {text-transform: inherit;}
 
+.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; text-transform: uppercase;}
+
 .table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
 
-.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;}
+.table-comparison .row-buttons .row {background-color: #fff;}
 
 /* Новая таблица на .col: */
-.table-comparison .row > div { text-align: center; min-height: 3em; }
+/*.table-comparison .row > div { text-align: center; min-height: 3em; }
 .table-comparison .row-header { font-weight: bold; }
 .table-comparison .row > div:first-child { text-align: left; font-size: 130%; hyphens: auto; }
 @media (min-width: 768px) {
     .table-comparison .row > div:first-child { text-align: right; font-size: 80%; hyphens: auto; }
-}
+}*/
 
 /* </editor-fold> */
 
