@@ -1530,7 +1530,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 .add-ob__line__photo__container {width: 100%; overflow: hidden;}
 /*изначальная загрузка формы Добавить объявление*/
  .form-group_select, .form-group_textarea,
-.form-group_price, .form-group_phone, .form-group_price, .form-group_phone, .form-group_price, .form-group_phone,
+.form-group_price, .label-price_cost, .label-price_salary, .form-group_phone, .form-group_price, .form-group_phone, .form-group_price, .form-group_phone,
 .form-group_mail, .form-group_photo, .add-ob__info-law,
 .add-ob__info-license, .add-ob__btn-submit{display: none;}
 
