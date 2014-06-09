@@ -158,7 +158,7 @@
         html: true,
         placement: "bottom"
     });
-    jQuery('#pop-btn-weather').on('hidden.bs.popover', function () {
+    jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
         $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
     });
 
