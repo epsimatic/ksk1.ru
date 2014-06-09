@@ -101,9 +101,9 @@
         <a href='http://akvafor24.ru/'><img src='http://ksk1.ru/img/logo-aquaphor.png'></a>
     </div>
 </div>
-<div id="popover_weather_content" style="display: none">
-   <div> А для вас я никто</div>
-</div>
+<!--<div id="popover_weather_content" style="display: none">
+
+</div>-->
 <script>
 (function(){
     var url = document.location.href,
@@ -163,7 +163,7 @@
     });
 
     jQuery('#pop-btn-weather').popover({
-        content: jQuery('#popover_weather_content').html(),
+        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' style='width: 100%; height: 500px; overflow-y: scroll;'></iframe>",
         html: true,
         placement: "bottom"
     });
