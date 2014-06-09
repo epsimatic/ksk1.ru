@@ -25,7 +25,7 @@
                 <span id="logo"></span>
             </a>
         </div>
-        <div type="button" class="btn btn-link weather-block header-line__weather-block hidden-lg" id="pop-btn-weather"
+        <div  class="btn btn-link weather-block header-line__weather-block hidden-lg" id="pop-btn-weather"
              data-toggle="popover" data-placement="bottom">
            <!-- <a class="weather-block header-line__weather-block hidden-lg" rel="nofollow" target="_blank"
                href="http://m.pogoda.yandex.ru/20691/?mode=short" title="На сайт pogoda.yandex.ru">-->
@@ -103,17 +103,17 @@
 
 <script>
 (function(){
-    url = document.location.href;
-    ob = /^[http:\/\/]+ob/;
-    news = /^[http:\/\/]+news/;
-    oldnews = /^[http:\/\/]+ksk66/;
-    cat =  /^[http:\/\/]+cat/;
-    video = /^[http:\/\/]+video/;
-    pfoto =  /^[http:\/\/]+pfoto/;
-    timetable = /timetable/;
-    karta = /map/;
-    copy = /copy/;
-    subtitle = document.getElementById("logo");
+    var url = document.location.href,
+    ob = /^[http:\/\/]+ob/,
+    news = /^[http:\/\/]+news/,
+    oldnews = /^[http:\/\/]+ksk66/,
+    cat =  /^[http:\/\/]+cat/,
+    video = /^[http:\/\/]+video/,
+    pfoto =  /^[http:\/\/]+pfoto/,
+    timetable = /timetable/,
+    karta = /map/,
+    copy = /copy/,
+    subtitle = document.getElementById("logo"),
     body = document.getElementsByTagName("body")[0];
 
     if(url.match(ob)) {
