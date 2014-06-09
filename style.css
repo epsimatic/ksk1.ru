@@ -118,25 +118,31 @@ header .btn-group {margin-top: 10px;}
     width: 100%;
 }
 
-.header-line__weather-block__temp {bottom: 13px; font-weight: 600;}
-
-.header-line__weather-block__label {
+.weather-label {
     color: #808080;
     font-size: 56%;
     font-weight: 300;
     text-align: center;
 }
 
-.weather-temp {
-    bottom: -11px;
+.weather-temp-sm {
     font-size: 40%;
-    left: 45px;
-    opacity: 0;
     position: absolute;
+    font-weight: 600;
+    bottom: 2px;
+    left: 11px;
+}
+
+.weather-temp-lg {
+    font-size: 120%;
     font-weight: 600;
 }
 
-.weather-temp {bottom: 2px; left: 11px; opacity: 1;}
+.weather-block {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
 
 .popover-weather-iframe {
     width: 100%;
