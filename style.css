@@ -124,11 +124,17 @@ header .btn-group {margin-top: 10px;}
 }
 
 .weather-temp-sm {
-    font-size: 55%;
-    font-weight: 600;
+    font-size: 40%;
     position: absolute;
     bottom: 22px;
     left: 37px;
+}
+
+.weather-temp-lg {
+    font-size: 120%;
+    font-weight: 600;
+    bottom: 2px;
+    left: 11px;
 }
 
 .weather-temp-lg {
