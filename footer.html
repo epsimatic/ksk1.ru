@@ -1,4 +1,19 @@
 <script type="application/javascript">
+
+    // Popover для магазинов
+    jQuery('#pop-btn-shopping').popover({
+        content: jQuery('#popover_shopping_content').html(),
+        html: true,
+        placement: "bottom"
+    });
+
+    // Popover для погоды с iframe от Яндекса
+    jQuery('#pop-btn-weather').popover({
+        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
+        html: true,
+        placement: "bottom"
+    });
+
     // поиск google
     (function () {
         var ob = /^[http:\/\/]+ob/;
@@ -61,7 +76,6 @@
         }
     })(document, window, "yandex_metrika_callbacks");
     <!-- /Yandex.Metrika counter -->
-
 </script>
 <noscript>
     <div><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></div>
