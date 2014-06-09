@@ -25,11 +25,11 @@
                 <span id="logo"></span>
             </a>
         </div>
-        <div type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-            <a class="weather-block header-line__weather-block hidden-lg" rel="nofollow" target="_blank"
-               href="http://m.pogoda.yandex.ru/20691/?mode=short" title="На сайт pogoda.yandex.ru">
+        <div type="button" class="btn btn-link" id="pop-btn-weather" >
+           <!-- <a class="weather-block header-line__weather-block hidden-lg" rel="nofollow" target="_blank"
+               href="http://m.pogoda.yandex.ru/20691/?mode=short" title="На сайт pogoda.yandex.ru">-->
                 <div class="weather-temp-sm header-line__logo__weather-block__temp"></div>
-               </a>
+             <!--  </a>-->
         </div>
     </div>
     <div class="header-line__weather-block-col hidden-xs hidden-sm hidden-md col-lg-1">
@@ -157,6 +157,16 @@
         html: true,
         placement: "bottom"
     });
+    jQuery('#pop-btn-weather').on('hidden.bs.popover', function () {
+        $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
+    });
+
+
+   /* jQuery('#pop-btn-weather').popover({
+        content: jQuery('#popover_shopping_content').html(),
+        html: true,
+        placement: "bottom"
+    });*/
 })();
 
 </script>
