@@ -100,7 +100,12 @@
         <a href='http://akvafor24.ru/'><img src='http://ksk1.ru/img/logo-aquaphor.png'></a>
     </div>
 </div>
-
+<div id="popover_weather_content" style="display: none">
+   <?php
+      $html = file_get_contents($url);
+        echo $html;
+   ?>
+</div>
 <script>
 (function(){
     var url = document.location.href,
@@ -158,10 +163,17 @@
         html: true,
         placement: "bottom"
     });
-    jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
-        $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
+
+    jQuery('#pop-btn-shopping').popover({
+        content: jQuery('#popover_whether_content').html(),
+        html: true,
+        placement: "bottom"
     });
 
+   /* jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
+        $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
+    });
+*/
 
    /* jQuery('#pop-btn-weather').popover({
         content: jQuery('#popover_shopping_content').html(),
