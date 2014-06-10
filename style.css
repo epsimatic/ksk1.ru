@@ -60,6 +60,8 @@ header .btn-group {margin-top: 10px;}
     height: 140px;
 }
 
+#user-panel-content { display: none; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Логотип"> */
