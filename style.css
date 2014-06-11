@@ -938,7 +938,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Важно»"> */
 .panel-notice > .panel-heading {background-color: #FF4B3D;}
 
-.panel-notice a.news-week { background-color: #fcfcfc; display: block; padding: 10px 15px; }
+.panel-notice a.news-link { background-color: #fcfcfc; display: block; padding: 10px 15px; }
 
 .panel-notice ul li.list-group-item {background-color: #f9fafb;}
 
