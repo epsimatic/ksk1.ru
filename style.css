@@ -132,7 +132,7 @@ header .btn-group {margin-top: 10px;}
 
 .weather-temp-sm {
     position: absolute;
-    bottom: 22px;
+    bottom: 0;
     left: 37px;
 }
 /*.weather-temp-lg {}*/
