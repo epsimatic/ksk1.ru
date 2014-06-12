@@ -780,7 +780,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-news .row {margin-right: 0; margin-left: 0;}
 
-.panel-news > .panel-heading {color: #ffffff; background-color: #1FA6F2; border: none; margin-bottom: 10px; display: none;}
+.panel-news > .panel-heading {color: #ffffff; background-color: #1FA6F2; border: none; margin-bottom: 10px;}
 
 .panel-news > .panel-heading h3 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important;}
 
