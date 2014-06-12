@@ -956,11 +956,11 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
 
-.panel-week .textwidget > div {background-color: #F9FAFB; padding: 0;}
+.panel-notice .textwidget > div {background-color: #F9FAFB; padding: 0;}
 
-.panel-week a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
+.panel-notice a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
 
-.panel-week a.news-link:hover {background-color: #f0f1f2;}
+.panel-notice a.news-link:hover {background-color: #f0f1f2;}
 
 .panel-notice .tooltip-inner {background-color: #FDFDFD; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color: #4D4D60; max-width: 500px; padding: 10px 15px; text-align: left;}
 
