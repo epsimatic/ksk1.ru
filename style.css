@@ -1501,6 +1501,11 @@ a.super {background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15p
 a.super:hover,
 a.super:focus {background-color: #fbea2d;}
 
+.panel-notice a.super {background-color: #fffcdc;}
+
+.panel-notice a.super:hover,
+.panel-notice a.super:focus {background-color: #fef8b7;}
+
 .super .ob-date {display: none;}
 
 .ob-meta {margin-top: 5px; color: #57346b;}
