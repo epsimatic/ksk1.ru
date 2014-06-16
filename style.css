@@ -862,7 +862,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-local > .panel-body > .media,
 .panel-global > .panel-body > .media {padding: 5px;}
 
+.panel-official .list > a.list-group-item > h3,
 .panel-global .list > a.list-group-item > h3 {font-weight: 600; font-size: 18px; color: #2590d8}
+
+.inset .panel-official .list > a.list-group-item > h3,
+.inset .panel-global .list > a.list-group-item > h3 {font-size: 21px;}
+
+.inset .panel-official a.list-group-item,
+.inset .panel-global a.list-group-item {padding-bottom: 20px;}
 
 .panel-local > .panel-body > .media:hover,
 .panel-local > .panel-body > .media:focus,
