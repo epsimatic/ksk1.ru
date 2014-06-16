@@ -17,6 +17,16 @@
         placement: "bottom"
     });
 
+    // Инициализация шапки сайта
+    (function () {
+        var user_panel_content = document.getElementById('user-panel-content');
+        var user_panel = document.getElementById('user-panel');
+        if (user_panel && user_panel_content) {
+            user_panel.innerHTML = user_panel_content.innerHTML;
+            user_panel_content.remove();
+        }
+    })();
+
     // поиск google
     (function () {
         var ob = /^[http:\/\/]+ob/;
