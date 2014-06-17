@@ -1392,6 +1392,22 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* </editor-fold> */
 
+/* <editor-fold desc="Блок фишек"> */
+
+.block-features {background-color: #428bca; color: #fff; padding: 0;}
+
+.block-features .btn-feature {height: 50px;}
+
+.block-features .btn-feature:hover,
+.block-features .btn-feature:focus {background-color: #3276b1; cursor: pointer;}
+
+.block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 10px;}
+
+.block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
+
+/* </editor-fold> */
+
+
 /* </editor-fold> */
 /* </editor-fold> */
 
@@ -2362,6 +2378,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .block-features #btn-feature-shopping .col-sm-12 {left: 1px;}
+
+    .block-features #btn-feature-services .col-sm-12 {left: -8px;}
+
     .news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}
 
     .panel-news .row {margin-left: -10px;}
@@ -2414,6 +2434,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .block-features .btn-feature .col-sm-12 {left: -7px}
+
+    .block-features .btn-feature .col-xs-7 {font-size: 13px; left: -15px; line-height: 1; top: 11px;}
+
     .news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}
 
     .panel-news h4 {font-size: 30px;}
@@ -2447,6 +2471,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .block-features .btn-feature .col-sm-12 {left: -3px}
+
+    .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 10px;}
+
     .news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
 
     .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; /*bottom: 30px;*/}
