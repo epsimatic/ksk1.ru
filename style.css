@@ -1401,7 +1401,7 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature:hover,
 .block-features .btn-feature:focus {background-color: #3276b1; cursor: pointer;}
 
-.block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 10px;}
+.block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 8px;}
 
 .block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
 
@@ -2434,7 +2434,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    .block-features .btn-feature .col-sm-12 {left: -7px}
+    .block-features .btn-feature .col-sm-12 {left: -7px !important;}
 
     .block-features .btn-feature .col-xs-7 {font-size: 13px; left: -15px; line-height: 1; top: 11px;}
 
@@ -2471,7 +2471,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .block-features .btn-feature .col-sm-12 {left: -3px}
+    .block-features .btn-feature .col-sm-12 {left: -3px !important;}
 
     .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 10px;}
 
