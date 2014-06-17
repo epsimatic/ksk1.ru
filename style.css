@@ -517,6 +517,14 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .yummies {width: 100%; height: auto; margin-bottom: 10px;}
 
+#header .yummies {margin-bottom: 0;}
+
+.news header#header {margin: 0;}
+
+.news .container > #header {margin: 0 -10px;}
+
+.news nav.navbar {margin: 0 0 10px;}
+
 .col-main .yummies {max-height: 105px ;}
 
 .row-yu-half .yummies {max-height: none;}
@@ -1404,6 +1412,11 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 8px;}
 
 .block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
+
+.block-features .popover .popover-content a {color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px;}
+
+.block-features .popover .popover-content a:hover,
+.block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
 
 /* </editor-fold> */
 
