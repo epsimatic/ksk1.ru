@@ -1385,7 +1385,10 @@ a.link-neutral:focus {color: #3b437d;}
 
 .player-body .player-duration {background-color: rgb(255, 255, 255); vertical-align: middle; font-weight: 300; border: 1px solid rgb(204, 204, 204); display: inline; font-size: 19px; border-radius: 0 5px 5px 0; padding: 0 10px 0 30px; opacity: 0.85; color: rgb(85, 85, 85);}
 
-.player-more {display: block; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 1px 1px 3px rgb(0, 0, 0); position: relative;}
+.player-more {display: block; font-size: 14px; color: #fff; text-shadow: 1px 1px 3px rgb(0, 0, 0); position: relative;}
+
+.player-more:focus,
+.player-more:hover {color: #fff;}
 
 /* </editor-fold> */
 
