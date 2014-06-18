@@ -1,6 +1,25 @@
 /* Подключение шрифта Open Sans condensed */
-/* FIXME: Где шрифт?? */
 
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Condensed Light'), local('Open Sans Condensed'), url(opensans-condensed-300.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Condensed Italic'), local('Open Sans Condensed Light Italic'), url(opensans-condensed-300italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Condensed Bold'), local('OpenSansCondensedBold'), url(opensans-condensed-700.woff) format('woff');
+}
 
 /* Подключение шрифта Open Sans */
 body {

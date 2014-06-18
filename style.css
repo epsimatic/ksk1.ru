@@ -60,6 +60,8 @@ header .btn-group {margin-top: 10px;}
     height: 140px;
 }
 
+#user-panel-content { display: none; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Логотип"> */
@@ -73,8 +75,6 @@ header .btn-group {margin-top: 10px;}
 }
 
 .header-line__logo img {width:96%;}
-
-.header-line__logo .weather-temp {display: none;}
 
 .header-line__logo__arrow {
     background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225.75%22%20height%3D%2226.531%22%3E%3Cpath%20d%3D%22m-57.804-106.677v20.188000000000002l2.406-2.094%205.156-4.469%204.375%2011.531.531%201.375%201.375-.531%205.313-2.063%201.344-.531-.5-1.344-4.406-11.625%207.156-.313%203-.125-1.969-2.281-6.563-7.719h-3.844l6.219%207.312-6.156.281-2.031.094.719%201.875%204.625%2012.188-2.594.969-4.594-12.094-.75-1.969-1.594%201.375-4.281%203.719v-13.75h-2.938z%22%20fill%3D%22%23007cc3%22%20transform%3D%22translate%2857.804%20106.677%29%22%2F%3E%3C%2Fsvg%3E") no-repeat;
@@ -118,9 +118,7 @@ header .btn-group {margin-top: 10px;}
     width: 100%;
 }
 
-.header-line__weather-block__temp {bottom: 13px; font-weight: 600;}
-
-.header-line__weather-block__label {
+.weather-label {
     color: #808080;
     font-size: 56%;
     font-weight: 300;
@@ -128,15 +126,31 @@ header .btn-group {margin-top: 10px;}
 }
 
 .weather-temp {
-    bottom: -11px;
-    font-size: 40%;
-    left: 45px;
-    opacity: 0;
-    position: absolute;
+    font-size: 20px;
     font-weight: 600;
 }
 
-.weather-temp {bottom: 2px; left: 11px; opacity: 1;}
+.weather-temp-sm {
+    position: absolute;
+    bottom: 0;
+    left: 37px;
+}
+/*.weather-temp-lg {}*/
+
+.weather-block {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.popover-weather-iframe {
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+    padding-left: 5px;
+    border: none;
+}
 
 /* </editor-fold> */
 
@@ -499,9 +513,17 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
+.news #page > #header object {width: 366px !important; height: 34px !important; margin-left: -10px; margin-bottom: -5px;}
 
 .yummies {width: 100%; height: auto; margin-bottom: 10px;}
+
+#header .yummies {margin-bottom: 0;}
+
+.news header#header {margin: 0;}
+
+.news .container > #header {margin: 0 -10px;}
+
+.news nav.navbar {margin: 0 0 10px;}
 
 .col-main .yummies {max-height: 105px ;}
 
@@ -640,24 +662,52 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
 
-/*.table-comparison.table-bordered {border: 1px solid #FFFFFF;}
 
-.table-comparison.table-bordered > thead > tr > th,
-.table-comparison.table-bordered > tbody > tr > th,
-.table-comparison.table-bordered > tfoot > tr > th,
-.table-comparison.table-bordered > thead > tr > td,
-.table-comparison.table-bordered > tbody > tr > td,
-.table-comparison.table-bordered > tfoot > tr > td {border: 1px solid #FFFFFF;}
+/* Для -XS- */
 
-.table-comparison tbody > tr > td {vertical-align: middle;}
+.table-comparison > .row > .col-sm-4:first-child {font-size: 16px; color: #888; min-height: 36px; padding: 16px 10px 10px; text-align: left;}
 
-.table-comparison thead > tr > th {text-align: center;}
+.table-comparison > .row > .col-sm-4:after {content: ":";}
+@media (min-width: 768px) {
+    .table-comparison > .row > .col-sm-4:first-child {font-size: 14px; text-align: right;}
+    .table-comparison > .row > div.col-sm-4:after {content: "";}
+}
 
-.table-comparison td {width: 21%;}
+/* Другие */
 
-.table-comparison td:first-child {width: auto;}
+
+.table-comparison > .row {text-align: center; margin: 0 -10px;}
+
+.table-comparison > .row > div:first-child {text-align: left;}
+
+.table-comparison > .row div.col-sm-offset-4 {padding: 0;}
+
+.table-comparison > .row > div:first-child,
+.table-comparison > .row .row > div {height: 56px;}
+
+.table-comparison > .row .row > div {padding-top: 16px; border: 1px solid #FFFFFF;}
+
+.table-comparison > .row-publish .row > div {padding-top: 9px;}
+
+/*.table-comparison > .row-current-tariff .row > div { text-align: center; }*/
+.table-comparison > .row-current-tariff .row > div {color: #333;}
+
+.table-comparison > .row-current-tariff .row > div > .fa {display: block; margin-left: -4px; margin-right: 15px; margin-top: 10px;}
+
+.table-comparison > .row-current-tariff .row > div > span {display: block; line-height: 1.1; padding: 2px 20px 0 4px;}
+
+.table-comparison > .row-marked .row > div.better,
+.table-comparison > .row-topmost .row > div.good  {padding-top: 8px}
+
+.table-comparison > .row-attention .row > div.better {padding-top: 7px;}
 
 .table-comparison .fa {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);}
+
+.table-comparison .fa-check {color: #1DAC3B;}
+
+.table-comparison .fa-times {color: #FA7A70;}
+
+.table-comparison .basic {color: #999999;}
 
 .table-comparison .positive {background-color: #D4F9DC;}
 
@@ -665,19 +715,17 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .negative {background-color: #FFF3F1;}
 
-.table-comparison .positive .fa {color: #1DAC3B;}
-
-.table-comparison .negative .fa {color: #FA7A70;}
-
-.table-comparison .basic {color: #999999;}
+.table-comparison > .row-header .row > div {color: #333; font-weight: 700; text-align: center;}
 
 .table-comparison .good {color: #6B6F6C; text-transform: uppercase;}
 
 .table-comparison .good.neutral {text-transform: inherit;}
 
+.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; text-transform: uppercase;}
+
 .table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
 
-.table-comparison .better {color: #14932F; font-size: 17px; font-weight: 600; line-height: 1.1; padding: 10px; text-transform: uppercase;} */
+.table-comparison .row-buttons .row {background-color: #fff;}
 
 /* Новая таблица на .col: */
 /*.table-comparison .row > div { text-align: center; min-height: 3em; }
@@ -732,7 +780,17 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-notice > .list-group > .list-group-item > .media-object {padding: 3px 7px 0 0;}
 
 /* <editor-fold desc="Панель «Главные новости»"> */
-.panel-news > .panel-heading {color: #ffffff; background-color: #1FA6F2; border: none;}
+/*.panel-news {background-color: #f9fafb;}*/
+
+.panel-news {background-color: transparent;}
+
+/*.panel-news:hover {background-color: #f4f5f6;}*/
+
+.panel-news .row {margin-right: 0; margin-left: 0;}
+
+.panel-news > .panel-heading {color: #ffffff; background-color: #1FA6F2; border: none; margin-bottom: 10px;}
+
+.panel-news > .panel-heading h3 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important;}
 
 .panel-news > .panel-body {padding-bottom: 0;}
 
@@ -743,11 +801,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 .panel-week > .panel-heading,
 .panel-news > .panel-heading {background: #1fa6f2 url("img/panel-news.png") no-repeat right; background-size: contain;}
 
-.panel-news {background-color: transparent;}
-
-.panel-news .row {margin-right: 0;}
-
-.panel-news h4 {color: #2590D8; font-size: 25px; font-weight: 600; margin: 5px 0 15px;}
+.panel-news h4 {color: #2590D8; font-size: 18px; font-weight: 600; margin: 5px 0 10px;}
 
 .panel-news a:hover h4 {text-decoration: underline;}
 
@@ -815,6 +869,15 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .panel-local > .panel-body > .media,
 .panel-global > .panel-body > .media {padding: 5px;}
+
+.panel-official .list > a.list-group-item > h3,
+.panel-global .list > a.list-group-item > h3 {font-weight: 600; font-size: 18px; color: #2590d8}
+
+.inset .panel-official .list > a.list-group-item > h3,
+.inset .panel-global .list > a.list-group-item > h3 {font-size: 21px; color: #4d4d60; font-weight: 400;}
+
+.inset .panel-official a.list-group-item,
+.inset .panel-global a.list-group-item {padding-bottom: 20px;}
 
 .panel-local > .panel-body > .media:hover,
 .panel-local > .panel-body > .media:focus,
@@ -898,13 +961,26 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 /* <editor-fold desc="Панель «Важно»"> */
 .panel-notice > .panel-heading {background-color: #FF4B3D;}
 
-.panel-notice .list-group-item {background-color: #fcfcfc;}
+.panel-notice a.news-link { background-color: #fcfcfc; display: block; padding: 10px 15px; }
 
 .panel-notice ul li.list-group-item {background-color: #f9fafb;}
 
 .panel-notice .list-group {padding-bottom: 0; margin-bottom: 0}
 
 .panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
+
+.panel-notice .textwidget > div {background-color: #F9FAFB; padding: 0;}
+
+.panel-notice a.news-link {display: block; padding: 10px 15px; color: #2590D8;}
+
+.panel-notice a.news-link:hover {background-color: #f0f1f2;}
+
+.panel-notice .tooltip-inner {background-color: #FDFDFD; box-shadow: -1px 0 12px rgba(0,0,0,0.5); color: #4D4D60; max-width: 500px; padding: 10px 15px; text-align: left;}
+
+.panel-notice .tooltip.in {opacity: 1; font-size: 13px; left: -510px !important;}
+
+.panel-notice .tooltip.left .tooltip-arrow {border-left-color: #FDFDFD;}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Голосование»"> */
@@ -1098,6 +1174,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-body .map.map-post {margin-bottom: 20px;}
 
+.panel-news-body .page-header {padding-bottom: 15px;}
+
 .panel-news-body .wp-caption {border: none; border-radius: 0; padding: 0; background-color: #f0f0f0;}
 
 .panel-news-body .wp-caption img {margin: 0; padding: 0; width: 100%;}
@@ -1118,7 +1196,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;overflow: hidden;}
 
-.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; *font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase;}
+.panel-news-body .panel-footer.post-info .post-info-cats a {color: #555; *font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase; display: none;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
@@ -1140,7 +1218,9 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ещё по теме»"> */
-.news-more > .panel-heading {background-color: #6b75d8; display: none;}
+.news-more > .panel-heading {background-color: #5D8EE0;}
+
+.news-more > .panel-heading h3 {font-size: 20px !important; font-weight: 400; padding: 3px 0 4px 5px !important;}
 
 .news-more > .panel-body {padding: 0;}
 
@@ -1287,6 +1367,60 @@ a.link-neutral:focus {color: #3b437d;}
 
 .form-control {border-radius: 3px;}
 /* </editor-fold> */
+
+/* <editor-fold desc="Радио-виджет"> */
+.player-header {font-size: 14px; text-transform: uppercase; position: relative; top: 3px;}
+
+.player-date-block {color: rgb(102, 102, 102); padding-bottom: 5px;}
+
+.player-date {font-size: 14px; text-transform: uppercase; display: inline-block; position: relative; padding: 3px 5px; background-color: rgba(255, 255, 255, 0.5);}
+
+.player .fa-angle-left {display: inline-block; padding-right: 5px;}
+
+.player .fa-angle-right {display: inline-block; padding-left: 5px;}
+
+.player-body > * {box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) !important; display: inline-block; height: 30px;}
+
+.player-body .btn[disabled] {color: #BBB; opacity: 0.8;}
+
+.player-body .btn-again {border-radius: 5px 0 0 5px; width: 35px;}
+
+.player-body .btn-play {width: 50px; border-radius: 0; margin: 0 -1px;}
+
+.player-body .btn-play:after {color: #42baea; content: ""; font-family: FontAwesome; font-size: 1.2em; left: 1px; position: relative; top: -4px;}
+
+.player-body .btn-again:after {content: ""; font-family: FontAwesome; font-size: 0.9em; position: relative; top: -2px;}
+
+.player-body .player-duration {background-color: rgb(255, 255, 255); vertical-align: middle; font-weight: 300; border: 1px solid rgb(204, 204, 204); display: inline; font-size: 19px; border-radius: 0 5px 5px 0; padding: 0 10px 0 30px; opacity: 0.85; color: rgb(85, 85, 85);}
+
+.player-more {display: block; font-size: 14px; color: #fff; text-shadow: 1px 1px 3px rgb(0, 0, 0); position: relative;}
+
+.player-more:focus,
+.player-more:hover {color: #fff;}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Блок фишек"> */
+
+.block-features {background-color: #428bca; color: #fff; padding: 0;}
+
+.block-features .btn-feature {height: 50px;}
+
+.block-features .btn-feature:hover,
+.block-features .btn-feature:focus {background-color: #3276b1; cursor: pointer;}
+
+.block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 8px;}
+
+.block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
+
+.block-features .popover .popover-content a {color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px;}
+
+.block-features .popover .popover-content a:hover,
+.block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
+
+/* </editor-fold> */
+
+
 /* </editor-fold> */
 /* </editor-fold> */
 
@@ -1436,6 +1570,11 @@ a.super {background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15p
 a.super:hover,
 a.super:focus {background-color: #fbea2d;}
 
+.panel-notice a.super {background-color: #fffcdc;}
+
+.panel-notice a.super:hover,
+.panel-notice a.super:focus {background-color: #fef8b7;}
+
 .super .ob-date {display: none;}
 
 .ob-meta {margin-top: 5px; color: #57346b;}
@@ -1528,6 +1667,13 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 .add-ob__type-prefix {position: absolute; left: 11px; top: -3px; padding: 0.3em; font-weight: bold; border: 0 solid transparent;}
 
 .add-ob__line__photo__container {width: 100%; overflow: hidden;}
+/*изначальная загрузка формы Добавить объявление*/
+ .form-group_select, .label-select, .form-group_textarea,
+.form-group_price, .label-price_cost, .label-price_salary, .form-group_phone, .form-group_price, .form-group_phone, .form-group_price, .form-group_phone,
+.form-group_mail, .form-group_photo, .add-ob__info-law,
+.add-ob__info-license, .add-ob__btn-submit{display: none;}
+
+
 /* </editor-fold> */
 
 /* <editor-fold desc="FAQ"> */
@@ -2241,11 +2387,19 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .col-mid .list-group > .sponsor {margin-bottom: 10px;}
 
-.weather-temp-sm {bottom: 0; left: 38px; position: absolute;}
 /* </editor-fold> */
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .block-features #btn-feature-shopping .col-sm-12 {left: 1px;}
+
+    .block-features #btn-feature-services .col-sm-12 {left: -8px;}
+
+    .news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}
+
+    .panel-news .row {margin-left: -10px;}
+
+    .panel-news .news-slide {font-size: 16px;}
 
     /*.post-info .label-views, .post-info .label-comment {padding-left: 5px;}*/
 
@@ -2275,8 +2429,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .header-line__logo__arrow {background-size: 18px auto; bottom: -6px; right: -9px;}
 
-    .weather-temp {bottom: 0; left: 3px; opacity: 1;}
-
     .header-line__logo {font-size: 28px; width: 100%;}
 
     .header-line__logo img {width:100%;}
@@ -2295,6 +2447,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .block-features .btn-feature .col-sm-12 {left: -7px !important;}
+
+    .block-features .btn-feature .col-xs-7 {font-size: 13px; left: -15px; line-height: 1; top: 11px;}
+
+    .news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}
+
+    .panel-news h4 {font-size: 30px;}
 
     .site-copy div.copy-header,
     .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
@@ -2313,8 +2472,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .header-line__logo img {width:80%;}
 
-    .weather-temp {bottom: 22px; left: 37px; opacity: 1; font-size: 55%;}
-
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 14px;}
 
@@ -2327,7 +2484,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; bottom: 30px;}
+    .block-features .btn-feature .col-sm-12 {left: -3px !important;}
+
+    .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 10px;}
+
+    .news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
+
+    .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; /*bottom: 30px;*/}
 
     .panel-news .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
 

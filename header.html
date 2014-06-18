@@ -25,18 +25,16 @@
                 <span id="logo"></span>
             </a>
         </div>
-        <a class="weather-block header-line__weather-block hidden-lg" rel="nofollow" target="_blank"
-           href="http://m.pogoda.yandex.ru/20691/?mode=short" title="На сайт pogoda.yandex.ru">
-            <div class="weather-temp-sm header-line__logo__weather-block__temp"></div>
-           </a>
+        <div class="btn btn-link weather-block hidden-lg">
+            <div class="weather-temp weather-temp-sm pop-btn-weather"></div>
+        </div>
     </div>
-    <div class="header-line__weather-block-col hidden-xs hidden-sm hidden-md col-lg-1">
-        <a class="weather-block header-line__weather-block" rel="nofollow" target="_blank"
-            href="http://m.pogoda.yandex.ru/20691/?mode=short">
-            <div class="weather-icon header-line__weather-block__icon"></div>
-            <div class="weather-temp header-line__logo__weather-block__temp"></div>
-            <div class="header-line__weather-block__label">Подробнее</div>
-        </a></div>
+    <div class="weather-block-col hidden-xs hidden-sm hidden-md col-lg-1 pop-btn-weather">
+        <div class="weather-block">
+            <div class="weather-icon"></div>
+            <div class="weather-temp weather-temp-lg"></div>
+            <div class="weather-label">Подробнее</div>
+        </div></div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
         <!--#include virtual="/yummies/special/" -->
     </div>
@@ -97,20 +95,22 @@
         <a href='http://akvafor24.ru/'><img src='http://ksk1.ru/img/logo-aquaphor.png'></a>
     </div>
 </div>
+<!--<div id="popover_weather_content" style="display: none">
 
+</div>-->
 <script>
 (function(){
-    url = document.location.href;
-    ob = /^[http:\/\/]+ob/;
-    news = /^[http:\/\/]+news/;
-    oldnews = /^[http:\/\/]+ksk66/;
-    cat =  /^[http:\/\/]+cat/;
-    video = /^[http:\/\/]+video/;
-    pfoto =  /^[http:\/\/]+pfoto/;
-    timetable = /timetable/;
-    karta = /map/;
-    copy = /copy/;
-    subtitle = document.getElementById("logo");
+    var url = document.location.href,
+    ob = /^[http:\/\/]+ob/,
+    news = /^[http:\/\/]+news/,
+    oldnews = /^[http:\/\/]+ksk66/,
+    cat =  /^[http:\/\/]+cat/,
+    video = /^[http:\/\/]+video/,
+    pfoto =  /^[http:\/\/]+pfoto/,
+    timetable = /timetable/,
+    karta = /map/,
+    copy = /copy/,
+    subtitle = document.getElementById("logo"),
     body = document.getElementsByTagName("body")[0];
 
     if(url.match(ob)) {
@@ -149,12 +149,17 @@
       subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
       document.getElementsByTagName("li")[6].classList.add("activ_li");
     }
-    // Popover для магазинов
-    jQuery('#pop-btn-shopping').popover({
+
+   /* jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
+        $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
+    });
+*/
+
+   /* jQuery('#pop-btn-weather').popover({
         content: jQuery('#popover_shopping_content').html(),
         html: true,
         placement: "bottom"
-    });
+    });*/
 })();
 
 </script>
