@@ -1788,6 +1788,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
+.site-rk table,
 .site-copy table {text-align: center;}
 
 .site-copy .table td:first-child {color: #222266; text-align: left;}
@@ -1806,20 +1807,28 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy small {font-size: 80%;}
 
+.site-rk .table,
 .site-copy .table {margin-bottom: 40px;}
 
+.site-rk .table th:first-child,
 .site-copy .table th:first-child {text-align: left;}
 
+.site-rk .table th,
 .site-copy .table th {text-align: center;}
 
+.site-rk .table-striped > tbody > tr:nth-child(odd) > td,
 .site-copy .table-striped > tbody > tr:nth-child(odd) > td {background-color: #f8f8f8;}
 
+.site-rk .table-striped > tbody > tr:nth-child(even) > td,
 .site-copy .table-striped > tbody > tr:nth-child(even) > td {background-color: #f3f3f3;}
 
+.site-rk .table-notes,
 .site-copy .table-notes {font-style: oblique; color: #888; margin: -30px 0 40px; padding: 0 20px 0 30px;}
 
 .site-copy .col-md-2 {padding-left: 0 !important;}
 
+.site-rk .table-hover > tbody > tr:hover > td,
+.site-rk .table-hover > tbody > tr:hover > th,
 .site-copy .table-hover > tbody > tr:hover > td,
 .site-copy .table-hover > tbody > tr:hover > th {background-color: #e3eef8 !important;}
 
