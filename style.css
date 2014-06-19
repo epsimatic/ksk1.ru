@@ -1791,6 +1791,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk table,
 .site-copy table {text-align: center;}
 
+.site-rk .table tr > td:first-child,
 .site-copy .table td:first-child {color: #222266; text-align: left;}
 
 .site-copy h1, .site-copy h2 {text-align: center;}
@@ -1831,6 +1832,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk .table-hover > tbody > tr:hover > th,
 .site-copy .table-hover > tbody > tr:hover > td,
 .site-copy .table-hover > tbody > tr:hover > th {background-color: #e3eef8 !important;}
+
+.site-rk .table tr > td {vertical-align: middle}
 
 /* Поддержка скрытия столбцов */
 .site-copy .table-print tr > *:first-child,
