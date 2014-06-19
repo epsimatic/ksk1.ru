@@ -1,8 +1,11 @@
 <script type="application/javascript">
 
     // TabDrop
-    jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
-
+    if (!window['operamini']) {
+        jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    } else {
+        jQuery('.navbar-nav').css("max-height", "none");
+    }
     // Popover для магазинов
     jQuery('#btn-feature-shopping').popover({
         content: jQuery('#popover_shopping_content').html(),
