@@ -1413,6 +1413,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
 
+.block-features .popover {top: 40px !important;}
+
 .block-features .popover .popover-content a {color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px;}
 
 .block-features .popover .popover-content a:hover,
