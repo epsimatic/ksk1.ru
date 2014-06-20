@@ -1859,6 +1859,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .table tr > td {vertical-align: middle}
 
+.site-rk .per50 {color: #127ee2; padding-right: 10px;}
+
+.site-rk .per100 {color: #009815;}
+
 /* Поддержка скрытия столбцов */
 .site-copy .table-print tr > *:first-child,
 .site-copy .table-copy  tr > *:first-child {max-width: none;}
