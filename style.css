@@ -1723,6 +1723,9 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
     transition: all 0.2s ease-in-out 0s;
 }
 
+/* Скрыть ценник у отключенных кнопок оплаты */
+.payment-button button[disabled] .label { display: none; }
+
 .preview div {font-size: 0; width: 45px; height: 45px; background-size: cover; float: left; margin-right: 10px;}
 
 .preview div:hover {font-size: 48px; text-align: center; line-height: 40px; color: red;}
