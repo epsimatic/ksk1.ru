@@ -1862,7 +1862,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk .per50,
 .site-rk .per100 {display: block;}
 
-.site-rk .per50 {color: #127ee2; padding-right: 10px;}
+.site-rk .per50 {color: #127ee2;}
 
 .site-rk .per100 {color: #009815;}
 
@@ -2440,6 +2440,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 @media (min-width: 768px) {
     .site-rk .per50,
     .site-rk .per100 {display: inline-block;}
+
+    .site-rk .per50 {padding-right: 10px;}
 
     .table-comparison > .row-photo > .col-sm-4:first-child,
     .table-comparison > .row-add-links > .col-sm-4:first-child,
