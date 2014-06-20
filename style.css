@@ -734,7 +734,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .discount {border: 2px solid #f29011; border-radius: 7px; background-color: #ffc851; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px 0px;}
 
-.table-comparison .fa-info-circle {color: #3480fe; text-shadow: none !important;}
+.table-comparison .fa-info-circle {color: #888; text-shadow: none !important;}
 
 .table-comparison .fa-rub {text-shadow: none !important;}
 
