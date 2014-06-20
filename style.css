@@ -696,6 +696,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison > .row-current-tariff .row > div > span {display: block; line-height: 1.1; padding: 2px 20px 0 4px;}
 
+.table-comparison > .row-newspaper .row > div.better
 .table-comparison > .row-marked .row > div.better,
 .table-comparison > .row-topmost .row > div.good  {padding-top: 8px}
 
@@ -725,7 +726,19 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .positive.better {color: #056E1B; text-transform: uppercase; font-size: 14px; font-weight: 400; line-height: inherit;}
 
-.table-comparison .row-buttons .row {background-color: #fff;}
+.table-comparison .row-buttons {background-color: #fff;}
+
+.table-comparison .row-buttons .btn-group {margin-top: 15px; margin-left: -5px;}
+
+.table-comparison .discount:before {color: #f29011; content: ""; font-family: FontAwesome; font-size: 1.5em; left: -28px; position: absolute; top: 10px;}
+
+.table-comparison .discount {border: 2px solid #f29011; border-radius: 7px; background-color: #ffc851; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px 0px;}
+
+.table-comparison .fa-info-circle {color: #3480fe; text-shadow: none !important;}
+
+.table-comparison .fa-rub {text-shadow: none !important;}
+
+.table-comparison .row-price .fa-rub {color: #888;}
 
 /* Новая таблица на .col: */
 /*.table-comparison .row > div { text-align: center; min-height: 3em; }
@@ -1788,7 +1801,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk h3 {font-size: 32px; font-weight: 600; padding-bottom: 20px;}
 
-.site-rk h4 {font-size: 30px; padding: 30px 0 20px;}
+.site-rk h4 {font-size: 30px; padding: 30px 0 20px; color: #0676d9;}
 
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
@@ -2409,6 +2422,17 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .table-comparison > .row-photo > .col-sm-4:first-child,
+    .table-comparison > .row-add-links > .col-sm-4:first-child,
+    .table-comparison > .row-topmost > .col-sm-4:first-child,
+    .table-comparison > .row-marked > .col-sm-4:first-child,
+    .table-comparison > .row-newspaper > .col-sm-4:first-child {padding-top: 10px; line-height:1.2}
+
+    .table-comparison > .row-can-edit > .col-sm-4:first-child,
+    .table-comparison > .row-main-page > .col-sm-4:first-child {padding-top: 2px; line-height:1.1;}
+
+    .table-comparison .discount {top: -7px;}
+
     .block-features #btn-feature-shopping .col-sm-12 {left: 1px;}
 
     .block-features #btn-feature-services .col-sm-12 {left: -8px;}
@@ -2502,6 +2526,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .table-comparison > .row-main-page > .col-sm-4:first-child {padding-top: 10px; line-height:1.2;}
+
+    .table-comparison > .row-newspaper > .col-sm-4:first-child {padding-top: 18px;}
+
+    .table-comparison .discount {top: 0;}
+
     .block-features .btn-feature .col-sm-12 {left: -3px !important;}
 
     .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 10px;}
