@@ -1802,9 +1802,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
-.site-rk h3 {font-size: 32px; font-weight: 600; padding-bottom: 20px;}
+.site-rk h3.rk-header {font-size: 32px; font-weight: 600; padding-bottom: 20px;}
 
-.site-rk h4 {font-size: 30px; padding: 30px 0 20px; color: #0676d9;}
+.site-rk h4.rk-header {font-size: 30px; padding: 30px 0 20px; color: #0676d9;}
 
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
