@@ -732,7 +732,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .discount:before {color: #f29011; content: ""; font-family: FontAwesome; font-size: 1.5em; left: -28px; position: absolute; top: 10px;}
 
-.table-comparison .discount {border: 2px solid #f29011; border-radius: 7px; background-color: #ffc851; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px 0px;}
+.table-comparison .discount {border: 2px solid #f29011; border-radius: 7px; background-color: #ffc851; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px 0;}
 
 .table-comparison .fa-info-circle {color: #888; text-shadow: none !important;}
 
@@ -1827,6 +1827,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-copy h5 {margin-bottom: 15px;}
 
 .site-copy small {font-size: 80%;}
+
+.site-rk .table-striped > tbody > tr.special > td {background-color: #ffe188;}
+
+.site-rk .table-hover > tbody > tr.special:hover > td {background-color: #ffcc33 !important;}
 
 .site-rk .table,
 .site-copy .table {margin-bottom: 40px;}
