@@ -696,7 +696,7 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison > .row-current-tariff .row > div > span {display: block; line-height: 1.1; padding: 2px 20px 0 4px;}
 
-.table-comparison > .row-newspaper .row > div.better
+.table-comparison > .row-newspaper .row > div.better,
 .table-comparison > .row-marked .row > div.better,
 .table-comparison > .row-topmost .row > div.good  {padding-top: 8px}
 
@@ -728,7 +728,9 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 .table-comparison .row-buttons {background-color: #fff;}
 
-.table-comparison .row-buttons .btn-group {margin-top: 15px; margin-left: -5px;}
+.table-comparison .row-buttons .row > .col-xs-4 {padding-top: 6px;}
+
+.table-comparison .row-buttons .btn-group {margin-top: 10px; margin-left: -5px;}
 
 .table-comparison .discount:before {color: #f29011; content: ""; font-family: FontAwesome; font-size: 1.5em; left: -28px; position: absolute; top: 10px;}
 
@@ -2452,6 +2454,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .table-comparison > .row-can-edit > .col-sm-4:first-child,
     .table-comparison > .row-main-page > .col-sm-4:first-child {padding-top: 2px; line-height:1.1;}
 
+    .table-comparison .row-buttons .row > .col-xs-4 {padding-top: 8px;}
+
+    .table-comparison .row-buttons .btn-group {margin-top: 15px;}
+
     .table-comparison .discount {top: -7px;}
 
     .block-features #btn-feature-shopping .col-sm-12 {left: 1px;}
@@ -2550,6 +2556,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .table-comparison > .row-main-page > .col-sm-4:first-child {padding-top: 10px; line-height:1.2;}
 
     .table-comparison > .row-newspaper > .col-sm-4:first-child {padding-top: 18px;}
+
+    .table-comparison .row-buttons .row > .col-xs-4 {padding-top: 6px;}
+
+    .table-comparison .row-buttons .btn-group {margin-top: 10px;}
 
     .table-comparison .discount {top: 0;}
 
