@@ -2452,7 +2452,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 #post-2844 .col-md-6 h2 {color: #0676d9; padding-left: 4%; padding-top: 40px;}
 
-#post-2844 .col-md-6 .col-md-6 p {padding: 0 4% 30px;}
+#post-2844 .col-md-8 p,
+#post-2844 .col-md-6 p {padding: 0 4% 30px;}
 
 #post-2844 .text-on-right p {padding: 0 10px 30px;}
 
