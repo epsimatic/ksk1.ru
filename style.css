@@ -2438,6 +2438,24 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* </editor-fold> */
 
+/* <editor-fold desc="Что нового на сайте"> */
+
+#post-2844 h1 {font-size: 37px; font-weight: 300; padding: 20px 0; text-align: center;}
+
+#post-2844 p {color: #666; font-size: 17px; padding: 20px 6% 30px;}
+
+#post-2844 .text-on-right p {padding: 0 10px 30px;}
+
+#post-2844 .text-on-right h2 {padding-left: 10px;}
+
+#post-2844 .page-content .row {padding-bottom: 50px; padding-top: 20px;}
+
+#post-2844 .col-md-6 h2 {color: #0676d9; padding-left: 4%; padding-top: 40px;}
+
+#post-2844 .col-md-6 p {padding: 0 4% 30px;}
+
+/* </editor-fold> */
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .site-rk .per50,
