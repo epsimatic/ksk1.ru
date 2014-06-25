@@ -1878,6 +1878,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .table-striped > tbody > tr.row-collapsible.row-price-base > td {background-color: #e6f1fc;}
 
+.row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
+
 /* Поддержка скрытия столбцов */
 .site-copy .table-print tr > *:first-child,
 .site-copy .table-copy  tr > *:first-child {max-width: none;}
