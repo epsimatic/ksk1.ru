@@ -2463,6 +2463,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* </editor-fold> */
 
+tr.row-collapsible > td:first-child {padding-left: 10%;}
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     .site-rk .per50,
