@@ -1870,6 +1870,14 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .table small {opacity: 0.8;}
 
+.site-rk tr.row-collapsible > td:first-child {padding-left: 10%;}
+
+.site-rk .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td {background-color: #f4f9fe;}
+
+.site-rk .table-striped > tbody > tr.row-collapsible:nth-child(even) > td {background-color: #edf5fc;}
+
+.site-rk .table-striped > tbody > tr.row-collapsible.row-price-base > td {background-color: #e6f1fc;}
+
 /* Поддержка скрытия столбцов */
 .site-copy .table-print tr > *:first-child,
 .site-copy .table-copy  tr > *:first-child {max-width: none;}
@@ -2462,8 +2470,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 
 /* </editor-fold> */
-
-tr.row-collapsible > td:first-child {padding-left: 10%;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
