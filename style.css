@@ -531,6 +531,8 @@ a.list-group-item:focus {background-color: #f0f1f2;}
 
 #text-16 .yu, #text-20 .yu {margin-bottom: 10px}
 
+
+.page .row-yu-half,
 .single-post .row-yu-half {margin-bottom: 10px;}
 
 .sidebar .yu {padding: 0 !important;}
@@ -1233,7 +1235,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ещё по теме»"> */
-.news-more > .panel-heading {background-color: #5D8EE0;}
+.news-more > .panel-heading {background-color: #5D8EE0; display: none;}
 
 .news-more > .panel-heading h3 {font-size: 20px !important; font-weight: 400; padding: 3px 0 4px 5px !important;}
 
