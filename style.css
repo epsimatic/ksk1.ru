@@ -1205,10 +1205,13 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .entry-meta .meta-value {font-weight: 600;}
 
+.page .panel-footer.post-info,
 .panel-news-body .panel-footer.post-info {background-color:#eee; bottom: 0; height: auto; margin: 0; padding: 0;}
 
+.page .panel-footer.post-info > *,
 .panel-news-body .panel-footer.post-info > * {background-color: transparent;}
 
+.page .panel-footer.post-info span,
 .panel-news-body .panel-footer.post-info span {display: inline;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats {text-align: center; white-space: normal;overflow: hidden;}
@@ -1217,17 +1220,23 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
-.panel-news-body .panel-footer .post-info-share {background-color:#2B67B2; text-align: center;}
+.page .panel-footer.post-info .post-info-share,
+.panel-news-body .panel-footer.post-info .post-info-share {background-color:#2B67B2; text-align: center;}
 
-.panel-news-body .panel-footer .post-info-share a {color: #fff;}
+.page .panel-footer.post-info .post-info-share a,
+.panel-news-body .panel-footer.post-info .post-info-share a {color: #fff;}
 
-.panel-news-body .panel-footer .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
+.page .panel-footer.post-info .post-info-share a:before,
+.panel-news-body .panel-footer.post-info .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
 
-.panel-news-body .panel-footer .post-info-share .b-share {font: inherit; padding-bottom: 4px !important;}
+.page .panel-footer.post-info .post-info-share .b-share,
+.panel-news-body .panel-footer.post-info .post-info-share .b-share {font: inherit; padding-bottom: 4px !important;}
 
-.panel-news-body .panel-footer .post-info-share .b-share .b-share__handle {float: none;}
+.page .panel-footer.post-info .post-info-share .b-share .b-share__handle,
+.panel-news-body .panel-footer.post-info .post-info-share .b-share .b-share__handle {float: none;}
 
-.panel-news-body .panel-footer .post-info-share .b-share a.b-share__handle:hover .b-share__text {color: #fff;}
+.page .panel-footer.post-info .post-info-share .b-share .b-share__handle:hover .b-share__text,
+.panel-news-body .panel-footer.post-info .post-info-share .b-share a.b-share__handle:hover .b-share__text {color: #fff;}
 
 /*.panel-news-body > .panel-footer {background-color: #fcfcfc; padding: 0;}*/
 
