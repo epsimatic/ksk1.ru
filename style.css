@@ -74,7 +74,7 @@ header .btn-group {margin-top: 10px;}
     font-size: 45px;
 }
 
-.header-line__logo img {width:96%;}
+.header-line__logo img {width:96%; position: absolute; top: -40px; left: 13px;}
 
 .header-line__logo__arrow {
     background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225.75%22%20height%3D%2226.531%22%3E%3Cpath%20d%3D%22m-57.804-106.677v20.188000000000002l2.406-2.094%205.156-4.469%204.375%2011.531.531%201.375%201.375-.531%205.313-2.063%201.344-.531-.5-1.344-4.406-11.625%207.156-.313%203-.125-1.969-2.281-6.563-7.719h-3.844l6.219%207.312-6.156.281-2.031.094.719%201.875%204.625%2012.188-2.594.969-4.594-12.094-.75-1.969-1.594%201.375-4.281%203.719v-13.75h-2.938z%22%20fill%3D%22%23007cc3%22%20transform%3D%22translate%2857.804%20106.677%29%22%2F%3E%3C%2Fsvg%3E") no-repeat;
@@ -2546,7 +2546,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .header-line__logo {font-size: 28px; width: 100%;}
 
-    .header-line__logo img {width:100%;}
+    .header-line__logo img {width:100%; top: -21px; left: 13px;}
 
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 18px; font-weight: 600;}
@@ -2589,7 +2589,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-home {display: block; margin-left: 950px; visibility: visible;}
 
-    .header-line__logo img {width:80%;}
+    .header-line__logo img {width:80%; top: -32px; left: 57px;}
 
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 14px;}
