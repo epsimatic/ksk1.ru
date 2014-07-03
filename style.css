@@ -442,10 +442,10 @@ p.media-text {color: #4c4c56; font-size: 14px; font-weight: 400; text-indent: 5p
 
 .list-group-item {border: none;}
 
-a.list-group-item {color: #4d4d60; background-color: #f9fafb;}
+a.list-group-item {color: #333333; background-color: #fdfdfd;}
 
 a.list-group-item:hover,
-a.list-group-item:focus {background-color: #f0f1f2;}
+a.list-group-item:focus {background-color: #f9f9f9;}
 
 .list > .list-group-item > .list-group-item-heading {color: #1a4f8e; font-size: 18px; font-weight: 400; line-height: 1.25em;}
 
