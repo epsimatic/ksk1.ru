@@ -158,7 +158,10 @@ header .btn-group {margin-top: 10px;}
 
 /* <editor-fold desc="navbar"> */
 
-.navbar {background-color: #42baea; margin: 0 -10px 10px; border: none;}
+.navbar {background-color: #42baea;
+    /*margin: 0 -10px 10px; */
+    margin: 0 0 10px;
+    border: none;}
 
 .navbar a {color: #fff;}
 
