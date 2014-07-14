@@ -10,19 +10,22 @@
     jQuery('#btn-feature-shopping').popover({
         content: jQuery('#popover_shopping_content').html(),
         html: true,
-        placement: "bottom"
+        placement: "bottom",
+        trigger: 'focus'
     });
     // Popover для услуг
     jQuery('#btn-feature-services').popover({
         content: jQuery('#popover_service_content').html(),
         html: true,
-        placement: "bottom"
+        placement: "bottom",
+        trigger: 'focus'
     });
     // Popover для погоды с iframe от Яндекса
     jQuery('.pop-btn-weather').popover({
         content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
         html: true,
-        placement: "bottom"
+        placement: "bottom",
+        trigger: 'focus'
     });
 
     // Инициализация шапки сайта
