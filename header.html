@@ -56,8 +56,8 @@
                 <a class="show-alt" href="http://ksk66.ru/map/"
                    title='Тестовая карта Красноуфимска и окрестностей'>Карта</a></li>
             <!-- <li><a class="hide-alt" href="http://cat.ksk66.ru/?q=agenda" title='Киноафиша и афиша событий'>Афиша</a>
-                 <a class="show-alt" href="http://news.kskmedia.ru/movie/" title='Тестовая Киноафиша и афиша событий'>Афиша</a>-->
-            </li>
+                 <a class="show-alt" href="http://news.kskmedia.ru/movie/" title='Тестовая Киноафиша и афиша событий'>Афиша</a>
+            </li>-->
             <li><a class="hide-alt" href="http://cat.ksk66.ru" title='Каталог предприятий, телефонов и адресов'>Товары
                 и
                 услуги</a>
@@ -149,13 +149,15 @@
             Страхования</a>-->
     </div>
 </div>
-<!--<div id="popover_weather_content" style="display: none">
 
-</div>-->
 <script>
     (function () {
         var url = document.location.href,
-                ob = /^[http:\/\/]+ob/,
+                subtitle = document.getElementById("logo"),
+                body = document.getElementsByTagName("body")[0];
+
+        //TODO: Отрефакторить. Заменить это на JSON, добавлять только класс к body, менять картинку и подсвечивать пункт через CSS.
+        var ob = /^[http:\/\/]+ob/,
                 news = /^[http:\/\/]+news/,
                 oldnews = /^[http:\/\/]+ksk66/,
                 cat = /^[http:\/\/]+cat/,
@@ -163,9 +165,7 @@
                 pfoto = /^[http:\/\/]+pfoto/,
                 timetable = /timetable/,
                 karta = /map/,
-                copy = /copy/,
-                subtitle = document.getElementById("logo"),
-                body = document.getElementsByTagName("body")[0];
+                copy = /copy/;
 
         if (url.match(ob)) {
             // сайт объявлений
@@ -204,16 +204,6 @@
             document.getElementsByTagName("li")[6].classList.add("activ_li");
         }
 
-        /* jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
-         $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
-         });
-         */
-
-        /* jQuery('#pop-btn-weather').popover({
-         content: jQuery('#popover_shopping_content').html(),
-         html: true,
-         placement: "bottom"
-         });*/
     })();
 
 </script>
