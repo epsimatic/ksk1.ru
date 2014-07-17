@@ -398,6 +398,9 @@ a.media-heading:focus {text-decoration: none;}
 .table tbody > tr > td,
 .table tfoot > tr > td {padding: 8px; line-height: 1.428571429; vertical-align: top; border-top: 0;}
 
+/*для таблицы кноафишы в taxonomy-movie включим border бутстроповский*/
+.table-movie-sessions > tr > td { border-top: 1px solid #ddd; }
+
 .table .overline-me  {border-top: 1px solid #ddd;}
 
 .table .underline-me {border-bottom: 1px solid #ddd;}
