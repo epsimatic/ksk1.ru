@@ -400,7 +400,7 @@ a.media-heading:focus {text-decoration: none;}
 
 /*для таблицы кноафишы в taxonomy-movie включим border бутстроповский*/
 .table-movie-sessions td { border-top: 1px solid #ddd !important; }
-
+.table-movie-sessions { border-bottom: 1px solid #ddd; }
 .table .overline-me  {border-top: 1px solid #ddd;}
 
 .table .underline-me {border-bottom: 1px solid #ddd;}
