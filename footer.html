@@ -164,7 +164,7 @@
             jQuery('.weather-temp').text(getCookie('weather_text'));
             jQuery('.weather-block').css('opacity', 1);
         }
- //        else{
+         else{
 
 
 
@@ -177,7 +177,7 @@
             jQuery('.weather-temp').text(temp[0]);
             jQuery('.weather-block').css('opacity', 1);
         }
-  //  }
+    }
         if (getCookie('weather_icon')==undefined){
         setCookie('weather_icon', iconlink, 1800000);
         setCookie('weather_text', temp_cookie[0], 1800000);
