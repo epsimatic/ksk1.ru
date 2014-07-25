@@ -159,18 +159,28 @@
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
 <script>
     jQuery(window).load(function () {
+        if (getCookie('weather_icon')){
+            jQuery('.weather-icon').css("background-image", "url(" + getCookie('weather_icon') + ")");
+            jQuery('.weather-temp').text(getCookie('weather_text'));
+        }
+         else{
+
+
+
         // Парсим погодный виджет
         var iconlink = jQuery('.gsWeatherIcon img').attr('src');
         var temp = jQuery(".gsTemp > span").text().split('C');
+        var temp_cookie = jQuery(".gsTemp > span").text().split(' ');
         if (iconlink) {
             jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
             jQuery('.weather-temp').text(temp[0]);
             jQuery('.weather-block').css('opacity', 1);
         }
-  //      if (get){
+    }
+        if (getCookie('weather_icon')==undefined){
         setCookie('weather_icon', iconlink, 1800000);
-        setCookie('weather_text', temp[0], 1800000);
-  //      }
+        setCookie('weather_text', temp_cookie[0], 1800000);
+       }
 
     });
 </script>
