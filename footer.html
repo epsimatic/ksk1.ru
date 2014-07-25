@@ -168,8 +168,9 @@
             jQuery('.weather-temp').text(temp[0]);
             jQuery('.weather-block').css('opacity', 1);
         }
-       setcookie("WeatherIcon", icon, time()+1800);
-       setcookie("WeatherText", jQuery('.weather-temp').text(temp[0]), time()+1800);
+        $.cookie('weather_icon', icon, { expires: 1800 });
+        $.cookie('weather_text', jQuery('.weather-temp').text(temp[0]), { expires: 1800 });
+
     });
 </script>
 
