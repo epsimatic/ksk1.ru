@@ -199,6 +199,7 @@
             subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
             document.getElementsByTagName("li")[6].classList.add("activ_li");
         }
+
         if (getCookie('weather_icon')){
             jQuery('.weather-icon').css("background-image", "url(" + getCookie('weather_icon') + ")");
             jQuery('.weather-temp').text(getCookie('weather_text'));
