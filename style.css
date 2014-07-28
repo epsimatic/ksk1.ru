@@ -2703,6 +2703,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #popover-shopping .popover {left: -58px !important;}
 
     #popover-shopping br {display:block;}
+    .kaleidoscope__item {width: 20%;}
+    .kaleidoscope__item__tooltip {height: 96px;}
 }
 
 /* Стили для размера -md- */
@@ -2740,6 +2742,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .news-more .crp_title {font-size: 14px;}
 
     .news-more .crp_excerpt {font-size: 14px; font-weight: 300;}
+    .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
 
@@ -2780,7 +2783,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-home {margin-left: 1150px;}
 
-    .kaleidoscope__item__tooltip {height: 93px;}
+    .kaleidoscope__item__tooltip {height: 94px;}
 
     .header-line__logo img {width:75%;}
 
