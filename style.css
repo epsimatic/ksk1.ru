@@ -130,7 +130,7 @@ header .btn-group {margin-top: 10px;}
     font-weight: 600;
 }
 .weather-temp:after{
-    content: "°";
+    content: " °";
 }
 
 .weather-temp-sm {
