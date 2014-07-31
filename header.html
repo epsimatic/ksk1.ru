@@ -1,4 +1,5 @@
 <style>
+    /* TODO: Перенести стили в style.css */
     .header-line__logo img {
         position: absolute;
         top: -40px;
@@ -51,23 +52,18 @@
                 <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
             </li>
             <li><a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
-            <li><a class="hide-alt" href="http://ksk66.ru/map/"
-                   title='Карта Красноуфимска и окрестностей'>Карта</a>
-                <a class="show-alt" href="http://ksk66.ru/map/"
-                   title='Тестовая карта Красноуфимска и окрестностей'>Карта</a></li>
-            <!-- <li><a class="hide-alt" href="http://cat.ksk66.ru/?q=agenda" title='Киноафиша и афиша событий'>Афиша</a>
-                 <a class="show-alt" href="http://news.kskmedia.ru/movie/" title='Тестовая Киноафиша и афиша событий'>Афиша</a>-->
-            </li>
-            <li><a class="hide-alt" href="http://ksk66.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Товары
-                и
-                услуги</a>
+            <li><a class="" href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и окрестностей'>Карта</a></li>
+            <li><a class="hide-alt" href="http://cat.ksk66.ru/" title='Каталог предприятий, телефонов и адресов'>Товары
+                и услуги</a>
                 <a class="show-alt" href="http://news.kskmedia.ru/cat/"
-                   title='Тестовый каталог предприятий, телефонов и адресов'>Товары и услуги</a></li>
+                   title='Тестовый каталог предприятий, телефонов и адресов'>Товары и услуги</a>
+            </li>
+            <li><a class="" href="http://news.kskmedia.ru/agenda/" title='Киноафиша и афиша событий'>Афиша</a></li>
             <li><a href="http://posred.ru" title='Газета Твой посредник'>Газета «ТП»</a></li>
             <li><a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a></li>
             <li><a href="http://photo.kskmedia.ru" title="Фото.Новости">Фото</a></li>
             <li><a href="http://video.kskmedia.ru" title="Видео.Новости">Видео</a></li>
-            <li><a href="http://ksk66.ru/Preiskurant.html" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама
+            <li><a href="http://reklama.ksk66.ru" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама
                 у нас</a></li>
         </ul>
 
@@ -149,13 +145,15 @@
             Страхования</a>-->
     </div>
 </div>
-<!--<div id="popover_weather_content" style="display: none">
 
-</div>-->
 <script>
     (function () {
         var url = document.location.href,
-                ob = /^[http:\/\/]+ob/,
+                subtitle = document.getElementById("logo"),
+                body = document.getElementsByTagName("body")[0];
+
+        //TODO: Отрефакторить. Заменить это на JSON, добавлять только класс к body, менять картинку и подсвечивать пункт через CSS.
+        var ob = /^[http:\/\/]+ob/,
                 news = /^[http:\/\/]+news/,
                 oldnews = /^[http:\/\/]+ksk66/,
                 cat = /^[http:\/\/]+cat/,
@@ -163,9 +161,7 @@
                 pfoto = /^[http:\/\/]+pfoto/,
                 timetable = /timetable/,
                 karta = /map/,
-                copy = /copy/,
-                subtitle = document.getElementById("logo"),
-                body = document.getElementsByTagName("body")[0];
+                copy = /copy/;
 
         if (url.match(ob)) {
             // сайт объявлений
@@ -204,16 +200,14 @@
             document.getElementsByTagName("li")[6].classList.add("activ_li");
         }
 
-        /* jQuery('#pop-btn-weather').on('shown.bs.popover', function () {
-         $(this).load(location.href+"http://m.pogoda.yandex.ru/20691/?mode=short","");
-         });
-         */
+        if (getCookie('weather_icon')){
+            var weather_text = getCookie('weather_text')
+            if(weather_text>0) weather_text ="+"+weather_text
+            jQuery('.weather-icon').css("background-image", "url(" + getCookie('weather_icon') + ")");
+            jQuery('.weather-temp').text(weather_text);
+            jQuery('.weather-block').css('opacity', 1);
+        }
 
-        /* jQuery('#pop-btn-weather').popover({
-         content: jQuery('#popover_shopping_content').html(),
-         html: true,
-         placement: "bottom"
-         });*/
     })();
 
 </script>

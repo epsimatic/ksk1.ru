@@ -1,31 +1,6 @@
 <script type="application/javascript">
 
-    // TabDrop
-    if (!window['operamini']) {
-        jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
-    } else {
-        jQuery('.navbar-nav').css("max-height", "none");
-    }
-    // Popover для магазинов
-    jQuery('#btn-feature-shopping').popover({
-        content: jQuery('#popover_shopping_content').html(),
-        html: true,
-        placement: "bottom"
-    });
-    // Popover для услуг
-    jQuery('#btn-feature-services').popover({
-        content: jQuery('#popover_service_content').html(),
-        html: true,
-        placement: "bottom"
-    });
-    // Popover для погоды с iframe от Яндекса
-    jQuery('.pop-btn-weather').popover({
-        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
-        html: true,
-        placement: "bottom"
-    });
-
-    // Инициализация шапки сайта
+    // Заполняем user-panel содержимым user-panel-content
     (function () {
         var user_panel_content = document.getElementById('user-panel-content');
         var user_panel = document.getElementById('user-panel');
@@ -35,22 +10,48 @@
         }
     })();
 
-    // поиск google
+    // TabDrop
+    if (window['operamini']) {
+        jQuery('.navbar-nav').css("max-height", "none");
+    } else {
+        jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    }
+    // Popover для магазинов
+    jQuery('#btn-feature-shopping').popover({
+//        trigger: 'focus',
+        content: jQuery('#popover_shopping_content').html(),
+        html: true,
+        placement: "bottom"
+    });
+    // Popover для услуг
+    jQuery('#btn-feature-services').popover({
+//        trigger: 'focus',
+        content: jQuery('#popover_service_content').html(),
+        html: true,
+        placement: "bottom"
+    });
+    // Popover для погоды с iframe от Яндекса
+    jQuery('.pop-btn-weather').popover({
+//        trigger: 'focus',
+        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
+        html: true,
+        placement: "bottom"
+    });
+
+    // поиск google по новостям или объявлениям
     (function () {
-        var ob = /^[http:\/\/]+ob/;
         var cx;
+        var ob = /^[http:\/\/]+ob/;
         var url = document.location.href;
         if (url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
         }
-
         var gcse = document.createElement('script');
         gcse.type = 'text/javascript';
         gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//www.google.com/cse/cse.js?cx=' + cx;
+        gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
     })();
@@ -80,7 +81,6 @@
             } catch (e) {
             }
         });
-
         var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
                 f = function () {
@@ -88,24 +88,22 @@
                 };
         s.type = "text/javascript";
         s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
+        s.src = "//mc.yandex.ru/metrika/watch.js";
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
         } else {
             f();
         }
     })(document, window, "yandex_metrika_callbacks");
-    <!-- /Yandex.Metrika counter -->
+
 </script>
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
+<noscript><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></noscript>
 
 <footer class="visible-print text-right">
-    <em>Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>. При использовании материалов
-        ссылка обязательна.</em>
+    <em>Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>.
+        При использовании материалов ссылка обязательна.</em>
 </footer>
+
 <footer class="hidden-print" style="margin-top:20px;">
     <div class="row">
         <div class="col-sm-6" style="text-align:right;">
@@ -113,17 +111,15 @@
 
             <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
                 Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.</p>
-
             <p class="footer_backlinks">При использовании материалов сайта ссылка обязательна.</p>
-
             <p class="footer_opinion">Мнение редакции может не совпадать с мнением авторов материалов и
                 комментариев.</p>
 
             <div>
                 <span id="openstat2173092"></span>
-                <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> • <span><a
-                    href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> • <span><a
-                    href="http://reklama.ksk66.ru/">Реклама на сайте</a></span>
+                <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
+                <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> •
+                <span><a href="http://reklama.ksk66.ru/">Реклама на сайте</a></span>
             </div>
         </div>
         <div class="col-sm-6">
@@ -131,7 +127,8 @@
 
             <h3><a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
                 infotek66@gmail.com</h3>
-            <h4><a href="/addnews">Форма обратной связи</a></h4>
+            <h4 class="show-alt"><a href="http://news.kskmedia.ru/addnews">Форма обратной связи</a></h4>
+            <h4 class="hide-alt"><a href="http://ksk66.ru/index.php?do=feedback&user=1">Форма обратной связи</a></h4>
             <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
         </div>
     </div>
@@ -141,20 +138,17 @@
 <div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
     <div class="gsIContent">
         <div id="cityLink">
-            <a href="http://www.gismeteo.ru/city/daily/4515/" target="_blank">Погода в Красноуфимске</a>
+            <a href="http://www.gismeteo.ru/city/daily/4515/">Погода в Красноуфимске</a>
         </div>
-
         <div class="gsLinks" style="width: 100%; overflow: hidden;">
             <table>
                 <tr>
                     <td>
-                        <div class="leftCol"><a href="http://www.gismeteo.ru" target="_blank">
-                            <img alt="Gismeteo" title="Gismeteo"
-                                 src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"
-                                 align="absmiddle" border="0"/>
+                        <div class="leftCol"><a href="http://www.gismeteo.ru">
+                            <!--<img src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"/>-->
                             <span>Gismeteo</span></a></div>
                         <div class="rightCol">
-                            <a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз на 2 недели</a>
+                            <a href="http://www.gismeteo.ru/city/weekly/4515/">Прогноз на 2 недели</a>
                         </div>
                     </td>
                 </tr>
@@ -162,20 +156,34 @@
         </div>
     </div>
 </div>
-<script src="http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47" type="text/javascript"></script>
 <script>
-    jQuery(window).load(function () {
+    if (!getCookie('weather_icon')) {
+        var gismeteo = document.createElement('script');
+        gismeteo.type = 'text/javascript';
+        gismeteo.async = true;
+        gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gismeteo, s);        
+    }
 
-        // Парсим погодный виджет
-        var iconlink = jQuery('.gsWeatherIcon img').attr('src');
-//        jQuery('.tsp').remove();
-        var temp = jQuery(".gsTemp > span").text().split('C');
-        temp = temp[0];
-        if (iconlink) {
-            jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
-            jQuery('.weather-temp').text(temp);
-            jQuery('.weather-block').css('opacity', 1);
-        }
+
+    jQuery(window).load(function () {
+        if (!getCookie('weather_icon')) {
+
+            // Парсим погодный виджет
+            var iconlink = jQuery('.gsWeatherIcon img').attr('src');
+            var temp_array = jQuery(".gsTemp > span").text().split('°');
+            var temp = parseInt(temp_array[0]);
+            if (iconlink && !isNaN(temp)) {
+
+                setCookie('weather_icon', iconlink, 1800000);
+                setCookie('weather_text', temp, 1800000);
+                if(temp>0) temp = "+"+temp;
+                jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
+                jQuery('.weather-temp').text(temp);
+                jQuery('.weather-block').css('opacity', 1);
+            }
+        } else console.log("Ошибка разбора погоды");
     });
 </script>
 
@@ -190,9 +198,8 @@
         НАВЕРХ
     </div>
 </a>
-
 <script>
-    var offset = 600;
+    var offset = 1000;
     if (jQuery('.btn-scroll-up').length) {
         jQuery('.btn-home').remove();
     } else {

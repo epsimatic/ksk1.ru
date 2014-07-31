@@ -129,6 +129,9 @@ header .btn-group {margin-top: 10px;}
     font-size: 20px;
     font-weight: 600;
 }
+.weather-temp:after{
+    content: " °";
+}
 
 .weather-temp-sm {
     position: absolute;
@@ -182,7 +185,7 @@ header .btn-group {margin-top: 10px;}
 
 #pop-btn-shopping a{text-decoration: none;}
 
-.navbar-nav {width: 100%; max-height: 50px; white-space: nowrap;}
+.navbar-nav { max-height: 50px; white-space: nowrap;}
 
 .activ_li{background-color: #ffffff;}
 
@@ -398,6 +401,9 @@ a.media-heading:focus {text-decoration: none;}
 .table tbody > tr > td,
 .table tfoot > tr > td {padding: 8px; line-height: 1.428571429; vertical-align: top; border-top: 0;}
 
+/*для таблицы кноафишы в taxonomy-movie включим border бутстроповский*/
+.table-movie-sessions td { border-top: 1px solid #ddd !important; }
+.table-movie-sessions { border-bottom: 1px solid #ddd; }
 .table .overline-me  {border-top: 1px solid #ddd;}
 
 .table .underline-me {border-bottom: 1px solid #ddd;}
@@ -1791,7 +1797,59 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 .form-group_price, .label-price_cost, .label-price_salary, .form-group_phone, .form-group_price, .form-group_phone, .form-group_price, .form-group_phone,
 .form-group_mail, .form-group_photo, .add-ob__info-law,
 .add-ob__info-license, .add-ob__btn-submit{display: none;}
+/* для хрома select заменяем дивами ,ХАК */
+.level3 {
+    color: #0275d3;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 10px;
+}
 
+.level4 {
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+    padding: 8px 0 8px 22px;
+    white-space: nowrap;
+}
+
+.level4:hover:after {
+    content: "← добавить объявление сюда";
+    font-family: "Open Sans Condensed", "Open Sans", "Arial Narrow", Verdana, sans-serif;
+    font-size: 90%;
+    margin-left: 1em;
+    opacity: 0.4;
+}
+.level4:hover {
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.preselect a, .preselect div { background-color: #f7f8fa; }
+/*конец хака*/
+.preselect { width: 100%; }
+
+.preselect optgroup { color: #0275d3;
+    font-size: 1.1em;
+    text-transform: uppercase }
+.preselect option { padding: 10px; overflow: hidden; font-size: 14px; text-transform: none; color: #000; }
+.preselect option:hover { background-color: #e7e7e7; cursor: pointer; }
+.preselect option:hover:after {
+    content: "← добавить объявление сюда";
+    font-family: "Open Sans Condensed", "Open Sans", "Arial Narrow", Verdana, sans-serif;
+    font-size: 90%;
+    margin-left: 1em;
+    opacity: 0.4;
+}
+.preselect #add_select-category {
+    background-color: #f7f8fa;
+    border: medium none;
+    margin-top: -11px;
+    padding-top: 13px;
+    overflow: visible;
+}
 
 /* </editor-fold> */
 
@@ -1951,8 +2009,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk .table-striped > tbody > tr:nth-child(even) > td,
 .site-copy .table-striped > tbody > tr:nth-child(even) > td {background-color: #f3f3f3;}
 
-.site-rk .table-notes,
-.site-copy .table-notes {font-style: oblique; color: #888; margin: -30px 0 40px; padding: 0 20px 0 30px;}
+.table-notes { font-style: oblique; color: #888; margin: -30px 0 40px; padding: 0 20px 0 30px; }
 
 .site-copy .col-md-2 {padding-left: 0 !important;}
 
@@ -2649,6 +2706,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #popover-shopping .popover {left: -58px !important;}
 
     #popover-shopping br {display:block;}
+    .kaleidoscope__item {width: 20%;}
+    .kaleidoscope__item__tooltip {height: 96px;}
 }
 
 /* Стили для размера -md- */
@@ -2686,6 +2745,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .news-more .crp_title {font-size: 14px;}
 
     .news-more .crp_excerpt {font-size: 14px; font-weight: 300;}
+    .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
 
@@ -2726,7 +2786,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-home {margin-left: 1150px;}
 
-    .kaleidoscope__item__tooltip {height: 93px;}
+    .kaleidoscope__item__tooltip {height: 94px;}
 
     .header-line__logo img {width:75%;}
 
