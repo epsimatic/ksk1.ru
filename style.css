@@ -166,6 +166,8 @@ header .btn-group {margin-top: 10px;}
     margin: 0 0 10px;
     border: none;}
 
+.site-ob .navbar {margin: 0 -10px 10px;}
+
 .navbar a {color: #fff;}
 
 .navbar-collapse {margin-right: -40px;}
