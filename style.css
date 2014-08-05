@@ -2817,3 +2817,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .is_admin .admin{display: block;}
 /*загрузка аяксом Хотите продать быстрее*/
 .row-marked .negative, .row-marked .neutral{height: 60px;padding-top: 20px; }
+/*<admin>*/
+.checked-no {color: red;}
+.checked-no ~ .badge {background-color: red;}
+.checked-yes {color: blue;}
+.checked-yes ~ .badge {background-color: blue;}
+.checked-edit {color: green;}
+.checked-edit ~ .badge {background-color: green;}
+.checked-no_paid {color: orange;}
+.checked-no_paid ~ .badge {background-color: orange;}
+/*</admin>*/
