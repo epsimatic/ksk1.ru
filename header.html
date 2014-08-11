@@ -131,7 +131,7 @@
         var ob = /^[http:\/\/]+ob/,
                 news = /^[http:\/\/]+news/,
                 oldnews = /^[http:\/\/]+ksk66/,
-                cat = /^[http:\/\/]+cat/,
+                cat = /cat\//,
                 video = /^[http:\/\/]+video/,
                 pfoto = /^[http:\/\/]+pfoto/,
                 timetable = /timetable/,
@@ -150,7 +150,7 @@
             document.getElementsByTagName("li")[0].classList.add("activ_li");
         } else if (url.match(cat)) {
             body.classList.add('cat');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-tu.svg'>";
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
             document.getElementsByTagName("li")[7].classList.add("activ_li");
         } else if (url.match(video)) {
             body.classList.add('video');
