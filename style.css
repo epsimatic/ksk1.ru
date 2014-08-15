@@ -611,7 +611,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .quick-nav li > a:hover,
 .quick-nav li > a:focus,
 .panel-payment .dropdown-menu > li .btn:hover,
-.panel-payment .dropdown-menu > li .btn:focus {background-color: #f5f6f7; color: #333333;}
+.panel-payment .dropdown-menu > li .btn:focus {background-color: #f5f6f7; color: #333333; width: 100%}
 
 .panel > .quick-nav .btn-link {font-size: 20px; margin-top: -3px; font-weight: 600;}
 
@@ -648,6 +648,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .quick-nav ul > li.cat-item > ul.children > li > a {padding: 10px 60px 10px 15px; display: block; font-weight: 400; text-transform: none; width: 100%; color: #333;}
 
+.quick-nav ul > li.cat-item > ul.children > li.current-cat > a:hover,
+.quick-nav ul > li.cat-item > ul.children > li.current-cat > a:focus,
 .quick-nav ul > li.cat-item > ul.children > li.current-cat > a {background-color: #428bca; color: #fff; text-decoration: none;}
 
 .quick-nav ul > li.cat-item > ul.children > li > a > span.badge {position: absolute; right: 15px; top: 10px;}
