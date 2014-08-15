@@ -657,6 +657,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .quick-nav ul > li.cat-item > ul.children > li > a:hover,
 .quick-nav ul > li.cat-item > ul.children > li > a:focus {text-decoration: none}
 
+.children li {text-transform: none; list-style-type: none;}
+
+.children {padding-left: 0;}
 
 /* </editor-fold> */
 
