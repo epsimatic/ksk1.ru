@@ -661,7 +661,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .children li {text-transform: none; list-style-type: none;}
 
-.children li:hover a {background-color: #f2f1f0; cursor: pointer;}
+.children li.cat-item a:hover {background-color: #f2f1f0; cursor: pointer;}
 
 /* </editor-fold> */
 
