@@ -233,7 +233,9 @@ header .btn-group {margin-top: 10px;}
 
 .panel > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
 
-.panel-heading {border: none; padding: 8px 15px; background-color: #ffffff;}
+.panel-heading {border: none; padding: 8px 15px;
+    /*background-color: #ffffff;*/
+}
 
 .panel-body {background-color: #fcfcfc;}
 
@@ -857,14 +859,16 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .panel-news .row {margin-right: 0; margin-left: 0;}
 
 .panel-news > .panel-heading {
-    /*background-color: #1FA6F2; */
+    background-color: #1FA6F2;
     padding: 0 15px 8px;
-    background-color: #ffffff;
-    border-bottom: 4px solid #1fa6f2;
-    /*border: none; */
+    /*background-color: #ffffff;*/
+    /*border-bottom: 4px solid #1fa6f2;*/
+    border: none;
     margin-bottom: 10px;}
 
-.panel-news > .panel-heading h3 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important; color: #1FA6F2;}
+.panel-news > .panel-heading h3 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important;
+    /*color: #1FA6F2;*/
+}
 
 .panel-news > .panel-body {padding-bottom: 0;}
 
@@ -874,7 +878,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .panel-week > .panel-heading,
 .panel-news > .panel-heading {
-    /*background: #1fa6f2 url("img/panel-news.png") no-repeat right; */
+    background: #1fa6f2 url("img/panel-news.png") no-repeat right;
     background-size: contain;}
 
 .panel-week > .panel-heading {border-bottom: 3px solid #1fa6f2;}
@@ -892,7 +896,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /*.panel-news .col-lg-5 {padding: 0 25px 0 5px;}*/
 
-.panel-week > .panel-heading h3 {color: #1fa6f2;}
+/*.panel-week > .panel-heading h3 {color: #1fa6f2;}*/
 
 .panel-week .textwidget > div {background-color: #F9FAFB; padding: 0;}
 
@@ -972,58 +976,54 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Панель «Письмо в редакцию»"> */
 .panel-mails > .panel-heading {
-    /*background: #52be7f url("img/panel-mails.png") no-repeat right;*/
+    background: #52be7f url("img/panel-mails.png") no-repeat right;
     background-size: contain;
-    border-bottom: 3px solid #52be7f;
+    /*border-bottom: 3px solid #52be7f;*/
 }
 
-.panel-mails > .panel-heading h3 {color: #52be7f;}
+/*.panel-mails > .panel-heading h3 {color: #52be7f;}*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
 .panel-video > .panel-heading {
-    /*background: #ff6e0b url("img/panel-video.png") no-repeat right;*/
+    background: #ff6e0b url("img/panel-video.png") no-repeat right;
     background-size: contain;
-    border-bottom: 3px solid #ff6e0b;
+    /*border-bottom: 3px solid #ff6e0b;*/
 }
 
-.panel-video > .panel-body h3 {color: #ff6e0b;}
+/*.panel-video > .panel-body h3 {color: #ff6e0b;}*/
 
 .panel-video > .panel-body {background-color: #848787;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Областные новости»"> */
 .panel-global > .panel-heading {
-    /*background: #2ebcb7 url(img/panel-global.png) no-repeat right;*/
+    background: #2ebcb7 url(img/panel-global.png) no-repeat right;
     background-size: contain;
-    border-bottom: 3px solid #2ebcb7;
+    /*border-bottom: 3px solid #2ebcb7;*/
 }
 
-.panel-global > .panel-heading h3 {
-    color: #2ebcb7;
-}
+/*.panel-global > .panel-heading h3 {color: #2ebcb7;}*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading {
-    /*background: #ff794c url(img/panel-congrats.png) no-repeat right;*/
-    border-bottom: 3px solid #ff794c;
+    background: #ff794c url(img/panel-congrats.png) no-repeat right;
+    /*border-bottom: 3px solid #ff794c;*/
     background-size: contain;
 }
 
-.panel-congrats > .panel-heading h3 {
-    color: #ff794c;
-}
+/*.panel-congrats > .panel-heading h3 {color: #ff794c;}*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Официальная информация»"> */
 .panel-official > .panel-heading {
-    /*background: #4a76bb url(img/panel-official.png) no-repeat right;*/
-    border-bottom: 3px solid #4a76bb;
+    background: #4a76bb url(img/panel-official.png) no-repeat right;
+    /*border-bottom: 3px solid #4a76bb;*/
     background-size: contain;
 }
 
-.panel-official > .panel-heading h3 {color: #4a76bb;}
+/*.panel-official > .panel-heading h3 {color: #4a76bb;}*/
 
 /* </editor-fold> */
 
@@ -1035,8 +1035,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Панель «Гость не сайте»"> */
 .panel-guest > .panel-heading {
-    border-bottom: 3px solid #00a1d3;
-    /*background: #00a1d3 url("img/panel-guest.png") no-repeat right;*/
+    /*border-bottom: 3px solid #00a1d3;*/
+    background: #00a1d3 url("img/panel-guest.png") no-repeat right;
     background-size: contain;
 }
 
@@ -1049,27 +1049,27 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Панель «Случайное фото»"> */
 .panel-rphoto > .panel-heading {
-    border-bottom: 3px solid #01bc85;
-    /*background: #01bc85 url("img/panel-rphoto.png") no-repeat right;*/
+    /*border-bottom: 3px solid #01bc85;*/
+    background: #01bc85 url("img/panel-rphoto.png") no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ближайшие события»"> */
 .panel-event > .panel-heading {
-    border-bottom: 3px solid #52be7f;
-    /*background: #52be7f url("img/panel-event.png") no-repeat right;*/
+    /*border-bottom: 3px solid #52be7f;*/
+    background: #52be7f url("img/panel-event.png") no-repeat right;
     background-size: contain;
 }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Важно»"> */
 .panel-notice > .panel-heading {
-    border-bottom: 3px solid #FF4B3D;
-    /*background-color: #FF4B3D;*/
+    /*border-bottom: 3px solid #FF4B3D;*/
+    background-color: #FF4B3D;
 }
 
-.panel-notice > .panel-heading h3 {color: #FF4B3D;}
+/*.panel-notice > .panel-heading h3 {color: #FF4B3D;}*/
 
 .panel-notice a.news-link { background-color: #fcfcfc; display: block; padding: 10px 15px; }
 
@@ -1095,13 +1095,13 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Панель «Голосование»"> */
 .panel-vote > .panel-heading {
-    /*background: #3db65a url("img/panel-vote.png") no-repeat right;*/
-    border-bottom: 3px solid #3db65a;
-    background-color: #fff;
+    background: #3db65a url("img/panel-vote.png") no-repeat right;
+    /*border-bottom: 3px solid #3db65a;*/
+    /*background-color: #fff;*/
     background-size: contain;
 }
 
-.panel-vote > .panel-heading h3 {color: #3db65a;}
+/*.panel-vote > .panel-heading h3 {color: #3db65a;}*/
 
 .panel-vote .panel-question {padding-bottom: 0;}
 .panel-vote .panel-question .btn {white-space: normal;}
@@ -1171,11 +1171,11 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="Панель «Комментарии»"> */
 
 .panel-comments > .panel-heading {
-    /*background: #46a2f9 url("img/panel-comments.png") no-repeat right;*/
-    background-size: contain;
-    border-bottom: 3px solid #46a2f9;}
+    background: #46a2f9 url("img/panel-comments.png") no-repeat right;
+    /*border-bottom: 3px solid #46a2f9;*/
+    background-size: contain;}
 
-.panel-comments > .panel-heading h3 {color: #46a2f9;}
+/*.panel-comments > .panel-heading h3 {color: #46a2f9;}*/
 
 .panel-comments ul.nav {
     /*background-color: #c7d1e0; */
