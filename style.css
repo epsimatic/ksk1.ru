@@ -1987,6 +1987,30 @@ label.control-label {font-weight: 600 !important;}
 
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus {color: #ff9c00;}
+
+/*Панель «Экстренные телефоны»*/
+
+.panel-notice .panel-body.panel-emergency .col-xs-6:first-child h1 {font-size: 23px; font-weight: 600; line-height: 1em; padding: 14px 0 7px 8px;}
+
+.panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 {font-size: 40px; font-weight: 700; padding-left: 22px; padding-top: 15px;}
+
+.panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 i {bottom: 3px; color: #bbbbbb; font-size: 23px; margin-right: -5px; position: relative; transform: rotate(25deg);}
+
+.panel-notice .panel-body.panel-emergency .row {border-bottom: 1px solid #e9e9e9;}
+
+.panel-notice .panel-body.panel-emergency .col-xs-9 h4 {font-size: 16px; overflow-x: visible; padding: 5px 9px 10px 0; white-space: nowrap;}
+
+.panel-notice .panel-body.panel-emergency .col-xs-3 h4 {font-size: 19px; font-weight: 700; padding-right: 5px; padding-top: 4px;}
+
+.panel-notice .panel-body.panel-emergency .row:nth-child(2) h4,
+.panel-notice .panel-body.panel-emergency .row:nth-child(4) h4 {color: #ff4b3d;}
+
+.panel-notice .panel-body.panel-emergency .row:nth-child(3) h4,
+.panel-notice .panel-body.panel-emergency .row:nth-child(5) h4 {color: #2d94b7;}
+
+/* </editor-fold> */
+
+
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
