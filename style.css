@@ -345,7 +345,7 @@ footer h3 {
 .btn-home {
     padding: 0 20px 5px 17px;
     position: fixed;
-    bottom: 151px;
+    bottom: 100px;
     background-color: rgb(246, 246, 246);
     border-radius: 0 10px 10px 0;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
