@@ -2008,6 +2008,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .panel-notice .panel-body.panel-emergency .row:nth-child(3) h4,
 .panel-notice .panel-body.panel-emergency .row:nth-child(5) h4 {color: #2d94b7;}
 
+.panel-notice .panel-footer.panel-emergency {background-color: #ededed; padding: 3px 7px;}
+
 /* </editor-fold> */
 
 
