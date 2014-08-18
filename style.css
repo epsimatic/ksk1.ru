@@ -604,6 +604,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .quick-nav ul li {position: relative;}
 
+.quick-nav .name_cat {color: #ffffff;}
+
 /*.quick-nav ul li a {padding-right: 60px;}*/
 
 /*.quick-nav ul li .badge {position: absolute; right: 15px;}*/
