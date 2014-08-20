@@ -2765,6 +2765,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #popover-shopping br {display:block;}
     .kaleidoscope__item {width: 20%;}
     .kaleidoscope__item__tooltip {height: 96px;}
+  .navbar-nav{ margin: 0 -10px;}
 }
 
 /* Стили для размера -md- */
