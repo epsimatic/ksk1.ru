@@ -1956,7 +1956,7 @@ ul.page-cat ul.children > li.cat-item > a {padding: 10px 5px 10px 15px; min-widt
 
 ul.page-cat ul.children > li.cat-item > a:focus,
 ul.page-cat ul.children > li.cat-item > a:hover,
-ul.page-cat ul.children > li.cat-item > a {color: #4D4D60;}
+ul.page-cat ul.children > li.cat-item > a {color: #333333;}
 
 ul.page-cat ul.children > li.cat-item:hover,
 ul.page-cat ul.children > li.cat-item:focus {background-color: #F0F1F2; border-left: 1px solid #56C4F4;}
@@ -1984,6 +1984,12 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 .fotorama__stage {background-color: #333 !important;}
 
 label.control-label {font-weight: 600 !important;}
+
+.content-brief_commerce {border-bottom: 1px solid #ffa500;}
+
+.content-brief_commerce .content-brief_post {margin-bottom: 10px; margin-top: -5px;}
+
+.content-brief_commerce .entry-meta_email {margin: 0 10px 0 -13px;}
 
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus {color: #ff9c00;}
