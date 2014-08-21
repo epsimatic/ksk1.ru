@@ -1985,14 +1985,14 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 label.control-label {font-weight: 600 !important;}
 
-.content-brief_commerce {border-bottom: 1px solid #ffa500;}
+.content-brief_commerce {border-bottom: 1px solid #ffa500 !important; min-height: 140px !important;}
 
 .content-brief_commerce .content-brief_post {margin-bottom: 10px; margin-top: -5px;}
 
 .content-brief_commerce .entry-meta_email {margin: 0 10px 0 -13px;}
 
 a.content-brief_title-commerce:hover,
-a.content-brief_title-commerce:focus {color: #ff9c00;}
+a.content-brief_title-commerce:focus {color: #ff9c00; font-size: 20px;}
 
 /*Панель «Экстренные телефоны»*/
 
