@@ -1,6 +1,11 @@
 /* <editor-fold desc="Оформление панелей"> */
 /* </editor-fold> */
 
+/*«Сплющивание» старого css*/
+/*.block .body,*/
+#mainnews .body,
+.column-center .block .header {border: none;}
+
 
 /* <editor-fold desc="Общие стили"> */
 /* <editor-fold desc="Колонки и основные элементы страницы"> */
