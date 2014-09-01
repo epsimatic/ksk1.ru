@@ -991,7 +991,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
     /*border-bottom: 3px solid #52be7f;*/
 }
 
-/*.panel-mails > .panel-heading h3 {color: #52be7f;}*/
+.panel-mails > .panel-heading h3 {color: #52be7f;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
