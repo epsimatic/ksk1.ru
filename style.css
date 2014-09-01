@@ -285,6 +285,8 @@ header .btn-group {margin-top: 10px;}
 
 .panel-success > .panel-heading {background-color: #5cb85c; padding: 16px 22px;}
 
+.sidebar .panel-success > .panel-heading {padding: 8px 15px;}
+
 .panel-success .panel-title {color: #fff;}
 
 .panel-success .list-group-item {background-color: transparent;}
@@ -991,7 +993,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
     /*border-bottom: 3px solid #52be7f;*/
 }
 
-.panel-mails > .panel-heading h3 {color: #52be7f;}
+/*.panel-mails > .panel-heading h3 {color: #52be7f;}*/
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
