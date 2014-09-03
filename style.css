@@ -1583,7 +1583,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .popover .popover-content a:hover,
 .block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
-
+.btn-feature {border: 0;}
 /* </editor-fold> */
 
 
