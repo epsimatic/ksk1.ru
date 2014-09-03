@@ -25,10 +25,11 @@
     });
     // Popover для услуг
     jQuery('#btn-feature-services').popover({
-        trigger: 'focus',
+
         content: jQuery('#popover_service_content').html(),
         html: true,
-        placement: "bottom"
+        placement: "bottom",
+        trigger: 'focus'
     });
     // Popover для погоды с iframe от Яндекса
     jQuery('.pop-btn-weather').popover({
