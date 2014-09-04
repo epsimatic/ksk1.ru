@@ -2052,17 +2052,19 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk a div {font-size: 16px; line-height: 1.3; color: #666666;}
 
-.site-rk .menu-rk div:nth-child(1) a.active div {color: #2ecc71;}
+.site-rk .menu-rk a:hover div {color: #333333;}
 
-.site-rk .menu-rk div:nth-child(2) a.active div {color: #e74c3c;}
+.site-rk .menu-rk div:nth-child(1) a.active div {color: #2ecc71 !important;}
 
-.site-rk .menu-rk div:nth-child(3) a.active div {color: #1abc9c;}
+.site-rk .menu-rk div:nth-child(2) a.active div {color: #e74c3c !important;}
 
-.site-rk .menu-rk div:nth-child(4) a.active div {color: #3498db;}
+.site-rk .menu-rk div:nth-child(3) a.active div {color: #1abc9c !important;}
+
+.site-rk .menu-rk div:nth-child(4) a.active div {color: #3498db !important;}
 
 .site-rk .menu-rk a.active div {font-weight: 600;}
 
-.site-rk .menu-rk a:hover div {text-decoration: none;}
+.site-rk .menu-rk a:hover {text-decoration: none;}
 
 .site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom-style: solid; border-bottom-width: 0; border-top: none;}
 
@@ -2074,7 +2076,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk div:nth-child(4) a hr {border-bottom-color: #3498db; opacity: 0.5;}
 
-.site-rk .menu-rk a.active hr {border-bottom-width: 10px !important;}
+.site-rk .menu-rk a:hover hr {border-bottom-width: 10px !important; opacity: 0.5;}
+
+.site-rk .menu-rk a.active hr {border-bottom-width: 10px !important; opacity: 1 !important;}
 
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
