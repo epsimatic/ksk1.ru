@@ -2066,15 +2066,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk a:hover {text-decoration: none;}
 
-.site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom-style: solid; border-bottom-width: 0; border-top: none;}
+.site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom-style: solid; border-bottom-width: 0; border-top: none; opacity: 0.2;}
 
-.site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #2ecc71; opacity: 0.5;}
+.site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #2ecc71;}
 
-.site-rk .menu-rk div:nth-child(2) a hr {border-bottom-color: #e74c3c; opacity: 0.5;}
+.site-rk .menu-rk div:nth-child(2) a hr {border-bottom-color: #e74c3c;}
 
-.site-rk .menu-rk div:nth-child(3) a hr {border-bottom-color: #1abc9c; opacity: 0.5;}
+.site-rk .menu-rk div:nth-child(3) a hr {border-bottom-color: #1abc9c;}
 
-.site-rk .menu-rk div:nth-child(4) a hr {border-bottom-color: #3498db; opacity: 0.5;}
+.site-rk .menu-rk div:nth-child(4) a hr {border-bottom-color: #3498db;}
 
 .site-rk .menu-rk a:hover hr {border-bottom-width: 10px !important; opacity: 0.5;}
 
