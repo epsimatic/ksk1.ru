@@ -1566,11 +1566,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Блок фишек"> */
 
-.block-features {background-color: #428bca; color: #fff; padding: 0;}
+.block-features {padding: 0;}
 
-.block-features .btn-feature {height: 50px;}
+.block-features .btn-feature {height: 50px; background-color: #428bca; color: #fff; }
 
-.block-features .btn-feature:hover, .btn-feature,
+.block-features .btn-feature:hover,
 .block-features .btn-feature:focus {background-color: #3276b1; cursor: pointer;}
 
 .block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 8px;}
@@ -1583,6 +1583,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .popover .popover-content a:hover,
 .block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
+
 .btn-feature {border: 0;}
 /* </editor-fold> */
 
@@ -2036,6 +2037,29 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр и Прайс на рекламу"> */
+
+.site-rk .panel-page .panel-body {background-color: #ffffff; padding-top: 0;}
+
+.site-rk .panel-news-body .panel-body {padding: 0;}
+
+.site-rk .menu-rk {padding: 20px 20px 0;}
+
+.site-rk .menu-rk a img {opacity: 0.25; padding-bottom: 15px; width: 80%;}
+
+.site-rk .menu-rk a.active img,
+.site-rk .menu-rk a.hover img {opacity: 1;}
+
+.site-rk .menu-rk a div {font-size: 16px; line-height: 1.3;}
+
+.site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom: 10px solid transparent; border-top: none;}
+
+.site-rk .menu-rk a.active hr:nth-child(1) {border-bottom-color: #2ecc71;}
+
+.site-rk .menu-rk a.active hr:nth-child(2) {border-bottom-color: #e74c3c;}
+
+.site-rk .menu-rk a.active hr:nth-child(3) {border-bottom-color: #1abc9c;}
+
+.site-rk .menu-rk a.active hr:nth-child(3) {border-bottom-color: #3498db;}
 
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
