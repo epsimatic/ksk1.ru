@@ -1573,9 +1573,9 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature:hover,
 .block-features .btn-feature:focus {background-color: #3276b1; cursor: pointer;}
 
-.block-features .btn-feature .col-sm-12 {position: relative; top: 11px; left: 8px;}
+.block-features .btn-feature .col-sm-12 {position: relative; top: 3px; left: 8px;}
 
-.block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 9px; left: -25px;}
+.block-features .btn-feature .col-xs-7 {line-height: 1.1; position: relative; top: 1px; left: -25px;}
 
 .block-features .popover {top: 40px !important;}
 
