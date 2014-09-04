@@ -2818,9 +2818,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #post-2844 .col-md-6 h2 {padding-top: 40px;}
 
-    .block-features .btn-feature .col-sm-12 {left: -7px !important;}
+    .block-features .btn-feature .col-sm-12 {left: -7px !important; top: 1px;}
 
-    .block-features .btn-feature .col-xs-7 {font-size: 13px; left: -15px; line-height: 1; top: 11px;}
+    .block-features .btn-feature .col-xs-7 {font-size: 13px; left: -15px; line-height: 1; top: 2px;}
 
     .news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}
 
@@ -2868,9 +2868,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .table-comparison .discount {top: 0;}
 
-    .block-features .btn-feature .col-sm-12 {left: -3px !important;}
+    .block-features .btn-feature .col-sm-12 {left: -3px !important; top: 3px;}
 
-    .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 10px;}
+    .block-features .btn-feature .col-xs-7 {font-size: 14px; line-height: 1.1; top: 1px;}
 
     .news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
 
