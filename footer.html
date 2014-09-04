@@ -32,10 +32,10 @@
     });
     // Popover для погоды с iframe от Яндекса
     jQuery('.pop-btn-weather').popover({
-        trigger: 'focus',
         content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
         html: true,
-        placement: "bottom"
+        placement: "bottom",
+        trigger: 'focus'
     });
 
     // поиск google по новостям или объявлениям
