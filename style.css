@@ -2053,13 +2053,13 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom: 10px solid transparent; border-top: none;}
 
-.site-rk .menu-rk a.active hr:nth-child(1) {border-bottom-color: #2ecc71;}
+.site-rk .menu-rk div:nth-child(1) a.active hr {border-bottom-color: #2ecc71;}
 
-.site-rk .menu-rk a.active hr:nth-child(2) {border-bottom-color: #e74c3c;}
+.site-rk .menu-rk div:nth-child(2) a.active hr {border-bottom-color: #e74c3c;}
 
-.site-rk .menu-rk a.active hr:nth-child(3) {border-bottom-color: #1abc9c;}
+.site-rk .menu-rk div:nth-child(3) a.active hr {border-bottom-color: #1abc9c;}
 
-.site-rk .menu-rk a.active hr:nth-child(3) {border-bottom-color: #3498db;}
+.site-rk .menu-rk div:nth-child(4) a.active hr {border-bottom-color: #3498db;}
 
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
