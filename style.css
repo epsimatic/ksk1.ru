@@ -2154,6 +2154,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .table-striped > tbody > tr.row-collapsible.row-price-base > td {background-color: #e6f1fc;}
 
+.browser-sceenshot {width: 70%; border-radius: 9px; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); padding: 0;}
+
 .row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
 
 /* Поддержка скрытия столбцов */
@@ -2847,9 +2849,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .site-copy div.copy-header,
     .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
 
-    .tocify {width: 218px;}
+    /*.tocify {width: 218px;}*/
 
-    .site-rk .tocify {width: 230px;}
+    .tocify {width: 230px;}
 
     .affix {display: block}
 
@@ -2900,9 +2902,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-news .post-info span {display: inline;}
 
-    .tocify {width: 172px;}
+    /*.tocify {width: 172px;}*/
 
-    .site-rk .tocify {width: 280px;}
+    .tocify {width: 280px;}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
