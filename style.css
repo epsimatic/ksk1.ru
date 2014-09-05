@@ -2154,6 +2154,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .table-striped > tbody > tr.row-collapsible.row-price-base > td {background-color: #e6f1fc;}
 
+.browser-sceenshot {width: 70%; border-radius: 9px; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); padding: 0;}
+
 .row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
 
 /* Поддержка скрытия столбцов */
