@@ -2162,6 +2162,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-copy .table-print tr > *:first-child,
 .site-copy .table-copy  tr > *:first-child {max-width: none;}
 
+/* перенёс на wordpress
 .site-copy .table-print tr > *,
 .site-copy .table-copy  tr > * {transition: max-width 2s, color 3s, padding 2s; max-width: 200px; overflow: hidden; white-space: nowrap;}
 
@@ -2170,7 +2171,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-copy .table-print.hide-extra-cols tr > *:nth-child(7),
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(5),
 .site-copy .table-copy.hide-extra-cols  tr > *:nth-child(6),
-.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {max-width: 0; padding-left: 0; padding-right: 0; color: white;}
+.site-copy .table-copy.hide-extra-cols  tr > *:nth-child(7) {max-width: 0; padding-left: 0; padding-right: 0; color: white;}*/
 
 .site-copy .thumbnail {border: none;}
 
