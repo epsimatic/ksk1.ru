@@ -2256,7 +2256,7 @@ ul.list-days > li:nth-child(1) {padding-right: 10px;}
 
 ul.list-days > li:nth-child(2) {padding-left: 10px;}
 
-ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C;}
+ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 16px;}
 
 ul.list-days > li.active > a {background-color: #ee6243;}
 
