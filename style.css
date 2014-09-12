@@ -175,6 +175,7 @@ header .btn-group {margin-top: 10px;}
 .site-rk .navbar,
 .site-copy .navbar,
 .site-e96 .navbar,
+body.page-template-default .navbar,
 .site-ob .navbar {margin: 0 -10px 10px;}
 
 .navbar a {color: #fff;}
