@@ -2276,6 +2276,8 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 /*.movie-brief .movie-info .production-flags {}*/
 
+.movie-brief .row {margin-bottom: 10px !important;}
+
 .movie-brief .movie-info .genres,
 .movie-brief .movie-info .genre {color: #999999; font-size: 12px;}
 
@@ -2283,17 +2285,18 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .movie-brief .movie-info .star-rating > .fa {color: #46a2f9; font-size: 0.9em; padding-right: 4px;}
 
-
 .movie-brief .movie-info .movie-price,
 .movie-brief .movie-info .movie-sessions {color: #555555; font-size: 13px; margin-bottom: 0;}
 
 .movie-brief .movie-info .movie-price strong,
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
+.page-id-3975 header.page-header {background-color: #ff6372; margin-bottom: 10px; padding: 15px 25px;}
+
+.page-id-3975 header.page-header > h2.page-title {color: #ffffff; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+
 
 /*ul.list-days .open .dropdown-toggle */
-
-
 /* кнопки фильмов */
 /*.btn-movie {color: #ffffff; background-color: #FF6F4D; border-color: #D7583C;}*/
 /*.panel-movie .btn-group {margin-top: 15px;}*/
