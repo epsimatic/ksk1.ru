@@ -176,6 +176,7 @@ header .btn-group {margin-top: 10px;}
 .site-copy .navbar,
 .site-e96 .navbar,
 body.page-template-default .navbar,
+body.tax-movie .navbar,
 .site-ob .navbar {margin: 0 -10px 10px;}
 
 .navbar a {color: #fff;}
@@ -2291,9 +2292,15 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 .movie-brief .movie-info .movie-price strong,
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
+
+/* Оформление списка событий */
 .page-id-3975 header.page-header {background-color: #ff6372; margin-bottom: 10px; padding: 15px 25px;}
 
 .page-id-3975 header.page-header > h2.page-title {color: #ffffff; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+
+
+/* Страница фильма */
+
 
 
 /*ul.list-days .open .dropdown-toggle */
