@@ -2248,16 +2248,16 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* <editor-fold desc="стили Афиши"> */
 
-ul.list-days {background-color: #FF6F4D; border-radius: 6px; margin-bottom: 10px;
-    /*padding: 10px;*/
-}
+ul.list-days {background-color: #FF6F4D; border-radius: 6px; margin-bottom: 10px;}
+
+ul.list-days > li {padding: 10px;}
 
 ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C;}
 
 ul.list-days > li.active > a {background-color: #ee6243;}
 
-/*ul.list-days > li > a:hover,*/
-/*ul.list-days > li > a:focus {background-color: #EE6243;}*/
+ul.list-days > li > a:hover,
+ul.list-days > li > a:focus {background-color: #EE6243;}
 /*ul.list-days .open .dropdown-toggle */
 
 
