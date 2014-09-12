@@ -2271,6 +2271,7 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 /* Оформление фильмов */
 .movie-brief .movie-poster > a > img {}
 
+.tax-movie #movie-col-right h2,
 .movie-brief .movie-info a > h4.movie-title {color: #0b97e4; font-weight: 600; letter-spacing: 0.01em;}
 
 .movie-brief .movie-info a:hover > h4.movie-title {color: #0080c7;}
@@ -2282,9 +2283,13 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 .movie-brief .movie-info .genres,
 .movie-brief .movie-info .genre {color: #999999; font-size: 12px;}
 
-.movie-brief .movie-info .star-rating {display: block; margin: 4px 0;}
+.star-rating {display: block;}
 
-.movie-brief .movie-info .star-rating > .fa {color: #46a2f9; font-size: 0.9em; padding-right: 4px;}
+.star-rating > .fa {color: #46a2f9;}
+
+.movie-brief .movie-info .star-rating {margin: 4px 0;}
+
+.movie-brief .movie-info .star-rating > .fa {font-size: 0.9em; padding-right: 4px;}
 
 .movie-brief .movie-info .movie-price,
 .movie-brief .movie-info .movie-sessions {color: #555555; font-size: 13px; margin-bottom: 0;}
@@ -2300,8 +2305,17 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Страница фильма */
+.tax-movie .star-rating {margin: 15px 10px}
 
+.tax-movie .star-rating > .fa {font-size: 1.2em; padding-right: 5px;}
 
+.tax-movie #movie-col-right h2 {margin-bottom: 5px; margin-top: 5px !important;}
+
+.tax-movie .movie-info-line {color: #999; font-size: 13px !important; margin-bottom: 15px !important; margin-left: 5px;}
+
+.tax-movie .overview {color: #444; margin-bottom: 20px;}
+
+.tax-movie h3.table-header {color: #2478c1; font-size: 19px;}
 
 /*ul.list-days .open .dropdown-toggle */
 /* кнопки фильмов */
