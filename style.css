@@ -2311,11 +2311,15 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .tax-movie #movie-col-right h2 {margin-bottom: 5px; margin-top: 5px !important;}
 
-.tax-movie .movie-info-line {color: #999; font-size: 13px !important; margin-bottom: 15px !important; margin-left: 5px;}
+.tax-movie .movie-info-line {color: #999; font-size: 13px !important; margin-bottom: 15px !important;}
 
 .tax-movie .overview {color: #444; margin-bottom: 20px;}
 
 .tax-movie h3.table-header {color: #2478c1; font-size: 19px;}
+
+.table-movie-sessions > thead > tr > th {font-weight: 600; color: #666;}
+
+.table-movie-sessions > tbody > tr > td:first-child {color: #466e8c; font-weight: 600;}
 
 /*ul.list-days .open .dropdown-toggle */
 /* кнопки фильмов */
