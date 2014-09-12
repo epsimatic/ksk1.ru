@@ -2248,13 +2248,19 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* <editor-fold desc="стили Афиши"> */
 
-ul.list-days {background-color: #FF6F4D; border-radius: 6px; margin-bottom: 10px; padding: 10px;}
+/*ul.list-days {background-color: #FF6F4D; border-radius: 6px; margin-bottom: 10px; padding: 10px;}*/
 
-ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C;}
+/*ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C;}*/
 
-ul.list-days > li.active > a {background-color: #ee6243;}
+/*ul.list-days > li.active > a {background-color: #ee6243;}*/
+
+/*ul.list-days > li.active > a:hover,*/
+/*ul.list-days > li.active > a:focus,*/
+/*ul.list-days .open .dropdown-toggle {color: #ffffff; background-color: #EE6243; border-color: #EB6142;}*/
 
 
+/* кнопки фильмов */
+/*.btn-movie {color: #ffffff; background-color: #FF6F4D; border-color: #D7583C;}*/
 /*.panel-movie .btn-group {margin-top: 15px;}*/
 
 .panel-today > .panel-heading {background-color: #ff6372;}
@@ -2262,14 +2268,8 @@ ul.list-days > li.active > a {background-color: #ee6243;}
 .panel-soon > .panel-heading {background-color: #1fa6f2;}
 
 
-/* кнопки фильмов */
-/*.btn-movie {color: #ffffff; background-color: #FF6F4D; border-color: #D7583C;}*/
-
-ul.list-days > li.active > a:hover,
-ul.list-days > li.active > a:focus,
 /*ul.list-days > li.active > a:active,*/
 /*.btn-movie.active,*/
-ul.list-days .open .dropdown-toggle {color: #ffffff; background-color: #EE6243; border-color: #EB6142;}
 
 
 /* </editor-fold> */
