@@ -108,67 +108,76 @@
 </div>
 
 <script>
-    (function () {
+    (function(){
         var url = document.location.href,
+                ob = /^[http:\/\/]+ob/,
+                news = /^[http:\/\/]+news/,
+                oldnews = /^[http:\/\/]+ksk66/,
+                cat =  /cat/,
+                video = /^[http:\/\/]+video/,
+                pfoto =  /^[http:\/\/]+pfoto/,
+                timetable = /timetable/,
+                karta = /karta/,
+                copy = /copy/,
+                reklama = /reklama/,
+                agenda = /agenda/,
                 subtitle = document.getElementById("logo"),
                 body = document.getElementsByTagName("body")[0];
 
-        //TODO: Отрефакторить. Заменить это на JSON, добавлять только класс к body, менять картинку и подсвечивать пункт через CSS.
-        var ob = /^[http:\/\/]+ob/,
-                news = /^[http:\/\/]+news/,
-                oldnews = /^[http:\/\/]+ksk66/,
-                cat = /cat/,
-                video = /^[http:\/\/]+video/,
-                pfoto = /^[http:\/\/]+pfoto/,
-                timetable = /timetable/,
-                karta = /karta/,
-                copy = /copy/;
 
-        if (url.match(ob)) {
-            // сайт объявлений
-            body.classList.add('ob');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
-            document.getElementsByTagName("li")[1].classList.add("activ_li");
-        } else if (url.match(cat)) {
-            body.classList.add('cat');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
-            document.getElementsByTagName("li")[7].classList.add("activ_li");
-        } else if (url.match(news) || url.match(oldnews)) {
+        if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
             // Сайт новостей
             body.classList.add('news');
             subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
             document.getElementsByTagName("li")[0].classList.add("activ_li");
-        } else if (url.match(video)) {
-            body.classList.add('video');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
-            document.getElementsByTagName("li")[5].classList.add("activ_li");
-        } else if (url.match(pfoto)) {
-            body.classList.add('photo');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
-            document.getElementsByTagName("li")[4].classList.add("activ_li");
-        } else if (url.match(timetable)) {
-            body.classList.add('timetable');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+        }
+        else if(url.match(ob)) {
+            // сайт объявлений
+            body.classList.add('ob');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
+            document.getElementsByTagName("li")[1].classList.add("activ_li");
+        } else if (url.match(cat)){
+            body.classList.add('cat');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
+            document.getElementsByTagName("li")[2].classList.add("activ_li");
+        } else if (url.match(reklama)){
+            body.classList.add('reklama');
+
             document.getElementsByTagName("li")[3].classList.add("activ_li");
-        } else if (url.match(karta)) {
+        }else if (url.match(agenda)){
+            body.classList.add('copy');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-agenda.svg'>";
+            document.getElementsByTagName("li")[4].classList.add("activ_li");
+        }else if (url.match(karta)){
             body.classList.add('karta');
             subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
-            document.getElementsByTagName("li")[2].classList.add("activ_li");
-        }
-        else if (url.match(copy)) {
+            document.getElementsByTagName("li")[5].classList.add("activ_li");
+        }else if (url.match(copy)){
             body.classList.add('copy');
             subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
             document.getElementsByTagName("li")[6].classList.add("activ_li");
+        }else if (url.match(timetable)){
+            body.classList.add('timetable');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+            document.getElementsByTagName("li")[7].classList.add("activ_li");
+        }else if (url.match(pfoto)){
+            body.classList.add('photo');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
+            document.getElementsByTagName("li")[8].classList.add("activ_li");
+        }else if (url.match(video)){
+            body.classList.add('video');
+            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
+            document.getElementsByTagName("li")[9].classList.add("activ_li");
         }
 
-        if (getCookie('weather_icon')){
-            var weather_text = getCookie('weather_text');
-            if(weather_text>0) weather_text ="+"+weather_text;
-            jQuery('.weather-icon').css("background-image", "url(" + getCookie('weather_icon') + ")");
-            jQuery('.weather-temp').text(weather_text);
-            jQuery('.weather-block').css('opacity', 1);
-        }
 
+
+        // Popover для магазинов
+        jQuery('#pop-btn-shopping').popover({
+            content: jQuery('#popover_shopping_content').html(),
+            html: true,
+            placement: "bottom"
+        });
     })();
 
 </script>
