@@ -1394,8 +1394,7 @@ a.link-neutral:focus {color: #3b437d;}
 .news-more .crp_date {color: #999; display: block; font-size: 12px; font-style: oblique; margin: 5px 0;}
 
 .news-more .crp_excerpt {color: #2b2b38; display: block; font-size: 13px; font-weight: 300; height: 2.8em; overflow: hidden; text-overflow: ellipsis; white-space: normal;}
-
-.news-more .media {margin: 5px:}
+.news-more .media { margin: 5px; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель комментариев"> */
