@@ -64,8 +64,26 @@ header .btn-group {margin-top: 10px;}
     vertical-align: middle;
     height: 140px;
 }
-
-#user-panel-content { display: none; }
+.user-panel {
+    position: absolute;
+    right: 10px;
+    height: 140px;
+    text-align: center;
+    /* Mobile only: */
+    top: 280px;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .user-panel { top: 0; width: 288px; }
+}
+@media (min-width: 992px) {
+    .user-panel { top: 0; width: 300px; }
+}
+@media (min-width: 1200px) {
+    .user-panel { top: 0; width: 270px; }
+}
+.user-panel > * { display: inline-block; vertical-align: middle; }
+.user-panel:after { content: ""; display: inline-block; height: 140px; vertical-align: middle; }
 
 /* </editor-fold> */
 
