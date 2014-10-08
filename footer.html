@@ -177,9 +177,15 @@
         var gismeteo = document.createElement('script');
         gismeteo.type = 'text/javascript';
         gismeteo.async = true;
-
-        jQuery(".gsInformer").attr('id', 'gsInformerID-Rreu7g47');
+        var url = document.location.href;
+        if (url.match(ob)) {
+            jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
+            gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
+        }
+        else {
+            jQuery(".gsInformer").attr('id', 'gsInformerID-Rreu7g47');
             gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
+        }
 
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gismeteo, s);
