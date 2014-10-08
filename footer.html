@@ -139,7 +139,8 @@
 </footer>
 
 <!-- Gismeteo informer -->
-<div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
+
+<div id="gsInformerID-" class="gsInformer" style="display: none">
     <div class="gsIContent">
         <div id="cityLink">
             <a href="http://www.gismeteo.ru/city/daily/4515/">Погода в Красноуфимске</a>
@@ -162,16 +163,28 @@
     </div>
 </div>
 <script>
-
-    if (jQuery("meta[name='generator']").attr("content").substring(0, 9) !== "WordPress") {
+    if (jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+        jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
         var gismeteo = document.createElement('script');
         gismeteo.type = 'text/javascript';
         gismeteo.async = true;
-        gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
+        gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gismeteo, s);
-    }
 
+    } else {
+        jQuery(".gsInformer").attr('id', 'gsInformerID-Rreu7g47');
+        id = 'gsInformerID-Rreu7g47';
+        gismeteo = document.createElement('script');
+        gismeteo.type = 'text/javascript';
+        gismeteo.async = true;
+        gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
+        s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gismeteo, s);
+    }
+</script>
+
+<script>
 
 
     jQuery(window).load(function () {
