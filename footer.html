@@ -193,7 +193,7 @@
         var temp_array = jQuery(".gsTemp").text().split('°');
         var temp = parseInt(temp_array[0]); // 5
 
-        if (!iconlink || isNaN(temp)) {
+        if (!iconlink) {
                 console.log("Ошибка разбора погоды");
             } else {
                 setCookie('weather_icon', iconlink, 1800000);
