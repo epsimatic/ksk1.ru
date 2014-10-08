@@ -161,14 +161,16 @@
     </div>
 </div>
 <script>
- //   if (!getCookie('weather_icon')) {
+
+    if (jQuery("meta[name='generator']").attr("content").substring(0, 9) !== "WordPress") {
         var gismeteo = document.createElement('script');
         gismeteo.type = 'text/javascript';
         gismeteo.async = true;
         gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
         var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gismeteo, s);        
- //   }
+        s.parentNode.insertBefore(gismeteo, s);
+    }
+
 
 
     jQuery(window).load(function () {
