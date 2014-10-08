@@ -1,3 +1,57 @@
-.panel-news .panel-heading {background-color: #EDB194 !important;}
+.panel-news .panel-heading,
+.panel-news-list .panel-heading  {background-color: #EDB194; padding: 7px 10px 9px; background-image: none; margin: 0;}
 
-.panel-news .panel-heading h2 {font-size: 18px; font-weight: 700; color: #333333; padding: 0 3px 3px 3px;}
+.panel-news .panel-heading h2,
+.panel-news-list .panel-heading h2 {font-size: 18px; font-weight: 700; text-align: center; margin: 0;}
+
+.panel-news .news-slide {background-color: #ffe7e3; padding: 5px 10px 0;}
+
+.panel-news .news-slide .col-xs-4.col-sm-3,
+.panel-news-list .list-group-item {vert-align: middle;}
+
+.panel-news .news-slide img,
+.panel-news-list .list-group-item img {max-height: 120px; max-width: 120px;}
+
+.panel-news-list .yummies {margin-bottom: 0;}
+
+.post-title,
+.post-text {font-family: Times,serif; font-weight: normal; text-align: left;}
+
+.post-text {font-size: 14px; line-height: 1.2 em;}
+
+.panel-news-list .post-text {margin-bottom: 10px;}
+
+.panel-news .news-slide .post-actions {font-size: 14px;}
+
+.panel-news .row,
+.panel-news-list .row {margin-bottom: 10px;}
+
+.panel-news a,
+.panel-news-list a {color: #433822; text-decoration: none;}
+
+.panel-news a:hover,
+.panel-news-list a:hover {border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none;}
+
+h1.post-title {font-size: 18px; margin-top: 0; margin-bottom: 5px;}
+
+h1.post-title a {color: #333;}
+
+.panel-news-list .list-group-item {background-color: #fbf8f7; margin-bottom: 2px; padding-bottom: 0;}
+
+.post-actions {background-color: #ecd8ce; padding: 4px 10px 5px; position: relative;}
+
+.panel-news .post-actions {bottom: -10px; left: 20px; border-top-left-radius: 5px;}
+
+.panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
+
+.post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
+
+.post-edit, .post-comment {border-right: 1px solid rgba(255,255,255,0.3); padding-right: 7px;}
+
+.post-comment-num {font-weight: 700;}
+
+.post-more-video:before, .post-more-photo:before {font-family: FontAwesome; padding-right: 5px;}
+
+.post-more-video:before {content: "";}
+
+.post-more-photo:before {content: "";}
