@@ -44,7 +44,10 @@
         var cx;
         var ob = /^[http:\/\/]+ob/;
         var url = document.location.href;
-        if (url.match(ob)) { // Поиск по объявлениям
+        // У сайтов на WordPress свой поиск
+        if (jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+            return;
+        } else if (url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
@@ -136,20 +139,22 @@
 </footer>
 
 <!-- Gismeteo informer -->
-<div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
+
+<div id="gsInformerID-" class="gsInformer" style="display: none">
     <div class="gsIContent">
         <div id="cityLink">
             <a href="http://www.gismeteo.ru/city/daily/4515/">Погода в Красноуфимске</a>
         </div>
-        <div class="gsLinks" style="width: 100%; overflow: hidden;">
+        <!--<div class="gsLinks" style="width: 100%; overflow: hidden;">-->
+        <div class="gsLinks">
             <table>
                 <tr>
                     <td>
-                        <div class="leftCol"><a href="http://www.gismeteo.ru">
-                            <!--<img src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"/>-->
+                        <div class="leftCol"><a> <!--<a href="http://www.gismeteo.ru">-->
                             <span>Gismeteo</span></a></div>
                         <div class="rightCol">
-                            <a href="http://www.gismeteo.ru/city/weekly/4515/">Прогноз на 2 недели</a>
+                            <a></a>
+                            <!--<a href="http://www.gismeteo.ru/city/weekly/4515/">Прогноз на 2 недели</a>-->
                         </div>
                     </td>
                 </tr>
@@ -158,14 +163,21 @@
     </div>
 </div>
 <script>
- //   if (!getCookie('weather_icon')) {
-        var gismeteo = document.createElement('script');
-        gismeteo.type = 'text/javascript';
-        gismeteo.async = true;
+    var gismeteo = document.createElement('script');
+    gismeteo.type = 'text/javascript';
+    gismeteo.async = true;
+    if (jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+        jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
+        gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
+    } else {
+        jQuery(".gsInformer").attr('id', 'gsInformerID-Rreu7g47');
         gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gismeteo, s);        
- //   }
+    }
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gismeteo, s);
+</script>
+
+<script>
 
 
     jQuery(window).load(function () {
