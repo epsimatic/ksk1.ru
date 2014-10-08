@@ -167,23 +167,7 @@
 </script>
 
 <script>
-    // поиск google по новостям или объявлениям
-    (function () {
-        var cx;
-        var ob = /^[http:\/\/]+ob/;
-        var url = document.location.href;
-        if (url.match(ob)) { // Поиск по объявлениям
-            cx = '003704283744183876190:qchgmzsmjkc';
-        } else { // Поиск по новостям
-            cx = '003704283744183876190:woiuqgnl_eg';
-        }
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-    })();
+
 
     jQuery(window).load(function () {
         // для вордпресс работает скрипт на php
@@ -200,6 +184,23 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gismeteo, s);
          */
+        // поиск google по новостям или объявлениям
+        (function () {
+            var cx;
+            var ob = /^[http:\/\/]+ob/;
+            var url = document.location.href;
+            if (url.match(ob)) { // Поиск по объявлениям
+                cx = '003704283744183876190:qchgmzsmjkc';
+            } else { // Поиск по новостям
+                cx = '003704283744183876190:woiuqgnl_eg';
+            }
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
         // Парсим погодный виджет
 
 //        var conditions = jQuery(".gsAddInfo").text(); // Пасмурно
