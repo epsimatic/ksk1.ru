@@ -200,8 +200,10 @@
         var temp_array = jQuery(".gsTemp").text().split('°');
         var temp = parseInt(temp_array[0]); // 5
 
-        if (!iconlink || !isNaN(temp)) {
-            console.log("Ошибка разбора погоды");
+        if (!iconlink /* Если нет ссылки на значок */) {
+            console.log("Ошибка разбора погоды (нет значка)");
+        } else if (isNaN(temp)  /* Температура -- не число */) {
+            console.log("Ошибка разбора погоды (нет температуры)");
         } else {
             setCookie('weather_icon', iconlink, 1800000);
                 setCookie('weather_text', temp, 1800000);
