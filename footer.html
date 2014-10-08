@@ -178,7 +178,7 @@
         gismeteo.type = 'text/javascript';
         gismeteo.async = true;
         var url = document.location.href;
-        if (url.match(ob)) {
+        if (url.match(/ob/)) {
             jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
             gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
         }
