@@ -45,7 +45,7 @@
         var ob = /^[http:\/\/]+ob/;
         var url = document.location.href;
         // У сайтов на WordPress свой поиск
-        if (jQuery("meta[name='generator']") && jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+        if (jQuery("meta[name='generator']").attr("content") && jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
             return;
         } else if (url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
