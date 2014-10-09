@@ -1,0 +1,1543 @@
+<!doctype html> <!-- -*- coding: cp1251 -*- -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwMCUlJRGwEEU1hUDwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="generator" content="Красноуфимск Он-Лайн (http://ksk66.ru)" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+    <link rel="search" type="application/opensearchdescription+xml" href="http://ksk66.ru/engine/opensearch.php" title="" />
+
+    <link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/opensans/osans.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--<link href="http://ksk66.ru/templates/KsK/css/style.css" rel="stylesheet" type="text/css"/>-->
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="http://ksk1.ru/js/jquery-1.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/js/scripts.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <script>
+        if (top.location != location) {top.location.href = document.location.href;}
+    </script>
+    <style>
+        #throbber { position: absolute; top: 300px; z-index: -1; width: 100%; }
+        #throbber-block { width: 128px; margin: 0 auto; }
+        .facebook_blockG{
+            background-color:#f0f6ff; border:1px solid #7084a9; float:left; height:91px; margin-left:5px; width:24px; opacity:0.1;
+            -webkit-animation-name:bounceG;-webkit-animation-duration:1.3s;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-webkit-transform:scale(0.91);
+            -moz-animation-name:bounceG;-moz-animation-duration:1.3s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear;-moz-transform:scale(0.91);
+            -o-animation-name:bounceG;-o-animation-duration:1.3s;-o-animation-iteration-count:infinite;-o-animation-direction:linear;-o-transform:scale(0.91);
+            -ms-animation-name:bounceG;-ms-animation-duration:1.3s;-ms-animation-iteration-count:infinite;-ms-animation-direction:linear;-ms-transform:scale(0.91);
+        }
+        #blockG_1{-webkit-animation-delay:0.39s; -moz-animation-delay:0.39s; -o-animation-delay:0.39s; -ms-animation-delay:0.39s;}
+        #blockG_2{-webkit-animation-delay:0.52s; -moz-animation-delay:0.52s; -o-animation-delay:0.52s; -ms-animation-delay:0.52s;}
+        #blockG_3{-webkit-animation-delay:0.65s; -moz-animation-delay:0.65s; -o-animation-delay:0.65s; -ms-animation-delay:0.65s;}
+        @-webkit-keyframes bounceG{0% {-webkit-transform:scale(1.2); opacity:1} 100% {-webkit-transform:scale(0.7); opacity:0.1} }
+        @-moz-keyframes bounceG{   0% {-moz-transform:scale(1.2); opacity:1}    100% {-moz-transform:scale(0.7); opacity:0.1} }
+        @-o-keyframes bounceG{     0% {-o-transform:scale(1.2); opacity:1}      100% {-o-transform:scale(0.7); opacity:0.1} }
+        @-ms-keyframes bounceG{    0% {-ms-transform:scale(1.2); opacity:1}     100% {-ms-transform:scale(0.7); opacity:0.1} }
+    </style> <!-- HTML throbber -->
+    <div id="throbber"><div id="throbber-block">
+        <div id="blockG_1" class="facebook_blockG"></div>
+        <div id="blockG_2" class="facebook_blockG"></div>
+        <div id="blockG_3" class="facebook_blockG"></div>
+    </div></div>
+
+    <link rel="dns-prefetch" href="//ksk1.ru">
+    <link rel="dns-prefetch" href="//google-analytics.com" />
+    <link rel="dns-prefetch" href="//openstat.net">
+    <link rel="dns-prefetch" href="//ob.ksk66.ru">
+    <link rel="dns-prefetch" href="//cat.ksk66.ru">
+
+
+    <div id="page" class="container" style="position: relative;">
+    <div id="header"> <!-- Шапка -->
+
+        <div class='zone-marker show-alt'>../ksk66.ru/stripe</div>
+        <a target='_blank' title='РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ СЂРµРєР»Р°РјРѕРґР°С‚РµР»СЏ' rel='nofollow' href='http://news.kskmedia.ru/reklama-site/'>
+            <img class='yummies' src='/yummies/stripe/vsevidynew.gif?please' alt='advertisement' style='max-width:100%' width='1160' height='107'  data-zone-info='zone: stripe, sized 980x90' />
+        </a>
+
+
+        <header class="row row_header hidden-print" id="header">
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+                <div class="header-line__logo">
+                    <a href="/" title="На главную страницу">
+                        <img style="position: absolute" src="http://ksk1.ru/img/ksk-logo-base.svg">
+                        <span id="logo"></span>
+                    </a>
+                </div>
+                <div class="btn btn-link weather-block hidden-lg">
+                    <div class="weather-temp weather-temp-sm pop-btn-weather"></div>
+                </div>
+            </div>
+            <div class="weather-block-col hidden-xs hidden-sm hidden-md col-lg-1 pop-btn-weather">
+                <div class="weather-block">
+                    <div class="weather-icon"></div>
+                    <div class="weather-temp weather-temp-lg"></div>
+                    <div class="weather-label">Подробнее</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+                <div class='zone-marker show-alt'>../ksk66.ru/special</div>
+                <a target='_blank' title='РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ СЂРµРєР»Р°РјРѕРґР°С‚РµР»СЏ' rel='nofollow' href='http://ksk66.ru/video/tv/10474-achit-trofi-gryaznye-muzhskie-zabavy.html'>
+                    <img class='yummies' src='/yummies/special/achit-trophy.png?please' alt='advertisement' style='max-width:100%' width='280' height='140'  data-zone-info='zone: special, sized 250x110' />
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 user-panel-placeholder"></div>
+        </header>
+
+        <nav class="navbar " role="navigation">
+            <div class="col-sm-7 col-md-6 ">
+                <ul class="nav nav-pills navbar-nav">
+                    <li>
+                        <a class="hide-alt" href="http://ksk66.ru" title="Свежие городские новости">Новости</a>
+                        <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
+                    </li>
+                    <li>
+                        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a>
+                    </li>
+                    <li>
+                        <a class="hide-alt" href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a>
+                        <a class="show-alt" href="http://cat.ksk66.ru/" title='Старый каталог предприятий, телефонов и адресов'>Справочник</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/r-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама у нас</a>
+                    </li>
+                    <li>
+                        <a class="" href="http://news.kskmedia.ru/agenda/" title='Киноафиша и афиша событий'>Афиша</a>
+                    </li>
+                    <li>
+                        <a class="" href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и окрестностей'>Карта</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/copy/" title='Копицентр'>Копицентр</a>
+                    </li>
+                    <li>
+                        <a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a>
+                    </li>
+                    <li>
+                        <a href="http://photo.kskmedia.ru" title="Фото.Новости">Фото</a>
+                    </li>
+                    <li>
+                        <a href="http://video.kskmedia.ru" title="Видео.Новости">Видео</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/posred/" title='Газета Твой посредник'>Газета «ТП»</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-2 col-xs-12 block-features">
+                <div id="btn-feature-shopping" class="col-xs-6 btn-feature">
+                    <div class="col-xs-5 col-sm-12 col-md-5">
+                        <i class="fa fa-2x fa-shopping-cart"></i>
+                    </div>
+                    <div class="col-xs-7 hidden-sm">
+                        <span>Интернет-<br>магазины</span>
+                    </div>
+                </div>
+
+                <div id="btn-feature-services" class="col-xs-6 btn-feature">
+                    <div class="col-xs-5 col-sm-12 col-md-5">
+                        <i class="fa fa-2x fa-laptop"></i>
+                    </div>
+                    <div class="col-xs-7 hidden-sm">
+                        <span>Услуги <br>онлайн</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-12">
+                <div class='searchbox pull-right'>
+                    <!--suppress CheckTagEmptyBody -->
+                    <gcse:searchbox></gcse:searchbox>
+                </div>
+            </div>
+        </nav>
+        <!--TODO: добавить Alt и размеры картинок-->
+        <div id="popover_shopping_content" style="display: none">
+            <div class='shops text-center'>
+                <a href='http://plentycar.ru/contacts/krasnoufimsk/'><img src='http://ksk1.ru/img/logo-plentycar.png'></a>
+                <a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'><img src='http://ksk1.ru/img/logo-e96.png'></a>
+                <a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a>
+                <a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a>
+                <a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a>
+            </div>
+        </div>
+        <div id="popover_service_content" style="display: none">
+            <div class='shops text-center'>
+                <a href="http://news.kskmedia.ru/copy/" title='Копицентр'>Копицентр</a>
+                <a href="http://news.kskmedia.ru/reklama-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама у нас</a>
+                <a href="http://www.gibdd.ru/check/fines/" title='' target="_blank">Проверка штрафов ГИБДД</a>
+                <a href="https://lk2.service.nalog.ru/lk/" title='' target="_blank">Проверка задолженности по налогам</a>
+                <a href="http://fssprus.ru/iss/ip/" title='' target="_blank">Данные судебных приставов</a>
+                <a href="http://sverdlov.lkp.pfrf.ru/" title='' target="_blank">Узнай свою пенсию</a>
+                <a href="http://med.midural.ru/RIS/Regist/ChooseHeadLPU.aspx?City=054e8a20-843f-4c89-8fa1-7263a1bad81e&Category=Raspis" title='Записаться на приём к врачу через интренет-регистратуру' target="_blank">Записаться к врачу</a>
+            </div>
+        </div>
+        <script>
+            (function(){
+                var url = document.location.href,
+                        ob = /^[http:\/\/]+ob/,
+                        news = /^[http:\/\/]+news/,
+                        oldnews = /^[http:\/\/]+ksk66/,
+                        cat =  /cat/,
+                        video = /^[http:\/\/]+video/,
+                        pfoto =  /^[http:\/\/]+pfoto/,
+                        timetable = /timetable/,
+                        karta = /karta/,
+                        copy = /copy/,
+                        reklama = /reklama/,
+                        agenda = /agenda/,
+                        subtitle = document.getElementById("logo"),
+                        body = document.getElementsByTagName("body")[0];
+
+                if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
+                    // Сайт новостей
+                    body.classList.add('news');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
+                    document.getElementsByTagName("li")[0].classList.add("activ_li");
+                }
+                else if(url.match(ob)) {
+                    // сайт объявлений
+                    body.classList.add('ob');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
+                    document.getElementsByTagName("li")[1].classList.add("activ_li");
+                } else if (url.match(cat)){
+                    body.classList.add('cat');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
+                    document.getElementsByTagName("li")[2].classList.add("activ_li");
+                } else if (url.match(reklama)){
+                    body.classList.add('reklama');
+
+                    document.getElementsByTagName("li")[3].classList.add("activ_li");
+                }else if (url.match(agenda)){
+                    body.classList.add('agenda');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-agenda.svg'>";
+                    document.getElementsByTagName("li")[4].classList.add("activ_li");
+                }else if (url.match(karta)){
+                    body.classList.add('karta');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
+                    document.getElementsByTagName("li")[5].classList.add("activ_li");
+                }else if (url.match(copy)){
+                    body.classList.add('copy');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
+                    document.getElementsByTagName("li")[6].classList.add("activ_li");
+                }else if (url.match(timetable)){
+                    body.classList.add('timetable');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+                    document.getElementsByTagName("li")[7].classList.add("activ_li");
+                }else if (url.match(pfoto)){
+                    body.classList.add('photo');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
+                    document.getElementsByTagName("li")[8].classList.add("activ_li");
+                }else if (url.match(video)){
+                    body.classList.add('video');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
+                    document.getElementsByTagName("li")[9].classList.add("activ_li");
+                }
+
+
+                // Popover для магазинов
+                jQuery('#pop-btn-shopping').popover({
+                    content: jQuery('#popover_shopping_content').html(),
+                    html: true,
+                    placement: "bottom"
+                });
+            })();
+        </script>
+
+        <div id="user-panel-content" style="display: none;">
+            <div class='row'>
+                <div class='col-xs-4 text-right'>
+                    <a href='http://ksk66.ru/user/Danil/' style='display: inline-block; float: right; border: 5px solid rgba(255, 255, 255, 0.6); width: 70px; height: 70px;'>
+                        <img border='0' style='background-color: rgb(255, 255, 255); display: block; padding: 5px; width: 60px; height: 60px;' src='/engine/identicon.php?size=64&hash=d41d8cd98f00b204e9800998ecf8427e'>
+                    </a>
+                </div>
+
+                <div class='col-xs-8 text-left'>
+                    <div style='margin-bottom: 5px; font-size: 15px; width: 100%; height: auto; white-space: normal; line-height: 1.1;'>
+                        Привет, <strong>Danil</strong>
+                    </div>
+
+                    <div class='btn-group btn-group-justified'>
+                        <a href='http://ksk66.ru/admin.php?mod=main' style='opacity: 0.8;' class='btn btn-sm btn-danger'>Админка</a>
+                        <a href='http://ksk66.ru/index.php?action=logout' class='btn btn-sm btn-primary'> Выход</a>
+                    </div>
+                </div>
+                <div class='col-xs-12'>
+                    <a href='http://news.kskmedia.ru/mail/' style='margin-top: 10px;' class='btn btn-primary btn-block'><i class='fa fa-fw fa-bullhorn'></i> Прислать новость</a>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /header -->
+
+    <div id="throbbed-content" data-class="container" style="background-color: white;">
+        <script type="text/javascript">
+            if (!navigator.userAgent.match(/Opera Mini/i))
+                $('#throbbed-content').hide();
+        </script>
+
+        <script type="text/javascript">
+            // Инициализация шапки сайта
+            (function () {
+                user_panel_content = document.getElementById('user-panel-content');
+                user_panel = document.getElementById('user-panel');
+                user_panel.innerHTML = user_panel_content.innerHTML;
+                user_panel_content.remove();
+            })();
+
+            // поиск google
+            (function () {
+                var cx = '003704283744183876190:qchgmzsmjkc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+
+        <div class="row">
+
+            <div data-id="center-left" data-class="mainbar" class="column-center column-center_secondary col-sm-9"> <!-- Основной блок -->
+
+                <!-- Яндекс.Директ -->
+                <div id="y-st"></div>
+                <script type="text/javascript">
+                    (function(w, d, n, s, t) {
+                        w[n] = w[n] || [];
+                        w[n].push(function() {
+                            Ya.Direct.insertInto(135679, "y-st", {
+                                site_charset: "windows-1251",
+                                ad_format: "direct",
+                                font_size: 0.9,
+                                type: "flat",
+                                border_type: "block",
+                                limit: 1,
+                                title_font_size: 3,
+                                site_bg_color: "FFFFFF",
+                                border_color: "FBE5C0",
+                                title_color: "773300",
+                                url_color: "773300",
+                                text_color: "000000",
+                                hover_color: "CC6600",
+                                favicon: false
+                            });
+                        });
+                        t = d.documentElement.firstChild;
+                        s = d.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "http://an.yandex.ru/system/context.js";
+                        s.setAttribute("async", "true");
+                        t.insertBefore(s, t.firstChild);
+                    })(window, document, "yandex_context_callbacks");
+                </script>
+
+                <!--suppress CheckTagEmptyBody -->
+                <gcse:searchresults></gcse:searchresults>
+
+                <!-- showfull and static decorate themselves on their own -->
+
+                <span id='dle-info'></span>
+                <!-- info -> content -->
+                <div id='dle-content'>
+                    <div class="page fullstory">  <!-- -*- coding: cp1251 -*- -->
+                        <div class="header newstitle" id="news_title"> <!--ntitle--> День культуры Красноуфимска пройдет в Екатеринбурге</div>
+                        <div class="headerinset cleanlinks">
+                            <a onclick="return dropdownmenu(this, event, MenuNewsBuild('10465', 'full'), '170px')" href="/admin.php?mod=editnews&amp;action=editnews&amp;id=10465" target = "_blank" >
+                                <span onMouseOver="Tip('Редактировать')">
+                                    <img src="/images/edit.png" alt="Правка" width="24" height="24">
+                                </span>
+                            </a>
+                            <a href="http://ksk66.ru/print:page,1,10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html">
+                                <span onMouseOver="Tip('Версия для печати')">
+                                    <img src="/images/printer.png" alt="Печать" width="24" height="24">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="brclear"></div>
+                        <div class="body news newstext" id="news_content">
+
+                            <div id='news-id-10465'>
+                                <div>
+                                    <img style="float: left; border: 0px;" src="http://ksk66.ru/uploads/posts/2014-10/1412329374_ekb.jpg" alt="alt" width="350" />
+                                </div>
+                                <div></div>
+                                    &nbsp; &nbsp;Земляки, 12 октября в г. Екатеринбурге в детской филармонии в 16.00 состоится День культуры Красноуфимска в Екатеринбурге. Это значимое для нашего любимого города мероприятие пройдет в рамках Года культуры в РФ и 80-летия образования Свердловской области. Вход для всех свободный!<br />Приходите увидеть знакомые лица звездных коллективов, послушать любимые песни, ностальгировать, встретиться со старыми друзьями и знакомыми, поддержать наших артистов... <br />В программе &laquo;Знакомьтесь - это мы Красноуфимск&raquo; - концерт-презентация художественных коллективов Красноуфимска с участием:<br />- заслуженного коллектива народного творчества РФ песенно-хореографического ансамбля &laquo;Уралочка&raquo;;<br />- народного коллектива &ndash; театр эстрады ЦКиД;<br />- народного коллектива эстрадно-духового оркестра;<br />- образцового коллектива студии эстрадного танца "Джаз-импровиз";<br />- образцового коллектива песенно-хореографического ансамбля &laquo;Говорушечки&raquo;;<br />- театра мод &laquo;Импровиз&raquo;;<br />- ансамбля храма Благоверного князя Александра Невского;<br />- образцового коллектива эстрадной студии &laquo;Кисс-коктейль&raquo;;<br />- ансамбля спортивного танца &laquo;Адреналин&raquo;;<br />- ведущих солистов З.Никоновой, И.Комаровой.<br />Выставка работ современных художников г. Красноуфимска Сергея Бурова, Сергея Угринова, Владимира Стародумова, Андрея Кузнецова.<br />Место всеобщей встречи: Екатеринбург, Свердловская государственная детская филармония, ул. 8 Марта, 36 (возле &laquo;Гринвича&raquo;) 12 октября в 16:00.
+                            </div>
+                            <div class="brclear"></div>
+                        </div>
+                        <div class="footerinset">
+                            <div class='zone-marker show-alt'>../ksk66.ru/standard-secondary</div>
+                            <a target='_blank' title='РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ СЂРµРєР»Р°РјРѕРґР°С‚РµР»СЏ' rel='nofollow' href='http://ksk66.ru/Sozdanie%20saitov.html'>
+                                <img class='yummies' src='/yummies/standard-secondary/468-60.png?please' alt='advertisement' style='max-width:100%' width='468' height='60'  data-zone-info='zone: standard, sized 468x60' />
+                            </a>
+                        </div>
+                        <div class="footer">
+
+                            <div class="meta source">
+                                Источник:
+                                <em>Информационный портал ГО Красноуфимск</em>
+                            </div>
+                            <!-- Хитрая магия, чтобы показать только ссылку на источник: -->
+                            <!---->
+                            <div class="meta date">
+                                7.10.2014.
+                            </div>
+                            <div class="topdivider">
+                                Расскажите друзьям —
+                                <span id="sharenews"></span>
+                            </div>
+                        </div>
+                        <div class="brclear"></div>
+                    </div>
+
+                    <div class="newscontainer">
+                        <div style="float: right;">
+                            <script type="text/javascript" src="/js/orphus/orphus.js"></script>
+                            <a href="http://orphus.ru" id="orphus" target="_blank">
+                                <img alt="Система Orphus" src="/js/orphus/orphus.gif" width="125" height="115" />
+                            </a>
+                        </div>
+                        <table style="padding: 0 5px;">
+                            <tr>
+                                <td>Другие новости из категории:</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Другие новости по теме:</td>
+                                <td>{related-news}</td>
+                            </tr>
+                        </table>
+                        <div style="text-align: center"></div>
+                        <div class="brclear"></div>
+                    </div> <!-- /newscontainer -->
+
+                    <h2 class="commentsheader" style="margin: 20px;">
+                        1 комментарий
+                    </h2>
+
+                    <!-- Yandex.share init? init my ass -->
+                    <!--<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>-->
+                    <script language="javascript">
+                        new Ya.share({
+                            element: 'sharenews',
+                            elementStyle: {
+                            'type': 'none',
+                            'border': false,
+                            'quickServices': [ 'vkontakte', 'facebook', 'odnoklassniki', 'twitter', 'moimir' ]
+                        },
+                        link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=social&utm_medium=yandex.share&utm_campaign=sharenews',
+                        title: 'День культуры Красноуфимска пройдет в Екатеринбурге',
+                        serviceSpecific: {
+                            vkontakte: {
+                                link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=vkontakte&utm_medium=yandex.share&utm_campaign=sharenews'
+                            },
+                            facebook: {
+                                link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=facebook&utm_medium=yandex.share&utm_campaign=sharenews'
+                            },
+                            odnoklassniki: {
+                                link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=odnoklassniki&utm_medium=yandex.share&utm_campaign=sharenews'
+                            },
+                            twitter: {
+                                link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=twitter&utm_medium=yandex.share&utm_campaign=sharenews'
+                            },
+                            moimir: {
+                                link: 'http://ksk66.ru/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html?utm_source=moimir&utm_medium=yandex.share&utm_campaign=sharenews'
+                            }
+                        }
+                        });
+                    </script>
+                    <a name="comment"></a>
+                    <div class="comment  rating-neutral">
+                        <div class="comment-id">1</div>
+                        <div class="date black-on-hover">7 окт 12:16</div>
+
+                        <img class="photo" src="/engine/identicon.php?size=100&hash=b2c2dfd4ef51cfa1cb32f22754d39524" />
+
+                        <div class="author-block">
+                            <div class="author-name black-on-hover">
+                                <a onclick="return dropdownmenu(this, event, UserMenu('href=&quot;/user/arhiv2015/&quot;', '135', '2'), '170px')" onmouseout="delayhidemenu()" href="/user/arhiv2015/">arhiv2015</a>
+                            </div>
+                            <div class="author-info">
+                                <div class="black-on-hover">На сайте с 3.07.2009</div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="meta meta_dynamic">
+                            <a onmouseover="dle_copy_quote('arhiv2015');" href="#" onclick="dle_ins('arhiv2015'); return false;">
+                                <img src="/images/2012design/quote.png" alt="Цитироать" title="Цитировать">
+                            </a>
+                            <a onclick="return dropdownmenu(this, event, MenuCommBuild('55542'), '170px')" onmouseout="delayhidemenu()" href="/index.php?do=comments&amp;action=comm_edit&amp;id=55542">
+                                <img src="/images/2012design/comment_edit.png" alt="Правка" title="Править комментарий">
+                            </a>
+                            <span class='comment-rating' id='cratig-layer-55542'>
+                                <span class='rating-buttons'>
+                                    <a href='#' title='Хороший комментарий' class='r2-unit' onclick='comRate("+1", "55542"); _gaq.push(["_trackEvent", "Comments", "Rate", "55542", 1]); return false;'>
+                                        <img alt='+' src='/images/2012design/thumb_up.png'>
+                                    </a>
+                                    <a href='#' title='Плохой комментарий' class='r1-unit' onclick='comRate("-1", "55542"); _gaq.push(["_trackEvent", "Comments", "Rate", "55542", 0]); return false;'>
+                                        <img alt='-' src='/images/2012design/thumb_down.png'>
+                                    </a>
+                                </span>
+                                <span class='rating-value' title='Оценка комментария'>0</span>
+                            </span>
+                        </div>
+
+                        <div class="news comment-text black-on-hover">
+                            <div id='comm-id-55542'>Вот это правильно, а то устраивают в день города скуку</div>
+                        </div>
+                    </div>
+
+                    <span id='dle-ajax-comments'></span>
+                    <form  method="post" name="dle-comments-form" id="dle-comments-form" action="/10465-den-kultury-krasnoufimska-projdet-v-ekaterinburge.html">
+                        <div class="comment newcomment">
+                            <div class="comment-id">+</div>
+                            <div class="date"></div>
+
+                            <img class="photo" src="/templates/KsK/images/noavatar.png" />
+
+                            <div class="author-block">
+                                <div class="author-name">
+                                    <a>Danil</a>
+                                </div>
+                                <div class="author-info">
+                                    На сайте с 26.03.2013
+                                </div>
+                            </div>
+
+                            <div class="news comment-text">
+                                <!--<div class="author-info">Ваш комментарий:</div>-->
+
+                                <textarea name="comments" id="comments" onclick="setNewField(this.name, document.getElementById( 'dle-comments-form' ))" placeholder="Напишите ваш комментарий в этом поле"></textarea>
+
+                                <div class="form">
+                                    <input onClick="_gaq.push(['_trackEvent', 'Comments', 'Add', document.getElementById('news_title').innerHTML]);setCookie('CommenterName',$('#name').val());doAddComments();return false;" name="submit" id="submit" type="image" src="/templates/KsK/images/send.png"  />
+                                    <script type="text/javascript" src="/js/libs/md5-min.js"></script>
+                                    <script type="text/javascript">
+                                        $(".newcomment #name").bind( "keyup mouseup change blur", function(){
+                                            var cyrillicBlock = /[\u0400-\u04FF]/;
+                                            var userPic = "/templates/KsK/images/noavatar.png";
+                                            userPic = "/engine/identicon.php?size=64&hash=" + hex_md5($(this).val());
+                                            $(".newcomment .photo img").delay(100).attr("src", userPic);
+                                            });
+                                            //                if ( $(this).val() && ! cyrillicBlock.test($(this).val()) )
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- src="/templates/KsK/images/icon_2.gif" -->
+
+                        <input type="hidden" name="subaction" value="addcomment" />
+                        <input type="hidden" name="name" id="name" value="Danil" />
+                        <input type="hidden" name="mail" id="mail" value="" />
+                        <input type="hidden" name="post_id" id="post_id" value="10465" />
+                    </form>
+                    <script language='JavaScript' type="text/javascript">
+                        function reload () {
+
+                            var rndval = new Date().getTime();
+
+                            document.getElementById('dle-captcha').innerHTML = '<img src="engine/modules/antibot.php?rndval=' + rndval + '" border="0" width="120" height="50" alt="" /><br /><a onclick="reload(); return false;" href="#">Другой код</a>';
+
+                        };
+                    </script>
+                </div>
+
+                <script type="text/javascript">
+                    $('#throbbed-content').show();
+                    $('#throbber').hide();
+                </script>
+
+                <div class="newscontainer-bottom"></div>
+            </div>
+
+            <script type="text/javascript">
+                $('#throbber').hide();
+            </script>
+
+            <div data-id="right" class="col_right sidebar column-side column-right col-sm-3 xcol-sm-offset-9">
+                <div id='progressive-right'>
+                    <script type="text/javascript">
+                        if (!navigator.userAgent.match(/Opera Mini/i))
+                    $('#progressive-right').hide();
+            </script>
+            <!-- -*- coding: cp1251 -*- -->
+            <div class="panel" style="display: none !important;">
+                <div class="textwidget" >
+                    <div class="alert alert-warning">
+                        <h2>Вы находитесь на&nbsp;архивном сайте</h2>
+                        <div class="text-center">
+                            <p class="text-left">Свежие новости находятся на<!--<a class="alert-link" href="//ksk66.ru/">-->новом сайте<!--</a>--></p>
+                            <!--<a class="btn btn-link alert-link" href="//ksk66.ru/welcome" style="margin-bottom: 5px">Узнать, что изменилось</a>
+                            <a class="btn btn-success btn-lg" href="//ksk66.ru/">Перейти на новый сайт</a>-->
+                            <p>Нажмите <strong>«Новости»</strong> в верхнем меню, чтобы перейти на новый сайт</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='zone-marker show-alt'>../ksk66.ru/right-1</div>
+            <img class='yummies' src='http://ksk66.ru/yummies/right-1/shkolnik-2014_1.gif?please' alt='advertisement' style='max-width:100%' width='280' height='220'  data-zone-info='zone: right, sized 240x80' />
+
+            <div class='zone-marker show-alt'>../ksk66.ru/right-2</div>
+            <img class='yummies' src='http://ksk66.ru/yummies/right-2/lazurit_20141002.gif?please' alt='advertisement' style='max-width:100%' width='280' height='220'  data-zone-info='zone: right, sized 240x80' />
+
+            <!-- yandex-side-300x250 -->
+            <style type="text/css">.yap-type-300x250.yap-type-300x250 { width: 100% !important; }</style>
+            <div id="y-side-300" class="panel"></div>
+
+            <script type="text/javascript">
+                (function(w, d, n, s, t) {
+                    w[n] = w[n] || [];
+                    w[n].push(function() {
+                        Ya.Direct.insertInto(135679, "y-side-300", {
+                            site_charset: "windows-1251",
+                            ad_format: "direct",
+                            type: "300x250",
+                            border_type: "block",
+                            links_underline: false,
+                            site_bg_color: "FFFFFF",
+                            bg_color: "FFFFFF",
+                            border_color: "CC9966",
+                            title_color: "996600",
+                            url_color: "996600",
+                            text_color: "000000",
+                            hover_color: "FF6600",
+                            favicon: true,
+                            no_sitelinks: true
+                        });
+                    });
+                    t = d.documentElement.firstChild;
+                    s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "http://an.yandex.ru/system/context.js";
+                    s.setAttribute("async", "true");
+                    t.insertBefore(s, t.firstChild);
+                })(window, document, "yandex_context_callbacks");
+            </script>
+
+            <div class='zone-marker show-alt'>../ksk66.ru/right-4</div>
+            <a target='_blank' title='РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ СЂРµРєР»Р°РјРѕРґР°С‚РµР»СЏ' rel='nofollow' href='http://e96.ru/geo/setPosition?regionId=24&cityId=228'>
+                <img class='yummies' src='http://ksk66.ru/yummies/right-4/audio-sponsor.png?please' alt='advertisement' style='max-width:100%' width='209' height='120'  data-zone-info='zone: right, sized 240x80' />
+            </a>
+
+            <div class='zone-marker show-alt'>../ksk66.ru/right-5</div>
+            <img class='yummies' src='http://ksk66.ru/yummies/right-5/malyish_11.gif?please' alt='advertisement' style='max-width:100%' width='280' height='220'  data-zone-info='zone: right, sized 240x80' />
+
+            <div class='zone-marker show-alt'>../ksk66.ru/right-6</div>
+            <a target='_blank' title='РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ СЂРµРєР»Р°РјРѕРґР°С‚РµР»СЏ' rel='nofollow' href='http://copy.ksk66.ru/'>
+                <img class='yummies' src='http://ksk66.ru/yummies/right-6/copycenter-sqare_new3.gif?please' alt='advertisement' style='max-width:100%' width='280' height='220'  data-zone-info='zone: right, sized 240x80' />
+            </a>
+
+            <div class="panel panel-comments block block_last-comments" id="lastcomments">
+                <div class="panel-heading">
+                    <h2>Новые комментарии</h2>
+                </div>
+
+                <div class="body">
+                    <div class="content">
+                        <div class='highlight vsection '
+                             title='
+                                            1917: Все вопросы к администрации города и меру, именно они обязаны контролировать
+                                            подрядчиков, качество ремонта и распределение денежных средств. Мер бесхребетный,
+                                            Заика с причиндалами в доле, прокуратура и ГИБДД спят. Результат чувствуют
+                                            попой жители и гости города, многолетняя беспросветная несправедливость.' data-toggle='tooltip' data-placement='left' >
+                            <div class='tooltip'>
+                                <strong class='authorname'>
+                                    <a href="http://ksk66.ru/user/1917/">
+                                        1917
+                                    </a>
+                                    :
+                                </strong>
+                                Все вопросы к администрации города и меру, именно они обязаны контролировать
+                                подрядчиков, качество ремонта и распределение денежных средств. Мер бесхребетный,
+                                Заика с причиндалами в доле, прокуратура и ГИБДД спят. Результат чувствуют попой
+                                жители и гости города, многолетняя беспросветная несправедливость.
+                            </div>
+                            <div class='oneliner'>
+                                <strong class='authorname'>
+                                    1917
+                                </strong>
+                                &rarr;
+                                <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55561'>
+                                    Двойной ремонт моста через Саргу
+                                </a>
+                            </div>
+                        </div>
+                        <div class='highlight vsection ' title='Железнодо…: С праздником!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C6%E5%EB%E5%E7%ED%EE%E4%EE%F0%EE%E6%ED%E8%EA/">Железнодо…</a>:</strong> С праздником!</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>Железнодо…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10480#comm-id-55559'>История кадров</a></div></div>
+                        <div class='highlight vsection ' title='Андрей С.: В полиции работают достойные люди и их большинство. Знаете, везде попадаются люди за которых стыдно, такова жизнь.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%E4%F0%E5%E9+%D1./">Андрей С.</a>:</strong> В полиции работают достойные люди и их большинство. Знаете, везде попадаются люди за которых стыдно, такова жизнь.</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>Андрей С.</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10480#comm-id-55558'>История кадров</a></div></div>
+                        <div class='highlight vsection ' title='Школа: родитель,дЕбилы, Сдают, прАва' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%D8%EA%EE%EB%E0/">Школа</a>:</strong> родитель,дЕбилы, Сдают, прАва</div><div class='oneliner'><strong class='authorname'>Школа</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55557'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='852: возмущенная, лучше бы зарплату прибавил...а то с сентября у большинства убавили...' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/852/">852</a>:</strong> возмущенная, лучше бы зарплату прибавил...а то с сентября у большинства убавили...</div><div class='oneliner'><strong class='authorname'>852</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55556'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='852: Пусть,ну это же Лунтик)))' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/852/">852</a>:</strong> Пусть,ну это же Лунтик)))</div><div class='oneliner'><strong class='authorname'>852</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55555'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='strongK: Это ведь не какой то экзамен за 11 класс или сессию сдать в институте. Всё устроено правильно. Чем меньше таких неучей на дорогах, тем безопасней для окружающих.  Не получается - учись учись и учись.  Никакой инструктор вам в мозги не забьёт ни теорию ни практику.  Дорога ошибок не прощает.  Вообще…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/strongK/">strongK</a>:</strong> Это ведь не какой то экзамен за 11 класс или сессию сдать в институте. Всё устроено правильно. Чем меньше таких неучей на дорогах, тем безопасней для окружающих.  Не получается - учись учись и учись.  Никакой инструктор вам в мозги не забьёт ни теорию ни практику.  Дорога ошибок не прощает.  Вообще…</div><div class='oneliner'><strong class='authorname'>strongK</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55554'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='ну да: Студенты молодцы! А слова говорить не трудно, трудно дела делать' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%ED%F3+%E4%E0/">ну да</a>:</strong> Студенты молодцы! А слова говорить не трудно, трудно дела делать</div><div class='oneliner'><strong class='authorname'>ну да</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55553'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='ну да: Слова все умеют говорить, вот дела делать - это трудно. А студенты молодцы!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%ED%F3+%E4%E0/">ну да</a>:</strong> Слова все умеют говорить, вот дела делать - это трудно. А студенты молодцы!</div><div class='oneliner'><strong class='authorname'>ну да</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55552'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='Чудик: Чтобы сдать с первого раза юбочку надо надеть покороче, на груди вырез побольше' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%D7%F3%E4%E8%EA/">Чудик</a>:</strong> Чтобы сдать с первого раза юбочку надо надеть покороче, на груди вырез побольше</div><div class='oneliner'><strong class='authorname'>Чудик</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55551'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='аноним: Надо больше ходить пешком. Дорог нет , а автомобилей больше чем людей.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%E0%ED%EE%ED%E8%EC/">аноним</a>:</strong> Надо больше ходить пешком. Дорог нет , а автомобилей больше чем людей.</div><div class='oneliner'><strong class='authorname'>аноним</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55550'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='возмущенн…: Себя пожалейте. Директор очень хорошие слова сказал и ветеранам, и работающим педагогам , и студентам. А что один, так в этот момент тот, кто сидел рядом с ним выступал на сцене.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%E2%EE%E7%EC%F3%F9%E5%ED%ED%E0%FF/">возмущенн…</a>:</strong> Себя пожалейте. Директор очень хорошие слова сказал и ветеранам, и работающим педагогам , и студентам. А что один, так в этот момент тот, кто сидел рядом с ним выступал на сцене.</div><div class='oneliner'><strong class='authorname'>возмущенн…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55549'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='Пусть: И жены нет и грязновой. Савсем адин. Доработался.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CF%F3%F1%F2%FC/">Пусть</a>:</strong> И жены нет и грязновой. Савсем адин. Доработался.</div><div class='oneliner'><strong class='authorname'>Пусть</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55548'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='Гость: А чё директор сидит такой одинокий и злой? Странно праздник ведь.Жалко его' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C3%EE%F1%F2%FC/">Гость</a>:</strong> А чё директор сидит такой одинокий и злой? Странно праздник ведь.Жалко его</div><div class='oneliner'><strong class='authorname'>Гость</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10470#comm-id-55547'>Торжественное мероприятие, посвященное Дню учителя</a></div></div>
+                        <div class='highlight vsection ' title='23: скоро( а может и не скоро))))))) всеобщему обозрению откроется последствия ремонта под мостом у кладбища, вот это будет номер))).' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/23/">23</a>:</strong> скоро( а может и не скоро))))))) всеобщему обозрению откроется последствия ремонта под мостом у кладбища, вот это будет номер))).</div><div class='oneliner'><strong class='authorname'>23</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55546'>Двойной ремонт моста через Саргу</a></div></div>
+                        <div class='highlight vsection ' title='arhiv2015: Коля родом из Островских.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/arhiv2015/">arhiv2015</a>:</strong> Коля родом из Островских.</div><div class='oneliner'><strong class='authorname'>arhiv2015</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10384#comm-id-55545'>История уголовного розыска устами ветерана ОВД</a></div></div>
+                        <div class='highlight vsection ' title='arhiv2015: и мэра туда' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/arhiv2015/">arhiv2015</a>:</strong> и мэра туда</div><div class='oneliner'><strong class='authorname'>arhiv2015</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10455#comm-id-55544'>В Красноуфимске пройдут выборы в молодежную Думу</a></div></div>
+                        <div class='highlight vsection ' title='Директор …: Подписан распорядительный документ о лицензировании, в соответствии с которым с 30 сентября 2014 года снимается запрет на прием абитуриентов в Уральский государственный педагогический университет и возобновляется деятельность по набору в УрГПУ.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C4%E8%F0%E5%EA%F2%EE%F0+%F4%E8%EB%E8%E0%EB%E0+%D3%F0%C3%CF%D3+%E2+%E3.%CA%F0%E0%F1%ED%EE%F3%F4%E8%EC%F1%EA%E5/">Директор …</a>:</strong> Подписан распорядительный документ о лицензировании, в соответствии с которым с 30 сентября 2014 года снимается запрет на прием абитуриентов в Уральский государственный педагогический университет и возобновляется деятельность по набору в УрГПУ.</div><div class='oneliner'><strong class='authorname'>Директор …</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10355#comm-id-55543'>УрГПУ останется без абитуриентов</a></div></div>
+                        <div class='highlight vsection ' title='arhiv2015: Вот это правильно, а то устраивают в день города скуку' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/arhiv2015/">arhiv2015</a>:</strong> Вот это правильно, а то устраивают в день города скуку</div><div class='oneliner'><strong class='authorname'>arhiv2015</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10465#comm-id-55542'>День культуры Красноуфимска пройдет в Екатеринбургеa></div></div>
+                        <div class='highlight vsection ' title='arhiv2015: А зачем нужен этот мост, закопать пересохшую Саргу и концы в воду' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/arhiv2015/">arhiv2015</a>:</strong> А зачем нужен этот мост, закопать пересохшую Саргу и концы в воду</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>arhiv2015</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55541'>Двойной ремонт моста через Саргу</a></div></div>
+                        <div class='highlight vsection ' title='нет нарко…: Белянин вон на стадионе наказание отбывает...' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%ED%E5%F2+%ED%E0%F0%EA%EE%F2%E5/">нет нарко…</a>:</strong> Белянин вон на стадионе наказание отбывает...</div><div class='oneliner'><strong class='authorname'>нет нарко…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10480#comm-id-55540'>История кадров</a></div></div>
+                        <div class='highlight vsection ' title='писец тру…: В котельной на ул. Ухтомского,  с августа месяца, в горячую воду стали добавлять реагент СК-110 ( Главной составляющей композиции СК-110 являются натриевые соли оксиэтилидендифосфоновой кислоты.Реагент СК-110 предназначен для стабилизационной обработки воды, используемой в системах водоснабжения, т…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%EF%E8%F1%E5%F6+%F2%F0%F3%E1%E0%EC/">писец тру…</a>:</strong> В котельной на ул. Ухтомского,  с августа месяца, в горячую воду стали добавлять реагент СК-110 ( Главной составляющей композиции СК-110 являются натриевые соли оксиэтилидендифосфоновой кислоты.Реагент СК-110 предназначен для стабилизационной обработки воды, используемой в системах водоснабжения, т…</div><div class='oneliner'><strong class='authorname'>писец тру…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10433#comm-id-55538'>Отключение горячего водоснабжения</a></div></div>
+                        <div class='highlight vsection ' title='555: Так посмотришь на комментарии, смеяться хочется, большинство сплошные жалобы!!Всегда все зависит от ваас!!и ни от кого больше!! Если вы выучились то это не значит что вы сдадите с 1-го раза, допуская такие глупые ошибки(не уступил пешеходу, не включил поворотники), да это бред полный. А по поводу ц…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/555/">555</a>:</strong> Так посмотришь на комментарии, смеяться хочется, большинство сплошные жалобы!!Всегда все зависит от ваас!!и ни от кого больше!! Если вы выучились то это не значит что вы сдадите с 1-го раза, допуская такие глупые ошибки(не уступил пешеходу, не включил поворотники), да это бред полный. А по поводу ц…</div><div class='oneliner'><strong class='authorname'>555</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55537'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='555: Так посмотришь на комментарии, смеяться хочется, большинство сплошные жалобы!!Всегда все зависит от ваас!!и ни от кого больше!! Если вы выучились то это не значит что вы сдадите с 1-го раза, допуская такие глупые ошибки(не уступил пешеходу, не включил поворотники), да это бред полный. А по поводу ц…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/555/">555</a>:</strong> Так посмотришь на комментарии, смеяться хочется, большинство сплошные жалобы!!Всегда все зависит от ваас!!и ни от кого больше!! Если вы выучились то это не значит что вы сдадите с 1-го раза, допуская такие глупые ошибки(не уступил пешеходу, не включил поворотники), да это бред полный. А по поводу ц…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>555</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55536'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Сусанин3: И при первом ремонте Коля его делал. Открыли наверно вторую фирму.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%D1%F3%F1%E0%ED%E8%ED3/">Сусанин3</a>:</strong> И при первом ремонте Коля его делал. Открыли наверно вторую фирму.</div><div class='oneliner'><strong class='authorname'>Сусанин3</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55535'>Двойной ремонт моста через Саргу</a></div></div>
+                        <div class='highlight vsection ' title='Сусанин2: На третьем фото сын директора ООО "Магнит" - Коля Храмых. Во время второго ремонта он же и ремонтировал его. Так что не знаю кто за кого переделывал.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%D1%F3%F1%E0%ED%E8%ED2/">Сусанин2</a>:</strong> На третьем фото сын директора ООО "Магнит" - Коля Храмых. Во время второго ремонта он же и ремонтировал его. Так что не знаю кто за кого переделывал.</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>Сусанин2</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55534'>Двойной ремонт моста через Саргу</a></div></div>
+                        <div class='highlight vsection ' title='сусанин: сколько было уволено сотрудников за употребление и распространение наркотических средств и кто понес наказания' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F1%F3%F1%E0%ED%E8%ED/">сусанин</a>:</strong> сколько было уволено сотрудников за употребление и распространение наркотических средств и кто понес наказания</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>сусанин</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10480#comm-id-55532'>История кадров</a></div></div>
+                        <div class='highlight vsection ' title='сусанин: на нары директора' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F1%F3%F1%E0%ED%E8%ED/">сусанин</a>:</strong> на нары директора</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+3</div><div class='oneliner'><strong class='authorname'>сусанин</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10298#comm-id-55531'>Двойной ремонт моста через Саргу</a></div></div>
+                        <div class='highlight vsection ' title='gfd: Для v-lf  слушай умник нука приедь в дк натальинск и посмотри что было и что стало' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/gfd/">gfd</a>:</strong> Для v-lf  слушай умник нука приедь в дк натальинск и посмотри что было и что стало</div><div class='oneliner'><strong class='authorname'>gfd</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10164#comm-id-55530'>Культурный ремонт в районе</a></div></div>
+                        <div class='highlight vsection ' title='учитель-п…: Какие громкие слова! А на самом деле  "хороший"  подарок нам сделали - сократили зарплату на 30%!!! " Спасибо и низкий поклон!"' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F3%F7%E8%F2%E5%EB%FC-%EF%E0%F2%F0%E8%EE%F2/">учитель-п…</a>:</strong> Какие громкие слова! А на самом деле  "хороший"  подарок нам сделали - сократили зарплату на 30%!!! " Спасибо и низкий поклон!"</div><div class='oneliner'><strong class='authorname'>учитель-п…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10424#comm-id-55529'>Поздравления с Днем учителя!</a></div></div>
+                        <div class='separator' style='text-align: center; font-size: 140%; padding-top: 5px;'>Вчера:</div><div class='highlight vsection ' title='***: Спасибо Вам, Любовь Михайловна, за ваш огромный труд, терпение, человеколюбие и огромный позитив. Мы Вас вспоминает с теплотой и любовью. Низкий Вам поклон и огромное спасибо!!! Выпускники 1999 г.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%2A%2A%2A/">***</a>:</strong> Спасибо Вам, Любовь Михайловна, за ваш огромный труд, терпение, человеколюбие и огромный позитив. Мы Вас вспоминает с теплотой и любовью. Низкий Вам поклон и огромное спасибо!!! Выпускники 1999 г.</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>***</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10461#comm-id-55528'>Учитель – это душ строитель</a></div></div>
+                        <div class='highlight vsection ' title='803: В аграрном колледже вождение ставят по два часа, и оплата идёт за два часа,  а на самом деле ездят полтора часа. Откуда же будет сто процентная сдача??? Автошколы сами заинтересованы в том, чтобы больше пересдавали! Прокуратуре давно уже самой нужно обратить внимание на работу автошкол и принять со…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/803/">803</a>:</strong> В аграрном колледже вождение ставят по два часа, и оплата идёт за два часа,  а на самом деле ездят полтора часа. Откуда же будет сто процентная сдача??? Автошколы сами заинтересованы в том, чтобы больше пересдавали! Прокуратуре давно уже самой нужно обратить внимание на работу автошкол и принять со…</div><div class='oneliner'><strong class='authorname'>803</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55527'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='020: все всё прекрасно знают что всё покупается,как раз богатые и со связями люди сдают с первого раза,а которые победнее по несколькоу раз пересдают.где справедливость?' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/020/">020</a>:</strong> все всё прекрасно знают что всё покупается,как раз богатые и со связями люди сдают с первого раза,а которые победнее по несколькоу раз пересдают.где справедливость?</div><div class='oneliner'><strong class='authorname'>020</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55526'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Прохожий: Изнылись... Нормально вас там... я тоже учился... придирались, и по городу гоняли пока весь не объехал... но если инструктора слушал, то все можно запомнить. Останавливался, поворачивал так как научил инструктор и нефиг импровизировать. Вас если просят найти место для разворота, то ведь это не знач…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CF%F0%EE%F5%EE%E6%E8%E9/">Прохожий</a>:</strong> Изнылись... Нормально вас там... я тоже учился... придирались, и по городу гоняли пока весь не объехал... но если инструктора слушал, то все можно запомнить. Останавливался, поворачивал так как научил инструктор и нефиг импровизировать. Вас если просят найти место для разворота, то ведь это не знач…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>Прохожий</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55525'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Я: Поздравляю Игоря,маму Алю,папу Сашу, тренера -с победами!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%DF/">Я</a>:</strong> Поздравляю Игоря,маму Алю,папу Сашу, тренера -с победами!</div><div class='oneliner'><strong class='authorname'>Я</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10449#comm-id-55524'>Новости спорта ДЮСШ</a></div></div>
+                        <div class='highlight vsection ' title='ЛюбительН…: Вася, а кто мешает запретить поворот налево только фурам ? Легковым запрещать было совсем ни к чему.Да, и еще, Вася - подтяни правописание. Больно видеть. )' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CB%FE%E1%E8%F2%E5%EB%FC%CD%E0%EB%E5%E2%EE/">ЛюбительН…</a>:</strong> Вася, а кто мешает запретить поворот налево только фурам ? Легковым запрещать было совсем ни к чему.Да, и еще, Вася - подтяни правописание. Больно видеть. )</div><div class='oneliner'><strong class='authorname'>ЛюбительН…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10443#comm-id-55523'>Зачем же знак повесили?</a></div></div>
+                        <div class='highlight vsection ' title='ЛюбительН…: Вася, а кто мешал запретить поворот только фурам ? Легковым запрещать было совсем ни к чему.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CB%FE%E1%E8%F2%E5%EB%FC%CD%E0%EB%E5%E2%EE/">ЛюбительН…</a>:</strong> Вася, а кто мешал запретить поворот только фурам ? Легковым запрещать было совсем ни к чему.</div><div class='oneliner'><strong class='authorname'>ЛюбительН…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10443#comm-id-55522'>Зачем же знак повесили?</a></div></div>
+                        <div class='highlight vsection ' title='1917: А что вы хотите, это же бизнес, крутятся бабки и не малые, спекулянты сейчас везде в любой сфере. Правители потворствуют, хотя все что касается непосредствено безопасности людей по логике должно быть зоной государственных интересов. Вообщем из той же оперы, что и ОСАГО.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/1917/">1917</a>:</strong> А что вы хотите, это же бизнес, крутятся бабки и не малые, спекулянты сейчас везде в любой сфере. Правители потворствуют, хотя все что касается непосредствено безопасности людей по логике должно быть зоной государственных интересов. Вообщем из той же оперы, что и ОСАГО.</div><div class='oneliner'><strong class='authorname'>1917</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55521'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='0123: вернее с правой полосы на лево' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/0123/">0123</a>:</strong> вернее с правой полосы на лево</div><div class='oneliner'><strong class='authorname'>0123</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55520'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='русалка: Все прекрасно понимают , что если у тебя есть знакомый гаишник, пусть даже самый захудалый, то ты ,твои знакомые и даже знакомые твоих знакомых сдадут на права с первого раза.А то что местные автошколы самих учить надо это факт. И то что сдают с 5 раза это тоже нормально. Некоторым права по определению давать запрещено.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F0%F3%F1%E0%EB%EA%E0/">русалка</a>:</strong> Все прекрасно понимают , что если у тебя есть знакомый гаишник, пусть даже самый захудалый, то ты ,твои знакомые и даже знакомые твоих знакомых сдадут на права с первого раза.А то что местные автошколы самих учить надо это факт. И то что сдают с 5 раза это тоже нормально. Некоторым права по определению давать запрещено.</div><div class='oneliner'><strong class='authorname'>русалка</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55519'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='0123: блат еще очень много значит, у нас из группы девчонка сдавала проехала от дк,( советская- мизерова - озерная ленина и дк) и она сдала с первого раза, когда подъехали у ее спросили какую ошибку она допустила, она сказала что у 39 меридиана   она повернула на лево с правой полосы, и что ей сказали, м…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/0123/">0123</a>:</strong> блат еще очень много значит, у нас из группы девчонка сдавала проехала от дк,( советская- мизерова - озерная ленина и дк) и она сдала с первого раза, когда подъехали у ее спросили какую ошибку она допустила, она сказала что у 39 меридиана   она повернула на лево с правой полосы, и что ей сказали, м…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>0123</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55518'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Бабай:.: Если бы  производилась запись самого процесса сдачи практического экзамена по городу на видеорегистратор, то все вопросы и подозрения отпали бы сами собой.....' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C1%E0%E1%E0%E9%3A./">Бабай:.</a>:</strong> Если бы  производилась запись самого процесса сдачи практического экзамена по городу на видеорегистратор, то все вопросы и подозрения отпали бы сами собой.....</div><div style='float: right; color: red; font-weight: bold; margin-left: 3px;'>-2</div><div class='oneliner'><strong class='authorname'>Бабай:.</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55517'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='888: бабай,ты реально глупости несешь!ты походу пьяный тут все комментируешь!или тебе в свое время права не дали что ли...раз ты так не любишь автолюбителей,тогда ступай цветочки выращивай.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/888/">888</a>:</strong> бабай,ты реально глупости несешь!ты походу пьяный тут все комментируешь!или тебе в свое время права не дали что ли...раз ты так не любишь автолюбителей,тогда ступай цветочки выращивай.</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>888</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10474#comm-id-55516'>Ачит-Трофи: суровые мужские забавы</a></div></div>
+                        <div class='highlight vsection ' title='2: Уважаемые, если вам не дано, может не стоит вообще получать права.Лично я училась в автоладе, стаж вождения у меня 5,5 лет. Мы ездили на "3" , "7" , я сдала с 1 раза.Вам сейчас все удобства... Учебные машины в основном иномарки. Вы сначала пешком научитесь ходить, а потом за руль хватайтесь. У вас все кругом виноваты, кроме вас самих....' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/2/">2</a>:</strong> Уважаемые, если вам не дано, может не стоит вообще получать права.Лично я училась в автоладе, стаж вождения у меня 5,5 лет. Мы ездили на "3" , "7" , я сдала с 1 раза.Вам сейчас все удобства... Учебные машины в основном иномарки. Вы сначала пешком научитесь ходить, а потом за руль хватайтесь. У вас все кругом виноваты, кроме вас самих....</div><div class='oneliner'><strong class='authorname'>2</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55515'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='выгнали: Любовь Михайловна самый класскный учитель в 3 школе, не то что Инесса и Татьяна Николавна' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%E2%FB%E3%ED%E0%EB%E8/">выгнали</a>:</strong> Любовь Михайловна самый класскный учитель в 3 школе, не то что Инесса и Татьяна Николавна</div><div class='oneliner'><strong class='authorname'>выгнали</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10461#comm-id-55513'>Учитель – это душ строитель</a></div></div>
+                        <div class='highlight vsection ' title='Люся: В Саране вообще бардак. Когда то был такой посёлок. Сейчас заезжаешь и сразу развалины завода, дальше по этой же улице сгоревшие восьмиквартирные дома-это какой то ужас. Не местной администрации, не районной до этого видимо дела нет. ПОЗОР!!!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CB%FE%F1%FF/">Люся</a>:</strong> В Саране вообще бардак. Когда то был такой посёлок. Сейчас заезжаешь и сразу развалины завода, дальше по этой же улице сгоревшие восьмиквартирные дома-это какой то ужас. Не местной администрации, не районной до этого видимо дела нет. ПОЗОР!!!</div><div class='oneliner'><strong class='authorname'>Люся</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55512'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection ' title='1: Я тоже и полигон и теорию с первого раза сдала, но когда, тебе говорят, извините, но вы не попадаете в свой поток на сдачу, потому что времени не хватает ,а на пересдачу садят только через месяц, когда ты уже все забыла - тут дело не желании или когда с самого первого занятия тебя тренируют, что ин…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/1/">1</a>:</strong> Я тоже и полигон и теорию с первого раза сдала, но когда, тебе говорят, извините, но вы не попадаете в свой поток на сдачу, потому что времени не хватает ,а на пересдачу садят только через месяц, когда ты уже все забыла - тут дело не желании или когда с самого первого занятия тебя тренируют, что ин…</div><div class='oneliner'><strong class='authorname'>1</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55510'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='1213: В отличии от некоторых господа полицейские занимаются воспитанием подрастающего поколения, и если не обратить внимание, то дети пришедшие на экскурсию были из центра, а из этого следует, что они из семей неблагополучных, и им наверняка было очень интересно когда с ними &quot;возились&quot; такое количество п…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/1213/">1213</a>:</strong> В отличии от некоторых господа полицейские занимаются воспитанием подрастающего поколения, и если не обратить внимание, то дети пришедшие на экскурсию были из центра, а из этого следует, что они из семей неблагополучных, и им наверняка было очень интересно когда с ними &quot;возились&quot; такое количество п…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>1213</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10452#comm-id-55509'>«Полицейский Форт Боярд»</a></div></div>
+                        <div class='highlight vsection ' title='Аноним_VE…: 96,я образно написала, но по крайне мере, по рассказам моих родственников, сдавали раньше не так, как сейчас, намного проще было сдать! ' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%EE%ED%E8%EC_VERA/">Аноним_VE…</a>:</strong> 96,я образно написала, но по крайне мере, по рассказам моих родственников, сдавали раньше не так, как сейчас, намного проще было сдать! </div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+1</div><div class='oneliner'><strong class='authorname'>Аноним_VE…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55508'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Аноним: Вот говорите, что в Приданниково дороги хорошие? Какая именно дорога Вам понравилась? Ни одну дорогу в этом году не ремонтировали и не грейдировали. Тротуар по ул.Первомайской не доделан. Территория не окашивалась. Бурьян выше человеческого роста. Детская площадка по ул.Первомайской не огорожена. Д…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%EE%ED%E8%EC/">Аноним</a>:</strong> Вот говорите, что в Приданниково дороги хорошие? Какая именно дорога Вам понравилась? Ни одну дорогу в этом году не ремонтировали и не грейдировали. Тротуар по ул.Первомайской не доделан. Территория не окашивалась. Бурьян выше человеческого роста. Детская площадка по ул.Первомайской не огорожена. Д…</div><div class='oneliner'><strong class='authorname'>Аноним</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55507'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection ' title='Водитель …: Аноним_VERA,Милая моя вам к психоаналитику =) Вам ещё платить на АЗС придётся и ещё в сервисе тоже бабки дерут. Ну а что вы хотели? Инструктора тоже за 5 тыщь работать откажутся им и 20ки мало. А учить вас за даром никто не будет. А как им нервы трепать, за просто так  что ли? Вы ещё на экстремальное вождение запишитесь =))) там такие бабосы дерут. А может ну его, машину то? =))))' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C2%EE%E4%E8%F2%E5%EB%FC+%E8%ED%EE%EC%E0%F0%EA%E8/">Водитель …</a>:</strong> Аноним_VERA,Милая моя вам к психоаналитику =) Вам ещё платить на АЗС придётся и ещё в сервисе тоже бабки дерут. Ну а что вы хотели? Инструктора тоже за 5 тыщь работать откажутся им и 20ки мало. А учить вас за даром никто не будет. А как им нервы трепать, за просто так  что ли? Вы ещё на экстремальное вождение запишитесь =))) там такие бабосы дерут. А может ну его, машину то? =))))</div><div class='oneliner'><strong class='authorname'>Водитель …</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55505'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='96: Это когда же пару метров права получали?!?!?!? Сдавали так же, как и сейчас, а вот практических часов в автошколе только 30 откатывали, тогда как сейчас 50 катают- почти вдвое больше!!!!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/96/">96</a>:</strong> Это когда же пару метров права получали?!?!?!? Сдавали так же, как и сейчас, а вот практических часов в автошколе только 30 откатывали, тогда как сейчас 50 катают- почти вдвое больше!!!!</div><div class='oneliner'><strong class='authorname'>96</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55503'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='житель го…: Я училась в "автоладе" 3 года назад. Сдала с первого раза. Из нашей группы сдали семь человек с первого раза. А кто не сдал, сами допускали ошибки и никто их не валил. Некоторые даже от автошколы отъехать не могли, а учили всех одинаково!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%E6%E8%F2%E5%EB%FC+%E3%EE%F0%EE%E4%E0/">житель го…</a>:</strong> Я училась в "автоладе" 3 года назад. Сдала с первого раза. Из нашей группы сдали семь человек с первого раза. А кто не сдал, сами допускали ошибки и никто их не валил. Некоторые даже от автошколы отъехать не могли, а учили всех одинаково!</div><div class='oneliner'><strong class='authorname'>житель го…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55502'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Аноним_VE…: Люди, очнитесь, вы пишете, что сдавали 7-10 лет назад, дак и раньше сдавать то на много проще и легче было, проехал пару метров и все, ты сдал!!!! Или щас попробуйте, тебя гоняют по городу 40, 50 минут и ждут пока ты не завалишься. Сама выучилась недавно, было и желание и стремление, все делала, ст…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%EE%ED%E8%EC_VERA/">Аноним_VE…</a>:</strong> Люди, очнитесь, вы пишете, что сдавали 7-10 лет назад, дак и раньше сдавать то на много проще и легче было, проехал пару метров и все, ты сдал!!!! Или щас попробуйте, тебя гоняют по городу 40, 50 минут и ждут пока ты не завалишься. Сама выучилась недавно, было и желание и стремление, все делала, ст…</div><div class='oneliner'><strong class='authorname'>Аноним_VE…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55501'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='26: я все экзамены сдала с первого раза,училась в ДОСААФ.меня,лично,все устраивала и преподаватель и инструктор.я думаю,что зависит не от школы в какой вы учитесь,а от вас самих,от вашего желания.я все эти 2,5 месяца сидела по ночам  и решала билеты.билеты сдала меньше чем за пять минут.стаж 1 год,езжу отлично и по Красноуфимску и по Екатеринбургу .СПАСИБО ДОСААФ!!!!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/26/">26</a>:</strong> я все экзамены сдала с первого раза,училась в ДОСААФ.меня,лично,все устраивала и преподаватель и инструктор.я думаю,что зависит не от школы в какой вы учитесь,а от вас самих,от вашего желания.я все эти 2,5 месяца сидела по ночам  и решала билеты.билеты сдала меньше чем за пять минут.стаж 1 год,езжу отлично и по Красноуфимску и по Екатеринбургу .СПАСИБО ДОСААФ!!!!</div><div class='oneliner'><strong class='authorname'>26</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55500'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='кай: Бабай иди на ...' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%EA%E0%E9/">кай</a>:</strong> Бабай иди на ...</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>кай</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10474#comm-id-55498'>Ачит-Трофи: суровые мужские забавы</a></div></div>
+                        <div class='highlight vsection ' title='Водитель …: Уважаемые корреспонденты! Вы инкогнито посидите на занятиях и понаблюдайте за учениками особенно за женским составом. В моё время, это года 4 назад, девушки решали свои семейные проблемы до препода им дела не было. Да и мне мешали своим разговором за спиной. Вождение прогуливали т.к. их с работы не…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C2%EE%E4%E8%F2%E5%EB%FC+%E8%ED%EE%EC%E0%F0%EA%E8/">Водитель …</a>:</strong> Уважаемые корреспонденты! Вы инкогнито посидите на занятиях и понаблюдайте за учениками особенно за женским составом. В моё время, это года 4 назад, девушки решали свои семейные проблемы до препода им дела не было. Да и мне мешали своим разговором за спиной. Вождение прогуливали т.к. их с работы не…</div><div style='float: right; color: red; font-weight: bold; margin-left: 3px;'>-1</div><div class='oneliner'><strong class='authorname'>Водитель …</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55497'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Евгения: На въезде в д. Зауфа построили очень неудобную дорожную развязку. Проводилась ли какая-либо экспертиза на соответствие этой развязки нормам безопасности движения?' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C5%E2%E3%E5%ED%E8%FF/">Евгения</a>:</strong> На въезде в д. Зауфа построили очень неудобную дорожную развязку. Проводилась ли какая-либо экспертиза на соответствие этой развязки нормам безопасности движения?</div><div class='oneliner'><strong class='authorname'>Евгения</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55496'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection ' title='уги: учился от военкомата теорию преподовали в 115(появился там 2 раза) сдал с первого раза в 17лет. было бы желание!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F3%E3%E8/">уги</a>:</strong> учился от военкомата теорию преподовали в 115(появился там 2 раза) сдал с первого раза в 17лет. было бы желание!</div><div class='oneliner'><strong class='authorname'>уги</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55495'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='учился в …: по поводу автолады согласен с предидущим постом на словах бла бла бла все хорошо а в итоге .....ну и по поводу очередей там ... нафиг там отстаивать огромные очереди если можно спокойно сдать в любой другой...пысы сдал полигон с первого город со 2го ' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F3%F7%E8%EB%F1%FF+%E2+%E0%E2%F2%EE%EB%E0%E4%E5/">учился в …</a>:</strong> по поводу автолады согласен с предидущим постом на словах бла бла бла все хорошо а в итоге .....ну и по поводу очередей там ... нафиг там отстаивать огромные очереди если можно спокойно сдать в любой другой...пысы сдал полигон с первого город со 2го </div><div class='oneliner'><strong class='authorname'>учился в …</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55494'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='5: Что вы все плачете? Всё от вас зависит, теорию нужно знать, тогда сдавать будете с первого раза, а не по нескольку. Я сама сдавала 10 лет назад, когда были ещё старенькие машинки и сдала с первого раза, и полигон, и вождение по городу.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/5/">5</a>:</strong> Что вы все плачете? Всё от вас зависит, теорию нужно знать, тогда сдавать будете с первого раза, а не по нескольку. Я сама сдавала 10 лет назад, когда были ещё старенькие машинки и сдала с первого раза, и полигон, и вождение по городу.</div><div class='oneliner'><strong class='authorname'>5</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55493'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='сказочник: Достаточно было подержать в "сказочном обезьяннике", а "сказочные улики" оставляет "сказочный тупица". Господа полицейские! Вам нечем заняться?' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F1%EA%E0%E7%EE%F7%ED%E8%EA/">сказочник</a>:</strong> Достаточно было подержать в "сказочном обезьяннике", а "сказочные улики" оставляет "сказочный тупица". Господа полицейские! Вам нечем заняться?</div><div class='oneliner'><strong class='authorname'>сказочник</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10452#comm-id-55492'>«Полицейский Форт Боярд»</a></div></div>
+                        <div class='highlight vsection ' title='1: Училась а Автоладе, сдавала летом чтобы попасть на пересдачу последний раз пришла в 5 утра (потому что записывали 40 человек, принимал 1 инструктор), а к 8 утра там делать нечего. Вывод о автошколе: "Гладко слетят, жестко спать".' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/1/">1</a>:</strong> Училась а Автоладе, сдавала летом чтобы попасть на пересдачу последний раз пришла в 5 утра (потому что записывали 40 человек, принимал 1 инструктор), а к 8 утра там делать нечего. Вывод о автошколе: "Гладко слетят, жестко спать".</div><div class='oneliner'><strong class='authorname'>1</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55491'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='5589: Пора уже районным экологам (да и руководству тоже) навестить развалины Саранинского завода, вот где будет экологическая бомба заложена!  Оговорено ли каким-то документом, что останется  после ликвидации этого объекта - вряд ли...  А ведь производства там были в том числе и вредные. Задумайтесь, жители поселка!' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/5589/">5589</a>:</strong> Пора уже районным экологам (да и руководству тоже) навестить развалины Саранинского завода, вот где будет экологическая бомба заложена!  Оговорено ли каким-то документом, что останется  после ликвидации этого объекта - вряд ли...  А ведь производства там были в том числе и вредные. Задумайтесь, жители поселка!</div><div class='oneliner'><strong class='authorname'>5589</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55490'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection ' title='Аноним: Когда интересно подчистили, сегодня утром все также. Кого хотите обмануть?' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%EE%ED%E8%EC/">Аноним</a>:</strong> Когда интересно подчистили, сегодня утром все также. Кого хотите обмануть?</div><div class='oneliner'><strong class='authorname'>Аноним</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55488'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection ' title='96: По-моему , тут все дело в желании учиться, а не просто получить права!!! Когда я училась в &quot;Автоладе&quot;, из учебных машин там были только копейка, тройка и только что купленные семерки,  город сдала с первого раза (полигон со второго). Теперь же столько новых машин, на которых учиться намного легче. …' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/96/">96</a>:</strong> По-моему , тут все дело в желании учиться, а не просто получить права!!! Когда я училась в &quot;Автоладе&quot;, из учебных машин там были только копейка, тройка и только что купленные семерки,  город сдала с первого раза (полигон со второго). Теперь же столько новых машин, на которых учиться намного легче. …</div><div style='float: right; color: red; font-weight: bold; margin-left: 3px;'>-1</div><div class='oneliner'><strong class='authorname'>96</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55487'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Не могу п…: Сдавала в 2008 году. Претензии к автошколе ДОСААФ. Пока училась, у меня лично поменялись три инструктора по вождению. Обучали неохотно, больше сидели рядом и катались. Ездила, как хотела, по выбранным мной улицам. В итоге сдала только на пятый раз. Из группы таких было много (даже больше меня перес…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%CD%E5+%EC%EE%E3%F3+%EF%F0%EE%EC%EE%EB%F7%E0%F2%FC/">Не могу п…</a>:</strong> Сдавала в 2008 году. Претензии к автошколе ДОСААФ. Пока училась, у меня лично поменялись три инструктора по вождению. Обучали неохотно, больше сидели рядом и катались. Ездила, как хотела, по выбранным мной улицам. В итоге сдала только на пятый раз. Из группы таких было много (даже больше меня перес…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+3</div><div class='oneliner'><strong class='authorname'>Не могу п…</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55486'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Бабай:.: На последней фотографии, водитель Нивы управляет автомашиной с нечитаемым (грязным) номерным знаком - за это нарушение ему необходимо будет заплатить штраф  500 руб в городской бюджет....' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C1%E0%E1%E0%E9%3A./">Бабай:.</a>:</strong> На последней фотографии, водитель Нивы управляет автомашиной с нечитаемым (грязным) номерным знаком - за это нарушение ему необходимо будет заплатить штраф  500 руб в городской бюджет....</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+3</div><div class='oneliner'><strong class='authorname'>Бабай:.</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10474#comm-id-55485'>Ачит-Трофи: суровые мужские забавы</a></div></div>
+                        <div class='highlight vsection ' title='Бабай:.: Даже по фотографиям видно, что гибдд никогда не проверяло автошколы: не знаю чей это полигон, но дорожные знаки не соответствуют ГОСТ - предупреждающий дорожный знак 1.2 (ж.д. без шлагбаума) не может быть установлен выше знака приоритета 2.5 (движение без остановки запрещено) - это позор, куда смот…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C1%E0%E1%E0%E9%3A./">Бабай:.</a>:</strong> Даже по фотографиям видно, что гибдд никогда не проверяло автошколы: не знаю чей это полигон, но дорожные знаки не соответствуют ГОСТ - предупреждающий дорожный знак 1.2 (ж.д. без шлагбаума) не может быть установлен выше знака приоритета 2.5 (движение без остановки запрещено) - это позор, куда смот…</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>Бабай:.</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55484'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection ' title='Фотограф: Анониму: и дом Лещёва В.Н. сфотографировали (это как раз напротив второго фото с гусями) и до свалки доехали - там всё подчищено.' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%D4%EE%F2%EE%E3%F0%E0%F4/">Фотограф</a>:</strong> Анониму: и дом Лещёва В.Н. сфотографировали (это как раз напротив второго фото с гусями) и до свалки доехали - там всё подчищено.</div><div class='oneliner'><strong class='authorname'>Фотограф</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55483'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                        <div class='highlight vsection soft-limit-hidden' title='родитель: какие дибилы только не здают на прова' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%F0%EE%E4%E8%F2%E5%EB%FC/">родитель</a>:</strong> какие дибилы только не здают на прова</div><div style='float: right; color: green; font-weight: bold; margin-left: 3px;'>+2</div><div class='oneliner'><strong class='authorname'>родитель</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10340#comm-id-55482'>Письмо в редакцию. Автошколы – выманивание денег?</a></div></div>
+                        <div class='highlight vsection soft-limit-hidden' title='Аноним: Почему в Приданниково не сфотографировали территорию рядом с домом Лещева В.Н. по ул.Победы. Там свалки мусора, старая заброшенная техника, старые плиты. Завалил все до Золотого ручья. А по свалке за деревней: никто ее в этом году не чистил, валят прямо у дороги, выливают ЖБО, сваливают мусор со вс…' data-toggle='tooltip' data-placement='left' ><div class='tooltip'><strong class='authorname'><a href="http://ksk66.ru/user/%C0%ED%EE%ED%E8%EC/">Аноним</a>:</strong> Почему в Приданниково не сфотографировали территорию рядом с домом Лещева В.Н. по ул.Победы. Там свалки мусора, старая заброшенная техника, старые плиты. Завалил все до Золотого ручья. А по свалке за деревней: никто ее в этом году не чистил, валят прямо у дороги, выливают ЖБО, сваливают мусор со вс…</div><div class='oneliner'><strong class='authorname'>Аноним</strong> &rarr; <a href='http://ksk66.ru/index.php?newsid=10434#comm-id-55481'>Опыт благоустройства в сёлах и деревнях</a></div></div>
+                    </div>
+                </div>
+                <div class="footerinset"></div>
+                <div class="footer"></div>
+            </div>          <!-- Новые комментарии -->
+
+            <style type="text/css">
+                .tabs {
+                    overflow: hidden;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                .tabs li { float: left; margin: 0 -7px 0 0; }
+                .tabs a {
+                    float: left;
+                    position: relative;
+                    padding: 0 7px;
+                    height: 0;
+                    line-height: 18px;
+                    text-decoration: none;
+                    color: #222;
+                    border-right: 7px solid transparent;
+                    border-left:  7px solid transparent;
+                    border-bottom: 37px solid #dcb;
+                    font-size: 13px;
+                    font-weight: bold;0
+                    /*border-bottom-color: #777;*/
+                }
+                .tabs a:hover,
+                .tabs a:focus { border-bottom-color: #ff9759; }
+                .tabs a:focus { outline: 0; }
+                .tabs #current { z-index: 3; border-bottom-color: #DD7F51; }
+            </style>
+
+            <div class="panel panel-comments block" id="lastcomments">
+            <div class="panel-heading">
+                <h2>Популярные новости</h2>
+            </div>
+            <div class="body" style="border-top-width: 1px;">
+            <div class="content" id="content">
+            <div id="topnews">
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Отбирают ли у "СКБ-банка" лицензию?<br />
+                    <em>(19&nbsp;сентября, 4552 просмотров, 33 комментариев, )</em>
+                </div>
+                <div class='inset'>19&nbsp;сентября</div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10294-pravda-o-skb.html">
+                        Отбирают ли у "СКБ-банка" лицензию?
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Автобус врезался в фуру<br />
+                    <em>(23&nbsp;сентября, 4250 просмотров, 18 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    23&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/video/tv/10319-avtobus-vrezalsya-v-furu.html">
+                        Автобус врезался в фуру
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Градостроительница и кошмар малого бизнеса<br />
+                    <em>(25&nbsp;сентября, 3194 просмотров, 31 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    25&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10334-gradostroitelnica-i-koshmar-malogo-biznesa.html">
+                        Градостроительница и кошмар малого бизнеса
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Письмо в редакцию. Автошколы – выманивание денег?<br />
+                    <em>(6&nbsp;октября, 2315 просмотров, 32 комментариев, )</em>
+                </div>
+                <div class='inset'>6&nbsp;октября</div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10340-pismo-v-redakciyu-avtoshkoly-vymanivanie-deneg.html">
+                        Письмо в редакцию. Автошколы – выманивание денег?
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Свадебное ДТП<br />
+                    <em>(29&nbsp;сентября, 3069 просмотров, 14 комментариев, )</em>
+                </div>
+                <div class='inset'>29&nbsp;сентября</div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10388-svadebnoe-dtp.html">
+                        Свадебное ДТП
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    «Автоледи», с почином!<br />
+                    <em>(18&nbsp;сентября, 3415 просмотров, 11 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    18&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/video/tv/10249-avtoledi-s-pochinom.html">
+                        «Автоледи», с почином!
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Обращение в редакцию. Места в детские сады<br />
+                    <em>(18&nbsp;сентября, 2935 просмотров, 27 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    18&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10250-obrashhenie-v-redakciyu-mesta-v-detskie-sady.html">
+                        Обращение в редакцию. Места в детские сады
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Авария у администрации<br />
+                    <em>(30&nbsp;сентября, 2662 просмотров, 18 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    30&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10404-avariya-u-administracii.html">
+                        Авария у администрации
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Письмо в редакцию. Как успеть забрать ребенка из детского сада?<br />
+                    <em>(23&nbsp;сентября, 2210 просмотров, 33 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    23&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10282-pismo-v-redakciyu-detskie-sady-rabotayut-do-18-00.html">
+                        Письмо в редакцию. Как успеть забрать ребенка из детского са…
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Зачем же знак повесили?<br />
+                    <em>(2&nbsp;октября, 2329 просмотров, 16 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    2&nbsp;октября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10443-zachem-zhe-znak-povesili.html">
+                        Зачем же знак повесили?
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    ДТП на ул. Чкалова<br />
+                    <em>(19&nbsp;сентября, 2865 просмотров, 13 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    19&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/video/tv/10263-dtp-na-chkalova.html">
+                        ДТП на ул. Чкалова
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Обновки к новому году в ЦРБ<br />
+                    <em>(1&nbsp;октября, 2244 просмотров, 16 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    1&nbsp;октября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10165-obnovki-k-novomu-godu-v-crb.html">
+                        Обновки к новому году в ЦРБ
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Крылово. Страсти по автобусу<br />
+                    <em>(14&nbsp;сентября, 2130 просмотров, 40 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    14&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/video/tv/10228-krylovo-strasti-po-avtobusu.html">
+                        Крылово. Страсти по автобусу
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Автобус врезался в фуру. Комментарий ГИБДД<br />
+                    <em>(25&nbsp;сентября, 2153 просмотров, 15 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    25&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10339-avtobus-vrezalsya-v-furu-kommentarij-gibdd.html">
+                        Автобус врезался в фуру. Комментарий ГИБДД
+                    </a>
+                </div>
+            </div>
+            <div class='highlight vsection'>
+                <div class='tooltip'>
+                    Письмо в редакцию.  Межевая изжила себя?<br />
+                    <em>(29&nbsp;сентября, 2044 просмотров, 13 комментариев, )</em>
+                </div>
+                <div class='inset'>
+                    29&nbsp;сентября
+                </div>
+                <div class='oneliner'>
+                    <a href="http://ksk66.ru/10305-pismo-v-redakciyu-mezhevaya-izzhila-sebya.html">
+                        Письмо в редакцию.  Межевая изжила себя?
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div id="topcomms"></div>
+            </div>
+            </div>
+            <div class="footerinset"></div>
+            <div class="footer"></div>
+            </div>
+
+            <script type="text/javascript">
+                function resetTabs(){
+                    $("#content > div").hide(); //Hide all content
+                    $("#tabs a").attr("id",""); //Reset id's
+                }
+
+                var myUrl = window.location.href; //get URL
+                var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For mywebsite.com/tabs.html#tab2, myUrlTab = #tab2
+                var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+                (function(){
+                    $("#content > div").hide(); // Initially hide all content
+                    $("#tabs li:first a").attr("id","current"); // Activate first tab
+                    $("#content > div:first").fadeIn(); // Show first tab content
+
+                    $("#tabs a").on("click",function(e) {
+                        e.preventDefault();
+                        if ($(this).attr("id") == "current"){ //detection for current tab
+                            return
+                        }
+                        else{
+                            resetTabs();
+                            $(this).attr("id","current"); // Activate this
+                            $($(this).attr('name')).fadeIn(); // Show content for current tab
+                        }
+                    });
+
+                    for (i = 1; i <= $("#tabs li").length; i++) {
+                        if (myUrlTab == myUrlTabName + i) {
+                            resetTabs();
+                            $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+                            $(myUrlTab).fadeIn(); // Show url tab content
+                        }
+                    }
+                })()
+            </script>
+            <!--        <div class="headerinset"><a href="/?do=lastcomments">Все…</a></div>-->
+            <!--        <div class="header">Популярные комментарии</div>-->
+
+            <div class="block panel panel-official" id="info_big">
+                <div class="panel-heading"><h2>Информация</h2></div>
+                <div class="textwidget">
+                    <div class="list">
+                        <div class="list-group-item clearfix">
+                            <h1 class="post-title">
+                                <a href="">
+                                    Личный кабинет плательщика
+                                </a>
+                            </h1>
+                            <div class="post-text">
+                                К электронному сервису Пенсионного фонда &laquo;Личный кабинет плательщика&raquo;
+                                подключились почти 94 тысячи работодателей и свыше 52 тысяч индивидуальных
+                                предпринимателей Среднего Урала
+                            </div>
+                            <div class="post-actions pull-right">
+                                <a href="" class="post-more">Подробнее »</a>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item clearfix">
+                            <h1 class="post-title">
+                                <a href="">
+                                    Новая пенсионная формула: социально значимые периоды жизни, которые включаются в стаж
+                                </a>
+                            </h1>
+                            <div class="post-text">
+                                С 2015 года в России вводится новый порядок формирования и расчета
+                                пенсии в системе обязательного пенсионного страхования. Одним из
+                                ключевых факторов, от которых будет зависеть размер будущей пенсии,
+                                является продолжительность страхового стажа
+                            </div>
+                            <div class="post-actions pull-right">
+                                <a href="" class="post-more">Подробнее »</a>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item clearfix">
+                            <h1 class="post-title">
+                                <a href="">
+                                    Досрочная пенсия педагогическим работникам
+                                </a>
+                            </h1>
+                            <div class="post-text">
+                                Как исчисляется стаж, дающий право на досрочное назначение трудовой пенсии по старости
+                                в связи с педагогической деятельностью заместителям директоров по
+                                учебно-воспитательной работе общеобразовательных школ?
+                            </div>
+                            <div class="post-actions pull-right">
+                                <a href="" class="post-more">Подробнее »</a>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item clearfix">
+                            <h1 class="post-title">
+                                <a href="">
+                                    В ПФР начинается отчетная кампания
+                                </a>
+                            </h1>
+                            <div class="post-text">
+                                Красноуфимское управление Пенсионного фонда напоминает, что 1 октября -
+                                начало приема от страхователей отчетности за 9 месяцев 2014 года
+                            </div>
+                            <div class="post-actions pull-right">
+                                <a href="" class="post-more">Подробнее »</a>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item clearfix">
+                            <h1 class="post-title">
+                                <a href="">
+                                    Мониторинг сельскохозяйственных угодий
+                                </a>
+                            </h1>
+                            <div class="post-text">
+                                17 сентября государственный инспектор Управления Россельхознадзора по
+                                Свердловской области и специалисты Красноуфимского управления АПК
+                                осуществили выездной мониторинг земель сельскохозяйственного назначения
+                                территорий бывших совхозов, залежные земли которых не использовались 10 и более лет
+                            </div>
+                            <div class="post-actions pull-right">
+                                <a href="" class="post-more">Подробнее »</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel-footer text-center"><a href="/info/">» Ещё</a></div>
+                <div class="footerinset"></div>
+                <div class="footer"></div>
+            </div>    <!-- Информация  -->
+
+
+            <div class="block panel panel-sendsms">
+                <!-- <div class="headerinset"></div> -->
+                <div class="panel-heading"><h2>Отправить SMS, MMS</h2></div>
+                <div class="body">
+                    <div class="description"></div>
+                    <div class="content">
+                        <ul id="sendsms">
+                            <li>
+                                <a href="http://sms.e-burg.mts.ru/" target="_blank" rel="nofollow">
+                                    <img src="http://ksk66.ru/uploads/mts.png" width="75px" alt="МТС" />
+                                </a><br />
+                                <a href="http://sms.e-burg.mts.ru/" target="_blank" rel="nofollow">SMS</a> / <a href="http://www.e-burg.mts.ru/sendmms/" target="_blank" rel="nofollow">MMS</a>
+                            </li>
+
+                            <li>
+                                <a href="http://u-tel.ru/facilities/sms" target="_blank" rel="nofollow">
+                                    <img src="http://ksk66.ru/uploads/utel.png" width="75px" alt="u-tel" />
+                                </a><br />
+                                <a href="http://u-tel.ru/facilities/sms" target="_blank" rel="nofollow">SMS</a> / <a href="http://u-tel.ru/facilities/mms" target="_blank" rel="nofollow">MMS</a>
+                            </li>
+
+                            <li>
+                                <a href="https://sendsms.megafon.ru/" target="_blank" rel="nofollow">
+                                    <img src="http://ksk66.ru/uploads/megafon.png" width="75px" alt="Мегафон" />
+                                </a><br />
+                                <a href="https://sendsms.megafon.ru/" target="_blank" rel="nofollow">SMS</a> / <a href="http://sendmms.megafon.ru/" target="_blank" rel="nofollow">MMS</a>
+                            </li>
+
+                            <li>
+                                <a href="http://www.beeline.ru/sms/index.wbp?region=ekb" target="_blank" rel="nofollow">
+                                    <img src="http://ksk66.ru/uploads/beeline.png" width="75px" alt="Билайн" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://cell.motivtelecom.ru/ekb/smssend" target="_blank"  rel="nofollow">
+                                    <img src="http://ksk66.ru/images/motiv.png" width="75px" alt="Мотив" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerinset"></div>
+                <div class="footer"></div>
+            </div>        <!-- Отправка SMS -->
+            </div>
+            <script type="text/javascript">
+                $('#progressive-right').show();
+            </script>
+            </div>
+
+</div>
+
+<script type="application/javascript">
+
+    // Заполняем user-panel содержимым user-panel-content
+    /* (function () {
+     var user_panel_content = document.getElementById('user-panel-content');
+     var user_panel = document.getElementById('user-panel');
+     if (user_panel && user_panel_content) {
+     user_panel.innerHTML = user_panel_content.innerHTML;
+     //            user_panel_content.remove();
+     //            this.parentElement.removeChild(this);
+     }
+     })();*/
+
+    // TabDrop
+    if (window['operamini']) {
+        jQuery('.navbar-nav').css("max-height", "none");
+    } else {
+        jQuery('.navbar-nav').tabdrop({text: '<i class="fa fa-align-justify"></i> Ещё'});
+    }
+    // Popover для магазинов
+    jQuery('#btn-feature-shopping').popover({
+        //    trigger: 'focus',
+        content: jQuery('#popover_shopping_content').html(),
+        html: true,
+        placement: "bottom"
+    });
+    // Popover для услуг
+    jQuery('#btn-feature-services').popover({
+        //    trigger: 'focus',
+        content: jQuery('#popover_service_content').html(),
+        html: true,
+        placement: "bottom"
+    });
+    // Popover для погоды с iframe от Яндекса
+    jQuery('.pop-btn-weather').popover({
+//        trigger: 'focus',
+        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
+        html: true,
+        placement: "bottom"
+    });
+
+    // поиск google по новостям или объявлениям
+    (function () {
+        var cx;
+        var ob = /^[http:\/\/]+ob/;
+        var url = document.location.href;
+        // У сайтов на WordPress свой поиск
+        if (jQuery("meta[name='generator']").attr("content") && jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+            return;
+        } else if (url.match(ob)) { // Поиск по объявлениям
+            cx = '003704283744183876190:qchgmzsmjkc';
+        } else { // Поиск по новостям
+            cx = '003704283744183876190:woiuqgnl_eg';
+        }
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+
+    // Alt-режим
+    var time = null;
+    document.onkeydown = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 17)
+            if (((+new Date) - time) < 400) {
+                jQuery('body').toggleClass('alt');
+                time = null;
+            } else {
+                time = +new Date;
+            }
+    };
+
+    // Yandex.Metrika counter
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
+                    webvisor: true,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true});
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+
+</script>
+<noscript><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></noscript>
+
+<footer class="visible-print text-right">
+    <em>Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>.
+        При использовании материалов ссылка обязательна.</em>
+</footer>
+
+<footer class="hidden-print" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-sm-6" style="text-align:right;">
+            <h3>18+ &copy; 2008-2014 Красноуфимск Онлайн</h3>
+
+            <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
+                Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.</p>
+            <p class="footer_backlinks">При использовании материалов сайта ссылка обязательна.</p>
+            <p class="footer_opinion">Мнение редакции может не совпадать с мнением авторов материалов и
+                комментариев.</p>
+
+            <div>
+                <span id="openstat2173092"></span>
+                <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
+                <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> •
+                <span><a href="http://news.kskmedia.ru/reklama-site/">Реклама на сайте</a></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h5>Связаться с нами:</h5>
+
+            <h3><a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
+                infotek66@gmail.com</h3>
+            <h4 class="show-alt"><a href="http://news.kskmedia.ru/addnews">Форма обратной связи</a></h4>
+            <h4 class="hide-alt"><a href="http://news.kskmedia.ru/mail/">Форма обратной связи</a></h4>
+            <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+        </div>
+    </div>
+</footer>
+
+<!-- Gismeteo informer -->
+
+<div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
+    <div class="gsIContent">
+        <div id="cityLink">
+            <a href="http://www.gismeteo.ru/city/daily/4515/">Погода в Красноуфимске</a>
+        </div>
+        <div class="gsLinks" style="width: 100%; overflow: hidden;">
+            <table>
+                <tr>
+                    <td>
+                        <div class="leftCol"><a href="http://www.gismeteo.ru">
+                            <span>Gismeteo</span></a></div>
+                        <div class="rightCol">
+                            <a href="http://www.gismeteo.ru/city/weekly/4515/">Прогноз на 2 недели</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+
+<script>
+    var generat = jQuery("meta[name='generator']").attr("content");
+    if (generat && generat.substring(0, 9) !== "WordPress") {
+        var gismeteo = document.createElement('script');
+        gismeteo.type = 'text/javascript';
+        gismeteo.async = true;
+        var url = document.location.href;
+        if (url.match(/ob/)) {
+            jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
+            gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
+        } else if (url.match(/ksk66/)) {
+
+            gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
+        }
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gismeteo, s);
+    }
+    jQuery(window).load(function () {
+        // для вордпресс работает скрипт на php
+        if (generat && generat.substring(0, 9) === "WordPress") {
+            return;
+        }
+
+
+        // Парсим погодный виджет
+
+//        var conditions = jQuery(".gsAddInfo").text(); // Пасмурно
+        //TODO: Загружать значки не с Гисметео
+        var iconlink = jQuery('.gsWeatherIcon img').attr('src'); // http://www.gismeteo.ru/static/images/informer2/icons/clip_art/d3.png
+//        var add_info = jQuery(".gsAddInfo3").text(); // 2м/с, сз 751 мм рт. ст. 91% влажн.
+        var temp_array = jQuery(".gsTemp").text().split('°');
+        var temp = parseInt(temp_array[0]); // 5
+
+        if (!iconlink /* Если нет ссылки на значок */) {
+            console.log("Ошибка разбора погоды (нет значка)");
+        } else if (isNaN(temp)  /* Температура -- не число */) {
+            console.log("Ошибка разбора погоды (нет температуры)");
+        } else {
+            setCookie('weather_icon', iconlink, 1800000);
+            setCookie('weather_text', temp, 1800000);
+            if(temp>0) temp = "+"+temp;
+            jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
+            jQuery('.weather-temp').text(temp);
+            jQuery('.weather-block').css('opacity', 1);
+        }
+
+    });
+
+    //  Openstat
+    var openstat = { counter: 2173092, image: 5041, next: openstat };
+    (function (d, t, p) {
+        var j = d.createElement(t);
+        j.async = true;
+        j.type = "text/javascript";
+        j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+        var s = d.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(j, s);
+    })(document, "script", document.location.protocol);
+
+</script>
+
+
+<!-- Кнопка «Наверх» -->
+<!--suppress HtmlUnknownAnchorTarget -->
+<a href="#header" onclick="jQuery('html,body').animate({ scrollTop: 0 }, 'slow'); jQuery(this).blur(); return false;"
+   class="btn-home inactive text-center">
+    <i class="fa fa-angle-up fa-5x"></i>
+
+    <div style="position:relative; top:-15px;">
+        НАВЕРХ
+    </div>
+</a>
+<script>
+    var offset = 1000;
+    if (jQuery('.btn-scroll-up').length) {
+        jQuery('.btn-home').remove();
+    } else {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.btn-home').removeClass("inactive");
+            } else {
+                jQuery('.btn-home').addClass("inactive");
+            }
+        });
+    }
+</script>
+
+
+<script src="/js/plugins.js?v=1"></script>
+<script language="javascript" type="text/javascript">
+    <!--
+    var dle_root       = '/';
+    var dle_admin      = 'admin.php';
+    var dle_login_hash = '4e12a83fc166a89c63dce74e62082a11';
+    var dle_skin       = 'KsK';
+    var dle_wysiwyg    = 'no';
+    var quick_wysiwyg  = '1';
+    var menu_short     = 'Быстрое редактирование';
+    var menu_full      = 'Полное редактирование';
+    var menu_profile   = 'Просмотр профиля';
+    var menu_fnews     = 'Найти все публикации';
+    var menu_fcomments = 'Найти все комментарии';
+    var menu_send      = 'Отправить сообщение';
+    var menu_uedit     = 'Админцентр';
+    var dle_req_field  = 'Заполните все необходимые поля';
+    var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+    var dle_del_news   = 'Удалить новость';
+    var allow_dle_delete_news   = true;
+    //-->
+</script>
+<script type="text/javascript" src="/engine/ajax/menu.js"></script>
+<script type="text/javascript" src="/engine/ajax/dle_ajax.js"></script>
+<div id="loading-layer" style="display:none;font-family: Verdana;font-size: 11px;width:200px;height:50px;background:#FFF;padding:10px;text-align:center;border:1px solid #000"><div style="font-weight:bold" id="loading-layer-text">Загрузка. Пожалуйста, подождите...</div><br /><img src="/engine/ajax/loading.gif"  border="0" alt="" /></div>
+<div id="busy_layer" style="visibility: hidden; display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: gray; opacity: 0.1; -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)'; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=10); "></div>
+<script type="text/javascript" src="/engine/ajax/js_edit.js"></script>
+<script type="text/javascript" src="/engine/editor/jscripts/tiny_mce/tiny_mce.js"></script>
+
+
+<script type="text/javascript">
+
+    $(".rating-grayout").parents(".comment").addClass("grayed-out");
+    $(".gsMore").show();
+
+    $('#lastcomments .vsection').tooltip();
+
+    /*
+     var linkLocation;
+     $('a[href^="http\\:"], a[href^="\\/"]:not([onclick]), a[href$="\\.html"]:not([onclick])').click(function(event){
+     event.preventDefault();
+     linkLocation = this.href;
+     window.setTimeout(redirectPage, 50);
+     //            $('.panorama-front, .stripe img').fadeOut(400);
+     //            clearTimeout(panoramaTimeout);
+     $('html, body').animate({scrollTop:0}, 200);
+     if ( ! $.browser.opera ) {
+     $('#throbber').show();
+     $("#throbbed-content").fadeOut(300);
+     }
+     if ( $(this).hasClass("menu-line__item") ) {
+     $(".menu-line__item_current").removeClass("menu-line__item_current");
+     $(this).addClass("menu-line__item_current");
+     }
+     });
+     function redirectPage() { window.location = linkLocation; }
+     */
+
+</script>
+
+<!-- VKontakte -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?72"></script>
+<script type="text/javascript">
+    VK.Widgets.Group("sidebar__block_vk", {mode: 0, width: "240", height: "285"}, 2194063);
+
+    // Odnoklassniki:
+    !function (d, id, did, st) {
+        var js = d.createElement("script");
+        js.src = "http://connect.ok.ru/connect.js";
+        js.onload = js.onreadystatechange = function () {
+            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                if (!this.executed) {
+                    this.executed = true;
+                    setTimeout(function () {
+                        OK.CONNECT.insertGroupWidget(id,did,st);
+                    }, 0);
+                }
+            }}
+        d.documentElement.appendChild(js);
+    }(document,"sidebar__block_ok","51642166870097","{height:285}");
+</script>
+<style type="text/css">
+    .sidebar__block { margin: 0; margin-bottom: 5px; width: 100%; }
+    .sidebar__block_vk { border: 1px #5B7FA6 solid; }
+    .sidebar__block_ok { margin-top: -9px; margin-left: -9px; margin-right: -9px; width: auto; }
+    .sidebar__block_ok > iframe { width: 100% !important; }
+</style>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"580eca7f8e","applicationID":"2479685","transactionName":"blwGYhBUXBACWkZQDFcWMUQLGlsNB1xKFxNRSQ==","queueTime":0,"applicationTime":90,"ttGuid":"","agentToken":"","atts":"QhsFFFhOTx4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
