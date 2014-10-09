@@ -165,8 +165,8 @@
 </script>
 
 <script>
-    var generat = jQuery("meta[name='generator']");
-    if (generat && generat.attr("content").substring(0, 9) !== "WordPress") {
+    var generat = jQuery("meta[name='generator']").attr("content");
+    if (generat && generat.substring(0, 9) !== "WordPress") {
         var gismeteo = document.createElement('script');
         gismeteo.type = 'text/javascript';
         gismeteo.async = true;
@@ -176,7 +176,7 @@
     }
     jQuery(window).load(function () {
         // для вордпресс работает скрипт на php
-        if (generat && generat.attr("content").substring(0, 9) === "WordPress") {
+        if (generat && generat.substring(0, 9) === "WordPress") {
             return;
         }
 
