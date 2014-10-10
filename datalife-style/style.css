@@ -101,3 +101,15 @@ h1.post-title a {color: #333;}
 ul#sendsms {display: block; padding: 0; text-align: center;}
 
 ul#sendsms li {display: inline-block; min-height: 50px; vertical-align: top;}
+
+#dle-content {padding: 0 20px;}
+
+#dle-content img {margin: 10px;}
+
+.newstitle {font-size: 24px; padding: 5px 10px; margin-bottom: 10px;}
+
+.newstext {font-size: 16px; line-height: 1.4em}
+
+.newstext br, .newstext p {margin-bottom: 1em;}
+
+.newstitle, .newstext {font-family: Times,serif; font-weight: normal; text-align: left;}
