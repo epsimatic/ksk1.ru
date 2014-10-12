@@ -45,7 +45,8 @@
         var ob = /^[http:\/\/]+ob/;
         var url = document.location.href;
         // У сайтов на WordPress свой поиск
-        if (jQuery("meta[name='generator']").attr("content") && jQuery("meta[name='generator']").attr("content").substring(0, 9) === "WordPress") {
+        var meta_generator = jQuery("meta[name='generator']").attr("content");
+        if (meta_generator && meta_generator.substring(0, 9) === "WordPress") {
             return;
         } else if (url.match(ob)) { // Поиск по объявлениям
             cx = '003704283744183876190:qchgmzsmjkc';
@@ -127,7 +128,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <h5>Связаться с нами:</h5>
+            <h5 class="wp-admin">Связаться с нами:</h5>
 
             <h3><a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
                 infotek66@gmail.com</h3>
@@ -247,4 +248,7 @@
             }
         });
     }
+    jQuery(".wp-admin").dblclick(function () {
+        window.location = "/wp-admin/";
+    });
 </script>
