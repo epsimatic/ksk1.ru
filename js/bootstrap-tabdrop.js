@@ -52,7 +52,7 @@
 	}());
 
 	var TabDrop = function(element, options) {
-        this.element = window.jQuery.(element);
+        this.element = window.jQuery(element);
         this.dropdown = window.jQuery.('<li class="dropdown  pull-right tabdrop">' +
         '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' + options.text + ' <b class="caret"></b></a>' +
         '<ul class="dropdown-menu"></ul></li>')
