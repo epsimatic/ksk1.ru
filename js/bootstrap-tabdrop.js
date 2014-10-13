@@ -95,7 +95,7 @@
 		}
 	}
 
-	$.fn.tabdrop = function ( option ) {
+    jQuery.fn.tabdrop = function (option) {
 		return this.each(function () {
 			var $this = $(this),
 				data = $this.data('tabdrop'),
@@ -109,10 +109,10 @@
 		})
 	};
 
-	$.fn.tabdrop.defaults = {
+    jQuery.fn.tabdrop.defaults = {
 		text: '<i class="icon-align-justify"></i>'
 	};
 
-	$.fn.tabdrop.Constructor = TabDrop;
+    jQuery.fn.tabdrop.Constructor = TabDrop;
 
 }( window.jQuery );
