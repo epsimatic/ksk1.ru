@@ -36,7 +36,7 @@
 			register: function(fn) {
 				registered.push(fn);
 				if (inited === false) {
-                    window.jQuery.(window).bind('resize', resize);
+                    window.jQuery(window).bind('resize', resize);
 					inited = true;
 				}
 			},
