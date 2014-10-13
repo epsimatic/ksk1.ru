@@ -36,7 +36,7 @@
 			register: function(fn) {
 				registered.push(fn);
 				if (inited === false) {
-					$(window).bind('resize', resize);
+                    window.jQuery.(window).bind('resize', resize);
 					inited = true;
 				}
 			},
@@ -52,13 +52,15 @@
 	}());
 
 	var TabDrop = function(element, options) {
-		this.element = $(element);
-		this.dropdown = $('<li class="dropdown  pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">'+options.text+' <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>')
+        this.element = window.jQuery.(element);
+        this.dropdown = window.jQuery.('<li class="dropdown  pull-right tabdrop">' +
+        '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' + options.text + ' <b class="caret"></b></a>' +
+        '<ul class="dropdown-menu"></ul></li>')
 							.prependTo(this.element);
 		if (this.element.parent().is('.tabs-below')) {
 			this.dropdown.addClass('dropup');
 		}
-		WinReszier.register($.proxy(this.layout, this));
+        WinReszier.register(window.jQuery..proxy(this.layout, this));
 		this.layout();
 	};
 
@@ -78,7 +80,7 @@
 					}
 				});
 			if (collection.length > 0) {
-				collection = $(collection);
+                collection = window.jQuery.(collection);
 				this.dropdown
 					.find('ul')
 					.empty()
@@ -95,13 +97,13 @@
 		}
 	}
 
-    jQuery.fn.tabdrop = function (option) {
+    window.jQuery.fn.tabdrop = function (option) {
 		return this.each(function () {
-			var $this = $(this),
+            var $this = window.jQuery.(this),
 				data = $this.data('tabdrop'),
 				options = typeof option === 'object' && option;
 			if (!data)  {
-				$this.data('tabdrop', (data = new TabDrop(this, $.extend({}, $.fn.tabdrop.defaults,options))));
+                $this.data('tabdrop', (data = new TabDrop(this, window.jQuery.extend({}, window.jQuery.fn.tabdrop.defaults, options))));
 			}
 			if (typeof option == 'string') {
 				data[option]();
@@ -109,10 +111,10 @@
 		})
 	};
 
-    jQuery.fn.tabdrop.defaults = {
+    window.jQuery.fn.tabdrop.defaults = {
 		text: '<i class="icon-align-justify"></i>'
 	};
 
-    jQuery.fn.tabdrop.Constructor = TabDrop;
+    window.jQuery.fn.tabdrop.Constructor = TabDrop;
 
 }( window.jQuery );
