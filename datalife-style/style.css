@@ -16,8 +16,9 @@ img {vertical-align: middle;}
 
 .panel-news .news-slide {background-color: #ffe7e3; padding: 5px 10px 0;}
 
-.panel-news .news-slide img,
-.panel-news-list .list-group-item img {max-height: 120px; max-width: 120px;}
+.panel-news .news-slide img {max-width: 100%;}
+
+.panel-news-list .list-group-item img {max-height: 120px; max-width: 92px;}
 
 .panel-news-list .yummies {margin-bottom: 0;}
 
@@ -112,11 +113,29 @@ ul#sendsms li {display: inline-block; min-height: 50px; vertical-align: top;}
 
 .newstitle {font-size: 24px; padding: 5px 10px; margin-bottom: 10px;}
 
-.newstext {font-size: 16px; line-height: 1.4em}
+.newstext {font-size: 16px; line-height: 1.4em; padding: 0 10px;}
 
-.newstext br, .newstext p {margin-bottom: 1em;}
+.newstext br,
+.newstext p {margin-bottom: 1em;}
 
-.newstitle, .newstext {font-family: Times,serif; font-weight: normal; text-align: left;}
+.newstext img {margin: 10px;}
+
+.newstitle,
+.newstext {font-family: Times,serif; font-weight: normal; text-align: left;}
+
+.page .footer {margin-top: 20px;}
+
+.page .footer .meta {font-size: 120%; font-style: italic; margin-bottom: 8px; text-align: left; color: #4d5359; line-height: 1.2em;}
+
+.page .footer .meta em {font-style: inherit; font-weight: 600; margin-left: 0.5em;}
+
+.page .footer .orphus {background-color: #f5f5f5; font-size: 85%; padding: 5px 10px 6px; color: #666;}
+
+.page .footer .orphus .badge {background-color: #d5d5d5; color: #333; font-weight: 400;}
+
+.comments-heading {background-color: #fafafa; margin: 10px 0 20px;}
+
+.comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
 /* <editor-fold desc="Коментарии"> */
 /*.comment {border-top: 3px solid #dddddd; color: #111111; font-size: 14px; font-weight: 400; margin: 5px 0; padding: 11px 0; position: relative; text-align: left; width: 100%;}
@@ -296,3 +315,14 @@ div.block div.content .vsection:hover { background-color: white; }
 
 
 .sidebar .panel .body {margin-bottom: 15px;}
+
+@media (min-width: 768px) {
+    .panel-news-list .list-group-item img {max-width: 80px;}
+}
+
+@media (min-width: 992px) {
+    .panel-news .news-slide img,
+    .panel-news-list .list-group-item img {max-width: 120px;}
+}
+
+@media (min-width: 1200px) {}
