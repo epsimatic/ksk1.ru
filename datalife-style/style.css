@@ -106,7 +106,7 @@ ul#sendsms li {display: inline-block; min-height: 50px; vertical-align: top;}
 
 #dle-content {padding: 0 20px;}
 
-#dle-content img {margin: 10px;}
+/*#dle-content img {margin: 10px;}*/
 
 .newstitle {font-size: 24px; padding: 5px 10px; margin-bottom: 10px;}
 
@@ -169,6 +169,8 @@ form, p {margin: 0; padding: 0;}*/
 
 /* </editor-fold> */
 
+.meta_dynamic .comment-rating {padding-left: 0;}
+
 .comment {width: 100%; margin: 5px 0; position: relative; text-align: left;
     border-top: 3px solid #ddd;
     padding: 11px 0;
@@ -197,10 +199,18 @@ form, p {margin: 0; padding: 0;}*/
 .comment .comment-text { min-height: 75px; border-left: 0 solid #eee; margin-left: 195px; }
 
 /* Meta-block animation */
-.comment .meta img { margin: 0 4px; width: 16px; height: 16px; }
-.comment .meta_dynamic img { margin: 0; width: 0; opacity: 0; transition: all .2s ease; -moz-transition: all .2s ease;
+.comment .meta img,
+.comment .meta .fa { margin: 0 4px; width: 16px; height: 16px; }
+
+.comment .meta_dynamic img,
+.comment .meta_dynamic .fa { margin: 0; width: 0; opacity: 0; transition: all .2s ease; -moz-transition: all .2s ease;
     -webkit-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; }
-.comment:hover .meta_dynamic img { margin: 0 4px; width: 16px; opacity: 1; }
+.comment:hover .meta_dynamic img,
+.comment:hover .meta_dynamic .fa { margin: 0 4px 1px 2px; width: 16px; opacity: 1; }
+
+.meta_dynamic a i {color: #555;}
+
+.meta_dynamic a:hover i {color: #333;}
 
 .comment .show-on-hover,
 .comment .black-on-hover { -moz-transition: all .2s linear; -o-transition: all .2s linear;
