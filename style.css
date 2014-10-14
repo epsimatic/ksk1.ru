@@ -564,7 +564,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .row-yu-half .yummies {max-height: none;}
 
-.home .sidebar .yummies
+.home .sidebar .yummies,
 .page .sidebar .yummies,
 #text-16 .yu, #text-20 .yu,
 .page .row-yu-half,
