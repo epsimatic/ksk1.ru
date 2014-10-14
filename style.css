@@ -145,6 +145,8 @@ header .btn-group {margin-top: 10px;}
     font-size: 56%;
     font-weight: 300;
     text-align: center;
+    line-height: 1.2em;
+    white-space: normal;
 }
 
 .weather-temp {
