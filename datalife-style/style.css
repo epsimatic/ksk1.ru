@@ -281,3 +281,6 @@ div.block div.content .vsection:hover { background-color: white; }
 { background-color: #ffe0c9; color: black; }
 .vsection .oneliner, .vsection .inset, .vsection .inset *, .vsection .oneliner *, .vsection.shortnews *
 { background-color: transparent !important; }
+
+
+.sidebar .panel .body {margin-bottom: 15px;}

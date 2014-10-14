@@ -554,6 +554,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 #header .yummies {margin-bottom: 0;}
 
+.page .sidebar .yummies {margin-bottom: 10px;}
+
 .news header#header {margin: 0;}
 
 .news .container > #header {margin: 0 -10px;}
@@ -2287,6 +2289,10 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 /* Оформление фильмов */
 .movie-brief .movie-poster > a > img {}
+
+.movie-poster {padding-right: 0;}
+
+.movie-poster img {max-width: 100%}
 
 .tax-movie #movie-col-right h2,
 .movie-brief .movie-info a > h4.movie-title {color: #0b97e4; font-weight: 600; letter-spacing: 0.01em;}
