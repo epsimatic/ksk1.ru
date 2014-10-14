@@ -164,7 +164,7 @@ header .btn-group {margin-top: 10px;}
 }
 
 .weather-temp-sm .weather-icon,
-.weather-temp-sm .weather-label { display: hidden;}
+.weather-temp-sm .weather-label { display: none;}
 /*.weather-temp-lg {}*/
 
 .weather-block {
