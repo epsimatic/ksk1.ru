@@ -40,7 +40,7 @@ header .btn-link {margin-top: 7px; color: #333333;}
 
 header .btn-group {margin-top: 10px;}
 
-.header .yummies {margin: 0;}
+
 
 .row_header {
     background: url("http://ksk1.ru/img/spring_header.png") no-repeat center center;
@@ -554,8 +554,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 #header .yummies {margin-bottom: 0;}
 
-.page .sidebar .yummies {margin-bottom: 10px;}
-
 .news header#header {margin: 0;}
 
 .news .container > #header {margin: 0 -10px;}
@@ -566,15 +564,17 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .row-yu-half .yummies {max-height: none;}
 
-#text-16 .yu, #text-20 .yu {margin-bottom: 10px}
-
-
+.home .sidebar .yummies
+.page .sidebar .yummies,
+#text-16 .yu, #text-20 .yu,
 .page .row-yu-half,
 .single-post .row-yu-half {margin-bottom: 10px;}
 
 .sidebar .yu {padding: 0 !important;}
 
 .site-ob .sidebar .yummies {margin-bottom: 7px !important;}
+
+.header .yummies {margin: 0;}
 
 .cat__banner-block:hover img,
 .cat__banner-block:focus img,
