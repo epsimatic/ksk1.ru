@@ -15,8 +15,7 @@ if (is_nan($temp_c)) {
 }
 $icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
 if ($temp_c > 0) $sign = "+"; else $sign = "";
-$text = '<a class="weather-block header-line__weather-block" rel="nofollow" target="_blank"
-             style="opacity: 1;" title="По данным на ' .
+$text = '<div class="weather-block" title="По данным на ' .
     date("G.i", $parsed_json->{'current_observation'}->{'observation_epoch'}) . ':' . PHP_EOL
     . $temp . '
 Давление ' . $pressure . ' мм рт.ст.
@@ -24,10 +23,10 @@ $text = '<a class="weather-block header-line__weather-block" rel="nofollow" targ
 Влажность ' . $humidity . PHP_EOL
     . $parsed_json->{'current_observation'}->{'weather'} . '
 Щёлкните для прогноза">
-            <div class="weather-icon header-line__weather-block__icon"><img src="' . $icon_url . '"></div>
-            <div class="weather-temp header-line__logo__weather-block__temp">' . $sign . $temp_c . '</div>
-            <div class="header-line__weather-block__label">' . $parsed_json->{'current_observation'}->{'weather'} . '</div>
-        </a>';
+            <img class="weather-icon" src="' . $icon_url . '">
+            <div class="weather-temp">' . $sign . $temp_c . '</div>
+            <div class="weather-label">' . $parsed_json->{'current_observation'}->{'weather'} . '</div>
+        </div>';
 
 if (file_put_contents("weather.html", $text)) {
     echo "File weather.html saved";
