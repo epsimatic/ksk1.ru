@@ -41,6 +41,12 @@
         html: true,
         placement: "bottom"
     });
+    jQuery('.weather-temp-sm').popover({
+//        trigger: 'focus',
+        content: "<iframe src='http://m.pogoda.yandex.ru/20691/?mode=short' class='popover-weather-iframe'></iframe>",
+        html: true,
+        placement: "bottom"
+    });
 
     // поиск google по новостям или объявлениям
     (function () {
