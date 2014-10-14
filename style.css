@@ -137,7 +137,7 @@ header .btn-group {margin-top: 10px;}
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 44px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .weather-label {
@@ -166,7 +166,7 @@ header .btn-group {margin-top: 10px;}
 
 .weather-block {
     cursor: pointer;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: opacity 0.4s ease-in;
 }
 
