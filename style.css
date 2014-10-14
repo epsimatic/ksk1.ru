@@ -162,6 +162,9 @@ header .btn-group {margin-top: 10px;}
     bottom: 0;
     left: 37px;
 }
+
+.weather-temp-sm .weather-icon,
+.weather-temp-sm .weather-label { display: hidden;}
 /*.weather-temp-lg {}*/
 
 .weather-block {
