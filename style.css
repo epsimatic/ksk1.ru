@@ -163,8 +163,14 @@ header .btn-group {margin-top: 10px;}
     left: 37px;
 }
 
-.weather-temp-sm .weather-icon,
-.weather-temp-sm .weather-label { display: none;}
+/*.weather-temp-sm .weather-label,*/
+.weather-temp-sm .weather-icon {display: none;}
+
+.weather-temp-sm .weather-label {position: absolute; top: -35px; left: 54px; font-size: 81%; white-space: nowrap;}
+
+.weather-temp-sm .weather-temp {position: absolute; top: -47px; font-size: 27px; left: -7px;}
+
+
 /*.weather-temp-lg {}*/
 
 .weather-block {
@@ -2927,9 +2933,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #popover-shopping .popover {left: -58px !important;}
 
     #popover-shopping br {display:block;}
+
     .kaleidoscope__item {width: 20%;}
+
     .kaleidoscope__item__tooltip {height: 96px;}
-  .navbar-nav{ margin: 0 -10px;}
+
+    .navbar-nav{ margin: 0 -10px;}
+
+    .weather-temp-sm .weather-label {top: -44px; left: 39px; font-size: 61%;}
+
+    .weather-temp-sm .weather-temp {top: -52px; font-size: 19px; left: -2px;}
 }
 
 /* Стили для размера -md- */
@@ -2976,6 +2989,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .kaleidoscope__item__tooltip{height: 77px;}
 
     #popover-shopping .popover {left: -41px !important;}
+
+    .weather-temp-sm .weather-label {top: -41px; left: 74px;}
+
+    .weather-temp-sm .weather-temp {top: -50px; font-size: 19px; left: 32px;}
 }
 
 /* Стили для размера -lg- */
