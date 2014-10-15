@@ -322,7 +322,7 @@ div.block div.content .vsection:hover { background-color: white; }
 
 @media (min-width: 992px) {
     .panel-news .news-slide img,
-    .panel-news-list .list-group-item img {max-width: 120px;}
+    .panel-news-list .list-group-item img {max-width: 105px;}
 }
 
 @media (min-width: 1200px) {}
