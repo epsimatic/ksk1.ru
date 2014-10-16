@@ -30,6 +30,8 @@ header#header {margin-bottom: 0 !important;}
 
 .inset {padding-left: 0;}
 
+.temp .inset {padding-left: 10px; padding-right: 0;}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Шапка"> */
@@ -288,7 +290,7 @@ body.single-company .navbar,
     border-bottom-left-radius: 0;
 }
 
-.panel > .panel-heading h3 {color: #fff; font-weight: 300;}
+.panel > .panel-heading h2 {color: #fff; font-weight: 300;}
 
 .panel-footer a {color: #006048;}
 
@@ -298,13 +300,13 @@ body.single-company .navbar,
 
 .panel-footer > .btn-link:hover {text-decoration: none;}
 
-.col-main .panel > .panel-heading h3 {font-size: 27px; padding: 7px 0 9px 10px;}
+.col-main .panel > .panel-heading h2 {font-size: 27px; padding: 7px 0 9px 10px;}
 
-.col-mid .panel > .panel-heading h3 {font-size: 25px; padding: 3px 0 5px 7px;}
+.col-mid .panel > .panel-heading h2 {font-size: 25px; padding: 3px 0 5px 7px;}
 
-.sidebar .panel > .panel-heading h3 {font-size: 25px; padding: 1px 0 3px 5px;}
+.sidebar .panel > .panel-heading h2 {font-size: 25px; padding: 1px 0 3px 5px;}
 
-.inset .panel > .panel-heading h3 {font-size: 20px; font-weight: 400; padding: 0 0 2px 4px;}
+.inset .panel > .panel-heading h2 {font-size: 20px; font-weight: 400; padding: 0 0 2px 4px;}
 
 .panel-default > .panel-heading {background-color: #dce3e9; padding: 16px 22px;}
 
@@ -1273,7 +1275,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /*Панель «Мы в соцсетях»*/
 .panel-social .panel-heading {background-color: #dfe6eb; padding: 10px 15px 4px;}
 
-.panel-social .panel-heading h3 {color: #484860; padding: 0 0 7px !important;}
+.panel-social .panel-heading h2 {color: #484860; padding: 0 0 7px !important;}
 
 .panel-social .social-tabs {height: 0; position: relative; text-align: right; top: -43px;}
 
@@ -1408,7 +1410,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* <editor-fold desc="Панель «Ещё по теме»"> */
 .news-more > .panel-heading {background-color: #5D8EE0; display: none;}
 
-.news-more > .panel-heading h3 {font-size: 20px !important; font-weight: 400; padding: 3px 0 4px 5px !important;}
+.news-more > .panel-heading h2 {font-size: 20px !important; font-weight: 400; padding: 3px 0 4px 5px !important;}
 
 .news-more > .panel-body {padding: 0;}
 
