@@ -300,12 +300,16 @@ body.single-company .navbar,
 
 .panel-footer > .btn-link:hover {text-decoration: none;}
 
+.col-main .panel > .panel-heading h3,
 .col-main .panel > .panel-heading h2 {font-size: 27px; padding: 7px 0 9px 10px;}
 
+.col-mid .panel > .panel-heading h3,
 .col-mid .panel > .panel-heading h2 {font-size: 25px; padding: 3px 0 5px 7px;}
 
+.sidebar .panel > .panel-heading h3,
 .sidebar .panel > .panel-heading h2 {font-size: 25px; padding: 1px 0 3px 5px;}
 
+.inset .panel > .panel-heading h3
 .inset .panel > .panel-heading h2 {font-size: 20px; font-weight: 400; padding: 0 0 2px 4px;}
 
 .panel-default > .panel-heading {background-color: #dce3e9; padding: 16px 22px;}
@@ -904,7 +908,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
     border: none;
     margin-bottom: 10px;}
 
-.panel-news > .panel-heading h3 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important;
+.panel-news > .panel-heading h3,
+.panel-news > .panel-heading h2 {font-size: 21px !important; font-weight: 400 !important; padding: 3px 0 4px 4px !important;
     /*color: #1FA6F2;*/
 }
 
@@ -1410,6 +1415,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* <editor-fold desc="Панель «Ещё по теме»"> */
 .news-more > .panel-heading {background-color: #5D8EE0; display: none;}
 
+.news-more > .panel-heading h3,
 .news-more > .panel-heading h2 {font-size: 20px !important; font-weight: 400; padding: 3px 0 4px 5px !important;}
 
 .news-more > .panel-body {padding: 0;}
@@ -1434,6 +1440,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-comments-list .comment-list {background-color: #FFF;}
 
+.panel-comments-list > .panel-heading h3,
 .panel-comments-list > .panel-heading h2 {color: #777d82; font-size: 23px; padding: 7px 12px;}
 
 .panel-comments-list .btn-grey {margin-top: 3px;}
@@ -2424,6 +2431,7 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-read-more > .panel-body {padding: 0 15px;}
 
+.panel-read-more > .panel-heading h3,
 .panel-read-more > .panel-heading h2 {font-size: 21px; color: #777d82; padding: 7px 12px 9px;}
 
 .panel-read-more > .panel-body > .row > div {padding: 0;}
