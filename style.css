@@ -3100,6 +3100,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
     .weather-temp-sm .weather-temp {top: -50px; font-size: 19px; left: 32px;}
+
+    .yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 10px;}
+
+    .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
 }
 
 /* Стили для размера -lg- */
