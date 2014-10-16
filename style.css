@@ -967,9 +967,12 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .temp .panel-official .panel-heading h2,
 .temp .panel-comments .panel-heading h2,
 .temp .panel-news .panel-heading h2,
-.temp .panel-news-list .panel-heading h2 {font-size: 18px; font-weight: 700; text-align: center; margin: 0;}
+.temp .panel-news-list .panel-heading h2 {font-size: 18px; font-weight: 700 !important; text-align: center; margin: 0;}
 
 .temp .panel-news .news-slide {background-color: #ffe7e3; padding: 5px 10px 0;}
+
+.temp .news-slide .col-sm-4,
+.temp .news-slide .col-sm-4 h1 {text-align: center;}
 
 .temp .panel-news .news-slide img {max-width: 100%;}
 
