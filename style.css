@@ -984,6 +984,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .panel-news-list .list-group-item img {height: 100%; width: 100%;}
 
+.temp .panel-news-list .list-group-item > .row {margin-bottom: 0;}
+
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
 .temp .post-title,
