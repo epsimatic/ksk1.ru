@@ -980,7 +980,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .panel-news .news-slide img {max-width: 100%;}
 
-.temp .panel-news-list .list-group-item img {max-height: 120px; max-width: 92px; height: 100%;}
+.temp .panel-news-list .list-group-item {text-align: center;}
+
+.temp .panel-news-list .list-group-item img {height: 100%; width: 100%;}
 
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
