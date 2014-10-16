@@ -962,17 +962,22 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="ВРЕМЕННЫЕ СТИЛИ"> */
 
 /* <editor-fold desc="Временные стили для главной новости и новостной ленты"> */
+
+/*.temp .panel-week .panel-heading,
 .temp .panel-sendsms .panel-heading,
 .temp .panel-official .panel-heading,
 .temp .panel-comments .panel-heading,
 .temp .panel-news .panel-heading,
-.temp .panel-news-list .panel-heading  {background-color: #EDB194; padding: 7px 10px 9px; background-image: none; margin: 0;}
+.temp .panel-news-list .panel-heading*/
+.temp .panel .panel-heading  {background-color: #EDB194; padding: 7px 10px 9px; background-image: none; margin: 0;}
 
+/*.temp .panel-week .panel-heading h2,
 .temp .panel-sendsms .panel-heading h2,
 .temp .panel-official .panel-heading h2,
 .temp .panel-comments .panel-heading h2,
 .temp .panel-news .panel-heading h2,
-.temp .panel-news-list .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; text-align: center; margin: 0;}
+.temp .panel-news-list .panel-heading h2*/
+.temp .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; text-align: center; margin: 0;}
 
 .temp .panel-news .news-slide {background-color: #ffe7e3; padding: 5px 10px 0;}
 
