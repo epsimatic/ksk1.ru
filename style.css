@@ -290,6 +290,7 @@ body.single-company .navbar,
     border-bottom-left-radius: 0;
 }
 
+.panel-heading h3,
 .panel > .panel-heading h3,
 .panel > .panel-heading h2 {color: #fff; font-weight: 300;}
 
