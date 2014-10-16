@@ -595,6 +595,10 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .header .yummies {margin: 0;}
 
+.yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 5px;}
+
+.yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 5px;}
+
 .cat__banner-block:hover img,
 .cat__banner-block:focus img,
 #popover-shopping img:hover,
@@ -1040,6 +1044,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .temp .news-slide img {height: 100%; max-width: 100%}
 
 /* </editor-fold> */
+
+
 
 /*.news-slide .list-group-item {padding: 10px;}
 
