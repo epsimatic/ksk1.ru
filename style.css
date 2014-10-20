@@ -984,6 +984,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .panel-news .news-slide {background-color: #ffe7e3; padding: 5px 10px 0;}
 
+.temp .panel-congrats .panel-heading h3 {color: #ffffff; font-size: 20px; font-weight: 400 !important; text-align: left;}
+
 .temp .news-slide .col-sm-4,
 .temp .news-slide .col-sm-4 h1 {text-align: center;}
 
