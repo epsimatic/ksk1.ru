@@ -1215,7 +1215,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading {
-    background: #ff794c url(img/panel-congrats.png) no-repeat right;
+    background: #ff794c url(img/panel-congrats.png) no-repeat right !important;
     /*border-bottom: 3px solid #ff794c;*/
     background-size: contain;
 }
