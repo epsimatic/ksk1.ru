@@ -1011,6 +1011,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .temp .panel-news .row,
 .temp .panel-news-list .row {margin-bottom: 10px;}
 
+.temp .panel-news-list .panel-footer .row {margin-bottom: 0;}
+
 .temp .block .vsection .oneliner a,
 .temp .panel-sendsms a,
 .temp .panel-official a,
@@ -1052,11 +1054,11 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .post-comment-num {font-weight: 700;}
 
-.temp .post-more-video:before, .post-more-photo:before {font-family: FontAwesome; padding-right: 5px;}
+.temp  .post-image .post-more:before, .post-video .post-more:before {font-family: FontAwesome; padding-right: 5px;}
 
-.temp .post-more-video:before {content: "";}
+.temp .post-video .post-more:before {content: "";}
 
-.temp .post-more-photo:before {content: "";}
+.temp .post-image .post-more:before {content: "";}
 
 .temp .news-slide img {height: 100%; max-width: 100%}
 /* </editor-fold> */
