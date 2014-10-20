@@ -993,7 +993,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .panel-news-list .list-group-item img {height: 100%; width: 100%;}
 
-.temp .panel-news-list .list-group-item > .row {margin-bottom: 0;}
+.temp .panel-news-list .list-group-item > .row {margin-left: -10px; margin-right: -10px;}
 
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
@@ -1013,7 +1013,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .temp .panel-sendsms a,
 .temp .panel-official a,
 .temp .panel-news a,
-.temp .panel-news-list a {color: #433822; text-decoration: none;}
+.temp .panel-news-list a {color: #433822; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0);}
 
 .temp .block .vsection .oneliner a:hover,
 .temp .panel-sendsms a:hover,
