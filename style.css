@@ -394,7 +394,7 @@ footer h3 {
 .btn-home {
     padding: 0 20px 5px 17px;
     position: fixed;
-    bottom: 100px;
+    bottom: 80px;
     background-color: rgb(246, 246, 246);
     border-radius: 0 10px 10px 0;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.08);
@@ -403,6 +403,7 @@ footer h3 {
     transition: opacity 0.7s ease;
     visibility: hidden;
 }
+
 .btn-home.inactive {opacity: 0; cursor: default;}
 
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
@@ -1936,7 +1937,7 @@ a.super {background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15p
 a.super:hover,
 a.super:focus {background-color: #fbea2d;}
 
-.panel-notice a.super {background-color: #fffcdc;}
+.panel-notice a.super {background-color: #fffcdc !important;}
 
 .panel-notice a.super:hover,
 .panel-notice a.super:focus {background-color: #fef8b7;}
