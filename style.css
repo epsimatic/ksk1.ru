@@ -1608,12 +1608,12 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель комментариев"> */
-.panel-comments-list > .panel-heading {background-color: #f0f0f0;}
+.panel-comments-list > .panel-heading {background-color: #f0f0f0 !important;}
 
 .panel-comments-list .comment-list {background-color: #FFF;}
 
 .panel-comments-list > .panel-heading h3,
-.panel-comments-list > .panel-heading h2 {color: #777d82; font-size: 23px; padding: 7px 12px;}
+.panel-comments-list > .panel-heading h2 {color: #777d82 !important; font-size: 20px !important; padding: 7px 12px !important; text-align: left !important; font-weight: 400 !important;;}
 
 .panel-comments-list .btn-grey {margin-top: 3px;}
 
