@@ -1940,7 +1940,7 @@ a.super:focus {background-color: #fbea2d;}
 .panel-notice a.super {background-color: #fffcdc !important;}
 
 .panel-notice a.super:hover,
-.panel-notice a.super:focus {background-color: #fef8b7;}
+.panel-notice a.super:focus {background-color: #fef8b7 !important;}
 
 .super .ob-date {display: none;}
 
