@@ -1303,6 +1303,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .panel-notice .tooltip.left .tooltip-arrow {border-left-color: #FDFDFD;}
 
+.panel-notice a.list-group-item:hover,
+.panel-notice a.list-group-item:focus {background-color: #f6f6f6;}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Голосование»"> */
