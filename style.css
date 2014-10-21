@@ -1289,7 +1289,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .panel-notice .list-group {padding-bottom: 0; margin-bottom: 0}
 
-.panel-notice a.list-group-item {text-decoration: none; /*margin-bottom: 3px;*/}
+.panel-notice a.list-group-item {text-decoration: none; border-bottom: 1px solid transparent !important; /*margin-bottom: 3px;*/}
 
 .panel-notice .textwidget > div {background-color: #F9FAFB; padding: 0;}
 
