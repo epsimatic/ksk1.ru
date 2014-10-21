@@ -1055,7 +1055,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .post-comment-num {font-weight: 700;}
 
-.temp  .post-image .post-more:before, .post-video .post-more:before {font-family: FontAwesome; padding-right: 5px;}
+.temp .post-image .post-more:before, .post-video .post-more:before {font-family: FontAwesome; padding-right: 6px; padding-left: 6px;}
+
+.temp .post-actions .post-more aside {display: inline-block;}
 
 .temp .post-video .post-more:before {content: "";}
 
@@ -1087,8 +1089,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .temp ul#sendsms {display: block; padding: 0; text-align: center;}
 
 .temp ul#sendsms li {display: inline-block; min-height: 50px; vertical-align: top;}
-
-
 
 .temp .newstitle {font-size: 24px; padding: 5px 10px; margin-bottom: 10px;}
 
