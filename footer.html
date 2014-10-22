@@ -1,17 +1,6 @@
 <!--Общий подвал-->
 <script type="application/javascript">
 
-    // Заполняем user-panel содержимым user-panel-content
-    /* (function () {
-        var user_panel_content = document.getElementById('user-panel-content');
-        var user_panel = document.getElementById('user-panel');
-        if (user_panel && user_panel_content) {
-            user_panel.innerHTML = user_panel_content.innerHTML;
-//            user_panel_content.remove();
-//            this.parentElement.removeChild(this);
-        }
-     })();*/
-
     // TabDrop
 
     if (window['operamini']) {
@@ -150,79 +139,11 @@
     </div>
 </footer>
 
-<!-- Gismeteo informer -->
 
-<!--
-<div id="gsInformerID-Rreu7g47" class="gsInformer" style="display: none">
-    <div class="gsIContent">
-        <div id="cityLink">
-            <a href="http://www.gismeteo.ru/city/daily/4515/">Погода в Красноуфимске</a>
-        </div>
-        <div class="gsLinks" style="width: 100%; overflow: hidden;">
-            <table>
-                <tr>
-                    <td>
-                        <div class="leftCol"><a href="http://www.gismeteo.ru">
-                            <span>Gismeteo</span></a></div>
-                        <div class="rightCol">
-                            <a href="http://www.gismeteo.ru/city/weekly/4515/">Прогноз на 2 недели</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</div>
--->
 
 
 <script>
-    /*var generat = jQuery("meta[name='generator']").attr("content");
-    if (generat && generat.substring(0, 9) !== "WordPress") {
-        var gismeteo = document.createElement('script');
-        gismeteo.type = 'text/javascript';
-        gismeteo.async = true;
-        var url = document.location.href;
-        if (url.match(/ob/)) {
-            jQuery(".gsInformer").attr('id', 'gsInformerID-tCEw6ptm2hM8is');
-            gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=tCEw6ptm2hM8is';
-        } else {
 
-            gismeteo.src = 'http://www.gismeteo.ru/ajax/getInformer/?hash=Rreu7g47';
-        }
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gismeteo, s);
-     }*/
-    /*  jQuery(window).load(function () {
-        // для вордпресс работает скрипт на php
-        if (generat && generat.substring(0, 9) === "WordPress") {
-            return;
-        }
-
-
-        // Парсим погодный виджет
-
-//        var conditions = jQuery(".gsAddInfo").text(); // Пасмурно
-        //TODO: Загружать значки не с Гисметео
-        var iconlink = jQuery('.gsWeatherIcon img').attr('src'); // http://www.gismeteo.ru/static/images/informer2/icons/clip_art/d3.png
-//        var add_info = jQuery(".gsAddInfo3").text(); // 2м/с, сз 751 мм рт. ст. 91% влажн.
-        var temp_array = jQuery(".gsTemp").text().split('°');
-        var temp = parseInt(temp_array[0]); // 5
-
-     if (!iconlink *//* Если нет ссылки на значок *//*) {
-            console.log("Ошибка разбора погоды (нет значка)");
-     } else if (isNaN(temp)  *//* Температура -- не число *//*) {
-            console.log("Ошибка разбора погоды (нет температуры)");
-        } else {
-            setCookie('weather_icon', iconlink, 1800000);
-                setCookie('weather_text', temp, 1800000);
-                if(temp>0) temp = "+"+temp;
-                jQuery('.weather-icon').css("background-image", "url(" + iconlink + ")");
-                jQuery('.weather-temp').text(temp);
-            jQuery('.weather-block').css('opacity', 1);
-        }
-
-     });*/
 
     //  Openstat
     var openstat = { counter: 2173092, image: 5041, next: openstat };
