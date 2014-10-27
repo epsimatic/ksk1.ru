@@ -15,7 +15,15 @@ if (is_nan($temp_c)) {
 }
 $icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
 if ($temp_c > 0) $sign = "+"; else $sign = "";
-$text = '<div class="weather-block" title="По данным на ' .
+$week = array(
+    "Sunday" => "воскресенье",
+    "Monday" => "понедельник",
+    "Tuesday" => "вторник",
+    "Wednesday" => "среда",
+    "Thursday" => "четверг",
+    "Friday" => "пятница",
+    "Saturday" => "суббота");
+$text = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_json->{'current_observation'}->{'observation_epoch'})] . " в " .
     date("G.i", $parsed_json->{'current_observation'}->{'observation_epoch'}) . ':' . PHP_EOL
     . $temp . '
 Давление ' . $pressure . ' мм рт.ст.
