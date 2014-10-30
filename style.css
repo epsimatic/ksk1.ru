@@ -1119,6 +1119,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .news .sidebar .panel > .panel-heading h3,
 .news .sidebar .panel > .panel-heading h2 {padding: 3px 0; font-size: 19px;}
 
+.news .page {padding: 0 10px;}
+
 .news .footer {margin-top: 20px;}
 
 .news .footer .meta {font-size: 120%; font-style: italic; margin-bottom: 8px; text-align: left; color: #4d5359; line-height: 1.2em;}
