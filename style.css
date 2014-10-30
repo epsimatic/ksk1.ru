@@ -1116,6 +1116,19 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
+.news .sidebar .panel > .panel-heading h3,
+.news .sidebar .panel > .panel-heading h2 {padding: 3px 0; font-size: 19px;}
+
+.news .page .footer {margin-top: 20px;}
+
+.news .page .footer .meta {font-size: 120%; font-style: italic; margin-bottom: 8px; text-align: left; color: #4d5359; line-height: 1.2em;}
+
+.news .page .footer .meta em {font-style: inherit; font-weight: 600; margin-left: 0.5em;}
+
+.news .page .footer .orphus {background-color: #f5f5f5; font-size: 85%; padding: 5px 10px 6px; color: #666;}
+
+.news .page .footer .orphus .badge {background-color: #d5d5d5; color: #333; font-weight: 400;}
+
 
 /* </editor-fold> */
 
