@@ -2535,15 +2535,39 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Оформление списка событий */
-.panel-event-today .panel-heading h1 {background-color: #ff6372; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+.panel-event .panel-heading,
+.panel-event .panel-body {padding: 0;}
 
-.panel-event-soon .panel-heading h1 {background-color: #1FA6F2; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+.panel-event .panel-heading h1 {color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin: 0;}
+
+.panel-event-today .panel-heading h1 {background-color: #ff6372;}
+
+.panel-event-soon .panel-heading h1 {background-color: #1FA6F2;}
 
 .panel-event .panel-date {background-color: #F7F7F7; color: #3397DB;}
 
 .panel-event .panel-date strong {font-weight: 600;}
 
 .panel-event .event-thumb img {width: 100%;}
+
+.panel-event .event-heading {font-size: 21px;}
+
+.panel-event .event-heading .event-time {color: #666666; font-weight: 300;}
+
+.panel-event .event-heading a {color: #185481;}
+
+.panel-event .event-place,
+.panel-event .event-price {color: #888888;}
+
+.panel-event .event-place {font-size: 14px;}
+
+.panel-event .event-price {font-size: 13px;}
+
+.panel-event .event-place-text {color: #0080C7;}
+
+.panel-event .event-price-number {color: #555555;}
+
+
 
 
 /* Страница фильма */
