@@ -2499,6 +2499,8 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 /* Оформление фильмов */
 .movie-brief .movie-poster > a {position:relative;}
 
+.movie-brief .movie-poster > a .certification {background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: -50px; color: #333333; font-size: 12px; left: 0; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff;}
+
 .movie-brief .movie-poster {padding-right: 0;}
 
 .movie-poster img {max-width: 100%}
@@ -2533,9 +2535,9 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Оформление списка событий */
-.panel-event-today .page-heading h2 {background-color: #ff6372; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+.panel-event-today .panel-heading h1 {background-color: #ff6372; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
 
-.panel-event-soon .page-heading h2 {background-color: #1FA6F2; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+.panel-event-soon .panel-heading h1 {background-color: #1FA6F2; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
 
 .panel-event .panel-date {background-color: #F7F7F7; color: #3397DB;}
 
