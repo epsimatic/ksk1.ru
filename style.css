@@ -2497,9 +2497,11 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Оформление фильмов */
+.panel-event .event-thumb,
 .movie-brief .movie-poster > a {position:relative;}
 
-.movie-brief .movie-poster > a .certification {background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: -50px; color: #333333; font-size: 12px; left: 0; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff;}
+.movie-brief .movie-poster > a .certification,
+.panel-event .event-thumb .event-certification {background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: -50px; color: #333333; font-size: 12px; left: 0; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff;}
 
 .movie-brief .movie-poster {padding-right: 0;}
 
@@ -2538,13 +2540,13 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 .panel-event .panel-heading,
 .panel-event .panel-body {padding: 0;}
 
-.panel-event .panel-heading h1 {color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin: 0;}
+.panel-event .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 300; margin: 0;}
 
 .panel-event-today .panel-heading h1 {background-color: #ff6372;}
 
 .panel-event-soon .panel-heading h1 {background-color: #1FA6F2;}
 
-.panel-event .panel-date {background-color: #F7F7F7; color: #3397DB;}
+.panel-event .panel-date {background-color: #f4f4f4; color: #3397db; font-size: 18px; margin-bottom: 0; padding: 12px 20px 15px;}
 
 .panel-event .panel-date strong {font-weight: 600;}
 
@@ -2552,12 +2554,14 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-event .event-heading {font-size: 21px;}
 
+.panel-event .event-brief {margin: 0; padding: 15px 5px; border-bottom: 1px solid #f4f4f4;}
+
 .panel-event .event-heading .event-time {color: #666666; font-weight: 300;}
 
 .panel-event .event-heading a {color: #185481;}
 
 .panel-event .event-place,
-.panel-event .event-price {color: #888888;}
+.panel-event .event-price {color: #888888; font-weight: 400;}
 
 .panel-event .event-place {font-size: 14px;}
 
@@ -2566,6 +2570,8 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 .panel-event .event-place-text {color: #0080C7;}
 
 .panel-event .event-price-number {color: #555555;}
+
+.panel-event .event-text {margin-top: 10px;}
 
 
 
