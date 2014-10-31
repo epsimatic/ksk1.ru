@@ -2486,7 +2486,7 @@ ul.list-days > li:nth-child(1) {padding-right: 10px;}
 
 ul.list-days > li:nth-child(2) {padding-left: 10px;}
 
-ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 16px;}
+ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 28px; font-weight: 300;}
 
 ul.list-days > li.active > a {background-color: #ee6243;}
 
@@ -2546,15 +2546,19 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-event-soon .panel-heading h1 {background-color: #1FA6F2;}
 
+.panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
+
 .panel-event .panel-date {background-color: #f4f4f4; color: #3397db; font-size: 18px; margin-bottom: 0; padding: 12px 20px 15px;}
 
 .panel-event .panel-date strong {font-weight: 600;}
+
+.panel-event .event-thumb {padding-left: 0;}
 
 .panel-event .event-thumb img {width: 100%;}
 
 .panel-event .event-heading {font-size: 21px;}
 
-.panel-event .event-brief {margin: 0; padding: 15px 5px; border-bottom: 1px solid #f4f4f4;}
+.panel-event .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
 
 .panel-event .event-heading .event-time {color: #666666; font-weight: 300;}
 
