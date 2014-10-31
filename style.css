@@ -424,6 +424,8 @@ body.alt .show-alt.show-alt.show-alt { display: block !important; position: stat
 
 .col-special img {max-width: 100%;}
 
+.col-special {padding: 0 5px;}
+
 .badge {
     background-color: #909293;
     border-radius: 0.45em;
@@ -2495,9 +2497,9 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Оформление фильмов */
-.movie-brief .movie-poster > a > img {}
+.movie-brief .movie-poster > a {position:relative;}
 
-.movie-poster {padding-right: 0;}
+.movie-brief .movie-poster {padding-right: 0;}
 
 .movie-poster img {max-width: 100%}
 
@@ -2506,9 +2508,11 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .movie-brief .movie-info a:hover > h4.movie-title {color: #0080c7;}
 
-/*.movie-brief .movie-info .production-flags {}*/
+.movie-brief .movie-info .production-flag {padding-right: 7px;}
 
 .movie-brief .row {margin-bottom: 10px !important;}
+
+.movie-brief .movie-info .genres {line-height: 1.2em;}
 
 .movie-brief .movie-info .genres,
 .movie-brief .movie-info .genre {color: #999999; font-size: 12px;}
@@ -2529,9 +2533,15 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 
 /* Оформление списка событий */
-.page-id-3975 header.page-header {background-color: #ff6372; margin-bottom: 10px; padding: 15px 25px;}
+.panel-event-today .page-heading h2 {background-color: #ff6372; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
 
-.page-id-3975 header.page-header > h2.page-title {color: #ffffff; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+.panel-event-soon .page-heading h2 {background-color: #1FA6F2; color: #ffffff; padding: 15px 25px; font-size: 27px; font-weight: 300; margin-bottom: 0;}
+
+.panel-event .panel-date {background-color: #F7F7F7; color: #3397DB;}
+
+.panel-event .panel-date strong {font-weight: 600;}
+
+.panel-event .event-thumb img {width: 100%;}
 
 
 /* Страница фильма */
