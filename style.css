@@ -2548,7 +2548,7 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
-.panel-event .panel-date {background-color: #f4f4f4; color: #3397db; font-size: 18px; margin-bottom: 0; padding: 12px 20px 15px;}
+.panel-event .panel-date {background-color: #f4f4f4; color: #3397db; font-size: 18px; margin-bottom: 0; padding: 12px 20px 15px; border-top: 1px solid #a5dbfa;}
 
 .panel-event .panel-date strong {font-weight: 600;}
 
@@ -2560,9 +2560,9 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-event .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
 
-.panel-event .event-heading .event-time {color: #666666; font-weight: 300;}
+.panel-event .event-heading .event-time {color: #888888; font-weight: 400;}
 
-.panel-event .event-heading a {color: #185481;}
+.panel-event .event-heading a {color: #0081d1; font-weight: 600;}
 
 .panel-event .event-place,
 .panel-event .event-price {color: #888888; font-weight: 400;}
@@ -2571,11 +2571,11 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .panel-event .event-price {font-size: 13px;}
 
-.panel-event .event-place-text {color: #0080C7;}
+.panel-event .event-place-text {color: #fb700d;}
 
 .panel-event .event-price-number {color: #555555;}
 
-.panel-event .event-text {margin-top: 10px;}
+.panel-event .event-text {margin-top: 10px; color: #525252}
 
 
 
