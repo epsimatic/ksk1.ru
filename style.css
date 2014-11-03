@@ -2486,14 +2486,14 @@ ul.list-days > li:nth-child(1) {padding-right: 10px;}
 
 ul.list-days > li:nth-child(2) {padding-left: 10px;}
 
-ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 28px; font-weight: 300;}
+ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 28px; font-weight: 300; padding: 10px 20px}
 
-ul.list-days > li.active > a {background-color: #ee6243; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; padding: 10px 20px;}
+ul.list-days > li.active > a {background-color: #fb512a; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);}
 
 ul.list-days > li.active > a:hover,
 ul.list-days > li.active > a:focus,
 ul.list-days > li > a:hover,
-ul.list-days > li > a:focus {background-color: #ff6e4a; transition: background-color ease-in 0.1s;}
+ul.list-days > li > a:focus {background-color: #ff6a45; transition: background-color 0.1s ease-in-out 0s}
 
 
 /* Оформление фильмов */
@@ -2507,9 +2507,11 @@ ul.list-days > li > a:focus {background-color: #ff6e4a; transition: background-c
 
 .movie-poster img {max-width: 100%}
 
+.panel-event .event-heading a,
 .tax-movie #movie-col-right h2,
 .movie-brief .movie-info a > h4.movie-title {color: #0b97e4; font-weight: 600; letter-spacing: 0.01em;}
 
+.panel-event .event-heading a:hover,
 .movie-brief .movie-info a:hover > h4.movie-title {color: #0080c7;}
 
 .movie-brief .movie-info .production-flag {padding-right: 2px;}
@@ -2561,8 +2563,6 @@ ul.list-days > li > a:focus {background-color: #ff6e4a; transition: background-c
 .panel-event .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
 
 .panel-event .event-heading .event-time {color: #888888; font-weight: 400;}
-
-.panel-event .event-heading a {color: #0081d1; font-weight: 600;}
 
 .panel-event .event-place,
 .panel-event .event-price {color: #888888; font-weight: 400;}
