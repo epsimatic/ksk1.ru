@@ -2518,8 +2518,6 @@ ul.list-days > li > a:focus {background-color: #ff6a45; transition: background-c
 
 .movie-brief .row {margin-bottom: 10px !important;}
 
-.movie-brief .movie-info .genres {line-height: 1.2em;}
-
 .movie-brief .movie-info .genres,
 .movie-brief .movie-info .genre {color: #999999; font-size: 12px; padding-left: 3px;}
 
@@ -2587,7 +2585,7 @@ ul.list-days > li > a:focus {background-color: #ff6a45; transition: background-c
 
 .panel-event .event-price-number {color: #555555;}
 
-.panel-event .event-text {margin-top: 10px; color: #525252}
+.panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em;}
 
 
 
