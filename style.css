@@ -2538,6 +2538,18 @@ ul.list-days > li > a:focus {background-color: #ff6a45; transition: background-c
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
 
+
+/* Страница фильма */
+.main-content-inner .release_date {padding-right: 5px;
+}
+.main-content-inner .genres {padding-left: 4px;}
+
+.main-content-inner .kinopoisk-link {padding-left: 4px;}
+
+#movie-col-left .btn-group {margin-top: 20px;}
+
+
+
 /* Оформление списка событий */
 .panel-event .panel-heading,
 .panel-event .panel-body {padding: 0;}
