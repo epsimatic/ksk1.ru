@@ -1563,12 +1563,15 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .entry-meta .meta-value {font-weight: 600;}
 
+.single .panel-footer.post-info,
 .page .panel-footer.post-info,
 .panel-news-body .panel-footer.post-info {background-color:#eee; bottom: 0; height: auto; margin: 0; padding: 0;}
 
+.single .panel-footer.post-info > *,
 .page .panel-footer.post-info > *,
 .panel-news-body .panel-footer.post-info > * {background-color: transparent;}
 
+.single .panel-footer.post-info span,
 .page .panel-footer.post-info span,
 .panel-news-body .panel-footer.post-info span {display: inline;}
 
@@ -1578,21 +1581,27 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-footer.post-info .post-info-cats a:hover {text-decoration: underline;}
 
+.single .panel-footer.post-info .post-info-share,
 .page .panel-footer.post-info .post-info-share,
 .panel-news-body .panel-footer.post-info .post-info-share {background-color:#2B67B2; text-align: center;}
 
+.single .panel-footer.post-info .post-info-share a,
 .page .panel-footer.post-info .post-info-share a,
 .panel-news-body .panel-footer.post-info .post-info-share a {color: #fff;}
 
+.single .panel-footer.post-info .post-info-share a:before,
 .page .panel-footer.post-info .post-info-share a:before,
 .panel-news-body .panel-footer.post-info .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
 
+.single .panel-footer.post-info .post-info-share .b-share,
 .page .panel-footer.post-info .post-info-share .b-share,
 .panel-news-body .panel-footer.post-info .post-info-share .b-share {font: inherit; padding-bottom: 4px !important;}
 
+.single .panel-footer.post-info .post-info-share .b-share .b-share__handle,
 .page .panel-footer.post-info .post-info-share .b-share .b-share__handle,
 .panel-news-body .panel-footer.post-info .post-info-share .b-share .b-share__handle {float: none;}
 
+.single .panel-footer.post-info .post-info-share .b-share .b-share__handle:hover .b-share__text,
 .page .panel-footer.post-info .post-info-share .b-share .b-share__handle:hover .b-share__text,
 .panel-news-body .panel-footer.post-info .post-info-share .b-share a.b-share__handle:hover .b-share__text {color: #fff;}
 
@@ -2585,7 +2594,7 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 .panel-event .event-price-number {color: #555555;}
 
-.panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em;}
+.panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
 
 
 
