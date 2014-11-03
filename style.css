@@ -2478,7 +2478,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* <editor-fold desc="стили Афиши"> */
 
 /* Панель переключения дней */
-ul.list-days {background-color: #FF6F4D; border-radius: 0; margin-bottom: 10px;}
+ul.list-days {background-color: #ff613c; border-radius: 0; margin-bottom: 10px;}
 
 ul.list-days > li {padding: 10px 0;}
 
@@ -2488,12 +2488,12 @@ ul.list-days > li:nth-child(2) {padding-left: 10px;}
 
 ul.list-days > li > a {border-radius: 3px !important; color: #ffffff; border-color: #D7583C; font-size: 28px; font-weight: 300;}
 
-ul.list-days > li.active > a {background-color: #ee6243;}
+ul.list-days > li.active > a {background-color: #ee6243; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; padding: 10px 20px;}
 
 ul.list-days > li.active > a:hover,
 ul.list-days > li.active > a:focus,
 ul.list-days > li > a:hover,
-ul.list-days > li > a:focus {background-color: #EE6243;}
+ul.list-days > li > a:focus {background-color: #ff6e4a; transition: background-color ease-in 0.1s;}
 
 
 /* Оформление фильмов */
@@ -2512,14 +2512,14 @@ ul.list-days > li > a:focus {background-color: #EE6243;}
 
 .movie-brief .movie-info a:hover > h4.movie-title {color: #0080c7;}
 
-.movie-brief .movie-info .production-flag {padding-right: 7px;}
+.movie-brief .movie-info .production-flag {padding-right: 2px;}
 
 .movie-brief .row {margin-bottom: 10px !important;}
 
 .movie-brief .movie-info .genres {line-height: 1.2em;}
 
 .movie-brief .movie-info .genres,
-.movie-brief .movie-info .genre {color: #999999; font-size: 12px;}
+.movie-brief .movie-info .genre {color: #999999; font-size: 12px; padding-left: 3px;}
 
 .star-rating {display: block;}
 
