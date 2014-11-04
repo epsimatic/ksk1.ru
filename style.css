@@ -2497,7 +2497,10 @@ ul.list-days > li:nth-child(2) {padding-left: 10px;}
 
 ul.list-days > li > a {border-radius: 3px !important; color: #80301e; border-color: #D7583C; font-size: 28px; font-weight: 300; padding: 10px 15px 13px;}
 
-ul.list-days > li.active > a {background-color: #fb512a; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);}
+ul.list-days > li.active > a {
+    background-color: #ff613c;
+    /*background-color: #fb512a; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);}
 
 ul.list-days > li.active > a:hover,
 ul.list-days > li.active > a:focus,
