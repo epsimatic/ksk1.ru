@@ -48,8 +48,6 @@
             border: 1px solid red;
         }
 
-        #foo:hover {height: auto !important; overflow-y: visible !important;}
-
         #cart-bar.row {margin: 0;}
 
         #cart-bar {background-color: #fdd49c; display: flex; padding: 10px;}
@@ -90,27 +88,14 @@
 
         .site-eda .dishes-cat-recommend {background-color: #fbf0c6;}
 
-        /*.site-eda .dishes-cat-recommend:after {position: relative; top: 0; background-image: url('img/FAV.png'); height: 80px; width: 61px;}*/
+        .site-eda .dishes-heading {border-top: 2px dashed #ff6347; color: #ff6347; font-size: 40px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 20px; padding: 20px 50px 12px; text-transform: uppercase;}
 
         .site-eda .dishes-cat-recommend .dishes-heading {border-color: #f74541; color: #f74541; padding-left: 100px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);}
 
-        .site-eda .dishes-heading {border-top: 2px dashed #ff6347; color: #ff6347; font-size: 40px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 20px; padding: 20px 50px 12px; text-transform: uppercase;}
-
-
-
         .site-eda .dishes {align-items: stretch; display: flex; flex-flow: row wrap; justify-content: flex-start; margin: 0 0 40px;}
 
-
-
-        /*-sm-*/
+        .site-eda .dishes.dishes-col-6 .dish-container,
         .site-eda .dishes .dish-container {width: 49%; margin: 0 0.5% 20px; position: relative; height: 300px;}
-
-
-
-        .site-eda .dishes.dishes-col-5 .dish-container {width: 19%; margin: 0 0.5% 20px; height: 330px;}
-
-        .site-eda .dishes.dishes-col-6 .dish-container {width: 16%; margin: 0 0.33333333% 20px; height: 305px;}
-
 
         .site-eda .dishes .dish-container .cat-label {position: absolute; left: 8px; top: -4px; width: 40px; height: auto !important;}
 
@@ -118,17 +103,15 @@
 
         .site-eda .dishes .dish img {max-width: 100%; max-height: 80px; display: block; margin: 0 auto;}
 
-        .site-eda .dishes.dishes-col-5 .dish img {height: 121px;}
-
         .site-eda .dishes.dishes-col-6 .dish img {height: 98px;}
 
         .site-eda .dishes .dish .item-stuff {display: flex; flex-flow: column nowrap; justify-content: space-between; height: 210px;}
 
         .site-eda .dishes.dishes-col-6 .dish .item-stuff {height: 205px}
 
-        .site-eda .dishes .dish h5.item-name {font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; text-align: center; overflow: hidden; height: 2.8em;}
+        .site-eda .dishes .dish h3.item-name {font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; text-align: center; overflow: hidden; height: 2.8em;}
 
-        .site-eda .dishes.dishes-col-6 .dish h5.item-name {text-align: center;}
+        .site-eda .dishes.dishes-col-6 .dish h3.item-name {text-align: center;}
 
         .site-eda .dishes .dish p.item-description {font-size: 0.75em; line-height: 1.2em; color: rgb(153, 153, 153); overflow: hidden; text-overflow: ellipsis; height: 0; margin-bottom: 0;}
 
@@ -138,13 +121,9 @@
 
         .site-eda .dishes .dish .order-controls {padding-bottom: 15px;}
 
-        /*.site-eda .dishes.dishes-col-6 .dish .order-controls {padding-bottom: 0;}*/
+        .site-eda .dishes .dish .order-controls .order-row {align-items: center; display: flex; flex-direction: column; justify-content: space-between;}
 
-        .site-eda .dishes .dish .order-controls .order-row,
-        .site-eda .dishes .dish .order-controls .amount-row {align-items: center; display: flex; flex-direction: column; justify-content: space-between;}
-
-        .site-eda .dishes.dishes-col-6 .dish .order-controls .order-row,
-        .site-eda .dishes.dishes-col-6 .dish .order-controls .amount-row {flex-direction: column;}
+        .site-eda .dishes.dishes-col-6 .dish .order-controls .order-row {flex-direction: column;}
 
         .site-eda .dishes .dish .order-controls .amount input {width: 34px; display: inline; padding: 6px 0; text-align: center;}
 
@@ -152,7 +131,7 @@
 
         .site-eda .dishes .dish .order-controls .amount .fa-minus {padding-right: 5px;}
 
-        .site-eda .dishes.dishes-col-6 .dish .order-controls .amount .fa-minus {padding-right: 0;}
+        .site-eda .dishes.dishes-col-6 .dish .order-controls .amount .fa-minus {padding-right: 2px;}
 
         .site-eda .dishes .dish .order-controls .portion-type {color: rgb(102, 102, 102); border-bottom: 1px dashed rgb(187, 187, 187); margin-right: 0; margin-bottom: 10px;}
 
@@ -166,31 +145,41 @@
 
         .site-eda .dishes .dish .order-controls .price {color: #555; padding-left: 10px; padding-right: 10px; margin-bottom: 12px;}
 
-        .site-eda .dishes.dishes-col-6 .dish .order-controls .price {margin-bottom: 5px;}
-
-        /*.site-eda .dishes.dishes-col-6 .dish .order-controls .btn-action {margin-bottom: 5px;}*/
+        .site-eda .dishes.dishes-col-6 .dish .order-controls .price {margin-bottom: 7px;}
 
         /* Стили для размера -sm- */
         @media (min-width: 768px) {
             .site-eda .dishes .dish-container {height: 360px;}
 
+            .site-eda .dishes.dishes-col-6 .dish-container {width: 32%; margin: 0 0.66666666% 20px; height: 340px;}
+
             .site-eda .dishes .dish img {max-height: 180px;}
 
-            .site-eda .dishes .dish h5.item-name {text-align: left;}
+            .site-eda .dishes.dishes-col-6 .dish img {max-height: 98px;}
+
+            .site-eda .dishes .dish h3.item-name {text-align: left;}
 
             .site-eda .dishes .dish .item-stuff {display: flex; flex-flow: column nowrap; justify-content: space-between; height: 165px;}
 
+            .site-eda .dishes.dishes-col-6 .dish .item-stuff {height: 230px;}
+
             .site-eda .dishes .dish .order-controls .amount {margin-bottom: 0;}
+
+            .site-eda .dishes.dishes-col-6 .dish .order-controls .amount {margin-bottom: 10px;}
 
             .site-eda .dishes .dish p.item-description {height: 1.2em; margin-bottom: 10px;}
 
-            .site-eda .dishes .dish .order-controls .order-row,
-            .site-eda .dishes .dish .order-controls .amount-row {flex-direction: row;}
+            .site-eda .dishes.dishes-col-6 .dish p.item-description {margin: 0;}
 
+            .site-eda .dishes .dish .order-controls .order-row {flex-direction: row;}
 
             .site-eda .dishes .dish .order-controls hr {margin-bottom: 15px; margin-top: 10px; display: block;}
 
+            .site-eda .dishes.dishes-col-6 .order-controls hr {margin-top: 2px;}
+
             .site-eda .dishes .dish .order-controls .portion-type {margin-right: 7px; margin-bottom: 0;}
+
+            .site-eda .dishes.dishes-col-6 .dish .order-controls .portion-type {margin-top: 0; margin-bottom: 10px;}
 
             .site-eda .dishes .dish .order-controls .price {margin-bottom: 0;}
         }
@@ -201,15 +190,25 @@
 
             .site-eda .dishes .dish img {max-height: 120px;}
 
+            .site-eda .dishes.dishes-col-6 .dish img {max-height: 78px;}
+
             .site-eda .dishes .dish .item-stuff {height: 197px;}
 
+            .site-eda .dishes.dishes-col-6 .dish .item-stuff {height: 215px;}
+
             .site-eda .dishes .dish-container {width: 24%; margin: 0 0.5% 20px; height: 332px;}
+
+            .site-eda .dishes.dishes-col-6 .dish-container {width: 16%; margin: 0 0.33333333% 20px; height: 305px;}
 
             .site-eda .dishes .dish:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); position: absolute; z-index: 2;}
 
             .site-eda .dishes .dish:hover .item-stuff {height: 282px;}
 
+            .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 345px;}
+
             .site-eda .dishes .dish .order-controls .portion-type {margin-left: 0; padding-left: 0;}
+
+            .site-eda .dishes.dishes-col-6 .dish:hover p.item-description {margin-bottom: 10px;}
         }
 
         /* Стили для размера -lg- */
@@ -217,6 +216,8 @@
             .site-eda .dishes .dish img {max-height: 161px;}
 
             .site-eda .dishes .dish-container {height: 374px;}
+
+            .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 325px;}
         }
 
 
@@ -592,22 +593,22 @@
 
                     <div class="dishes-cat dishes-cat-recommend">
                         <img src="img/pizza.png" class="cat-label">
-                        <h3 class="dishes-heading">Мы рекомендуем</h3>
+                        <h2 class="dishes-heading">Мы рекомендуем</h2>
                         <div class="dishes">
                             <div class="dish-container">
                                 <div class="dish">
                                     <img src="img\mario\01-margarita.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             <a href="#">
                                                 Маргарита
                                             </a>
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Оливки, маслины, томатный соус и сыр "Моцарелла" украшенные колечками из помидор
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30см / 590см
                                                 </span>
@@ -631,16 +632,16 @@
                                 <div class="dish">
                                     <img src="img\mario\01-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             <a href="#">
                                                 С огурцом
                                             </a>
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, огурец
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 142 г
                                                 </span>
@@ -664,16 +665,16 @@
                                 <div class="dish">
                                     <img src="img\mario\29-pesto.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             <a href="#">
                                                 Пицца "Песто"
                                             </a>
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Соус "Песто", сметана, моцарелла, говядина отварная, перец болгарский, пармезан, маслины
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 610 г
                                                 </span>
@@ -697,16 +698,16 @@
                                 <div class="dish">
                                     <img src="img\mario\37.png">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             <a href="#">
                                                 Кесадилья с курицей
                                             </a>
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Лепешка, курица, сливочно-огуречный соус
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     350/50 г
                                                 </span>
@@ -730,20 +731,20 @@
 
                     <div class="dishes-cat">
                         <h3 class="dishes-heading">Пицца</h3>
-                        <div class="dishes dishes-col-5">
+                        <div class="dishes dishes-col-6">
                             <div class="dish-container">
                                 <div class="dish">
                                     <img src="img/pizza.png" class="cat-label">
                                     <img src="img\mario\01-margarita.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Маргарита
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Оливки, маслины, томатный соус и сыр "Моцарелла" украшенные колечками из помидор
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30см / 590см
                                                 </span>
@@ -767,14 +768,14 @@
                                 <div class="dish">
                                     <img src="img\mario\02-vegetariano.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Вегетариано
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Отличный вариант для любителей вегетарианской пищи. Соус томатный, сыр "Моцарелла", помидорчики, маринованные огурчики и болгарский перчик
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 600 г
                                                 </span>
@@ -798,14 +799,14 @@
                                 <div class="dish">
                                     <img src="img\mario\03-mario.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Марио Пицца
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Томатный соус, сыр "Моцарелла", кусочки ветчины в окружении маринованных огурчиков и помидор
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 620 г
                                                 </span>
@@ -829,14 +830,14 @@
                                 <div class="dish">
                                     <img src="img\mario\04-fresko.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Фреско
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Ветчина, шампиньоны и маринованные огурчики с неповторимым соусом "Тар-Тар" и сыром "Моцарелла"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -860,14 +861,14 @@
                                 <div class="dish">
                                     <img src="img\mario\05-carlione.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Карлионе
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Куриная копченая грудка, сыр "Моцарелла",маринованные огурчики и кусочки болгарского перца
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 620 г
                                                 </span>
@@ -891,14 +892,14 @@
                                 <div class="dish">
                                     <img src="img\mario\06-peperoni.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пепперони
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Великолепная колбаска "Пепперони", оливки, маслины томатный соус и сыр "Моцарелла".
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 530 г
                                                 </span>
@@ -922,14 +923,14 @@
                                 <div class="dish">
                                     <img src="img\mario\07-hawaii.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Гавайская
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Соус томатный, сыр "Моцарелла", куриная грудка копченая, ананас консервированный
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 600 г
                                                 </span>
@@ -953,14 +954,14 @@
                                 <div class="dish">
                                     <img src="img\mario\08-formagi.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Формаджи
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Томатный соус в сочетании четырех видов сыра: "Моцарелла", "Гауда", "Дор-Блю", "Пармезан"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 520 г
                                                 </span>
@@ -984,14 +985,14 @@
                                 <div class="dish">
                                     <img src="img\mario\09-soprano.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Сопрано
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Шампиньончики, кусочки ветчины, сыр "Моцарелла" соус томатный
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 580 г
                                                 </span>
@@ -1015,14 +1016,14 @@
                                 <div class="dish">
                                     <img src="img\mario\10-koza_nostra.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Коза-ностра
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Отличный вариант для любителей остренького. Сочетание ветчины, бекона, ароматного соуса "Кимчи" и перчика "Халопеньо"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 540 г
                                                 </span>
@@ -1046,14 +1047,14 @@
                                 <div class="dish">
                                     <img src="img\mario\11-frutta.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Фрутта бамбини
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Идеальный вариант для любителей сладенького. Кусочки банана и груши красиво расположились на сметанно-медовом соусе и сыре "Моцарелла"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 460 г
                                                 </span>
@@ -1077,16 +1078,16 @@
                                 <div class="dish">
                                     <img src="img\mario\12-rancho_bandito.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             <a href="#">
                                                 Ранчо бандито
                                             </a>
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Куриная грудка, бекон, лук, соус томатный и "Барбекью". МУЖИКИ ! Берите вот её!!!
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 580 г
                                                 </span>
@@ -1110,14 +1111,14 @@
                                 <div class="dish">
                                     <img src="img\mario\13-pekante.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пеканте
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Кусочки куриной грудки и ветчины в сочетании с каперсами и чесноком на соусе "Тар-Тар" с сырами "Моцарелла" и "Пармезан"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 580 г
                                                 </span>
@@ -1141,14 +1142,14 @@
                                 <div class="dish">
                                     <img src="img\mario\14-al_kapone.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Аль Капоне
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Вкусное сочетание кусочков куриной копченой грудки и бекона вместе с сыром "Моцарелла", томатным соусом и огурчиками
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 620 г
                                                 </span>
@@ -1172,14 +1173,14 @@
                                 <div class="dish">
                                     <img src="img\mario\15-sicilia.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Сицилия
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Отличное сочетание томатного соуса с тремя видами мяса: салями "Пепперони", ветчина, бекон и сыр "Моцарелла"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 590 г
                                                 </span>
@@ -1203,14 +1204,14 @@
                                 <div class="dish">
                                     <img src="img\mario\16-calipso.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Калипсо
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Этот вариант идеально подойдет для любителей морских деликатесов. Морской коктейль с сыром "Моцарелла" и соусом "Тар-Тар"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 520 г
                                                 </span>
@@ -1234,14 +1235,14 @@
                                 <div class="dish">
                                     <img src="img\mario\17-luigi.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Луиджи (грибная)
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Грибочки белые, шампиньоны, сметанка с сыром "Моцарелла" и ароматный укропчик
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -1266,14 +1267,14 @@
                                     <img src="img\label1.png" class="cat-label">
                                     <img src="img\mario\18-leonardo.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Леонардо
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Вкуснейшая салями "Пепперони" украшенная болгарским перцем и шампиньонами. Шедевр от нашего шеф-повара
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -1297,14 +1298,14 @@
                                 <div class="dish">
                                     <img src="img\mario\19-piato_mafia.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пьятто мафия (ужин мафии)
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Куски бекона, грибы, лук, сыр, взбитое яйцо. Серьезный повод для встречи
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 560 г
                                                 </span>
@@ -1328,14 +1329,14 @@
                                 <div class="dish">
                                     <img src="img\mario\20-domeniko.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Доменико
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Классическое сочетание белых грибов, ветчины, сметаны и сыра "Моцарелла", украшенных ароматным укропом
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 570 г
                                                 </span>
@@ -1359,14 +1360,14 @@
                                 <div class="dish">
                                     <img src="img\mario\21-don_tunio.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Дон Тунио
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Филе тунца на соусе "Тар-Тар" с тремя благородными сырами и томатами
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 570 г
                                                 </span>
@@ -1390,14 +1391,14 @@
                                 <div class="dish">
                                     <img src="img\mario\22-filad.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Филадельфия
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Сметана, сыр «Пармезан», сыр «Моцарелла», сыр «Филадельфия», лосось
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -1421,14 +1422,14 @@
                                 <div class="dish">
                                     <img src="img\mario\23-six.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца 6 сыров
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Томатный соус, сыр «Моцарелла», сыр «Гауда», сыр «Дор-Блю», сыр «Пармезан», сыр «Чеддер», сыр «Базирон песто»
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 590 г
                                                 </span>
@@ -1452,14 +1453,14 @@
                                 <div class="dish">
                                     <img src="img\mario\24-julik.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Жулик"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Сыр «Моцарелла», грибной жульен, зеленый лук
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 580 г
                                                 </span>
@@ -1483,15 +1484,15 @@
                                 <div class="dish">
                                     <img src="img\mario\25-nomer_odin.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца №1
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Сыр, томатный соус, говядина деликатесная, лук красный, огурчики, соус «Крем-бальзамик», сыр «Пармезан»
                                         </p>
 
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 580 г
                                                 </span>
@@ -1515,14 +1516,14 @@
                                 <div class="dish">
                                     <img src="img\mario\26-pirat.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Пират"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Угорь, креветки, сыр «Моцарелла», сметана, икра «Тобико», соус «Унаги», кунжут
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -1546,14 +1547,14 @@
                                 <div class="dish">
                                     <img src="img\mario\27-solovey.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Соловей-разбойник"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Жареные грибы, ветчина, сыр «Моцарелла», сыр «Пармезан», орешки
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 550 г
                                                 </span>
@@ -1577,14 +1578,14 @@
                                 <div class="dish">
                                     <img src="img\mario\28-xuligan.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Хулиган из Мехико"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             «Пепперони, бекон, кукуруза, перец «Холопеньо», сыр «Моцарелла», сыр «Пармезан», перец «Болгарский», овощная паста «КимЧи», соус «Табаско»
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 650 г
                                                 </span>
@@ -1609,14 +1610,14 @@
                                     <img src="img/pizza.png" class="cat-label">
                                     <img src="img\mario\29-pesto.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Песто"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Соус "Песто", сметана, моцарелла, говядина отварная, перец болгарский, пармезан, маслины
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 610 г
                                                 </span>
@@ -1640,14 +1641,14 @@
                                 <div class="dish">
                                     <img src="img\mario\30-manzo.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Манзо формаджи"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Сметана, сыр "Моцарелла", сыр копченый, сыр "Чеддр" желтый, язык говяжий отварной, перец "Холопеньо", огурец маринованный, чеснок, сыр "Пармезан"
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     30 см / 610 г
                                                 </span>
@@ -1671,14 +1672,14 @@
                                 <div class="dish">
                                     <img src="img\mario\31-sytyi_boss.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Сытый босс
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Пышное тесто, сыр "Моцарелла", соус, маринованный огурчик, бекон, лук красный
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1000 г
                                                 </span>
@@ -1702,14 +1703,14 @@
                                 <div class="dish">
                                     <img src="img\mario\32-90.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Шальные 90-е
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Пышное тесто, майонез, соус, курица, сыр "Моцарелла", укроп, яйцо вареное
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1000 г
                                                 </span>
@@ -1733,14 +1734,14 @@
                                 <div class="dish">
                                     <img src="img\mario\33-babulya.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Бабушка серьезного человека
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Пышное тесто, майонез, соус, ветчина, сыр "Моцарелла", сыр "Пармезан", маринованный огурчик, помидорчик, вареное яичко, укроп
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1000 г
                                                 </span>
@@ -1764,14 +1765,14 @@
                                 <div class="dish">
                                     <img src="img\mario\34-dyadya_tony.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Дядюшка Тони
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Пышное тесто, соус "Барбекью", ветчина, сыр "Моцарелла", "Пепперони", сыр "Пармезан", маринованный огурчик
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1000 г
                                                 </span>
@@ -1796,14 +1797,14 @@
                                     <img src="img\label1.png" class="cat-label">
                                     <img src="img\mario\35-leto.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Басятская"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Сметана, сыр, жареный фарш, картофельное пюре, зеленый лук, сыр «Пармезан»
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1000 г
                                                 </span>
@@ -1827,14 +1828,14 @@
                                 <div class="dish">
                                     <img src="img\mario\36-pab.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Пицца "Точка Паб"
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Говядина отварная, язык отварной, бекон сыро-копченый, ветчина, огурец маринованный, соус "тар-тар", говядина деликатесная, сыр "Моцарелла", "Пармезан", укроп
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     Пышная / 1175 г
                                                 </span>
@@ -1858,14 +1859,14 @@
                                 <div class="dish">
                                     <img src="img\mario\37.png">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Кесадилья с говядиной
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Лепешка, говядина, сливочно-огуречный соус
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     350/50 г
                                                 </span>
@@ -1890,14 +1891,14 @@
                                     <img src="img/pizza.png" class="cat-label">
                                     <img src="img\mario\37.png">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Кесадилья с курицей
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Лепешка, курица, сливочно-огуречный соус
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     350/50 г
                                                 </span>
@@ -1921,12 +1922,12 @@
                                 <div class="dish">
                                     <img src="img\mario\38-forest.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Фокачча песто
-                                        </h5>
+                                        </h3>
                                         <p class="item-description"> </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     257 г
                                                 </span>
@@ -1950,12 +1951,12 @@
                                 <div class="dish">
                                     <img src="img\mario\39-fores.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             Фокачча острая с вялеными томатами
-                                        </h5>
+                                        </h3>
                                         <p class="item-description"> </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     327 г
                                                 </span>
@@ -1986,14 +1987,14 @@
                                     <img src="img/pizza.png" class="cat-label">
                                     <img src="img\mario\01-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С огурцом
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, огурец
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 142 г
                                                 </span>
@@ -2017,14 +2018,14 @@
                                 <div class="dish">
                                     <img src="img\mario\02-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С авокадо
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, авокадо
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 142 г
                                                 </span>
@@ -2048,14 +2049,14 @@
                                 <div class="dish">
                                     <img src="img\mario\03-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С лососем
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, лосось
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 140 г
                                                 </span>
@@ -2079,14 +2080,14 @@
                                 <div class="dish">
                                     <img src="img\mario\04-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С угрем
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, угорь
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 146 г
                                                 </span>
@@ -2110,14 +2111,14 @@
                                 <div class="dish">
                                     <img src="img\mario\05-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С тунцом
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, тунец
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 140 г
                                                 </span>
@@ -2141,14 +2142,14 @@
                                 <div class="dish">
                                     <img src="img\mario\06-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С сыром и икрой
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, сливочный сыр, икра лососевая
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 140 г
                                                 </span>
@@ -2172,14 +2173,14 @@
                                 <div class="dish">
                                     <img src="img\mario\01-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С сыром и креветкой
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, сливочный сыр, креветка отварная
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 140 г
                                                 </span>
@@ -2203,14 +2204,14 @@
                                 <div class="dish">
                                     <img src="img\mario\01-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С гребешком
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Нори, суши рис, гребешек
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 150 г
                                                 </span>
@@ -2234,14 +2235,14 @@
                                 <div class="dish">
                                     <img src="img\mario\07-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С жареными грибами
-                                        </h5>
+                                        </h3>
                                         <p class="item-description">
                                             Суши-рис, нори, жареные шампиньоны, сыр «Филадельфия», соус «Спайс»
                                         </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 180 г
                                                 </span>
@@ -2265,12 +2266,12 @@
                                 <div class="dish">
                                     <img src="img\mario\09-Roll.jpg">
                                     <div class="item-stuff">
-                                        <h5 class="item-name">
+                                        <h3 class="item-name">
                                             С тэкуаном
-                                        </h5>
+                                        </h3>
                                         <p class="item-description"> </p>
                                         <div class="order-controls">
-                                            <div class="amount-row">
+                                            <div class="order-row">
                                                 <span class="portion-type">
                                                     8 шт. / 142 г
                                                 </span>
