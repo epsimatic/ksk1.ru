@@ -50,7 +50,7 @@
 
         #cart-bar.row {margin: 0;}
 
-        #cart-bar {background-color: #fdd49c; display: flex; padding: 10px;}
+        #cart-bar {background-color: #fdd49c; padding: 10px;}
 
         #cart-bar > * {align-self: center;}
 
@@ -84,20 +84,20 @@
 
         .site-eda .dishes-cat {position: relative;}
 
-        .site-eda .dishes-cat .cat-label { position: absolute; left: 23px; top: -10px;}
+        .site-eda .dishes-cat .cat-label {position: absolute; left: 10px; top: -8px; width: 41px;}
 
         .site-eda .dishes-cat-recommend {background-color: #fbf0c6;}
 
-        .site-eda .dishes-heading {border-top: 2px dashed #ff6347; color: #ff6347; font-size: 40px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 20px; padding: 20px 50px 12px; text-transform: uppercase;}
+        .site-eda .dishes-heading {border-top: 2px dashed #ff6347; color: #ff6347; font-size: 25px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 12px; padding: 20px 50px 12px; text-transform: uppercase;}
 
-        .site-eda .dishes-cat-recommend .dishes-heading {border-color: #f74541; color: #f74541; padding-left: 100px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);}
+        .site-eda .dishes-cat-recommend .dishes-heading {border-color: #f74541; color: #f74541; padding-left: 65px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);}
 
         .site-eda .dishes {align-items: stretch; display: flex; flex-flow: row wrap; justify-content: flex-start; margin: 0 0 40px;}
 
         .site-eda .dishes.dishes-col-6 .dish-container,
         .site-eda .dishes .dish-container {width: 49%; margin: 0 0.5% 20px; position: relative; height: 300px;}
 
-        .site-eda .dishes .dish-container .cat-label {position: absolute; left: 8px; top: -4px; width: 40px; height: auto !important;}
+        .site-eda .dishes .dish-container .cat-label {position: absolute; left: 8px; top: -4px; width: 33px; height: auto !important;}
 
         .site-eda .dishes .dish {background-color: #ffffff; border: 1px solid #eaeaea; border-radius: 3px; padding: 15px 15px 0; width: 100%; position: relative;}
 
@@ -149,6 +149,12 @@
 
         /* Стили для размера -sm- */
         @media (min-width: 768px) {
+            .site-eda .dishes-cat .cat-label {left: 23px; top: -10px; width: 51px;}
+
+            .site-eda .dishes-heading {font-size: 40px; margin-bottom: 20px;}
+
+            .site-eda .dishes-cat-recommend .dishes-heading {padding-left: 100px;}
+
             .site-eda .dishes .dish-container {height: 360px;}
 
             .site-eda .dishes.dishes-col-6 .dish-container {width: 32%; margin: 0 0.66666666% 20px; height: 340px;}
@@ -186,6 +192,8 @@
 
         /* Стили для размера -md- */
         @media (min-width: 992px) {
+            #cart-bar {display: flex;}
+
             .site-eda .dishes {margin: 0 10px 40px;}
 
             .site-eda .dishes .dish img {max-height: 120px;}
@@ -516,8 +524,8 @@
                 </div>
 
                 <div id="cart-bar" class="row">
-                    <div class="col-md-1 col-xs-12">Ваш <br class="hidden-xs hidden-sm">заказ:</div>
-                    <div class="col-md-7 col-xs-12">
+                    <div class="col-md-1 col-sm-1 col-xs-12">Ваш <br class="hidden-xs hidden-sm">заказ:</div>
+                    <div class="col-md-7 col-sm-11 col-xs-12">
                         <div class="cart-view">
                             <div class="cart-item">
                                 <img src="img\mario\06-peperoni.jpg">
@@ -563,10 +571,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-xs-6">
+                    <div class="col-md-2 col-sm-8 col-xs-6">
                         Доставка с 10 до 23 часов. Оплата курьеру при получении
                     </div>
-                    <div class="col-md-2 col-xs-6">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
                         <!--<input type="text" class="form-control" placeholder="Введите телефон">-->
                         <a class="btn btn-action btn-block btn-lg">Заказать</a>
                     </div>
