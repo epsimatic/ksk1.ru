@@ -2560,6 +2560,9 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 #movie-col-left .btn-group {margin-top: 20px;}
 
+#movie-col-right .production-flag {padding-right: 2px;}
+
+#movie-col-right .runtime {color: #777777; padding-left: 2px;}
 
 
 /* Оформление списка событий */
