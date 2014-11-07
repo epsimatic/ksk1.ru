@@ -2570,7 +2570,7 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
 
-.add-event {margin: 0 10px; background-color: #fff7f8;}
+.add-event {margin: 0; background-color: #fff7f8;}
 
 .add-event span {padding: 6px 12px; color: #57585b;}
 
