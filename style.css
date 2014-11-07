@@ -1158,6 +1158,24 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
+/* <editor-fold desc="Панель «Отправить SMS»"> */
+.panel-sms .panel-body {border-bottom: 4px solid #edb194; padding: 15px 20px 10px;}
+
+.panel-sms .panel-body img {margin: 0 2px 3%; padding: 5px; width: 53px;}
+
+.panel-sms .panel-body a:hover img {background-color: #f3f3f3; transition: background-color 0.1s ease-in-out 0s;}
+
+.panel-sms small {color: #888888; display: inline-block; font-size: 12px; line-height: 1.3em; margin-top: 3px;}
+/* </editor-fold> */
+
+/* <editor-fold desc="Панель «Перейти на форум»"> */
+.panel-forum .panel-heading h2 a {color: #333333; font-weight: 600;}
+
+.panel-forum .panel-heading h2 a:hover {color: #60543b;}
+
+.panel-forum .panel-heading > h2 {padding: 3px 5px 3px 10px !important; text-align: left;}
+/* </editor-fold> */
+
 /* <editor-fold desc="Панель «Местные новости»"> */
 .content-padder > header {background-color: #d1f9ea; padding-bottom: 15px;}
 
@@ -2550,20 +2568,11 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
 
+.add-event {margin: 0 10px; background-color: #fff7f8;}
 
-/* Страница фильма */
-.main-content-inner .release_date {padding-right: 5px;
-}
-.main-content-inner .genres {padding-left: 4px;}
+.add-event span {padding: 6px 12px; color: #57585b;}
 
-.main-content-inner .kinopoisk-link {padding-left: 4px;}
-
-#movie-col-left .btn-group {margin-top: 20px;}
-
-#movie-col-right .production-flag {padding-right: 2px;}
-
-#movie-col-right .runtime {color: #777777; padding-left: 2px;}
-
+.add-event button {color: #7e707e;}
 
 /* Оформление списка событий */
 .panel-event .panel-heading,
@@ -2608,6 +2617,18 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 
 /* Страница фильма */
+.main-content-inner .release_date {padding-right: 5px;}
+
+.main-content-inner .genres {padding-left: 4px;}
+
+.main-content-inner .kinopoisk-link {padding-left: 4px;}
+
+#movie-col-left .btn-group {margin-top: 20px;}
+
+#movie-col-right .production-flag {padding-right: 2px;}
+
+#movie-col-right .runtime {color: #777777; padding-left: 2px;}
+
 .tax-movie .star-rating {margin: 15px 10px}
 
 .tax-movie .star-rating > .fa {font-size: 1.2em; padding-right: 5px;}
