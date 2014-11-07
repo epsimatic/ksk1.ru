@@ -1174,6 +1174,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .panel-forum .panel-heading h2 a:hover {color: #60543b;}
 
 .panel-forum .panel-heading > h2 {padding: 3px 5px 3px 10px !important; text-align: left;}
+
+.panel-forum  .fa-arrow-circle-right {margin-top: 3px;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Местные новости»"> */
