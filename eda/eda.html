@@ -48,6 +48,24 @@
             border: 1px solid red;
         }
 
+        .site-eda .list-days {margin-bottom: 0;}
+
+        .site-eda .nav-tabs {border-bottom: none; display: none;}
+
+        .site-eda .nav-tabs > li:first-child {margin-left: 10px;}
+
+        .site-eda .nav-tabs > li {margin: 0 3px;}
+
+        .site-eda .nav-tabs > li > a {border: 1px solid #fdd49c; border-bottom-color: transparent;}
+
+        .site-eda .nav-tabs > li.active > a {background-color: #fdd49c;}
+
+        ul.list-stores {border-radius: 0; background-color: #ff9d68;}
+
+        ul.list-stores > li.active > a {background-color: #ff875b;}
+
+        ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10px;}
+
         #cart-bar.row {margin: 0;}
 
         #cart-bar {background-color: #fdd49c; padding: 10px;}
@@ -56,19 +74,21 @@
 
         #cart-bar.flex-row {background-color: #778899; padding: 10px; margin: 10px -10px; display: flex;}
 
-        #cart-bar .cart-view {display: flex;}
+        #cart-bar .cart-view {display: flex; margin-bottom: 20px;}
+
+        #cart-bar .cart-description {margin-bottom: 20px;}
 
         #cart-bar .cart-item {position: relative; margin-right: 25px;}
 
         #cart-bar .cart-item img {width: 70px;}
 
-        #cart-bar .cart-item .cart-badges {bottom: -7px; right: -10px; position: absolute;}
+        #cart-bar .cart-item .cart-badges {position: relative; text-align: right; margin-top: -1px; white-space: nowrap;}
 
         #cart-bar .cart-item .badge {color: #ffffff; font-size: 11px;}
 
-        #cart-bar .cart-item .badge-price {background-color: #7dba0b; border-radius: 3px; padding: 4px 4px 4px 5px; margin-left: -2px;}
+        #cart-bar .cart-item .badge-price {background-color: #7dba0b; border-radius: 0 0 3px 3px; padding: 4px 4px 4px 5px;}
 
-        #cart-bar .cart-item .badge-amount {background-color: #ff6347; border-radius: 9px; padding: 4px 6px; margin-right: 2px; text-shadow: 0 0 1px rgba(0, 0, 0, 0.18);}
+        #cart-bar .cart-item .badge-amount {background-color: #ff6347; border-radius: 0 0 3px 3px; padding: 4px 6px; text-shadow: 0 0 1px rgba(0, 0, 0, 0.18);}
 
         #cart-bar .cart-item strong {font-weight: 700; padding-right: 2px;}
 
@@ -82,7 +102,7 @@
 
         .site-eda .restoraunt-name {color: #ff6347; font-weight: 600; margin-bottom: 10px;}
 
-        .site-eda .dishes-cat {position: relative;}
+        .site-eda .dishes-cat {position: relative; padding-bottom: 10px;}
 
         .site-eda .dishes-cat .cat-label {position: absolute; left: 10px; top: -8px; width: 41px;}
 
@@ -92,7 +112,9 @@
 
         .site-eda .dishes-cat-recommend .dishes-heading {border-color: #f74541; color: #f74541; padding-left: 65px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);}
 
-        .site-eda .dishes {align-items: stretch; display: flex; flex-flow: row wrap; justify-content: flex-start; margin: 0 0 40px;}
+        .site-eda .dishes {align-items: stretch; display: flex; flex-flow: row wrap; justify-content: flex-start; margin: 0;}
+
+        /*.site-eda .panel-success {margin-bottom: 40px;}*/
 
         .site-eda .dishes.dishes-col-6 .dish-container,
         .site-eda .dishes .dish-container {width: 49%; margin: 0 0.5% 20px; position: relative; height: 300px;}
@@ -149,6 +171,12 @@
 
         /* Стили для размера -sm- */
         @media (min-width: 768px) {
+            #cart-bar .cart-item .cart-badges {bottom: -7px; right: -10px; position: absolute;}
+
+            #cart-bar .cart-item .badge-price {border-radius: 3px; margin-left: -2px;}
+
+            #cart-bar .cart-item .badge-amount {border-radius: 3px;}
+
             .site-eda .dishes-cat .cat-label {left: 23px; top: -10px; width: 51px;}
 
             .site-eda .dishes-heading {font-size: 40px; margin-bottom: 20px;}
@@ -194,7 +222,10 @@
         @media (min-width: 992px) {
             #cart-bar {display: flex;}
 
-            .site-eda .dishes {margin: 0 10px 40px;}
+            #cart-bar .cart-description,
+            #cart-bar .cart-view {margin-bottom: 0;}
+
+            .site-eda .dishes {margin: 0 10px;}
 
             .site-eda .dishes .dish img {max-height: 120px;}
 
@@ -490,6 +521,7 @@
                     </p>
                 </div>
 
+                <!--
                 <div class="row" style="margin: 20px 10px 20px;">
                     <div class="col-md-2 text-center">
                         <img alt="120x120" class="img-circle" style="width: 120px; height: 120px;"
@@ -522,61 +554,72 @@
                         <h4>Заказать цветы</h4>
                     </div>
                 </div>
+                -->
 
-                <div id="cart-bar" class="row">
-                    <div class="col-md-1 col-sm-1 col-xs-12">Ваш <br class="hidden-xs hidden-sm">заказ:</div>
-                    <div class="col-md-7 col-sm-11 col-xs-12">
-                        <div class="cart-view">
-                            <div class="cart-item">
-                                <img src="img\mario\06-peperoni.jpg">
-                                <div class="cart-badges">
-                                    <span class="badge badge-amount">2</span>×
-                                    <span class="badge badge-price">
-                                        600 <i class="fa fa-rub"></i>
-                                    </span>
+                <div class="">
+                    <ul class="nav nav-pills list-days list-stores">
+                        <li role="presentation" class="active"><a href="#">Золотой век</a></li>
+                        <li role="presentation"><a href="#">Васаби</a></li>
+                        <li role="presentation"><a href="#">Марио Пицца</a></li>
+                    </ul>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#">Золотой век</a></li>
+                        <li role="presentation"><a href="#">Васаби</a></li>
+                        <li role="presentation"><a href="#">Марио Пицца</a></li>
+                    </ul>
+                    <div id="cart-bar" class="row">
+                        <div class="col-md-1 col-sm-1 col-xs-12">Ваш <br class="hidden-xs hidden-sm">заказ:</div>
+                        <div class="col-md-7 col-sm-11 col-xs-12">
+                            <div class="cart-view">
+                                <div class="cart-item">
+                                    <img src="img\mario\06-peperoni.jpg">
+                                    <div class="cart-badges">
+                                        <span class="badge badge-price">
+                                            600 <i class="fa fa-rub"></i>
+                                        </span>×<span class="badge badge-amount">2</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cart-item">
-                                <img src="img\mario\09-soprano.jpg">
-                                <div class="cart-badges">
-                                    <span class="badge badge-price">
-                                        310 <i class="fa fa-rub"></i>
-                                    </span>
+                                <div class="cart-item">
+                                    <img src="img\mario\09-soprano.jpg">
+                                    <div class="cart-badges">
+                                        <span class="badge badge-price">
+                                            310 <i class="fa fa-rub"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cart-item">
-                                <img src="img\mario\13-pekante.jpg">
-                                <div class="cart-badges">
-                                    <span class="badge badge-price">
-                                        490 <i class="fa fa-rub"></i>
-                                    </span>
+                                <div class="cart-item">
+                                    <img src="img\mario\13-pekante.jpg">
+                                    <div class="cart-badges">
+                                        <span class="badge badge-price">
+                                            490 <i class="fa fa-rub"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cart-item">
-                                <img src="img\mario\21-don_tunio.jpg">
-                                <div class="cart-badges">
-                                    <span class="badge badge-amount">5</span>×
-                                    <span class="badge badge-price">
-                                        99 <i class="fa fa-rub"></i>
-                                    </span>
+                                <div class="cart-item">
+                                    <img src="img\mario\21-don_tunio.jpg">
+                                    <div class="cart-badges">
+                                        <span class="badge badge-price">
+                                            99 <i class="fa fa-rub"></i>
+                                        </span>×<span class="badge badge-amount">5</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cart-item">
-                                <img src="img\mario\29-pesto.jpg">
-                                <div class="cart-badges">
-                                    <span class="badge badge-price">
-                                        1320 <i class="fa fa-rub"></i>
-                                    </span>
+                                <div class="cart-item">
+                                    <img src="img\mario\29-pesto.jpg">
+                                    <div class="cart-badges">
+                                        <span class="badge badge-price">
+                                            1320 <i class="fa fa-rub"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 col-sm-8 col-xs-6">
-                        Доставка с 10 до 23 часов. Оплата курьеру при получении
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <!--<input type="text" class="form-control" placeholder="Введите телефон">-->
-                        <a class="btn btn-action btn-block btn-lg">Заказать</a>
+                        <div class="col-md-2 col-sm-8 col-xs-12 cart-description">
+                            Доставка с 10 до 23 часов. Оплата курьеру при получении
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-12">
+                            <!--<input type="text" class="form-control" placeholder="Введите телефон">-->
+                            <a class="btn btn-action btn-block btn-lg">Заказать</a>
+                        </div>
                     </div>
                 </div>
 
@@ -735,8 +778,221 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="panel-success">
+                            <div class="panel-heading text-center">
+                                <h4 class="panel-title">
+                                    <a href="" data-toggle="collapse" class="collapsed">
+                                        <i class="fa fa-angle-down fa-lg fa-fw"></i><strong>Показать ещё</strong>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="dishes-cat">
+                        <h3 class="dishes-heading">Пицца</h3>
+                        <div class="dishes dishes-col-6">
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img/pizza.png" class="cat-label">
+                                    <img src="img\mario\01-margarita.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Маргарита
+                                        </h3>
+                                        <p class="item-description">
+                                            Оливки, маслины, томатный соус и сыр "Моцарелла" украшенные колечками из помидор
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30см / 590см
+                                                </span>
+                                                <span class="price">190 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img\mario\02-vegetariano.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Вегетариано
+                                        </h3>
+                                        <p class="item-description">
+                                            Отличный вариант для любителей вегетарианской пищи. Соус томатный, сыр "Моцарелла", помидорчики, маринованные огурчики и болгарский перчик
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30 см / 600 г
+                                                </span>
+                                                <span class="price">245 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img\mario\03-mario.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Марио Пицца
+                                        </h3>
+                                        <p class="item-description">
+                                            Томатный соус, сыр "Моцарелла", кусочки ветчины в окружении маринованных огурчиков и помидор
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30 см / 620 г
+                                                </span>
+                                                <span class="price">270 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img\mario\04-fresko.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Фреско
+                                        </h3>
+                                        <p class="item-description">
+                                            Ветчина, шампиньоны и маринованные огурчики с неповторимым соусом "Тар-Тар" и сыром "Моцарелла"
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30 см / 550 г
+                                                </span>
+                                                <span class="price">265 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img\mario\05-carlione.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Карлионе
+                                        </h3>
+                                        <p class="item-description">
+                                            Куриная копченая грудка, сыр "Моцарелла",маринованные огурчики и кусочки болгарского перца
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30 см / 620 г
+                                                </span>
+                                                <span class="price">305 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dish-container">
+                                <div class="dish">
+                                    <img src="img\mario\06-peperoni.jpg">
+                                    <div class="item-stuff">
+                                        <h3 class="item-name">
+                                            Пепперони
+                                        </h3>
+                                        <p class="item-description">
+                                            Великолепная колбаска "Пепперони", оливки, маслины томатный соус и сыр "Моцарелла".
+                                        </p>
+                                        <div class="order-controls">
+                                            <div class="order-row">
+                                                <span class="portion-type">
+                                                    30 см / 530 г
+                                                </span>
+                                                <span class="price">255 руб.</span>
+                                            </div>
+                                            <hr>
+                                            <div class="order-row">
+                                                <span class="amount">
+                                                    <i class="fa fa-minus"></i>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <a href="#" class="btn btn-action" role="button">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-success">
+                            <div class="panel-heading text-center">
+                                <h4 class="panel-title">
+                                    <a href="" data-toggle="collapse" class="collapsed">
+                                        <i class="fa fa-angle-down fa-lg fa-fw"></i><strong>Показать ещё</strong>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
                     <div class="dishes-cat">
                         <h3 class="dishes-heading">Пицца</h3>
                         <div class="dishes dishes-col-6">
@@ -1986,6 +2242,7 @@
 
                         </div>
                     </div>
+                    -->
 
                     <div class="dishes-cat">
                         <h3 class="dishes-heading">Простые роллы</h3>
