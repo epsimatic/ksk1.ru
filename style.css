@@ -2301,7 +2301,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk a.active img {opacity: 1 !important;}
 
-.site-rk .menu-rk a div {font-size: 16px; line-height: 1.3; color: #777777;}
+.site-rk .menu-rk a div {font-size: 15px; line-height: 1.3; color: #777777;}
 
 .site-rk .menu-rk a:hover div {color: #333333;}
 
@@ -2317,7 +2317,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk a:hover {text-decoration: none;}
 
-.site-rk .menu-rk a hr {width: 75%; margin-top: 15px; border-bottom-style: solid; border-bottom-width: 0; border-top: none;}
+.site-rk .menu-rk a hr {width: 75%; margin-top: 10px; border-bottom: 3px solid; border-top: none; opacity: 0;}
 
 .site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #2ecc71;}
 
@@ -2327,9 +2327,13 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk div:nth-child(4) a hr {border-bottom-color: #3498db;}
 
-.site-rk .menu-rk a:hover hr {border-bottom-width: 10px !important; opacity: 0.1;}
+.site-rk .menu-rk div:nth-child(5) a hr {border-bottom-color: #53687d;}
 
-.site-rk .menu-rk a.active hr {border-bottom-width: 10px !important; opacity: 1 !important;}
+.site-rk .menu-rk div:nth-child(6) a hr {border-bottom-color: #eacd87;}
+
+.site-rk .menu-rk a:hover hr {opacity: 0.1;}
+
+.site-rk .menu-rk a.active hr {opacity: 1 !important;}
 
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
