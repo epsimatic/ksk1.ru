@@ -571,9 +571,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* <editor-fold desc="Другие элемнты"> */
 
-.browser-deco:before {content: url("http://ksk1.ru/img/browser-deco.svg"); display: flex;}
+.browser-deco:before {box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.25); content: url("http://ksk1.ru/img/browser-deco.svg"); display: block; position: relative;}
 
-.browser-deco img {box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25); height: auto; margin: 0 !important; padding: 0 !important; width: 100%;}
+.browser-deco img {box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25); height: auto; margin: -5px 0 0 !important; padding: 0 !important; width: 100%; position: relative;}
 
 /* </editor-fold> */
 
