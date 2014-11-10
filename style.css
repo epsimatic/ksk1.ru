@@ -2153,7 +2153,9 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 }
 
 /* </editor-fold> */
-
+/* <editor-fold desc="админка объявлений"> */
+.navbar-fixed-top ~ .container { margin-top: 50px; }
+/* </editor-fold desc="админка объявлений"> */
 /* <editor-fold desc="FAQ"> */
 .news_full {padding: 0;}
 
