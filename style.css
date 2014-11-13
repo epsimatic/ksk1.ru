@@ -2299,20 +2299,28 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* <editor-fold desc="Копицентр и Прайс на рекламу"> */
 
+.site-services .panel-page .panel-body,
 .site-rk .panel-page .panel-body {background-color: #ffffff; padding-top: 0;}
 
+.site-services .panel-news-body .panel-body,
 .site-rk .panel-news-body .panel-body {padding: 0;}
 
+.site-services .menu-rk,
 .site-rk .menu-rk {padding: 20px 20px 0;}
 
+.site-services .menu-rk a img,
 .site-rk .menu-rk a img {opacity: 0.25; padding-bottom: 15px; width: 80%;}
 
+.site-services .menu-rk a:hover img,
 .site-rk .menu-rk a:hover img {opacity: 0.5;}
 
+.site-services .menu-rk a.active img,
 .site-rk .menu-rk a.active img {opacity: 1 !important;}
 
+.site-services .menu-rk a div,
 .site-rk .menu-rk a div {font-size: 15px; line-height: 1.3; color: #777777;}
 
+.site-services .menu-rk a:hover div,
 .site-rk .menu-rk a:hover div {color: #333333;}
 
 .site-rk .menu-rk div:nth-child(1) a.active div {color: #2ecc71 !important;}
@@ -2327,10 +2335,21 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk div:nth-child(6) a.active div {color: #3498db !important;}
 
+.site-services .menu-rk div:nth-child(1) a.active div {color: #bb9a4b !important;}
+
+.site-services .menu-rk div:nth-child(2) a.active div {color: #fb485e !important;}
+
+.site-services .menu-rk div:nth-child(3) a.active div {color: #53687d !important;}
+
+.site-services .menu-rk div:nth-child(4) a.active div {color: #f7ae00 !important;}
+
+.site-services .menu-rk a.active div,
 .site-rk .menu-rk a.active div {font-weight: 600;}
 
+.site-services .menu-rk a:hover,
 .site-rk .menu-rk a:hover {text-decoration: none;}
 
+.site-services .menu-rk a hr,
 .site-rk .menu-rk a hr {width: 75%; margin-top: 10px; border-bottom: 3px solid; border-top: none; opacity: 0;}
 
 .site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #2ecc71;}
@@ -2345,27 +2364,41 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-rk .menu-rk div:nth-child(6) a hr {border-bottom-color: #3498db;}
 
+.site-services .menu-rk div:nth-child(1) a hr {border-bottom-color: #eacd87;}
 
+.site-services .menu-rk div:nth-child(2) a hr {border-bottom-color: #fb485e;}
+
+.site-services .menu-rk div:nth-child(3) a hr {border-bottom-color: #53687d;}
+
+.site-services .menu-rk div:nth-child(4) a hr {border-bottom-color: #f7ae00;}
 
 /*.site-rk .menu-rk div:nth-child(5) a hr {border-bottom-color: #53687d;}*/
 
 /*.site-rk .menu-rk div:nth-child(6) a hr {border-bottom-color: #eacd87;}*/
 
+.site-services .menu-rk a:hover hr,
 .site-rk .menu-rk a:hover hr {opacity: 0.1;}
 
+.site-services .menu-rk a.active hr,
 .site-rk .menu-rk a.active hr {opacity: 1 !important;}
 
+.site-services img.pic,
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
+.site-services h3.rk-header,
 .site-rk h3.rk-header {font-size: 32px; font-weight: 600; margin-top: 5px; padding-bottom: 25px; color: #0676d9;}
 
+.site-services h4.rk-header,
 .site-rk h4.rk-header {font-size: 30px; padding: 30px 0 20px; color: #0676d9;}
 
+.site-services .divider,
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
+.site-services table,
 .site-rk table,
 .site-copy table {text-align: center;}
 
+.site-services .table tr > td:first-child,
 .site-rk .table tr > td:first-child,
 .site-copy .table td:first-child {color: #222266; text-align: left;}
 
@@ -2383,22 +2416,29 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy small {font-size: 80%;}
 
+.site-services .table-striped > tbody > tr.special > td,
 .site-rk .table-striped > tbody > tr.special > td {background-color: #ffe188 !important;}
 
+.site-services .table-hover > tbody > tr.special:hover > td,
 .site-rk .table-hover > tbody > tr.special:hover > td {background-color: #ffcc33 !important;}
 
+.site-services .table,
 .site-rk .table,
 .site-copy .table {margin-bottom: 40px;}
 
+.site-services .table th:first-child,
 .site-rk .table th:first-child,
 .site-copy .table th:first-child {text-align: left;}
 
+.site-services .table th,
 .site-rk .table th,
 .site-copy .table th {text-align: center;}
 
+.site-services .table-striped > tbody > tr:nth-child(odd) > td,
 .site-rk .table-striped > tbody > tr:nth-child(odd) > td,
 .site-copy .table-striped > tbody > tr:nth-child(odd) > td {background-color: #f8f8f8;}
 
+.site-services .table-striped > tbody > tr:nth-child(even) > td,
 .site-rk .table-striped > tbody > tr:nth-child(even) > td,
 .site-copy .table-striped > tbody > tr:nth-child(even) > td {background-color: #f3f3f3;}
 
@@ -2406,28 +2446,40 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy .col-md-2 {padding-left: 0 !important;}
 
+.site-services .table-hover > tbody > tr:hover > td,
+.site-services .table-hover > tbody > tr:hover > th,
 .site-rk .table-hover > tbody > tr:hover > td,
 .site-rk .table-hover > tbody > tr:hover > th,
 .site-copy .table-hover > tbody > tr:hover > td,
 .site-copy .table-hover > tbody > tr:hover > th {background-color: #e3eef8 !important;}
 
+.site-services .table tr > td,
 .site-rk .table tr > td {vertical-align: middle}
 
+.site-services .per50,
+.site-services .per100,
 .site-rk .per50,
 .site-rk .per100 {display: block;}
 
+.site-services .per50,
 .site-rk .per50 {color: #127ee2;}
 
+.site-services .per100,
 .site-rk .per100 {color: #009815;}
 
+.site-services .table small,
 .site-rk .table small {opacity: 0.8;}
 
+.site-services tr.row-collapsible > td:first-child,
 .site-rk tr.row-collapsible > td:first-child {padding-left: 5%;}
 
+.site-services .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td,
 .site-rk .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td {background-color: #f4f9fe;}
 
+.site-services .table-striped > tbody > tr.row-collapsible:nth-child(even) > td,
 .site-rk .table-striped > tbody > tr.row-collapsible:nth-child(even) > td {background-color: #edf5fc;}
 
+.site-services .table-striped > tbody > tr.row-collapsible.row-price-base > td,
 .site-rk .table-striped > tbody > tr.row-collapsible.row-price-base > td {background-color: #e6f1fc;}
 
 .browser-sceenshot {width: 70%; border-radius: 9px; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); padding: 0;}
