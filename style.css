@@ -2309,10 +2309,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk .menu-rk {padding: 20px 20px 0;}
 
 .site-services .menu-service a img,
-.site-rk .menu-rk a img {opacity: 0.25; padding-bottom: 15px; width: 80%;}
+.site-rk .menu-rk a img {opacity: 0.3; padding-bottom: 15px; width: 80%;}
 
 .site-services .menu-service a:hover img,
-.site-rk .menu-rk a:hover img {opacity: 0.5;}
+.site-rk .menu-rk a:hover img {opacity: 0.6;}
 
 .site-services .menu-service a.active img,
 .site-rk .menu-rk a.active img {opacity: 1 !important;}
