@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красноуфимское телевидение</title>
+
+    <link rel='stylesheet' id='bootstrap-css'  href='http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-custom-css'  href='http://ksk1.ru/style.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='rootstrap-bootstrap-additions-css'  href='http://news.kskmedia.ru/includes/css/bootstrap-wp.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='rootstrap-style-css'  href='http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/style.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css'  href='http://ksk1.ru/font-awesome-4/css/font-awesome.min.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='opensans-css'  href='http://ksk1.ru/opensans/osans.css?ver=4.0' type='text/css' media='all' />
+
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+
+    <script type='text/javascript' src='http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js?ver=4.0'></script>
+    <script type='text/javascript' src='http://news.kskmedia.ru/wp-content/themes/rootstrap-ksk66/includes/js/bootstrap-wp.js?ver=4.0'></script>
+    <meta name="generator" content="WordPress 4.0" />
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <style type="text/css">
+        .broken_link, a.broken_link {text-decoration: line-through;}
+    </style>
+    <style type="text/css" media="print">#wpadminbar { display:none; }</style>
+    <style type="text/css" media="screen"></style>
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+
+    <style>
+        .site-tv img.logo-tv { width: 80%; }
+
+        .site-tv .alert-info img.otv-logo { width: 25%; }
+
+        .site-tv .panel.panel-video { background-color: transparent; }
+
+        .site-tv .panel-video > .panel-heading { background-color: #088EFF; background-image: none; }
+
+        .site-tv .panel-video > .panel-heading h2 { font-weight: 700; font-size: 28px; text-transform: uppercase; letter-spacing: 0.025em; text-rendering: optimizeLegibility; }
+
+        .site-tv .panel-video > .panel-body { background-color: transparent; }
+
+        .site-tv .panel-video .panel-body > .row { margin: 0 -5px; }
+
+        .site-tv .panel-video .list-group-item { padding: 0 0 15px; border-bottom: 1px solid #ddd; margin-bottom: 15px; }
+
+        .site-tv .panel-video .list-group-item > .row { margin: 0; }
+
+        .site-tv .video-thumb { padding: 0; position: relative; }
+
+        /*.site-tv .video-thumb > div:before { position: absolute; content: ""; font-family: FontAwesome; }*/
+
+        .site-tv .video-thumb img { width: 100%; }
+
+        .site-tv .video-thumb .play { position: absolute; left: 0; top: 0; }
+
+        .site-tv .video-thumb .post-info { background-color: #f4f4f4; }
+
+        .site-tv .video-thumb .post-info > div { padding: 0; }
+
+        .site-tv .video-thumb .post-info .post-info-views { padding: 0.3em 0 0.35em 7px; }
+
+        .site-tv .video-thumb .post-info .post-info-comments { padding: 0.3em 0.3em 0.35em 0; }
+
+        .site-tv .video-thumb .post-info .post-info-views:before,
+        .site-tv .video-thumb .post-info .post-info-comments:before,
+        .site-tv .video-thumb .post-info .post-info-views,
+        .site-tv .video-thumb .post-info .post-info-comments { color: #999 }
+
+        .site-tv .video-thumb .post-info .post-info-comments:before { content: ""; }
+
+        .site-tv .video-thumb .post-info .post-info-views:before { padding-left: 0; }
+
+        .site-tv .panel-video h3 { font-size: 14px; padding: 0 5px; }
+
+        .site-tv .panel-video h3 .weekday { background-color: #F7414E; color: #fff; font-weight: 700; margin-right: 5px; padding: 0 5px; }
+
+        .site-tv .panel-video h3 .date { color: #088EFF; font-weight: 600; }
+
+        .site-tv .panel-video h3 .date strong { font-weight: 700; }
+
+        .site-tv .video-descriprion { color: #555555; font-size: 0.9em;
+            /*height: 6em; overflow: hidden; */
+            line-height: 1.3em; padding-left: 5px; }
+
+        /* Стили для размера -md- */
+        @media (min-width: 992px) {
+            .site-tv .video-thumb .play { opacity: 0; transition: opacity 150ms ease-in-out 0ms; }
+
+            .site-tv .video-thumb .play:hover { opacity: 1; }
+
+            /*.site-tv .video-thumb a:hover .post-info > div { text-decoration: none; }*/
+
+            .site-tv .panel-video .list-group-item:nth-child(2n+1) { margin-right: 5px; }
+
+            .site-tv .panel-video .list-group-item:nth-child(2n) { margin-left: 5px; }
+
+            .site-tv .panel-video .list-group-item.col-md-6 { width: 49%; }
+
+            .site-tv .panel-video .list-group-item { background-color: #f8f8f8; border-bottom: none; padding-bottom: 0; margin-bottom: 10px; }
+
+            .site-tv .panel-video .list-group-item .col-xs-7 { background-color: #fdfdfd; padding: 10px;}
+
+            .site-tv .video-thumb .post-info { background-color: transparent; }
+
+        }
+
+    </style>
+</head>
+<body class="site-tv">
+
+<div class="main-content">
+    <div class="container" id="content" style="position: relative;">
+        <!--<header class="row row_header hidden-print" id="header" data-version="1">
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+                <div class="header-line__logo">
+                    <a href="/" title="На главную страницу">
+                        <img style="position: absolute" src="http://ksk1.ru/img/ksk-logo-base.svg">
+                        <span id="logo"></span>
+                    </a>
+                </div>
+                <div class="weather-temp-sm hidden-lg">
+                    <div class="weather-block" title="По данным на 9.00:
+                        Температура -4°
+                        Давление 752 мм рт.ст.
+                        Ветер 2 м/с
+                        Влажность 81%
+                        Небольшой Снег
+                        Щёлкните для прогноза">
+                        <img class="weather-icon" src="http://icons.wxug.com/i/c/k/snow.gif">
+                        <div class="weather-temp">-4</div>
+                        <div class="weather-label">Небольшой Снег</div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-block-col hidden-xs hidden-sm hidden-md col-lg-1">
+                <div class="weather-block" title="По данным на 9.00:
+                    Температура -4°
+                    Давление 752 мм рт.ст.
+                    Ветер 2 м/с
+                    Влажность 81%
+                    Небольшой Снег
+                    Щёлкните для прогноза">
+                    <img class="weather-icon" src="http://icons.wxug.com/i/c/k/snow.gif">
+                    <div class="weather-temp">-4</div>
+                    <div class="weather-label">Небольшой Снег</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+                <div class='zone-marker show-alt'>../news.kskmedia.ru/special</div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 user-panel-placeholder"></div>
+        </header>
+
+        <nav class="navbar " role="navigation" style="margin: 0 -10px 10px !important;">
+            <div class="col-sm-7 col-md-6 ">
+
+                <ul class="nav nav-pills navbar-nav">
+                    <li>
+                        <a class="hide-alt" href="http://ksk66.ru" title="Свежие городские новости">Новости</a>
+                        <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
+                    </li>
+                    <li>
+                        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a>
+                    </li>
+                    <li>
+                        <a class="hide-alt" href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a>
+                        <a class="show-alt" href="http://cat.ksk66.ru/" title='Старый каталог предприятий, телефонов и адресов'>Справочник</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/r-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама у нас</a>
+                    </li>
+                    <li>
+                        <a class="" href="http://news.kskmedia.ru/agenda/" title='Киноафиша и афиша событий'>Афиша</a>
+                    </li>
+                    <li>
+                        <a class="" href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и окрестностей'>Карта</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/copy/" title='Копицентр'>Копицентр</a>
+                    </li>
+                    <li>
+                        <a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a>
+                    </li>
+                    <li>
+                        <a href="http://photo.kskmedia.ru" title="Фото.Новости">Фото</a>
+                    </li>
+                    <li>
+                        <a href="http://video.kskmedia.ru" title="Видео.Новости">Видео</a>
+                    </li>
+                    <li>
+                        <a href="http://news.kskmedia.ru/posred/" title='Газета Твой посредник'>Газета «ТП»</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-2 col-xs-12 block-features">
+                <div id="btn-feature-shopping" class="col-xs-6 btn-feature">
+                    <div class="col-xs-5 col-sm-12 col-md-5">
+                        <i class="fa fa-2x fa-shopping-cart"></i>
+                    </div>
+                    <div class="col-xs-7 hidden-sm">
+                        <span>Интернет-<br>магазины</span>
+                    </div>
+                </div>
+
+                <div id="btn-feature-services" class="col-xs-6 btn-feature">
+                    <div class="col-xs-5 col-sm-12 col-md-5">
+                        <i class="fa fa-2x fa-laptop"></i>
+                    </div>
+                    <div class="col-xs-7 hidden-sm">
+                        <span>Услуги <br>онлайн</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-12">
+                <div class='searchbox pull-right'>
+
+                    <gcse:searchbox></gcse:searchbox>
+                </div>
+            </div>
+        </nav>
+
+        <div id="popover_shopping_content" style="display: none">
+            <div class='shops text-center'>
+                <a href='http://plentycar.ru/contacts/krasnoufimsk/'><img src='http://ksk1.ru/img/logo-plentycar.png'></a>
+                <a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'>
+                    <img src='http://ksk1.ru/img/logo-e96.png'>
+                </a>
+                <a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a>
+                <a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a>
+                <a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a>
+            </div>
+        </div>
+
+        <div id="popover_service_content" style="display: none">
+            <div class='shops text-center'>
+                <a href="http://news.kskmedia.ru/copy/" title='Копицентр'>Копицентр</a>
+                <a href="http://news.kskmedia.ru/reklama-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама у нас</a>
+                <a href="http://www.gibdd.ru/check/fines/" title='' target="_blank">Проверка штрафов ГИБДД</a>
+                <a href="https://lk2.service.nalog.ru/lk/" title='' target="_blank">Проверка задолженности по налогам</a>
+                <a href="http://fssprus.ru/iss/ip/" title='' target="_blank">Данные судебных приставов</a>
+                <a href="http://sverdlov.lkp.pfrf.ru/" title='' target="_blank">Узнай свою пенсию</a>
+                <a href="http://med.midural.ru/RIS/Regist/ChooseHeadLPU.aspx?City=054e8a20-843f-4c89-8fa1-7263a1bad81e&Category=Raspis" title='Записаться на приём к врачу через интренет-регистратуру' target="_blank">Записаться к врачу</a>
+            </div>
+        </div>
+
+        <script>
+            (function(){
+                var url = document.location.href,
+                        ob = /^[http:\/\/]+ob/,
+                        news = /^[http:\/\/]+news/,
+                        oldnews = /^[http:\/\/]+ksk66/,
+                        cat =  /cat/,
+                        video = /^[http:\/\/]+video/,
+                        pfoto =  /^[http:\/\/]+pfoto/,
+                        timetable = /timetable/,
+                        karta = /karta/,
+                        copy = /copy/,
+                        reklama = /reklama/,
+                        agenda = /agenda/,
+                        subtitle = document.getElementById("logo"),
+                        body = document.getElementsByTagName("body")[0];
+
+
+                if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
+                    // Сайт новостей
+                    body.classList.add('news');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
+                    document.getElementsByTagName("li")[0].classList.add("activ_li");
+                }
+                else if(url.match(ob)) {
+                    // сайт объявлений
+                    body.classList.add('ob');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
+                    document.getElementsByTagName("li")[1].classList.add("activ_li");
+                } else if (url.match(cat)){
+                    body.classList.add('cat');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
+                    document.getElementsByTagName("li")[2].classList.add("activ_li");
+                } else if (url.match(reklama)){
+                    body.classList.add('reklama');
+
+                    document.getElementsByTagName("li")[3].classList.add("activ_li");
+                }else if (url.match(agenda)){
+                    body.classList.add('agenda');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-agenda.svg'>";
+                    document.getElementsByTagName("li")[4].classList.add("activ_li");
+                }else if (url.match(karta)){
+                    body.classList.add('karta');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
+                    document.getElementsByTagName("li")[5].classList.add("activ_li");
+                }else if (url.match(copy)){
+                    body.classList.add('copy');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
+                    document.getElementsByTagName("li")[6].classList.add("activ_li");
+                }else if (url.match(timetable)){
+                    body.classList.add('timetable');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+                    document.getElementsByTagName("li")[7].classList.add("activ_li");
+                }else if (url.match(pfoto)){
+                    body.classList.add('photo');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
+                    document.getElementsByTagName("li")[8].classList.add("activ_li");
+                }else if (url.match(video)){
+                    body.classList.add('video');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
+                    document.getElementsByTagName("li")[9].classList.add("activ_li");
+                }
+
+                // Popover для магазинов
+                jQuery('#pop-btn-shopping').popover({
+                    content: jQuery('#popover_shopping_content').html(),
+                    html: true,
+                    placement: "bottom"
+                });
+            })();
+        </script>
+
+        <form role="search" method="get" class="search-form" action="http://news.kskmedia.ru/" style="height: 20px;">
+            <label>
+                <input type="search" class="search-field" placeholder="Найти в справочнике..."
+                       value="" name="s" title="Что вы хотите найти">
+            </label>
+            <input type="hidden" value="company" name="post_type" id="post_type" />
+            <button type="submit" class="search-submit" style="float: right;"><i class='fa fa-search'></i></button>
+        </form>
+
+        <div id="text-42" class="none widget  user-panel">
+            <div>
+                <div class="btn-group btn-group-justified">
+                    <a class="btn btn-default " href="/agenda/" style="overflow:hidden;"><i class="fa fa-file fa-lg fa-fw"></i> Афиша</a>
+                    <a style="overflow:hidden;" href="/добавить-компанию/" class="btn btn-primary"> <i class="fa fa-plus-circle fa-lg fa-fw"></i> Добавить<br>компанию</a>
+                </div>
+                <div class="btn-group btn-group-justified btn-group_ref">
+                    <a title="Об этом справочнике" href="/cat-help/" class="btn btn-default col-xs-3"><i class="fa fa-question-circle fa-fw fa-lg"></i> Об этом справочнике</a>
+                </div>
+            </div>
+        </div> -->
+
+        <!--Начало содержимого-->
+        <div class="row">
+            <div class="main-content-inner col-xs-12 col-sm-8 col-md-9 col-main">
+                <img class="logo-tv" src="img/ksk-tv-logo.svg">
+                <div class="alert alert-info">
+                    <img src="img/logo-otv.png" class="otv-logo">
+                    <p class="">
+                        Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
+                        procrastinate B2C users after installed base benefits. Dramatically visualize customer directed
+                        convergence without revolutionary ROI.
+                    </p>
+                </div>
+                <div class="panel panel-video">
+                    <div class="panel-heading">
+                        <h2>Наши телепередачи</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list row">
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;131</span>
+                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">ПТ</span>
+                                            <span class="date"><strong>3</strong> марта</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;531</span>
+                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;5</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">ЧТ</span>
+                                            <span class="date"><strong>2</strong> марта</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;812</span>
+                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;7</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">СР</span>
+                                            <span class="date"><strong>1</strong> марта</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;411</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">ВТ</span>
+                                            <span class="date"><strong>28</strong> февраля</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;997</span>
+                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">ПН</span>
+                                            <span class="date"><strong>27</strong> февраля</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item col-xs-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-5 video-thumb">
+                                        <a href="#">
+                                            <div>
+                                                <img src="img/widepic.png">
+                                                <img class="play" src="img/play.svg">
+                                                <div class='post-info'>
+                                                    <div class='text-left'>
+                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;531</span>
+                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;5</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h3>
+                                            <span class="weekday">ПН</span>
+                                            <span class="date"><strong>27</strong> февраля</span>
+                                        </h3>
+                                        <div class="video-descriprion">
+                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
+                                            Государственной инспекции безопасности дорожного движения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-news">
+                    <div class="panel-heading">
+                        <h2>Архив видеоновостей</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list">
+                            <div class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 text-center">
+                                        <img alt="И вновь продолжается бой…" src="http://ksk66.ru/uploads/posts/2014-11/thumbs/1415779367_img_0720.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <h3>
+                                            <a href="http://ksk66.ru/10793-i-vnov-prodolzhaetsya-boj.html">И вновь продолжается бой…</a>
+                                        </h3>
+                                        <div class="post-text">
+                                            Конфликт интересов на  Красноуфимском  рынке имеет давнюю историю, и о нём
+                                            мы писали не один раз. Дело пыталась уладить и городская администрация, но
+                                            безрезультатно. И вот новый виток напряжения, который  связан  тоже с
+                                            напряжением....Но электрическим
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 text-center">
+                                        <img alt="Беспорядки на железной дороге" src="http://ksk66.ru/uploads/posts/2014-11/thumbs/1415715158_stanciya-nasha.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <h3>
+                                            <a href="http://ksk66.ru/10790-besporyadki-na-zheleznoj-doroge.html">Беспорядки на железной дороге</a>
+                                        </h3>
+                                        <div class="post-text">
+                                            Еще весной Анатолий Лесун, начальник Горьковской железной дороги, дал своим
+                                            подчиненным ряд поручений. Дорожная комиссия начала проверять их исполнение.
+                                            И обнаружила множество недочетов. В том числе и у нас
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 text-center">
+                                        <img alt="К сдаче норм ГТО готовы" src="http://ksk66.ru/uploads/posts/2014-11/thumbs/1415607833_2ancdd0veey.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <h3>
+                                            <a href="http://ksk66.ru/10757-k-sdache-norm-gto-gotovy.html">К сдаче норм ГТО готовы</a>
+                                        </h3>
+                                        <div class="post-text">
+                                            3 - 5 ноября в школе №5 восемь военно-патриотических клубов Западного округа,
+                                            а это 102 подростка, повышали свое мастерство, сдавали нормативы по
+                                            предметам начальной военной подготовки
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-3 text-center">
+                                        <img alt="Слёт волонтёров «На службе доброй воли!»" src="http://ksk66.ru/uploads/posts/2014-11/thumbs/1415608313_med.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <h3>
+                                            <a href="http://ksk66.ru/10761-slyot-volontyorov-na-sluzhbe-dobroj-voli.html">Слёт волонтёров «На службе доброй воли!»</a>
+                                        </h3>
+                                        <div class="post-text">
+                                            5 ноября на базе Красноуфимского филиала ГБОУ СПО «Свердловский областной
+                                            медицинский колледж» прошёл традиционный слёт волонтёрских отрядов
+                                            общеобразовательных учреждений и учреждений среднего профессионального
+                                            образования Западного округа
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar col-xs-12 col-sm-4 col-md-3 ">
+
+            </div>
+        </div>
+
+        <!--Окончание содержимого-->
+
+
+        <script type="application/javascript">
+
+            // Alt-режим
+            var time = null;
+            document.onkeydown = function (e) {
+                e = e || window.event;
+                if (e.keyCode === 17 || e.keyCode === 18)
+                    if (((+new Date) - time) < 200) {
+                        jQuery('body').toggleClass('alt');
+                        time = null;
+                    } else {
+                        time = +new Date;
+                    }
+            }
+
+        </script>
+        <!--Общий подвал-->
+
+        <!--
+
+        <footer class="visible-print text-right">
+            <em>
+                Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>.
+                При использовании материалов ссылка обязательна.
+            </em>
+        </footer>
+
+        <footer class="hidden-print" style="margin-top:20px;">
+            <div class="row">
+                <div class="col-sm-6" style="text-align:right;">
+                    <h3>18+ &copy; 2008-2014 Красноуфимск Онлайн</h3>
+                    <p class="footer_registration">
+                        Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
+                        Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.
+                    </p>
+                    <p class="footer_backlinks">При использовании материалов сайта ссылка обязательна.</p>
+                    <p class="footer_opinion">
+                        Мнение редакции может не совпадать с мнением авторов материалов и комментариев.
+                    </p>
+                    <div>
+                        <span id="openstat2173092"></span>
+                        <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
+                        <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> •
+                        <span><a href="http://news.kskmedia.ru/reklama-site/">Реклама на сайте</a></span>
+                    </div>
+                </div>
+                <div class="col-sm-6 footer-contacts">
+                    <h5>Связаться с нами:</h5>
+
+                    <h3>
+                        <a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
+                        infotek66@gmail.com
+                    </h3>
+                    <h4 class="show-alt"><a href="http://news.kskmedia.ru/addnews">Форма обратной связи</a></h4>
+                    <h4 class="hide-alt"><a href="http://news.kskmedia.ru/mail/">Форма обратной связи</a></h4>
+                    <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+                </div>
+            </div>
+        </footer>-->
+    </div>
+</div>
+
+
+</body>
+</html>
