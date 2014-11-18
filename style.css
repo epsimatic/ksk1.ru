@@ -22,7 +22,13 @@ body {
 
 header#header {margin-bottom: 0 !important;}
 
-.container {background-color: #ffffff; box-shadow: 0 -7px 7px #cbcbcb;}
+.container {padding: 0;}
+
+.container .yummies[src*="stripe"] {margin: 0;}
+
+.container {background-color: #ffffff; box-shadow: 0 4px 7px #cbcbcb;}
+
+#page.container {padding: 0 10px;}
 
 .leftbar {padding-right: 0;}
 
