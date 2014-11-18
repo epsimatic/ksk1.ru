@@ -22,7 +22,7 @@ body {
 
 header#header {margin-bottom: 0 !important;}
 
-.container {padding: 0;}
+/*.container {padding: 0;}*/
 
 .container .yummies[src*="stripe"] {margin: 0;}
 
