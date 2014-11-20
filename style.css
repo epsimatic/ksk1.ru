@@ -1014,7 +1014,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .temp .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
 
-.temp .panel-news-list .panel-footer a {font-size: 18px;}
+/*.temp .panel-news-list .panel-footer a {font-size: 18px;}*/
 
 .temp h1.post-title {font-size: 18px; margin-top: 0; margin-bottom: 5px;}
 
@@ -1130,7 +1130,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 }
 
 .temp .lcp_paginator a,
-.lcp_paginator a {padding: 4px 10px !important;}
+.lcp_paginator a {padding: 4px 10px !important; font-size: 14px !important;}
 
 .temp .lcp_paginator a:hover,
 .temp .lcp_paginator a:focus,
