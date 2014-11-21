@@ -22,23 +22,17 @@
 
 
 <nav class="navbar " role="navigation">
-    <div class="col-sm-7 col-md-6 ">
+    <div class="col-sm-6 col-md-5 ">
 
         <ul class="nav nav-pills navbar-nav">
             <li><a class="hide-alt" href="http://ksk66.ru" title="Свежие городские новости">Новости</a>
                 <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
             </li>
             <li><a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
-            <li><a class="hide-alt" href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a>
-            <a class="show-alt" href="http://cat.ksk66.ru/"
-                   title='Старый каталог предприятий, телефонов и адресов'>Справочник</a>
-            </li>
             <li><a href="http://news.kskmedia.ru/r-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама
                 у нас</a></li>
-            <li><a class="" href="http://news.kskmedia.ru/agenda/" title='Киноафиша и афиша событий'>Афиша</a></li>
-            <li><a class="" href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и окрестностей'>Карта</a></li>
             <li><a href="http://news.kskmedia.ru/copy/" title='Копицентр'>Копицентр</a></li>
-            <li><a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a></li>
+
             <li><a href="http://photo.kskmedia.ru" title="Фото.Новости">Фото</a></li>
             <li><a href="http://video.kskmedia.ru" title="Видео.Новости">Видео</a></li>
 
@@ -49,9 +43,10 @@
 
     </div>
 
-    <div class="col-md-3 col-sm-2 col-xs-12 block-features">
-        <div id="btn-feature-shopping" class="col-xs-6 btn-feature">
-            <div class="col-xs-5 col-sm-12 col-md-5">
+    <div class="col-md-4 col-sm-3 col-xs-12 block-features">
+        <div id="btn-feature-shopping" class="col-xs-4 btn-feature">
+            <div class="divider"></div>
+            <div class="col-xs-12 col-md-5">
                 <i class="fa fa-2x fa-shopping-cart"></i>
             </div>
             <div class="col-xs-7 hidden-sm">
@@ -59,12 +54,23 @@
             </div>
         </div>
 
-        <div id="btn-feature-services" class="col-xs-6 btn-feature">
-            <div class="col-xs-5 col-sm-12 col-md-5">
+        <div id="btn-feature-services" class="col-xs-4 btn-feature">
+            <div class="divider"></div>
+            <div class="col-xs-12 col-md-5">
                 <i class="fa fa-2x fa-laptop"></i>
             </div>
             <div class="col-xs-7 hidden-sm">
                 <span>Услуги <br>онлайн</span>
+            </div>
+        </div>
+
+        <div id="btn-feature-info" class="col-xs-4 btn-feature">
+            <div class="divider"></div>
+            <div class="col-xs-12 col-md-5">
+                <i class="fa fa-2x fa-question-circle"></i>
+            </div>
+            <div class="col-xs-7 hidden-sm">
+                <span>Справка<br>и$nbsp;афиша</span>
             </div>
         </div>
     </div>
@@ -101,6 +107,15 @@
         <a href="http://med.midural.ru/RIS/Regist/ChooseHeadLPU.aspx?City=054e8a20-843f-4c89-8fa1-7263a1bad81e&Category=Raspis"
            title='Записаться на приём к врачу через интренет-регистратуру' target="_blank">Записаться к врачу</a>
 
+    </div>
+</div>
+
+<div id="popover_info_content" style="display: none">
+    <div class='shops text-center'>
+        <a href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a>
+        <a href="http://news.kskmedia.ru/agenda/" title='Киноафиша и афиша событий'>Афиша</a>
+        <a href="http://ksk66.ru/karta.html" title='Карта Красноуфимска и окрестностей'>Карта</a>
+        <a href="http://ksk66.ru/timetable.html" title='Расписание автобусов и ж/д'>Расписание</a>
     </div>
 </div>
 <script>
@@ -171,6 +186,12 @@
         // Popover для магазинов
         jQuery('#pop-btn-shopping').popover({
             content: jQuery('#popover_shopping_content').html(),
+            html: true,
+            placement: "bottom"
+        });
+
+        jQuery('#pop-btn-info').popover({
+            content: jQuery('#popover_shopping_info').html(),
             html: true,
             placement: "bottom"
         });
