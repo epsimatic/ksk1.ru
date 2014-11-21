@@ -2637,6 +2637,8 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 
 /* Оформление фильмов */
+.movie-brief {height: 150px;}
+
 .panel-event .event-thumb,
 .movie-brief .movie-poster > a {position:relative;}
 
