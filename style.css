@@ -3280,9 +3280,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .table-comparison .discount {top: -7px;}
 
-    .block-features #btn-feature-shopping .col-xs-12 {left: 1px;}
+    /*.block-features #btn-feature-shopping .col-xs-12 {left: 1px;}*/
 
-    .block-features #btn-feature-services .col-xs-12 {left: -8px;}
+    /*.block-features #btn-feature-services .col-xs-12 {left: -8px;}*/
 
     .news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}
 
