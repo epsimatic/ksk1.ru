@@ -64,6 +64,10 @@
 
         .site-tv .panel-video .list-group-item:hover { box-shadow: 0 0 12px rgba(0, 0, 0, 0.15); }
 
+        .site-tv .panel-video .list-group-item.more-video { background-color: #536ffc; border-bottom: none; padding: 43px 15px 45px; }
+
+        .site-tv .panel-video .list-group-item.more-video > p { color: #fff; font-size: 25px; text-align: center; text-transform: uppercase; margin: 0;}
+
         .site-tv .panel-video .list-group-item > .row { margin: 0; }
 
         .site-tv .video-thumb { padding: 0; position: relative; }
@@ -141,6 +145,8 @@
             .site-tv .panel-video .list-group-item.col-md-6 { width: 49%; }
 
             .site-tv .panel-video .list-group-item { background-color: #f8f8f8; border-bottom: none; padding-bottom: 0; margin-bottom: 10px; }
+
+            .site-tv .panel-video .list-group-item.more-video { padding: 38px 35px 35px; height: 150px; opacity: 0.3; }
 
             .site-tv .panel-video .list-group-item .col-xs-7 { background-color: #fdfdfd; padding: 10px; height: 150px; overflow: hidden }
 
@@ -613,34 +619,12 @@
                                 </div>
                             </div>
 
-                            <div class="list-group-item col-xs-12 col-md-6">
-                                <div class="row">
-                                    <div class="col-xs-5 video-thumb">
-                                        <a href="#">
-                                            <div>
-                                                <img src="img/widepic.png">
-                                                <img class="play" src="img/play.svg">
-                                                <div class='post-info'>
-                                                    <div class='text-left'>
-                                                        <span class='post-info-views' title='Количество просмотров' data-toggle='tooltip'>&nbsp;531</span>
-                                                        <span class='post-info-comments' title='Количество комментариев' data-toggle='tooltip'>&nbsp;5</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <h3>
-                                            <span class="weekday">ПН</span>
-                                            <span class="date"><strong>27</strong> февраля</span>
-                                        </h3>
-                                        <div class="video-descriprion">
-                                            3 июля 2014 года в России отмечается 78-я годовщина со дня образования
-                                            Государственной инспекции безопасности дорожного движения
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="list-group-item col-xs-12 col-md-6 more-video" href="#">
+                                <p>Посмотреть<br>ещё
+                                    <!--<i class="fa fa-film"></i> -->
+                                    <i class="fa fa-fw fa-lg fa-youtube-play"></i>
+                                </p>
+                            </a>
 
                         </div>
                     </div>
