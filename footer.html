@@ -2,7 +2,6 @@
 <script type="application/javascript">
 
     // TabDrop
-
     if (window['operamini']) {
         jQuery('.nav-pills').css("max-height", "none");
     } else {
@@ -10,16 +9,16 @@
     }
 
     // Popover для кнопок. Формат: id_кнопки -> id_блока
-    var popoversToInit = [];
-    popoversToInit['btn-feature-shopping'] = 'popover_shopping_content';
-    popoversToInit['btn-feature-services'] = 'popover_service_content';
-    popoversToInit['btn-feature-info'] = 'popover_info_content';
+    var popovers = [];
+    popovers['btn-feature-shopping'] = 'popover_shopping_content';
+    popovers['btn-feature-services'] = 'popover_service_content';
+    popovers['btn-feature-info'] = 'popover_info_content';
 
-    for (var popoverTI in popoversToInit) {
-//        console.log( "Init #" + popoverTI + " with #" + popoversToInit[popoverTI]);
-        jQuery('#' + popoverTI).popover({
+    for (var p in popovers) {
+//        console.log( "Init #" + p + " with #" + p[popoverTI]);
+        jQuery('#' + p).popover({
 //TODO:    trigger: 'focus',
-            content: jQuery('#' + popoversToInit[popoverTI]).html(),
+            content: jQuery('#' + popovers[p]).html(),
             html: true,
             placement: "bottom"
         });
@@ -37,14 +36,15 @@
 
     (function () {
 
-        var cx;
-        var ob = /^[http:\/\/]+ob/;
-        var url = document.location.href;
-        // У сайтов на WordPress свой поиск
+        // Поиск
         var meta_generator = jQuery("meta[name='generator']").attr("content");
         if (meta_generator && meta_generator.substring(0, 9) !== "WordPress") {
+            // Пусто. У сайтов на WordPress свой поиск
+        } else {
 
-            if (url.match(ob)) { // Поиск по объявлениям
+            var cx;
+            var url = document.location.href;
+            if (url.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
                 cx = '003704283744183876190:qchgmzsmjkc';
             } else { // Поиск по новостям
                 cx = '003704283744183876190:woiuqgnl_eg';
@@ -71,10 +71,22 @@
             }
     };
 
+    //  Openstat
+    var openstat = { counter: 2173092, image: 5041, next: openstat };
+    (function () {
+        var j = document.createElement("script");
+        j.async = true;
+        j.type = "text/javascript";
+        j.src = "//openstat.net/cnt.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(j, s);
+    })();
+
+
     // Yandex.Metrika counter
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-            try {
+    /*    (function (d, w, c) {
+     (w[c] = w[c] || []).push(function () {
+     try {
                 w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
                     webvisor: true,
                     clickmap: true,
@@ -97,6 +109,7 @@
             f();
         }
     })(document, window, "yandex_metrika_callbacks");
+     */
 
 </script>
 <noscript><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></noscript>
@@ -126,33 +139,13 @@
         <div class="col-sm-6 footer-contacts">
             <h5>Связаться с нами:</h5>
 
-            <h3><a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
-                infotek66@gmail.com</h3>
-            <h4 class="show-alt"><a href="http://news.kskmedia.ru/addnews">Форма обратной связи</a></h4>
-            <h4 class="hide-alt"><a href="http://news.kskmedia.ru/mail/">Форма обратной связи</a></h4>
-            <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+            <h3><a class="footer-tel" href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
+                <a class="footer-email" href="mailto:infotek66@gmail.com">infotek66@gmail.com</a></h3>
+            <h4 class="footer-feedback"><a href="http://news.kskmedia.ru/mail/">Форма обратной связи</a></h4>
+            <h4 class="footer-address">Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
         </div>
     </div>
 </footer>
-
-
-
-
-<script>
-
-
-    //  Openstat
-    var openstat = { counter: 2173092, image: 5041, next: openstat };
-    (function (d, t, p) {
-        var j = d.createElement(t);
-        j.async = true;
-        j.type = "text/javascript";
-        j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
-        var s = d.getElementsByTagName(t)[0];
-        s.parentNode.insertBefore(j, s);
-    })(document, "script", document.location.protocol);
-
-</script>
 
 
 <!-- Кнопка «Наверх» -->
