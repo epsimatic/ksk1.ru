@@ -1381,6 +1381,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Голосование»"> */
+.panel-vote { border-top: 3px solid #edb194; }
+
 .panel-vote > .panel-heading {
     background: #3db65a url("img/panel-vote.png") no-repeat right;
     /*border-bottom: 3px solid #3db65a;*/
@@ -1393,7 +1395,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .panel-vote .panel-question {padding-bottom: 0;}
 .panel-vote .panel-question .btn {white-space: normal;}
 
-.panel-vote label {color: #525256; font-weight: 600; position: relative; top: -2px;}
+.panel-vote label { color: #525256; font-weight: 600; position: relative; top: -2px; }
 
 .panel-vote .vote-link {color: #333; display: block; text-align: center;}
 
