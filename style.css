@@ -1878,6 +1878,7 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .popover .popover-content a:hover,
 .block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
 
+.features-content > .col-xs-6,
 .features-content .col-xs-4 { padding: 0; }
 
 .features-content > .col-xs-4 > a,
