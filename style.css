@@ -1889,6 +1889,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .features-content .features-item-name { font-size: 13px; }
 
+.features-content .features-item-name.one-line {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
 /* </editor-fold> */
 
 
