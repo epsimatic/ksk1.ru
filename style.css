@@ -229,8 +229,6 @@ body.single-company .navbar,
 
 .navbar-toggle .icon-bar {background-color: #cccccc;}
 
-.shops img {padding: 20px 25px;}
-
 /*Tab drop for Bootstrap*/
 .nav-tabs,.nav-pills {position: relative;}
 
@@ -1879,6 +1877,17 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .popover .popover-content a:hover,
 .block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}
+
+.features-content .col-xs-4 { padding: 0; }
+
+.features-content > .col-xs-4 > a,
+.features-content > .col-xs-6 > a { padding: 15px 10px !important; }
+
+.features-content img {padding: 20px 25px;}
+
+.features-content img.icon { margin-bottom: 10px; padding: 0; height: 80px; }
+
+.features-content .features-item-name { font-size: 13px; }
 
 /* </editor-fold> */
 
