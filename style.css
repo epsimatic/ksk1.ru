@@ -1866,12 +1866,12 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature:hover,
 .block-features .btn-feature:focus {background-color: #2cb3e9; cursor: pointer;}
 
-.block-features .btn-feature > .divider { background-color: #fff; border: #42baea solid; border-width: 10px 0; height: 100%; width: 1px; position:absolute; }
+.block-features .btn-feature > .divider { background-color: #fff; border: #42baea solid; border-width: 10px 0; height: 100%; width: 1px; position:absolute; opacity: 0.5; }
 
 .block-features .btn-feature:hover > .divider,
 .block-features .btn-feature:focus > .divider { border-color: #2cb3e9; }
 
-.block-features .btn-feature .col-xs-12 { top: 11px; text-align: center; }
+.block-features .btn-feature .fa { font-size: 2em; top: 11px; position: relative; }
 
 .block-features .popover {top: 40px !important;}
 
@@ -3288,10 +3288,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .table-comparison .discount {top: -7px;}
 
-    /*.block-features #btn-feature-shopping .col-xs-12 {left: 1px;}*/
-
-    /*.block-features #btn-feature-services .col-xs-12 {left: -8px;}*/
-
     .news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}
 
     .panel-news .row {margin-left: -10px;}
@@ -3360,11 +3356,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #post-2844 .col-md-6 h2 {padding-top: 40px;}
 
-    .block-features .btn-feature .fa {font-size: 1.6em; position: relative; top: 2px; }
+    .block-features .btn-feature .fa { font-size: 1.4em; top: 15px; }
 
-    .block-features .btn-feature .col-xs-12 {left: -3px !important;}
-
-    .block-features .btn-feature .col-md-7 {font-size: 0.9em; left: -17px; line-height: 1; top: 11px;}
+    .block-features .btn-feature span { position: relative; top: 13px; }
 
     .news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}
 
@@ -3422,11 +3416,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .table-comparison .discount { top: 0; }
 
-    .block-features .btn-feature .fa { font-size: 1.9em; top: 1px; left: 1px; }
+    .block-features .btn-feature .fa { font-size: 1.9em; top: 11px; }
 
-    .block-features .btn-feature .col-xs-12 { top: 11px; }
-
-    .block-features .btn-feature .col-md-7 { line-height: 1.1; top: 10px; left: -14px; font-size: 1em; }
+    .block-features .btn-feature span { top: 8px; left: 2px; }
 
     .news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
 
