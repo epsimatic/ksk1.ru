@@ -1873,6 +1873,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .popover {top: 40px !important;}
 
+.block-features .popover-content { padding-bottom: 10px !important; }
+
 .block-features .popover .popover-content a {color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px;}
 
 .block-features .popover .popover-content a:hover,
