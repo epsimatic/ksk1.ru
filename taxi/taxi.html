@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красноуфимское телевидение</title>
+
+    <link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/style.css?v=2" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/opensans/osans.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="http://ksk1.ru/js/jquery-1.js" type="text/javascript"></script>
+    <script src="http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <meta name="generator" content="WordPress 4.0" />
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <style type="text/css">
+        .broken_link, a.broken_link {text-decoration: line-through;}
+    </style>
+    <style type="text/css" media="print">#wpadminbar { display:none; }</style>
+    <style type="text/css" media="screen"></style>
+    <script src="http://ksk1.ru/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+
+    <style>
+        /*кастыли*/
+        nav.navbar {margin: 0 -10px;}
+
+        /*окончание кастылей*/
+
+        .site-taxi p { margin-bottom: 30px; text-align: left; }
+
+        .site-taxi form { padding: 10px 20px; }
+
+        .site-taxi .taxi-header {  background-color: #161616; }
+
+        .site-taxi .taxi-header,
+        .site-taxi .taxi-header a { color: #ffd401; }
+
+        .site-taxi .taxi-header p { padding: 0 30px; }
+
+        .site-taxi .taxi-phone { padding: 20px; }
+
+        .site-taxi .taxi-phone h2 { font-size: 40px; font-weight: 700; margin-bottom: 0; }
+
+        .site-taxi .taxi-phone a { text-decoration: underline; }
+
+        .site-taxi .taxi-phone h2 a,
+        .site-taxi .taxi-phone h2 a:hover,
+        .site-taxi .taxi-phone h2 a:focus {text-decoration: none;}
+
+        .site-taxi .taxi-phone h2 .fa { font-size: 27px; }
+
+        .site-taxi .taxi-logo { padding: 20px 60px 40px; }
+
+        .site-taxi .taxi-logo img { max-width: 250px; }
+
+        .site-taxi .panel-default .panel-heading,
+        .site-taxi .taxi-content { background-color: #ffd401; }
+
+        .site-taxi .taxi-content { position: relative; }
+
+        .site-taxi .taxi-content .taxi-phone a { color: #161616; }
+
+        .site-taxi .taxi-content .taxi-phone a:hover,
+        .site-taxi .taxi-content .taxi-phone a:hover { color: #333; }
+
+        .site-taxi .taxi-content p { padding: 0 20px; }
+
+        .site-taxi img[src*="taxi-squares.svg"] { width: 100%; position: relative; bottom: 0; margin: -7px 0; }
+
+        /*.site-taxi .panel-default .panel-heading { background-color: #ffb401; }*/
+
+        .site-taxi .panel-group .panel + .panel { margin-top: 0; }
+
+        .site-taxi .panel-default > .panel-heading { padding: 8px 22px 13px; }
+
+        .site-taxi .panel-default .panel-title a { border-bottom: 1px dashed #161616; font-size: 14px; }
+
+        .site-taxi .panel-default .panel-title a:hover,
+        .site-taxi .panel-default .panel-title a:focus { text-decoration: none; }
+
+        .site-taxi .panel-default .panel-body { background-color: #fff; }
+
+        .site-taxi .panel-default .panel-collapse { border-bottom: none; }
+
+        #collapseDepartureOptions .fa-clock-o { color: #a4a4a4; padding-left: 10px; }
+
+        #collapseDepartureOptions .btn-default:hover,
+        #collapseDepartureOptions .btn-default:focus { border-color: #e9e9e9; background-color: #e9e9e9; }
+
+        #collapseDepartureOptions .btn-default:active { border-color: #ffc600; background-color: #ffc600; }
+
+        .site-taxi .form-horizontal,
+        .site-taxi .form-inline { padding: 10px 0; }
+
+        .form-horizontal .control-label { padding-left: 0; }
+
+        .site-taxi .form-inline .form-group { display: inline-block; }
+
+        .site-taxi .form-inline .form-group .form-control { display: inline; margin-bottom: 0; width: 100px; }
+
+        .site-taxi .form-group { margin: 0; position: relative; }
+
+        .site-taxi .form-group input { margin-bottom: 10px; border-radius: 6px; }
+
+        .site-taxi .form-group .fa { position: absolute; left: 10px; bottom: 8px; font-size: 17px; color: #4c4c4c; }
+
+        .site-taxi #clientPhone .fa { font-size: 34px; left: 17px; }
+
+        .site-taxi #adressFrom input,
+        .site-taxi #adressTo input { padding-left: 32px; }
+
+        .site-taxi #clientPhone input { text-align: center; padding: 10px 20px 11px; height: 51px; }
+
+        .site-taxi #clientPhone input::-webkit-input-placeholder { text-align: center; font-size: 18px; }
+        .site-taxi #clientPhone input::-moz-placeholder { text-align: center; font-size: 21px; }
+        .site-taxi #clientPhone input:-moz-placeholder { text-align: center; font-size: 21px; }
+        .site-taxi #clientPhone input:-ms-input-placeholder { text-align: center; font-size: 21px; }
+
+        .site-taxi button.btn-block { background-color: #161616; text-transform: uppercase; color: #ffd401; padding: 15px 0; }
+
+        .site-taxi .desciption-title { padding-left: 20px; color: #322a00; text-transform: uppercase; font-size: 20px; font-weight: 700; }
+
+        .site-taxi .desciption-title + p { color: #282100; }
+
+        .site-taxi .promo-labels { padding: 0 20px;  margin-bottom: 20px; }
+        .site-taxi .promo-labels img { width: 100%; margin-bottom: 20px;}
+
+        /* Стили для размера -sm- */
+        @media (min-width: 768px) {
+
+            .site-taxi .taxi-header .taxi-logo { padding: 70px 40px 40px 60px; }
+
+            .site-taxi .taxi-header .taxi-phone { padding-left: 0; }
+
+            .site-taxi .taxi-header .taxi-phone .divider { background-color: #ffd401; border-color: #161616; border-image: none; border-style: solid; border-width: 10px 0 50px; height: 100%; opacity: 0.3; position: absolute; width: 1px; }
+
+            .site-taxi .taxi-header p { margin-bottom: 20px; padding-top: 20px; padding-right: 0; }
+
+            .site-taxi .panel-default > .panel-heading { background-color: #ffb401; }
+
+            .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0; width: 47.5%; background-color: #ffb401; }
+
+            .form-taxi-order-flow .desciption-title {margin-top: 5px;}
+
+            .desciption-title {margin-top: 30px;}
+
+            .form-horizontal .control-label { padding-left: 5px; text-align: left; }
+        }
+
+        /* Стили для размера -md- */
+        @media (min-width: 992px) {
+
+            .site-taxi img[src*="taxi-squares.svg"] { margin: -9px 0; }
+
+            .form-taxi-order-flow {width: 30.8333%;}
+        }
+
+        /* Стили для размера -lg- */
+        @media (min-width: 1200px) {
+            .site-taxi img[src*="taxi-squares.svg"] { margin: -11px 0; }
+        }
+
+    </style>
+</head>
+<body class="site-taxi">
+
+<div class="main-content">
+    <div class="container" id="content" style="position: relative;">
+
+        <header class="row row_header hidden-print" id="header" data-version="1">
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+                <div class="header-line__logo">
+                    <a href="/" title="На главную страницу">
+                        <img style="position: absolute" src="http://ksk1.ru/img/ksk-logo-base.svg">
+                        <span id="logo"></span>
+                    </a>
+                </div>
+                <div class="weather-temp-sm hidden-lg">
+                    <!--#include virtual="/weather.html" -->
+                </div>
+            </div>
+            <div class="weather-block-col hidden-xs hidden-sm hidden-md col-lg-1">
+                <!--#include virtual="/weather.html" -->
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-special">
+                <!--#include virtual="/yummies/special/" -->
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 user-panel-placeholder">
+            </div>
+        </header>
+
+        <nav class="navbar " role="navigation">
+            <div class="col-sm-6 col-md-5 ">
+
+                <ul class="nav nav-pills navbar-nav">
+                    <li><a class="hide-alt" href="http://ksk66.ru" title="Свежие городские новости">Новости</a>
+                        <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
+                    </li>
+                    <li><a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+
+                    <li><a href="http://news.kskmedia.ru/r-site/" title='Реклама на наших сайтах и в газете «Твой Посредник»'>Реклама
+                        у нас</a></li>
+
+                    <li><a href="http://news.kskmedia.ru/posred/" title='Газета Твой посредник'>Газета «ТП»</a></li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-3 col-xs-12 block-features">
+                <div id="btn-feature-shopping" class="col-xs-4 btn-feature text-center">
+                    <div class="divider"></div>
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="hidden-sm hidden-xs">Магазины</span>
+                </div>
+
+                <div id="btn-feature-services" class="col-xs-4 btn-feature text-center">
+                    <div class="divider"></div>
+                    <i class="fa fa-laptop"></i>
+                    <span class="hidden-sm hidden-xs">Услуги</span>
+                </div>
+
+                <div id="btn-feature-info" class="col-xs-4 btn-feature text-center">
+                    <div class="divider"></div>
+                    <i class="fa fa-question-circle"></i>
+                    <span class="hidden-sm hidden-xs">Справка</span>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-xs-12">
+                <div class='searchbox pull-right'>
+                    <!--suppress CheckTagEmptyBody -->
+                    <gcse:searchbox></gcse:searchbox>
+                </div>
+            </div>
+        </nav>
+
+        <div id="popover_shopping_content" style="display: none">
+            <div class='features-content text-center'>
+                <a href='http://plentycar.ru/contacts/krasnoufimsk/'><img src='http://ksk1.ru/img/logo-plentycar.png'></a>
+                <a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'><img
+                        src='http://ksk1.ru/img/logo-e96.png'></a>
+                <a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a>
+                <a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a>
+                <a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a>
+            </div>
+        </div>
+        <div id="popover_service_content" style="display: none">
+            <div class="features-content text-center" style="padding: 10px;">
+
+                <div class="col-xs-4">
+                    <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
+                        <img src="http://ksk1.ru/img/icons/copycentr-icon.png" class="icon">
+                        <div class="features-item-name">Копицентр</div>
+                    </a>
+                </div>
+
+                <div class="col-xs-4">
+                    <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
+                        <img src="http://ksk1.ru/img/icons/browser-icon.png" class="icon">
+                        <div class="features-item-name one-line">Реклама у нас</div>
+                    </a>
+                </div>
+
+                <div class="col-xs-4">
+                    <!--<a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
+                        <img src="http://ksk1.ru/img/icons/fixer-icon.png" class="icon">
+                        <div class="features-item-name one-line">Ремонт ПК</div>
+                    </a>-->
+                </div>
+
+                <div class="col-xs-4">
+                    <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
+                        <img src="http://ksk1.ru/img/icons/webdev-icon.png" class="icon">
+                        <div class="features-item-name">Создание сайтов</div>
+                    </a>
+                </div>
+
+                <div class="col-xs-4">
+                    <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
+                        <img src="http://ksk1.ru/img/icons/video-icon.png" class="icon">
+                        <div class="features-item-name">Видео и фотосъемка</div>
+                    </a>
+                </div>
+
+                <div class="col-xs-4">
+                    <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
+                        <img src="http://ksk1.ru/img/icons/gov-icon.png" class="icon">
+                        <div class="features-item-name">Различные госуслуги</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="popover_info_content" style="display: none">
+            <div class="features-content text-center" style="padding: 10px;">
+                <div class="col-xs-6">
+                    <a title="Каталог предприятий, телефонов и адресов" href="http://news.kskmedia.ru/cat/">
+                        <img class="icon" src="http://ksk1.ru/img/icons/catalog-icon.png">
+                        <div class="features-item-name">Справочник</div>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a title="Киноафиша и афиша событий" href="http://news.kskmedia.ru/agenda/">
+                        <img src="http://ksk1.ru/img/icons/agenda-icon.png" class="icon">
+                        <div class="features-item-name">Афиша</div>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a title="Карта Красноуфимска и окрестностей" href="http://ksk66.ru/karta.html">
+                        <img src="http://ksk1.ru/img/icons/map-icon.png" class="icon">
+                        <div class="features-item-name">Карта</div>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a title="Расписание автобусов и ж/д" href="http://ksk66.ru/timetable.html"><img class="icon" src="http://ksk1.ru/img/icons/timetable-icon.png">
+                        <div class="features-item-name">Расписание</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            (function(){
+                var url = document.location.href,
+                        ob = /^[http:\/\/]+ob/,
+                        news = /^[http:\/\/]+news/,
+                        oldnews = /^[http:\/\/]+ksk66/,
+                        cat =  /cat/,
+                        video = /^[http:\/\/]+video/,
+                        pfoto =  /^[http:\/\/]+pfoto/,
+                        timetable = /timetable/,
+                        karta = /karta/,
+                        copy = /copy/,
+                        reklama = /reklama/,
+                        agenda = /agenda/,
+                        subtitle = document.getElementById("logo"),
+                        body = document.getElementsByTagName("body")[0];
+
+
+                if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
+                    // Сайт новостей
+                    body.classList.add('news');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
+                    document.getElementsByTagName("li")[0].classList.add("activ_li");
+                }
+                else if(url.match(ob)) {
+                    // сайт объявлений
+                    body.classList.add('ob');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
+                    document.getElementsByTagName("li")[1].classList.add("activ_li");
+                } else if (url.match(cat)){
+                    body.classList.add('cat');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
+                    document.getElementsByTagName("li")[2].classList.add("activ_li");
+                } else if (url.match(reklama)){
+                    body.classList.add('reklama');
+
+                    document.getElementsByTagName("li")[3].classList.add("activ_li");
+                }else if (url.match(agenda)){
+                    body.classList.add('agenda');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-agenda.svg'>";
+                    document.getElementsByTagName("li")[4].classList.add("activ_li");
+                }else if (url.match(karta)){
+                    body.classList.add('karta');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
+                    document.getElementsByTagName("li")[5].classList.add("activ_li");
+                }else if (url.match(copy)){
+                    body.classList.add('copy');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
+                    document.getElementsByTagName("li")[6].classList.add("activ_li");
+                }else if (url.match(timetable)){
+                    body.classList.add('timetable');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
+                    document.getElementsByTagName("li")[7].classList.add("activ_li");
+                }else if (url.match(pfoto)){
+                    body.classList.add('photo');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
+                    document.getElementsByTagName("li")[8].classList.add("activ_li");
+                }else if (url.match(video)){
+                    body.classList.add('video');
+                    subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
+                    document.getElementsByTagName("li")[9].classList.add("activ_li");
+                }
+
+                // Popover для магазинов
+                jQuery('#pop-btn-shopping').popover({
+                    content: jQuery('#popover_shopping_content').html(),
+                    html: true,
+                    placement: "bottom"
+                });
+            })();
+        </script>
+
+        <div id="text-42" class="none widget  user-panel">
+            <div>
+                <div class="btn-group btn-group-justified">
+                    <a class="btn btn-default " href="/agenda/" style="overflow:hidden;"><i class="fa fa-file fa-lg fa-fw"></i> Афиша</a>
+                    <a style="overflow:hidden;" href="/добавить-компанию/" class="btn btn-primary"> <i class="fa fa-plus-circle fa-lg fa-fw"></i> Добавить<br>компанию</a>
+                </div>
+                <div class="btn-group btn-group-justified btn-group_ref">
+                    <a title="Об этом справочнике" href="/cat-help/" class="btn btn-default col-xs-3"><i class="fa fa-question-circle fa-fw fa-lg"></i> Об этом справочнике</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Начало содержимого-->
+        <div class="row">
+            <div class="main-content-inner col-xs-12 col-main">
+                <div class="row taxi-header">
+                    <div class="col-xs-12 text-center taxi-phone hidden-sm hidden-md hidden-lg">
+                        <h2>
+                            <a href="tel:+7343979700">
+                                <i class="fa fa-phone"></i>7-97-00
+                            </a>
+                        </h2>
+                        <a href="#">позвонить мне</a>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="taxi-logo text-center">
+                            <img src="taxi-logo.svg">
+                        </div>
+
+                        <p class="hidden-sm hidden-md hidden-lg">
+                            Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
+                            сайта ТАКСИ Онлайн.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-6 text-center taxi-phone hidden-xs">
+                        <div class="divider"></div>
+
+                        <h2>
+                            <a href="tel:+7343979700">
+                                <i class="fa fa-phone"></i>7-97-00
+                            </a>
+                        </h2>
+                        <a href="#">позвонить мне</a>
+
+                        <p>
+                            Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
+                            сайта ТАКСИ Онлайн.
+                        </p>
+
+                    </div>
+
+                    <img src="taxi-squares.svg">
+                </div>
+
+                <div class="row taxi-content">
+                    <div class="col-xs-12 col-sm-6 col-md-4 pull-right form-taxi-order-flow">
+                        <h2 class="desciption-title hidden-xs">
+                            Закажите сейчас
+                        </h2>
+                        <form role="form">
+                            <div id="adressFrom" class="form-group">
+                                <label>Откуда</label>
+                                <i class="fa fa-sign-out"></i>
+                                <input class="form-control" placeholder="Улица, дом">
+                            </div>
+                            <div id="adressTo" class="form-group">
+                                <label>Куда</label>
+                                <i class="fa fa-sign-in"></i>
+                                <input class="form-control" placeholder="Улица, дом">
+                            </div>
+                        </form>
+
+                        <div class="panel-group" id="taxiAccordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingPassengerOptions">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapsePassengerOptions" aria-expanded="true" aria-controls="collapsePassengerOptions">
+                                            1 пассажир без багажа
+                                            <span class="caret"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsePassengerOptions" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingPassengerOptions">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <label class="col-xs-8 col-sm-9 col-md-8 col-lg-9 control-label">Сколько пассажиров?</label>
+                                                <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
+                                                    <input class="form-control" id="passengersQuantity" type="number" value="1" step="1" min="1">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> С ребёнком
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> С большим багажом
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingDepartureOptions">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseDepartureOptions" aria-expanded="false" aria-controls="collapseDepartureOptions">
+                                            Вызвать сейчас
+                                            <span class="caret"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseDepartureOptions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDepartureOptions">
+                                    <div class="panel-body">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                Вызвать сейчас
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                Через 15 минут
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                Через 30 минут
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                                                Завтра утром
+                                            </label>
+                                        </div>
+
+                                        <form class="form-inline" role="form">
+                                            <button class="btn btn-default">
+                                                Сегодня
+                                            </button>
+                                            <button class="btn btn-default">
+                                                Завтра
+                                            </button>
+                                            <i class="fa fa-clock-o"></i>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Время отправления</label>
+                                                <input type="time" step="900" class="departure-time form-control" value="00:00">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <form role="form">
+                            <div id="clientPhone" class="form-group">
+                                <label>Контактный телефон</label>
+                                <i class="fa fa-mobile"></i>
+                                <input class="form-control" placeholder="+7 9xxxx">
+                            </div>
+                            <button class="btn btn-lg btn-block">Заказать</button>
+
+                        </form>
+
+                        <div class="text-center taxi-phone hidden-sm hidden-md hidden-lg">
+                            <h2>
+                                <a href="tel:+7343979700">
+                                    <i class="fa fa-phone"></i>7-97-00
+                                </a>
+                            </h2>
+                            <a href="#">позвонить мне</a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-8">
+                        <h2 class="desciption-title">
+                            О службе такси
+                        </h2>
+                        <p>
+                            Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
+                            сайта ТАКСИ Онлайн. Новые технологии все больше проникают в повседневную жизнь. Купить
+                            ноутбук, забронировать авиабилет, заказать пиццу на ужин через интернет-сайт – такие
+                            действия вполне обыденны и уже плотно вошли в нашу повседневную жизнь. Главные ожидания
+                            потребителей связаны со скоростью выполнения задания и пунктуальностью сервиса. Служба
+                            ТАКСИ Онлайн объединяет в себе все диспетчерские службы города, поэтому, позвонив по нашему
+                            номеру, вы гарантированно получите машину в нужное время, а мы будем стараться, чтобы
+                            качество сервиса было на высоте.
+                        </p>
+
+                        <div class="promo-labels row">
+                            <div class="col-xs-12 col-md-6">
+                                <a href="#">
+                                    <img src="taxi-4parteners.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="#">
+                                    <img src="promo-pic.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="#">
+                                    <img src="promo-pic.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="#">
+                                    <img src="promo-pic.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--Окончание содержимого-->
+
+
+        <script type="application/javascript">
+
+            // Alt-режим
+            var time = null;
+            document.onkeydown = function (e) {
+                e = e || window.event;
+                if (e.keyCode === 17 || e.keyCode === 18)
+                    if (((+new Date) - time) < 200) {
+                        jQuery('body').toggleClass('alt');
+                        time = null;
+                    } else {
+                        time = +new Date;
+                    }
+            }
+
+        </script>
+
+        <!--Общий подвал-->
+
+        <footer class="visible-print text-right">
+            <em>
+                Информация с сайта <span style="text-decoration: underline;">ksk66.ru</span>.
+                При использовании материалов ссылка обязательна.
+            </em>
+        </footer>
+
+        <footer class="hidden-print" style="margin-top:20px;">
+            <div class="row">
+                <div class="col-sm-6" style="text-align:right;">
+                    <h3>18+ &copy; 2008-2014 Красноуфимск Онлайн</h3>
+                    <p class="footer_registration">
+                        Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
+                        Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.
+                    </p>
+                    <p class="footer_backlinks">При использовании материалов сайта ссылка обязательна.</p>
+                    <p class="footer_opinion">
+                        Мнение редакции может не совпадать с мнением авторов материалов и комментариев.
+                    </p>
+                    <div>
+                        <span id="openstat2173092"></span>
+                        <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
+                        <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> •
+                        <span><a href="http://news.kskmedia.ru/reklama-site/">Реклама на сайте</a></span>
+                    </div>
+                </div>
+                <div class="col-sm-6 footer-contacts">
+                    <h5>Связаться с нами:</h5>
+
+                    <h3>
+                        <a href="tel:+73439479710">8 (34394) <strong>7-97-10</strong></a><br>
+                        infotek66@gmail.com
+                    </h3>
+                    <h4 class="show-alt"><a href="http://news.kskmedia.ru/addnews">Форма обратной связи</a></h4>
+                    <h4 class="hide-alt"><a href="http://news.kskmedia.ru/mail/">Форма обратной связи</a></h4>
+                    <h4>Свердловская обл., г. Красноуфимск, ул. Ленина, д. 88</h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+</body>
+</html>
