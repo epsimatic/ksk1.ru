@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Красноуфимское телевидение</title>
+    <title>Такси онлайн в Красноуфимске</title>
 
     <link href="http://ksk1.ru/bootstrap-3c/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="http://ksk1.ru/style.css?v=2" rel="stylesheet" type="text/css"/>
@@ -44,6 +44,10 @@
 
         .site-taxi .taxi-phone h2 { font-size: 40px; font-weight: 700; margin-bottom: 0; }
 
+        .site-taxi .taxi-content .taxi-phone h2 { margin-top: 0; font-size: 53px; }
+
+        .site-taxi .taxi-content .taxi-phone h2 .fa { font-size: 35px; padding-right: 3px; }
+
         .site-taxi .taxi-phone a { text-decoration: underline; }
 
         .site-taxi .taxi-phone h2 a,
@@ -69,8 +73,6 @@
         .site-taxi .taxi-content p { padding: 0 20px; }
 
         .site-taxi img[src*="taxi-squares.svg"] { width: 100%; position: relative; bottom: 0; margin: -7px 0; }
-
-        /*.site-taxi .panel-default .panel-heading { background-color: #ffb401; }*/
 
         .site-taxi .panel-group .panel + .panel { margin-top: 0; }
 
@@ -131,11 +133,23 @@
         /* Стили для размера -sm- */
         @media (min-width: 768px) {
 
-            .site-taxi .taxi-header .taxi-logo { padding: 70px 40px 40px 60px; }
+            .site-taxi .taxi-header { position: relative; }
 
-            .site-taxi .taxi-header .taxi-phone { padding-left: 0; }
+            .site-taxi .taxi-header .taxi-logo { padding: 60px 40px 40px 60px; }
 
-            .site-taxi .taxi-header .taxi-phone .divider { background-color: #ffd401; border-color: #161616; border-image: none; border-style: solid; border-width: 10px 0 50px; height: 100%; opacity: 0.3; position: absolute; width: 1px; }
+            /*.site-taxi .taxi-header .taxi-phone { padding-left: 0; }*/
+
+            .site-taxi .taxi-header .taxi-phone { padding: 0; bottom: 0; }
+
+            .site-taxi .taxi-header .taxi-phone > h2 { position: absolute; bottom: 8px; left: 135px; margin-top: 0; font-size: 25px; z-index: 3; }
+
+            .site-taxi .taxi-header .taxi-phone > h2 .fa { font-size: 20px; }
+
+            .site-taxi .taxi-header .taxi-phone > span { position: absolute; bottom: 11px; right: 127px; z-index: 3; }
+
+            .site-taxi .taxi-header .divider { background-color: #ffd401; border-color: #161616; border-image: none; border-style: solid; border-width: 15px 0 20px; height: 100%; opacity: 0.3; position: absolute; width: 1px; }
+
+            .site-taxi .taxi-header .col-description { height: 217px; }
 
             .site-taxi .taxi-header p { margin-bottom: 20px; padding-top: 20px; padding-right: 0; }
 
@@ -145,13 +159,17 @@
 
             .form-taxi-order-flow .desciption-title {margin-top: 5px;}
 
-            .desciption-title {margin-top: 30px;}
+            .desciption-title {margin-top: 35px;}
 
             .form-horizontal .control-label { padding-left: 5px; text-align: left; }
         }
 
         /* Стили для размера -md- */
         @media (min-width: 992px) {
+
+            .site-taxi .taxi-header .taxi-phone > h2 { left: 187px; bottom: 13px; }
+
+            .site-taxi .taxi-header .taxi-phone > span { right: 175px; bottom: 15px; }
 
             .site-taxi img[src*="taxi-squares.svg"] { margin: -9px 0; }
 
@@ -160,6 +178,10 @@
 
         /* Стили для размера -lg- */
         @media (min-width: 1200px) {
+            .site-taxi .taxi-header .taxi-phone > h2 { left: 239px; bottom: 19px; }
+
+            .site-taxi .taxi-header .taxi-phone > span { right: 230px; bottom: 21px; }
+
             .site-taxi img[src*="taxi-squares.svg"] { margin: -11px 0; }
         }
 
@@ -427,15 +449,18 @@
                         <div class="taxi-logo text-center">
                             <img src="taxi-logo.svg">
                         </div>
+                    </div>
 
-                        <p class="hidden-sm hidden-md hidden-lg">
+                    <div class="col-xs-12 col-sm-6 col-description">
+                        <div class="divider hidden-xs"></div>
+
+                        <p class="">
                             Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
                             сайта ТАКСИ Онлайн.
                         </p>
-
                     </div>
 
-                    <div class="col-sm-6 text-center taxi-phone hidden-xs">
+                    <!--<div class="col-sm-6 text-center taxi-phone hidden-xs">
                         <div class="divider"></div>
 
                         <h2>
@@ -450,9 +475,22 @@
                             сайта ТАКСИ Онлайн.
                         </p>
 
+                    </div>-->
+
+                    <div class="col-xs-12 taxi-phone hidden-xs">
+                        <h2>
+                            <a href="tel:+7343979700">
+                                <i class="fa fa-phone"></i>7-97-00
+                            </a>
+                        </h2>
+                        <span><a href="#">позвонить мне</a></span>
+
+                        <div>
+                            <img src="taxi-squares.svg">
+                        </div>
                     </div>
 
-                    <img src="taxi-squares.svg">
+
                 </div>
 
                 <div class="row taxi-content">
