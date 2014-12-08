@@ -38,7 +38,11 @@
         .site-taxi .taxi-header,
         .site-taxi .taxi-header a { color: #ffd401; }
 
-        .site-taxi .taxi-header p { padding: 0 30px; }
+        .site-taxi .taxi-header p { font-size: 16px; font-weight: 600; margin-bottom: 5px; padding: 0 30px; }
+
+        .site-taxi .col-description h3 { font-size: 21px; font-weight: 600; margin-top: 0; margin-bottom: 25px; padding: 0 20px; text-align: center; }
+
+        .site-taxi .col-description ul { margin-bottom: 30px; }
 
         .site-taxi .taxi-phone { padding: 20px; }
 
@@ -141,17 +145,21 @@
 
             .site-taxi .taxi-header .taxi-phone { padding: 0; bottom: 0; }
 
-            .site-taxi .taxi-header .taxi-phone > h2 { position: absolute; bottom: 8px; left: 135px; margin-top: 0; font-size: 25px; z-index: 3; }
+            .site-taxi .taxi-header .taxi-phone > h2 { position: absolute; bottom: 8px; left: 40px; margin-top: 0; font-size: 25px; z-index: 3; }
 
             .site-taxi .taxi-header .taxi-phone > h2 .fa { font-size: 20px; }
 
-            .site-taxi .taxi-header .taxi-phone > span { position: absolute; bottom: 11px; right: 127px; z-index: 3; }
+            .site-taxi .taxi-header .taxi-phone > span { position: absolute; bottom: 11px; left: 160px; z-index: 3; }
 
             .site-taxi .taxi-header .divider { background-color: #ffd401; border-color: #161616; border-image: none; border-style: solid; border-width: 15px 0 20px; height: 100%; opacity: 0.3; position: absolute; width: 1px; }
 
             .site-taxi .taxi-header .col-description { height: 217px; }
 
-            .site-taxi .taxi-header p { margin-bottom: 20px; padding-top: 20px; padding-right: 0; }
+            .site-taxi .col-description h3 { margin-top: 30px; margin-bottom: 0; }
+
+            .site-taxi .col-description ul { padding-left: 75px; }
+
+            .site-taxi .taxi-header p { margin-bottom: 4px; padding-top: 15px; padding-right: 0; padding-left: 60px;}
 
             .site-taxi .panel-default > .panel-heading { background-color: #ffb401; }
 
@@ -167,9 +175,15 @@
         /* Стили для размера -md- */
         @media (min-width: 992px) {
 
-            .site-taxi .taxi-header .taxi-phone > h2 { left: 187px; bottom: 13px; }
+            .site-taxi .col-description h3 { padding: 0 60px; margin-top: 35px; }
 
-            .site-taxi .taxi-header .taxi-phone > span { right: 175px; bottom: 15px; }
+            .site-taxi .taxi-header p { padding-left: 120px; padding-top: 20px; }
+
+            .site-taxi .col-description ul { padding-left: 135px; }
+
+            .site-taxi .taxi-header .taxi-phone > h2 { left: 125px; bottom: 13px; }
+
+            .site-taxi .taxi-header .taxi-phone > span { left: 242px; bottom: 15px; }
 
             .site-taxi img[src*="taxi-squares.svg"] { margin: -9px 0; }
 
@@ -178,9 +192,16 @@
 
         /* Стили для размера -lg- */
         @media (min-width: 1200px) {
-            .site-taxi .taxi-header .taxi-phone > h2 { left: 239px; bottom: 19px; }
 
-            .site-taxi .taxi-header .taxi-phone > span { right: 230px; bottom: 21px; }
+            .site-taxi .col-description h3 { padding: 0 120px; margin-top: 45px; }
+
+            .site-taxi .taxi-header p { padding-left: 180px; }
+
+            .site-taxi .col-description ul { padding-left: 195px; }
+
+            .site-taxi .taxi-header .taxi-phone > h2 { left: 180px; bottom: 19px; }
+
+            .site-taxi .taxi-header .taxi-phone > span { left: 300px; bottom: 23px; }
 
             .site-taxi img[src*="taxi-squares.svg"] { margin: -11px 0; }
         }
@@ -454,10 +475,17 @@
                     <div class="col-xs-12 col-sm-6 col-description">
                         <div class="divider hidden-xs"></div>
 
-                        <p class="">
-                            Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
-                            сайта ТАКСИ Онлайн.
-                        </p>
+                        <h3 class="">
+                            Первая в городе служба онлайн-заказа такси.
+                        </h3>
+                        <p >Закажите такси:</p>
+                        <ul>
+                            <li>Через форму на сайте</li>
+                            <li>По телефону</li>
+                            <li>Через СМС</li>
+                            <li>Через обратный звонок</li>
+                        </ul>
+
                     </div>
 
                     <!--<div class="col-sm-6 text-center taxi-phone hidden-xs">
@@ -631,10 +659,14 @@
                         </h2>
                         <p>
                             Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
-                            сайта ТАКСИ Онлайн. Новые технологии все больше проникают в повседневную жизнь. Купить
+                            сайта ТАКСИ Онлайн. Новые технологии все больше проникают в повседневную жизнь.
+                        </p>
+                        <p> Купить
                             ноутбук, забронировать авиабилет, заказать пиццу на ужин через интернет-сайт – такие
                             действия вполне обыденны и уже плотно вошли в нашу повседневную жизнь. Главные ожидания
-                            потребителей связаны со скоростью выполнения задания и пунктуальностью сервиса. Служба
+                            потребителей связаны со скоростью выполнения задания и пунктуальностью сервиса.
+                        </p>
+                        <p> Служба
                             ТАКСИ Онлайн объединяет в себе все диспетчерские службы города, поэтому, позвонив по нашему
                             номеру, вы гарантированно получите машину в нужное время, а мы будем стараться, чтобы
                             качество сервиса было на высоте.
