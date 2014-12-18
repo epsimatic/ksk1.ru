@@ -1,5 +1,4 @@
-
-@import "css/bootstrap.css";
+/*@import "css/bootstrap.css";*/
 .dmbs-container {
 }
 .dmbs-header {
@@ -116,12 +115,9 @@ ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10
 .site-eda .dishes .dish h3.item-name {font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; text-align: center; overflow: hidden; height: 2.8em;}
 
 .site-eda .dishes.dishes-col-6 .dish h3.item-name {text-align: center;}
-
-.site-eda .dishes .dish p.item-description {font-size: 0.75em; line-height: 1.2em; color: rgb(153, 153, 153); overflow: hidden; text-overflow: ellipsis; height: 0; margin-bottom: 0;}
-
-.site-eda .dishes.dishes-col-6 .dish p.item-description {height: 0;}
-
-.site-eda .dishes .dish:hover p.item-description {height: auto;}
+.site-eda .dishes .dish .item-description p { font-size: 0.75em; line-height: 1.2em; color: rgb(153, 153, 153); overflow: hidden; text-overflow: ellipsis; height: 0; margin-bottom: 0; }
+.site-eda .dishes.dishes-col-6 .dish .item-description p { height: 0; }
+.site-eda .dishes .dish:hover .item-description p { height: auto; }
 
 .site-eda .dishes .dish .order-controls {padding-bottom: 15px;}
 
@@ -182,10 +178,8 @@ ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10
     .site-eda .dishes .dish .order-controls .amount {margin-bottom: 0;}
 
     .site-eda .dishes.dishes-col-6 .dish .order-controls .amount {margin-bottom: 10px;}
-
-    .site-eda .dishes .dish p.item-description {height: 1.2em; margin-bottom: 10px;}
-
-    .site-eda .dishes.dishes-col-6 .dish p.item-description {margin: 0;}
+    .site-eda .dishes .dish .item-description p { height: 1.2em; margin-bottom: 10px; }
+    .site-eda .dishes.dishes-col-6 .dish .item-description p { margin: 0; }
 
     .site-eda .dishes .dish .order-controls .order-row {flex-direction: row;}
 
@@ -228,8 +222,7 @@ ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10
     .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 345px;}
 
     .site-eda .dishes .dish .order-controls .portion-type {margin-left: 0; padding-left: 0;}
-
-    .site-eda .dishes.dishes-col-6 .dish:hover p.item-description {margin-bottom: 10px;}
+    .site-eda .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 10px; }
 }
 
 /* Стили для размера -lg- */
