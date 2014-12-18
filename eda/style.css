@@ -216,10 +216,8 @@ ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10
     .site-eda .dishes.dishes-col-6 .dish-container {width: 16%; margin: 0 0.33333333% 20px; height: 305px;}
 
     .site-eda .dishes .dish:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); position: absolute; z-index: 2;}
-
-    .site-eda .dishes .dish:hover .item-stuff {height: 282px;}
-
-    .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 345px;}
+    /*.site-eda .dishes .dish:hover .item-stuff {height: 282px;}*/
+    /*.site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 345px;}*/
 
     .site-eda .dishes .dish .order-controls .portion-type {margin-left: 0; padding-left: 0;}
     .site-eda .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 10px; }
