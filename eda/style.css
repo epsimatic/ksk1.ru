@@ -228,8 +228,7 @@ ul.list-stores > li > a {font-size: 17px; font-weight: 400; padding: 7px 14px 10
     .site-eda .dishes .dish img {max-height: 161px;}
 
     .site-eda .dishes .dish-container {height: 374px;}
-
-    .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 325px;}
+    /* .site-eda .dishes.dishes-col-6 .dish:hover .item-stuff {height: 325px;}*/
 }
 
 .dishes .woocommerce { width: 100%; }
