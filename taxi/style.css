@@ -115,23 +115,19 @@ nav.navbar { margin: 0 -10px !important; }
 
 .site-taxi footer { background-color: #161616; margin: 0 -10px !important; background-image: none; }
 
-.site-taxi footer p { color: #bbb; }
-
-.site-taxi footer h3 ,
-.site-taxi footer a { color: #ffd401; }
+.site-taxi footer h5,
+.site-taxi footer h4 a,
+.site-taxi footer p { color: #736212; }
 
 .site-taxi footer a:focus,
 .site-taxi footer a:hover { color: #fff001; }
 
 .site-taxi footer h4 { color: #ba9b0f; }
 
-.site-taxi footer h4 a { color: #736212; }
-
+.site-taxi footer h3,
+.site-taxi footer a,
 .site-taxi footer h4 a:focus,
 .site-taxi footer h4 a:hover { color: #ffd401; }
-
-.site-taxi footer h5 { color: #ddd; }
-
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
