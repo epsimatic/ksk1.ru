@@ -113,24 +113,24 @@ nav.navbar { margin: 0 -10px !important; }
 
 .taxi-content > div { padding: 10px 0; }
 
-footer { background-color: #161616; margin: 0 -10px !important; }
+.site-taxi footer { background-color: #161616; margin: 0 -10px !important; background-image: none; }
 
-footer p { color: #bbb; }
+.site-taxi footer p { color: #bbb; }
 
-footer h3 ,
-footer a { color: #ffd401; }
+.site-taxi footer h3 ,
+.site-taxi footer a { color: #ffd401; }
 
-footer a:focus,
-footer a:hover { color: #fff001; }
+.site-taxi footer a:focus,
+.site-taxi footer a:hover { color: #fff001; }
 
-footer h4 { color: #ba9b0f; }
+.site-taxi footer h4 { color: #ba9b0f; }
 
-footer h4 a { color: #736212; }
+.site-taxi footer h4 a { color: #736212; }
 
-footer h4 a:focus,
-footer h4 a:hover { color: #ffd401; }
+.site-taxi footer h4 a:focus,
+.site-taxi footer h4 a:hover { color: #ffd401; }
 
-footer h5 { color: #ddd; }
+.site-taxi footer h5 { color: #ddd; }
 
 
 /* Стили для размера -sm- */
