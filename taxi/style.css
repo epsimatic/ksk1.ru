@@ -129,6 +129,8 @@ footer a,
 footer h4 a:focus,
 footer h4 a:hover { color: #ffd401; }
 
+#openstat2173092 { opacity: 0.5; }
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
 
