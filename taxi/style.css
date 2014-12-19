@@ -131,6 +131,8 @@ footer h4 a:hover { color: #ffd401; }
 
 #openstat2173092 { opacity: 0.5; }
 
+.panel-group { margin-bottom: 0 !important; }
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
 
