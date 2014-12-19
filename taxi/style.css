@@ -166,9 +166,9 @@ nav.navbar { margin: 0 -10px !important; }
 
     .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0 !important; width: 47.5%; background-color: #ffb401; }
 
-    .form-taxi-order-flow .desciption-title {margin-top: 5px;}
+    .form-taxi-order-flow .desciption-title {margin-top: 5px !important;}
 
-    .desciption-title {margin-top: 35px;}
+    .desciption-title {margin-top: 35px !important;}
 
     .form-horizontal .control-label { padding-left: 5px; text-align: left; }
 }
@@ -189,6 +189,8 @@ nav.navbar { margin: 0 -10px !important; }
     .site-taxi img[src*="taxi-squares.svg"] { margin: -9px 0; }
 
     .form-taxi-order-flow { width: 30.8333%; }
+
+    .desciption-title {margin-top: 15px !important;}
 }
 
 /* Стили для размера -lg- */
