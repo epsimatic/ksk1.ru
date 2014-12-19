@@ -164,7 +164,7 @@ nav.navbar { margin: 0 -10px !important; }
 
     .taxi-content > div { padding: 10px; }
 
-    .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0; width: 47.5%; background-color: #ffb401; }
+    .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0 !important; width: 47.5%; background-color: #ffb401; }
 
     .form-taxi-order-flow .desciption-title {margin-top: 5px;}
 
