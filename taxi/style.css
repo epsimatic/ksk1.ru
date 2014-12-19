@@ -108,7 +108,30 @@ nav.navbar { margin: 0 -10px !important; }
 .site-taxi .desciption-title + p { color: #282100; }
 
 .site-taxi .promo-labels { padding: 0 20px;  margin-bottom: 20px; }
-.site-taxi .promo-labels img { width: 100%; margin-bottom: 20px;}
+
+.site-taxi .promo-labels img { width: 100%; margin-bottom: 20px; }
+
+.taxi-content > div { padding: 10px 0; }
+
+footer { background-color: #161616; margin: 0 -10px !important; }
+
+footer p { color: #bbb; }
+
+footer h3 ,
+footer a { color: #ffd401; }
+
+footer a:focus,
+footer a:hover { color: #fff001; }
+
+footer h4 { color: #ba9b0f; }
+
+footer h4 a { color: #736212; }
+
+footer h4 a:focus,
+footer h4 a:hover { color: #ffd401; }
+
+footer h5 { color: #ddd; }
+
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
@@ -131,7 +154,7 @@ nav.navbar { margin: 0 -10px !important; }
 
     .site-taxi .taxi-header .col-description { height: 217px; }
 
-    .site-taxi .col-description h3 { margin-top: 30px; margin-bottom: 0; }
+    .site-taxi .col-description h3 { margin-top: 30px !important; margin-bottom: 0; }
 
     .site-taxi .col-description ul { padding-left: 75px; }
 
@@ -139,19 +162,21 @@ nav.navbar { margin: 0 -10px !important; }
 
     .site-taxi .panel-default > .panel-heading { background-color: #ffb401; }
 
-    .site-taxi .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0; width: 47.5%; background-color: #ffb401; }
+    .taxi-content > div { padding: 10px; }
 
-    .site-taxi .form-taxi-order-flow .desciption-title {margin-top: 5px;}
+    .form-taxi-order-flow { border-radius: 10px; margin: 22px 2.5% 22px 0; padding: 10px 0; width: 47.5%; background-color: #ffb401; }
 
-    .site-taxi .desciption-title {margin-top: 35px;}
+    .form-taxi-order-flow .desciption-title {margin-top: 5px;}
 
-    .site-taxi .form-horizontal .control-label { padding-left: 5px; text-align: left; }
+    .desciption-title {margin-top: 35px;}
+
+    .form-horizontal .control-label { padding-left: 5px; text-align: left; }
 }
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 
-    .site-taxi .col-description h3 { padding: 0 60px; margin-top: 35px; }
+    .site-taxi .col-description h3 { padding: 0 60px; margin-top: 35px !important; }
 
     .site-taxi .taxi-header p { padding-left: 120px; padding-top: 20px; }
 
@@ -163,13 +188,13 @@ nav.navbar { margin: 0 -10px !important; }
 
     .site-taxi img[src*="taxi-squares.svg"] { margin: -9px 0; }
 
-    .site-taxi .form-taxi-order-flow {width: 30.8333%;}
+    .form-taxi-order-flow { width: 30.8333%; }
 }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
 
-    .site-taxi .col-description h3 { padding: 0 120px; margin-top: 45px; }
+    .site-taxi .col-description h3 { padding: 0 120px; margin-top: 45px !important; }
 
     .site-taxi .taxi-header p { padding-left: 180px; }
 
