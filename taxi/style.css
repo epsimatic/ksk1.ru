@@ -208,3 +208,4 @@ footer h4 a:hover { color: #ffd401; }
 
     .site-taxi img[src*="taxi-squares.svg"] { margin: -11px 0; }
 }
+.site-taxi .wpcf7-list-item { display: block; }

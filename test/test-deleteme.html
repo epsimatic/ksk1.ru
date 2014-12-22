@@ -1,0 +1,226 @@
+<div class="site-taxi">
+
+<div class="row taxi-header">
+    <div class="col-xs-12 text-center taxi-phone hidden-sm hidden-md hidden-lg">
+        <h2>
+            <a href="tel:+7343979700">
+                <i class="fa fa-phone"></i>7-97-00
+            </a>
+        </h2>
+        <a href="#">позвонить мне</a>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="taxi-logo text-center">
+            <img src="http://ksk1.ru/taxi/taxi-logo.svg"/>
+        </div>
+
+        <div class="taxi-phone hidden-xs">
+            <h2>
+                <a href="tel:+7343979700">
+                    <i class="fa fa-phone"></i>7-97-00
+                </a>
+            </h2>
+            <span><a href="#">позвонить мне</a></span>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-description">
+        <div class="divider hidden-xs"></div>
+
+        <h3 class="">
+            Первая в городе служба онлайн-заказа такси.
+        </h3>
+
+        <p>Закажите такси:</p>
+        <ul>
+            <li>Через форму на сайте</li>
+            <li>По телефону</li>
+            <li>Через СМС</li>
+            <li>Через обратный звонок</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <img src="http://ksk1.ru/taxi/taxi-squares.svg"/>
+    </div>
+</div>
+
+<div class="row taxi-content">
+    <div class="col-xs-12 col-sm-6 col-md-4 pull-right form-taxi-order-flow">
+        <h2 class="desciption-title hidden-xs">
+            Закажите сейчас
+        </h2>
+
+        <form role="form">
+            <div id="adressFrom" class="form-group">
+                <label>Откуда</label>
+                <i class="fa fa-sign-out"></i>
+                <input class="form-control" placeholder="Улица, дом"/>
+            </div>
+            <div id="adressTo" class="form-group">
+                <label>Куда</label>
+                <i class="fa fa-sign-in"></i>
+                <input class="form-control" placeholder="Улица, дом"/>
+            </div>
+        </form>
+
+        <div class="panel-group" id="taxiAccordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingPassengerOptions">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapsePassengerOptions"
+                           aria-expanded="true" aria-controls="collapsePassengerOptions">
+                            1 пассажир без багажа
+                            <span class="caret"></span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapsePassengerOptions" class="panel-collapse collapse in" role="tabpanel"
+                     aria-labelledby="headingPassengerOptions">
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-xs-8 col-sm-9 col-md-8 col-lg-9 control-label">Сколько
+                                    пассажиров?</label>
+
+                                <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
+                                    <input class="form-control" id="passengersQuantity" type="number" value="1" step="1"
+                                           min="1"/>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"/> С ребёнком
+                            </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"/> С большим багажом
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingDepartureOptions">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseDepartureOptions" aria-expanded="false"
+                           aria-controls="collapseDepartureOptions">
+                            Вызвать сейчас
+                            <span class="caret"></span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseDepartureOptions" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingDepartureOptions">
+                    <div class="panel-body">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked/>
+                                Вызвать сейчас
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"/>
+                                Через 15 минут
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"/>
+                                Через 30 минут
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"/>
+                                Завтра утром
+                            </label>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <form role="form">
+            <div id="clientPhone" class="form-group">
+                <label>Контактный телефон</label>
+                <i class="fa fa-mobile"></i>
+                <input class="form-control" placeholder="+7 9xxxx"/>
+            </div>
+            <button class="btn btn-lg btn-block">Заказать</button>
+
+        </form>
+
+        <div class="text-center taxi-phone hidden-sm hidden-md hidden-lg">
+            <h2>
+                <a href="tel:+7343979700">
+                    <i class="fa fa-phone"></i>7-97-00
+                </a>
+            </h2>
+            <a href="#">позвонить мне</a>
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <h2 class="desciption-title">
+            О службе такси
+        </h2>
+
+        <p>
+            Компания Красноуфимск Онлайн решила создать новый удобный сервис для посетителей нашего
+            сайта ТАКСИ Онлайн. Новые технологии все больше проникают в повседневную жизнь.
+        </p>
+
+        <p> Купить
+            ноутбук, забронировать авиабилет, заказать пиццу на ужин через интернет-сайт – такие
+            действия вполне обыденны и уже плотно вошли в нашу повседневную жизнь. Главные ожидания
+            потребителей связаны со скоростью выполнения задания и пунктуальностью сервиса.
+        </p>
+
+        <p> Служба
+            ТАКСИ Онлайн объединяет в себе все диспетчерские службы города, поэтому, позвонив по нашему
+            номеру, вы гарантированно получите машину в нужное время, а мы будем стараться, чтобы
+            качество сервиса было на высоте.
+        </p>
+
+        <div class="promo-labels row">
+            <div class="col-xs-12 col-md-6">
+                <a href="#">
+                    <img src="http://ksk1.ru/taxi/taxi-4parteners.png"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#">
+                    <img src="http://ksk1.ru/taxi/promo-pic.png"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#">
+                    <img src="http://ksk1.ru/taxi/promo-pic.png"/>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#">
+                    <img src="http://ksk1.ru/taxi/promo-pic.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
