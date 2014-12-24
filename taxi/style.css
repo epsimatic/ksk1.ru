@@ -86,13 +86,13 @@ img[src*="taxi-squares.svg"] { width: 100%; position: relative; bottom: 0; margi
 .form-group { margin: 0; position: relative; padding-left: 20px; padding-right: 20px; }
 
 #collapsePassengerOptions .form-group,
-#collapsePassengerOptions p { padding: 0; }
+#collapsePassengerOptions p { padding-left: 10px; padding-right: 0; }
 
 #collapseDepartureOptions label { font-weight: 400; }
 
 .form-group input { margin-bottom: 10px; border-radius: 6px; }
 
-.form-group .fa { position: absolute; left: 30px; top: 19px; font-size: 17px; color: #4c4c4c; z-index: 3; }
+.form-group .fa { position: absolute; left: 30px; top: 33px; font-size: 17px; color: #4c4c4c; z-index: 3; }
 
 #clientPhone .fa { font-size: 34px; left: 35px; }
 
@@ -143,6 +143,10 @@ footer h4 a:hover { color: #ffd401; }
 #openstat2173092 { opacity: 0.5; }
 
 .panel-group { margin-bottom: 0 !important; }
+
+.wpcf7-response-output { margin-top: 0; }
+
+.wpcf7-not-valid-tip { margin-bottom: 10px; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
