@@ -9,6 +9,8 @@ p { margin-bottom: 15px; text-align: left; }
 
 form { padding: 10px 20px; }
 
+.wpcf7-form { padding-bottom: 0; }
+
 .taxi-header {  background-color: #161616; }
 
 .taxi-header,
