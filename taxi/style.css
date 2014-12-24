@@ -99,7 +99,7 @@ img[src*="taxi-squares.svg"] { width: 100%; position: relative; bottom: 0; margi
 #adressFrom input,
 #adressTo input { padding-left: 32px; }
 
-#clientPhone input { text-align: center; padding: 10px 20px 11px; height: 51px; }
+#clientPhone input { text-align: center; padding: 10px 20px 11px; height: 51px; font-size: 21px; }
 
 #clientPhone input::-webkit-input-placeholder { text-align: center; font-size: 18px; }
 #clientPhone input::-moz-placeholder { text-align: center; font-size: 21px; }
@@ -144,7 +144,7 @@ footer h4 a:hover { color: #ffd401; }
 
 .panel-group { margin-bottom: 0 !important; }
 
-.wpcf7-response-output { margin-top: 0; }
+.wpcf7-response-output { border-color: #3ec703 !important; border-radius: 5px; margin: 0 10px !important; padding: 5px 10px !important; }
 
 .wpcf7-not-valid-tip { margin-bottom: 10px; }
 
