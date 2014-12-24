@@ -26,7 +26,9 @@ header#header {margin-bottom: 0 !important;}
 
 .container .yummies[src*="stripe"] {margin: 0;}
 
-.container {background-color: #ffffff; box-shadow: 0 4px 7px #cbcbcb;}
+.container { padding: 0; }
+
+#page.container {background-color: #ffffff; box-shadow: 0 4px 7px #cbcbcb;}
 
 /*#page.container {padding: 0 10px;}*/
 
