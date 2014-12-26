@@ -190,7 +190,7 @@ header .btn-group {margin-top: 10px;}
     /*opacity: 0;*/
     transition: opacity 0.4s ease-in;
 }
-.gsInformer { display: none !important; }
+.popover-source-gismeteo { display: none !important; }
 /*.
 
 TODO:Удали меня!
