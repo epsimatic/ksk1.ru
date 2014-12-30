@@ -706,7 +706,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="panelShops"> */
 #panelShops { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
-#panelShops.opened { max-height: 315px; margin-bottom: 10px; }
+#panelShops.active { max-height: 315px; margin-bottom: 10px; }
 
 #panelShops a { display: block; }
 
