@@ -708,9 +708,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="navpanel-shopping"> */
 #navpanel-shopping, #navpanel-services, #navpanel-info { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
-.navpanel-shopping.active,
-.navpanel-services.active,
-.navpanel-info.active { max-height: 1000px; margin-bottom: 10px; }
+#navpanel-shopping.active,
+#navpanel-services.active,
+#navpanel-info.active { max-height: 1000px; margin-bottom: 10px; }
 
 #navpanel-shopping a { display: block; }
 
