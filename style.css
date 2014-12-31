@@ -3649,6 +3649,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #popover-shopping .popover {left: -23px !important;}
 
+    #panelShops .pr-bar.col-md-6 {height: 316px;}
+
     .btn-feature.active .arrow { left: 44%; }
 }
 
