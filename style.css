@@ -203,7 +203,7 @@ popover-weather-iframe {
     border: none;
 }*/
 
-/* http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css */
+/* Целиком файл http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css : */
 .gsInformer div, .gsInformer span, .gsInformer p, .gsInformer a, .gsInformer em, .gsInformer img, .gsInformer table, .gsInformer tbody, .gsInformer tr, .gsInformer th, .gsInformer td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit }
 .gsInformer *:focus { outline: 0 }
 .gsInformer table, .gsInformer tbody.gsInformer thead, .gsInformer tr, .gsInformer th, .gsInformer td { vertical-align: top }
