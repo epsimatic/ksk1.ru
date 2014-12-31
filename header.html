@@ -92,9 +92,10 @@
     </div>
 </nav>
 
-<div id="panelShops">
+<!--TODO: не использовать или переименовать #panelShops -->
+<div class="navpanel navpanel-shopping" id="panelShops">
 
-    <div class="col-md-6 col-xs-12 pr-bar">
+<div class="col-md-6 col-xs-12 pr-bar">
         <div class="shop-description">интерент-магазин электронники</div>
         <a href="http://multilavka.ru/?utm_source=all&utm_medium=nav-menu-panelShops&utm_content=top-logo&utm_campaign=%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%BC%D0%BE-%D0%B1%D0%BB%D0%BE%D0%BA" class="pr-logo">
             <img src="http://ksk1.ru/img/market/logo-multilavka-white2.svg">
@@ -153,10 +154,9 @@
     </div>
 </div>
 
-<div id="panelServices">
+<div class="navpanel navpanel-services" id="navpanel-services"></div>
 
-
-</div>
+<div class="navpanel navpanel-info" id="navpanel-info"></div>
 
 <!--TODO: добавить Alt и размеры картинок-->
 <div id="popover_shopping_content" style="display: none">
@@ -246,6 +246,7 @@
     </div>
 </div>
 <script>
+    //TODO: отрефакторить, заменить на CSS вообще.
     (function(){
         var url = document.location.href,
                 ob = /^[http:\/\/]+ob/,
