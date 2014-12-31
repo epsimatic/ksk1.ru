@@ -69,6 +69,8 @@ header .btn-group {margin-top: 10px;}
 
 .row_header > div > * {display: inline-block; vertical-align: middle;}
 
+.row_header .col-special  {vertical-align: top;}
+
 .row_header > div:after {
     content: "";
     display: inline-block;
@@ -712,7 +714,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 #panelShops a:hover { background-color:#ececec; }
 
-#panelShops .pr-bar.col-md-6 { background-color: #FF3334; max-height: 312px; }
+#panelShops .pr-bar.col-md-6 { background-color: #FF3334; max-height: 420px; }
 
 #panelShops .pr-bar.col-md-6 .shop-description { color: #fff; text-align: center; opacity: 0.8; margin-top: 9px; }
 
@@ -3649,7 +3651,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #popover-shopping .popover {left: -23px !important;}
 
-    #panelShops .pr-bar.col-md-6 {height: 316px;}
+    #panelShops .pr-bar.col-md-6 {height: 311px;}
 
     .btn-feature.active .arrow { left: 44%; }
 }
