@@ -749,12 +749,12 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 #navpanel-services.active { max-height: 250px; margin-bottom: 10px; }
 
 #navpanel-services a,
-#navpanel-info a { color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px; }
+#navpanel-info a { color: #333; display: block; font-size: 13px; padding: 5px 30px 5px 20px; }
 
 #navpanel-services a:hover,
 #navpanel-services a:focus,
 #navpanel-info a:hover,
-#navpanel-info a:focus { background-color: #eee; text-decoration: none; font-size: 13px; }
+#navpanel-info a:focus { background-color: #eee; text-decoration: none; }
 
 #navpanel-services img.icon,
 #navpanel-info img.icon { height: 80px; margin-bottom: 10px; padding: 0; }
