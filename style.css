@@ -708,7 +708,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="navpanel-shopping"> */
 #navpanel-shopping, #navpanel-services, #navpanel-info { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
-#navpanel-shopping.active { max-height: 730px; margin-bottom: 10px; }
+.navpanel.active { max-height: 1000px; margin-bottom: 10px; }
 
 #navpanel-shopping a { display: block; }
 
@@ -746,9 +746,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 img { width: 100%; }
 
 
-#navpanel-services.active { max-height: 425px; margin-bottom: 20px; }
+/*#navpanel-services.active { max-height: 1000px; margin-bottom: 20px; }*/
 
-#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }
+/*#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }*/
 
 #navpanel-services a,
 #navpanel-info a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
