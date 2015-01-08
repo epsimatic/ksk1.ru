@@ -3721,6 +3721,21 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-info img.icon { width: 80%; }
 
     .btn-feature .arrow { left: 44%; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar,
+    #navpanel-shopping.active { max-height: 405px; }
+
+    #navpanel-shopping .e96-bar p a { margin-bottom: 7px; line-height: 1.4em; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-bottom: 10px; font-size: 16px; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar p { margin: 27px 0 24px; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar p a { font-size: 1.1em; padding: 4px 12px 5px; margin-bottom: 3px; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-top: 12px; }
+
+    #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 { height: 93px; }
 }
 
 /*категории новостей*/
