@@ -748,7 +748,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 #navpanel-shopping .e96-bar .pr-logo img { width: 80%; }
 
-#navpanel-shopping .e96-bar p { padding-left: 20px; }
+#navpanel-shopping .e96-bar p { padding-left: 15px; }
 
 #navpanel-shopping .e96-bar p a { color: #3f3f3f; text-decoration: underline; margin-bottom: 4px; }
 
@@ -3579,9 +3579,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar .pr-logo img { width: 50%; }
 
-    #navpanel-shopping .e96-bar p { padding: 4px 10px; }
+    #navpanel-shopping .e96-bar p { text-align: center; }
 
-    #navpanel-shopping .e96-bar p a { margin-right: 20px; display: inline-block; }
+    #navpanel-shopping .e96-bar p a { padding: 2px 10px; display: inline-block; }
 }
 
 /* Стили для размера -md- */
@@ -3649,7 +3649,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-bottom: 15px; }
 
-    #navpanel-shopping .pr-bar.e96-bar { height: 330px; }
+    #navpanel-shopping .pr-bar.e96-bar { height: 330px; border: none; }
 
     #navpanel-shopping .e96-bar .pr-logo img { width: 100%; }
 
@@ -3657,9 +3657,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 { height: 75px; width: 100% }
 
-    #navpanel-shopping .e96-bar p { padding-left: 10px; }
+    #navpanel-shopping .e96-bar p { padding-left: 10px; text-align: left; }
 
-    #navpanel-shopping .e96-bar p a { display: block; }
+    #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 2px; line-height: 1.2em; }
 
     .btn-feature .arrow { left: 40%; }
 }
