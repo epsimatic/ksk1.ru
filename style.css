@@ -3715,15 +3715,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #popover-shopping .popover {left: -23px !important;}
 
-    #navpanel-shopping .pr-bar.multilavka-bar {height: 311px;}
-
     #navpanel-services img.icon,
     #navpanel-info img.icon { width: 80%; }
 
     .btn-feature .arrow { left: 44%; }
 
-    #navpanel-shopping .pr-bar.multilavka-bar { max-height: 405px; }
-
+    #navpanel-shopping .pr-bar.multilavka-bar,
     #navpanel-shopping.active { max-height: 405px; }
 
     #navpanel-shopping .e96-bar p a { margin-bottom: 7px; line-height: 1.4em; }
