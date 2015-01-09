@@ -92,6 +92,8 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     /*max-height: 80px; */
     display: block; margin: 0 auto; }
 
+.dishes .thumb-container { background-position: center; background-repeat: no-repeat; background-size: cover; height: 120px; width: 100%; }
+
 .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 200px; }
 
 .dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
@@ -174,6 +176,8 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     .dishes .dish h3.item-name { text-align: left; }
 
+    .dishes .thumb-container { background-position: center; background-repeat: no-repeat; height: 178px; width: 237px; }
+
     .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 175px; }
 
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
@@ -191,7 +195,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 325px; }
 
-    /*.dishes.dishes-col-6 .dish img { max-height: 98px; }*/
+    .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 230px; }
 
@@ -213,8 +217,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     .dishes { margin: 0 10px; }
 
-
-    /*.dishes .dish img { max-height: 120px; }*/
+    .dishes .thumb-container { height: 142px; width: 189px; }
 
     .dishes .dish .item-stuff { height: 105px; display: block; }
 
@@ -235,7 +238,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     .dishes .dish .order-controls .portion-type { margin-left: 0; padding-left: 0; }
 
 
-    /*.dishes.dishes-col-6 .dish img { max-height: 78px; }*/
+    .dishes.dishes-col-6 .thumb-container { height: 86px; width: 115px; }
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 184px; }
 
@@ -252,9 +255,10 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    /*.dishes .dish img { max-height: 161px; }*/
 
-    /*.dishes .dish-container { height: 374px; }*/
+    .dishes .thumb-container { height: 178px; width: 237px; }
+
+    .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
     .dishes.dishes-col-6 .dish:hover .item-stuff { height: 325px; }
 
