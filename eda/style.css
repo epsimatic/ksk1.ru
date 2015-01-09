@@ -86,7 +86,9 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 .dishes .dish { background-color: #ffffff; border: 1px solid #eaeaea; border-radius: 3px; padding: 15px 15px 0; width: 100%; position: relative; }
 
-.dishes .dish img { max-width: 100%; max-height: 80px; display: block; margin: 0 auto; }
+.dishes .dish img { max-width: 100%;
+    /*max-height: 80px; */
+    display: block; margin: 0 auto; }
 
 .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 210px; }
 
@@ -118,13 +120,13 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 
 /*стили для оформления ячейки товара на 6 ячеек в ряд (на размерах md и lg)*/
-.dishes.dishes-col-6 .dish img { height: 98px; }
+/*.dishes.dishes-col-6 .dish img { height: 98px; }*/
 
 .dishes.dishes-col-6 .dish .item-stuff { height: 205px; }
 
 .dishes.dishes-col-6 .dish h3.item-name { text-align: center; }
 
-.dishes.dishes-col-6 .dish .item-description p { height: 0; }
+/*.dishes.dishes-col-6 .dish .item-description p { height: 0; }*/
 
 .dishes.dishes-col-6 .dish .order-controls .order-row { flex-direction: column; }
 
@@ -168,7 +170,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     .dishes .dish-container { height: 360px; }
 
-    .dishes .dish img { max-height: 180px; }
+    /*.dishes .dish img { max-height: 180px; }*/
 
     .dishes .dish h3.item-name { text-align: left; }
 
@@ -189,7 +191,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 340px; }
 
-    .dishes.dishes-col-6 .dish img { max-height: 98px; }
+    /*.dishes.dishes-col-6 .dish img { max-height: 98px; }*/
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 230px; }
 
@@ -212,7 +214,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     .dishes { margin: 0 10px; }
 
 
-    .dishes .dish img { max-height: 120px; }
+    /*.dishes .dish img { max-height: 120px; }*/
 
     .dishes .dish .item-stuff { height: 197px; }
 
@@ -225,7 +227,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     .dishes .dish .order-controls .portion-type { margin-left: 0; padding-left: 0; }
 
 
-    .dishes.dishes-col-6 .dish img { max-height: 78px; }
+    /*.dishes.dishes-col-6 .dish img { max-height: 78px; }*/
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 215px; }
 
@@ -238,7 +240,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
-    .dishes .dish img { max-height: 161px; }
+    /*.dishes .dish img { max-height: 161px; }*/
 
     .dishes .dish-container { height: 374px; }
 
