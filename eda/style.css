@@ -80,7 +80,9 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 /* <editor-fold desc="Оформление ячейки товара"> */
 
 .dishes.dishes-col-6 .dish-container,
-.dishes .dish-container { width: 49%; margin: 0 0.5% 20px; position: relative; height: 300px; }
+.dishes .dish-container { width: 49%; margin: 0 0.5% 10px; position: relative;
+    /*height: 300px; */
+}
 
 .dishes .dish-container .cat-label { position: absolute; left: 8px; top: -4px; width: 33px; height: auto !important; }
 
@@ -90,13 +92,11 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     /*max-height: 80px; */
     display: block; margin: 0 auto; }
 
-.dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 210px; }
+.dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 200px; }
 
-.dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; text-align: center; overflow: hidden; height: 2.8em; }
+.dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
 
-.dishes .dish .item-description p { font-size: 0.75em; line-height: 1.2em; color: rgb(153, 153, 153); overflow: hidden; text-overflow: ellipsis; height: 0; margin-bottom: 0; }
-
-.dishes .dish:hover .item-description p { height: auto; }
+.dishes .dish .item-description { display: none; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
 
@@ -122,7 +122,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 /*стили для оформления ячейки товара на 6 ячеек в ряд (на размерах md и lg)*/
 /*.dishes.dishes-col-6 .dish img { height: 98px; }*/
 
-.dishes.dishes-col-6 .dish .item-stuff { height: 205px; }
+/*.dishes.dishes-col-6 .dish .item-stuff { height: 205px; }*/
 
 .dishes.dishes-col-6 .dish h3.item-name { text-align: center; }
 
@@ -168,13 +168,13 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     .dishes-cat-recommend .dishes-heading { padding-left: 100px; }
 
 
-    .dishes .dish-container { height: 360px; }
+    /*.dishes .dish-container { height: 360px; }*/
 
     /*.dishes .dish img { max-height: 180px; }*/
 
     .dishes .dish h3.item-name { text-align: left; }
 
-    .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 165px; }
+    .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 175px; }
 
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
 
@@ -189,7 +189,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
     .dishes .dish .order-controls .price { margin-bottom: 0; }
 
 
-    .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 340px; }
+    .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 325px; }
 
     /*.dishes.dishes-col-6 .dish img { max-height: 98px; }*/
 
@@ -216,35 +216,49 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
     /*.dishes .dish img { max-height: 120px; }*/
 
-    .dishes .dish .item-stuff { height: 197px; }
+    .dishes .dish .item-stuff { height: 105px; display: block; }
 
-    .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; height: 332px; }
+    .dishes .dish-container { width: 24%; margin: 0 0.5% 20px;
+        /*height: 332px; */
+    }
+
+    .dishes .dish .item-description p { font-size: 0.75em; line-height: 1.2em; color: rgb(153, 153, 153); overflow: hidden; text-overflow: ellipsis; height: 0; margin-bottom: 0; }
+
+    .dishes .dish:hover .item-description { display: block; }
+
+    .dishes .dish:hover .item-description p { height: auto; }
 
     .dishes .dish:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); position: absolute; z-index: 2; }
 
-    .dishes .dish:hover .item-stuff { height: 282px; }
+    .dishes .dish:hover .item-stuff { height: 175px; }
 
     .dishes .dish .order-controls .portion-type { margin-left: 0; padding-left: 0; }
 
 
     /*.dishes.dishes-col-6 .dish img { max-height: 78px; }*/
 
-    .dishes.dishes-col-6 .dish .item-stuff { height: 215px; }
+    .dishes.dishes-col-6 .dish .item-stuff { height: 184px; }
 
     .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 305px; }
 
-    .dishes.dishes-col-6 .dish:hover .item-stuff { height: 345px; }
+    .dishes.dishes-col-6 .dish:hover .item-stuff { height: 275px; }
 
     .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 10px; }
+
+    .dishes .dish .order-controls .price { padding: 0; }
+
+    .dishes .dish .order-controls .amount { padding-right: 8px; }
 }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
     /*.dishes .dish img { max-height: 161px; }*/
 
-    .dishes .dish-container { height: 374px; }
+    /*.dishes .dish-container { height: 374px; }*/
 
     .dishes.dishes-col-6 .dish:hover .item-stuff { height: 325px; }
+
+    .dishes.dishes-col-6 .dish:hover .item-stuff
 }
 
 /*.dishes .woocommerce { width: 100%; }*/
