@@ -153,7 +153,15 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 /* </editor-fold> */
 
+.billing_city_select { padding: 6px 10px; }
 
+.woocommerce form .form-row, .woocommerce-page form .form-row { padding: 0; }
+
+.woocommerce table.shop_table, .woocommerce-page table.shop_table { border: 1px solid rgba(255, 99, 71, 0.5); }
+
+.shop_table thead { background-color: #ff6347; }
+
+table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !important; letter-spacing: 0.025em; text-rendering: optimizelegibility; text-transform: uppercase; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
