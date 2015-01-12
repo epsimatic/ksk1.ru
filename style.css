@@ -3739,7 +3739,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 { height: 93px; }
 
-    .community_square_user { width: 70px;}
+    .community_square_user { width: 70px; !important;}
 }
 
 /*категории новостей*/
