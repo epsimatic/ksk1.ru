@@ -1740,6 +1740,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /*Панель «Мы в соцсетях»*/
 .panel-social .panel-heading {background-color: #dfe6eb !important; padding: 10px 15px 4px;}
 
+.community_square_user { width:58px !important; }
+
 /*.panel-social .panel-heading h2 {color: #484860; padding: 0 0 7px !important;}*/
 
 .news .panel-social .panel-heading h2 {color: #333333; text-align: left; padding: 6px 0 4px 6px !important;}
@@ -3736,6 +3738,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-top: 12px; }
 
     #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 { height: 93px; }
+
+    .community_square_user { width: 70px;}
 }
 
 /*категории новостей*/
