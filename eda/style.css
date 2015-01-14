@@ -25,26 +25,38 @@ ul.list-stores { border-radius: 0; background-color: #fafafa; }
 ul.list-stores > li.active > a { background-color: #ff875b; }
 
 ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 10px; }
+
 #cart-bar-real.row { margin: 0; }
-#cart-bar-real { background-color: #ffff8d; padding: 10px; }
+
+#cart-bar-real { background-color: #fff9c4; padding: 10px; }
+
 #cart-bar-real > * { align-self: center; }
+
 #cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px; display: flex; }
 
 #cart-bar-real .cart-view { display: flex; margin-bottom: 20px; }
+
 #cart-bar-real .cart-description { margin-bottom: 20px; }
+
 #cart-bar-real .cart-item { position: relative; margin-right: 25px; }
+
 #cart-bar-real .cart-item img { width: 70px; }
+
 #cart-bar-real .cart-item .cart-badges { position: relative; text-align: right; margin-top: -1px; white-space: nowrap; }
+
 #cart-bar-real .cart-item .badge { color: #fff; font-size: 11px; }
-#cart-bar-real .cart-item .badge-price { background-color: #7dba0b; border-radius: 0 0 3px 3px; padding: 4px 4px 4px 5px; }
-#cart-bar-real .cart-item .badge-amount { background-color: #ff6347; border-radius: 0 0 3px 3px; padding: 4px 6px; text-shadow: 0 0 1px rgba(0, 0, 0, 0.18); }
+
+#cart-bar-real .cart-item .badge-price { background-color: #00c853; border-radius: 0 0 3px 3px; padding: 4px 4px 4px 5px; }
+
+#cart-bar-real .cart-item .badge-amount { background-color: #ff5252; border-radius: 0 0 3px 3px; padding: 4px 6px; }
+
 #cart-bar-real .cart-item strong { font-weight: 700; padding-right: 2px; }
+
 .restoraunt-info { margin: 0 10px; padding: 30px 30px 30px 20px; }
 
 .restoraunt-logo { width: 180px; margin-right: 25px; }
 
 .restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
-
 
 
 /* <editor-fold desc="Оформление категорий товаров"> */
@@ -124,6 +136,14 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 /* </editor-fold> */
 .woocommerce { color: #37474f; }
+
+.woocommerce .cart_item { position: relative; }
+
+.woocommerce .cart_item .product-remove { position: absolute; top: -5px; right: -12px; }
+
+.product-thumbnail { background-color: #fff; padding: 3px; text-align: center; }
+
+.woocommerce .alert-success { background-color: #ccff90; border: medium none; border-radius: 0; }
 
 .woocommerce #payment,
 .woocommerce-page #payment { background: #fff3e0; }
