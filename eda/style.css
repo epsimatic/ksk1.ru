@@ -123,6 +123,22 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .site-eda .checkout { padding: 0 10px; }
 
 /* </editor-fold> */
+.woocommerce { color: #37474f; }
+
+.woocommerce #payment,
+.woocommerce-page #payment { background: #fff3e0; }
+
+.woocommerce #payment ul.payment_methods,
+.woocommerce-page #payment ul.payment_methods { border-bottom: 1px solid #ffcc80; }
+
+.woocommerce #payment div.form-row,
+.woocommerce-page #payment div.form-row { border-bottom: none; }
+
+.woocommerce #payment div.payment_box,
+.woocommerce-page #payment div.payment_box { background: #ffc107; color: #3e2723; text-shadow: none; padding: 1em 3%; }
+
+.woocommerce #payment div.payment_box:after,
+.woocommerce-page #payment div.payment_box:after { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffc107; }
 
 .woocommerce a.button,
 .woocommerce button.button,
@@ -190,11 +206,11 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 .woocommerce-page table.shop_table tfoot td,
 .woocommerce-page table.shop_table tfoot th { border-top: 1px dashed #cfd8dc; }
 
-.woocommerce table.order_details tbody tr td,
-.woocommerce table.order_details tbody tr th { border-top: none; }
+.woocommerce table.shop_table td,
+.woocommerce-page table.shop_table td { border-top: 1px dashed #cfd8dc; }
 
-.woocommerce table.order_details tbody tr:first-child td,
-.woocommerce table.order_details tbody tr:first-child th { border-bottom: 1px dashed #cfd8dc; }
+.woocommerce table.shop_table tr:first-child td,
+.woocommerce-page table.shop_table tr:first-child td { border-top: none; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
