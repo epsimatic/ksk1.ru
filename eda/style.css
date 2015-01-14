@@ -222,6 +222,6 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
-    .dishes.dishes-col-6 .dish:hover .item-stuff { height: 305px; }
+    /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 305px; }*/
 }
 
