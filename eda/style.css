@@ -42,13 +42,13 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 #cart-bar-real .cart-item img { width: 70px; }
 
-#cart-bar-real .cart-item .cart-badges { position: relative; text-align: right; margin-top: -1px; white-space: nowrap; }
+#cart-bar-real .cart-item .cart-badges { position: static; text-align: right; margin-top: -1px; white-space: nowrap; }
 
 #cart-bar-real .cart-item .badge { color: #fff; font-size: 11px; }
 
-#cart-bar-real .cart-item .badge-price { background-color: #00c853; border-radius: 0 0 3px 3px; padding: 4px 4px 4px 5px; }
+#cart-bar-real .cart-item .badge-price { background-color: #00c853; border-radius: 0; padding: 4px 4px 4px 5px; }
 
-#cart-bar-real .cart-item .badge-amount { background-color: #ff5252; border-radius: 0 0 3px 3px; padding: 4px 6px; }
+#cart-bar-real .cart-item .badge-amount { background-color: #ff5252; border-radius: 0; padding: 4px 6px; }
 
 #cart-bar-real .cart-item strong { font-weight: 700; padding-right: 2px; }
 
@@ -234,9 +234,12 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    #cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }
+    /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
+
     #cart-bar-real .cart-item .badge-price { border-radius: 3px; margin-left: -2px; }
-    #cart-bar-real .cart-item .badge-amount { border-radius: 3px; }
+
+    #cart-bar-real .cart-item .badge-amount { border-radius: 0; }
+
     .dishes-cat .cat-label { left: 23px; top: -10px; width: 51px; }
 
     .dishes-heading { font-size: 40px; margin-bottom: 20px; }
@@ -278,8 +281,10 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 /* Стили для размера -md- */
 @media (min-width: 992px) {
     #cart-bar-real { display: flex; }
+
     #cart-bar-real .cart-description,
     #cart-bar-real .cart-view { margin-bottom: 0; }
+
     .dishes { margin: 0 10px; }
 
     .dishes .thumb-container { height: 142px; width: 189px; }
