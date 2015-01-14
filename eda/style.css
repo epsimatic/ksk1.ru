@@ -135,10 +135,12 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce-page #respond input#submit,
 .woocommerce-page #content input.button {
     /*background-color: #00b0ff; border: 2px solid #00b0ff;*/
-    background-color: #00c853; border: 2px solid #00c853;
+    background: #00c853; border: 2px solid #00c853;
     /*background-color: #64dd17; border: 2px solid #64dd17;*/
     /*background-color: #ff3d00; border: 2px solid #ff3d00;*/
-    border-radius: 3px; text-transform: uppercase; font-weight: 600; padding: 8px 12px; text-shadow: none; }
+
+    color: #fff; border-radius: 3px; text-transform: uppercase; font-weight: 600; padding: 8px 12px; text-shadow: none; }
+
 
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
@@ -149,7 +151,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce-page button.button:hover,
 .woocommerce-page input.button:hover,
 .woocommerce-page #respond input#submit:hover,
-.woocommerce-page #content input.button:hover { background-color: #00e676; text-shadow: none; }
+.woocommerce-page #content input.button:hover { background: #00e676; text-shadow: none; }
 
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
@@ -160,7 +162,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce-page button.button.alt,
 .woocommerce-page input.button.alt,
 .woocommerce-page #respond input#submit.alt,
-.woocommerce-page #content input.button.alt { background-color: #ff1744; border-color: #ff1744; text-shadow: none; }
+.woocommerce-page #content input.button.alt { background: #ff1744; border-color: #ff1744; text-shadow: none; }
 
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
@@ -171,7 +173,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce-page button.button.alt:hover,
 .woocommerce-page input.button.alt:hover,
 .woocommerce-page #respond input#submit.alt:hover,
-.woocommerce-page #content input.button.alt:hover { background-color: #f50057; text-shadow: none; }
+.woocommerce-page #content input.button.alt:hover { background: #f50057; text-shadow: none; }
 
 .billing_city_select { padding: 6px 10px; }
 
