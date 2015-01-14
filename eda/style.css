@@ -236,7 +236,7 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
 
-    #cart-bar-real .cart-item .badge-price { border-radius: 3px; margin-left: -2px; }
+    #cart-bar-real .cart-item .badge-price { border-radius: 0; margin-left: -2px; }
 
     #cart-bar-real .cart-item .badge-amount { border-radius: 0; }
 
