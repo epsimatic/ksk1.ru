@@ -20,13 +20,13 @@ nav.navbar { margin: 0 -10px; }
 
 .nav-tabs > li.active > a { background-color: #fdd49c; }
 
-ul.list-stores { border-radius: 0; background-color: #ff9d68; }
+ul.list-stores { border-radius: 0; background-color: #fafafa; }
 
 ul.list-stores > li.active > a { background-color: #ff875b; }
 
 ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 10px; }
 #cart-bar-real.row { margin: 0; }
-#cart-bar-real { background-color: #fdd49c; padding: 10px; }
+#cart-bar-real { background-color: #ffff8d; padding: 10px; }
 #cart-bar-real > * { align-self: center; }
 #cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px; display: flex; }
 
@@ -43,7 +43,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 .restoraunt-logo { width: 180px; margin-right: 25px; }
 
-.restoraunt-name { color: #ff6347; font-weight: 600; margin-bottom: 10px; }
+.restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
 
 
 
@@ -53,11 +53,15 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 .dishes-cat .cat-label { position: absolute; left: 10px; top: -8px; width: 41px; }
 
-.dishes-heading { border-top: 2px dashed #ff6347; color: #ff6347; font-size: 25px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 12px; padding: 20px 50px 12px; text-transform: uppercase; }
+.dishes-heading {
+    border-top: 2px dashed #ff6f00; color: #ff6f00;
+    font-size: 25px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 12px; padding: 20px 50px 12px; text-transform: uppercase; }
 
 .dishes-cat-recommend { background-color: #fbf0c6; }
 
-.dishes-cat-recommend .dishes-heading { border-color: #f74541; color: #f74541; padding-left: 65px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+.dishes-cat-recommend .dishes-heading {
+    /*border-color: #ff6d00; color: #ff6d00; */
+    padding-left: 65px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
 
 /* </editor-fold> */
 
@@ -120,15 +124,75 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 /* </editor-fold> */
 
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page #content input.button {
+    /*background-color: #00b0ff; border: 2px solid #00b0ff;*/
+    background-color: #00c853; border: 2px solid #00c853;
+    /*background-color: #64dd17; border: 2px solid #64dd17;*/
+    /*background-color: #ff3d00; border: 2px solid #ff3d00;*/
+    border-radius: 3px; text-transform: uppercase; font-weight: 600; padding: 8px 12px; text-shadow: none; }
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #content input.button:hover,
+.woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce-page #respond input#submit:hover,
+.woocommerce-page #content input.button:hover { background-color: #00e676; text-shadow: none; }
+
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce #content input.button.alt,
+.woocommerce-page a.button.alt,
+.woocommerce-page button.button.alt,
+.woocommerce-page input.button.alt,
+.woocommerce-page #respond input#submit.alt,
+.woocommerce-page #content input.button.alt { background-color: #ff1744; border-color: #ff1744; text-shadow: none; }
+
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce #content input.button.alt:hover,
+.woocommerce-page a.button.alt:hover,
+.woocommerce-page button.button.alt:hover,
+.woocommerce-page input.button.alt:hover,
+.woocommerce-page #respond input#submit.alt:hover,
+.woocommerce-page #content input.button.alt:hover { background-color: #f50057; text-shadow: none; }
+
 .billing_city_select { padding: 6px 10px; }
 
 .woocommerce form .form-row, .woocommerce-page form .form-row { padding: 0; }
 
-.woocommerce table.shop_table, .woocommerce-page table.shop_table { border: 1px solid rgba(255, 99, 71, 0.5); }
+.woocommerce table.shop_table, .woocommerce-page table.shop_table { border: 1px solid rgba(255, 111, 0, 0.5); }
 
-.shop_table thead { background-color: #ff6347; }
+.shop_table thead { background-color: #ff6f00; }
 
 table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !important; letter-spacing: 0.025em; text-rendering: optimizelegibility; text-transform: uppercase; }
+
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th,
+.woocommerce-page table.shop_table tfoot td,
+.woocommerce-page table.shop_table tfoot th { border-top: 1px dashed #cfd8dc; }
+
+.woocommerce table.order_details tbody tr td,
+.woocommerce table.order_details tbody tr th { border-top: none; }
+
+.woocommerce table.order_details tbody tr:first-child td,
+.woocommerce table.order_details tbody tr:first-child th { border-bottom: 1px dashed #cfd8dc; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
@@ -186,7 +250,7 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
     .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; }
 
-    .dishes .dish:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); position: absolute; z-index: 2; }
+    .dishes .dish:hover { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); position: absolute; z-index: 2; }
 
     /*.dishes .dish:hover .item-stuff { height: 205px; }*/
 
@@ -208,7 +272,7 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 320px; }*/
 
-    .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 10px; }
+    .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 15px; padding-top: 0; }
 
     .dishes .dish .order-controls .price { padding: 0; }
 
