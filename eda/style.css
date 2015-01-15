@@ -146,7 +146,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce .cart_item .product-remove a:hover,
 .woocommerce .cart_item .product-remove a:focus { text-decoration: none; color: #263238; }
 
-.woocommerce .cart-subtotal { font-size: 20px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+.woocommerce #cart-bar .cart-bar-real .cart-subtotal { font-size: 20px; font-weight: 700; margin-bottom: 6px; text-align: center; }
 
 .product-thumbnail { padding: 3px; text-align: center; }
 
@@ -241,9 +241,9 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 .woocommerce table.shop_table tr:first-child td,
 .woocommerce-page table.shop_table tr:first-child td { border-top: none; }
 
-.woocommerce.alert { margin: 15px; position: relative; }
+.woocommerce.alert { margin: 20px; position: relative; }
 
-.woocommerce.alert ul {  }
+ul.woocommerce.alert { list-style: none; }
 
 .woocommerce form.checkout .alert { margin: 15px 5px; }
 
