@@ -121,7 +121,20 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 
 .dishes.dishes-col-6 .dish .order-controls hr { margin-bottom: 10px; }
 
-.dishes.dishes-col-6 .dish .order-controls .price { margin-bottom: 7px; }
+.dishes.dishes-col-6 .dish .order-controls .price { margin-bottom: 7px;
+}
+
+.dishes-cat.pizza .dishes .dish .item-stuff { height: 220px; }
+
+.dishes-cat.pizza .dishes .dish .order-controls { text-align: center; }
+
+.dishes-cat.pizza .dishes .dish .order-controls table.variations { margin-bottom: 0; }
+
+.dishes-cat.pizza .dishes .dish .order-controls table.variations td { border-top: none; }
+
+.dishes-cat.pizza .dishes .dish .order-controls table.variations td select { padding: 5px 10px; }
+
+.dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 10px; }
 
 /* </editor-fold> */
 
@@ -312,6 +325,15 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .order-controls hr { margin-top: 2px; }
 
     .dishes.dishes-col-6 .dish .order-controls .portion-type { margin-top: 0; margin-bottom: 10px; }
+
+
+    .dishes-cat.pizza .dishes .dish .item-stuff { height: 160px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls table.variations { display: inline; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .variations_button { display: flex; justify-content: space-between; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 0; }
 }
 
 /* Стили для размера -md- */
