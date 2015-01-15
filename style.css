@@ -2100,6 +2100,9 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature:hover > .divider,
 .block-features .btn-feature:focus > .divider { border-color: #40c4ff; }
 
+.btn-feature:hover .divider,
+.btn-feature:hover + .btn-feature .divider { width: 0; }
+
 .block-features .btn-feature .fa { font-size: 2em; top: 11px; position: relative; }
 
 .block-features .popover {top: 40px !important;}
