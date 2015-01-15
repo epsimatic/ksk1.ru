@@ -261,6 +261,9 @@ ul.woocommerce.alert { list-style: none; }
 
 .customer_details dd { border-bottom: 1px dashed #78909c; }
 
+.checkout-description { background-color: #fff8e1; border-radius: 3px; box-shadow: 0 1px 2px rgba(55, 71, 79, 0.25); margin: 20px; padding: 20px 30px 15px; }
+
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
