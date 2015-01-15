@@ -243,7 +243,7 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
 .woocommerce.alert { margin: 20px; position: relative; }
 
-ul.woocommerce.alert { list-style: none; }
+ul.woocommerce.alert { list-style: none; padding-left: 20px; }
 
 .woocommerce form.checkout .alert { margin: 15px 5px; }
 
