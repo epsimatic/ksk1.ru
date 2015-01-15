@@ -256,6 +256,11 @@ ul.woocommerce.alert { list-style: none; }
 .woocommerce-page form.checkout_coupon,
 .woocommerce-page form.register { margin: 10px 15px 20px; }
 
+.customer_details dd,
+.addresses address { margin-bottom: 15px; padding: 13px 10px; }
+
+.customer_details dd { border-bottom: 1px dashed #78909c; }
+
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
