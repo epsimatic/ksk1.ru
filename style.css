@@ -705,6 +705,12 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
+.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 18px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 0 -10px; padding: 0 20px 1px; text-align: center; }
+
+.navpanel .btn-collapse:hover, .navpanel .btn-collapse:focus { background-color: #b0bec5 !important; color: #ffffff; text-decoration: none; }
+
+.navpanel .btn-collapse i { display: inline; padding: 0 24px; }
+
 /* <editor-fold desc="navpanel-shopping"> */
 #navpanel-shopping, #navpanel-services, #navpanel-info { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
@@ -3579,6 +3585,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-feature .arrow { left: 33%; }
 
+    .navpanel .btn-collapse { border-radius: 6px; margin: 0; }
+
     #navpanel-shopping .e96-bar .pr-logo img { width: 50%; }
 
     #navpanel-shopping .e96-bar p { text-align: center; }
@@ -3641,7 +3649,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar { width: 49%; margin-left: 1%; }
 
-    #navpanel-shopping.active { max-height: 330px; border: none; background-color: #fcfcfc; }
+    #navpanel-shopping.active { max-height: 400px; border: none; background-color: #fcfcfc; }
 
     #navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-top: 13px; margin-bottom: 5px; }
 

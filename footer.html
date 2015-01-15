@@ -29,6 +29,10 @@
         jQuery('.navpanel-shopping, #btn-feature-shopping').toggleClass('active')
     });
 
+    jQuery('.btn-collapse').click(function () {
+        jQuery('.navpanel-shopping, #btn-feature-shopping').removeClass('active')
+    });
+
     // Поисковая строка
     (function () {
         var meta_generator = jQuery("meta[name='generator']").attr("content");
