@@ -326,7 +326,7 @@ popover-weather-iframe {
 
 /* <editor-fold desc="navbar"> */
 
-.navbar {background-color: #42baea;
+.navbar {background-color: #00b0ff;
     /*margin: 0 -10px 10px; */
     margin: 0 0 10px;
     border: none;}
@@ -359,9 +359,7 @@ body.single-company .navbar,
 
 .navbar-nav { max-height: 50px; white-space: nowrap;}
 
-.activ_li{background-color: #ffffff;}
-
-.activ_li a{color: #428BCA;}
+.activ_li a { color: #fff; background-color: #0091ea; font-weight: 600;}
 
 /*для файла header_2013.html*/
 .karta a [title='Карта Красноуфимска и других городов'],
@@ -571,7 +569,7 @@ a.media-heading:focus {text-decoration: none;}
 .dropdown-menu > li .btn:hover {text-decoration: none;}
 
 .nav > li > a:focus,
-.nav > li > a:hover {color: #fff; background-color: #2CB3E9;}
+.nav > li > a:hover {color: #fff; background-color: #40c4ff;}
 
 .nav .open > a,
 .nav .open > a:hover,
@@ -2079,12 +2077,12 @@ a.link-neutral:focus {color: #3b437d;}
 .block-features .btn-feature {height: 50px; border: 0 none; color: #fff; padding: 0; }
 
 .block-features .btn-feature:hover,
-.block-features .btn-feature:focus {background-color: #2cb3e9; cursor: pointer;}
+.block-features .btn-feature:focus {background-color: #40c4ff; cursor: pointer;}
 
-.block-features .btn-feature > .divider { background-color: #fff; border: #42baea solid; border-width: 10px 0; height: 100%; width: 1px; position:absolute; opacity: 0.5; }
+.block-features .btn-feature > .divider { background-color: #fff; border: #00b0ff solid; border-width: 10px 0; height: 100%; width: 1px; position:absolute; opacity: 0.5; }
 
 .block-features .btn-feature:hover > .divider,
-.block-features .btn-feature:focus > .divider { border-color: #2cb3e9; }
+.block-features .btn-feature:focus > .divider { border-color: #40c4ff; }
 
 .block-features .btn-feature .fa { font-size: 2em; top: 11px; position: relative; }
 
