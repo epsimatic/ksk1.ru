@@ -146,7 +146,7 @@ ul.list-stores > li > a { font-size: 17px; font-weight: 400; padding: 7px 14px 1
 .woocommerce .cart_item .product-remove a:hover,
 .woocommerce .cart_item .product-remove a:focus { text-decoration: none; color: #263238; }
 
-.woocommerce #cart-bar .cart-bar-real .cart-subtotal { font-size: 20px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+.woocommerce #cart-bar #cart-bar-real .cart-subtotal { font-size: 20px; font-weight: 700; margin-bottom: 6px; text-align: center; }
 
 .product-thumbnail { padding: 3px; text-align: center; }
 
