@@ -43,9 +43,9 @@ ul.list-stores > li > a > img { width: 150px; }
 
 #cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px; display: flex; }
 
-#cart-bar-real .cart-view { display: flex; margin-bottom: 20px; }
+#cart-bar-real .cart-view { display: flex; margin-bottom: 0; overflow-x: scroll; overflow-y: hidden; }
 
-#cart-bar-real .cart-description { margin-bottom: 20px; }
+#cart-bar-real .cart-description { margin-bottom: 0; }
 
 #cart-bar-real .cart-item { position: relative; margin-right: 25px; }
 
@@ -112,7 +112,7 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .dish .order-controls .order-row { align-items: center; display: flex; flex-direction: column; justify-content: space-between; }
 
-.dishes .dish .order-controls .amount input { width: 34px; display: inline; text-align: center; }
+.dishes .dish .order-controls .amount input { display: inline; text-align: center; }
 
 .dishes .dish .order-controls .portion-type { color: rgb(102, 102, 102); border-bottom: 1px dashed rgb(187, 187, 187); margin-right: 0; margin-bottom: 10px; }
 
@@ -130,8 +130,8 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes.dishes-col-6 .dish .order-controls hr { margin-bottom: 10px; }
 
-.dishes.dishes-col-6 .dish .order-controls .price { margin-bottom: 7px;
-}
+.dishes.dishes-col-6 .dish .order-controls .price { margin-bottom: 7px; }
+
 
 .dishes-cat.pizza .dishes .dish .item-stuff { height: 220px; }
 
@@ -169,6 +169,17 @@ ul.list-stores > li > a > img { width: 150px; }
 .woocommerce .cart_item .product-remove a:focus { text-decoration: none; color: #263238; }
 
 .woocommerce #cart-bar #cart-bar-real .cart-subtotal { font-size: 20px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { padding-right: 0; }
+
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(3),
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: none; }
+
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(2) { padding: 0; position: relative; }
+
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(4) { padding-right: 0; }
+
+.woocommerce #cart-bar #cart-bar-real .checkout-button {  }
 
 .product-thumbnail { padding: 3px; text-align: center; }
 
@@ -380,7 +391,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .price-wrap { margin-bottom: 0; }
 
-    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations td select { width: 120px; }
+    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0; }
+
+    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations td select { width: 100px; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .quantity { margin-left: 0; }
 
@@ -390,9 +403,6 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
     #cart-bar-real { display: flex; }
-
-    #cart-bar-real .cart-description,
-    #cart-bar-real .cart-view { margin-bottom: 0; }
 
     .dishes { margin: 0 10px; }
 
@@ -435,9 +445,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price-wrap { margin-bottom: 0; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls .price { padding-left: 5px; }
+    .dishes-cat.pizza .dishes .dish .order-controls .price { padding-left: 0; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 100px; }
+    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 90px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-left: 0; width: 60px; }
 
@@ -472,13 +482,13 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
 
-    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 150px; }
+    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 140px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .quantity { width: 70px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .quantity .qty { width: 50px; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls .add_to_cart_button { width: 150px; }
+    .dishes-cat.pizza .dishes .dish .order-controls .add_to_cart_button { width: 140px; }
 
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish-container { height: 360px; }
