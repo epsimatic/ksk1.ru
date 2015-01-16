@@ -47,7 +47,7 @@ ul.list-stores > li > a > img { width: 150px; }
     display: -ms-flexbox;
     display: flex; }
 
-#cart-bar-real .cart-view { margin-bottom: 0; overflow-x: scroll; overflow-y: hidden;
+#cart-bar-real .cart-view { margin-bottom: 0; overflow-x: auto; overflow-y: hidden;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
