@@ -344,7 +344,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes .dish .order-controls .price-wrap,
     .dishes-cat.pizza .dishes .dish .order-controls .variations_button { display: flex; justify-content: space-between; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 0; align-self: center; }
+    .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 0; align-self: center; margin-left: 10px; }
 }
 
 /* Стили для размера -md- */
@@ -389,6 +389,17 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes .dish .order-controls .price { padding: 0; }
 
     .dishes .dish .order-controls .amount { padding-right: 6px; }
+
+
+    .dishes-cat.pizza .dishes .dish .item-stuff { height: 145px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .price { padding-left: 5px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 100px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-left: 0; }
+
+    .dishes-cat.pizza .dishes .dish .item-description p { padding-top: 0; padding-bottom: 15px; }
 }
 
 /* Стили для размера -lg- */
@@ -397,6 +408,15 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes .thumb-container { height: 178px; width: 237px; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
+
+
+    .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 150px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .quantity { width: 70px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .quantity .qty { width: 50px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .add_to_cart_button { width: 150px; }
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 305px; }*/
 }
