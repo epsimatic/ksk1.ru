@@ -426,6 +426,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 @media (min-width: 992px) {
     #cart-bar-real { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; }
 
+    .woocommerce #cart-bar #cart-bar-real > div:nth-child(3),
+    .woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: inline-block; }
+
     .dishes { margin: 0 10px; }
 
     .dishes .thumb-container { height: 142px; width: 189px; }
