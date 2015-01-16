@@ -38,9 +38,9 @@ form { padding: 10px 20px; }
 
 .taxi-phone h2 .fa { font-size: 27px; }
 
-.taxi-logo { padding: 20px 60px 40px; }
+.taxi-logo { padding: 20px 20px 40px; }
 
-.taxi-logo img { max-width: 250px; }
+.taxi-logo img { max-width: 100%; }
 
 .panel-default .panel-heading,
 .taxi-content { background-color: #ffd401; }
@@ -155,7 +155,7 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-header { position: relative; }
 
-    .taxi-header .taxi-logo { padding: 60px 40px 40px 60px; }
+    .taxi-header .taxi-logo { padding: 45px 30px 25px; }
 
     /*.site-taxi .taxi-header .taxi-phone { padding-left: 0; }*/
 
@@ -193,6 +193,8 @@ footer h4 a:hover { color: #ffd401; }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 
+    .taxi-header .taxi-logo { padding: 23px 60px 7px; }
+
     .col-description h3 { padding: 0 60px; margin-top: 35px !important; }
 
     .taxi-header p { padding-left: 120px; padding-top: 20px; }
@@ -212,6 +214,8 @@ footer h4 a:hover { color: #ffd401; }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+
+    .taxi-header .taxi-logo { padding: 20px 95px 0 85px; }
 
     .col-description h3 { padding: 0 120px; margin-top: 45px !important; }
 
