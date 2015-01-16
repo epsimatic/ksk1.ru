@@ -20,7 +20,9 @@ nav.navbar { margin: 0 -10px; }
 
 .nav-tabs > li.active > a { background-color: #fdd49c; }
 
-ul.list-stores { border-radius: 0; background-color: #fafafa; }
+ul.list-stores { border-radius: 0; background-color: #fafafa; margin-bottom: 0; }
+
+ul.list-stores > li { padding: 0 !important; }
 
 ul.list-stores > li.active > a { background-color: #ff875b; }
 
@@ -394,6 +396,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 
     .dishes-cat.pizza .dishes .dish .item-stuff { height: 145px; }
+
+    .dishes-cat.pizza .dishes .dish .order-controls .price-wrap { margin-bottom: 0; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price { padding-left: 5px; }
 
