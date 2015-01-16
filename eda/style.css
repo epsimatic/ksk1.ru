@@ -41,9 +41,17 @@ ul.list-stores > li > a > img { width: 150px; }
 
 #cart-bar-real > * { align-self: center; }
 
-#cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px; display: flex; }
+#cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
 
-#cart-bar-real .cart-view { display: flex; margin-bottom: 0; overflow-x: scroll; overflow-y: hidden; }
+#cart-bar-real .cart-view { margin-bottom: 0; overflow-x: scroll; overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 #cart-bar-real .cart-description { margin-bottom: 0; }
 
@@ -87,7 +95,13 @@ ul.list-stores > li > a > img { width: 150px; }
 /* </editor-fold> */
 
 
-.dishes .woocommerce { align-items: stretch; display: flex; flex-flow: row wrap; justify-content: flex-start; margin: 0; }
+.dishes .woocommerce { align-items: stretch; margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; }
 
 /* <editor-fold desc="Оформление ячейки товара"> */
 
@@ -102,7 +116,7 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .thumb-container { background-position: center; background-repeat: no-repeat; background-size: cover; height: 120px; width: 100%; }
 
-.dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 175px; }
+.dishes .dish .item-stuff { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-flow: column nowrap; justify-content: space-between; height: 175px; }
 
 .dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
 
@@ -110,7 +124,7 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
 
-.dishes .dish .order-controls .order-row { align-items: center; display: flex; flex-direction: column; justify-content: space-between; }
+.dishes .dish .order-controls .order-row { align-items: center; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-direction: column; justify-content: space-between; }
 
 .dishes .dish .order-controls .amount input { display: inline; text-align: center; }
 
@@ -176,6 +190,14 @@ ul.list-stores > li > a > img { width: 150px; }
 .woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: none; }
 
 .woocommerce #cart-bar #cart-bar-real > div:nth-child(2) { padding: 0; position: relative; }
+
+.woocommerce #cart-bar #cart-bar-real > div:nth-child(2) > div.shutter { content: ""; height: 100%; width: 50px; pointer-events: none; position: absolute; right: 0; top: 0; z-index: 5;
+    background-image: -webkit-linear-gradient(right, rgba(255, 249, 196, 1), rgba(255, 249, 196, 0)));
+    background-image: -moz-linear-gradient(right, rgba(255, 249, 196, 1), rgba(255, 249, 196, 0)));
+    background-image: -ms-linear-gradient(right, rgba(255, 249, 196, 1), rgba(255, 249, 196, 0)));
+    background-image: -o-linear-gradient(right, rgba(255, 249, 196, 1), rgba(255, 249, 196, 0)));
+    background-image: linear-gradient(to left, rgba(255, 249, 196, 1), rgba(255, 249, 196, 0));
+}
 
 .woocommerce #cart-bar #cart-bar-real > div:nth-child(4) { padding-right: 0; }
 
@@ -339,7 +361,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .thumb-container { background-position: center; background-repeat: no-repeat; height: 178px; width: 237px; }
 
-    .dishes .dish .item-stuff { display: flex; flex-flow: column nowrap; justify-content: space-between; height: 115px; }
+    .dishes .dish .item-stuff { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-flow: column nowrap; justify-content: space-between; height: 115px; }
 
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
 
@@ -369,7 +391,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat.pizza .dishes .dish .item-stuff { height: 160px; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls .price-wrap { margin-bottom: 15px; display: flex; justify-content: space-between; }
+    .dishes-cat.pizza .dishes .dish .order-controls .price-wrap { margin-bottom: 15px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; justify-content: space-between; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price { padding-top: 10px; padding-left: 10px; }
 
@@ -380,7 +402,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 150px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price-wrap,
-    .dishes-cat.pizza .dishes .dish .order-controls .variations_button { display: flex; justify-content: space-between; }
+    .dishes-cat.pizza .dishes .dish .order-controls .variations_button { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; justify-content: space-between; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 0; align-self: center; margin-left: 5px; width: 70px; }
 
@@ -402,7 +424,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    #cart-bar-real { display: flex; }
+    #cart-bar-real { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; }
 
     .dishes { margin: 0 10px; }
 
