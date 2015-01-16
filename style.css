@@ -1829,7 +1829,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-body .fa {padding-top:4px;}
 
-.panel-news-body .panel-body img { padding: 5px 0 15px; height: 100%; }
+.panel-news-body .panel-body img { padding: 5px 0 15px; height: 100%; max-width: 100%; }
 
 .panel-news-body .panel-body p { padding-bottom: 4px; color: #333; }
 
