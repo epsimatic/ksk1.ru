@@ -140,7 +140,7 @@ ul.list-stores > li > a > img { width: 150px; }
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-
+    -webkit-flex-wrap: wrap;
     -webkit-flex-flow: row wrap;
     -moz-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
@@ -168,7 +168,7 @@ ul.list-stores > li > a > img { width: 150px; }
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-
+    -webkit-flex-wrap: nowrap;
     -webkit-flex-flow: column nowrap;
     -moz-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
@@ -196,7 +196,8 @@ ul.list-stores > li > a > img { width: 150px; }
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
 
 .dishes .dish .order-controls .amount input { display: inline; text-align: center; }
 
@@ -426,7 +427,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-flow: row wrap;
+        -webkit-box-orient: vertical;
+        -webkit-flex-wrap: nowrap;
         -webkit-flex-flow: column nowrap;
         -moz-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
