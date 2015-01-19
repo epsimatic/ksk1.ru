@@ -43,12 +43,14 @@ ul.list-stores > li > a > img { width: 150px; }
 
 #cart-bar-real.flex-row { background-color: #789; padding: 10px; margin: 10px -10px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex; }
 
 #cart-bar-real .cart-view { margin-bottom: 0; overflow-x: auto; overflow-y: hidden;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex; }
@@ -97,10 +99,17 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .woocommerce { align-items: stretch; margin: 0;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
     justify-content: flex-start; }
 
 /* <editor-fold desc="Оформление ячейки товара"> */
@@ -116,7 +125,21 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .thumb-container { background-position: center; background-repeat: no-repeat; background-size: cover; height: 120px; width: 100%; }
 
-.dishes .dish .item-stuff { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-flow: column nowrap; justify-content: space-between; height: 175px; }
+.dishes .dish .item-stuff {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 175px; }
 
 .dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
 
@@ -124,7 +147,20 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
 
-.dishes .dish .order-controls .order-row { align-items: center; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-direction: column; justify-content: space-between; }
+.dishes .dish .order-controls .order-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center; }
 
 .dishes .dish .order-controls .amount input { display: inline; text-align: center; }
 
@@ -138,7 +174,12 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes.dishes-col-6 .dish h3.item-name { text-align: center; }
 
-.dishes.dishes-col-6 .dish .order-controls .order-row { flex-direction: column; }
+.dishes.dishes-col-6 .dish .order-controls .order-row {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .dishes.dishes-col-6 .dish .order-controls .portion-type { margin-top: 7px; margin-right: 0; }
 
@@ -361,11 +402,29 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .thumb-container { background-position: center; background-repeat: no-repeat; height: 178px; width: 237px; }
 
-    .dishes .dish .item-stuff { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; flex-flow: column nowrap; justify-content: space-between; height: 115px; }
+    .dishes .dish .item-stuff {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -webkit-flex-flow: column nowrap;
+        -moz-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        height: 115px; }
 
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
 
-    .dishes .dish .order-controls .order-row { flex-direction: row; }
+    .dishes .dish .order-controls .order-row {
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; }
 
     .dishes .dish .order-controls hr { margin-bottom: 15px; margin-top: 10px; display: block; }
 
@@ -391,7 +450,15 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat.pizza .dishes .dish .item-stuff { height: 160px; }
 
-    .dishes-cat.pizza .dishes .dish .order-controls .price-wrap { margin-bottom: 15px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; justify-content: space-between; }
+    .dishes-cat.pizza .dishes .dish .order-controls .price-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 15px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price { padding-top: 10px; padding-left: 10px; }
 
@@ -402,7 +469,14 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 150px; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .price-wrap,
-    .dishes-cat.pizza .dishes .dish .order-controls .variations_button { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; justify-content: space-between; }
+    .dishes-cat.pizza .dishes .dish .order-controls .variations_button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between; }
 
     .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 0; align-self: center; margin-left: 5px; width: 70px; }
 
@@ -424,7 +498,12 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
-    #cart-bar-real { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; }
+    #cart-bar-real {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex; }
 
     .woocommerce #cart-bar #cart-bar-real > div:nth-child(3),
     .woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: inline-block; }
@@ -490,7 +569,12 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls { text-align: center }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .price-wrap,
-    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .variations_button { flex-direction: column; }
+    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .variations_button {
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations { display: table; }
 
