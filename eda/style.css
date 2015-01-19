@@ -120,6 +120,10 @@ ul.list-stores > li > a > img { width: 150px; }
 
 .dishes-cat .cat-label { position: absolute; left: 10px; top: -8px; width: 41px; }
 
+.dishes-cat .btn-collapse { background-color: #ccff90; color: #33691e; letter-spacing: 0.025em; margin: 0 -10px; padding: 12px; text-align: center; text-transform: uppercase; }
+
+.dishes-cat .btn-collapse .fa { margin: 0 10px; }
+
 .dishes-heading {
     border-top: 2px dashed #ff6f00; color: #ff6f00;
     font-size: 25px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 12px; padding: 20px 50px 12px; text-transform: uppercase; }
