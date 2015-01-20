@@ -2819,8 +2819,6 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* The Table of Contents container element */
 .tocify {max-height: 90%; font-size: 15px;}
 
-.affix {top: 0; display: none;}
-
 .tocify .active a {background-color: #56a9f0;}
 
 .tocify .nav-list > li > a {line-height: 18px;}
