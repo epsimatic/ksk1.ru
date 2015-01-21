@@ -168,9 +168,9 @@ ul.list-stores > li > a > img { width: 150px; }*/
     transition: max-height 2s ease 0s;
     max-height: 100000px; }
 
-.dishes.collapsed .woocommerce { max-height: 305px; }
+.dishes.collapsed .woocommerce { max-height: 375px; }
 
-.dishes-cat.pizza .dishes.collapsed .woocommerce  { max-height: 355px; }
+.dishes-cat.pizza .dishes.collapsed .woocommerce  { max-height: 420px; }
 
 .dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: none; }
 
