@@ -567,6 +567,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.collapsed .woocommerce { max-height: 315px; }
 
+    .dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: block; }
+
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+7) { display: block; }
+
     .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+13) { display: none; }
 
 
