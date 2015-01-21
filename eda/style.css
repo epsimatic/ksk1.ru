@@ -163,7 +163,15 @@ ul.list-stores > li > a > img { width: 150px; }*/
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-box-pack: start;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+
+    transition: max-height 2s ease 0s;
+    max-height: 100000px; }
+
+.dishes.collapsed .woocommerce { max-height: 275px; }
+
+.dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: none; }
+
 
 /* <editor-fold desc="Оформление ячейки товара"> */
 
@@ -436,6 +444,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat-recommend .dishes-heading { padding-left: 100px; }
 
+    .dishes.collapsed .woocommerce { max-height: 315px; }
+
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+7) { display: none; }
+
     .dishes .dish h3.item-name { text-align: left; }
 
     .dishes .thumb-container { background-position: center; background-repeat: no-repeat; height: 178px; width: 237px; }
@@ -476,7 +488,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
-    .dishes.dishes-col-6 .dish .item-stuff { height: 165px; }
+    .dishes.dishes-col-6 .dish .item-stuff { height: 175px; }
 
     .dishes.dishes-col-6 .dish .order-controls .amount { margin-bottom: 10px; }
 
@@ -533,6 +545,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .quantity { margin-left: 0; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .add_to_cart_button { width: 120px; }
+
+
+    .dishes-cat .btn-collapse { margin: 0; }
 }
 
 /* Стили для размера -md- */
@@ -548,6 +563,12 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: inline-block; }
 
     .dishes { margin: 0 10px; }
+
+
+    .dishes.collapsed .woocommerce { max-height: 315px; }
+
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+13) { display: none; }
+
 
     .dishes .thumb-container { height: 142px; width: 189px; }
 
@@ -620,6 +641,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .quantity { margin: 0 auto 10px; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .item-description p { padding-bottom: 0; }
+
+
+    .dishes-cat .btn-collapse { margin: 0 -10px; }
 }
 
 /* Стили для размера -lg- */
