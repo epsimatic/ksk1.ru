@@ -184,7 +184,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes .dish { box-shadow: 0 1px 3px rgba(69, 90, 100, 0.05); background-color: #ffffff; border: 1px solid #eaeaea; border-radius: 3px; padding: 15px 15px 0; width: 100%; position: relative; transition: box-shadow 0.25s ease 0s; }
 
-.dishes .dish img { max-width: 100%; display: block; margin: 0 auto; }
+.dishes .dish img { max-width: 240px; display: block; margin: 0 auto; width: 100%; }
 
 .dishes .thumb-container { background-position: center; background-repeat: no-repeat; background-size: cover; height: 120px; width: 100%; }
 
