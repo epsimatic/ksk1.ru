@@ -573,13 +573,13 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes { margin: 0 10px; }
 
 
-    .dishes.collapsed .woocommerce { max-height: 285px; }
+    .dishes.collapsed .woocommerce { max-height: 290px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 290px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 295px; }
 
-    .dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 325px; }
+    .dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 335px; }
 
-    .dishes-cat.pizza .dishes.dishes-col-6.collapsed .woocommerce { max-height: 345px; }
+    .dishes-cat.pizza .dishes.dishes-col-6.collapsed .woocommerce { max-height: 350px; }
 
     .dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: block; }
 
@@ -592,7 +592,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .thumb-container { height: 142px; width: 189px; }
 
-    .dishes .dish .item-stuff { height: 105px; display: block; }
+    .dishes .dish .item-stuff { height: 100px; display: block; }
 
     .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; }
 
@@ -669,7 +669,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
 
-    .dishes.collapsed .woocommerce { max-height: 320px; }
+    .dishes.collapsed .woocommerce { max-height: 325px; }
 
     .dishes.dishes-col-6.collapsed .woocommerce { max-height: 310px; }
 
