@@ -472,7 +472,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes .dish .order-controls .price { margin-bottom: 0; padding-left: 0; }
 
 
-    .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 325px; }
+    .dishes.dishes-col-6 .dish-container { width: 32%; margin: 0 0.66666666% 20px; height: 290px; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
@@ -571,7 +571,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 165px; }
 
-    .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 305px; }
+    .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 275px; }
 
     .dishes.dishes-col-6 .dish .item-description p { margin: 0; }
 
@@ -615,7 +615,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         -ms-flex-direction: column;
         flex-direction: column; }
 
-    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations { display: table; }
+    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations { display: table; width: 100%; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .quantity { margin: 0 auto 10px; }
 
@@ -628,6 +628,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes .thumb-container { height: 178px; width: 237px; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
+
+    .dishes.dishes-col-6 .dish-container { height: 300px; }
 
 
     .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 140px; }
