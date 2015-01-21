@@ -260,7 +260,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes-cat.pizza .dishes .dish .order-controls table.variations td { border-top: none; padding: 0; }
 
-.dishes-cat.pizza .dishes .dish .order-controls table.variations td select { padding: 5px 10px; margin-bottom: 10px; margin-top: 5px; }
+.dishes-cat.pizza .dishes .dish .order-controls table.variations td select { padding: 5px 10px; margin-bottom: 10px; margin-top: 5px; width: 100px; }
 
 .dishes-cat.pizza .dishes .dish .order-controls .quantity { margin-bottom: 10px; }
 
@@ -626,6 +626,14 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish .order-controls .amount { padding-right: 6px; }
 
+    .dishes .dish .order-controls .quantity { width: 50px; }
+
+    .dishes .dish .order-controls .qty { width: 30px;}
+
+    .dishes.dishes-col-6 .dish .order-controls .quantity { width: 60px; }
+
+    .dishes.dishes-col-6 .dish .order-controls .qty { width: 40px;}
+
 
     .dishes-cat.pizza .dishes .dish .item-stuff { height: 145px; }
 
@@ -685,6 +693,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
     .dishes.dishes-col-6 .dish-container { height: 300px; }
+
+    .dishes .dish .order-controls .quantity { width: 60px; }
+
+    .dishes .dish .order-controls .qty { width: 40px;}
 
 
     .dishes-cat.pizza .dishes .dish .order-controls table.variations td select { width: 140px; }
