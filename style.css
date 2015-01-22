@@ -384,7 +384,9 @@ body.single-company .navbar,
 
 .gsc-control-cse {padding: 0 !important; border: none !important;}
 
-.searchbox {width: 100%; margin-top: 8px;}
+.searchbox { width: 100%; margin-bottom: 5px; }
+
+.navpanel-search { position: relative; }
 
 
 /* </editor-fold> */
@@ -3540,6 +3542,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .searchbox-container { position: absolute; bottom: 12px; }
+
     .row_header > div:after { height: 140px; }
 
     .user-panel { position: absolute; }
