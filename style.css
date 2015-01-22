@@ -75,10 +75,10 @@ header .btn-group {margin-top: 10px;}
     content: "";
     display: inline-block;
     vertical-align: middle;
-    height: 140px;
+    /*height: 140px;*/
 }
 .user-panel {
-    position: absolute;
+    /*position: absolute;*/
     right: 10px;
     height: 140px;
     text-align: center;
@@ -3540,6 +3540,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .row_header > div:after { height: 140px; }
+
+    .user-panel { position: absolute; }
+
     ul.list-days {border-radius: 6px;}
 
     .site-rk .per50,
