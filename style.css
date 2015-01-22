@@ -3542,7 +3542,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    .searchbox-container { position: absolute; bottom: 12px; }
+        .searchbox-container { position: absolute; bottom: 8px; }
 
     .row_header > div:after { height: 140px; }
 
