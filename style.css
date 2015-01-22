@@ -798,16 +798,40 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /*#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }*/
 
+.navpanel .catalog { border-top: 1px solid #ff8a80; padding-top: 10px; }
+
 #navpanel-services a,
 #navpanel-info a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
 
 #navpanel-services a:hover,
-#navpanel-services a:focus,
-#navpanel-info a:hover,
-#navpanel-info a:focus { background-color: #eee; text-decoration: none; }
+#navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
 #navpanel-services img.icon,
 #navpanel-info img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
+
+
+.navpanel .catalog a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding-bottom: 12px !important; }
+
+.navpanel .catalog > a:hover
+.navpanel .catalog > a:focus { text-decoration: none; background-color: #eceff1; }
+
+.navpanel .catalog a:first-child { background-color: transparent; margin-bottom: 10px; margin-top: 0; padding-bottom: 3px !important; }
+
+.navpanel .catalog > a:first-child:hover,
+.navpanel .catalog > a:first-child:focus { background-color: #eceff1; }
+
+.navpanel .catalog a.category { background-color: #b3e5fc; border-radius: 3px; display: inline-block !important; margin-bottom: 4px; margin-top: 0; padding: 7px 7px 8px !important; }
+
+.navpanel .catalog > a.category:hover,
+.navpanel .catalog > a.category:focus { background-color: #81d4fa; }
+
+
+.navpanel .catalog > a h2 { margin-bottom: 0; }
+
+.navpanel .catalog h4 { margin-top: 0; }
+
+
+
 
 .btn-feature.active .arrow { bottom: 0; }
 
