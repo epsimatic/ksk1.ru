@@ -165,8 +165,8 @@ ul.list-stores > li > a > img { width: 150px; }*/
     -webkit-box-pack: start;
     justify-content: flex-start;
 
-    transition: max-height 2s ease 0s;
-    max-height: 100000px; }
+    transition: max-height 3s ease 0s;
+    max-height: 5000px; }
 
 .dishes.collapsed .woocommerce { max-height: 385px; }
 
