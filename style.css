@@ -798,8 +798,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /*#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }*/
 
-.navpanel .catalog { border-top: 1px solid #ff8a80; padding-top: 10px; }
-
 #navpanel-services a,
 #navpanel-info a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
 
@@ -809,6 +807,10 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 #navpanel-services img.icon,
 #navpanel-info img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
 
+
+.navpanel #weather-panel { padding: 0; }
+
+.navpanel .catalog { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
 .navpanel .catalog h2 img { margin-right: 10px; width: 40px !important; }
 
