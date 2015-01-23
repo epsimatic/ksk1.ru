@@ -12,7 +12,7 @@
     var popovers = [];
     // Заменили на панель:
     //    popovers['btn-feature-shopping'] = 'popover_shopping_content';
-    popovers['btn-feature-services'] = 'popover_service_content';
+    //    popovers['btn-feature-services'] = 'popover_service_content';
     popovers['btn-feature-info'] = 'popover_info_content';
 
     for (var p in popovers) {
@@ -25,16 +25,17 @@
         });
     }
 
-    jQuery('#btn-feature-shopping').click(function () {
-        jQuery('.navpanel-shopping, #btn-feature-shopping').toggleClass('active')
-    });
-
-    jQuery('#btn-feature-search').click(function () {
-        jQuery('.navpanel-search, #btn-feature-search').toggleClass('active')
+    jQuery('.btn-feature').click(function () {
+        wasActive = jQuery(this).hasClass('active');
+        jQuery('.navpanel, .btn-feature').removeClass('active');
+        if (!wasActive) {
+            jQuery(this).addClass('active');
+            jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel')).addClass('active');
+        }
     });
 
     jQuery('.btn-collapse').click(function () {
-        jQuery('.navpanel-shopping, #btn-feature-shopping').removeClass('active')
+        jQuery('.navpanel, .btn-feature').removeClass('active')
     });
 
     // Поисковая строка
