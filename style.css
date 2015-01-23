@@ -3553,6 +3553,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .searchbox-container { position: absolute; bottom: 8px; padding-left: 0; }
 
+    body.ob .searchbox-container { padding-left: 10px; padding-right: 0; }
+
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
     .row_header > div:after { height: 140px; }
