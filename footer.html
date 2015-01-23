@@ -27,10 +27,12 @@
 
     jQuery('.btn-feature').click(function () {
         wasActive = jQuery(this).hasClass('active');
-        jQuery('.navpanel, .btn-feature').removeClass('active');
+        jQuery('.navpanel, .btn-feature').removeClass('active cond-active');
         if (!wasActive) {
             jQuery(this).addClass('active');
             jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel')).addClass('active');
+        } else {
+            jQuery('.potential-cond-active').addClass('cond-active');
         }
     });
 
