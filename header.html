@@ -25,10 +25,8 @@
 <nav class="navbar " role="navigation">
     <div class="col-sm-6 col-md-5 hidden-xs">
         <ul class="nav nav-pills navbar-nav">
-            <li><a class="hide-alt" href="http://ksk66.ru" title="Свежие городские новости">Новости</a>
-                <a class="show-alt" href="http://news.kskmedia.ru" title="Тестовый сайт новостей">Новости</a>
-            </li>
-            <li><a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+            <li><a class="cond-active potential-cond-active cond-active-news" href="http://ksk66.ru" title="Свежие городские новости">Новости</a></li>
+            <li><a class="cond-active potential-cond-active cond-active-ob"   href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
 
             <!--<li><a href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a></li>-->
 
@@ -51,13 +49,13 @@
     </div>
 
     <div class="col-md-4 col-sm-3 col-xs-12 block-features">
-        <a href="http://ksk66.ru" title="Свежие городские новости" class="col-xs-2 col-sm-4 btn-feature text-center hidden-sm hidden-md hidden-lg">
-            <!--<div class="arrow"></div>-->
+        <a href="http://ksk66.ru" title="Свежие городские новости" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-news">
+            <div class="arrow"></div>
             <!--<div class="divider"></div>-->
             <i class="fa fa-bullhorn"></i>
         </a>
 
-        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете" class="col-xs-2 col-sm-4 btn-feature text-center hidden-sm hidden-md hidden-lg">
+        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-ob">
             <!--<div class="arrow"></div>-->
             <div class="divider"></div>
             <i class="fa fa-tags"></i>
@@ -84,7 +82,7 @@
             <span class="hidden-sm hidden-xs">Справка</span>
         </div>
 
-        <div id="btn-feature-search" class="col-xs-2 col-sm-4 btn-feature text-center hidden-sm hidden-md hidden-lg">
+        <div id="btn-feature-search" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs">
             <div class="arrow"></div>
             <div class="divider"></div>
             <i class="fa fa-search"></i>
@@ -101,13 +99,98 @@
     </div>
 </div>
 
+<div class="navpanel navpanel-info-DISABLED" id="navpanel-info">
+    <div class="col-xs-12 col-sm-6 col-md-3" id="weather-panel"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+        <iframe src="http://news.kskmedia.ru/agenda-block/" height="300px" width="100%"></iframe>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 catalog">
+        <a href="http://news.kskmedia.ru/cat/">
+            <h2>
+                <span><img src="http://ksk1.ru/img/icons/catalog-icon.png" class="icon"></span>
+                <span>СПРАВОЧНИК</span>
+            </h2>
+        </a>
+        <a href="http://news.kskmedia.ru/cat/gov/" class="category">Государственные и общественные ограны</a>
+        <a href="http://news.kskmedia.ru/cat/medicare/" class="category">Медицина</a>
+        <a href="http://news.kskmedia.ru/cat/education/" class="category">Образование. Культура. Спорт</a>
+        <a href="http://news.kskmedia.ru/cat/manufature/" class="category">Производство</a>
+        <a href="http://news.kskmedia.ru/cat/trade/" class="category">Торговля</a>
+        <a href="http://news.kskmedia.ru/cat/transport/" class="category">Транспорт</a>
+        <a href="http://news.kskmedia.ru/cat/services/" class="category">Услуги</a>
+        <a href="http://news.kskmedia.ru/emergency/">
+            <h4><span class="hidden-md">Самые </span>важные телефоны</h4>
+        </a>
+        <a href="http://ksk66.ru/timetable.html">
+            <h4>Расписание</h4>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+        <h2>КАРТА</h2>
+    </div>
+    <div class="col-xs-12">
+        <a href="#" class="btn btn-collapse">
+            <i class="fa fa-angle-up fa-fw "></i>
+            Свернуть
+            <i class="fa fa-angle-up fa-fw"></i>
+        </a>
+    </div>
+</div>
+
+
+<div class="navpanel navpanel-services" id="navpanel-services">
+    <div class="col-xs-6 col-sm-2">
+        <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
+            <img src="http://ksk1.ru/img/icons/copycentr-icon.png" class="icon">
+            <div class="features-item-name">Копицентр</div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-2">
+        <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
+            <img src="http://ksk1.ru/img/icons/browser-icon.png" class="icon">
+            <div class="features-item-name one-line">Реклама у нас</div>
+        </a>
+    </div>
+    <!--<div class="col-xs-6 col-sm-2">
+        <a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
+                <img src="http://ksk1.ru/img/icons/fixer-icon.png" class="icon">
+                <div class="features-item-name one-line">Ремонт ПК</div>
+        </a>
+    </div>-->
+    <div class="col-xs-6 col-sm-2">
+        <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
+            <img src="http://ksk1.ru/img/icons/webdev-icon.png" class="icon">
+            <div class="features-item-name">Создание сайтов</div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-2">
+        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
+            <img src="http://ksk1.ru/img/icons/video-icon.png" class="icon">
+            <div class="features-item-name">Видео и фотосъемка</div>
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-2">
+        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
+            <img src="http://ksk1.ru/img/icons/gov-icon.png" class="icon">
+            <div class="features-item-name">Различные госуслуги</div>
+        </a>
+    </div>
+    <div class="col-xs-12">
+        <a href="#" class="btn btn-collapse">
+            <i class="fa fa-angle-up fa-fw "></i>
+            Свернуть
+            <i class="fa fa-angle-up fa-fw"></i>
+        </a>
+    </div>
+</div>
+
 <div class="navpanel navpanel-shopping" id="navpanel-shopping">
 
-<div class="col-md-6 col-xs-12 pr-bar multilavka-bar">
+    <div class="col-md-6 col-xs-12 pr-bar multilavka-bar">
         <div class="shop-description">интерент-магазин электроники</div>
-    <a href="http://multilavka.ru/?utm_source=all&utm_medium=navpanel&utm_content=top-logo&utm_campaign=pr-block-lg"
-       class="pr-logo">
-    <img src="http://ksk1.ru/img/market/logo-multilavka-white2.svg">
+        <a href="http://multilavka.ru/?utm_source=all&utm_medium=navpanel&utm_content=top-logo&utm_campaign=pr-block-lg"
+           class="pr-logo">
+            <img src="http://ksk1.ru/img/market/logo-multilavka-white2.svg">
         </a>
 
         <p>
@@ -187,89 +270,6 @@
     </div>
 </div>
 
-<div class="navpanel navpanel-services" id="navpanel-services">
-    <div class="col-xs-6 col-sm-2">
-        <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
-            <img src="http://ksk1.ru/img/icons/copycentr-icon.png" class="icon">
-            <div class="features-item-name">Копицентр</div>
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-2">
-        <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
-            <img src="http://ksk1.ru/img/icons/browser-icon.png" class="icon">
-            <div class="features-item-name one-line">Реклама у нас</div>
-        </a>
-    </div>
-    <!--<div class="col-xs-6 col-sm-2">
-        <a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
-                <img src="http://ksk1.ru/img/icons/fixer-icon.png" class="icon">
-                <div class="features-item-name one-line">Ремонт ПК</div>
-        </a>
-    </div>-->
-    <div class="col-xs-6 col-sm-2">
-        <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
-            <img src="http://ksk1.ru/img/icons/webdev-icon.png" class="icon">
-            <div class="features-item-name">Создание сайтов</div>
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-2">
-        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
-            <img src="http://ksk1.ru/img/icons/video-icon.png" class="icon">
-            <div class="features-item-name">Видео и фотосъемка</div>
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-2">
-        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
-            <img src="http://ksk1.ru/img/icons/gov-icon.png" class="icon">
-            <div class="features-item-name">Различные госуслуги</div>
-        </a>
-    </div>
-    <div class="col-xs-12">
-        <a href="#" class="btn btn-collapse">
-            <i class="fa fa-angle-up fa-fw "></i>
-            Свернуть
-            <i class="fa fa-angle-up fa-fw"></i>
-        </a>
-    </div>
-</div>
-
-<div class="navpanel navpanel-info-DISABLED" id="navpanel-info">
-    <div class="col-xs-12 col-sm-6 col-md-3" id="weather-panel"></div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-        <iframe src="http://news.kskmedia.ru/agenda-block/" height="300px" width="100%"></iframe>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 catalog">
-        <a href="http://news.kskmedia.ru/cat/">
-            <h2>
-                <span><img src="http://ksk1.ru/img/icons/catalog-icon.png" class="icon"></span>
-                <span>СПРАВОЧНИК</span>
-            </h2>
-        </a>
-        <a href="http://news.kskmedia.ru/cat/gov/" class="category">Государственные и общественные ограны</a>
-        <a href="http://news.kskmedia.ru/cat/medicare/" class="category">Медицина</a>
-        <a href="http://news.kskmedia.ru/cat/education/" class="category">Образование. Культура. Спорт</a>
-        <a href="http://news.kskmedia.ru/cat/manufature/" class="category">Производство</a>
-        <a href="http://news.kskmedia.ru/cat/trade/" class="category">Торговля</a>
-        <a href="http://news.kskmedia.ru/cat/transport/" class="category">Транспорт</a>
-        <a href="http://news.kskmedia.ru/cat/services/" class="category">Услуги</a>
-        <a href="http://news.kskmedia.ru/emergency/">
-            <h4><span class="hidden-md">Самые </span>важные телефоны</h4>
-        </a>
-        <a href="http://ksk66.ru/timetable.html">
-            <h4>Расписание</h4>
-        </a>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-        <h2>КАРТА</h2>
-    </div>
-    <div class="col-xs-12">
-        <a href="#" class="btn btn-collapse">
-            <i class="fa fa-angle-up fa-fw "></i>
-            Свернуть
-            <i class="fa fa-angle-up fa-fw"></i>
-        </a>
-    </div>
-</div>
 
 <!--TODO: добавить Alt и размеры картинок-->
 <div id="popover_shopping_content" style="display: none">
