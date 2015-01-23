@@ -2,7 +2,7 @@
     <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
         <div class="header-logo">
             <a href="/" title="На главную страницу" class="logo-container">
-                <img src="http://ksk1.ru/img/logo-mobile-ksk.svg" style="position: absolute;" class="visible-xs">
+                <img src="http://ksk1.ru/img/logo-mobile-ksk.svg" style="position: relative;" class="visible-xs">
                 <img style="position: absolute" src="http://ksk1.ru/img/logo-base.svg" class="hidden-xs">
                 <div id="sublogo"></div>
             </a>
@@ -368,3 +368,39 @@
         </div>
     </div>
 </div>
+
+<script>
+ //TODO: отрефакторить, заменить на CSS вообще.
+     (function(){
+         var url = document.location.href,
+             ob = /^[http:\/\/]+ob/,
+             news = /^[http:\/\/]+news/,
+             oldnews = /^[http:\/\/]+ksk66/,
+             cat = /cat/,
+             timetable = /timetable/,
+             karta = /karta/,
+             copy = /copy/,
+             reklama = /r-site/,
+             agenda = /agenda/,
+             body = document.getElementsByTagName("body")[0];
+
+
+             if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
+                 body.classList.add('news');
+             } else if(url.match(ob)) {
+                 body.classList.add('ob');
+             } else if (url.match(cat)){
+                body.classList.add('cat');
+             } else if (url.match(reklama)){
+                body.classList.add('site-pr');
+             } else if (url.match(agenda)){
+                body.classList.add('agenda');
+             } else if (url.match(karta)){
+                body.classList.add('karta');
+             } else if (url.match(copy)){
+                body.classList.add('copy');
+             } else if (url.match(timetable)){
+                body.classList.add('timetable');
+         }
+    })();
+</script>
