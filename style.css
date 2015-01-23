@@ -3804,8 +3804,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-services img.icon,
     #navpanel-info img.icon { width: 80%; }
 
-    .potential-cond-active .arrow,
-    .btn-feature .arrow { left: 44%; }
+    .potential-cond-active .arrow { left: 35%; }
+
+    .btn-feature .arrow { left: 42%; }
 
     #navpanel-shopping .pr-bar.multilavka-bar,
     #navpanel-shopping.active { max-height: 405px; }
