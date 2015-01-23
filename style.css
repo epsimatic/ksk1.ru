@@ -848,7 +848,7 @@ body.ob     .cond-active.cond-active-ob .arrow,
 
 body.news .cond-active.cond-active-news,
 body.ob     .cond-active.cond-active-ob,
-.btn-feature.main-menu-feature.active { background-color: #0091ea; font-weight: 600; }
+.btn-feature.main-menu-feature.active { font-weight: 600; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
