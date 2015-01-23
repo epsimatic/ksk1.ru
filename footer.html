@@ -26,13 +26,15 @@
     }
 
     jQuery('.btn-feature').click(function () {
-        wasActive = jQuery(this).hasClass('active');
-        jQuery('.navpanel, .btn-feature').removeClass('active cond-active');
+        was_active = jQuery(this).hasClass('active');
+        potential_cond_active = jQuery('.potential-cond-active');
+        jQuery('.navpanel, .btn-feature').removeClass('active');
+        potential_cond_active.removeClass('cond-active');
         if (!wasActive) {
             jQuery(this).addClass('active');
             jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel')).addClass('active');
         } else {
-            jQuery('.potential-cond-active').addClass('cond-active');
+            potential_cond_active.addClass('cond-active');
         }
     });
 
