@@ -836,10 +836,14 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 
 
+.btn-feature.main-menu-feature.active { background-color: #0091ea; }
+
+.block-features .btn-feature .fa-bullhorn,
+.block-features .btn-feature .fa-tags { color: #ffff8d; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1); }
 
 .btn-feature.active .arrow { bottom: 0; }
 
-.btn-feature .arrow { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffffff; border-style: solid; border-width: 12px; display: block; left: 40%; bottom:-12px; position: absolute; transition: bottom 0.2s ease-out 0s; }
+.btn-feature .arrow { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffffff; border-style: solid; border-width: 12px; display: block; left: 25%; bottom:-12px; position: absolute; transition: bottom 0.2s ease-out 0s; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
@@ -3542,7 +3546,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 @media (min-width: 768px) {
     .searchbox-container { position: absolute; bottom: 8px; padding-left: 0; }
 
-    #navpanel-search.navpanel.navpanel-search { max-height: 100px; margin-bottom: 10px; }
+    #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
     .row_header > div:after { height: 140px; }
 
