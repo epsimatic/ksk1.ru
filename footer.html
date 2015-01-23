@@ -32,14 +32,19 @@
         potential_cond_active.removeClass('cond-active');
         if (!was_active) {
             jQuery(this).addClass('active');
-            jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel')).addClass('active');
+            target_navpanel = jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'));
+            target_navpanel.addClass('active').trigger('first-load');
         } else {
             potential_cond_active.addClass('cond-active');
         }
     });
 
+    jQuery('#navpanel-info').on('first-load', function () {
+        jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/ #content");
+    });
+
     jQuery('.btn-collapse').click(function () {
-        jQuery('.navpanel, .btn-feature').removeClass('active')
+        jQuery('.navpanel, .btn-feature').removeClass('active');
         jQuery('.potential-cond-active').addClass('cond-active');
     });
 

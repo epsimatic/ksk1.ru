@@ -1,10 +1,10 @@
 <header class="row row_header hidden-print" id="header" data-version="1" xmlns="http://www.w3.org/1999/html">
     <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
-        <div class="header-line__logo">
-            <a href="/" title="На главную страницу">
-                <img src="http://ksk1.ru/img/logo-mobile-ksk.svg" style="position: absolute;" class="visible-xs">
-                <img style="position: absolute" src="http://ksk1.ru/img/ksk-logo-base.svg" class="hidden-xs">
-                <span id="logo" class="hidden-xs"></span>
+        <div class="header-logo">
+            <a href="/" title="На главную страницу" class="logo-container">
+                <img src="http://ksk1.ru/img/logo-mobile-ksk.svg" style="position: relative;" class="visible-xs">
+                <img style="position: absolute" src="http://ksk1.ru/img/logo-base.svg" class="hidden-xs">
+                <div id="sublogo"></div>
             </a>
         </div>
         <div class="weather-temp-sm hidden-lg hidden-xs">
@@ -25,8 +25,18 @@
 <nav class="navbar " role="navigation">
     <div class="col-sm-6 col-md-5 hidden-xs">
         <ul class="nav nav-pills navbar-nav">
-            <li><a class="cond-active potential-cond-active cond-active-news" href="http://ksk66.ru" title="Свежие городские новости">Новости</a></li>
-            <li><a class="cond-active potential-cond-active cond-active-ob"   href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">Объявления</a></li>
+            <li>
+                <a class="cond-active potential-cond-active cond-active-news" href="http://ksk66.ru" title="Свежие городские новости">
+                    <div class="arrow"></div>
+                    Новости
+                </a>
+            </li>
+            <li>
+                <a class="cond-active potential-cond-active cond-active-ob"   href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">
+                    <div class="arrow"></div>
+                    Объявления
+                </a>
+            </li>
 
             <!--<li><a href="http://news.kskmedia.ru/cat/" title='Каталог предприятий, телефонов и адресов'>Справочник</a></li>-->
 
@@ -56,7 +66,7 @@
         </a>
 
         <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-ob">
-            <!--<div class="arrow"></div>-->
+            <div class="arrow"></div>
             <div class="divider"></div>
             <i class="fa fa-tags"></i>
         </a>
@@ -101,8 +111,8 @@
 
 <div class="navpanel navpanel-info-DISABLED" id="navpanel-info">
     <div class="col-xs-12 col-sm-6 col-md-3" id="weather-panel"></div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-        <iframe src="http://news.kskmedia.ru/agenda-block/" height="300px" width="100%"></iframe>
+    <div class="col-xs-12 col-sm-6 col-md-3" id="panel-agenda">
+        <!--<iframe src="http://news.kskmedia.ru/agenda-block/" height="300px" width="100%"></iframe>-->
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3 catalog">
         <a href="http://news.kskmedia.ru/cat/">
@@ -358,69 +368,39 @@
         </div>
     </div>
 </div>
+
 <script>
-    //TODO: отрефакторить, заменить на CSS вообще.
-    (function(){
-        var url = document.location.href,
-                ob = /^[http:\/\/]+ob/,
-                news = /^[http:\/\/]+news/,
-                oldnews = /^[http:\/\/]+ksk66/,
-                cat =  /cat/,
-                video = /^[http:\/\/]+video/,
-                pfoto =  /^[http:\/\/]+pfoto/,
-                timetable = /timetable/,
-                karta = /karta/,
-                copy = /copy/,
-                reklama = /reklama/,
-                agenda = /agenda/,
-                subtitle = document.getElementById("logo"),
-                body = document.getElementsByTagName("body")[0];
+ //TODO: отрефакторить, заменить на CSS вообще.
+     (function(){
+         var url = document.location.href,
+             ob = /^[http:\/\/]+ob/,
+             news = /^[http:\/\/]+news/,
+             oldnews = /^[http:\/\/]+ksk66/,
+             cat = /cat/,
+             timetable = /timetable/,
+             karta = /karta/,
+             copy = /copy/,
+             reklama = /r-site/,
+             agenda = /agenda/,
+             body = document.getElementsByTagName("body")[0];
 
 
-        if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
-            // Сайт новостей
-            body.classList.add('news');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-news.svg'>";
-            document.getElementsByTagName("li")[0].classList.add("activ_li");
-        }
-        else if(url.match(ob)) {
-            // сайт объявлений
-            body.classList.add('ob');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-ob.svg'>";
-            document.getElementsByTagName("li")[1].classList.add("activ_li");
-        } else if (url.match(cat)){
-            body.classList.add('cat');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-sprav.svg'>";
-            document.getElementsByTagName("li")[2].classList.add("activ_li");
-        } else if (url.match(reklama)){
-            body.classList.add('reklama');
-
-            document.getElementsByTagName("li")[3].classList.add("activ_li");
-        }else if (url.match(agenda)){
-            body.classList.add('agenda');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-agenda.svg'>";
-            document.getElementsByTagName("li")[4].classList.add("activ_li");
-        }else if (url.match(karta)){
-            body.classList.add('karta');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-map.svg'>";
-            document.getElementsByTagName("li")[5].classList.add("activ_li");
-        }else if (url.match(copy)){
-            body.classList.add('copy');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-typo.svg'>";
-            document.getElementsByTagName("li")[6].classList.add("activ_li");
-        }else if (url.match(timetable)){
-            body.classList.add('timetable');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-timetable.svg'>";
-            document.getElementsByTagName("li")[7].classList.add("activ_li");
-        }else if (url.match(pfoto)){
-            body.classList.add('photo');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-photo.svg'>";
-            document.getElementsByTagName("li")[8].classList.add("activ_li");
-        }else if (url.match(video)){
-            body.classList.add('video');
-            subtitle.innerHTML = "<img style='position: absolute' src='http://ksk1.ru/img/ksk-logo-video.svg'>";
-            document.getElementsByTagName("li")[9].classList.add("activ_li");
-        }
-
+             if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
+                 body.classList.add('news');
+             } else if(url.match(ob)) {
+                 body.classList.add('ob');
+             } else if (url.match(cat)){
+                body.classList.add('cat');
+             } else if (url.match(reklama)){
+                body.classList.add('site-pr');
+             } else if (url.match(agenda)){
+                body.classList.add('agenda');
+             } else if (url.match(karta)){
+                body.classList.add('karta');
+             } else if (url.match(copy)){
+                body.classList.add('copy');
+             } else if (url.match(timetable)){
+                body.classList.add('timetable');
+         }
     })();
 </script>
