@@ -28,6 +28,7 @@
     //        });
     //    }
 
+    // Подгоняем высоту карты
     function setMapHeight() {
         //FIXME: Не устанавливать высоту для мобильных устройств!
         //FIXME: Лучше вычислять высоту
@@ -66,7 +67,7 @@
                     html: true,
                     placement: "bottom",
                     trigger: 'hover',
-                    container: '.today-movies-outer',
+                    container: '.today-movies-margin',
                     viewport: 'body'
                 });
             });
