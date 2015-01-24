@@ -1,5 +1,8 @@
 <!--Общий подвал-->
+<!--TODO: загружать только после щелчка по Справке-->
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+
 <script type="application/javascript">
 
     //    // TabDrop
@@ -66,6 +69,8 @@
             var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
                 minZoom: 0,
                 maxZoom: 20
+                ,
+                attribution: 'Imagery: <a href="http://giscience.uni-hd.de/">GIScience</a>, Map: <a href="http://openstreetmap.org">OpenStreetMap</a>'
                 //, attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
             });
             OpenMapSurfer_Roads.addTo(map);
