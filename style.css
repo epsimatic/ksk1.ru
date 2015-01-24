@@ -801,7 +801,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover-content .movie-poster img { width: 100%; }
 
-.navpanel #panel-agenda .popover-content h4.movie-title { text-align: left; margin-top: 0; }
+.navpanel #panel-agenda .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; }
 
 .navpanel #panel-agenda .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
