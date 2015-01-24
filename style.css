@@ -801,7 +801,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover-content .movie-poster img { width: 100%; }
 
-.navpanel #panel-agenda .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; }
+.navpanel #panel-agenda .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; font-size: 18px; }
 
 .navpanel #panel-agenda .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
@@ -852,6 +852,12 @@ body.news .navpanel .cat .input-group { display: none; }
 .navpanel .cat > a.category:hover,
 .navpanel .cat > a.category:focus { background-color: #81d4fa; }
 
+.navpanel .cat a.category.alt { background-color: #81d4fa; }
+
+.navpanel .cat > a.category.alt:hover,
+.navpanel .cat > a.category.alt:focus { background-color: #4fc3f7; }
+
+.navpanel .cat a.category.alt .fa { opacity: .5; }
 
 .navpanel .cat > a h4 { margin-bottom: 13px; }
 
