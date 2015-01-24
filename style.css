@@ -774,7 +774,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 #navpanel-services a:hover,
 #navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
+.navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
 
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
