@@ -777,7 +777,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
-.navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; }
+.navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 20px; }
 
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
@@ -785,7 +785,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
-.navpanel #panel-agenda { border-top: 1px solid #82b1ff; }
+.navpanel .cat { border-top: 1px solid #82b1ff; }
 
 /*.navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }*/
 
@@ -3633,11 +3633,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
 
     .navpanel .cat,
-    .navpanel #weather-panel { padding: 0 10px; border-top: none; }
+    .navpanel #weather-panel { padding: 0 10px; }
+
+    .navpanel .cat,
+    .navpanel .panel-map { border-top: none; }
 
     .navpanel #panel-agenda h3.event-heading { font-size: 14px; }
 
-    .navpanel #weather-panel { min-height: 320px; }
+    .navpanel #weather-panel { min-height: 210px; }
 
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
@@ -3790,8 +3793,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
 
-    .navpanel .panel-map,
-    .navpanel #panel-agenda { border-top: none; }
+    .navpanel #weather-panel { border-top: none; }
 
     .navpanel #weather-panel { min-height: auto; }
 
