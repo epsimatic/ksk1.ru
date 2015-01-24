@@ -773,7 +773,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
-.navpanel #weather-panel { padding: 0; overflow: auto; }
+.navpanel #weather-panel { padding: 0; overflow: auto; border-top: 1px solid #ff8a80; }
 
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
@@ -820,7 +820,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel #panel-agenda .event-date,
 .navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
 
-.navpanel .cat { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
+.navpanel .cat { padding: 0; }
 
 .navpanel .cat h4 img { margin-right: 10px; width: 40px !important; }
 
@@ -848,7 +848,9 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .cat h4 { margin-top: 0; }
 
-.navpanel .cat .btn-more h4 { font-size: 15px; margin-bottom: 3px; }
+.navpanel .cat .btn-special h4 { font-size: 15px; margin-bottom: 3px; }
+
+.navpanel .btn-more { position: relative; font-size: 13px; top: 6px; padding-right: 15px; }
 
 
 /*.logo-container { position: relative; }*/
