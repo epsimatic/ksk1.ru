@@ -29,6 +29,8 @@
     //    }
 
     function setMapHeight() {
+        //FIXME: Не устанавливать высоту для мобильных устройств!
+        //FIXME: Лучше вычислять высоту
         jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
             if (jQuery(this).height() > jQuery('.panel-map').height())
                 jQuery('#panel-map').css('height', jQuery(this).height() - 20 - jQuery('.panel-map > h4').height());
