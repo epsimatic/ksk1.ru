@@ -701,7 +701,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* <editor-fold desc="navpanel-shopping"> */
 .navpanel { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
-.navpanel.active { max-height: 1000px; margin-bottom: 10px; }
+.navpanel.active { max-height: 2000px; margin-bottom: 10px; }
 
 #navpanel-shopping a { display: block; }
 
@@ -771,6 +771,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
 
+.navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
 
@@ -778,9 +779,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 
-.navpanel #panel-agenda { border-top: 1px solid #82b1ff; }
+#navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
-.navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
+.navpanel #panel-agenda { border-top: 1px solid #82b1ff; }
 
 /*.navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }*/
 
@@ -814,7 +815,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #panel-agenda .event-thumb img { width: 100%; height: auto; }
 
-.navpanel #panel-agenda h3.event-heading { font-size: 14px; height: 3.6em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
+.navpanel #panel-agenda h3.event-heading { font-size: 17px; height: 3.6em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
 
 .navpanel #panel-agenda .event-date,
 .navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
@@ -843,7 +844,7 @@ body.news .navpanel .cat .input-group { display: none; }
 .navpanel .cat > a.category:focus { background-color: #81d4fa; }
 
 
-/*.navpanel .cat > a h4 { margin-bottom: 0; margin-top: 0; }*/
+.navpanel .cat > a h4 { margin-bottom: 13px; }
 
 .navpanel .cat h4 { margin-top: 0; }
 
@@ -3604,9 +3605,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     body.ob .searchbox-container { padding-left: 10px; padding-right: 0; }
 
+    #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
+
     .navpanel #weather-panel { padding: 0 10px; }
 
     .navpanel #panel-agenda { border-top: none; }
+
+    .navpanel #panel-agenda h3.event-heading { font-size: 14px; }
 
     .navpanel .cat { padding: 0 10px; border-top: none; }
 
