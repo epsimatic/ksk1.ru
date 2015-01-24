@@ -160,6 +160,15 @@
     <div class="col-xs-12 col-sm-6 col-md-3 panel-map subpanel">
         <h4>Карта <a href="http://ksk66.ru/karta.html" class="pull-right btn-more">Открыть <i class="fa fa-arrow-right"></i></a></h4>
 
+        <form class="input-group panel-map-search-form" role="search" method="get" action="http://openstreetmap.ru/"
+              onsubmit="console.log(jQuery(this).child('.search-field')); return true;">
+            <input type="search" class="search-field form-control" placeholder="Найти место…" name="q"
+                   title="Напишите адрес, название или ключевое слово">
+            <span class="input-group-btn">
+                <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+        </form>
+
         <div id="panel-map" style="width: 100%;height: 200px; overflow: hidden;"></div>
     </div>
     <div class="col-xs-12" style="padding: 0;">
