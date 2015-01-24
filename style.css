@@ -807,6 +807,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel #panel-agenda .popover-content .movie-price,
 .navpanel #panel-agenda .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
 
+.navpanel #panel-agenda .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+
 .navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; min-height: auto; }
 
 .navpanel #panel-agenda .panel-events .list-group-item:hover,
