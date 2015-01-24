@@ -776,6 +776,10 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
 
+.navpanel #weather-panel:before { color: #333; content: "ПОГОДА"; font-size: 30px; left: 30%; position: relative; top: 5px; }
+
+.navpanel #weather-panel .gsInformer { margin-top: 15px; }
+
 .navpanel .catalog { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
 .navpanel .catalog h2 img { margin-right: 10px; width: 40px !important; }
@@ -796,7 +800,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel .catalog > a.category:focus { background-color: #81d4fa; }
 
 
-.navpanel .catalog > a h2 { margin-bottom: 0; }
+.navpanel .catalog > a h2 { margin-bottom: 0; margin-top: 0; }
 
 .navpanel .catalog h4 { margin-top: 0; }
 
@@ -3555,6 +3559,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     body.ob .searchbox-container { padding-left: 10px; padding-right: 0; }
 
+    .navpanel #weather-panel { padding: 0 10px; }
+
+    .navpanel .catalog { padding: 0 10px; border-top: none; }
+
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
     .row_header > div:after { height: 140px; }
@@ -3701,6 +3709,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
+
+    .navpanel #weather-panel:before { font-size: 23px; }
 
     .navpanel .catalog > a h2 { font-size: 23px;}
 
