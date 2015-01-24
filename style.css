@@ -839,12 +839,14 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 body.news .navpanel .panel-map .input-group,
 body.news .navpanel .cat .input-group { display: none; }
 
+.navpanel .cat a.btn.btn-default { display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
 .navpanel .cat a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding: 10px 10px 12px; color: #37474f; display: block; text-align: center; font-size: 13px }
 
 .navpanel .cat > a:hover,
 .navpanel .cat > a:focus { text-decoration: none; background-color: #eceff1; }
 
-.navpanel .cat a:first-child { background-color: transparent; margin-bottom: 7px; margin-top: 2px; padding-bottom: 1px !important; }
+.navpanel .cat > a:first-child { background-color: transparent; margin-bottom: 7px; margin-top: 2px; padding-bottom: 1px !important; }
 
 .navpanel .cat > a:first-child:hover,
 .navpanel .cat > a:first-child:focus { background-color: #eceff1; }
