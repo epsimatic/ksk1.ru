@@ -814,9 +814,9 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel #panel-agenda .panel-events .list-group-item:hover,
 .navpanel #panel-agenda .panel-events .list-group-item:focus { background-color: #fafafa; }
 
-.navpanel #panel-agenda .event-thumb { padding: 0; }
+.navpanel #panel-agenda .event-thumb { padding: 0; text-align: center; }
 
-.navpanel #panel-agenda .event-thumb img { width: 100%; height: auto; }
+.navpanel #panel-agenda .event-thumb img { height: auto; width: auto; max-height: 70px; max-width: 100%; }
 
 .navpanel #panel-agenda h3.event-heading { font-size: 17px; height: 3.6em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
 
@@ -855,7 +855,9 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .btn-more { position: relative; font-size: 13px; top: 6px; padding-right: 15px; }
 
-.navpanel .panel-map { border-top: 1px solid #00e676;}
+.navpanel .panel-map { border-top: 1px solid #00e676; }
+
+.navpanel #panel-map { transition: height 0.5s ease 0s; }
 
 
 /*.logo-container { position: relative; }*/
