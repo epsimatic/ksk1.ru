@@ -3614,11 +3614,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat,
     .navpanel #weather-panel { padding: 0 10px; border-top: none; }
 
-    .navpanel .panel-map,
-    .navpanel #panel-agenda { border-top: none; }
-
-
     .navpanel #panel-agenda h3.event-heading { font-size: 14px; }
+
+    .navpanel #weather-panel { min-height: 320px; }
 
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
@@ -3770,6 +3768,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat a.category { padding: 3px 7px 5px !important; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
+
+    .navpanel .panel-map,
+    .navpanel #panel-agenda { border-top: none; }
 
     #popover-shopping .popover {left: -41px !important;}
 
