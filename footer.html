@@ -55,14 +55,16 @@
         });
 
         // Загружаем карту
-        var map = L.map('map');
-        map.setView([56.6132, 57.7689], 13);
-        var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-            minZoom: 0,
-            maxZoom: 20,
-            attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
-        });
-        OpenMapSurfer_Roads.addTo(map);
+        setTimeout(function () {
+            var map = L.map('panel-map');
+            map.setView([56.6132, 57.7689], 13);
+            var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+                minZoom: 0,
+                maxZoom: 20,
+                attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+            });
+            OpenMapSurfer_Roads.addTo(map);
+        }, 600);
 
         // Отключаемся от события
         jQuery(this).unbind('first-load');
