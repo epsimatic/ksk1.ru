@@ -3793,8 +3793,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
 
-    .navpanel #weather-panel { border-top: none; }
-
     .navpanel #weather-panel { min-height: auto; }
 
     #popover-shopping .popover {left: -41px !important;}
