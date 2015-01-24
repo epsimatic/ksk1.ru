@@ -80,15 +80,22 @@ header .btn-group {margin-top: 10px;}
 .user-panel {
     /*position: absolute;*/
     right: 10px;
-    height: 140px;
     text-align: center;
     /* Mobile only: */
     top: 280px;
     width: 100%;
     display: table;
+    margin-bottom: 10px;
 }
+
+.user-panel > * { display: inline-block; vertical-align: middle; }
+
+.user-panel:after { content: ""; display: inline-block; vertical-align: middle; }
+
 @media (min-width: 768px) {
-    .user-panel { top: 0; width: 288px; }
+    .user-panel { top: 0; width: 288px; height: 140px; margin-bottom: 0; }
+
+    .user-panel:after { height: 140px; }
 }
 @media (min-width: 992px) {
     .user-panel { top: 0; width: 300px; }
@@ -96,8 +103,6 @@ header .btn-group {margin-top: 10px;}
 @media (min-width: 1200px) {
     .user-panel { top: 0; width: 270px; }
 }
-.user-panel > * { display: inline-block; vertical-align: middle; }
-.user-panel:after { content: ""; display: inline-block; height: 140px; vertical-align: middle; }
 
 /* </editor-fold> */
 
@@ -764,17 +769,31 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /*#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }*/
 
-#navpanel-services a,
-#navpanel-info a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
+#navpanel-services a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
 
 #navpanel-services a:hover,
 #navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
-#navpanel-services img.icon,
-#navpanel-info img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
+#navpanel-services img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
 
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
+
+.navpanel #weather-panel:before { color: #333; content: "ПОГОДА"; font-size: 30px; left: 30%; position: relative; top: 5px; }
+
+.navpanel #weather-panel .gsInformer { margin-top: 15px; }
+
+.navpanel #panel-agenda { border-top: 1px solid #82b1ff; }
+
+.navpanel #panel-agenda h4 { font-size: 30px; text-transform: uppercase; text-align: center; color: #333; margin-bottom: 20px; }
+
+.navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }
+
+.navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
+
+.navpanel #panel-agenda .today-movies { display: table-row; }
+
+.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 81px; }
 
 .navpanel .catalog { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
@@ -796,7 +815,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel .catalog > a.category:focus { background-color: #81d4fa; }
 
 
-.navpanel .catalog > a h2 { margin-bottom: 0; }
+.navpanel .catalog > a h2 { margin-bottom: 0; margin-top: 0; }
 
 .navpanel .catalog h4 { margin-top: 0; }
 
@@ -3555,6 +3574,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     body.ob .searchbox-container { padding-left: 10px; padding-right: 0; }
 
+    .navpanel #weather-panel { padding: 0 10px; }
+
+    .navpanel .catalog { padding: 0 10px; border-top: none; }
+
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
     .row_header > div:after { height: 140px; }
@@ -3701,6 +3724,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
+
+    .navpanel #weather-panel:before { font-size: 23px; }
 
     .navpanel .catalog > a h2 { font-size: 23px;}
 
