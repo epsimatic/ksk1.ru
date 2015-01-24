@@ -832,20 +832,22 @@ body.news .navpanel .cat .input-group { display: none; }
 .navpanel .cat > a:hover,
 .navpanel .cat > a:focus { text-decoration: none; background-color: #eceff1; }
 
-.navpanel .cat a:first-child { background-color: transparent; margin-bottom: 10px; margin-top: 0; padding-bottom: 3px !important; }
+.navpanel .cat a:first-child { background-color: transparent; margin-bottom: 7px; margin-top: 2px; padding-bottom: 1px !important; }
 
 .navpanel .cat > a:first-child:hover,
 .navpanel .cat > a:first-child:focus { background-color: #eceff1; }
 
-.navpanel .cat a.category { background-color: #b3e5fc; border-radius: 3px; display: inline-block !important; margin-bottom: 4px; margin-top: 0; padding: 7px 7px 8px !important; }
+.navpanel .cat a.category { background-color: #b3e5fc; border-radius: 3px; display: inline-block !important; margin-bottom: 4px; margin-top: 0; padding: 7px 7px 8px !important; font-size: 12px; }
 
 .navpanel .cat > a.category:hover,
 .navpanel .cat > a.category:focus { background-color: #81d4fa; }
 
 
-.navpanel .cat > a h4 { margin-bottom: 0; margin-top: 0; }
+/*.navpanel .cat > a h4 { margin-bottom: 0; margin-top: 0; }*/
 
 .navpanel .cat h4 { margin-top: 0; }
+
+.navpanel .cat .btn-more h4 { font-size: 15px; margin-bottom: 3px; }
 
 
 /*.logo-container { position: relative; }*/
