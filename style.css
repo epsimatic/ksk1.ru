@@ -774,7 +774,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 #navpanel-services a:hover,
 #navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
-#navpanel-services img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
+.navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
 
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
@@ -799,7 +799,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel .catalog h2 img { margin-right: 10px; width: 40px !important; }
 
-.navpanel .catalog a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding-bottom: 12px !important; }
+.navpanel .catalog a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding: 10px 10px 12px; color: #333; display: block; text-align: center; font-size: 13px }
 
 .navpanel .catalog > a:hover,
 .navpanel .catalog > a:focus { text-decoration: none; background-color: #eceff1; }
