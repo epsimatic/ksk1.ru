@@ -790,6 +790,35 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 81px; }
 
+.navpanel #panel-agenda .popover-content { padding: 10px; }
+
+.navpanel #panel-agenda .popover-content h4 { margin-top: 0; }
+
+.navpanel #panel-agenda .popover-content .production-flag { padding-right: 2px; }
+
+.navpanel #panel-agenda .popover-content .genres,
+.navpanel #panel-agenda .popover-content .genre { color: #999999; font-size: 12px; padding-left: 3px; }
+
+.navpanel #panel-agenda .popover-content .star-rating { margin: 4px 0; }
+
+.navpanel #panel-agenda .popover-content .movie-price,
+.navpanel #panel-agenda .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
+
+
+.navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; }
+
+.navpanel #panel-agenda .panel-events .list-group-item:hover,
+.navpanel #panel-agenda .panel-events .list-group-item:focus { background-color: #fafafa; }
+
+.navpanel #panel-agenda .event-thumb { padding: 0; }
+
+.navpanel #panel-agenda .event-thumb img { width: 100%; height: auto; }
+
+.navpanel #panel-agenda h3.event-heading { font-size: 14px; height: 3.6em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
+
+.navpanel #panel-agenda .event-date,
+.navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
+
 .navpanel .cat { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
 .navpanel .cat h4 img { margin-right: 10px; width: 40px !important; }
