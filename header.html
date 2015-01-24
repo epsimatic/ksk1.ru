@@ -7,12 +7,12 @@
                 <div id="sublogo"></div>
             </a>
         </div>
-        <div class="weather-temp-sm hidden-lg hidden-xs">
-            <!--#include virtual="/weather.html" -->
+        <div class="weather-temp-sm triggers-weather hidden-lg hidden-xs">
+        <!--#include virtual="/weather.html" -->
         </div>
     </div>
-    <div class="weather-block-col hidden-sm hidden-md col-lg-1 hidden-xs">
-        <!--#include virtual="/weather.html" -->
+    <div class="weather-block-col triggers-weather visible-lg col-lg-1">
+    <!--#include virtual="/weather.html" -->
     </div>
     <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3 col-special">
         <!--#include virtual="/yummies/special/" -->
@@ -109,8 +109,8 @@
     </div>
 </div>
 
-<div class="navpanel navpanel-info-DISABLED" id="navpanel-info">
-    <div class="col-xs-12 col-sm-6 col-md-3" id="weather-panel"></div>
+<div class="navpanel navpanel-info" id="navpanel-info">
+<div class="col-xs-12 col-sm-6 col-md-3" id="weather-panel"></div>
     <div class="col-xs-12 col-sm-6 col-md-3" id="panel-agenda">
         <h4>Сегодня в кино</h4>
 
@@ -299,8 +299,7 @@
 </div>
 
 
-<!--TODO: добавить Alt и размеры картинок-->
-<div id="popover_shopping_content" style="display: none">
+<!--<div id="popover_shopping_content" style="display: none">
     <div class='features-content text-center'>
         <a href='http://multilavka.ru/?utm_source=all&utm_medium=popover&utm_campaign=bad-link'><img src='http://ksk1.ru/img/logo-multilavka.png'></a>
         <a href='http://djein.ru/'><img src='http://ksk1.ru/img/logo-jane-shop.png'></a>
@@ -330,10 +329,10 @@
         </div>
 
         <div class="col-xs-4">
-            <!--<a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
+            <a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
                 <img src="http://ksk1.ru/img/icons/fixer-icon.png" class="icon">
                 <div class="features-item-name one-line">Ремонт ПК</div>
-            </a>-->
+            </a>
         </div>
 
         <div class="col-xs-4">
@@ -386,6 +385,7 @@
         </div>
     </div>
 </div>
+-->
 
 <script>
  //TODO: отрефакторить, заменить на CSS вообще.

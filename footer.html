@@ -10,21 +10,24 @@
     //    }
 
     // Popover для кнопок. Формат: id_кнопки -> id_блока
-    var popovers = [];
+    //    var popovers = [];
     // Заменили на панель:
     //    popovers['btn-feature-shopping'] = 'popover_shopping_content';
     //    popovers['btn-feature-services'] = 'popover_service_content';
-    popovers['btn-feature-info'] = 'popover_info_content';
+    //    popovers['btn-feature-info'] = 'popover_info_content';
+    //
+    //    for (var p in popovers) {
+    ////        console.log( "Init #" + p + " with #" + p[popoverTI]);
+    //        jQuery('#' + p).popover({
+    //            content: jQuery('#' + popovers[p]).html(),
+    //            html: true,
+    //            placement: "bottom"
+    //        });
+    //    }
 
-    for (var p in popovers) {
-//        console.log( "Init #" + p + " with #" + p[popoverTI]);
-        jQuery('#' + p).popover({
-//TODO:    trigger: 'focus',
-            content: jQuery('#' + popovers[p]).html(),
-            html: true,
-            placement: "bottom"
-        });
-    }
+    jQuery('.triggers-weather').click(function () {
+        jQuery('#btn-feature-info').click();
+    });
 
     jQuery('.btn-feature').click(function () {
         was_active = jQuery(this).hasClass('active');
@@ -191,12 +194,11 @@
 <script type="text/javascript">
     jQuery(window).load(function () {
         // Popover для погоды с блоком от Гисметео
-        jQuery('.weather-block-col, .weather-temp-sm').popover({
-            //TODO: trigger: 'focus',
-            content: jQuery('.popover-source-gismeteo').html(),
-            html: true,
-            placement: "bottom"
-        });
+//        jQuery('.weather-block-col, .weather-temp-sm').popover({
+//            content: jQuery('.popover-source-gismeteo').html(),
+//            html: true,
+//            placement: "bottom"
+//        });
         jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
     });
 </script>
