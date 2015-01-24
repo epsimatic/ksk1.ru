@@ -773,7 +773,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
-.navpanel #weather-panel { padding: 0; overflow: auto; border-top: 1px solid #ff8a80; }
+.navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; }
 
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
@@ -3770,6 +3770,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .panel-map,
     .navpanel #panel-agenda { border-top: none; }
+
+    .navpanel #weather-panel { min-height: auto; }
 
     #popover-shopping .popover {left: -41px !important;}
 
