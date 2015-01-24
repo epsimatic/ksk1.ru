@@ -785,6 +785,16 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 
+.navpanel #panel-agenda { border-top: 1px solid #82b1ff; }
+
+.navpanel #panel-agenda h4 { font-size: 30px; text-transform: uppercase; text-align: center; color: #333; margin-bottom: 20px; }
+
+.navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }
+
+.navpanel #panel-agenda .today-movies { display: table-row; }
+
+.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; max-height: 90px; padding: 2px; background-position: center center; background-repeat: no-repeat; background-size: contain; }
+
 .navpanel .catalog { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
 .navpanel .catalog h2 img { margin-right: 10px; width: 40px !important; }
