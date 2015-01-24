@@ -2922,6 +2922,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /*TODO: Плавно прятать и показывать кнопку*/
 .affix-top .btn-scroll-up {display: none;}
 
+.affix { top: 0; }
+
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; /*line-height: 30px;*/}
 
