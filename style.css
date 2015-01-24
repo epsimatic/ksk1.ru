@@ -692,7 +692,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
-.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 0 -10px; padding: 5px 20px 6px !important; text-align: center; }
+.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 0 -10px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
 
 .navpanel .btn-collapse:hover, .navpanel .btn-collapse:focus { background-color: #b0bec5 !important; color: #ffffff; text-decoration: none; }
 
@@ -764,11 +764,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 #navpanel-shopping .pr-bar.col-md-3 .shop-row-1 img { width: 100%; }
 
-
-/*#navpanel-services.active { max-height: 1000px; margin-bottom: 20px; }*/
-
-/*#navpanel-info.active { max-height: 600px; margin-bottom: 10px; }*/
-
 #navpanel-services a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
 
 #navpanel-services a:hover,
@@ -779,7 +774,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #weather-panel { padding: 0; overflow: auto; }
 
-.navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 2  0px; left: 38%; position: relative; top: 5px; }
+.navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 
@@ -798,6 +793,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .navpanel .catalog { border-top: 1px solid #ff8a80; padding: 10px 0 0 0; }
 
 .navpanel .catalog h4 img { margin-right: 10px; width: 40px !important; }
+
+.navpanel .catalog .input-group { margin-bottom: 10px; }
 
 .navpanel .catalog a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding: 10px 10px 12px; color: #333; display: block; text-align: center; font-size: 13px }
 
@@ -3729,7 +3726,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .catalog > a h2 { font-size: 23px;}
 
-    .navpanel .catalog h4 { text-transform: uppercase; font-size: 16px; }
+    .navpanel .catalog h4 { font-size: 16px; }
 
     .navpanel .catalog a { padding: 5px !important; }
 
