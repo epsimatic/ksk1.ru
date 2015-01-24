@@ -791,6 +791,8 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }
 
+.navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
+
 .navpanel #panel-agenda .today-movies { display: table-row; }
 
 .navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; max-height: 90px; padding: 2px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-color: #eceff1; }
