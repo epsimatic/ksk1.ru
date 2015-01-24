@@ -795,7 +795,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 81px; }
 
-.navpanel #panel-agenda .popover-content { padding: 10px; max-width: 300px; }
+.navpanel #panel-agenda .popover-content { padding: 10px; min-width: 300px; }
 
 .navpanel #panel-agenda .popover-content .movie-poster { padding: 0; }
 
