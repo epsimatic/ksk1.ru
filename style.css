@@ -772,6 +772,10 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
+.navpanel-info.active { overflow-y: visible; }
+
+.navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
+
 .navpanel .cat { border-top: 1px solid #82b1ff; }
 
 .navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
@@ -3593,6 +3597,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
 
+    .navpanel-info #category-other .dropdown-menu { top: 240px; left: 10px; }
+
     .navpanel .cat,
     .navpanel #weather-panel { padding: 0 10px;  }
 
@@ -3757,6 +3763,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 10px;}
 
     .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
+
+    .navpanel-info #category-other .dropdown-menu { top: 170px; }
 
     #navpanel-shopping .pr-bar.multilavka-bar { width: 49%; margin-left: 1%; }
 
