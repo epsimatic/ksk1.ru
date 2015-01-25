@@ -867,6 +867,9 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .cat a.btn.btn-default { display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
+.navpanel .cat a.btn.btn-default:hover,
+.navpanel .cat a.btn.btn-default:focus { background-color: #ebebeb; }
+
 /*.navpanel .cat > a h4 { margin-bottom: 13px; }*/
 
 
