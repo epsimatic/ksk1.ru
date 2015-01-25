@@ -31,10 +31,13 @@
     // Подгоняем высоту карты
     function setMapHeight() {
         //FIXME: Не устанавливать высоту для мобильных устройств!
-        //FIXME: Лучше вычислять высоту
         jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
-            if (jQuery(this).height() > jQuery('.panel-map').height())
-                jQuery('#panel-map').css('height', jQuery(this).height() - 20 - jQuery('.panel-map > h4').height());
+            var this_height = jQuery(this).height();
+            var panel_map = jQuery('.panel-map');
+            if (this_height > panel_map.height()) {
+                var panel_map_map = jQuery('#panel-map');
+                panel_map_map.css('height', this_height - (panel_map_map.offsetTop - panel_map.offsetTop));
+            }
         });
     }
 
@@ -73,7 +76,7 @@
             });
         });
         // загружаем кнопку категории вместо кнопки другие категории
-        jQuery("#category-other").load("http://news.kskmedia.ru/categories-list-ob/");
+        jQuery("#category-other").load("http://news.kskmedia.ru/category-cat.php");
         // Загружаем карту
         setTimeout(function () {
             setMapHeight();
