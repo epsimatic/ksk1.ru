@@ -776,6 +776,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
 
+.navpanel-info #category-other.quick-nav { background-color: transparent; }
+
 .navpanel .cat { border-top: 1px solid #82b1ff; }
 
 .navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
@@ -1006,16 +1008,17 @@ body.ob     .cond-active.cond-active-ob,
 
 /*Новые стили для quick-nav*/
 
-.quick-nav ul > li.cat-item > a {text-transform: uppercase; color: #0275D3; font-size: 1.1em; font-weight: 700; padding: 3px 20px;}
+.quick-nav ul > li.cat-item > a { text-transform: uppercase; color: #0275D3; font-size: 1.1em; font-weight: 700; padding: 3px 20px; background-color: transparent; }
 
 .quick-nav ul > li.cat-item > a:hover,
 .quick-nav ul > li.cat-item > a:focus {background-color: transparent; cursor: default;}
 
-.quick-nav ul > li.cat-item > ul.children {margin-top: 0; border-bottom: 1px solid #e5e5e5; margin-bottom: 9px; padding-bottom: 9px; padding-left: 0;}
+.quick-nav ul > li.cat-item > ul.children { margin-top: 0; border-bottom: 1px solid #e5e5e5; margin-bottom: 9px; padding-bottom: 9px; padding-left: 0; }
 
-.quick-nav ul > li.cat-item > ul.children > li {text-transform: none; list-style-type: none;}
+.quick-nav ul > li.cat-item > ul.children > li { text-transform: none; list-style-type: none; }
 
-.quick-nav ul > li.cat-item > ul.children > li > a {padding: 10px 60px 10px 15px; display: block; font-weight: 400; text-transform: none; width: 100%; color: #333;}
+
+.quick-nav ul > li.cat-item > ul.children > li > a { padding: 10px 60px 10px 15px; display: block; font-weight: 400; text-transform: none; width: 100%; color: #333; background-color: transparent; }
 
 .quick-nav ul > li.cat-item > ul.children > li.current-cat > a:hover,
 .quick-nav ul > li.cat-item > ul.children > li.current-cat > a:focus,
@@ -3752,7 +3755,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .cat a { padding: 5px; }
 
-    .navpanel .cat a.category { padding: 3px 7px 5px !important; }
+    .navpanel .cat a.category { padding: 3px 7px 5px; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
 
