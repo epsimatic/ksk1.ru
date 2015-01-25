@@ -856,7 +856,7 @@ body.news .navpanel .cat .input-group { display: none; }
 .navpanel .cat a.category { background-color: #b3e5fc; border-radius: 3px; display: inline-block !important; margin-bottom: 4px; margin-top: 0; padding: 7px 7px 8px !important; font-size: 12px; }
 
 .navpanel .cat > a.category:hover,
-.navpanel .cat > a.category:focus { background-color: #81d4fa; }
+.navpanel .cat > a.category:focus { background-color: #81d4fa; text-decoration: none; }
 
 .navpanel .cat a.category.alt { background-color: #81d4fa; }
 
