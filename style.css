@@ -774,6 +774,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info.active { overflow-y: visible; }
 
+.navpanel-info #category-other.btn-default { display: block; }
+
 .navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
 
 .navpanel-info #category-other.quick-nav { background-color: transparent; }
@@ -1008,7 +1010,7 @@ body.ob     .cond-active.cond-active-ob,
 
 /*Новые стили для quick-nav*/
 
-.quick-nav ul > li.cat-item > a { text-transform: uppercase; color: #0275D3; font-size: 1.1em; font-weight: 700; padding: 3px 20px; background-color: transparent; }
+.quick-nav ul > li.cat-item > a { text-transform: uppercase; color: #0275D3; font-size: 1.1em; font-weight: 700; padding: 3px 20px; background-color: transparent; margin: 0; text-align: left; }
 
 .quick-nav ul > li.cat-item > a:hover,
 .quick-nav ul > li.cat-item > a:focus {background-color: transparent; cursor: default;}
