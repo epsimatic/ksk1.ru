@@ -792,8 +792,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
 .navpanel #panel-agenda .today-movies { display: table-row; }
-
-.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 99   px; }
+.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 99px; }
 
 .navpanel #panel-agenda .popover-content { padding: 10px; min-width: 300px; }
 
@@ -814,8 +813,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover-content .movie-price,
 .navpanel #panel-agenda .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
-
-.navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; min-height: auto; }
+.navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; }
 
 .navpanel #panel-agenda .panel-events .list-group-item:hover,
 .navpanel #panel-agenda .panel-events .list-group-item:focus { background-color: #fafafa; }
@@ -1306,8 +1304,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .temp .post-title,
 .temp .post-text {font-family: Times,serif; font-weight: normal; text-align: left;}
-
-.temp .post-text {font-size: 14px; line-height: 1.2 em;}
+.temp .post-text { font-size: 14px; line-height: 1.2em; }
 
 .temp .panel-news-list .post-text {margin-bottom: 10px;}
 
@@ -3792,8 +3789,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat a.category { padding: 3px 7px 5px !important; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
-
-    .navpanel #weather-panel { min-height: auto; }
+    .navpanel #weather-panel { }
 
     /*#popover-shopping .popover {left: -41px !important;}*/
 
