@@ -3793,7 +3793,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
 
-    .navpanel .cat a { padding: 5px !important; }
+    .navpanel .cat a { padding: 5px; }
 
     .navpanel .cat a.category { padding: 3px 7px 5px !important; }
 
@@ -3893,6 +3893,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-services img.icon,
     #navpanel-info img.icon { width: 80%; }
+
+    .navpanel .cat a.btn.btn-default { padding-bottom: 8px; }
 
     .potential-cond-active .arrow { left: 35%; }
 
