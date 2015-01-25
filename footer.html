@@ -34,9 +34,10 @@
         jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
             var this_height = jQuery(this).height();
             var panel_map = jQuery('.panel-map');
+            console.log(this_height + " <-> " + panel_map.height());
             if (this_height > panel_map.height()) {
                 var panel_map_map = jQuery('#panel-map');
-                panel_map_map.css('height', this_height - (panel_map_map.offsetTop - panel_map.offsetTop));
+                panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
             }
         });
     }
@@ -87,7 +88,7 @@
             var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
                 minZoom: 0,
                 maxZoom: 20,
-                attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>'
+                attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
                 //, attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
             });
             OpenMapSurfer_Roads.addTo(map);
