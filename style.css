@@ -813,6 +813,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda h3.event-heading { font-size: 17px; height: 2.3em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
 
+.navpanel #panel-agenda p.event-text { color: #666; font-size: 13px; height: 2.7em; line-height: 1.345em; overflow: hidden; }
+
 .navpanel #panel-agenda .event-date,
 .navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
 
