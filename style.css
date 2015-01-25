@@ -774,6 +774,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info.active { overflow-y: visible; }
 
+.navpanel-info #category-other.btn-default { display: block; }
+
 .navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
 
 .navpanel-info #category-other.quick-nav { background-color: transparent; }
