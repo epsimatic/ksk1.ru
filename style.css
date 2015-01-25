@@ -829,7 +829,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-agenda .event-date,
 .navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
 
-.navpanel #panel-agenda .event-brief { max-height: 70px; }
+.navpanel #panel-agenda .event-brief { min-height: 70px; }
 
 .navpanel .cat { padding: 0; }
 
