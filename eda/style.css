@@ -383,7 +383,7 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
 .cart.shop_table .alert .btn-action { margin-top: 10px; }
 
-.cart.shop_table .alert + .alert { top: 170px; }
+.cart.shop_table .alert + .alert { top: 220px; }
 
 ul.woocommerce.alert { list-style: none; padding-left: 20px; }
 
@@ -421,6 +421,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
+
+    .cart.shop_table .alert + .alert { top: 170px; }
 
     .checkout-description { margin: 20px; padding: 20px 30px 15px; }
 
