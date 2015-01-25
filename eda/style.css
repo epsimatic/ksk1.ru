@@ -379,7 +379,11 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
 .woocommerce.alert { margin: 20px; position: relative; }
 
-.cart.shop_table .alert { box-shadow: 0 1px 3px rgba(69, 90, 100, 0.25) !important; position: relative; right: 0; z-index: 5; }
+.cart.shop_table .alert { box-shadow: 0 1px 3px rgba(69, 90, 100, 0.25) !important; position: absolute; right: 0; z-index: 5; }
+
+.cart.shop_table .alert .btn-action { margin-top: 10px; }
+
+.cart.shop_table .alert + .alert { top: 220px; }
 
 ul.woocommerce.alert { list-style: none; padding-left: 20px; }
 
@@ -388,8 +392,6 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 .checkout ul.woocommerce.alert-danger { margin: 10px; }
 
 .woocommerce form.checkout .alert { margin: 15px 5px; }
-
-.woocommerce.alert-warning .button.pull-right { position: absolute; right: 15px; bottom: 15px; }
 
 .alert-success { background-color: #ccff90; border: medium none; border-radius: 0; }
 
@@ -419,6 +421,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
+
+    .cart.shop_table .alert + .alert { top: 170px; }
 
     .checkout-description { margin: 20px; padding: 20px 30px 15px; }
 
