@@ -796,7 +796,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover { padding: 10px !important; min-width: 300px; }
 
-.navpanel #panel-agenda .popover-content { min-width: 300px; }
+.navpanel #panel-agenda .popover-content { min-width: 300px; padding: 0; }
 
 .navpanel #panel-agenda .popover-content .movie-poster { padding: 0; }
 
