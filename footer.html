@@ -72,7 +72,8 @@
                 });
             });
         });
-
+        // загружаем кнопку категории вместо кнопки другие категории
+        jQuery("#category-other").load("http://news.kskmedia.ru/categories-list-ob/");
         // Загружаем карту
         setTimeout(function () {
             setMapHeight();
