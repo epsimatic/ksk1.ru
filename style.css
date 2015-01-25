@@ -852,7 +852,7 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .cat a.category.alt .fa { opacity: .5; }
 
-.navpanel .cat a.btn.btn-default { display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.navpanel .cat a.btn.btn-default { display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px; }
 
 .navpanel .cat a.btn.btn-default:hover,
 .navpanel .cat a.btn.btn-default:focus { background-color: #ebebeb; }
@@ -3854,7 +3854,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-services img.icon,
     #navpanel-info img.icon { width: 80%; }
 
-    .navpanel .cat a.btn.btn-default { padding-bottom: 8px; }
+    .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
     .potential-cond-active .arrow { left: 35%; }
 
