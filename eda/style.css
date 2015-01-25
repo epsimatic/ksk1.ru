@@ -379,7 +379,9 @@ table > thead > tr > th { border-bottom: none; color: #fff; font-weight: 400 !im
 
 .woocommerce.alert { margin: 20px; position: relative; }
 
-.cart.shop_table .alert { box-shadow: 0 1px 3px rgba(69, 90, 100, 0.25) !important; position: relative; right: 0; z-index: 5; }
+.cart.shop_table .alert { box-shadow: 0 1px 3px rgba(69, 90, 100, 0.25) !important; position: absolute; right: 0; z-index: 5; }
+
+.cart.shop_table .alert + .alert { top: 170px; }
 
 ul.woocommerce.alert { list-style: none; padding-left: 20px; }
 
