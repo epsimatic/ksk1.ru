@@ -781,7 +781,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
 .navpanel #panel-agenda .today-movies { display: table-row; }
-.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 99px; }
+.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 120px; }
 
 .navpanel #panel-agenda .popover { padding: 10px !important; min-width: 300px; }
 
