@@ -766,8 +766,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 20px; }
 
-/*.navpanel #weather-panel:focus { border: 1px dotted #999; transition: border 0.5s ease 0s; }*/
-
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
@@ -775,8 +773,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
 .navpanel .cat { border-top: 1px solid #82b1ff; }
-
-/*.navpanel #panel-agenda h4:nth-child(n+2) { margin-bottom: 20px; }*/
 
 .navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
@@ -830,17 +826,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 body.news .navpanel .panel-map .input-group,
 body.news .navpanel .cat .input-group { display: none; }
 
-/*.navpanel .cat h4 { margin-top: 0; }*/
-
 .navpanel .cat a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding: 10px 10px 12px; color: #37474f; display: block; text-align: center; font-size: 13px }
 
-/*.navpanel .cat > a:hover,*/
-/*.navpanel .cat > a:focus { text-decoration: none; background-color: #eceff1; }*/
-
 .navpanel .cat > a:first-child { background-color: transparent; margin-bottom: 0; margin-top: 0; padding: 0 !important; }
-
-/*.navpanel .cat > a:first-child:hover,*/
-/*.navpanel .cat > a:first-child:focus { background-color: #eceff1; }*/
 
 .navpanel .cat a.category { background-color: #b3e5fc; border-radius: 3px; display: inline-block !important; margin-bottom: 4px; margin-top: 0; padding: 7px 7px 8px !important; font-size: 12px; }
 
@@ -861,11 +849,8 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .cat .gsIContent .nolink { background-color: transparent; }
 
-/*.navpanel .cat > a h4 { margin-bottom: 13px; }*/
 
 
-
-/*.navpanel .cat .btn-special h4 { font-size: 15px; margin-bottom: 3px; }*/
 
 .navpanel .btn-more { position: relative; font-size: 13px; top: 6px; padding-right: 15px; }
 
@@ -873,8 +858,6 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel #panel-map { transition: height 0.5s ease 0s; }
 
-
-/*.logo-container { position: relative; }*/
 
 #sublogo { width: 100%; height: 33px; bottom: -8px; max-width: 130px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-color: transparent; position: relative;  }
 
@@ -3766,7 +3749,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat a.category { padding: 3px 7px 5px !important; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
-    .navpanel #weather-panel { }
 
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
