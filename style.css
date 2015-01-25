@@ -766,6 +766,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 20px; }
 
+/*.navpanel #weather-panel:focus { border: 1px dotted #999; transition: border 0.5s ease 0s; }*/
+
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
@@ -856,6 +858,8 @@ body.news .navpanel .cat .input-group { display: none; }
 
 .navpanel .cat a.btn.btn-default:hover,
 .navpanel .cat a.btn.btn-default:focus { background-color: #ebebeb; }
+
+.navpanel .cat .gsIContent .nolink { background-color: transparent; }
 
 /*.navpanel .cat > a h4 { margin-bottom: 13px; }*/
 
