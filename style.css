@@ -671,19 +671,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
-/* <editor-fold desc="Popover"> */
-/*.popover-content .panel-heading {color: #FFFFFF; display: block; height: 0; margin: 0; padding: 0; width: 0;}*/
-
-/*.popover-content {overflow: hidden; padding: 0; table-layout: fixed; font-size: 14px;}*/
-
-/*.popover-content .panel-heading .fa {position: absolute; right: 10px; top: 10px;}*/
-
-/*.popover-content .table {margin: 0;}*/
-
-/*.popover {max-width: none ;}*/
-
-/* </editor-fold> */
-
 /* <editor-fold desc="Другие элемнты"> */
 
 .browser-deco:before {box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.25); content: url("http://ksk1.ru/img/browser-deco.svg"); display: block;}
@@ -796,7 +783,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover { padding: 10px !important; min-width: 300px; }
 
-.navpanel #panel-agenda .popover-content { min-width: 300px; padding: 0; }
+.navpanel #panel-agenda .popover-content { min-width: 300px; padding-right: 10px !important; }
 
 .navpanel #panel-agenda .popover-content .movie-poster { padding: 0; }
 
@@ -954,16 +941,6 @@ body.ob     .cond-active.cond-active-ob,
 
 .cat__banner-block:hover img,
 .cat__banner-block:focus img {opacity:0.7;}
-
-/*#popover-shopping .popover {display: block; left: -10px !important; top: 40px !important;}*/
-
-/*#popover-shopping br {display: none;}*/
-
-/*#popover-shopping .nav_shopping {display: table-row; height: 50px; vertical-align: middle;}*/
-
-/*#popover-shopping i {display: table-cell; vertical-align: middle; text-align: right;}*/
-
-/*#popover-shopping span {line-height: 1; display: table-cell; font-size: 14px; vertical-align: middle;}*/
 
 .helper {
     display: none;
@@ -2206,15 +2183,6 @@ a.link-neutral:focus {color: #3b437d;}
 .btn-feature:hover + .btn-feature .divider { width: 0; }
 
 .block-features .btn-feature .fa { font-size: 2em; top: 11px; position: relative; }
-
-/*.block-features .popover {top: 40px !important;}*/
-
-/*.block-features .popover-content { padding-bottom: 10px !important; }*/
-
-/*.block-features .popover .popover-content a {color: #333; display: block; font-size: 16px; padding: 5px 30px 5px 20px;}*/
-
-/*.block-features .popover .popover-content a:hover,*/
-/*.block-features .popover .popover-content a:focus {background-color: #eee; text-decoration: none;}*/
 
 .features-content > .col-xs-6,
 .features-content .col-xs-4 { padding: 0; }
@@ -3719,10 +3687,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-size: 14px; font-weight: 400;}
 
-    /*#popover-shopping .popover {left: -58px !important;}*/
-
-    /*#popover-shopping br {display:block;}*/
-
     .kaleidoscope__item {width: 20%;}
 
     .kaleidoscope__item__tooltip {height: 96px;}
@@ -3799,8 +3763,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
     .navpanel #weather-panel { }
-
-    /*#popover-shopping .popover {left: -41px !important;}*/
 
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
@@ -3888,8 +3850,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .news-more .crp_title {font-size: 16px;}
 
     .news-more .crp_excerpt {font-weight: 400;}
-
-    /*#popover-shopping .popover {left: -23px !important;}*/
 
     #navpanel-services img.icon,
     #navpanel-info img.icon { width: 80%; }
