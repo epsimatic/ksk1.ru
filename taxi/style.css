@@ -1,9 +1,14 @@
+/*кастыли*/
+nav.navbar { margin: 0 -10px !important; }
+
 .form-horizontal .form-group { margin-left: 0; margin-right: 0; }
 
 .form-horizontal, .form-inline { padding-bottom: 0; }
 
-/*кастыли*/
-nav.navbar { margin: 0 -10px !important; }
+body.page-template-page-custom-taxi .search-form,
+body.page-template-page-custom-taxi .user-panel { display: none; }
+
+body.page-template-page-custom-taxi .row_header { min-height: 80px; }
 
 /*окончание кастылей*/
 
