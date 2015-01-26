@@ -164,6 +164,8 @@ footer h4 a:hover { color: #ffd401; }
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
 
+    body.page-template-page-custom-taxi .user-panel { display: block; }
+
     .taxi-header { position: relative; }
 
     .taxi-header .taxi-logo { padding: 0; position: absolute; left: 41px; top: 35px; }
