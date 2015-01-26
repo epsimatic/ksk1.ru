@@ -137,6 +137,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes-cat .btn-collapse .fa { margin: 0 10px; }
 
+.page-header,
 .dishes-heading {
     border-top: 2px dashed #ff6f00; color: #ff6f00;
     font-size: 25px; font-weight: 700; letter-spacing: 0.025em; margin: 0 0 12px; padding: 20px 50px 12px; text-transform: uppercase; }
@@ -446,6 +447,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat .cat-label { left: 23px; top: -10px; width: 51px; }
 
+    .page-header,
     .dishes-heading { font-size: 40px; margin-bottom: 20px; }
 
     .dishes-cat-recommend .dishes-heading { padding-left: 100px; }
