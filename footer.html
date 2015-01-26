@@ -34,7 +34,6 @@
         jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
             var this_height = jQuery(this).height();
             var panel_map = jQuery('.panel-map');
-            console.log(this_height + " <-> " + panel_map.height());
             if (this_height > panel_map.height()) {
                 var panel_map_map = jQuery('#panel-map');
                 panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
@@ -156,28 +155,28 @@
     /*    (function (d, w, c) {
      (w[c] = w[c] || []).push(function () {
      try {
-                w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
-                    webvisor: true,
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true});
-            } catch (e) {
-            }
-        });
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "//mc.yandex.ru/metrika/watch.js";
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(document, window, "yandex_metrika_callbacks");
+     w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
+     webvisor: true,
+     clickmap: true,
+     trackLinks: true,
+     accurateTrackBounce: true});
+     } catch (e) {
+     }
+     });
+     var n = d.getElementsByTagName("script")[0],
+     s = d.createElement("script"),
+     f = function () {
+     n.parentNode.insertBefore(s, n);
+     };
+     s.type = "text/javascript";
+     s.async = true;
+     s.src = "//mc.yandex.ru/metrika/watch.js";
+     if (w.opera == "[object Opera]") {
+     d.addEventListener("DOMContentLoaded", f, false);
+     } else {
+     f();
+     }
+     })(document, window, "yandex_metrika_callbacks");
      */
 
 </script>
@@ -186,32 +185,33 @@
 
 <!-- Gismeteo informer START -->
 <div class="popover-source-gismeteo">
-<div id="gsInformerID-5yW5CsFg4TLIH3" class="gsInformer" style="width:300px;height:157px">
-    <div class="gsIContent">
-        <div id="cityLink">
-            <a href="http://www.gismeteo.ru/city/daily/4515/" target="_blank">Погода в Красноуфимске</a>
-        </div>
-        <div class="gsLinks">
-            <table>
-                <tr>
-                    <td>
-                        <div class="leftCol">
-                            <a href="http://www.gismeteo.ru" target="_blank">
-                                <img alt="Gismeteo" title="Gismeteo"
-                                     src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"
-                                     align="absmiddle" border="0"/>
-                                <span>Gismeteo</span>
-                            </a>
-                        </div>
-                        <div class="rightCol">
-                            <a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз на 2 недели</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+    <div id="gsInformerID-5yW5CsFg4TLIH3" class="gsInformer" style="width:300px;height:157px">
+        <div class="gsIContent">
+            <div id="cityLink">
+                <a href="http://www.gismeteo.ru/city/daily/4515/" target="_blank">Погода в Красноуфимске</a>
+            </div>
+            <div class="gsLinks">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="leftCol">
+                                <a href="http://www.gismeteo.ru" target="_blank">
+                                    <img alt="Gismeteo" title="Gismeteo"
+                                         src="http://www.gismeteo.ru/static/images/informer2/logo-mini2.png"
+                                         align="absmiddle" border="0"/>
+                                    <span>Gismeteo</span>
+                                </a>
+                            </div>
+                            <div class="rightCol">
+                                <a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз на 2
+                                    недели</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3" type="text/javascript"></script>
 <script type="text/javascript">
@@ -239,7 +239,9 @@
 
             <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
                 Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.</p>
+
             <p class="footer_backlinks">При использовании материалов сайта ссылка обязательна.</p>
+
             <p class="footer_opinion">Мнение редакции может не совпадать с мнением авторов материалов и
                 комментариев.</p>
 
