@@ -1,3 +1,7 @@
+.form-horizontal .form-group { margin-left: 0; margin-right: 0; }
+
+.form-horizontal, .form-inline { padding-bottom: 0; }
+
 /*кастыли*/
 nav.navbar { margin: 0 -10px !important; }
 
@@ -24,7 +28,7 @@ form { padding: 10px 20px; }
 
 .taxi-phone { padding: 20px; }
 
-.taxi-phone h2 { font-size: 40px; font-weight: 700; margin-bottom: 0; }
+.taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; }
 
 .taxi-content .taxi-phone h2 { margin-top: 0; font-size: 53px; }
 
@@ -38,7 +42,7 @@ form { padding: 10px 20px; }
 
 .taxi-phone h2 .fa { font-size: 27px; }
 
-.taxi-logo { padding: 20px 20px 40px; }
+.taxi-logo { padding: 20px 0 40px; }
 
 .taxi-logo img { max-width: 100%; }
 
@@ -120,9 +124,11 @@ input.btn-block + img { position: absolute; z-index: 3; top: 0; }
 
 .desciption-title + p { color: #282100; }
 
-.promo-labels { padding: 0 20px;  margin-bottom: 20px; }
+.promo-labels { padding: 0 20px;  margin-bottom: 10px; }
 
 .promo-labels img { width: 100%; margin-bottom: 20px; }
+
+.taxi-content h3 a { color: #161616; text-decoration: underline; }
 
 .taxi-content > div { padding: 10px 0; }
 
@@ -155,23 +161,23 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-header { position: relative; }
 
-    .taxi-header .taxi-logo { padding: 45px 30px 25px; }
+    .taxi-header .taxi-logo { padding: 0; position: absolute; left: 41px; top: 35px; }
 
     /*.site-taxi .taxi-header .taxi-phone { padding-left: 0; }*/
 
-    .taxi-header .taxi-phone { padding: 0; bottom: 0; }
+    .taxi-header .taxi-phone { padding: 0; bottom: -235px; left: 90px; position: absolute; }
 
-    .taxi-header .taxi-phone > h2 { position: absolute; left: 40px; margin-top: 0; font-size: 25px; z-index: 3; }
+    .taxi-header .taxi-phone > h2 { margin-top: 0; font-size: 19px; z-index: 3; font-weight: 600; }
 
-    .taxi-header .taxi-phone > h2 .fa { font-size: 20px; }
+    .taxi-header .taxi-phone > h2 .fa { font-size: 20px; display: inline; }
 
-    .taxi-header .taxi-phone > span { position: absolute; bottom: -23px; left: 160px; z-index: 3; }
+    /*.taxi-header .taxi-phone > span { position: absolute; bottom: -23px; left: 160px; z-index: 3; }*/
 
     .taxi-header .divider { background-color: #ffd401; border-color: #161616; border-image: none; border-style: solid; border-width: 15px 0 20px; height: 100%; opacity: 0.3; position: absolute; width: 1px; }
 
     .taxi-header .col-description { height: 217px; }
 
-    .col-description h3 { margin-top: 30px !important; margin-bottom: 0; }
+    .col-description h3 { margin-top: 40px !important; margin-bottom: 0; }
 
     .col-description ul { padding-left: 75px; }
 
@@ -193,17 +199,21 @@ footer h4 a:hover { color: #ffd401; }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 
-    .taxi-header .taxi-logo { padding: 23px 60px 7px; }
+    .taxi-header .taxi-logo { left: 80px; top: 30px; }
 
-    .col-description h3 { padding: 0 60px; margin-top: 35px !important; }
+    .taxi-logo img { max-width: 330px; }
+
+    .taxi-header .taxi-phone { left: 150px; bottom: -240px; }
+
+    .col-description h3 { padding: 0 60px; }
 
     .taxi-header p { padding-left: 120px; padding-top: 20px; }
 
     .col-description ul { padding-left: 135px; }
 
-    .taxi-header .taxi-phone > h2 { left: 125px; bottom: -36px; }
+    /*.taxi-header .taxi-phone > h2 { left: 125px; bottom: -36px; }*/
 
-    .taxi-header .taxi-phone > span { left: 242px; bottom: -32px; }
+    /*.taxi-header .taxi-phone > span { left: 242px; bottom: -32px; }*/
 
     img[src*="taxi-squares.svg"] { margin: -9px 0; }
 
@@ -215,7 +225,13 @@ footer h4 a:hover { color: #ffd401; }
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
 
-    .taxi-header .taxi-logo { padding: 20px 95px 0 85px; }
+    .taxi-header .taxi-logo { left: 120px; }
+
+    .taxi-logo img { max-width: 350px; }
+
+    .taxi-header .taxi-phone { bottom: -245px; left: 190px; }
+
+    .taxi-header .taxi-phone > h2 { font-size: 21px; font-weight: 700; }
 
     .col-description h3 { padding: 0 120px; margin-top: 45px !important; }
 
@@ -223,9 +239,9 @@ footer h4 a:hover { color: #ffd401; }
 
     .col-description ul { padding-left: 195px; }
 
-    .taxi-header .taxi-phone > h2 { left: 180px; bottom: -39px; }
+    /*.taxi-header .taxi-phone > h2 { left: 180px; bottom: -39px; }*/
 
-    .taxi-header .taxi-phone > span { left: 300px; bottom: -36px; }
+    /*.taxi-header .taxi-phone > span { left: 300px; bottom: -36px; }*/
 
     img[src*="taxi-squares.svg"] { margin: -11px 0; }
 }
