@@ -168,6 +168,8 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-header .taxi-logo { padding: 0; position: absolute; left: 41px; top: 35px; }
 
+    .taxi-logo img { max-width: 300px; }
+
     /*.site-taxi .taxi-header .taxi-phone { padding-left: 0; }*/
 
     .taxi-header .taxi-phone { padding: 0; bottom: -235px; left: 90px; position: absolute; }
