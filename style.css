@@ -2185,7 +2185,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block-features .btn-feature .fa { font-size: 2em; top: 11px; position: relative; }
 
-.btn-feature .marker-new { color: #f44336; position: absolute; right: 9px; top: 4px; font-size: 1.2em; }
+.btn-feature .marker-new { color: #f44336; position: absolute; right: 9px; top: 3px; font-size: 1.2em; z-index: 3; }
 
 .btn-feature .marker-new:before { content: ""; font-family: FontAwesome; }
 
