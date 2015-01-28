@@ -844,7 +844,9 @@ body.news .navpanel .cat .input-group { display: none; }
 .navpanel-info #category-other .btn:hover,
 .navpanel-info #category-other .btn:focus { background-color: #4fc3f7; }
 
-.navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
+body.news .navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
+
+.navpanel-info #category-other .dropdown-menu { top: 49%; }
 
 .navpanel-info #category-other.quick-nav { background-color: transparent; }
 
@@ -3607,7 +3609,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
 
-    .navpanel-info #category-other .dropdown-menu { top: 240px; left: 9px; }
+    body.news .navpanel-info #category-other .dropdown-menu { top: 240px; left: 9px; }
+
+    .navpanel-info #category-other .dropdown-menu { top: 280px; }
 
     .navpanel .cat,
     .navpanel #weather-panel { padding: 0 10px;  }
@@ -3775,6 +3779,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
 
     body.news .navpanel-info #category-other .dropdown-menu { top: 190px; }
+
+    .navpanel-info #category-other .dropdown-menu { top: 230px }
 
     #navpanel-shopping .pr-bar.multilavka-bar { width: 49%; margin-left: 1%; }
 
