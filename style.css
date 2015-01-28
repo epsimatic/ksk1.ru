@@ -3774,7 +3774,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
 
-    .navpanel-info #category-other .dropdown-menu { top: 190px; }
+    body.news .navpanel-info #category-other .dropdown-menu { top: 190px; }
 
     #navpanel-shopping .pr-bar.multilavka-bar { width: 49%; margin-left: 1%; }
 
