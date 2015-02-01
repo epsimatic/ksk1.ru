@@ -1,7 +1,77 @@
 <!--Общий подвал-->
 <!--TODO: загружать только после щелчка по Справке-->
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="https://raw.githubusercontent.com/smeijer/L.GeoSearch/master/src/js/l.control.geosearch.js"></script>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+<style type="text/css">
+    .leaflet-control-geosearch, .leaflet-control-geosearch ul {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .leaflet-control-geosearch {
+        margin-left: 44px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    .leaflet-control-geosearch-msg ul {
+        list-style: none;
+        display: none;
+        height: auto;
+        background: none;
+        padding: 0;
+    }
+    .leaflet-control-geosearch ul li {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
+        border-radius: 4px;
+        margin: 2px 0;
+        padding: 4px;
+        font-size: 12px;
+        text-indent: 4px;
+    }
+
+    .leaflet-container .leaflet-control-geosearch input {
+        width: 100%;
+        height: 28px;
+        padding: 0;
+        text-indent: 8px;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 4px;
+        border: none;
+    }
+</style>
+<script type="application/javascript">
+    L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
+        options: { },
+        initialize: function (options) {
+            options = L.Util.setOptions(this, options);
+        },
+        GetServiceUrl: function (qry) {
+            var parameters = L.Util.extend({
+                q: "Красноуфимск " + qry,
+                format: 'json'
+            }, this.options);
+            return 'http://nominatim.openstreetmap.org/search'
+                    + L.Util.getParamString(parameters);
+        },
+        ParseJSON: function (data) {
+            if (data.length == 0)
+                return [];
+
+            var results = [];
+            for (var i = 0; i < data.length; i++)
+                results.push(new L.GeoSearch.Result(
+                        data[i].lon,
+                        data[i].lat,
+                        data[i].display_name
+                ));
+            return results;
+        }
+    });
+</script>
 
 <script type="application/javascript">
 
@@ -75,6 +145,13 @@
                 //, attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
             });
             OpenMapSurfer_Roads.addTo(map);
+            new L.Control.GeoSearch({
+                provider: new L.GeoSearch.Provider.OpenStreetMapKsk(),
+                country: 'ru',
+                searchLabel: 'Найти на карте…',
+                notFoundMessage: 'К сожалению, ничего не найдено',
+                zoomLevel: 17
+            }).addTo(map);
         }, 600);
 
         // Отключаемся от события
