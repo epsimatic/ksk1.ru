@@ -1,5 +1,5 @@
 /*кастыли*/
-nav.navbar { margin: 0 0 10px !important; }
+nav.navbar { margin: 0 !important; }
 
 .container { padding: 0; }
 
@@ -8,6 +8,8 @@ nav.navbar { margin: 0 0 10px !important; }
 .search-form { right: 28px; top: 138px; }
 
 .search-form button { position: relative; right: -32px; top: -40px; }
+
+.navpanel.active { margin-top: 10px; }
 
 .form-horizontal .form-group { margin-left: 0; margin-right: 0; }
 
