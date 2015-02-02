@@ -702,7 +702,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.multilavka-bar .shop-description { color: #fff; text-align: center; opacity: 0.8; margin-top: 9px; }
 
-#navpanel-shopping .pr-bar.multilavka-bar .pr-logo { text-align: center; margin-top: 0; }
+#navpanel-shopping .pr-bar .pr-logo { text-align: center; margin-top: 0; }
 
 #navpanel-shopping .pr-bar.multilavka-bar .pr-logo img { width: 55%; }
 
@@ -722,13 +722,24 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.multilavka-bar .pr-description strong { text-transform: uppercase; letter-spacing: 0.03em; }
 
-#navpanel-shopping .e96-bar { border-bottom: 3px solid #ff6600; background-color: #fcfcfc; margin-bottom: 10px; }
-
-#navpanel-shopping .e96-bar .pr-logo a { text-align: center; }
-
+#navpanel-shopping .ozon-bar .pr-logo a:hover,
 #navpanel-shopping .e96-bar .pr-logo a:hover { background-color: transparent; }
 
+#navpanel-shopping .ozon-bar .pr-logo img,
 #navpanel-shopping .e96-bar .pr-logo img { width: 80%; }
+
+#navpanel-shopping .ozon-bar { border-bottom: 3px solid #0083ca; background-color: #fff; margin-bottom: 10px; }
+
+#navpanel-shopping .ozon-bar .list-group { margin-bottom: 15px; padding-bottom: 0; }
+
+#navpanel-shopping .ozon-bar .list-group-item { padding: 0; }
+
+#navpanel-shopping .ozon-bar .list-group-item a { padding: 5px 15px; }
+
+#navpanel-shopping .ozon-bar .list-group-item a:hover,
+#navpanel-shopping .ozon-bar .list-group-item a:focus { text-decoration: none; background-color: #f2f2f2; }
+
+#navpanel-shopping .e96-bar { border-bottom: 3px solid #ff6600; background-color: #fcfcfc; margin-bottom: 10px; padding-bottom: 15px; }
 
 #navpanel-shopping .e96-bar p { padding-left: 15px; }
 
@@ -3720,6 +3731,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 33%; }
 
+    #navpanel-shopping .pr-bar.multilavka-bar { height: 336px; }
+
     #navpanel-shopping .e96-bar { margin-bottom: 0; border-bottom: none; }
 
     #navpanel-shopping .e96-bar .pr-logo img { width: 50%; }
@@ -3794,7 +3807,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping { margin-left: 0; margin-right: 0; }
 
-    #navpanel-shopping .pr-bar.multilavka-bar { width: 40%; margin-left: 1%; }
+    #navpanel-shopping .ozon-bar { border-bottom: none; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar { width: 40%; margin-left: 1%; height: auto; }
 
     #navpanel-shopping.active { border: none; background-color: #fcfcfc; }
 
