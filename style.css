@@ -743,7 +743,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .e96-bar p { padding-left: 15px; }
 
-#navpanel-shopping .e96-bar p a { color: #3f3f3f; text-decoration: underline; margin-bottom: 4px; }
+#navpanel-shopping .e96-bar p a { color: #3f3f3f; text-decoration: underline; margin-bottom: 4px; text-align: left; }
 
 #navpanel-shopping .e96-bar p a:hover,
 #navpanel-shopping .e96-bar p a:focus { background-color: transparent; color: #ff6600; }
