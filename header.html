@@ -4,15 +4,16 @@
             <a href="/" title="На главную страницу" class="logo-container">
                 <img src="http://ksk1.ru/img/logo-mobile-ksk.svg" style="position: relative;" class="visible-xs">
                 <img style="position: absolute" src="http://ksk1.ru/img/logo-base.svg" class="hidden-xs">
+
                 <div id="sublogo"></div>
             </a>
         </div>
         <div class="weather-temp-sm triggers-weather hidden-lg hidden-xs">
-        <!--#include virtual="/weather.html" -->
+            <!--#include virtual="/weather.html" -->
         </div>
     </div>
     <div class="weather-block-col triggers-weather visible-lg col-lg-1">
-    <!--#include virtual="/weather.html" -->
+        <!--#include virtual="/weather.html" -->
     </div>
     <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3 col-special">
         <!--#include virtual="/yummies/special/" -->
@@ -26,13 +27,15 @@
     <div class="col-sm-6 col-md-5 hidden-xs">
         <ul class="nav nav-pills navbar-nav">
             <li>
-                <a class="cond-active potential-cond-active cond-active-news" href="http://ksk66.ru" title="Свежие городские новости">
+                <a class="cond-active potential-cond-active cond-active-news" href="http://ksk66.ru"
+                   title="Свежие городские новости">
                     <div class="arrow"></div>
                     Новости
                 </a>
             </li>
             <li>
-                <a class="cond-active potential-cond-active cond-active-ob"   href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете">
+                <a class="cond-active potential-cond-active cond-active-ob" href="http://ob.ksk66.ru"
+                   title="Бесплатные объявления на сайте и в газете">
                     <div class="arrow"></div>
                     Объявления
                 </a>
@@ -59,13 +62,15 @@
     </div>
 
     <div class="col-md-4 col-sm-3 col-xs-12 block-features">
-        <a href="http://ksk66.ru" title="Свежие городские новости" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-news">
+        <a href="http://ksk66.ru" title="Свежие городские новости"
+           class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-news">
             <div class="arrow"></div>
             <!--<div class="divider"></div>-->
             <i class="fa fa-bullhorn"></i>
         </a>
 
-        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете" class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-ob">
+        <a href="http://ob.ksk66.ru" title="Бесплатные объявления на сайте и в газете"
+           class="col-xs-2 col-sm-4 btn-feature text-center visible-xs main-menu-feature cond-active potential-cond-active cond-active-ob">
             <div class="arrow"></div>
             <div class="divider"></div>
             <i class="fa fa-tags"></i>
@@ -144,7 +149,8 @@
                 class="fa fa-arrow-right"></i></div>
         <div class="" style="padding-top: 5px;">
             <a class="btn btn-default col-xs-6" href="http://news.kskmedia.ru/emergency/">
-                <i class="fa fa-phone"></i> <span class="hidden-xs hidden-sm hidden-md">Важные телефоны</span> <span class="hidden-lg">Телефоны</span>
+                <i class="fa fa-phone"></i> <span class="hidden-xs hidden-sm hidden-md">Важные телефоны</span> <span
+                    class="hidden-lg">Телефоны</span>
             </a>
             <a class="btn btn-default col-xs-6" href="http://ksk66.ru/timetable.html">
                 <i class="fa fa-list-ul"></i> Расписание
@@ -154,18 +160,22 @@
     </div>
 
     <div class="col-xs-12 col-sm-4 subpanel" id="panel-agenda">
-        <h4>Сегодня в кино <a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i class="fa fa-arrow-right"></i></a></h4>
+        <h4>Сегодня в кино <a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i
+                class="fa fa-arrow-right"></i></a></h4>
 
-        <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+        <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+        </div>
         <h4>Сегодня в городе</h4>
 
         <div class="text-center" style="margin: 62px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
     </div>
 
     <div class="col-xs-12 col-sm-4 panel-map subpanel">
-        <h4>Карта <a href="http://ksk66.ru/karta.html" class="pull-right btn-more">Открыть <i class="fa fa-arrow-right"></i></a></h4>
+        <h4>Карта <a href="http://ksk66.ru/karta.html" class="pull-right btn-more">Открыть <i
+                class="fa fa-arrow-right"></i></a></h4>
 
-        <form class="input-group panel-map-search-form" role="search" method="get" action="http://openstreetmap.ru/"
+        <form class="hidden input-group panel-map-search-form" role="search" method="get"
+              action="http://openstreetmap.ru/"
               onsubmit="jQuery(this).children('.search-field').val('Красноуфимск ' + jQuery(this).children('.search-field').val()); return true;">
             <input type="search" class="search-field form-control" placeholder="Найти место…" name="q"
                    title="Напишите адрес, название или ключевое слово">
@@ -189,14 +199,16 @@
 
 <div class="navpanel navpanel-services row" id="navpanel-services">
     <div class="col-xs-4 col-sm-2">
-    <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
+        <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
             <img src="http://ksk1.ru/img/icons/copycentr-icon.png" class="icon">
+
             <div class="features-item-name">Копицентр</div>
         </a>
     </div>
     <div class="col-xs-4 col-sm-2">
-    <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
+        <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
             <img src="http://ksk1.ru/img/icons/browser-icon.png" class="icon">
+
             <div class="features-item-name one-line">Реклама у нас</div>
         </a>
     </div>
@@ -207,20 +219,23 @@
         </a>
     </div>-->
     <div class="col-xs-4 col-sm-2">
-    <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
+        <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
             <img src="http://ksk1.ru/img/icons/webdev-icon.png" class="icon">
+
             <div class="features-item-name">Создание сайтов</div>
         </a>
     </div>
     <div class="col-xs-4 col-sm-2">
-    <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
+        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
             <img src="http://ksk1.ru/img/icons/video-icon.png" class="icon">
+
             <div class="features-item-name">Видео и фотосъемка</div>
         </a>
     </div>
     <div class="col-xs-4 col-sm-2">
-    <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
+        <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
             <img src="http://ksk1.ru/img/icons/gov-icon.png" class="icon">
+
             <div class="features-item-name">Различные госуслуги</div>
         </a>
     </div>
@@ -240,7 +255,7 @@
         <div class="shop-description">интернет-магазин электроники</div>
         <a class="pr-logo"
            href="http://multilavka.ru/?utm_source=all&utm_medium=navpanel&utm_content=top-logo&utm_campaign=pr-block-lg">
-        <img src="http://ksk1.ru/img/market/logo-multilavka-white2.svg">
+            <img src="http://ksk1.ru/img/market/logo-multilavka-white2.svg">
         </a>
 
         <p>
@@ -260,6 +275,7 @@
             <a href="http://multilavka.ru/catalog/dom-i-dacha/parovye-sistemy/?utm_source=all&utm_medium=navpanel&utm_content=steamer-link&utm_campaign=pr-block-lg">Паровые
                 системы</a>
         </p>
+
         <div class="divider"></div>
         <div class="pr-description">
             <a href="http://multilavka.ru/?utm_source=all&utm_medium=navpanel&utm_content=bottom-link&utm_campaign=pr-block-lg">multilavka.ru</a>
@@ -271,18 +287,23 @@
     <div class="col-md-3 col-xs-12 pr-bar e96-bar">
         <div class="pr-logo">
             <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228">
-            <img src="http://ksk1.ru/img/market/logo-e96.png">
+                <img src="http://ksk1.ru/img/market/logo-e96.png">
             </a>
         </div>
         <p>
-            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fkitchen_appliance/large/gazovye_plity">Газовые плиты</a>
+            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fkitchen_appliance/large/gazovye_plity">Газовые
+                плиты</a>
             <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fkitchen_appliance/crockery">Посуда</a>
-            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fbuilt_in">Встраиваемая техника</a><br class="hidden-xs hidden-md hidden-lg">
-            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Favto/tires_and_wheels">Шины и диски</a>
-            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Favto/accumulators">Авто, мото аккумуляторы и зарядные устройства</a><br class="hidden-xs hidden-md hidden-lg">
+            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fbuilt_in">Встраиваемая
+                техника</a><br class="hidden-xs hidden-md hidden-lg">
+            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Favto/tires_and_wheels">Шины и
+                диски</a>
+            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Favto/accumulators">Авто, мото
+                аккумуляторы и зарядные устройства</a><br class="hidden-xs hidden-md hidden-lg">
             <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fsanitary_engineering">Сантехника</a>
             <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fkids">Детские товары</a>
-            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fsporting_goods">Спортивные товары</a>
+            <a href="http://e96.ru/geo/setPosition?regionId=24&cityId=228&returnUrl=%2Fsporting_goods">Спортивные
+                товары</a>
         </p>
         <!--<h3 class="text-center"><a href="http://e96.ksk66.ru/">Акции <strong>e96.ru</strong> в Красноуфимске</a></h3>-->
 
@@ -321,127 +342,38 @@
     </div>
 </div>
 
-
-<!--<div id="popover_shopping_content" style="display: none">
-    <div class='features-content text-center'>
-        <a href='http://multilavka.ru/?utm_source=all&utm_medium=popover&utm_campaign=bad-link'><img src='http://ksk1.ru/img/logo-multilavka.png'></a>
-        <a href='http://djein.ru/'><img src='http://ksk1.ru/img/logo-jane-shop.png'></a>
-        <a href='http://plentycar.ru/contacts/krasnoufimsk/'><img src='http://ksk1.ru/img/logo-plentycar.png'></a>
-        <a href='http://e96.ru/geo/setPosition?regionId=24&amp;cityId=228'><img
-                src='http://ksk1.ru/img/logo-e96.png'></a>
-        <a href='http://vodmag.ru/'><img src='http://ksk1.ru/img/logo-vodmag.png'></a>
-        <a href='http://svetodom.ru/'><img src='http://ksk1.ru/img/logo-svetodom.png'></a>
-        <a href='http://e96.ksk66.ru/'><img src='http://ksk1.ru/img/e96-ksk.png'></a>
-    </div>
-</div>
-<div id="popover_service_content" style="display: none">
-    <div class="features-content text-center" style="padding: 10px;">
-
-        <div class="col-xs-4">
-            <a title="Копицентр" href="http://news.kskmedia.ru/copy/">
-                <img src="http://ksk1.ru/img/icons/copycentr-icon.png" class="icon">
-                <div class="features-item-name">Копицентр</div>
-            </a>
-        </div>
-
-        <div class="col-xs-4">
-            <a title="Реклама на наших сайтах и в газете «Твой Посредник»" href="http://news.kskmedia.ru/reklama-site/">
-                <img src="http://ksk1.ru/img/icons/browser-icon.png" class="icon">
-                <div class="features-item-name one-line">Реклама у нас</div>
-            </a>
-        </div>
-
-        <div class="col-xs-4">
-            <a title="Ремонт ПК и заправка картраджей" href="http://news.kskmedia.ru/fixer/">
-                <img src="http://ksk1.ru/img/icons/fixer-icon.png" class="icon">
-                <div class="features-item-name one-line">Ремонт ПК</div>
-            </a>
-        </div>
-
-        <div class="col-xs-4">
-            <a title="Создание сайтов в Красноуфимске" href="http://news.kskmedia.ru/r-webdev/">
-                <img src="http://ksk1.ru/img/icons/webdev-icon.png" class="icon">
-                <div class="features-item-name">Создание сайтов</div>
-            </a>
-        </div>
-
-        <div class="col-xs-4">
-            <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/video-photo/">
-                <img src="http://ksk1.ru/img/icons/video-icon.png" class="icon">
-                <div class="features-item-name">Видео и фотосъемка</div>
-            </a>
-        </div>
-
-        <div class="col-xs-4">
-            <a title="Видео и фотосъемка, монтаж" href="http://news.kskmedia.ru/emergency/#gov_services">
-                <img src="http://ksk1.ru/img/icons/gov-icon.png" class="icon">
-                <div class="features-item-name">Различные госуслуги</div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div id="popover_info_content" style="display: none">
-    <div class="features-content text-center" style="padding: 10px;">
-        <div class="col-xs-6">
-            <a title="Каталог предприятий, телефонов и адресов" href="http://news.kskmedia.ru/cat/">
-                <img class="icon" src="http://ksk1.ru/img/icons/catalog-icon.png">
-                <div class="features-item-name">Справочник</div>
-            </a>
-        </div>
-        <div class="col-xs-6">
-            <a title="Киноафиша и афиша событий" href="http://news.kskmedia.ru/agenda/">
-                <img src="http://ksk1.ru/img/icons/agenda-icon.png" class="icon">
-                <div class="features-item-name">Афиша</div>
-            </a>
-        </div>
-        <div class="col-xs-6">
-            <a title="Карта Красноуфимска и окрестностей" href="http://ksk66.ru/karta.html">
-                <img src="http://ksk1.ru/img/icons/map-icon.png" class="icon">
-                <div class="features-item-name">Карта</div>
-            </a>
-        </div>
-        <div class="col-xs-6">
-            <a title="Расписание автобусов и ж/д" href="http://ksk66.ru/timetable.html"><img class="icon" src="http://ksk1.ru/img/icons/timetable-icon.png">
-                <div class="features-item-name">Расписание</div>
-            </a>
-        </div>
-    </div>
-</div>
--->
-
 <script>
- //TODO: отрефакторить, заменить на CSS вообще.
-     (function(){
-         var url = document.location.href,
-             ob = /^[http:\/\/]+ob/,
-             news = /^[http:\/\/]+news/,
-             oldnews = /^[http:\/\/]+ksk66/,
-             cat = /cat/,
-             timetable = /timetable/,
-             karta = /karta/,
-             copy = /copy/,
-             reklama = /r-site/,
-             agenda = /agenda/,
-             body = document.getElementsByTagName("body")[0];
+    //TODO: отрефакторить, заменить на CSS вообще.
+    (function () {
+        var url = document.location.href,
+//                ob = /^[http:\/\/]+ob/,
+                news = /^[http:\/\/]+news/,
+//                oldnews = /^[http:\/\/]+ksk66/,
+                cat = /cat/,
+                timetable = /timetable/,
+                karta = /karta/,
+                copy = /copy/,
+                reklama = /r-site/,
+                agenda = /agenda/,
+                body = document.getElementsByTagName("body")[0];
 
 
-             if (url== "http://news.kskmedia.ru/" || url.match(oldnews)) {
-                 body.classList.add('news');
-             } else if(url.match(ob)) {
-                 body.classList.add('ob');
-             } else if (url.match(cat)){
-                body.classList.add('cat');
-             } else if (url.match(reklama)){
-                body.classList.add('site-pr');
-             } else if (url.match(agenda)){
-                body.classList.add('agenda');
-             } else if (url.match(karta)){
-                body.classList.add('karta');
-             } else if (url.match(copy)){
-                body.classList.add('copy');
-             } else if (url.match(timetable)){
-                body.classList.add('timetable');
-         }
+        if (url == "http://news.kskmedia.ru/" || url.match(news)) {
+            body.classList.add('news');
+//        } else if (url.match(ob)) {
+//            body.classList.add('ob');
+        } else if (url.match(cat)) {
+            body.classList.add('cat');
+        } else if (url.match(reklama)) {
+            body.classList.add('site-pr');
+        } else if (url.match(agenda)) {
+            body.classList.add('agenda');
+        } else if (url.match(karta)) {
+            body.classList.add('karta');
+        } else if (url.match(copy)) {
+            body.classList.add('copy');
+        } else if (url.match(timetable)) {
+            body.classList.add('timetable');
+        }
     })();
 </script>
