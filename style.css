@@ -696,6 +696,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping a:hover { background-color:#ececec; }
 
+#navpanel-shopping .pr-bar { padding-right: 10px; padding-left: 10px; }
+
 #navpanel-shopping .pr-bar.multilavka-bar { background-color: #FF3334; }
 
 #navpanel-shopping .pr-bar.multilavka-bar .shop-description { color: #fff; text-align: center; opacity: 0.8; margin-top: 9px; }
@@ -745,13 +747,13 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .e96-bar h3 a:focus { background-color: #eaeaea; text-decoration: none;  }
 
 
-#navpanel-shopping .pr-bar.col-md-3 { padding: 0; }
+#navpanel-shopping .pr-bar.sm-bar-shops { padding: 0 }
 
-#navpanel-shopping .pr-bar.col-md-3 .shop-row-1 { max-height: 135px; padding: 0; width: 50%; margin-bottom: 10px; }
+#navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { max-height: 135px; padding: 0; width: 33.33333333%; }
 
-#navpanel-shopping .pr-bar.col-md-3 .shop-row-1:last-child { margin: 0; }
+#navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1:last-child { margin: 0; }
 
-#navpanel-shopping .pr-bar.col-md-3 .shop-row-1 img { width: 100%; }
+#navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
 
 #navpanel-services a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
 
