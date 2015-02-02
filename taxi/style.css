@@ -13,6 +13,8 @@ nav.navbar { margin: 0 0 10px !important; }
 
 .form-horizontal, .form-inline { padding-bottom: 0; }
 
+footer { margin: 0 !important; }
+
 body.page-template-page-custom-taxi .search-form,
 body.page-template-page-custom-taxi .user-panel { display: none; }
 
