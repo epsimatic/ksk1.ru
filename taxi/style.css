@@ -15,8 +15,6 @@ nav.navbar { margin: 0 !important; }
 
 .form-horizontal, .form-inline { padding-bottom: 0; }
 
-footer { margin: 0 !important; }
-
 body.page-template-page-custom-taxi .search-form,
 body.page-template-page-custom-taxi .user-panel { display: none; }
 
@@ -151,7 +149,7 @@ input.btn-block + img { position: absolute; z-index: 3; top: 0; }
 
 .taxi-content > div { padding: 10px 0; }
 
-footer { background-color: #161616; margin: 0 -10px !important; background-image: none; }
+footer { background-color: #161616; margin: 0 !important; background-image: none; }
 
 footer h5,
 footer h4 a,
