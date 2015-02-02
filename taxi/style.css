@@ -1,5 +1,13 @@
 /*кастыли*/
-nav.navbar { margin: 0 -10px !important; }
+nav.navbar { margin: 0 0 10px !important; }
+
+.container { padding: 0; }
+
+.navpanel.row { margin: 0; }
+
+.search-form { right: 28px; top: 138px; }
+
+.search-form button { position: relative; right: -32px; top: -40px; }
 
 .form-horizontal .form-group { margin-left: 0; margin-right: 0; }
 
@@ -20,7 +28,7 @@ form { padding: 10px 20px; }
 
 .wpcf7-form { padding-bottom: 0; }
 
-.container { padding: 0; }
+
 
 .taxi-header {  background-color: #161616; }
 
@@ -211,6 +219,10 @@ footer h4 a:hover { color: #ffd401; }
 /* Стили для размера -md- */
 @media (min-width: 992px) {
 
+    .search-form { top: 138px; }
+
+    .search-form button { right: -30px; }
+
     .taxi-header .taxi-logo { left: 80px; top: 30px; }
 
     .taxi-logo img { max-width: 330px; }
@@ -236,6 +248,8 @@ footer h4 a:hover { color: #ffd401; }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+
+    .search-form { right: 27px; }
 
     .taxi-header .taxi-logo { left: 120px; }
 
