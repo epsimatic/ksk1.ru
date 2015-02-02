@@ -3880,12 +3880,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-feature .arrow { left: 42%; }
 
-    #navpanel-shopping .pr-bar.multilavka-bar,
-    #navpanel-shopping.active { max-height: 405px; }
+    #navpanel-shopping .pr-bar.multilavka-bar { max-height: 405px; }
 
     #navpanel-shopping .e96-bar p a { margin-bottom: 7px; line-height: 1.4em; }
-
-    /*#navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-bottom: 10px; font-size: 16px; }*/
 
     #navpanel-shopping .pr-bar.multilavka-bar .pr-logo img { width: 63%; }
 
