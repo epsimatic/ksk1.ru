@@ -758,7 +758,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .e96-bar h3 a:focus { background-color: #eaeaea; text-decoration: none;  }
 
 
-#navpanel-shopping .pr-bar.sm-bar-shops { padding: 0; margin-right: 1%; }
+#navpanel-shopping .pr-bar.sm-bar-shops { padding: 0; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { max-height: 135px; padding: 0; width: 50%; }
 
