@@ -758,7 +758,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .e96-bar h3 a:focus { background-color: #eaeaea; text-decoration: none;  }
 
 
-#navpanel-shopping .pr-bar.sm-bar-shops { padding: 0 }
+#navpanel-shopping .pr-bar.sm-bar-shops { padding: 0; margin-right: 1%; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { max-height: 135px; padding: 0; width: 50%; }
 
@@ -3809,9 +3809,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .ozon-bar { border-bottom: none; }
 
-    #navpanel-shopping .pr-bar.multilavka-bar { width: 41.6%; height: auto; }
+    #navpanel-shopping .pr-bar.multilavka-bar { margin-left: 1%; width: 39.6666%; height: auto; }
 
-    #navpanel-shopping.active { border: none; background-color: #fcfcfc; }
+    #navpanel-shopping.active { border: none; background-color: #fff; }
 
     #navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-top: 13px; margin-bottom: 5px; }
 
