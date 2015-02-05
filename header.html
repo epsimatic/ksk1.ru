@@ -376,7 +376,7 @@
                 body = document.getElementsByTagName("body")[0];
 
 
-        if (url == "http://news.kskmedia.ru/" || url.match(news)) {
+        if (/*url == "http://news.kskmedia.ru/" ||*/ url.match(news)) {
             body.classList.add('news');
 //        } else if (url.match(ob)) {
 //            body.classList.add('ob');
@@ -392,6 +392,8 @@
             body.classList.add('copy');
         } else if (url.match(timetable)) {
             body.classList.add('timetable');
+        } else if (url.match(taxi)) {
+            body.classList.add('taxi');
         }
     })();
 </script>
