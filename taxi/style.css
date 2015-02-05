@@ -1,7 +1,8 @@
 /*кастыли*/
 nav.navbar { margin: 0 !important; }
+/*nav.navbar { margin: 0 -10px !important; }*/
 
-.container { padding: 0; }
+.container { padding: 0; } /*можно убрать когда нормальная шапка будет*/
 
 .navpanel.row { margin: 0; }
 
