@@ -3809,7 +3809,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
 
-    #navpanel-shopping { margin-left: 0; margin-right: 0; }
+    #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
+
+    body.news #navpanel-shopping { margin-left: 0; margin-right: 0; }
 
     #navpanel-shopping .ozon-bar { border-bottom: none; }
 
