@@ -364,9 +364,6 @@
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
         var url = document.location.href,
-//                ob = /^[http:\/\/]+ob/,
-                news = /^[http:\/\/]+news/,
-//                oldnews = /^[http:\/\/]+ksk66/,
                 cat = /cat/,
                 timetable = /timetable/,
                 karta = /karta/,
@@ -375,12 +372,7 @@
                 agenda = /agenda/,
                 body = document.getElementsByTagName("body")[0];
 
-
-        if (url == "http://news.kskmedia.ru/" || url.match(news)) {
-            body.classList.add('news');
-//        } else if (url.match(ob)) {
-//            body.classList.add('ob');
-        } else if (url.match(cat)) {
+        if (url.match(cat)) {
             body.classList.add('cat');
         } else if (url.match(reklama)) {
             body.classList.add('site-pr');
