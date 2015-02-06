@@ -2981,26 +2981,26 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 
 /* Оформление фильмов */
-.movie-brief {height: 150px;}
+.movie-brief { height: 150px; }
 
 .panel-event .event-thumb,
-.movie-brief .movie-poster > a {position:relative;}
+.movie-brief .movie-poster { position:relative; }
 
-.movie-brief .movie-poster > a .certification,
-.panel-event .event-thumb .event-certification {background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: -50px; color: #333333; font-size: 12px; left: 0; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff;}
+.movie-brief .movie-poster .certification,
+.panel-event .event-thumb .event-certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: 5px; color: #333333; font-size: 12px; left: 10px; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff; }
 
-.movie-brief .movie-poster {padding-right: 0;}
+.movie-brief .movie-poster { padding-right: 0; }
 
-.movie-poster img {max-width: 100%}
+.movie-poster img { max-width: 100% }
 
 .panel-event .event-heading a,
 .tax-movie #movie-col-right h2,
-.movie-brief .movie-info a > h4.movie-title {color: #0b97e4; font-weight: 600; letter-spacing: 0.01em;}
+.movie-brief .movie-info a > h4.movie-title { color: #0b97e4; font-weight: 600; letter-spacing: 0.01em; }
 
 .panel-event .event-heading a:hover,
-.movie-brief .movie-info a:hover > h4.movie-title {color: #0080c7;}
+.movie-brief .movie-info a:hover > h4.movie-title { color: #0080c7; }
 
-.movie-brief .movie-info .production-flag {padding-right: 2px;}
+.movie-brief .movie-info .production-flag { padding-right: 2px; }
 
 .movie-brief .row {margin-bottom: 10px !important;}
 
@@ -3078,6 +3078,8 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 .main-content-inner .kinopoisk-link {padding-left: 4px;}
 
 #movie-col-left .btn-group {margin-top: 20px;}
+
+#movie-col-left .certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; top: 20px; color: #333333; padding: 0 7px; position: absolute; text-shadow: 0 0 3px #ffffff; font-size: 16px; }
 
 #movie-col-right .production-flag {padding-right: 2px;}
 
