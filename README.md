@@ -1,7 +1,9 @@
 ksk1.ru
 =======
 
-ksk66.ru shared libraries
-* Editable with PHPStorm
-* Now shared!
+Общие библиотеки «Инфотек»
 
+* **header.html, footer.html** — общие шапка и подвал
+* **style.css** — общий стиль
+* **libs/** — библиотеки
+* *TODO: дописать*
