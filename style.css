@@ -771,7 +771,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services a:hover,
 .navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services > div { padding: 0; }
+.navpanel-services > div { padding: 10px 0 0; }
+
+.navpanel-services .icon-place { padding: 0; }
 
 .news .container > #header .navpanel.row { margin: 0; }
 
@@ -3638,6 +3640,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 280px; }
 
+    .navpanel-services > div { padding: 0 0 0 10px; }
+
+    .navpanel-services .icon-place { padding: 0; }
+
+    /*.navpanel-services a { padding: 8px; }*/
+
+    .navpanel-services a  > .features-item-name { font-size: 0.86em; line-height: 1.25em; margin: 0 -3px; }
+
+    .navpanel img.icon { margin-bottom: 6px; }
+
     .navpanel .cat,
     .navpanel #weather-panel { padding: 0 10px;  }
 
@@ -3733,8 +3745,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping.active { max-height: 1500px; }
 
-    #navpanel-services img.icon,
-    #navpanel-info img.icon { width: 100%; }
+    .navpanel-services img.icon,
+    .navpanel-info img.icon { width: 100%; }
 
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 33%; }
@@ -3800,6 +3812,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat a.category { padding: 3px 7px 5px; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
+
+    .navpanel-services a { padding: 8px; }
 
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
@@ -3896,8 +3910,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-weight: 400;}
 
-    #navpanel-services img.icon,
-    #navpanel-info img.icon { width: 80%; }
+    .navpanel-services .icon-place { padding: 3px; }
+
+    .navpanel-services a { padding: 7px;}
+
+    /*.navpanel-services a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
