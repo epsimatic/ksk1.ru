@@ -133,12 +133,12 @@
                 <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
             </span>
         </form>
-        <a href="http://news.kskmedia.ru/cat/gov/" class="category">Госорганы</a>
+        <a class="category" href="http://news.kskmedia.ru/cat/gov/">Госорганы</a>
         <a class="category" href="http://news.kskmedia.ru/cat/medicare/">Медицина</a>
-        <a href="http://news.kskmedia.ru/cat/education/" class="category">Образование</a>
-        <a href="http://news.kskmedia.ru/cat/education/theater/" class="category">Культура</a>
-        <a href="http://news.kskmedia.ru/cat/education/fitness/" class="category">Спорт</a>
-        <a href="http://news.kskmedia.ru/cat/gov/cross-2/" class="category">Общество</a>
+        <a class="category" href="http://news.kskmedia.ru/cat/education/">Образование</a>
+        <a class="category" href="http://news.kskmedia.ru/cat/education/theater/">Культура</a>
+        <a class="category" href="http://news.kskmedia.ru/cat/education/fitness/">Спорт</a>
+        <a class="category" href="http://news.kskmedia.ru/cat/gov/cross-2/">Общество</a>
         <a class="category" href="http://news.kskmedia.ru/cat/manufature/">Производство</a>
         <a class="category" href="http://news.kskmedia.ru/cat/trade/">Торговля</a>
         <a class="category" href="http://news.kskmedia.ru/cat/transport/">Транспорт</a>
@@ -286,7 +286,7 @@
     <div class="col-xs-12 col-sm-6 col-md-3 pr-bar ozon-bar">
         <div class="pr-logo">
             <a href="http://ozon.ru/">
-                <img src="http://ksk1.ru/img/market/logo-ozon.png">
+                <img alt="Ozon.ru" src="http://ksk1.ru/img/market/logo-ozon.png">
             </a>
             <ul class="list-group list">
                 <li class="list-group-item"><a href="http://www.ozon.ru/context/div_kid/">Детям и мамам</a></li>
@@ -364,9 +364,6 @@
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
         var url = document.location.href,
-//                ob = /^[http:\/\/]+ob/,
-                news = /^[http:\/\/]+news/,
-//                oldnews = /^[http:\/\/]+ksk66/,
                 cat = /cat/,
                 timetable = /timetable/,
                 karta = /karta/,
@@ -375,12 +372,7 @@
                 agenda = /agenda/,
                 body = document.getElementsByTagName("body")[0];
 
-
-        if (url == "http://news.kskmedia.ru/" || url.match(news)) {
-            body.classList.add('news');
-//        } else if (url.match(ob)) {
-//            body.classList.add('ob');
-        } else if (url.match(cat)) {
+        if (url.match(cat)) {
             body.classList.add('cat');
         } else if (url.match(reklama)) {
             body.classList.add('site-pr');
