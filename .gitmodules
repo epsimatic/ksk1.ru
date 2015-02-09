@@ -7,3 +7,6 @@
 [submodule "lib/jquery"]
 	path = lib/jquery
 	url = https://github.com/jquery/jquery
+[submodule "lib/leaflet"]
+	path = lib/leaflet
+	url = https://github.com/Leaflet/Leaflet
