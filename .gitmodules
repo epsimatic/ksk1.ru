@@ -4,3 +4,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/twbs/bootstrap
+[submodule "lib/jquery"]
+	path = lib/jquery
+	url = https://github.com/jquery/jquery
