@@ -10,3 +10,6 @@
 [submodule "lib/leaflet"]
 	path = lib/leaflet
 	url = https://github.com/Leaflet/Leaflet
+[submodule "lib/autonumeric"]
+	path = lib/autonumeric
+	url = https://github.com/BobKnothe/autoNumeric
