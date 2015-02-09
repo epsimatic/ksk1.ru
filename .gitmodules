@@ -1,5 +1,5 @@
 [submodule "font-awesome"]
-	path = font-awesome
+	path = lib/font-awesome
 	url = https://github.com/FortAwesome/Font-Awesome
 [submodule "lib/jquery"]
 	path = lib/jquery
