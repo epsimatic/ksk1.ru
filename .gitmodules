@@ -1,9 +1,6 @@
 [submodule "font-awesome"]
 	path = font-awesome
 	url = https://github.com/FortAwesome/Font-Awesome
-[submodule "bootstrap"]
-	path = bootstrap
-	url = https://github.com/twbs/bootstrap
 [submodule "lib/jquery"]
 	path = lib/jquery
 	url = https://github.com/jquery/jquery
@@ -13,3 +10,6 @@
 [submodule "lib/autonumeric"]
 	path = lib/autonumeric
 	url = https://github.com/BobKnothe/autoNumeric
+[submodule "lib/bootstrap"]
+	path = lib/bootstrap
+	url = https://github.com/twbs/bootstrap
