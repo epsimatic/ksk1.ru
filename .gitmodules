@@ -12,4 +12,4 @@
 	url = https://github.com/BobKnothe/autoNumeric
 [submodule "lib/bootstrap"]
 	path = lib/bootstrap
-	url = https://github.com/twbs/bootstrap
+url=https://github.com/glgc25/bootstrap
