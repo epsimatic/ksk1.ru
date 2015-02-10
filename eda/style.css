@@ -563,8 +563,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .price-wrap { margin-bottom: 0; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0; }
-
-    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations td select { width: 100px; }
+    .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls table.variations td select,
+    .dishes.dishes-col-6 .dish .order-controls table.variations td select { width: 110px; }
 
     .dishes-cat.pizza .dishes.dishes-col-6 .dish .order-controls .quantity { margin-left: 0; }
 
