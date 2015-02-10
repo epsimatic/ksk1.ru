@@ -284,6 +284,10 @@
 //            placement: "bottom"
 //        });
         jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
+        if ($(window).width() < 750) {
+            $("#vote_xs").html($("#panel-vote-xs").html());
+            $("#panel-vote-xs").remove();
+        }
     });
 </script>
 <!-- Gismeteo informer END -->
