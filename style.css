@@ -777,6 +777,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .shop-link > img { width: 100%; }
 
+.navpanel-services .town-services { padding: 0; }
+
 .navpanel-services .panel.panel-cat { padding: 0; }
 
 .news .container > #header .navpanel.row { margin: 0; }
@@ -3705,6 +3707,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .weather-temp-sm .weather-label {top: -44px; left: 39px; font-size: 61%;}
 
     .weather-temp-sm .weather-temp {top: -52px; font-size: 19px; left: -2px;}
+
+    .navpanel-services .town-services { padding-right: 10px; }
 
     #navpanel-shopping { margin-left: 10px; margin-right: 10px; }
 
