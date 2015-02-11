@@ -766,10 +766,12 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
 
-.navpanel-services a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
+.navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
 
-.navpanel-services a:hover,
-.navpanel-services a:focus { background-color: #eee; text-decoration: none; }
+.navpanel-services .icon-place a:hover,
+.navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
+
+/*.navpanel-services a.list-group-item {}*/
 
 .navpanel-services > div { padding: 0; }
 
