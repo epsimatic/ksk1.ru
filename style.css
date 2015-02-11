@@ -775,19 +775,24 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .icon-place { padding: 0; }
 
-.panel-food-delivery > h2 { font-size: 22px; font-weight: 600; text-align: center; text-transform: uppercase; }
+.panel-food-delivery { margin-bottom: 15px; }
 
-.navpanel-services .shop-link { padding: 10px 30px; }
+.panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; }
+
+.navpanel-services .shop-link { padding: 10px 15px; }
+
+.navpanel-services a.shop-link:hover,
+.navpanel-services a.shop-link:focus { background-color: #f7f7f7; }
 
 .navpanel-services .shop-link > img { width: 100%; }
 
 .navpanel-services .town-services { padding: 0; }
 
-.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; }
+.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 .navpanel-services .panel-cat .panel-heading { padding: 0; }
 
-.navpanel-services .town-services .panel-cat > .panel-heading > .row > div > h3.panel-title { font-size: 17px; padding: 10px 0 11px; text-align: center; }
+.navpanel-services .town-services .panel-cat > .panel-heading > .row > div > h3.panel-title { font-size: 17px; padding: 10px 0 11px; text-align: center; background-color: #fff; }
 
 .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 0.9em; padding: 5px 10px; }
 
@@ -3804,9 +3809,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
 
-    .navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; width: 49%; }
+    /*.navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; width: 49%; }*/
 
-    .navpanel-services .panel.panel-cat:nth-child(2) { margin: 0 0 10px; }
+    .navpanel-services .panel.panel-cat { margin: 0 0 15px; }
+
+    .navpanel-services .shop-link { padding: 7px 27px; }
+
+    .panel-food-delivery { margin-bottom: 10px; }
 
     #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
 
@@ -3894,6 +3903,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-services .icon-place { padding: 3px; }
 
     .navpanel-services a { padding: 7px;}
+
+    .navpanel-services .shop-link { padding: 5px 50px; }
 
     /*.navpanel-services a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
 
