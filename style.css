@@ -771,11 +771,13 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .icon-place a:hover,
 .navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 0; margin-top: 10px; text-align: center; text-transform: uppercase; }
+.navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 5px; margin-top: 10px; text-align: center; text-transform: uppercase; }
 
 .navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
 
 .navpanel-services .icon-place { padding: 0; }
+
+.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; padding: 0; }
 
 .navpanel-services .town-services .add-ob-row { margin: 0; background-color: #e1f5fe; }
 
@@ -3922,7 +3924,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .shop-link { padding: 5px 50px; }
 
-    /*.navpanel-services .icon-place a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
+    /*.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; }*/
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
