@@ -771,15 +771,25 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .icon-place a:hover,
 .navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services .list-group-item > .badge { position: absolute; right: 10px; }
+.navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
 
 .navpanel-services .icon-place { padding: 0; }
+
+.panel-food-delivery > h2 { font-size: 22px; font-weight: 600; text-align: center; text-transform: uppercase; }
+
+.navpanel-services .shop-link { padding: 10px 30px; }
 
 .navpanel-services .shop-link > img { width: 100%; }
 
 .navpanel-services .town-services { padding: 0; }
 
-.navpanel-services .panel.panel-cat { padding: 0; }
+.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; }
+
+.navpanel-services .panel-cat .panel-heading { padding: 0; }
+
+.navpanel-services .town-services .panel-cat > .panel-heading > .row > div > h3.panel-title { font-size: 17px; padding: 10px 0 11px; text-align: center; }
+
+.navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 0.9em; padding: 5px 10px; }
 
 .news .container > #header .navpanel.row { margin: 0; }
 
