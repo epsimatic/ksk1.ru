@@ -50,6 +50,10 @@ header .btn-link {margin-top: 7px; color: #333333;}
 
 header .btn-group {margin-top: 10px;}
 
+/* <editor-fold desc="Хитрый трюк с логотипом и спецплощадкой"> */
+#header > .yummies:first-child,
+#header > a:first-child > .yummies { display: none; }
+/* </editor-fold> */
 
 
 .row_header {
