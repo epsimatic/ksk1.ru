@@ -777,6 +777,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .shop-link > img { width: 100%; }
 
+.navpanel-services .panel.panel-cat { padding: 0; }
+
 .news .container > #header .navpanel.row { margin: 0; }
 
 .navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
@@ -3788,7 +3790,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
 
-    .navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; padding: 0; width: 49%; }
+    .navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; width: 49%; }
 
     .navpanel-services .panel.panel-cat:nth-child(2) { margin: 0 0 10px; }
 
