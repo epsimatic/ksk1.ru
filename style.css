@@ -777,7 +777,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .panel-food-delivery { margin-bottom: 15px; }
 
-.panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; }
+.panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
 
 .navpanel-services .shop-link { padding: 10px 15px; }
 
@@ -788,7 +788,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .town-services { padding: 0; }
 
-.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-heading { padding: 0; }
 
@@ -3628,7 +3628,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place { padding: 0; }
 
-    .navpanel-services a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
+    .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
     .navpanel img.icon { margin-bottom: 6px; }
 
@@ -3723,7 +3723,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .weather-temp-sm .weather-temp {top: -52px; font-size: 19px; left: -2px;}
 
-    .navpanel-services .town-services { padding-right: 10px; }
+    /*.navpanel-services .town-services { padding-right: 10px; padding-left: 10px; }*/
+
+    .navpanel-services .panel.panel-cat { width: 47%; margin: 0 1.5% 10px; }
 
     #navpanel-shopping { margin-left: 10px; margin-right: 10px; }
 
@@ -3811,9 +3813,17 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     /*.navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; width: 49%; }*/
 
-    .navpanel-services .panel.panel-cat { margin: 0 0 15px; }
+    /*.navpanel-services .panel.panel-cat { margin: 0 0 15px; }*/
+
+    .navpanel-services .icon-place a { padding: 12px; }
+
+    .navpanel-services .icon-place a > .features-item-name { font-size: 1em; line-height: 1.35em; }
 
     .navpanel-services .shop-link { padding: 7px 27px; }
+
+    .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 1em; padding: 6px 12px; }
+
+    .navpanel-services .town-services a.list-group-item > .badge { border-radius: 0.35em; padding: 0.35em 0.75em; right: 12px; }
 
     .panel-food-delivery { margin-bottom: 10px; }
 
@@ -3902,11 +3912,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place { padding: 3px; }
 
-    .navpanel-services a { padding: 7px;}
+    .navpanel-services .icon-place a { padding: 7px;}
 
     .navpanel-services .shop-link { padding: 5px 50px; }
 
-    /*.navpanel-services a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
+    /*.navpanel-services .icon-place a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
