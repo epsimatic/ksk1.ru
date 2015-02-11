@@ -766,12 +766,12 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
 
-.navpanel-services a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
+.navpanel-services a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
 
 .navpanel-services a:hover,
 .navpanel-services a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services > div { padding: 10px 0 0; }
+.navpanel-services > div { padding: 0; }
 
 .navpanel-services .icon-place { padding: 0; }
 
@@ -3644,9 +3644,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place { padding: 0; }
 
-    /*.navpanel-services a { padding: 8px; }*/
-
-    .navpanel-services a  > .features-item-name { font-size: 0.86em; line-height: 1.25em; margin: 0 -3px; }
+    .navpanel-services a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
     .navpanel img.icon { margin-bottom: 6px; }
 
@@ -3812,8 +3810,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat a.category { padding: 3px 7px 5px; }
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
-
-    .navpanel-services a { padding: 8px; }
 
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
