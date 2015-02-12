@@ -3808,8 +3808,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .tocify {width: 230px;}
 
-    .affix { width: 280px !important; }
-
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
     .news-slide-block img {max-height: 144px;}
@@ -3926,6 +3924,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /*.tocify {width: 172px;}*/
 
     .tocify {width: 280px;}
+
+    .affix { width: 280px !important; }
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
