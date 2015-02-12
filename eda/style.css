@@ -120,6 +120,8 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .cart.shop_table { position: relative; }
 
+.shop_table .item-variation { display: inline-block; background-color: #a7ffeb; padding: 1px 5px 3px; border-radius: 3px; font-size: 90%; }
+
 .restoraunt-info { margin: 0 10px; padding: 30px 30px 30px 20px; }
 
 .restoraunt-logo { width: 180px; margin-right: 25px; }
