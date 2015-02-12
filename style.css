@@ -50,6 +50,24 @@ header .btn-link {margin-top: 7px; color: #333333;}
 
 header .btn-group {margin-top: 10px;}
 
+/* <editor-fold desc="Хитрый трюк с логотипом и спецплощадкой"> */
+#header > .yummies,
+#header > a > .yummies { display: none; }
+
+.header-logo-col:first-child {
+    width: 100%;
+}
+
+.header-logo-col:first-child .header-logo img {
+    max-height: 40px;
+    max-width: 60px;
+    top: -6px;
+    left: 0;
+}
+
+.header-logo-col:first-child .header-logo #sublogo { height: 30px; max-width: 129px; left: 52px; position: absolute; bottom: -29px; }
+
+/* </editor-fold> */
 
 
 .row_header {
@@ -59,13 +77,13 @@ header .btn-group {margin-top: 10px;}
     font-size: 18px;
     height: auto;
     position: relative;
-    min-height: 110px;
+    min-height: 60px;
     text-align: center;
 }
 
 /* Выровнять элементы в шапке по вертикали и горизонтали */
 
-.row_header > div { text-align: center; white-space: nowrap; }
+.row_header > div { white-space: nowrap; }
 
 .row_header > div > * { display: inline-block; vertical-align: middle; }
 
@@ -115,7 +133,7 @@ header .btn-group {margin-top: 10px;}
     width: 100%;
 }
 
-.header-logo img { position: absolute; top: 10px ; left: 0; max-height: 98px; }
+.header-logo img { position: absolute; top: 10px; left: 0; max-height: 98px; }
 
 /* </editor-fold> */
 
@@ -678,7 +696,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
-.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
+.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0 20px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
 
 .navpanel .btn-collapse:hover, .navpanel .btn-collapse:focus { background-color: #b0bec5 !important; color: #ffffff; text-decoration: none; }
 
@@ -765,14 +783,43 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
 
-.navpanel-services a { color: #333; display: block; font-size: 13px; padding: 10px; text-align: center; }
+.navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
 
-.navpanel-services a:hover,
-.navpanel-services a:focus { background-color: #eee; text-decoration: none; }
+.navpanel-services .icon-place a:hover,
+.navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
 
-.navpanel-services > div { padding: 10px 0 0; }
+.navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 5px; margin-top: 10px; text-align: center; text-transform: uppercase; }
+
+.navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
 
 .navpanel-services .icon-place { padding: 0; }
+
+.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; padding: 0; }
+
+.navpanel-services .town-services .add-ob-row { margin: 0; background-color: #e1f5fe; }
+
+.navpanel-services .town-services .add-ob-row span { color: #666; padding: 6px 15px; }
+
+.panel-food-delivery { margin-bottom: 15px; }
+
+.panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
+
+.navpanel-services .shop-link { padding: 10px 15px; }
+
+.navpanel-services a.shop-link:hover,
+.navpanel-services a.shop-link:focus { background-color: #f7f7f7; }
+
+.navpanel-services .shop-link > img { width: 100%; }
+
+.navpanel-services .town-services { padding: 0; }
+
+.navpanel-services .panel.panel-cat { padding: 0; margin-bottom: 10px; }
+
+.navpanel-services .panel-cat .panel-heading { padding: 0; }
+
+.navpanel-services .town-services .panel-cat > .panel-heading > .row > div > h3.panel-title { font-size: 17px; padding: 10px 0 11px; text-align: center; background-color: #fff; }
+
+.navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 0.9em; padding: 5px 10px; }
 
 .news .container > #header .navpanel.row { margin: 0; }
 
@@ -886,7 +933,7 @@ body.news .navpanel-info #category-other .dropdown-menu { top: 41%; left: 0; }
 .navpanel #panel-map { transition: height 0.5s ease 0s; }
 
 
-#sublogo { width: 100%; height: 33px; bottom: -8px; max-width: 130px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-color: transparent; position: relative;  }
+#sublogo { width: 100%; height: 33px; bottom: -78px; max-width: 130px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-color: transparent; position: relative;  }
 
 body.news #sublogo { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MCAyMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNzAgMjEiPjxnIGZpbGw9IiMwMDkxRUEiPjxwYXRoIGQ9Ik0wIDE1LjV2LTEwaDEuM3Y0LjRoNXYtNC40aDEuM3YxMGgtMS4zdi00LjRoLTV2NC40aC0xLjN6TTE0LjkgNS4zYzEuNiAwIDIuOS42IDMuOSAxLjcuOSAxIDEuMyAyLjIgMS4zIDMuNiAwIDEuNi0uNSAyLjktMS42IDMuOWwtLjYuNWMtLjguNS0xLjguOC0yLjguOC0xLjcgMC0zLS42LTQtMS43LS45LTEtMS4zLTIuMi0xLjMtMy42IDAtMS41LjUtMi44IDEuNi0zLjguOS0xIDIuMS0xLjQgMy41LTEuNHptMCAxLjJjLTEuMyAwLTIuMy41LTMgMS40LS40LjYtLjcgMS4yLS44IDEuOXYuNmMwIDEuNC41IDIuNCAxLjUgMy4yLjcuNSAxLjUuOCAyLjUuOCAxLjMgMCAyLjItLjUgMy0xLjQuNS0uNy44LTEuNS44LTIuNSAwLTEuMy0uNS0yLjQtMS40LTMuMi0uNS0uNC0xLjItLjctMS45LS44aC0uN3pNMjIuMSAxNS41di0xMGgyLjdjMS4zIDAgMi4yLjIgMi43LjYuNi40LjkgMS4xLjkgMiAwIDEtLjQgMS43LTEuMSAyLjEgMS4xLjUgMS43IDEuMyAxLjcgMi41IDAgMS0uMyAxLjctMSAyLjJsLS4xLjFjLS42LjQtMS41LjUtMi43LjVoLTMuMXptMS40LTUuOWgxLjJjLjkgMCAxLjUtLjEgMS44LS4yLjUtLjQuNy0uOC43LTEuM3MtLjItLjgtLjYtMS4xYy0uMy0uMi0xLS4zLTItLjNoLTEuMnYyLjl6bTAgNC43aDEuNGMxIDAgMS42IDAgMS44LS4xLjIgMCAuMy0uMS40LS4yLjQtLjMuNi0uNi43LS44IDAtLjEuMS0uMy4xLS41IDAtLjUtLjMtMS0uOS0xLjUtLjMtLjItMS0uMy0yLjItLjNoLTEuMnYzLjR6TTM1LjcgNS4zYzEuNiAwIDIuOS42IDMuOSAxLjcuOSAxIDEuMyAyLjIgMS4zIDMuNiAwIDEuNi0uNSAyLjktMS42IDMuOWwtLjYuNWMtLjguNS0xLjguOC0yLjguOC0xLjcgMC0zLS42LTQtMS43LS45LTEtMS4zLTIuMi0xLjMtMy42IDAtMS41LjUtMi44IDEuNi0zLjguOS0xIDItMS40IDMuNS0xLjR6bTAgMS4yYy0xLjMgMC0yLjMuNS0zIDEuNC0uNC42LS43IDEuMi0uOCAxLjl2LjZjMCAxLjQuNSAyLjQgMS41IDMuMi43LjUgMS41LjggMi41LjggMS4zIDAgMi4yLS41IDMtMS40LjUtLjcuOC0xLjUuOC0yLjUgMC0xLjMtLjUtMi40LTEuNC0zLjItLjUtLjQtMS4yLS43LTEuOS0uOGgtLjd6TTUxLjIgMTIuNmgxLjVjLS41LjktLjkgMS41LTEuNSAybC0uMS4xYy0xIC44LTIuMSAxLjEtMy4zIDEuMS0xLjYgMC0yLjktLjUtNC0xLjYtMS0xLTEuNS0yLjItMS41LTMuNiAwLTEuNS41LTIuNyAxLjYtMy44IDEtMSAyLjMtMS40IDMuNy0xLjQgMS42IDAgMi45LjUgMy45IDEuNi40LjQuOC45IDEgMS41di4xaC0xLjVjLS44LTEuMy0xLjktMi0zLjUtMi0xLjIgMC0yLjMuNS0zIDEuNC0uNC41LS42IDEtLjggMS41LS4xLjQtLjEuNy0uMSAxLjEgMCAxLjIuNSAyLjIgMS40IDMgLjguNiAxLjYgMSAyLjYgMSAxLjEgMCAyLS40IDIuOC0xLjIuNC0uMy42LS42LjgtLjh6TTU2LjIgMTUuNXYtOC44aC0yLjh2LTEuMmg2LjR2MS4yaC0yLjJ2OC44aC0xLjR6TTYxLjIgMTUuNXYtMTBoMS4zdjguMWw2LjEtOC4xaDEuNHYxMGgtMS4zdi04LjFsLTYuMSA4LjFoLTEuNHoiLz48L2c+PC9zdmc+"); }
 
@@ -2919,7 +2966,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /*TODO: Плавно прятать и показывать кнопку*/
 .affix-top .btn-scroll-up {display: none;}
 
-.affix { top: 0; }
+.affix { top: 0; display: none; }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; /*line-height: 30px;*/}
@@ -3383,41 +3430,6 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 
 .media-hover:hover {z-index: 2; background-color: #f5f5f5;}
 
-
-/* СТИЛИ ДЛЯ УДАЛЕНИЯ*/
-/*
-
-h3.cat-title {
-    color: #0275d3;
-    font-size: 1.7em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 20px 10px 30px 23px;
-    margin: 0;
-}
-
-.cat a.list-group-item {
-    background-color: #fcfcfc;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #f6f7f8;
-    margin-bottom: 1px;
-}
-
-.cat a.list-group-item:hover,
-.cat a.list-group-item:focus {
-    background-color: #f0f1f2;
-    color: #404145;
-    border-left: 1px solid #56c4f4;
-}
-.cat .btn {
-    padding: 10px 25px;
-    margin-right: 10px;
-}
-
-*/
-/* КОНЕЦ СТИЛЕЙ ДЛЯ УДАЛЕНИЯ*/
-
 a.sponsor {background-color: #0275D3; height: 60px;}
 
 a.sponsor:hover,
@@ -3609,7 +3621,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; }
+    .header-logo-col:first-child { width: 33.3333%; }
+
+    .header-logo-col:first-child .header-logo img { max-height: 100%; max-width: 100%; }
+
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
 
     body.news #sublogo { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzcgMTMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDc3IDEzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwMDkxRUEiIGQ9Ik0zMC4zLDkuOFYzLjFoMC45VjZoMy4zVjMuMWgwLjl2Ni43aC0wLjlWNi45aC0zLjN2Mi45SDMwLjN6Ii8+DQoJPHBhdGggZmlsbD0iIzAwOTFFQSIgZD0iTTQwLjIsM2MxLjEsMCwxLjksMC40LDIuNiwxLjFjMC42LDAuNiwwLjksMS40LDAuOSwyLjRjMCwxLjEtMC40LDItMS4xLDIuNmwtMC40LDAuMw0KCQljLTAuNiwwLjQtMS4yLDAuNS0xLjksMC41Yy0xLjEsMC0yLTAuNC0yLjctMS4xYy0wLjYtMC42LTAuOS0xLjQtMC45LTIuNGMwLTEsMC40LTEuOSwxLjEtMi41QzM4LjUsMy4zLDM5LjMsMyw0MC4yLDN6IE00MC4yLDMuOA0KCQljLTAuOCwwLTEuNSwwLjMtMiwwLjljLTAuMywwLjQtMC41LDAuOC0wLjUsMS4zYzAsMC4xLDAsMC4zLDAsMC40YzAsMC45LDAuMywxLjYsMSwyLjFjMC41LDAuNCwxLDAuNSwxLjcsMC41YzAuOCwwLDEuNS0wLjMsMi0xDQoJCWMwLjMtMC41LDAuNS0xLDAuNS0xLjdjMC0wLjktMC4zLTEuNi0wLjktMi4xYy0wLjQtMC4zLTAuOC0wLjUtMS4zLTAuNUM0MC41LDMuOCw0MC40LDMuOCw0MC4yLDMuOHoiLz4NCgk8cGF0aCBmaWxsPSIjMDA5MUVBIiBkPSJNNDUsOS44VjMuMWgxLjhjMC44LDAsMS40LDAuMSwxLjgsMC40YzAuNCwwLjMsMC42LDAuNywwLjYsMS4zYzAsMC42LTAuMiwxLjEtMC43LDEuNA0KCQljMC43LDAuMywxLjEsMC45LDEuMSwxLjZjMCwwLjctMC4yLDEuMi0wLjcsMS41bC0wLjEsMC4xYy0wLjQsMC4yLTEsMC40LTEuOCwwLjRINDV6IE00NS45LDUuOGgwLjhjMC42LDAsMSwwLDEuMi0wLjENCgkJYzAuMy0wLjIsMC41LTAuNSwwLjUtMC44YzAtMC4zLTAuMS0wLjUtMC40LTAuN2MtMC4yLTAuMS0wLjYtMC4yLTEuMy0wLjJoLTAuOFY1Ljh6IE00NS45LDloMC45YzAuNiwwLDEsMCwxLjItMC4xDQoJCWMwLjEsMCwwLjItMC4xLDAuMy0wLjFjMC4yLTAuMiwwLjQtMC40LDAuNC0wLjVjMC0wLjEsMC0wLjIsMC0wLjNjMC0wLjQtMC4yLTAuNy0wLjYtMWMtMC4yLTAuMS0wLjctMC4yLTEuNS0wLjJoLTAuOFY5eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDkxRUEiIGQ9Ik01NC4xLDNjMS4xLDAsMS45LDAuNCwyLjYsMS4xYzAuNiwwLjYsMC45LDEuNCwwLjksMi40YzAsMS4xLTAuNCwyLTEuMSwyLjZsLTAuNCwwLjMNCgkJYy0wLjYsMC40LTEuMiwwLjUtMS45LDAuNWMtMS4xLDAtMi0wLjQtMi43LTEuMWMtMC42LTAuNi0wLjktMS40LTAuOS0yLjRjMC0xLDAuNC0xLjksMS4xLTIuNUM1Mi4zLDMuMyw1My4xLDMsNTQuMSwzeiBNNTQuMSwzLjgNCgkJYy0wLjgsMC0xLjUsMC4zLTIsMC45Yy0wLjMsMC40LTAuNSwwLjgtMC41LDEuM2MwLDAuMSwwLDAuMywwLDAuNGMwLDAuOSwwLjMsMS42LDEsMi4xYzAuNSwwLjQsMSwwLjUsMS43LDAuNWMwLjgsMCwxLjUtMC4zLDItMQ0KCQljMC4zLTAuNSwwLjUtMSwwLjUtMS43YzAtMC45LTAuMy0xLjYtMC45LTIuMWMtMC40LTAuMy0wLjgtMC41LTEuMy0wLjVDNTQuMywzLjgsNTQuMiwzLjgsNTQuMSwzLjh6Ii8+DQoJPHBhdGggZmlsbD0iIzAwOTFFQSIgZD0iTTY0LjQsNy44aDFjLTAuMywwLjYtMC42LDEtMSwxLjNsLTAuMSwwYy0wLjYsMC41LTEuNCwwLjgtMi4yLDAuOGMtMS4xLDAtMi0wLjQtMi43LTEuMQ0KCQljLTAuNi0wLjctMS0xLjUtMS0yLjRjMC0xLDAuNC0xLjgsMS4xLTIuNWMwLjctMC42LDEuNS0xLDIuNS0xYzEuMSwwLDEuOSwwLjQsMi42LDEuMWMwLjMsMC4zLDAuNSwwLjYsMC43LDFjMCwwLDAsMCwwLDAuMWgtMQ0KCQljLTAuNS0wLjktMS4zLTEuMy0yLjMtMS40Yy0wLjgsMC0xLjUsMC4zLTIsMC45Yy0wLjMsMC4zLTAuNCwwLjYtMC41LDFjLTAuMSwwLjItMC4xLDAuNS0wLjEsMC43YzAsMC44LDAuMywxLjUsMC45LDINCgkJYzAuNSwwLjQsMS4xLDAuNiwxLjgsMC42YzAuNywwLDEuNC0wLjMsMS45LTAuOEM2NC4yLDguMiw2NC4zLDgsNjQuNCw3Ljh6Ii8+DQoJPHBhdGggZmlsbD0iIzAwOTFFQSIgZD0iTTY3LjgsOS44VjMuOWgtMS45VjMuMWg0LjN2MC44aC0xLjV2NS44SDY3Ljh6Ii8+DQoJPHBhdGggZmlsbD0iIzAwOTFFQSIgZD0iTTcxLjEsOS44VjMuMWwwLjksMHY1LjRsNC4xLTUuNEg3N3Y2LjdoLTAuOVY0LjRMNzIsOS44SDcxLjF6Ii8+DQo8L2c+DQo8L3N2Zz4NCg=="); }
 
@@ -3639,13 +3656,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 280px; }
 
-    .navpanel-services > div { padding: 0 0 0 10px; }
-
     .navpanel-services .icon-place { padding: 0; }
 
-    /*.navpanel-services a { padding: 8px; }*/
-
-    .navpanel-services a  > .features-item-name { font-size: 0.86em; line-height: 1.25em; margin: 0 -3px; }
+    .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
     .navpanel img.icon { margin-bottom: 6px; }
 
@@ -3699,6 +3712,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .row-yu-half .yu:last-child {padding-left: 5px;}
 
+    .affix {display: block; width: 235px !important; }
+
     .news-slide-block:first-child .media-main-primary {padding-right: 5px;}
 
     .news-slide-block:first-child h4 {margin-top: 0;}
@@ -3740,6 +3755,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .weather-temp-sm .weather-temp {top: -52px; font-size: 19px; left: -2px;}
 
+    /*.navpanel-services .town-services { padding-right: 10px; padding-left: 10px; }*/
+
+    .navpanel-services .panel.panel-cat { width: 47%; margin: 0 1.5% 10px; }
+
     #navpanel-shopping { margin-left: 10px; margin-right: 10px; }
 
     #navpanel-shopping.active { max-height: 1500px; }
@@ -3763,6 +3782,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .header-logo-col:first-child { width: 41.6667%; }
+
+    .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -56px; height: 20px; left: 127px; }
 
     .panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 {padding-left: 10px;}
@@ -3785,8 +3807,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /*.tocify {width: 218px;}*/
 
     .tocify {width: 230px;}
-
-    .affix {display: block}
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
@@ -3812,8 +3832,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
 
-    .navpanel-services a { padding: 8px; }
-
     .weather-temp-sm .weather-label {top: -41px; left: 74px;}
 
     .weather-temp-sm .weather-temp {top: -50px; font-size: 19px; left: 32px;}
@@ -3825,6 +3843,22 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     body.news .navpanel-info #category-other .dropdown-menu { top: 190px; }
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
+
+    /*.navpanel-services .panel.panel-cat { margin: 0 2% 10px 0; width: 49%; }*/
+
+    /*.navpanel-services .panel.panel-cat { margin: 0 0 15px; }*/
+
+    .navpanel-services .icon-place a { padding: 12px; }
+
+    .navpanel-services .icon-place a > .features-item-name { font-size: 1em; line-height: 1.35em; }
+
+    .navpanel-services .shop-link { padding: 7px 27px; }
+
+    .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 1em; padding: 6px 12px; }
+
+    .navpanel-services .town-services a.list-group-item > .badge { border-radius: 0.35em; padding: 0.35em 0.75em; right: 12px; }
+
+    .panel-food-delivery { margin-bottom: 10px; }
 
     #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
 
@@ -3860,6 +3894,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -63px; height: 22px; left: 155px; }
 
     .panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 {padding-left: 22px;}
@@ -3890,6 +3925,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .tocify {width: 280px;}
 
+    .affix { width: 280px !important; }
+
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
     .news-slide-block:nth-child(4) .list-group-item {padding-right: 5px;}
@@ -3911,9 +3948,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place { padding: 3px; }
 
-    .navpanel-services a { padding: 7px;}
+    .navpanel-services .icon-place a { padding: 7px;}
 
-    /*.navpanel-services a > .features-item-name { font-size: .91em; line-height: 1.31em; }*/
+    .navpanel-services .shop-link { padding: 5px 50px; }
+
+    /*.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; }*/
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
