@@ -82,7 +82,7 @@ header .btn-group {margin-top: 10px;}
 
 /* Выровнять элементы в шапке по вертикали и горизонтали */
 
-.row_header > div { text-align: center; white-space: nowrap; }
+.row_header > div { white-space: nowrap; }
 
 .row_header > div > * { display: inline-block; vertical-align: middle; }
 
