@@ -3623,7 +3623,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 @media (min-width: 768px) {
     .header-logo-col:first-child { width: 33.3333%; }
 
-    .header-logo-col:first-child .header-logo img { max-width: 100%; }
+    .header-logo-col:first-child .header-logo img { max-height: 100%; }
 
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
