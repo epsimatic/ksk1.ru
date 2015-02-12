@@ -53,6 +53,19 @@ header .btn-group {margin-top: 10px;}
 /* <editor-fold desc="Хитрый трюк с логотипом и спецплощадкой"> */
 #header > .yummies,
 #header > a > .yummies { display: none; }
+
+.header-logo-col:first-child {
+    width: 100%;
+}
+
+.header-logo-col:first-child .header-logo img {
+    max-height: 40px;
+    top: 10px;
+    left: 0px;
+}
+
+.header-logo-col:first-child .header-logo #sublogo { height: 30px; max-width: 129px; left: 52px; position: relative; bottom: -14px; }
+
 /* </editor-fold> */
 
 
@@ -63,7 +76,7 @@ header .btn-group {margin-top: 10px;}
     font-size: 18px;
     height: auto;
     position: relative;
-    min-height: 110px;
+    min-height: 60px;
     text-align: center;
 }
 
