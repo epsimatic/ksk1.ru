@@ -60,11 +60,11 @@ header .btn-group {margin-top: 10px;}
 
 .header-logo-col:first-child .header-logo img {
     max-height: 40px;
-    top: 10px;
-    left: 0px;
+    top: -6px;
+    left: 0;
 }
 
-.header-logo-col:first-child .header-logo #sublogo { height: 30px; max-width: 129px; left: 52px; position: absolute; bottom: -14px; }
+.header-logo-col:first-child .header-logo #sublogo { height: 30px; max-width: 129px; left: 52px; position: absolute; bottom: -29px; }
 
 /* </editor-fold> */
 
