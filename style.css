@@ -347,8 +347,7 @@ body.single-company .navbar,
 .nav-tabs,.nav-pills {position: relative;}
 
 #pop-btn-shopping a{text-decoration: none;}
-
-.navbar-nav { max-height: 50px; white-space: nowrap;}
+.navbar-nav { white-space: nowrap; }
 
 /*для файла header_2013.html*/
 .karta a [title='Карта Красноуфимска и других городов'],
@@ -2580,6 +2579,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 /* </editor-fold> */
 /* <editor-fold desc="админка объявлений"> */
 .navbar-fixed-top ~ .container { margin-top: 50px; }
+.navbar-item-small { float: left; }
 /* </editor-fold desc="админка объявлений"> */
 /* <editor-fold desc="FAQ"> */
 .news_full {padding: 0;}
