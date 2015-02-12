@@ -329,8 +329,7 @@ body.single-company .navbar,
 .nav-tabs,.nav-pills {position: relative;}
 
 #pop-btn-shopping a{text-decoration: none;}
-
-.navbar-nav { max-height: 50px; white-space: nowrap;}
+.navbar-nav { white-space: nowrap; }
 
 /*для файла header_2013.html*/
 .karta a [title='Карта Красноуфимска и других городов'],
