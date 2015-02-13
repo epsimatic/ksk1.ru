@@ -129,6 +129,13 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
 
 
+.cat-list-container { position: fixed; margin-left: -220px; top: 200px; }
+
+.cat-list-container > .list-group { text-align: right; font-weight: 600; margin-bottom: 0; padding-bottom: 0; }
+
+.cat-list-container .list-group-item { background-color: #F5F5F5; padding: 6px 12px; width: 210px; color: #FF6347; text-transform: uppercase; letter-spacing: 0.04em; }
+
+
 /* <editor-fold desc="Оформление категорий товаров"> */
 
 .dishes-cat { position: relative; padding-bottom: 10px; }
