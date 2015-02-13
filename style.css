@@ -2967,7 +2967,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /*TODO: Плавно прятать и показывать кнопку*/
 .affix-top .btn-scroll-up {display: none;}
 
-.affix { top: 0; display: none; }
+.sidebar .affix { top: 0; display: none; }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; /*line-height: 30px;*/}
@@ -3624,7 +3624,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 @media (min-width: 768px) {
     .header-logo-col:first-child { width: 33.3333%; }
 
-    .header-logo-col:first-child .header-logo img { max-height: 100%; max-width: 100%; }
+    .affix { max-height: 100%; max-width: 100%; }
 
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
@@ -3713,7 +3713,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .row-yu-half .yu:last-child {padding-left: 5px;}
 
-    .affix {display: block; width: 235px !important; }
+    .sidebar .affix {display: block; width: 235px !important; }
 
     .news-slide-block:first-child .media-main-primary {padding-right: 5px;}
 
@@ -3926,7 +3926,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .tocify {width: 280px;}
 
-    .affix { width: 280px !important; }
+    .sidebar .affix { width: 280px !important; }
 
     .panel-news-body .panel-footer .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
