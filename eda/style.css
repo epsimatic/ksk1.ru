@@ -209,7 +209,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 0; margin-top: 12px; text-align: center; overflow: hidden; height: 4.8em; }
 
-.dishes .dish-container.variable h3.item-name { height: 1.4em; white-space: nowrap; text-overflow: ellipsis; }
+.dishes.dishes-col-6 .dish-container.variable h3.item-name { height: 1.4em; white-space: nowrap; text-overflow: ellipsis; }
 
 .dishes .dish .item-description { display: none; }
 
@@ -635,7 +635,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish .item-stuff { height: 195px; }
 
-    .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 275px; }
+    .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 310px; }
 
     .dishes.dishes-col-6 .dish .item-description p { margin: 0; }
 
