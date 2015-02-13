@@ -3737,7 +3737,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .header-logo { width: 100%; height: 100px; }
 
-    .header-logo img {width:100%; top:14px !important; left: 13px !important; max-height: 100%; max-width: 100%}
+    .header-logo img {width:100%; top:14px !important; left: 13px !important; max-height: 100%;}
+
+    .header-logo-col:first-child .header-logo img { max-height: 100%; max-width: 100%; }
 
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 18px; font-weight: 600;}
