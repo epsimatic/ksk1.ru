@@ -529,6 +529,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container.variable .item-stuff { height: 145px; }
 
+    .dishes.dishes-col-6 .dish-container.variable .item-stuff { height: 175px; }
+
     .dishes .dish-container.variable .order-controls .price-wrap {
         display: -webkit-box;
         display: -webkit-flex;
@@ -594,7 +596,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.collapsed .woocommerce { max-height: 310px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 295px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 330px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 335px; }*/
 
@@ -629,7 +631,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .thumb-container { height: 86px; width: 115px; }
 
-    .dishes.dishes-col-6 .dish .item-stuff { height: 165px; }
+    .dishes.dishes-col-6 .dish h3.item-name { height: 5.6em; }
+
+    .dishes.dishes-col-6 .dish .item-stuff { height: 195px; }
 
     .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 275px; }
 
@@ -673,7 +677,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container.variable { height: 335px; }
 
-    .dishes.dishes-col-6 .dish-container.variable .item-stuff { height: 220px; }
+    .dishes.dishes-col-6 .dish-container.variable .item-stuff { height: 195px; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls { text-align: center }
 
@@ -700,7 +704,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.collapsed .woocommerce { max-height: 350px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 320px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 355px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
 
@@ -711,7 +715,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
-    .dishes.dishes-col-6 .dish-container { height: 300px; }
+    .dishes.dishes-col-6 .dish-container { height: 335px; }
 
     .dishes .dish .order-controls .quantity { width: 60px; }
 
