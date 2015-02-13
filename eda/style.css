@@ -209,6 +209,8 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
 
+.dishes .dish-container.variable h3.item-name { height: 1.4em; white-space: nowrap; text-overflow: ellipsis; }
+
 .dishes .dish .item-description { display: none; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
