@@ -205,9 +205,9 @@ ul.list-stores > li > a > img { width: 150px; }*/
     flex-flow: column nowrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    height: 175px; }
+    height: 195px; }
 
-.dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 8px; margin-top: 12px; text-align: center; overflow: hidden; height: 2.8em; }
+.dishes .dish h3.item-name { font-size: 1.05em; line-height: 1.4em; margin-bottom: 0; margin-top: 12px; text-align: center; overflow: hidden; height: 4.8em; }
 
 .dishes .dish-container.variable h3.item-name { height: 1.4em; white-space: nowrap; text-overflow: ellipsis; }
 
@@ -257,7 +257,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .dishes.dishes-col-6 .dish .order-controls .price { margin-bottom: 7px; }
 
 
-.dishes .dish-container.variable .item-stuff { height: 220px; }
+.dishes .dish-container.variable .item-stuff { height: 195px; }
 
 .dishes .dish-container.variable .order-controls { text-align: center; }
 
@@ -494,7 +494,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         flex-flow: column nowrap;
         -webkit-box-pack: justify;
         justify-content: space-between;
-        height: 115px; }
+        height: 145px; }
 
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
 
@@ -527,7 +527,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish .order-controls .portion-type { margin-top: 0; margin-bottom: 10px; }
 
 
-    .dishes .dish-container.variable .item-stuff { height: 160px; }
+    .dishes .dish-container.variable .item-stuff { height: 145px; }
 
     .dishes .dish-container.variable .order-controls .price-wrap {
         display: -webkit-box;
@@ -537,7 +537,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         display: flex;
         -webkit-box-pack: justify;
         justify-content: space-between;
-        margin-bottom: 15px; }
+        margin-bottom: 5px; }
 
     .dishes .dish-container.variable .order-controls .price { padding-top: 10px; padding-left: 10px; }
 
@@ -592,7 +592,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes { margin: 0 10px; }
 
 
-    .dishes.collapsed .woocommerce { max-height: 290px; }
+    .dishes.collapsed .woocommerce { max-height: 310px; }
 
     .dishes.dishes-col-6.collapsed .woocommerce { max-height: 295px; }
 
@@ -611,7 +611,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .thumb-container { height: 142px; width: 189px; }
 
-    .dishes .dish .item-stuff { height: 100px; display: block; }
+    .dishes .dish .item-stuff { height: 120px; display: block; }
 
     .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; }
 
@@ -652,7 +652,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish .order-controls .qty { width: 40px;}
 
 
-    .dishes .dish-container.variable .item-stuff { height: 125px; }
+    .dishes .dish-container.variable .item-stuff { height: 120px; }
+
+    .dishes .dish-container.variable .order-controls { padding-top: 5px; }
 
     .dishes .dish-container.variable .order-controls .price-wrap { margin-bottom: 0; }
 
