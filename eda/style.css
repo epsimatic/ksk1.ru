@@ -129,11 +129,14 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
 
 
-.side_nav-container { position: fixed; margin-left: -220px; top: 200px; }
+.side_nav-container { position: fixed; margin-left: -221px; top: 200px; }
 
 .side_nav-container > .list-group { text-align: right; font-weight: 600; margin-bottom: 0; padding-bottom: 0; }
 
-.side_nav-container .list-group-item { background-color: #F5F5F5; padding: 6px 12px; width: 210px; color: #FF6347; text-transform: uppercase; letter-spacing: 0.04em; }
+.side_nav-container .list-group-item { background-color: #fafafa; padding: 6px 12px; width: 210px; color: #FF6F00; text-transform: uppercase; letter-spacing: 0.04em; opacity: .8; }
+
+.side_nav-container .list-group-item:hover,
+.side_nav-container .list-group-item:focus { background-color: #f5f5f5; color: #fff; }
 
 
 /* <editor-fold desc="Оформление категорий товаров"> */
@@ -179,7 +182,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
     -webkit-box-pack: start;
     justify-content: flex-start;
 
-    transition: max-height 3s ease 0s;
+    transition: max-height 4s ease 0s;
     max-height: 5000px; }
 
 .dishes.collapsed .woocommerce { max-height: 435px; }
