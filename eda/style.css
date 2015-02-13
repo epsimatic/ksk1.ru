@@ -148,7 +148,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes-cat .btn-collapse-text:before { content: "Свернуть"; }
 
-.dishes-cat .collapsed .btn-collapse-text:before { content: "Свернуть"; }
+.dishes-cat .collapsed .btn-collapse-text:before { content: "Развернуть"; }
 
 .page-header,
 .dishes-heading {
