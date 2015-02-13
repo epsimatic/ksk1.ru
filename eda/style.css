@@ -146,6 +146,10 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes-cat .btn-collapse .fa { margin: 0 10px; }
 
+.dishes-cat .btn-collapse-text:before { content: "Свернуть"; }
+
+.dishes-cat .collapsed .btn-collapse-text:before { content: "Свернуть"; }
+
 .page-header,
 .dishes-heading {
     border-top: 2px dashed #ff6f00; color: #ff6f00;
