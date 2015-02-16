@@ -5,7 +5,7 @@
 	path = lib/jquery
 	url = https://github.com/jquery/jquery
 [submodule "lib/leaflet"]
-	path = lib/leaflet
+	path = vendor/leaflet
 	url = https://github.com/Leaflet/Leaflet
 [submodule "lib/autonumeric"]
 	path = lib/autonumeric
