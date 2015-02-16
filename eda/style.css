@@ -232,6 +232,8 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes.dishes-col-6 .dish-container.variable h3.item-name { height: 1.4em; white-space: nowrap; text-overflow: ellipsis; }
 
+.dishes .single_variation_wrap { display: block !important; }
+
 .dishes .dish .item-description { display: none; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
@@ -307,7 +309,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes .dish-container.variable .order-controls table.variations td { border-top: none; padding: 0; }
 
-.dishes .dish-container.variable .order-controls table.variations td select { padding: 5px 10px; margin-bottom: 10px; margin-top: 5px; width: 100px; }
+.dishes .dish-container.variable .order-controls table.variations td select { padding: 5px 10px; margin-bottom: 10px; margin-top: 5px; width: 100%; }
 
 .dishes .dish-container.variable .order-controls .quantity { margin-bottom: 10px; }
 
@@ -611,7 +613,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .order-controls .price-wrap { margin-bottom: 0; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .price { padding-left: 0; }
-    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 110px; }
+    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 130px; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin-left: 0; }
 
@@ -718,7 +720,6 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container.variable .item-description p { padding-bottom: 5px; }
 
-
     .dishes.dishes-col-6 .dish-container.variable { height: 335px; }
 
     .dishes.dishes-col-6 .dish-container.variable .item-stuff { height: 195px; }
@@ -734,6 +735,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         flex-direction: column; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations { display: table; width: 100%; }
+
+    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 120%; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px; }
 
@@ -780,6 +783,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .order-controls .price { padding-left: 0; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations { margin: 0 auto; }
+
+    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 151px; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { width: 60px; }
 
