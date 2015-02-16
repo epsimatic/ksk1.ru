@@ -262,6 +262,15 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes .dish .order-controls .price { color: #555; padding-left: 10px; padding-right: 10px; margin-bottom: 12px; }
 
+.woocommerce div.product span.price,
+.woocommerce div.product p.price,
+.woocommerce #content div.product span.price,
+.woocommerce #content div.product p.price,
+.woocommerce-page div.product span.price,
+.woocommerce-page div.product p.price,
+.woocommerce-page #content div.product span.price,
+.woocommerce-page #content div.product p.price
+
 .dishes.dishes-col-6 .dish h3.item-name { text-align: center; }
 
 .dishes.dishes-col-6 .dish .order-controls .order-row {
@@ -658,6 +667,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 310px; }
 
+    .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0;}
+
     .dishes.dishes-col-6 .dish .item-description p { margin: 0; }
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 320px; }*/
@@ -666,7 +677,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish .order-controls .price { padding: 0; }
 
-    .dishes .dish .order-controls .amount { padding-right: 6px; }
+    .dishes .dish .order-controls .amount { padding-right: 0; }
 
     .dishes .dish .order-controls .quantity { width: 50px; }
 
