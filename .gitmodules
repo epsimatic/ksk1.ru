@@ -11,7 +11,7 @@
 	path = lib/autonumeric
 	url = https://github.com/BobKnothe/autoNumeric
 [submodule "lib/bootstrap"]
-	path = lib/bootstrap
+	path = vendor/bootstrap
 url=https://github.com/glgc25/bootstrap
 [submodule "vendor/tocify"]
 	path = vendor/tocify
