@@ -269,7 +269,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .woocommerce-page div.product span.price,
 .woocommerce-page div.product p.price,
 .woocommerce-page #content div.product span.price,
-.woocommerce-page #content div.product p.price
+.woocommerce-page #content div.product p.price { font-size: 1em; }
 
 
 .woocommerce #content div.product div.images,
