@@ -13,7 +13,7 @@
 		'whoami',
 		'git pull',
 		'git status',
-		'git submodule sync',
+		'git submodule sync --init',
 		'git submodule update',
 		'git submodule status',
 	);
