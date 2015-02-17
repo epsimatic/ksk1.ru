@@ -16,3 +16,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/tocify"]
 	path = vendor/tocify
 	url = https://github.com/gfranko/jquery.tocify.js.git
+[submodule "vendor/lab-js"]
+	path = vendor/lab-js
+	url = https://github.com/getify/LABjs
