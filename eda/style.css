@@ -828,3 +828,43 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 305px; }*/
 }
+/* с сайта eda style.css*/
+.products .wc-forward { display: none; }
+.wp-polls .pollbar {
+    margin: 1px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 16px;
+    background: #68d9a6;
+    border: 1px solid red;
+}
+#shipping_method input, label[for=shipping_method_0_flat_rate] { display: none; }
+.alert .wc-forward, .added_to_cart.wc-forward { display: none !important; }
+.woocommerce-result-count, .woocommerce-ordering { display: none; }
+td.product-thumbnail img { height: 40px; width: auto; }
+.affixed-placeholder { min-height: 129px; width: 100%; }
+.affix { z-index: 10; top: 0; }
+.list-stores { background-color: white; }
+.woocommerce .alert { box-shadow: 0 1px 8px #ccc; }
+.alert-success { float: right; }
+/* .affix-container -- плавающая панель во всю ширину Bootstrap */
+.affix-container.affix { width: 100%; z-index: 10; }
+@media (min-width: 768px) {
+    .affix-container.affix { width: 740px; }
+}
+@media (min-width: 992px) {
+    .affix-container.affix { width: 960px; }
+}
+@media (min-width: 1200px) {
+    .affix-container.affix { width: 1160px; }
+}
+/* Административная панель wordpress закрывает affix*/
+body.admin-bar .affix { margin-top: /*46px;*/ 0; }
+@media (min-width: 768px) {
+    body.admin-bar .affix { margin-top: 32px; }
+}
+.dmbs-footer .shop-link.active {
+    border-top-color: #ff1744 !important;
+    border-bottom-color: white !important;
+    border-top: 5px solid;
+}
