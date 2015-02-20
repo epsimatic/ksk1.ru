@@ -463,14 +463,15 @@ abbr.required { color: #f50057; }
 .woocommerce-checkout .woocommerce form .form-row-first,
 .woocommerce-checkout.woocommerce-page form .form-row-first { float: none; width: auto; }
 
-.woocommerce form .form-row, .woocommerce-page form .form-row { margin: 0 -10px; }
+.woocommerce-checkout .woocommerce form.login .form-row-first,
+.woocommerce-checkout.woocommerce-page form.login .form-row-first { float: left; width: 47%; }
+
+.woocommerce form .form-row, .woocommerce-page form .form-row { margin: 0 -10px; padding: 0 0 20px; }
 
 .woocommerce form .form-row label, 
 .woocommerce-page form .form-row label { line-height: 1.4em; }
 
 .billing_city_select { padding: 6px 10px; }
-
-.woocommerce form .form-row, .woocommerce-page form .form-row { padding: 0; }
 
 .woocommerce table.shop_table, .woocommerce-page table.shop_table { border: 1px solid rgba(255, 111, 0, 0.5); }
 
