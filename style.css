@@ -856,6 +856,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
+.navpanel #panel-agenda .popover-content .movie-tagline { line-height: 1.35em; color: #666; font-size: 1em; }
+
 .navpanel #panel-agenda .popover-content .production-flag { padding-right: 2px; }
 
 .navpanel #panel-agenda .popover-content .genres,
