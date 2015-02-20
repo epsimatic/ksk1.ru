@@ -146,6 +146,15 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .side_nav-container .list-group-item:hover,
 .side_nav-container .list-group-item:focus { background-color: #f5f5f5; color: #ff1744; }
 
+.side_nav-container .affix-home { padding: 5px 0 6px; color: #666; letter-spacing: .017em }
+
+.side_nav-container .affix-home:before,
+.side_nav-container .affix-home:after { content: ""; display: inline-block; font-family: FontAwesome; padding: 0 5px; }
+
+.side_nav-container .affix-home:hover { text-decoration: none; color: #4E342E; background-color: #FFE57F; }
+
+.woocommerce-checkout .side_nav-container { display: none; }
+
 
 /* <editor-fold desc="Оформление категорий товаров"> */
 
