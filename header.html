@@ -460,6 +460,7 @@
                 copy = /copy/,
                 reklama = /r-site/,
                 agenda = /agenda/,
+                eda = /eda/,
                 body = document.getElementsByTagName("body")[0];
 
         if (url.match(cat)) {
@@ -476,6 +477,9 @@
             body.classList.add('timetable');
         } else if (url.match(taxi)) {
             body.classList.add('taxi');
+        } else if (url.match(eda)) {
+            body.classList.add('eda');
         }
+
     })();
 </script>
