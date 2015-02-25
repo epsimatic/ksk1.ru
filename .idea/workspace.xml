@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7966c44-9d73-4af2-a484-71fc2cb0f729" name="Default" comment="Удалил e96.ksk66.ru" />
+    <list default="true" id="5bc5fb3c-33b1-49ee-9d96-e4bb55acd98e" name="Default" comment="Проверка загрузки header на сайт еды , поставил Новости!">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ksk1.ru.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,88 +22,24 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_TOOLBAR" value="true" />
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ksk1.ru" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="7657">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browser-update.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/browser-update.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="693" column="0" selection-start="25932" selection-end="25932" vertical-scroll-proportion="0.0" vertical-offset="12901" max-vertical-offset="75468">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="345" column="20" selection-start="13038" selection-end="13038" vertical-scroll-proportion="0.0" vertical-offset="6245" max-vertical-offset="6897">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.min.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="56" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/font-awesome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.031147541" vertical-offset="0" max-vertical-offset="610">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bootstrap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autonumeric.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/autonumeric.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="133">
+            <state vertical-scroll-proportion="0.6356707" vertical-offset="210" max-vertical-offset="9367">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -112,35 +53,38 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="epushiron@gmail.com" />
+      </list>
+    </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/e96.ksk66.ru/index.html" />
-        <option value="$PROJECT_DIR$/posred.ru/index.html" />
-        <option value="$PROJECT_DIR$/copy.ksk66.ru/index.html" />
+        <option value="$PROJECT_DIR$/cat-menu.html" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/header.html" />
-        <option value="$PROJECT_DIR$/lib/browser-update.js" />
+        <option value="$PROJECT_DIR$/eda/style.css" />
         <option value="$PROJECT_DIR$/footer.html" />
-        <option value="$PROJECT_DIR$/lib/browser-update.html" />
-        <option value="$PROJECT_DIR$/lib/bootstrap.html" />
-        <option value="$PROJECT_DIR$/lib/font-awesome.html" />
-        <option value="$PROJECT_DIR$/lib/autonumeric.html" />
+        <option value="$PROJECT_DIR$/header.html" />
       </list>
     </option>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="23" />
-    <option name="width" value="1304" />
-    <option name="height" value="745" />
+    <option name="x" value="54" />
+    <option name="width" value="1866" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -150,11 +94,8 @@
     <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
-  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -166,6 +107,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,52 +126,176 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksk1.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksk1.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eda.ksk66.ru" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="164" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="195" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1214" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="164" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="195" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1214" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="129" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="131" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="135" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="928" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="129" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="131" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="135" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="928" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="LayoutCode.rearrangeEntriesHTML" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ksk66.ru" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/taxi" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/copy.ksk66.ru" />
-      <recent name="$PROJECT_DIR$/posred.ru" />
+      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="a406a555-5921-4ae8-be4a-772fe54861ba" server_name="u14545">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -237,487 +303,425 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="2757fa64-19e1-4b3e-b333-05a1f3fd2f45" server_name="u14545">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
-    <recycled_changelist date="1406898821947">
-      <option name="PATH" value="$USER_HOME$/Library/Preferences/WebIde70/shelf/Uncommitted_changes_before_update_operation_at_01_08_14,_19_13_[Default].patch" />
-      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 01.08.14, 19:13 [Default]" />
+    <changelist date="1422099550122">
+      <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_update_operation_at_24_01_15_16_39_[Default].patch" />
+      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 24.01.15 16:39 [Default]" />
+    </changelist>
+    <recycled_changelist date="1421398756443">
+      <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_update_operation_at_16_01_15_13_59_[Default].patch" />
+      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 16.01.15 13:59 [Default]" />
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="taxi/cargo.png" />
+        <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/cargo.png" />
+      </binary>
     </recycled_changelist>
-    <recycled_changelist date="1422000682786">
-      <option name="PATH" value="$USER_HOME$/Library/Preferences/WebIde70/shelf/Uncommitted_changes_before_update_operation_at_23_01_15,_14_11_[Default].patch" />
-      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 23.01.15, 14:11 [Default]" />
+    <recycled_changelist date="1423551187408">
+      <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_update_operation_at_10_02_15_11_53_[Default].patch" />
+      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 10.02.15 11:53 [Default]" />
     </recycled_changelist>
-    <recycled_changelist date="1422780020666">
-      <option name="PATH" value="$USER_HOME$/Library/Preferences/WebIde70/shelf/Uncommitted_changes_before_update_operation_at_01_02_15,_14_40_[Default].patch" />
-      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 01.02.15, 14:40 [Default]" />
+    <recycled_changelist date="1423741589234">
+      <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_update_operation_at_12_02_15_16_46_[Default].patch" />
+      <option name="DESCRIPTION" value="Uncommitted changes before update operation at 12.02.15 16:46 [Default]" />
     </recycled_changelist>
   </component>
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7966c44-9d73-4af2-a484-71fc2cb0f729" name="Default" comment="" />
-      <created>1395598291247</created>
-      <updated>1395598291247</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Arial и так стандартный шрифт">
-      <created>1396340167780</created>
-      <updated>1396340167780</updated>
-    </task>
-    <task id="LOCAL-00002" summary="опечатка">
-      <created>1396341888977</created>
-      <updated>1396341888977</updated>
-    </task>
-    <task id="LOCAL-00003" summary="«Вы, вероятно, полагаете, что главная наша работа – придумывать новые слова. Ничуть не бывало. Мы уничтожаем слова – десятками, сотнями ежедневно»">
-      <created>1396344909572</created>
-      <updated>1396344909572</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Исправил выравнивание">
-      <created>1396466111710</created>
-      <updated>1396466111710</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Добавил отбивку пустыми строками">
-      <created>1396466512681</created>
-      <updated>1396466512681</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Затолкал вызовы jQuery в анонимные функции с мгновенным вызовом">
-      <created>1396467835386</created>
-      <updated>1396467835386</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Поправил погоду по мелочам">
-      <created>1396611780080</created>
-      <updated>1396611780081</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Сделал универсальный поиск">
-      <created>1397208602984</created>
-      <updated>1397208602985</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Перенёс инициализацию поиска в подвал">
-      <created>1397208939504</created>
-      <updated>1397208939505</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Переделал код выпадания popover'а">
-      <created>1397209518096</created>
-      <updated>1397209518096</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Переделал погоду, перенёс скрипты в подвал">
-      <created>1397561289641</created>
-      <updated>1397561289641</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Переделал погоду, перенёс скрипты в подвал">
-      <created>1397561711115</created>
-      <updated>1397561711115</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Продолжаю чинить погоду и «Домой»">
-      <created>1397561864531</created>
-      <updated>1397561864531</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Продолжаю чинить погоду">
-      <created>1397562252168</created>
-      <updated>1397562252168</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Реализовал Alt-режим с тегами .show-alt и .hide-alt">
-      <created>1397640132435</created>
-      <updated>1397640132435</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Правлю Alt-режим">
-      <created>1397640688993</created>
-      <updated>1397640688993</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Правлю Alt-режим">
-      <created>1397641747705</created>
-      <updated>1397641747705</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Правлю Alt-режим">
-      <created>1397642223045</created>
-      <updated>1397642223045</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Правлю Alt-режим">
-      <created>1397643306040</created>
-      <updated>1397643306040</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Правлю Alt-режим">
-      <created>1397644159749</created>
-      <updated>1397644159749</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Правлю Alt-режим">
-      <created>1397644315804</created>
-      <updated>1397644315804</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Добавил Минотавра, чтобы показать режим">
-      <created>1397645555974</created>
-      <updated>1397645555974</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Добавил Минотавра, чтобы показать режим">
-      <created>1397645787045</created>
-      <updated>1397645787045</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Правлю Минотавра, увеличиваю тайминги">
-      <created>1397646690125</created>
-      <updated>1397646690125</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Добавил альтернативных пунктов меню">
-      <created>1397719001587</created>
-      <updated>1397719001587</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Мелкие исправления">
-      <created>1397724543596</created>
-      <updated>1397724543596</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Включил зону special">
-      <created>1398312880368</created>
-      <updated>1398312880368</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Добавил Яндекс.метрику, переформатировал код">
-      <created>1398409242238</created>
-      <updated>1398409242238</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Встречайте: posred.ru">
-      <created>1399444691884</created>
-      <updated>1399444691884</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Причесал выходные данные в подвале">
-      <created>1399881918354</created>
-      <updated>1399881918354</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Исправил двусмысленность">
-      <created>1399888762037</created>
-      <updated>1399888762037</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Исправил двусмысленность&#10;&#10;">
-      <created>1399889004500</created>
-      <updated>1399889004500</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Причёсываю страницы «Копицентра», переписываю тексты">
-      <created>1400078843050</created>
-      <updated>1400078843050</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Причёсываю страницы «Копицентра», переписываю тексты&#10;&#10;">
-      <created>1400080160612</created>
-      <updated>1400080160612</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Причёсываю страницы «Копицентра», переписываю тексты&#10;&#10;">
-      <created>1400138728775</created>
-      <updated>1400138728775</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Дописываю страницы «Копицентра», переписываю тексты&#10;&#10;">
-      <created>1400222750785</created>
-      <updated>1400222750785</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Делаем .table-comparison на div-ах">
-      <created>1401532770005</created>
-      <updated>1401532770005</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Делаем .table-comparison на div-ах&#10;&#10;">
-      <created>1401533798417</created>
-      <updated>1401533798417</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Делаем .table-comparison на div-ах&#10;&#10;">
-      <created>1401534315797</created>
-      <updated>1401534315797</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Делаем .table-comparison на div-ах&#10;&#10;">
-      <created>1401535298412</created>
-      <updated>1401535298412</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Делаем .table-comparison на div-ах&#10;&#10;">
-      <created>1401535671588</created>
-      <updated>1401535671588</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Добавил запись к врачу">
-      <created>1401965446566</created>
-      <updated>1401965446566</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Создал сайт rk.ksk66.ru&#10;">
-      <created>1403073914661</created>
-      <updated>1403073914661</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Исправил меню, отключил часть пунктов">
-      <created>1403919492643</created>
-      <updated>1403919492643</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Исправил ссылки на новую новость">
-      <created>1405321316366</created>
-      <updated>1405321316366</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Добавил trigger: 'focus' к popover&#10;http://www.oneskyapp.com/ru/docs/bootstrap/javascript/#popovers-examples">
-      <created>1405321385582</created>
-      <updated>1405321385582</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Развернул if">
-      <created>1405321450555</created>
-      <updated>1405321450555</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Откатил trigger: focus">
-      <created>1405321562500</created>
-      <updated>1405321562500</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Исправил коды скриптов и виджетов">
-      <created>1405322810656</created>
-      <updated>1405322810656</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Мелочи всякие">
-      <created>1405340477411</created>
-      <updated>1405340477411</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Добавил TODO">
-      <created>1405344167050</created>
-      <updated>1405344167050</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Добавил ещё TODO">
-      <created>1405344242851</created>
-      <updated>1405344242852</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Добавил в подвал скрипт счётчика">
-      <created>1406898921363</created>
-      <updated>1406898921363</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Отрефакторил кнопки панелей, починил третью кнопку">
-      <created>1416812652933</created>
-      <updated>1416812652933</updated>
-    </task>
-    <task id="LOCAL-00055" summary=" Немного мелких исправлений (ещё одно)">
-      <created>1416919124432</created>
-      <updated>1416919124432</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Быстрофикс поиска в шапке">
-      <created>1416988008007</created>
-      <updated>1416988008008</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Исправил комментарий. Ничего интересного, проходите мимо">
-      <created>1417182919392</created>
-      <updated>1417182919393</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Скрыл пункты меню">
-      <created>1417182999325</created>
-      <updated>1417182999326</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Вернул рекламу. Без неё совсем пусто стало">
-      <created>1417183194297</created>
-      <updated>1417183194297</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Добавил TODO">
-      <created>1420008910805</created>
-      <updated>1420008910805</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Переименовал панели">
-      <created>1420009261041</created>
-      <updated>1420009261041</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Заменил popover магазинов на панель">
-      <created>1420009835934</created>
-      <updated>1420009835934</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Заменил в utm_ nav-menu-panelShops на navpanel-shopping">
-      <created>1420010021491</created>
-      <updated>1420010021491</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Отключаю нафиг tabdrop">
-      <created>1421933943750</created>
-      <updated>1421933943750</updated>
-    </task>
-    <task id="LOCAL-00065" summary="JS для работы Search. Неправильный">
-      <created>1421934130880</created>
-      <updated>1421934130880</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Заменил popover-services на navpanel-services, поставил новый скрипт панелей">
-      <created>1422001108214</created>
-      <updated>1422001108216</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Обрабатывать .cond-active">
-      <created>1422003226426</created>
-      <updated>1422003226426</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Обрабатывать .cond-active — быстрофикс!">
-      <created>1422003913799</created>
-      <updated>1422003913799</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Обрабатывать .cond-active — ещё быстрофикс!">
-      <created>1422003999701</created>
-      <updated>1422003999701</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Обрабатывать .cond-active — третий быстрофикс!">
-      <created>1422004198818</created>
-      <updated>1422004198819</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Сделал значки услуг поменьше на -xs">
-      <created>1422023699688</created>
-      <updated>1422023699688</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Добавил комментарии">
-      <created>1422090600091</created>
-      <updated>1422090600091</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Пробую исправить tooltip для фильмов">
-      <created>1422090971025</created>
-      <updated>1422090971025</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Пробую исправить tooltip для фильмов">
-      <created>1422091460553</created>
-      <updated>1422091460553</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Вдохнул жизнь в форму поиска в панели">
-      <created>1422092582028</created>
-      <updated>1422092582029</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Заменил .popover-info на .navpanel-info. Возрадуемся!">
-      <created>1422097638249</created>
-      <updated>1422097638249</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Поменял местами панели">
-      <created>1422097793306</created>
-      <updated>1422097793306</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Поменял местами панели (ещё раз)">
-      <created>1422097864475</created>
-      <updated>1422097864476</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Поменял местами панели (ещё раз)">
-      <created>1422097973835</created>
-      <updated>1422097973835</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Исправил вычисление высоты panel-map">
-      <created>1422189954861</created>
-      <updated>1422189954861</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Убрал отладку для подгонки размеров">
-      <created>1422225928500</created>
-      <updated>1422225928500</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Убрал popovers">
-      <created>1422780081189</created>
-      <updated>1422780081189</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Добавил поиск по карте — https://github.com/smeijer/L.GeoSearch">
-      <created>1422782727857</created>
-      <updated>1422782727858</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Скрыл старый поиск по карте">
-      <created>1422783228936</created>
-      <updated>1422783228936</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Убрал содержимое popover'ов">
-      <created>1422783466587</created>
-      <updated>1422783466587</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Старые новости и объявления теперь сами ставят себе класс">
-      <created>1422784814646</created>
-      <updated>1422784814646</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Убрал определение сайта новостей">
-      <created>1423227881642</created>
-      <updated>1423227881642</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Добавил alt к логотипу Озона">
-      <created>1423243487880</created>
-      <updated>1423243487881</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Переставил аттрибуты посимпатичнее">
-      <created>1423243640194</created>
-      <updated>1423243640194</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Добавил сниппет browser-update">
-      <created>1423490923532</created>
-      <updated>1423490923533</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Добавил browser-update в подвал">
-      <created>1423491058220</created>
-      <updated>1423491058220</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Добавил сниппет font-awesome">
-      <created>1423491667792</created>
-      <updated>1423491667792</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Добавил сниппет bootstrap">
-      <created>1423491905546</created>
-      <updated>1423491905546</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Добавил сниппет AutoNumeric 2">
-      <created>1423493462389</created>
-      <updated>1423493462390</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Удалил e96.ksk66.ru">
-      <created>1423510045140</created>
-      <updated>1423510045140</updated>
-    </task>
-    <option name="localTasksCounter" value="96" />
+      <changelist id="5bc5fb3c-33b1-49ee-9d96-e4bb55acd98e" name="Default" comment="" />
+      <created>1402318206761</created>
+      <option name="number" value="Default" />
+      <updated>1402318206761</updated>
+    </task>
+    <task id="LOCAL-00215" summary="Изменил placeholder в panel-agenda">
+      <created>1422084607388</created>
+      <option name="number" value="00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1422084607388</updated>
+    </task>
+    <task id="LOCAL-00216" summary="Изменил placeholder в panel-agenda">
+      <created>1422084797816</created>
+      <option name="number" value="00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1422084797816</updated>
+    </task>
+    <task id="LOCAL-00217" summary="Сделал unbind после первого события first-load в panel-agenda">
+      <created>1422085568695</created>
+      <option name="number" value="00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1422085568695</updated>
+    </task>
+    <task id="LOCAL-00218" summary="карта вставил">
+      <created>1422086451938</created>
+      <option name="number" value="00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1422086451938</updated>
+    </task>
+    <task id="LOCAL-00219" summary="карта вставил">
+      <created>1422086619472</created>
+      <option name="number" value="00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1422086619472</updated>
+    </task>
+    <task id="LOCAL-00220" summary="карта добавил задержку">
+      <created>1422087169930</created>
+      <option name="number" value="00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1422087169930</updated>
+    </task>
+    <task id="LOCAL-00221" summary="Скрыл attribution у карты">
+      <created>1422100027590</created>
+      <option name="number" value="00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1422100027590</updated>
+    </task>
+    <task id="LOCAL-00222" summary="Показал attribution у карты, исправил загрузку leaflet">
+      <created>1422101119618</created>
+      <option name="number" value="00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1422101119619</updated>
+    </task>
+    <task id="LOCAL-00223" summary="Исправил attribution у карты">
+      <created>1422101316415</created>
+      <option name="number" value="00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1422101316415</updated>
+    </task>
+    <task id="LOCAL-00224" summary="Добавил .subpanel">
+      <created>1422101956930</created>
+      <option name="number" value="00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1422101956930</updated>
+    </task>
+    <task id="LOCAL-00225" summary="Авто-установка высоты карты">
+      <created>1422102636468</created>
+      <option name="number" value="00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1422102636468</updated>
+    </task>
+    <task id="LOCAL-00226" summary="+2 FIXME">
+      <created>1422102811403</created>
+      <option name="number" value="00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1422102811403</updated>
+    </task>
+    <task id="LOCAL-00227" summary="Изменил привязку popover">
+      <created>1422103254142</created>
+      <option name="number" value="00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1422103254142</updated>
+    </task>
+    <task id="LOCAL-00228" summary="исправил ошибки css">
+      <created>1422112317465</created>
+      <option name="number" value="00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1422112317465</updated>
+    </task>
+    <task id="LOCAL-00229" summary="добавил id  для кнопки другие категории для загрузки аяксом">
+      <created>1422184661552</created>
+      <option name="number" value="00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1422184661553</updated>
+    </task>
+    <task id="LOCAL-00230" summary="добавил загрузку кнопки другие категории">
+      <created>1422185820023</created>
+      <option name="number" value="00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1422185820023</updated>
+    </task>
+    <task id="LOCAL-00231" summary="заменил ссылку &quot;другие категории&quot; на див">
+      <created>1422187539390</created>
+      <option name="number" value="00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1422187539390</updated>
+    </task>
+    <task id="LOCAL-00232" summary="заменил ссылку &quot;другие категории&quot; на див">
+      <created>1422188870565</created>
+      <option name="number" value="00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1422188870565</updated>
+    </task>
+    <task id="LOCAL-00233" summary="заменил ссылку &quot;другие категории&quot; на див">
+      <created>1422189338255</created>
+      <option name="number" value="00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1422189338255</updated>
+    </task>
+    <task id="LOCAL-00234" summary="Добавил /cat-menu.html, обновил код списка категорий">
+      <created>1422190929437</created>
+      <option name="number" value="00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1422190929437</updated>
+    </task>
+    <task id="LOCAL-00235" summary="Обновил /cat-menu.html">
+      <created>1422191003374</created>
+      <option name="number" value="00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1422191003374</updated>
+    </task>
+    <task id="LOCAL-00236" summary="Обновил высоту карты и метод её расчёта">
+      <created>1422194262798</created>
+      <option name="number" value="00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1422194262798</updated>
+    </task>
+    <task id="LOCAL-00237" summary="Настройка поиска в панели Город">
+      <created>1423551242723</created>
+      <option name="number" value="00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1423551242724</updated>
+    </task>
+    <task id="LOCAL-00238" summary="Добавил ширину select 110 px не только для котегории pizza">
+      <created>1423552400017</created>
+      <option name="number" value="00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1423552400017</updated>
+    </task>
+    <task id="LOCAL-00239" summary="изменил поиск в панели Город">
+      <created>1423558841190</created>
+      <option name="number" value="00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1423558841190</updated>
+    </task>
+    <task id="LOCAL-00240" summary="изменил поиск в панели Город">
+      <created>1423558958263</created>
+      <option name="number" value="00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1423558958263</updated>
+    </task>
+    <task id="LOCAL-00241" summary="изменил поиск в панели Город">
+      <created>1423559084174</created>
+      <option name="number" value="00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1423559084174</updated>
+    </task>
+    <task id="LOCAL-00242" summary="изменил поиск в панели Город">
+      <created>1423559165848</created>
+      <option name="number" value="00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1423559165848</updated>
+    </task>
+    <task id="LOCAL-00243" summary="изменил поиск в панели Город">
+      <created>1423559270151</created>
+      <option name="number" value="00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1423559270151</updated>
+    </task>
+    <task id="LOCAL-00244" summary="изменил поиск в панели Город">
+      <created>1423559506802</created>
+      <option name="number" value="00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1423559506802</updated>
+    </task>
+    <task id="LOCAL-00245" summary="изменил поиск в панели Город">
+      <created>1423559628080</created>
+      <option name="number" value="00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1423559628080</updated>
+    </task>
+    <task id="LOCAL-00246" summary="изменил поиск в панели Город">
+      <created>1423560319032</created>
+      <option name="number" value="00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1423560319032</updated>
+    </task>
+    <task id="LOCAL-00247" summary="Добавил скрипт переноса голосования в центральную колонку при экранах планшета">
+      <created>1423570648436</created>
+      <option name="number" value="00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1423570648436</updated>
+    </task>
+    <task id="LOCAL-00248" summary="Добавил скрипт переноса голосования в центральную колонку при экранах планшета">
+      <created>1423570775789</created>
+      <option name="number" value="00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1423570775789</updated>
+    </task>
+    <task id="LOCAL-00249" summary="Добавил скрипт переноса голосования в центральную колонку при экранах планшета ширина меньше 765">
+      <created>1423570921389</created>
+      <option name="number" value="00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1423570921389</updated>
+    </task>
+    <task id="LOCAL-00250" summary="Убрал max-height: 50px; у navbar-nav">
+      <created>1423741373710</created>
+      <option name="number" value="00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1423741373712</updated>
+    </task>
+    <task id="LOCAL-00251" summary="Обновил репозитарии">
+      <created>1423741622597</created>
+      <option name="number" value="00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1423741622597</updated>
+    </task>
+    <task id="LOCAL-00252" summary=".navbar-item-small { float: left; }">
+      <created>1423742134326</created>
+      <option name="number" value="00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742134326</updated>
+    </task>
+    <task id="LOCAL-00253" summary="С сайта eda из style.css вставил стили">
+      <created>1424414034181</created>
+      <option name="number" value="00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1424414034186</updated>
+    </task>
+    <task id="LOCAL-00254" summary="Добавил в функцию прописки в body класса eda">
+      <created>1424415147208</created>
+      <option name="number" value="00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1424415147209</updated>
+    </task>
+    <task id="LOCAL-00255" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424416356714</created>
+      <option name="number" value="00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1424416356714</updated>
+    </task>
+    <task id="LOCAL-00256" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424417175647</created>
+      <option name="number" value="00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1424417175647</updated>
+    </task>
+    <task id="LOCAL-00257" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424417620605</created>
+      <option name="number" value="00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1424417620606</updated>
+    </task>
+    <task id="LOCAL-00258" summary="Добавил в функцию прописки в body класса переменную такси убрал">
+      <created>1424417829531</created>
+      <option name="number" value="00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1424417829531</updated>
+    </task>
+    <task id="LOCAL-00259" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424418517092</created>
+      <option name="number" value="00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1424418517092</updated>
+    </task>
+    <task id="LOCAL-00260" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424419374959</created>
+      <option name="number" value="00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1424419374959</updated>
+    </task>
+    <task id="LOCAL-00261" summary="Добавил в функцию прописки в body класса переменную такси">
+      <created>1424419558639</created>
+      <option name="number" value="00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1424419558639</updated>
+    </task>
+    <task id="LOCAL-00262" summary="Заменил в подвале $ на jQuery">
+      <created>1424853788106</created>
+      <option name="number" value="00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1424853788107</updated>
+    </task>
+    <task id="LOCAL-00263" summary="Проверка загрузки header на сайт еды , поставил Новости!">
+      <created>1424869366477</created>
+      <option name="number" value="00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1424869366478</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers>
       <Redmine shared="false" url="http://10.10.1.73">
-        <option name="APIKey" />
+        <option name="APIKey" value="" />
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
+        <option name="currentProject" />
         <password />
         <option name="loginAnonymously" value="false" />
-        <option name="projectId" />
         <option name="shouldFormatCommitMessage" value="false" />
-        <option name="useHttpAuthentication" value="false" />
+        <option name="useHttpAuthentication" value="true" />
         <option name="useProxy" value="false" />
         <username />
       </Redmine>
     </servers>
   </component>
-  <component name="TodoView" selected-index="4">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1304" height="745" extended-state="6" />
+    <frame x="54" y="0" width="1866" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25920245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46723646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32690248" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16831683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21247241" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16226622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21972133" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3386924" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32583067" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3386924" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32583067" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948294" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3215434" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18591858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -728,276 +732,513 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Обрабатывать .cond-active — ещё быстрофикс!" />
-    <MESSAGE value="Обрабатывать .cond-active — третий быстрофикс!" />
-    <MESSAGE value="Сделал значки услуг поменьше на -xs" />
-    <MESSAGE value="Добавил комментарии" />
-    <MESSAGE value="Пробую исправить tooltip для фильмов" />
-    <MESSAGE value="Вдохнул жизнь в форму поиска в панели" />
-    <MESSAGE value="Заменил .popover-info на .navpanel-info. Возрадуемся!" />
-    <MESSAGE value="Поменял местами панели" />
-    <MESSAGE value="Поменял местами панели (ещё раз)" />
-    <MESSAGE value="Исправил вычисление высоты panel-map" />
-    <MESSAGE value="Убрал отладку для подгонки размеров" />
-    <MESSAGE value="Убрал popovers" />
-    <MESSAGE value="Добавил поиск по карте — https://github.com/smeijer/L.GeoSearch" />
-    <MESSAGE value="Скрыл старый поиск по карте" />
-    <MESSAGE value="Убрал содержимое popover'ов" />
-    <MESSAGE value="Старые новости и объявления теперь сами ставят себе класс" />
-    <MESSAGE value="Убрал определение сайта новостей" />
-    <MESSAGE value="Добавил alt к логотипу Озона" />
-    <MESSAGE value="Переставил аттрибуты посимпатичнее" />
-    <MESSAGE value="Добавил сниппет browser-update" />
-    <MESSAGE value="Добавил browser-update в подвал" />
-    <MESSAGE value="Добавил сниппет font-awesome" />
-    <MESSAGE value="Добавил сниппет bootstrap" />
-    <MESSAGE value="Добавил сниппет AutoNumeric 2" />
-    <MESSAGE value="Удалил e96.ksk66.ru" />
-    <option name="LAST_COMMIT_MESSAGE" value="Удалил e96.ksk66.ru" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/lib/autonumeric" />
+      <path value="$PROJECT_DIR$/lib/jquery" />
+      <path value="$PROJECT_DIR$/lib/leaflet" />
+      <path value="$PROJECT_DIR$/lib/bootstrap" />
+      <path value="$PROJECT_DIR$/lib/font-awesome" />
+    </ignored-roots>
+    <MESSAGE value="Добавил .subpanel" />
+    <MESSAGE value="Авто-установка высоты карты" />
+    <MESSAGE value="+2 FIXME" />
+    <MESSAGE value="Изменил привязку popover" />
+    <MESSAGE value="исправил ошибки css" />
+    <MESSAGE value="добавил id  для кнопки другие категории для загрузки аяксом" />
+    <MESSAGE value="добавил загрузку кнопки другие категории" />
+    <MESSAGE value="заменил ссылку &quot;другие категории&quot; на див" />
+    <MESSAGE value="Добавил /cat-menu.html, обновил код списка категорий" />
+    <MESSAGE value="Обновил /cat-menu.html" />
+    <MESSAGE value="Обновил высоту карты и метод её расчёта" />
+    <MESSAGE value="Настройка поиска в панели Город" />
+    <MESSAGE value="Добавил ширину select 110 px не только для котегории pizza" />
+    <MESSAGE value="изменил поиск в панели Город" />
+    <MESSAGE value="Добавил скрипт переноса голосования в центральную колонку при экранах планшета" />
+    <MESSAGE value="Добавил скрипт переноса голосования в центральную колонку при экранах планшета ширина меньше 765" />
+    <MESSAGE value="Убрал max-height: 50px; у navbar-nav" />
+    <MESSAGE value="Обновил репозитарии" />
+    <MESSAGE value=".navbar-item-small { float: left; }" />
+    <MESSAGE value="С сайта eda из style.css вставил стили" />
+    <MESSAGE value="Добавил в функцию прописки в body класса eda" />
+    <MESSAGE value="Добавил в функцию прописки в body класса переменную такси убрал" />
+    <MESSAGE value="Добавил в функцию прописки в body класса переменную такси" />
+    <MESSAGE value="Заменил в подвале $ на jQuery" />
+    <MESSAGE value="Проверка загрузки header на сайт еды , поставил Новости!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проверка загрузки header на сайт еды , поставил Новости!" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/footer.html">
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/js/collapse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="2603" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="4123">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/less/navbar.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="447" column="21" selection-start="8061" selection-end="8067" vertical-scroll-proportion="0.0" vertical-offset="8493" max-vertical-offset="69730" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2316" column="79" selection-start="56133" selection-end="56133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="44517" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="95" selection-start="1925" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2964" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="2603" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="447" column="21" selection-start="8061" selection-end="8067" vertical-scroll-proportion="0.0" vertical-offset="8493" max-vertical-offset="69730" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2316" column="79" selection-start="56133" selection-end="56133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="44517" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="62" selection-start="3020" selection-end="3020" vertical-scroll-proportion="0.0" vertical-offset="1051" max-vertical-offset="2983" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="2109" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="447" column="21" selection-start="8061" selection-end="8067" vertical-scroll-proportion="0.0" vertical-offset="8493" max-vertical-offset="69730" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2302" column="104" selection-start="55679" selection-end="55775" vertical-scroll-proportion="0.0" vertical-offset="43738" max-vertical-offset="44517" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="15" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2926" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="3989" selection-end="3989" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1957" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="44" selection-start="2344" selection-end="2344" vertical-scroll-proportion="0.0" vertical-offset="974" max-vertical-offset="2983" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1771" column="0" selection-start="98507" selection-end="98507" vertical-scroll-proportion="0.0" vertical-offset="33649" max-vertical-offset="35967" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="53" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.0" vertical-offset="2457" max-vertical-offset="3135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1839" column="0" selection-start="102531" selection-end="102531" vertical-scroll-proportion="0.0" vertical-offset="34941" max-vertical-offset="37240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="53" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.0" vertical-offset="2457" max-vertical-offset="3135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1839" column="0" selection-start="102531" selection-end="102531" vertical-scroll-proportion="0.0" vertical-offset="34941" max-vertical-offset="37240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="2812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="67868" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="65189" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="65189" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="26" selection-start="6703" selection-end="6703" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="3496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="26" selection-start="6703" selection-end="6703" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="3496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="26" selection-start="6703" selection-end="6703" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="3496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="26" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.0" vertical-offset="2039" max-vertical-offset="2717" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="26" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.0" vertical-offset="2204" max-vertical-offset="2717" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="662" column="30" selection-start="20223" selection-end="20223" vertical-scroll-proportion="0.37463126" vertical-offset="12324" max-vertical-offset="25574" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="693" column="0" selection-start="25932" selection-end="25932" vertical-scroll-proportion="0.0" vertical-offset="12901" max-vertical-offset="75468">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6099" max-vertical-offset="12673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/leaflet/src/Leaflet.js">
+    <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="674" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="4560">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="58007">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posred.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="6745">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reklama.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13167">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="25574">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="7657">
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="3591">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/autonumeric/autoNumeric.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24795" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/autonumeric/autoNumeric-2.0-BETA.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4012637" vertical-offset="1520" max-vertical-offset="5510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="345" column="20" selection-start="13038" selection-end="13038" vertical-scroll-proportion="0.0" vertical-offset="6245" max-vertical-offset="6897">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="4560">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="58007">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posred.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="6745">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reklama.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13167">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="25574">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="3591">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34333">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="4560">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="57969">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="3591">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/browser-update.html">
+    <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="4560">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="57969">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="3591">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap.html">
+    <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12997" max-vertical-offset="57665">
+          <caret line="690" column="30" selection-start-line="690" selection-start-column="30" selection-end-line="690" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="3591">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.min.css">
+    <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3101" max-vertical-offset="4560">
+          <caret line="190" column="55" selection-start-line="190" selection-start-column="55" selection-end-line="190" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="57665">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/502.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39130434" vertical-offset="0" max-vertical-offset="874">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="25574">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posred.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="6745">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reklama.ksk66.ru/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="13167">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap-tabdrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1447" max-vertical-offset="2356">
+          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datalife-style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6327">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3c/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33293268" vertical-offset="96167" max-vertical-offset="98230">
+          <caret line="5076" column="6" selection-start-line="5076" selection-start-column="0" selection-end-line="5076" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datalife-style/news-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="29222">
+          <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/panel-sms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="874">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datalife-style/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12787" max-vertical-offset="28766">
+          <caret line="673" column="553" selection-start-line="673" selection-start-column="553" selection-end-line="673" selection-end-column="553" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksk-tv-page/tv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11377245" vertical-offset="8740" max-vertical-offset="15922">
+          <caret line="465" column="70" selection-start-line="465" selection-start-column="70" selection-end-line="465" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxi/cargo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tocify/libs/jqueryui/jquery-ui.custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/autonumeric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
-          <folding />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="133">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/font-awesome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.031147541" vertical-offset="0" max-vertical-offset="610">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="902">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/js/collapse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="4123">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/less/navbar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6099" max-vertical-offset="12673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14706">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418902777739" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24149" max-vertical-offset="28614">
+          <caret line="3944" column="0" selection-start-line="3942" selection-start-column="5" selection-end-line="3942" selection-end-column="13" />
+          <folding>
+            <element signature="e#181#219#0" expanded="false" />
+            <element signature="e#37051#39272#2" expanded="true" />
+            <element signature="e#39314#44411#2" expanded="true" />
+            <element signature="e#44454#47195#2" expanded="true" />
+            <element signature="e#47241#49090#2" expanded="true" />
+            <element signature="e#49139#52028#2" expanded="true" />
+            <element signature="e#52075#54376#2" expanded="true" />
+            <element signature="e#54421#56258#2" expanded="true" />
+            <element signature="e#56301#59082#2" expanded="true" />
+            <element signature="e#59126#60531#2" expanded="true" />
+            <element signature="e#69534#69575#0" expanded="false" />
+            <element signature="e#107351#107418#0" expanded="false" />
+            <element signature="e#108111#108151#0" expanded="false" />
+            <element signature="e#108889#108923#0" expanded="false" />
+            <element signature="e#109779#109835#0" expanded="false" />
+            <element signature="e#112357#112403#0" expanded="false" />
+            <element signature="e#114444#114497#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eda/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15793" max-vertical-offset="17176">
+          <caret line="866" column="26" selection-start-line="866" selection-start-column="26" selection-end-line="866" selection-end-column="26" />
+          <folding>
+            <marker date="1424853675991" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="3781">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eda/eda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11780" max-vertical-offset="57722">
+          <caret line="620" column="5" selection-start-line="620" selection-start-column="5" selection-end-line="620" selection-end-column="5" />
+          <folding>
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418298917581" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxi/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4426" max-vertical-offset="5358">
+          <caret line="274" column="1" selection-start-line="274" selection-start-column="1" selection-end-line="274" selection-end-column="1" />
+          <folding>
+            <marker date="1423469155892" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1197">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-83.0" vertical-offset="4478" max-vertical-offset="6992">
+          <caret line="358" column="9" selection-start-line="358" selection-start-column="8" selection-end-line="358" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6356707" vertical-offset="210" max-vertical-offset="9367">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
