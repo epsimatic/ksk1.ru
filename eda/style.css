@@ -721,7 +721,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; }
 
-    .dishes .dish:hover { box-shadow: 0 3px 5px rgba(69, 90, 100, 0.45); position: absolute; z-index: 1041; }
+    .dishes .dish:hover { box-shadow: 0 3px 5px rgba(69, 90, 100, 0.45); position: absolute; z-index: 2; }
 
     /*.dishes .dish:hover .item-stuff { height: 205px; }*/
 
