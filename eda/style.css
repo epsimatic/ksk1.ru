@@ -124,6 +124,16 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .restoraunt-info { margin: 0 10px; padding: 30px 30px 30px 20px; }
 
+.vendor-status-group { background-color: #ffe0b2; border-radius: 6px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); margin-top: 5px; }
+
+.vendor-status { border-bottom: 1px solid #ffffff; border-radius: 5px 5px 0 0; font-size: 1.2em; font-weight: 700; letter-spacing: 0.025em; padding: 4px 0 5px; text-align: center; text-transform: uppercase; color: #ffffff; }
+
+.vendor-status.vendor-status-closed { background-color: #ff5252; }
+
+.vendor-status.vendor-status-opened { background-color: #00e676; }
+
+.vendor-working-hours-group { font-size: 0.85em; padding-bottom: 2px; text-align: center; }
+
 .restoraunt-logo { width: 180px; margin-right: 25px; }
 
 .restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
