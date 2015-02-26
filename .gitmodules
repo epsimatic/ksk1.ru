@@ -19,3 +19,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/lab-js"]
 	path = vendor/lab-js
 	url = https://github.com/getify/LABjs
+[submodule "vendor/font-awesome"]
+	path = vendor/font-awesome
+	url = https://github.com/FortAwesome/Font-Awesome
