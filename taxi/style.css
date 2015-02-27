@@ -44,11 +44,11 @@ form { padding: 10px 20px; }
 
 .taxi-phone { padding: 20px; }
 
-.taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; padding-left: 0; }
+.taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; }
 
 .taxi-call-me { display: none; }
 
-.taxi-content .taxi-phone h2 { margin-top: 0; font-size: 30px; }
+.taxi-content .taxi-phone h2 { margin-top: 0; font-size: 30px; padding-left: 0; }
 
 .taxi-content .taxi-phone h2 .fa { font-size: 30px; padding-right: 3px; }
 
