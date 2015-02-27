@@ -44,7 +44,9 @@ form { padding: 10px 20px; }
 
 .taxi-phone { padding: 20px; }
 
-.taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; }
+.taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; padding-left: 0; }
+
+.taxi-call-me { display: none; }
 
 .taxi-content .taxi-phone h2 { margin-top: 0; font-size: 30px; }
 
@@ -140,7 +142,7 @@ input.btn-block:active { color: #fff001; background-color: #222; }
 
 input.btn-block + img { position: absolute; z-index: 3; top: 0; }
 
-.desciption-title { padding-left: 20px; color: #322a00; text-transform: uppercase; font-size: 20px; font-weight: 700; }
+h2.desciption-title { padding-left: 20px; color: #322a00; text-transform: uppercase; font-size: 20px; font-weight: 700; }
 
 .desciption-title + p { color: #282100; }
 
