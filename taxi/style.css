@@ -44,9 +44,9 @@ form { padding: 10px 20px; }
 
 .taxi-phone h2 { font-size: 27px; font-weight: 700; margin-bottom: 0; }
 
-.taxi-content .taxi-phone h2 { margin-top: 0; font-size: 53px; }
+.taxi-content .taxi-phone h2 { margin-top: 0; font-size: 30px; }
 
-.taxi-content .taxi-phone h2 .fa { font-size: 35px; padding-right: 3px; }
+.taxi-content .taxi-phone h2 .fa { font-size: 30px; padding-right: 3px; }
 
 .taxi-phone a { text-decoration: underline; }
 

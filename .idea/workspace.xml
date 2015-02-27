@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eda/style.css" afterPath="$PROJECT_DIR$/eda/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxi/style.css" afterPath="$PROJECT_DIR$/taxi/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ksk1.ru.iws" />
@@ -52,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eda/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9207459" vertical-offset="8679" max-vertical-offset="15759">
-              <caret line="557" column="61" selection-start-line="557" selection-start-column="61" selection-end-line="557" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8679" max-vertical-offset="15759">
+              <caret line="542" column="60" selection-start-line="542" selection-start-column="60" selection-end-line="542" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxi/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="4726">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5304248" vertical-offset="473" max-vertical-offset="4726">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/taxi/style.css" />
         <option value="$PROJECT_DIR$/eda/style.css" />
+        <option value="$PROJECT_DIR$/taxi/style.css" />
       </list>
     </option>
   </component>
@@ -5637,7 +5637,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425012906225</updated>
     </task>
-    <option name="localTasksCounter" value="886" />
+    <task id="LOCAL-00886" summary="Изменения в стилях на сайте заказа еды">
+      <created>1425014467165</created>
+      <option name="number" value="00886" />
+      <option name="project" value="LOCAL" />
+      <updated>1425014467166</updated>
+    </task>
+    <option name="localTasksCounter" value="887" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -6172,18 +6178,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taxi/style.css">
+    <entry file="file://$PROJECT_DIR$/eda/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4726">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="8679" max-vertical-offset="15759">
+          <caret line="542" column="60" selection-start-line="542" selection-start-column="60" selection-end-line="542" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eda/style.css">
+    <entry file="file://$PROJECT_DIR$/taxi/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9207459" vertical-offset="8679" max-vertical-offset="15759">
-          <caret line="557" column="61" selection-start-line="557" selection-start-column="61" selection-end-line="557" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.5304248" vertical-offset="473" max-vertical-offset="4726">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
