@@ -36,6 +36,8 @@ form { padding: 10px 20px; }
 
 .taxi-header p { font-size: 16px; font-weight: 600; margin-bottom: 5px; padding: 0 30px; }
 
+.taxi-header .taxi-phone { z-index: 5; }
+
 .col-description h3 { font-size: 21px; font-weight: 600; margin-top: 0; margin-bottom: 25px; padding: 0 20px; text-align: center; }
 
 .col-description ul { margin-bottom: 30px; }
