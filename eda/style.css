@@ -221,11 +221,11 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: none; }
 
 
-.tag-marker-container { position: absolute; top: -3px; left: 10px; z-index: 5; color: #fff; }
-.tag-marker { border-radius: 0 0 5px 5px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.13); display: inline-block; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.07); background-color: grey; cursor: default; margin-right: 1px; font-size: 1.3em; }
-.tag-marker-in-cart { padding: 2px 3px 2px 1px; background-color: rgb(0, 200, 83); }
-.tag-marker-favorite { padding: 2px 3px 2px 2px; background-color: rgb(255, 196, 0); }
-.tag-marker-recommendation { padding: 2px; background-color: rgb(0, 229, 255); }
+.tag-container { position: absolute; top: -3px; left: 10px; z-index: 5; color: #fff; }
+.tag-container .tag { border-radius: 0 0 5px 5px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.13); display: inline-block; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.07); background-color: grey; cursor: default; margin-right: 1px; font-size: 1.3em; }
+.tag-container .tag-in-cart { padding: 2px 3px 2px 1px; background-color: rgb(0, 200, 83); }
+.tag-container .tag-favorite { padding: 2px 3px 2px 2px; background-color: rgb(255, 196, 0); }
+.tag-container .tag-recommendation { padding: 2px; background-color: rgb(0, 229, 255); }
 
 
 /* <editor-fold desc="Оформление ячейки товара"> */
