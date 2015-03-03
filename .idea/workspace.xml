@@ -1,3 +1,108 @@
+    <option name="x" value="54" />
+    <option name="width" value="1866" />
+    <frame x="54" y="0" width="1866" height="1080" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14961496" sideWeight="0.6706392" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997833" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+      <path value="$PROJECT_DIR$/vendor/lab-js" />
+    </ignored-roots>
+    <MESSAGE value="исправил lib на vendor" />
+    <MESSAGE value="Добавил пример tocify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил пример tocify" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="67932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      </provider>
+    </entry>
+      </provider>
+    </entry>
+      </provider>
+    </entry>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2489" max-vertical-offset="17366">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="11947" max-vertical-offset="68289">
+          <caret line="791" column="0" selection-start-line="791" selection-start-column="0" selection-end-line="791" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="869">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.04347826" vertical-offset="0" max-vertical-offset="874">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/browser-update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="190">
+          <caret line="2" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="54" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tocify/src/stylesheets/jquery.tocify.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1273">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tocify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="9367">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="73" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24152" max-vertical-offset="25574">
+          <caret line="1293" column="37" selection-start-line="1293" selection-start-column="37" selection-end-line="1293" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxi/index.html">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4271" max-vertical-offset="14383">
+          <caret line="235" column="61" selection-start-line="235" selection-start-column="61" selection-end-line="235" selection-end-column="61" />
+          <folding>
+            <marker date="1418902777739" expanded="true" signature="17715:17733" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="18065:18083" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="18360:18378" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="18849:18867" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="19151:19169" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="19448:19466" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="19756:19774" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="20061:20079" placeholder="..." />
+            <marker date="1418902777739" expanded="true" signature="20362:20380" placeholder="..." />
+          </folding>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datalife-style/index.html">
+        <state vertical-scroll-proportion="0.2253194" vertical-offset="22055" max-vertical-offset="28766">
+          <caret line="1171" column="17" selection-start-line="1171" selection-start-column="17" selection-end-line="1171" selection-end-column="17" />
+          <folding>
+            <marker date="1415626450419" expanded="true" signature="23657:23675" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="24039:24057" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="24382:24400" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="24959:24977" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="25310:25328" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="25656:25674" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="26013:26031" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="26367:26385" placeholder="..." />
+            <marker date="1415626450419" expanded="true" signature="26717:26735" placeholder="..." />
+          </folding>
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
@@ -65,6 +170,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxi/style.css">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="190">
             <state vertical-scroll-proportion="0.5304248" vertical-offset="473" max-vertical-offset="4726">
               <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
@@ -72,11 +178,63 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/copy.ksk66.ru/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="24152" max-vertical-offset="25574">
+              <caret line="1293" column="37" selection-start-line="1293" selection-start-column="37" selection-end-line="1293" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxi/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4271" max-vertical-offset="14383">
+              <caret line="235" column="61" selection-start-line="235" selection-start-column="61" selection-end-line="235" selection-end-column="61" />
+              <folding>
+                <marker date="1418902777739" expanded="true" signature="17715:17733" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="18065:18083" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="18360:18378" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="18849:18867" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="19151:19169" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="19448:19466" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="19756:19774" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="20061:20079" placeholder="..." />
+                <marker date="1418902777739" expanded="true" signature="20362:20380" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/datalife-style/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2253194" vertical-offset="22055" max-vertical-offset="28766">
+              <caret line="1171" column="17" selection-start-line="1171" selection-start-column="17" selection-end-line="1171" selection-end-column="17" />
+              <folding>
+                <marker date="1415626450419" expanded="true" signature="23657:23675" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="24039:24057" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="24382:24400" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="24959:24977" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="25310:25328" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="25656:25674" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="26013:26031" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="26367:26385" placeholder="..." />
+                <marker date="1415626450419" expanded="true" signature="26717:26735" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="8381">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="9367">
+              <caret line="21" column="73" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -92,9 +250,11 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tocify.html" pinned="false" current-in-tab="false">
       <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
             <state vertical-scroll-proportion="0.0" vertical-offset="3852" max-vertical-offset="6256">
               <caret line="254" column="33" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
               <folding>
@@ -181,7 +341,7 @@
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
@@ -589,6 +749,13 @@
       <option name="project" value="LOCAL" />
       <updated>1398419412299</updated>
     </task>
+    <task id="LOCAL-00880" summary="Добавил пример tocify">
+      <created>1424953298064</created>
+      <option name="number" value="00880" />
+      <option name="project" value="LOCAL" />
+      <updated>1424953298064</updated>
+    </task>
+    <option name="localTasksCounter" value="881" />
     <task id="LOCAL-00046" summary="правки к изменениям">
       <created>1398420868400</created>
       <option name="number" value="00046" />
@@ -6196,4 +6363,3 @@
     </entry>
   </component>
 </project>
-
