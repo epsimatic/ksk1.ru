@@ -8,7 +8,9 @@
       <w>onerror</w>
       <w>onload</w>
       <w>openstreetmap</w>
+      <w>submodule</w>
       <w>viewport</w>
+      <w>whoami</w>
     </words>
   </dictionary>
 </component>

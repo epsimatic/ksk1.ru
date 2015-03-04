@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.php" afterPath="$PROJECT_DIR$/deploy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/tabdrop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/oleg.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/oleg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ksk1.ru.iws" />
@@ -66,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="12" selection-start="998" selection-end="998" vertical-scroll-proportion="-25.785715" vertical-offset="0" max-vertical-offset="6916">
+            <state line="35" column="0" selection-start="963" selection-end="963" vertical-scroll-proportion="0.49457702" vertical-offset="209" max-vertical-offset="6764">
               <folding>
                 <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -77,18 +79,6 @@
                 <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deploy.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deploy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="351" selection-end="351" vertical-scroll-proportion="0.22352941" vertical-offset="0" max-vertical-offset="950">
-              <folding>
-                <marker date="1425512500000" expanded="false" signature="520:535" placeholder="..." />
-                <marker date="1425512500000" expanded="false" signature="562:577" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -165,8 +155,9 @@
         <option value="$PROJECT_DIR$/eda/style.css" />
         <option value="$PROJECT_DIR$/taxi/style.css" />
         <option value="$PROJECT_DIR$/vendor/leaflet-addon.css" />
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/deploy.php" />
+        <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/vendor/tabdrop.html" />
       </list>
     </option>
   </component>
@@ -254,72 +245,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaflet-geosearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaflet-geosearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ksk1.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaflet-geosearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3964,7 +3889,11 @@
       <created>1425512273737</created>
       <updated>1425512273739</updated>
     </task>
-    <option name="localTasksCounter" value="890" />
+    <task id="LOCAL-00890" summary="Синхронизация модулей была сломана">
+      <created>1425512547447</created>
+      <updated>1425512547448</updated>
+    </task>
+    <option name="localTasksCounter" value="891" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4040,7 +3969,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Добавил блок-детектор спецплощадки в шапке и немедленно его скрыл (sorry)" />
     <MESSAGE value="div class=&quot;header-logo-col" />
     <MESSAGE value="Уменьшил высоту шапки, при отсутсвующем баннере на спецплощадке" />
     <MESSAGE value="Правлю косяки в шапке для больших разрешений окна браузера" />
@@ -4065,7 +3993,8 @@
     <MESSAGE value="Leaflet загружается только при открытии панели" />
     <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
     <MESSAGE value="Косяк!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Косяк!" />
+    <MESSAGE value="Синхронизация модулей была сломана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Синхронизация модулей была сломана" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4073,13 +4002,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eda/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxi/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5624">
@@ -4387,9 +4309,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="7" selection-start="812" selection-end="812" vertical-scroll-proportion="0.62994653" vertical-offset="0" max-vertical-offset="950">
+          <folding>
+            <marker date="1425512500000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1425512500000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tabdrop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="240" selection-end="240" vertical-scroll-proportion="0.142246" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="998" selection-end="998" vertical-scroll-proportion="-25.785715" vertical-offset="0" max-vertical-offset="6916">
+        <state line="35" column="0" selection-start="963" selection-end="963" vertical-scroll-proportion="0.49457702" vertical-offset="209" max-vertical-offset="6764">
           <folding>
             <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -4397,16 +4336,6 @@
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="351" selection-end="351" vertical-scroll-proportion="0.22352941" vertical-offset="0" max-vertical-offset="950">
-          <folding>
-            <marker date="1425512500000" expanded="false" signature="520:535" placeholder="..." />
-            <marker date="1425512500000" expanded="false" signature="562:577" placeholder="..." />
           </folding>
         </state>
       </provider>
