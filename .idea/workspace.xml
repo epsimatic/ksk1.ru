@@ -85,10 +85,10 @@
       <file leaf-file-name="deploy.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="6" selection-start="384" selection-end="384" vertical-scroll-proportion="0.26417112" vertical-offset="0" max-vertical-offset="969">
+            <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38609627" vertical-offset="0" max-vertical-offset="969">
               <folding>
-                <marker date="1425513313000" expanded="false" signature="549:564" placeholder="..." />
-                <marker date="1425513313000" expanded="false" signature="591:606" placeholder="..." />
+                <marker date="1425513524000" expanded="false" signature="559:574" placeholder="..." />
+                <marker date="1425513524000" expanded="false" signature="601:616" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -3907,7 +3907,11 @@
       <created>1425512695045</created>
       <updated>1425512695045</updated>
     </task>
-    <option name="localTasksCounter" value="892" />
+    <task id="LOCAL-00892" summary="Ещё попытка разобраться с подмодулями">
+      <created>1425513340302</created>
+      <updated>1425513340302</updated>
+    </task>
+    <option name="localTasksCounter" value="893" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -3983,7 +3987,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Уменьшил высоту шапки, при отсутсвующем баннере на спецплощадке" />
     <MESSAGE value="Правлю косяки в шапке для больших разрешений окна браузера" />
     <MESSAGE value="Правки на сайте «Заказа еды»" />
     <MESSAGE value="Правки" />
@@ -4008,7 +4011,8 @@
     <MESSAGE value="Косяк!" />
     <MESSAGE value="Синхронизация модулей была сломана" />
     <MESSAGE value="Убрал TabDrop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал TabDrop" />
+    <MESSAGE value="Ещё попытка разобраться с подмодулями" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ещё попытка разобраться с подмодулями" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4346,10 +4350,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="384" selection-end="384" vertical-scroll-proportion="0.26417112" vertical-offset="0" max-vertical-offset="969">
+        <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38609627" vertical-offset="0" max-vertical-offset="969">
           <folding>
-            <marker date="1425513313000" expanded="false" signature="549:564" placeholder="..." />
-            <marker date="1425513313000" expanded="false" signature="591:606" placeholder="..." />
+            <marker date="1425513524000" expanded="false" signature="559:574" placeholder="..." />
+            <marker date="1425513524000" expanded="false" signature="601:616" placeholder="..." />
           </folding>
         </state>
       </provider>
