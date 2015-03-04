@@ -238,7 +238,7 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-logo img { max-width: 330px; }
 
-    .taxi-header .taxi-phone { left: 455px; bottom: -114px; }
+    .taxi-header .taxi-phone { left: 435px; bottom: -122px; }
 
     .col-description h3 { padding: 0 60px; }
 
@@ -246,11 +246,13 @@ footer h4 a:hover { color: #ffd401; }
 
     .col-description ul { padding-left: 135px; }
 
-    .taxi-header .taxi-phone > h2 { font-size: 45px; }
+    .taxi-header .taxi-phone > h2 { font-size: 49px; }
+
+    .taxi-header .taxi-phone > h2 .fa { font-size: 43px; }
 
     /*.taxi-header .taxi-phone > span { left: 242px; bottom: -32px; }*/
 
-    img[src*="taxi-squares.svg"] { margin: -9px 0; bottom: 18px; width: 70%; right: -290px; }
+    img[src*="taxi-squares.svg"] { margin: -9px 0; bottom: 27px; width: 70%; right: -290px; }
 
     .form-taxi-order-flow { width: 30.8333%; }
 
