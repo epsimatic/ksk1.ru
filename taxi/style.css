@@ -186,15 +186,15 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-header { position: relative; }
 
-    .taxi-header .taxi-logo { padding: 0; position: absolute; left: 41px; top: 35px; }
+    .taxi-header .taxi-logo { padding: 0; position: absolute; left: 35px; top: 35px; }
 
     .taxi-logo img { max-width: 300px; }
 
     /*.site-taxi .taxi-header .taxi-phone { padding-left: 0; }*/
 
-    .taxi-header .taxi-phone { padding: 0; bottom: -235px; left: 90px; position: absolute; }
+    .taxi-header .taxi-phone { padding: 0; bottom: -235px; left: 65px; position: absolute; }
 
-    .taxi-header .taxi-phone > h2 { margin-top: 0; font-size: 19px; z-index: 3; font-weight: 600; }
+    .taxi-header .taxi-phone > h2 { margin-top: 0; font-size: 23px; z-index: 3; font-weight: 700; }
 
     .taxi-header .taxi-phone > h2 .fa { font-size: 20px; display: inline; }
 
@@ -230,11 +230,11 @@ footer h4 a:hover { color: #ffd401; }
 
     .search-form button { right: -30px; }
 
-    .taxi-header .taxi-logo { left: 80px; top: 30px; }
+    .taxi-header .taxi-logo { left: 70px; top: 30px; }
 
     .taxi-logo img { max-width: 330px; }
 
-    .taxi-header .taxi-phone { left: 150px; bottom: -240px; }
+    .taxi-header .taxi-phone { left: 115px; bottom: -240px; }
 
     .col-description h3 { padding: 0 60px; }
 
@@ -242,7 +242,7 @@ footer h4 a:hover { color: #ffd401; }
 
     .col-description ul { padding-left: 135px; }
 
-    /*.taxi-header .taxi-phone > h2 { left: 125px; bottom: -36px; }*/
+    .taxi-header .taxi-phone > h2 { font-size: 25px; }
 
     /*.taxi-header .taxi-phone > span { left: 242px; bottom: -32px; }*/
 
@@ -258,13 +258,13 @@ footer h4 a:hover { color: #ffd401; }
 
     .search-form { right: 27px; }
 
-    .taxi-header .taxi-logo { left: 120px; }
+    .taxi-header .taxi-logo { left: 110px; }
 
     .taxi-logo img { max-width: 350px; }
 
-    .taxi-header .taxi-phone { bottom: -245px; left: 190px; }
+    .taxi-header .taxi-phone { bottom: -245px; left: 140px; }
 
-    .taxi-header .taxi-phone > h2 { font-size: 21px; font-weight: 700; }
+    .taxi-header .taxi-phone > h2 { font-size: 30px; }
 
     .col-description h3 { padding: 0 120px; margin-top: 45px !important; }
 
