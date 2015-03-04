@@ -266,13 +266,15 @@ footer h4 a:hover { color: #ffd401; }
 
     .taxi-header { height: 225px; }
 
-    .taxi-header .taxi-logo { left: 110px; }
+    .taxi-header .taxi-logo { left: 80px; }
 
     .taxi-logo img { max-width: 350px; }
 
-    .taxi-header .taxi-phone { bottom: -245px; left: 140px; }
+    .taxi-header .taxi-phone { bottom: -131px; left: 490px; }
 
-    .taxi-header .taxi-phone > h2 { font-size: 30px; }
+    .taxi-header .taxi-phone > h2 { font-size: 61px; }
+
+    .taxi-header .taxi-phone > h2 .fa { font-size: 53px; }
 
     .col-description h3 { padding: 0 120px; margin-top: 45px !important; }
 
@@ -284,6 +286,6 @@ footer h4 a:hover { color: #ffd401; }
 
     /*.taxi-header .taxi-phone > span { left: 300px; bottom: -36px; }*/
 
-    img[src*="taxi-squares.svg"] { margin: -11px 0; }
+    img[src*="taxi-squares.svg"] { margin: -11px 0; bottom: 22px; right: -260px; }
 }
 .wpcf7-list-item { display: block; }
