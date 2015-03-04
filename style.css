@@ -821,6 +821,28 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 0.9em; padding: 5px 10px; }
 
+.navpanel-services .panel-taxi { background-color: #ffd401; }
+
+.navpanel-services .panel-taxi img { width: 100%; margin-top: 15px; }
+
+.navpanel-services .panel-taxi .taxi-description { font-size: 17px; font-weight: 600; margin-top: 10px; text-align: center; }
+
+.navpanel-services .panel-taxi .taxi-phone { text-align: center; margin-bottom: 20px; margin-top: 25px; }
+
+.navpanel-services .panel-taxi .taxi-phone > a { color: #161616; font-size: 20px; font-weight: 700; }
+
+.navpanel-services .panel-taxi .btn-warning { background-color: #161616; border-color: #161616; color: #ffd401; font-size: 15px; font-weight: 600; margin-bottom: 20px; text-transform: uppercase; }
+
+.navpanel-services .panel-taxi .btn-warning:hover,
+.navpanel-services .panel-taxi .btn-warning:focus { background-color: #222222; color: #fff001; }
+
+.navpanel-services .panel-taxi .taxi-about { text-align: center; margin-bottom: 15px; }
+
+.navpanel-services .panel-taxi .taxi-about > a { color: #222; }
+
+.navpanel-services .panel-taxi .taxi-about > a:hover,
+.navpanel-services .panel-taxi .taxi-about > a:focus { color: #000; }
+
 .news .container > #header .navpanel.row { margin: 0; }
 
 .navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
