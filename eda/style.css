@@ -522,8 +522,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 @keyframes fade-out {
     0%   { opacity: 1; }
-    99% { opacity: 0; }
-    100% { opacity: 0; visibility: hidden; }
+    20% { opacity: 0.3; transform: translate(0,0)}
+    100% { opacity: 0.3; transform: translate(0,-9999px); }
 }
 
 .alert-warning { background-color: #ffff8d; }
