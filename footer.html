@@ -27,7 +27,7 @@ function LoadCSS(src) {
     var a = document.createElement("script");
     a.rel = "stylesheet";
     a.type = "text/css";
-    a.src = src;
+    a.href = src;
     a.onerror = function () {
         console.log("Error loading " + src)
     };
