@@ -381,8 +381,6 @@ abbr.required { color: #f50057; }
 .address-field .btn-default { padding: 5px 12px; }
 
 
-
-
 .woocommerce #payment,
 .woocommerce-page #payment { background: #fff3e0; }
 
@@ -520,7 +518,12 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .woocommerce form.checkout .alert { margin: 15px 5px; }
 
-.alert-success { background-color: #ccff90; border: medium none; border-radius: 0; }
+.alert-success { background-color: #ccff90; border: medium none; border-radius: 0; animation: fade-out 1s 5s 3; }
+
+@keyframes fade-out {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 .alert-warning { background-color: #ffff8d; }
 
