@@ -54,66 +54,6 @@ jQuery('.btn-collapse').click(function () {
     jQuery('.potential-cond-active').addClass('cond-active');
 });
 
-function GismeteoInit () {
-    jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
-    if (jQuery(window).width() < 765) {
-        var panel_vote_xs = jQuery("#panel-vote-xs");
-        jQuery("#vote_xs").html(panel_vote_xs.html());
-        panel_vote_xs.remove();
-    }
-}
-
-var map;
-function LeafletAddSearch() {
-    L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
-        options: { },
-        initialize: function (options) {
-            //noinspection JSUnusedAssignment
-            options = L.Util.setOptions(this, options);
-        },
-        /**
-         * @return {string}
-         */
-        GetServiceUrl: function (qry) {
-            var parameters = L.Util.extend({
-                q: "Красноуфимск " + qry,
-                format: 'json'
-            }, this.options);
-            return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
-        },
-        ParseJSON: function (data) {
-            if (data.length == 0)
-                return [];
-            var results = [];
-            for (var i = 0; i < data.length; i++)
-                results.push(new L.GeoSearch.Result(data[i].lon, data[i].lat, data[i].display_name));
-            return results;
-        }
-    });
-
-    new L.Control.GeoSearch({
-        provider: new L.GeoSearch.Provider.OpenStreetMapKsk(),
-        country: 'ru',
-        searchLabel: 'Найти на карте…',
-        notFoundMessage: 'К сожалению, ничего не найдено',
-        zoomLevel: 17
-    }).addTo(map);
-}
-
-function LeafletInit() {
-
-    map = L.map('panel-map');
-    map.setView([56.6132, 57.7689], 13);
-    var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-        minZoom: 0,
-        maxZoom: 20,
-        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
-    });
-    OpenMapSurfer_Roads.addTo(map);
-
-    LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', LeafletAddSearch);
-}
-
 jQuery('#navpanel-info').on('first-load', function () {
 
     // загружаем кнопку категории вместо кнопки другие категории
@@ -135,14 +75,67 @@ jQuery('#navpanel-info').on('first-load', function () {
     });
 
     // Загружаем погоду
-    LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', GismeteoInit);
+    LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', function(){
+        jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
+        if (jQuery(window).width() < 765) {
+            var panel_vote_xs = jQuery("#panel-vote-xs");
+            jQuery("#vote_xs").html(panel_vote_xs.html());
+            panel_vote_xs.remove();
+        }
+    });
 
     // Загружаем карту
     setMapHeight();
-    // TODO: загружать локальный leaflet
-    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', LeafletInit);
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
+    // TODO: загружать локальный leaflet
+    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function(){
+
+        var map = L.map('panel-map');
+        map.setView([56.6132, 57.7689], 13);
+        var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+            minZoom: 0,
+            maxZoom: 20,
+            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+        });
+        OpenMapSurfer_Roads.addTo(map);
+
+        LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', function (){
+            L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
+                options: { },
+                initialize: function (options) {
+                    //noinspection JSUnusedAssignment
+                    options = L.Util.setOptions(this, options);
+                },
+                /**
+                 * @return {string}
+                 */
+                GetServiceUrl: function (qry) {
+                    var parameters = L.Util.extend({
+                        q: "Красноуфимск " + qry,
+                        format: 'json'
+                    }, this.options);
+                    return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
+                },
+                ParseJSON: function (data) {
+                    if (data.length == 0)
+                        return [];
+                    var results = [];
+                    for (var i = 0; i < data.length; i++)
+                        results.push(new L.GeoSearch.Result(data[i].lon, data[i].lat, data[i].display_name));
+                    return results;
+                }
+            });
+
+            new L.Control.GeoSearch({
+                provider: new L.GeoSearch.Provider.OpenStreetMapKsk(),
+                country: 'ru',
+                searchLabel: 'Найти на карте…',
+                notFoundMessage: 'К сожалению, ничего не найдено',
+                zoomLevel: 17
+            }).addTo(map);
+        });
+    });
 
     // Отключаемся от события
     jQuery(this).unbind('first-load');
