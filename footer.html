@@ -61,7 +61,7 @@ jQuery('.btn-feature').click(function () {
     if (!was_active) {
         jQuery(this).addClass('active');
         jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'))
-                .addClass('active').trigger('first-load');
+                .removeClass('hidden').addClass('active').trigger('first-load');
     } else {
         potential_cond_active.addClass('cond-active');
     }
