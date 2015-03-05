@@ -157,7 +157,9 @@ jQuery('#navpanel-info').on('first-load', function () {
 });
 
 //  Openstat
-var openstat = { counter: 2173092, image: 5041, next: openstat };
+var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat,
+    part: jQuery('body').prop('class').split(' ')[0] };
+//var openstat = { counter: 2173092, image: 5041, next: openstat };
 LoadJS('//openstat.net/cnt.js');
 
 
