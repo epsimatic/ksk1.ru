@@ -1,35 +1,6 @@
 <!--Общий подвал-->
 <script type="application/javascript">
 
-/**
- * Load Javascript asynchronously and execute callback on success
- * @param src {string} Script URL
- * @param onload {function} Callback to call on success
- */
-function LoadJS(src, onload) {
-    var link = document.createElement("script");
-    link.src = src;
-    link.async = true;
-    link.type = "text/javascript";
-    link.onerror = function () {
-        console.log("Error loading " + src)
-    };
-    if (typeof (onload) == "function")
-        link.onload = onload;
-    document.getElementsByTagName("head")[0].appendChild(link);
-}
-
-function LoadCSS(src) {
-    var link = document.createElement("link");
-    link.href = src;
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.onerror = function () {
-        console.log("Error loading " + src)
-    };
-    document.getElementsByTagName("head")[0].appendChild(link);
-}
-
 // Поисковая строка
 (function () {
     var meta_generator = jQuery("meta[name='generator']").attr("content");

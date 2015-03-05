@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ksk1.ru.iws" />
@@ -57,21 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="470" column="8" selection-start="26574" selection-end="26574" vertical-scroll-proportion="-5.785714" vertical-offset="8768" max-vertical-offset="9690">
+            <state line="501" column="0" selection-start="27556" selection-end="27556" vertical-scroll-proportion="0.19631237" vertical-offset="9338" max-vertical-offset="10260">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="159" selection-end="159" vertical-scroll-proportion="0.10303687" vertical-offset="0" max-vertical-offset="5833">
+            <state line="11" column="37" selection-start="491" selection-end="491" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="5510">
               <folding>
-                <element signature="e#4470#4986#0" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -176,7 +176,6 @@
         <option value="$USER_HOME$/Desktop/dostavka-oplata.html" />
         <option value="$USER_HOME$/Desktop/about.html" />
         <option value="$PROJECT_DIR$/eda/111.html" />
-        <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/eda/style.css" />
         <option value="$PROJECT_DIR$/taxi/style.css" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/header.html" />
       </list>
     </option>
   </component>
@@ -3969,7 +3969,11 @@
       <created>1425519605472</created>
       <updated>1425519605472</updated>
     </task>
-    <option name="localTasksCounter" value="903" />
+    <task id="LOCAL-00903" summary="Мелкие правки JS">
+      <created>1425519921262</created>
+      <updated>1425519921263</updated>
+    </task>
+    <option name="localTasksCounter" value="904" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4045,7 +4049,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Изменения в стилях для сайта заказа еды" />
     <MESSAGE value="Правки стилей" />
     <MESSAGE value="Правки стилей на сайте заказа еды" />
     <MESSAGE value="done #138" />
@@ -4070,7 +4073,8 @@
     <MESSAGE value="Убрал Alt-режим" />
     <MESSAGE value="Много доработок по скриптам" />
     <MESSAGE value="Добавил TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил TODO" />
+    <MESSAGE value="Мелкие правки JS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Мелкие правки JS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4089,7 +4093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6992">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -4102,7 +4105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -4115,7 +4117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -4135,7 +4136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -4148,7 +4148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
@@ -4399,23 +4398,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="470" column="8" selection-start="26574" selection-end="26574" vertical-scroll-proportion="-5.785714" vertical-offset="8768" max-vertical-offset="9690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="159" selection-end="159" vertical-scroll-proportion="0.10303687" vertical-offset="0" max-vertical-offset="5833">
+        <state line="11" column="37" selection-start="491" selection-end="491" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="5510">
           <folding>
-            <element signature="e#4470#4986#0" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="501" column="0" selection-start="27556" selection-end="27556" vertical-scroll-proportion="0.19631237" vertical-offset="9338" max-vertical-offset="10260">
+          <folding />
         </state>
       </provider>
     </entry>
