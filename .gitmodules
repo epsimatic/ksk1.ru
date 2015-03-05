@@ -28,3 +28,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/jquery-viewport"]
 	path = vendor/jquery-viewport
 	url = https://github.com/tuupola/jquery_viewport.git
+[submodule "vendor/unveil"]
+	path = vendor/unveil
+	url = https://github.com/luis-almeida/unveil
