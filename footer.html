@@ -8,30 +8,26 @@
  * @param onload {function} Callback to call on success
  */
 function LoadJS(src, onload) {
-//        if (typeof(L) == "undefined") {
-//            window.L = "loading";
-    var a = document.createElement("script");
-    a.type = "text/javascript";
-    a.src = src;
-    if (typeof (onload) == "function")
-        a.onload = onload;
-    a.onerror = function () {
-//                delete L;
+    var link = document.createElement( "script" );
+    link.src = src;
+    link.type = "text/javascript";
+    link.onerror = function () {
         console.log("Error loading " + src)
     };
-    document.getElementsByTagName("head")[0].appendChild(a);
-//        }
+    if (typeof (onload) == "function")
+        link.onload = onload;
+    document.getElementsByTagName( "head" )[0].appendChild( link );
 }
 
 function LoadCSS(src) {
-    var a = document.createElement("script");
-    a.rel = "stylesheet";
-    a.type = "text/css";
-    a.href = src;
-    a.onerror = function () {
+    var link = document.createElement( "link" );
+    link.href = src;
+    link.type = "text/css";
+    link.rel  = "stylesheet";
+    link.onerror = function () {
         console.log("Error loading " + src)
     };
-    document.getElementsByTagName("head")[0].appendChild(a);
+    document.getElementsByTagName( "head" )[0].appendChild( link );
 }
 
     // Подгоняем высоту карты

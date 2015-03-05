@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
     </list>
     <ignored path="ksk1.ru.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="7" selection-start="1606" selection-end="1606" vertical-scroll-proportion="-26.464285" vertical-offset="209" max-vertical-offset="6764">
+            <state line="19" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.39154014" vertical-offset="0" max-vertical-offset="6688">
               <folding>
                 <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -94,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.34508547" vertical-offset="0" max-vertical-offset="936">
+            <state line="23" column="6" selection-start="463" selection-end="463" vertical-scroll-proportion="-16.185184" vertical-offset="0" max-vertical-offset="551">
               <folding />
             </state>
           </provider>
@@ -177,10 +177,10 @@
         <option value="$PROJECT_DIR$/eda/style.css" />
         <option value="$PROJECT_DIR$/taxi/style.css" />
         <option value="$PROJECT_DIR$/vendor/leaflet-addon.css" />
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/vendor/tabdrop.html" />
         <option value="$PROJECT_DIR$/deploy.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/footer.html" />
       </list>
     </option>
   </component>
@@ -3936,7 +3936,11 @@
       <created>1425514656484</created>
       <updated>1425514656485</updated>
     </task>
-    <option name="localTasksCounter" value="896" />
+    <task id="LOCAL-00896" summary="Обновил инструкцию себе">
+      <created>1425514765234</created>
+      <updated>1425514765234</updated>
+    </task>
+    <option name="localTasksCounter" value="897" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4352,20 +4356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="7" selection-start="1606" selection-end="1606" vertical-scroll-proportion="-26.464285" vertical-offset="209" max-vertical-offset="6764">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="969">
@@ -4378,12 +4368,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.34508547" vertical-offset="0" max-vertical-offset="936">
+        <state line="23" column="6" selection-start="463" selection-end="463" vertical-scroll-proportion="-16.185184" vertical-offset="0" max-vertical-offset="551">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.39154014" vertical-offset="0" max-vertical-offset="6688">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
