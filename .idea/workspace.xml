@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,7 +34,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4020" column="0" selection-start="189262" selection-end="189262" vertical-scroll-proportion="0.68" vertical-offset="75734" max-vertical-offset="76798">
+            <state line="197" column="0" selection-start="4454" selection-end="4454" vertical-scroll-proportion="1.24" vertical-offset="2565" max-vertical-offset="74613">
               <folding />
             </state>
           </provider>
@@ -82,7 +83,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="55" selection-start="3384" selection-end="3384" vertical-scroll-proportion="-60.392857" vertical-offset="0" max-vertical-offset="5377">
+            <state line="79" column="0" selection-start="3011" selection-end="3011" vertical-scroll-proportion="-7.464286" vertical-offset="1292" max-vertical-offset="5396">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -195,8 +196,8 @@
         <option value="$PROJECT_DIR$/vendor/tabdrop.html" />
         <option value="$PROJECT_DIR$/deploy.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -4009,7 +4010,11 @@
       <created>1425523981260</created>
       <updated>1425523981260</updated>
     </task>
-    <option name="localTasksCounter" value="910" />
+    <task id="LOCAL-00910" summary="Добавил высоту к .widget-ok">
+      <created>1425525589285</created>
+      <updated>1425525589289</updated>
+    </task>
+    <option name="localTasksCounter" value="911" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4085,7 +4090,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Правки в стилях на сайте такси" />
     <MESSAGE value="Игнорировать workspace.xml" />
     <MESSAGE value="Убрал кастыли в стилях сайта заказа такси" />
     <MESSAGE value="Изменения в стилях на сайте заказа еды" />
@@ -4110,7 +4114,8 @@
     <MESSAGE value="Убрал лишний параметр" />
     <MESSAGE value="Добавил onload для LoadCSS" />
     <MESSAGE value="Объединил LoadJS и LoadCSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Объединил LoadJS и LoadCSS" />
+    <MESSAGE value="Добавил высоту к .widget-ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил высоту к .widget-ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4414,18 +4419,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="55" selection-start="3384" selection-end="3384" vertical-scroll-proportion="-60.392857" vertical-offset="0" max-vertical-offset="5377">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="497" column="5" selection-start="27140" selection-end="27140" vertical-scroll-proportion="-31.571428" vertical-offset="8559" max-vertical-offset="9956">
@@ -4458,9 +4451,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="3011" selection-end="3011" vertical-scroll-proportion="-7.464286" vertical-offset="1292" max-vertical-offset="5396">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4020" column="0" selection-start="189262" selection-end="189262" vertical-scroll-proportion="0.68" vertical-offset="75734" max-vertical-offset="76798">
+        <state line="197" column="0" selection-start="4454" selection-end="4454" vertical-scroll-proportion="1.24" vertical-offset="2565" max-vertical-offset="74613">
           <folding />
         </state>
       </provider>

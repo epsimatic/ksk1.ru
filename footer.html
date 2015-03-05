@@ -75,6 +75,7 @@ jQuery('#navpanel-info').on('first-load', function () {
     });
 
     // Загружаем погоду
+    LoadCSS('http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css');
     LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', function(){
         jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
         if (jQuery(window).width() < 765) {
