@@ -84,6 +84,7 @@ function LoadCSS(src) {
 
         // Загружаем карту
         setMapHeight();
+        var map;
 
         // TODO: загружать локальный leaflet
         LoadJS( 'http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', LeafletInit );
@@ -92,7 +93,7 @@ function LoadCSS(src) {
 
         function LeafletInit (){
 
-            var map = L.map('panel-map');
+            map = L.map('panel-map');
             map.setView([56.6132, 57.7689], 13);
             var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
                 minZoom: 0,
