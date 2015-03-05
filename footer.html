@@ -65,14 +65,14 @@ jQuery('.triggers-weather').click(function () {
 });
 
 jQuery('.btn-feature').click(function () {
-    was_active = jQuery(this).hasClass('active');
-    potential_cond_active = jQuery('.potential-cond-active');
+    var was_active = jQuery(this).hasClass('active');
+    var potential_cond_active = jQuery('.potential-cond-active');
     jQuery('.navpanel, .btn-feature').removeClass('active');
     potential_cond_active.removeClass('cond-active');
     if (!was_active) {
         jQuery(this).addClass('active');
-        target_navpanel = jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'));
-        target_navpanel.addClass('active').trigger('first-load');
+        jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'))
+                .addClass('active').trigger('first-load');
     } else {
         potential_cond_active.addClass('cond-active');
     }
@@ -86,8 +86,9 @@ jQuery('.btn-collapse').click(function () {
 function GismeteoInit () {
     jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
     if (jQuery(window).width() < 765) {
-        jQuery("#vote_xs").html(jQuery("#panel-vote-xs").html());
-        jQuery("#panel-vote-xs").remove();
+        var panel_vote_xs = jQuery("#panel-vote-xs");
+        jQuery("#vote_xs").html(panel_vote_xs.html());
+        panel_vote_xs.remove();
     }
 }
 
@@ -308,5 +309,5 @@ LoadJS('//openstat.net/cnt.js', null);
 // Browser-update
     var $buoop = { text: "Ваш браузер (%s) <b>устарел</b>. В нём могут быть <b>уязвимости</b> и он <b>не показывает все возможности</b> этого и других сайтов. \
 <a%s>Узнайте, как обновить ваш браузер</a>" };
-    LoadJS('//browser-update.org/update.js');
+    LoadJS('//browser-update.org/update.js', null);
 </script>
