@@ -26,7 +26,7 @@
             cx = '003704283744183876190:woiuqgnl_eg';
         }
         jQuery('.searchbox').append('<div id="searchbox-lazy">Поиск…</div>');
-        jQuery('#searchbox-lazy').on('hover, click, focus', function(){
+        jQuery('#searchbox-lazy').on('hover', function(){
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
             jQuery(this).remove();
         });

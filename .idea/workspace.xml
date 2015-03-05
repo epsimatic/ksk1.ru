@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="59" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="5719">
+            <state line="28" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4025,7 +4025,11 @@
       <created>1425528945719</created>
       <updated>1425528945719</updated>
     </task>
-    <option name="localTasksCounter" value="916" />
+    <task id="LOCAL-00916" summary="Сделал подгрузку поиска">
+      <created>1425529092635</created>
+      <updated>1425529092636</updated>
+    </task>
+    <option name="localTasksCounter" value="917" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4101,7 +4105,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
     <MESSAGE value="Синхронизация модулей была сломана" />
     <MESSAGE value="Убрал TabDrop" />
     <MESSAGE value="Ещё попытка разобраться с подмодулями" />
@@ -4126,7 +4129,8 @@
     <MESSAGE value="Сломал поиск" />
     <MESSAGE value="Пробую сделать ленивый поиск" />
     <MESSAGE value="Косяк!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Косяк!" />
+    <MESSAGE value="Сделал подгрузку поиска" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал подгрузку поиска" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4471,7 +4475,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="59" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="5719">
+        <state line="28" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
