@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -61,8 +60,12 @@
       <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="501" column="0" selection-start="27556" selection-end="27556" vertical-scroll-proportion="0.19631237" vertical-offset="9338" max-vertical-offset="10260">
-              <folding />
+            <state line="177" column="0" selection-start="8565" selection-end="8565" vertical-scroll-proportion="0.49457702" vertical-offset="2907" max-vertical-offset="10089">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3973,7 +3976,11 @@
       <created>1425519921262</created>
       <updated>1425519921263</updated>
     </task>
-    <option name="localTasksCounter" value="904" />
+    <task id="LOCAL-00904" summary="Перенёс LoadJS и LoadCSS в шапку">
+      <created>1425520007292</created>
+      <updated>1425520007292</updated>
+    </task>
+    <option name="localTasksCounter" value="905" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4049,7 +4056,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Правки стилей" />
     <MESSAGE value="Правки стилей на сайте заказа еды" />
     <MESSAGE value="done #138" />
     <MESSAGE value="в работе  #131" />
@@ -4074,7 +4080,8 @@
     <MESSAGE value="Много доработок по скриптам" />
     <MESSAGE value="Добавил TODO" />
     <MESSAGE value="Мелкие правки JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Мелкие правки JS" />
+    <MESSAGE value="Перенёс LoadJS и LoadCSS в шапку" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенёс LoadJS и LoadCSS в шапку" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4085,7 +4092,11 @@
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9690">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4128,7 +4139,11 @@
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4166,7 +4181,11 @@
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4412,8 +4431,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="501" column="0" selection-start="27556" selection-end="27556" vertical-scroll-proportion="0.19631237" vertical-offset="9338" max-vertical-offset="10260">
-          <folding />
+        <state line="177" column="0" selection-start="8565" selection-end="8565" vertical-scroll-proportion="0.49457702" vertical-offset="2907" max-vertical-offset="10089">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
