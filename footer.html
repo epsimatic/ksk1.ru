@@ -1,8 +1,21 @@
 <!--Общий подвал-->
+
+
+<style>
+#searchbox-lazy {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+</style>
 <script type="application/javascript">
 
 // Поисковая строка
 (function () {
+
     var meta_generator = jQuery("meta[name='generator']").attr("content");
     if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
         // Пусто. У сайтов на WordPress свой поиск
@@ -12,7 +25,11 @@
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
         }
-        console.log('//www.google.com/cse/cse.js?cx=' + cx);
+        jQuery('.searchbox').append('<div id="searchbox-lazy">Поиск…</div>');
+        jQuery('#seaschbox-lazy').hover(function(){
+            LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+            jQuery(this).remove();
+        });
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }
 })();

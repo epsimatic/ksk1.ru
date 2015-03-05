@@ -60,7 +60,7 @@
       <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="497" column="5" selection-start="27140" selection-end="27140" vertical-scroll-proportion="-337.25" vertical-offset="0" max-vertical-offset="9956">
+            <state line="139" column="94" selection-start="6505" selection-end="6505" vertical-scroll-proportion="-30.535715" vertical-offset="1786" max-vertical-offset="9956">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="576" selection-end="576" vertical-scroll-proportion="0.28850326" vertical-offset="0" max-vertical-offset="5396">
+            <state line="31" column="0" selection-start="942" selection-end="942" vertical-scroll-proportion="0.63882864" vertical-offset="0" max-vertical-offset="5719">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/vendor/tabdrop.html" />
         <option value="$PROJECT_DIR$/deploy.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/footer.html" />
       </list>
     </option>
@@ -294,6 +294,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="true" />
     <property name="options.searchVisible" value="true" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -4012,7 +4013,11 @@
       <created>1425527727559</created>
       <updated>1425527727560</updated>
     </task>
-    <option name="localTasksCounter" value="913" />
+    <task id="LOCAL-00913" summary="Сломал поиск">
+      <created>1425527778609</created>
+      <updated>1425527778609</updated>
+    </task>
+    <option name="localTasksCounter" value="914" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4088,7 +4093,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Изменения в стилях на сайте заказа еды" />
     <MESSAGE value="Leaflet загружается только при открытии панели" />
     <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
     <MESSAGE value="Косяк!" />
@@ -4113,7 +4117,8 @@
     <MESSAGE value="Добавил высоту к .widget-ok" />
     <MESSAGE value="Снова динамически загружаем http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css" />
     <MESSAGE value="Убрал картинку Гисметео" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал картинку Гисметео" />
+    <MESSAGE value="Сломал поиск" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сломал поиск" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4417,20 +4422,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eda/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxi/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5624">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="197" column="0" selection-start="4454" selection-end="4454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="74613">
@@ -4445,9 +4436,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taxi/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eda/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="497" column="5" selection-start="27140" selection-end="27140" vertical-scroll-proportion="-337.25" vertical-offset="0" max-vertical-offset="9956">
+        <state line="139" column="94" selection-start="6505" selection-end="6505" vertical-scroll-proportion="-30.535715" vertical-offset="1786" max-vertical-offset="9956">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
@@ -4458,7 +4463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="576" selection-end="576" vertical-scroll-proportion="0.28850326" vertical-offset="0" max-vertical-offset="5396">
+        <state line="31" column="0" selection-start="942" selection-end="942" vertical-scroll-proportion="0.63882864" vertical-offset="0" max-vertical-offset="5719">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
