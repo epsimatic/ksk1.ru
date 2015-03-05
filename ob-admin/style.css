@@ -1,0 +1,60 @@
+.checked-no { color: #ff1744; }
+
+a:hover .checked-no { color: #d50000; }
+
+.checked-no ~ span { color: #b71c1c; }
+
+.checked-no_paid { color: #ff9100; }
+
+a:hover .checked-no_paid { color: #ff6d00; }
+
+.checked-no_paid ~ span { color: #bf360c; }
+
+.checked-yes,
+.fa-play { color: #3d5afe; }
+
+a:hover .checked-yes { color: #304ffe; }
+
+.checked-yes ~ span { color: #1a237e; }
+
+.checked-edit { color: #00c853; }
+
+a:hover .checked-edit { color: #1b5e20; }
+
+.checked-edit ~ span { color: #1b5e20; }
+
+.checked-archive { color: #666; }
+
+a:hover .checked-archive { color: #333; }
+
+.checked-no:hover:before,
+.checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+
+.checked-yes:hover:before,
+.checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+
+.fa-star { color: #ff5722; }
+
+#obstable { width: 100%; margin-top: 5px; }
+
+#obstable thead tr { background-color: #f6f6f6; }
+
+#obstable tr > th { text-align: center; }
+
+#obstable tbody tr > td:first-child { padding: 10px 10px 10px 15px; }
+
+#obstable tbody tr > td:nth-child(n+1) { vertical-align: middle; }
+
+#obstable tbody tr > td:nth-child(2) { text-align: center; }
+
+#obstable tbody tr > td:nth-child(3) { min-width: 95px; padding-right: 15px; text-align: right; }
+
+#obstable .emphasized > td { background-color: #fff7a9; }
+
+#obstable .emphasized:hover > td,
+#obstable .emphasized:focus > td { background-color: #fff385; }
+
+#obstable .emphasized.super { background-color: #fff04e; border-top: 4px dashed #f6d01e; }
+
+#obstable .emphasized.super:hover > td,
+#obstable .emphasized.super:focus > td { background-color: #fbea2d; }
