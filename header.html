@@ -461,11 +461,6 @@
 
 <script type="application/javascript">
 
-    /**
-     * Load Javascript asynchronously and execute callback on success
-     * @param src {string} Script URL
-     * @param onload {function} Callback to call on success
-     */
     function LoadJS(src, onload) {
         var link = document.createElement("script");
         link.src = src;
@@ -479,7 +474,7 @@
         document.getElementsByTagName("head")[0].appendChild(link);
     }
 
-    function LoadCSS(src) {
+    function LoadCSS(src, onload) {
         var link = document.createElement("link");
         link.href = src;
         link.type = "text/css";
@@ -487,6 +482,8 @@
         link.onerror = function () {
             console.log("Error loading " + src)
         };
+        if (typeof (onload) == "function")
+            link.onload = onload;
         document.getElementsByTagName("head")[0].appendChild(link);
     }
 
