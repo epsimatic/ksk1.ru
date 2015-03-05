@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="942" selection-end="942" vertical-scroll-proportion="0.63882864" vertical-offset="0" max-vertical-offset="5719">
+            <state line="28" column="21" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4017,7 +4017,11 @@
       <created>1425527778609</created>
       <updated>1425527778609</updated>
     </task>
-    <option name="localTasksCounter" value="914" />
+    <task id="LOCAL-00914" summary="Пробую сделать ленивый поиск">
+      <created>1425528824722</created>
+      <updated>1425528824723</updated>
+    </task>
+    <option name="localTasksCounter" value="915" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4093,7 +4097,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Leaflet загружается только при открытии панели" />
     <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
     <MESSAGE value="Косяк!" />
     <MESSAGE value="Синхронизация модулей была сломана" />
@@ -4118,7 +4121,8 @@
     <MESSAGE value="Снова динамически загружаем http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css" />
     <MESSAGE value="Убрал картинку Гисметео" />
     <MESSAGE value="Сломал поиск" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сломал поиск" />
+    <MESSAGE value="Пробую сделать ленивый поиск" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пробую сделать ленивый поиск" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4463,7 +4467,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="942" selection-end="942" vertical-scroll-proportion="0.63882864" vertical-offset="0" max-vertical-offset="5719">
+        <state line="28" column="21" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
