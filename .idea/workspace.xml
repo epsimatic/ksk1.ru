@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="47" selection-start="7269" selection-end="7269" vertical-scroll-proportion="2.5553145" vertical-offset="1349" max-vertical-offset="5396">
+            <state line="14" column="20" selection-start="576" selection-end="576" vertical-scroll-proportion="0.28850326" vertical-offset="0" max-vertical-offset="5396">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4008,7 +4008,11 @@
       <created>1425525733354</created>
       <updated>1425525733354</updated>
     </task>
-    <option name="localTasksCounter" value="912" />
+    <task id="LOCAL-00912" summary="Убрал картинку Гисметео">
+      <created>1425527727559</created>
+      <updated>1425527727560</updated>
+    </task>
+    <option name="localTasksCounter" value="913" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4084,7 +4088,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Убрал кастыли в стилях сайта заказа такси" />
     <MESSAGE value="Изменения в стилях на сайте заказа еды" />
     <MESSAGE value="Leaflet загружается только при открытии панели" />
     <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
@@ -4109,7 +4112,8 @@
     <MESSAGE value="Объединил LoadJS и LoadCSS" />
     <MESSAGE value="Добавил высоту к .widget-ok" />
     <MESSAGE value="Снова динамически загружаем http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Снова динамически загружаем http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css" />
+    <MESSAGE value="Убрал картинку Гисметео" />
+    <option name="LAST_COMMIT_MESSAGE" value="Убрал картинку Гисметео" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4454,7 +4458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="47" selection-start="7269" selection-end="7269" vertical-scroll-proportion="2.5553145" vertical-offset="1349" max-vertical-offset="5396">
+        <state line="14" column="20" selection-start="576" selection-end="576" vertical-scroll-proportion="0.28850326" vertical-offset="0" max-vertical-offset="5396">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
