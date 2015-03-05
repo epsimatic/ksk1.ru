@@ -519,9 +519,8 @@ footer h3 {
     transition: opacity 0.7s ease;
     visibility: hidden;
 }
-
+.btn-home > div {position:relative; top:-15px;}
 .btn-home.inactive {opacity: 0; cursor: default;}
-
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
 
 

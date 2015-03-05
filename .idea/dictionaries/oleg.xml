@@ -2,11 +2,15 @@
   <dictionary name="oleg">
     <words>
       <w>addon</w>
+      <w>cond</w>
+      <w>fixme</w>
       <w>geosearch</w>
       <w>giscience</w>
+      <w>gismeteo</w>
       <w>navpanel</w>
       <w>onerror</w>
       <w>onload</w>
+      <w>openstat</w>
       <w>openstreetmap</w>
       <w>submodule</w>
       <w>subpanel</w>
