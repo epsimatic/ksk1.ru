@@ -413,7 +413,7 @@ body.alt .hide-alt.hide-alt.hide-alt,
 .show-alt.show-alt.show-alt { display: none !important; position: absolute; width: 0; overflow: hidden;}
 body.alt .show-alt.show-alt.show-alt { display: block !important; position: static; width: auto; overflow: visible; }
 
-/* Убрать закругления элементов */
+/* TODO: Убрать закругления элементов из Bootstrap через LESS */
 .navbar,
 .panel,
 .panel-heading,
