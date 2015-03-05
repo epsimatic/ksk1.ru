@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.php" afterPath="$PROJECT_DIR$/deploy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ksk1.ru.iws" />
@@ -82,15 +82,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="deploy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38609627" vertical-offset="0" max-vertical-offset="969">
+            <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="969">
               <folding>
                 <marker date="1425513524000" expanded="false" signature="559:574" placeholder="..." />
                 <marker date="1425513524000" expanded="false" signature="601:616" placeholder="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="6" selection-start="287" selection-end="287" vertical-scroll-proportion="0.30448717" vertical-offset="0" max-vertical-offset="936">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -168,6 +180,7 @@
         <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/vendor/tabdrop.html" />
         <option value="$PROJECT_DIR$/deploy.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -3911,7 +3924,11 @@
       <created>1425513340302</created>
       <updated>1425513340302</updated>
     </task>
-    <option name="localTasksCounter" value="893" />
+    <task id="LOCAL-00893" summary="Ещё попытка разобраться с подмодулями">
+      <created>1425513543633</created>
+      <updated>1425513543633</updated>
+    </task>
+    <option name="localTasksCounter" value="894" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4020,13 +4037,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taxi/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5624">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9690">
@@ -4350,12 +4360,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="0.38609627" vertical-offset="0" max-vertical-offset="969">
+        <state line="25" column="39" selection-start="511" selection-end="511" vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="969">
           <folding>
             <marker date="1425513524000" expanded="false" signature="559:574" placeholder="..." />
             <marker date="1425513524000" expanded="false" signature="601:616" placeholder="..." />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="287" selection-end="287" vertical-scroll-proportion="0.30448717" vertical-offset="0" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
