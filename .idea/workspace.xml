@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
+            <state line="28" column="39" selection-start="834" selection-end="834" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4029,7 +4029,11 @@
       <created>1425529092635</created>
       <updated>1425529092636</updated>
     </task>
-    <option name="localTasksCounter" value="917" />
+    <task id="LOCAL-00917" summary="Сделал подгрузку поиска (Косяк!)">
+      <created>1425529264406</created>
+      <updated>1425529264406</updated>
+    </task>
+    <option name="localTasksCounter" value="918" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4105,7 +4109,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Синхронизация модулей была сломана" />
     <MESSAGE value="Убрал TabDrop" />
     <MESSAGE value="Ещё попытка разобраться с подмодулями" />
     <MESSAGE value="Добавил инструкцию себе" />
@@ -4130,7 +4133,8 @@
     <MESSAGE value="Пробую сделать ленивый поиск" />
     <MESSAGE value="Косяк!" />
     <MESSAGE value="Сделал подгрузку поиска" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал подгрузку поиска" />
+    <MESSAGE value="Сделал подгрузку поиска (Косяк!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал подгрузку поиска (Косяк!)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4475,7 +4479,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
+        <state line="28" column="39" selection-start="834" selection-end="834" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
