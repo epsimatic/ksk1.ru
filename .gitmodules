@@ -22,3 +22,9 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/font-awesome"]
 	path = vendor/font-awesome
 	url = https://github.com/FortAwesome/Font-Awesome
+[submodule "vendor/leaflet-geosearch"]
+	path = vendor/leaflet-geosearch
+	url = https://github.com/smeijer/L.GeoSearch.git
+[submodule "vendor/jquery-viewport"]
+	path = vendor/jquery-viewport
+	url = https://github.com/tuupola/jquery_viewport.git

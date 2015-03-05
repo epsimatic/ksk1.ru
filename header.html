@@ -172,18 +172,9 @@
     </div>
 
     <div class="col-xs-12 col-sm-4 panel-map subpanel">
-        <h4>Карта <a href="http://ksk66.ru/karta.html" class="pull-right btn-more">Открыть <i
-                class="fa fa-arrow-right"></i></a></h4>
-
-        <form class="hidden input-group panel-map-search-form" role="search" method="get"
-              action="http://openstreetmap.ru/"
-              onsubmit="jQuery(this).children('.search-field').val('Красноуфимск ' + jQuery(this).children('.search-field').val()); return true;">
-            <input type="search" class="search-field form-control" placeholder="Найти место…" name="q"
-                   title="Напишите адрес, название или ключевое слово">
-            <span class="input-group-btn">
-                <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
-            </span>
-        </form>
+        <h4>Карта
+            <a href="http://ksk66.ru/karta.html" class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></a>
+        </h4>
 
         <div id="panel-map" style="width: 100%; height: 350px; overflow: hidden;"></div>
     </div>
@@ -468,7 +459,30 @@
     </div>
 </div>
 
-<script>
+<script type="application/javascript">
+
+    function LoadRes(src, type, onload) {
+        var link = document.createElement(type);
+        if (type == 'script') {
+            link.type = "text/javascript";
+            link.src = src;
+            link.async = true;
+        } else {
+            link.type = "text/css";
+            link.href = src;
+            link.rel = "stylesheet";
+        }
+        link.onerror = function () {
+            console.log("Error loading " + src)
+        };
+        if (typeof (onload) == "function")
+            link.onload = onload;
+        document.getElementsByTagName("head")[0].appendChild(link);
+    }
+
+    function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
+    function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
+
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
         var url = document.location.href,
