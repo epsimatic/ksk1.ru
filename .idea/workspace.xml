@@ -97,7 +97,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="6" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42628205" vertical-offset="0" max-vertical-offset="936">
+            <state line="17" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.34508547" vertical-offset="0" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -3932,7 +3932,11 @@
       <created>1425514308808</created>
       <updated>1425514308808</updated>
     </task>
-    <option name="localTasksCounter" value="895" />
+    <task id="LOCAL-00895" summary="Обновил инструкцию себе">
+      <created>1425514656484</created>
+      <updated>1425514656485</updated>
+    </task>
+    <option name="localTasksCounter" value="896" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4008,7 +4012,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Правки на сайте «Заказа еды»" />
     <MESSAGE value="Правки" />
     <MESSAGE value="Изменения в стилях на странице заказа еды" />
     <MESSAGE value="Правки в стлиях .affix" />
@@ -4033,7 +4036,8 @@
     <MESSAGE value="Убрал TabDrop" />
     <MESSAGE value="Ещё попытка разобраться с подмодулями" />
     <MESSAGE value="Добавил инструкцию себе" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил инструкцию себе" />
+    <MESSAGE value="Обновил инструкцию себе" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил инструкцию себе" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4374,7 +4378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42628205" vertical-offset="0" max-vertical-offset="936">
+        <state line="17" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.34508547" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
