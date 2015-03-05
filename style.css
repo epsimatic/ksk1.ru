@@ -408,6 +408,11 @@ footer h3 {
 .btn-home.inactive {opacity: 0; cursor: default;}
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
 
+/* TODO: Избавиться от Alt-режима.  */
+body.alt .hide-alt.hide-alt.hide-alt,
+.show-alt.show-alt.show-alt { display: none !important; position: absolute; width: 0; overflow: hidden;}
+body.alt .show-alt.show-alt.show-alt { display: block !important; position: static; width: auto; overflow: visible; }
+
 /* Убрать закругления элементов */
 .navbar,
 .panel,
