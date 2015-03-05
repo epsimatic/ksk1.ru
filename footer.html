@@ -8,7 +8,7 @@
  * @param onload {function} Callback to call on success
  */
 function LoadJS(src, onload) {
-    var link = document.createElement( "script" );
+    var link = document.createElement("script");
     link.src = src;
     link.type = "text/javascript";
     link.onerror = function () {
@@ -16,215 +16,215 @@ function LoadJS(src, onload) {
     };
     if (typeof (onload) == "function")
         link.onload = onload;
-    document.getElementsByTagName( "head" )[0].appendChild( link );
+    document.getElementsByTagName("head")[0].appendChild(link);
 }
 
 function LoadCSS(src) {
-    var link = document.createElement( "link" );
+    var link = document.createElement("link");
     link.href = src;
     link.type = "text/css";
-    link.rel  = "stylesheet";
+    link.rel = "stylesheet";
     link.onerror = function () {
         console.log("Error loading " + src)
     };
-    document.getElementsByTagName( "head" )[0].appendChild( link );
+    document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-    // Подгоняем высоту карты
-    function setMapHeight() {
-        //FIXME: Не устанавливать высоту для мобильных устройств!
-        jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
-            var this_height = jQuery(this).height();
-            var panel_map = jQuery('.panel-map');
-            if (this_height > panel_map.height()) {
-                var panel_map_map = jQuery('#panel-map');
-                panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
-            }
+// Подгоняем высоту карты
+function setMapHeight() {
+    //FIXME: Не устанавливать высоту для мобильных устройств!
+    jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
+        var this_height = jQuery(this).height();
+        var panel_map = jQuery('.panel-map');
+        if (this_height > panel_map.height()) {
+            var panel_map_map = jQuery('#panel-map');
+            panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
+        }
+    });
+    //FIXME: Надо уведомить leaflet, что его высота поменялась
+}
+
+jQuery('.triggers-weather').click(function () {
+    jQuery('#btn-feature-info').click();
+});
+
+jQuery('.btn-feature').click(function () {
+    was_active = jQuery(this).hasClass('active');
+    potential_cond_active = jQuery('.potential-cond-active');
+    jQuery('.navpanel, .btn-feature').removeClass('active');
+    potential_cond_active.removeClass('cond-active');
+    if (!was_active) {
+        jQuery(this).addClass('active');
+        target_navpanel = jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'));
+        target_navpanel.addClass('active').trigger('first-load');
+    } else {
+        potential_cond_active.addClass('cond-active');
+    }
+});
+
+jQuery('#navpanel-info').on('first-load', function () {
+
+    // загружаем кнопку категории вместо кнопки другие категории
+    jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
+
+    // Загружаем афишу
+    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {
+        setMapHeight();
+        jQuery('.movie-poster').each(function (element) {
+            jQuery(this).popover({
+                content: jQuery('#content-' + jQuery(this)[0].id).html(),
+                html: true,
+                placement: "bottom",
+                trigger: 'hover',
+                container: '.today-movies-margin',
+                viewport: 'body'
+            });
         });
-        //FIXME: Надо уведомить leaflet, что его высота поменялась
+    });
+
+    // Загружаем карту
+    setMapHeight();
+    var map;
+
+    // TODO: загружать локальный leaflet
+    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', LeafletInit);
+    LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
+    LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
+
+    function LeafletInit() {
+
+        map = L.map('panel-map');
+        map.setView([56.6132, 57.7689], 13);
+        var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+            minZoom: 0,
+            maxZoom: 20,
+            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+        });
+        OpenMapSurfer_Roads.addTo(map);
+
+        LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', LeafletAddSearch);
     }
 
-    jQuery('.triggers-weather').click(function () {
-        jQuery('#btn-feature-info').click();
-    });
-
-    jQuery('.btn-feature').click(function () {
-        was_active = jQuery(this).hasClass('active');
-        potential_cond_active = jQuery('.potential-cond-active');
-        jQuery('.navpanel, .btn-feature').removeClass('active');
-        potential_cond_active.removeClass('cond-active');
-        if (!was_active) {
-            jQuery(this).addClass('active');
-            target_navpanel = jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'));
-            target_navpanel.addClass('active').trigger('first-load');
-        } else {
-            potential_cond_active.addClass('cond-active');
-        }
-    });
-
-    jQuery('#navpanel-info').on('first-load', function () {
-
-        // загружаем кнопку категории вместо кнопки другие категории
-        jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
-
-        // Загружаем афишу
-        jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {
-            setMapHeight();
-            jQuery('.movie-poster').each(function (element) {
-                jQuery(this).popover({
-                    content: jQuery('#content-' + jQuery(this)[0].id).html(),
-                    html: true,
-                    placement: "bottom",
-                    trigger: 'hover',
-                    container: '.today-movies-margin',
-                    viewport: 'body'
-                });
-            });
+    function LeafletAddSearch() {
+        L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
+            options: { },
+            initialize: function (options) {
+                options = L.Util.setOptions(this, options);
+            },
+            /**
+             * @return {string}
+             */
+            GetServiceUrl: function (qry) {
+                var parameters = L.Util.extend({
+                    q: "Красноуфимск " + qry,
+                    format: 'json'
+                }, this.options);
+                return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
+            },
+            ParseJSON: function (data) {
+                if (data.length == 0)
+                    return [];
+                var results = [];
+                for (var i = 0; i < data.length; i++)
+                    results.push(new L.GeoSearch.Result(data[i].lon, data[i].lat, data[i].display_name));
+                return results;
+            }
         });
 
-        // Загружаем карту
-        setMapHeight();
-        var map;
+        new L.Control.GeoSearch({
+            provider: new L.GeoSearch.Provider.OpenStreetMapKsk(),
+            country: 'ru',
+            searchLabel: 'Найти на карте…',
+            notFoundMessage: 'К сожалению, ничего не найдено',
+            zoomLevel: 17
+        }).addTo(map);
+    }
 
-        // TODO: загружать локальный leaflet
-        LoadJS( 'http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', LeafletInit );
-        LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css' );
-        LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css' );
+    // Отключаемся от события
+    jQuery(this).unbind('first-load');
+});
 
-        function LeafletInit (){
 
-            map = L.map('panel-map');
-            map.setView([56.6132, 57.7689], 13);
-            var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-                minZoom: 0,
-                maxZoom: 20,
-                attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
-            });
-            OpenMapSurfer_Roads.addTo(map);
+jQuery('.btn-collapse').click(function () {
+    jQuery('.navpanel, .btn-feature').removeClass('active');
+    jQuery('.potential-cond-active').addClass('cond-active');
+});
 
-            LoadJS( 'http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', LeafletAddSearch );
+// Поисковая строка
+(function () {
+    var meta_generator = jQuery("meta[name='generator']").attr("content");
+    if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
+        // Пусто. У сайтов на WordPress свой поиск
+    } else {
+
+        var cx;
+        var url = document.location.href;
+        if (url.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
+            cx = '003704283744183876190:qchgmzsmjkc';
+        } else { // Поиск по новостям
+            cx = '003704283744183876190:woiuqgnl_eg';
         }
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    }
+})();
 
-        function LeafletAddSearch (){
-            L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
-                options: { },
-                initialize: function (options) {
-                    options = L.Util.setOptions(this, options);
-                },
-                /**
-                 * @return {string}
-                 */
-                GetServiceUrl: function (qry) {
-                    var parameters = L.Util.extend({
-                        q: "Красноуфимск " + qry,
-                        format: 'json'
-                    }, this.options);
-                    return 'http://nominatim.openstreetmap.org/search'+ L.Util.getParamString(parameters);
-                },
-                ParseJSON: function (data) {
-                    if (data.length == 0)
-                        return [];
-                    var results = [];
-                    for (var i = 0; i < data.length; i++)
-                        results.push(new L.GeoSearch.Result( data[i].lon, data[i].lat, data[i].display_name ));
-                    return results;
-                }
-            });
-
-            new L.Control.GeoSearch({
-                provider: new L.GeoSearch.Provider.OpenStreetMapKsk(),
-                country: 'ru',
-                searchLabel: 'Найти на карте…',
-                notFoundMessage: 'К сожалению, ничего не найдено',
-                zoomLevel: 17
-            }).addTo(map);
-        }
-
-        // Отключаемся от события
-        jQuery(this).unbind('first-load');
-    });
-
-
-    jQuery('.btn-collapse').click(function () {
-        jQuery('.navpanel, .btn-feature').removeClass('active');
-        jQuery('.potential-cond-active').addClass('cond-active');
-    });
-
-    // Поисковая строка
-    (function () {
-        var meta_generator = jQuery("meta[name='generator']").attr("content");
-        if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
-            // Пусто. У сайтов на WordPress свой поиск
+// Alt-режим
+var time = null;
+document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 17)
+        if (((+new Date) - time) < 400) {
+            jQuery('body').toggleClass('alt');
+            time = null;
         } else {
-
-            var cx;
-            var url = document.location.href;
-            if (url.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
-                cx = '003704283744183876190:qchgmzsmjkc';
-            } else { // Поиск по новостям
-                cx = '003704283744183876190:woiuqgnl_eg';
-            }
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = '//www.google.com/cse/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
+            time = +new Date;
         }
-    })();
+};
 
-    // Alt-режим
-    var time = null;
-    document.onkeydown = function (e) {
-        e = e || window.event;
-        if (e.keyCode === 17)
-            if (((+new Date) - time) < 400) {
-                jQuery('body').toggleClass('alt');
-                time = null;
-            } else {
-                time = +new Date;
-            }
-    };
-
-    //  Openstat
-    var openstat = { counter: 2173092, image: 5041, next: openstat };
-    (function () {
-        var j = document.createElement("script");
-        j.async = true;
-        j.type = "text/javascript";
-        j.src = "//openstat.net/cnt.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(j, s);
-    })();
+//  Openstat
+var openstat = { counter: 2173092, image: 5041, next: openstat };
+(function () {
+    var j = document.createElement("script");
+    j.async = true;
+    j.type = "text/javascript";
+    j.src = "//openstat.net/cnt.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(j, s);
+})();
 
 
-    // Yandex.Metrika counter
-    /*    (function (d, w, c) {
-     (w[c] = w[c] || []).push(function () {
-     try {
-     w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
-     webvisor: true,
-     clickmap: true,
-     trackLinks: true,
-     accurateTrackBounce: true});
-     } catch (e) {
-     }
-     });
-     var n = d.getElementsByTagName("script")[0],
-     s = d.createElement("script"),
-     f = function () {
-     n.parentNode.insertBefore(s, n);
-     };
-     s.type = "text/javascript";
-     s.async = true;
-     s.src = "//mc.yandex.ru/metrika/watch.js";
-     if (w.opera == "[object Opera]") {
-     d.addEventListener("DOMContentLoaded", f, false);
-     } else {
-     f();
-     }
-     })(document, window, "yandex_metrika_callbacks");
-     */
+// Yandex.Metrika counter
+/*    (function (d, w, c) {
+ (w[c] = w[c] || []).push(function () {
+ try {
+ w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
+ webvisor: true,
+ clickmap: true,
+ trackLinks: true,
+ accurateTrackBounce: true});
+ } catch (e) {
+ }
+ });
+ var n = d.getElementsByTagName("script")[0],
+ s = d.createElement("script"),
+ f = function () {
+ n.parentNode.insertBefore(s, n);
+ };
+ s.type = "text/javascript";
+ s.async = true;
+ s.src = "//mc.yandex.ru/metrika/watch.js";
+ if (w.opera == "[object Opera]") {
+ d.addEventListener("DOMContentLoaded", f, false);
+ } else {
+ f();
+ }
+ })(document, window, "yandex_metrika_callbacks");
+ */
 
 </script>
 <noscript><img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/></noscript>

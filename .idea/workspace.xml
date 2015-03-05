@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0be7b24b-f5b6-4cbe-bf94-d934c598d8ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/oleg.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/oleg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ksk1.ru.iws" />
@@ -70,7 +69,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="3040" selection-end="3040" vertical-scroll-proportion="0.22668113" vertical-offset="1368" max-vertical-offset="6707">
+            <state line="101" column="11" selection-start="3569" selection-end="3569" vertical-scroll-proportion="2.0813448" vertical-offset="0" max-vertical-offset="6707">
               <folding>
                 <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -3945,7 +3944,11 @@
       <created>1425515787083</created>
       <updated>1425515787084</updated>
     </task>
-    <option name="localTasksCounter" value="898" />
+    <task id="LOCAL-00898" summary="Исправляю загрузку карты">
+      <created>1425516101192</created>
+      <updated>1425516101193</updated>
+    </task>
+    <option name="localTasksCounter" value="899" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4021,7 +4024,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Изменения в стилях на странице заказа еды" />
     <MESSAGE value="Правки в стлиях .affix" />
     <MESSAGE value="Правка" />
     <MESSAGE value="Добавил стили для блока боковой навигации по категориям товаров для сайта заказа еды" />
@@ -4046,7 +4048,8 @@
     <MESSAGE value="Добавил инструкцию себе" />
     <MESSAGE value="Обновил инструкцию себе" />
     <MESSAGE value="Исправил LoadJS и LoadCSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил LoadJS и LoadCSS" />
+    <MESSAGE value="Исправляю загрузку карты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправляю загрузку карты" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4383,7 +4386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="3040" selection-end="3040" vertical-scroll-proportion="0.22668113" vertical-offset="1368" max-vertical-offset="6707">
+        <state line="101" column="11" selection-start="3569" selection-end="3569" vertical-scroll-proportion="2.0813448" vertical-offset="0" max-vertical-offset="6707">
           <folding>
             <element signature="n#style#0;n#img#0;n#noscript#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
