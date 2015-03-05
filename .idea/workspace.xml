@@ -60,7 +60,7 @@
       <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="484" column="0" selection-start="26657" selection-end="26657" vertical-scroll-proportion="0.5466378" vertical-offset="8692" max-vertical-offset="10032">
+            <state line="481" column="4" selection-start="26563" selection-end="26563" vertical-scroll-proportion="0.5878525" vertical-offset="8597" max-vertical-offset="9956">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
@@ -4010,7 +4010,11 @@
       <created>1425521638537</created>
       <updated>1425521638538</updated>
     </task>
-    <option name="localTasksCounter" value="908" />
+    <task id="LOCAL-00908" summary="Добавил onload для LoadCSS">
+      <created>1425523684181</created>
+      <updated>1425523684182</updated>
+    </task>
+    <option name="localTasksCounter" value="909" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4086,7 +4090,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Добавил изображения" />
     <MESSAGE value="Правки в стилях на сайте доставки еды" />
     <MESSAGE value="Правки в стилях на сайте такси" />
     <MESSAGE value="Игнорировать workspace.xml" />
@@ -4111,7 +4114,8 @@
     <MESSAGE value="Убрал старый поиск по карте" />
     <MESSAGE value="Упростил цепочку callback в LoadJS" />
     <MESSAGE value="Убрал лишний параметр" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал лишний параметр" />
+    <MESSAGE value="Добавил onload для LoadCSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил onload для LoadCSS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4461,7 +4465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="484" column="0" selection-start="26657" selection-end="26657" vertical-scroll-proportion="0.5466378" vertical-offset="8692" max-vertical-offset="10032">
+        <state line="481" column="4" selection-start="26563" selection-end="26563" vertical-scroll-proportion="0.5878525" vertical-offset="8597" max-vertical-offset="9956">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />

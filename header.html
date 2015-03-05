@@ -461,11 +461,17 @@
 
 <script type="application/javascript">
 
-    function LoadJS(src, onload) {
-        var link = document.createElement("script");
-        link.src = src;
-        link.async = true;
-        link.type = "text/javascript";
+    function LoadRes(src, type, onload) {
+        var link = document.createElement(type);
+        if (type == 'script') {
+            link.type = "text/javascript";
+            link.src = src;
+            link.async = true;
+        } else {
+            link.type = "text/css";
+            link.href = src;
+            link.rel = "stylesheet";
+        }
         link.onerror = function () {
             console.log("Error loading " + src)
         };
@@ -474,18 +480,8 @@
         document.getElementsByTagName("head")[0].appendChild(link);
     }
 
-    function LoadCSS(src, onload) {
-        var link = document.createElement("link");
-        link.href = src;
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.onerror = function () {
-            console.log("Error loading " + src)
-        };
-        if (typeof (onload) == "function")
-            link.onload = onload;
-        document.getElementsByTagName("head")[0].appendChild(link);
-    }
+    function LoadJS(src, onload) { LoadRes(src, 'script', onload)}
+    function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
 
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
