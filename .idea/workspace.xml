@@ -97,7 +97,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="287" selection-end="287" vertical-scroll-proportion="0.30448717" vertical-offset="0" max-vertical-offset="936">
+            <state line="21" column="6" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42628205" vertical-offset="0" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -3928,7 +3928,11 @@
       <created>1425513543633</created>
       <updated>1425513543633</updated>
     </task>
-    <option name="localTasksCounter" value="894" />
+    <task id="LOCAL-00894" summary="Добавил инструкцию себе">
+      <created>1425514308808</created>
+      <updated>1425514308808</updated>
+    </task>
+    <option name="localTasksCounter" value="895" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4004,7 +4008,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Правлю косяки в шапке для больших разрешений окна браузера" />
     <MESSAGE value="Правки на сайте «Заказа еды»" />
     <MESSAGE value="Правки" />
     <MESSAGE value="Изменения в стилях на странице заказа еды" />
@@ -4029,7 +4032,8 @@
     <MESSAGE value="Синхронизация модулей была сломана" />
     <MESSAGE value="Убрал TabDrop" />
     <MESSAGE value="Ещё попытка разобраться с подмодулями" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ещё попытка разобраться с подмодулями" />
+    <MESSAGE value="Добавил инструкцию себе" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил инструкцию себе" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4370,7 +4374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="287" selection-end="287" vertical-scroll-proportion="0.30448717" vertical-offset="0" max-vertical-offset="936">
+        <state line="21" column="6" selection-start="382" selection-end="382" vertical-scroll-proportion="0.42628205" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>

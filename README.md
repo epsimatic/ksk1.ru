@@ -14,3 +14,9 @@ ksk1.ru
 <pre>
 su www-data -c 'git clone https://github.com/glgc25/ksk1.ru.git ksk1.ru'
 </pre>
+
+или
+
+<pre>
+sudo -u www-data -- git clone https://github.com/glgc25/ksk1.ru.git ksk1.ru
+</pre>
