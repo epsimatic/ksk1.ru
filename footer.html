@@ -70,7 +70,7 @@ jQuery('#navpanel-info').on('first-load', function () {
     // Загружаем афишу
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {
         setMapHeight();
-        jQuery('.movie-poster').each(function (element) {
+        jQuery('.movie-poster').each(function (/*element*/) {
             jQuery(this).popover({
                 content: jQuery('#content-' + jQuery(this)[0].id).html(),
                 html: true,
@@ -109,6 +109,7 @@ jQuery('#navpanel-info').on('first-load', function () {
         L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
             options: { },
             initialize: function (options) {
+                //noinspection JSUnusedAssignment
                 options = L.Util.setOptions(this, options);
             },
             /**
@@ -172,19 +173,6 @@ jQuery('.btn-collapse').click(function () {
         s.parentNode.insertBefore(gcse, s);
     }
 })();
-
-// Alt-режим
-var time = null;
-document.onkeydown = function (e) {
-    e = e || window.event;
-    if (e.keyCode === 17)
-        if (((+new Date) - time) < 400) {
-            jQuery('body').toggleClass('alt');
-            time = null;
-        } else {
-            time = +new Date;
-        }
-};
 
 //  Openstat
 var openstat = { counter: 2173092, image: 5041, next: openstat };
