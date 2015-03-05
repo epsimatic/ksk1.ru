@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="21" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
+            <state line="29" column="59" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="5719">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4021,7 +4021,11 @@
       <created>1425528824722</created>
       <updated>1425528824723</updated>
     </task>
-    <option name="localTasksCounter" value="915" />
+    <task id="LOCAL-00915" summary="Косяк!">
+      <created>1425528945719</created>
+      <updated>1425528945719</updated>
+    </task>
+    <option name="localTasksCounter" value="916" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4098,7 +4102,6 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Используем локальный vendor/leaflet-geosearch" />
-    <MESSAGE value="Косяк!" />
     <MESSAGE value="Синхронизация модулей была сломана" />
     <MESSAGE value="Убрал TabDrop" />
     <MESSAGE value="Ещё попытка разобраться с подмодулями" />
@@ -4122,7 +4125,8 @@
     <MESSAGE value="Убрал картинку Гисметео" />
     <MESSAGE value="Сломал поиск" />
     <MESSAGE value="Пробую сделать ленивый поиск" />
-    <option name="LAST_COMMIT_MESSAGE" value="Пробую сделать ленивый поиск" />
+    <MESSAGE value="Косяк!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Косяк!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4467,7 +4471,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5770065" vertical-offset="0" max-vertical-offset="5719">
+        <state line="29" column="59" selection-start="926" selection-end="926" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="5719">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
