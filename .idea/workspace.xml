@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="69" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
+            <state line="99" column="0" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.76247287" vertical-offset="1178" max-vertical-offset="5662">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4045,7 +4045,11 @@
       <created>1425533679293</created>
       <updated>1425533679294</updated>
     </task>
-    <option name="localTasksCounter" value="921" />
+    <task id="LOCAL-00921" summary="Уведомить leaflet, что высота карты поменялась (2)">
+      <created>1425533754100</created>
+      <updated>1425533754100</updated>
+    </task>
+    <option name="localTasksCounter" value="922" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4121,7 +4125,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Добавил инструкцию себе" />
     <MESSAGE value="Обновил инструкцию себе" />
     <MESSAGE value="Исправил LoadJS и LoadCSS" />
     <MESSAGE value="Исправляю загрузку карты" />
@@ -4146,7 +4149,8 @@
     <MESSAGE value="Сделал подгрузку поиска (Косяк!)" />
     <MESSAGE value="Стилистические правки" />
     <MESSAGE value="Уведомить leaflet, что высота карты поменялась" />
-    <option name="LAST_COMMIT_MESSAGE" value="Уведомить leaflet, что высота карты поменялась" />
+    <MESSAGE value="Уведомить leaflet, что высота карты поменялась (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Уведомить leaflet, что высота карты поменялась (2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4491,7 +4495,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="69" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
+        <state line="99" column="0" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.76247287" vertical-offset="1178" max-vertical-offset="5662">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />

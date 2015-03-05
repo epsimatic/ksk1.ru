@@ -96,11 +96,7 @@ jQuery('#navpanel-info').on('first-load', function () {
     LoadCSS('http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css');
     LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', function(){
         jQuery('#weather-panel').html(jQuery('.popover-source-gismeteo').html());
-        if (jQuery(window).width() < 765) {
-            var panel_vote_xs = jQuery("#panel-vote-xs");
-            jQuery("#vote_xs").html(panel_vote_xs.html());
-            panel_vote_xs.remove();
-        }
+        setMapHeight();
     });
 
     // Загружаем карту
