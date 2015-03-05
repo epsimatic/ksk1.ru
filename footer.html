@@ -34,6 +34,7 @@
     }
 })();
 
+var map;
 // Подгоняем высоту карты
 function setMapHeight() {
     //FIXME: Не устанавливать высоту для мобильных устройств!
@@ -45,7 +46,7 @@ function setMapHeight() {
             panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
         }
     });
-    //FIXME: Надо уведомить leaflet, что его высота поменялась
+    if (map) window.setTimeout(function () { map.invalidateSize();}, 300); //Уведомить leaflet, что высота поменялась
 }
 
 jQuery('.triggers-weather').click(function () {
@@ -109,7 +110,7 @@ jQuery('#navpanel-info').on('first-load', function () {
     // TODO: загружать локальный leaflet
     LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function(){
 
-        var map = L.map('panel-map');
+        map = L.map('panel-map');
         map.setView([56.6132, 57.7689], 13);
         var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
             minZoom: 0,
