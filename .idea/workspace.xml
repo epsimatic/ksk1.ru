@@ -73,7 +73,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
+            <state line="48" column="69" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />
@@ -4041,7 +4041,11 @@
       <created>1425532451441</created>
       <updated>1425532451441</updated>
     </task>
-    <option name="localTasksCounter" value="920" />
+    <task id="LOCAL-00920" summary="Уведомить leaflet, что высота карты поменялась">
+      <created>1425533679293</created>
+      <updated>1425533679294</updated>
+    </task>
+    <option name="localTasksCounter" value="921" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
     <servers>
@@ -4117,7 +4121,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ещё попытка разобраться с подмодулями" />
     <MESSAGE value="Добавил инструкцию себе" />
     <MESSAGE value="Обновил инструкцию себе" />
     <MESSAGE value="Исправил LoadJS и LoadCSS" />
@@ -4142,7 +4145,8 @@
     <MESSAGE value="Сделал подгрузку поиска" />
     <MESSAGE value="Сделал подгрузку поиска (Косяк!)" />
     <MESSAGE value="Стилистические правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Стилистические правки" />
+    <MESSAGE value="Уведомить leaflet, что высота карты поменялась" />
+    <option name="LAST_COMMIT_MESSAGE" value="Уведомить leaflet, что высота карты поменялась" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4487,7 +4491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
+        <state line="48" column="69" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.5770065" vertical-offset="380" max-vertical-offset="5738">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#em#0;n#footer#0;n#!!top" expanded="true" />

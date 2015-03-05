@@ -46,7 +46,7 @@ function setMapHeight() {
             panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
         }
     });
-    if (map) window.setTimeout(function () { map.invalidateSize();}, 300); //Уведомить leaflet, что высота поменялась
+    if (map) window.setTimeout(function () { map.invalidateSize(); }, 100); //Уведомить leaflet, что высота поменялась
 }
 
 jQuery('.triggers-weather').click(function () {
