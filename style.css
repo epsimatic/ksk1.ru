@@ -686,9 +686,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .panel-food-delivery { margin-bottom: 15px; }
 
-.panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
+.panel-food-delivery  h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
 
-.panel-food-delivery > h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px;}
+.panel-food-delivery  h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px;}
 
 .navpanel-services .panel-food-delivery .eda-phone { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 10px; }
 
