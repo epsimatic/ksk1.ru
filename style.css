@@ -688,7 +688,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .panel-food-delivery  h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
 
-.panel-food-delivery  h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px;}
+.panel-food-delivery  h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px; margin-bottom: 0; }
 
 .navpanel-services .panel-food-delivery .eda-phone { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 10px; }
 
@@ -723,10 +723,10 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-taxi .taxi-phone > a { color: #161616; font-size: 20px; font-weight: 700; }
 
-.navpanel-services .panel-taxi .btn-warning { background-color: #161616; border-color: #161616; color: #ffd401; font-size: 15px; font-weight: 600; margin-bottom: 15px; margin-top: 20px; text-transform: uppercase; }
+.navpanel-services .panel-taxi .btn-warning { background-color: #ffd401; border-color: #161616; color: #161616; font-size: 15px; font-weight: 600; margin-bottom: 15px; margin-top: 20px; text-transform: uppercase; }
 
 .navpanel-services .panel-taxi .btn-warning:hover,
-.navpanel-services .panel-taxi .btn-warning:focus { background-color: #222222; color: #fff001; }
+.navpanel-services .panel-taxi .btn-warning:focus { background-color: #fff001; color: #222222; }
 
 .navpanel-services .panel-taxi .taxi-about { text-align: center; margin-bottom: 15px; }
 
