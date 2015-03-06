@@ -756,11 +756,11 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     /*.dishes .dish:hover .item-stuff { height: 205px; }*/
 
-    .dishes .dish .item-description p { font-size: 0.9em; line-height: 1.4em; color: #777; height: 0; }
+    .dishes .dish .item-description { font-size: 0.9em; line-height: 1.4em; color: #777; height: 0; }
 
     .dishes .dish:hover .item-description { display: block; }
 
-    .dishes .dish:hover .item-description p { height: auto; }
+    .dishes .dish:hover .item-description { height: auto; }
 
     .dishes .dish .order-controls .portion-type { margin-left: 0; padding-left: 0; }
 
@@ -774,11 +774,11 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0;}
 
-    .dishes.dishes-col-6 .dish .item-description p { margin: 0; }
+    .dishes.dishes-col-6 .dish .item-description p { margin: 0; padding: 0 }
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 320px; }*/
 
-    .dishes.dishes-col-6 .dish:hover .item-description p { margin-bottom: 15px; padding-top: 0; }
+    .dishes.dishes-col-6 .dish:hover .item-description { margin-bottom: 15px; padding-top: 0; }
 
     .dishes .dish .order-controls .price { padding: 0; }
 
@@ -809,7 +809,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container.variable .order-controls .add_to_cart_button { width: auto; }
 
-    .dishes .dish-container.variable .item-description p { padding-bottom: 5px; }
+    .dishes .dish-container.variable .item-description { padding-bottom: 5px; }
 
     .dishes.dishes-col-6 .dish-container.variable { height: 335px; }
 
@@ -831,7 +831,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px; }
 
-    .dishes.dishes-col-6 .dish-container.variable .item-description p { padding-bottom: 0; }
+    .dishes.dishes-col-6 .dish-container.variable .item-description p { padding: 0; margin: 0 }
 
 
     .dishes-cat .btn-collapse { margin: 0 -10px; }
