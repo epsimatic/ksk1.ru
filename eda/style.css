@@ -898,7 +898,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     border: 1px solid red;
 }
 
-#shipping_method input, label[for=shipping_method_0_flat_rate] { display: none; }
+/*#shipping_method input, label[for=shipping_method_0_flat_rate] { display: none; }*/
 .alert .wc-forward, .added_to_cart.wc-forward { display: none !important; }
 .woocommerce-result-count, .woocommerce-ordering { display: none; }
 td.product-thumbnail img { height: 40px; width: auto; }
