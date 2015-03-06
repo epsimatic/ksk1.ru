@@ -735,8 +735,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .panel-taxi .taxi-about > a:hover,
 .navpanel-services .panel-taxi .taxi-about > a:focus { color: #000; }
 
-.navpanel-services .panel.panel-cat.panel-company
-
 .news .container > #header .navpanel.row { margin: 0; }
 
 .navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
@@ -3682,7 +3680,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     /*.navpanel-services .town-services { padding-right: 10px; padding-left: 10px; }*/
 
-    .navpanel-services .panel.panel-cat { width: 47%; margin: 0 1.5% 10px; }
+    /*.navpanel-services .panel.panel-cat { width: 47%; margin: 0 1.5% 10px; }*/
 
     #navpanel-shopping { margin-left: 10px; margin-right: 10px; }
 
