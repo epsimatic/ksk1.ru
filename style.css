@@ -670,6 +670,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .icon-place a:hover,
 .navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
 
+.navpanel-services .ksk-services { padding: 0; }
+
 .navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 5px; margin-top: 10px; text-align: center; text-transform: uppercase; }
 
 .navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
@@ -685,6 +687,12 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .panel-food-delivery { margin-bottom: 15px; }
 
 .panel-food-delivery > h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
+
+.panel-food-delivery > h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px;}
+
+.navpanel-services .panel-food-delivery .eda-phone { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 10px; }
+
+.navpanel-services .panel-food-delivery .eda-phone a { color: #ff1744; }
 
 .navpanel-services .shop-link { padding: 10px 15px; }
 
@@ -703,17 +711,19 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 0.9em; padding: 5px 10px; }
 
-.navpanel-services .panel-taxi { background-color: #ffd401; text-align: center; }
+.navpanel-services .panel-taxi { /*background-color: #ffd401;*/ text-align: center; }
 
-.navpanel-services .panel-taxi img { width: 80%; margin-top: 10px; }
+.navpanel-services .panel-taxi h2 { text-transform: uppercase; font-weight: 700; margin: 0px; padding: 10px 0px 11px; color: tomato; font-size: 17px; }
+
+.navpanel-services .panel-taxi img { width: 100%; margin-top: 15px; }
 
 .navpanel-services .panel-taxi .taxi-description { font-size: 17px; font-weight: 600; margin-top: 10px; text-align: center; }
 
-.navpanel-services .panel-taxi .taxi-phone { text-align: center; margin-bottom: 10px; margin-top: 5px; }
+.navpanel-services .panel-taxi .taxi-phone { text-align: center; margin-bottom: 20px; margin-top: 20px; }
 
 .navpanel-services .panel-taxi .taxi-phone > a { color: #161616; font-size: 20px; font-weight: 700; }
 
-.navpanel-services .panel-taxi .btn-warning { background-color: #161616; border-color: #161616; color: #ffd401; font-size: 15px; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; }
+.navpanel-services .panel-taxi .btn-warning { background-color: #161616; border-color: #161616; color: #ffd401; font-size: 15px; font-weight: 600; margin-bottom: 15px; margin-top: 20px; text-transform: uppercase; }
 
 .navpanel-services .panel-taxi .btn-warning:hover,
 .navpanel-services .panel-taxi .btn-warning:focus { background-color: #222222; color: #fff001; }
@@ -724,6 +734,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-taxi .taxi-about > a:hover,
 .navpanel-services .panel-taxi .taxi-about > a:focus { color: #000; }
+
+.navpanel-services .panel.panel-cat.panel-company
 
 .news .container > #header .navpanel.row { margin: 0; }
 
@@ -3569,6 +3581,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
+    .navpanel-services .panel-taxi .taxi-phone { margin-bottom: 10px; }
+
     .navpanel img.icon { margin-bottom: 6px; }
 
     .navpanel .cat,
@@ -3761,9 +3775,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place a { padding: 12px; }
 
-    .navpanel-services .icon-place a > .features-item-name { font-size: 1em; line-height: 1.35em; }
+    .navpanel-services .icon-place a > .features-item-name { /*font-size: 1em;*/ line-height: 1.35em; padding: 0; }
 
-    .navpanel-services .shop-link { padding: 7px 27px; }
+    .navpanel-services .shop-link { padding: 7px 15px; }
 
     .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 1em; padding: 6px 12px; }
 
@@ -3861,7 +3875,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .icon-place a { padding: 7px;}
 
-    .navpanel-services .shop-link { padding: 5px 50px; }
+    .navpanel-services .shop-link { padding: 10px 20px; }
 
     /*.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; }*/
 
