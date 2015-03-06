@@ -713,9 +713,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-taxi { /*background-color: #ffd401;*/ text-align: center; }
 
-.navpanel-services .panel-taxi h2 { text-transform: uppercase; font-weight: 700; margin: 0px; padding: 10px 0px 11px; color: tomato; font-size: 17px; }
+.navpanel-services .panel-taxi h2 { text-transform: uppercase; font-weight: 700; margin: 0; padding: 10px 0 11px; color: tomato; font-size: 17px; }
 
-.navpanel-services .panel-taxi img { width: 100%; margin-top: 15px; }
+.navpanel-services .panel-taxi img { width: 100%; }
 
 .navpanel-services .panel-taxi .taxi-description { font-size: 17px; font-weight: 600; margin-top: 10px; text-align: center; }
 
