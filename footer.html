@@ -157,7 +157,9 @@ jQuery('#navpanel-info').on('first-load', function () {
 });
 
 //  Openstat
-var openstat = { counter: 2173092, image: 5041, next: openstat };
+var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat,
+    part: jQuery('body').prop('class').split(' ')[0] };
+//var openstat = { counter: 2173092, image: 5041, next: openstat };
 LoadJS('//openstat.net/cnt.js');
 
 
@@ -233,7 +235,7 @@ LoadJS('//openstat.net/cnt.js');
 <footer class="hidden-print" style="margin-top:20px;">
     <div class="row">
         <div class="col-sm-6" style="text-align:right;">
-            <h3>18+ © 2008-2015 Красноуфимск Онлайн</h3>
+            <h3>© 2008-2015 Красноуфимск Онлайн</h3>
 
             <p class="footer_registration">Свидетельство о регистрации СМИ Эл № ФС 77-42292 от 30.09.2010 г., выдано
                 Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций.</p>
@@ -244,9 +246,11 @@ LoadJS('//openstat.net/cnt.js');
                 комментариев.</p>
 
             <div>
-                <span id="openstat2173092"></span>
-                <span><a href="http://rating.openstat.ru/site/2173092">Статистика посещений</a></span> •
-                <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span> •
+                <span><a href="http://rating.openstat.ru/site/2173092">Вчера</a></span>
+                <span class="openstat-container" id="openstat2173092"></span>
+                <span><a href="http://rating.openstat.ru/site/2173092">посещений</a></span> •
+                <span><a href="http://ob.ksk66.ru/p11.html">Правила сайта</a></span>
+                <span>18+</span> •
                 <span><a href="http://news.kskmedia.ru/reklama-site/">Реклама на сайте</a></span>
             </div>
         </div>

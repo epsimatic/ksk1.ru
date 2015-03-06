@@ -383,9 +383,9 @@ footer h3 {
     margin-top: 0;
 }
 
-#openstat2173092 img {
-    width: 8%;
-}
+.openstat-container { display: inline-block; overflow: hidden; vertical-align: middle; }
+.openstat-container a { pointer-events: none; }
+.openstat-container img { margin: -2px -3px -1px -60px; display: block; }
 
 /* </editor-fold> */
 
@@ -408,12 +408,10 @@ footer h3 {
 .btn-home.inactive {opacity: 0; cursor: default;}
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
 
-
-/* --- Alt-режим --- */
+/* TODO: Избавиться от Alt-режима.  */
 body.alt .hide-alt.hide-alt.hide-alt,
 .show-alt.show-alt.show-alt { display: none !important; position: absolute; width: 0; overflow: hidden;}
 body.alt .show-alt.show-alt.show-alt { display: block !important; position: static; width: auto; overflow: visible; }
-
 
 /* Убрать закругления элементов */
 .navbar,
