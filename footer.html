@@ -1,16 +1,6 @@
 <!--Общий подвал-->
 
 
-<style>
-#searchbox-lazy {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-}
-</style>
 <script type="application/javascript">
 
 // Поисковая строка
@@ -25,7 +15,7 @@
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
         }
-        jQuery('.searchbox').append('<div id="searchbox-lazy">Поиск…</div>');
+        jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
         jQuery('#searchbox-lazy').hover(function(){
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
             jQuery(this).remove();
