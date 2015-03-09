@@ -19,7 +19,6 @@
         jQuery('#searchbox-lazy').hover(function(){
             var searchbox_lazy = jQuery(this);
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx, function(){ searchbox_lazy.remove(); });
-//            jQuery(this).remove();
         });
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }
