@@ -269,9 +269,10 @@ LoadJS('//mc.yandex.ru/metrika/watch.js');
     var $buoop = { text: "Ваш браузер (%s) <b>устарел</b>. В нём могут быть <b>уязвимости</b> и он <b>не показывает все возможности</b> этого и других сайтов. \
 <a%s>Узнайте, как обновить ваш браузер</a>" };
     LoadJS('//browser-update.org/update.js');
-
-    jQuery('#mail').popover({
-        content: "<iframe class='popover-paper' src='http://formdesigner.ru/form/iframe/11796'></iframe>",
-        html: true
-    });
+    jQuery(document).load(function () {
+        jQuery('#mail').popover({
+            content: "<iframe class='popover-paper' src='http://formdesigner.ru/form/iframe/11796'></iframe>",
+            html: true
+        });
+    })
 </script>
