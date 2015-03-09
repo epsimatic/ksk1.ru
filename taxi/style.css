@@ -102,6 +102,8 @@ img[src*="taxi-squares.svg"] { width: 100%; position: relative; bottom: 0; margi
 
 #collapseDepartureOptions .btn-default:active { border-color: #ffc600; background-color: #ffc600; }
 
+.form-control:focus { box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 12px #ffff00; background-color: #aaa; }
+
 .form-horizontal,
 .form-inline { padding: 10px 0; }
 
