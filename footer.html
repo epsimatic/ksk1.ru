@@ -18,7 +18,7 @@
         jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
         jQuery('#searchbox-lazy').hover(function(){
             var searchbox_lazy = jQuery(this);
-            LoadJS('//www.google.com/cse/cse.js?cx=' + cx, function(){ searchbox_lazy.remove(); });
+            LoadJS('//www.google.com/cse/cse.js?cx=' + cx, function(){ window.setTimeout( function(){searchbox_lazy.remove();}, 500 ); });
         });
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }

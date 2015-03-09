@@ -259,7 +259,7 @@ body.single-company .navbar,
 
 .searchbox { width: 100%; margin-bottom: 5px; }
 
-#searchbox-lazy { position: absolute; width: 100%; bottom: 0; height: 50px; line-height: 50px; opacity: 1; transition: opacity .5s ease 0s; cursor: progress; }
+#searchbox-lazy { position: absolute; width: 100%; bottom: 0; height: 50px; line-height: 50px; opacity: 1; transition: opacity 1s ease 0s; cursor: progress; }
 
 #searchbox-lazy:hover { opacity: 0; }
 
