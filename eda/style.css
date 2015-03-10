@@ -1,6 +1,10 @@
 /*кастыли*/
 nav.navbar { margin: 0 -10px; }
 
+#user-panel { display: none; }
+
+.header-logo-col:first-child .header-logo #sublogo { left: 65px; }
+
 /**/
 .products .wc-forward { display: none; }
 
