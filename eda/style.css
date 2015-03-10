@@ -52,10 +52,10 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 #cart-bar .checkout-button { font-size: 12px; margin-top: 5px; padding: 8px 6px; }
 
-#cart-bar #cart-bar-real > div:nth-child(1) { padding-right: 0; }
+#cart-bar #cart-bar-real > div:nth-child(1) { padding: 0; }
 
-#cart-bar #cart-bar-real > div:nth-child(3),
-#cart-bar #cart-bar-real > div:nth-child(1) { display: none; }
+/*#cart-bar #cart-bar-real > div:nth-child(3),
+#cart-bar #cart-bar-real > div:nth-child(1) { display: none; }*/
 
 #cart-bar #cart-bar-real > div:nth-child(2) { padding: 0; position: relative; }
 
