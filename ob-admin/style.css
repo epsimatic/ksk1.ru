@@ -63,6 +63,6 @@ table .checked-edit:hover:before { color: #666666; content: ""; cursor: point
 #obstable .emphasized.super:hover > td,
 #obstable .emphasized.super:focus > td { background-color: #fbea2d; }
 
-.photos-counter-block { background-color: #fefefe; height: 64px; padding: 5px; position: static; }
+.photos-counter-block { background-color: #fefefe; height: 64px; padding: 5px; margin-left: 20px; position: static; }
 
 .photos-counter { font-weight: 600; }
