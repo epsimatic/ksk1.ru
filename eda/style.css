@@ -522,7 +522,15 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .woocommerce form.checkout .alert { margin: 15px 5px; }
 
-.alert-success { background-color: #ccff90; border: medium none; border-radius: 0; -webkit-animation: 'fade-out' 12s 0s 1 forwards; animation: fade-out 12s 0s 1 forwards; }
+.alert-success { background-color: #ccff90; border: medium none; border-radius: 0; -webkit-animation: fade-out 12s 0s 1 forwards; animation: fade-out 12s 0s 1 forwards; }
+
+@-webkit-keyframes fade-out {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    90%  { opacity: 1; }
+    99%  { opacity: 0; transform: translate(0,0)}
+    100% { opacity: 0; transform: translate(0,-9999px); }
+}
 
 @keyframes fade-out {
     0%   { opacity: 0; }
