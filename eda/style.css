@@ -101,7 +101,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 #cart-bar-real .cart-item { position: relative; margin-right: 18px; }
 
-#cart-bar-real .cart_item .product-remove { background-color: #ff5252; border-radius: 0 3px 0 0; position: absolute; top: 0; right: 0; padding: 0 5px; }
+#cart-bar-real .cart_item .product-remove { background-color: #ff5252; border-radius: 0 3px 0 0; position: absolute; top: 0; right: 0; padding: 0 5px; z-index: 10; }
 
 #cart-bar-real .cart_item .product-remove a { color: #fff; }
 
