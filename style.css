@@ -1251,6 +1251,16 @@ body.ob     .cond-active.cond-active-ob,
 
 #dropmenudiv > a { display: block; line-height: 1.3em; margin-bottom: 10px; }
 
+#panel-info-prosec { z-index: 10; }
+
+#panel-info { z-index: 9; }
+
+#panel-pop-comments { z-index: 8; }
+
+#panel-pop-news { z-index: 7; }
+
+#lastcomments { z-index: 6; }
+
 /*.temp .panel-week .panel-heading,
 .temp .panel-sendsms .panel-heading,
 .temp .panel-official .panel-heading,
