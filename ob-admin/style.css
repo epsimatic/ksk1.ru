@@ -1,3 +1,7 @@
+.navbar { background-color: #ffffff; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
+
+.navbar .container { box-shadow: none; }
+
 .checked-no { color: #ff1744; }
 
 a:hover .checked-no { color: #d50000; }
@@ -27,11 +31,11 @@ a:hover .checked-edit { color: #1b5e20; }
 
 a:hover .checked-archive { color: #333; }
 
-.checked-no:hover:before,
-.checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+table .checked-no:hover:before,
+table .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
 
-.checked-yes:hover:before,
-.checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+table .checked-yes:hover:before,
+table .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
 
 .fa-star { color: #ff5722; }
 
