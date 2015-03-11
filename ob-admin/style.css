@@ -1,4 +1,4 @@
-.navbar { background-color: #ffffff; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
+.navbar { background-color: #ffffff !important; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
 
 .navbar .container { box-shadow: none; }
 
@@ -62,3 +62,7 @@ table .checked-edit:hover:before { color: #666666; content: ""; cursor: point
 
 #obstable .emphasized.super:hover > td,
 #obstable .emphasized.super:focus > td { background-color: #fbea2d; }
+
+.photos-counter-block { background-color: #fefefe; height: 64px; padding: 5px; position: static; }
+
+.photos-counter { font-weight: 600; }
