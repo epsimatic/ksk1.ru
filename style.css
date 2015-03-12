@@ -2371,6 +2371,10 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-list > .list-group-item.super {margin: 0 0 10px !important;}
 
+.photo-counter-group { background-color: rgba(0, 0, 0, 0.5); border-radius: 5px 0 0; bottom: 0; color: #fff; font-size: 0.81em; padding: 1px 6px 3px; position: absolute; right: 0; }
+
+.photo-counter-group .photo-counter { padding-left: 3px; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница объявления"> */
