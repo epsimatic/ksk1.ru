@@ -28,7 +28,7 @@ header#header {margin-bottom: 0 !important;}
 
 #stripe.container { padding: 0; }
 
-.container { background-color: #ffffff; box-shadow: 0 4px 7px #cbcbcb; padding-left: 10px; padding-right: 10px; }
+.container { background-color: #ffffff; box-shadow: 0 4px 3px rgba(0, 0, 0, 0.17); padding-left: 10px; padding-right: 10px; }
 
 /*#page.container {padding: 0 10px;}*/
 
