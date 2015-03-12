@@ -582,6 +582,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 @media (min-width: 768px) {
     /*#cart-bar-real .cart-item .cart-badges { bottom: -7px; right: -10px; position: absolute; }*/
 
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { left: 32px; }
+
     .cart.shop_table .alert + .alert { top: 170px; }
 
     .checkout-description { margin: 20px; padding: 20px 30px 15px; }
@@ -728,6 +731,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -md- */
 @media (min-width: 992px) {
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { left: 127px; }
+
     #cart-bar-real {
         display: -webkit-box;
         display: -webkit-flex;
@@ -851,6 +857,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { left: 155px; }
 
     .side_nav-container { display: block; }
 
