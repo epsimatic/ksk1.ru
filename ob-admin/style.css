@@ -31,41 +31,41 @@ a:hover .checked-edit { color: #1b5e20; }
 
 a:hover .checked-archive { color: #333; }
 
-table .checked-no:hover:before,
-table .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+.table-obs-admin .checked-no:hover:before,
+.table-obs-admin .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
 
-table .checked-yes:hover:before,
-table .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+.table-obs-admin .checked-yes:hover:before,
+.table-obs-admin .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
 
 .fa-star { color: #ff5722; }
 
-#obstable { width: 100%; margin-top: 5px; }
+.table-obs-admin { width: 100%; margin-top: 5px; }
 
-#obstable thead tr { background-color: #f6f6f6; }
+.table-obs-admin thead tr { background-color: #f6f6f6; }
 
-#obstable tr > th { text-align: center; }
+.table-obs-admin tbody .col-obs-date,
+.table-obs-admin tbody .col-obs-rep,
+.table-obs-admin tr > th { text-align: center; }
 
-#obstable tbody tr > td:first-child { padding: 10px 10px 10px 15px; }
+.table-obs-admin thead .col-obs-text { text-align: left; }
 
-#obstable tbody tr > td:nth-child(n+1) { vertical-align: middle; }
+/*.table-obs-admin tbody tr > td:first-child { padding: 10px 10px 10px 15px; }*/
 
-#obstable tbody tr > td:nth-child(2) { text-align: center; }
+.table-obs-admin tbody .col-obs-status,
+.table-obs-admin tbody .col-obs-date,
+.table-obs-admin tbody .col-obs-rep { vertical-align: middle; }
 
-#obstable tbody tr > td:nth-child(3) { min-width: 95px; padding-right: 15px; text-align: right; }
+.table-obs-admin tbody .col-obs-status { min-width: 95px; padding-left: 15px; text-align: left; }
 
-#obstable .emphasized > td { background-color: #fff7a9; }
+.table-obs-admin .is-selected > td { background-color: #fff7a9; }
 
-#obstable .emphasized:hover > td,
-#obstable .emphasized:focus > td { background-color: #fff385; }
+.table-obs-admin .is-selected:hover > td,
+.table-obs-admin .is-selected:focus > td { background-color: #fff385; }
 
-#obstable .emphasized.super { background-color: #fff04e; border-top: 4px dashed #f6d01e; }
+.table-obs-admin .is-selected.super { background-color: #fff04e; border-top: 4px dashed #f6d01e; }
 
-#obstable .emphasized.super:hover > td,
-#obstable .emphasized.super:focus > td { background-color: #fbea2d; }
-
-.photos-counter-block { background-color: #fefefe; height: 64px; padding: 5px; margin-left: 20px; }
-
-.photos-counter { font-weight: 600; }
+.table-obs-admin .is-selected.super:hover > td,
+.table-obs-admin .is-selected.super:focus > td { background-color: #fbea2d; }
 
 /*перенесено с ob.ksk66.ru*/
 .add-ob__right-input_phone .popover{
