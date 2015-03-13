@@ -57,7 +57,7 @@ a:hover .checked-archive { color: #333; }
 .table-obs-admin tbody .col-obs-date,
 .table-obs-admin tbody .col-obs-rep { vertical-align: middle; }
 
-.table-obs-admin tbody .col-obs-status { padding-left: 15px; text-align: left; white-space: nowrap; }
+.table-obs-admin tbody .col-obs-status { padding-left: 15px; text-align: left; min-width: 90px; }
 
 .table-obs-admin .is-selected > td { background-color: #fff7a9; }
 
