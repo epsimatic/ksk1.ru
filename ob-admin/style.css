@@ -274,3 +274,6 @@ h1 {
 .is-business .icon-business {
     display: inline-block;
 }
+
+.row-obs { transition: opacity 0.2s; }
+.row-obs.loading { opacity: 0.2; }
