@@ -33,6 +33,9 @@ a:hover .checked-archive { color: #333; }
 
 .table-obs-admin article a { color: #333; }
 
+.table-obs-admin article .ob-meta,
+.table-obs-admin article p.ob-text-group { display: inline; }
+
 .table-obs-admin .checked-no:hover:before,
 .table-obs-admin .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
 
