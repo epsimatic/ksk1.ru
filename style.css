@@ -282,7 +282,7 @@ body.single-company .navbar,
 
 .widget {margin-bottom: 10px !important;}
 
-.panel {border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; margin-bottom: 10px;}
+.panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; margin-bottom: 10px; }
 
 .panel > .panel-heading + .panel-collapse .panel-body {border-top: none;}
 
@@ -2216,6 +2216,33 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block_necro .list-group-item,
 .block_congrats .list-group-item {text-align: center !important;}
+
+
+
+/*Новое оформление объявления*/
+.has-icon::before { font-family: FontAwesome; display: inline-block; text-align: center; width: 1.28571em; }
+
+.table-obs-admin figure { float: right; margin-left: 15px; position: relative; }
+
+.table-obs-admin a { color: #333; }
+
+.ob-meta a { color: #57346b; }
+
+.ob-thumb-counter.has-icon::before { content: ""; padding-right: 5px; }
+
+.ob-thumb-counter { font-size: .9em; color: #fff; background-color: rgba(0, 0, 0, 0.7); border-radius: 5px 0 0; padding: 1px 5px 2px; position: absolute; bottom: 0; right: 0; }
+
+.ob-contact.has-icon::before { padding-right: 2px; }
+
+.ob-phone.has-icon::before { content: ""; }
+
+.ob-phone.ob-mobile.has-icon::before { content: ""; }
+
+.ob-email.has-icon::before { content: ""; }
+
+.ob-publish-date.has-icon::before { content: ""; padding-right: 2px; }
+
+
 
 /* <editor-fold desc="Стили user-bar и панели «Мои объявления»"> */
 
