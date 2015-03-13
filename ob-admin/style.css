@@ -264,7 +264,8 @@ h1 {
 
 
 /* Скрывать значки статусов в админке, показывать только нужные */
-td.col-obs-status .fa { display: none; }
+.col-obs-status .fa { display: none; }
+
 .status-no .icon-status-no,
 .status-yes .icon-status-yes,
 .status-edit .icon-status-edit,
