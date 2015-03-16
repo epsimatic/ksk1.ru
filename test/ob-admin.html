@@ -1,0 +1,496 @@
+<style>
+    .checked-no { color: #ff1744; }
+
+    a:hover .checked-no { color: #d50000; }
+
+    .checked-no ~ span { color: #b71c1c; }
+
+    .checked-no_paid { color: #ff9100; }
+
+    a:hover .checked-no_paid { color: #ff6d00; }
+
+    .checked-no_paid ~ span { color: #bf360c; }
+
+    .checked-yes,
+    .fa-play { color: #3d5afe; }
+
+    a:hover .checked-yes { color: #304ffe; }
+
+    .checked-yes ~ span { color: #1a237e; }
+
+    .checked-edit { color: #00c853; }
+
+    a:hover .checked-edit { color: #1b5e20; }
+
+    .checked-edit ~ span { color: #1b5e20; }
+
+    .checked-archive { color: #666; }
+
+    a:hover .checked-archive { color: #333; }
+
+    .checked-no:hover:before,
+    .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+
+    .checked-yes:hover:before,
+    .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+
+    .fa-star { color: #ff5722; }
+    
+    #obstable { width: 100%; margin-top: 5px; }
+
+    #obstable thead tr { background-color: #f6f6f6; }
+
+    #obstable tr > th { text-align: center; }
+
+    #obstable tbody tr > td:first-child { padding: 10px 10px 10px 15px; }
+
+    #obstable tbody tr > td:nth-child(n+1) { vertical-align: middle; }
+
+    #obstable tbody tr > td:nth-child(2) { text-align: center; }
+    
+    #obstable tbody tr > td:nth-child(3) { min-width: 95px; padding-right: 15px; text-align: right; }
+
+    #obstable .emphasized > td { background-color: #fff7a9; }
+
+    #obstable .emphasized:hover > td,
+    #obstable .emphasized:focus > td { background-color: #fff385; }
+
+    #obstable .emphasized.super { background-color: #fff04e; border-top: 4px dashed #f6d01e; }
+
+    #obstable .emphasized.super:hover > td,
+    #obstable .emphasized.super:focus > td { background-color: #fbea2d; }
+</style>
+
+
+<div style="background-color: #eeeeee;" class="navbar navbar-default navbar-fixed-top" role="navigation"><!--navbar-fixed-top-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Включить навигацию</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img style="height: 25px;" src="/images/TPHeader-old.png"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/a/?action=abuse">Жалобы <span class="badge">2</span></a></li>
+                <li><a href="/a/?action=journal">Журнал</a></li>
+                <li><a href="/a/?action=replaces">Автозамена</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ещё<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/a/?action=category">Категории</a></li>
+                        <li><a href="/a/?action=html_export">Экспорт</a></li>
+                        <li><a onclick="if (confirm('Внимание!!! Сократить кол-во выходов объявлений в газете?'))
+                                { parent.location='/a/cutnewspaper.php'; }">-1 выпуск газеты 24.02.2015</a></li>
+                        <li><a href="/a/?action=content">Страницы</a></li>
+
+                        <li><a href="/a/?action=comments">Комментарии</a></li>
+                        <li><a href="/a/?action=stat">Статистика</a></li>
+                        <li><a href="/a/?action=setting">Конфигурация</a></li>
+                        <li><a href="/a/?action=profile">Профиль Администратора</a></li>
+                        <li><a href="/a/?action=maintenance">Обслуживание</a></li>
+                        <li><a href="/a/index.php?cache=yes">Очистить кеш</a></li>
+                        <li><a href="/a/?action=logout">Выйти</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li title="Все объявления: 47187"><a href="/a/?action=ads">Объявления</a></li>
+                <li>
+                    <form style="margin-top: 10px;" action="/a/" method="get" class="form-inline" role="form">
+                        <div class="form-group has-feedback">
+                            <input type="text" value="" name="search" class="form-control" style="width: 12em;">
+                            <span style="cursor:pointer;" title="Поиск" onclick="$(this).closest('form').submit();" class="form-control-feedback"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="hidden" value="ads" name="action">
+                    </form>
+                </li>
+
+                <li title="Недопущенные" class="navbar-item-small">
+                    <a href="/a/?action=ads&amp;checked=no">
+                        <i class="fa fa-times-circle fa-lg checked-no"></i> <span>2</span>
+                    </a>
+                </li>
+                <li class="navbar-item-small" title="Неоплаченные коммерческие">
+                    <a href="/a/?action=ads&amp;checked=no_paid">
+                        <i class="fa fa-question-circle fa-lg checked-no_paid"></i> <span>9</span>
+                    </a>
+                </li>
+                <li class="navbar-item-small" title="Допущенные">
+                    <a href="/a/?action=ads&amp;checked=yes">
+                        <i class="fa fa-play-circle fa-lg checked-yes"></i> <span>276</span>
+                    </a>
+                </li>
+
+                <li title="Отредактированные" class="navbar-item-small">
+                    <a href="/a/?action=ads&amp;checked=edit">
+                        <i class="fa fa-check-circle fa-lg checked-edit"></i> <span>2654</span>
+                    </a>
+                </li>
+                <li title="Архив: 44246" class="navbar-item-small">
+                    <a href="/a/?action=ads&amp;checked=archive">
+                        <i class="fa fa-archive fa-lg checked-archive"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse-->
+    </div>
+</div>
+
+
+<table cellspacing="5" id="obstable" class="table table-hover table-striped">
+<thead>
+<tr>
+    <th>Краткий заголовок</th>
+    <th>Дата</th>
+    <th>Статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>
+        <div class="pull-right">
+            <img width="64" height="64" src="/upload/small/ladu_-kalinu2008_g__hetchbek_cvet_serebristyy_u_107735.jpeg">
+        </div>
+        <div class="photos-counter-block pull-right text-center"><i class="fa fa-camera"></i>
+
+            <div class="photos-counter">3</div>
+        </div>
+            <span style="color: grey;">
+                <a title="бухгалтером,бухгалтерское сопровождение, сдача отчетов, обработка документации. мне 39 лет стаж работы 20 лет"
+                   href="http://ob.ksk66.ru/c192-157013.html" target="_blank">
+                    <strong>Ищу работу</strong> бухгалтером,бухгалтерское сопровождение, сдача отчетов, обработка
+                    документации. мне 39 лет стаж работы 20 лет
+                </a>
+            </span>
+    </td>
+    <td>12:04</td>
+    <td>
+        <i title="Допустить объявление" class="fa fa-times-circle fa-2x checked-no"></i>
+    </td>
+</tr>
+<tr>
+    <td>
+            <span>
+                <a target="_blank" href="http://ob.ksk66.ru/c438-157012.html"
+                   title="ладу -калину2008 г. хэтчбэк,.цвет серебристый, уселитель руля, сигнализация. 1 хозяин пробег 89 тыс. км. не крашеная">
+                    <strong>Продам</strong> ладу -калину2008 г. хэтчбэк,.цвет серебристый, уселитель руля, сигнализация.
+                    1 хозяин пробег 89 тыс. км. не крашеная
+                </a>
+            </span>
+    </td>
+    <td>12:02</td>
+    <td>
+        <i title="Отправить в архив" class="fa fa-play-circle fa-2x checked-yes"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a
+            title="участок 25 сот. в д.Верхнее Никитино,все в собственности, есть разрешение на строительство, электр. на участке, колонка рядом.Срочно"
+            href="http://ob.ksk66.ru/c451-157011.html" target="_blank"><strong>Продам</strong>
+        участок 25 сот. в д.Верхнее Никитино,все в собственности, есть разрешение на строительство, электр. на
+        участке, колонка рядом.Срочно</a></span></td>
+    <td>11:59</td>
+    <td>
+        <i title="Отправить в архив" class="fa fa-play-circle fa-2x checked-yes"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a title="Камаз манипулятор кран 3 т. Грузоподъёмностью 10 т. Камаз самосвал привезем все"
+                 href="http://ob.ksk66.ru/c428-157010.html" target="_blank"><strong>Услуги</strong>
+        Камаз манипулятор кран 3 т. Грузоподъёмностью 10 т. Камаз самосвал привезем все</a></span></td>
+    <td>11:56</td>
+    <td>
+        <i title="Коммерческое объявление" class="fa fa-star fa-2x fa-fw"></i>
+        <i title="Отправить в архив" class="fa fa-play-circle fa-2x checked-yes"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a
+            title="Познакомлюсь с женщиной от 50 лет, желающей жить в деревне. Не должна брезговать мёда и не иметь аллергии на козье молоко. Мне 60 лет"
+            href="http://ob.ksk66.ru/c308-157009.html" target="_blank" style="color:grey;"><strong></strong>
+        Познакомлюсь с женщиной от 50 лет, желающей жить в деревне. Не должна брезговать мёда и не иметь аллергии на
+        козье молоко. Мне 60 лет</a></span></td>
+    <td>11:49</td>
+    <td><i title="Допустить объявление" class="fa fa-times-circle fa-2x checked-no"></i></td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right">
+            <img width="64" height="64" src="/upload/small/elektropilu_cepnuyu_v_os_ili_novuyu_107734.jpeg">
+        </div>
+            <span>
+                <a target="_blank" href="http://ob.ksk66.ru/c450-157008.html"
+                   title="электропилу цепную, в о/с или новую"><strong>Куплю</strong> электропилу цепную, в о/с или
+                    новую
+                </a>
+            </span>
+    </td>
+    <td>11:35</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right"><img width="64" height="64"
+                                     src="/upload/small/pricep_krepysh_ne_putat_s_kmz-on_huzhe_novyy__107733.jpeg">
+        </div>
+            <span><a target="_blank" href="http://ob.ksk66.ru/c55-157007.html"
+                     title="прицеп Крепыш (не путать с КМЗ - он хуже) , новый, свежий из г. Екатеринбург"><strong>Продам</strong>
+                прицеп
+                Крепыш (не путать с КМЗ - он хуже) , новый, свежий из г. Екатеринбург</a></span></td>
+    <td>11:23</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right">
+            <img width="64" height="64"
+                 src="/upload/small/bochki_polietilenovye_po_200-300_litrov_ne_iz_pod_107731.jpeg">
+        </div>
+
+        <div class="photos-counter-block pull-right text-center"><i class="fa fa-camera"></i>
+
+            <div class="photos-counter">2</div>
+        </div>
+            <span><a target="_blank" href="http://ob.ksk66.ru/c415-157006.html"
+                     title="бочки полиэтиленовые, от 200-300 л., не из-под ГСМ. Цена от 400-500 руб./шт., до 10 шт"><strong>Куплю</strong>
+                бочки
+                полиэтиленовые, от 200-300 л., не из-под ГСМ. Цена от 400-500 руб./шт., до 10 шт</a></span></td>
+    <td>11:16</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td>
+
+        <div class="pull-right">
+            <img width="64" height="64"
+                 src="/upload/small/Mitsubishi_padzhero_io_1999_g__dv_1800_akpp_poln_107727.jpeg">
+
+
+        </div>
+        <div class="photos-counter-block pull-right text-center"><i class="fa fa-camera"></i>
+
+            <div class="photos-counter">4</div>
+        </div>
+            <span><a target="_blank" href="http://ob.ksk66.ru/c401-157005.html"
+                     title="Mitsubishi Pajero iO, 1999 г., дв. 1800 см³, АКПП, полный привод, бензин. Рассмотрю варианты обмена, с моей доплатой"><strong>Продам</strong>
+                Mitsubishi Pajero
+                iO, 1999 г., дв. 1800 см³, АКПП, полный привод, бензин. Рассмотрю варианты обмена, с моей
+                доплатой</a></span></td>
+    <td>11:13</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a
+            title="Lada Kalina, 2008 г., цвет тёмно-серый, музыка, сигнализация, ц/з, тонировка, резина з/л, на дисках, х/с"
+            href="http://ob.ksk66.ru/c438-157002.html" target="_blank"><strong>Продам</strong>
+        Lada Kalina, 2008 г., цвет тёмно-серый, музыка, сигнализация, ц/з, тонировка, резина з/л, на дисках,
+        х/с</a></span>
+    </td>
+    <td>11:04</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="Закупаю крупный картофель" href="http://ob.ksk66.ru/c422-157001.html"
+                 target="_blank"><strong></strong>
+        Закупаю крупный картофель</a></span></td>
+    <td>11:02</td>
+    <td>
+        <i title="Коммерческое объявление" class="fa fa-star fa-2x fa-fw"></i>
+        <i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a title="кошечку, подростка, белую с чёрным хвостом" href="http://ob.ksk66.ru/c346-157000.html"
+                 target="_blank"><strong>Отдам</strong>
+        кошечку, подростка, белую с чёрным хвостом</a></span></td>
+    <td>10:58</td>
+    <td>
+        <i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right"><img width="64" height="64" src="/upload/small/tumba_pod_tv_v_os_107720.jpeg"></div>
+        <span><a target="_blank" href="http://ob.ksk66.ru/c277-156994.html"
+                 title="тумба под ТВ, в о/с"><strong>Продам</strong> тумба под ТВ, в о/с</a></span></td>
+    <td>10:14</td>
+    <td>
+        <i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a
+            title="зем. участок, пл. 20 соток, в Ачитском р-не, п. Заря, ул. Садовая (новая ул. на горке вдоль леса, очень красивый вид) , есть разрешение на строительство, заключен договор на электричество, рядом проходит газ. Школа, д/с, больница, магазины - в шаговой доступности"
+            href="http://ob.ksk66.ru/c451-156993.html" target="_blank"><strong>Продам</strong>
+        зем. участок, пл. 20 соток, в Ачитском р-не, п. Заря, ул. Садовая (новая ул. на горке вдоль леса, очень
+        красивый вид) , есть разрешение на строительство, заключен договор на электричество, рядом проходит газ.
+        Школа, д/с, больница, магазины - в шаговой доступности</a></span></td>
+    <td>10:09</td>
+    <td>
+        <i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a title="дрова берёзовые, пиленые, квартирник 6 м³" href="http://ob.ksk66.ru/c415-156992.html"
+                 target="_blank" style="color:orange;"><strong>Продам</strong>
+        дрова берёзовые, пиленые, квартирник 6 м³</a></span></td>
+    <td>9:32</td>
+    <td>
+        <i title="Коммерческое объявление" class="fa fa-star fa-2x fa-fw"></i>
+        <i title="Неоплаченное коммерческое" class="fa fa-question-circle fa-2x checked-no_paid"></i>
+    </td>
+</tr>
+<tr>
+    <td><span><a
+            title="контрольные, курсовые по бухгалтерскому учету и экономике. Преддипломная практика, диплом. Всё защищено"
+            href="http://ob.ksk66.ru/c415-156991.html" target="_blank"><strong>Продам</strong>
+        контрольные, курсовые по бухгалтерскому учету и экономике. Преддипломная практика, диплом. Всё
+        защищено</a></span>
+    </td>
+    <td>9:31</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="стиральную машину Малютка - 1 тыс. руб.; центрифугу, для отжима белья - 2 тыс. руб"
+                 href="http://ob.ksk66.ru/c221-156990.html" target="_blank"><strong>Продам</strong>
+        стиральную машину Малютка - 1 тыс. руб.; центрифугу, для отжима белья - 2 тыс. руб</a></span></td>
+    <td>9:29</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="красивый спортивный женский костюм, новый, красно-синего цвета, р-р 46-48"
+                 href="http://ob.ksk66.ru/c263-156989.html" target="_blank"><strong>Продам</strong>
+        красивый спортивный женский костюм, новый, красно-синего цвета, р-р 46-48</a></span></td>
+    <td>9:25</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr class="emphasized">
+    <td>
+
+        <div class="pull-right"><img width="64" height="64"
+                                     src="/upload/small/remont_kvartir_magazinov_ofisov_pod_klyuch__s_m_107713.jpeg">
+        </div>
+        <div class="photos-counter-block pull-right text-center"><i class="fa fa-camera"></i>
+
+            <div class="photos-counter">7</div>
+        </div>
+            <span><a target="_blank" href="http://ob.ksk66.ru/c429-156988.html"
+                     title="ремонт квартир, магазинов, офисов под ключ (можно с элементами барельефа по желанию) , монтаж отопления и сантехники любой сложности, с/у под ключ ( плитка - 500 руб. + штукатурка под плитку - 250 руб.)"><strong>Услуги</strong>
+                ремонт квартир,
+                магазинов, офисов под ключ (можно с элементами барельефа по желанию) , монтаж отопления и сантехники
+                любой сложности, с/у под ключ ( плитка - 500 руб. + штукатурка под плитку - 250 руб.)</a></span></td>
+    <td>11:25</td>
+    <td>
+        <i title="Коммерческое объявление" class="fa fa-star fa-2x fa-fw"></i>
+        <i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right"><img width="64" height="64"
+                                     src="/upload/small/steklyannuyu_polku_pod_televizor__90-120_sm_107711.jpeg">
+        </div>
+        <div class="photos-counter-block pull-right text-center"><i class="fa fa-camera"></i>
+
+            <div class="photos-counter">2</div>
+        </div>
+            <span><a target="_blank" href="http://ob.ksk66.ru/c277-156987.html"
+                     title="стеклянную полку под телевизор, 90-120 см"><strong>Куплю</strong>
+                стеклянную полку под телевизор, 90-120 см</a></span></td>
+    <td>Вчера 8:26</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="квартиру или дом, на длительный срок" href="http://ob.ksk66.ru/c184-156986.html"
+                 target="_blank"><strong>Арендую</strong>
+        квартиру или дом, на длительный срок</a></span></td>
+    <td>Вчера 3:23</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="дом, в р-не Бараба на 1-комн. бл. квартиру, только в центре, кроме 1 и 5 этажей или продам"
+                 href="http://ob.ksk66.ru/c185-156985.html" target="_blank"><strong>Меняю</strong>
+        дом, в р-не Бараба на 1-комн. бл. квартиру, только в центре, кроме 1 и 5 этажей или продам</a></span></td>
+    <td>Вчера 2:08</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a
+            title="3-комн. бл. квартиру, в центре, 3-й этаж, на ул. Свободы, 60 на 2-этажный бл. коттедж, в х/с, пл. не менее 120 м², в черте города"
+            href="http://ob.ksk66.ru/c407-156984.html" target="_blank"><strong>Меняю</strong>
+        3-комн. бл. квартиру, в центре, 3-й этаж, на ул. Свободы, 60 на 2-этажный бл. коттедж, в х/с, пл. не менее
+        120 м², в черте города</a></span></td>
+    <td>Вчера 2:02</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td><span><a title="2 комнаты, в общежитии, на ул. Терешковой, 18 (р-н Бараба. Звонить после 21:00 ч"
+                 href="http://ob.ksk66.ru/c408-156983.html" target="_blank"><strong>Продам</strong>
+        2 комнаты, в общежитии, на ул. Терешковой, 18 (р-н Бараба. Звонить после 21:00 ч</a></span></td>
+    <td>Вчера 1:38</td>
+    <td><i title="Допустить объявление" class="fa fa-check-circle fa-2x checked-edit"></i></td>
+</tr>
+<tr>
+    <td>
+        <div class="pull-right"><img width="64" height="64"
+                                     src="/upload/small/keratinovoe_vypryamlenie_volos_vse_voprosy_po_te_107710.jpeg">
+        </div>
+            <span><a style="color:orange;" target="_blank" href="http://ob.ksk66.ru/c449-156982.html"
+                     title="кератиновое выпрямление волос"><strong>Услуги</strong> кератиновое выпрямление
+                волос</a></span></td>
+    <td>Вчера 0:35</td>
+    <td><i title="Неоплаченное коммерческое" class="fa fa-question-circle fa-2x checked-no_paid"></i></td>
+</tr>
+<tr>
+    <td><span><a title="нту" href="http://ob.ksk66.ru/c429-156913.html" target="_blank"><strong>Услуги</strong> нту</a></span>
+    </td>
+    <td>01.03.2015 17:20</td>
+    <td><i title="Допустить объявление" class="fa fa-archive fa-2x checked-archive"></i></td>
+</tr>
+<tr>
+    <td><span><a title="Электрикмонтаж, наладка, ремонт и обслуживание" href="http://ob.ksk66.ru/c429-156912.html"
+                 target="_blank" style="color:orange;"><strong>Услуги</strong>
+        Электрикмонтаж, наладка, ремонт и обслуживание</a></span></td>
+    <td>01.03.2015 17:18</td>
+    <td><i title="Неоплаченное коммерческое" class="fa fa-question-circle fa-2x checked-no_paid"></i></td>
+</tr>
+</tbody>
+</table>
+
+
+<article class="ob ob-format-">
+    <figure class="ob-thumb-group">
+        <img src="#" alt="Изображение" class="ob-thumb"/>
+        <span class="ob-thumb-counter has-icon">n</span>
+    </figure>
+    <a href="#">
+        <p class="ob-text-group">
+            <span class="ob-text">
+                <strong>Выделено </strong>текст
+            </span>
+            <span class="ob-price-group">
+                <span class="ob-price">Цена: <strong>i <i class="fa fa-rub" title="рублей"></i></strong></span>
+                <span class="ob-bargain">Возможен торг</span>
+            </span>
+        </p>
+    </a>
+    <div class="ob-meta">
+        <a href="#" class="ob-contact ob-phone has-icon">990xxx</a>
+        <a href="#" class="ob-contact ob-phone ob-mobile has-icon">990xxx</a>
+        <a href="#" class="ob-contact ob-email has-icon">foo@bar.org</a>
+        <span class="ob-publish-date has-icon">Сегодня</span>
+        <div class="ob-category-name">Название категории</div>
+    </div>
+    <aside class="ob-actions">
+        <a class="ob-action ob-action-complain has-icon" href="#">Сообщить о проблеме</a>
+        <a class="ob-action ob-action-share has-icon" href="#">Поделиться</a>
+        <a class="ob-action ob-action-edit has-icon" href="#">Редактировать</a>
+        <a class="ob-action ob-action-delete has-icon" href="#">Удалить</a>
+    </aside>
+</article>
