@@ -93,6 +93,10 @@
 .table-obs-admin .is-selected.super:hover > td,
 .table-obs-admin .is-selected.super:focus > td { background-color: #fbea2d; }
 
+.popover-content .table-obs .ob-category-name { display: none; }
+
+.popover-content .table-obs .ob-thumb { width: 60px; }
+
 /*перенесено с ob.ksk66.ru*/
 .add-ob__right-input_phone .popover{
     max-width: none;
