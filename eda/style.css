@@ -12,7 +12,7 @@ nav.navbar { margin: 0 -10px; }
 /**/
 #container { margin-left: -10px; margin-right: -10px; }
 
-.list-stores { background-color: #f8f8f8 !important; margin-bottom: 0; }
+.list-stores { background-color: #f8f8f8 !important; margin-bottom: 0; box-shadow: 0 2px 3px rgba(0,0,0,.17); }
 
 .shop-link { border-bottom: 5px solid transparent; padding-bottom: 5px; padding-top: 7px; text-align: center; }
 
@@ -122,7 +122,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 #cart-bar-real .actions { text-align: center; }
 
-.cart.shop_table { position: relative; }
+.cart.shop_table { position: relative; border-top: 1px solid #ff5252; }
 
 .shop_table .item-variation { display: inline-block; background-color: #a7ffeb; padding: 1px 5px 3px; border-radius: 3px; font-size: 90%; }
 
