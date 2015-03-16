@@ -277,7 +277,8 @@ h1 {
 
 
 /* Скрывать значки статусов в админке, показывать только нужные */
-.col-obs-status .fa { display: none; }
+.col-obs-status .fa,
+.col-obs-text .icon-business { display: none; }
 
 .status-no .icon-status-no,
 .status-yes .icon-status-yes,
