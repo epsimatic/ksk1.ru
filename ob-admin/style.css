@@ -263,3 +263,17 @@ h1 {
 }
 
 
+/* Скрывать значки статусов в админке, показывать только нужные */
+.col-obs-status .fa { display: none; }
+
+.status-no .icon-status-no,
+.status-yes .icon-status-yes,
+.status-edit .icon-status-edit,
+.status-no_paid .icon-status-no_paid,
+.status-archive .icon-status-archive,
+.is-business .icon-business {
+    display: inline-block;
+}
+
+.row-obs { transition: opacity 0.2s; }
+.row-obs.loading { opacity: 0.2; }
