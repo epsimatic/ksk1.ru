@@ -32,7 +32,7 @@
 
 .table-obs-admin article.ob { display: inline; }
 
-.table-obs-admin article.ob a { color: #333; }
+.table-obs-admin article.ob a { color: #333 !important; }
 
 .table-obs-admin article.ob .ob-meta,
 .table-obs-admin article.ob p.ob-text-group { display: inline; }
