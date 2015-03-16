@@ -76,13 +76,15 @@
 
 .table-obs-admin { width: 100%; margin-top: 5px; }
 
-.table-obs-admin thead tr { background-color: #f6f6f6; }
+.table-obs-admin thead tr { background-color: #efefef; }
 
 .table-obs-admin tbody .col-obs-date,
 .table-obs-admin tbody .col-obs-rep,
 .table-obs-admin tr > th { text-align: center; }
 
 .table-obs-admin thead .col-obs-text { text-align: left; }
+
+.table-obs-admin thead th { color: #666666; font-size: 18px; font-weight: 400; letter-spacing: 0.025em; text-transform: uppercase; }
 
 /*.table-obs-admin tbody tr > td:first-child { padding: 10px 10px 10px 15px; }*/
 
