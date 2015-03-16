@@ -11,6 +11,10 @@
 
 .nav.navbar-nav { line-height: 50px; }
 
+.navbar-brand { padding: 5px 15px; }
+
+.navbar-brand img { height: 40px; }
+
 .navbar-default .navbar-nav > li > a { color: #000; }
 
 .navbar-abuse .badge { background-color: #ff1744; }
@@ -89,6 +93,10 @@
 .table-obs-admin tbody .col-obs-status { padding-left: 15px; text-align: left; }
 
 .table-obs-admin .ob-meta { text-align: right; }
+
+.table-obs-admin .is-business .ob-text { color: #ff5722; }
+
+.table-obs-admin .status-archive .ob-text { color: #888; }
 
 .table-obs-admin .is-selected > td { background-color: #fff7a9; }
 
