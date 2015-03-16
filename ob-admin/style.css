@@ -36,11 +36,21 @@ a:hover .checked-archive { color: #333; }
 .table-obs-admin article .ob-meta,
 .table-obs-admin article p.ob-text-group { display: inline; }
 
-.table-obs-admin .checked-no:hover:before,
-.table-obs-admin .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+.table-obs-admin .checked-no,
+.table-obs-admin .checked-archive,
+.table-obs-admin .checked-yes,
+.table-obs-admin .checked-edit { position: relative;  cursor: pointer; }
 
-.table-obs-admin .checked-yes:hover:before,
-.table-obs-admin .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+.table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-archive:hover:after,
+.table-obs-admin .checked-yes:hover:after,
+.table-obs-admin .checked-edit:hover:after { cursor: pointer; font-size: .6em; position: absolute; right: -9px; bottom: 0; }
+
+.table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-archive:hover:after { color: #3d5afe; content: ""; }
+
+.table-obs-admin .checked-yes:hover:after,
+.table-obs-admin .checked-edit:hover:after { color: #666666; content: ""; }
 
 .fa-star { color: #ff5722; }
 
