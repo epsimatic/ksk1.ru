@@ -1,3 +1,10 @@
+@media (min-width: 1500px) {
+    .container {
+        width: 1500px !important;
+    }
+}
+
+
 .navbar { background-color: #ffffff !important; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
 
 .navbar .container { box-shadow: none; }
@@ -301,3 +308,15 @@ h1 {
 
 .row-obs { transition: opacity 0.2s; }
 .row-obs.loading { opacity: 0.2; }
+
+
+
+/* Кнопка поиска */
+#popover-search{ position: relative; right: 39px;}
+
+/* Всплывающая форма поиска */
+.form-inline .popover{ max-width: none; }
+.form-inline .popover-content { overflow-y: scroll; height: 600px; padding: 0; }
+.form-inline .popover-content .table { min-width: 600px; }
+.form-inline .popover-content .table thead { display: none; }
+.form-inline .popover-content .table .col-obs-rep { display: none; }
