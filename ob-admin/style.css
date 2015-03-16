@@ -112,6 +112,8 @@
 
 .ob-admin .popover-title { background-color: #eceff1; text-transform: uppercase; color: #666; padding-bottom: 12px; }
 
+.ob-admin .popover-title .close { font-size: 30px; position: relative; top: -6px; }
+
 .popover-content .table-obs .ob-category-name { display: none; }
 
 .popover-content .table-obs .ob-thumb { width: 60px; }
