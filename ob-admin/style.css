@@ -2,15 +2,17 @@
 
 .navbar .container { box-shadow: none; }
 
+.nav.navbar-nav { line-height: 50px; }
+
 .navbar-abuse .badge { background-color: #ff1744; }
 
-.counter-no a { color: #b71c1c; }
+.navbar-default .navbar-nav .counter-no a { color: #b71c1c; }
 
-.counter-yes a { color: #1a237e; }
+.navbar-default .navbar-nav .counter-yes a { color: #1a237e; }
 
-.counter-edit a { color: #1b5e20; }
+.navbar-default .navbar-nav .counter-edit a { color: #1b5e20; }
 
-.counter-no_paid a { color: #bf360c; }
+.navbar-default .navbar-nav .counter-no_paid a { color: #bf360c; }
 
 .counter-no .fa { color: #ff1744; }
 
