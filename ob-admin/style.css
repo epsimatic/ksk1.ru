@@ -2,29 +2,29 @@
 
 .navbar .container { box-shadow: none; }
 
-.counter-no { color: #b71c1c; }
+.counter-no a { color: #b71c1c; }
 
-.counter-yes { color: #1a237e; }
+.counter-yes a { color: #1a237e; }
 
-.counter-edit { color: #1b5e20; }
+.counter-edit a { color: #1b5e20; }
 
-.counter-no_paid { color: #bf360c; }
+.counter-no_paid a { color: #bf360c; }
 
 .counter-no .fa { color: #ff1744; }
 
-.counter-no:hover a .fa { color: #d50000; }
+.counter-no:hover .fa { color: #d50000; }
 
 .counter-no_paid .fa { color: #ff9100; }
 
-.counter-no_paid:hover a .fa { color: #ff6d00; }
+.counter-no_paid:hover .fa { color: #ff6d00; }
 
 .counter-yes .fa { color: #3d5afe; }
 
-.counter-yes:hover a .fa { color: #304ffe; }
+.counter-yes:hover .fa { color: #304ffe; }
 
 .counter-edit .fa { color: #00c853; }
 
-.counter-edit:hover a .fa { color: #1b5e20; }
+.counter-edit:hover .fa { color: #1b5e20; }
 
 .counter-archive .fa { color: #666; }
 
