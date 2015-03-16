@@ -9,47 +9,66 @@
 
 .navbar .container { box-shadow: none; }
 
-.checked-no { color: #ff1744; }
+.nav.navbar-nav { line-height: 50px; }
 
-a:hover .checked-no { color: #d50000; }
+.navbar-default .navbar-nav > li > a { color: #000; }
 
-.checked-no ~ span { color: #b71c1c; }
+.navbar-abuse .badge { background-color: #ff1744; }
 
-.checked-no_paid { color: #ff9100; }
+.navbar-default .navbar-nav .counter-no a { color: #b71c1c; }
 
-a:hover .checked-no_paid { color: #ff6d00; }
+.navbar-default .navbar-nav .counter-yes a { color: #1a237e; }
 
-.checked-no_paid ~ span { color: #bf360c; }
+.navbar-default .navbar-nav .counter-edit a { color: #1b5e20; }
 
-.checked-yes,
-.fa-play { color: #3d5afe; }
+.navbar-default .navbar-nav .counter-no_paid a { color: #bf360c; }
 
-a:hover .checked-yes { color: #304ffe; }
+.counter-no .fa { color: #ff1744; }
 
-.checked-yes ~ span { color: #1a237e; }
+.counter-no:hover .fa { color: #d50000; }
 
-.checked-edit { color: #00c853; }
+.counter-no_paid .fa { color: #ff9100; }
 
-a:hover .checked-edit { color: #1b5e20; }
+.counter-no_paid:hover .fa { color: #ff6d00; }
 
-.checked-edit ~ span { color: #1b5e20; }
+.counter-yes .fa { color: #3d5afe; }
 
-.checked-archive { color: #666; }
+.counter-yes:hover .fa { color: #304ffe; }
 
-a:hover .checked-archive { color: #333; }
+.counter-edit .fa { color: #00c853; }
 
-.table-obs-admin article a { color: #333; }
+.counter-edit:hover .fa { color: #1b5e20; }
 
-.table-obs-admin article .ob-meta,
-.table-obs-admin article p.ob-text-group { display: inline; }
+.counter-archive .fa { color: #666; }
 
-.table-obs-admin .checked-no:hover:before,
-.table-obs-admin .checked-archive:hover:before { color: #3d5afe; content: ""; cursor: pointer; }
+.counter-archive:hover a .fa { color: #333; }
 
-.table-obs-admin .checked-yes:hover:before,
-.table-obs-admin .checked-edit:hover:before { color: #666666; content: ""; cursor: pointer; }
+.table-obs-admin article.ob { display: inline; }
+
+.table-obs-admin article.ob a { color: #333 !important; }
+
+.table-obs-admin article.ob .ob-meta,
+.table-obs-admin article.ob p.ob-text-group { display: inline; }
+
+.table-obs-admin .checked-no,
+.table-obs-admin .checked-archive,
+.table-obs-admin .checked-yes,
+.table-obs-admin .checked-edit { position: relative;  cursor: pointer; }
+
+.table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-archive:hover:after,
+.table-obs-admin .checked-yes:hover:after,
+.table-obs-admin .checked-edit:hover:after { cursor: pointer; font-size: .6em; position: absolute; right: -9px; bottom: 0; text-shadow: 0 0 5px #fff; }
+
+.table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-archive:hover:after { color: #3d5afe; content: ""; }
+
+.table-obs-admin .checked-yes:hover:after,
+.table-obs-admin .checked-edit:hover:after { color: #666666; content: ""; }
 
 .fa-star { color: #ff5722; }
+
+.fa-play { color: #3d5afe; }
 
 .table-obs-admin { width: 100%; margin-top: 5px; }
 
@@ -67,7 +86,7 @@ a:hover .checked-archive { color: #333; }
 .table-obs-admin tbody .col-obs-date,
 .table-obs-admin tbody .col-obs-rep { vertical-align: middle; }
 
-.table-obs-admin tbody .col-obs-status { padding-left: 15px; text-align: left; min-width: 90px; }
+.table-obs-admin tbody .col-obs-status { padding-left: 15px; text-align: left; }
 
 .table-obs-admin .ob-meta { text-align: right; }
 
@@ -271,7 +290,8 @@ h1 {
 
 
 /* Скрывать значки статусов в админке, показывать только нужные */
-.col-obs-status .fa { display: none; }
+.col-obs-status .fa,
+.col-obs-text .icon-business { display: none; }
 
 .status-no .icon-status-no,
 .status-yes .icon-status-yes,
