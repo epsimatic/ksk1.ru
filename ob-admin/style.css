@@ -86,6 +86,8 @@
 
 .table-obs-admin thead th { color: #666666; font-size: 18px; font-weight: 400; letter-spacing: 0.025em; text-transform: uppercase; }
 
+.table-obs-admin thead .ob-counter { font-weight: 700; }
+
 /*.table-obs-admin tbody tr > td:first-child { padding: 10px 10px 10px 15px; }*/
 
 .table-obs-admin tbody .col-obs-status,
