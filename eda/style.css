@@ -577,6 +577,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 .woocommerce .modal div.product p.price,
 .woocommerce-page .modal div.product p.price { color: #37474f; font-size: 2em; font-weight: 600; margin-bottom: 15px; }
 
+.restoraunt-info .shop-text { display: none; }
+
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
