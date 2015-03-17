@@ -332,8 +332,8 @@ h1 {
 #popover-search{ position: relative; right: 39px;}
 
 /* Всплывающая форма поиска */
-.form-inline .popover{ max-width: none; }
-.form-inline .popover-content { overflow-y: scroll; max-height: 600px; padding: 0; }
-.form-inline .popover-content .table { min-width: 600px; }
-.form-inline .popover-content .table thead { display: none; }
-.form-inline .popover-content .table .col-obs-rep { display: none; }
+.popover-quick-search { max-width: none; }
+.popover-quick-search .popover-content { overflow-y: scroll; max-height: 600px; padding: 0; }
+.popover-quick-search .popover-content .table { min-width: 600px; }
+.popover-quick-search .popover-content .table thead { display: none; }
+.popover-quick-search .popover-content .table .col-obs-rep { display: none; }
