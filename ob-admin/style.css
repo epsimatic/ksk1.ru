@@ -4,12 +4,17 @@
     }
 }
 
+.ob-admin > .container { padding-top: 20px; }
 
 .navbar { background-color: #ffffff !important; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); }
 
 .navbar .container { box-shadow: none; }
 
 .nav.navbar-nav { line-height: 50px; }
+
+.navbar-brand { padding: 5px 15px; }
+
+.navbar-brand img { height: 40px; }
 
 .navbar-default .navbar-nav > li > a { color: #000; }
 
@@ -72,13 +77,17 @@
 
 .table-obs-admin { width: 100%; margin-top: 5px; }
 
-.table-obs-admin thead tr { background-color: #f6f6f6; }
+.table-obs-admin thead tr { background-color: #efefef; }
 
 .table-obs-admin tbody .col-obs-date,
 .table-obs-admin tbody .col-obs-rep,
 .table-obs-admin tr > th { text-align: center; }
 
 .table-obs-admin thead .col-obs-text { text-align: left; }
+
+.table-obs-admin thead th { color: #666666; font-size: 18px; font-weight: 400; letter-spacing: 0.025em; text-transform: uppercase; }
+
+.table-obs-admin thead .ob-counter { font-weight: 700; }
 
 /*.table-obs-admin tbody tr > td:first-child { padding: 10px 10px 10px 15px; }*/
 
@@ -90,6 +99,10 @@
 
 .table-obs-admin .ob-meta { text-align: right; }
 
+.table-obs-admin .is-business .ob-text { color: #ff5722; }
+
+.table-obs-admin .status-archive .ob-text { color: #888; }
+
 .table-obs-admin .is-selected > td { background-color: #fff7a9; }
 
 .table-obs-admin .is-selected:hover > td,
@@ -99,6 +112,10 @@
 
 .table-obs-admin .is-selected.super:hover > td,
 .table-obs-admin .is-selected.super:focus > td { background-color: #fbea2d; }
+
+.ob-admin .popover-title { background-color: #eceff1; text-transform: uppercase; color: #666; padding-bottom: 12px; font-size: 16px; }
+
+.ob-admin .popover-title .close { font-size: 30px; position: relative; top: -6px; }
 
 .popover-content .table-obs .ob-category-name { display: none; }
 
