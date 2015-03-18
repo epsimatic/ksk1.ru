@@ -330,7 +330,7 @@ h1 {
 #popover-search{ position: relative; right: 39px;}
 
 /* Всплывающая форма поиска */
-.popover-quick-search { max-width: none; }
+.popover-quick-search { max-width: 650px; }
 .popover-quick-search .popover-content { overflow-y: scroll; max-height: 600px; padding: 0; }
 .popover-quick-search .popover-content .table { min-width: 600px; }
 .popover-quick-search .popover-content .table thead { display: none; }
