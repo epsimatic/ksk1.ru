@@ -862,7 +862,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations { display: table; width: 100%; }
 
-    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 120%; }
+    .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 120px; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px; }
 
