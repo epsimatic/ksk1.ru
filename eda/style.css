@@ -639,9 +639,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     /*.dishes-cat.pizza .dishes.dishes-col-6.collapsed .woocommerce { max-height: 345px; }*/
 
-    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+3) { display: block; }
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+3) { display: block; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+4) { display: none; }
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+4) { display: none; }
 
     .dishes .dish h3.item-name { text-align: left; }
 
@@ -758,8 +758,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         display: -ms-flexbox;
         display: flex; }
 
-    .woocommerce #cart-bar #cart-bar-real > div:nth-child(3),
-    .woocommerce #cart-bar #cart-bar-real > div:nth-child(1) { display: inline-block; }
+    .woocommerce #cart-bar #cart-bar-real > div:nth-of-type(3),
+    .woocommerce #cart-bar #cart-bar-real > div:nth-of-type(1) { display: inline-block; }
 
     .dishes { margin: 0 10px; }
 
@@ -772,13 +772,13 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     /*.dishes-cat.pizza .dishes.dishes-col-6.collapsed .woocommerce { max-height: 350px; }*/
 
-    .dishes.collapsed .woocommerce > .dish-container:nth-child(n+3) { display: block; }
+    .dishes.collapsed .woocommerce > .dish-container:nth-of-type(n+3) { display: block; }
 
-    .dishes.collapsed .woocommerce > .dish-container:nth-child(n+5) { display: none; }
+    .dishes.collapsed .woocommerce > .dish-container:nth-of-type(n+5) { display: none; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+4) { display: block; }
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+4) { display: block; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-child(n+7) { display: none; }
+    .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+7) { display: none; }
 
 
     .dishes .thumb-container { height: 142px; width: 189px; }
