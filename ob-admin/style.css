@@ -127,7 +127,6 @@
     left: -180px !important;
     width: 1200px;
     height: 600px;
-    overflow-y: scroll;
 }
 .add-ob__right-input_phone .popover a{color: #000000 !important;}
 .add_form {
