@@ -123,7 +123,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 #cart-bar-real .actions { text-align: center; }
 
 .cart.shop_table { position: relative; border-top: 1px solid #ff5252; }
-
+/* Панель корзины при пустом заказе */
 .empty-cart {
     height: 0;
     padding: 0 !important;
