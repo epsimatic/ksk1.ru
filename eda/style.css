@@ -51,7 +51,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 
 .woocommerce { color: #37474f; }
-
+/*корзина*/
 #cart-bar #cart-bar-real .cart-subtotal { font-size: 14px; font-weight: 700; margin-bottom: 6px; text-align: center; padding-top: 6px; padding-bottom: 4px; }
 
 #cart-bar .checkout-button { font-size: 12px; margin-top: 5px; padding: 8px 6px; }
@@ -123,6 +123,21 @@ ul.list-stores > li > a > img { width: 150px; }*/
 #cart-bar-real .actions { text-align: center; }
 
 .cart.shop_table { position: relative; border-top: 1px solid #ff5252; }
+
+.empty-cart {
+    height: 0;
+    padding: 0 !important;
+    overflow-y: hidden;
+    /*TODO: Добавить transition */
+
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300;
+}
+#cart-bar[style] .empty-cart {
+    height: 80px;
+}
+/*конец корзины*/
 
 .shop_table .item-variation { display: inline-block; background-color: #a7ffeb; padding: 1px 5px 3px; border-radius: 3px; font-size: 90%; }
 
