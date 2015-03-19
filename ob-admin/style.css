@@ -340,12 +340,12 @@ h1 {
 .col-obs-status .fa,
 .col-obs-text .icon-business { display: none; }
 
-.status-no .icon-status-no,
-.status-yes .icon-status-yes,
-.status-edit .icon-status-edit,
-.status-no_paid .icon-status-no_paid,
-.status-archive .icon-status-archive,
-.is-business .icon-business {
+.status-no      > td > .icon-status-no,
+.status-yes     > td > .icon-status-yes,
+.status-edit    > td > .icon-status-edit,
+.status-no_paid > td > .icon-status-no_paid,
+.status-archive > td > .icon-status-archive,
+.is-business    > td > .icon-business {
     display: inline-block;
 }
 
