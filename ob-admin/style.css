@@ -108,7 +108,7 @@
 .table-obs-admin .is-selected:hover > td,
 .table-obs-admin .is-selected:focus > td { background-color: #fff385; }
 
-.table-obs-admin .is-super > td { background-color: #fff04e; border-top: 4px dashed #f6d01e; }
+.table-obs-admin .is-super > td { background-color: #fff04e; border-top: 3px dashed #f6d01e; }
 
 .table-obs-admin .is-super:hover > td,
 .table-obs-admin .is-super:focus > td { background-color: #fbea2d; }
