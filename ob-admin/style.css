@@ -99,9 +99,9 @@
 
 .table-obs-admin .ob-meta { text-align: right; }
 
-.table-obs-admin .is-business > .col-obs-text .ob-text { color: #ff5722; }
+.table-obs-admin .is-business > .col-obs-text > article.ob > a > p.ob-text-group  { color: #ff5722; }
 
-.table-obs-admin .status-archive > .col-obs-text .ob-text { color: #888; }
+.table-obs-admin .status-archive > .col-obs-text > article.ob > a > p.ob-text-group { color: #888; }
 
 .table-obs-admin .is-selected > td { background-color: #fff7a9; }
 
