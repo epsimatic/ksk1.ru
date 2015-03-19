@@ -121,6 +121,18 @@
 
 .popover-content .table-obs .ob-thumb { width: 60px; }
 
+.col-obs-rep span { padding: 2px 6px; border-radius: 3px; }
+
+.rep-plus-few .col-obs-rep span { background-color: #eeffd3; }
+.rep-plus-some .col-obs-rep span { background-color: #ccff90; }
+.rep-plus-more .col-obs-rep span { background-color: #80ff59; }
+.rep-plus-lots .col-obs-rep span { background-color: #00c853; color: #fff; }
+
+.rep-minus-few .col-obs-rep span { background-color: #ffecb3; }
+.rep-minus-some .col-obs-rep span { background-color: #ffe180; }
+.rep-minus-more .col-obs-rep span { background-color: #ffcdd2; }
+.rep-minus-lots .col-obs-rep span { background-color: #ff5252; color: #fff; }
+
 /*перенесено с ob.ksk66.ru*/
 .add-ob__right-input_phone .popover{
     max-width: none;
