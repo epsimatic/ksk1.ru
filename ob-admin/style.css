@@ -121,16 +121,32 @@
 
 .popover-content .table-obs .ob-thumb { width: 60px; }
 
+a.tel { border-radius: 3px; padding-right: 6px; }
+
 .col-obs-rep span { padding: 2px 6px; border-radius: 3px; }
 
+.tel.rep-plus-few,
 .rep-plus-few .col-obs-rep span { background-color: #eeffd3; }
+
+.tel.rep-plus-some,
 .rep-plus-some .col-obs-rep span { background-color: #ccff90; }
+
+.tel.rep-plus-more,
 .rep-plus-more .col-obs-rep span { background-color: #80ff59; }
+
+.tel.rep-plus-lots,
 .rep-plus-lots .col-obs-rep span { background-color: #00c853; color: #fff; }
 
+.tel.rep-minus-few,
 .rep-minus-few .col-obs-rep span { background-color: #ffecb3; }
+
+.tel.rep-minus-some,
 .rep-minus-some .col-obs-rep span { background-color: #ffe180; }
+
+.tel.rep-minus-more,
 .rep-minus-more .col-obs-rep span { background-color: #ffcdd2; }
+
+.tel.rep-minus-lots,
 .rep-minus-lots .col-obs-rep span { background-color: #ff5252; color: #fff; }
 
 /*перенесено с ob.ksk66.ru*/
