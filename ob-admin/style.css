@@ -71,8 +71,18 @@
 .table-obs-admin .checked-yes:hover:after,
 .table-obs-admin .checked-edit:hover:after { color: #666666; content: ""; }
 
+
+.fa-archive { color: #555; }
+
+.fa-times-circle { color: #ff1744; }
+
+.fa-question-circle { color: #ff9100; }
+
+.fa-check-circle { color: #00c853; }
+
 .fa-star { color: #ff5722; }
 
+.fa-play-circle,
 .fa-play { color: #3d5afe; }
 
 .table-obs-admin { width: 100%; margin-top: 5px; }
