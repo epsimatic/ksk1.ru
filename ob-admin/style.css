@@ -324,12 +324,12 @@ h1 {
 .col-obs-status .fa,
 .col-obs-text .icon-business { display: none; }
 
-.status-no      > tr > td.icon-status-no,
-.status-yes     > tr > td.icon-status-yes,
-.status-edit    > tr > td.icon-status-edit,
-.status-no_paid > tr > td.icon-status-no_paid,
-.status-archive > tr > td.icon-status-archive,
-.is-business    > tr > td.icon-business {
+.status-no      > td > .icon-status-no,
+.status-yes     > td > .icon-status-yes,
+.status-edit    > td > .icon-status-edit,
+.status-no_paid > td > .icon-status-no_paid,
+.status-archive > td > .icon-status-archive,
+.is-business    > td > .icon-business {
     display: inline-block;
 }
 
