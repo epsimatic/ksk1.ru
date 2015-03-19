@@ -38,11 +38,11 @@
 
 .counter-yes .fa { color: #3d5afe; }
 
-.counter-yes:hover .fa { color: #304ffe; }
+.counter-yes:hover .fa { color: #193bfc; }
 
 .counter-edit .fa { color: #00c853; }
 
-.counter-edit:hover .fa { color: #1b5e20; }
+.counter-edit:hover .fa { color: #00ac47; }
 
 .counter-archive .fa { color: #666; }
 
