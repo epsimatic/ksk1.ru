@@ -259,11 +259,17 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .tag-container .tag-recommended { padding: 2px; background-color: #00E5FF; }
 .tag-container .tag-recommended::before { content: ""; }
 
+.tag-container .tag-2persons,
+.tag-container .tag-3persons,
+.tag-container .tag-4persons,
+.tag-container .tag-5persons,
+.tag-container .tag-6persons { background-color: #536dfe; }
+
 .tag-container .tag-2persons::before,
 .tag-container .tag-3persons::before,
 .tag-container .tag-4persons::before,
 .tag-container .tag-5persons::before,
-.tag-container .tag-6persons::before { padding: 0 3px 0 4px; background-color: #536dfe; }
+.tag-container .tag-6persons::before { padding: 0 3px 0 4px; }
 
 .tag-container .tag-2persons::before { content: "2"; }
 .tag-container .tag-3persons::before { content: "3"; }
