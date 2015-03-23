@@ -17,47 +17,55 @@
     #optionsRadios2 ~ span::before,
     #optionsRadios1 ~ span::before { content: "Сделать гравным"; }
 
-    .img-delete ~ span::before { content: ""; font-family: FontAwesome; font-size: 1.5em; }
+    .img-delete ~ span::before { content: ""; font-family: FontAwesome; font-size: 1.5em; color: #777; }
 
     .img-delete:checked ~ span::before { color: #ff6347; content: ""; }
+
+    .panel .table-striped > tbody > tr:nth-of-type(2n+1) { background-color: #efefef; }
+
+    .panel.panel-default { margin-bottom: 15px; }
+
+    .panel-default .panel-body { background-color: #fafafa; }
+
+    .panel-default > .panel-heading { background-color: #eceff1; color: #546e7a; font-size: 15px; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; }
 </style>
 
 
-<div class="" style="padding: 0 10px;">
-<h1 class="" style="text-align: center;">Редактирование объявления <a class="btn btn-default" href="#">На сайт</a></h1>
+<div style="padding: 0 10px;" class="">
+<h1 style="text-align: center; font-size: 19px; color: rgb(38, 50, 56); margin-bottom: 20px;" class="">Редактирование объявления <a href="#" class="btn btn-info" style="margin-left: 10px;">Просмотреть на сайте</a></h1>
 
-<form class="row form-horizontal" action="http://ob.ksk66.ru/a/?action=ads&amp;op=edit&amp;id_mess=159969" method="post" enctype="multipart/form-data" name="add-ob__form" onsubmit="delFromPriceRuble();">
+<form onsubmit="delFromPriceRuble();" name="add-ob__form" enctype="multipart/form-data" method="post" action="http://ob.ksk66.ru/a/?action=ads&amp;op=edit&amp;id_mess=159969" class="row form-horizontal">
 <!-- Тип объявления -->
-<div style="" class="col-md-6">
+<div class="col-md-6" style="">
 <div class="panel panel-default">
     <div class="panel-heading">Объявление</div>
     <div class="panel-body">
         <div class="form-group">
-            <label for="add-ob__right-input_category" class="control-label col-md-4">Выберете категорию</label>
+            <label class="control-label col-md-4" for="add-ob__right-input_category">Выберете категорию</label>
 
             <div class="col-md-8">
-                <select class="form-control col-md-9" name="id_category" id="add-ob__right-input_category" onchange="changeTextInputbutton();" onclick="selcat(this.value,'resultcat');">
-                    <option value="0" selected="">Категория не выбрана</option>
-                    <optgroup class="level1" label="Услуги">
+                <select onclick="selcat(this.value,'resultcat');" onchange="changeTextInputbutton();" id="add-ob__right-input_category" name="id_category" class="form-control col-md-9">
+                    <option selected="" value="0">Категория не выбрана</option>
+                    <optgroup label="Услуги" class="level1">
                         <option value="428">Грузоперевозки, спецтехника, такси (Цена: 75 руб.)</option>
                         <option value="429">Строительство, сантехника, электрика (Цена: 75 руб.)</option>
                         <option value="431">Образование, компьютерная помощь (Цена: 75 руб.)</option>
                         <option value="449">Здоровье, красота и всё для праздника (Цена: 75 руб.)</option>
                         <option value="433">Прочие услуги (Цена: 75 руб.)</option>
                     </optgroup>
-                    <optgroup class="level1" label="Авто. Мото. Транспорт">
+                    <optgroup label="Авто. Мото. Транспорт" class="level1">
                         <option value="435">ВАЗ 2101-07: Лада классика</option>
                         <option value="436">ВАЗ 2108-09, 2113-15: Лада Самара</option>
                         <option value="437">ВАЗ 2110-12: Лада десятка</option>
                         <option value="438">Лада Калина, Приора, Гранта, Ларгус</option>
                         <option value="50">Нива, Ока, Волга и другие</option>
                         <option value="401">Иностранные легковые авто</option>
-                        <option value="423" selected="">Грузовые, спецтехника, мотоблоки</option>
+                        <option selected="" value="423">Грузовые, спецтехника, мотоблоки</option>
                         <option value="52">Мотоциклы, скутеры, велосипеды</option>
                         <option value="55">Запчасти, принадлежности и прицепы</option>
                         <option value="444">Шины и диски</option>
                     </optgroup>
-                    <optgroup class="level1" label="Недвижимость">
+                    <optgroup label="Недвижимость" class="level1">
                         <option value="405">1-комн. квартиры</option>
                         <option value="408">2-комн. квартиры</option>
                         <option value="407">3,4-комн. квартиры</option>
@@ -71,39 +79,39 @@
                         </option>
                         <option value="186">Гаражи и стоянки</option>
                     </optgroup>
-                    <optgroup class="level1" label="Работа и образование">
+                    <optgroup label="Работа и образование" class="level1">
                         <option value="191">Предлагаю работу (Цена: 75 руб.)</option>
                         <option value="192">Ищу работу</option>
                         <option value="455">Ищу подработку</option>
                     </optgroup>
-                    <optgroup class="level1" label="Техника, компьютеры и электроника">
+                    <optgroup label="Техника, компьютеры и электроника" class="level1">
                         <option value="221">Бытовая и кухонная техника</option>
                         <option value="211">Аудио, видео, автозвук</option>
                         <option value="230">Компьютеры, планшеты, оргтехника</option>
                         <option value="248">Телефоны и фотоаппараты</option>
                     </optgroup>
-                    <optgroup class="level1" label="Всё для дома">
+                    <optgroup label="Всё для дома" class="level1">
                         <option value="277">Мебель, посуда, интерьер</option>
                         <option value="360">Стройматериалы</option>
                         <option value="450">Инструменты</option>
                         <option value="453">Детские коляски, санки и велосипеды</option>
                         <option value="272">Всё для детей</option>
                     </optgroup>
-                    <optgroup class="level1" label="Одежда, обувь, аксессуары">
+                    <optgroup label="Одежда, обувь, аксессуары" class="level1">
                         <option value="460">Свадебная и праздничная одежда</option>
                         <option value="456">Мужская одежда</option>
                         <option value="263">Женская одежда</option>
                         <option value="457">Обувь и аксессуары</option>
                         <option value="443">Детская одежда и обувь</option>
                     </optgroup>
-                    <optgroup class="level1" label="Сад, огород, животные">
+                    <optgroup label="Сад, огород, животные" class="level1">
                         <option value="346">Кошки</option>
                         <option value="452">Собаки</option>
                         <option value="355">Другие животные, корма, клетки</option>
                         <option value="441">Все для сада, огорода. Растения</option>
                         <option value="422">Продукты питания, фрукты, овощи</option>
                     </optgroup>
-                    <optgroup class="level1" label="Всё остальное">
+                    <optgroup label="Всё остальное" class="level1">
                         <option value="293">Спортинвентарь</option>
                         <option value="308">Знакомства и контакты по интересам</option>
                         <option value="420">Поздравления</option>
@@ -114,13 +122,13 @@
                     </optgroup>
                 </select></div>
         </div>
-        <div class="form-group" style="">
-            <label for="add-ob__right-input_type" class="control-label col-md-4">Что вы хотите сделать</label>
+        <div style="" class="form-group">
+            <label class="control-label col-md-4" for="add-ob__right-input_type">Что вы хотите сделать</label>
 
-            <div class="col-md-8"><select onchange="UpdateTypePrefix(this.value);UpdateCategory();" name="type" id="add-ob__right-input_type" class="form-control">
+            <div class="col-md-8"><select class="form-control" id="add-ob__right-input_type" name="type" onchange="UpdateTypePrefix(this.value);UpdateCategory();">
 
                 <option value="0">Выберите из списка -&gt;</option>
-                <option selected="selected" value="p">Продам</option>
+                <option value="p" selected="selected">Продам</option>
                 <option value="k">Куплю</option>
                 <option value="m">Меняю</option>
                 <option value="s">Сдам в аренду</option>
@@ -138,21 +146,21 @@
             <label class="control-label col-md-4">Введите ваше объявление в этом поле</label>
 
             <div class="col-md-8">
-                <textarea autofocus="" placeholder="(напишите ваше объявление)" name="text" id="add-ob__text-input" class="form-control" rows="7" style="padding-left: 75px;">                    ГАЗ-САЗ-3507, самосвал, 1993 г., сделан кап. ремонт дв. и коробки весной 2014,пробег после ремонта 1500 км., сел и поехал, кабина не гнилая, промазана битумной мастикой, защита крыльев, новая АКБ(75А), ТО до сентября, 2015 г., или меняю на УАЗ(бортовой) ключ в ключ. Рассмотрю варианты
+                <textarea style="padding-left: 75px;" rows="7" class="form-control" id="add-ob__text-input" name="text" placeholder="(напишите ваше объявление)" autofocus="">                    ГАЗ-САЗ-3507, самосвал, 1993 г., сделан кап. ремонт дв. и коробки весной 2014,пробег после ремонта 1500 км., сел и поехал, кабина не гнилая, промазана битумной мастикой, защита крыльев, новая АКБ(75А), ТО до сентября, 2015 г., или меняю на УАЗ(бортовой) ключ в ключ. Рассмотрю варианты
                 </textarea>
-                <div class="" style="position: absolute; top: 6px; font-weight: 600; left: 22px;">Продам</div>
+                <div style="position: absolute; top: 6px; font-weight: 600; left: 22px;" class="">Продам</div>
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-md-4" for="add-ob__right__input__price">Цена</label>
+            <label for="add-ob__right__input__price" class="control-label col-md-4">Цена</label>
 
             <div class="col-md-5">
-                <input type="text" class="form-control" id="add-ob__right__input__price" name="price" value="175000">
+                <input type="text" value="175000" name="price" id="add-ob__right__input__price" class="form-control">
 
 
             </div>
             <div class="col-md-3">
-                <div style="" class="checkbox"><label><input type="checkbox" style="" checked="checked" name="checkboxPrice" class="checkboxPrice">&nbsp;Возможен
+                <div class="checkbox" style=""><label><input type="checkbox" class="checkboxPrice" name="checkboxPrice" checked="checked" style="">&nbsp;Возможен
                     торг</label>
                 </div>
             </div>
@@ -161,37 +169,37 @@
             <label class="control-label col-md-4">Телефоны</label>
 
             <div class="col-md-8">
-                <div class="input-group" style="margin-bottom: 10px;">
-                    <span class="input-group-addon rep-plus-few rep-plus-some rep-plus-more rep-plus-lots" title="рейтинг телефона" style="background-color: rgb(0, 200, 83); color: rgb(255, 255, 255); opacity: 0.5; font-size: 0.9em;">1110</span>
-                    <input type="text" class="form-control" id="add-ob__right-input_phone" name="contacts1" placeholder="8 902 XXX-XX-XX" pattern="[0-9\+\-\s]{1,16}" maxlength="16" value="89024427802">
+                <div style="margin-bottom: 10px;" class="input-group">
+
+                    <input type="text" value="89024427802" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts1" id="add-ob__right-input_phone" class="form-control">
 
                     <div class="input-group-btn">
-                        <a href="tel:+89024427802" class="btn btn-default" title="Позвонить"><i class="fa fa-phone"></i></a>
+                        <a title="Позвонить" class="btn btn-default rep-plus-few rep-plus-some rep-plus-more rep-plus-lots" href="tel:+89024427802"><i class="fa fa-phone"></i></a>
 
-                    <span class="btn btn-warning" onclick="SearchInPopover(this,9024427802)">
-                    <i class="fa fa-search"></i></span>
+                    <span onclick="SearchInPopover(this,9024427802)" class="btn btn-default" style="background-color: rgb(0, 200, 83); color: rgb(255, 255, 255);">
+                    <i style="" class="fa fa-search"></i> 1110</span>
 
                     </div>
                 </div>
-                <div class="input-group" style="margin-bottom: 10px;">
-                    <span class="input-group-addon rep-plus-few rep-plus-some rep-plus-more rep-plus-lots" title="рейтинг телефона" style="background-color: rgb(0, 200, 83); color: rgb(255, 255, 255); opacity: 0.5; font-size: 0.9em;">1120</span>
-                    <input type="text" class="form-control" name="contacts2" placeholder="8 902 XXX-XX-XX" pattern="[0-9\+\-\s]{1,16}" maxlength="16" value="51912">
+                <div style="margin-bottom: 10px;" class="input-group">
+
+                    <input type="text" value="51912" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts2" class="form-control">
 
                     <div class="input-group-btn">
-                        <a href="tel:+51912" class="btn btn-default" title="Позвонить"><i class="fa fa-phone"></i></a>
-                    <span class="btn btn-warning" onclick="SearchInPopover(this,51912)">
-                    <i class="fa fa-search"></i></span>
+                        <a title="Позвонить" class="btn btn-default" href="tel:+51912"><i class="fa fa-phone"></i></a>
+                    <span style="background-color: rgb(0, 200, 83); color: rgb(255, 255, 255);" class="btn btn-default" onclick="SearchInPopover(this,51912)">
+                    <i class="fa fa-search" style=""></i> 1120</span>
                     </div>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" class="form-control" name="contacts3" placeholder="8 902 XXX-XX-XX" pattern="[0-9\+\-\s]{1,16}" maxlength="16" value="">
+                    <input type="text" value="" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts3" class="form-control">
 
                     <div class="input-group-btn">
-                        <a href="tel:+" class="btn btn-default" title="Позвонить"><i class="fa fa-phone"></i></a>
-                    <span class="btn btn-warning" onclick="SearchInPopover(this,&lt;br /&gt;
+                        <a title="Позвонить" class="btn btn-default" href="tel:+"><i class="fa fa-phone"></i></a>
+                    <span onclick="SearchInPopover(this,&lt;br /&gt;
 &lt;b&gt;Notice&lt;/b&gt;:  Undefined variable: search_contacts3 in &lt;b&gt;/srv/ob.ksk66.ru/admin/sad.php&lt;/b&gt; on line &lt;b&gt;433&lt;/b&gt;&lt;br /&gt;
-)">
+)" class="btn btn-warning">
                     <i class="fa fa-search"></i></span>
                     </div>
                 </div>
@@ -200,9 +208,9 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="add-ob__right__input__mail" class="control-label col-md-4">Электронная почты</label>
+            <label class="control-label col-md-4" for="add-ob__right__input__mail">Электронная почты</label>
 
-            <div class="col-md-8"><input type="text" class="form-control" id="add-ob__right__input__mail" placeholder="адрес@mail.ru" name="email" pattern="[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?" value=""></div>
+            <div class="col-md-8"><input type="text" value="" pattern="[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?" name="email" placeholder="адрес@mail.ru" id="add-ob__right__input__mail" class="form-control"></div>
         </div>
 
     </div>
@@ -236,10 +244,10 @@
 
 <!-- Фото -->
 
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 
 
-    &amp;amp;amp;
+    &amp;amp;amp;amp;
     amp;
     amp;
     amp;
@@ -247,11 +255,11 @@
     !--
             function del(n) {
                 var tab = document.getElementById("tab");
-                if (tab.rows.length == 2 &amp;amp;amp; amp;
+                if (tab.rows.length == 2 &amp;amp;amp;amp; amp;
                 amp;
                 amp;
                 amp;
-                &amp;amp;amp;
+                &amp;amp;amp;amp;
                 amp;
                 amp;
                 amp;
@@ -262,7 +270,7 @@
                     document.forms["add_form"].reset();
                     return;
                 }
-                if (tab.rows.length &amp;amp;amp; amp;
+                if (tab.rows.length &amp;amp;amp;amp; amp;
                 amp;
                 amp;
                 gt;
@@ -288,7 +296,7 @@
         var newRow = tab.tBodies[0].insertRow(tab.rows.length - 1);
         var newCell_1 = newRow.insertCell(0);
         newCell_1.style.border = "none";
-        newCell_1.innerHTML = "&amp;amp;amp;amp;amp;amp;lt;span&amp;amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;amp;lt;\/span&amp;amp;amp;amp;amp;amp;gt;";
+        newCell_1.innerHTML = "&amp;amp;amp;amp;amp;amp;amp;lt;span&amp;amp;amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;amp;amp;lt;\/span&amp;amp;amp;amp;amp;amp;amp;gt;";
         var newfield = document.createElement("input");
         newfield.setAttribute("type", "file");
         newfield.setAttribute("size", "35");
@@ -298,7 +306,7 @@
         var newCell_2 = newRow.insertCell(1);
         var nb_2 = document.createElement("input");
         nb_2.setAttribute("type", "button");
-        nb_2.setAttribute("value", " &amp;amp;amp;amp;amp;amp;mdash; ");
+        nb_2.setAttribute("value", " &amp;amp;amp;amp;amp;amp;amp;mdash; ");
         nb_2.title = "Удалить это поле";
         nb_2.onclick = function () {
             del(this);
@@ -309,7 +317,7 @@
     }
     function showIndexfd() {
         var tab = document.getElementById("tab");
-        for (var i = 0; i &amp;amp;amp; amp; amp;
+        for (var i = 0; i &amp;amp;amp;amp; amp; amp;
         amp;
         lt;
         tab.rows.length;
@@ -320,7 +328,7 @@
             fc.firstChild.innerHTML = "";
         }
     }
-    //--&amp;amp;amp;amp;amp;amp;gt;
+    //--&amp;amp;amp;amp;amp;amp;amp;gt;
 </script>
 <div class="panel panel-default">
     <div class="panel-heading">Фотографии</div>
@@ -328,18 +336,18 @@
 
         <div class="row">
             <div class="col-md-4">
-                <img src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110547.jpeg" style="width: 100%;">
+                <img style="width: 100%;" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110547.jpeg">
 
                 <div>
-  <span style="display: inline-block; padding-top: 12px;" class="radio col-md-10">
+  <span class="radio col-md-10" style="display: inline-block; padding-top: 12px;">
   <label>
 
-      <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"><span></span></label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span></span></label>
 </span>
-<span style="display: inline-block; text-align: center;" class="checkbox col-md-2">
+<span class="checkbox col-md-2" style="display: inline-block; text-align: center;">
   <label style="padding: 0;">
 
-      <input type="checkbox" style="display: none;" class="img-delete">
+      <input type="checkbox" class="img-delete" style="display: none;">
       <span title="Пометить для удаления"></span>
 
   </label>
@@ -347,18 +355,18 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img style="width: 100%;" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110548.jpeg">
+                <img src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110548.jpeg" style="width: 100%;">
 
                 <div>
-  <span style="display: inline-block; padding-top: 12px;" class="radio col-md-10">
+  <span class="radio col-md-10" style="display: inline-block; padding-top: 12px;">
   <label>
 
-      <input type="radio" checked="" value="option2" id="optionsRadios2" name="optionsRadios"><span></span></label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked=""><span></span></label>
 </span>
-<span style="display: inline-block;" class="checkbox col-md-2">
+<span class="checkbox col-md-2" style="display: inline-block;">
   <label style="padding: 0;">
 
-      <input type="checkbox" style="display: none;" class="img-delete">
+      <input type="checkbox" class="img-delete" style="display: none;">
       <span title="Пометить для удаления"></span>
 
   </label>
@@ -366,12 +374,12 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <label style="height: 220px; cursor: pointer; border: 3px dashed skyblue; border-radius: 10px; text-align: center; vertical-align: middle; width: 100%;" id="foo1">
+                <label id="foo1" style="height: 220px; cursor: pointer; border: 3px dashed skyblue; border-radius: 10px; text-align: center; vertical-align: middle; width: 100%;">
                     <input type="file" style="visibility: hidden;">
                 </label>
             </div>
             <div class="col-md-12">
-                <button class="btn btn-lg btn-action btn-block" style="margin-top: 15px; text-transform: uppercase; letter-spacing: 0.025em;">Добавить ещё одну
+                <button style="margin-top: 15px; text-transform: uppercase; letter-spacing: 0.025em;" class="btn btn-lg btn-action btn-block">Добавить ещё одну
                     фотографию
                 </button>
             </div>
@@ -386,7 +394,7 @@
 
 <!-- Ссылка -->
 <div class="panel panel-default">
-    <div class="panel-heading">Управление объявлением</div>
+    <div class="panel-heading">Управление услугами</div>
     <div class="panel-body">
         <div class="form-group">
             <label class="control-label col-md-4">Частное или коммерческое?</label>
@@ -394,22 +402,22 @@
             <div class="col-md-8">
                 <div class="radio">
                     <label for="radio-is-business-0">
-                        <input type="radio" class="" name="radio-is-business" id="radio-is-business-0" value="is-business-0" checked="checked">Частное</label>
+                        <input type="radio" checked="checked" value="is-business-0" id="radio-is-business-0" name="radio-is-business" class="">Частное</label>
                 </div>
                 <div class="radio">
                     <label for="radio-is-business-1">
-                        <input type="radio" class="add-ob__right-input_string" name="radio-is-business" id="radio-is-business-1" value="is-business-1">Неоплаченое коммерческое</label>
-                    <div class="" style="display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241);">
-                        <div style="" class="checkbox">
-                            <label for="checkbox_phoned" class="lc">
-                                <input type="checkbox" id="checkbox_phoned" name="phoned" value="1" min="1">Дозвонились</label>
+                        <input type="radio" value="is-business-1" id="radio-is-business-1" name="radio-is-business" class="add-ob__right-input_string">Неоплаченое коммерческое</label>
+                    <div style="display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241);" class="">
+                        <div class="checkbox" style="">
+                            <label class="lc" for="checkbox_phoned">
+                                <input type="checkbox" min="1" value="1" name="phoned" id="checkbox_phoned">Дозвонились</label>
                         </div></div>
                 </div>
 
 
                 <div class="radio">
                     <label for="radio-is-business-2">
-                        <input type="radio" value="is-business-2" id="radio-is-business-2" name="radio-is-business" class="add-ob__right-input_string">Коммерческое</label>
+                        <input type="radio" class="add-ob__right-input_string" name="radio-is-business" id="radio-is-business-2" value="is-business-2">Коммерческое</label>
                 </div>
 
 
@@ -423,16 +431,16 @@
             <div class="col-md-8">
                 <div class="radio">
                     <label for="radio-is-selected-0">
-                        <input type="radio" class="add-ob__right-input_string" name="radio-is-selected" id="radio-is-selected-0" value="is-selected-0" checked="checked">Невыделенное</label>
+                        <input type="radio" checked="checked" value="is-selected-0" id="radio-is-selected-0" name="radio-is-selected" class="add-ob__right-input_string">Невыделенное</label>
                 </div>
                 <div class="radio">
                     <label for="radio-is-selected-1">
-                        <input type="radio" value="is-selected-1" id="radio-is-selected-1" name="radio-is-selected" class="add-ob__right-input_string">Выделенное</label>
+                        <input type="radio" class="add-ob__right-input_string" name="radio-is-selected" id="radio-is-selected-1" value="is-selected-1">Выделенное</label>
                 </div>
 
                 <div class="radio">
                     <label for="radio-is-selected-2">
-                        <input type="radio" value="is-selected-2" id="radio-is-selected-2" name="radio-is-selected" class="add-ob__right-input_string">Супер выделенное</label>
+                        <input type="radio" class="add-ob__right-input_string" name="radio-is-selected" id="radio-is-selected-2" value="is-selected-2">Супер выделенное</label>
                 </div>
 
 
@@ -446,23 +454,23 @@
             <div class="col-md-8">
                 <div class="radio">
                     <label for="add-ob__checked_no">
-                        <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_no" value="no" checked="checked">Не допущенный</label>
+                        <input type="radio" checked="checked" value="no" id="add-ob__checked_no" name="checked" class="add-ob__right-input_string">Не допущенный</label>
                 </div>
                 <div class="radio">
                     <label for="add-ob__checked_yes">
-                        <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_yes" value="yes">
+                        <input type="radio" value="yes" id="add-ob__checked_yes" name="checked" class="add-ob__right-input_string">
                         Допущенный
                     </label>
                 </div>
                 <div class="radio">
                     <label for="add-ob__checked_edit">
-                        <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_edit" value="edit">
+                        <input type="radio" value="edit" id="add-ob__checked_edit" name="checked" class="add-ob__right-input_string">
                         Отредактированный
                     </label>
                 </div>
                 <div class="radio">
                     <label for="add-ob__checked_archive">
-                        <input type="radio" value="archive" id="add-ob__checked_archive" name="checked" class="add-ob__right-input_string">
+                        <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_archive" value="archive">
                         Архив
                     </label>
                 </div>
@@ -472,6 +480,16 @@
 
 
 
+        <div class="form-group">
+            <!-- Период размещения -->
+            <label class="control-label col-md-4">Это объявление на 17 месте</label>
+
+            <div class="col-md-8">
+                <button class="btn btn-action">
+                    Поднять объявление
+                </button>
+            </div>
+        </div>
         <div class="form-group">
             <!-- Период размещения -->
             <label class="control-label col-md-4" for="time_delete">Период размещения</label>
@@ -487,19 +505,19 @@
             <div class="col-md-8 col-md-push-4">
                 <div class="checkbox">
                     <label for="date_add">
-                        <input type="checkbox" id="date_add" name="date_add" class="add-ob__reset-date"> <!---->
+                        <input type="checkbox" class="add-ob__reset-date" name="date_add" id="date_add"> <!---->
                         Сбросить дату размещения на сегодняшнее число
                     </label>
                 </div>
                 <div class="checkbox">
                     <label for="date_sort">
-                        <input type="checkbox" class="add-ob__reset-date" name="date_sort" id="date_sort"> <!---->
+                        <input type="checkbox" id="date_sort" name="date_sort" class="add-ob__reset-date"> <!---->
                         Поднять объявление
                     </label>
                 </div>
                 <div class="checkbox">
                     <label for="checkbox_certification">
-                        <input type="checkbox" id="checkbox_certification" name="certificate" value="1" min="1">
+                        <input type="checkbox" min="1" value="1" name="certificate" id="checkbox_certification">
                         Имеется сертификат
                     </label>
                 </div>
@@ -508,16 +526,16 @@
         </div>
         <div class="form-group">
             <div class="col-md-5">
-                <label style="" for="select_time" class="control-label col-md-6">Дата выделения</label>
+                <label class="control-label col-md-6" for="select_time" style="">Дата выделения</label>
 
                 <div class="col-md-6">
-                    <input type="date" style="" class="form-control" id="select_time" name="select_time" value="0000-00-00"></div>
+                    <input type="date" value="0000-00-00" name="select_time" id="select_time" class="form-control" style=""></div>
             </div>
             <div class="col-md-7">
-                <label class="control-label col-md-7" for="select_period" style="padding-left: 0;"><strong>Срок
+                <label style="padding-left: 0;" for="select_period" class="control-label col-md-7"><strong>Срок
                     выделения.</strong> Осталось:</label>
 
-                <div style="padding: 0;" class="col-md-2"><input type="number" value="" style="" id="select_period" name="select_period" class="form-control"></div>
+                <div class="col-md-2" style="padding: 0;"><input type="number" class="form-control" name="select_period" id="select_period" style="" value=""></div>
                 <div class="col-md-2"><label class="control-label">дней</label></div>
             </div>
         </div>
@@ -526,7 +544,7 @@
 
             <label class="control-label col-md-4">Опубликовать в следующих</label>
 
-            <div class="col-md-8"><input type="number" class="form-control" value="0" name="newspaper" style="text-align: center; width:70px; display:inline-block;"><span style="font-weight: 600;">&nbsp;&nbsp;номерах газеты</span></div>
+            <div class="col-md-8"><input type="number" style="text-align: center; width:70px; display:inline-block;" name="newspaper" value="0" class="form-control"><span style="font-weight: 600;">&nbsp;&nbsp;номерах газеты</span></div>
         </div>
     </div>
 </div>
@@ -542,12 +560,12 @@
 <div class="panel panel-default">
     <div class="panel-heading">Журнал</div>
     <div class="panel-body">
-        <div class="form-group"><label class="control-label col-md-3" for="add-ob__note">Запись в журнал</label>
+        <div class="form-group"><label for="add-ob__note" class="control-label col-md-3">Запись в журнал</label>
 
             <div class="col-md-9">
-                <input type="text" name="note" id="add-ob__note" class="form-control"></div>
-            <input type="submit" style="margin-right: 10px; margin-top: 15px;" name="submit" class="btn btn-action btn-lg pull-right" value="Сохранить"></div>
-        <table style="clear:both;" class="table table-hover table-striped journal_standard">
+                <input type="text" class="form-control" id="add-ob__note" name="note"></div>
+            <input type="submit" value="Сохранить" class="btn btn-action btn-lg pull-right" name="submit" style="margin-right: 10px; margin-top: 15px;"></div>
+        <table class="table table-hover table-striped journal_standard" style="clear:both;">
             <tbody>
             <tr class="journal__header">
                 <th>Дата</th>
