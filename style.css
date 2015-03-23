@@ -2218,6 +2218,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .block_necro .list-group-item,
 .block_congrats .list-group-item {text-align: center !important;}
+.block_congrats__all_ob_link ,.block_necro__all_ob_link{display: inline-block;}
 
 
 
