@@ -5,6 +5,8 @@ nav.navbar { margin: 0 -10px; }
 
 .header-logo-col:first-child .header-logo #sublogo { left: 65px; }
 
+footer { display: none; }
+
 /**/
 .products .wc-forward { display: none; }
 
