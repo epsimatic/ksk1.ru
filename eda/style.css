@@ -275,7 +275,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .tag-container .tag-3persons::before { content: "3"; }
 .tag-container .tag-4persons::before { content: "4"; }
 .tag-container .tag-5persons::before { content: "5"; }
-.tag-container .tag-6persons::before { content: "6"; }
+.tag-container .tag-6persons::before { content: "6+"; }
 
 /* <editor-fold desc="Оформление ячейки товара"> */
 
