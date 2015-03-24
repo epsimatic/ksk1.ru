@@ -20,6 +20,8 @@ body {
     font-weight: normal;
 }
 
+figure { position: relative; }
+
 .tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
 header#header {margin-bottom: 0 !important;}
