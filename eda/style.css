@@ -994,3 +994,25 @@ body.admin-bar .affix { margin-top: /*46px;*/ 0; }
     border-bottom-color: white !important;
     border-top: 5px solid;
 }
+
+
+
+
+/* Перенёс с сайта */
+/**/
+.modal-body .product-type-variable .variations_form {display: none;}
+footer {display: none !important;}
+#product-details-modal-body div.product div.summary {width: 100% !important;}
+
+/*.modal-body .product-type-variable .variations_form {display: none;}*/
+body {overflow-y: scroll;}
+#product-details-modal .modal-header{border-bottom: none !important;}
+
+
+/*не показывать доставку по городу когда есть бесплатная доставка */
+.li_free_shipping + .li_flat_rate input:not(:checked),
+.li_free_shipping + .li_flat_rate input:not(:checked) + label {
+    display: none !important;
+}
+
+.eda .modal.in .modal-dialog{z-index: 1400}
