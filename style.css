@@ -2390,6 +2390,10 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-site .ob-list article.ob.is-super:hover,
 .ob-site .ob-list article.ob.is-super:focus  { background-color: #fbea2d; }
 
+.ob-site .ob-list .ob-meta { float: right; }
+
+.ob-site .ob-list .ob-thumb { float: right; margin-left: 15px; }
+
 article.ob a:hover,
 article.ob a:focus { text-decoration: none; }
 
