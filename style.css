@@ -2382,6 +2382,7 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list article.ob:hover,
 .ob-list article.ob:focus { background-color: #f8f8f8; }
 
+.panel-congrats article.ob .ob-text-group,
 .panel-notice article.ob .ob-text-group,
 .ob-list article.ob .ob-text-group { color: #333; margin: 0; }
 
