@@ -2421,6 +2421,8 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob article.ob { padding: 10px 15px; }
 
+.panel-ob img { margin-top: 10px; margin-bottom: 10px; width: 100%; }
+
 
 
 

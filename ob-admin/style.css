@@ -1,7 +1,5 @@
 @media (min-width: 1500px) {
-    .container {
-        width: 1500px !important;
-    }
+    .container { width: 1500px !important; }
 }
 
 .ob-admin > .container { padding-top: 20px; }
