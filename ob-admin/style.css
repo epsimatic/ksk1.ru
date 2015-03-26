@@ -379,3 +379,76 @@ h1 {
 .popover-quick-search .popover-content .table { min-width: 600px; }
 .popover-quick-search .popover-content .table thead { display: none; }
 .popover-quick-search .popover-content .table .col-obs-rep { display: none; }
+
+
+/* Стили для панели редактирования лбъявления*/
+.ob-admin h1.ob-edit-header { text-align: center; font-size: 19px; color: #263238; margin-bottom: 20px; }
+.ob-admin h1.ob-edit-header .btn { margin-left: 10px; }
+
+.ob-admin .panel.panel-default { margin-bottom: 15px; }
+
+.ob-admin .panel-default .panel-body { background-color: #fafafa; }
+
+.ob-admin .panel-default > .panel-heading { background-color: #eceff1; color: #546e7a; font-size: 15px; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; }
+
+.ob-admin #ob-text-input { padding-left: 75px; }
+
+.ob-admin #ob-action-type { position: absolute; top: 6px; font-weight: 600; left: 22px; }
+
+.ob-admin .ob-phone-input { margin-bottom: 10px; }
+
+.ob-admin #ob-add-img { height: 220px; cursor: pointer; border: 3px dashed skyblue; border-radius: 10px; text-align: center; vertical-align: middle; width: 100%; }
+
+.ob-admin #ob-add-img > input { visibility: hidden; }
+
+.ob-admin #btn-ob-add-img { margin-top: 15px; text-transform: uppercase; letter-spacing: 0.025em; }
+
+.ob-admin .thumb-radio:checked ~ span::before { content: "Главное фото"; }
+
+.ob-admin .thumb-radio ~ span::before { content: "Сделать гравным"; }
+
+.ob-admin .panel-ob-img-editor .ob-thumb { width: 100%; }
+
+.ob-admin .main-thumb-selector { display: inline-block; padding-top: 12px !important; }
+
+.ob-admin .img-delete-group { display: inline-block; text-align: center; }
+
+.ob-admin .img-delete-group > label { padding: 0; }
+
+.ob-admin .img-delete-input { display: none; }
+
+.ob-admin .img-delete-input ~ span::before { content: ""; font-family: FontAwesome; font-size: 1.5em; color: #777; }
+
+.ob-admin .img-delete-input:checked ~ span::before { color: #ff6347; content: ""; }
+
+/*.ob-admin .panel .table-striped > tbody > tr:nth-of-type(2n+1) { background-color: #efefef; }*/
+
+.ob-admin .dialed-in-group { display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241); }
+
+
+.ob-admin .ob-up input:checked ~ label { color: #ff0000; }
+
+.ob-admin #publish-in-newspaper { text-align: center; display: inline-block; width: 55px; padding: 5px; }
+
+.ob-admin .radio-ob-status .input-group > .input-group-addon:first-child,
+.ob-admin .radio-is-selected .input-group > .input-group-addon:first-child { background-color: transparent; border-color: transparent; padding-left: 19px; }
+
+.ob-admin #buisness-options .radio > input,
+.ob-admin #status-options .radio > input,
+.ob-admin #selection-options .radio > input { position: relative; left: 23px; top: 1px; }
+
+.ob-admin .radio-is-business input:checked ~ div,
+.ob-admin .radio-ob-status input:checked ~ div,
+.ob-admin .radio-is-selected input:checked ~ div { display: inline-block; }
+
+.ob-admin .radio-is-business input ~ div,
+.ob-admin .radio-ob-status input ~ div,
+.ob-admin .radio-is-selected input ~ div { display: none; }
+
+.ob-admin .radio-is-business input ~ label,
+.ob-admin .radio-ob-status input ~ label,
+.ob-admin .radio-is-selected input ~ label { border-top: 1px transparent; padding: 4px 10px 3px 25px; }
+
+.ob-admin #radio-is-selected-1 ~ label { background-color: #FFF7A9; }
+
+.ob-admin #radio-is-selected-2 ~ label { background-color: #FFF04E; border-top: 1px dashed #F6D01E; }
