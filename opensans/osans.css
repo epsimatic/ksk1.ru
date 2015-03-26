@@ -1,6 +1,6 @@
 /* Подключение шрифта Open Sans */
 body {
-    font-family: 'Open Sans', Tahoma, Verdana, Segoe, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: 'Open Sans', 'OpenSans', Tahoma, Verdana, Segoe, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 @font-face {
