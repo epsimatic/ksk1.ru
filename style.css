@@ -2421,8 +2421,6 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob article.ob { padding: 10px 15px; }
 
-.panel-ob img { margin-bottom: 10px; width: 100%; }
-
 .panel-ob .ob-price-group { background-color: #ecf0f1; display: block; float: left; margin: 15px 0; text-align: center; width: 40%; }
 
 .panel-ob .ob-price { display: block; font-weight: 600; padding: 2px 0; }
@@ -2435,7 +2433,9 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob .ob-meta { display: block; float: right; margin: 15px 0; padding-right: 10px; }
 
+.panel-ob .ob-photos { padding: 0 15px; }
 
+.panel-ob .ob-photos img { margin-bottom: 10px; width: 100%; }
 
 
 
