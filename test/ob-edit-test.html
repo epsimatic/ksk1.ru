@@ -1,541 +1,539 @@
-<style>
-    h1.ob-edit-header { text-align: center; font-size: 19px; color: #263238; margin-bottom: 20px; }
-    h1.ob-edit-header .btn { margin-left: 10px; }
+    <style>
+        h1.ob-edit-header { text-align: center; font-size: 19px; color: #263238; margin-bottom: 20px; }
+        h1.ob-edit-header .btn { margin-left: 10px; }
 
-    .panel.panel-default { margin-bottom: 15px; }
+        .panel.panel-default { margin-bottom: 15px; }
 
-    .panel-default .panel-body { background-color: #fafafa; }
+        .panel-default .panel-body { background-color: #fafafa; }
 
-    .panel-default > .panel-heading { background-color: #eceff1; color: #546e7a; font-size: 15px; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; }
+        .panel-default > .panel-heading { background-color: #eceff1; color: #546e7a; font-size: 15px; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; }
 
-    #ob-text-input { padding-left: 75px; }
+        #ob-text-input { padding-left: 75px; }
 
-    #ob-action-type { position: absolute; top: 6px; font-weight: 600; left: 22px; }
+        #ob-action-type { position: absolute; top: 6px; font-weight: 600; left: 22px; }
 
-    .ob-phone-input { margin-bottom: 10px; }
+        .ob-phone-input { margin-bottom: 10px; }
 
-    #ob-add-img { height: 220px; cursor: pointer; border: 3px dashed skyblue; border-radius: 10px; text-align: center; vertical-align: middle; width: 100%; }
+        #ob-add-img { height: 220px; cursor: pointer; border: 3px dashed skyblue; border-radius: 10px; text-align: center; vertical-align: middle; width: 100%; }
 
-    #ob-add-img > input { visibility: hidden; }
+        #ob-add-img > input { visibility: hidden; }
 
-    #btn-ob-add-img { margin-top: 15px; text-transform: uppercase; letter-spacing: 0.025em; }
+        #btn-ob-add-img { margin-top: 15px; text-transform: uppercase; letter-spacing: 0.025em; }
 
-    .thumb-radio:checked ~ span::before { content: "Главное фото"; }
+        .thumb-radio:checked ~ span::before { content: "Главное фото"; }
 
-    .thumb-radio ~ span::before { content: "Сделать гравным"; }
+        .thumb-radio ~ span::before { content: "Сделать гравным"; }
 
-    .panel-ob-img-editor .ob-thumb { width: 100%; }
+        .panel-ob-img-editor .ob-thumb { width: 100%; }
 
-    .main-thumb-selector { display: inline-block; padding-top: 12px !important; }
+        .main-thumb-selector { display: inline-block; padding-top: 12px !important; }
 
-    .img-delete-group { display: inline-block; text-align: center; }
+        .img-delete-group { display: inline-block; text-align: center; }
 
-    .img-delete-group > label { padding: 0; }
+        .img-delete-group > label { padding: 0; }
 
-    .img-delete-input { display: none; }
+        .img-delete-input { display: none; }
 
-    .img-delete-input ~ span::before { content: ""; font-family: FontAwesome; font-size: 1.5em; color: #777; }
+        .img-delete-input ~ span::before { content: ""; font-family: FontAwesome; font-size: 1.5em; color: #777; }
 
-    .img-delete-input:checked ~ span::before { color: #ff6347; content: ""; }
+        .img-delete-input:checked ~ span::before { color: #ff6347; content: ""; }
 
-    .panel .table-striped > tbody > tr:nth-of-type(2n+1) { background-color: #efefef; }
+        /*.panel .table-striped > tbody > tr:nth-of-type(2n+1) { background-color: #efefef; }*/
 
-    .dialed-in-group { display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241); }
-
-
-    .ob-up input:checked ~ label { color: #ff0000; }
-
-    /*#selection-options .radio { margin-left: -20px; }*/
-
-    #selection-options .radio > input { position: relative; left: 23px; top: 1px; }
-
-    #radio-is-selected-0:checked ~ div,
-    #radio-is-selected-1:checked ~ div,
-    #radio-is-selected-2:checked ~ div { display: inline-block; }
-
-    #radio-is-selected-0 ~ div,
-    #radio-is-selected-1 ~ div,
-    #radio-is-selected-2 ~ div { display: none; }
-
-    #radio-is-selected-0 ~ label,
-    #radio-is-selected-1 ~ label,
-    #radio-is-selected-2 ~ label { border-top: 1px transparent; padding: 4px 10px 3px 25px; }
-
-    #radio-is-selected-1 ~ label { background-color: #FFF7A9; }
-
-    #radio-is-selected-2 ~ label { background-color: #FFF04E; border-top: 1px dashed #F6D01E; }
-</style>
+        .dialed-in-group { display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241); }
 
 
-<div class="col-md-12">
-<h1 class="ob-edit-header">Редактирование объявления <a href="#" class="btn btn-info">Просмотреть на сайте</a></h1>
+        .ob-up input:checked ~ label { color: #ff0000; }
 
-<form onsubmit="delFromPriceRuble();" name="form-add-ob" enctype="multipart/form-data" method="post" action="#" class="row form-horizontal">
-    <div class="col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">Объявление</div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label class="control-label col-md-4" for="ob-category-input">Выберете категорию</label>
-                    <div class="col-md-8">
-                        <select onclick="selcat(this.value,'resultcat');" onchange="changeTextInputbutton();" id="ob-category-input" name="ob-category-input" class="form-control col-md-9">
-                            <option selected="" value="0">Категория не выбрана</option>
-                            <optgroup label="Услуги" class="level1">
-                                <option value="428">Грузоперевозки, спецтехника, такси (Цена: 75 руб.)</option>
-                                <option value="429">Строительство, сантехника, электрика (Цена: 75 руб.)</option>
-                                <option value="431">Образование, компьютерная помощь (Цена: 75 руб.)</option>
-                                <option value="449">Здоровье, красота и всё для праздника (Цена: 75 руб.)</option>
-                                <option value="433">Прочие услуги (Цена: 75 руб.)</option>
-                            </optgroup>
-                            <optgroup label="Авто. Мото. Транспорт" class="level1">
-                                <option value="435">ВАЗ 2101-07: Лада классика</option>
-                                <option value="436">ВАЗ 2108-09, 2113-15: Лада Самара</option>
-                                <option value="437">ВАЗ 2110-12: Лада десятка</option>
-                                <option value="438">Лада Калина, Приора, Гранта, Ларгус</option>
-                                <option value="50">Нива, Ока, Волга и другие</option>
-                                <option value="401">Иностранные легковые авто</option>
-                                <option selected="" value="423">Грузовые, спецтехника, мотоблоки</option>
-                                <option value="52">Мотоциклы, скутеры, велосипеды</option>
-                                <option value="55">Запчасти, принадлежности и прицепы</option>
-                                <option value="444">Шины и диски</option>
-                            </optgroup>
-                            <optgroup label="Недвижимость" class="level1">
-                                <option value="405">1-комн. квартиры</option>
-                                <option value="408">2-комн. квартиры</option>
-                                <option value="407">3,4-комн. квартиры</option>
-                                <option value="185">Дома в Красноуфимске, Приданниково, Криулино</option>
-                                <option value="454">Дома в Красноуфимском и др. районах</option>
-                                <option value="184">Аренда жилья</option>
-                                <option value="439">Дачи и сады</option>
-                                <option value="451">Земельные участки</option>
-                                <option value="442">Коммерческая недвижимость, оборудование, готовый бизнес (Цена: 75
-                                    руб.)
-                                </option>
-                                <option value="186">Гаражи и стоянки</option>
-                            </optgroup>
-                            <optgroup label="Работа и образование" class="level1">
-                                <option value="191">Предлагаю работу (Цена: 75 руб.)</option>
-                                <option value="192">Ищу работу</option>
-                                <option value="455">Ищу подработку</option>
-                            </optgroup>
-                            <optgroup label="Техника, компьютеры и электроника" class="level1">
-                                <option value="221">Бытовая и кухонная техника</option>
-                                <option value="211">Аудио, видео, автозвук</option>
-                                <option value="230">Компьютеры, планшеты, оргтехника</option>
-                                <option value="248">Телефоны и фотоаппараты</option>
-                            </optgroup>
-                            <optgroup label="Всё для дома" class="level1">
-                                <option value="277">Мебель, посуда, интерьер</option>
-                                <option value="360">Стройматериалы</option>
-                                <option value="450">Инструменты</option>
-                                <option value="453">Детские коляски, санки и велосипеды</option>
-                                <option value="272">Всё для детей</option>
-                            </optgroup>
-                            <optgroup label="Одежда, обувь, аксессуары" class="level1">
-                                <option value="460">Свадебная и праздничная одежда</option>
-                                <option value="456">Мужская одежда</option>
-                                <option value="263">Женская одежда</option>
-                                <option value="457">Обувь и аксессуары</option>
-                                <option value="443">Детская одежда и обувь</option>
-                            </optgroup>
-                            <optgroup label="Сад, огород, животные" class="level1">
-                                <option value="346">Кошки</option>
-                                <option value="452">Собаки</option>
-                                <option value="355">Другие животные, корма, клетки</option>
-                                <option value="441">Все для сада, огорода. Растения</option>
-                                <option value="422">Продукты питания, фрукты, овощи</option>
-                            </optgroup>
-                            <optgroup label="Всё остальное" class="level1">
-                                <option value="293">Спортинвентарь</option>
-                                <option value="308">Знакомства и контакты по интересам</option>
-                                <option value="420">Поздравления</option>
-                                <option value="311">Некролог</option>
-                                <option value="415">Разное</option>
-                                <option value="397">Потеряно</option>
-                                <option value="396">Найдено</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </div>
-                <div  class="form-group">
-                    <label class="control-label col-md-4" for="ob-action-type-input">Что вы хотите сделать</label>
-                    <div class="col-md-8">
-                        <select class="form-control" id="ob-action-type-input" name="ob-action-type-input" onchange="UpdateTypePrefix(this.value);UpdateCategory();">
-                            <option value="0">Выберите из списка -&gt;</option>
-                            <option value="p" selected="selected">Продам</option>
-                            <option value="k">Куплю</option>
-                            <option value="m">Меняю</option>
-                            <option value="s">Сдам в аренду</option>
-                            <option value="q">Возьму в аренду</option>
-                            <option value="o">Предлагаю свои услуги</option>
-                            <option value="i">Ищу сотрудника (вакансия)</option>
-                            <option value="r">Ищу работу, работодателя</option>
-                            <option value="l">Ищу подработку</option>
-                            <option value="d">Подарю, отдам даром</option>
-                            <option value="b">Приму в дар</option>
-                            <option value="-">(другое)</option>
-                        </select>
-                    </div>
-                </div>
+        #publish-in-newspaper { text-align: center; display: inline-block; width: 55px; padding: 5px; }
 
-                <div class="form-group">
-                    <label class="control-label col-md-4">Введите ваше объявление в этом поле</label>
-                    <div class="col-md-8">
-                        <textarea rows="7" class="form-control" id="ob-text-input" name="ob-text-input" placeholder="(напишите ваше объявление)" autofocus="">
-                            ГАЗ-САЗ-3507, самосвал, 1993 г., сделан кап. ремонт дв. и коробки весной 2014,пробег после ремонта 1500 км., сел и поехал, кабина не гнилая, промазана битумной мастикой, защита крыльев, новая АКБ(75А), ТО до сентября, 2015 г., или меняю на УАЗ(бортовой) ключ в ключ. Рассмотрю варианты
-                        </textarea>
-                        <div id="ob-action-type">Продам</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="ob-price-input" class="control-label col-md-4">Цена</label>
-                    <div class="col-md-5">
-                        <input type="text" value="175000" name="ob-price-input" id="ob-price-input" class="form-control">
-                    </div>
-                    <div class="col-md-3">
-                        <div class="checkbox" >
-                            <label>
-                                <input type="checkbox" class="checkboxPrice" name="checkboxPrice" checked="checked" >
-                                    &nbsp;Возможен торг
-                            </label>
+        .radio-ob-status .input-group > .input-group-addon:first-child,
+        .radio-is-selected .input-group > .input-group-addon:first-child { background-color: transparent; border-color: transparent; padding-left: 19px; }
+
+        #buisness-options .radio > input,
+        #status-options .radio > input,
+        #selection-options .radio > input { position: relative; left: 23px; top: 1px; }
+
+        .radio-is-business input:checked ~ div,
+        .radio-ob-status input:checked ~ div,
+        .radio-is-selected input:checked ~ div { display: inline-block; }
+
+        .radio-is-business input ~ div,
+        .radio-ob-status input ~ div,
+        .radio-is-selected input ~ div { display: none; }
+
+        .radio-is-business input ~ label,
+        .radio-ob-status input ~ label,
+        .radio-is-selected input ~ label { border-top: 1px transparent; padding: 4px 10px 3px 25px; }
+
+        #radio-is-selected-1 ~ label { background-color: #FFF7A9; }
+
+        #radio-is-selected-2 ~ label { background-color: #FFF04E; border-top: 1px dashed #F6D01E; }
+    </style>
+
+
+    <div class="col-md-12">
+    <h1 class="ob-edit-header">Редактирование объявления</h1>
+
+    <form onsubmit="delFromPriceRuble();" name="form-add-ob" enctype="multipart/form-data" method="post" action="#" class="row form-horizontal">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Объявление</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label col-md-4" for="ob-category-input">Выберете категорию</label>
+                        <div class="col-md-8">
+                            <select onclick="selcat(this.value,'resultcat');" onchange="changeTextInputbutton();" id="ob-category-input" name="ob-category-input" class="form-control col-md-9">
+                                <option selected="" value="0">Категория не выбрана</option>
+                                <optgroup label="Услуги" class="level1">
+                                    <option value="428">Грузоперевозки, спецтехника, такси (Цена: 75 руб.)</option>
+                                    <option value="429">Строительство, сантехника, электрика (Цена: 75 руб.)</option>
+                                    <option value="431">Образование, компьютерная помощь (Цена: 75 руб.)</option>
+                                    <option value="449">Здоровье, красота и всё для праздника (Цена: 75 руб.)</option>
+                                    <option value="433">Прочие услуги (Цена: 75 руб.)</option>
+                                </optgroup>
+                                <optgroup label="Авто. Мото. Транспорт" class="level1">
+                                    <option value="435">ВАЗ 2101-07: Лада классика</option>
+                                    <option value="436">ВАЗ 2108-09, 2113-15: Лада Самара</option>
+                                    <option value="437">ВАЗ 2110-12: Лада десятка</option>
+                                    <option value="438">Лада Калина, Приора, Гранта, Ларгус</option>
+                                    <option value="50">Нива, Ока, Волга и другие</option>
+                                    <option value="401">Иностранные легковые авто</option>
+                                    <option selected="" value="423">Грузовые, спецтехника, мотоблоки</option>
+                                    <option value="52">Мотоциклы, скутеры, велосипеды</option>
+                                    <option value="55">Запчасти, принадлежности и прицепы</option>
+                                    <option value="444">Шины и диски</option>
+                                </optgroup>
+                                <optgroup label="Недвижимость" class="level1">
+                                    <option value="405">1-комн. квартиры</option>
+                                    <option value="408">2-комн. квартиры</option>
+                                    <option value="407">3,4-комн. квартиры</option>
+                                    <option value="185">Дома в Красноуфимске, Приданниково, Криулино</option>
+                                    <option value="454">Дома в Красноуфимском и др. районах</option>
+                                    <option value="184">Аренда жилья</option>
+                                    <option value="439">Дачи и сады</option>
+                                    <option value="451">Земельные участки</option>
+                                    <option value="442">Коммерческая недвижимость, оборудование, готовый бизнес (Цена: 75
+                                        руб.)
+                                    </option>
+                                    <option value="186">Гаражи и стоянки</option>
+                                </optgroup>
+                                <optgroup label="Работа и образование" class="level1">
+                                    <option value="191">Предлагаю работу (Цена: 75 руб.)</option>
+                                    <option value="192">Ищу работу</option>
+                                    <option value="455">Ищу подработку</option>
+                                </optgroup>
+                                <optgroup label="Техника, компьютеры и электроника" class="level1">
+                                    <option value="221">Бытовая и кухонная техника</option>
+                                    <option value="211">Аудио, видео, автозвук</option>
+                                    <option value="230">Компьютеры, планшеты, оргтехника</option>
+                                    <option value="248">Телефоны и фотоаппараты</option>
+                                </optgroup>
+                                <optgroup label="Всё для дома" class="level1">
+                                    <option value="277">Мебель, посуда, интерьер</option>
+                                    <option value="360">Стройматериалы</option>
+                                    <option value="450">Инструменты</option>
+                                    <option value="453">Детские коляски, санки и велосипеды</option>
+                                    <option value="272">Всё для детей</option>
+                                </optgroup>
+                                <optgroup label="Одежда, обувь, аксессуары" class="level1">
+                                    <option value="460">Свадебная и праздничная одежда</option>
+                                    <option value="456">Мужская одежда</option>
+                                    <option value="263">Женская одежда</option>
+                                    <option value="457">Обувь и аксессуары</option>
+                                    <option value="443">Детская одежда и обувь</option>
+                                </optgroup>
+                                <optgroup label="Сад, огород, животные" class="level1">
+                                    <option value="346">Кошки</option>
+                                    <option value="452">Собаки</option>
+                                    <option value="355">Другие животные, корма, клетки</option>
+                                    <option value="441">Все для сада, огорода. Растения</option>
+                                    <option value="422">Продукты питания, фрукты, овощи</option>
+                                </optgroup>
+                                <optgroup label="Всё остальное" class="level1">
+                                    <option value="293">Спортинвентарь</option>
+                                    <option value="308">Знакомства и контакты по интересам</option>
+                                    <option value="420">Поздравления</option>
+                                    <option value="311">Некролог</option>
+                                    <option value="415">Разное</option>
+                                    <option value="397">Потеряно</option>
+                                    <option value="396">Найдено</option>
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-4">Телефоны</label>
-                    <div class="col-md-8">
-                        <div class="input-group ob-phone-input">
-                            <input type="text" value="89024427802" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts1" id="add-ob__right-input_phone" class="form-control">
-                            <div class="input-group-btn">
-                                <a title="Позвонить" class="btn btn-default" href="tel:+89024427802">
-                                    <i class="fa fa-phone"></i>
-                                </a>
-                                <span onclick="SearchInPopover(this,9024427802)" class="btn btn-default rep-plus-few rep-plus-some rep-plus-more rep-plus-lots">
-                                    1110
-                                </span>
-                            </div>
+                    <div  class="form-group">
+                        <label class="control-label col-md-4" for="ob-action-type-input">Что вы хотите сделать</label>
+                        <div class="col-md-8">
+                            <select class="form-control" id="ob-action-type-input" name="ob-action-type-input" onchange="UpdateTypePrefix(this.value);UpdateCategory();">
+                                <option value="0">Выберите из списка -&gt;</option>
+                                <option value="p" selected="selected">Продам</option>
+                                <option value="k">Куплю</option>
+                                <option value="m">Меняю</option>
+                                <option value="s">Сдам в аренду</option>
+                                <option value="q">Возьму в аренду</option>
+                                <option value="o">Предлагаю свои услуги</option>
+                                <option value="i">Ищу сотрудника (вакансия)</option>
+                                <option value="r">Ищу работу, работодателя</option>
+                                <option value="l">Ищу подработку</option>
+                                <option value="d">Подарю, отдам даром</option>
+                                <option value="b">Приму в дар</option>
+                                <option value="-">(другое)</option>
+                            </select>
                         </div>
-                        <div class="input-group ob-phone-input">
-                            <input type="text" value="51912" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts2" class="form-control">
-                            <div class="input-group-btn">
-                                <a title="Позвонить" class="btn btn-default" href="tel:+51912"><i class="fa fa-phone"></i></a>
-                                <span class="btn btn-default rep-plus-few rep-plus-some rep-plus-more rep-plus-lots" onclick="SearchInPopover(this,51912)">
-                                    1120
-                                </span>
-                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-4">Введите ваше объявление в этом поле</label>
+                        <div class="col-md-8">
+                            <textarea rows="7" class="form-control" id="ob-text-input" name="ob-text-input" placeholder="(напишите ваше объявление)" autofocus="">
+                                ГАЗ-САЗ-3507, самосвал, 1993 г., сделан кап. ремонт дв. и коробки весной 2014,пробег после ремонта 1500 км., сел и поехал, кабина не гнилая, промазана битумной мастикой, защита крыльев, новая АКБ(75А), ТО до сентября, 2015 г., или меняю на УАЗ(бортовой) ключ в ключ. Рассмотрю варианты
+                            </textarea>
+                            <div id="ob-action-type">Продам</div>
                         </div>
-                        <div class="input-group ob-phone-input">
-                            <input type="text" value="" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts3" class="form-control">
-                            <div class="input-group-btn">
-                                <a title="Позвонить" class="btn btn-default" href="tel:+"><i class="fa fa-phone"></i></a>
-                                <span class="btn btn-warning">
-                                    <i class="fa fa-search"></i>
-                                </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ob-price-input" class="control-label col-md-4">Цена</label>
+                        <div class="col-md-5">
+                            <input type="text" value="175000" name="ob-price-input" id="ob-price-input" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="checkbox" >
+                                <label>
+                                    <input type="checkbox" class="checkboxPrice" name="checkboxPrice" checked="checked" >
+                                        &nbsp;Возможен торг
+                                </label>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                        <label for="ob-email-input" class="control-label col-md-4">Электронная почты</label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="ob-email-input" placeholder="адрес@mail.ru" name="ob-email-input" pattern="[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?" value="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="ob-licence-input" class="control-label col-md-4">Сертификат (если есть)</label>
-                    <div class="col-md-8">
-                        <input id="ob-licence-input" type="text" class="form-control" placeholder="Номер сертификата или лицензии" name="ob-licence-input" value="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default panel-ob-img-editor">
-            <div class="panel-heading">Фотографии</div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="ob-thumb" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110547.jpeg">
-                        <div>
-                            <span class="radio col-md-10 main-thumb-selector">
-                                <label>
-                                    <input type="radio" name="thumb-radio" id="thumb-radio-1" value="option1" checked="" class="thumb-radio">
-                                    <span></span>
-                                </label>
-                            </span>
-                            <span class="checkbox col-md-2 img-delete-group">
-                                <label>
-                                    <input type="checkbox" class="img-delete-input">
-                                    <span title="Пометить для удаления"></span>
-                                </label>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="ob-thumb" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110548.jpeg">
-                        <div>
-                            <span class="radio col-md-10 main-thumb-selector">
-                                <label>
-                                    <input type="radio" name="thumb-radio" id="thumb-radio-2" value="option2" checked="">
-                                    <span></span>
-                                </label>
-                            </span>
-                            <span class="checkbox col-md-2 img-delete-group">
-                                <label>
-                                    <input type="checkbox" class="img-delete-input">
-                                    <span title="Пометить для удаления"></span>
-                                </label>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label id="ob-add-img">
-                            <input type="file">
-                        </label>
-                    </div>
-                    <div class="col-md-12">
-                        <button id="btn-ob-add-img" class="btn btn-lg btn-action btn-block">Добавить ещё одну
-                            фотографию
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">Управление услугами</div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label class="control-label col-md-3">Частное или коммерческое?</label>
-                    <div class="col-md-9">
-                        <div class="radio radio-is-business">
-                            <label for="radio-is-business-0">
-                                <input type="radio" name="radio-is-business-0" id="radio-is-business-0" value="is-business-0" checked="checked">
-                                Частное
-                            </label>
-                        </div>
-                        <div class="radio radio-is-business">
-                            <label for="radio-is-business-1">
-                                <input type="radio" name="radio-is-business-1" id="radio-is-business-1" value="is-business-1">
-                                Неоплаченое коммерческое
-                            </label>
-                            <div class="dialed-in-group">
-                                <div  class="checkbox">
-                                    <label for="dialed-in">
-                                        <input type="checkbox" id="dialed-in" name="dialed-in">
-                                        Дозвонились
-                                    </label>
+                    <div class="form-group">
+                        <label class="control-label col-md-4">Телефоны</label>
+                        <div class="col-md-8">
+                            <div class="input-group ob-phone-input">
+                                <input type="text" value="89024427802" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts1" id="add-ob__right-input_phone" class="form-control">
+                                <div class="input-group-btn">
+                                    <a title="Позвонить" class="btn btn-default" href="tel:+89024427802">
+                                        <i class="fa fa-phone"></i>
+                                    </a>
+                                    <span onclick="SearchInPopover(this,9024427802)" class="btn btn-default rep-plus-few rep-plus-some rep-plus-more rep-plus-lots">
+                                        1110
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input-group ob-phone-input">
+                                <input type="text" value="51912" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts2" class="form-control">
+                                <div class="input-group-btn">
+                                    <a title="Позвонить" class="btn btn-default" href="tel:+51912"><i class="fa fa-phone"></i></a>
+                                    <span class="btn btn-default rep-plus-few rep-plus-some rep-plus-more rep-plus-lots" onclick="SearchInPopover(this,51912)">
+                                        1120
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input-group ob-phone-input">
+                                <input type="text" value="" maxlength="16" pattern="[0-9\+\-\s]{1,16}" placeholder="8 902 XXX-XX-XX" name="contacts3" class="form-control">
+                                <div class="input-group-btn">
+                                    <a title="Позвонить" class="btn btn-default" href="tel:+"><i class="fa fa-phone"></i></a>
+                                    <span class="btn btn-warning">
+                                        <i class="fa fa-search"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="radio radio-is-business">
-                            <label for="radio-is-business-2">
-                                <input type="radio" name="radio-is-business-2" id="radio-is-business-2" value="is-business-2" >
-                                Коммерческое
-                            </label>
+                    </div>
+                    <div class="form-group">
+                            <label for="ob-email-input" class="control-label col-md-4">Электронная почты</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="ob-email-input" placeholder="адрес@mail.ru" name="ob-email-input" pattern="[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?" value="">
                         </div>
-
+                    </div>
+                    <div class="form-group">
+                        <label for="ob-licence-input" class="control-label col-md-4">Сертификат (если есть)</label>
+                        <div class="col-md-8">
+                            <input id="ob-licence-input" type="text" class="form-control" placeholder="Номер сертификата или лицензии" name="ob-licence-input" value="">
+                        </div>
                     </div>
                 </div>
-                <div class="form-group" id="selection-options">
-                    <label class="control-label col-md-3">Выделенное?</label>
+            </div>
 
-                    <div class="col-md-9">
-                        <div class="radio radio-is-selected">
-                            <input type="radio" name="radio-is-selected-2" id="radio-is-selected-2" value="is-selected-2">
-                            <label for="radio-is-selected-2">
-                                Супер выделенное
-                            </label>
-
-                            <div class="ob-up">
-                                <div  class="checkbox">
-                                    <input type="checkbox" class="hidden" name="up-super" id="up-super">
-                                    <label for="up-super" title="Поднять объявление">
-                                        на 17 месте <i class="fa fa-arrow-up"></i>
-                                    </label>
-                                </div>
-                            </div>
-
+            <div class="panel panel-default panel-ob-img-editor">
+                <div class="panel-heading">Фотографии</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="ob-thumb" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110547.jpeg">
                             <div>
-                                <div  class="input-group">
-                                    <span style="background-color: transparent; border-color: transparent; padding-left: 19px;" class="input-group-addon">
-                                        выделить (
-                                        <input type="checkbox"> с сегодня) на:
-                                    </span>
-                                    <input type="number" onchange="OutputDays(this.value)" value="7" size="6" name="days-super" id="days-super" class="inputdays form-control">
-
-                                    <span class="hidedays input-group-addon" >
-                                        дней. Осталось: <span class="outputdays"><strong>7</strong></span>
-                                    </span>
-                                </div>
+                                <span class="radio col-md-10 main-thumb-selector">
+                                    <label>
+                                        <input type="radio" name="thumb-radio" id="thumb-radio-1" value="option1" checked="" class="thumb-radio">
+                                        <span></span>
+                                    </label>
+                                </span>
+                                <span class="checkbox col-md-2 img-delete-group">
+                                    <label>
+                                        <input type="checkbox" class="img-delete-input">
+                                        <span title="Пометить для удаления"></span>
+                                    </label>
+                                </span>
                             </div>
                         </div>
-
-                        <div class="radio radio-is-selected">
-
-                            <input type="radio" value="is-selected-1" id="radio-is-selected-1" name="radio-is-selected-1">
-                            <label for="radio-is-selected-1">
-                                Выделенное
-                            </label>
-
-                            <div class="ob-up" >
-                                <div  class="checkbox">
-                                    <input type="checkbox" min="1" class="hidden" value="1" name="" id="up-selected">
-                                    <label for="up-selected" title="Поднять объявление">
-                                        на 17 месте <i class="fa fa-arrow-up"></i>
-                                    </label>
-                                </div>
-                            </div>
-
+                        <div class="col-md-4">
+                            <img class="ob-thumb" src="http://ob.ksk66.ru/upload/small/gaz-saz-3507_samosval_1993_g__sdelan_kap__rem_110548.jpeg">
                             <div>
-                                <div  class="input-group">
-                                    <span style="background-color: transparent; border-color: transparent; padding-left: 19px;" class="input-group-addon">
-                                        выделить (
-                                        <input type="checkbox"> с сегодня) на:
-                                    </span>
-                                    <input type="number" onchange="OutputDays(this.value)" value="7" size="6" name="days-selected" id="days-selected" class="inputdays form-control">
-
-                                    <span class="hidedays input-group-addon" >
-                                        дней. Осталось: <span class="outputdays"><strong>7</strong></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" checked="checked" value="is-selected-0" id="radio-is-selected-0" name="radio-is-selected-0">
-                            <label for="radio-is-selected-0">
-                                В строчку
-                            </label>
-                            <div class="ob-up">
-                                <div  class="checkbox">
-                                    <input type="checkbox" class="hidden" name="up-simple" id="up-simple">
-                                    <label for="up-simple" title="Поднять объявление">
-                                        на 17 месте <i class="fa fa-arrow-up"></i>
+                                <span class="radio col-md-10 main-thumb-selector">
+                                    <label>
+                                        <input type="radio" name="thumb-radio" id="thumb-radio-2" value="option2" checked="" class="thumb-radio">
+                                        <span></span>
                                     </label>
+                                </span>
+                                <span class="checkbox col-md-2 img-delete-group">
+                                    <label>
+                                        <input type="checkbox" class="img-delete-input">
+                                        <span title="Пометить для удаления"></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label id="ob-add-img">
+                                <input type="file">
+                            </label>
+                        </div>
+                        <div class="col-md-12">
+                            <button id="btn-ob-add-img" class="btn btn-lg btn-action btn-block">Добавить ещё одну
+                                фотографию
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Управление услугами</div>
+                <div class="panel-body">
+                    <div class="form-group" id="buisness-options">
+                        <label class="control-label col-md-3">Частное или коммерческое?</label>
+                        <div class="col-md-9">
+                            <div class="radio radio-is-business">
+                                <input type="radio" name="radio-is-business" id="radio-is-business-0" value="is-business-0" checked="checked">
+                                <label for="radio-is-business-0">
+                                    Частное
+                                </label>
+                            </div>
+                            <div class="radio radio-is-business">
+                                <input type="radio" name="radio-is-business" id="radio-is-business-1" value="is-business-1">
+                                <label for="radio-is-business-1">
+                                    Неоплаченое коммерческое
+                                </label>
+                                <div class="dialed-in-group">
+                                    <div  class="checkbox">
+                                        <label for="dialed-in">
+                                            <input type="checkbox" id="dialed-in" name="dialed-in">
+                                            Дозвонились
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="publish-in-newspaper-group">
-                                <span>Публикаций в газете:&nbsp;</span>
-                                <input type="number" style="text-align: center; display: inline-block; width: 55px; padding: 5px;" name="publish-in-newspaper" id="publish-in-newspaper" value="0" class="form-control">
+
+                            <div class="radio radio-is-business">
+                                <input type="radio" name="radio-is-business" id="radio-is-business-2" value="is-business-2" >
+                                <label for="radio-is-business-2">
+                                    Коммерческое
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group" id="selection-options">
+                        <label class="control-label col-md-3">Выделенное?</label>
+
+                        <div class="col-md-9">
+                            <div class="radio radio-is-selected">
+                                <input type="radio" name="radio-is-selected" id="radio-is-selected-2" value="is-selected-2">
+                                <label for="radio-is-selected-2">
+                                    Супер выделенное
+                                </label>
+
+                                <div class="ob-up">
+                                    <div  class="checkbox">
+                                        <input type="checkbox" class="hidden" name="up-super" id="up-super">
+                                        <label for="up-super" title="Поднять объявление">
+                                            на 17 месте <i class="fa fa-arrow-up"></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div  class="input-group">
+                                        <span class="input-group-addon">выделить (<input type="checkbox"> с сегодня) на:</span>
+                                        <input type="number" value="7" size="6" name="days-super" id="days-super" class="inputdays form-control">
+
+                                        <span class="hidedays input-group-addon" >
+                                            дней. Осталось: <span class="outputdays"><strong>7</strong></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio radio-is-selected">
+
+                                <input type="radio" value="is-selected-1" id="radio-is-selected-1" name="radio-is-selected">
+                                <label for="radio-is-selected-1">
+                                    Выделенное
+                                </label>
+
+                                <div class="ob-up" >
+                                    <div  class="checkbox">
+                                        <input type="checkbox" min="1" class="hidden" value="1" name="" id="up-selected">
+                                        <label for="up-selected" title="Поднять объявление">
+                                            на 17 месте <i class="fa fa-arrow-up"></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div  class="input-group">
+                                        <span class="input-group-addon">выделить (<input type="checkbox"> с сегодня) на:</span>
+                                        <input type="number" value="7" size="6" name="days-selected" id="days-selected" class="inputdays form-control">
+                                        <span class="hidedays input-group-addon" >дней. Осталось: <span class="outputdays"><strong>7</strong></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radio radio-is-selected">
+                                <input type="radio" checked="checked" value="is-selected-0" id="radio-is-selected-0" name="radio-is-selected">
+                                <label for="radio-is-selected-0">
+                                    В строчку
+                                </label>
+                                <div class="ob-up">
+                                    <div  class="checkbox">
+                                        <input type="checkbox" class="hidden" name="up-simple" id="up-simple">
+                                        <label for="up-simple" title="Поднять объявление">
+                                            на 17 месте <i class="fa fa-arrow-up"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="publish-in-newspaper-group">
+                                    <span>Публикаций в газете:&nbsp;</span>
+                                    <input type="number" name="publish-in-newspaper" id="publish-in-newspaper" value="0" class="form-control">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
 
 
-                <div class="form-group">
-                    <label class="control-label col-md-3">Cтатус объявления</label>
-                    <div class="col-md-9">
-                        <div class="radio">
-                            <label for="add-ob__checked_no">
-                                <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_no" value="no" checked="checked">
-                                Не допущенный
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label for="add-ob__checked_yes">
-                                <input type="radio" class="add-ob__right-input_string" name="checked" id="add-ob__checked_yes" value="yes">
-                                Допущенный
-                            </label>
-
-                            <div class="input-group">
-                                <span style="background-color: transparent; border-color: transparent; padding-left: 19px;" class="hidedays input-group-addon">размещено (<input type="checkbox" aria-label="Checkbox for following text input"> сегодня) на:</span>
-                                <input type="number" onchange="OutputDays(this.value)" value="7" size="6" name="time_delete" id="" class="inputdays form-control">
-                                <span class="hidedays input-group-addon">дней. Осталось: <span class="outputdays"><strong>7</strong></span></span>
+                    <div class="form-group" id="status-options">
+                        <label class="control-label col-md-3">Cтатус объявления</label>
+                        <div class="col-md-9">
+                            <div class="radio radio-ob-status">
+                                <input type="radio" name="radio-ob-status" id="ob-unaccepted-status" value="no" checked="checked">
+                                <label for="ob-unaccepted-status">
+                                    Не допущенный
+                                </label>
                             </div>
-                        </div>
-                        <div class="radio">
-                            <label for="add-ob__checked_edit">
-                                <input type="radio" value="edit" id="add-ob__checked_edit" name="checked" class="add-ob__right-input_string">
-                                Отредактированный
-                            </label>
+                            <div class="radio radio-ob-status">
+                                <input type="radio" name="radio-ob-status" id="ob-accepted-status" value="yes">
+                                <label for="ob-accepted-status">
+                                    Допущенный
+                                </label>
 
-                            <div class="input-group">
-                                <span style="background-color: transparent; border-color: transparent; padding-left: 19px;" class="hidedays input-group-addon">размещено (<input type="checkbox" aria-label="Checkbox for following text input"> сегодня) на:</span>
-                                <input type="number" onchange="OutputDays(this.value)" value="7" size="6" name="time_delete" id="" class="inputdays form-control">
-                                <span class="hidedays input-group-addon">дней. Осталось: <span class="outputdays"><strong>7</strong></span></span>
+                                <div>
+                                    <div class="input-group">
+                                        <span class="hidedays input-group-addon">размещено (<input type="checkbox"> сегодня) на:</span>
+                                        <input type="number" value="7" size="6" name="inputdays" class="inputdays form-control">
+                                        <span class="hidedays input-group-addon">дней. Осталось: <span class="outputdays"><strong>7</strong></span></span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="radio">
-                            <label for="add-ob__checked_archive">
-                                <input type="radio" value="archive" id="add-ob__checked_archive" name="checked" class="add-ob__right-input_string">
-                                Архив
-                            </label>
+                            <div class="radio radio-ob-status">
+                                <input type="radio" value="edit" id="ob-edited-status" name="radio-ob-status">
+                                <label for="ob-edited-status">
+                                    Отредактированный
+                                </label>
+
+                                <div>
+                                    <div class="input-group">
+                                        <span class="hidedays input-group-addon">размещено (<input type="checkbox"> сегодня) на:</span>
+                                        <input type="number" value="7" size="6" name="inputdays" class="inputdays form-control">
+                                        <span class="hidedays input-group-addon">дней. Осталось: <span class="outputdays"><strong>7</strong></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radio radio-ob-status">
+                                <input type="radio" value="archive" id="ob-archive-status" name="radio-ob-status">
+                                <label for="ob-archive-status">
+                                    Архив
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <input type="submit" name="submit" class="btn btn-action btn-lg pull-right" value="Сохранить">
+                    <input type="submit" name="submit" class="btn btn-action btn-lg pull-right" value="Сохранить">
+                    <a href="#" class="btn btn-link btn-lg pull-right">Просмотреть на сайте</a>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Журнал</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="ob-note" class="control-label col-md-3">Запись в журнал</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="ob-note" name="ob-note">
+                        </div>
+                    </div>
+                    <table class="table table-hover table-striped ob-journal">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Тип</th>
+                                <th>Событие</th>
+                                <th>Откуда</th>
+                                <th>Rep</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20.03,&#8239;11:12</td>
+                                <td>add</td>
+                                <td>Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки</td>
+                                <td>5.141.224.229</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20.03,&#8239;11:12</td>
+                                <td>add</td>
+                                <td>Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки</td>
+                                <td>5.141.224.229</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20.03,&#8239;11:12</td>
+                                <td>add</td>
+                                <td>Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки</td>
+                                <td>5.141.224.229</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20.03,&#8239;11:12</td>
+                                <td>add</td>
+                                <td>Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки</td>
+                                <td>5.141.224.229</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="ob-journal-date">20.03,&#8239;11:12</td>
+                                <td>add</td>
+                                <td>Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки</td>
+                                <td>5.141.224.229</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+    </form>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">Журнал</div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="add-ob__note" class="control-label col-md-3">Запись в журнал</label>
-                    <div class="col-md-9">
-                        <input type="text" class="form-control" id="add-ob__note" name="note">
-                    </div>
-                </div>
-                <table class="table table-hover table-striped journal_standard" style="clear:both;">
-                    <tbody>
-                    <tr class="journal__header">
-                        <th>Дата</th>
-                        <th>Тип</th>
-                        <th>Событие</th>
-                        <th>Откуда</th>
-                        <th>Rep</th>
-                    </tr>
-                    <tr class="journal__row">
-                        <td class="journal_date">20.03,&#8239;11:12</td>
-                        <td style="padding-left: 10px;">add</td>
-                        <td style="padding-left: 10px;">Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки
-                        </td>
-                        <td style="padding-left: 10px;">5.141.224.229</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="journal__row">
-                        <td class="journal_date">20.03,&#8239;11:12</td>
-                        <td style="padding-left: 10px;">add</td>
-                        <td style="padding-left: 10px;">Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки
-                        </td>
-                        <td style="padding-left: 10px;">5.141.224.229</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="journal__row">
-                        <td class="journal_date">20.03,&#8239;11:12</td>
-                        <td style="padding-left: 10px;">add</td>
-                        <td style="padding-left: 10px;">Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки
-                        </td>
-                        <td style="padding-left: 10px;">5.141.224.229</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="journal__row">
-                        <td class="journal_date">20.03,&#8239;11:12</td>
-                        <td style="padding-left: 10px;">add</td>
-                        <td style="padding-left: 10px;">Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки
-                        </td>
-                        <td style="padding-left: 10px;">5.141.224.229</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="journal__row">
-                        <td class="journal_date">20.03,&#8239;11:12</td>
-                        <td style="padding-left: 10px;">add</td>
-                        <td style="padding-left: 10px;">Создано в бесплатной категории: Грузовые, спецтехника, мотоблоки
-                        </td>
-                        <td style="padding-left: 10px;">5.141.224.229</td>
-                        <td>0</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
-</form>
-
-</div>
