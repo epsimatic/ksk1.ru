@@ -2423,6 +2423,14 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob img { margin-top: 10px; margin-bottom: 10px; width: 100%; }
 
+.panel-ob .ob-price-group { background-color: #ecf0f1; display: block; float: left; margin: 15px 0; text-align: center; width: 40%; }
+
+.panel-ob .ob-price { display: block; font-weight: 600; padding: 2px 0; }
+
+.panel-ob .ob-price .ob-price-label { font-weight: 400; }
+
+.panel-ob .ob-price .fa-rub { color: #777; font-size: 90%; margin-left: 2px; }
+
 
 
 
