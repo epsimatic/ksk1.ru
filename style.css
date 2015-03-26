@@ -2431,6 +2431,8 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob .ob-price .fa-rub { color: #777; font-size: 90%; margin-left: 2px; }
 
+.panel-ob .ob-meta { display: block; float: right; margin: 15px 0; padding-right: 10px; }
+
 
 
 
