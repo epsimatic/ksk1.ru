@@ -2433,7 +2433,7 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-ob .ob-bargain { background-color: #bbbfc2; color: #ffffff; display: block; padding: 2px 0; width: 100%; }
 
-.panel-ob .ob-meta { display: block; float: right; margin: 15px 0; padding-right: 10px; }
+.panel-ob .ob-meta { display: block; float: right; margin: 15px 0; padding-right: 10px; width: 60%; text-align: right; }
 
 .panel-ob .ob-photos { padding: 0 15px; }
 
