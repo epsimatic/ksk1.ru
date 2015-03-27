@@ -1016,3 +1016,12 @@ body {overflow-y: scroll;}
 }
 
 .eda .modal.in .modal-dialog{z-index: 1400}
+
+
+/* Статусы заказов */
+.vendor-status.vendor-status-opened:before{ content: "Открыто"; }
+.vendor-status.vendor-status-closed:before{ content: "Закрыто"; }
+
+.vendor-status.vendor-status-online:before{ content: "Открыто"; }
+.vendor-status.vendor-status-offline:before{content: "Заказы не принимаются"; }
+
