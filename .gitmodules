@@ -34,3 +34,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/snowstorm"]
 	path = vendor/snowstorm
 	url = https://github.com/scottschiller/Snowstorm.git
+[submodule "vendor/autonumeric"]
+	path = vendor/autonumeric
+	url = https://github.com/BobKnothe/autoNumeric.git
