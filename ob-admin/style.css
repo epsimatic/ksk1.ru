@@ -405,7 +405,7 @@ h1 {
 
 .ob-admin .thumb-radio:checked ~ span::before { content: "Главное фото"; }
 
-.ob-admin .thumb-radio ~ span::before { content: "Сделать гравным"; }
+.ob-admin .thumb-radio ~ span::before { content: "Сделать главным"; }
 
 .ob-admin .panel-ob-img-editor .ob-thumb { width: 100%; }
 
