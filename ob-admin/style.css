@@ -165,7 +165,8 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 .tel.rep-minus-lots,
 .rep-minus-lots .col-obs-rep span { background-color: #ff5252; color: #fff; }
 
-/*перенесено с ob.ksk66.ru*/
+/*перенесено с ob.ksk66.ru из админки sad.php*/
+.outputdays{font-weight: 600 ;}
 .add-ob__right-input_phone .popover{
     max-width: none;
     left: -180px !important;
@@ -405,7 +406,7 @@ h1 {
 
 .ob-admin .thumb-radio:checked ~ span::before { content: "Главное фото"; }
 
-.ob-admin .thumb-radio ~ span::before { content: "Сделать гравным"; }
+.ob-admin .thumb-radio ~ span::before { content: "Сделать главным"; }
 
 .ob-admin .panel-ob-img-editor .ob-thumb { width: 100%; }
 
