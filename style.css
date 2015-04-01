@@ -2474,6 +2474,12 @@ a.super:focus {background-color: #fbea2d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница объявления"> */
+  /*кнопка показ фото*/
+.full-img img{width: 100% !important;}
+.full-size::before {content:'Показать в полном размере';}
+.full-img ~ .full-size::before{content:'Показать в малом размере';}
+.full-size{display: none; margin-top: 5px;}
+.is_owner .full-size{display: block;}
 /* <editor-fold desc="Панель объявления"> */
 .ob-panel-redaktor{text-align: right;margin-bottom: 10px;padding-top: 10px;clear: both;}
 .panel-ob > .panel-footer {background-color: #fcfcfc;}
