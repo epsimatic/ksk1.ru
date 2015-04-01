@@ -2495,7 +2495,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .panel-ob > .panel-body img {width: 100%; margin-top: 10px;}
 
-.is_owner .panel-ob img {width: 40px; height: auto;}
+.is_owner .panel-ob img {width: 40px; height: auto;margin-right: 4px;}
 
 .photo_block {clear: both;}
 /* </editor-fold> */
