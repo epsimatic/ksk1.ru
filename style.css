@@ -2283,6 +2283,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Левая колонка"> */
+.block_congrats article,.block_necro article{margin-top: 15px}
 /*Калейдоскоп*/
 .kaleidoscope__item__img, .kaleidoscope__item__tooltip {background-color: #FFFFFF; padding: 3px;}
 
