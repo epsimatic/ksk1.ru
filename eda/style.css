@@ -682,7 +682,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.collapsed .woocommerce { max-height: 417px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 402px; }
+    /*.dishes.dishes-col-6.collapsed .woocommerce { max-height: 402px; }*/
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
 
@@ -817,9 +817,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes { margin: 0 10px; }
 
 
-    .dishes.collapsed .woocommerce { max-height: 352px; }
-
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 372px; }
+    .dishes.collapsed .woocommerce { max-height: 375px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 335px; }*/
 
@@ -920,7 +918,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .item-description p { padding: 0; margin: 0 }
 
 
-    .dishes-cat .btn-collapse { margin: 0 -10px; }
+    .dishes-cat .btn-collapse { margin: 0 -10px; width: 960px; }
 }
 
 /* Стили для размера -lg- */
@@ -928,9 +926,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { left: 155px; }
 
-    .dishes.collapsed .woocommerce { max-height: 392px; }
+    .dishes.collapsed .woocommerce { max-height: 405px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 397px; }
+    /*.dishes.dishes-col-6.collapsed .woocommerce { max-height: 397px; }*/
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
 
@@ -972,6 +970,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .order-controls .add_to_cart_button { margin: 0 auto; }
 
     /*.dishes.dishes-col-6 .dish:hover .item-stuff { height: 305px; }*/
+
+    .dishes-cat .btn-collapse { width: 1160px; }
 }
 /* с сайта eda style.css*/
 .products .wc-forward { display: none; }
