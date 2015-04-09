@@ -802,7 +802,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .side_nav-container { top: 0; }
 
-    .side_nav-container.side_nav-slim .tocify-item a { font-size: 13px; line-height: 1.3em; padding: 4px 12px 5px; }
+    .side_nav-container.side_nav-slim .tocify-item a { font-size: 13px; line-height: 1.3em; padding: 4px 12px 5px !important; }
 
     #cart-bar-real {
         display: -webkit-box;
