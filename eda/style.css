@@ -261,7 +261,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
     /*transition: max-height 4s ease 0s;*/
     max-height: 5000px; }
 
-.dishes.collapsed .woocommerce { max-height: 435px; }
+.dishes.collapsed .woocommerce { max-height: 477px; }
 
 /*.dishes-cat.pizza .dishes.collapsed .woocommerce  { max-height: 430px; }*/
 
@@ -680,9 +680,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes-cat-recommend .dishes-heading { padding-left: 100px; }
 
-    .dishes.collapsed .woocommerce { max-height: 375px; }
+    .dishes.collapsed .woocommerce { max-height: 417px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 360px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 402px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
 
@@ -817,9 +817,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes { margin: 0 10px; }
 
 
-    .dishes.collapsed .woocommerce { max-height: 310px; }
+    .dishes.collapsed .woocommerce { max-height: 352px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 330px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 372px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 335px; }*/
 
@@ -928,9 +928,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { left: 155px; }
 
-    .dishes.collapsed .woocommerce { max-height: 350px; }
+    .dishes.collapsed .woocommerce { max-height: 392px; }
 
-    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 355px; }
+    .dishes.dishes-col-6.collapsed .woocommerce { max-height: 397px; }
 
     /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
 
