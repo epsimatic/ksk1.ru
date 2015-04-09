@@ -34,3 +34,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/autonumeric"]
 	path = vendor/autonumeric
 	url = https://github.com/BobKnothe/autoNumeric.git
+[submodule "vendor/fixed-sticky"]
+	path = vendor/fixed-sticky
+	url = https://github.com/filamentgroup/fixed-sticky
