@@ -279,7 +279,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .tag-container .tag-3persons,
 .tag-container .tag-4persons,
 .tag-container .tag-5persons,
-.tag-container .tag-6persons { background-color: #536dfe; padding: 2px 4px 2px 5px; }
+.tag-container .tag-6persons { background-color: #536dfe; padding: 1px 4px 2px 5px; }
 
 .tag-container .tag-2persons::before { content: "2"; }
 .tag-container .tag-3persons::before { content: "3"; }
@@ -828,7 +828,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container { width: 24%; margin: 0 0.5% 20px; }
 
-    .dishes .dish:hover { box-shadow: 0 3px 5px rgba(69, 90, 100, 0.45); position: absolute; z-index: 2; }
+    .dishes .dish:hover { box-shadow: 0 3px 5px rgba(69, 90, 100, 0.45); position: absolute; z-index: 7; }
 
     /*.dishes .dish:hover .item-stuff { height: 205px; }*/
 
