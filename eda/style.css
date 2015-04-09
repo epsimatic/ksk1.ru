@@ -1,4 +1,6 @@
-/*кастыли*/
+/*кастыли FIXME*/
+body { padding: 0 !important; }
+
 nav.navbar { margin: 0 -10px !important; }
 
 #user-panel { display: none; }
