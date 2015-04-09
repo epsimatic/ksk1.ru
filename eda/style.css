@@ -181,7 +181,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .tocify { max-height: 100% !important; }
 
-.side_nav-container { position: fixed; margin-left: -230px; top: 200px; width: 220px; background-color: rgba(255, 255, 255, 0.8); display: none; }
+.side_nav-container { position: fixed; margin-left: -230px; top: 100px; width: 220px; background-color: rgba(255, 255, 255, 0.8); display: none; }
 
 .side_nav-container.tocify .nav-list > li > a { padding: 8px 15px 9px; }
 
@@ -219,7 +219,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .dishes-cat .cat-label { position: absolute; left: 10px; top: -8px; width: 41px; }
 
-.dishes-cat .btn-collapse { background-color: #ccff90; color: #33691e; letter-spacing: 0.025em; margin: 0 -10px; padding: 12px; text-align: center; text-transform: uppercase; cursor: pointer; }
+.dishes-cat .btn-collapse { background-color: #ccff90; color: #33691e; letter-spacing: 0.025em; margin: 0; padding: 12px; text-align: center; text-transform: uppercase; cursor: pointer; width: 100%; }
 
 .dishes-cat .btn-collapse .fa { margin: 0 10px; }
 
