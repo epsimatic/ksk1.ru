@@ -893,8 +893,6 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish-container.variable .item-description { padding-bottom: 5px; }
 
-    .dishes.dishes-col-6 .dish-container.variable { height: 335px; }
-
     .dishes.dishes-col-6 .dish-container.variable .item-stuff { height: 195px; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls { text-align: center }
@@ -939,7 +937,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .thumb-container { height: 110px; width: 147px; }
 
-    .dishes.dishes-col-6 .dish-container { height: 360px; }
+    .dishes.dishes-col-6 .dish-container { height: 340px; }
 
     .dishes .dish .order-controls .quantity { width: 60px; }
 
