@@ -210,6 +210,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .side_nav-container.side_nav-slim .affix-home:before { font-size: 4em; text-align: center; }
 .side_nav-container.side_nav-slim .affix-home > span { display: none; }
 
+.visible { display: block !important; }
 
 /* <editor-fold desc="Оформление категорий товаров"> */
 
