@@ -179,6 +179,7 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .restoraunt-name { color: #ff1744; font-weight: 700; text-transform: uppercase; letter-spacing: 0.025em; margin-bottom: 10px; }
 
+.tocify { max-height: 100% !important; }
 
 .side_nav-container { position: fixed; margin-left: -230px; top: 200px; width: 220px; background-color: rgba(255, 255, 255, 0.8); display: none; }
 
