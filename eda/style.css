@@ -854,7 +854,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container { width: 16%; margin: 0 0.33333333% 20px; height: 310px; }
 
-    .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0;}
+    .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 0; }
 
     .dishes.dishes-col-6 .dish .item-description p { margin: 0; padding: 0 }
 
@@ -1030,4 +1030,4 @@ body {overflow-y: scroll;}
     display: none !important;
 }
 
-.eda .modal.in .modal-dialog{z-index: 1400}
+.modal-dialog { z-index: 1400; }
