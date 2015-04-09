@@ -1,5 +1,5 @@
 /*кастыли*/
-nav.navbar { margin: 0 -10px; }
+nav.navbar { margin: 0 -10px !important; }
 
 #user-panel { display: none; }
 
