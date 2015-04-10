@@ -685,12 +685,6 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.collapsed .woocommerce { max-height: 417px; }
 
-    /*.dishes.dishes-col-6.collapsed .woocommerce { max-height: 402px; }*/
-
-    /*.dishes-cat.pizza .dishes.collapsed .woocommerce { max-height: 370px; }*/
-
-    /*.dishes-cat.pizza .dishes.dishes-col-6.collapsed .woocommerce { max-height: 345px; }*/
-
     .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+3) { display: block; }
 
     .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+4) { display: none; }
@@ -837,6 +831,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+4) { display: block; }
 
     .dishes.dishes-col-6.collapsed .woocommerce > .dish-container:nth-of-type(n+7) { display: none; }
+
+    .dishes.dishes-col-6 .woocommerce > .dish-container:nth-child(3) ~ .btn-collapse { display: none; }
 
     .dishes.dishes-col-6 .woocommerce > .dish-container:nth-child(7) ~ .btn-collapse { display: block; }
 
