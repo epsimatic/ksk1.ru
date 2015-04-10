@@ -919,7 +919,7 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.news #page > #header object {width: 366px !important; height: 34px !important; margin-left: -10px; margin-bottom: -5px;}
+/*.news #page > #header object {width: 366px !important; height: 34px !important; margin-left: -10px; margin-bottom: -5px;}*/
 
 .yummies {width: 100%; height: auto; margin-bottom: 10px;}
 
@@ -3770,7 +3770,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .table-comparison .discount {top: -7px;}
 
-    .news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}
+    /*.news #page > #header object {width: 740px !important; height: 68px !important; margin-left: -10px; margin-bottom: -5px;}*/
 
     .panel-news .row {margin-left: -10px;}
 
@@ -3869,7 +3869,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .block-features .btn-feature span { position: relative; top: 13px; }
 
-    .news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}
+    /*.news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}*/
 
     .panel-news h4 {font-size: 30px;}
 
@@ -3985,7 +3985,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .block-features .btn-feature span { top: 7px; left: 2px; }
 
-    .news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}
+    /*.news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}*/
 
     .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; /*bottom: 30px;*/}
 
