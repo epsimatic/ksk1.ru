@@ -439,7 +439,7 @@ footer h3 {
 }
 
 /*
-Собственно сниппет
+Собственно сам сниппет
 <div class="spinner"><i class="fa fa-circle-o-notch fa-spin margin-bottom"></i></div>
 */
 
@@ -3479,7 +3479,7 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 .navbar-blue .navbar-nav > .open > a:hover .caret,
 .navbar-blue .navbar-nav > .open > a:focus .caret {border: none;}
 
-header .navbar-nav { height: 50px; overflow-y: hidden; }
+#header .navbar-nav { height: 50px; overflow-y: hidden; }
 
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
