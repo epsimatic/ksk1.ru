@@ -923,7 +923,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .yummies {width: 100%; height: auto; margin-bottom: 10px;}
 
-#header .yummies {margin-bottom: 0;}
+#header .yummies { margin-bottom: 0; max-width: 100%; }
 
 .news header#header {margin: 0;}
 
