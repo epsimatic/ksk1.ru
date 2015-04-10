@@ -646,6 +646,48 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .restoraunt-info .shop-text { display: none; }
 
+/*Новое оформлени модального окна*/
+/*
+.modal-body { padding: 50px; }
+
+.modal .modal-header { background-color: #ff5722; }
+
+.modal  .modal-header .modal-title { padding-bottom: 3px; padding-left: 15px; font-size: 27px; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; color: #fff; }
+
+.modal .modal-header .close { position: relative; right: 11px; top: 4px; font-size: 35px; }
+
+.modal .images { padding-right: 20px; }
+
+.modal .tag-container { position: relative; margin-bottom: 10px; left: 0; }
+
+.modal .tag-container .tag { display: block; box-shadow: none; text-shadow: none; background-color: transparent; font-size: 1.5em; }
+
+.modal .tag-container .tag:before { border-radius: 3px; }
+
+.modal .tag-container .tag:after { position: relative; bottom: 3px; margin-left: 9px; font-family: 'Open Sans'; font-size: 15px; }
+
+
+.modal .tag-container .tag-new:before { padding: 4px 5px 4px 4px; background-color: #f50057; }
+
+.modal .tag-container .tag-6persons:before { padding: 4px 5px; background-color: #536dfe; }
+
+
+.modal .tag-container .tag-new:after { content: "Новинка"; }
+
+.modal .tag-container .tag-6persons:after { content: "6 персон"; }
+
+.category-name { margin-bottom: 10px; font-size: 16px; color: #90a4ae; }
+*/
+
+.panel.panel-promo { border-top: 6px solid #ffff00; box-shadow: none; background-color: transparent; }
+
+.panel-promo .panel-heading { padding-top: 15px; background-color: transparent; }
+
+.panel-promo > .panel-heading > h3 { color: #ff6d00 !important; font-weight: 700 !important; }
+
+.panel-promo .panel-body { padding-top: 10px; background-color: transparent; color: #555; }
+
+.panel-promo .panel-body em { color: #777; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
