@@ -2410,16 +2410,30 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Страница списка объявлений"> */
 
-.ob-list {padding-bottom: 0;}
+.ob-list { padding-bottom: 0; }
+
+.ob-list-346 {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap : 20px;
+}
 
 .ob-list article.ob { background-color: #fdfdfd; padding: 10px 10px 10px 15px; margin-bottom: 5px; display: table; width: 100%; }
+
+.ob-list-346 article.ob { background-color: #f5f5f5; margin-bottom: 25px; padding: 0; }
 
 .panel-notice article.ob:hover,
 .panel-notice article.ob:focus,
 .ob-list article.ob:hover,
 .ob-list article.ob:focus { background-color: #f8f8f8; }
 
-article.ob .ob-text-group { color: #333; margin: 0; }
+.ob-list-346 article.ob:hover,
+.ob-list-346 article.ob:focus { background-clip: #f0f0f0; }
+
+.ob-list article.ob .ob-text-group { color: #333; margin: 0; }
+
+.ob-list-346 article.ob .ob-text-group { padding: 15px 20px 0; }
 
 .ob-list article.ob.is-selected { background-color: #FFF7A9; }
 
@@ -2437,7 +2451,13 @@ article.ob .ob-text-group { color: #333; margin: 0; }
 
 .ob-list .ob-meta { float: right; }
 
+.ob-list-346 .ob-meta { padding: 10px 20px 20px; margin-top: 5px;}
+
 .ob-list .ob-thumb-group { float: right; margin-left: 15px; }
+
+.ob-list-346 .ob-thumb-group { margin-left: 0; margin-bottom: 15px; width: 100%; }
+
+.ob-list-346 .ob-thumb { width: 100%; }
 
 article.ob a:hover,
 article.ob a:focus { text-decoration: none; }
