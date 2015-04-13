@@ -2422,7 +2422,7 @@ a.link-neutral:focus {color: #3b437d;}
 }
 
 .ob-list-346 article.ob,
-.ob-list-452 article.ob { background-color: #f5f5f5; margin-bottom: 25px; padding: 0; }
+.ob-list-452 article.ob { background-color: #f5f5f5; padding: 0; }
 
 .panel-notice article.ob:hover,
 .panel-notice article.ob:focus,
@@ -3755,6 +3755,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
         column-count: 2;
         column-gap : 20px;
     }
+
+    .ob-list-346 article.ob,
+    .ob-list-452 article.ob { margin-bottom: 25px; }
 }
 
 /* Стили для размера -sm- */
