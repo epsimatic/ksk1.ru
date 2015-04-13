@@ -2415,8 +2415,13 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list-346 {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
+    page-break-inside: avoid;
     -webkit-column-count: 2;
     -webkit-column-gap : 20px;
+    -webkit-column-break-inside: avoid;
+    column-count: 2;
+    column-gap : 20px;
+    break-inside: avoid;
 }
 
 .ob-list article.ob { background-color: #fdfdfd; padding: 10px 10px 10px 15px; margin-bottom: 5px; display: table; width: 100%; }
@@ -2429,7 +2434,7 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list article.ob:focus { background-color: #f8f8f8; }
 
 .ob-list-346 article.ob:hover,
-.ob-list-346 article.ob:focus { background-clip: #f0f0f0; }
+.ob-list-346 article.ob:focus { background-color: #f0f0f0; }
 
 .ob-list article.ob .ob-text-group { color: #333; margin: 0; }
 
