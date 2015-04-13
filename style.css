@@ -2412,16 +2412,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .ob-list { padding-bottom: 0; }
 
-.ob-list-346,
-.ob-list-452 {
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap : 20px;
-    column-count: 2;
-    column-gap : 20px;
-}
-
 .ob-list article.ob { background-color: #fdfdfd; padding: 10px 10px 10px 15px; margin-bottom: 5px; display: table; width: 100%; }
 
 .ob-list-346 article.ob,
@@ -3754,6 +3744,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 
 /* </editor-fold> */
+
+@media (min-width: 480px) {
+    .ob-list-346,
+    .ob-list-452 {
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap : 20px;
+        column-count: 2;
+        column-gap : 20px;
+    }
+}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
