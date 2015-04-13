@@ -247,18 +247,6 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 }
 
-.add-ob__submit-button {
-    font-size: 13pt;
-    white-space: nowrap;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    height: 36px;
-    width: auto;
-    margin: 1% 0;
-    float: right;
-    padding: 0 10px;
-}
 
 .add-ob__line__price {
     overflow: hidden;

@@ -1287,9 +1287,13 @@ body.ob     .cond-active.cond-active-ob,
 
 /* <editor-fold desc="Временные стили для главной новости и новостной ленты"> */
 
-#dropmenudiv { background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); padding: 10px 15px; visibility: visible !important; left: 50% !important; }
+#dropmenudiv { background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); visibility: visible !important; left: 50% !important; }
 
 #dropmenudiv > a { display: block; line-height: 1.3em; margin-bottom: 10px; }
+
+.comment-text .editor_button { display: inline-block; }
+
+#dropmenudiv[style*="top"] { padding: 10px 15px; }
 
 
 /*.temp .panel-week .panel-heading,
