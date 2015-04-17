@@ -377,16 +377,16 @@ body.single-company .navbar,
 
 .panel.panel-pricing .panel-heading { padding: 25px; }
 
-.panel.panel-pricing:nth-last-of-type(1) { background-color: #2196f3; }
-.panel.panel-pricing:nth-last-of-type(2) { background-color: #f06292; }
-.panel.panel-pricing:nth-last-of-type(3) { background-color: #ffd740; }
-.panel.panel-pricing:nth-last-of-type(4) { background-color: #3f51b5; }
+.panel.panel-pricing:nth-of-type(1) { background-color: #2196f3; }
+.panel.panel-pricing:nth-of-type(2) { background-color: #f06292; }
+.panel.panel-pricing:nth-of-type(3) { background-color: #ffd740; }
+.panel.panel-pricing:nth-of-type(4) { background-color: #3f51b5; }
 
-.panel.panel-pricing .panel-heading h3 { margin: 0 0 3px; padding: 0; text-transform: uppercase; }
+.panel.panel-pricing .panel-heading h3 { margin: 0 0 3px; padding: 0; font-size: 23px; text-transform: uppercase; }
 
 .panel.panel-pricing .panel-heading p { margin: 0; font-size: 13px; line-height: 1.15em; }
 
-.panel.panel-pricing .panel-body { padding: 10px; }
+.panel.panel.panel-pricing .panel-body { padding: 10px; }
 
 .panel.panel-pricing .panel-body .price { font-size: 30px; }
 
