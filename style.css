@@ -396,9 +396,11 @@ body.single-company .navbar,
 
 .panel.panel-pricing .list-group-item { padding: 3px; background-color: transparent; }
 
-.panel.panel-pricing .list-group-item > .badge { float: none; border-radius: 3px; padding: 2px 4px 3px; background-color: #ffa000; }
+.panel.panel-pricing .list-group-item > .badge { float: none; border-radius: 3px; padding: 2px 4px 3px; background-color: #b0bec5; }
 
 .panel.panel-pricing .list-group-heading { color: #6d4c41; }
+
+.panel.panel-pricing .list-group-heading > .badge { background-color: #ffa000; }
 
 .panel.panel-pricing .list-group-item-alt { border-top: 1px dashed #b0bec5; margin-top: 10px; padding: 10px 15px; }
 
