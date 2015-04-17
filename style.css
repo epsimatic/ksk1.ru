@@ -302,6 +302,8 @@ body.single-company .navbar,
 
 .panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; margin-bottom: 10px; }
 
+.panel.panel-page { box-shadow: none; }
+
 .panel > .panel-heading + .panel-collapse .panel-body {border-top: none;}
 
 .panel > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
@@ -312,7 +314,7 @@ body.single-company .navbar,
 
 .panel-body {background-color: #fcfcfc;}
 
-.panel-body .row {margin-left: -15px; margin-right: -15px;}
+/*.panel-body .row {margin-left: -15px; margin-right: -15px;}*/
 
 .panel-footer {
     padding: 3px 7px;
@@ -365,6 +367,46 @@ body.single-company .navbar,
 .panel-success .list-group {padding-bottom: 0; margin-bottom: 0;}
 
 .panel-success {margin-bottom: 10px;}
+
+.panel.panel-pricing {
+    transition: padding 0.5s;
+    -moz-transition: padding 0.5s; /* Firefox 4 */
+    -webkit-transition: padding 0.5s; /* Safari and Chrome */
+    -o-transition: padding 0.5s; /* Opera */
+    -ms-transition:padding 0.5s; /* IE9 (maybe) */ 	 }
+
+.panel.panel-pricing .panel-heading { padding: 25px; }
+
+.panel.panel-pricing:nth-last-of-type(1) { background-color: #2196f3; }
+.panel.panel-pricing:nth-last-of-type(2) { background-color: #f06292; }
+.panel.panel-pricing:nth-last-of-type(3) { background-color: #ffd740; }
+.panel.panel-pricing:nth-last-of-type(4) { background-color: #3f51b5; }
+
+.panel.panel-pricing .panel-heading h3 { margin: 0 0 3px; padding: 0; text-transform: uppercase; }
+
+.panel.panel-pricing .panel-heading p { margin: 0; font-size: 13px; line-height: 1.15em; }
+
+.panel.panel-pricing .panel-body { padding: 10px; }
+
+.panel.panel-pricing .panel-body .price { font-size: 30px; }
+
+.panel.panel-pricing .panel-body .price-description { position: relative; top: -7px; left: -4px; font-size: 13px; color: #555; }
+
+.panel.panel-pricing .list-group { background-color: #fafafa; padding-top: 5px; padding-bottom: 0; }
+
+.panel.panel-pricing .list-group-item { padding: 3px; background-color: transparent; }
+
+.panel.panel-pricing .list-group-item > .badge { float: none; border-radius: 3px; padding: 2px 4px 3px; background-color: #ffa000; }
+
+.panel.panel-pricing .list-group-heading { color: #6d4c41; }
+
+.panel.panel-pricing .list-group-item-alt { border-top: 1px dashed #b0bec5; margin-top: 10px; padding: 10px 15px; }
+
+.panel.panel-pricing .list-group-item-alt .fa { color: #999; }
+
+.panel.panel-pricing .panel-footer { display: none; }
+
+.panel.panel-pricing .panel-footer .btn { text-transform: uppercase; }
 
 /* </editor-fold> */
 
