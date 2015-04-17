@@ -3,7 +3,8 @@
 <script>
     jQuery(document).ready(function () {
         jQuery("#toc").tocify({ context: "КОНТЕЙНЕР", selectors: "h3,h4",
-            hashGenerator: "pretty", extendPage: false});
+            hashGenerator: "pretty", extendPage: false, ignoreSelector: ".wpcf7-form *",
+            scrollTo: (jQuery("body").hasClass("admin-bar") ? 52 : 20)});
         // Другие опции -- http://gregfranko.com/jquery.tocify.js/
     });
 </script>
