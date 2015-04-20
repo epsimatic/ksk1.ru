@@ -2466,7 +2466,8 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list-346 article.ob,
 .ob-list-452 article.ob,
 .ob-list-311 article.ob,
-.ob-list-420 article.ob {
+.ob-list-420 article.ob,
+.ob-large-thumbs article.ob {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -2485,14 +2486,17 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list-311 article.ob:hover,
 .ob-list-311 article.ob:focus,
 .ob-list-420 article.ob:hover,
-.ob-list-420 article.ob:focus { background-color: #f0f0f0; }
+.ob-list-420 article.ob:focus,
+.ob-large-thumbs article.ob:hover,
+.ob-large-thumbs article.ob:focus { background-color: #f0f0f0; }
 
 article.ob .ob-text-group { color: #333; margin: 0; }
 
 .ob-list-346 article.ob .ob-text-group,
 .ob-list-452 article.ob .ob-text-group,
 .ob-list-311 article.ob .ob-text-group,
-.ob-list-420 article.ob .ob-text-group { padding: 15px 20px 0; }
+.ob-list-420 article.ob .ob-text-group,
+.ob-large-thumbs article.ob .ob-text-group { padding: 15px 20px 0; }
 
 .ob-list article.ob.is-selected { background-color: #FFF7A9; }
 
