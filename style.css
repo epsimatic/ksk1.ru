@@ -2902,7 +2902,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-.table-schedule th { vertical-align: middle !important; }
+.table-schedule th , .table-schedule td { vertical-align: middle !important; }
 
 .table-schedule tr > th:first-child { font-size: 37px; font-weight: 600; }
 
@@ -2912,6 +2912,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .time-departure,
 .table-schedule .time-departure-2 { font-size: 19px; font-weight: 600; }
+
+.table-schedule .route-name-depart { text-align: right; }
+
+.table-schedule tr > td:nth-child(n+4):nth-child(-n+7) { text-align: center; }
 
 /* </editor-fold> */
 
