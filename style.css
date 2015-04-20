@@ -2897,7 +2897,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .route-name-depart { text-align: right; }
 
-.table-schedule tr > td:nth-child(n+4):nth-child(-n+7) { text-align: center; }
+.table-schedule tr > td:nth-child(n+4) { text-align: center; }
 
 .table-schedule .weekdays .badge { margin-left: 1px; padding: 2px 2px 4px 3px; border-radius: 0; background-color: #b3e5fc; font-size: 10px; font-weight: 400; color: #666; color: rgba(0,0,0,.5); }
 
