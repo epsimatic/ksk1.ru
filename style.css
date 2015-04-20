@@ -2494,6 +2494,9 @@ article.ob .ob-text-group { color: #333; margin: 0; }
 
 .ob-list article.ob.is-super { background-color: #FFF04E; border-top: 4px dashed #F6D01E; padding: 15px 20px !important; }
 
+.ob-list.ob-large-thumbs article.ob.is-super { padding: 0 !important; }
+
+
 .ob-list article.ob.is-super:hover,
 .ob-list article.ob.is-super:focus  { background-color: #fbea2d; }
 
