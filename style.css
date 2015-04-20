@@ -2902,11 +2902,16 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-.table-schedule th { white-space: nowrap; }
+.table-schedule th { vertical-align: middle !important; }
+
+.table-schedule tr > th:first-child { font-size: 37px; font-weight: 600; }
 
 .table-schedule th .fa-clock-o { padding-right: 5px; }
 
 .table-schedule th .small { font-size: 10px; font-weight: 400; }
+
+.table-schedule .time-departure,
+.table-schedule .time-departure-2 { font-size: 19px; font-weight: 600; }
 
 /* </editor-fold> */
 
