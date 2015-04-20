@@ -2521,6 +2521,8 @@ article.ob .ob-text-group { color: #333; margin: 0; }
 
 .ob-list .ob-thumb-group { float: right; margin-left: 15px; }
 
+.ob-list .ob-thumb { max-width: 290px; }
+
 .ob-list-346 .ob-thumb-group,
 .ob-list-452 .ob-thumb-group,
 .ob-list-311 .ob-thumb-group,
@@ -2896,6 +2898,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* </editor-fold> */
 
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Расписание"> */
+.table-schedule th { white-space: nowrap; }
+
+.table-schedule th .fa-clock-o { padding-right: 5px; }
+
+.table-schedule th .small { font-size: 10px; font-weight: 400; }
 
 /* </editor-fold> */
 
