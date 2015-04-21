@@ -234,6 +234,8 @@ body.tax-movie .navbar,
 body.single-company .navbar,
 .site-ob .navbar {margin: 0 -10px 10px;}
 
+.news-old .navbar { margin: 0 0 10px; }
+
 .navbar a {color: #fff;}
 
 .navbar-collapse {margin-right: -40px;}
