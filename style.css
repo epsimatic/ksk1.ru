@@ -2903,11 +2903,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule tr > td:nth-child(n+4) { text-align: center; }
 
+.table-schedule .weekdays { white-space: nowrap; }
+
 .table-schedule .weekdays .badge { margin-left: 1px; padding: 2px 2px 4px 3px; border-radius: 0; background-color: #b3e5fc; font-size: 10px; font-weight: 400; color: #666; color: rgba(0,0,0,.5); }
 
 .table-schedule .weekdays .badge.weekend { background-color: #ffccbc; }
 
 .table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; }
+
+.table-schedule .weekdays .badge.today { box-shadow: 0 0 4px #3d5afe; }
 
 /* </editor-fold> */
 
