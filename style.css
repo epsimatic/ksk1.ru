@@ -2003,7 +2003,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .panel-body p { padding-bottom: 4px; color: #333; }
 
-.page .panel-page { background-color: transparent; }
+.page .panel-page,
+.page .panel-page .panel-body { background-color: transparent; }
 
 
 .panel-page .panel-body header.page-header {margin-bottom: 10px;}
