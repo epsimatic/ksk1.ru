@@ -2481,7 +2481,7 @@ a.link-neutral:focus {color: #3b437d;}
 .ob-list article.ob:focus { background-color: #f8f8f8; }
 
 .ob-large-thumbs article.ob:hover,
-.ob-large-thumbs article.ob:focus { background-color: #f5f8fa; }
+.ob-large-thumbs article.ob:focus { background-color: #f5f8fa; box-shadow: 0 0 3px rgba(0, 0, 0, 0.09); }
 
 article.ob .ob-text-group { color: #333; margin: 0; }
 
