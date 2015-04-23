@@ -2472,7 +2472,7 @@ a.link-neutral:focus {color: #3b437d;}
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
-    background-color: #eceff1; padding: 0;
+    background-color: #eceff1; padding: 0; border-bottom: 1px solid #cfd8dc;
 }
 
 .panel-notice article.ob:hover,
