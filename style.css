@@ -4203,11 +4203,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
 
-    .site-tv .logo-tv { padding-bottom: 10px; }
+    .site-tv .logo-tv { text-align: left; }
 
-    .site-tv .logo-tv img { width: 100%; }
+    .site-tv .logo-tv img { width: 100%; padding: 0; }
 
-    .site-tv .page-heading { padding: 28px 0 0 21px; }
+    .site-tv .page-heading { padding: 0; }
 
     .site-tv .page-heading h2 { margin-bottom: 0; font-size: 41px; line-height: 1em; }
 
