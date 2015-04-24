@@ -4079,13 +4079,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar p a { padding: 2px 10px; }
 
-    .site-tv .logo-tv { padding: 20px 0 20px 20px; }
+    .site-tv .logo-tv { padding: 0 0 0 5px; }
 
     .site-tv .logo-tv img { width: 130%; }
 
-    .site-tv .page-heading { padding: 18px 0 0 49px; }
+    .site-tv .page-heading { padding: 0 10px 0 49px; }
 
     .site-tv .page-heading h2 { font-size: 29px; }
+
+    .site-tv .page-desciption { padding: 0 15px; }
 
     .site-tv article.main-video { margin: 0; }
 }
