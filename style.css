@@ -2922,6 +2922,90 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /* </editor-fold> */
 
+
+/* <editor-fold desc="Сайт телевидения"> */
+.site-tv .logo-tv { width: 100%; padding: 25px; text-align: center; }
+
+.site-tv .page-heading { padding: 0 30px; }
+
+.site-tv .page-desciption { padding: 0 30px 20px; }
+
+.site-tv .page-heading h2 { color: #037dd3; font-size: 27px; }
+
+.site-tv .page-desciption p { color: #444; font-size: 16px; }
+
+.site-tv .logo-tv img { width: 80%; }
+
+.site-tv .alert-info {margin: 0 15px 15px; min-height: 120px; }
+
+.site-tv .hr > div {height: 3px; background-color: #088eff; width: 100%; margin-bottom: 15px; padding: 0 30px; background-clip: content-box; opacity: .4;}
+
+.site-tv .alert-info img.otv-logo { width: 100px; padding-right: 15px; }
+
+.site-tv .panel.panel-video { background-color: transparent; }
+
+.site-tv .panel-news > .panel-heading,
+.site-tv .panel-video > .panel-heading { background-color: #088EFF; background-image: none; margin-bottom: 0; padding: 8px 15px;}
+
+.site-tv .panel-news > .panel-heading > h2,
+.site-tv .panel-video > .panel-heading h2 { font-weight: 700 !important; font-size: 28px !important; padding: 7px 0 9px 10px !important; text-transform: uppercase; letter-spacing: 0.025em; text-rendering: optimizeLegibility; }
+
+.site-tv .panel-video > .panel-body { background-color: transparent; }
+
+.site-tv .panel-video .panel-body > .row { margin: 0 -5px; }
+
+.site-tv .panel-video .list-group-item { padding: 0 0 15px; border-bottom: 1px solid #ddd; margin-bottom: 15px; }
+
+.site-tv .panel-video .list-group-item:hover { box-shadow: 0 0 12px rgba(0, 0, 0, 0.15); }
+
+.site-tv .panel-video .list-group-item.more-video { background-color: #536ffc; border-bottom: none; padding: 43px 15px 45px; }
+
+.site-tv .panel-video .list-group-item.more-video > p { color: #fff; font-size: 25px; text-align: center; text-transform: uppercase; margin: 0;}
+
+.site-tv .panel-video .list-group-item > .row { margin: 0; }
+
+.site-tv .video-thumb { padding: 0; position: relative; }
+
+.site-tv .video-thumb img { width: 100%; }
+
+.site-tv .video-thumb .play { position: absolute; left: 0; top: 0; }
+
+.site-tv .video-thumb .post-info { background-color: #f4f4f4; }
+
+.site-tv .video-thumb .post-info > div { padding: 0; }
+
+.site-tv .video-thumb .post-info .post-info-views { padding: 0.3em 0 0.35em 7px; }
+
+.site-tv .video-thumb .post-info .post-info-comments { padding: 0.3em 0.3em 0.35em 0; }
+
+.site-tv .video-thumb .post-info .post-info-views:before,
+.site-tv .video-thumb .post-info .post-info-comments:before,
+.site-tv .video-thumb .post-info .post-info-views,
+.site-tv .video-thumb .post-info .post-info-comments { color: #999 }
+
+.site-tv .video-thumb .post-info .post-info-comments:before { content: ""; }
+
+.site-tv .video-thumb .post-info .post-info-views:before { padding-left: 0; }
+
+.site-tv .panel-video h3 { font-size: 14px; padding: 0 5px; }
+
+.site-tv .panel-video h3 .weekday { background-color: #F7414E; color: #fff; font-weight: 700; margin-right: 5px; padding: 0 5px; }
+
+.site-tv .panel-video h3 .date { color: #088EFF; font-weight: 600; }
+
+.site-tv .panel-video h3 .date strong { font-weight: 700; }
+
+.site-tv .video-descriprion { color: #555555; font-size: 0.9em; line-height: 1.3em; padding-left: 5px; }
+
+.site-tv .panel-news .panel-body { padding: 0; }
+
+.site-tv .panel-news .list-group-item { border-bottom: 1px solid #e2e2e2; margin-bottom: 1px; padding: 20px 10px; }
+
+.site-tv .panel-news .list-group-item img { width: 100%; }
+
+.site-tv .panel-news .list-group-item h3 a { color: #037dd3; font-weight: 18px; }
+/* </editor-fold> */
+
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр и Прайс на рекламу"> */
@@ -4009,6 +4093,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .e96-bar p { text-align: center; }
 
     #navpanel-shopping .e96-bar p a { padding: 2px 10px; }
+
+    .site-tv .logo-tv { padding: 20px 0 20px 20px; }
+
+    .site-tv .logo-tv img { width: 130%; }
+
+    .site-tv .page-heading { padding: 18px 0 0 49px; }
+
+    .site-tv .page-heading h2 { font-size: 29px; }
 }
 
 /* Стили для размера -md- */
@@ -4121,6 +4213,38 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
+
+    .site-tv .logo-tv { padding-bottom: 10px; }
+
+    .site-tv .logo-tv img { width: 100%; }
+
+    .site-tv .page-heading { padding: 28px 0 0 21px; }
+
+    .site-tv .page-heading h2 { margin-bottom: 0; font-size: 41px; line-height: 1em; }
+
+    .site-tv .page-desciption { padding-top: 20px; }
+
+    .site-tv .alert-info { margin: 0 0 15px; }
+
+    .site-tv .video-thumb .play { opacity: 0; transition: opacity 150ms ease-in-out 0ms; }
+
+    .site-tv .video-thumb .play:hover { opacity: 1; }
+
+    .site-tv .panel-video .list-group-item:nth-child(2n+1) { margin-right: 5px; }
+
+    .site-tv .panel-video .list-group-item:nth-child(2n) { margin-left: 5px; }
+
+    .site-tv .panel-video .list-group-item.col-md-6 { width: 49%; }
+
+    .site-tv .panel-video .list-group-item { background-color: #f8f8f8; border-bottom: none; padding-bottom: 0; margin-bottom: 10px; }
+
+    .site-tv .panel-video .list-group-item.more-video { padding: 38px 35px 35px; height: 150px; opacity: 0.3; }
+
+    .site-tv .panel-video .list-group-item .col-xs-7 { background-color: #fdfdfd; padding: 10px; height: 150px; overflow: hidden }
+
+    .site-tv .video-thumb .post-info { background-color: transparent; }
+
+    .site-tv .video-descriprion { text-overflow: ellipsis; overflow: hidden; height: 7.8em; }
 }
 
 /* Стили для размера -lg- */
@@ -4206,6 +4330,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 75px; }
 
     .community_square_user { width: 70px !important;}
+
+    .site-tv .logo-tv { padding: 20px 5px 10px; }
+
+    .site-tv .logo-tv img { margin-top: 3px; width: 85%; }
+
+    .site-tv .page-heading { padding: 27px 0 0 0; }
+
+    .site-tv .page-heading h2 { font-size: 50px; font-weight: 600; }
 }
 
 /*категории новостей*/
