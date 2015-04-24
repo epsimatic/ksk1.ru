@@ -2992,7 +2992,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-tv .video-item.main-video figure iframe { height: 209px; }
 
-.site-tv article.main-video .post-title { margin-top: 10px; margin-bottom: 15px; font-weight: 600; color: #1976d2; }
+.site-tv article.main-video .post-title { margin-top: 0; margin-bottom: 15px; font-weight: 600; color: #1976d2; }
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
@@ -4096,6 +4096,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .site-tv article.main-video { margin: 0; }
 
     .site-tv .video-item.main-video figure iframe { height: 289px; width: 100%; }
+
+    .site-tv article.main-video .post-title { font-size: 21px; }
 }
 
 /* Стили для размера -md- */
