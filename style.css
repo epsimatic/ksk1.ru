@@ -2966,6 +2966,12 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-tv .panel-news .list-group-item { border-bottom: 1px solid #e2e2e2; margin-bottom: 1px; padding: 20px 10px; }
 .site-tv .panel-news .list-group-item img { width: 100%; }
 .site-tv .panel-news .list-group-item h3 a { color: #037dd3; font-weight: 18px; }*/
+
+.site-tv figure.post-thumb > img.post-thumb { width: 100%; }
+
+.site-tv article.main-video { margin-right: 10px; margin-left: 10px; }
+
+.site-tv figure.post-thumb > .play { left: 0; position: absolute; top: 0; z-index: 5; }
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
