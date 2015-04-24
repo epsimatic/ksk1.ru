@@ -4311,10 +4311,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .community_square_user { width: 70px !important;}
 
-    .site-tv .logo-tv { padding: 20px 5px 10px; }
     .site-tv .logo-tv img { margin-top: 3px; width: 85%; }
-    .site-tv .page-heading { padding: 27px 0 0 0; }
-    .site-tv .page-heading h2 { font-size: 50px; font-weight: 600; }
+
+    .site-tv .page-heading { padding: 0; }
+
+    .site-tv .page-heading h2 { font-size: 44px; font-weight: 600; }
 }
 
 /*категории новостей*/
