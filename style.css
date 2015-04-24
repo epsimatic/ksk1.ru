@@ -4207,9 +4207,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .site-tv .logo-tv img { width: 100%; padding: 0; }
 
-    .site-tv .page-heading { padding: 0; }
+    .site-tv .page-heading { padding: 0 0 0 25px; }
 
-    .site-tv .page-heading h2 { margin-bottom: 0; font-size: 41px; line-height: 1em; }
+    .site-tv .page-heading h2 { margin-bottom: 0; font-size: 39px; line-height: 1em; }
 
     .site-tv .page-desciption { padding-top: 20px; }
 
