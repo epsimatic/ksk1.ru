@@ -47,6 +47,7 @@ header#header {margin-bottom: 0 !important;}
 /*CSS-fix для «негоризонтальных» форм*/
 
 .site-rk .wpcf7 .form-group,
+.site-radio .wpcf7 .form-group,
 .site-tv .wpcf7 .form-group { margin-right: 0; margin-left: 0; }
 
 
