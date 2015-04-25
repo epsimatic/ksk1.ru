@@ -3005,6 +3005,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-radio #radio-sidebar-features .panel-heading,
 .site-tv #tv-sidebar-features .panel-heading { padding: 0; }
+
+.site-radio #radio-sidebar-features .panel-heading img,
+.site-tv #tv-sidebar-features .panel-heading img { width: 100%; }
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
