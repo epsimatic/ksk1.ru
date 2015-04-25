@@ -3944,7 +3944,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
-    .container > .row {
+    .container > .columns {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
