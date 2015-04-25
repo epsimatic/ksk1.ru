@@ -44,6 +44,12 @@ header#header {margin-bottom: 0 !important;}
 
 .temp .inset {padding-left: 10px; padding-right: 0;}
 
+/*CSS-fix для «негоризонтальных» форм*/
+
+.site-rk .wpcf7 .form-group,
+.site-tv .wpcf7 .form-group { margin-right: 0; margin-left: 0; }
+
+
 /* Блок стилей для fixed sticky */
 
 .fixedsticky { position: -webkit-sticky; position: sticky; }
@@ -2995,8 +3001,6 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-tv article.main-video .post-title { margin-top: 0; margin-bottom: 15px; font-weight: 600; color: #1976d2; }
 
 .site-tv #tv-sidebar-features .panel-heading { padding: 0; }
-
-.site-tv #tv-sidebar-features .form-group { margin-right: 0; margin-left: 0; }
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
