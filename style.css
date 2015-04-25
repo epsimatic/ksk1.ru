@@ -256,7 +256,17 @@ body.single-company .navbar,
 .navbar-toggle .icon-bar {background-color: #cccccc;}
 
 /*Tab drop for Bootstrap*/
-.nav-tabs,.nav-pills {position: relative;}
+.nav-tabs,.nav-pills { position: relative; }
+
+.cat-pills { padding: 7px; background-color: #c7d1e0; }
+
+.cat-pills > li > a { padding: 5px 12px; color: #333; }
+
+.cat-pills > li > a:hover { background-color: #cfd8dc; }
+
+.cat-pills > li.active > a:hover,
+.cat-pills > li.active > a:focus,
+.cat-pills > li.active > a { background-color: #fff; color: #333; }
 
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
