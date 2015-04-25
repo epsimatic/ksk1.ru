@@ -3003,6 +3003,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-radio #radio-sidebar-features,
 .site-tv #tv-sidebar-features { top: 20px; }
 
+.site-radio #radio-sidebar-features .panel-heading,
 .site-tv #tv-sidebar-features .panel-heading { padding: 0; }
 /* </editor-fold> */
 
