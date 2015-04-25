@@ -3929,6 +3929,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .container > .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
     .header-logo-col:first-child { width: 33.3333%; }
 
     .affix { max-height: 100%; max-width: 100%; }
