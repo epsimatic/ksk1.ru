@@ -258,15 +258,15 @@ body.single-company .navbar,
 /*Tab drop for Bootstrap*/
 .nav-tabs,.nav-pills { position: relative; }
 
-.cat-pills { padding: 7px; background-color: #c7d1e0; }
+.cat-pills { padding: 7px; background-color: #e6eaf1; }
 
-.cat-pills > li > a { padding: 5px 12px; color: #333; }
+.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; }
 
-.cat-pills > li > a:hover { background-color: #cfd8dc; }
+.cat-pills.cat-pills > li > a:hover { background-color: #d2dae5; color: #263238; }
 
-.cat-pills > li.active > a:hover,
-.cat-pills > li.active > a:focus,
-.cat-pills > li.active > a { background-color: #fff; color: #333; }
+.cat-pills.cat-pills > li.active > a:hover,
+.cat-pills.cat-pills > li.active > a:focus,
+.cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #006064;}
 
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
@@ -3435,6 +3435,22 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 .panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
 
+
+/* Стили для унифициорованного макета в афише в списке событий */
+.panel-event .post-event {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
+
+.panel-event .post-event .post-title { margin: 0; position: absolute; left: 180px; top: 15px; font-weight: 600; }
+
+.panel-event .post-event figure.post-thumb { margin-right: 15px; float: left; }
+
+.panel-event .post-event figure.post-thumb img.post-thumb { width: 150px; }
+
+.panel-event .post-event .post-description { position: relative; top: 25px; }
+
+.panel-event .post-event .event-time { padding: 0 5px 0 3px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
+
+.panel-event .post-event .event-place,
+.panel-event .post-event .event-price { color: #888888; font-weight: 400; }
 
 
 
