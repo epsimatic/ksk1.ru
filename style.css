@@ -258,15 +258,27 @@ body.single-company .navbar,
 /*Tab drop for Bootstrap*/
 .nav-tabs,.nav-pills { position: relative; }
 
-.cat-pills { padding: 7px; border-radius: 3px; background-color: #e6eaf1; }
+.cat-pills { padding: 7px; border-radius: 3px !important; background-color: #e6eaf1; }
 
 .cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; }
 
+.cat-pills.cat-pills > li > a:focus,
 .cat-pills.cat-pills > li > a:hover { background-color: #d2dae5; color: #263238; }
 
 .cat-pills.cat-pills > li.active > a:hover,
 .cat-pills.cat-pills > li.active > a:focus,
 .cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #006064;}
+
+.news-old .cat-pills { background-color: #f7e9e3; }
+
+.news-old .cat-pills.cat-pills > li > a { border-bottom: none; }
+
+.news-old .cat-pills.cat-pills > li > a:focus,
+.news-old .cat-pills.cat-pills > li > a:hover { background-color: #f7ddd2; }
+
+.cat-pills.cat-pills > li.active > a:hover,
+.cat-pills.cat-pills > li.active > a:focus,
+    .cat-pills.cat-pills > li.active > a { background-color: #f7d3c4; color: #3e2723; }
 
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
