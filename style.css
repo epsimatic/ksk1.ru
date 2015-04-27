@@ -258,9 +258,9 @@ body.single-company .navbar,
 /*Tab drop for Bootstrap*/
 .nav-tabs,.nav-pills { position: relative; }
 
-.cat-pills { padding: 7px; border-radius: 3px !important; background-color: #e6eaf1; }
+.cat-pills { padding: 7px; background-color: #e6eaf1; }
 
-.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; }
+.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; border-radius: 3px !important; }
 
 .cat-pills.cat-pills > li > a:focus,
 .cat-pills.cat-pills > li > a:hover { background-color: #d2dae5; color: #263238; }
