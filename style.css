@@ -260,16 +260,18 @@ body.single-company .navbar,
 
 .cat-pills { padding: 7px 5px; background-color: #e6eaf1; }
 
-.cat-pills.cat-pills > li > a { padding: 5px 10px; color: #333; border-radius: 3px !important; font-size: .97em; }
+.cat-pills.cat-pills > li > a { padding: 5px 10px; color: #333; border-radius: 3px !important; font-size: .97em; transition: all .5s ease; }
 
 .cat-pills.cat-pills > li > a:focus,
 .cat-pills.cat-pills > li > a:hover { background-color: #d2dae5; color: #263238; }
 
 .cat-pills.cat-pills > li.active > a:hover,
 .cat-pills.cat-pills > li.active > a:focus,
-.cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #006064;}
+.cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #006064; }
 
-.cat-pills > li > a > .badge { padding: 2px 3px 3px; border-radius: 3px; background-color: #cfd8dc; position: relative; top: -1px; font-size: 10px; color: #455a64; }
+.cat-pills > li > a > .badge { padding: 2px 3px 3px; border-radius: 3px; position: relative; top: -1px; font-size: 10px; display: none; opacity: 0; transition: opacity .5s ease; }
+
+.cat-pills.cat-pills > li.active > a > .badge  { display: inline-block; opacity: 1; }
 
 .news-old .cat-pills { background-color: #f7e9e3; }
 
