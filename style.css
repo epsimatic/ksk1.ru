@@ -269,7 +269,7 @@ body.single-company .navbar,
 .cat-pills.cat-pills > li.active > a:focus,
 .cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #006064; }
 
-.cat-pills > li > a > .badge { padding: 3px 5px; margin-left: 5px; border-radius: 3px; position: relative; top: -1px; font-size: 10px; display: none; opacity: 0; transition: opacity .5s ease; }
+.cat-pills > li > a > .badge { padding: 3px 5px; margin-left: 5px; border-radius: 3px; position: relative; top: -1px; font-size: 12px; display: none; opacity: 0; transition: opacity .5s ease; }
 
 .cat-pills.cat-pills > li.active > a > .badge  { display: inline-block; opacity: 1; }
 
