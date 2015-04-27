@@ -276,9 +276,9 @@ body.single-company .navbar,
 .news-old .cat-pills.cat-pills > li > a:focus,
 .news-old .cat-pills.cat-pills > li > a:hover { background-color: #f7ddd2; }
 
-.cat-pills.cat-pills > li.active > a:hover,
-.cat-pills.cat-pills > li.active > a:focus,
-    .cat-pills.cat-pills > li.active > a { background-color: #f7d3c4; color: #3e2723; }
+.news-old .cat-pills.cat-pills > li.active > a:hover,
+.news-old .cat-pills.cat-pills > li.active > a:focus,
+.news-old .cat-pills.cat-pills > li.active > a { background-color: #f7d3c4; color: #3e2723; }
 
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
