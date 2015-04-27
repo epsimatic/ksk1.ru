@@ -3396,6 +3396,8 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 .add-event button {color: #7e707e;}
 
+body.agenda .entry-content.page-content:empty { margin: 0; }
+
 /* Оформление списка событий */
 .panel-event .panel-heading,
 .panel-event .panel-body {padding: 0;}
@@ -3437,7 +3439,7 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
+.panel-event .post-event { margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4; }
 
 .panel-event .post-event .post-title { margin: 0; position: absolute; left: 180px; top: 15px; font-weight: 600; }
 
@@ -3449,8 +3451,13 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 .panel-event .post-event .event-time { padding: 0 5px 0 3px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
-.panel-event .post-event .event-place,
-.panel-event .post-event .event-price { color: #888888; font-weight: 400; }
+.panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 2px; }
+
+.panel-event .post-event .event-place { color: #fb700d; }
+
+.panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 2px;  }
+
+.panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }
 
 
 
