@@ -3453,11 +3453,18 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 2px; }
 
-.panel-event .post-event .event-place { color: #fb700d; }
+.panel-event .post-event .event-place,
+.panel-event .post-event .event-organizer-name { color: #fb700d; }
+
+.panel-event .post-event .event-organizer { color: #888; }
 
 .panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 2px;  }
 
 .panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }
+
+.panel-event .post-event .post-more { padding: 0 3px 5px; float: right; }
+
+.panel-event .post-event .post-more a { color: #888; }
 
 
 
