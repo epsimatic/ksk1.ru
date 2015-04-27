@@ -9,8 +9,12 @@
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="1">
+          <list size="5">
             <item index="0" class="java.lang.String" itemvalue="transition" />
+            <item index="1" class="java.lang.String" itemvalue="column-gap" />
+            <item index="2" class="java.lang.String" itemvalue="column-count" />
+            <item index="3" class="java.lang.String" itemvalue="column-break-inside" />
+            <item index="4" class="java.lang.String" itemvalue="box-pack" />
           </list>
         </value>
       </option>
@@ -46,6 +50,10 @@
       <option name="myAdditionalRequiredHtmlAttributes" value="scoped" />
     </inspection_tool>
     <inspection_tool class="TaskInspection" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="W3CssValidation" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myCssVersion" value="css3" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+    </inspection_tool>
     <inspection_tool class="XmlHighlighting" enabled="true" level="INFO" enabled_by_default="true" />
     <inspection_tool class="XmlUnboundNsPrefix" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
