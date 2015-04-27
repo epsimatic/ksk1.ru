@@ -3404,6 +3404,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event-today .panel-heading h1 {background-color: #ff6372;}
 
+
 .panel-event-soon .panel-heading h1 {background-color: #1FA6F2;}
 
 .panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
@@ -3434,7 +3435,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .event-price-number {color: #555555;}
 
 .panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
-
+.no_margin{margin-bottom: 0 ;}
 
 /* Стили для унифициорованного макета в афише в списке событий */
 .panel-event .post-event { margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4; }
