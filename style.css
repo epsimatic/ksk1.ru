@@ -3458,17 +3458,23 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 /* Стили для унифициорованного макета в афише в списке событий */
 .panel-event .post-event { margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4; }
 
-.panel-event .post-event .post-title { margin: 0; position: absolute; left: 180px; top: 15px; font-weight: 600; }
+.panel-event .post-event .post-title { margin: 0 0 15px; font-weight: 600; }
 
-.panel-event .post-event figure.post-thumb { margin-right: 15px; float: left; }
+.panel-event .post-event figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
-.panel-event .post-event figure.post-thumb img { width: 150px; }
+.panel-event .post-event figure.post-thumb img { width: 120px; }
 
-.panel-event .post-event .post-description { position: relative; top: 25px; }
+.panel-event .post-event .post-description { }
 
 .panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
 .panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 2px; }
+
+.panel-event .post-event .event-place,
+.panel-event .post-event .event-organizer-name { display: inline; }
+
+.panel-event .post-event .event-phone,
+.panel-event .post-event .event-price { display: block; }
 
 .panel-event .post-event .event-place,
 .panel-event .post-event .event-organizer-name { color: #fb700d; }
@@ -3477,14 +3483,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .post-info-comments::before { padding-right: 5px; padding-left: 0; }
 
-.panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 2px;  }
+.panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 5px;  }
 
 .panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }
 
-.panel-event .post-event .event-phone,
-.panel-event .post-event .event-price { display: block; }
-
-.panel-event .post-event .post-more { padding: 0 3px 5px; float: right; }
+.panel-event .post-event .post-more { padding: 10px; float: right; }
 
 .panel-event .post-event .post-more a { color: #888; }
 
@@ -4175,6 +4178,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .e96-bar p { text-align: center; }
 
     #navpanel-shopping .e96-bar p a { padding: 2px 10px; }
+
+    .panel-event .post-event .post-title { margin: 0; position: absolute; left: 150px; top: 15px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
+
+    /*.panel-event .post-event figure.post-thumb img { width: 150px; }*/
+    .panel-event .post-event .post-description { position: relative; top: 25px; }
+    .panel-event .post-event .post-more { padding: 0 3px 5px; }
+
 
     .site-tv .logo-tv { padding: 0 0 0 5px; }
 
