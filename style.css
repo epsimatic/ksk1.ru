@@ -3460,6 +3460,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .post-title { margin: 0 0 15px; font-weight: 600; }
 
+.panel-event .post-event .post-title a { color: #0091ea; }
+
+.panel-event .post-event .post-title a:hover,
+.panel-event .post-event .post-title a:focus { color: #0277bd; }
+
 .panel-event .post-event figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
 .panel-event .post-event figure.post-thumb img { width: 120px; }
