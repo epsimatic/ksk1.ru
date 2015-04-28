@@ -3478,6 +3478,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .event-place,
 .panel-event .post-event .event-organizer-name { display: inline; }
 
+.panel-event .post-event .post-description-text { line-height: 1.4em; margin-bottom: 3px; }
+
 .panel-event .post-event .post-description-text,
 .panel-event .post-event .event-phone,
 .panel-event .post-event .event-price,
