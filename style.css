@@ -4319,6 +4319,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-event .post-event figure.post-thumb img { width: 150px; }
 
+    .panel-event .post-event.has-post-thumbnail .post-title { left: 180px; }
+
     .site-tv .logo-tv { text-align: left; }
 
     .site-tv .logo-tv img { width: 100%; padding: 0; }
