@@ -3466,7 +3466,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .post-description { position: relative; top: 25px; }
 
-.panel-event .post-event .event-time { padding: 0 5px 0 3px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
+.panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
 .panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 2px; }
 
@@ -3480,6 +3480,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 2px;  }
 
 .panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }
+
+.panel-event .post-event .event-phone,
+.panel-event .post-event .event-price { display: block; }
 
 .panel-event .post-event .post-more { padding: 0 3px 5px; float: right; }
 
