@@ -4181,7 +4181,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar p a { padding: 2px 10px; }
 
-    .panel-event .post-event .post-title { margin: 0; position: absolute; left: 150px; top: 15px; overflow-y: hidden; text-overflow: ellipsis; height: 2.4em; }
+    .panel-event .post-event .post-title { margin: 0; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
+    .panel-event .post-event.has-post-thumbnail .post-title { position: absolute; left: 150px; top: 15px; }
 
     /*.panel-event .post-event figure.post-thumb img { width: 150px; }*/
     .panel-event .post-event .post-description { position: relative; top: 25px; }
