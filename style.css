@@ -3462,7 +3462,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event figure.post-thumb { margin-right: 15px; float: left; }
 
-.panel-event .post-event figure.post-thumb img.post-thumb { width: 150px; }
+.panel-event .post-event figure.post-thumb img { width: 150px; }
 
 .panel-event .post-event .post-description { position: relative; top: 25px; }
 
