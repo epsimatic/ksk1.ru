@@ -4212,6 +4212,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-event .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
 
+    .panel-event .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
+
     .panel-event .post-event .post-more { padding: 0; }
 
     .site-tv .logo-tv { padding: 0 0 0 5px; }
