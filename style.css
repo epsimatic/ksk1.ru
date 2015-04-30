@@ -3363,7 +3363,7 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 
 /* Оформление фильмов */
-.movie-brief { height: 150px; }
+.movie-brief { min-height: 150px; }
 
 .panel-event .event-thumb,
 .movie-brief .movie-poster { position:relative; }
@@ -3425,7 +3425,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
-.panel-event .panel-date { margin-bottom: 0; padding: 15px 17px 10px; border-top: 3px dashed #e0e0e0; background-color: #fff; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
+.panel-event .panel-date { margin-bottom: 0; padding: 13px 17px 16px; border-top: 3px dashed #e0e0e0; background-color: #fff; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
 
 .panel-event .panel-body.panel-body-day { background-color: transparent; }
 
