@@ -3456,7 +3456,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event { margin: 0; padding: 10px 15px; border-bottom: 1px solid #f4f4f4; }
+.panel-event .post-event { margin: 0; padding: 10px 15px; border-bottom: 1px solid #f4f4f4; transition: box-shadow .5s ease; }
+
+.panel-event .post-event:hover,
+.panel-event .post-event:focus { box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); z-index: 3; }
 
 .panel-event .post-event.has-post-thumbnail { padding: 15px; }
 
@@ -4201,6 +4204,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-event .post-event .post-title { margin-bottom: 10px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
 
+    .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
+
     .panel-event .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 150px; top: 15px; }
 
     .panel-event .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
@@ -4335,7 +4340,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
 
-    .panel-event .post-event figure.post-thumb img { width: 150px; }
+    .panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 150px; }
 
     .panel-event .post-event.has-post-thumbnail .post-title { left: 180px; }
 
