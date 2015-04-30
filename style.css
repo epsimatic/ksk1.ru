@@ -3458,10 +3458,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event { margin: 0; padding: 10px 15px; border-top: 1px solid #f4f4f4; transition: box-shadow .5s ease; }
+.panel-event .post-event { margin: 0; padding: 10px 15px; border-top: 1px solid #f4f4f4; /*transition: box-shadow .5s ease;*/ }
 
 .panel-event .post-event:hover,
-.panel-event .post-event:focus { box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); z-index: 3; }
+.panel-event .post-event:focus { box-shadow: 0 0 5px rgba(0, 0, 0, .1); z-index: 3; }
 
 .panel-event .post-event.has-post-thumbnail { padding: 15px; }
 
