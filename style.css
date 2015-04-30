@@ -3456,18 +3456,22 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event { margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4; }
+.panel-event .post-event { margin: 0; padding: 10px 15px; border-bottom: 1px solid #f4f4f4; }
 
-.panel-event .post-event .post-title { margin: 0 0 15px; font-weight: 600; }
+.panel-event .post-event.has-post-thumbnail { padding: 15px; }
+
+.panel-event .post-event .post-title { margin: 0 0 5px; font-size: 16px; font-weight: 600; }
+
+.panel-event .post-event.has-post-thumbnail .post-title { margin: 0 0 15px; font-size: 18px; }
 
 .panel-event .post-event .post-title a { color: #0091ea; }
 
 .panel-event .post-event .post-title a:hover,
 .panel-event .post-event .post-title a:focus { color: #0277bd; }
 
-.panel-event .post-event figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
+.panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
-.panel-event .post-event figure.post-thumb img { width: 120px; }
+.panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
 
 .panel-event .post-event .post-description { }
 
@@ -3480,10 +3484,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .post-description-text { line-height: 1.4em; margin-bottom: 3px; }
 
-.panel-event .post-event .post-description-text,
-.panel-event .post-event .event-phone,
-.panel-event .post-event .event-price,
-.panel-event .post-event .event-more { display: block; }
+.panel-event .post-event.has-post-thumbnail .post-description-text,
+.panel-event .post-event.has-post-thumbnail .event-phone,
+.panel-event .post-event.has-post-thumbnail .event-price,
+.panel-event .post-event.has-post-thumbnail .event-more { display: block; }
 
 .panel-event .post-event .event-place,
 .panel-event .post-event .event-organizer-name { color: #fb700d; }
@@ -3496,7 +3500,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 /*.panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }*/
 
-.panel-event .post-event .post-more { padding: 10px; float: right; }
+.panel-event .post-event .post-more { padding: 0; }
+
+.panel-event .post-event.has-post-thumbnail .post-more { float: right; }
 
 .panel-event .post-event .post-more a { color: #888; }
 
