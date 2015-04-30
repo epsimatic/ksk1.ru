@@ -3473,7 +3473,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
 
-.panel-event .post-event .post-description { line-height: 1em; }
+/*.panel-event .post-event .post-description { line-height: 1em; }*/
 
 .panel-event .post-event.has-post-thumbnail .post-description { line-height: 1.41em; }
 
@@ -3487,6 +3487,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .post-description-text { line-height: 1.41em; margin-bottom: 3px; }
 
 .panel-event .post-event .post-info { display: inline; }
+
+.panel-event .post-event .post-info > * { padding-top: 0; padding-bottom: 0; }
 
 .panel-event .post-event.has-post-thumbnail .post-info,
 .panel-event .post-event.has-post-thumbnail .post-description-text,
