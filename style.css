@@ -3425,9 +3425,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
-.panel-event .panel-date {background-color: #f4f4f4; color: #3397db; font-size: 18px; margin-bottom: 0; padding: 12px 20px 15px; border-top: 1px solid #a5dbfa;}
+.panel-event .panel-date { margin-bottom: 0; padding: 12px 20px 15px; border-top: 3px dashed #e0e0e0; background-color: #fff; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
 
-.panel-event .panel-date strong {font-weight: 600;}
+.panel-event .panel-date strong { color: #00ae73; }
 
 .panel-event .event-thumb {padding-left: 0;}
 
@@ -3460,7 +3460,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail { padding: 15px; }
 
-.panel-event .post-event .post-title { margin: 0; font-size: 16px; font-weight: 600; }
+.panel-event .post-event .post-title { margin: 0 0 2px; font-size: 16px; font-weight: 600; }
 
 .panel-event .post-event.has-post-thumbnail .post-title { margin: 0 0 15px; font-size: 18px; }
 
@@ -3473,9 +3473,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
 
-/*.panel-event .post-event .post-description { line-height: 1em; }*/
-
-.panel-event .post-event.has-post-thumbnail .post-description { line-height: 1.41em; }
+.panel-event .post-event .post-description { line-height: 1.41em; }
 
 .panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
@@ -3505,7 +3503,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
-/*.panel-event .post-event .event-price:after { content: "₽"; margin-left: 2px; color: #000; }*/
+.panel-event .post-event .event-price:after { /*content: "₽"; */ content: " р."; margin-left: 2px; color: #000; }
 
 .panel-event .post-event .post-more { padding: 0; }
 
