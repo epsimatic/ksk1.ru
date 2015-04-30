@@ -273,16 +273,16 @@ body.single-company .navbar,
 
 .cat-pills.cat-pills > li.active > a > .badge  { display: inline-block; opacity: 1; }
 
-.news-old .cat-pills { background-color: #f7d3c4; }
+.news-old .cat-pills { background-color: #f7d3c4; padding: 0; }
 
-.news-old .cat-pills.cat-pills > li > a { border-bottom: none; }
+.news-old .cat-pills.cat-pills > li > a { border-bottom: none; border-radius: 0 !important; padding: 12px; }
 
 .news-old .cat-pills.cat-pills > li > a:focus,
 .news-old .cat-pills.cat-pills > li > a:hover { background-color: #f7ddd2; }
 
 .news-old .cat-pills.cat-pills > li.active > a:hover,
 .news-old .cat-pills.cat-pills > li.active > a:focus,
-.news-old .cat-pills.cat-pills > li.active > a { background-color: #fff; color: #3e2723; }
+.news-old .cat-pills.cat-pills > li.active > a { background-color: #e79c78; color: #3e2723; }
 
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
