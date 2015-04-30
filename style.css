@@ -3514,7 +3514,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail .post-more { float: right; }
 
-.panel-event .post-event .post-more a { color: #888; }
+.panel-event .post-event .post-more a { color: #fff; }
+
+.panel-event .post-event:hover .post-more a,
+.panel-event .post-event:focus .post-more a { color: #888; }
 
 
 
