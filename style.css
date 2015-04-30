@@ -3427,6 +3427,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .panel-date { margin-bottom: 0; padding: 15px 17px 10px; border-top: 3px dashed #e0e0e0; background-color: #fff; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
 
+.panel-event .panel-body.panel-body-day { background-color: transparent; }
+
 .panel-event .panel-date strong { color: #00ae73; }
 
 .panel-event .event-thumb {padding-left: 0;}
@@ -3456,7 +3458,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event { margin: 0; padding: 10px 15px; border-bottom: 1px solid #f4f4f4; transition: box-shadow .5s ease; }
+.panel-event .post-event { margin: 0; padding: 10px 15px; border-top: 1px solid #f4f4f4; transition: box-shadow .5s ease; }
 
 .panel-event .post-event:hover,
 .panel-event .post-event:focus { box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); z-index: 3; }
