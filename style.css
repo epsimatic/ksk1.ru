@@ -3485,11 +3485,13 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 100%; }
 
 @media (min-width: 480px) {
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { left: 230px; }
+    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; }
+    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; }
 
     .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 200px; }
+
+    .panel-event .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 25px; }
 
 }
 
