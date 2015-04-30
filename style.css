@@ -3460,7 +3460,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail { padding: 15px; }
 
-.panel-event .post-event .post-title { margin: 0 0 5px; font-size: 16px; font-weight: 600; }
+.panel-event .post-event .post-title { margin: 0; font-size: 16px; font-weight: 600; }
 
 .panel-event .post-event.has-post-thumbnail .post-title { margin: 0 0 15px; font-size: 18px; }
 
@@ -3473,7 +3473,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
 
-.panel-event .post-event .post-description { }
+.panel-event .post-event .post-description { line-height: 1em; }
+
+.panel-event .post-event.has-post-thumbnail .post-description { line-height: 1.41em; }
 
 .panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
@@ -3482,8 +3484,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .event-place,
 .panel-event .post-event .event-organizer-name { display: inline; }
 
-.panel-event .post-event .post-description-text { line-height: 1.4em; margin-bottom: 3px; }
+.panel-event .post-event .post-description-text { line-height: 1.41em; margin-bottom: 3px; }
 
+.panel-event .post-event .post-info { display: inline; }
+
+.panel-event .post-event.has-post-thumbnail .post-info,
 .panel-event .post-event.has-post-thumbnail .post-description-text,
 .panel-event .post-event.has-post-thumbnail .event-phone,
 .panel-event .post-event.has-post-thumbnail .event-price,
