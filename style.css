@@ -1551,7 +1551,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .news-old .post-news .post-actions { border-radius: 5px 0 0 5px; left: 15px; }
 
-.news-old .news-list_secondary .post-news img { margin-left: 15px; }
+.news-old .news-list_secondary .post-news img { margin-right: 15px; }
 
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
