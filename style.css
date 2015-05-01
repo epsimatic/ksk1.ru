@@ -1536,11 +1536,11 @@ body.ob     .cond-active.cond-active-ob,
 .temp .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
 
-.news-old h3.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
+.news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
-.news-old figure.post-thumb { margin-right: 15px; margin-bottom: 10px; width: 76px; float: left; }
+.news-old .post-news figure.post-thumb { margin-right: 15px; margin-bottom: 10px; width: 76px; float: left; }
 
-.news-old .post-description-text { margin-bottom: 10px; font-family: Times,serif; font-size: 14px; line-height: 1.2em; }
+.news-old .post-news .post-description-text { margin-bottom: 10px; font-family: Times,serif; font-size: 14px; line-height: 1.2em; }
 
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
@@ -4125,7 +4125,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .user-panel { position: absolute; }
 
-    .news-old figure.post-thumb { width: 100px; }
+    .news-old .post-news figure.post-thumb { width: 100px; }
 
     ul.list-days {border-radius: 6px;}
 
@@ -4490,7 +4490,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 75px; }
 
-    .news-old figure.post-thumb { width: 120px; }
+    .news-old .post-news figure.post-thumb { width: 120px; }
 
     .community_square_user { width: 70px !important;}
 
