@@ -1542,6 +1542,15 @@ body.ob     .cond-active.cond-active-ob,
 
 .news-old .post-news .post-description-text { margin-bottom: 10px; font-family: Times,serif; font-size: 14px; line-height: 1.2em; }
 
+.news-old .post-news a { color: #433822; text-decoration: none; transition: border-color 0.7s ease-out 0s; }
+
+.news-old .post-news a:hover,
+.news-old .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
+
+.news-old .news-list-secondary .post-news { border-bottom: 1px solid #fbf8f7; }
+
+.news-old .news-list-secondary .post-news img { margin-left: 15px; }
+
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
 .lcp_paginator {
