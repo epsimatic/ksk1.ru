@@ -284,6 +284,10 @@ body.single-company .navbar,
 .news-old .cat-pills.cat-pills > li.active > a:focus,
 .news-old .cat-pills.cat-pills > li.active > a { background-color: #e79c78; color: #3e2723; font-size: 17px; }
 
+.news-old .news-list_secondary .cat-pills.cat-pills > li.active > a:hover,
+.news-old .news-list_secondary .cat-pills.cat-pills > li.active > a:focus,
+.news-old .news-list_secondary .cat-pills.cat-pills > li.active > a { font-size: 20px; font-weight: 600; }
+
 #pop-btn-shopping a{text-decoration: none;}
 .navbar-nav { white-space: nowrap; }
 
@@ -1534,7 +1538,6 @@ body.ob     .cond-active.cond-active-ob,
 .temp .comments-heading {background-color: #fafafa; margin: 10px 0 20px;}
 
 .temp .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
-
 
 .news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
