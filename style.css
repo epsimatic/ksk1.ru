@@ -1547,11 +1547,11 @@ body.ob     .cond-active.cond-active-ob,
 .news-old .post-news a:hover,
 .news-old .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
 
-.news-old .news-list-secondary .post-news { margin-bottom: 0; border-bottom: 1px solid #f6ebe6; }
+.news-old .news-list_secondary .post-news { margin-bottom: 0; border-bottom: 1px solid #f6ebe6; }
 
 .news-old .post-news .post-actions { border-radius: 5px 0 0 5px; left: 15px; }
 
-.news-old .news-list-secondary .post-news img { margin-left: 15px; }
+.news-old .news-list_secondary .post-news img { margin-left: 15px; }
 
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
