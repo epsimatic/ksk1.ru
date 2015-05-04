@@ -637,20 +637,14 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /*Оформлени модального окна*/
 
-.modal .modal-header { background-color: #ffd740; padding: 5px !important; height: 30px; }
+.modal .modal-header { background-color: #ffd740; padding: 5px !important; height: 42px; }
 
-.modal .modal-header a { color: #4e342e; }
+.modal .modal-header a { position: relative; left: 6px; top: 3px; color: #4e342e; font-size: 15px; }
 
-.modal .modal-header .close { font-size: 24px; }
-
-.modal .modal-body h3.product_title { color: #ff6f00; font-weight: 600; font-size: 21px; margin-bottom: 0; }
-
-.modal .modal-body .category-name { margin-bottom: 10px; }
+.modal .modal-body h3.product_title { color: #ff6f00; font-weight: 700; font-size: 25px; margin-bottom: 0; }
 
 .modal .modal-body p { color: #455a64; }
 
-/*.woocommerce #content div.product p.price,*/
-/*.woocommerce-page #content div.product p.price,*/
 .woocommerce .modal div.product p.price,
 .woocommerce-page .modal div.product p.price { color: #37474f; font-size: 2em; font-weight: 600; margin-bottom: 15px; }
 
@@ -664,7 +658,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /*.modal  .modal-header .modal-title { padding-bottom: 3px; padding-left: 15px; font-size: 27px; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; color: #fff; }*/
 
-/*.modal .modal-header .close { position: relative; right: 11px; top: 4px; font-size: 35px; }*/
+.modal .modal-header .close { position: relative; right: 11px; top: 4px; font-size: 35px; }
 
 .modal .images { padding-right: 20px; }
 
@@ -686,7 +680,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container .tag-6persons:after { content: "6 персон"; }
 
-.category-name { margin-bottom: 10px; font-size: 16px; color: #90a4ae; }
+.modal .category-name { margin-bottom: 10px; font-size: 16px; color: #90a4ae; }
+
+.modal .weight { display: inline-block; background-color: #eceff1; padding: 3px 6px; border-radius: 3px }
 
 .panel.panel-promo { border-top: 6px solid #ffff00; box-shadow: none; background-color: transparent; }
 
