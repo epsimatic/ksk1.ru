@@ -677,7 +677,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container .tag:before { border-radius: 3px; }
 
-.modal .tag-container .tag:after { position: relative; bottom: 3px; margin-left: 9px; font-family: 'Open Sans'; font-size: 15px; }
+.modal .tag-container .tag:after { position: relative; bottom: 3px; margin-left: 9px; font-family: 'Open Sans'; font-size: 15px; color: #333; }
 
 
 .modal .tag-container .tag-new:before { padding: 4px 5px 4px 4px; background-color: #f50057; }
