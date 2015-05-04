@@ -278,21 +278,30 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .dishes .woocommerce > .dish-container:nth-child(3) ~ .btn-collapse { display: block; }
 
 .tag-container { position: absolute; top: -3px; left: 10px; z-index: 5; }
+
 .tag-container .tag:before { font-family: FontAwesome; border-radius: 0 0 5px 5px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.13); display: inline-block; color: #fff; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.07); background-color: grey; cursor: default; margin-right: 4px; font-size: 1.3em; }
 
-.tag-container .tag-new::before { content: ""; padding: 2px 4px; background-color: #f50057; }
+.tag-container .tag-new::before { padding: 2px 4px; background-color: #f50057; }
 
-.tag-container .tag-in-cart::before { content: ""; padding: 2px 7px 2px 4px; background-color: #00C853; }
+.tag-container .tag-new::before { content: ""; }
 
-.tag-container .tag-popular::before { content: ""; padding: 2px 4px; background-color: #FFC400; }
+.tag-container .tag-in-cart { padding: 2px 7px 2px 4px; background-color: #00C853; }
 
-.tag-container .tag-recommended::before { content: ""; padding: 2px 4px; background-color: #00E5FF; }
+.tag-container .tag-in-cart::before { content: ""; }
 
-.tag-container .tag-2persons::before,
-.tag-container .tag-3persons::before,
-.tag-container .tag-4persons::before,
-.tag-container .tag-5persons::before,
-.tag-container .tag-6persons::before { background-color: #536dfe; padding: 1px 4px 2px 5px; }
+.tag-container .tag-popular { padding: 2px 4px; background-color: #FFC400; }
+
+.tag-container .tag-popular::before { content: ""; }
+
+.tag-container .tag-recommended { padding: 2px 4px; background-color: #00E5FF; }
+
+.tag-container .tag-recommended::before { content: ""; }
+
+.tag-container .tag-2persons,
+.tag-container .tag-3persons,
+.tag-container .tag-4persons,
+.tag-container .tag-5persons,
+.tag-container .tag-6persons { background-color: #536dfe; padding: 1px 4px 2px 5px; }
 
 .tag-container .tag-2persons::before { content: "2"; }
 .tag-container .tag-3persons::before { content: "3"; }
@@ -675,10 +684,23 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container .tag-6persons:before { padding: 4px 5px; background-color: #536dfe; }
 
-
 .modal .tag-container .tag-new:after { content: "Новинка"; }
 
-.modal .tag-container .tag-6persons:after { content: "6 персон"; }
+.modal .tag-container .tag-in-cart { content: "В корзине"; }
+
+.modal .tag-container .tag-popular { content: "Популярное"; }
+
+.modal .tag-container .tag-recommended { content: "Рекомендуем"; }
+
+.modal .tag-container .tag-2persons { content: "На 2 персоны"; }
+
+.modal .tag-container .tag-3persons { content: "На 3 персоны"; }
+
+.modal .tag-container .tag-4persons { content: "На 4 персоны"; }
+
+.modal .tag-container .tag-5persons { content: "На 5 персон"; }
+
+.modal .tag-container .tag-6persons:after { content: "На 6 персон или больше"; }
 
 .modal .category-name { margin-bottom: 10px; font-size: 16px; color: #90a4ae; }
 
