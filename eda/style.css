@@ -667,7 +667,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /*.modal  .modal-header .modal-title { padding-bottom: 3px; padding-left: 15px; font-size: 27px; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; color: #fff; }*/
 
-.modal .modal-header .close { position: relative; right: 11px; top: 4px; font-size: 35px; }
+.modal .modal-header .close { position: relative; right: 9px; top: 0; font-size: 35px; }
 
 .modal .images { padding-right: 20px; }
 
