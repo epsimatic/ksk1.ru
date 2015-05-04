@@ -680,7 +680,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container .tag-in-cart:after { content: "В корзине"; }
 
-.modal .tag-container .tag-popular:after { content: "Популярное"; }
+.modal .tag-container .tag-popular:after { content: "Хит продаж"; }
 
 .modal .tag-container .tag-recommended:after { content: "Рекомендуем"; }
 
