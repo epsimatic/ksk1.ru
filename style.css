@@ -2970,7 +2970,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; }
 
-.table-schedule .weekdays .badge.today { box-shadow: 0 0 4px #3d5afe; }
+.table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
 /* </editor-fold> */
 
