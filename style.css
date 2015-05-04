@@ -4088,7 +4088,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .affix { max-height: 100%; max-width: 100%; }
 
-    .header-left-decoration { z-index: 2; position: absolute; left: 0; width: auto; height: 140px; background: url("http://ksk1.ru/img/9may-bg.png") no-repeat left bottom; }
+    .header-left-decoration { z-index: 2; position: absolute; left: 0; width: 200px; height: 140px; background: url("http://ksk1.ru/img/9may-bg.png") no-repeat left bottom; }
 
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
