@@ -637,7 +637,11 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /*Оформлени модального окна*/
 
-.modal .modal-header { background-color: #ffd740; padding: 5px !important; }
+.modal .modal-header { background-color: #ffd740; padding: 5px !important; height: 30px; }
+
+.modal .modal-header a { color: #4e342e; }
+
+.modal .modal-header .close { font-size: 24px; }
 
 .modal .modal-body h3.product_title { color: #ff6f00; font-weight: 600; font-size: 21px; }
 
