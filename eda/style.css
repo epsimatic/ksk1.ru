@@ -678,19 +678,19 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container .tag-new:after { content: "Новинка"; }
 
-.modal .tag-container .tag-in-cart { content: "В корзине"; }
+.modal .tag-container .tag-in-cart:after { content: "В корзине"; }
 
-.modal .tag-container .tag-popular { content: "Популярное"; }
+.modal .tag-container .tag-popular:after { content: "Популярное"; }
 
-.modal .tag-container .tag-recommended { content: "Рекомендуем"; }
+.modal .tag-container .tag-recommended:after { content: "Рекомендуем"; }
 
-.modal .tag-container .tag-2persons { content: "На 2 персоны"; }
+.modal .tag-container .tag-2persons:after { content: "На 2 персоны"; }
 
-.modal .tag-container .tag-3persons { content: "На 3 персоны"; }
+.modal .tag-container .tag-3persons:after { content: "На 3 персоны"; }
 
-.modal .tag-container .tag-4persons { content: "На 4 персоны"; }
+.modal .tag-container .tag-4persons:after { content: "На 4 персоны"; }
 
-.modal .tag-container .tag-5persons { content: "На 5 персон"; }
+.modal .tag-container .tag-5persons:after { content: "На 5 персон"; }
 
 .modal .tag-container .tag-6persons:after { content: "На 6 персон или больше"; }
 
