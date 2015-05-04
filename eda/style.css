@@ -300,6 +300,8 @@ ul.list-stores > li > a > img { width: 150px; }*/
 .tag-container .tag-5persons::before { content: "5"; }
 .tag-container .tag-6persons::before { content: "6+"; }
 
+.modal .tag-container { position: relative; top: 0; left: 0; }
+
 /* <editor-fold desc="Оформление ячейки товара"> */
 
 .dishes.dishes-col-6 .dish-container,
