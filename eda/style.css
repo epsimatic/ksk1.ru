@@ -665,16 +665,16 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .tag-container { position: relative; margin-bottom: 10px; left: 0; }
 
-.modal .tag-container .tag { display: block; box-shadow: none; text-shadow: none; background-color: transparent; font-size: 1.5em; }
+.modal .tag-container .tag { display: block; margin-bottom: 10px; box-shadow: none; text-shadow: none; background-color: transparent; font-size: 1em; }
 
 .modal .tag-container .tag:before { border-radius: 3px; }
 
-.modal .tag-container .tag:after { position: relative; bottom: 3px; margin-left: 9px; font-family: 'Open Sans'; font-size: 15px; color: #333; }
+.modal .tag-container .tag:after { position: relative; bottom: 1px; margin-left: 9px; font-family: 'Open Sans'; font-size: 15px; color: #333; }
 
 
 .modal .tag-container .tag-new:before { padding: 4px 5px 4px 4px; background-color: #f50057; }
 
-.modal .tag-container .tag-6persons:before { padding: 4px 5px; background-color: #536dfe; }
+.modal .tag-container .tag-6persons:before { padding: 0 5px 2px; background-color: #536dfe; }
 
 .modal .tag-container .tag-new:after { content: "Новинка"; }
 
