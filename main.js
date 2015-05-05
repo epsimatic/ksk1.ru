@@ -207,7 +207,7 @@ if (jQuery('.btn-scroll-up').length) {
         jQuery('html,body').animate({ scrollTop: 0 }, 'slow');
         btn_home.blur();
         event.preventDefault();
-    }).appendTo('body');
+    }).appendTo('footer');
 
     jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > offset)
