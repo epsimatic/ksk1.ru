@@ -47,7 +47,7 @@ function setMapHeight() {
 
 
 // Кнопки НавПанели и выдвижные панельки
-jQuery('.triggers-weather').click(jQuery('#btn-feature-info').click);
+jQuery('.triggers-weather').click(jQuery('#btn-feature-info').click());
 
 jQuery('.btn-feature').click(function () {
     var was_active = jQuery(this).hasClass('active');
