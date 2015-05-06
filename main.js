@@ -124,7 +124,7 @@ jQuery('#navpanel-info').on('first-load', function () {
         map = L.map('panel-map');
         map.setView([56.6132, 57.7689], 13);
         var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-            minZoom: 0,
+            minZoom: 8,
             maxZoom: 20,
             attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
         });
