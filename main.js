@@ -39,8 +39,9 @@ function setMapHeight() {
         }
     });
     if (map) { // Уведомить leaflet, что высота поменялась. Несколько раз (костыль)
-        window.setTimeout(map.invalidateSize, 200);
-        window.setTimeout(map.invalidateSize, 400);
+        window.setTimeout(map.invalidateSize, 100);
+        window.setTimeout(map.invalidateSize, 500);
+        window.setTimeout(map.invalidateSize, 1000);
     }
 }
 
