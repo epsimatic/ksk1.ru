@@ -75,7 +75,7 @@ jQuery('#navpanel-info').on('first-load', function () {
     // Загружаем афишу
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {
         setMapHeight();
-        jQuery('.movie-poster').each(function (/*element*/) {
+        jQuery('.movie-poster').each(function() {
             jQuery(this).popover({
                 content: jQuery('#content-' + jQuery(this)[0].id).html(),
                 html: true,
@@ -123,33 +123,28 @@ jQuery('#navpanel-info').on('first-load', function () {
 
         map = L.map('panel-map');
         map.setView([56.6132, 57.7689], 13);
-        var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+        L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
             minZoom: 8,
             maxZoom: 20,
-            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
-        });
-        OpenMapSurfer_Roads.addTo(map);
+            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+                         'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+        }).addTo(map);
 
         LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', function () {
             L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
-                options: { },
                 initialize: function (options) {
                     //noinspection JSUnusedAssignment
                     options = L.Util.setOptions(this, options);
                 },
                 /**
-                 * @return {string}
+                 * @return {string} Service URL
                  */
                 GetServiceUrl: function (qry) {
-                    var parameters = L.Util.extend({
-                        q: "Красноуфимск " + qry,
-                        format: 'json'
-                    }, this.options);
+                    var parameters = L.Util.extend({q: "Красноуфимск " + qry, format: 'json'}, this.options);
                     return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
                 },
                 ParseJSON: function (data) {
-                    if (data.length == 0)
-                        return [];
+                    if (data.length == 0) return [];
                     var results = [];
                     for (var i = 0; i < data.length; i++)
                         results.push(new L.GeoSearch.Result(data[i].lon, data[i].lat, data[i].display_name));
