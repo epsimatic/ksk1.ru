@@ -1648,7 +1648,7 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Отправить SMS»"> */
-.panel-sms .panel-body {border-bottom: 4px solid #edb194; padding: 15px 20px 10px;}
+.panel-sms .panel-body {border-bottom: 4px solid #edb194; padding: 15px 20px 10px;text-align: center;}
 
 .panel-sms .panel-body img {margin: 0 2px 3%; padding: 5px; width: 53px;}
 
