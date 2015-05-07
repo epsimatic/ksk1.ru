@@ -509,11 +509,14 @@
     function LoadRes(src, type, callback) {
         resName = src.split("/").reverse()[0];
         if (libsAvail.indexOf(resName) != -1) {
+            console.log("Available already: " + resName + " / " + src);
             if (typeof (callback) == "function") callback();
         } else if (libsLoading.indexOf(resName) != -1) {
+            console.log("Still loading, retry: " + resName + " / " + src);
             window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
         } else {
             window.libsLoading.push(resName);
+            console.log("Loading " + resName + " / " + src);
             var e = document.createElement(type);
             if (type == 'script') {
                 e.type = "text/javascript";
@@ -525,10 +528,11 @@
                 e.rel = "stylesheet";
             }
             e.onerror = function () {
-                console.error("Error loading " + src)
+                console.error("Error loading " + src);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
             };
             e.onload = function () {
+                console.log("Loaded " + resName + " / " + src);
                 window.libsAvail.push(resName);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
                 if (typeof (callback) == "function") callback();
