@@ -1547,7 +1547,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .news-old .news-list_secondary .post-news img { margin-right: 15px; }
 
-.news-old .panel-news .post-news .post-actions { left: 10px; bottom: 10px; border-radius: 5px 0 0; }
+.news-old .panel-news .post-news .post-actions { left: 10px; bottom: 0; border-radius: 5px 0 0; }
 
 .news-old .post-news.type-radio audio { width: 92%; }
 
