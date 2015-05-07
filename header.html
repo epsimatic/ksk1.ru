@@ -511,7 +511,7 @@
         var resName = src.split("/").reverse()[0];
         if (libsAvail.indexOf(resName) != -1) {
             console.log("Available already: «" + resName + "» " + src +
-                        (typeof (callback) == "function") ? ", running callback" : "");
+                    ((typeof (callback) == "function") ? ", running callback" : ""));
             if (typeof (callback) == "function") callback();
         } else if (libsLoading.indexOf(resName) != -1) {
             console.log("Still loading, retry: «" + resName + "» " + src);
@@ -536,7 +536,7 @@
             e.onload = function () {
                 resName = src.split("/").reverse()[0];
                 console.log("Loaded «" + resName + "» " + src +
-                        (typeof (callback) == "function") ? ", running callback" : "");
+                        ((typeof (callback) == "function") ? ", running callback" : ""));
                 window.libsAvail.push(resName);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
                 if (typeof (callback) == "function") callback();
