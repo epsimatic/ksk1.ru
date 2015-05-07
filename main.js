@@ -4,7 +4,7 @@
 
 // Поисковая строка
 (function () {
-    var meta_generator = jQuery("meta[name='generator']").attr("content");
+    const meta_generator = jQuery("meta[name='generator']").attr("content");
     if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
         // Пусто. У сайтов на WordPress свой поиск
     } else {
@@ -14,8 +14,8 @@
             cx = '003704283744183876190:woiuqgnl_eg';
         }
         jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
-        jQuery('#searchbox-lazy').hover(function () {
-            var searchbox_lazy = jQuery(this);
+        jQuery('#searchbox-lazy').one('hover', function () {
+            const searchbox_lazy = jQuery(this);
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx, function () {
                 window.setTimeout(function () {
                     searchbox_lazy.remove();
@@ -31,11 +31,12 @@ var map;
 function setMapHeight() {
     //FIXME: Не устанавливать высоту для мобильных устройств!
     jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
-        var this_height = jQuery(this).height();
-        var panel_map = jQuery('.panel-map');
+        const this_height = jQuery(this).height();
+        const panel_map = jQuery('.panel-map');
         if (this_height > panel_map.height()) {
-            var panel_map_map = jQuery('#panel-map');
-            panel_map_map.css('height', this_height - (panel_map_map.offset().top - panel_map.offset().top));
+            const panel_map_map = jQuery('#panel-map');
+            panel_map_map.css('height',
+                this_height - (panel_map_map.offset().top - panel_map.offset().top));
         }
     });
     if (map) { // Уведомить leaflet, что высота поменялась. Несколько раз (костыль)
@@ -47,11 +48,11 @@ function setMapHeight() {
 
 
 // Кнопки НавПанели и выдвижные панельки
-jQuery('.triggers-weather').click(jQuery('#btn-feature-info').click());
+jQuery('.triggers-weather').click( jQuery('#btn-feature-info').click );
 
 jQuery('.btn-feature').click(function () {
-    var was_active = jQuery(this).hasClass('active');
-    var potential_cond_active = jQuery('.potential-cond-active');
+    const was_active = jQuery(this).hasClass('active'),
+          potential_cond_active = jQuery('.potential-cond-active');
     jQuery('.navpanel, .btn-feature').removeClass('active');
     potential_cond_active.removeClass('cond-active');
     if (!was_active) {
@@ -68,7 +69,7 @@ jQuery('.btn-collapse').click(function () {
     jQuery('.potential-cond-active').addClass('cond-active');
 });
 
-jQuery('#navpanel-info').on('first-load', function () {
+jQuery('#navpanel-info').one('first-load', function () {
 
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
@@ -137,9 +138,7 @@ jQuery('#navpanel-info').on('first-load', function () {
                     //noinspection JSUnusedAssignment
                     options = L.Util.setOptions(this, options);
                 },
-                /**
-                 * @return {string} Service URL
-                 */
+                /** @return {string} Service URL */
                 GetServiceUrl: function (qry) {
                     var parameters = L.Util.extend({q: "Красноуфимск " + qry, format: 'json'}, this.options);
                     return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
@@ -162,9 +161,6 @@ jQuery('#navpanel-info').on('first-load', function () {
             }).addTo(map);
         });
     });
-
-// Отключаемся от события
-    jQuery(this).unbind('first-load');
 });
 
 //  Openstat
@@ -190,7 +186,7 @@ LoadJS('//openstat.net/cnt.js');
 // noscript: <img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/>
 
 // Кнопка «Наверх»
-var offset = 1000; // px from page top
+const topOffsetToShowBtn = 1000;
 if (jQuery('.btn-scroll-up').length) {
     // У нас уже есть кнопка «Наверх», ничего делать не надо
 } else {
@@ -206,7 +202,7 @@ if (jQuery('.btn-scroll-up').length) {
     }).appendTo('footer.hidden-print');
 
     jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > offset)
+        if (jQuery(this).scrollTop() > topOffsetToShowBtn)
             btn_home.removeClass("inactive");
         else
             btn_home.addClass("inactive");
