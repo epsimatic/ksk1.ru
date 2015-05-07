@@ -8,3 +8,18 @@
         // Другие опции -- http://gregfranko.com/jquery.tocify.js/
     });
 </script>
+
+<!-- Или -->
+
+<script>
+    LoadJS("http://ksk1.ru/vendor/tocify/libs/jqueryui/jquery-ui-1.9.1.custom.min.js", function(){
+        LoadJS("http://ksk1.ru/vendor/tocify/src/javascripts/jquery.tocify.min.js", function(){
+            jQuery(document).ready(function () {
+                jQuery("#toc").tocify({ context: "КОНТЕЙНЕР", selectors: "h3,h4",
+                    hashGenerator: "pretty", extendPage: false, ignoreSelector: ".wpcf7-form *",
+                    scrollTo: (jQuery("body").hasClass("admin-bar") ? 52 : 20)});
+                // Другие опции -- http://gregfranko.com/jquery.tocify.js/
+            });
+        });
+    });
+</script>
