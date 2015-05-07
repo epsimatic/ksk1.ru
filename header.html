@@ -496,27 +496,45 @@
 
 <script type="application/javascript">
 
-    window.libsLoaded  = [];
+    if (!Array.prototype.indexOf) {
+        Array.prototype.indexOf = function(obj, start) {
+            for (var i = (start || 0), j = this.length; i < j; i++) {
+                if (this[i] === obj) { return i; }
+            }
+            return -1;
+        }
+    }
+    window.libsAvail   = [];
     window.libsLoading = [];
     function LoadRes(src, type, callback) {
-        var e = document.createElement(type);
-        if (type == 'script') {
-            e.type = "text/javascript";
-            e.src = src;
-            e.async = true;
+        resName = src.split("/").reverse()[0];
+        if (libsAvail.indexOf(resName) != -1) {
+            if (typeof (callback) == "function") callback();
+        } elseif (libsLoading.indexOf(resName) != -1) {
+            window.setTimeout( function() { LoadRes(src, type, callback) });
         } else {
-            e.type = "text/css";
-            e.href = src;
-            e.rel = "stylesheet";
+            window.libsLoading.push(resName);
+            var e = document.createElement(type);
+            if (type == 'script') {
+                e.type = "text/javascript";
+                e.src = src;
+                e.async = true;
+            } else {
+                e.type = "text/css";
+                e.href = src;
+                e.rel = "stylesheet";
+            }
+            e.onerror = function () {
+                console.error("Error loading " + src)
+                window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+            };
+            e.onload = function () {
+                window.libsAvail.push(resName);
+                window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+                if (typeof (callback) == "function") callback();
+            }
+            document.getElementsByTagName("head")[0].appendChild(e);
         }
-        e.onerror = function () {
-            console.error("Error loading " + src)
-        };
-        e.onload = function () {
-            if (typeof (callback) == "function")
-                callback();
-        }
-        document.getElementsByTagName("head")[0].appendChild(e);
     }
     function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
     function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
