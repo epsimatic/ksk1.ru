@@ -2950,6 +2950,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #city-transpost .table tr > td { vertical-align: middle; }
 
+#city-transpost .table tr > td:first-child .badge { padding: 4px 5px; border-radius: 3px; background-color: #a1acb2; }
+
 .table-schedule th, .table-schedule td { vertical-align: middle !important; }
 
 .table-schedule th { color: #666; }
