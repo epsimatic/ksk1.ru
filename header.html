@@ -507,7 +507,7 @@
     window.libsAvail   = [];
     window.libsLoading = [];
     function LoadRes(src, type, callback) {
-        resName = src.split("/").reverse()[0];
+        var resName = src.split("/").reverse()[0];
         if (libsAvail.indexOf(resName) != -1) {
             console.log("Available already: «" + resName + "» " + src +
                         (typeof (callback) == "function") ? ", running callback" : "");
