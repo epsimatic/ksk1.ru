@@ -532,6 +532,7 @@
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
             };
             e.onload = function () {
+                resName = src.split("/").reverse()[0];
                 console.log("Loaded " + resName + " / " + src);
                 window.libsAvail.push(resName);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
