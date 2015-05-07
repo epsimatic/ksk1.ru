@@ -1553,6 +1553,11 @@ body.ob     .cond-active.cond-active-ob,
 
 .news-old .post-news.type-radio .post-description-text { display: none; }
 
+.news-old .news-list_secondary .post-news.type-radio { display: table; width: 100%; }
+
+.news-old .news-list_secondary .post-news.type-radio .post-title,
+.news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
+
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
 .lcp_paginator {
