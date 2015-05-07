@@ -496,7 +496,9 @@
 
 <script type="application/javascript">
 
-    function LoadRes(src, type, onload) {
+    window.libsLoaded  = [];
+    window.libsLoading = [];
+    function LoadRes(src, type, callback) {
         var e = document.createElement(type);
         if (type == 'script') {
             e.type = "text/javascript";
@@ -510,8 +512,10 @@
         e.onerror = function () {
             console.error("Error loading " + src)
         };
-        if (typeof (onload) == "function")
-            e.onload = onload;
+        e.onload = function () {
+            if (typeof (callback) == "function")
+                callback();
+        }
         document.getElementsByTagName("head")[0].appendChild(e);
     }
     function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
