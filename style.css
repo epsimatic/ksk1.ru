@@ -2977,6 +2977,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
+#city-transpost .table tr > th { text-align: center; }
+
+#city-transpost .table tr > td { vertical-align: middle; }
+
 /* </editor-fold> */
 
 
