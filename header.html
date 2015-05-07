@@ -510,8 +510,8 @@
         resName = src.split("/").reverse()[0];
         if (libsAvail.indexOf(resName) != -1) {
             if (typeof (callback) == "function") callback();
-        } elseif (libsLoading.indexOf(resName) != -1) {
-            window.setTimeout( function() { LoadRes(src, type, callback) });
+        } else if (libsLoading.indexOf(resName) != -1) {
+            window.setTimeout( function() { LoadRes(src, type, callback); });
         } else {
             window.libsLoading.push(resName);
             var e = document.createElement(type);
