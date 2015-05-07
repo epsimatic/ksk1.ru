@@ -497,24 +497,23 @@
 <script type="application/javascript">
 
     function LoadRes(src, type, onload) {
-        var link = document.createElement(type);
+        var e = document.createElement(type);
         if (type == 'script') {
-            link.type = "text/javascript";
-            link.src = src;
-            link.async = true;
+            e.type = "text/javascript";
+            e.src = src;
+            e.async = true;
         } else {
-            link.type = "text/css";
-            link.href = src;
-            link.rel = "stylesheet";
+            e.type = "text/css";
+            e.href = src;
+            e.rel = "stylesheet";
         }
-        link.onerror = function () {
-            console.log("Error loading " + src)
+        e.onerror = function () {
+            console.error("Error loading " + src)
         };
         if (typeof (onload) == "function")
-            link.onload = onload;
-        document.getElementsByTagName("head")[0].appendChild(link);
+            e.onload = onload;
+        document.getElementsByTagName("head")[0].appendChild(e);
     }
-
     function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
     function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
 
