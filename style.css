@@ -4514,6 +4514,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .community_square_user { width: 70px !important;}
 
+    .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: 0; }
+
     .site-tv .logo-tv img { margin-top: 3px; width: 85%; }
 
     .site-tv .page-heading { padding: 0; }
