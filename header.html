@@ -504,6 +504,7 @@
             return -1;
         }
     }
+
     window.libsAvail   = [];
     window.libsLoading = [];
     function LoadRes(src, type, callback) {
@@ -548,35 +549,23 @@
 
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
-        var url = document.location.href,
-                cat = /cat/,
-                timetable = /timetable/,
-                karta = /karta/,
-                copy = /copy/,
-                reklama = /r-site/,
-                agenda = /agenda/,
-                eda = /eda/,
-                taxi = /taxi/,
-                body = document.getElementsByTagName("body")[0];
+        const url = document.location.href;
+        const classList = document.getElementsByTagName("body")[0].classList;
 
-        if (url.match(cat)) {
-            body.classList.add('cat');
-        } else if (url.match(reklama)) {
-            body.classList.add('site-pr');
-        } else if (url.match(agenda)) {
-            body.classList.add('agenda');
-        } else if (url.match(karta)) {
-            body.classList.add('karta');
-        } else if (url.match(copy)) {
-            body.classList.add('copy');
-        } else if (url.match(timetable)) {
-            body.classList.add('timetable');
-        } else if (url.match(eda)) {
-            body.classList.add('eda');
-        } else if (url.match(taxi)) {
-            body.classList.add('taxi');
+        if (url.match(/cat/)) {
+            classList.add('cat');
+        } else if (url.match(/agenda/)) {
+            classList.add('agenda');
+        } else if (url.match(/karta/)) {
+            classList.add('karta');
+        } else if (url.match(/copy/)) {
+            classList.add('copy');
+        } else if (url.match(/timetable/)) {
+            classList.add('timetable');
+        } else if (url.match(/eda/)) {
+            classList.add('eda');
+        } else if (url.match(/taxi/)) {
+            classList.add('taxi');
         }
-
-
     })();
 </script>
