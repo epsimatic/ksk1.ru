@@ -4315,7 +4315,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-slide-block:first-child img {max-height: none;}
 
-    .btn-home {display: block; margin-left: 950px; visibility: visible;}
+    .btn-home {display: block; margin-left: 960px; visibility: visible;}
 
     .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
 
@@ -4469,7 +4469,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-slide-block:last-child .list-group-item {padding-right: 10px; padding-left: 5px;}
 
-    .btn-home {margin-left: 1150px;}
+    .btn-home {margin-left: 1160px;}
 
     .kaleidoscope__item__tooltip {height: 94px;}
 
