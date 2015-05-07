@@ -537,7 +537,7 @@
                 window.libsAvail.push(resName);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
                 if (typeof (callback) == "function") callback();
-            }
+            };
             document.getElementsByTagName("head")[0].appendChild(e);
         }
     }
