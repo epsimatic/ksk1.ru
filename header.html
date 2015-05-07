@@ -511,7 +511,7 @@
         if (libsAvail.indexOf(resName) != -1) {
             if (typeof (callback) == "function") callback();
         } else if (libsLoading.indexOf(resName) != -1) {
-            window.setTimeout( function() { LoadRes(src, type, callback); });
+            window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
         } else {
             window.libsLoading.push(resName);
             var e = document.createElement(type);
