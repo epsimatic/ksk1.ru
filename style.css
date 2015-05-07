@@ -407,11 +407,14 @@ body.single-company .navbar,
 
 .panel.panel-pricing .panel-heading { padding: 25px; }
 
-.col-md-3:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #2196f3; }
-.col-md-3:nth-of-type(2) .panel.panel-pricing .panel-heading { background-color: #f06292; }
-.col-md-3:nth-of-type(3) .panel.panel-pricing .panel-heading { background-color: #ffd740; }
-.col-md-3:nth-of-type(3) .panel.panel-pricing .panel-heading h3 { color: #3e2723; }
-.col-md-3:nth-of-type(4) .panel.panel-pricing .panel-heading { background-color: #3f51b5; color: #fff; }
+/*.panel-pricing-container:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #2196f3; }*/
+.panel-pricing-container:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #f06292; }
+.panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading { background-color: #ffd740; }
+.panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading h3 { color: #3e2723; }
+.panel-pricing-container:nth-of-type(3) .panel.panel-pricing .panel-heading { background-color: #3f51b5; color: #fff; }
+
+
+.panel-pricing-group { margin-bottom: 40px; }
 
 .panel.panel-pricing .panel-heading h3 { margin: 0 0 3px; padding: 0; font-size: 23px; text-transform: uppercase; }
 
@@ -429,7 +432,7 @@ body.single-company .navbar,
 
 .panel.panel-pricing .list-group-item > .badge { float: none; border-radius: 3px; padding: 2px 4px 3px; background-color: #b0bec5; }
 
-.panel.panel-pricing .list-group-heading { color: #6d4c41; }
+.panel.panel-pricing .list-group-heading { color: #6d4c41; padding: 10px; }
 
 .panel.panel-pricing .list-group-heading > .badge { background-color: #ffa000; }
 
@@ -1547,6 +1550,17 @@ body.ob     .cond-active.cond-active-ob,
 
 .news-old .news-list_secondary .post-news img { margin-right: 15px; }
 
+.news-old .panel-news .post-news .post-actions { left: 10px; bottom: 0; border-radius: 5px 0 0; }
+
+.news-old .post-news.type-radio audio { width: 88%; }
+
+.news-old .post-news.type-radio .post-description-text { display: none; }
+
+.news-old .news-list_secondary .post-news.type-radio { display: table; width: 100%; }
+
+.news-old .news-list_secondary .post-news.type-radio .post-title,
+.news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
+
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
 .lcp_paginator {
@@ -1637,7 +1651,7 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Отправить SMS»"> */
-.panel-sms .panel-body {border-bottom: 4px solid #edb194; padding: 15px 20px 10px;}
+.panel-sms .panel-body {border-bottom: 4px solid #edb194; padding: 15px 20px 10px;text-align: center;}
 
 .panel-sms .panel-body img {margin: 0 2px 3%; padding: 5px; width: 53px;}
 
@@ -4134,6 +4148,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-old .post-news figure.post-thumb { width: 100px; }
 
+    .news-old .post-news.type-radio audio { width: 92%; }
+
     ul.list-days {border-radius: 6px;}
 
     .site-rk .per50,
@@ -4302,7 +4318,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-slide-block:first-child img {max-height: none;}
 
-    .btn-home {display: block; margin-left: 950px; visibility: visible;}
+    .btn-home {display: block; margin-left: 960px; visibility: visible;}
 
     .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
 
@@ -4387,6 +4403,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 270px; }
 
+    .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
+
     .site-tv .logo-tv { text-align: left; }
 
     .site-tv .logo-tv img { width: 100%; padding: 0; }
@@ -4456,7 +4474,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-slide-block:last-child .list-group-item {padding-right: 10px; padding-left: 5px;}
 
-    .btn-home {margin-left: 1150px;}
+    .btn-home {margin-left: 1160px;}
 
     .kaleidoscope__item__tooltip {height: 94px;}
 
@@ -4500,6 +4518,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .news-old .post-news figure.post-thumb { width: 120px; }
 
     .community_square_user { width: 70px !important;}
+
+    .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: 0; }
 
     .site-tv .logo-tv img { margin-top: 3px; width: 85%; }
 
