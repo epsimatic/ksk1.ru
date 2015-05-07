@@ -2944,7 +2944,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-#transport-schedule-tabs.nav-tabs { padding-bottom: 20px; }
+#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; }
 
 #city-transpost .table tr > th { text-align: center; }
 
