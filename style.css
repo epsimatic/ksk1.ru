@@ -2944,6 +2944,12 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
+#transport-schedule-tabs.nav-tabs { padding-bottom: 20px; }
+
+#city-transpost .table tr > th { text-align: center; }
+
+#city-transpost .table tr > td { vertical-align: middle; }
+
 .table-schedule th, .table-schedule td { vertical-align: middle !important; }
 
 .table-schedule th { color: #666; }
@@ -2976,10 +2982,6 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; }
 
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
-
-#city-transpost .table tr > th { text-align: center; }
-
-#city-transpost .table tr > td { vertical-align: middle; }
 
 /* </editor-fold> */
 
