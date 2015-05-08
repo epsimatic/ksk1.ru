@@ -74,8 +74,9 @@ jQuery('#navpanel-info').one('first-load', function () {
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
 
-    // Загружаем афишу
-    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {
+    // Загружаем афишу и кино
+    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {setMapHeight();});
+    jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
         jQuery('.movie-poster').each(function() {
             jQuery(this).popover({
