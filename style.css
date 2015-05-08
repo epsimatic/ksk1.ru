@@ -2501,7 +2501,8 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-cat .btn {margin-left: 12px; margin-right: 0;}
 
 .panel-cat > .panel-body .btn-primary .badge {font-weight: 600; background-color: rgba(255,255,255,0.8); color: #428BCA; padding: 0.3em 0.9em 0.4em; margin-left: 3px;}
-
+.is_admin .cat-warning{color: #ff0;}
+.is_admin .cat-error{color: red;}
 /*Кнопки потеряно найдено*/
 .subcat__title_396 , .subcat__title_397 {
     background-color: #0080C8;
