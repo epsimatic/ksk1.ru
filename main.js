@@ -41,9 +41,8 @@ function setMapHeight() {
     });
     if (map) { // Уведомить leaflet, что высота поменялась. Несколько раз (костыль)
         map.invalidateSize();
-        window.setTimeout(map.invalidateSize, 100);
-        window.setTimeout(map.invalidateSize, 500);
-        window.setTimeout(map.invalidateSize, 1000);
+        window.setTimeout(map.invalidateSize, 300);
+        window.setTimeout(map.invalidateSize, 800);
     }
 }
 
@@ -76,7 +75,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
 
     // Загружаем афишу и кино
-    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", function () {setMapHeight();});
+    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight );
     jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
         jQuery('.movie-poster').each(function() {
