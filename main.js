@@ -40,6 +40,7 @@ function setMapHeight() {
         }
     });
     if (map) { // Уведомить leaflet, что высота поменялась. Несколько раз (костыль)
+        map.invalidateSize();
         window.setTimeout(map.invalidateSize, 100);
         window.setTimeout(map.invalidateSize, 500);
         window.setTimeout(map.invalidateSize, 1000);
