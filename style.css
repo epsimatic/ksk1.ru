@@ -884,34 +884,34 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .cat { border-top: 1px solid #82b1ff; }
 
-.navpanel #panel-agenda .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
+.navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
-.navpanel #panel-agenda .today-movies { display: table-row; }
-.navpanel #panel-agenda .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 120px; }
+.navpanel #panel-movies .today-movies { display: table-row; }
+.navpanel #panel-movies .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 120px; }
 
-.navpanel #panel-agenda .popover { padding: 10px !important; min-width: 300px; }
+.navpanel #panel-movies .popover { padding: 10px !important; min-width: 300px; }
 
-.navpanel #panel-agenda .popover-content { min-width: 300px; padding: 0 10px 0 0 !important; }
+.navpanel #panel-movies .popover-content { min-width: 300px; padding: 0 10px 0 0 !important; }
 
-.navpanel #panel-agenda .popover-content .movie-poster { padding: 0; }
+.navpanel #panel-movies .popover-content .movie-poster { padding: 0; }
 
-.navpanel #panel-agenda .popover-content .movie-poster img { width: 100%; }
+.navpanel #panel-movies .popover-content .movie-poster img { width: 100%; }
 
-.navpanel #panel-agenda .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; font-size: 18px; }
+.navpanel #panel-movies .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; font-size: 18px; }
 
-.navpanel #panel-agenda .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+.navpanel #panel-movies .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
-.navpanel #panel-agenda .popover-content .movie-tagline { line-height: 1.25em; color: #607d8b; font-size: .9em; }
+.navpanel #panel-movies .popover-content .movie-tagline { line-height: 1.25em; color: #607d8b; font-size: .9em; }
 
-.navpanel #panel-agenda .popover-content .production-flag { padding-right: 2px; }
+.navpanel #panel-movies .popover-content .production-flag { padding-right: 2px; }
 
-.navpanel #panel-agenda .popover-content .genres,
-.navpanel #panel-agenda .popover-content .genre { color: #999999; font-size: 12px; padding-left: 3px; }
+.navpanel #panel-movies .popover-content .genres,
+.navpanel #panel-movies .popover-content .genre { color: #999999; font-size: 12px; padding-left: 3px; }
 
-.navpanel #panel-agenda .popover-content .star-rating { margin: 4px 0; }
+.navpanel #panel-movies .popover-content .star-rating { margin: 4px 0; }
 
-.navpanel #panel-agenda .popover-content .movie-price,
-.navpanel #panel-agenda .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
+.navpanel #panel-movies .popover-content .movie-price,
+.navpanel #panel-movies .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
 .navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; }
 
 .navpanel #panel-agenda .panel-events .list-group-item:hover,
@@ -2519,7 +2519,8 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-cat .btn {margin-left: 12px; margin-right: 0;}
 
 .panel-cat > .panel-body .btn-primary .badge {font-weight: 600; background-color: rgba(255,255,255,0.8); color: #428BCA; padding: 0.3em 0.9em 0.4em; margin-left: 3px;}
-
+.is_admin .cat-warning{color: #ff0;}
+.is_admin .cat-error{color: red;}
 /*Кнопки потеряно найдено*/
 .subcat__title_396 , .subcat__title_397 {
     background-color: #0080C8;

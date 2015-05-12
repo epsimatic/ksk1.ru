@@ -165,16 +165,16 @@
         <div class="col-xs-12 subpanel" id="weather-panel"></div>
     </div>
 
-    <div class="col-xs-12 col-sm-4 subpanel" id="panel-agenda">
+    <div class="col-xs-12 col-sm-4 subpanel">
         <h4>Сегодня в кино <a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i
                 class="fa fa-arrow-right"></i></a></h4>
-
-        <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+        <div id="panel-movies">
+            <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
         </div>
-        <h4>Сегодня в городе <a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Афиша <i
-                class="fa fa-arrow-right"></i></a></h4>
-
-        <div class="text-center" style="margin: 62px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+        <div id="panel-agenda">
+            <h4>Сегодня в городе <a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Афиша <i class="fa fa-arrow-right"></i></a></h4>
+            <div class="text-center" style="margin: 62px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+        </div>
     </div>
 
     <div class="col-xs-12 col-sm-4 panel-map subpanel">
@@ -504,19 +504,21 @@
             return -1;
         }
     }
+
     window.libsAvail   = [];
     window.libsLoading = [];
     function LoadRes(src, type, callback) {
-        resName = src.split("/").reverse()[0];
+        var resName = src.split("/").reverse()[0];
         if (libsAvail.indexOf(resName) != -1) {
-            console.log("Available already: " + resName + " / " + src);
+            console.log("Available already: «" + resName + "» " + src +
+                    ((typeof (callback) == "function") ? ", running callback" : ""));
             if (typeof (callback) == "function") callback();
         } else if (libsLoading.indexOf(resName) != -1) {
-            console.log("Still loading, retry: " + resName + " / " + src);
+            console.log("Still loading, retry: «" + resName + "» " + src);
             window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
         } else {
             window.libsLoading.push(resName);
-            console.log("Loading " + resName + " / " + src);
+            console.log("Loading «" + resName + "» " + src);
             var e = document.createElement(type);
             if (type == 'script') {
                 e.type = "text/javascript";
@@ -533,7 +535,8 @@
             };
             e.onload = function () {
                 resName = src.split("/").reverse()[0];
-                console.log("Loaded " + resName + " / " + src);
+                console.log("Loaded «" + resName + "» " + src +
+                        ((typeof (callback) == "function") ? ", running callback" : ""));
                 window.libsAvail.push(resName);
                 window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
                 if (typeof (callback) == "function") callback();
@@ -546,35 +549,23 @@
 
     //TODO: отрефакторить, заменить на CSS вообще.
     (function () {
-        var url = document.location.href,
-                cat = /cat/,
-                timetable = /timetable/,
-                karta = /karta/,
-                copy = /copy/,
-                reklama = /r-site/,
-                agenda = /agenda/,
-                eda = /eda/,
-                taxi = /taxi/,
-                body = document.getElementsByTagName("body")[0];
+        const url = document.location.href;
+        const classList = document.getElementsByTagName("body")[0].classList;
 
-        if (url.match(cat)) {
-            body.classList.add('cat');
-        } else if (url.match(reklama)) {
-            body.classList.add('site-pr');
-        } else if (url.match(agenda)) {
-            body.classList.add('agenda');
-        } else if (url.match(karta)) {
-            body.classList.add('karta');
-        } else if (url.match(copy)) {
-            body.classList.add('copy');
-        } else if (url.match(timetable)) {
-            body.classList.add('timetable');
-        } else if (url.match(eda)) {
-            body.classList.add('eda');
-        } else if (url.match(taxi)) {
-            body.classList.add('taxi');
+        if (url.match(/cat/)) {
+            classList.add('cat');
+        } else if (url.match(/agenda/)) {
+            classList.add('agenda');
+        } else if (url.match(/karta/)) {
+            classList.add('karta');
+        } else if (url.match(/copy/)) {
+            classList.add('copy');
+        } else if (url.match(/timetable/)) {
+            classList.add('timetable');
+        } else if (url.match(/eda/)) {
+            classList.add('eda');
+        } else if (url.match(/taxi/)) {
+            classList.add('taxi');
         }
-
-
     })();
 </script>
