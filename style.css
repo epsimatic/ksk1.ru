@@ -4434,6 +4434,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 7px; line-height: 1.2em; font-size: .9em; }
 
+    .navpanel #panel-agenda .post-event figure.post-thumb img { width: 90px; }
+
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
 
