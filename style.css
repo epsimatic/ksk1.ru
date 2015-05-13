@@ -956,7 +956,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 body.news .navpanel .panel-map .input-group,
 body.news .navpanel .cat .input-group { display: none; }
 
-.navpanel .cat a { margin-top: 5px; margin-bottom: 5px; background-color: #f5f5f5; padding: 10px 10px 12px; color: #37474f; display: block; text-align: center; font-size: 13px }
+.navpanel .cat a { margin-top: 5px; margin-bottom: 5px; /*background-color: #f5f5f5*/; padding: 10px 10px 12px; color: #37474f; display: block; text-align: center; font-size: 13px }
 
 .navpanel .cat > a:first-child { background-color: transparent; margin-bottom: 0; margin-top: 0; padding: 0 !important; }
 
@@ -3547,13 +3547,13 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 100%; }
 
 @media (min-width: 480px) {
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
+    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; font-size: 23px; }
 
     .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; }
 
     .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 200px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 25px; }
+    .panel-event .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 33px; }
 
 }
 
