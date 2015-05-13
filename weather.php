@@ -9,11 +9,16 @@ $humidity = $parsed_json->{'current_observation'}->{'relative_humidity'};
 $feelslike_c = intval($parsed_json->{'current_observation'}->{'feelslike_c'});
 if ($temp_c == $feelslike_c) $temp = 'Температура ' . $temp_c . '°';
 else  $temp = 'Температура ' . $temp_c . '°, Ощущается как ' . $feelslike_c . '°';
-if (is_nan($temp_c)) {
-    header("Status: 503 Internal server error");
-    die ('Error saving weather.html temp_c isNAN');
-}
+$description = $parsed_json->{'current_observation'}->{'weather'};
+$icon = $parsed_json->{'current_observation'}->{'icon'};
 $icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
+$img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
+if (is_nan($temp_c) || $description=="" ||$icon=="" ) {
+    header("Status: 503 Internal server error");
+    echo 'Weatherunderground is offline, using Yandex\n';
+    echo "Temp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon;
+   $text = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
+} else {
 //$icon_url = "http://icons.wxug.com/i/c/k/clear.gif";
 if ($temp_c > 0) $sign = "+"; else $sign = "";
 $week = array(
@@ -30,12 +35,13 @@ $text = '<div class="weather-block" title="По данным на ' . $week[date
 Давление ' . $pressure . ' мм рт.ст.
 Ветер ' . $wind . ' м/с
 Влажность ' . $humidity . PHP_EOL
-    . $parsed_json->{'current_observation'}->{'weather'} . '
+    . $description . '
 Щёлкните для прогноза">
             <img class="weather-icon" src="' . $icon_url . '">
             <div class="weather-temp">' . $sign . $temp_c . '</div>
-            <div class="weather-label">' . $parsed_json->{'current_observation'}->{'weather'} . '</div>
+            <div class="weather-label">' . $description . '</div>
         </div>';
+}
 
 if (file_put_contents("weather.html", $text)) {
     echo "File weather.html saved";
