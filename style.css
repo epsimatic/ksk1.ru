@@ -930,7 +930,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 /*Стили для унифицированного макета в навигафионной панели для афиши*/
 
-.navpanel #panel-agenda .post-event { padding: 10px 15px !important; }
+.navpanel #panel-agenda .post-event { padding: 7px 15px 5px !important; }
 
 .navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
@@ -4291,9 +4291,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
-    .navpanel #panel-agenda .post-event figure.post-thumb { margin-right: 10px; margin-bottom: 5px; }
+    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { margin-right: 10px; margin-bottom: 5px; }
 
-    .navpanel #panel-agenda .post-event figure.post-thumb img { width: 50px; }
+    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 50px; }
 
     .panel-event .post-event .post-title { margin-bottom: 10px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
 
@@ -4434,7 +4434,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 7px; line-height: 1.2em; font-size: .9em; }
 
-    .navpanel #panel-agenda .post-event figure.post-thumb img { width: 90px; }
+    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 90px; }
 
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
