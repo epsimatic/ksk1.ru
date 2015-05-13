@@ -16,7 +16,6 @@ $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null || $description=="" ||$icon=="" ) {
     header("Status: 503 Internal server error");
     echo 'Weatherunderground is offline, using Yandex';
-    echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
    $text = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
 //$icon_url = "http://icons.wxug.com/i/c/k/clear.gif";
@@ -42,6 +41,8 @@ $text = '<div class="weather-block" title="По данным на ' . $week[date
             <div class="weather-label">' . $description . '</div>
         </div>';
 }
+
+echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
 
 if (file_put_contents("weather.html", $text)) {
     echo "File weather.html saved";
