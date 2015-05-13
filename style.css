@@ -211,7 +211,7 @@ header .btn-group {margin-top: 10px;}
     transition: opacity 0.4s ease-in;
 }
 
-.ya-weather { border-radius: 5px; overflow: hidden; }
+.ya-weather { border-radius: 5px; overflow: hidden; cursor: pointer; }
 
 .ya-weather img { margin: -40px -15px -50px; mix-blend-mode: multiply; }
 
