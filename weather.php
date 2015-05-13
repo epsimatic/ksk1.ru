@@ -13,10 +13,10 @@ $description = $parsed_json->{'current_observation'}->{'weather'};
 $icon = $parsed_json->{'current_observation'}->{'icon'};
 $icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
-if (is_nan($temp_c) || $description=="" ||$icon=="" ) {
+if (is_nan($temp_c) || $temp_c === null || $description=="" ||$icon=="" ) {
     header("Status: 503 Internal server error");
-    echo 'Weatherunderground is offline, using Yandex\n';
-    echo "Temp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon;
+    echo 'Weatherunderground is offline, using Yandex';
+    echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
    $text = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
 //$icon_url = "http://icons.wxug.com/i/c/k/clear.gif";
