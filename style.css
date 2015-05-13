@@ -876,6 +876,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
+.navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
 
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
