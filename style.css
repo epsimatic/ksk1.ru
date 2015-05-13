@@ -932,7 +932,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .post-event { padding: 10px 15px !important; }
 
-.navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; }
+.navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
 .navpanel #panel-agenda .post-event .post-description-text { color: #666666; font-size: 13px; line-height: 1.345em; height: 2.7em; overflow: hidden; }
 
@@ -942,7 +942,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { float: left; margin-right: 15px; margin-bottom: 10px; }
 
-.navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 100px }
+.navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 100px; height: auto; }
 
 
 
