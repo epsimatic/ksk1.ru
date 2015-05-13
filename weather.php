@@ -14,6 +14,7 @@ if (is_nan($temp_c)) {
     die ('Error saving weather.html temp_c isNAN');
 }
 $icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
+//$icon_url = "http://icons.wxug.com/i/c/k/clear.gif";
 if ($temp_c > 0) $sign = "+"; else $sign = "";
 $week = array(
     "Sunday" => "воскресенье",
