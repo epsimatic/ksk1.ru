@@ -792,16 +792,16 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .e96-bar h3 a:hover,
 #navpanel-shopping .e96-bar h3 a:focus { background-color: #eaeaea; text-decoration: none;  }
 
-#navpanel-shopping .vodmag-bar { border-bottom: 3px solid #1caeec; margin-bottom: 10px; }
+#navpanel-shopping .vodmag-bar { border-bottom: 3px solid #1caeec; margin-bottom: 10px; padding-bottom: 20px; }
 
-#navpanel-shopping .vodmag-bar .cat-list a { color: #06a3e6; padding-top: 2px; padding-bottom: 3px; }
+#navpanel-shopping .vodmag-bar .cat-list a { padding-top: 2px; padding-bottom: 3px; color: #ff7267; text-transform: uppercase; letter-spacing: .012em; font-weight: 600; }
 
 #navpanel-shopping .vodmag-bar .cat-list a:hover,
-#navpanel-shopping .vodmag-bar .cat-list a:focus { color: #f44639; text-decoration: none; background-color: #eceff1; }
+#navpanel-shopping .vodmag-bar .cat-list a:focus { color: #f44639; text-decoration: none; background-color: #f1f3f5; }
 
-#navpanel-shopping .svetodom-bar { border-bottom: 3px solid #ec1191; margin-bottom: 10px; }
+#navpanel-shopping .svetodom-bar { border-bottom: 3px solid #ec1191; margin-bottom: 10px; padding-bottom: 20px; }
 
-#navpanel-shopping .svetodom-bar .cat-list a { color: #0385e1; padding-top: 2px; padding-bottom: 3px; }
+#navpanel-shopping .svetodom-bar .cat-list a { color: #333; padding-top: 2px; padding-bottom: 3px; }
 
 #navpanel-shopping .svetodom-bar .cat-list a:hover,
 #navpanel-shopping .svetodom-bar .cat-list a:focus { color: #000; text-decoration: none; background-color: #eaf0f2; }
