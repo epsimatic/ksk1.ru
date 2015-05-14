@@ -757,10 +757,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .pr-bar.multilavka-bar .pr-description strong { text-transform: uppercase; letter-spacing: 0.03em; }
 
-#navpanel-shopping .ozon-bar .pr-logo a:hover,
-#navpanel-shopping .e96-bar .pr-logo a:hover { background-color: transparent; }
+#navpanel-shopping .pr-bar .pr-logo a:hover { background-color: transparent; }
 
-/*#navpanel-shopping .ozon-bar .pr-logo img,*/
 #navpanel-shopping .pr-bar .pr-logo img { width: 80%; }
 
 #navpanel-shopping .ozon-bar { border-bottom: 3px solid #0083ca; background-color: #fff; margin-bottom: 10px; }
@@ -805,6 +803,14 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .svetodom-bar .cat-list a:hover,
 #navpanel-shopping .svetodom-bar .cat-list a:focus { color: #000; text-decoration: none; background-color: #eaf0f2; }
+
+@media (min-width: 480px) {
+    #navpanel-shopping .pr-bar .cat-list a { border-radius: 3px; display: inline-block; padding: 2px 8px; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { text-align: center; width: 100%; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
+}
 
 
 #navpanel-shopping .pr-bar.sm-bar-shops { padding: 0; }
