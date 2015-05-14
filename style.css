@@ -973,9 +973,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 100px; height: auto; }
 
-.navpanel-info .btn-feature { padding: 10px 20px; position: relative; }
+.navpanel-info .btn-feature.btn-feature { padding: 10px 20px; position: relative; }
 
-.navpanel-info .btn-feature .fa-certificate { position: absolute; top: 0; right: 0; color: #ff1744; text-shadow: 0 0 2px #fff; }
+.navpanel-info .btn-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
 .navpanel-info .emergency-phones-feature { background-color: #ff1744; }
 
