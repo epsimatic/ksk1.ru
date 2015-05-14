@@ -4612,6 +4612,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-top: 12px; }
 
+    #navpanel-shopping .vodmag-bar .cat-list a { margin-left: 30px; margin-right: 30px; }
+
+    #navpanel-shopping .svetodom-bar .cat-list a { margin-right: 40px; }
+
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 110px; }
 
     .news-old .post-news figure.post-thumb { width: 120px; }
