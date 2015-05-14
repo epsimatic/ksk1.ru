@@ -729,6 +729,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping a:hover { background-color:#ececec; }
 
+/*#navpanel-shopping .cat-list a { padding-left: 30px; }*/
+
 #navpanel-shopping .pr-bar { padding-right: 10px; padding-left: 10px; }
 
 #navpanel-shopping .pr-bar.multilavka-bar { background-color: #FF3334; }
@@ -758,8 +760,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .ozon-bar .pr-logo a:hover,
 #navpanel-shopping .e96-bar .pr-logo a:hover { background-color: transparent; }
 
-#navpanel-shopping .ozon-bar .pr-logo img,
-#navpanel-shopping .e96-bar .pr-logo img { width: 80%; }
+/*#navpanel-shopping .ozon-bar .pr-logo img,*/
+#navpanel-shopping .pr-bar .pr-logo img { width: 80%; }
 
 #navpanel-shopping .ozon-bar { border-bottom: 3px solid #0083ca; background-color: #fff; margin-bottom: 10px; }
 
@@ -4431,7 +4433,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-bottom: 15px; }
 
-    #navpanel-shopping .pr-bar.e96-bar { height: 330px; border: none; }
+    #navpanel-shopping .pr-bar.e96-bar { border: none; }
 
     #navpanel-shopping .e96-bar .pr-logo img { width: 100%; }
 
@@ -4564,7 +4566,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-top: 12px; }
 
-    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 75px; }
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 110px; }
 
     .news-old .post-news figure.post-thumb { width: 120px; }
 
