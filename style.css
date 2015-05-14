@@ -4476,7 +4476,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 7px; line-height: 1.2em; font-size: .9em; }
 
-    #navpanel-shopping .pr-bar .cat-list a { display: block; }
+    #navpanel-shopping .pr-bar .cat-list a { display: block !important; }
 
     #navpanel-shopping .svetodom-bar,
     #navpanel-shopping .vodmag-bar { border: 0 none; margin-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 0; }
