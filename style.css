@@ -3015,8 +3015,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #transport-schedule-tabs.nav-tabs .active a:hover { color: #555; }
 
-#transport-schedule-tabs.nav-tabs a:hover,
-#transport-schedule-tabs.nav-tabs a:focus { background-color: #b9f6ca; color: #333; border-color: transparent; }
+#transport-schedule-tabs.nav-tabs a:hover { background-color: #b9f6ca; color: #333; border-color: transparent; }
 
 #city-transpost .table tr > th { text-align: center; vertical-align: bottom; line-height: 1.2; }
 
