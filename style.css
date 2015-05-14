@@ -4323,6 +4323,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .svetodom-bar { padding-top: 5px; border: 2px dashed #ff9f4a; border-radius: 10px; }
 
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { text-align: center; width: 100%; }
+
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 75%;}
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
