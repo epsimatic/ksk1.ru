@@ -804,13 +804,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .svetodom-bar .cat-list a:hover,
 #navpanel-shopping .svetodom-bar .cat-list a:focus { color: #000; text-decoration: none; background-color: #eaf0f2; }
 
-@media (min-width: 480px) {
-    #navpanel-shopping .pr-bar .cat-list a { border-radius: 3px; display: inline-block; padding: 2px 8px; }
-
-    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { text-align: center; width: 100%; }
-
-    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
-}
 
 
 #navpanel-shopping .pr-bar.sm-bar-shops { padding: 0; }
@@ -818,6 +811,16 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { max-height: 135px; padding-left: 10px; padding-right: 10px; }
 
 #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
+
+@media (min-width: 480px) {
+    #navpanel-shopping .pr-bar .pr-logo img { max-width: 275px; }
+
+    #navpanel-shopping .pr-bar .cat-list a { border-radius: 3px; display: inline-block !important; padding: 2px 8px; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { width: 50%; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
+}
 
 .navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
 
