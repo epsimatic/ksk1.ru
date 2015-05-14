@@ -729,7 +729,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping a:hover { background-color:#ececec; }
 
-#navpanel-shopping .cat-list a { padding-left: 40px; }
+#navpanel-shopping .cat-list a { padding-left: 20px; }
 
 #navpanel-shopping .pr-bar { padding-right: 20px; padding-left: 20px; }
 
@@ -774,7 +774,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .e96-bar { border-bottom: 3px solid #ff6600; background-color: #fcfcfc; margin-bottom: 10px; padding-bottom: 15px; }
 
-#navpanel-shopping .e96-bar p { padding-left: 15px; }
+#navpanel-shopping .e96-bar p { padding-left: 0 }
 
 #navpanel-shopping .e96-bar p a { color: #3f3f3f; text-decoration: underline; margin-bottom: 4px; text-align: left; padding-left: 20px; }
 
