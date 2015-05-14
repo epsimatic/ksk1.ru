@@ -731,7 +731,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 #navpanel-shopping .cat-list a { padding-left: 40px; }
 
-#navpanel-shopping .pr-bar { padding-right: 10px; padding-left: 10px; }
+#navpanel-shopping .pr-bar { padding-right: 20px; padding-left: 20px; }
 
 #navpanel-shopping .pr-bar.multilavka-bar { background-color: #FF3334; }
 
@@ -4308,13 +4308,19 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.multilavka-bar { height: 336px; }
 
-    #navpanel-shopping .e96-bar { margin-bottom: 0; border-bottom: none; }
+    #navpanel-shopping .e96-bar { padding-top: 10px; margin-bottom: 0; border-bottom: none; }
 
-    #navpanel-shopping .e96-bar .pr-logo img { width: 50%; }
+    #navpanel-shopping .e96-bar .pr-logo img { width: 70%; }
 
     #navpanel-shopping .e96-bar p { text-align: center; }
 
     #navpanel-shopping .e96-bar p a { padding: 2px 10px; }
+
+    #navpanel-shopping .vodmag-bar  { border: 2px dashed #7ad7ff; border-radius: 10px; margin-top: 10px; }
+
+    #navpanel-shopping .svetodom-bar { padding-top: 5px; border: 2px dashed #ff9f4a; border-radius: 10px; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 75%;}
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
