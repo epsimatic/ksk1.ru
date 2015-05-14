@@ -415,6 +415,7 @@ body.single-company .navbar,
 .panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading { background-color: #ffd740; }
 .panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading h3 { color: #3e2723; }
 .panel-pricing-container:nth-of-type(3) .panel.panel-pricing .panel-heading { background-color: #3f51b5; color: #fff; }
+.panel-pricing-container:nth-of-type(4) .panel.panel-pricing .panel-heading { background-color: #00e676; }
 
 
 .panel-pricing-group { margin-bottom: 40px; }
@@ -434,6 +435,8 @@ body.single-company .navbar,
 .panel.panel-pricing .list-group-item { padding: 3px; background-color: transparent; }
 
 .panel.panel-pricing .list-group-item > .badge { float: none; border-radius: 3px; padding: 2px 4px 3px; background-color: #b0bec5; }
+
+.panel.panel-pricing .list-group-item div.small { color: #666666; line-height: 1.3em; margin-top: 8px; }
 
 .panel.panel-pricing .list-group-heading { color: #6d4c41; padding: 10px; }
 
