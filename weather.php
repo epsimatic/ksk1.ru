@@ -18,7 +18,6 @@ if (is_nan($temp_c) || $temp_c === null || $description=="" ||$icon=="" ) {
     echo 'Weatherunderground is offline, using Yandex';
    $text = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
-//$icon_url = "http://icons.wxug.com/i/c/k/clear.gif";
 if ($temp_c > 0) $sign = "+"; else $sign = "";
 $week = array(
     "Sunday" => "воскресенье",
@@ -41,11 +40,6 @@ $text = '<div class="weather-block" title="По данным на ' . $week[date
             <div class="weather-label">' . $description . '</div>
         </div>';
 }
-
-//echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
-
-//var_dump($parsed_json); echo "\n\n";
-
 if (file_put_contents("weather.html", $text)) {
 //    echo "File weather.html saved";
 } else {
@@ -59,7 +53,12 @@ if (file_put_contents("weather.html", $text)) {
 //var_dump(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json"));
 
 /*echo "<p>Current temperature in ${location} is: ${temp_c}</p>";
-echo "<p>";*/?>
+echo "<p>";*/
+$array_forecast =array();
+$json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
+$parsed_forecast = json_decode($json_forecast);
+var_dump($parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'});
+?>
 
 <html><head>
 <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -153,7 +152,7 @@ echo "<p>";*/?>
         </div>
     </div>
     <h3>А вот сырые данные:</h3>
-    <pre><?=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");?></pre>
+   <!-- <pre><?/*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/?></pre>-->
 </div>
 </body></html>
 
