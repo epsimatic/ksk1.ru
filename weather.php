@@ -1,3 +1,11 @@
+<html><head>
+    <meta charset="utf-8">
+    <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <link href="http://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
 <?php
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
@@ -65,12 +73,7 @@ foreach ($forecastdays as $forecastday){
 }
 ?>
 
-<html><head>
-<link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
-<link href="http://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
-</head><body>
+<body>
 <div class="container">
     <h2>Тестовая страница, например</h2>
     <div id="header">
