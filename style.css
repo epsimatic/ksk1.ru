@@ -3098,7 +3098,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #railroad-transpost.tab-pane img { width: 100%; }
 
-#railroad-transpost.tab-pane h1 { position: absolute; top: 0; width: 100%; }
+#railroad-transpost.tab-pane h1 { position: absolute; top: 10px; width: 100%; text-shadow: 0 0 8px #fff; }
 
 /* </editor-fold> */
 
