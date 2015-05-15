@@ -3094,6 +3094,12 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
+#railroad-transpost.tab-pane a { display: block; position: relative; text-align: center; }
+
+#railroad-transpost.tab-pane img { width: 100%; }
+
+#railroad-transpost.tab-pane h1 { position: absolute; top: 0; width: 100%; }
+
 /* </editor-fold> */
 
 
