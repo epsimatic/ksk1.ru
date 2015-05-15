@@ -9,12 +9,13 @@
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="5">
+          <list size="6">
             <item index="0" class="java.lang.String" itemvalue="transition" />
             <item index="1" class="java.lang.String" itemvalue="column-gap" />
             <item index="2" class="java.lang.String" itemvalue="column-count" />
             <item index="3" class="java.lang.String" itemvalue="column-break-inside" />
             <item index="4" class="java.lang.String" itemvalue="box-pack" />
+            <item index="5" class="java.lang.String" itemvalue="mix-blend-mode" />
           </list>
         </value>
       </option>

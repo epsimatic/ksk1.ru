@@ -110,9 +110,8 @@ var_dump($array_forecast);
 		                        <span class="low">7</span>
 		                        °C
 		                    </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .4);">
-                                <span class="drop-icon">💧</span>
-                                <strong>0</strong> мм
+                            <span title="Вероятность осадков" class="pop pop-dry">
+                                Сухо
                             </span>
                         </div>
                         <div class="day">
