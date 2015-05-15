@@ -6,6 +6,9 @@
     <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
+<body>
+<div class="container">
+
 <?php
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
@@ -73,8 +76,6 @@ foreach ($forecastdays as $forecastday){
 }
 ?>
 
-<body>
-<div class="container">
     <h2>Тестовая страница, например</h2>
     <div id="header">
         <div id="navpanel-info" class="navpanel navpanel-info row active">
