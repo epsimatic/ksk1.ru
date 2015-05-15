@@ -44,6 +44,8 @@ $text = '<div class="weather-block" title="По данным на ' . $week[date
 
 echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
 
+var_dump($parsed_json); echo "\n\n";
+
 if (file_put_contents("weather.html", $text)) {
     echo "File weather.html saved";
 } else {
