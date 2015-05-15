@@ -71,9 +71,25 @@ $parsed_forecast = json_decode($json_forecast);
 //echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'}[0]->{'date'}->{'weekday'};
 $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
+$month = array(
+    1 => "января",
+    2 => "февраля",
+    3 => "марта",
+    4 => "апреля",
+    5 => "мая",
+    6 => "июня",
+    7 => "июля",
+    8 => "августа",
+    9 => "сентября",
+    10 => "октября",
+    11 => "ноября",
+    12 => "декабря",
+);
    $obect =0;
 foreach ($forecastdays as $forecastday){
-    $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'}."</br>";
+    $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'};
+    $array_forecast[$obect]['day'] = $forecastday->{'date'}->{'day'}." ".$month[$forecastday->{'date'}->{'month'}];
+
     $obect++;
 }
 var_dump($array_forecast);
