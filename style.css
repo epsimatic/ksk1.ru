@@ -3069,7 +3069,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .route-name-divider { text-align: center; }
 
-.table-schedule .badge.route-number { background-color: #a1acb2; border-radius: 3px; padding: 4px 5px 5px; }
+.table-schedule .route-number { font-weight: 600; }
 
 .table-schedule th .fa-clock-o { padding-right: 5px; }
 
@@ -3079,8 +3079,6 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .table-schedule .time-departure-2 { font-size: 19px; font-weight: 600; }
 
 .table-schedule .route-name-depart { text-align: right; }
-
-.table-schedule tr > td:nth-child(n+4) { text-align: center; }
 
 .table-schedule h3.table-subheader { margin-bottom: 0; margin-left: 25px; padding-bottom: 13px; padding-top: 8px; font-size: 25px; }
 
