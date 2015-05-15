@@ -42,27 +42,37 @@ $text = '<div class="weather-block" title="По данным на ' . $week[date
         </div>';
 }
 
-echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
+//echo "\nTemp = ".$temp_c . "\nDesc = " . $description . "\nIcon = " . $icon . "\n\n";
 
-var_dump($parsed_json); echo "\n\n";
+//var_dump($parsed_json); echo "\n\n";
 
 if (file_put_contents("weather.html", $text)) {
-    echo "File weather.html saved";
+//    echo "File weather.html saved";
 } else {
     header("Status: 503 Internal server error");
     die ('Error saving weather.html');
 }
 
-echo "\n\nForecast:\n\n";
+//echo "\n\nForecast:\n\n";
 
-var_dump(json_decode(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json")));
+//var_dump(json_decode(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json")));
+//var_dump(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json"));
 
 /*echo "<p>Current temperature in ${location} is: ${temp_c}</p>";
-echo "<p>";
+echo "<p>";*/?>
 
-echo date("G:i",($parsed_json->{'current_observation'}->{'observation_epoch'}));
+<html><head>
+<link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+<link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+</head><body>
 
-echo "</p>";*/
+<h2>Тестовая страница, например</h2>
+
+</body></html>
+
+
+<?
 
 
 //echo "time =".date("G:i",($parsed_json->{'current_observation'}->{'local_epoch'}+21600));
