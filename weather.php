@@ -70,6 +70,7 @@ $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c8
 $parsed_forecast = json_decode($json_forecast);
 //echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'}[0]->{'date'}->{'weekday'};
 $forecastdays=array();
+var_dump($parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'});
 echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 foreach ($forecastdays as $forecastday){
     echo $forecastday->{'date'}->{'weekday'}."</br>";
