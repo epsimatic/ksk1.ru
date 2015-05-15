@@ -1,3 +1,14 @@
+<html><head>
+    <meta charset="utf-8">
+    <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <link href="http://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="container">
+
 <?php
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
@@ -57,19 +68,17 @@ echo "<p>";*/
 $array_forecast =array();
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
-  $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
+//echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'}[0]->{'date'}->{'weekday'};
+$forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
+//echo '<pre>'; var_dump($forecastdays); echo '</pre>';
+   $obect =0;
 foreach ($forecastdays as $forecastday){
-    echo $forecastday->{'date'}->{'weekday'}."</br>";
+    $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'}."</br>";
+    $obect++;
 }
+var_dump($array_forecast);
 ?>
 
-<html><head>
-<link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
-<link href="http://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
-</head><body>
-<div class="container">
     <h2>Тестовая страница, например</h2>
     <div id="header">
         <div id="navpanel-info" class="navpanel navpanel-info row active">
