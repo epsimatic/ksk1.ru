@@ -24,10 +24,10 @@ $week = array(
     "Sunday" => "воскресенье",
     "Monday" => "понедельник",
     "Tuesday" => "вторник",
-    "Wednesday" => "среда",
+    "Wednesday" => "среду",
     "Thursday" => "четверг",
-    "Friday" => "пятница",
-    "Saturday" => "суббота");
+    "Friday" => "пятницу",
+    "Saturday" => "субботу");
 $text = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_json->{'current_observation'}->{'observation_epoch'})] . " в " .
     date("G.i", $parsed_json->{'current_observation'}->{'observation_epoch'}) . ':' . PHP_EOL
     . $temp . '
