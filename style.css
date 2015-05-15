@@ -3067,6 +3067,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
+.table-schedule .route-name-divider { text-align: center; }
+
+.table-schedule .badge.route-number { background-color: #a1acb2; border-radius: 3px; padding: 4px 5px 5px; }
+
 .table-schedule th .fa-clock-o { padding-right: 5px; }
 
 /*.table-schedule th .small { font-size: 10px; font-weight: 400; }*/
