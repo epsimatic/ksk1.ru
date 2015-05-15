@@ -64,6 +64,7 @@ echo "<p>";*/?>
 <html><head>
 <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+<link href="http://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="http://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
 </head><body>
 <div class="container">
@@ -82,7 +83,7 @@ echo "<p>";*/?>
 		                        <span class="low">7</span>
 		                        °C
 		                    </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(100, 181, 246, .4);">
+                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .4);">
                                 <span class="drop-icon">💧</span>
                                 <strong>0</strong> мм
                             </span>
@@ -107,7 +108,7 @@ echo "<p>";*/?>
 		                        <span class="low">8</span>
 		                        °C
                             </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(100, 181, 246, .8);">
+                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .8);">
                                 <span class="drop-icon">💧</span>
                                 <strong>6</strong> мм
                             </span>
@@ -132,7 +133,7 @@ echo "<p>";*/?>
                                 <span class="low">4</span>
                                 °C
                             </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(100, 181, 246, .7);">
+                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .7);">
                                 <span class="drop-icon">💧</span>
                                 <strong>2</strong> мм
                             </span>
@@ -146,7 +147,7 @@ echo "<p>";*/?>
                             <p><em>Ночью</em> переменная облачность. Понижение 5C. Ветер Ю от 10 до 15 км/ч.</p>
                         </div>
                     </div>
-                    <h5 class="text-center">Подробный прогноз погоды на 10 дней</h5>
+                    <h6 class="text-center"><a href="http://www.wunderground.com/q/zmw:00000.1.28434">Подробный прогноз погоды на 10 дней <i class="fa fa-arrow-right"></i></a></h6>
                 </div>
             </div>
         </div>
