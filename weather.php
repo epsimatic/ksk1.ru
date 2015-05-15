@@ -53,6 +53,9 @@ if (file_put_contents("weather.html", $text)) {
     die ('Error saving weather.html');
 }
 
+echo "\n\nForecast:\n\n";
+
+var_dump(json_decode(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json")));
 
 /*echo "<p>Current temperature in ${location} is: ${temp_c}</p>";
 echo "<p>";
