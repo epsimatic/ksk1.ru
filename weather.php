@@ -68,7 +68,7 @@ echo "<p>";*/
 $array_forecast =array();
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
-//echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'}[0]->{'date'}->{'weekday'};
+//общие данные
 $simpleforecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
 $month = array(
@@ -96,8 +96,17 @@ foreach ($simpleforecastdays as $forecastday){
 
     $obect++;
 }
-$forecast = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
-var_dump($forecast);
+//данные день-ночь
+$forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
+foreach ($forecasts as $forecast) {
+    if ($forecast->{'period'}%2){
+
+        echo $forecast->{'period'};
+    }
+    else{}
+
+}
+var_dump($array_forecast);
 ?>
 
     <h2>Тестовая страница, например</h2>
