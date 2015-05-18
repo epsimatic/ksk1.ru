@@ -929,7 +929,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info #weather-panel .day-row .summary .pop { padding: 0 7px 0 5px; margin-right: 10px; float: right; border-radius: 3px; }
 
-.navpanel-info #weather-panel .day-row .summary .pop .drop-icon { opacity: .6; }
+.navpanel-info #weather-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
 
 .navpanel-info #weather-panel .day-row .day,
 .navpanel-info #weather-panel .day-row .night { position: relative; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; }
