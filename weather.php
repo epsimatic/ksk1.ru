@@ -157,7 +157,7 @@ $text_forecast.="<h6 class='text-center'><a href='http://www.wunderground.com/q/
 echo $text_forecast ;
 //var_dump($array_forecast);
 ?>
-
+<!--
     <h2>Тестовая страница, например</h2>
     <div id="header">
         <div id="navpanel-info" class="navpanel navpanel-info row active">
@@ -246,7 +246,7 @@ echo $text_forecast ;
 
 
     <h3>А вот сырые данные:</h3>
-    <pre><?=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");?></pre>
+    <pre><?/*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/?></pre>-->
 </div>
 </body></html>
 
