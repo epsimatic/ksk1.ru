@@ -93,6 +93,7 @@ foreach ($simpleforecastdays as $forecastday){
     $array_forecast[$obect]['temp_low'] =$forecastday->{'low'}->{'celsius'};
     $array_forecast[$obect]['conditions'] =$forecastday->{'conditions'};
     $array_forecast[$obect]['mm'] =$forecastday->{'qpf_allday'}->{'mm'};
+    $array_forecast[$obect]['pop'] =$forecastday->{'pop'}/100;
     $obect++;
 }
 //данные день-ночь
@@ -110,6 +111,7 @@ foreach ($forecasts as $forecast) {
         $array_forecast[$object_num]['icon_url_day']= $forecast->{'icon_url'};
     }
 }
+array_pop($forecasts);
 $text_forecast =" <div id='header'>
         <div id='navpanel-info' class='navpanel navpanel-info row active'>
             <div class='col-xs-12 col-sm-4 subpanel cat'>
@@ -126,15 +128,15 @@ $text_forecast =" <div id='header'>
 		                        <span class='low'>".$forecast_object['temp_low']."</span>
 		                        °C
 		                    </span>";
-                $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'>";
                  if ($forecast_object['mm']>0)
-                     $text_forecast.="<span class='drop-icon'></span>
-                                <strong>".$forecast_object['mm']."</strong> мм";
+                     $text_forecast.="<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, ".$forecast_object['pop'].");'>
+                            <span class='drop-icon'></span>
+                                <strong>".$forecast_object['mm']."</strong> мм</span>";
 
-                 else  $text_forecast.="<span>
+                 else  $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>
                                 ".$forecast_object['conditions']."
-                            </span>";
-                 $text_forecast.="</span></div>
+                            </span></span>";
+                 $text_forecast.="</div>
                         <div class='day'>
                             <img src='".$forecast_object['icon_url_day']."'>
                             <p>".$forecast_object['text_day']."</p>
