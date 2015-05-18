@@ -99,7 +99,7 @@ foreach ($simpleforecastdays as $forecastday){
 //данные день-ночь
 $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
-    if ((int)$forecast->{'period'}%2){
+    if ($forecast->{'period'}%2){
 
         echo $forecast->{'period'};
     }
@@ -198,9 +198,3 @@ foreach ($forecasts as $forecast) {
 </body></html>
 
 
-<?
-
-
-//echo "time =".date("G:i",($parsed_json->{'current_observation'}->{'local_epoch'}+21600));
-//echo date("Z");
-?>
