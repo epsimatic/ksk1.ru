@@ -106,6 +106,7 @@ foreach ($forecasts as $forecast) {
     else{}
 
 }
+
 //var_dump($array_forecast);
 ?>
 
