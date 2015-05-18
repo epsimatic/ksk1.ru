@@ -149,7 +149,8 @@ $text_forecast =" <div id='header'>
              }
 
 
-$text_forecast.="</div></div></div></div>";
+$text_forecast.="<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
+Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6></div></div></div></div>";
 
 echo $text_forecast ;
 //var_dump($array_forecast);
