@@ -134,7 +134,7 @@ $text_forecast =" <div id='header'>
                  else  $text_forecast.="<span>
                                 ".$forecast_object['conditions']."
                             </span>";
-                 $text_forecast.=" </div>
+                 $text_forecast.="</span></div>
                         <div class='day'>
                             <img src='".$forecast_object['icon_url_day']."'>
                             <p>".$forecast_object['text_day']."</p>
