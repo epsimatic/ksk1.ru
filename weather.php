@@ -140,7 +140,7 @@ $text_forecast =" <div id='header'>
                             <p>".$forecast_object['text_day']."</p>
                         </div>
                         <div class='night'>
-                            <img src='".$forecast_object['icon_url_day']."'>
+                            <img src='".$forecast_object['icon_url_night']."'>
                             <p><em>Ночью. </em>".$forecast_object['text_night']."</p>
                         </div>
                     </div>";
