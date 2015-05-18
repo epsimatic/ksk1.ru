@@ -69,7 +69,7 @@ $array_forecast =array();
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
 //echo   $forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'}[0]->{'date'}->{'weekday'};
-$forecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
+$simpleforecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
 $month = array(
     1 => "января",
@@ -86,13 +86,18 @@ $month = array(
     12 => "декабря",
 );
    $obect =0;
-foreach ($forecastdays as $forecastday){
+foreach ($simpleforecastdays as $forecastday){
     $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'};
     $array_forecast[$obect]['day'] = $forecastday->{'date'}->{'day'}." ".$month[$forecastday->{'date'}->{'month'}];
+    $array_forecast[$obect]['temp_high'] =$forecastday->{'high'}->{'celsius'};
+    $array_forecast[$obect]['temp_low'] =$forecastday->{'low'}->{'celsius'};
+    $array_forecast[$obect]['conditions'] =$forecastday->{'conditions'};
+    $array_forecast[$obect]['mm'] =$forecastday->{'qpf_allday'}->{'mm'};
 
     $obect++;
 }
-var_dump($array_forecast);
+$forecast = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
+var_dump($forecast);
 ?>
 
     <h2>Тестовая страница, например</h2>
