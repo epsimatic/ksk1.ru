@@ -238,7 +238,7 @@ echo $text_forecast ;
 
 
     <h3>А вот сырые данные:</h3>
-   <!-- <pre><?/*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/?></pre>-->
+    <pre><?=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");?></pre>
 </div>
 </body></html>
 
