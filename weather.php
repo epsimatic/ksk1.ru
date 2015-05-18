@@ -99,15 +99,22 @@ foreach ($simpleforecastdays as $forecastday){
 //данные день-ночь
 $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
-    if ($forecast->{'period'}%2){
+    $period=$forecast->{'period'};
+    if ($period%2){
+        $object_num=($period-1)/2 ;
+        $array_forecast[$object_num]['text_night']= $forecast->{'fcttext_metric'};
+        $array_forecast[$object_num]['icon_url_night']= $forecast->{'icon_url'};
 
-        echo $forecast->{'period'};
     }
-    else{}
+    else{
+        $object_num=($period)/2 ;
+        $array_forecast[$object_num]['text_day']= $forecast->{'fcttext_metric'};
+        $array_forecast[$object_num]['icon_url_day']= $forecast->{'icon_url'};
+    }
 
 }
 
-//var_dump($array_forecast);
+var_dump($array_forecast);
 ?>
 
     <h2>Тестовая страница, например</h2>
