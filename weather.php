@@ -93,7 +93,6 @@ foreach ($simpleforecastdays as $forecastday){
     $array_forecast[$obect]['temp_low'] =$forecastday->{'low'}->{'celsius'};
     $array_forecast[$obect]['conditions'] =$forecastday->{'conditions'};
     $array_forecast[$obect]['mm'] =$forecastday->{'qpf_allday'}->{'mm'};
-
     $obect++;
 }
 //данные день-ночь
@@ -104,44 +103,80 @@ foreach ($forecasts as $forecast) {
         $object_num=($period-1)/2 ;
         $array_forecast[$object_num]['text_night']= $forecast->{'fcttext_metric'};
         $array_forecast[$object_num]['icon_url_night']= $forecast->{'icon_url'};
-
     }
     else{
         $object_num=($period)/2 ;
         $array_forecast[$object_num]['text_day']= $forecast->{'fcttext_metric'};
         $array_forecast[$object_num]['icon_url_day']= $forecast->{'icon_url'};
     }
-
 }
+$text_forecast =" <div id='header'>
+        <div id='navpanel-info' class='navpanel navpanel-info row active'>
+            <div class='col-xs-12 col-sm-4 subpanel cat'>
+                <div class='col-xs-12 subpanel' id='weather-panel'>";
 
-var_dump($array_forecast);
+             foreach($array_forecast as $forecast_object){
+                 $text_forecast.=" <div class='day-row'>
+                        <div class='summary'>
+                            <span class='weekday'>".$forecast_object['weekday']."</span>
+                            <span class='date'>".$forecast_object['day']."15 мая</span>
+		                    <span class='temps'>
+		                        <span class='high'>".$forecast_object['temp_high']."</span>
+                                <span class='split'>|</span>
+		                        <span class='low'>".$forecast_object['temp_low']."</span>
+		                        °C
+		                    </span>
+                            <span title='Вероятность осадков' class='pop pop-dry'>
+                                ".$forecast_object['conditions']."
+                            </span>
+                        </div>
+                        <div class='day'>
+                            <img src='".$forecast_object['icon_url_day']."'>
+                            <p>".$forecast_object['text_day']."</p>
+                        </div>
+                        <div class='night'>
+                            <img src='".$forecast_object['icon_url_day']."'>
+                            <p><em>Ночью. </em>".$forecast_object['text_night']."</p>
+                        </div>
+                    </div>";
+
+
+             }
+
+
+$text_forecast.="</div></div></div></div>";
+
+echo $text_forecast ;
+//var_dump($array_forecast);
 ?>
 
     <h2>Тестовая страница, например</h2>
     <div id="header">
         <div id="navpanel-info" class="navpanel navpanel-info row active">
             <div class="col-xs-12 col-sm-4 subpanel cat">
+
                 <div class="col-xs-12 subpanel" id="weather-panel">
-                    <div class="day-row">
-                        <div class="summary">
-                            <span class="weekday">Пятница</span>
-                            <span class="date">15 мая</span>
-		                    <span class="temps">
-		                        <span class="high">20</span>
-                                <span class="split">|</span>
-		                        <span class="low">7</span>
+
+                    <div class='day-row'>
+                        <div class='summary'>
+                            <span class='weekday'>Пятница</span>
+                            <span class='date'>15 мая</span>
+		                    <span class='temps'>
+		                        <span class='high'>20</span>
+                                <span class='split'>|</span>
+		                        <span class='low'>7</span>
 		                        °C
 		                    </span>
-                            <span title="Вероятность осадков" class="pop pop-dry">
+                            <span title='Вероятность осадков' class='pop pop-dry'>
                                 Сухо
                             </span>
                         </div>
-                        <div class="day">
-                            <img src="//icons.wxug.com/i/c/v1/partlycloudy.svg">
+                        <div class='day'>
+                            <img src='//icons.wxug.com/i/c/v1/partlycloudy.svg'>
                             <p>Переменная облачность. Повышение 20C. Ветер ЮВ от 10 до 15 км/ч.</p>
                         </div>
-                        <div class="night">
-                            <img src="//icons.wxug.com/i/c/v1/nt_chancerain.svg">
+                        <div class='night'>
+                            <img src='//icons.wxug.com/i/c/v1/nt_chancerain.svg'>
                             <p><em>Ночью</em> проливные дожди позднее вечером. Понижение 7C. Ветер В и переменный. Вероятность дождя 40%.</p>
                         </div>
                     </div>
@@ -200,6 +235,8 @@ var_dump($array_forecast);
             </div>
         </div>
     </div>
+
+
     <h3>А вот сырые данные:</h3>
    <!-- <pre><?/*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/?></pre>-->
 </div>
