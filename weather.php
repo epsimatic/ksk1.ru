@@ -99,14 +99,14 @@ foreach ($simpleforecastdays as $forecastday){
 //данные день-ночь
 $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
-    if ($forecast->{'period'}%2){
+    if ((int)$forecast->{'period'}%2){
 
         echo $forecast->{'period'};
     }
     else{}
 
 }
-var_dump($array_forecast);
+//var_dump($array_forecast);
 ?>
 
     <h2>Тестовая страница, например</h2>
