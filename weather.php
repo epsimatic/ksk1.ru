@@ -125,11 +125,16 @@ $text_forecast =" <div id='header'>
                                 <span class='split'>|</span>
 		                        <span class='low'>".$forecast_object['temp_low']."</span>
 		                        °C
-		                    </span>
-                            <span title='Вероятность осадков' class='pop pop-dry'>
+		                    </span>";
+                $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'>";
+                 if ($forecast_object['mm']>0)
+                     $text_forecast.="<span class='drop-icon'></span>
+                                <strong>".$forecast_object['mm']."</strong> мм";
+
+                 else  $text_forecast.="<span>
                                 ".$forecast_object['conditions']."
-                            </span>
-                        </div>
+                            </span>";
+                 $text_forecast.=" </div>
                         <div class='day'>
                             <img src='".$forecast_object['icon_url_day']."'>
                             <p>".$forecast_object['text_day']."</p>
