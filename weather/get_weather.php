@@ -29,7 +29,8 @@ $icon_url = $parsed_conditions->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "") {
     header("Status: 503 Internal server error");
-    echo 'Weatherunderground is offline, using Yandex';
+    echo '<p class="bg-danger">Weatherunderground is offline, using Yandex</p>';
+    echo "<pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>";
     echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
     $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
@@ -68,8 +69,6 @@ if (file_put_contents("conditions.html", $conditions)) {
 //var_dump(json_decode(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json")));
 //var_dump(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json"));
 
-/*echo "<p>Current temperature in ${location} is: ${temp_c}</p>";
-echo "<p>";*/
 $array_forecast = array();
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
