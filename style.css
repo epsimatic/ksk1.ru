@@ -903,9 +903,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 
 
-.navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 20px; }
+.navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
-.navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }
+/*.navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }*/
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 .navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
@@ -934,7 +934,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info #weather-panel .day-row .day,
 .navpanel-info #weather-panel .day-row .night { position: relative; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; }
 
-.navpanel-info #weather-panel .day-row .night { background-color: #f9f9f9; }
+.navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6; }
 
 .navpanel-info #weather-panel .day-row .day img,
 .navpanel-info #weather-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
