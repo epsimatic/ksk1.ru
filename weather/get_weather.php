@@ -9,11 +9,6 @@
 
 <body>
 <div class="container">
-<!--<div id='header'>
-<div id='navpanel-info' class='navpanel navpanel-info row active'>
-<div class='col-xs-12 col-sm-4 subpanel cat'>
-<div class='col-xs-12 subpanel' id='weather-panel'>
--->
 
 <?php
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
@@ -156,105 +151,10 @@ foreach ($array_forecast as $forecast_object) {
 
 
 $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434' target='_blank'>
-Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";//</div></div></div></div>";
+Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";
 
 //echo $conditions_forecast;
 //var_dump($array_forecast);
-?>
-<!--
-    <h2>Тестовая страница, например</h2>
-    <div id="header">
-        <div id="navpanel-info" class="navpanel navpanel-info row active">
-            <div class="col-xs-12 col-sm-4 subpanel cat">
-
-                <div class="col-xs-12 subpanel" id="weather-panel">
-
-                    <div class='day-row'>
-                        <div class='summary'>
-                            <span class='weekday'>Пятница</span>
-                            <span class='date'>15 мая</span>
-		                    <span class='temps'>
-		                        <span class='high'>20</span>
-                                <span class='split'>|</span>
-		                        <span class='low'>7</span>
-		                        °C
-		                    </span>
-                            <span title='Вероятность осадков' class='pop pop-dry'>
-                                Сухо
-                            </span>
-                        </div>
-                        <div class='day'>
-                            <img src='//icons.wxug.com/i/c/v1/partlycloudy.svg'>
-                            <p>Переменная облачность. Повышение 20C. Ветер ЮВ от 10 до 15 км/ч.</p>
-                        </div>
-                        <div class='night'>
-                            <img src='//icons.wxug.com/i/c/v1/nt_chancerain.svg'>
-                            <p><em>Ночью</em> проливные дожди позднее вечером. Понижение 7C. Ветер В и переменный. Вероятность дождя 40%.</p>
-                        </div>
-                    </div>
-
-                    <div class="day-row ">
-                        <div class="summary">
-                            <span class="weekday">Суббота</span>
-                            <span class="date">16 мая</span>
-		                    <span class="temps">
-		                        <span class="high">18</span>
-		                        <span class="split">|</span>
-		                        <span class="low">8</span>
-		                        °C
-                            </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .8);">
-                                <span class="drop-icon">💧</span>
-                                <strong>6</strong> мм
-                            </span>
-                        </div>
-                        <div class="day">
-                            <img src="//icons.wxug.com/i/c/v1/rain.svg">
-                            <p>Дождь. Повышение 19C. Ветер В от 10 до 15 км/ч. Вероятность дождя 80%.</p>
-                        </div>
-                        <div class="night">
-                            <img src="//icons.wxug.com/i/c/v1/nt_rain.svg">
-                            <p><em>Ночью</em> дождь. Понижение 9C. Ветер ВЮВ и переменный. Вероятность дождя 80%. Осадки примерно ~ 6 мм.</p>
-                        </div>
-                    </div>
-
-                    <div id="fctDay-20150517" class="day-row ">
-                        <div class="summary">
-                            <span class="weekday">Воскресенье</span>
-                            <span class="date">17 мая</span>
-                            <span class="temps">
-                                <span class="high">17</span>
-                                <span class="split">|</span>
-                                <span class="low">4</span>
-                                °C
-                            </span>
-                            <span title="Вероятность осадков" class="pop" style="background-color: rgba(41, 182, 246, .7);">
-                                <span class="drop-icon">💧</span>
-                                <strong>2</strong> мм
-                            </span>
-                        </div>
-                        <div class="day">
-                            <img src="//icons.wxug.com/i/c/v1/chancerain.svg">
-                            <p>Проливные дожди. Повышение 17C. Ветер ЮЮЗ от 10 до 15 км/ч. Вероятность дождя 70%.</p>
-                        </div>
-                        <div class="night">
-                            <img src="//icons.wxug.com/i/c/v1/nt_partlycloudy.svg">
-                            <p><em>Ночью</em> переменная облачность. Понижение 5C. Ветер Ю от 10 до 15 км/ч.</p>
-                        </div>
-                    </div>
-                    <h6 class="text-center"><a href="http://www.wunderground.com/q/zmw:00000.1.28434">Подробный прогноз погоды на 10 дней <i class="fa fa-arrow-right"></i></a></h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <h3>А вот сырые данные:</h3>
-    <pre><? /*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/ ?></pre>-->
-
-
-
-<?php
 
 if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */ false) {
     header("Status: 503 Internal server error");
@@ -275,6 +175,20 @@ if (file_put_contents("forecast.html", $forecast)) {
 
 
 ?>
+
+
+    <?=$conditions?>
+
+<div id='header'>
+<div id='navpanel-info' class='navpanel navpanel-info row active'>
+<div class='col-xs-12 col-sm-4 subpanel cat'>
+<div class='col-xs-12 subpanel' id='weather-panel'>
+
+    <?=$forecast?>
+
+</div></div></div></div>
+
+
 </div>
 </body>
 </html>
