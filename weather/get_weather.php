@@ -176,7 +176,7 @@ foreach ($array_forecast as $forecast_object) {
 }
 
 
-$conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
+$conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.ru/krasnoufimsk/details'>
 П<span class='hidden-xs'>одробный п</span>рогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";
 
 //echo $conditions_forecast;
@@ -187,7 +187,7 @@ false
 ) {
     header("Status: 503 Internal server error");
     echo 'Weatherunderground (forecast) is offline, using Yandex';
-    $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk" target="_blank">
+    $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk/details" target="_blank">
                     <img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
                  </a>';
 } else {
