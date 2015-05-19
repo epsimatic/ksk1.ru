@@ -91,6 +91,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     });
 
 // Загружаем погоду
+/*
     jQuery('#weather-panel').html('\
         <div class="popover-source-gismeteo" title="Погода от Гисметео">\
             <div id="gsInformerID-5yW5CsFg4TLIH3" class="gsInformer" style="width:300px;height:157px">\
@@ -116,6 +117,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', function () {
         setMapHeight();
     });
+*/
 
 // Загружаем карту
     setMapHeight();
