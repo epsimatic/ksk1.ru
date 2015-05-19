@@ -159,7 +159,7 @@ foreach ($array_forecast as $forecast_object) {
 
 
 $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
-Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";//</div></div></div></div>";
+П<span class='hidden-xs'>одробный п</span>рогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";//</div></div></div></div>";
 
 //echo $conditions_forecast;
 //var_dump($array_forecast);
