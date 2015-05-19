@@ -128,13 +128,16 @@ $text_forecast =" <div id='header'>
 		                        <span class='low'>".$forecast_object['temp_low']."</span>
 		                        °C
 		                    </span>";
-                 if ($forecast_object['mm']>0)
+                 if ($forecast_object['mm']>0 && $forecast_object['pop']>0)
                      $text_forecast.="<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, ".$forecast_object['pop'].");'>
                             <span class='drop-icon'></span>
                                 <strong>".$forecast_object['mm']."</strong> мм</span>";
 
-                 else  $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>
+                 elseif($forecast_object['mm']==0 && $forecast_object['pop']>0)  $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>
                                 ".$forecast_object['conditions']."
+                            </span></span>";
+                 elseif($forecast_object['mm']==0 && $forecast_object['pop']==0)
+                     $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>Сухо
                             </span></span>";
                  $text_forecast.="</div>
                         <div class='day'>
