@@ -9,6 +9,11 @@
 
 <body>
 <div class="container">
+<!--<div id='header'>
+<div id='navpanel-info' class='navpanel navpanel-info row active'>
+<div class='col-xs-12 col-sm-4 subpanel cat'>
+<div class='col-xs-12 subpanel' id='weather-panel'>
+-->
 
 <?php
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
@@ -115,11 +120,7 @@ foreach ($forecasts as $forecast) {
     }
 }
 array_pop($array_forecast);
-$conditions_forecast = " <div id='header'>
-        <div id='navpanel-info' class='navpanel navpanel-info row active'>
-            <div class='col-xs-12 col-sm-4 subpanel cat'>
-                <div class='col-xs-12 subpanel' id='weather-panel'>";
-
+$conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
@@ -158,7 +159,7 @@ foreach ($array_forecast as $forecast_object) {
 
 
 $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
-Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6></div></div></div></div>";
+Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";//</div></div></div></div>";
 
 //echo $conditions_forecast;
 //var_dump($array_forecast);
