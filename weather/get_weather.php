@@ -139,7 +139,10 @@ foreach ($array_forecast as $forecast_object) {
     $text_night = mbStringToArray($forecast_object['text_night']);
     $text_night[0] = mb_convert_case($text_night[0],MB_CASE_LOWER);
     $text_night = implode("",$text_night);
-//    echo '<pre>';print_r($text_night); echo "</pre>";
+
+    $text_day   = str_replace("C.","℃.",$text_day);
+    $text_night = str_replace("C.","℃.",$text_night);
+
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
