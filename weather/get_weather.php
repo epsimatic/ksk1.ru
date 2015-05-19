@@ -27,7 +27,7 @@ $description = $parsed_conditions->{'weather'};
 $icon = $parsed_conditions->{'icon'};
 $icon_url = $parsed_conditions->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
-if (is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "") {
+if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
     echo '<p class="bg-danger">Weatherunderground is offline, using Yandex</p>';
     echo "<pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>";
