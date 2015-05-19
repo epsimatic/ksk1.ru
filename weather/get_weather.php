@@ -140,7 +140,6 @@ foreach ($array_forecast as $forecast_object) {
     $text_night = mbStringToArray($forecast_object['text_night']);
     $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
     $text_night = implode("", $text_night);
-
     $text_day   = str_replace("C.", "℃.", $forecast_object['text_day']);
     $text_night = str_replace("C.", "℃.", $text_night);
 
@@ -168,7 +167,7 @@ foreach ($array_forecast as $forecast_object) {
                         </div>
                         <div class='night'>
                             <img src='" . $forecast_object['icon_url_night'] . "'>
-                            <p><em>Ночью</em> " . lcfirst($text_night) . "</p>
+                            <p><em>Ночью</em> " . $text_night . "</p>
                         </div>
                     </div>";
 
