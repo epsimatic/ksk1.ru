@@ -136,7 +136,10 @@ array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
     //Первую букву -- маленькой
-    echo '<pre>'; print_r(mbStringToArray($forecast_object['text_night'])); echo "</pre>";
+    $text_night = mbStringToArray($forecast_object['text_night']);
+    $text_night[0] = mb_convert_case($text_night[0],MB_CASE_LOWER);
+    $text_night = implode("",$text_night);
+//    echo '<pre>';print_r($text_night); echo "</pre>";
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
@@ -161,7 +164,7 @@ foreach ($array_forecast as $forecast_object) {
                         </div>
                         <div class='night'>
                             <img src='" . $forecast_object['icon_url_night'] . "'>
-                            <p><em>Ночью</em> " . lcfirst($forecast_object['text_night']) . "</p>
+                            <p><em>Ночью</em> " . lcfirst($text_night) . "</p>
                         </div>
                     </div>";
 
