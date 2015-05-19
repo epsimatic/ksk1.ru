@@ -122,6 +122,7 @@ foreach ($forecasts as $forecast) {
 array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
+//    $forecast_object['text_night'] =
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
@@ -132,17 +133,13 @@ foreach ($array_forecast as $forecast_object) {
 		                        <span class='low'>" . $forecast_object['temp_low'] . "</span>
 		                        °C
 		                    </span>";
-    if ($forecast_object['mm'] > 0 && $forecast_object['pop'] > 0)
+    if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
         $conditions_forecast .= "<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, " . $forecast_object['pop'] . ");'>
                             <span class='drop-icon'></span>
                                 <strong>" . $forecast_object['mm'] . "</strong> мм</span>";
 
-    elseif ($forecast_object['mm'] == 0 && $forecast_object['pop'] > 0) $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'><span>
-                                " . $forecast_object['conditions'] . "
-                            </span></span>";
-    elseif ($forecast_object['mm'] == 0 && $forecast_object['pop'] == 0)
-        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'>Сухо
-                            </span>";
+    else 
+        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'>Сухо</span>";
     $conditions_forecast .= "</div>
                         <div class='day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
@@ -150,7 +147,7 @@ foreach ($array_forecast as $forecast_object) {
                         </div>
                         <div class='night'>
                             <img src='" . $forecast_object['icon_url_night'] . "'>
-                            <p><em>Ночью. </em>" . $forecast_object['text_night'] . "</p>
+                            <p><em>Ночью</em> " . lcfirst($forecast_object['text_night']) . "</p>
                         </div>
                     </div>";
 
@@ -158,7 +155,7 @@ foreach ($array_forecast as $forecast_object) {
 }
 
 
-$conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
+$conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434' target='_blank'>
 Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";//</div></div></div></div>";
 
 //echo $conditions_forecast;
