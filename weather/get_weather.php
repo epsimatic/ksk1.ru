@@ -12,18 +12,17 @@
 
 <?php
 
-mb_internal_encoding( 'UTF-8');
-mb_regex_encoding( 'UTF-8');
+mb_internal_encoding('UTF-8');
+mb_regex_encoding('UTF-8');
 function mbStringToArray
-( $string
+($string
 )
 {
-    $stop   = mb_strlen( $string);
+    $stop = mb_strlen($string);
     $result = array();
 
-    for( $idx = 0; $idx < $stop; $idx++)
-    {
-        $result[] = mb_substr( $string, $idx, 1);
+    for ($idx = 0; $idx < $stop; $idx++) {
+        $result[] = mb_substr($string, $idx, 1);
     }
 
     return $result;
@@ -49,7 +48,9 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
     header("Status: 503 Internal server error");
     echo '<p class="bg-danger">Weatherunderground is offline, using Yandex</p>';
     echo "<pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>";
-    echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
+    echo "<h1>Сырые данные:</h1><pre>";
+    print_r($parsed_json);
+    echo "</pre>";
     $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
     if ($temp_c > 0) $sign = "+"; else $sign = "";
@@ -137,11 +138,11 @@ $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
     //Первую букву -- маленькой
     $text_night = mbStringToArray($forecast_object['text_night']);
-    $text_night[0] = mb_convert_case($text_night[0],MB_CASE_LOWER);
-    $text_night = implode("",$text_night);
+    $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
+    $text_night = implode("", $text_night);
 
-    $text_day   = str_replace("C.","℃.",$text_day);
-    $text_night = str_replace("C.","℃.",$text_night);
+    $text_day   = str_replace("C.", "℃.", $forecast_object['text_day']);
+    $text_night = str_replace("C.", "℃.", $text_night);
 
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
@@ -158,12 +159,12 @@ foreach ($array_forecast as $forecast_object) {
                             <span class='drop-icon'></span>
                                 <strong>" . $forecast_object['mm'] . "</strong> мм</span>";
 
-    else 
+    else
         $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'>Сухо</span>";
     $conditions_forecast .= "</div>
                         <div class='day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
-                            <p>" . $forecast_object['text_day'] . "</p>
+                            <p>" . $text_day . "</p>
                         </div>
                         <div class='night'>
                             <img src='" . $forecast_object['icon_url_night'] . "'>
@@ -181,7 +182,9 @@ $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wundergroun
 //echo $conditions_forecast;
 //var_dump($array_forecast);
 
-if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */ false) {
+if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
+false
+) {
     header("Status: 503 Internal server error");
     echo 'Weatherunderground (forecast) is offline, using Yandex';
     $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk" target="_blank">
@@ -202,16 +205,19 @@ if (file_put_contents("forecast.html", $forecast)) {
 ?>
 
 
-    <?=$conditions?>
+<?= $conditions ?>
 
 <div id='header'>
-<div id='navpanel-info' class='navpanel navpanel-info row active'>
-<div class='col-xs-12 col-sm-4 subpanel cat'>
-<div class='col-xs-12 subpanel' id='weather-panel'>
+    <div id='navpanel-info' class='navpanel navpanel-info row active'>
+        <div class='col-xs-12 col-sm-4 subpanel cat'>
+            <div class='col-xs-12 subpanel' id='weather-panel'>
 
-    <?=$forecast?>
+                <?= $forecast ?>
 
-</div></div></div></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </div>
