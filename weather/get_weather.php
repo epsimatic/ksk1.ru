@@ -1,4 +1,5 @@
-<html><head>
+<html>
+<head>
     <meta charset="utf-8">
     <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="http://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
@@ -10,52 +11,55 @@
 <div class="container">
 
 <?php
-$json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/lang:RU/q/Russia/Krasnoufimsk.json");
+$json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
-$temp_c = intval($parsed_json->{'current_observation'}->{'temp_c'});
-$pressure = round(intval($parsed_json->{'current_observation'}->{'pressure_mb'}) * 0.7500637554192);
-$wind = round(intval($parsed_json->{'current_observation'}->{'wind_kph'}) / 3.6);
-$humidity = $parsed_json->{'current_observation'}->{'relative_humidity'};
-$feelslike_c = intval($parsed_json->{'current_observation'}->{'feelslike_c'});
+$parsed_conditions = $parsed_json->{'current_observation'};
+
+$temp_c = intval($parsed_conditions->{'temp_c'});
+$pressure = round(intval($parsed_conditions->{'pressure_mb'}) * 0.7500637554192);
+$wind = round(intval($parsed_conditions->{'wind_kph'}) / 3.6);
+$humidity = $parsed_conditions->{'relative_humidity'};
+$feelslike_c = intval($parsed_conditions->{'feelslike_c'});
 if ($temp_c == $feelslike_c) $temp = 'Температура ' . $temp_c . '°';
 else  $temp = 'Температура ' . $temp_c . '°, Ощущается как ' . $feelslike_c . '°';
-$description = $parsed_json->{'current_observation'}->{'weather'};
-$icon = $parsed_json->{'current_observation'}->{'icon'};
-$icon_url = $parsed_json->{'current_observation'}->{'icon_url'};
+$description = $parsed_conditions->{'weather'};
+$icon = $parsed_conditions->{'icon'};
+$icon_url = $parsed_conditions->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
-if (is_nan($temp_c) || $temp_c === null || $description=="" ||$icon=="" ) {
+if (is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "") {
     header("Status: 503 Internal server error");
     echo 'Weatherunderground is offline, using Yandex';
-   $text = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
+    $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
-if ($temp_c > 0) $sign = "+"; else $sign = "";
-$week = array(
-    "Sunday" => "воскресенье",
-    "Monday" => "понедельник",
-    "Tuesday" => "вторник",
-    "Wednesday" => "среду",
-    "Thursday" => "четверг",
-    "Friday" => "пятницу",
-    "Saturday" => "субботу");
-$text = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_json->{'current_observation'}->{'observation_epoch'})] . " в " .
-    date("G.i", $parsed_json->{'current_observation'}->{'observation_epoch'}) . ':' . PHP_EOL
-    . $temp . '
+    if ($temp_c > 0) $sign = "+"; else $sign = "";
+    $week = array(
+        "Sunday" => "воскресенье",
+        "Monday" => "понедельник",
+        "Tuesday" => "вторник",
+        "Wednesday" => "среду",
+        "Thursday" => "четверг",
+        "Friday" => "пятницу",
+        "Saturday" => "субботу");
+    $conditions = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в " .
+        date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
+        . $temp . '
 Давление ' . $pressure . ' мм рт.ст.
 Ветер ' . $wind . ' м/с
 Влажность ' . $humidity . PHP_EOL
-    . $description . '
+        . $description . '
 Щёлкните для прогноза">
             <img class="weather-icon" src="' . $icon_url . '">
             <div class="weather-temp">' . $sign . $temp_c . '</div>
             <div class="weather-label">' . $description . '</div>
         </div>';
 }
-if (file_put_contents("weather.html", $text)) {
+
+if (file_put_contents("conditions.html", $conditions)) {
 //    echo "File weather.html saved";
 } else {
     header("Status: 503 Internal server error");
-    die ('Error saving weather.html');
+    echo 'Error saving conditions.html';
 }
 
 //echo "\n\nForecast:\n\n";
@@ -65,7 +69,7 @@ if (file_put_contents("weather.html", $text)) {
 
 /*echo "<p>Current temperature in ${location} is: ${temp_c}</p>";
 echo "<p>";*/
-$array_forecast =array();
+$array_forecast = array();
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
 //общие данные
@@ -85,79 +89,78 @@ $month = array(
     11 => "ноября",
     12 => "декабря",
 );
-   $obect =0;
-foreach ($simpleforecastdays as $forecastday){
+$obect = 0;
+foreach ($simpleforecastdays as $forecastday) {
     $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'};
-    $array_forecast[$obect]['day'] = $forecastday->{'date'}->{'day'}." ".$month[$forecastday->{'date'}->{'month'}];
-    $array_forecast[$obect]['temp_high'] =$forecastday->{'high'}->{'celsius'};
-    $array_forecast[$obect]['temp_low'] =$forecastday->{'low'}->{'celsius'};
-    $array_forecast[$obect]['conditions'] =$forecastday->{'conditions'};
-    $array_forecast[$obect]['mm'] =$forecastday->{'qpf_allday'}->{'mm'};
-    $array_forecast[$obect]['pop'] =$forecastday->{'pop'}/100;
+    $array_forecast[$obect]['day'] = $forecastday->{'date'}->{'day'} . " " . $month[$forecastday->{'date'}->{'month'}];
+    $array_forecast[$obect]['temp_high'] = $forecastday->{'high'}->{'celsius'};
+    $array_forecast[$obect]['temp_low'] = $forecastday->{'low'}->{'celsius'};
+    $array_forecast[$obect]['conditions'] = $forecastday->{'conditions'};
+    $array_forecast[$obect]['mm'] = $forecastday->{'qpf_allday'}->{'mm'};
+    $array_forecast[$obect]['pop'] = $forecastday->{'pop'} / 100;
     $obect++;
 }
 //данные день-ночь
 $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
-    $period=$forecast->{'period'};
-    if ($period%2){
-        $object_num=($period-1)/2 ;
-        $array_forecast[$object_num]['text_night']= $forecast->{'fcttext_metric'};
-        $array_forecast[$object_num]['icon_url_night']= $forecast->{'icon_url'};
-    }
-    else{
-        $object_num=($period)/2 ;
-        $array_forecast[$object_num]['text_day']= $forecast->{'fcttext_metric'};
-        $array_forecast[$object_num]['icon_url_day']= $forecast->{'icon_url'};
+    $period = $forecast->{'period'};
+    if ($period % 2) {
+        $object_num = ($period - 1) / 2;
+        $array_forecast[$object_num]['text_night'] = $forecast->{'fcttext_metric'};
+        $array_forecast[$object_num]['icon_url_night'] = $forecast->{'icon_url'};
+    } else {
+        $object_num = ($period) / 2;
+        $array_forecast[$object_num]['text_day'] = $forecast->{'fcttext_metric'};
+        $array_forecast[$object_num]['icon_url_day'] = $forecast->{'icon_url'};
     }
 }
 array_pop($array_forecast);
-$text_forecast =" <div id='header'>
+$conditions_forecast = " <div id='header'>
         <div id='navpanel-info' class='navpanel navpanel-info row active'>
             <div class='col-xs-12 col-sm-4 subpanel cat'>
                 <div class='col-xs-12 subpanel' id='weather-panel'>";
 
-             foreach($array_forecast as $forecast_object){
-                 $text_forecast.=" <div class='day-row'>
+foreach ($array_forecast as $forecast_object) {
+    $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
-                            <span class='weekday'>".$forecast_object['weekday']."</span>
-                            <span class='date'>".$forecast_object['day']."</span>
+                            <span class='weekday'>" . $forecast_object['weekday'] . "</span>
+                            <span class='date'>" . $forecast_object['day'] . "</span>
 		                    <span class='temps'>
-		                        <span class='high'>".$forecast_object['temp_high']."</span>
+		                        <span class='high'>" . $forecast_object['temp_high'] . "</span>
                                 <span class='split'>|</span>
-		                        <span class='low'>".$forecast_object['temp_low']."</span>
+		                        <span class='low'>" . $forecast_object['temp_low'] . "</span>
 		                        °C
 		                    </span>";
-                 if ($forecast_object['mm']>0 && $forecast_object['pop']>0)
-                     $text_forecast.="<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, ".$forecast_object['pop'].");'>
+    if ($forecast_object['mm'] > 0 && $forecast_object['pop'] > 0)
+        $conditions_forecast .= "<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, " . $forecast_object['pop'] . ");'>
                             <span class='drop-icon'></span>
-                                <strong>".$forecast_object['mm']."</strong> мм</span>";
+                                <strong>" . $forecast_object['mm'] . "</strong> мм</span>";
 
-                 elseif($forecast_object['mm']==0 && $forecast_object['pop']>0)  $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>
-                                ".$forecast_object['conditions']."
+    elseif ($forecast_object['mm'] == 0 && $forecast_object['pop'] > 0) $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'><span>
+                                " . $forecast_object['conditions'] . "
                             </span></span>";
-                 elseif($forecast_object['mm']==0 && $forecast_object['pop']==0)
-                     $text_forecast.="<span title='Вероятность осадков' class='pop pop-dry'><span>Сухо
+    elseif ($forecast_object['mm'] == 0 && $forecast_object['pop'] == 0)
+        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'><span>Сухо
                             </span></span>";
-                 $text_forecast.="</div>
+    $conditions_forecast .= "</div>
                         <div class='day'>
-                            <img src='".$forecast_object['icon_url_day']."'>
-                            <p>".$forecast_object['text_day']."</p>
+                            <img src='" . $forecast_object['icon_url_day'] . "'>
+                            <p>" . $forecast_object['text_day'] . "</p>
                         </div>
                         <div class='night'>
-                            <img src='".$forecast_object['icon_url_night']."'>
-                            <p><em>Ночью. </em>".$forecast_object['text_night']."</p>
+                            <img src='" . $forecast_object['icon_url_night'] . "'>
+                            <p><em>Ночью. </em>" . $forecast_object['text_night'] . "</p>
                         </div>
                     </div>";
 
 
-             }
+}
 
 
-$text_forecast.="<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
+$conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
 Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6></div></div></div></div>";
 
-echo $text_forecast ;
+echo $conditions_forecast;
 //var_dump($array_forecast);
 ?>
 <!--
@@ -249,8 +252,29 @@ echo $text_forecast ;
 
 
     <h3>А вот сырые данные:</h3>
-    <pre><?/*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/?></pre>-->
+    <pre><? /*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/ ?></pre>-->
 </div>
-</body></html>
+</body>
+</html>
 
 
+
+
+<?php
+
+if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */ false) {
+    header("Status: 503 Internal server error");
+    echo 'Weatherunderground (forecast) is offline, using Yandex';
+    $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk" target="_blank">
+                    <img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
+                 </a>';
+} else {
+    $forecast = "";
+}
+
+if (file_put_contents("forecast.html", $forecast)) {
+//    echo "File forecast.html saved";
+} else {
+    header("Status: 503 Internal server error");
+    die ('Error saving forecast.html');
+}
