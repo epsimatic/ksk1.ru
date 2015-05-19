@@ -30,6 +30,7 @@ $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "") {
     header("Status: 503 Internal server error");
     echo 'Weatherunderground is offline, using Yandex';
+    echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
     $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
     if ($temp_c > 0) $sign = "+"; else $sign = "";
