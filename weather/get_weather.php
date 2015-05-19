@@ -133,6 +133,7 @@ foreach ($forecasts as $forecast) {
         $array_forecast[$object_num]['icon_url_day'] = $forecast->{'icon_url'};
     }
 }
+
 array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
