@@ -142,7 +142,6 @@ foreach ($array_forecast as $forecast_object) {
     $text_night = implode("", $text_night);
     $text_day   = str_replace("C.", "℃.", $forecast_object['text_day']);
     $text_night = str_replace("C.", "℃.", $text_night);
-
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
