@@ -117,7 +117,9 @@ foreach ($forecasts as $forecast) {
 array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
-//    $forecast_object['text_night'] =
+    //Первую букву -- маленькой
+    if ( $forecast_object['text_night'][1] < 0x30 )
+        $forecast_object['text_night'][1] += 0x20;
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
