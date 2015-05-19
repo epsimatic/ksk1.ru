@@ -253,10 +253,6 @@ $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wundergroun
 
     <h3>А вот сырые данные:</h3>
     <pre><? /*=file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");*/ ?></pre>-->
-</div>
-</body>
-</html>
-
 
 
 
@@ -278,3 +274,10 @@ if (file_put_contents("forecast.html", $forecast)) {
     header("Status: 503 Internal server error");
     die ("Error saving <a href='/weather/forecast.html'>forecast.html</a>");
 }
+
+
+?>
+</div>
+</body>
+</html>
+
