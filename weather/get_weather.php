@@ -105,11 +105,11 @@ $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
     $period = $forecast->{'period'};
     if ($period % 2) {
-        $object_num = ($period - 1) / 2;
+        $object_num = intval(($period - 1) / 2);
         $array_forecast[$object_num]['text_night'] = $forecast->{'fcttext_metric'};
         $array_forecast[$object_num]['icon_url_night'] = $forecast->{'icon_url'};
     } else {
-        $object_num = ($period) / 2;
+        $object_num = intval(($period) / 2);
         $array_forecast[$object_num]['text_day'] = $forecast->{'fcttext_metric'};
         $array_forecast[$object_num]['icon_url_day'] = $forecast->{'icon_url'};
     }
@@ -140,8 +140,8 @@ foreach ($array_forecast as $forecast_object) {
                                 " . $forecast_object['conditions'] . "
                             </span></span>";
     elseif ($forecast_object['mm'] == 0 && $forecast_object['pop'] == 0)
-        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'><span>Сухо
-                            </span></span>";
+        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'>Сухо
+                            </span>";
     $conditions_forecast .= "</div>
                         <div class='day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
@@ -160,7 +160,7 @@ foreach ($array_forecast as $forecast_object) {
 $conditions_forecast .= "<h6 class='text-center'><a href='http://www.wunderground.com/q/zmw:00000.1.28434'>
 Подробный прогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6></div></div></div></div>";
 
-echo $conditions_forecast;
+//echo $conditions_forecast;
 //var_dump($array_forecast);
 ?>
 <!--
@@ -269,7 +269,7 @@ if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" *
                     <img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
                  </a>';
 } else {
-    $forecast = "";
+    $forecast = $conditions_forecast;
 }
 
 if (file_put_contents("forecast.html", $forecast)) {
