@@ -11,6 +11,23 @@
 <div class="container">
 
 <?php
+
+
+function mbStringToArray
+( $string
+)
+{
+    $stop   = mb_strlen( $string);
+    $result = array();
+
+    for( $idx = 0; $idx < $stop; $idx++)
+    {
+        $result[] = mb_substr( $string, $idx, 1);
+    }
+
+    return $result;
+}
+
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
@@ -118,7 +135,7 @@ array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
     //Первую букву -- маленькой
-    print_r(mb_split('.',$forecast_object['text_night']));
+    echo '<pre>'; print_r(mbStringToArray($forecast_object['text_night'])); echo "</pre>";
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
