@@ -58,10 +58,10 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
-//    echo "File weather.html saved";
+    echo "File <a href='/weather/conditions.html'>conditions.html</a> saved";
 } else {
     header("Status: 503 Internal server error");
-    echo 'Error saving conditions.html';
+    echo "Error saving <a href='/weather/conditions.html'>conditions.html</a>";
 }
 
 //echo "\n\nForecast:\n\n";
@@ -273,8 +273,8 @@ if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" *
 }
 
 if (file_put_contents("forecast.html", $forecast)) {
-//    echo "File forecast.html saved";
+    echo "File <a href='/weather/forecast.html'>forecast.html</a> saved";
 } else {
     header("Status: 503 Internal server error");
-    die ('Error saving forecast.html');
+    die ("Error saving <a href='/weather/forecast.html'>forecast.html</a>");
 }
