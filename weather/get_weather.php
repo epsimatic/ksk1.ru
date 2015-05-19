@@ -118,8 +118,7 @@ array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
     //Первую букву -- маленькой
-    if ( $forecast_object['text_night'][1] < 0x30 )
-        $forecast_object['text_night'][1] += 0x20;
+    print_r(mb_split('.',$forecast_object['text_night']));
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
