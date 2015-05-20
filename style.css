@@ -1496,7 +1496,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .temp .panel-news .news-slide img {max-width: 120px;float: left;margin-bottom: 10px;margin-right: 15px;}
 
-.temp .panel-news-list .list-group-item {text-align: center;}
+.temp .panel-news-list .list-group-item {}
 
 .temp .panel-news-list .list-group-item img {height: 100%; width: 120px;float: left; margin-bottom: 10px;margin-right: 15px;}
 
@@ -1505,7 +1505,7 @@ body.ob     .cond-active.cond-active-ob,
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
 .temp .post-title,
-.temp .post-text {font-family: Times,serif; font-weight: normal; text-align: left;}
+.temp .post-text {font-family: Times,serif; font-weight: normal; text-align: left;margin-bottom: 5px;}
 .temp .post-text { font-size: 14px; line-height: 1.2em; }
 
 .temp .panel-news-list .post-text {margin-bottom: 10px;}
