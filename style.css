@@ -147,6 +147,8 @@ header .btn-group {margin-top: 10px;}
     .user-panel { top: 0; width: 270px; }
 }
 
+.search-form button { background-color: transparent; border: medium none; padding: 5px 10px; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Логотип"> */
