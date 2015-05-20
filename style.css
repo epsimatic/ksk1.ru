@@ -966,6 +966,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-movies .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
+
 .navpanel #panel-movies .popover-content .movie-tagline { line-height: 1.25em; color: #607d8b; font-size: .9em; }
 
 .navpanel #panel-movies .popover-content .production-flag { padding-right: 2px; }
@@ -1497,7 +1498,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .temp .panel-news-list .list-group-item {text-align: center;}
 
-.temp .panel-news-list .list-group-item img {height: 100%; width: 100%;}
+.temp .panel-news-list .list-group-item img {height: 100%; width: 120px;}
 
 .temp .panel-news-list .list-group-item > .row {margin-left: -10px; margin-right: -10px;}
 
