@@ -1552,7 +1552,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .temp .post-actions > * {display: inline-block;}
 
-.temp .panel-news .post-actions {bottom: -10px; left: 20px; border-top-left-radius: 5px;}
+.temp .panel-news .post-actions {bottom: 0; left: 10px; border-top-left-radius: 5px;}
 
 .temp .panel-official .post-actions,
 .temp .panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
