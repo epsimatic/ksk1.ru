@@ -3448,9 +3448,24 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .e96-page .col-mid .row:first-child { padding: 20px 40px 12px; }
 */
 
-.e96-page .phone { color: #000; font-size: 16px; font-weight: bold; margin-right: 5px; }
+.e96-page .e96-about,
+.e96-page .e96-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
-.e96-page .worktime { color: #222; font-weight: 400; vertical-align: baseline; line-height: 19px; }
+.e96-page .e96-title { margin-bottom: 15px; }
+
+.e96-page .phone { display: block; color: #000; font-size: 29px; font-weight: bold; margin-right: 5px; }
+
+.e96-page .worktime { color: #222; font-weight: 400; line-height: 19px; font-size: 15px; }
+
+.e96-page .e96-about { margin-bottom: 35px; }
 
 .e96-page h2 { font-size: 25px; line-height: 25px; }
 
