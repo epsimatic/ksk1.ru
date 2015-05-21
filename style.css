@@ -3441,10 +3441,12 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 /*.e96-page .col-mid { background: url('http://news.kskmedia.ru/files/2015/05/index.png') repeat-x scroll 0 0 rgba(0, 0, 0, 0); }*/
 
-.e96-page .col-mid .row { padding: 10px 40px; }
+/*.e96-page .col-mid .row { padding: 10px 40px; }*/
 
+/*
 .e96-page .col-mid .row:first-child,
 .e96-page .col-mid .row:first-child { padding: 20px 40px 12px; }
+*/
 
 .e96-page .phone { color: #000; font-size: 16px; font-weight: bold; margin-right: 5px; }
 
@@ -3465,8 +3467,6 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .e96-page .info .name:focus { color: #FF6600; }
 
 .e96-page .info .clearance { color: #FF6600; line-height: 20px; vertical-align: baseline; }
-
-.e96-page .col-mid .row p { padding: 30px 40px; }
 
 .e96-page p { line-height: 20px; }
 
