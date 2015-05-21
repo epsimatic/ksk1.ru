@@ -2311,7 +2311,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-comments-list time {color: #888888; font-weight: 400;}
 
-.panel-comments-list .comment-content p {color: #50575e; padding: 10px 100px 5px 0; margin-bottom: 0; font-size: 0.98em;}
+.panel-comments-list .comment-content p { color: #50575e; /*padding: 10px 100px 5px 0;*/ margin-bottom: 0; font-size: 0.98em; float: left; }
+
+.panel-comments-list .comment-content p.comment-image { margin-top: -40px; float: right; }
+
+.panel-comments-list .comment-content p.comment-image img { max-width: 300px; max-height: 300px; }
 
 .btn-reply {background-color: #fff; border: none; border-radius: 0; padding: 6px 20px; font-size: 13px; color: #858d93; position: relative; top: -30px;}
 
