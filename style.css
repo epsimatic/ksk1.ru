@@ -3456,6 +3456,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .e96-page h1 { color: #f37802; font-weight: bold; font-size: 34px; }
 
+.e96-page .info img,
+.e96-page .logo-text img { max-width: 100%; }
+
 .e96-page h2 a { color: #f37802; }
 
 .e96-page h2 a:hover,
