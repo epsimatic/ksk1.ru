@@ -3130,7 +3130,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge { background-color: #fff; border-radius: 3px; padding: 2px 7px 2px 6px; color: #ff6347; font-weight: 600; }
+.panel-default.panel-schedule .panel-heading .route-number.badge { background-color: #fff; border-radius: 3px; padding: 5px 7px 6px 6px; color: #ff6347; font-weight: 600; }
 
 .panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #a1acb2; color: #fff; }
 
