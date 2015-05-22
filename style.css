@@ -3103,8 +3103,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
 
-#schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 21px; }
+#schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 21px; background-color: #f0f0f0; color: #666; }
 
+
+.panel-default.panel-schedule .panel-heading > a > .row,
 #schedule-heading.panel-default .panel-heading > .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3116,8 +3118,31 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
     text-align: center;
 }
 
-.panel-default.panel-schedule .panel-heading { }
+.panel-default.panel-schedule { box-shadow: none; }
 
+.panel-default.panel-schedule .panel-heading { background-color: #fff; padding: 0; }
+
+.panel-default.panel-schedule .panel-heading a { display: block; padding: 15px 15px 15px 10px; color: #fff; background-color: #ff6347; }
+
+.panel-default.panel-schedule .panel-heading a:hover { background-color: #ff755c; }
+
+.panel-default.panel-schedule .panel-heading a.collapsed { background-color: #fff; color: #333; }
+
+.panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
+
+.panel-default.panel-schedule .panel-heading .route-number { background-color: #a1acb2; border-radius: 3px; padding: 4px 5px 5px; }
+
+#accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
+
+#accordion-schedule .panel-schedule .interval { font-size: 18px; }
+
+#accordion-schedule .minutes { position: relative; bottom: 2px; font-size: 13px; color: #999; }
+
+.panel-default.panel-schedule .panel-heading .stations { font-size: 11px; color: #666; }
+
+.panel-default.panel-schedule .panel-heading .stations > .station:after { content: ","; color: #777; }
+
+.panel-default.panel-schedule .panel-heading .stations > .station:last-child::after { content: ""; }
 
 
 
