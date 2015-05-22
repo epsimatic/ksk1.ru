@@ -3710,6 +3710,11 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 
 body.agenda .entry-content.page-content:empty { margin: 0; }
 
+
+.sidebar .panel-comments #respond { padding: 15px; }
+
+.sidebar .panel-comments #respond #comment-image-wrapper label { padding-top: 10px; font-size: 13px; font-weight: 300; }
+
 /* Оформление списка событий */
 .panel-event .panel-heading,
 .panel-event .panel-body {padding: 0;}
