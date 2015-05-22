@@ -3102,6 +3102,26 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
+
+#schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 15px; }
+
+#schedule-heading.panel-default .panel-heading > .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel-default.panel-schedule .panel-heading { }
+
+
+
+
+
 #railroad-transpost.tab-pane a { display: block; position: relative; text-align: center; }
 
 #railroad-transpost.tab-pane img { width: 100%; }
