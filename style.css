@@ -3103,7 +3103,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
 
 
-#schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 15px; }
+#schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 21px; }
 
 #schedule-heading.panel-default .panel-heading > .row {
     display: -webkit-box;
