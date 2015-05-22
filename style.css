@@ -3130,15 +3130,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number { background-color: #fff; border-radius: 3px; padding: 2px 7px 2px 6px; color: #ff6347; font-weight: 600; }
+.panel-default.panel-schedule .panel-heading .route-number.badge { background-color: #fff; border-radius: 3px; padding: 2px 7px 2px 6px; color: #ff6347; font-weight: 600; }
 
-.panel-default.panel-schedule .panel-heading a.collapsed .route-number { background-color: #a1acb2; color: #fff; }
+.panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #a1acb2; color: #fff; }
 
 #accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
 
 #accordion-schedule .panel-schedule .interval { font-size: 18px; }
 
-#accordion-schedule .minutes { position: relative; bottom: 2px; font-size: 13px; opacity: .8; }
+#accordion-schedule .minutes { position: relative; bottom: 2px; padding-left: 2px; font-size: 13px; opacity: .8; }
 
 #accordion-schedule a.collapsed .minutes { color: #999; opacity: 1; }
 
