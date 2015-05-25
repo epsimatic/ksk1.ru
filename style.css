@@ -3713,25 +3713,38 @@ ul.list-days > li > a:focus {background-color: #ff724f; transition: background-c
 body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
-.sidebar .panel-comments #respond { padding: 15px; }
+.panel-shoutbox > .panel-heading { background: #ff4081 url("http://ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
-.sidebar .panel-comments #respond #comment-image-wrapper label { padding-top: 10px; font-size: 13px; font-weight: 300; }
+.sidebar .panel-comments #respond,
+.sidebar .panel-shoutbox #respond { padding: 15px; }
 
-.sidebar .panel-comments .commentlist { padding: 10px 20px; list-style-type: none; }
+.sidebar .panel-comments #respond #comment-image-wrapper label,
+.sidebar .panel-shoutbox #respond #comment-image-wrapper label { padding-top: 10px; font-size: 13px; font-weight: 300; }
+
+.sidebar .panel-comments .commentlist,
+.sidebar .panel-shoutbox .commentlist { padding: 10px 20px; list-style-type: none; }
 
 .sidebar .panel-comments .commentlist .avatar,
 .sidebar .panel-comments .commentlist .comment-author .says,
-.sidebar .panel-comments .commentlist .reply { display: none; }
+.sidebar .panel-comments .commentlist .reply,
+.sidebar .panel-shoutbox .commentlist .avatar,
+.sidebar .panel-shoutbox .commentlist .comment-author .says,
+.sidebar .panel-shoutbox .commentlist .reply { display: none; }
 
-.sidebar .panel-comments .commentlist .comment-author { display: inline-block; }
+.sidebar .panel-comments .commentlist .comment-author,
+.sidebar .panel-shoutbox .commentlist .comment-author { display: inline-block; }
 
-.sidebar .panel-comments .commentlist .comment-author::after { content: ""; }
+.sidebar .panel-comments .commentlist .comment-author::after,
+.sidebar .panel-shoutbox .commentlist .comment-author::after { content: ""; }
 
-.sidebar .panel-comments .commentlist .comment-author .fn { color: #1976d2; font-weight: 600; }
+.sidebar .panel-comments .commentlist .comment-author .fn,
+.sidebar .panel-shoutbox .commentlist .comment-author .fn { color: #1976d2; font-weight: 600; }
 
-.sidebar .panel-comments .commentlist .commentmetadata { position: relative; bottom: 1px; font-size: 11px; display: inline-block; }
+.sidebar .panel-comments .commentlist .commentmetadata,
+.sidebar .panel-shoutbox .commentlist .commentmetadata { position: relative; bottom: 1px; font-size: 11px; display: inline-block; }
 
-.sidebar .panel-comments .commentlist .commentmetadata a { color: #999; }
+.sidebar .panel-comments .commentlist .commentmetadata a,
+.sidebar .panel-shoutbox .commentlist .commentmetadata a { color: #999; }
 
 /* Оформление списка событий */
 .panel-event .panel-heading,
@@ -3853,10 +3866,6 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event.has-post-thumbnail .post-more { float: right; }
 
 .panel-event .post-event .post-more a { color: #888; }
-
-
-.panel-shoutbox > .panel-heading { background: #ff4081 url("http://ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
-
 
 
 /* Страница фильма */
