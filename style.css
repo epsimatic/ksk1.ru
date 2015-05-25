@@ -1507,10 +1507,12 @@ body.ob     .cond-active.cond-active-ob,
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
 .temp .post-title,
-.temp .post-text {font-family: Times,serif; font-weight: normal; text-align: left;margin-bottom: 5px;}
-.temp .post-text { font-size: 14px; line-height: 1.2em; }
+.temp .post-description-text { font-family: Times,serif; font-weight: normal; text-align: left; margin-bottom: 5px; }
+.temp .post-description-text { font-size: 14px; line-height: 1.2em; }
 
-.temp .panel-news-list .post-text {margin-bottom: 10px;}
+.temp .post-title { font-weight: bold; font-size: 16px; }
+
+.temp .panel-news-list .post-description-text { margin-bottom: 10px; }
 
 .temp .panel-news .news-slide .post-actions {font-size: 14px;}
 
