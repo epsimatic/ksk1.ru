@@ -3855,6 +3855,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .post-more a { color: #888; }
 
 
+.panel-shoutbox > .panel-heading { background: #ff4081 url("http://ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
+
+
 
 /* Страница фильма */
 .main-content-inner .release_date {padding-right: 5px;}
