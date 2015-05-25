@@ -1507,10 +1507,10 @@ body.ob     .cond-active.cond-active-ob,
 .temp .panel-news-list .yummies {margin-bottom: 0;}
 
 .temp .post-title,
-.temp .post-description-text { font-family: Times,serif; font-weight: normal; text-align: left; margin-bottom: 5px; }
+.temp .post-description-text { font-family: Times,serif; text-align: left; margin-bottom: 5px; }
 .temp .post-description-text { font-size: 14px; line-height: 1.2em; }
 
-.temp .post-title { font-weight: bold; font-size: 16px; }
+.temp .post-title { font-weight: bold; font-size: 16px; margin-top: 0; }
 
 .temp .panel-news-list .post-description-text { margin-bottom: 10px; }
 
