@@ -417,7 +417,7 @@ h1 {
 
 .ob-admin .ob-up input:checked ~ label { color: #ff0000; }
 
-.ob-admin #publish-in-newspaper { text-align: center; display: inline-block; width: 55px; padding: 5px; }
+.ob-admin #publish-in-newspaper,.ob-admin #publish-in-tv,.ob-admin #publish-in-radio { text-align: center; display: inline-block; width: 55px; padding: 5px; }
 
 .ob-admin .radio-ob-status .input-group > .input-group-addon:first-child,
 .ob-admin .radio-is-selected .input-group > .input-group-addon:first-child { background-color: transparent; border-color: transparent; padding-left: 19px; }
