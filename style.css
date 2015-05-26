@@ -4776,6 +4776,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
+    .header-logo-col:first-child { width: 41.6667%; }
+
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -63px; height: 22px; left: 155px; }
 
