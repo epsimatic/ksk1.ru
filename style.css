@@ -1616,6 +1616,10 @@ body.ob     .cond-active.cond-active-ob,
 
 .temp .newstext img {margin: 10px;}
 
+/* Защита от расползающихся картинок на -xs */
+.newstext p img,
+iframe.fullstory__video { max-width: 100%; }
+
 .temp .newstitle,
 .temp .newstext {font-family: Times,serif; font-weight: normal; text-align: left;}
 
