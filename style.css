@@ -53,6 +53,7 @@ header#header {margin-bottom: 0 !important;}
 
 /* Блок стилей для fixed sticky */
 
+/*noinspection CssInvalidElement*/
 .fixedsticky { position: -webkit-sticky; position: sticky; }
 
 /* When position: sticky is supported but native behavior is ignored */
