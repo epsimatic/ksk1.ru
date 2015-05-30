@@ -1638,6 +1638,8 @@ body.ob     .cond-active.cond-active-ob,
 .news-old .post-news h4.post-title .fa { margin-right: 5px; }
 
 .news-old .post-news figure.post-thumb { margin-right: 15px; margin-bottom: 10px; width: 76px; float: left; }
+/* FIXME: Terrible kludge: */
+@media (max-width: 479px) { .news-old .post-news figure.post-thumb img { max-width: 76px !important; } }
 
 .news-old .post-news .post-description-text { margin-bottom: 10px; font-family: Times,serif; font-size: 14px; line-height: 1.2em; }
 
