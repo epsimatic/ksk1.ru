@@ -1617,7 +1617,8 @@ body.ob     .cond-active.cond-active-ob,
 .temp .newstext img {margin: 10px;}
 
 /* Защита от расползающихся картинок на -xs */
-.newstext p img,
+.newstext p > img,
+.newstext div > img,
 iframe.fullstory__video { max-width: 100%; }
 
 .temp .newstitle,
