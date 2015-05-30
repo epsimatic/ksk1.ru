@@ -132,13 +132,7 @@ foreach ($forecasts as $forecast) {
 array_pop($array_forecast);
 $conditions_forecast = "";
 foreach ($array_forecast as $forecast_object) {
-    //Первую букву -- маленькой
-    $text_night = mbStringToArray($forecast_object['text_night']);
-    $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
-    $text_night = implode("", $text_night);
-    $text_day = $forecast_object['text_day'];
-    $text_day = str_replace("C.", "℃.", $text_day);
-    $text_night = str_replace("C.", "℃.", $text_night);
+
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>" . $forecast_object['weekday'] . "</span>
@@ -150,12 +144,23 @@ foreach ($array_forecast as $forecast_object) {
 		                        °C
 		                    </span>";
     if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
-        $conditions_forecast .= "<span title='Вероятность осадков' class='pop' style='background-color: rgba(41, 182, 246, " . $forecast_object['pop'] . ");'>
+        $conditions_forecast .= "<span title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" .
+                                "Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " .
+                        "style='background-color: rgba(41, 182, 246, " . $forecast_object['pop'] . ");'>
                             <span class='drop-icon'></span>
                                 <strong>" . $forecast_object['mm'] . "</strong> мм</span>";
-
     else
-        $conditions_forecast .= "<span title='Вероятность осадков' class='pop pop-dry'>Сухо</span>";
+        $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
+
+//  Первую букву -- маленькой
+    $text_night = mbStringToArray($forecast_object['text_night']);
+    $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
+    $text_night = implode("", $text_night);
+
+    $text_day = $forecast_object['text_day'];
+    $text_day = str_replace("C.", "℃.", $text_day);
+    $text_night = str_replace("C.", "℃.", $text_night);
+
     $conditions_forecast .= "</div>
                         <div class='day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
@@ -166,7 +171,6 @@ foreach ($array_forecast as $forecast_object) {
                             <p><em>Ночью</em> " . $text_night . "</p>
                         </div>
                     </div>";
-
 
 }
 
