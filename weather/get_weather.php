@@ -14,17 +14,12 @@
 
 mb_internal_encoding('UTF-8');
 mb_regex_encoding('UTF-8');
-function mbStringToArray
-($string
-)
-{
+function mbStringToArray ($string) {
     $stop = mb_strlen($string);
     $result = array();
-
     for ($idx = 0; $idx < $stop; $idx++) {
         $result[] = mb_substr($string, $idx, 1);
     }
-
     return $result;
 }
 
@@ -142,7 +137,7 @@ foreach ($array_forecast as $forecast_object) {
     $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
     $text_night = implode("", $text_night);
     $text_day = $forecast_object['text_day'];
-    $text_day   = str_replace("C.", "℃.", $text_day);
+    $text_day = str_replace("C.", "℃.", $text_day);
     $text_night = str_replace("C.", "℃.", $text_night);
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
@@ -182,7 +177,7 @@ $conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.
 //echo $conditions_forecast;
 //var_dump($array_forecast);
 
-if (/*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
+if ( /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
 false
 ) {
     header("Status: 503 Internal server error");
