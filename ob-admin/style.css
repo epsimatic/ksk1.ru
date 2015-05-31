@@ -443,3 +443,22 @@ h1 {
 .ob-admin #radio-is-selected-1 ~ label { background-color: #FFF7A9; }
 
 .ob-admin #radio-is-selected-2 ~ label { background-color: #FFF04E; border-top: 1px dashed #F6D01E; }
+
+/* list-ads-2013   список объявлений в категории*/
+.ob-meta {
+    text-align: right;
+    display: inline-block;
+}
+
+.selectmess .ob-meta {
+    color: #AA2;
+}
+
+.selectmess .ob-meta:hover {
+    color: #442;
+}
+
+.selectmess {
+    background-color: #FFF385 !important;
+    margin-bottom: 5px;
+}
