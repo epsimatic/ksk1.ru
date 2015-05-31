@@ -2950,10 +2950,10 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 .is_admin .hide-admin {display: none !important;}
 
-.is_owner .show-owner,
+.is_owner .show-owner, .show-nobody ,
 .is_admin .show-admin {display: inline-block !important;}
 
-.is_admin.is_owner .hide-owner {display: none !important;}
+.is_admin.is_owner .hide-owner , .is_admin .show-nobody, .is_owner .show-nobody{display: none !important;}
 
 .preview div > div {
     background-color: #FFFFFF;
