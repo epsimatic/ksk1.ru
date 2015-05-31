@@ -64,9 +64,8 @@
 .table-obs-admin .checked-edit:hover:after { cursor: pointer; font-size: .6em; position: absolute; right: -9px; bottom: 0; text-shadow: 0 0 5px #fff; }
 
 .table-obs-admin .checked-no:hover:after,
-.table-obs-admin .checked-archive:hover:after,
-.table-obs-admin .checked-yes:hover:after { color: #3d5afe; content: ""; }
-
+.table-obs-admin .checked-archive:hover:after { color: #3d5afe; content: ""; }
+.table-obs-admin .checked-yes:hover:after { color: green; content: ""; }
 
 .table-obs-admin .checked-edit:hover:after { color: #666666; content: ""; }
 
