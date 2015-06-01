@@ -4638,8 +4638,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 @media (min-width: 992px) {
     .header-logo-col:first-child { width: 41.6667%; }
 
-    /*.header-logo-col:first-child .header-logo #sublogo, #sublogo { bottom: -56px; height: 20px; left: 127px; }*/
-    .header-logo-col:first-child .header-logo #sublogo, #sublogo { bottom: -49px; height: 15px; left: 87px; }
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { bottom: -56px; height: 20px; left: 127px; }
 
     .panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 {padding-left: 10px; font-size: 37px;}
 
