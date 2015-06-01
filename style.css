@@ -3140,7 +3140,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .panel-default.panel-schedule .panel-heading a:hover { background-color: #ff755c; }
 
 .panel-default.panel-schedule .panel-heading a:hover *,
-.panel-default.panel-schedule .panel-heading a:focus * { text-decoration: none;}
+.panel-default.panel-schedule .panel-heading a:hover,
+.panel-default.panel-schedule .panel-heading a:focus *,
+.panel-default.panel-schedule .panel-heading a:focus { text-decoration: none;}
 
 .panel-default.panel-schedule .panel-heading a.collapsed { background-color: #fff; color: #333; }
 
