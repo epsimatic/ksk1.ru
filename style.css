@@ -580,13 +580,18 @@ a.media-heading:focus {text-decoration: none;}
 
 .dropdown-menu > li .btn:hover {text-decoration: none;}
 
+.nav > li > a.featured { background-color: #ff0000; }
+
+.nav > li > a.featured:focus,
+.nav > li > a.featured:hover { background-color: #f44336; }
+
 .nav > li > a:focus,
-.nav > li > a:hover {color: #fff; background-color: #40c4ff;}
+.nav > li > a:hover { color: #fff; background-color: #40c4ff; }
 
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:hover,
-.nav .open > a:focus {background-color: #2CB3E9;}
+.nav .open > a:focus { background-color: #2CB3E9; }
 
 /*Таблицы*/
 .table thead > tr > th,
