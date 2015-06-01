@@ -3076,7 +3076,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #city-transpost .table tr > th { text-align: center; vertical-align: bottom; line-height: 1.2; }
 
-#city-transpost .table tr > td { vertical-align: middle; }
+/*#city-transpost .table tr > td { vertical-align: middle; }*/
 
 #city-transpost .table tr > td:first-child .badge { padding: 4px 5px 5px; border-radius: 3px; background-color: #a1acb2; }
 
