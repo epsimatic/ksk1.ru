@@ -3160,6 +3160,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #fff9c4; color: #a1887f; }
 
+.panel-default.panel-schedule .panel-heading .vehicle-type > img { width: 100%; }
+
 .panel-default.panel-schedule .panel-heading .route-name { font-size: 16px; }
 
 #accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
