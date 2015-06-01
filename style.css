@@ -580,10 +580,10 @@ a.media-heading:focus {text-decoration: none;}
 
 .dropdown-menu > li .btn:hover {text-decoration: none;}
 
-.nav > li > a.featured { background-color: #ff0000; }
+.nav > li > a.featured { background-color: #f44336; }
 
 .nav > li > a.featured:focus,
-.nav > li > a.featured:hover { background-color: #f44336; }
+.nav > li > a.featured:hover { background-color: #ef5350; }
 
 .nav > li > a:focus,
 .nav > li > a:hover { color: #fff; background-color: #40c4ff; }
