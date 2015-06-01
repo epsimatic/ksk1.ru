@@ -3157,6 +3157,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
     -webkit-align-items: center;
     align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     margin: 0 auto;
     height: 50px; width: 50px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 18px; font-weight: 600; color: #ff6347; }
