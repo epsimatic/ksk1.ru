@@ -3143,7 +3143,19 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge { display: table-cell; height: 50px; width: 50px; border-radius: 50%; padding: 0; background-color: #fff; vertical-align: middle; font-size: 18px; font-weight: 600; color: #ff6347; }
+.panel-default.panel-schedule .panel-heading .route-number.badge {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 50px; width: 50px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 18px; font-weight: 600; color: #ff6347; }
+
 .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
 
 .panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #fff9c4; color: #a1887f; }
