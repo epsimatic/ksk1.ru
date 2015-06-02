@@ -24,7 +24,7 @@ function mbStringToArray ($string) {
 }
 
 function prettyNotice($text, $class="info") {
-    echo "<div class='alert alert-$class' style='margin-bottom: 10px;'>$text</div>\n\n";
+    echo "<div class='alert alert-$class' style='margin-top: 10px; margin-bottom: 10px;'>$text</div>\n\n";
 }
 
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
