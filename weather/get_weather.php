@@ -60,18 +60,18 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
         "Thursday" => "четверг",
         "Friday" => "пятницу",
         "Saturday" => "субботу");
-    $conditions = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в " .
-        date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
-        . $temp . '
-Давление ' . $pressure . ' мм рт.ст.
-Ветер ' . $wind . ' м/с
-Влажность ' . $humidity . PHP_EOL
-        . $description . '
-Щёлкните для прогноза">
-            <img class="weather-icon" src="' . $icon_url . '">
-            <div class="weather-temp">' . $sign . $temp_c . '</div>
-            <div class="weather-label">' . $description . '</div>
-        </div>';
+    $conditions = '<div class="weather-block" title="По данным на '
+                . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в "
+                . date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
+                . $temp . PHP_EOL
+                . 'Давление ' . $pressure . ' мм рт.ст.' . PHP_EOL
+                . 'Ветер ' . $wind . ' м/с' . PHP_EOL
+                . 'Влажность ' . $humidity . PHP_EOL
+                . $description . PHP_EOL
+                . 'Щёлкните для прогноза">'
+                . '<img class="weather-icon" src="' . $icon_url . '">'
+                . '<div class="weather-temp">' . $sign . $temp_c . '</div>'
+                . '<div class="weather-label">' . $description . '</div></div>';
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
@@ -192,6 +192,7 @@ $conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.
 //echo $conditions_forecast;
 //var_dump($array_forecast);
 
+// TODO: Обрабатывать ошибки сервера Weather Underground
 if ( /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
 false
 ) {
