@@ -23,6 +23,10 @@ function mbStringToArray ($string) {
     return $result;
 }
 
+function prettyNotice($text, $class="info") {
+    echo "<div class='alert alert-$class' style='margin-top: 10px; margin-bottom: 10px;'>$text</div>\n\n";
+}
+
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
@@ -41,11 +45,10 @@ $icon_url = $parsed_conditions->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
-    echo '<p class="bg-danger">Weatherunderground is offline, using Yandex</p>';
-    echo "<pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>";
-    echo "<h1>Сырые данные:</h1><pre>";
-    print_r($parsed_json);
-    echo "</pre>";
+    prettyNotice("Weatherunderground is offline, using Yandex<br>
+                  <pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>", "danger");
+    echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
+
     $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
 } else {
     if ($temp_c > 0) $sign = "+"; else $sign = "";
@@ -57,33 +60,29 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
         "Thursday" => "четверг",
         "Friday" => "пятницу",
         "Saturday" => "субботу");
-    $conditions = '<div class="weather-block" title="По данным на ' . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в " .
-        date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
-        . $temp . '
-Давление ' . $pressure . ' мм рт.ст.
-Ветер ' . $wind . ' м/с
-Влажность ' . $humidity . PHP_EOL
-        . $description . '
-Щёлкните для прогноза">
-            <img class="weather-icon" src="' . $icon_url . '">
-            <div class="weather-temp">' . $sign . $temp_c . '</div>
-            <div class="weather-label">' . $description . '</div>
-        </div>';
+    $conditions = '<div class="weather-block" title="По данным на '
+                . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в "
+                . date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
+                . $temp . PHP_EOL
+                . 'Давление ' . $pressure . ' мм рт.ст.' . PHP_EOL
+                . 'Ветер ' . $wind . ' м/с' . PHP_EOL
+                . 'Влажность ' . $humidity . PHP_EOL
+                . $description . PHP_EOL
+                . 'Щёлкните для прогноза">'
+                . '<img class="weather-icon" src="' . $icon_url . '">'
+                . '<div class="weather-temp">' . $sign . $temp_c . '</div>'
+                . '<div class="weather-label">' . $description . '</div></div>';
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
-    echo "File <a href='/weather/conditions.html'>conditions.html</a> saved";
+    prettyNotice("File <a href='/weather/conditions.html'>conditions.html</a> saved");
 } else {
     header("Status: 503 Internal server error");
-    echo "Error saving <a href='/weather/conditions.html'>conditions.html</a>";
+    prettyNotice("Error saving <a href='/weather/conditions.html'>conditions.html</a>","danger");
 }
 
-//echo "\n\nForecast:\n\n";
-
-//var_dump(json_decode(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json")));
-//var_dump(file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json"));
-
 $array_forecast = array();
+//FIXME: У нас уже есть прогноз! Не надо второго запроса!
 $json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_forecast = json_decode($json_forecast);
 //общие данные
@@ -131,6 +130,17 @@ foreach ($forecasts as $forecast) {
 
 array_pop($array_forecast);
 $conditions_forecast = "";
+
+$array_forecast[0]['weekday']="Сегодня";
+$array_forecast[1]['weekday']="Завтра";
+
+if ( intval(date("G")) >= 18 ) {
+    prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
+    $hide_first_day = "hidden";
+} else {
+    $hide_first_day = "";
+}
+
 foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= " <div class='day-row'>
@@ -162,7 +172,7 @@ foreach ($array_forecast as $forecast_object) {
     $text_night = str_replace("C.", "℃.", $text_night);
 
     $conditions_forecast .= "</div>
-                        <div class='day'>
+                        <div class='day $hide_first_day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
                             <p>" . $text_day . "</p>
                         </div>
@@ -172,6 +182,7 @@ foreach ($array_forecast as $forecast_object) {
                         </div>
                     </div>";
 
+    $hide_first_day = "";
 }
 
 
@@ -181,11 +192,12 @@ $conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.
 //echo $conditions_forecast;
 //var_dump($array_forecast);
 
+// TODO: Обрабатывать ошибки сервера Weather Underground
 if ( /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
 false
 ) {
     header("Status: 503 Internal server error");
-    echo 'Weatherunderground (forecast) is offline, using Yandex';
+    prettyNotice('Weatherunderground (forecast) is offline, using Yandex', "danger");
     $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk/details" target="_blank">
                     <img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
                  </a>';
@@ -194,19 +206,34 @@ false
 }
 
 if (file_put_contents("forecast.html", $forecast)) {
-    echo "File <a href='/weather/forecast.html'>forecast.html</a> saved";
+    prettyNotice("File <a href='/weather/forecast.html'>forecast.html</a> saved");
 } else {
     header("Status: 503 Internal server error");
-    die ("Error saving <a href='/weather/forecast.html'>forecast.html</a>");
+    prettyNotice("Error saving <a href='/weather/forecast.html'>forecast.html</a>", "danger");
 }
 
 
 ?>
 
 
-<?= $conditions ?>
-
 <div id='header'>
+    <header class="row row_header hidden-print" id="header" data-version="1" xmlns="http://www.w3.org/1999/html">
+        <div class="header-logo-col col-xs-4 col-sm-4 col-md-5 col-lg-5">
+            <div itemscope itemtype="http://schema.org/Organization" class="header-logo">
+                <a itemprop="url" href="/" title="На главную страницу" class="logo-container">
+                    <img itemprop="logo" alt="Красноуфимск онлайн" src="http://ksk1.ru/img/logo-mobile-ksk.svg" class="visible-xs">
+                    <img alt="Красноуфимск онлайн" style="position: absolute" src="http://ksk1.ru/img/logo-base.svg" class="hidden-xs">
+                    <div id="sublogo"></div>
+                </a>
+            </div>
+            <div class="weather-temp-sm triggers-weather hidden-lg hidden-xs">
+                <?= $conditions ?>
+            </div>
+        </div>
+        <div class="weather-block-col triggers-weather visible-lg col-lg-1">
+            <?= $conditions ?>
+        </div>
+    </header>
     <div id='navpanel-info' class='navpanel navpanel-info row active'>
         <div class='col-xs-12 col-sm-4 subpanel cat'>
             <div class='col-xs-12 subpanel' id='weather-panel'>
