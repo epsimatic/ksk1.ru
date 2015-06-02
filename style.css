@@ -3067,9 +3067,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; font-size: 19px; }
+#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; font-size: 15px; }
 
-#transport-schedule-tabs.nav-tabs a { padding: 10px 30px 12px 25px; color: #777; }
+#transport-schedule-tabs.nav-tabs a { padding: 10px 8px 12px 7px; color: #777; }
+/*#transport-schedule-tabs.nav-tabs a { padding: 10px 30px 12px 25px; color: #777; }*/
 
 #transport-schedule-tabs.nav-tabs .active a { color: #212121; }
 
@@ -3181,6 +3182,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #accordion-schedule a.collapsed .minutes { display: block; color: #999; opacity: 1; }
 
+.panel-default.panel-schedule .panel-heading .weekdays { display: none; position: absolute; bottom: 2px; right: 0; text-transform: uppercase; font-size: 11px; color: #aaa; }
+
 .panel-default.panel-schedule .panel-body .weekdays { text-align: center; font-size: 20px; font-weight: 300; }
 
 .panel-default.panel-schedule .panel-body .stations { padding-left: 5px; padding-right: 5px; margin-bottom: 15px; font-size: 13px; opacity: .8; }
@@ -3190,6 +3193,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .panel-default.panel-schedule .panel-body .stations > .station:after { content: ","; opacity: .8; }
 
 .panel-default.panel-schedule .panel-body .stations > .station:last-child::after { content: ""; }
+
+.panel-default.panel-schedule .panel-body .found-error a { color: #999; }
 
 
 
@@ -4608,6 +4613,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .panel-event .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
 
     .panel-event .post-event .post-more { padding: 0; }
+
+    #transport-schedule-tabs.nav-tabs { font-size: 17px; }
+
+    #transport-schedule-tabs.nav-tabs a { padding: 10px 22px 12px 20px; }
+
+    .panel-default.panel-schedule .panel-heading .weekdays { display: inline; }
 
     .site-tv .logo-tv { padding: 0 0 0 5px; }
 
