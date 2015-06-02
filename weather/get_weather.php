@@ -134,7 +134,12 @@ $conditions_forecast = "";
 $array_forecast[0]['weekday']="Сегодня";
 $array_forecast[0]['weekday']="Завтра";
 
-prettyNotice("Сейчас " . date("G"));
+if ( intval(date("G")) >= 18 ) {
+    prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
+    $hide_first_day = "hidden";
+} else {
+    $hide_first_day = "";
+}
 
 foreach ($array_forecast as $forecast_object) {
 
@@ -167,7 +172,7 @@ foreach ($array_forecast as $forecast_object) {
     $text_night = str_replace("C.", "℃.", $text_night);
 
     $conditions_forecast .= "</div>
-                        <div class='day'>
+                        <div class='day $hide_first_day'>
                             <img src='" . $forecast_object['icon_url_day'] . "'>
                             <p>" . $text_day . "</p>
                         </div>
@@ -177,6 +182,7 @@ foreach ($array_forecast as $forecast_object) {
                         </div>
                     </div>";
 
+    $hide_first_day = "";
 }
 
 
