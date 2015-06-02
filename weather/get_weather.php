@@ -130,8 +130,9 @@ foreach ($forecasts as $forecast) {
 
 array_pop($array_forecast);
 $conditions_forecast = "";
-$forecast_object[0]['weekday']="Сегодня";
-$forecast_object[0]['weekday']="Завтра";
+
+$array_forecast[0]['weekday']="Сегодня";
+$array_forecast[0]['weekday']="Завтра";
 
 prettyNotice("Сейчас " . date("G"));
 
