@@ -3067,9 +3067,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; font-size: 19px; }
+#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; font-size: 15px; }
 
-#transport-schedule-tabs.nav-tabs a { padding: 10px 30px 12px 25px; color: #777; }
+#transport-schedule-tabs.nav-tabs a { padding: 10px 8px 12px 7px; color: #777; }
+/*#transport-schedule-tabs.nav-tabs a { padding: 10px 30px 12px 25px; color: #777; }*/
 
 #transport-schedule-tabs.nav-tabs .active a { color: #212121; }
 
