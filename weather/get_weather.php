@@ -132,6 +132,9 @@ array_pop($array_forecast);
 $conditions_forecast = "";
 $forecast_object[0]['weekday']="Сегодня";
 $forecast_object[0]['weekday']="Завтра";
+
+prettyNotice("Сейчас " . date("G"));
+
 foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= " <div class='day-row'>
