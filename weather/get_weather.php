@@ -32,13 +32,17 @@ $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
 $parsed_conditions = $parsed_json->{'current_observation'};
 
-$temp_c = intval($parsed_conditions->{'temp_c'});
 $pressure = round(intval($parsed_conditions->{'pressure_mb'}) * 0.7500637554192);
 $wind = round(intval($parsed_conditions->{'wind_kph'}) / 3.6);
 $humidity = $parsed_conditions->{'relative_humidity'};
+
+// Температура
+$temp_c = intval($parsed_conditions->{'temp_c'});
 $feelslike_c = intval($parsed_conditions->{'feelslike_c'});
-if ($temp_c == $feelslike_c) $temp = 'Температура ' . $temp_c . '°';
-else  $temp = 'Температура ' . $temp_c . '°, Ощущается как ' . $feelslike_c . '°';
+$temp = ($temp_c == $feelslike_c) ?
+    'Температура ' . $temp_c . '℃' :
+    'Температура ' . $temp_c . '℃ (ощущается как ' . $feelslike_c . '℃)';
+
 $description = $parsed_conditions->{'weather'};
 $icon = $parsed_conditions->{'icon'};
 $icon_url = $parsed_conditions->{'icon_url'};
