@@ -4614,6 +4614,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-event .post-event .post-more { padding: 0; }
 
+    #transport-schedule-tabs.nav-tabs { font-size: 17px; }
+
+    #transport-schedule-tabs.nav-tabs a { padding: 10px 22px 12px 20px; }
+
     .panel-default.panel-schedule .panel-heading .weekdays { display: inline; }
 
     .site-tv .logo-tv { padding: 0 0 0 5px; }
