@@ -130,6 +130,8 @@ foreach ($forecasts as $forecast) {
 
 array_pop($array_forecast);
 $conditions_forecast = "";
+$forecast_object[0]['weekday']="Сегодня";
+$forecast_object[0]['weekday']="Завтра";
 foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= " <div class='day-row'>
