@@ -217,7 +217,6 @@ if (file_put_contents("forecast.html", $forecast)) {
 
 <div id='header'>
     <header class="row row_header hidden-print" id="header" data-version="1" xmlns="http://www.w3.org/1999/html">
-        <!--#include virtual="/yummies/special/" -->
         <div class="header-logo-col col-xs-4 col-sm-4 col-md-5 col-lg-5">
             <div itemscope itemtype="http://schema.org/Organization" class="header-logo">
                 <a itemprop="url" href="/" title="На главную страницу" class="logo-container">
@@ -232,9 +231,6 @@ if (file_put_contents("forecast.html", $forecast)) {
         </div>
         <div class="weather-block-col triggers-weather visible-lg col-lg-1">
             <?= $conditions ?>
-        </div>
-        <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3 col-special">
-            <!--#include virtual="/yummies/special/" -->
         </div>
     </header>
     <div id='navpanel-info' class='navpanel navpanel-info row active'>
