@@ -132,7 +132,7 @@ array_pop($array_forecast);
 $conditions_forecast = "";
 
 $array_forecast[0]['weekday']="Сегодня";
-$array_forecast[0]['weekday']="Завтра";
+$array_forecast[1]['weekday']="Завтра";
 
 if ( intval(date("G")) >= 18 ) {
     prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
