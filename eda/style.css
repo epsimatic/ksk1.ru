@@ -7,7 +7,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-logo-col:first-child .header-logo #sublogo { left: 65px; }
 
-footer { display: none; }
+.site-eda header{display: none;}
 
 /**/
 .products .wc-forward { display: none; }
