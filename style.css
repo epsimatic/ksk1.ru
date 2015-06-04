@@ -500,7 +500,9 @@ footer h3 {
     color: #0080c7;
     margin-top: 0;
 }
-
+.site-ob .footer-email{display: none;}
+.footer-email_site-ob {display: none;}
+.site-ob .footer-email_site-ob{display: block;}
 .openstat-container { display: inline-block; overflow: hidden; vertical-align: middle; }
 .openstat-container a { pointer-events: none; }
 .openstat-container img { margin: -2px -3px -1px -60px; display: block; }
