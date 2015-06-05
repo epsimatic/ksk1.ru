@@ -27,7 +27,7 @@ nav.navbar { margin: 0 -10px !important; }
     .sticky-cart.fixedsticky-on {}
 }
 @media (min-width: 992px) {
-    .sticky-cart.fixedsticky-on {  }
+    .sticky-cart.fixedsticky-on {width: 860px;  }
 }
 @media (min-width: 1200px) {
     .sticky-cart.fixedsticky-on { width: 1160px; }
