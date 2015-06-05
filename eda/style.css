@@ -12,9 +12,14 @@ nav.navbar { margin: 0 -10px !important; }
 /**/
 .products .wc-forward { display: none; }
 
-
-.sticky-cart { top: 0; }
-
+/* Поправка на admin-bar */
+.sticky-cart { top: 0; z-index: 10; }
+@media screen and ( min-width: 601px) {
+    .admin-bar .sticky-cart { top: 46px; }
+}
+@media screen and ( min-width: 783px ) {
+    .admin-bar .sticky-cart { top: 32px; }
+}
 
 /**/
 #container { margin-left: -10px; margin-right: -10px; }
