@@ -12,6 +12,26 @@ nav.navbar { margin: 0 -10px !important; }
 /**/
 .products .wc-forward { display: none; }
 
+/* Поправка на admin-bar */
+.sticky-cart { top: 0; z-index: 10; }
+@media screen and ( min-width: 601px) {
+    .admin-bar .sticky-cart { top: 46px; }
+}
+@media screen and ( min-width: 783px ) {
+    .admin-bar .sticky-cart { top: 32px; }
+}
+
+/* Вписываем вручную ширину панели для Chrome */
+.sticky-cart.fixedsticky-on { width: 100%; }
+@media (min-width: 768px) {
+    .sticky-cart.fixedsticky-on {width: 740px;}
+}
+@media (min-width: 992px) {
+    .sticky-cart.fixedsticky-on {width: 960px;  }
+}
+@media (min-width: 1200px) {
+    .sticky-cart.fixedsticky-on { width: 1160px; }
+}
 
 /**/
 #container { margin-left: -10px; margin-right: -10px; }
