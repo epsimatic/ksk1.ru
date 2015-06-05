@@ -48,7 +48,7 @@ nav.navbar { margin: 0 -10px !important; }
     text-align: center; }
 
 .shop-link.active {
-    background-color: #f7f7f7;
+    background-color: #ffff8d;
     /*border-bottom-color: #ff1744;*/ }
 
 .shop-link.active:hover,
