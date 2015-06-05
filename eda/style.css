@@ -16,7 +16,7 @@ nav.navbar { margin: 0 -10px !important; }
 /**/
 #container { margin-left: -10px; margin-right: -10px; }
 
-.list-stores { padding: 0 20px 20px; /*background-color: #f8f8f8 !important;*/ margin-bottom: 0; /*box-shadow: 0 2px 3px rgba(0,0,0,.17);*/ }
+.list-stores { padding: 0 20px 20px; margin-bottom: 0; }
 
 .list-bottom { border-top: 1px solid #ff6347; margin: 0 -10px; }
 
@@ -35,6 +35,10 @@ nav.navbar { margin: 0 -10px !important; }
 .shop-link.active:focus,
 .shop-link:hover,
 .shop-link:focus { background-color: #f5f5f5; color: #f50057; }
+
+.header-eda { margin-bottom: 20px; }
+
+.header-eda .logo-placeholder { padding: 50px 20px 35px 90px; }
 
 
 /*.nav-tabs { border-bottom: none; display: none; }
@@ -159,7 +163,9 @@ ul.list-stores > li > a > img { width: 150px; }*/
 
 .shop_table .item-variation { display: inline-block; background-color: #a7ffeb; padding: 1px 5px 3px; border-radius: 3px; font-size: 90%; }
 
-.restoraunt-info { margin: 0 10px; padding: 30px 30px 30px 20px; }
+.restoraunt-info { margin-top: 20px; margin-right: 0; padding: 20px 10px 10px 20px; border-radius: 5px 0 0 5px; background-color: rgb(255, 253, 231) }
+
+.restoraunt-info .cat_description { margin-top: 20px; }
 
 /* Статусы заказов */
 
