@@ -3528,6 +3528,15 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-copy tr:hover .better {background-color: #cdffd7 !important;}
 
+#tp-subscribe .nav-pills { margin-bottom: 15px; }
+
+#tp-subscribe .nav-pills > li > a { border-radius: 3px; border: 1px solid #dadada; }
+#tp-subscribe .nav-pills > li.active > a { background-color: transparent; color: #333; }
+
+#tp-subscribe .nav-pills > li > a:hover { background-color: #fafafa; }
+
+#tp-subscribe h5 { margin-bottom: 15px; }
+
 #tp-subscribe .form-horizontal .form-group { margin-right: 0; margin-left: 0; }
 
 #tp-subscribe .form-group.clearfix > label,
