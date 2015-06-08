@@ -3557,6 +3557,8 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe input.months.form-control { padding-left: 10px; padding-right: 0; }
 
+#tp-subscribe #e-total-cost { position: relative; font-size: 18px; font-weight: 700; top: -3px; }
+
 #tp-subscribe .description { padding: 0 5px 5px; font-size: 13px; color: #777; }
 
 
