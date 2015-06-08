@@ -39,6 +39,8 @@ nav.navbar { margin: 0 -10px !important; }
 
 .list-stores { padding: 0 20px 20px; margin-bottom: 0; }
 
+.list-stores > div { padding: 0 3px; margin-bottom: 5px; }
+
 .list-bottom { border-top: 1px solid #ff6347; margin: 0 -10px; }
 
 .shop-link { display: block; padding: 7px 15px; border-radius: 5px; text-align: center; }
@@ -52,7 +54,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-eda { margin-bottom: 20px; }
 
-.header-eda .logo-placeholder { padding: 50px 20px 35px 90px; }
+.header-eda .logo-placeholder { padding: 30px; text-align: center; }
 
 .woocommerce { color: #37474f; }
 /*корзина*/
@@ -727,6 +729,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .subcat_descript { margin-bottom: 25px; margin-top: -20px; padding-left: 50px; }
 
+    .header-eda .logo-placeholder { padding: 40px 120px 35px; }
+
+    .list-stores > div { margin-bottom: 0; }
+
     .dishes-cat-recommend .dishes-heading { padding-left: 100px; }
 
     .dishes.collapsed .woocommerce { max-height: 417px; }
@@ -857,6 +863,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .woocommerce #cart-bar #cart-bar-real > div:nth-of-type(3),
     .woocommerce #cart-bar #cart-bar-real > div:nth-of-type(1) { display: inline-block; }
 
+    .header-eda .logo-placeholder { padding: 50px 20px 35px 120px; }
+
+    .list-stores { padding: 0 20px 20px; }
+
     .dishes { margin: 0 10px; }
 
     .dishes.collapsed .woocommerce { max-height: 375px; }
@@ -963,6 +973,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 @media (min-width: 1200px) {
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { left: 155px; }
+
+    .header-eda .logo-placeholder { padding-left: 90px; }
 
     .dishes.collapsed .woocommerce { max-height: 405px; }
 
