@@ -3555,7 +3555,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe .fa.fa-envelope-o { font-size: 15px; bottom: 10px; left: 7px; }
 
-#tp-subscribe input#months.form-control { padding-left: 10px; padding-right: 0; }
+#tp-subscribe input.months.form-control { padding-left: 10px; padding-right: 0; }
 
 #tp-subscribe .description { padding: 0 5px 5px; font-size: 13px; color: #777; }
 
