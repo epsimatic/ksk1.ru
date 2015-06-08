@@ -3542,12 +3542,20 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe h5 { margin-bottom: 15px; text-align: center; color: #3d5afe; }
 
-#tp-subscribe .form-horizontal .form-group { margin-right: 0; margin-left: 0; }
+#tp-subscribe .form-horizontal .form-group { margin-right: 0; margin-left: 0; position: relative; }
 
 #tp-subscribe .form-group.clearfix > label,
 #tp-subscribe .form-group.clearfix > div { padding-left: 0; padding-right: 7px; }
 
-#tp-subscribe #months { padding-left: 10px; padding-right: 0; }
+#tp-subscribe input.form-control { padding-left: 32px; }
+
+#tp-subscribe .fa { position: absolute; left: 6px; bottom: 9px; z-index: 5; font-size: 17px; color: #4db6ac; }
+
+#tp-subscribe .fa.fa-mobile { font-size: 24px; bottom: 5px; left: 1px; }
+
+#tp-subscribe .fa.fa-envelope-o { font-size: 14px; bottom: 10px; left: 7px; }
+
+#tp-subscribe input#months.form-control { padding-left: 10px; padding-right: 0; }
 
 #tp-subscribe .description { padding: 0 5px 5px; font-size: 13px; color: #777; }
 
