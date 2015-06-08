@@ -3536,7 +3536,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 #tp-subscribe .nav-pills > li > a:focus,
 #tp-subscribe .nav-pills > li > a:hover { background-color: #f5f5f5; color: #333; }
 
-#tp-subscribe h5 { margin-bottom: 15px; }
+#tp-subscribe h5 { margin-bottom: 15px; text-align: center; color: #3d5afe; }
 
 #tp-subscribe .form-horizontal .form-group { margin-right: 0; margin-left: 0; }
 
