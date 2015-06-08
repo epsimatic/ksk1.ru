@@ -3538,7 +3538,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 #tp-subscribe .nav-pills > li > a:hover { background-color: #f5f5f5; color: #333; }
 
 #tp-subscribe .nav-pills > li.active > a:focus,
-#tp-subscribe .nav-pills > li.active > a:hover { background-color: #0091ea; }
+#tp-subscribe .nav-pills > li.active > a:hover { background-color: #0091ea; color: #fff; }
 
 #tp-subscribe h5 { margin-bottom: 15px; text-align: center; color: #3d5afe; }
 
