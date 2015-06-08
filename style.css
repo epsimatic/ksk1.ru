@@ -66,6 +66,11 @@ header#header {margin-bottom: 0 !important;}
 .fixedsticky-dummy { display: none; }
 .fixedsticky-on + .fixedsticky-dummy { display: block; }
 
+.fixedsticky.panel-top { top: 20px; }
+
+.admin-bar .fixedsticky.panel-top { top: 40px; }
+
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Шапка"> */
