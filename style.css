@@ -3530,7 +3530,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe .nav-pills { margin-bottom: 15px; }
 
-#tp-subscribe .nav-pills > li > a { border-radius: 3px; border: 1px solid #dadada; color: #333; }
+#tp-subscribe .nav-pills > li > a { border-radius: 4px !important; /*border: 1px solid #dadada;*/ color: #333; }
 #tp-subscribe .nav-pills > li.active > a { background-color: transparent; color: #333; }
 
 #tp-subscribe .nav-pills > li > a:focus,
