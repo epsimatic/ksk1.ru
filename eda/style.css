@@ -1076,3 +1076,5 @@ body {overflow-y: scroll;}
 }
 
 .modal-dialog { z-index: 1400; }
+/* спрятана подпись "Ваш email не будет ..." в комментариях*/
+#email-notes {display: none;}
