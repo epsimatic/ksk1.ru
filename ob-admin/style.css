@@ -68,7 +68,8 @@
 
 .table-obs-admin .checked-yes:hover:after { color: #00c853; content: ""; }
 
-.table-obs-admin .checked-edit:hover:after { color: #666666; content: ""; }
+.table-obs-admin .checked-edit:hover:after , .table-obs-admin .checked-no_paid:hover:after{ color: #666666; content: ""; }
+
 
 
 .fa-archive { color: #666; }
