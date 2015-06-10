@@ -56,7 +56,8 @@
 .table-obs-admin .checked-no,
 .table-obs-admin .checked-archive,
 .table-obs-admin .checked-yes,
-.table-obs-admin .checked-edit { position: relative;  cursor: pointer; }
+.table-obs-admin .checked-edit,
+.table-obs-admin .checked-no_paid { position: relative;  cursor: pointer; }
 
 .table-obs-admin .checked-no:hover:after,
 .table-obs-admin .checked-archive:hover:after,
