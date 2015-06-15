@@ -4141,7 +4141,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 h5.comment-notes-before {font-size: 16px; padding-bottom: 10px;}
 
-input#author, textarea#comment {padding: 5px 10px;}
+input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 
 /* панель Стандарт */
 
