@@ -840,20 +840,20 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
 }
 
-.navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 5px; text-align: center; }
+.navpanel-services .icon-place { padding: 0; }
+
+.navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 0; text-align: center; }
 
 .navpanel-services .icon-place a:hover,
 .navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
+
+.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; padding: 0; }
 
 .navpanel-services .ksk-services { padding: 0; }
 
 .navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 5px; margin-top: 10px; text-align: center; text-transform: uppercase; }
 
 .navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
-
-.navpanel-services .icon-place { padding: 0; }
-
-.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; padding: 0; }
 
 .navpanel-services .town-services .add-ob-row { margin: 0; background-color: #e1f5fe; }
 
@@ -864,6 +864,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .panel-food-delivery  h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
 
 .panel-food-delivery  h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px; margin-bottom: 0; }
+
+.navpanel-services a.vendor-thumb:hover { background-color: #f9f9f9; }
 
 .navpanel-services .panel-food-delivery .eda-phone { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 10px; }
 
@@ -919,8 +921,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 
 .navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
-
-/*.navpanel #weather-panel:before { color: #333; content: "Погода"; font-size: 20px; left: 38%; position: relative; top: 5px; }*/
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 .navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
@@ -3713,25 +3713,24 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /* <editor-fold desc="стили Афиши"> */
 
 /* Панель переключения дней */
-ul.list-days {background-color: #ff613c; border-radius: 0; margin-bottom: 10px;}
+ul.list-days { background-color: #f50057; border-radius: 0; margin-bottom: 10px;}
 
-ul.list-days > li {padding: 5px 0;}
+ul.list-days > li { padding: 0; }
 
-ul.list-days > li:nth-child(1) {padding-right: 5px;}
+ul.list-days li.heading > a:hover { background-color: transparent; }
 
-ul.list-days > li:nth-child(2) {padding-left: 10px;}
+ul.list-days > li:nth-child(1) { padding-right: 5px; }
 
-ul.list-days > li > a {border-radius: 3px !important; color: #80301e; border-color: #D7583C; font-size: 28px; font-weight: 300; padding: 10px 15px 13px;}
+ul.list-days > li:nth-child(2) { padding-left: 0; }
 
-ul.list-days > li.active > a {
-    background-color: #ff613c;
-    /*background-color: #fb512a; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) inset; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);*/
-}
+ul.list-days > li > a { border-radius: 0; color: #fff; border-color: #D7583C; font-size: 17px; font-weight: 400; padding: 10px 15px 13px; }
+
+ul.list-days > li.active > a { background-color: #c51162; }
 
 ul.list-days > li.active > a:hover,
 ul.list-days > li.active > a:focus,
 ul.list-days > li > a:hover,
-ul.list-days > li > a:focus {background-color: #ff724f; transition: background-color 0.1s ease-in-out 0s}
+ul.list-days > li > a:focus { background-color: #e2005c; transition: background-color 0.1s ease-in-out 0s; }
 
 
 /* Оформление фильмов */
@@ -4967,7 +4966,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-weight: 400;}
 
-    #navpanel-info .btn-feature.btn-feature { padding: 10px 25px; }
+    #navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
 
     .navpanel-services .icon-place { padding: 3px; }
 
