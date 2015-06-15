@@ -182,12 +182,12 @@ foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= "</div>
                         <div class='day hidden-xs $hide_first_day'>
-                            <img src='" . $forecast_object['icon_url_day'] . "'>
-                            <p>" . $text_day . "</p>
+                            <img src='${forecast_object['icon_url_day']}'>
+                            <p>$text_day</p>
                         </div>
                         <div class='night hidden-xs'>
-                            <img src='" . $forecast_object['icon_url_night'] . "'>
-                            <p><em>Ночью</em> " . $text_night . "</p>
+                            <img src='${forecast_object['icon_url_night']}'>
+                            <p><em>Ночью</em> $text_night</p>
                         </div>
                     </div>";
 
