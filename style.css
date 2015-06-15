@@ -855,13 +855,16 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
 
-#panel-map .leaflet-control-geosearch { padding: 6px 12px; border-radius: 3px; border: 1px solid #cccccc; text-indent: 0; height: auto; }
+.navpanel-services .panel-map .leaflet-control-geosearch { padding: 0; border-radius: 3px; width: 240px; }
 
-#panel-map .leaflet-container .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-#panel-map .leaflet-container .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-#panel-map .leaflet-container .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-#panel-map .leaflet-container .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.navpanel-services .panel-map .leaflet-control-geosearch input { padding: 6px 12px; height: auto; border: 1px solid #cccccc; text-indent: 0; }
 
+.navpanel-services .panel-map .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.navpanel-services .panel-map .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.navpanel-services .panel-map .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.navpanel-services .panel-map .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+
+.navpanel-services .panel-cat-container { margin: 0; padding: 0; }
 
 .navpanel-services .panel-cat { padding: 0; margin: 0; }
 
@@ -907,6 +910,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .panel-eda a.vendor-thumb { padding: 5px; border-radius: 5px; }
 
 .navpanel-services .panel-eda a.vendor-thumb:hover { background-color: #f9f9f9; }
+
+.navpanel-services .panel-eda a.vendor-thumb img { width: 100%; }
 
 .navpanel-services .panel-eda a.flowers-delivery { display: block; }
 
@@ -4662,10 +4667,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .weather-temp-sm .weather-temp {top: -52px; font-size: 19px; left: -2px;}
 
-    /*.navpanel-services .town-services { padding-right: 10px; padding-left: 10px; }*/
-
-    /*.navpanel-services .panel.panel-cat { width: 47%; margin: 0 1.5% 10px; }*/
-
     #navpanel-shopping { margin-left: 10px; margin-right: 10px; }
 
     #navpanel-shopping.active { max-height: 1500px; }
@@ -4693,6 +4694,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { text-align: center; width: 100%; }
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 75%;}
+
+    .navpanel-services .panel-map .leaflet-control-geosearch { width: 130px; }
+
+    .navpanel-services .panel-cat-container { padding-left: 10px; }
+
+    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 250px; }
+
+    .navpanel-services .panel-eda .panel-heading { padding: 10px 20px 15px 15px; }
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
@@ -4805,15 +4814,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info .btn-feature .fa-certificate { right: -7; }
 
+    .navpanel-services .panel-map .leaflet-control-geosearch { width: 240px; }
+
+    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 265px; }
+
+    .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px 35px; }
+
     .navpanel-services .icon-place a > .features-item-name { /*font-size: 1em;*/ line-height: 1.35em; padding: 0; }
-
-    .navpanel-services .shop-link { padding: 7px 15px; }
-
-    .navpanel-services .town-services .panel-cat > .panel-body a.list-group-item { font-size: 1em; padding: 6px 12px; }
-
-    .navpanel-services .town-services a.list-group-item > .badge { border-radius: 0.35em; padding: 0.35em 0.75em; right: 12px; }
-
-    .panel-food-delivery { margin-bottom: 10px; }
 
     #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
 
@@ -4978,7 +4985,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
 
-    .navpanel-services .shop-link { padding: 10px 20px; }
+    .navpanel-services .panel-map .leaflet-control-geosearch { width: 300px; }
+
+    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 330px; }
+
+    .navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
