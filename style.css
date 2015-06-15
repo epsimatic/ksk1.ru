@@ -853,6 +853,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-map  a:hover > h4.panel-heading .btn-more { opacity: .7; }
 
+.navpanel-services .panel-map #panel-map { position: relative; width: 100%; overflow: hidden; height: 411px; }
+
 .navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
 
 .navpanel-services .panel-map .leaflet-control-geosearch { padding: 0; border-radius: 3px; width: 240px; }
@@ -4697,15 +4699,17 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 75%;}
 
-    .navpanel-services .panel-map .leaflet-control-geosearch { width: 130px; }
+    .navpanel-services .panel-map #panel-map { height: 370px; }
+
+    .navpanel-services .panel-map .leaflet-control-geosearch { width: 280px; }
 
     .navpanel-services .panel-cat-container { padding-left: 10px; }
 
-    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 260px; }
+    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 320px; }
 
     .navpanel-services .panel-eda-container { padding-left: 10px; }
 
-    .navpanel-services .panel-eda .panel-heading { padding: 10px 20px 15px 15px; }
+    .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px; }
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
@@ -4817,6 +4821,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-info .btn-feature.btn-feature { padding: 10px 15px; }
 
     #navpanel-info .btn-feature .fa-certificate { right: -7; }
+
+    .navpanel-services .panel-map #panel-map { height: 411px; }
 
     .navpanel-services .panel-map .leaflet-control-geosearch { width: 240px; }
 
