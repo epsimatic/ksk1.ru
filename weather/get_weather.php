@@ -43,6 +43,7 @@ $temp = ($temp_c == $feelslike_c) ?
         "Температура $temp_c℃" :
         "Температура $temp_c℃ (ощущается как $feelslike_c℃)";
 
+// Первую букву — большой
 $description = mb_convert_case($parsed_conditions->{'weather'}, MB_CASE_LOWER );
 $description  = mbStringToArray($description);
 $description[0] = mb_convert_case($description[0], MB_CASE_UPPER);
