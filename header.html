@@ -202,25 +202,27 @@
 
 <div class="navpanel navpanel-services row" id="navpanel-services">
     <div class="col-xs-12">
-        <div class="col-xs-12 col-sm-4 panel-map subpanel" style="padding: 0;">
-            <h4 style="position: absolute; z-index: 5; width: 100%; margin: 0; text-align: left; font-weight: 700; background-color: rgba(255, 255, 255, 0.7); text-transform: uppercase; font-size: 19px; padding: 10px 15px 12px;">
-                <a href="http://ksk66.ru/karta.html" style="color: rgba(32, 23, 44, 0.7);">Карта</a>
-                <a class="pull-right btn-more" href="http://ksk66.ru/karta.html" style="padding: 0; text-transform: none; font-weight: 400; top: 3px; color: rgba(32, 23, 44, 0.3);"> Открыть <i class="fa fa-arrow-right"></i></a>
+        <div class="col-xs-12 col-sm-4 panel-map subpanel">
+            <h4 class="panel-heading">
+                <a href="http://ksk66.ru/karta.html">
+                    <span class="panel-title">Карта</span>
+                    <span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>
+                </a>
             </h4>
 
             <div id="panel-map" style="position: relative; width: 100%; overflow: hidden; height: 411px;"></div>
         </div>
 
-        <div style="padding-left: 10px; margin: 0;" class="col-sm-4">
-            <div class="panel panel-cat" style="margin: 0;">
-                <div class="panel-heading" style="background-color: rgb(204, 255, 109);">
-                    <h3 class="panel-title" style="font-weight: 700; font-size: 19px; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); padding: 10px 15px 12px; margin: 0;">
-                        <a href="http://cat.ksk66.ru/">Справочник</a>
-                        <a style="padding: 0; text-transform: none; font-weight: 400; top: 3px; color: rgba(32, 23, 44, 0.3);" href="http://cat.ksk66.ru/" class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></a>
-                    </h3>
-                </div>
+        <div style="padding-left: 10px; margin: 0;" class="col-sm-4 ">
+            <div class="panel panel-cat">
+                <h4 class="panel-heading">
+                    <a href="http://cat.ksk66.ru/">
+                        <span class="panel-title">Справочник</span>
+                        <span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </h4>
                 <div class="panel-body">
-                    <div class="list-group" style="background-color: rgb(236, 239, 241);">
+                    <div class="list-group">
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/bank/">Государственные и  общественные организации</a>
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/lodging_0star/">Медицина</a>
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/fastfood/">Образование, культура, спорт </a>
@@ -228,14 +230,14 @@
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/barber/">Торговля</a>
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/workshop/">Транспорт</a>
                         <a class="list-group-item" href="http://news.kskmedia.ru/cat/services/aboriginal/">Реклама и СМИ</a>
-                        <div class="list-group-item search-container" style="height: 55px;">
-                            <form style="width: 100%; right: 0; top: 10px;" action="http://news.kskmedia.ru/" class="search-form" method="get" role="search">
-                                <div id="">
-                                    <div style="position: relative; padding-left: 15px; padding-right: 15px;" class="form-group clearfix">
-                                        <button style="position: absolute; height: 34px; right: 20px;" class="" type="submit">
+                        <div class="list-group-item search-container">
+                            <form action="http://news.kskmedia.ru/" class="search-form" method="get" role="search">
+                                <div>
+                                    <div class="form-group clearfix">
+                                        <button type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
-                                        <input type="search" style="width: 330px;" name="s" value="" size="40" placeholder="Найти компанию…" class="search-field form-control" title="Напишите название организации или ключевое слово">
+                                        <input type="search" name="s" value="" size="40" placeholder="Найти компанию…" class="search-field form-control" title="Напишите название организации или ключевое слово">
                                     </div>
                                 </div>
                                 <input type="hidden" id="post_type" name="post_type" value="company">
