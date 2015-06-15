@@ -891,6 +891,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 270px; }
 
+.navpanel-services .panel-eda-container { padding: 0; }
+
 .navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
 
 .navpanel-services .panel-eda .eda-logo { width: 100%; }
@@ -4700,6 +4702,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-services .panel-cat-container { padding-left: 10px; }
 
     .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 260px; }
+
+    .navpanel-services .panel-eda-container { padding-left: 10px; }
 
     .navpanel-services .panel-eda .panel-heading { padding: 10px 20px 15px 15px; }
 
