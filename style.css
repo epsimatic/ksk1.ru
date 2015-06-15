@@ -882,11 +882,11 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat { padding: 0; margin: 0; }
 
-.navpanel-services .panel-cat .panel-heading { padding: 0; background-color: #ccff6d; }
+.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; }
 
 .navpanel-services .panel-cat .panel-heading > a { color: #20172c; }
 
-.navpanel-services .panel-cat .panel-heading .panel-title { padding: 10px 15px 12px; margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
+.navpanel-services .panel-cat .panel-heading .panel-title { margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
 
 .navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
 
@@ -898,7 +898,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { width: 100%; right: 0; top: 10px; }
 
-.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 15px; padding-right: 15px; }
+.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 0; padding-right: 15px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 20px; }
 
