@@ -967,14 +967,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
 
-.navpanel-info .features-toolbar {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex; }
-
-
 .navpanel #weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
@@ -982,7 +974,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info .weather-panel-heading { background-color: #40C4FF; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
 
-.navpanel-info #weather-panel .day-row { position: relative; border-bottom: 1px solid #dddddd; }
+.navpanel-info #weather-panel .day-row { position: relative; }
 
 .navpanel-info #weather-panel .day-row .summary { padding-top: 15px; height: 40px; }
 
@@ -1001,17 +993,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info #weather-panel .day-row .summary .pop { padding: 0 7px 0 5px; margin-right: 10px; float: right; border-radius: 3px; }
 
 .navpanel-info #weather-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
-
-.navpanel-info #weather-panel .day-row .day,
-.navpanel-info #weather-panel .day-row .night { display: table-cell; position: relative; width: 50%; clear: both; padding: 15px 15px 15px 75px; min-height: 65px; }
-
-.navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6; }
-
-.navpanel-info #weather-panel .day-row .day img,
-.navpanel-info #weather-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
-
-.navpanel-info #weather-panel .day-row .day p,
-.navpanel-info #weather-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
 
 .navpanel-info #weather-panel h6 { text-align: right; margin-top: 10px; }
 
@@ -1085,7 +1066,16 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 100px; height: auto; }
 
-.navpanel-info .btn-feature.btn-feature { padding: 10px 20px; position: relative; }
+.navpanel-info .features-toolbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.navpanel-info .btn-feature.btn-feature { padding: 8px 10px; position: relative; }
+
+.navpanel-info .features-toolbar .btn-feature img { min-height: 23px; }
 
 .navpanel-info .btn-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
@@ -4558,8 +4548,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
 
-    #navpanel-info .btn-feature.btn-feature { padding: 10px 7px; }
-
     #navpanel-info .btn-feature .fa-certificate { right: -11; }
 
     body.news .navpanel-info #category-other .dropdown-menu { top: 240px; left: 9px; }
@@ -4711,6 +4699,21 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px; }
 
+    .navpanel-info .features-toolbar .btn-feature img { min-height: 23px; }
+
+    .navpanel-info #weather-panel .day-row { border-bottom: 1px solid #dddddd; }
+
+    .navpanel-info #weather-panel .day-row .day,
+    .navpanel-info #weather-panel .day-row .night { display: block; position: relative; width: 50%; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; }
+
+    .navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6; }
+
+    .navpanel-info #weather-panel .day-row .day img,
+    .navpanel-info #weather-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
+
+    .navpanel-info #weather-panel .day-row .day p,
+    .navpanel-info #weather-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
+
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
     .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { margin-right: 10px; margin-bottom: 5px; }
@@ -4818,9 +4821,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
 
-    #navpanel-info .btn-feature.btn-feature { padding: 10px 15px; }
+    .navpanel-info .btn-feature.btn-feature { padding: 11px 15px; }
+
+    .navpanel-info .features-toolbar .btn-feature img { min-height: 29px; }
 
     #navpanel-info .btn-feature .fa-certificate { right: -7; }
+
+    .navpanel-info #weather-panel .day-row .day,
+    .navpanel-info #weather-panel .day-row .night { display: table-cell; width: 50%; padding: 15px 15px 15px 75px; min-height: 65px; }
 
     .navpanel-services .panel-map #panel-map { height: 411px; }
 
@@ -4993,7 +5001,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-weight: 400;}
 
-    #navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
+    .navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
+
+    .navpanel-info .features-toolbar .btn-feature img { min-height: 34px; }
 
     .navpanel-services .panel-map .leaflet-control-geosearch { width: 300px; }
 
