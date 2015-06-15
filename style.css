@@ -888,6 +888,28 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 330px; }
 
+.navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
+
+.navpanel-services .panel-eda .eda-logo { width: 100%; }
+
+.navpanel-services .panel-eda .vendor-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    margin-bottom: 18px; }
+
+.navpanel-services .panel-eda a.vendor-thumb { padding: 5px; border-radius: 5px; }
+
+.navpanel-services .panel-eda a.vendor-thumb:hover { background-color: #f9f9f9; }
+
+.navpanel-services .panel-eda a.flowers-delivery { display: block; }
+
 .navpanel-services .icon-place { padding: 0; }
 
 .navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 0; text-align: center; }
@@ -903,28 +925,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
 
-.navpanel-services .town-services .add-ob-row { margin: 0; background-color: #e1f5fe; }
-
-.navpanel-services .town-services .add-ob-row span { color: #666; padding: 6px 15px; }
-
-.panel-food-delivery { margin-bottom: 15px; }
-
-.panel-food-delivery  h2 { font-size: 19px; font-weight: 700; text-align: center; text-transform: uppercase; color: #00c853; letter-spacing: 0.04em; margin-top: 8px; margin-bottom: 11px; }
-
-.panel-food-delivery  h2.flowers { font-weight: 600; font-size: 15px; margin-top: 20px; margin-bottom: 0; }
-
-.navpanel-services a.vendor-thumb:hover { background-color: #f9f9f9; }
-
-.navpanel-services .panel-food-delivery .eda-phone { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 10px; }
-
-.navpanel-services .panel-food-delivery .eda-phone a { color: #ff1744; }
-
-.navpanel-services .shop-link { padding: 10px 15px; }
-
-.navpanel-services a.shop-link:hover,
-.navpanel-services a.shop-link:focus { background-color: #f7f7f7; }
-
-.navpanel-services .shop-link > img { width: 100%; }
 
 
 .navpanel-services .panel-taxi { /*background-color: #ffd401;*/ text-align: center; }
