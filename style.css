@@ -974,7 +974,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info #weather-panel .day-row { position: relative; border-bottom: 1px solid #dddddd; }
 
-.navpanel-info #weather-panel .day-row .summary { padding-top: 15px; height: 45px; }
+.navpanel-info #weather-panel .day-row .summary { padding-top: 15px; height: 40px; }
 
 .navpanel-info #weather-panel .day-row .summary .weekday { display: inline-block; float: left; font-weight: 700; }
 
