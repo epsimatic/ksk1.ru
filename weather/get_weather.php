@@ -40,8 +40,8 @@ $humidity = $parsed_conditions->{'relative_humidity'};
 $temp_c = intval($parsed_conditions->{'temp_c'});
 $feelslike_c = intval($parsed_conditions->{'feelslike_c'});
 $temp = ($temp_c == $feelslike_c) ?
-    'Температура ' . $temp_c . '℃' :
-    'Температура ' . $temp_c . '℃ (ощущается как ' . $feelslike_c . '℃)';
+        "Температура $temp_c℃" :
+        "Температура $temp_c℃ (ощущается как $feelslike_c℃)";
 
 $description = mb_convert_case($parsed_conditions->{'weather'}, MB_CASE_LOWER );
 $description  = mbStringToArray($description);
