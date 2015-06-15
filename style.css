@@ -874,7 +874,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
 
-.navpanel-services .panel-cat a:hover > .panel-heading .btn-more { opacity: .7; }
+.navpanel-services .panel-cat a:hover > h4.panel-heading .btn-more { opacity: .7; }
 
 .navpanel-services .panel-cat .panel-body .list-group { background-color: #ECEFF1; }
 
