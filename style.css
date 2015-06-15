@@ -840,7 +840,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
 }
 
-.navpanel-services .panel-map { padding: 0; }
+.navpanel-services .panel-map { padding: 0; margin-bottom: 15px; }
 
 .navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; padding: 10px 15px 12px; margin: 0; text-align: left; background-color: #fff; color: #20172c; opacity: .7; }
 
@@ -864,7 +864,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .panel-map .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
 .navpanel-services .panel-map .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
 
-.navpanel-services .panel-cat-container { margin: 0; padding: 0; }
+.navpanel-services .panel-cat-container { margin-bottom: 15px; padding: 0; }
 
 .navpanel-services .panel-cat { padding: 0; margin: 0; }
 
@@ -958,7 +958,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .news .container > #header .navpanel.row { margin: 0; }
 
-.navpanel img.icon { margin-bottom: 10px; padding: 0; width: 80%; }
+.navpanel img.icon { margin-bottom: 10px; padding: 0; width: 100%; }
 
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
