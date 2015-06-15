@@ -40,9 +40,10 @@ $humidity = $parsed_conditions->{'relative_humidity'};
 $temp_c = intval($parsed_conditions->{'temp_c'});
 $feelslike_c = intval($parsed_conditions->{'feelslike_c'});
 $temp = ($temp_c == $feelslike_c) ?
-    'Температура ' . $temp_c . '℃' :
-    'Температура ' . $temp_c . '℃ (ощущается как ' . $feelslike_c . '℃)';
+        "Температура ${temp_c}℃" :
+        "Температура ${temp_c}℃ (ощущается как ${feelslike_c}℃)";
 
+// Первую букву — большой
 $description = mb_convert_case($parsed_conditions->{'weather'}, MB_CASE_LOWER );
 $description  = mbStringToArray($description);
 $description[0] = mb_convert_case($description[0], MB_CASE_UPPER);
@@ -110,16 +111,17 @@ $month = array(
     11 => "ноября",
     12 => "декабря",
 );
-$obect = 0;
+
+$day_num = 0;
 foreach ($simpleforecastdays as $forecastday) {
-    $array_forecast[$obect]['weekday'] = $forecastday->{'date'}->{'weekday'};
-    $array_forecast[$obect]['day'] = $forecastday->{'date'}->{'day'} . " " . $month[$forecastday->{'date'}->{'month'}];
-    $array_forecast[$obect]['temp_high'] = $forecastday->{'high'}->{'celsius'};
-    $array_forecast[$obect]['temp_low'] = $forecastday->{'low'}->{'celsius'};
-    $array_forecast[$obect]['conditions'] = $forecastday->{'conditions'};
-    $array_forecast[$obect]['mm'] = $forecastday->{'qpf_allday'}->{'mm'};
-    $array_forecast[$obect]['pop'] = $forecastday->{'pop'} / 100;
-    $obect++;
+    $array_forecast[$day_num]['weekday'] = $forecastday->{'date'}->{'weekday'};
+    $array_forecast[$day_num]['day'] = $forecastday->{'date'}->{'day'} ." ". $month[$forecastday->{'date'}->{'month'}];
+    $array_forecast[$day_num]['temp_high'] = $forecastday->{'high'}->{'celsius'};
+    $array_forecast[$day_num]['temp_low'] = $forecastday->{'low'}->{'celsius'};
+    $array_forecast[$day_num]['conditions'] = $forecastday->{'conditions'};
+    $array_forecast[$day_num]['mm'] = $forecastday->{'qpf_allday'}->{'mm'};
+    $array_forecast[$day_num]['pop'] = $forecastday->{'pop'} / 100;
+    $day_num++;
 }
 //данные день-ночь
 $forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
@@ -153,20 +155,19 @@ foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
-                            <span class='weekday'>" . $forecast_object['weekday'] . "</span>
-                            <span class='date'>" . $forecast_object['day'] . "</span>
+                            <span class='weekday'>${forecast_object['weekday']}</span>
+                            <span class='date'>${forecast_object['day']}</span>
 		                    <span class='temps'>
-		                        <span class='high'>" . $forecast_object['temp_high'] . "</span>
+		                        <span class='high'>${forecast_object['temp_high']}</span>
                                 <span class='split'>|</span>
-		                        <span class='low'>" . $forecast_object['temp_low'] . "</span>
-		                        °C
+		                        <span class='low'>${forecast_object['temp_low']}</span> ℃
 		                    </span>";
     if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
         $conditions_forecast .= "<span title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" .
                                 "Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " .
-                        "style='background-color: rgba(41, 182, 246, " . $forecast_object['pop'] . ");'>
+                        "style='background-color: rgba(41, 182, 246, ${forecast_object['pop']});'>
                             <span class='drop-icon'></span>
-                                <strong>" . $forecast_object['mm'] . "</strong> мм</span>";
+                                <strong>${forecast_object['mm']}</strong> мм</span>";
     else
         $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
 
@@ -201,9 +202,7 @@ $conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.
 //var_dump($array_forecast);
 
 // TODO: Обрабатывать ошибки сервера Weather Underground
-if ( /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */
-false
-) {
+if ( false /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon == "" */ ) {
     header("Status: 503 Internal server error");
     prettyNotice('Weatherunderground (forecast) is offline, using Yandex', "danger");
     $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk/details" target="_blank">
@@ -220,9 +219,7 @@ if (file_put_contents("forecast.html", $forecast)) {
     prettyNotice("Error saving <a href='/weather/forecast.html'>forecast.html</a>", "danger");
 }
 
-
 ?>
-
 
 <div id='header'>
     <header class="row row_header hidden-print" id="header" data-version="1" xmlns="http://www.w3.org/1999/html">
