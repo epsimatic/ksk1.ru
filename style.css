@@ -971,6 +971,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 .navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
 
+.navpanel-info .weather-panel-heading { background-color: #40C4FF; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
 
 .navpanel-info #weather-panel .day-row { position: relative; border-bottom: 1px solid #dddddd; }
 
