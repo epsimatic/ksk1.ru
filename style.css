@@ -728,52 +728,6 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .browser-deco img {box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25); height: auto; margin: -5px 0 0 !important; padding: 0 !important; width: 100%;}
 
-/* Стили для карты */
-/* Leaflet — geosearch */
-
-.leaflet-control-geosearch, .leaflet-control-geosearch ul {
-    padding: 0;
-    width: 100%;
-    height: auto;
-}
-
-.leaflet-control-geosearch {
-    margin-left: 44px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-    border-radius: 8px;
-    width: 300px;
-}
-
-.leaflet-control-geosearch-msg ul {
-    list-style: none;
-    display: none;
-    height: auto;
-    background: none;
-    padding: 0;
-}
-.leaflet-control-geosearch ul li {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
-    border-radius: 4px;
-    margin: 2px 0;
-    padding: 4px;
-    font-size: 12px;
-    text-indent: 4px;
-}
-
-.leaflet-container .leaflet-control-geosearch input {
-    width: 100%;
-    padding: 6px 3px;
-    text-indent: 8px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 3px;
-    border: none;
-}
-
-.leaflet-container .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.leaflet-container .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.leaflet-container .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.leaflet-container .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-
 /* </editor-fold> */
 
 .navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0 20px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
@@ -900,6 +854,13 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-services .panel-map  a:hover > h4.panel-heading .btn-more { opacity: .7; }
 
 .navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
+
+#panel-map .leaflet-control-geosearch { padding: 6px 12px; border-radius: 3px; border: 1px solid #cccccc; text-indent: 0; height: auto; }
+
+#panel-map .leaflet-container .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+#panel-map .leaflet-container .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+#panel-map .leaflet-container .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+#panel-map .leaflet-container .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
 
 
 .navpanel-services .panel-cat { padding: 0; margin: 0; }
