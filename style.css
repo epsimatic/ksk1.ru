@@ -1075,7 +1075,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info .btn-feature.btn-feature { padding: 8px 10px; position: relative; }
 
-.navpanel-info .features-toolbar .btn-feature img { min-height: 23px; }
+.navpanel-info .features-toolbar .btn-feature img { min-height: 23px; min-width: 100%; }
 
 .navpanel-info .btn-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
