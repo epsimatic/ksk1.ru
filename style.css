@@ -972,9 +972,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
 
 
-.navpanel-info #weather-panel .day-row { border-bottom: 1px solid #dddddd; position: relative; }
+.navpanel-info #weather-panel .day-row { position: relative; border-bottom: 1px solid #dddddd; }
 
-.navpanel-info #weather-panel .day-row .summary { padding-top: 15px; }
+.navpanel-info #weather-panel .day-row .summary { padding-top: 15px; height: 45px; }
 
 .navpanel-info #weather-panel .day-row .summary .weekday { display: inline-block; float: left; font-weight: 700; }
 
@@ -993,7 +993,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info #weather-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
 
 .navpanel-info #weather-panel .day-row .day,
-.navpanel-info #weather-panel .day-row .night { position: relative; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; }
+.navpanel-info #weather-panel .day-row .night { display: table-cell; position: relative; width: 50%; clear: both; padding: 15px 15px 15px 75px; min-height: 65px; }
 
 .navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6; }
 
