@@ -1003,6 +1003,10 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info #weather-panel .day-row .day p,
 .navpanel-info #weather-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
 
+.navpanel-info #weather-panel h6 { text-align: right; margin-top: 10px; }
+
+.navpanel-info #weather-panel h6 a { color: #455a64; font-weight: 400; }
+
 
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
 
@@ -1083,11 +1087,11 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info .cat-feature { background-color: #84FFFF; }
 
-.navpanel-info .cat-feature:hover { background-color: #84FFFF; }
+.navpanel-info .cat-feature:hover { background-color: #a4fffd; }
 
 .navpanel-info .map-feature { background-color: #69F0AE; }
 
-.navpanel-info .map-feature:hover { background-color: #69F0AE; }
+.navpanel-info .map-feature:hover { background-color: #79F8BB; }
 
 .navpanel-info .schedule-feature { background-color: #ffff00; }
 
