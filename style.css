@@ -732,7 +732,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 /* Leaflet — geosearch */
 
 .leaflet-control-geosearch, .leaflet-control-geosearch ul {
-    padding: 5px;
+    padding: 0;
     width: 100%;
     height: auto;
 }
@@ -762,13 +762,17 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .leaflet-container .leaflet-control-geosearch input {
     width: 100%;
-    height: 28px;
-    padding: 0;
+    padding: 6px 3px;
     text-indent: 8px;
     background: rgba(255, 255, 255, 0.75);
-    border-radius: 4px;
+    border-radius: 3px;
     border: none;
 }
+
+.leaflet-container .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.leaflet-container .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.leaflet-container .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
+.leaflet-container .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
 
 /* </editor-fold> */
 
@@ -884,40 +888,42 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-map { padding: 0; }
 
-.navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; padding: 10px 15px 12px; margin: 0; text-align: left; background-color: #fff; opacity: .7; }
+.navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; padding: 10px 15px 12px; margin: 0; text-align: left; background-color: #fff; color: #20172c; opacity: .7; }
 
-.navpanel-services .panel-map h4.panel-heading > a { color: #20172c; }
+.navpanel-services .panel-map a:hover,
+.navpanel-services .panel-map a:focus { text-decoration: none; }
 
 .navpanel-services .panel-map h4.panel-heading .panel-title { opacity: .7; text-transform: uppercase; font-weight: 700; font-size: 19px; }
 
 .navpanel-services .panel-map h4.panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
 
-.navpanel-services .panel-map h4.panel-heading > a:hover .btn-more { opacity: .7; }
+.navpanel-services .panel-map  a:hover > h4.panel-heading .btn-more { opacity: .7; }
 
 .navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
 
 
 .navpanel-services .panel-cat { padding: 0; margin: 0; }
 
-.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; }
+.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; color: #20172c; }
 
-.navpanel-services .panel-cat .panel-heading > a { color: #20172c; }
+.navpanel-services .panel-cat a:hover,
+.navpanel-services .panel-cat a:focus { text-decoration: none; }
 
 .navpanel-services .panel-cat .panel-heading .panel-title { margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
 
 .navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
 
-.navpanel-services .panel-cat .panel-heading > a:hover .btn-more { opacity: .7; }
+.navpanel-services .panel-cat a:hover > .panel-heading .btn-more { opacity: .7; }
 
 .navpanel-services .panel-cat .panel-body .list-group { background-color: #ECEFF1; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container { height: 55px; }
 
-.navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { width: 100%; right: 0; top: 10px; }
+.navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { position: absolute; width: 100%; right: 0; top: 10px; }
 
-.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 0; padding-right: 15px; }
+.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 15px; padding-right: 15px; }
 
-.navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 5px; }
+.navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 20px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 330px; }
 
@@ -4568,8 +4574,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 280px; }
 
-    .navpanel-services .icon-place { padding: 0; }
-
     .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
     .navpanel-services .panel-taxi .taxi-phone { margin-bottom: 10px; }
@@ -4997,13 +5001,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
 
-    .navpanel-services .icon-place { padding: 3px; }
-
     .navpanel-services .icon-place a { padding: 7px;}
 
     .navpanel-services .shop-link { padding: 10px 20px; }
-
-    /*.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; }*/
 
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
