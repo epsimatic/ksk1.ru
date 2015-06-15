@@ -153,7 +153,7 @@ foreach ($array_forecast as $forecast_object) {
 
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
-                            <span class='weekday'>" . $forecast_object['weekday'] . "</span>
+                            <span class='weekday'>${forecast_object['weekday']}</span>
                             <span class='date'>" . $forecast_object['day'] . "</span>
 		                    <span class='temps'>
 		                        <span class='high'>" . $forecast_object['temp_high'] . "</span>
