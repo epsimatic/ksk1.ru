@@ -29,6 +29,9 @@
 var map;
 // Подгоняем высоту карты
 function setMapHeight() {
+    //FIXME: ОТКЛЮЧЕНО!
+    return;
+
     //FIXME: Не устанавливать высоту для мобильных устройств!
     jQuery('.navpanel-info > .subpanel').not('.panel-map').each(function () {
         const this_height = jQuery(this).height();
