@@ -122,6 +122,10 @@ jQuery('#navpanel-info').one('first-load', function () {
     });
 */
 
+});
+
+jQuery('#navpanel-services').one('first-load', function () {
+
 // Загружаем карту
     setMapHeight();
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
