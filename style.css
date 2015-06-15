@@ -728,6 +728,48 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 .browser-deco img {box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25); height: auto; margin: -5px 0 0 !important; padding: 0 !important; width: 100%;}
 
+/* Стили для карты */
+/* Leaflet — geosearch */
+
+.leaflet-control-geosearch, .leaflet-control-geosearch ul {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.leaflet-control-geosearch {
+    margin-left: 44px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.leaflet-control-geosearch-msg ul {
+    list-style: none;
+    display: none;
+    height: auto;
+    background: none;
+    padding: 0;
+}
+.leaflet-control-geosearch ul li {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    margin: 2px 0;
+    padding: 4px;
+    font-size: 12px;
+    text-indent: 4px;
+}
+
+.leaflet-container .leaflet-control-geosearch input {
+    width: 100%;
+    height: 28px;
+    padding: 0;
+    text-indent: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    border: none;
+}
+
 /* </editor-fold> */
 
 .navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0 20px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
@@ -840,6 +882,45 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
 }
 
+.navpanel-services .panel-map { padding: 0; }
+
+.navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; padding: 10px 15px 12px; margin: 0; text-align: left; background-color: #fff; opacity: .7; }
+
+.navpanel-services .panel-map h4.panel-heading > a { color: #20172c; }
+
+.navpanel-services .panel-map h4.panel-heading .panel-title { opacity: .7; text-transform: uppercase; font-weight: 700; font-size: 19px; }
+
+.navpanel-services .panel-map h4.panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
+
+.navpanel-services .panel-map h4.panel-heading > a:hover .btn-more { opacity: .7; }
+
+.navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
+
+
+.navpanel-services .panel-cat { padding: 0; margin: 0; }
+
+.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; }
+
+.navpanel-services .panel-cat .panel-heading > a { color: #20172c; }
+
+.navpanel-services .panel-cat .panel-heading .panel-title { margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
+
+.navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
+
+.navpanel-services .panel-cat .panel-heading > a:hover .btn-more { opacity: .7; }
+
+.navpanel-services .panel-cat .panel-body .list-group { background-color: #ECEFF1; }
+
+.navpanel-services .panel-cat .panel-body .list-group .search-container { height: 55px; }
+
+.navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { width: 100%; right: 0; top: 10px; }
+
+.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 0; padding-right: 15px; }
+
+.navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 5px; }
+
+.navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 330px; }
+
 .navpanel-services .icon-place { padding: 0; }
 
 .navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 0; text-align: center; }
@@ -878,34 +959,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .shop-link > img { width: 100%; }
 
-.navpanel-services .town-services { padding: 0; }
-
-.navpanel-services .panel-cat { padding: 0; margin: 0; }
-
-.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; }
-
-.navpanel-services .panel-cat .panel-heading > a { color: #20172c; }
-
-.navpanel-services .panel-cat .panel-heading .panel-title { margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
-
-.navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
-
-.navpanel-services .panel-cat .panel-heading > a:hover .btn-more { opacity: .7; }
-
-.navpanel-services .panel-cat .panel-body .list-group { background-color: #ECEFF1; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container { height: 55px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { width: 100%; right: 0; top: 10px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 0; padding-right: 15px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 20px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 330px; }
-
-
-
 
 .navpanel-services .panel-taxi { /*background-color: #ffd401;*/ text-align: center; }
 
@@ -930,18 +983,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-taxi .taxi-about > a:hover,
 .navpanel-services .panel-taxi .taxi-about > a:focus { color: #000; }
-
-.navpanel-services .panel-map { padding: 0; }
-
-.navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; margin: 0; text-align: left; font-weight: 700; background-color: rgba(255, 255, 255, 0.7); text-transform: uppercase; font-size: 19px; padding: 10px 15px 12px; }
-
-.navpanel-services .panel-map h4.panel-heading > a { color: #20172c; }
-
-.navpanel-services .panel-map h4.panel-heading .panel-title { opacity: .7; }
-
-.navpanel-services .panel-map h4.panel-heading .btn-more { padding: 0; text-transform: none; font-weight: 400; top: 3px; opacity: .3; }
-
-.navpanel-services .panel-map h4.panel-heading > a:hover .btn-more { opacity: .7; }
 
 .news .container > #header .navpanel.row { margin: 0; }
 
@@ -4461,49 +4502,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 
 /* </editor-fold> */
-
-
-/* Стили для карты */
-/* Leaflet — geosearch */
-
-.leaflet-control-geosearch, .leaflet-control-geosearch ul {
-    padding: 5px;
-    width: 100%;
-    height: auto;
-}
-
-.leaflet-control-geosearch {
-    margin-left: 44px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-    border-radius: 8px;
-    width: 300px;
-}
-
-.leaflet-control-geosearch-msg ul {
-    list-style: none;
-    display: none;
-    height: auto;
-    background: none;
-    padding: 0;
-}
-.leaflet-control-geosearch ul li {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
-    border-radius: 4px;
-    margin: 2px 0;
-    padding: 4px;
-    font-size: 12px;
-    text-indent: 4px;
-}
-
-.leaflet-container .leaflet-control-geosearch input {
-    width: 100%;
-    height: 28px;
-    padding: 0;
-    text-indent: 8px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 4px;
-    border: none;
-}
 
 
 @media (min-width: 480px) {
