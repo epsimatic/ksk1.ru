@@ -146,9 +146,9 @@ $array_forecast[1]['weekday']="Завтра";
 
 if ( intval(date("G")) >= 18 ) {
     prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
-    $hide_first_day = "hidden";
+    $hide_first_day_weather_on_evening = "hidden";
 } else {
-    $hide_first_day = "";
+    $hide_first_day_weather_on_evening = "";
 }
 
 foreach ($array_forecast as $forecast_object) {
@@ -171,27 +171,28 @@ foreach ($array_forecast as $forecast_object) {
     else
         $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
 
+//TODO: Не добавлять «Ночью» , если в прогнозе на ночь есть «вечер» или «утр»
 //  Первую букву -- маленькой
     $text_night = mbStringToArray($forecast_object['text_night']);
     $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
-    $text_night = implode("", $text_night);
+    $text_night = "<em>Ночью</em> " . implode("", $text_night);
 
     $text_day = $forecast_object['text_day'];
     $text_day = str_replace("C.", "℃.", $text_day);
     $text_night = str_replace("C.", "℃.", $text_night);
 
     $conditions_forecast .= "</div>
-                        <div class='day hidden-xs $hide_first_day'>
+                        <div class='day hidden-xs $hide_first_day_weather_on_evening'>
                             <img src='${forecast_object['icon_url_day']}'>
                             <p>$text_day</p>
                         </div>
                         <div class='night hidden-xs'>
                             <img src='${forecast_object['icon_url_night']}'>
-                            <p><em>Ночью</em> $text_night</p>
+                            <p>$text_night</p>
                         </div>
                     </div>";
 
-    $hide_first_day = "";
+    $hide_first_day_weather_on_evening = "";
 }
 
 
