@@ -30,6 +30,9 @@ function prettyNotice($text, $class="info") {
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
+
+// Текущее состояние
+
 $parsed_conditions = $parsed_json->{'current_observation'};
 
 $pressure = round(intval($parsed_conditions->{'pressure_mb'}) * 0.7500637554192);
@@ -91,15 +94,12 @@ if (file_put_contents("conditions.html", $conditions)) {
     prettyNotice("Не удалось сохранить <a href='/weather/conditions.html'>conditions.html</a>","danger");
 }
 
-$array_forecast = array();
 
-//FIXME: У нас уже есть прогноз! Не надо второго запроса!
-//$json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
-//$parsed_forecast = json_decode($json_forecast);
-$parsed_forecast = $parsed_json;
+
+// Прогноз на 3 дня
 
 //общие данные
-$simpleforecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
+$simpleforecastdays = $parsed_json->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
 $month = array(
     1 => "января",
@@ -116,6 +116,8 @@ $month = array(
     12 => "декабря",
 );
 
+$array_forecast = array();
+
 $day_num = 0;
 foreach ($simpleforecastdays as $forecastday) {
     $array_forecast[$day_num]['weekday'] = $forecastday->{'date'}->{'weekday'};
@@ -127,8 +129,9 @@ foreach ($simpleforecastdays as $forecastday) {
     $array_forecast[$day_num]['pop'] = $forecastday->{'pop'} / 100;
     $day_num++;
 }
+
 //данные день-ночь
-$forecasts = $parsed_forecast->{'forecast'}->{'txt_forecast'}->{'forecastday'};
+$forecasts = $parsed_json->{'forecast'}->{'txt_forecast'}->{'forecastday'};
 foreach ($forecasts as $forecast) {
     $period = $forecast->{'period'};
     if ($period % 2) {
