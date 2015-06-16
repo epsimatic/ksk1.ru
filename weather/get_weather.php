@@ -241,11 +241,10 @@ if (file_put_contents("forecast.html", $forecast)) {
         </div>
     </header>
     <div id='navpanel-info' class='navpanel navpanel-info row active'>
-        <div class='col-xs-12 col-sm-4 subpanel cat'>
-            <div class='col-xs-12 subpanel' id='weather-panel'>
-
+        <div class="col-xs-12 col-sm-7 subpanel">
+            <h4 class="weather-panel-heading">Погода в Красноуфимске</h4>
+            <div class="col-xs-12 weather-forecast-panel clearfix" id="weather-panel" style="padding: 0;">
                 <?= $forecast ?>
-
             </div>
         </div>
     </div>
