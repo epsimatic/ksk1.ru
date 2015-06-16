@@ -174,15 +174,19 @@ foreach ($array_forecast as $forecast_object) {
     else
         $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
 
-//TODO: Не добавлять «Ночью» , если в прогнозе на ночь есть «вечер» или «утр»
-//  Первую букву -- маленькой
-    $text_night = mbStringToArray($forecast_object['text_night']);
-    $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
-    $text_night = "<em>Ночью</em> " . implode("", $text_night);
 
     $text_day = $forecast_object['text_day'];
+    $text_night = $forecast_object['text_night'];
     $text_day = str_replace("C.", "℃.", $text_day);
     $text_night = str_replace("C.", "℃.", $text_night);
+    // Добавить «Ночью» и сделать первую букву маленькой
+    // Не добавлять «Ночью», если в прогнозе на ночь есть «вечером» или «утром»
+    if ( mb_strpos($text_night, "вечер") === false &&
+         mb_strpos($text_night, "утр") === false ) {
+        $text_night = mbStringToArray($forecast_object['text_night']);
+        $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
+        $text_night = "<em>Ночью</em> " . implode("", $text_night);
+    }
 
     $conditions_forecast .= "</div>
                         <div class='day hidden-xs $hide_first_day_weather_on_evening'>
