@@ -1075,7 +1075,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-info .btn-feature.btn-feature { padding: 8px 10px; position: relative; }
 
-.navpanel-info .features-toolbar .btn-feature img { min-height: 23px; min-width: 100%; }
+.navpanel-info .features-toolbar .btn-feature img { max-height: 23px; max-width: 100%; }
 
 .navpanel-info .btn-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
@@ -4699,7 +4699,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px; }
 
-    .navpanel-info .features-toolbar .btn-feature img { min-height: 23px; }
+    .navpanel-info .features-toolbar .btn-feature img { max-height: 23px; }
 
     .navpanel-info #weather-panel .day-row { border-bottom: 1px solid #dddddd; }
 
@@ -4823,7 +4823,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info .btn-feature.btn-feature { padding: 11px 15px; }
 
-    .navpanel-info .features-toolbar .btn-feature img { min-height: 29px; }
+    .navpanel-info .features-toolbar .btn-feature img { max-height: 29px; }
 
     #navpanel-info .btn-feature .fa-certificate { right: -7; }
 
@@ -5003,7 +5003,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info .btn-feature.btn-feature { padding: 10px 20px; }
 
-    .navpanel-info .features-toolbar .btn-feature img { min-height: 34px; }
+    .navpanel-info .features-toolbar .btn-feature img { max-height: 34px; }
 
     .navpanel-services .panel-map .leaflet-control-geosearch { width: 300px; }
 
