@@ -1005,14 +1005,16 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .cat { border-top: 1px solid #82b1ff; }
 
-.navpanel .panel-movies-heading { background-color: #f50057; padding: 10px 15px; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
+.navpanel .panel-movies-heading { background-color: #f50057; margin: 0; padding: 10px 15px; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
 
 .navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; top: 4px; }
+
+.navpanel #panel-movies { background-color: #2d2d2d; padding: 20px 10px; }
 
 .navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
 .navpanel #panel-movies .today-movies { display: table-row; }
-.navpanel #panel-movies .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 120px; }
+.navpanel #panel-movies .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; height: 220px; }
 
 .navpanel #panel-movies .popover { padding: 10px !important; min-width: 300px; }
 
@@ -1039,7 +1041,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-movies .popover-content .movie-price,
 .navpanel #panel-movies .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
 
-.navpanel #panel-agenda > h4 { margin: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
+.navpanel #panel-agenda > h4 { margin-bottom: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
 
 .navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
 
@@ -5010,7 +5012,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-weight: 400;}
 
-    .navpanel-info .btn-feature.btn-feature { padding: 15px 20px; }
+    .navpanel-info .btn-feature.btn-feature { padding: 15px 18px; }
 
     .navpanel-info .features-toolbar .btn-feature img { max-height: 32px; }
 
