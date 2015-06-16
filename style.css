@@ -1039,7 +1039,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-movies .popover-content .movie-price,
 .navpanel #panel-movies .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
 
-.navpanel #panel-agenda > h4 { margin-bottom: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
+.navpanel #panel-agenda > h4 { margin: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
 
 .navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
 
