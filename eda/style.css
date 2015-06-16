@@ -1081,3 +1081,5 @@ body {overflow-y: scroll;}
 
 /*страница магазина*/
 .shop-page_text , #comments{padding-left: 20px;}
+/*комментарии*/
+#form-allowed-tags,#reply {display: none;}
