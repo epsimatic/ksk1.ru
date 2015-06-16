@@ -175,9 +175,9 @@ foreach ($array_forecast as $forecast_object) {
         $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
 
 
-    $text_day = $forecast_object['text_day'];
+    $text_day   = $forecast_object['text_day'];
     $text_night = $forecast_object['text_night'];
-    $text_day = str_replace("C.", "℃.", $text_day);
+    $text_day   = str_replace("C.", "℃.", $text_day);
     $text_night = str_replace("C.", "℃.", $text_night);
     // Добавить «Ночью» и сделать первую букву маленькой
     // Не добавлять «Ночью», если в прогнозе на ночь есть «вечером» или «утром»
