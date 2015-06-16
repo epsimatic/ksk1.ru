@@ -1078,3 +1078,6 @@ body {overflow-y: scroll;}
 .modal-dialog { z-index: 1400; }
 /* спрятана подпись "Ваш email не будет ..." в комментариях*/
 #email-notes {display: none;}
+
+/*страница магазина*/
+.shop-page_text , #comments{padding-left: 10px;}
