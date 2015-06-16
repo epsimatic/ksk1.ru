@@ -1007,7 +1007,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .panel-movies-heading { background-color: #f50057; padding: 10px 15px; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
 
-.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); }
+.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; top: 4px; }
 
 .navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
 
@@ -1041,7 +1041,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda > h4 { margin-bottom: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
 
-.navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; right: -10px; }
+.navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
 
 .navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; }
 
