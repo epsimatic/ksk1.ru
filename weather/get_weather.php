@@ -54,13 +54,14 @@ $icon_url = $parsed_conditions->{'icon_url'};
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
-    prettyNotice("Weatherunderground is offline, using Yandex<br>
+    prettyNotice("Weatherunderground сломан, используем Яндекс<br>
                   <pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>", "danger");
     echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
 
-    $conditions = '<div class="ya-weather"><img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"></div>';
+    $conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
+                                                alt="Погода" ></div>';
 } else {
-    if ($temp_c > 0) $sign = "+"; else $sign = "";
+    $sign = ($temp_c > 0) ? "+" : "";
     $week = array(
         "Sunday" => "воскресенье",
         "Monday" => "понедельник",
@@ -84,16 +85,19 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
-    prettyNotice("File <a href='/weather/conditions.html'>conditions.html</a> saved");
+    prettyNotice("Сохранён файл <a href='/weather/conditions.html'>conditions.html</a>");
 } else {
     header("Status: 503 Internal server error");
-    prettyNotice("Error saving <a href='/weather/conditions.html'>conditions.html</a>","danger");
+    prettyNotice("Не удалось сохранить <a href='/weather/conditions.html'>conditions.html</a>","danger");
 }
 
 $array_forecast = array();
+
 //FIXME: У нас уже есть прогноз! Не надо второго запроса!
-$json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
-$parsed_forecast = json_decode($json_forecast);
+//$json_forecast = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
+//$parsed_forecast = json_decode($json_forecast);
+$parsed_forecast = $parsed_json;
+
 //общие данные
 $simpleforecastdays = $parsed_forecast->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
@@ -140,16 +144,12 @@ foreach ($forecasts as $forecast) {
 
 array_pop($array_forecast);
 $conditions_forecast = "";
-
 $array_forecast[0]['weekday']="Сегодня";
 $array_forecast[1]['weekday']="Завтра";
 
-if ( intval(date("G")) >= 18 ) {
+$hide_first_day_weather_on_evening = (intval(date("G")) >= 18) ? "hidden" : "";
+if ($hide_first_day_weather_on_evening)
     prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
-    $hide_first_day_weather_on_evening = "hidden";
-} else {
-    $hide_first_day_weather_on_evening = "";
-}
 
 foreach ($array_forecast as $forecast_object) {
 
@@ -214,10 +214,10 @@ if ( false /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon 
 }
 
 if (file_put_contents("forecast.html", $forecast)) {
-    prettyNotice("File <a href='/weather/forecast.html'>forecast.html</a> saved");
+    prettyNotice("Сохранён файл <a href='/weather/forecast.html'>forecast.html</a>");
 } else {
     header("Status: 503 Internal server error");
-    prettyNotice("Error saving <a href='/weather/forecast.html'>forecast.html</a>", "danger");
+    prettyNotice("Не удалось сохранить <a href='/weather/forecast.html'>forecast.html</a>", "danger");
 }
 
 ?>
