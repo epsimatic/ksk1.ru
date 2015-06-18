@@ -48,8 +48,8 @@ function setMapHeight() {
         window.setTimeout(map.invalidateSize, 800);
     }
 }
-
-
+// кнопки "Спаравочник" и  "Карта" на панели в Городе
+jQuery('.cat-feature , .map-feature').click( function() {jQuery('#btn-feature-services').click();} );
 // Кнопки НавПанели и выдвижные панельки
 jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click();} );
 
