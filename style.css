@@ -1096,11 +1096,11 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 
 
-.navpanel-info .cat-feature { background-color: #84FFFF; }
+.navpanel-info .cat-feature { background-color: #84FFFF;cursor: pointer; }
 
 .navpanel-info .cat-feature:hover { background-color: #a4fffd; }
 
-.navpanel-info .map-feature { background-color: #69F0AE; }
+.navpanel-info .map-feature { background-color: #69F0AE;cursor: pointer; }
 
 .navpanel-info .map-feature:hover { background-color: #79F8BB; }
 
