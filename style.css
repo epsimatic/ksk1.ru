@@ -1751,6 +1751,10 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .news-list_secondary .post-news.type-radio .post-title,
 .news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
 
+.news-old .fullstory .newstext { padding: 0 30px; font-size: 1.27em; }
+
+.news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 25px; font-size: 26px; line-height: 1.05; font-weight: 600; color: #424242; }
+
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
 .lcp_paginator {
