@@ -1751,7 +1751,7 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .news-list_secondary .post-news.type-radio .post-title,
 .news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
 
-.news-old .fullstory .newstext { padding: 0 30px; font-size: 1.27em; }
+.news-old .fullstory .newstext { padding: 0 10px; font-size: 1.27em; }
 
 .news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 25px; font-size: 26px; line-height: 1.05; font-weight: 600; color: #424242; }
 
@@ -4597,6 +4597,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     ul.list-days {border-radius: 6px;}
 
+    .news-old .fullstory .newstext { padding: 0 20px; }
+
     .site-rk .per50,
     .site-rk .per100 {display: inline-block;}
 
@@ -4789,14 +4791,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .block-features .btn-feature span { position: relative; top: 13px; }
 
-    /*.news #page > #header object {width: 960px !important; height: 89px !important; margin-left: -10px; margin-bottom: -5px;}*/
-
     .panel-news h4 {font-size: 22px;}
+
+    .news-old .fullstory .newstitle { padding-left: 25px; }
+
+    .news-old .fullstory .newstext { padding: 0 25px; }
 
     .site-copy div.copy-header,
     .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
-
-    /*.tocify {width: 218px;}*/
 
     .tocify {width: 230px;}
 
@@ -4983,15 +4985,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .block-features .btn-feature span { top: 7px; left: 2px; }
 
-    /*.news #page > #header object {width: 1160px !important; height: 107px !important; margin-left: -10px; margin-bottom: -5px;}*/
-
     .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; /*bottom: 30px;*/}
 
     .panel-news .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
 
     .panel-news .post-info span {display: inline;}
 
-    /*.tocify {width: 172px;}*/
+    .news-old .fullstory .newstext { padding: 0 30px; }
 
     .tocify {width: 280px;}
 
