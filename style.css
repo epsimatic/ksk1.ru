@@ -2490,8 +2490,8 @@ a.link-neutral:focus {color: #3b437d;}
 .form-control {border-radius: 3px;}
 /* </editor-fold> */
 
-/* <editor-fold desc="Радио-виджет"> */
-.player-header {font-size: 14px; text-transform: uppercase; position: relative; top: 3px;}
+/* <editor-fold desc="Старый радио-виджет"> */
+/*.player-header {font-size: 14px; text-transform: uppercase; position: relative; top: 3px;}
 
 .player-date-block {color: rgb(102, 102, 102); padding-bottom: 5px;}
 
@@ -2518,7 +2518,32 @@ a.link-neutral:focus {color: #3b437d;}
 .player-more {display: block; font-size: 14px; color: #fff; text-shadow: 1px 1px 3px rgb(0, 0, 0); position: relative;}
 
 .player-more:focus,
-.player-more:hover {color: #fff;}
+.player-more:hover {color: #fff;}*/
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Старый радио-виджет"> */
+
+.panel-radio .panel-heading { padding: 15px 21px; background-color: #088eff; }
+
+.panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
+
+.panel-radio .jp-audio .jp-interface { height: 45px; width: 46px; }
+
+.panel-radio .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
+
+.panel-radio .jp-audio .jp-controls li { display: inline; }
+
+.panel-radio .jp-audio .jp-controls a { position: absolute; padding: 10px 13px; background-color: #fff; border: 1px solid #ccefff; border-radius: 10px; box-shadow: 0 3px #cecece; z-index: 1; }
+
+.panel-radio .jp-audio .jp-controls a:hover { border-color: #97e6fc; box-shadow: 0 2px #cecece; top: 1px; color: #0072b2; }
+
+.panel-radio .jp-audio .jp-type-single { position: relative; }
+
+.panel-radio .jp-audio .playlist-title { position: absolute; left: 60px; top: 2px; color: #777; }
+
+.panel-radio .jp-audio .jp-playlist,
+.panel-radio .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
 
 /* </editor-fold> */
 
