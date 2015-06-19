@@ -1081,8 +1081,6 @@ body {overflow-y: scroll;}
 
 /*страница магазина*/
 .shop-page_text , #comments{padding-left: 20px;}
-.shop-page_text {border-bottom: 2px dashed red;
-    color: gray;
-    font-size: 18px;}
+.shop-page_text { color: gray; font-size: 16px; margin-bottom: 10px; }
 /*комментарии*/
 #form-allowed-tags,.reply {display: none;}
