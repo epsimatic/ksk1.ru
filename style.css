@@ -4767,6 +4767,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 50px; }
 
+    .panel-radio .jp-audio .jp-playlist,
+    .panel-radio .jp-audio .jp-title { width: 90px; }
+
     .panel-event .post-event .post-title { margin-bottom: 10px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
 
     .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
@@ -4841,6 +4844,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .btn-home {display: block; margin-left: 960px; visibility: visible;}
 
     .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
+
+    .panel-radio .jp-audio .jp-playlist,
+    .panel-radio .jp-audio .jp-title { width: 140px; }
 
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 14px;}
@@ -5079,6 +5085,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .svetodom-bar .cat-list a { margin-right: 40px; }
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 110px; }
+
+    .panel-radio .jp-audio .jp-playlist,
+    .panel-radio .jp-audio .jp-title { width: 190px; }
 
     .news-old .post-news figure.post-thumb { width: 120px; }
 
