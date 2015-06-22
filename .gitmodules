@@ -49,3 +49,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-defaultextent"]
 	path = vendor/leaflet-defaultextent
 	url = https://github.com/nguyenning/Leaflet.defaultextent
+[submodule "vendor/leaflet-locatecontrol"]
+	path = vendor/leaflet-locatecontrol
+	url = https://github.com/domoritz/leaflet-locatecontrol
