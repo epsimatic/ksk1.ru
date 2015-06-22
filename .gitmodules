@@ -46,3 +46,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-loading"]
 	path = vendor/leaflet-loading
 	url = https://github.com/ebrelsford/Leaflet.loading
+[submodule "vendor/leaflet-defaultextent"]
+	path = vendor/leaflet-defaultextent
+	url = https://github.com/nguyenning/Leaflet.defaultextent
