@@ -189,12 +189,10 @@ foreach ($array_forecast as $forecast_object) {
     }
 
     $conditions_forecast .= "</div>
-                        <div class='day hidden-xs $hide_first_day_weather_on_evening'>
-                            <img src='${forecast_object['icon_url_day']}'>
+                        <div class='day hidden-xs $hide_first_day_weather_on_evening' style='background-image: url(${forecast_object['icon_url_day']});'>
                             <p>$text_day</p>
                         </div>
-                        <div class='night hidden-xs'>
-                            <img src='${forecast_object['icon_url_night']}'>
+                        <div class='night hidden-xs' style='background-image: url(${forecast_object['icon_url_night']});'>
                             <p>$text_night</p>
                         </div>
                     </div>";
