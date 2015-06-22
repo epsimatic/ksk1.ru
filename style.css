@@ -4752,6 +4752,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-services .panel-eda-container { padding-left: 10px; }
 
     .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px; }
+    
+    .navpanel #panel-movies .today-movies .movie-poster img { height: 139px; }
 
     .navpanel-info .features-toolbar .cat-feature img,
     .navpanel-info .features-toolbar .map-feature img,
@@ -4949,6 +4951,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar .pr-logo img { width: 90%; }
 
+    .navpanel #panel-movies .today-movies .movie-poster img { height: 180px; }
+
     .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 90px; }
 
     .potential-cond-active .arrow,
@@ -5100,6 +5104,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .svetodom-bar .cat-list a { margin-right: 40px; }
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 110px; }
+
+    .navpanel #panel-movies .today-movies .movie-poster img { height: 220px; }
 
     .panel-radio .jp-audio .jp-playlist,
     .panel-radio .jp-audio .jp-title { width: 190px; }
