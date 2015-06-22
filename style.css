@@ -4760,9 +4760,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-info #weather-panel .day-row { border-bottom: 1px solid #dddddd; }
 
     .navpanel-info #weather-panel .day-row .day,
-    .navpanel-info #weather-panel .day-row .night { display: block; position: relative; width: 100%; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; }
+    .navpanel-info #weather-panel .day-row .night { display: block; position: relative; width: 100%; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; background-repeat: no-repeat; background-position: 10px center;  }
 
-    .navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6; }
+    .navpanel-info #weather-panel .day-row .night { background-color: #f6f6f6 !important; }
 
     .navpanel-info #weather-panel .day-row .day img,
     .navpanel-info #weather-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
