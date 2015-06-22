@@ -43,3 +43,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-fullscreen"]
 	path = vendor/leaflet-fullscreen
 	url = https://github.com/Leaflet/Leaflet.fullscreen.git
+[submodule "vendor/leaflet-loading"]
+	path = vendor/leaflet-loading
+	url = https://github.com/ebrelsford/Leaflet.loading
