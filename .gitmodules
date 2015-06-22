@@ -52,3 +52,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-locatecontrol"]
 	path = vendor/leaflet-locatecontrol
 	url = https://github.com/domoritz/leaflet-locatecontrol
+[submodule "vendor/leaflet-routing-machine"]
+	path = vendor/leaflet-routing-machine
+	url = https://github.com/perliedman/leaflet-routing-machine
