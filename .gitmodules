@@ -55,3 +55,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-routing-machine"]
 	path = vendor/leaflet-routing-machine
 	url = https://github.com/perliedman/leaflet-routing-machine
+[submodule "vendor/leaflet-fullscreen-brunob"]
+	path = vendor/leaflet-fullscreen-brunob
+	url = https://github.com/brunob/leaflet.fullscreen
