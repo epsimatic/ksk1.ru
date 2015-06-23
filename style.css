@@ -3992,6 +3992,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event .post-title a:hover,
 .panel-event .post-event .post-title a:focus { color: #0277bd; }
 
+.panel-event .label { border-radius: 3px; font-weight: 400; background-color: #f0f3f5; color: #90a4ae; }
+
+.panel-event .label.active { opacity: .5; }
+
 .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
 .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 0; width: 100%; float: none; text-align: center; }
@@ -4787,7 +4791,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .panel-radio .jp-audio .jp-playlist,
     .panel-radio .jp-audio .jp-title { width: 90px; }
 
-    .panel-event .post-event .post-title { margin-bottom: 10px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; }
+    .panel-event .post-event .post-title { margin-bottom: 10px; overflow-y: hidden; text-overflow: ellipsis; height: 1.45em; }
 
     .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
 
