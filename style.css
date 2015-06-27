@@ -3942,7 +3942,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
 /*FIXME: Костыль, чтобы показывать событие в одну строку. Явно неправильный */
-.panel-event .event-brief .post-description { display: inline-block; }
+.panel-events .event-brief .post-description { display: inline-block; }
 
 .panel-event .panel-date { margin-bottom: 0; padding: 13px 17px 16px; border-top: 3px dashed #e0e0e0; background-color: #fafafa; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
 
