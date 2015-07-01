@@ -139,7 +139,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-7 subpanel panel_movie_weather">
-        <div>
+        <div id="movies-panel" class="clearfix">
             <h4 class="panel-movies-heading">
                 Сегодня в кино<a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i class="fa fa-arrow-right"></i></a>
             </h4>
@@ -147,8 +147,9 @@
                 <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
             </div>
         </div>
-        <h4 class="weather-panel-heading">Погода в Красноуфимске</h4>
-        <div class="col-xs-12 weather-forecast-panel clearfix" id="weather-panel" style="padding: 0;">
+
+        <div class="col-xs-12 weather-forecast-panel clearfix" id="weather-panel">
+            <h4 class="weather-panel-heading">Погода в Красноуфимске</h4>
             <!--#include virtual="/weather/forecast.html" -->
         </div>
     </div>
