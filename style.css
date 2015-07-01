@@ -1057,6 +1057,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #panel-agenda .panel-events .list-group-item:hover,
 .navpanel #panel-agenda .panel-events .list-group-item:focus { background-color: #fafafa; }
 
+.panel-events .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
+
 .navpanel #panel-agenda .event-thumb { padding: 0; text-align: center; }
 
 .navpanel #panel-agenda .event-thumb img { height: auto; width: auto; max-height: 70px; max-width: 100%; }
