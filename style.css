@@ -4024,8 +4024,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .panel-event .post-event .post-description { line-height: 1.41em; }
 
+.panel-events .post-event .event-time,
 .panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
+.panel-events .post-event .event-place:before,
 .panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
 .panel-event .post-event .event-place,
@@ -4043,6 +4045,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .post-event.has-post-thumbnail .event-price,
 .panel-event .post-event.has-post-thumbnail .event-more { display: block; }
 
+
+.panel-events .post-event .event-place,
+.panel-events .post-event .event-organizer-name,
 .panel-event .post-event .event-place,
 .panel-event .post-event .event-organizer-name { color: #fb700d; }
 
