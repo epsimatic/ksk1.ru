@@ -1111,22 +1111,31 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info .map-feature .fa-certificate,
 .navpanel-info .schedule-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
+.sidebar .panel.panel-btn a { display: block; padding: 15px 25px; }
+
+.sidebar .panel.panel-btn img { max-height: 40px; }
+
 .navpanel-info .emergency-phones-feature { background-color: #ff1744; }
 
 .navpanel-info .emergency-phones-feature:hover { background-color: #ff5252; }
 
 
-
+.sidebar .panel.panel-btn.cat-feature,
 .navpanel-info .cat-feature { background-color: #84FFFF;cursor: pointer; }
 
+.sidebar .panel.panel-btn.cat-feature:hover,
 .navpanel-info .cat-feature:hover { background-color: #a4fffd; }
 
+.sidebar .panel.panel-btn.map-feature,
 .navpanel-info .map-feature { background-color: #69F0AE;cursor: pointer; }
 
+.sidebar .panel.panel-btn.map-feature:hover,
 .navpanel-info .map-feature:hover { background-color: #79F8BB; }
 
+.sidebar .panel.panel-btn.schedule-feature,
 .navpanel-info .schedule-feature { background-color: #ffff00; }
 
+.sidebar .panel.panel-btn.schedule-feature:hover,
 .navpanel-info .schedule-feature:hover { background-color: #ffff8d; }
 
 
