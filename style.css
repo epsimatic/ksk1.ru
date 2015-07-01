@@ -893,6 +893,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 270px; }
 
+.navpanel-services .panel-cat .panel-footer .btn-more { position: inherit; padding: 5px; }
+
 .navpanel-services .panel-eda-container { padding: 0; }
 
 .navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
@@ -2534,7 +2536,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* </editor-fold> */
 
-/* <editor-fold desc="Старый радио-виджет"> */
+/* <editor-fold desc="Новый радио-виджет"> */
 
 .panel-radio .panel-heading { padding: 15px 21px; background-color: #088eff; }
 
