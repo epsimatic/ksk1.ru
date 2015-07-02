@@ -61,6 +61,8 @@ jQuery('.btn-feature').not('.cat-feature , .map-feature').click(function () {
     jQuery('.navpanel, .btn-feature').removeClass('active');
     potential_cond_active.removeClass('cond-active');
     if (!was_active) {
+       if (jQuery(this).attr("id")=="btn-feature-info")
+           jQuery("#weather-panel").appendTo(".panel_movie_weather");
         jQuery(this).addClass('active');
         jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'))
             .removeClass('hidden').addClass('active').trigger('first-load');
