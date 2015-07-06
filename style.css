@@ -1009,7 +1009,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .panel-movies-heading { background-color: #f50057; margin: 0; padding: 10px 15px; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
 
-.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; top: 4px; }
+.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 43px; }
 
 .navpanel #panel-movies { background-color: #2d2d2d; padding: 20px 10px; }
 
