@@ -81,8 +81,22 @@ jQuery('#navpanel-info').one('first-load', function () {
 
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
+    var tmp = new Date();
+    var t=tmp.getDay();
+    var week=['ВС','ПН','ВТ','СР','ЧТ','ПТ','СБ'];
+    jQuery('.list-days-ajax [data-toggle]').each(function () {
+        var res = jQuery(this).attr('data-day')
 
+        if (res>2) {
+            console.log(res);
+            t=new Date();
+            n=new Date(t.setDate(t.getDate() + parseInt(res-1) ) )
 
+            jQuery(this).text(week[n.getDay()]);
+
+        }
+
+    });
 
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
