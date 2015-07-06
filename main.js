@@ -93,7 +93,7 @@ jQuery('#navpanel-info').one('first-load', function () {
         });
     });
 
-    jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tabs'); //загрузка закладки "Сегодня в кино"
+    jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 
 
     //jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
