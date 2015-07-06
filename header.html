@@ -166,7 +166,7 @@
                 <div class='tab-pane ' id='day6'></div>
                 <div class='tab-pane ' id='day7'></div>
 
-                    <!--<div class='text-center' style='margin-top: 150px; height: 160px;'><i class='fa fa-circle-o-notch fa-spin fa-2x'></i></div>-->
+                    <div class='text-center' style='margin-top: 150px; height: 160px;'><i class='fa fa-circle-o-notch fa-spin fa-2x'></i></div>
                 </div>
 
              </div>
@@ -487,8 +487,8 @@
     jQuery('a[data-toggle="tabs"]').one('shown.bs.tabs', function () {
         var day_num = jQuery(this).data('day');
         jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
-            if (day_num > 1 && day_num < 7)
-                jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tabs');
+        //    if (day_num > 1 && day_num < 7)
+        //        jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tabs');
         });
     });
     jQuery('a[href="#day1"]').trigger('shown.bs.tabs'); //загрузка закладки "Сегодня в кино"
