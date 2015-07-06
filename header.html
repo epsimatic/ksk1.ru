@@ -488,7 +488,7 @@
         var day_num = jQuery(this).data('day');
 
         jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num},function(){
-                    jQuery('li a[href="#day"'+day_num+']').tab('show');
+                    jQuery('li a[href="#day'+day_num+'"]').tab('show');
 
                     }
         //    if (day_num > 1 && day_num < 7)
