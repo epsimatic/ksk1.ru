@@ -486,8 +486,7 @@
     // загрузка
     jQuery('a[data-toggle="tabs"]').on('click', function () {
         var day_num = jQuery(this).data('day');
-        jQuery('.panel-movies-heading').html("<div class='text-center' style='margin-top: 150px; height: 160px;'><i class='fa fa-circle-o-notch fa-spin fa-2x'></i></div>");
-        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num},function(){
+                jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num},function(){
                     jQuery('li a[href="#day'+day_num+'"]').tab('show');
 
                     }
