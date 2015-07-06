@@ -83,7 +83,20 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
 
     // Загружаем афишу и кино
-    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
+
+    jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function (e) {
+
+        var day_num = jQuery(this).data('day');
+//        console.log('день = '+day_num);
+        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
+
+        });
+    });
+
+    jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tabs'); //загрузка закладки "Сегодня в кино"
+
+
+    //jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
    /* jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
         jQuery('.movie-poster').each(function() {

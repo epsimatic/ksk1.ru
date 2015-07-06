@@ -509,15 +509,5 @@
         );
     });*/
 
-    jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function (e) {
-
-        var day_num = jQuery(this).data('day');
-        console.log('день = '+day_num);
-        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
-
-        });
-    });
-
- //   jQuery('a[href="#day1"]').trigger('shown.bs.tabs'); //загрузка закладки "Сегодня в кино"
-    jQuery('#day1').load("/movies-block/",{"day_week":1});
+//    jQuery('#day1').load("/movies-block/",{"day_week":1});
 </script>
