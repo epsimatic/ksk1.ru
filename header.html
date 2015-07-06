@@ -144,7 +144,7 @@
 
                    <!-- Сегодня в кино<a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i class="fa fa-arrow-right"></i></a>-->
 
-                <ul class='nav nav-pills list-days list-days-ayax'>
+                <ul class='nav nav-pills list-days list-days-ayax list-days-ajax'>
                     <li  class='heading'>В кино</li>
                     <li class='active'><a href='#day1' data-day=1 data-toggle='tab'>Сегодня</a></li>
                     <li><a href='#day2' data-day=2 data-toggle='tab'>Завтра</a></li>
@@ -509,7 +509,7 @@
         );
     });*/
 
-    jQuery('a[data-toggle="tabs"]').one('shown.bs.tab', function (e) {
+    jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function (e) {
 
         var day_num = jQuery(this).data('day');
         console.log('день = '+day_num);
