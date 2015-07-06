@@ -486,6 +486,7 @@
     // загрузка поочерёдно закладок при первом щелчке по любой закладке "завтра","пн" и т.д.
     jQuery('a[data-toggle="tabs"]').one('shown.bs.tabs', function () {
         var day_num = jQuery(this).data('day');
+        console.log(day_num);
         jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}
         //    if (day_num > 1 && day_num < 7)
         //        jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tabs');
