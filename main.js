@@ -82,7 +82,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
 
-    // Загружаем афишу и кино
+
 
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function (e) {
 
@@ -95,9 +95,9 @@ jQuery('#navpanel-info').one('first-load', function () {
 
     jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 
-
-    //jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
-   /* jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
+    // Загружаем афишу и кино
+    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
+    jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
         jQuery('.movie-poster').each(function() {
             jQuery(this).popover({
@@ -109,7 +109,7 @@ jQuery('#navpanel-info').one('first-load', function () {
                 viewport: 'body'
             });
         });
-    });*/
+    });
 
 // Загружаем погоду
 /*
