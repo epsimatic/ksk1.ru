@@ -99,7 +99,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
         var day_num = jQuery(this).data('day');
 //        console.log('день = '+day_num);
-        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
+        jQuery("#day"+day_num).load("http://news.kskmedia.ru/movies-block/",{"day_week":day_num}, function() {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tab');
         });
