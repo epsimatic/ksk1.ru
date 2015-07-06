@@ -139,7 +139,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-7 subpanel panel_movie_weather">
-        <div id="movies-panel" class="clearfix">
+        <div id="panel-movies" class="clearfix">
             <h4 class="panel-movies-heading">
 
                     Сегодня в кино<a href="http://news.kskmedia.ru/agenda/" class="pull-right btn-more">Ещё <i class="fa fa-arrow-right"></i></a>
@@ -170,10 +170,10 @@
                 </div>
 
              </div>
-            <div id="panel-movies">
+            <!--<div id="">
                 <div class="text-center" style="margin: 62px; height: 22px;"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
             </div>
-
+-->
 
         <div class="weather-forecast-panel clearfix" id="weather-panel">
             <h4 class="weather-panel-heading">Погода в Красноуфимске</h4>
@@ -481,4 +481,15 @@
             classList.add('taxi');
         }
     })();
+</script>
+<script>
+    // загрузка поочерёдно закладок при первом щелчке по любой закладке "завтра","пн" и т.д.
+    jQuery('a[data-toggle="tabs"]').one('shown.bs.tab', function (e) {
+        var day_num = jQuery(this).data('day');
+        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
+            if (day_num > 1 && day_num < 7)
+                jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tab');
+        });
+    });
+    jQuery('a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 </script>

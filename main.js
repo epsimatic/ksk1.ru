@@ -84,7 +84,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
     // Загружаем афишу и кино
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
-    jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
+   /* jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
         jQuery('.movie-poster').each(function() {
             jQuery(this).popover({
@@ -96,7 +96,7 @@ jQuery('#navpanel-info').one('first-load', function () {
                 viewport: 'body'
             });
         });
-    });
+    });*/
 
 // Загружаем погоду
 /*
