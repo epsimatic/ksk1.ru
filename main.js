@@ -85,15 +85,12 @@ jQuery('#navpanel-info').one('first-load', function () {
     var t=tmp.getDay();
     var week=['ВС','ПН','ВТ','СР','ЧТ','ПТ','СБ'];
     jQuery('.list-days-ajax [data-toggle]').each(function () {
-        var res = jQuery(this).attr('data-day')
-
+        var res = jQuery(this).attr('data-day');
         if (res>2) {
             console.log(res);
             t=new Date();
-            n=new Date(t.setDate(t.getDate() + parseInt(res-1) ) )
-
+            n=new Date(t.setDate(t.getDate() + parseInt(res-1) ) );
             jQuery(this).text(week[n.getDay()]);
-
         }
 
     });
