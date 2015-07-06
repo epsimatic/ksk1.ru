@@ -509,8 +509,10 @@
         );
     });*/
 
-    jQuery('a[data-toggle="tabs"]').on('shown.bs.tabs', function (e) {
+    jQuery('a[data-toggle="tabs"]').on('shown.bs.tab', function (e) {
+
         var day_num = jQuery(this).data('day');
+        console.log('день = '+day_num);
         jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
 
         });
