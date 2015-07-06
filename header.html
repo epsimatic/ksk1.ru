@@ -148,7 +148,7 @@
                     <li  class='heading'>В кино</li>
                     <li class='active'><a href='#day1' data-day=1 data-toggle='tabs'>Сегодня</a></li>
                     <li><a href='#day2' data-day=2 data-toggle='tabs'>Завтра</a></li>
-                    <li><a href='#day3' data-day=3 data-toggle='tabs'></a></li>
+                    <li><a href='#day3' data-day=3 data-toggle='tabs'>Послезавтра</a></li>
                     <li><a href='#day4' data-day=4 data-toggle='tabs'></a></li>
                     <li><a href='#day5' data-day=5 data-toggle='tabs'></a></li>
                     <li><a href='#day6' data-day=6 data-toggle='tabs'></a></li>
@@ -166,7 +166,7 @@
                 <div class='tab-pane ' id='day6'></div>
                 <div class='tab-pane ' id='day7'></div>
 
-                    <div class='text-center' style='margin-top: 150px; height: 160px;'><i class='fa fa-circle-o-notch fa-spin fa-2x'></i></div>
+                   <!-- <div class='text-center' style='margin-top: 150px; height: 160px;'><i class='fa fa-circle-o-notch fa-spin fa-2x'></i></div>-->
                 </div>
 
              </div>
@@ -486,10 +486,10 @@
     // загрузка поочерёдно закладок при первом щелчке по любой закладке "завтра","пн" и т.д.
     jQuery('a[data-toggle="tabs"]').one('shown.bs.tabs', function () {
         var day_num = jQuery(this).data('day');
-        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}, function() {
+        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}
         //    if (day_num > 1 && day_num < 7)
         //        jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tabs');
-        });
+        );
     });
     jQuery('a[href="#day1"]').trigger('shown.bs.tabs'); //загрузка закладки "Сегодня в кино"
 </script>
