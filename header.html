@@ -487,7 +487,8 @@
     jQuery('a[data-toggle="tabs"]').on('click', function () {
         var day_num = jQuery(this).data('day');
         console.log(day_num);
-        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num}
+        jQuery("#day"+day_num).load("/movies-block/",{"day_week":day_num},function(){
+                    $(this).tab('show');}
         //    if (day_num > 1 && day_num < 7)
         //        jQuery('a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tabs');
         );
