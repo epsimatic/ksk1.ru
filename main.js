@@ -84,7 +84,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
 
 
-    jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function (e) {
+    jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');
 //        console.log('день = '+day_num);
@@ -97,6 +97,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 
     // Загружаем афишу и кино
+
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
     jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
         setMapHeight();
