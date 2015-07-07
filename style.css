@@ -974,7 +974,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel #weather-panel .gsInformer { margin-top: 15px; }
 .navpanel #weather-panel .gsInformer .gsLinks{height: 40px !important;}
 
-.navpanel-info .weather-panel-heading { background-color: #40C4FF; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
+.navpanel-info .weather-panel-heading { background-color: #40C4FF; margin-top: 0; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
 
 .navpanel-info #weather-panel .day-row { position: relative; }
 
@@ -1007,13 +1007,19 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .cat { border-top: 1px solid #82b1ff; }
 
-.navpanel .panel-movies-heading { background-color: #f50057; margin: 0; padding: 10px 15px; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
+.navpanel #panel-movies { background-color: #2d2d2d; padding: 0; }
 
-.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 43px; }
+.navpanel .panel-movies-heading { margin: 0; padding: 0; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
 
-.navpanel #panel-movies { background-color: #2d2d2d; padding: 20px 10px; }
+.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 30px; right: 7px; }
 
-.navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; }
+.navpanel .panel-movies-heading ul.list-days { border-radius: 0; }
+
+.navpanel .panel-movies-heading ul.list-days > li.heading { display: none; }
+
+.navpanel .panel-movies-heading ul.list-days > li > a { font-size: 14px; padding: 9px; }
+
+.navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; padding: 10px 5px; }
 
 .navpanel #panel-movies .today-movies { display: table-row; }
 
@@ -3866,7 +3872,7 @@ ul.list-days > li > a:hover,
 ul.list-days > li > a:focus { background-color: #e2005c; transition: background-color 0.1s ease-in-out 0s; }
 
 
-ul.list-days > li.heading { padding: 10px 15px; font-size: 21px; font-weight: 700; text-transform: uppercase; color: #fff; }
+ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700; text-transform: uppercase; color: #fff; }
 
 
 /* Оформление фильмов */
@@ -4640,14 +4646,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info #category-other .dropdown-menu { top: 280px; }
 
+    .navpanel-info > .subpanel:first-child { padding-right: 0; }
+
     .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
 
     .navpanel-services .panel-taxi .taxi-phone { margin-bottom: 10px; }
 
     .navpanel img.icon { margin-bottom: 6px; }
 
-    .navpanel .cat,
-    .navpanel #weather-panel { padding: 0 10px;  }
+    .navpanel .cat { padding: 0 10px;  }
 
     .navpanel .cat,
     .navpanel .panel-map { border-top: none; }
@@ -4915,6 +4922,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
 
+    .navpanel .panel-movies-heading ul.list-days > li.heading { display: inline; padding: 8px 10px; font-size: 18px; }
+
+    .navpanel .panel-movies-heading ul.list-days > li > a { font-size: 15px; padding: 10px; }
+
+    .navpanel .panel-movies-heading .btn-more { bottom: 31px; right: 10px; }
+
+    .navpanel #panel-movies .today-movies-outer { padding: 15px 5px; }
+
     body.news .navpanel-info #category-other .dropdown-menu { top: 190px; }
 
     .navpanel-info #category-other .dropdown-menu { top: 230px }
@@ -5100,6 +5115,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .news-more .crp_title {font-size: 16px;}
 
     .news-more .crp_excerpt {font-weight: 400;}
+
+    .navpanel .panel-movies-heading ul.list-days > li.heading { padding: 9px 15px 8px; font-size: 20px; }
+
+    .navpanel .panel-movies-heading ul.list-days > li > a { font-size: 17px; padding: 11px 13px; }
+
+    .navpanel .panel-movies-heading .btn-more { bottom: 33px; right: 15px; }
 
     .navpanel-info .cat-feature.cat-feature,
     .navpanel-info .map-feature.map-feature,
