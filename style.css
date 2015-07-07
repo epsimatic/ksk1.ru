@@ -1011,7 +1011,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel .panel-movies-heading { margin: 0; padding: 0; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
 
-.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 30px; right: 7px; }
+.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 38px; right: 7px; }
 
 .navpanel .panel-movies-heading ul.list-days { border-radius: 0; }
 
@@ -1025,9 +1025,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-movies .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; text-align: center; }
 
-.navpanel #panel-movies .today-movies .movie-poster img { height: 220px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
+.navpanel #panel-movies .today-movies .movie-poster img { height: 92px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
 
-.navpanel #panel-movies .today-movies .movie-poster .movie-title { margin-bottom: 0; font-size: 16px; color: #fff; }
+.navpanel #panel-movies .today-movies .movie-poster .movie-title { margin-bottom: 0; font-size: 13px; color: #fff; }
 
 .navpanel #panel-movies .popover { padding: 10px !important; min-width: 300px; }
 
@@ -4796,6 +4796,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     
     .navpanel #panel-movies .today-movies .movie-poster img { height: 139px; }
 
+    .navpanel .panel-movies-heading .btn-more { bottom: 30px; }
+
     .navpanel-info .features-toolbar .cat-feature img,
     .navpanel-info .features-toolbar .map-feature img,
     .navpanel-info .features-toolbar .schedule-feature img { max-height: 22px; }
@@ -4940,7 +4942,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info .features-toolbar .cat-feature img,
     .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .-toolbar .schedule-feature img { max-height: 27px; }
+    .navpanel-info .-toolbar .schedule-feature img { max-height: 28px; }
 
     .navpanel-info #weather-panel .day-row .day,
     .navpanel-info #weather-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
@@ -5128,7 +5130,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info .features-toolbar .cat-feature img,
     .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .features-toolbar .schedule-feature img { max-height: 32px; }
+    .navpanel-info .features-toolbar .schedule-feature img { max-height: 24px; }
 
     .navpanel-services .panel-map .leaflet-control-geosearch { width: 300px; }
 
