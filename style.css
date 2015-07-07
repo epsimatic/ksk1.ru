@@ -1761,6 +1761,8 @@ iframe.fullstory__video { max-width: 100%; }
 
 .news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
+.news-old .post-news h4.post-title .fa { padding-left: 6px; }
+
 .news-old .post-news figure.post-thumb { margin-right: 15px; margin-bottom: 10px; width: 76px; float: left; }
 .news-old .post-news figure.post-thumb img { max-width: 100% !important; }
 
@@ -4942,7 +4944,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel-info .features-toolbar .cat-feature img,
     .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .-toolbar .schedule-feature img { max-height: 28px; }
+    .navpanel-info .features-toolbar .schedule-feature img { max-height: 28px; }
 
     .navpanel-info #weather-panel .day-row .day,
     .navpanel-info #weather-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
