@@ -123,35 +123,6 @@ jQuery('#navpanel-info').one('first-load', function () {
         });
     }); */
 
-// Загружаем погоду
-/*
-    jQuery('#weather-panel').html('\
-        <div class="popover-source-gismeteo" title="Погода от Гисметео">\
-            <div id="gsInformerID-5yW5CsFg4TLIH3" class="gsInformer" style="width:300px;height:157px">\
-                <div class="gsIContent">\
-                    <div id="cityLink">\
-                        <a href="http://www.gismeteo.ru/city/daily/4515/" target="_blank">Погода в Красноуфимске</a>\
-                    </div>\
-                    <div class="gsLinks"><table><tr><td>\
-                        <div class="leftCol">\
-                            <a href="http://www.gismeteo.ru" target="_blank">\
-                                <img alt="Gismeteo" title="Gismeteo" src="" align="absmiddle" border="0"/>\
-                                <span>Gismeteo</span>\
-                            </a>\
-                        </div>\
-                        <div class="rightCol">\
-                            <a href="http://www.gismeteo.ru/city/weekly/4515/" target="_blank">Прогноз на 2 недели</a>\
-                        </div>\
-                    </td></tr></table></div>\
-                </div>\
-            </div>\
-        </div>');
-    LoadCSS('http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css');
-    LoadJS('http://www.gismeteo.ru/ajax/getInformer/?hash=5yW5CsFg4TLIH3', function () {
-        setMapHeight();
-    });
-*/
-
 });
 
 function AddGeosearch() {
