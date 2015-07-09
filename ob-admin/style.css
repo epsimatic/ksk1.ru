@@ -136,6 +136,7 @@
 a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 .col-obs-rep span { padding: 2px 6px; border-radius: 3px; }
+.rep-0 .col-obs-rep span { visibility: hidden; }
 
 /*
 .btn.rep-plus-few,
