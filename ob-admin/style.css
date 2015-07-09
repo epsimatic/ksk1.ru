@@ -137,6 +137,7 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 .col-obs-rep span { padding: 2px 6px; border-radius: 3px; }
 
+/*
 .btn.rep-plus-few,
 .tel.rep-plus-few,
 .rep-plus-few .col-obs-rep span { background-color: #eeffd3; }
@@ -153,6 +154,7 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 .tel.rep-plus-lots,
 .rep-plus-lots .col-obs-rep span { background-color: #00c853; color: #fff; }
 
+
 .btn.rep-minus-few,
 .tel.rep-minus-few,
 .rep-minus-few .col-obs-rep span { background-color: #ffecb3; }
@@ -160,7 +162,7 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 .btn.rep-minus-some,
 .tel.rep-minus-some,
 .rep-minus-some .col-obs-rep span { background-color: #ffe180; }
-
+*/
 .btn.rep-minus-more,
 .tel.rep-minus-more,
 .rep-minus-more .col-obs-rep span { background-color: #ffcdd2; }
