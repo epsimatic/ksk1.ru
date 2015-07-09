@@ -158,18 +158,19 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 .btn.rep-minus-few,
 .tel.rep-minus-few,
 .rep-minus-few .col-obs-rep span { background-color: #ffecb3; }
+*/
 
 .btn.rep-minus-some,
 .tel.rep-minus-some,
-.rep-minus-some .col-obs-rep span { background-color: #ffe180; }
-*/
+.rep-minus-some .col-obs-rep span { background-color: #FFEBEE; }
+
 .btn.rep-minus-more,
 .tel.rep-minus-more,
 .rep-minus-more .col-obs-rep span { background-color: #ffcdd2; }
 
 .btn.rep-minus-lots,
 .tel.rep-minus-lots,
-.rep-minus-lots .col-obs-rep span { background-color: #ff5252; color: #fff; }
+.rep-minus-lots .col-obs-rep span { background-color: #EF9A9A; }
 
 /*перенесено с ob.ksk66.ru из админки sad.php*/
 .outputdays{font-weight: 600 ;}
