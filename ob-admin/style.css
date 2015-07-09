@@ -146,15 +146,15 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 .btn.rep-plus-some,
 .tel.rep-plus-some,
 .rep-plus-some .col-obs-rep span { background-color: #ccff90; }
-*/
 
 .btn.rep-plus-more,
 .tel.rep-plus-more,
 .rep-plus-more .col-obs-rep span { background-color: #eeffd3; }
+*/
 
 .btn.rep-plus-lots,
 .tel.rep-plus-lots,
-.rep-plus-lots .col-obs-rep span { background-color: #ccff90; }
+.rep-plus-lots .col-obs-rep span { background-color: #eeffd3; }
 
 /*
 .btn.rep-minus-few,
