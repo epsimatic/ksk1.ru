@@ -277,14 +277,14 @@ body.single-company .navbar,
 
 .news-old .cat-pills { background-color: #f7d3c4; padding: 0; }
 
-.news-old .cat-pills.cat-pills > li > a { border-bottom: none; border-radius: 0 !important; display: table-cell; height: 50px; vertical-align: middle; padding: 0 15px; }
+.news-old .cat-pills.cat-pills > li > a { border-bottom: none; border-radius: 0 !important; display: table-cell; height: 50px; vertical-align: middle; padding: 0 15px; font-size: 13px; }
 
 .news-old .cat-pills.cat-pills > li > a:focus,
 .news-old .cat-pills.cat-pills > li > a:hover { background-color: #f7ddd2; }
 
 .news-old .cat-pills.cat-pills > li.active > a:hover,
 .news-old .cat-pills.cat-pills > li.active > a:focus,
-.news-old .cat-pills.cat-pills > li.active > a { background-color: #e79c78; color: #3e2723; font-size: 17px; }
+.news-old .cat-pills.cat-pills > li.active > a { background-color: #e79c78; color: #3e2723; font-size: 15px; }
 
 .news-old .news-list_secondary .cat-pills.cat-pills > li.active > a:hover,
 .news-old .news-list_secondary .cat-pills.cat-pills > li.active > a:focus,
