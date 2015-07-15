@@ -4882,6 +4882,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-news h4 {font-size: 22px;}
 
+    .news-old .cat-pills.cat-pills > li > a { height: 44px; padding: 0 12px; }
+
     .news-old .fullstory .newstitle { padding-left: 25px; }
 
     .news-old .fullstory .newstext { padding: 0 25px; }
@@ -5094,6 +5096,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .panel-news .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
 
     .panel-news .post-info span {display: inline;}
+
+    .news-old .cat-pills.cat-pills > li > a { height: 50px; padding: 0 15px; }
 
     .news-old .fullstory .newstext { padding: 0 30px; }
 
