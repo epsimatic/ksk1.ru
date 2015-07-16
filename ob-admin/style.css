@@ -136,7 +136,9 @@
 a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 .col-obs-rep span { padding: 2px 6px; border-radius: 3px; }
+.rep-0 .col-obs-rep span { visibility: hidden; }
 
+/*
 .btn.rep-plus-few,
 .tel.rep-plus-few,
 .rep-plus-few .col-obs-rep span { background-color: #eeffd3; }
@@ -147,19 +149,22 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 .btn.rep-plus-more,
 .tel.rep-plus-more,
-.rep-plus-more .col-obs-rep span { background-color: #80ff59; }
+.rep-plus-more .col-obs-rep span { background-color: #eeffd3; }
+*/
 
 .btn.rep-plus-lots,
 .tel.rep-plus-lots,
-.rep-plus-lots .col-obs-rep span { background-color: #00c853; color: #fff; }
+.rep-plus-lots .col-obs-rep span { background-color: #eeffd3; }
 
+/*
 .btn.rep-minus-few,
 .tel.rep-minus-few,
 .rep-minus-few .col-obs-rep span { background-color: #ffecb3; }
+*/
 
 .btn.rep-minus-some,
 .tel.rep-minus-some,
-.rep-minus-some .col-obs-rep span { background-color: #ffe180; }
+.rep-minus-some .col-obs-rep span { background-color: #FFEBEE; }
 
 .btn.rep-minus-more,
 .tel.rep-minus-more,
@@ -167,7 +172,7 @@ a.tel { border-radius: 3px; padding: 0 6px 1px 5px; }
 
 .btn.rep-minus-lots,
 .tel.rep-minus-lots,
-.rep-minus-lots .col-obs-rep span { background-color: #ff5252; color: #fff; }
+.rep-minus-lots .col-obs-rep span { background-color: #EF9A9A; }
 
 /*перенесено с ob.ksk66.ru из админки sad.php*/
 .outputdays{font-weight: 600 ;}
