@@ -2930,6 +2930,7 @@ a.super:focus {background-color: #fbea2d;}
 .is_owner .full-size{display: block;}
 /* <editor-fold desc="Панель объявления"> */
 .ob-panel-redaktor{text-align: right;margin-bottom: 10px;padding-top: 10px;clear: both;}
+.ob-panel-redaktor_up{display:inline-block;}
 .panel-ob > .panel-footer {background-color: #fcfcfc;}
 
 .panel-ob .price,
