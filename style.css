@@ -2746,6 +2746,25 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Страница категорий объявлений"> */
 /*Панель категории*/
+.panel-ob-top > div { margin-bottom: 10px; }
+
+.panel-ob-bottom { margin-bottom: 20px; }
+
+/* Стили для размера -md- */
+@media (min-width: 992px) {
+    .panel-ob-top > div:nth-child(1) { padding-right: 0; }
+
+    .panel-ob-top > div:nth-child(3) { padding-left: 0;}
+
+    .panel-ob-top .btn,
+    .panel-ob-bottom .btn { font-size: 14px; }
+}
+/* Стили для размера -lg- */
+@media (min-width: 1200px) {
+    .panel-ob-top .btn,
+    .panel-ob-bottom .btn { font-size: 18px; }
+}
+
 .panel-cat {margin: 5px 0 25px; background-color: #fafbfc; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);}
 
 .panel-cat:hover {box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);}
