@@ -3262,11 +3262,11 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .table-schedule .weekdays .badge { margin-left: 1px; padding: 2px 2px 4px 3px; border-radius: 0; background-color: #b3e5fc; font-size: 10px; font-weight: 400; color: #666; color: rgba(0,0,0,.5); }
 
-.table-schedule .weekdays .badge.weekend { background-color: #ffccbc; }
+/*.table-schedule .weekdays .badge.weekend { background-color: #ffccbc; }*/
 
-.table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; }
+.table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; display: none; }
 
-.table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }
+/*.table-schedule .weekdays .badge.today { box-shadow: 0 0 3px #01579b; }*/
 
 
 #schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 21px; background-color: #f0f0f0; color: #666; }
