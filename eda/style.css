@@ -56,11 +56,11 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-eda .logo-placeholder { padding: 30px; text-align: center; }
 
-.header-eda .eda-phone { font-weight: 700; padding: 5px 20px 6px; border-radius: 5px; font-size: 17px; margin: -10px 50px 20px; background-color: #FFAB40; }
+.header-eda .eda-phone { font-weight: 700; border-radius: 5px; font-size: 17px; margin: -10px 50px 20px; background-color: #FFAB40; }
 
-.header-eda .eda-phone:hover { background-color: #ef6c00; }
+.header-eda .eda-phone:hover { background-color: #ff9100; }
 
-.header-eda .eda-phone a { color: #ffffff; display: block; }
+.header-eda .eda-phone a { color: #ffffff; display: block; padding: 5px 20px 6px; }
 
 .header-eda .eda-phone a:hover { text-decoration: none; }
 
