@@ -2723,9 +2723,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 .row-center-yummies img {display: block; height: auto; max-width: 100%;}
 
-.row-center-yummies .col-xs-4 {padding-right: 0;}
+.row-center-yummies { margin-left: -10px; }
 
-.row-center-yummies .col-xs-4:last-child {padding-right: 10px;}
+.row-center-yummies .col-xs-4 { padding-right: 0; }
+
+.row-center-yummies .col-xs-4:last-child { padding-right: 0; }
 
 /*Стили для баннеров спонсоров*/
 .cat__banner-block {width: auto;}
