@@ -3375,7 +3375,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #railroad-transpost.tab-pane img { width: 100%; }
 
-#railroad-transpost.tab-pane h1 { position: absolute; top: 25px; left: 30px; width: 100%; text-shadow: 0 0 8px #fff; text-align: left; font-size: 34px; color: #f44336; }
+#railroad-transpost.tab-pane h1 { position: absolute; top: 10px; left: 17px; width: 100%; text-shadow: 0 0 8px #fff; text-align: left; font-size: 29px; color: #f44336; }
 
 #railroad-transpost.tab-pane h1:hover { color: #b71c1c; text-decoration: underline; }
 
@@ -5048,6 +5048,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
 
     #transport-schedule-tabs.nav-tabs { font-size: 16px; }
+
+    #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; }
 
     .site-tv .logo-tv { text-align: left; }
 
