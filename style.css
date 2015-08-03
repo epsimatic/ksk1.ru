@@ -2729,7 +2729,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .row-center-yummies .col-xs-4:last-child { padding-right: 0; }
 
-.ob-site .row-center-yummies .col-xs-4:last-child { padding-right: 10px; }
+.site-ob .row-center-yummies .col-xs-4:last-child { padding-right: 10px; }
 
 /*Стили для баннеров спонсоров*/
 .cat__banner-block {width: auto;}
