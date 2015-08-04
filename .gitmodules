@@ -61,3 +61,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/leaflet-easybutton"]
 	path = vendor/leaflet-easybutton
 	url = https://github.com/CliffCloud/Leaflet.EasyButton.git
+[submodule "vendor/stickyHeader"]
+	path = vendor/stickyHeader
+	url = https://github.com/kingkool68/stickyHeader
