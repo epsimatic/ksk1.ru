@@ -272,8 +272,8 @@ function AddMeasureControl(){
         map.addLayer(layer);
     });
 }
-function AddMap(name_id){
-    jQuery('#'+name_id).css('height','850');
+function AddMap(name_id,map_height){
+    jQuery('#'+name_id).css('height',map_height);
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
 // TODO: загружать локальный leaflet
@@ -314,7 +314,7 @@ function AddMap(name_id){
 
 jQuery('#navpanel-services').one('first-load', function () {
 // Загружаем карту
-    AddMap('panel-map');
+    AddMap('panel-map',380);
    /* setMapHeight();
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
