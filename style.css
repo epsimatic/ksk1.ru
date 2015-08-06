@@ -855,7 +855,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel-services .panel-map #panel-map { position: relative; width: 100%; overflow: hidden; height: 411px; }
 
-.navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 50px; }
+.navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 10px; }
 
 .navpanel-services .panel-map .leaflet-control-geosearch { padding: 0; border-radius: 3px; width: 240px; }
 
