@@ -49,7 +49,7 @@ function setMapHeight() {
     }
 }
 // кнопкa "Карта" на панели в Городе
-jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
+//jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
 
 // Кнопки НавПанели и выдвижные панельки
 jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click();
