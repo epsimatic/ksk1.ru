@@ -87,7 +87,6 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax [data-toggle]').each(function () {
         var res = jQuery(this).attr('data-day');
         if (res>2) {
-            console.log(res);
             t=new Date();
             n=new Date(t.setDate(t.getDate() + parseInt(res-1) ) );
             jQuery(this).text(week[n.getDay()]);
@@ -314,7 +313,7 @@ function AddMap(name_id,map_height){
 
 jQuery('#navpanel-services').one('first-load', function () {
 // Загружаем карту
-    if(!isset('map'))
+    if (typeof map ==="undefined")
     AddMap('panel-map',428);
    /* setMapHeight();
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
