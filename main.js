@@ -314,7 +314,7 @@ function AddMap(name_id,map_height){
 
 jQuery('#navpanel-services').one('first-load', function () {
 // Загружаем карту
-    if(isset('map'))
+    if(!isset('map'))
     AddMap('panel-map',428);
    /* setMapHeight();
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
