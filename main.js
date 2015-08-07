@@ -107,7 +107,18 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 
     // Загружаем афишу
-    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
+    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight,function(){
+        jQuery('.movie-poster').each(function() {
+            jQuery(this).popover({
+                content: jQuery('#content-' + jQuery(this)[0].id).html(),
+                html: true,
+                placement: "bottom",
+                trigger: 'hover',
+                container: '.today-movies-margin',
+                viewport: 'body'
+            });
+        });
+    });
 
 });
 
