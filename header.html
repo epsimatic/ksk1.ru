@@ -209,54 +209,6 @@
 
 <div class="navpanel navpanel-services row" id="navpanel-services">
     <div class="col-xs-12">
-        <div class="col-xs-12 col-md-4 panel-map subpanel">
-            <!--<a href="http://news.kskmedia.ru/map/">-->
-                <h4 class="panel-heading">
-                    <span class="panel-title">Карта</span>
-                    <!--<span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>-->
-                </h4>
-            <!--</a>-->
-
-            <div id="panel-map"></div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4 panel-cat-container">
-            <div class="panel panel-cat">
-                <a href="http://cat.ksk66.ru/">
-                    <h4 class="panel-heading">
-                        <span class="panel-title">Справочник</span>
-                        <span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>
-                    </h4>
-                </a>
-                <div class="panel-body">
-                    <div class="list-group">
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/gov/">Государственные и  общественные организации</a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/medicare/">Медицина</a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/education/">Образование, культура, спорт </a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/manufature/">Производство</a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/trade/">Торговля</a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/transport/">Транспорт</a>
-                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/aboriginal/">Реклама и СМИ</a>
-                        <div class="list-group-item search-container">
-                            <form action="http://news.kskmedia.ru/" class="search-form" method="get" role="search">
-                                <div>
-                                    <div class="form-group clearfix">
-                                        <button type="submit">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                        <input type="search" name="s" value="" size="40" placeholder="Найти компанию…" class="search-field form-control" title="Напишите название организации или ключевое слово">
-                                    </div>
-                                </div>
-                                <input type="hidden" id="post_type" name="post_type" value="company">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-footer clearfix">
-                    <a  class="pull-right btn-more" href="http://news.kskmedia.ru/cat/">Все категории <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 panel-eda-container">
             <div class="panel-eda">
                 <div class="panel-heading">
@@ -304,6 +256,53 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 panel-cat-container">
+            <div class="panel panel-cat">
+                <a href="http://cat.ksk66.ru/">
+                    <h4 class="panel-heading">
+                        <span class="panel-title">Справочник</span>
+                        <span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>
+                    </h4>
+                </a>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/gov/">Государственные и  общественные организации</a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/medicare/">Медицина</a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/education/">Образование, культура, спорт </a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/manufature/">Производство</a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/trade/">Торговля</a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/transport/">Транспорт</a>
+                        <a class="list-group-item hidden-xs" href="http://news.kskmedia.ru/cat/services/aboriginal/">Реклама и СМИ</a>
+                        <div class="list-group-item search-container">
+                            <form action="http://news.kskmedia.ru/" class="search-form" method="get" role="search">
+                                <div>
+                                    <div class="form-group clearfix">
+                                        <button type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                        <input type="search" name="s" value="" size="40" placeholder="Найти компанию…" class="search-field form-control" title="Напишите название организации или ключевое слово">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="post_type" name="post_type" value="company">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer clearfix">
+                    <a  class="pull-right btn-more" href="http://news.kskmedia.ru/cat/">Все категории <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 panel-map subpanel">
+            <!--<a href="http://news.kskmedia.ru/map/">-->
+            <h4 class="panel-heading">
+                <span class="panel-title">Карта</span>
+                <!--<span class="pull-right btn-more"> Открыть <i class="fa fa-arrow-right"></i></span>-->
+            </h4>
+            <!--</a>-->
+
+            <div id="panel-map"></div>
         </div>
     </div>
 
