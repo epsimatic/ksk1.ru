@@ -26,7 +26,7 @@
     }
 })();
 
-var map;
+var map, layersControl;
 // Подгоняем высоту карты
 function setMapHeight() {
     //FIXME: ОТКЛЮЧЕНО!
@@ -49,7 +49,7 @@ function setMapHeight() {
     }
 }
 // кнопкa "Карта" на панели в Городе
-jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
+//jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
 
 // Кнопки НавПанели и выдвижные панельки
 jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click();
@@ -87,7 +87,6 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax [data-toggle]').each(function () {
         var res = jQuery(this).attr('data-day');
         if (res>2) {
-            console.log(res);
             t=new Date();
             n=new Date(t.setDate(t.getDate() + parseInt(res-1) ) );
             jQuery(this).text(week[n.getDay()]);
@@ -109,19 +108,6 @@ jQuery('#navpanel-info').one('first-load', function () {
 
     // Загружаем афишу
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
- /*   jQuery("#panel-movies").load("http://news.kskmedia.ru/movies-block/", function () {
-        setMapHeight();
-        jQuery('.movie-poster').each(function() {
-            jQuery(this).popover({
-                content: jQuery('#content-' + jQuery(this)[0].id).html(),
-                html: true,
-                placement: "bottom",
-                trigger: 'hover',
-                container: '.today-movies-margin',
-                viewport: 'body'
-            });
-        });
-    }); */
 
 });
 
@@ -129,7 +115,6 @@ function AddGeosearch() {
     LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', function () {
         L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
             initialize: function (options) {
-                //noinspection JSUnusedAssignment
                 options = L.Util.setOptions(this, options);
             },
             /** @return {string} Service URL */
@@ -155,11 +140,182 @@ function AddGeosearch() {
         }).addTo(map);
     });
 }
+function AddLayerGoogle() {
+    var tiles_OpenMapSurfer_hybrid = L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
+        minZoom: 8,
+        maxZoom: 20,
+        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+        'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+    });
+    LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Google.js', function () {
+        layersControl.addBaseLayer( L.layerGroup( [new L.Google(), tiles_OpenMapSurfer_hybrid] ), 'Спутник Google' );
+    });
+}
 
+function AddLayerBing() {
+    var tiles_OpenMapSurfer_hybrid = L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
+        minZoom: 8,
+        maxZoom: 20,
+        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+        'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+    });
+
+    LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Bing.js', function () {
+        layersControl.addBaseLayer( L.layerGroup( [ new L.BingLayer("AqYQy-mMupdP9Y5Ig8rx374e1-Rai_sBWOwD_FuUDp9b1exLtRRbMYxIcTmGZe2Z"),
+            tiles_OpenMapSurfer_hybrid] ), "Спутник Bing" );
+    });
+}
+
+function AddLayerYandex(){
+    LoadJS('http://api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU', function () {
+        LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Yandex.js', function () {
+            layersControl.addBaseLayer(new L.Yandex('map'), "Карта Яндекс" );
+        });
+    });
+}
+
+function AddOverlayHills() {
+    var tiles_OpenMapSurfer_hills_hybrid = L.tileLayer('http://129.206.74.245:8004/tms_hs.ashx?x={x}&y={y}&z={z}', {
+        opacity: 0.3
+//        minZoom: 8,
+//        maxZoom: 20
+// TODO: attribution http://korona.geog.uni-heidelberg.de/contact.html
+    });
+
+    layersControl.addOverlay(tiles_OpenMapSurfer_hills_hybrid, "Рельеф")
+}
+
+function AddButtonFullScreen(){
+    LoadCSS('http://ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.css');
+    LoadJS( 'http://ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.js', function () {
+        L.control.fullscreen({
+            position: 'topleft',
+            title: 'Развернуть на весь экран',
+            content: "<i class='fa fa-expand'></i>",
+            forceSeparateButton: true
+        }).addTo(map);
+
+    });
+}
+function AddControlLoading(){
+    LoadCSS('http://ksk1.ru/vendor/leaflet-loading/src/Control.Loading.css');
+    LoadJS( 'http://ksk1.ru/vendor/leaflet-loading/src/Control.Loading.js', function () {
+        var loadingControl = L.Control.loading({
+            separate: true
+        });
+        map.addControl(loadingControl);
+    });
+}
+function AddButtonHome(){
+    LoadCSS('http://ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.css');
+    LoadJS( 'http://ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.js', function () {
+        L.control.defaultExtent({title: 'Возврат к первоначальному виду'}).addTo(map);
+    });
+}
+function AddButtonLocate(){
+    LoadCSS('http://ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.css');
+    LoadJS( 'http://ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.js', function () {
+        L.control.locate({strings:{title: "Где я нахожусь"}}).addTo(map);
+    });
+}
+function AddRoutingMachine(){
+    LoadCSS('http://ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.css');
+    LoadJS( 'http://ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.js', function () {
+        L.Routing.control({
+            waypoints: [
+                L.latLng(map.getCenter().lat,map.getBounds().getEast()*.25 + map.getBounds().getWest()*.75 ),
+                L.latLng(map.getCenter().lat,map.getBounds().getEast()*.75 + map.getBounds().getWest()*.25 )
+            ],
+            routeWhileDragging: true
+        }).addTo(map);
+        jQuery(".leaflet-marker-icon").css('z-index','200');
+    });
+}
+
+function AddButtonRouting() {
+    LoadJS("http://ksk1.ru/vendor/leaflet-easybutton/easy-button.js",function(){
+        L.easyButton('fa-exchange', function (){
+                //TODO: Скрывать навигацию, если она есть (сделать кнопку-переключатель)
+                //TODO: Помечать кнопку как активную (не очень нужно)
+                if(jQuery('img').is('.leaflet-marker-icon')== false)
+                {
+                    AddRoutingMachine();
+                }
+                else {
+                    jQuery('img.leaflet-marker-icon').remove();
+                    jQuery('.leaflet-routing-container').remove();
+                    jQuery('.leaflet-clickable').remove();
+                }
+            },
+            'Проложить маршрут по карте'
+        );
+    });
+}
+
+function AddMeasureControl(){
+    var drawnItems = new L.FeatureGroup();
+    map.addLayer(tiles_OpenMapSurfer_hybrid);
+    var drawControl = new L.Control.Draw({
+        edit: {
+            featureGroup: tiles_OpenMapSurfer_hybrid
+        }
+    });
+    map.addControl(drawControl);
+    map.on('draw:created', function (e) {
+        var type = e.layerType,
+            layer = e.layer;
+        if (type === 'marker') {
+            // Do marker specific actions
+        }
+        // Do whatever else you need to. (save to db, add to map etc)
+        map.addLayer(layer);
+    });
+}
+function AddMap(name_id,map_height){
+    jQuery('#'+name_id).css('height',map_height);
+    LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
+    LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
+// TODO: загружать локальный leaflet
+    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
+
+        map = L.map(name_id,{drawControl: true});
+        map.setView([56.6132, 57.7689], 13);
+        layersControl = new L.Control.Layers(null, null, { 'collapsed': false }).addTo(map);
+        var tiles_OpenMapSurfer = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+            minZoom: 8,
+            maxZoom: 20,
+            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+            'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+        });
+        tiles_OpenMapSurfer.addTo(map);
+        layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
+
+        AddControlLoading();
+        AddButtonFullScreen();
+        AddButtonRouting();
+        AddButtonHome();
+
+        AddGeosearch();
+
+        AddButtonLocate();
+
+        LoadJS("https://raw.githubusercontent.com/vogdb/Leaflet.ActiveLayers/master/dist/leaflet.active-layers.min.js");
+
+        window.setTimeout(function(){
+            //  AddLayerESRI();
+            AddLayerGoogle();
+            AddLayerBing();
+            AddLayerYandex();
+            AddOverlayHills();
+        }, 100)
+    });
+}
 
 jQuery('#navpanel-services').one('first-load', function () {
 // Загружаем карту
-    setMapHeight();
+    if (typeof map ==="undefined")
+    AddMap('panel-map',428);
+   /* setMapHeight();
     LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
 // TODO: загружать локальный leaflet
@@ -175,7 +331,7 @@ jQuery('#navpanel-services').one('first-load', function () {
         }).addTo(map);
 
         AddGeosearch();
-    });
+    });*/
 });
 
 //  Openstat
