@@ -106,6 +106,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
     jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
 
+
     // Загружаем афишу
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
 
