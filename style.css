@@ -2991,6 +2991,34 @@ a.super:focus {background-color: #fbea2d;}
 .panel-ob-nav a:focus .fa {color: #adadad;}
 
 .panel-ob-nav .fa {padding-right: 7px;}
+
+.ob-pricing-table .panel-pricing-container { padding-right: 5px; padding-left: 5px; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing,
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading,
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body,
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body ul.list-group,
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer { background-color: #fff; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading { padding: 25px 15px; border-bottom: 5px solid; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading h3 { font-size: 19px; font-weight: 400; color: #20172c; opacity: 0.7; }
+
+.ob-pricing-table .panel-pricing-container:nth-child(1) .panel-pricing .panel-heading { border-color: #cfd8dc; }
+.ob-pricing-table .panel-pricing-container:nth-child(2) .panel-pricing .panel-heading { border-color: #fff7a9; }
+.ob-pricing-table .panel-pricing-container:nth-child(3) .panel-pricing .panel-heading { border-color: #fff04e; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price { color: #20172c; opacity: 0.8; text-transform: uppercase; font-size: 33px; }
+
+.ob-pricing-table .panel-pricing-container:nth-child(1) .panel-pricing .panel-body .price { font-size: 21px; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price-description { color: #20172c; opacity: 0.6; text-transform: uppercase; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body ul.list-group { padding: 0; color: #20172c; opacity: 0.8; font-size: 13px; line-height: 1.4em; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer { display: block; padding: 10px 20px 20px; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer a.btn-action { color: #fff; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Оформление логотипа «Твой Посредник» текстом"> */
@@ -4184,23 +4212,23 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .fa-arrow-down:hover,
 .fa-arrow-down:focus {color: #f4a39f;}
 
-.fa-pencil,
-.fa-eye-slash {color: #98a3a3;}
+/*.fa-pencil,*/
+/*.fa-eye-slash {color: #98a3a3;}*/
 
 .fa-exclamation-triangle:hover,
 .fa-exclamation-triangle:focus {color: #ff6f36;}
 
-.fa-link,
-.fa-exclamation-triangle {color: #cacece; padding-left: 7px;}
+/*.fa-link,*/
+/*.fa-exclamation-triangle {color: #cacece; padding-left: 7px;}*/
 
 .fa-link:hover,
 .fa-link:focus {color: #1996f4;}
 
-.fa-eye-slash:hover,
-.fa-eye-slash:focus {color: #334daa;}
+/*.fa-eye-slash:hover,*/
+/*.fa-eye-slash:focus {color: #334daa;}*/
 
-.fa-pencil:hover,
-.fa-pencil:focus {color: #1f8689;}
+/*.fa-pencil:hover,*/
+/*.fa-pencil:focus {color: #1f8689;}*/
 
 /* </editor-fold> */
 
