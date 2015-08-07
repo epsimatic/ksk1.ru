@@ -101,20 +101,22 @@ jQuery('#navpanel-info').one('first-load', function () {
         jQuery("#day"+day_num).load("http://news.kskmedia.ru/movies-block/",{"day_week":day_num}, function() {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tab');
+
+        });
+        jQuery('.movie-poster').each(function() {
+            jQuery(this).popover({
+                content: jQuery('#content-' + jQuery(this)[0].id).html(),
+                html: true,
+                placement: "bottom",
+                trigger: 'hover',
+                container: '.today-movies-margin',
+                viewport: 'body'
+            });
         });
     });
 
     jQuery('.list-days-ajax a[href="#day1"]').trigger('shown.bs.tab'); //загрузка закладки "Сегодня в кино"
-    jQuery('.movie-poster').each(function() {
-        jQuery(this).popover({
-            content: jQuery('#content-' + jQuery(this)[0].id).html(),
-            html: true,
-            placement: "bottom",
-            trigger: 'hover',
-            container: '.today-movies-margin',
-            viewport: 'body'
-        });
-    });
+
 
     // Загружаем афишу
     jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
