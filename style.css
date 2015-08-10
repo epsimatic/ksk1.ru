@@ -1589,9 +1589,9 @@ body.ob     .cond-active.cond-active-ob,
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
-.panel-news-list .panel-heading { padding: 0; }
+.news-old .panel-heading { padding: 0; margin-bottom: 10px; }
 
-.panel-news-list .panel-heading .btn-primary { color: #fff; }
+.news-old .panel-heading .btn-primary { color: #fff; }
 
 /*.temp .panel-week .panel-heading,
 .temp .panel-sendsms .panel-heading,
