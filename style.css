@@ -1589,6 +1589,8 @@ body.ob     .cond-active.cond-active-ob,
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
+.news-old .panel-news .post-news .post-title { font-size: 17px; padding: 5px 0 7px; }
+
 .news-old .panel-heading { padding: 0; margin-bottom: 10px; }
 
 .news-old .panel-heading .btn-primary { color: #fff; }
