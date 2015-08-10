@@ -1117,7 +1117,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel-info .map-feature .fa-certificate,
 .navpanel-info .schedule-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
 
-.sidebar .panel.panel-btn.map-feature,
 .sidebar .panel.panel-btn a { display: block; padding: 15px 25px; }
 
 .sidebar .panel.panel-btn img { max-height: 40px; }
