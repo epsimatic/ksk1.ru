@@ -3000,7 +3000,7 @@ a.super:focus {background-color: #fbea2d;}
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-body ul.list-group,
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer { background-color: #fff; }
 
-.ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading { padding: 25px 15px; border-bottom: 5px solid; }
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading { padding: 25px 15px; border-bottom: 5px solid; background-color: #fff !important; }
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-heading h3 { font-size: 19px; font-weight: 400; color: #20172c; opacity: 0.7; }
 
