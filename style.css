@@ -3023,7 +3023,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price-description { color: #20172c; opacity: 0.6; text-transform: uppercase; }
 
-.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body ul.list-group { padding: 0; color: #20172c; opacity: 0.8; font-size: 13px; line-height: 1.4em; }
+.ob-pricing-table .panel-pricing-container .panel-pricing ul.list-group { padding: 0; color: #20172c; opacity: 0.8; font-size: 13px; line-height: 1.4em; }
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer { display: block; padding: 10px 20px 20px; }
 
