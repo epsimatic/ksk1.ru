@@ -1440,9 +1440,9 @@ body.ob     .cond-active.cond-active-ob,
 
 .table-comparison .row-buttons .btn-group {margin-top: 10px; margin-left: -5px;}
 
-.table-comparison .discount:before {color: #f29011; content: ""; font-family: FontAwesome; font-size: 1.5em; left: -28px; position: absolute; top: 10px;}
+.table-comparison .discount:before { color: #f29011; content: ""; font-family: FontAwesome; font-size: 1.5em; left: -28px; position: absolute; top: 10px; }
 
-.table-comparison .discount {border: 2px solid #f29011; border-radius: 7px; background-color: #ffc851; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px 0;}
+.table-comparison .discount { border-radius: 7px; background-color: #ffe751; width: 100%; position: relative; top: 0; line-height: 1; padding: 6px; margin-top: 10px; }
 
 .table-comparison .fa-info-circle {color: #888; text-shadow: none !important;}
 
@@ -1757,9 +1757,9 @@ iframe.fullstory__video { max-width: 100%; }
 
 .temp .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
-.news-old .panel-heading { padding: 0; margin-bottom: 10px; }
+.news-old .column-center .panel-heading  { padding: 0; margin-bottom: 10px; }
 
-.news-old .panel-heading .btn-primary { color: #fff; }
+.news-old .column-center .panel-heading .btn-primary { color: #fff; }
 
 .news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
@@ -3028,6 +3028,8 @@ a.super:focus {background-color: #fbea2d;}
 .ob-pricing-table .panel-pricing .list-group-item-alt { margin-top: 5px; }
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer { display: block; padding: 10px 20px 20px; }
+
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer .btn-group { margin: 0; }
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer a.btn-action { color: #fff; }
 
