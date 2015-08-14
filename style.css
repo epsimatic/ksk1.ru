@@ -3052,23 +3052,23 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options .ob-media-options .options-heading { padding: 10px 15px; font-size: 16px; text-transform: uppercase; }
 
-.ob-paid-options .ob-media-options a.ob-media-option { padding: 10px; border-width: 0 1px; border-style: solid; border-color: #ffffff; background-color: #1de9b6; font-size: 16px; font-weight: 600; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); }
+.ob-paid-options .ob-media-options .ob-media-option { padding: 10px; border-width: 0 1px; border-style: solid; border-color: #ffffff; background-color: #1de9b6; font-size: 16px; font-weight: 600; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); }
 
-.ob-paid-options .ob-media-options a.ob-media-option:hover { background-color: #3affce; }
+.ob-paid-options .ob-media-options .ob-media-option:hover { background-color: #3affce; }
 
-.ob-paid-options .ob-media-options a.ob-media-option .fa-desktop { padding-right: 3px; }
+.ob-paid-options .ob-media-options .ob-media-option .fa-desktop { padding-right: 3px; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on { padding: 6px; border: 4px solid #00e676; background-color: #ffffff; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on { padding: 6px; border: 4px solid #00e676; background-color: #ffffff; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on .fa { position: relative; top: -2px; color: #00e676; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on .fa { position: relative; top: -2px; color: #00e676; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on .badge { position: relative; top: -1px; margin-right: 5px; padding: 0.2em 0.5em 0.25em; background-color: #00e676; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on .badge { position: relative; top: -1px; margin-right: 5px; padding: 0.2em 0.5em 0.25em; background-color: #00e676; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on:hover { background-color: #ffffff; border-color: #63ffb4; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on:hover { background-color: #ffffff; border-color: #63ffb4; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on:hover .fa { color: #63ffb4; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on:hover .fa { color: #63ffb4; }
 
-.ob-paid-options .ob-media-options a.ob-media-option.is-on:hover .badge { background-color: #63ffb4; }
+.ob-paid-options .ob-media-options .ob-media-option.is-on:hover .badge { background-color: #63ffb4; }
 
 .ob-paid-options > .ob-renew-option { padding-right: 15px; color: #666666; }
 
