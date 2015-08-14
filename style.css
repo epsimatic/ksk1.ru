@@ -3035,20 +3035,20 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options > .row { margin: 0 0 15px; }
 
-.ob-paid-options a:hover,
-.ob-paid-options a:focus { text-decoration: none; }
+/*.ob-paid-options a:hover,*/
+/*.ob-paid-options a:focus { text-decoration: none; }*/
 
-.ob-paid-options a.btn-emphasis { padding: 15px; border: 3px dashed #f6d01e; background-color: #fff04e; font-size: 18px; font-weight: 600; letter-spacing: .013em; text-transform: uppercase; color: rgba(58, 43, 13, .68); }
+.ob-paid-options .btn-emphasis { padding: 15px; border: 3px dashed #f6d01e; background-color: #fff04e; font-size: 18px; font-weight: 600; letter-spacing: .013em; text-transform: uppercase; color: rgba(58, 43, 13, .68); }
 
-.ob-paid-options a.btn-emphasis:hover { background-color: #fff67e; color: rgba(58, 43, 13, 0.75); border-color: #f7c31e; }
+.ob-paid-options .btn-emphasis:hover { background-color: #fff67e; color: rgba(58, 43, 13, 0.75); border-color: #f7c31e; }
 
-.ob-paid-options a.btn-lift-up { padding: 13px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); }
+.ob-paid-options .btn-lift-up { padding: 13px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); }
 
-.ob-paid-options a.btn-lift-up:hover { background-color: #fffbcb; }
+.ob-paid-options .btn-lift-up:hover { background-color: #fffbcb; }
 
-.ob-paid-options a.btn-lift-up .lift-up-string { font-size: 14px; font-weight: 600; text-transform: uppercase; }
+.ob-paid-options .btn-lift-up .lift-up-string { font-size: 14px; font-weight: 600; text-transform: uppercase; }
 
-.ob-paid-options a.btn-lift-up .lift-up-string .fa { position: relative; top: -1px; }
+.ob-paid-options .btn-lift-up .lift-up-string .fa { position: relative; top: -1px; }
 
 .ob-paid-options .ob-media-options .options-heading { padding: 10px 15px; font-size: 16px; text-transform: uppercase; }
 
