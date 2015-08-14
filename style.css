@@ -3042,7 +3042,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options .btn-emphasis:hover { background-color: #fff67e; color: rgba(58, 43, 13, 0.75); border-color: #f7c31e; }
 
-.ob-paid-options .btn-lift-up { padding: 13px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); }
+.ob-paid-options .btn-lift-up { padding: 12px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); border: none; }
 
 .ob-paid-options .btn-lift-up:hover { background-color: #fffbcb; }
 
