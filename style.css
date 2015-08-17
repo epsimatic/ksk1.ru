@@ -5332,7 +5332,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .widget-ok,
 .widget-ok iframe {
     width: 100% !important;
-    height: 250px !important;
+    /*height: 250px !important;*/
 }
 
 /*для отладки супер выделение*/
