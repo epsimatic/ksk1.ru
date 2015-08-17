@@ -24,7 +24,10 @@ figure { position: relative; text-align: center; }
 
 .tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
-header#header {margin-bottom: 0 !important;}
+header#header { margin-bottom: 0 !important; display: none; }
+
+body.news header#header,
+body.site-ob header#header { display: block; }
 
 /*.container {padding: 0;}*/
 
@@ -133,9 +136,12 @@ header .btn-group {margin-top: 10px;}
     /* Mobile only: */
     top: 280px;
     width: 100%;
-    display: table;
+    display: none;
     margin-bottom: 10px;
 }
+
+body.news .user-panel,
+body.site-ob .user-panel { display: table; }
 
 .user-panel > * { display: inline-block; vertical-align: middle; }
 
