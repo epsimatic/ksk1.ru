@@ -78,7 +78,7 @@ jQuery('.btn-collapse').click(function () {
 });
 
 jQuery('#navpanel-info').one('first-load', function () {
-
+    console.log("open");
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
     var tmp = new Date();
@@ -93,7 +93,7 @@ jQuery('#navpanel-info').one('first-load', function () {
         }
 
     });
-    console.log("open");
+
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');

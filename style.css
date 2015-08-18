@@ -3291,6 +3291,8 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 .company-page .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
 
+.single-company .entry-meta_phone:first-child{font-weight: 700;}
+
 .company-page .schedule {color: #ad2100; display: inline;}
 
 .fotorama__stage {background-color: #333 !important;}
