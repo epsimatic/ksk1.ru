@@ -141,7 +141,7 @@ header .btn-group {margin-top: 10px;}
 }
 
 body.news .user-panel,
-body.site-ob .user-panel { display: table; }
+body.site-ob .user-panel { /*display: table;*/ }
 
 .user-panel > * { display: inline-block; vertical-align: middle; }
 
