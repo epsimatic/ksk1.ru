@@ -3572,6 +3572,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-radio #radio-sidebar-features .panel-heading .panel-title,
 .site-tv #tv-sidebar-features .panel-heading .panel-title { margin: 0; }
+
+.site-radio #radioforge1 { width: 100%; }
+
+.site-radio .radio-logo-container { padding: 20px; }
 /* </editor-fold> */
 
 /*------------------------------------------------------------------------------------------*/
@@ -5181,6 +5185,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .site-tv .video-item.main-video figure iframe { height: 417px; }
 
     .site-tv article.main-video .post-title { font-size: 23px; }
+
+    .site-radio #radioforge1 { text-align: right; }
+
+    .site-radio .radio-logo-container { padding: 10px 0 10px 10px; position: absolute; top: 17px; }
 
     #tp-subscribe .nav-pills > li > a { padding: 10px; }
 
