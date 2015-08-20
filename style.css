@@ -2246,7 +2246,9 @@ iframe.fullstory__video { max-width: 100%; }
 /* </editor-fold> */
 
 /*Панель «Мы в соцсетях»*/
-.panel-social .panel-heading {background-color: #dfe6eb !important; padding: 10px 15px 4px;}
+.panel-social .panel-heading { background-color: #dfe6eb !important; padding: 10px 15px !important; }
+
+.panel-social .panel-heading h2 { color: rgba(32, 23, 44, .7); }
 
 .community_square_user { width:58px !important; }
 
