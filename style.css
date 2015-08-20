@@ -138,6 +138,7 @@ header .btn-group {margin-top: 10px;}
     width: 100%;
     display: none;
     margin-bottom: 10px;
+    display: none;
 }
 
 body.news .user-panel,
