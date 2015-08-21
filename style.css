@@ -3050,6 +3050,8 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer a.btn-action { color: #fff; }
 
+.ob-pricing-table .panel-pricing-container .popover img { max-width: 245px; }
+
 .ob-paid-options > .row { margin: 0 0 15px; }
 
 /*.ob-paid-options a:hover,*/
@@ -3090,6 +3092,10 @@ a.super:focus {background-color: #fbea2d;}
 .ob-paid-options > .ob-renew-option { padding-right: 15px; color: #666666; }
 
 .ob-paid-options > .ob-renew-option a { padding: 2px; }
+
+.ob-paid-options .ob-media-options .payment-button { margin-top: 10px; margin-bottom: 5px; }
+
+.ob-paid-options .table-comparison .discount { margin-top: 0; margin-bottom: 10px; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Оформление логотипа «Твой Посредник» текстом"> */
