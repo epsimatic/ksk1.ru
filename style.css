@@ -3691,7 +3691,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .site-rk .table tr > td:first-child,
 .site-copy .table td:first-child {color: #222266; text-align: left;}
 
-.site-copy h1, .site-copy h2 {text-align: center;}
+.site-copy .main-content-inner h1, .site-copy .main-content-inner h2 {text-align: center;}
 
 .site-copy .copy-header {background-color: #75cee4; text-align: center; margin-bottom: 30px;}
 
