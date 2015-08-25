@@ -178,7 +178,7 @@ nav.navbar { margin: 0 -10px !important; }
 .vendor-status.vendor-status-closed:before{ content: "Закрыто"; }
 
 .vendor-status.vendor-status-offline { background-color: #ffd740; color: #5d4037; line-height: 1.1em; padding-top: 6px; padding-left: 10px; padding-right: 10px; }
-.vendor-status.vendor-status-offline:before{content: "Временно не в сети"; }
+.vendor-status.vendor-status-offline:before{content: "Временно не в сети, звоните"; }
 
 .vendor-working-hours-group { font-size: 0.85em; padding-bottom: 2px; text-align: center; }
 
