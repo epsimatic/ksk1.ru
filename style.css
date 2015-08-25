@@ -3841,7 +3841,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe .description { padding: 0 5px 5px; font-size: 13px; color: #777; }
 
-#tp-subscribe div.wpcf7 .screen-reader-response { width: auto; height: auto; position: relative; background-color: #ffff8d; border-radius: 3px; padding: 10px 15px; margin-bottom: 10px; }
+#tp-subscribe div.wpcf7 .screen-reader-response { width: auto; height: auto; position: relative; }
+
+#tp-subscribe div.wpcf7 .screen-reader-response .alert { background-color: #ffff8d; border: none; padding: 10px 15px; margin-bottom: 10px; color: rgba(32, 23, 44, .7); }
 
 
 /*.site-e96 .container { position: relative; }*/
