@@ -2713,8 +2713,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-my-ob a {color: #2c3e50;}
 
-.btn-group_my-ob .popover-content {width: 500px;}
-.btn-group_my-ob .popover {max-width: none !important;}
+.sidebar .popover-content {width: 500px;}
+.sidebar .popover {max-width: none !important;}
 
 .btn .badge_my-ob {top: 0 !important;}
 
