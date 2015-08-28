@@ -5167,7 +5167,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #transport-schedule-tabs.nav-tabs { font-size: 16px; }
 
-    #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; }
+    #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; text-decoration: underline; }
 
     .site-tv .logo-tv { text-align: left; }
 
