@@ -3096,7 +3096,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options > .ob-renew-option a { padding: 2px; }
 
-.ob-paid-options .ob-media-options .payment-button { margin-top: 10px; margin-bottom: 5px; }
+.site-ob .popover-content .payment-button { margin-top: 10px; margin-bottom: 5px; }
 
 .ob-paid-options .table-comparison .discount { margin-top: 0; margin-bottom: 10px; }
 /* </editor-fold> */
