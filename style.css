@@ -3053,7 +3053,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer a.btn-action { color: #fff; }
 
-.ob-pricing-table .panel-pricing-container .popover img { max-width: 245px; }
+.ob-pricing-table .panel-pricing-container .popover img { max-width: 150px; }
 
 .ob-paid-options > .row { margin: 0 0 15px; }
 
@@ -4732,7 +4732,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* </editor-fold> */
 
-
 @media (min-width: 480px) {
     .ob-large-thumbs {
         -moz-column-count: 2;
@@ -5006,6 +5005,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .site-tv .video-item.main-video figure iframe { height: 289px; width: 100%; }
 
     .site-tv article.main-video .post-title { font-size: 21px; }
+
+    object.yummies { width: 100% !important; height: 200px !important; }
 }
 
 /* Стили для размера -md- */
@@ -5219,6 +5220,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     }
 
     .e96-page .row.trade-item { margin-left: 20px; }
+
+    object.yummies { height: 270px !important; }
 }
 
 /* Стили для размера -lg- */
@@ -5345,6 +5348,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #tp-subscribe .nav-pills > li > a { padding: 10px 15px; }
 
     #tp-subscribe .form-group.clearfix > label { font-size: 14px; }
+
+    object.yummies { height: 328px !important; }
 }
 
 /*категории новостей*/
