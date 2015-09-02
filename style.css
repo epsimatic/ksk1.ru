@@ -3004,6 +3004,13 @@ a.super:focus {background-color: #fbea2d;}
 .photo_block {clear: both;}
 /* </editor-fold> */
 
+/* <editor-fold desc="Оплатить коммерческое объявление" modal окно> */
+
+ .table_no_paid tr td:nth-child(1){font-style: italic;}
+.table_no_paid tr td:nth-child(2){text-align: left;}
+.table_no_paid tr td {padding: 2px;}
+.table_no_paid th {text-align: center;}
+
 /* <editor-fold desc="Панели навигации «Следующее объявление» и «Предыдущее объявление»"> */
 .panel-ob-nav {background-color: #fff; margin-bottom: 5px;}
 
