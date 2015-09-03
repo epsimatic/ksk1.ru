@@ -5017,7 +5017,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .site-tv article.main-video .post-title { font-size: 21px; }
 
-    .sidebar object.yummies { width: 100% !important; height: 135px !important; }
+    .row-center-yummies object.yummies,
+     { width: 100% !important; height: 135px !important; }
 }
 
 /* Стили для размера -md- */
@@ -5232,6 +5233,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .e96-page .row.trade-item { margin-left: 20px; }
 
+    .row-center-yummies object.yummies,
     .sidebar object.yummies { height: 270px !important; }
 }
 
@@ -5360,6 +5362,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #tp-subscribe .form-group.clearfix > label { font-size: 14px; }
 
+    .row-center-yummies object.yummies,
     .sidebar object.yummies { height: 328px !important; }
 }
 
