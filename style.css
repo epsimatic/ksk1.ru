@@ -1405,9 +1405,6 @@ body.ob     .cond-active.cond-active-ob,
 
 .table-comparison > .row div.col-sm-offset-4 {padding: 0;}
 
-.table-comparison > .row > div:first-child,
-.table-comparison > .row .row > div {height: 56px;}
-
 .table-comparison > .row .row > div {padding-top: 16px; border: 1px solid #FFFFFF;}
 
 .table-comparison > .row-publish .row > div {padding-top: 9px;}
@@ -5025,6 +5022,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .ob-paid-options > .row { margin: 0 0 15px; }
 
     .ob-paid-options .ob-media-options .ob-media-option { font-size: 16px; }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: inline-block; padding-left: 0; padding-right: 0; width: 30%; }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: inline-block; padding: 0; position: relative; top: -15px; width: 66%; }
 }
 
 /* Стили для размера -md- */
@@ -5243,6 +5244,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .sidebar object.yummies { height: 270px !important; }
 
     .ob-pricing-table .panel-pricing-container .panel-pricing { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: block; width: auto; }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: block; padding: 10px 20px 20px; top:0; width: auto; }
 }
 
 /* Стили для размера -lg- */
