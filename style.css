@@ -3062,7 +3062,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-pricing-table .panel-pricing-container .popover img { max-width: 150px; }
 
-.ob-paid-options > .row { margin: 0 0 15px; }
+.ob-paid-options > .row { margin: 0 0 10px; }
 
 /*.ob-paid-options a:hover,*/
 /*.ob-paid-options a:focus { text-decoration: none; }*/
@@ -3085,7 +3085,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options .ob-media-options .options-heading { padding: 10px 15px; font-size: 16px; text-transform: uppercase; }
 
-.ob-paid-options .ob-media-options .ob-media-option { padding: 10px; border-width: 0 1px; border-style: solid; border-color: #ffffff; background-color: #1de9b6; font-size: 16px; font-weight: 600; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); }
+.ob-paid-options .ob-media-options .ob-media-option { padding: 10px; border-width: 0 1px; border-style: solid; border-color: #ffffff; background-color: #1de9b6; font-size: 14px; font-weight: 600; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); }
 
 .ob-paid-options .ob-media-options .ob-media-option:hover { background-color: #3affce; }
 
@@ -5018,7 +5018,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .site-tv article.main-video .post-title { font-size: 21px; }
 
     .row-center-yummies object.yummies,
-     { width: 100% !important; height: 135px !important; }
+    .sidebar object.yummies { width: 100% !important; height: 135px !important; }
+
+    .ob-paid-options > .row { margin: 0 0 15px; }
+
+    .ob-paid-options .ob-media-options .ob-media-option { font-size: 16px; }
 }
 
 /* Стили для размера -md- */
