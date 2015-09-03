@@ -2661,7 +2661,7 @@ a.link-neutral:focus {color: #3b437d;}
 .block_congrats .list-group-item {text-align: center !important;}
 .block_congrats__all_ob_link ,.block_necro__all_ob_link{display: inline-block;}
 
-
+.site-ob .sidebar .btn-group .btn-success { margin-bottom: 10px; }
 
 /*Новое оформление объявления*/
 .has-icon::before { font-family: FontAwesome; display: inline-block; text-align: center; width: 1.28571em; }
