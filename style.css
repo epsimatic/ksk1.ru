@@ -3067,9 +3067,13 @@ a.super:focus {background-color: #fbea2d;}
 /*.ob-paid-options a:hover,*/
 /*.ob-paid-options a:focus { text-decoration: none; }*/
 
+.ob-paid-options .btn-emphasis-wrap { padding: 0; position: relative; }
+
 .ob-paid-options .btn-emphasis { padding: 15px; border: 3px dashed #f6d01e; background-color: #fff04e; font-size: 18px; font-weight: 600; letter-spacing: .013em; text-transform: uppercase; color: rgba(58, 43, 13, .68); }
 
 .ob-paid-options .btn-emphasis:hover { background-color: #fff67e; color: rgba(58, 43, 13, 0.75); border-color: #f7c31e; }
+
+.ob-paid-options .payment-button { padding: 0; }
 
 .ob-paid-options .btn-lift-up { display: table-cell; vert-align: middle; min-height: 61px; padding: 12px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); border: none; }
 
