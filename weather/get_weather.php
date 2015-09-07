@@ -73,7 +73,11 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
         "Thursday" => "четверг",
         "Friday" => "пятницу",
         "Saturday" => "субботу");
-    $conditions = '<div class="weather-block" title="По данным на '
+    $conditions = '<div class="weather-text">'
+                . '<div class="weather-date">' . $week[date("l", $parsed_conditions->{'observation_epoch'})] . '</div>'
+                . '<div class="weather-label">' . $description . '</div>'
+                . '</div>'
+                . '<div class="weather-block" title="По данным на '
                 . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в "
                 . date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
                 . $temp . PHP_EOL

@@ -1278,6 +1278,8 @@ body.ob     .cond-active.cond-active-ob,
 
 .header .yummies {margin: 0;}
 
+header#header .weather-text { display: none; }
+
 .yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 5px;}
 
 .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 5px;}
