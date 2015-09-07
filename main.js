@@ -387,3 +387,38 @@ if (jQuery('.btn-scroll-up').length) {
 var $buoop = { text: "Ваш браузер (%s) <b>устарел</b>. Он <b>небезопасен</b> и <b>не показывает все возможности</b> этого и других сайтов. \
 <a%s>Узнайте, как обновить ваш браузер</a>" };
 LoadJS('//browser-update.org/update.js');
+
+
+// Включаем Snap.js
+var snapper = new Snap({
+    element: document.getElementById('content'),
+    disable: 'right'
+});
+jQuery('#menu-button').on('click', function() {
+    if (snapper.state().state == "left") {
+        snapper.close();
+    } else {
+        snapper.open('left');
+    }
+});
+
+// Автоматическое скрытие на больших экранах
+jQuery(window).resize(function() {
+    if (jQuery(this).width() < 768) {
+        snapper.enable();
+    } else {
+        snapper.close();
+        snapper.disable();
+    }
+}).trigger('resize');
+
+// Разворачивание меню по щелчку
+jQuery('.menu-item-has-children > a').click(function(){
+    var thisParent = jQuery(this).parent();
+    if (thisParent.hasClass('current-menu-parent')) {
+        thisParent.removeClass('current-menu-parent');
+    } else {
+        thisParent.addClass('current-menu-parent');
+        jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-menu-parent');
+    }
+});
