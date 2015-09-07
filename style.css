@@ -4570,6 +4570,8 @@ strong.ob {font-weight: 600; color: #da4200;}
 .left_column .yummies,
 .right_column .yummies {width: 100%; height: auto; margin-bottom: 1%;}
 
+.standard object.yummies { max-width: 100%; }
+
 /* Компактно выводим рекламу плиткой */
 .row-small-margins > div {padding: 1%;}
 
