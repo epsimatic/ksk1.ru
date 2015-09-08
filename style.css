@@ -4684,7 +4684,7 @@ a.sponsor:focus {background-color: #0284e4;}
 .site-ob .cat a {font-size: 1.1em; color: #525459;}
 
 .site-ob header.row_header,
-.site-ob nav.navbar { display: none; }
+.site-ob nav.navbar { display: none !important; }
 
 .contacts {font-size: 0.9em; font-weight: 400; padding-top: 5px; color: #416484;}
 
@@ -4894,7 +4894,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     }
 
     .site-ob header.row_header,
-    .site-ob nav.navbar { display: block; }
+    .site-ob nav.navbar { display: block !important; }
 
     .header-logo-col:first-child { width: 33.3333%; }
 
