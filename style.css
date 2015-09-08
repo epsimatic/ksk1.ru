@@ -230,6 +230,8 @@ header .weather-temp-sm {
 
 .ya-weather img { margin: -40px -15px -50px; mix-blend-mode: multiply; }
 
+object { display: none; }
+
 /* </editor-fold> */
 
 /* </editor-fold> */
@@ -4899,6 +4901,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .header-logo-col:first-child { width: 33.3333%; }
 
     .affix { max-height: 100%; max-width: 100%; }
+
+    object { display: block; }
 
     /*.header-left-decoration { z-index: 2; position: absolute; left: 0; width: 200px; height: 140px; background: url("http://ksk1.ru/img/9may-bg.png") no-repeat left bottom; }*/
 
