@@ -178,7 +178,7 @@ body.site-ob .user-panel { /*display: table;*/ }
 /* </editor-fold> */
 
 /* <editor-fold desc="Погода"> */
-.weather-icon {
+header .weather-icon {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 44px;
@@ -186,7 +186,7 @@ body.site-ob .user-panel { /*display: table;*/ }
     z-index: 5;
 }
 
-.weather-label {
+header .weather-label {
     color: #808080;
     font-size: 56%;
     font-weight: 300;
@@ -196,16 +196,16 @@ body.site-ob .user-panel { /*display: table;*/ }
     z-index: 5;
 }
 
-.weather-temp {
+header .weather-temp {
     font-size: 20px;
     font-weight: 600;
     z-index: 5;
 }
-.weather-temp:after{
+header .weather-temp:after{
     content: " °";
 }
 
-.weather-temp-sm {
+header .weather-temp-sm {
     position: absolute;
     bottom: 0;
     left: 37px;
@@ -4628,6 +4628,8 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     transition: transform 0.35s;
     -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
     transition-timing-function: cubic-bezier(0.7,0,0.3,1); }
+
+.snap-drawer .weather-block .weather-label { display: none; }
 
 
 /*анонс фильма*/
