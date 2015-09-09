@@ -4526,8 +4526,8 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 .snap-drawer ul.menu-sidenav { padding: 0; }
 .snap-drawer ul.sub-menu {
     max-height: 0;
-    -webkit-transition: max-height 0.15s ease-out;
-    transition: max-height 0.15s ease-out;
+    /*-webkit-transition: max-height 0.15s ease-out;*/
+    /*transition: max-height 0.15s ease-out;*/
     overflow: hidden; }
 
 .snap-drawer ul.menu-sidenav.menu-sidenav-aux { padding-top: 20px; margin-top: 20px; border-top: 1px solid #fff; }
