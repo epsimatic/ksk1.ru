@@ -4514,7 +4514,7 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer-left { padding: 5px 0; }
 
-.snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block;  border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
+.snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
 .snap-drawer a .triangle { border-left-color: #fff; }
 
@@ -4556,7 +4556,7 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     padding: 10px 15px 10px 20px;
     -webkit-transform: translate3d(0,500px,0);
     transform: translate3d(0,500px,0);
-    -webkit-transition: -webkit-transform 0s 0.4s;
+    /*-webkit-transition: -webkit-transform 0s 0.4s;*/
     /*transition: transform 0s 0.4s;*/
     /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
     /*transition-timing-function: cubic-bezier(0.7,0,0.3,1); */
@@ -4606,8 +4606,9 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     max-height: 400px;
     /*-webkit-transition: max-height 0.45s;*/
     /*transition: max-height 0.45s;*/
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1); }
+    /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
+    /*transition-timing-function: cubic-bezier(0.7,0,0.3,1); */
+}
 
 .snap-drawer li.current-menu-parent ul.sub-menu .menu-item > a {
     color: #333;
@@ -4615,12 +4616,14 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     transform: translate3d(0,0,0);
     /*-webkit-transition: -webkit-transform 0.55s;*/
     /*transition: transform 0.55s;*/
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1); }
+    /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
+    /*transition-timing-function: cubic-bezier(0.7,0,0.3,1); */
+}
 
 .snap-drawer li.current-menu-parent ul.sub-menu > li.menu-item > a {
-    -webkit-transition-duration: 0.65s;
-    transition-duration: 0.65s; }
+    /*-webkit-transition-duration: 0.65s;*/
+    /*transition-duration: 0.65s; */
+}
 
 .snap-drawer li.menu-item.current-menu-parent .triangle {
     /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);*/
@@ -4629,8 +4632,9 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     transform: rotate(90deg);
     /*-webkit-transition: -webkit-transform 0.35s;*/
     /*transition: transform 0.35s;*/
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1); }
+    /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
+    /*transition-timing-function: cubic-bezier(0.7,0,0.3,1); */
+}
 
 .snap-drawer .weather-block .weather-label { display: none; }
 
