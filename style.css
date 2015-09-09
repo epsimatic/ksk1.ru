@@ -4552,7 +4552,9 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer ul.sub-menu { padding-left: 0; }
 
-.snap-drawer ul.sub-menu li.menu-item > a {
+.snap-drawer ul.sub-menu li.menu-item > a { padding: 10px 10px 10px 44px; }
+
+.snap-drawer ul.sub-menu li.menu-item.has-icon > a {
     padding: 10px 15px 10px 20px;
     /*-webkit-transform: translate3d(0,500px,0);*/
     /*transform: translate3d(0,500px,0);*/
