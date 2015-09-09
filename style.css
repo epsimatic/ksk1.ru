@@ -4657,8 +4657,6 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer .weather-block .weather-label { display: none; }
 
-body .snap-content { position: relative; }
-
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
 
