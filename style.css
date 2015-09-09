@@ -2089,7 +2089,7 @@ iframe.fullstory__video { max-width: 100%; }
 /*.panel-vote { border-top: 3px solid #edb194; }*/
 /*.panel-vote { border-top: 7px solid #00e676; }*/
 
-.panel-vote { margin-bottom: 0; }
+/*.panel-vote { margin-bottom: 0; }*/
 
 .panel-vote > .panel-heading {
     background: #3db65a url("img/panel-vote.png") no-repeat right;
