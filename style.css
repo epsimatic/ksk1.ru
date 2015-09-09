@@ -4554,8 +4554,8 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer ul.sub-menu li.menu-item > a {
     padding: 10px 15px 10px 20px;
-    -webkit-transform: translate3d(0,500px,0);
-    transform: translate3d(0,500px,0);
+    /*-webkit-transform: translate3d(0,500px,0);*/
+    /*transform: translate3d(0,500px,0);*/
     /*-webkit-transition: -webkit-transform 0s 0.4s;*/
     /*transition: transform 0s 0.4s;*/
     /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
@@ -4567,6 +4567,7 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 .snap-drawer ul.sub-menu li.menu-item > a:hover,
 .snap-drawer ul.sub-menu li.menu-item > a:focus { background-color: #c4cced; }
 
+/*
 .snap-drawer ul.sub-menu li.menu-item:nth-child(2) > a {
     -webkit-transform: translate3d(0,1000px,0);
     transform: translate3d(0,1000px,0); }
@@ -4595,6 +4596,8 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
     -webkit-transform: translate3d(0,4000px,0);
     transform: translate3d(0,4000px,0); }
 
+*/
+
 /* показать меню */
 
 .snap-drawer li.current-menu-parent > a,
@@ -4612,8 +4615,8 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer li.current-menu-parent ul.sub-menu .menu-item > a {
     color: #333;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    /*-webkit-transform: translate3d(0,0,0);*/
+    /*transform: translate3d(0,0,0);*/
     /*-webkit-transition: -webkit-transform 0.55s;*/
     /*transition: transform 0.55s;*/
     /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
@@ -4627,9 +4630,9 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 
 .snap-drawer li.menu-item.current-menu-parent .triangle {
     /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);*/
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    /*-ms-transform: rotate(90deg);*/
+    /*-webkit-transform: rotate(90deg);*/
+    /*transform: rotate(90deg);*/
     /*-webkit-transition: -webkit-transform 0.35s;*/
     /*transition: transform 0.35s;*/
     /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
