@@ -2118,7 +2118,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-vote .wp-polls-ul {margin: 0;}
 
-.panel-vote .votes-num {display: none;}
+.panel-vote .votes-num {}
 
 .panel-vote .panel-footer {padding: 0 0 0 7px;}
 
