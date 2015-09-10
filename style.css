@@ -5192,7 +5192,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    .is_admin header.wide-header .menu-item-weather { padding: 3px 12px; }
+    .is_admin header.wide-header .menu-item-weather { padding: 5x 12px; }
 
     .is_admin header.wide-header .weather-text { display: none; }
 
@@ -5200,6 +5200,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header .weather-block .weather-icon,
     .is_admin header.wide-header .weather-block .weather-temp { display: inline-block; }
+
+    .is_admin header.wide-header .weather-block .weather-icon { height: 40px; }
 
     .is_admin header.wide-header .weather-block .weather-temp { font-size: 16px; padding-left: 5px; position: relative; top: 2px; }
 
