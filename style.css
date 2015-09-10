@@ -4644,10 +4644,10 @@ header.green-header .logo-ksk { width: 80px; display: block; height: 23px; margi
 .snap-drawer .weather-text,
 .snap-drawer .weather-block { font-size: 14px; }
 
-.snap-drawer .weather-text { float: left; width: 70%; height: 73px; }
+.snap-drawer .weather-text { float: left; width: 70%; height: 73px; margin-bottom: 30px; }
 
 .snap-drawer .weather-text .weather-date,
-.snap-drawer .weather-text .weather-label { padding-left: 30px; position: relative; top: 23px; }
+.snap-drawer .weather-text .weather-label { padding-left: 20px; position: relative; top: 23px; }
 
 .snap-drawer .weather-text .weather-date:before { content: "Сегодня "; font-weight: 600; }
 
