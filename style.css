@@ -5211,6 +5211,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:focus { background-color: #0091ea; }
+
+    .is_admin header.wide-header .searchbox-container { width: 250px; }
 }
 
 /* Стили для размера -md- */
