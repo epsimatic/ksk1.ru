@@ -4534,15 +4534,15 @@ header.wide-header { display: none; }
     transition: max-height 0.15s ease-out;
     overflow: hidden; }
 
-.snap-drawer ul.menu-sidenav.menu-sidenav-aux { padding-top: 20px; margin-top: 20px; border-top: 1px solid #fff; }
+.snap-drawer ul.menu-sidenav.menu-sidenav-aux { padding-top: 20px; padding-bottom: 20px; }
 
 .snap-drawer ul.menu-sidenav li.menu-item { list-style-type: none; }
 
 .snap-drawer ul.menu-sidenav li.menu-item > a { padding: 10px 15px; display: block; }
 
-.snap-drawer ul.menu-sidenav-aux li.weather-block { padding: 0 20px 15px; }
+.snap-drawer ul.menu-sidenav .weather-container { margin: 0; }
 
-.snap-drawer ul.menu-sidenav-aux li.searchbox { padding: 0 15px; }
+.snap-drawer ul.menu-sidenav-aux li.weather-block { padding: 0 20px 15px; }
 
 .snap-drawer ul.menu-sidenav .weather-block .weekday { font-weight: 600; }
 
@@ -4550,9 +4550,7 @@ header.wide-header { display: none; }
 
 .snap-drawer ul.menu-sidenav .weather-block .weather-description .temperature { display: block; }
 
-.snap-drawer ul.menu-sidenav .searchbox .form-group { position: relative; }
-
-.snap-drawer ul.menu-sidenav .searchbox .fa { position: absolute; top: 8px; right: 10px; color: #00b0ff; font-size: 1.15em; }
+.snap-drawer ul.menu-sidenav .search-container { padding: 0 20px; }
 
 .snap-drawer ul.sub-menu { padding-left: 0; }
 
@@ -4645,7 +4643,7 @@ header.wide-header { display: none; }
 .snap-drawer .weather-text,
 .snap-drawer .weather-block { font-size: 14px; }
 
-.snap-drawer .weather-text { float: left; width: 70%; height: 73px; margin-bottom: 30px; }
+.snap-drawer .weather-text { float: left; width: 70%; height: 73px; margin-bottom: 10px; }
 
 .snap-drawer .weather-text .weather-date,
 .snap-drawer .weather-text .weather-label { padding-left: 20px; position: relative; top: 23px; }
@@ -4675,7 +4673,7 @@ header.wide-header { display: none; }
 .is_admin header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
 
 .snap-drawer .search-form-header button,
-.is_admin header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; }
+.is_admin header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; color: #222; }
 
 .snap-drawer .search-form-header button:hover,
 .snap-drawer .search-form-header button:focus,
