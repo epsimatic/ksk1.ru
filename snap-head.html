@@ -113,7 +113,7 @@
             <div class="container">
                 <ul class="nav navbar-nav">
                     <li class="dropdown menu-item">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Новости</a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"><span class="news-link-icon"></span></a>
                         <ul class="dropdown-menu sub-menu">
                             <li class="menu-item"><a href="http://ksk66.ru/">Все новости</a></li>
                             <li class="menu-item"><a href="http://ksk66.ru/prime">Главные новости</a></li>
@@ -178,8 +178,8 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="menu-item"><!--# include virtual="/weather/conditions.html" --></li>
-                    <li class="menu-item"><button class="btn btn-link menu-item"><i class="fa fa-fw fa-search"></i></button></li>
+                    <li class="menu-item"><a class="menu-item-weather" href="#"><!--# include virtual="/weather/conditions.html" --></a></li>
+                    <li class="menu-item"><a class="menu-item-search" href="#"><i class="fa fa-fw fa-search"></i></a></li>
                 </ul>
             </div>
         </nav>

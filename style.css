@@ -5190,9 +5190,20 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header { display: block; }
 
-    .is_admin header.wide-header .container { background-color: transparent; }
+    .is_admin header.wide-header .container { background-color: transparent; box-shadow: none; }
+
+    .is_admin header.wide-header .menu-item-weather { padding: 5px 10px; }
 
     .is_admin header.wide-header .weather-text { display: none; }
+
+    .is_admin header.wide-header .weather-block .weather-label { display: none; }
+
+    .is_admin header.wide-header .weather-block .weather-icon,
+    .is_admin header.wide-header .weather-block .weather-temp { display: inline-block; }
+
+    .is_admin header.wide-header .weather-block .weather-temp { font-size: 16px; padding-left: 5px; position: relative; top: 2px; }
+
+    .is_admin header.wide-header .menu-item-search .fa { position: relative; top: -1px; }
 }
 
 /* Стили для размера -md- */
