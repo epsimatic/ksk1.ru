@@ -1,4 +1,4 @@
-<html>
+<html> <!--запускается каждый час-->
 <head>
     <meta charset="utf-8">
     <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -73,8 +73,22 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
         "Thursday" => "четверг",
         "Friday" => "пятницу",
         "Saturday" => "субботу");
+    $month = array(
+        1 => "января",
+        2 => "февраля",
+        3 => "марта",
+        4 => "апреля",
+        5 => "мая",
+        6 => "июня",
+        7 => "июля",
+        8 => "августа",
+        9 => "сентября",
+        10 => "октября",
+        11 => "ноября",
+        12 => "декабря",
+    );
     $conditions = '<div class="weather-text">'
-                . '<div class="weather-date">' . $week[date("l", $parsed_conditions->{'observation_epoch'})] . '</div>'
+                . '<div class="weather-date">' .date("j", $parsed_conditions->{'observation_epoch'})." ".$month[date("n", $parsed_conditions->{'observation_epoch'})] . '</div>'
                 . '<div class="weather-label">' . $description . '</div>'
                 . '</div>'
                 . '<div class="weather-block" title="По данным на '
@@ -105,20 +119,7 @@ if (file_put_contents("conditions.html", $conditions)) {
 //общие данные
 $simpleforecastdays = $parsed_json->{'forecast'}->{'simpleforecast'}->{'forecastday'};
 //echo '<pre>'; var_dump($forecastdays); echo '</pre>';
-$month = array(
-    1 => "января",
-    2 => "февраля",
-    3 => "марта",
-    4 => "апреля",
-    5 => "мая",
-    6 => "июня",
-    7 => "июля",
-    8 => "августа",
-    9 => "сентября",
-    10 => "октября",
-    11 => "ноября",
-    12 => "декабря",
-);
+
 
 $array_forecast = array();
 
