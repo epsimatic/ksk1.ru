@@ -93,8 +93,18 @@
             </li>
         </ul>
 
+        <ul class="menu-sidenav menu-sidenav-aux">
+            <li class="menu-item weather-container">
+                <!--# include virtual="/weather/conditions.html" -->
+            </li>
+            <li class="menu-item search-container">
+                <form class="input-group search-form search-form-header">
+                    <input class="form-control field-search" type="text" name="search" placeholder="Найти объявление..."/>
+                    <button type="submit"><i class="fa fa-fw fa-search"></i></button>
+                </form>
+            </li>
+        </ul>
 
-        <!--# include virtual="/weather/conditions.html" -->
 
     </aside>
     <aside id="sidenav-right" class="snap-drawer snap-drawer-right hidden" role="navigation"></aside>
@@ -179,9 +189,9 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="menu-item"><a class="menu-item-weather" href="#"><!--# include virtual="/weather/conditions.html" --></a></li>
-                    <li class="menu-item">
-                        <form class="input-group">
-                            <input class="form-control" type="text" placeholder="Найти объявление..."/>
+                    <li class="menu-item search-container">
+                        <form class="input-group search-form search-form-header">
+                            <input class="form-control field-search" type="text" name="search" placeholder="Найти объявление..."/>
                             <button type="submit"><i class="fa fa-fw fa-search"></i></button>
                         </form>
                     </li>

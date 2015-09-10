@@ -4660,6 +4660,28 @@ header.wide-header { display: none; }
 
 .snap-drawer .weather-block .weather-label { display: none; }
 
+.search-form-header { display: none; }
+
+.is_admin .search-form-header { display: block; width: 100%; }
+
+.is_admin header.wide-header .search-form-header { margin-left: 10px; padding-top: 10px; width: 210px; }
+
+.snap-drawer .search-form-header,
+.is_admin header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
+
+.is_admin header.wide-header .search-form-header input.field-search::-webkit-input-placeholder { opacity: .7; }
+.is_admin header.wide-header .search-form-header input.field-search::-moz-placeholder { opacity: .7; }
+.is_admin header.wide-header .search-form-header input.field-search:-moz-placeholder { opacity: .7; }
+.is_admin header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
+
+.snap-drawer .search-form-header button,
+.is_admin header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; }
+
+.snap-drawer .search-form-header button:hover,
+.snap-drawer .search-form-header button:focus,
+.is_admin header.wide-header .search-form-header button:hover,
+.is_admin header.wide-header .search-form-header button:focus { opacity: .7; }
+
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
 
@@ -5211,20 +5233,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:focus { background-color: #0091ea; }
-
-    .is_admin header.wide-header form.input-group { margin-left: 10px; padding-top: 10px; width: 210px; }
-
-    .is_admin header.wide-header form.input-group input.form-control { border: none; height: 30px; border-radius: 3px; }
-
-    .is_admin header.wide-header form.input-group button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; }
-
-    .is_admin header.wide-header form.input-group input.form-control::-webkit-input-placeholder { opacity: .7; }
-    .is_admin header.wide-header form.input-group input.form-control::-moz-placeholder { opacity: .7; }
-    .is_admin header.wide-header form.input-group input.form-control:-moz-placeholder { opacity: .7; }
-    .is_admin header.wide-header form.input-group input.form-control:-ms-input-placeholder { opacity: .7; }
-
-    .is_admin header.wide-header form.input-group button:hover,
-    .is_admin header.wide-header form.input-group button:focus { opacity: .7; }
 }
 
 /* Стили для размера -md- */
