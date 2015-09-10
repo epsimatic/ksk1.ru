@@ -5211,6 +5211,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:focus { background-color: #0091ea; }
+
+    .is_admin header.wide-header form.input-group { padding-top: 10px; width: 210px; }
+
+    .is_admin header.wide-header form.input-group input.form-control { border: none; height: 30px; border-radius: 3px; }
+
+    .is_admin header.wide-header form.input-group button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; }
+
+    .is_admin header.wide-header form.input-group button:hover,
+    .is_admin header.wide-header form.input-group button:focus { opacity: .7; }
 }
 
 /* Стили для размера -md- */
