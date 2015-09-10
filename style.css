@@ -5189,6 +5189,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: inline-block; padding: 0; position: relative; top: -15px; width: 66%; }
 
     .is_admin header.wide-header { display: block; }
+
+    .is_admin header.wide-header .container { background-color: transparent; }
 }
 
 /* Стили для размера -md- */
