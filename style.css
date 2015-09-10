@@ -5218,6 +5218,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header form.input-group button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; }
 
+    .is_admin header.wide-header form.input-group input.form-control::-webkit-input-placeholder { opacity: .7; }
+    .is_admin header.wide-header form.input-group input.form-control::-moz-placeholder { opacity: .7; }
+    .is_admin header.wide-header form.input-group input.form-control:-moz-placeholder { opacity: .7; }
+    .is_admin header.wide-header form.input-group input.form-control:-ms-input-placeholder { opacity: .7; }
+
     .is_admin header.wide-header form.input-group button:hover,
     .is_admin header.wide-header form.input-group button:focus { opacity: .7; }
 }
