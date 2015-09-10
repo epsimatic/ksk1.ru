@@ -5192,7 +5192,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    .is_admin header.wide-header .menu-item-weather { padding: 5px 10px; }
+    .is_admin header.wide-header .menu-item-weather { padding: 3px 12px; }
 
     .is_admin header.wide-header .weather-text { display: none; }
 
