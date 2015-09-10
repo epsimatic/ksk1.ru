@@ -5210,7 +5210,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .is_admin header.wide-header .nav .open > a,
     .is_admin header.wide-header .nav .open > a:hover,
     .is_admin header.wide-header .nav .open > a:hover,
-    .is_admin header.wide-header .nav .open > a:focus { background-color: #2cb3e9; }
+    .is_admin header.wide-header .nav .open > a:focus { background-color: #0091ea; }
 }
 
 /* Стили для размера -md- */
