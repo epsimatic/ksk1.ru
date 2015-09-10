@@ -1,4 +1,4 @@
-<html>
+<html> <!--запускается каждый час-->
 <head>
     <meta charset="utf-8">
     <link href="http://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
