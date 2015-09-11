@@ -2676,8 +2676,9 @@ a.link-neutral:focus {color: #3b437d;}
 
 .ob-publish-date.has-icon::before { content: ""; padding-right: 2px; }
 
+.subcat__422::after,
 .subcat__461::after { content: "бесплатно"; padding: 2px 5px 3px; border-radius: 3px; font-size: 11px; background-color: #ef7131; color: #ffffff; }
-.subcat__422::after { content: "новинка"; padding: 2px 5px 3px; border-radius: 3px; font-size: 11px; background-color: #ef5350; color: #ffffff; }
+/*.subcat__422::after { content: "новинка"; padding: 2px 5px 3px; border-radius: 3px; font-size: 11px; background-color: #ef5350; color: #ffffff; }*/
 
 
 /* <editor-fold desc="Стили user-bar и панели «Мои объявления»"> */
