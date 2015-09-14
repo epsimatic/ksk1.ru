@@ -4519,6 +4519,8 @@ header.wide-header { display: none; }
 
 .snap-drawer-left { padding: 5px 0; }
 
+.snap-drawer-right { display: none; }
+
 .snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
 .snap-drawer a .triangle { border-left-color: #fff; }
