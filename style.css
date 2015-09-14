@@ -4519,8 +4519,6 @@ header.wide-header { display: none; }
 
 .snap-drawer-left { padding: 5px 0; }
 
-.snap-drawer-right { display: none; }
-
 .snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
 .snap-drawer a .triangle { border-left-color: #fff; }
@@ -5210,6 +5208,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: inline-block; padding-left: 0; padding-right: 0; width: 30%; }
 
     .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: inline-block; padding: 0; position: relative; top: -15px; width: 66%; }
+
+    .snap-drawer { display: none; }
 
     .is_admin header.wide-header { display: block; }
 
