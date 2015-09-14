@@ -4541,6 +4541,7 @@ header.wide-header { display: none; }
 
 .snap-drawer ul.menu-sidenav li.menu-item { list-style-type: none; }
 
+.snap-drawer ul.menu-sidenav li.menu-item > span,
 .snap-drawer ul.menu-sidenav li.menu-item > a { padding: 10px 15px; display: block; }
 
 .snap-drawer ul.menu-sidenav .weather-container { margin: 0; }
