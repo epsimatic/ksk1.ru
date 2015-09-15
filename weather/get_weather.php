@@ -248,6 +248,7 @@ if (file_put_contents("forecast.html", $forecast)) {
                 <?= $conditions ?>
             </div>
         </div>
+
         <div class="weather-block-col triggers-weather visible-lg col-lg-1">
             <?= $conditions ?>
         </div>
