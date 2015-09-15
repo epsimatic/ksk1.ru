@@ -2802,7 +2802,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-cat .list-group {padding: 0; margin: 0;}
 
-.panel-cat > .panel-body a.list-group-item {background-color: #fcfcfc; border-left: 1px solid transparent; border-bottom: 1px solid #f6f7f8; margin-bottom: 1px;}
+.panel-cat > .panel-body a.list-group-item {background-color: #fcfcfc; border-left: 1px solid transparent; border-bottom: 1px solid #f6f7f8; margin-bottom: 1px; clear: both;}
 
 .panel-cat > .panel-body a.list-group-item:hover,
 .panel-cat > .panel-body a.list-group-item:focus {background-color: #f0f1f2; color: #404145; border-left: 1px solid #56c4f4;}
