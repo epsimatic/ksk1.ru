@@ -52,10 +52,10 @@ function setMapHeight() {
 //jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
 
 // Кнопки НавПанели и выдвижные панельки
-jQuery('.triggers-weather').hover( function() {jQuery('#btn-feature-info').hover();
+jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click();
     jQuery("#panel-movies").appendTo(".panel_movie_weather");} );
 
-jQuery('.btn-feature').not('.cat-feature , .map-feature').hover(function () {
+jQuery('.btn-feature').not('.cat-feature , .map-feature').click(function () {
     const was_active = jQuery(this).hasClass('active'),
           potential_cond_active = jQuery('.potential-cond-active');
     jQuery('.navpanel, .btn-feature').removeClass('active');
@@ -78,7 +78,6 @@ jQuery('.btn-collapse').click(function () {
 });
 
 jQuery('#navpanel-info').one('first-load', function () {
-    console.log("open");
     // загружаем кнопку категории вместо кнопки другие категории
     jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
     var tmp = new Date();
