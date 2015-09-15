@@ -55,7 +55,7 @@ function setMapHeight() {
 jQuery('.triggers-weather').hover( function() {jQuery('#btn-feature-info').hover();
     jQuery("#panel-movies").appendTo(".panel_movie_weather");} );
 
-jQuery('.btn-feature').not('.cat-feature , .map-feature').click(function () {
+jQuery('.btn-feature').not('.cat-feature , .map-feature').hover(function () {
     const was_active = jQuery(this).hasClass('active'),
           potential_cond_active = jQuery('.potential-cond-active');
     jQuery('.navpanel, .btn-feature').removeClass('active');
