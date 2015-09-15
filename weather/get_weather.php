@@ -237,8 +237,6 @@ if (file_put_contents("forecast.html", $forecast)) {
         <div class="header-logo-col col-xs-4 col-sm-4 col-md-5 col-lg-5">
             <div itemscope itemtype="http://schema.org/Organization" class="header-logo">
                 <a itemprop="url" href="/" title="На главную страницу" class="logo-container">
-                    <meta itemprop='name' content="Красноуфимск онлайн"/>
-                    <meta itemprop='address' content="г.Красноуфимск ул.Ленина 88"/>
                     <img itemprop="logo" alt="Красноуфимск онлайн" src="http://ksk1.ru/img/logo-mobile-ksk.svg" class="visible-xs">
                     <img alt="Красноуфимск онлайн" style="position: absolute" src="http://ksk1.ru/img/logo-base.svg" class="hidden-xs">
                     <div id="sublogo"></div>
@@ -248,6 +246,7 @@ if (file_put_contents("forecast.html", $forecast)) {
                 <?= $conditions ?>
             </div>
         </div>
+
         <div class="weather-block-col triggers-weather visible-lg col-lg-1">
             <?= $conditions ?>
         </div>
