@@ -4671,7 +4671,10 @@ header.wide-header { display: none; }
 .is_admin .search-form-header { display: block; width: 100%; }
 
 .is_admin header.wide-header .search-form-header { margin-left: 10px; padding-top: 10px; width: 210px; }
-
+/*хук с выпадающими менюшками по hover- не исчезают при переходе на dropdown-menu*/
+header.wide-header .dropdown:hover .dropdown-menu {
+    display: block;
+}
 .snap-drawer .search-form-header,
 .is_admin header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
 
