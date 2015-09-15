@@ -52,7 +52,7 @@ function setMapHeight() {
 //jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
 
 // Кнопки НавПанели и выдвижные панельки
-jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click();
+jQuery('.triggers-weather').hover( function() {jQuery('#btn-feature-info').hover();
     jQuery("#panel-movies").appendTo(".panel_movie_weather");} );
 
 jQuery('.btn-feature').not('.cat-feature , .map-feature').click(function () {
