@@ -414,10 +414,10 @@ jQuery(window).resize(function() {
 // Разворачивание меню по щелчку
 jQuery('.menu-item-has-children > a').click(function(){
     var thisParent = jQuery(this).parent();
-    if (thisParent.hasClass('current-menu-parent')) {
-        thisParent.removeClass('current-menu-parent');
+    if (thisParent.hasClass('current-page-parent')) {
+        thisParent.removeClass('current-page-parent');
     } else {
-        thisParent.addClass('current-menu-parent');
-        jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-menu-parent');
+        thisParent.addClass('current-page-parent');
+        jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-page-parent');
     }
 });
