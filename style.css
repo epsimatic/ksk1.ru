@@ -11,7 +11,7 @@
 /* <editor-fold desc="Колонки и основные элементы страницы"> */
 
 body {
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
@@ -4519,7 +4519,7 @@ header.wide-header { display: none; }
 
 .snap-drawer-left { padding: 5px 0; }
 
-.snap-drawer-right { display: none; }
+.snap-drawer-right { display: none; font-size: 14px; }
 
 .snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
