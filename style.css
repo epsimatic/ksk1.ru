@@ -11,7 +11,7 @@
 /* <editor-fold desc="Колонки и основные элементы страницы"> */
 
 body {
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
