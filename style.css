@@ -1809,9 +1809,9 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .fullstory .newstitle,
 .news-old .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
-.news-old .fullstory .newstext { padding: 0; font-size: 1.285em; line-height: 1.4em; }
+.news-old .fullstory .newstext { padding: 0 5px; font-size: 1.285em; line-height: 1.61em; }
 
-.news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 35px; padding-top: 15px; padding-bottom: 10px; font-size: 27px; line-height: 1.05; font-weight: 600; color: #424242; font-variant: small-caps; }
+.news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 15px; padding-top: 15px; padding-bottom: 10px; font-size: 27px; line-height: 1.05; font-weight: 600; color: #424242; font-variant: small-caps; }
 
 .news-old .fullstory .newstext h2 { font-size: 21px; font-weight: bold; color: #666; }
 
@@ -5036,6 +5036,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     ul.list-days {border-radius: 6px;}
 
     .news-old .fullstory .newstext { padding: 0 20px; }
+
+    .news-old .fullstory .newstitle { padding-left: 35px; }
 
     .site-rk .per50,
     .site-rk .per100 {display: inline-block;}
