@@ -422,6 +422,7 @@ jQuery('.menu-item-has-children > a').click(function(){
     }
 });
 
+/*
 jQuery('.popover-weather').hover(function () {
     jQuery(this).popover({ content:"",
         title: "Прогноз рогоды",
@@ -453,4 +454,5 @@ jQuery('.popover-weather').hover(function () {
 
     });
 });
+*/
 
