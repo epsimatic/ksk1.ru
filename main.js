@@ -441,7 +441,7 @@ jQuery('.wide-header .popover-weather').popover({
                 // Надо обновить уже висящую подсказку и изменить options.content для новых подсказок
                 var popover = jQuery('.wide-header .popover-weather').data('bs.popover');
                 popover.tip().find(".popover-content").html(data);
-                popover.options.content = 'new content';
+                popover.options.content = data;
             }
 //            error: function(msg){
 //                result = msg.responseText ? msg.responseText : msg.statusText;
