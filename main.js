@@ -429,6 +429,7 @@ jQuery('.popover-weather').hover(function () {
 <button type="button" class="close" aria-hidden="true">&times;</button>\
 <h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
         html: true,
-        placement: "bottom"});
+        placement: "bottom",
+        trigger:"hover"});
 });
 
