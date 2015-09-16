@@ -433,7 +433,7 @@ jQuery('.wide-header .popover-weather').popover({
         html: true,
         placement: "bottom",
         trigger:"hover"
-    }).on('show.bs.popover', function(event){ console.log(event); });
+    }).one('show.bs.popover', function(event){ console.log(event); });
 //.one('show.bs.popover', function (event) {
 //        jQuery.ajax({
 //            url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
