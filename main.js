@@ -422,19 +422,20 @@ jQuery('.menu-item-has-children > a').click(function(){
     }
 });
 
-/*
-jQuery('.popover-weather').hover(function () {
-    jQuery(this).popover({ content:"",
+
+jQuery('.wide-header .popover-weather').popover({
+        content: "<h1>Загрузка...</h1>",
         title: "Прогноз рогоды",
-        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
-<button type="button" class="close" aria-hidden="true">&times;</button>\
-<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
+//        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
+//<button type="button" class="close" aria-hidden="true">&times;</button>\
+//<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
         html: true,
         placement: "bottom",
-        trigger:"hover"}).one('show.bs.popover', function (event) {
+        trigger:"hover"
+    }).one('show.bs.popover', function (event) {
         jQuery.ajax({
             url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
-            timeout: 15000,
+            timeout: 2000,
             success: function (data) {
                     jQuery('.popover-weather-temp > .popover-content').html("Ничего не найдено").html(
                         "<table class='table table-obs table-obs-admin table-hover table-striped'>"
@@ -451,8 +452,6 @@ jQuery('.popover-weather').hover(function () {
             }
 
         });
-
-    });
 });
-*/
+
 
