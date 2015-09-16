@@ -440,7 +440,7 @@ jQuery('.wide-header .popover-weather').popover({
             success: function (data) {
                 // Надо обновить уже висящую подсказку и изменить options.content для новых подсказок
                 var popover = jQuery('.wide-header .popover-weather').data('bs.popover');
-                popover.tip().find(".popover-content").html(data);
+                popover.tip().find(".popover-content").html("<div class='weather-forecast-panel'>"+data+"</div>");
                 popover.options.content = data;
             },
             error: function(msg){
