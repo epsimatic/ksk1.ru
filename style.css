@@ -4684,6 +4684,9 @@ header.wide-header { display: none; }
 header.wide-header .dropdown:hover .dropdown-menu {
     display: block;
 }
+.popover-weather:hover .popover{
+    display: block;
+}
 .snap-drawer .search-form-header,
 .is_admin header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
 
