@@ -430,7 +430,7 @@ jQuery('.popover-weather').hover(function () {
 <h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',*/
         html: true,
         placement: "bottom",
-        trigger:"hover"})
+        trigger:"hover"});
         //.one('show.bs.popover', function (event) {
        /* jQuery.ajax({
             url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
