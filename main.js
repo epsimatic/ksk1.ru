@@ -421,3 +421,14 @@ jQuery('.menu-item-has-children > a').click(function(){
         jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-page-parent');
     }
 });
+
+jQuery('.popover-weather').hover(function () {
+    jQuery(this).popover({ content: "<p style='width: 600px;'>Загружается <i>(не более 15 секунд)</i>... </p>",
+        title: "Результаты поиска...",
+        template: '<div class="popover popover-quick-search"><div class="arrow"></div><div class="popover-header">\
+<button type="button" class="close" aria-hidden="true">&times;</button>\
+<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
+        html: true,
+        placement: "bottom"});
+});
+
