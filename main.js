@@ -424,8 +424,8 @@ jQuery('.menu-item-has-children > a').click(function(event){
 });
 
 
-jQuery('.wide-header .popover-weather').popover({
-        content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>", //TODO: заменить на нормальную анимацию
+/*jQuery('.wide-header .popover-weather').popover({
+        content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>",
         title: "Прогноз погоды на 3 дня",
 //        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
 //<button type="button" class="close" aria-hidden="true">&times;</button>\
@@ -440,7 +440,7 @@ jQuery('.wide-header .popover-weather').popover({
             success: function (data) {
                 // Надо обновить уже висящую подсказку и изменить options.content для новых подсказок
                 var popover = jQuery('.wide-header .popover-weather').data('bs.popover');
-                popover.tip().find(".popover-content").html("<div class='weather-forecast-panel'>"+data+"</div>");
+                popover.tip().find(".popover-content").html(data);
                 popover.options.content = data;
             },
             error: function(msg){
@@ -449,6 +449,6 @@ jQuery('.wide-header .popover-weather').popover({
             }
 
         });
-    });
+    });*/
 
 
