@@ -425,8 +425,8 @@ jQuery('.menu-item-has-children > a').click(function(event){
 
 
 jQuery('.wide-header .popover-weather').popover({
-        content: "<h1>Загрузка...</h1>",
-        title: "Прогноз рогоды",
+        content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>", //TODO: заменить на нормальную анимацию
+        title: "Прогноз погоды на 3 дня",
 //        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
 //<button type="button" class="close" aria-hidden="true">&times;</button>\
 //<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
@@ -434,12 +434,11 @@ jQuery('.wide-header .popover-weather').popover({
         placement: "bottom",
         trigger:"hover"
     }).one('show.bs.popover', function(event){
-        console.log('Начало загрузки');
         jQuery.ajax({
             url: "http://ob.ksk66.ru/weather/forecast.html",
             timeout: 2000,
             success: function (data) {
-                jQuery('.wide-header .popover-weather').data('bs.popover').options.content = data;
+                jQuery('.wide-header .popover-weather').tip().find(".popover-content").html(data);
             }
 //            error: function(msg){
 //                result = msg.responseText ? msg.responseText : msg.statusText;
