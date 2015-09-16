@@ -449,7 +449,7 @@ jQuery('.popover-weather').hover(function () {
 
             }
 
-        });//TODO: Отменять запрос при закрытии
+        });
 
     });
 });
