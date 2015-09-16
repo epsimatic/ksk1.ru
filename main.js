@@ -438,7 +438,7 @@ jQuery('.wide-header .popover-weather').popover({
             url: "http://ob.ksk66.ru/weather/forecast.html",
             timeout: 2000,
             success: function (data) {
-                jQuery('.wide-header .popover-weather').tip().find(".popover-content").html(data);
+                jQuery('.wide-header .popover-weather').data('bs.popover').tip().find(".popover-content").html(data);
             }
 //            error: function(msg){
 //                result = msg.responseText ? msg.responseText : msg.statusText;
