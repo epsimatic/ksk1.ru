@@ -1804,11 +1804,14 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .news-list_secondary .post-news.type-radio .post-title,
 .news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
 
-.news-old .fullstory .newstext { padding: 0 10px; font-size: 1.27em; }
+.news-old .fullstory .newstext { padding: 0 10px; font-size: 1.285em; line-height: 1.61em; }
 
-.news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 25px; font-size: 27px; line-height: 1.05; font-weight: 600; color: #424242; font-variant: small-caps; }
+.news-old .fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 35px; padding-top: 15px; padding-bottom: 10px; font-size: 27px; line-height: 1.05; font-weight: 600; color: #424242; font-variant: small-caps; }
 
 .news-old .fullstory .newstext h2 { font-size: 21px; font-weight: bold; color: #666; }
+
+.news-old .fullstory .newstext br, 
+.news-old .fullstory .newstext p { margin-bottom: 1.61em; }
 
 
 /* <editor-fold desc="Оформление ссылок с номерами страниц"> */
@@ -5268,8 +5271,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-old .cat-pills.cat-pills > li > a { height: 44px; padding: 0 12px; }
 
-    .news-old .fullstory .newstitle { padding-left: 25px; }
-
     .news-old .fullstory .newstext { padding: 0 25px; }
 
     .site-copy div.copy-header,
@@ -5498,7 +5499,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-old .cat-pills.cat-pills > li > a { height: 50px; padding: 0 15px; }
 
-    .news-old .fullstory .newstext { padding: 0 30px; }
+    .news-old .fullstory .newstext { padding: 0 40px; }
 
     .tocify {width: 280px;}
 
