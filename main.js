@@ -412,7 +412,8 @@ jQuery(window).resize(function() {
 }).trigger('resize');
 
 // Разворачивание меню по щелчку
-jQuery('.menu-item-has-children > a').click(function(){
+jQuery('.menu-item-has-children > a').click(function(event){
+    event.preventDefault();
     var thisParent = jQuery(this).parent();
     if (thisParent.hasClass('current-page-parent')) {
         thisParent.removeClass('current-page-parent');
