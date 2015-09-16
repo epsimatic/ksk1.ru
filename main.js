@@ -390,7 +390,7 @@ LoadJS('//browser-update.org/update.js');
 
 // Включаем Snap.js
 var snapper = new Snap({
-    element: document.getElementById('content'),
+    element: document.getElementById('content')
     //disable: 'right'
 });
 jQuery('#menu-button').on('click', function() {
@@ -421,3 +421,36 @@ jQuery('.menu-item-has-children > a').click(function(){
         jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-page-parent');
     }
 });
+
+jQuery('.popover-weather').hover(function () {
+    jQuery(this).popover({ content: "",
+        title: "Прогноз рогоды",
+        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
+<button type="button" class="close" aria-hidden="true">&times;</button>\
+<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
+        html: true,
+        placement: "bottom",
+        trigger:"hover"}).one('show.bs.popover', function (event) {
+        jQuery.ajax({
+            url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
+            timeout: 15000,
+            success: function (data) {
+                    jQuery('.popover-weather-temp > .popover-content').html("Ничего не найдено").html(
+                        "<table class='table table-obs table-obs-admin table-hover table-striped'>"
+                        + jQuery(".table-obs", data).html()
+                        + "</table>"
+
+                    );
+            },
+            error: function(msg){
+                result = msg.responseText ? msg.responseText : msg.statusText;
+                    jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br> Попробуйте ещё раз.</p>");
+
+
+            }
+
+        });
+
+    });
+});
+
