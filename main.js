@@ -430,9 +430,10 @@ jQuery('.popover-weather').hover(function () {
 <h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
         html: true,
         placement: "bottom",
-        trigger:"hover"}).on('show.bs.popover', function (event) {
+        trigger:"hover"})
+        .on('show.bs.popover', function (event) {
         jQuery.ajax({
-            url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
+            url: "http://ob.ksk66.ru/weather/forecast.html",
             timeout: 15000,
             success: function (data) {
                     jQuery('.popover-content').html("Ничего не найдено").html(
