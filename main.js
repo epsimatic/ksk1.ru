@@ -423,7 +423,7 @@ jQuery('.menu-item-has-children > a').click(function(){
 });
 
 jQuery('.popover-weather').hover(function () {
-    jQuery(this).popover({ content: "",
+    jQuery(this).popover({ content: "iutiut",
         title: "Прогноз рогоды",
         template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
 <button type="button" class="close" aria-hidden="true">&times;</button>\
