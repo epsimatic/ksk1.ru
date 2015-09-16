@@ -390,7 +390,7 @@ LoadJS('//browser-update.org/update.js');
 
 // Включаем Snap.js
 var snapper = new Snap({
-    element: document.getElementById('content'),
+    element: document.getElementById('content')
     //disable: 'right'
 });
 jQuery('#menu-button').on('click', function() {
