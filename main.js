@@ -422,7 +422,7 @@ jQuery('.menu-item-has-children > a').click(function(){
     }
 });
 
-jQuery('.popover-weather').one('first-load',function () {
+jQuery('.popover-weather').one('hover',function () {
     jQuery(this).popover({ content: "",
         title: "Прогноз рогоды",
         template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
