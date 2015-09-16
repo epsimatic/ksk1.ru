@@ -433,26 +433,27 @@ jQuery('.wide-header .popover-weather').popover({
         html: true,
         placement: "bottom",
         trigger:"hover"
-    }).one('show.bs.popover', function (event) {
-        jQuery.ajax({
-            url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
-            timeout: 2000,
-            success: function (data) {
-                    jQuery('.popover-weather-temp > .popover-content').html("Ничего не найдено").html(
-                        "<table class='table table-obs table-obs-admin table-hover table-striped'>"
-                        + jQuery(".table-obs", data).html()
-                        + "</table>"
-
-                    );
-            },
-            error: function(msg){
-                result = msg.responseText ? msg.responseText : msg.statusText;
-                    jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br> Попробуйте ещё раз.</p>");
-
-
-            }
-
-        });
-});
+    }).one('show.bs.popover', alert);
+//.one('show.bs.popover', function (event) {
+//        jQuery.ajax({
+//            url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
+//            timeout: 2000,
+//            success: function (data) {
+//                    jQuery('.popover-weather-temp > .popover-content').html("Ничего не найдено").html(
+//                        "<table class='table table-obs table-obs-admin table-hover table-striped'>"
+//                        + jQuery(".table-obs", data).html()
+//                        + "</table>"
+//
+//                    );
+//            },
+//            error: function(msg){
+//                result = msg.responseText ? msg.responseText : msg.statusText;
+//                    jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br> Попробуйте ещё раз.</p>");
+//
+//
+//            }
+//
+//        });
+//});
 
 
