@@ -423,7 +423,7 @@ jQuery('.menu-item-has-children > a').click(function(){
 });
 
 jQuery('.popover-weather').hover(function () {
-    jQuery(this).popover({ content: function () { return jQuery(this).load("http://ob.ksk66.ru/weather/forecast.html")},
+    jQuery(this).popover({ content: function () { return jQuery(".popover-weather-temp > .popover-content").load("http://ob.ksk66.ru/weather/forecast.html")},
         title: "Прогноз рогоды",
         template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
 <button type="button" class="close" aria-hidden="true">&times;</button>\
@@ -431,7 +431,7 @@ jQuery('.popover-weather').hover(function () {
         html: true,
         placement: "bottom",
         trigger:"hover"});
-        //.one('show.bs.popover', function (event) {
+        //.on('show.bs.popover', function (event) {
        /* jQuery.ajax({
             url: "http://ob.ksk66.ru/weather/forecast.html",// .product',
             timeout: 15000,
