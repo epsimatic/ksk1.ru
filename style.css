@@ -229,7 +229,7 @@ header .weather-temp-sm {
 .ya-weather { border-radius: 5px; overflow: hidden; cursor: pointer; }
 
 .ya-weather img { margin: -40px -15px -50px; mix-blend-mode: multiply; }
-
+.dropdown-weather .ya-weather img { margin: -39px -8px -80px;}
 object { display: none; }
 
 /* </editor-fold> */
