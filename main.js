@@ -372,12 +372,14 @@ if (jQuery('.btn-scroll-up').length) {
         event.preventDefault();
     }).appendTo('footer.hidden-print');
 
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > topOffsetToShowBtn)
-            btn_home.removeClass("inactive");
-        else
-            btn_home.addClass("inactive");
-    });
+    jQuery(window).scroll(ShowHideBtnHome);
+    jQuery('#content').scroll(ShowHideBtnHome);
+}
+function ShowHideBtnHome() {
+    if (jQuery(this).scrollTop() > topOffsetToShowBtn)
+        btn_home.removeClass("inactive");
+    else
+        btn_home.addClass("inactive");
 }
 
 
