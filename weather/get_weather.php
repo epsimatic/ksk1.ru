@@ -28,7 +28,7 @@ function prettyNotice($text, $class="info") {
     echo "<div class='alert alert-$class' style='margin-top: 10px; margin-bottom: 10px;'>$text</div>\n\n";
 }
 
-function updateIconUrl($org_url) {
+function updateIconUrl($orig_url) {
     return str_replace('/k/', '/v4/', str_replace('.gif', '.svg', $orig_url));    
 }
 
