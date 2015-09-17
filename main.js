@@ -451,6 +451,6 @@ jQuery('.menu-item-has-children > a').click(function(event){
         });
     });*/
 
-jQuery('.dropdown-weather').hover(function(){
-    jQuery(this).find('dropdown').load('http://ksk66.ru/weahter/forecast.html');
+jQuery('.dropdown-weather').one('mouseenter',function(){
+    jQuery(this).find('.dropdown-menu').load('http://ob.ksk66.ru/weather/forecast.html');
 });
