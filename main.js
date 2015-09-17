@@ -452,5 +452,16 @@ jQuery('.menu-item-has-children > a').click(function(event){
     });*/
 
 jQuery('.dropdown-weather').one('mouseenter',function(){
-    jQuery(this).find('.dropdown-menu').load('http://ob.ksk66.ru/weather/forecast.html');
+    jQuery.ajax({
+        url: "http://ob.ksk66.ru/weather/forecast.html",
+        timeout: 2000,
+        success: function (data) {
+            jQuery(this).find('.dropdown-menu').html(data)
+        },
+        error: function(msg){
+            result = msg.responseText ? msg.responseText : msg.statusText;
+            jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
+        }
+
+    });
 });
