@@ -27,6 +27,10 @@ function prettyNotice($text, $class="info") {
     echo "<div class='alert alert-$class' style='margin-top: 10px; margin-bottom: 10px;'>$text</div>\n\n";
 }
 
+function updateIconUrl($org_url) {
+    return str_replace('/k/', '/v4/', str_replace('.gif', '.svg', $orig_url));    
+}
+
 $json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
@@ -53,7 +57,7 @@ $description[0] = mb_convert_case($description[0], MB_CASE_UPPER);
 $description = implode("", $description);
 
 $icon = $parsed_conditions->{'icon'};
-$icon_url = $parsed_conditions->{'icon_url'};
+$icon_url = updateIconUrl($parsed_conditions->{'icon_url'});
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
 if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
@@ -142,11 +146,11 @@ foreach ($forecasts as $forecast) {
     if ($period % 2) {
         $object_num = intval(($period - 1) / 2);
         $array_forecast[$object_num]['text_night'] = $forecast->{'fcttext_metric'};
-        $array_forecast[$object_num]['icon_url_night'] = $forecast->{'icon_url'};
+        $array_forecast[$object_num]['icon_url_night'] = updateIconUrl($forecast->{'icon_url'});
     } else {
         $object_num = intval(($period) / 2);
         $array_forecast[$object_num]['text_day'] = $forecast->{'fcttext_metric'};
-        $array_forecast[$object_num]['icon_url_day'] = $forecast->{'icon_url'};
+        $array_forecast[$object_num]['icon_url_day'] = updateIconUrl($forecast->{'icon_url'});
     }
 }
 
