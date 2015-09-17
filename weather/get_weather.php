@@ -59,7 +59,7 @@ $description = implode("", $description);
 
 $icon = $parsed_conditions->{'icon'};
 $icon_url = updateIconUrl($parsed_conditions->{'icon_url'});
-$img_weather = '<img class="weather-icon" src="' . $icon_url . '">';
+$img_weather = '<img class="weather-icon" src="' . $icon_url . '" alt="Значок погоды">';
 if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
     prettyNotice("Weatherunderground сломан, используем Яндекс<br>
@@ -199,10 +199,12 @@ foreach ($array_forecast as $forecast_object) {
     }
 
     $conditions_forecast .= "</div>
-                        <div class='day hidden-xs $hide_first_day_weather_on_evening' style='background-image: url(${forecast_object['icon_url_day']});'>
+                        <div class='day hidden-xs $hide_first_day_weather_on_evening'> 
+                            <img src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
                             <p>$text_day</p>
                         </div>
-                        <div class='night hidden-xs' style='background-image: url(${forecast_object['icon_url_night']});'>
+                        <div class='night hidden-xs'>
+                            <img src='${forecast_object['icon_url_night']}' alt='Значок погоды'>
                             <p>$text_night</p>
                         </div>
                     </div>";
