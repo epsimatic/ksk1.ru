@@ -451,4 +451,6 @@ jQuery('.menu-item-has-children > a').click(function(event){
         });
     });*/
 
-
+jQuery('.dropdown-weather').hover(function(){
+    jQuery(this).find('dropdown').load('http://ksk66.ru/weahter/forecast.html');
+});
