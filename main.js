@@ -424,7 +424,8 @@ jQuery('.menu-item-has-children > a').click(function(event){
 });
 
 
-/*jQuery('.wide-header .popover-weather').popover({
+/*  поповер по hover
+jQuery('.wide-header .popover-weather').popover({
         content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>",
         title: "Прогноз погоды на 3 дня",
 //        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
@@ -460,7 +461,7 @@ jQuery('.dropdown-weather').one('mouseenter',function(){
         },
         error: function(msg){
             result = msg.responseText ? msg.responseText : msg.statusText;
-            jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
+            jQuery(this).find('.dropdown-menu').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
         }
 
     });
