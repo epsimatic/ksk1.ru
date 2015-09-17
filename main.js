@@ -458,13 +458,10 @@ jQuery('.dropdown-weather').one('mouseenter',function(){
         timeout: 2000,
         success: function (data) {
             jQuery('.dropdown-weather').find('.dropdown-menu').html(data)
-            console.log('success');
         },
         error: function(msg){
-            console.log('error');
-            console.log(msg);
-            result = msg.responseText ? msg.responseText : msg.statusText;
-            jQuery('.dropdown-weather').find('.dropdown-menu').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
+            result = msg.status + ' ' + msg.statusText;
+            jQuery('.dropdown-weather').find('.dropdown-menu').html("<div class='alert alert-danger'>Ошибка: <b>"+result+"</b><br>Вот погода от Яндекса:</div> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a>");
         }
 
     });
