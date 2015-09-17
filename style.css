@@ -989,36 +989,36 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
 
-#weather-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
+.weather-forecast-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
-#weather-panel .gsInformer { margin-top: 15px; }
-#weather-panel .gsInformer .gsLinks{height: 40px !important;}
+.weather-forecast-panel .gsInformer { margin-top: 15px; }
+.weather-forecast-panel .gsInformer .gsLinks{height: 40px !important;}
 
-#weather-panel .weather-panel-heading { background-color: #40C4FF; margin-top: 0; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
+.weather-forecast-panel .weather-panel-heading { background-color: #40C4FF; margin-top: 0; padding: 10px 15px; font-size: 19px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.01em; color: #fff; text-align: left; }
 
-#weather-panel .day-row { position: relative; }
+.weather-forecast-panel .day-row { position: relative; }
 
-#weather-panel .day-row .summary { padding-top: 15px; height: 40px; }
+.weather-forecast-panel .day-row .summary { padding-top: 15px; height: 40px; }
 
-#weather-panel .day-row .summary .weekday { display: inline-block; float: left; font-weight: 700; }
+.weather-forecast-panel .day-row .summary .weekday { display: inline-block; float: left; font-weight: 700; }
 
-#weather-panel .day-row .summary .date { display: inline-block; float: left; padding: 0 5px; }
+.weather-forecast-panel .day-row .summary .date { display: inline-block; float: left; padding: 0 5px; }
 
-#weather-panel .day-row .summary .temps { display: inline-block; float: right; margin-right: 5px; }
+.weather-forecast-panel .day-row .summary .temps { display: inline-block; float: right; margin-right: 5px; }
 
-#weather-panel .day-row .summary .temps .high { font-weight: 700; color: #f44336; }
+.weather-forecast-panel .day-row .summary .temps .high { font-weight: 700; color: #f44336; }
 
-#weather-panel .day-row .summary .temps .split { display: inline-block; width: 10px; text-align: center; color: #ddd; }
+.weather-forecast-panel .day-row .summary .temps .split { display: inline-block; width: 10px; text-align: center; color: #ddd; }
 
-#weather-panel .day-row .summary .temps .low { font-weight: 700; color: #1565c0; }
+.weather-forecast-panel .day-row .summary .temps .low { font-weight: 700; color: #1565c0; }
 
-#weather-panel .day-row .summary .pop { padding: 0 7px 0 5px; margin-right: 10px; float: right; border-radius: 3px; }
+.weather-forecast-panel .day-row .summary .pop { padding: 0 7px 0 5px; margin-right: 10px; float: right; border-radius: 3px; }
 
-#weather-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
+.weather-forecast-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
 
-#weather-panel h6 { text-align: right; margin-top: 10px; }
+.weather-forecast-panel h6 { text-align: right; margin-top: 10px; }
 
-#weather-panel h6 a { color: #455a64; font-weight: 400; }
+.weather-forecast-panel h6 a { color: #455a64; font-weight: 400; }
 
 
 #navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
@@ -5025,7 +5025,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-agenda h3.event-heading { font-size: 14px; }
 
-    #weather-panel { min-height: 210px; border-top: none; }
+    .weather-forecast-panel { min-height: 210px; border-top: none; }
 
     #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
@@ -5168,18 +5168,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-info .features-toolbar .map-feature img,
     .navpanel-info .features-toolbar .schedule-feature img { max-height: 22px; }
 
-    #weather-panel .day-row { border-bottom: 1px solid #dddddd; }
+    .weather-forecast-panel .day-row { border-bottom: 1px solid #dddddd; }
 
-    #weather-panel .day-row .day,
-    #weather-panel .day-row .night { display: block; position: relative; width: 100%; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; background-repeat: no-repeat; background-position: 10px center;  }
+    .weather-forecast-panel .day-row .day,
+    .weather-forecast-panel .day-row .night { display: block; position: relative; width: 100%; clear: both; padding: 10px 10px 10px 75px; min-height: 65px; background-repeat: no-repeat; background-position: 10px center;  }
 
-    #weather-panel .day-row .night { background-color: #f6f6f6 !important; }
+    .weather-forecast-panel .day-row .night { background-color: #f6f6f6 !important; }
 
-    #weather-panel .day-row .day img,
-    #weather-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
+    .weather-forecast-panel .day-row .day img,
+    .weather-forecast-panel .day-row .night img { max-width: none; height: 50px; width: 50px; position: absolute; left: 10px; top: 10px; }
 
-    #weather-panel .day-row .day p,
-    #weather-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
+    .weather-forecast-panel .day-row .day p,
+    .weather-forecast-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
 
     .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
 
@@ -5349,8 +5349,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-info .features-toolbar .map-feature img,
     .navpanel-info .features-toolbar .schedule-feature img { max-height: 28px; }
 
-    #weather-panel .day-row .day,
-    #weather-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
+    .weather-forecast-panel .day-row .day,
+    .weather-forecast-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
 
     .navpanel-services .panel-map #panel-map { height: 411px; }
 
