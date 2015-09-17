@@ -547,6 +547,12 @@ footer h3 {
     justify-content: space-around;
 }
 
+/* --- Loader ---*/
+
+.loader-wrap { position: relative; height: 300px; width: 100%; }
+
+.loader-wrap .loader { position: absolute; left: 50%; top: 50%; margin: -20px; font-size: 40px; color: #555; }
+
 /*
 Собственно сам сниппет
 <div class="spinner"><i class="fa fa-circle-o-notch fa-spin margin-bottom"></i></div>
