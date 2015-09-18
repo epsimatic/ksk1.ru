@@ -370,7 +370,7 @@ if (jQuery('.btn-scroll-up').length) {
         jQuery('html,body,#content').animate({ scrollTop: 0 }, 'slow');
         btn_home.blur();
         event.preventDefault();
-    }).appendTo('#content');  //footer.hidden-print
+    }).appendTo('.container');  //footer.hidden-print
 
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
