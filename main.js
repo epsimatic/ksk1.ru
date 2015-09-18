@@ -374,7 +374,8 @@ if (jQuery('.btn-scroll-up').length) {
     var url = document.location.href;
     if(url.match(/ob.ksk66/))
        btn_home.appendTo('#content');
-    else btn_home.appendTo('footer.hidden-print');
+    else {btn_home.appendTo('footer.hidden-print');
+      console.log("Создание кнопки");}
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
 }
