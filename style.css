@@ -995,7 +995,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
 
-.dropdown-menu.weather-forecast-panel { padding: 0 10px 15px; white-space: normal; width: 530px; }
+.dropdown-menu.weather-forecast-panel { padding: 0 10px 15px; white-space: normal; width: 410px; }
 .weather-forecast-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
 .weather-forecast-panel .gsInformer { margin-top: 15px; }
@@ -4688,7 +4688,6 @@ header.wide-header { display: none; }
 
 .is_admin .search-form-header { display: block; width: 100%; }
 
-.is_admin header.wide-header .search-form-header { margin-left: 10px; padding-top: 10px; width: 210px; }
 /*хук с выпадающими менюшками по hover- не исчезают при переходе на dropdown-menu*/
 header.wide-header .dropdown:hover .dropdown-menu {
     display: block;
@@ -4697,20 +4696,20 @@ header.wide-header .dropdown:hover .dropdown-menu {
     display: block;
 }
 .snap-drawer .search-form-header,
-.is_admin header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
+header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
 
-.is_admin header.wide-header .search-form-header input.field-search::-webkit-input-placeholder { opacity: .7; }
-.is_admin header.wide-header .search-form-header input.field-search::-moz-placeholder { opacity: .7; }
-.is_admin header.wide-header .search-form-header input.field-search:-moz-placeholder { opacity: .7; }
-.is_admin header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
+header.wide-header .search-form-header input.field-search::-webkit-input-placeholder { opacity: .7; }
+header.wide-header .search-form-header input.field-search::-moz-placeholder { opacity: .7; }
+header.wide-header .search-form-header input.field-search:-moz-placeholder { opacity: .7; }
+header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
 
 .snap-drawer .search-form-header button,
-.is_admin header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; color: #222; }
+header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; color: #222; }
 
 .snap-drawer .search-form-header button:hover,
 .snap-drawer .search-form-header button:focus,
-.is_admin header.wide-header .search-form-header button:hover,
-.is_admin header.wide-header .search-form-header button:focus { opacity: .7; }
+header.wide-header .search-form-header button:hover,
+header.wide-header .search-form-header button:focus { opacity: .7; }
 
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
@@ -5248,27 +5247,56 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .is_admin header.wide-header { display: block; }
 
-    .is_admin header.wide-header .container { background-color: transparent; box-shadow: none; }
+    header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    .is_admin header.wide-header .menu-item-weather { padding: 5px 12px; }
+    header.wide-header .navbar-nav > li > a { padding: 15px 10px; }
 
-    .is_admin header.wide-header .weather-text { display: none; }
+    header.wide-header .nav .open > a,
+    header.wide-header .nav .open > a:hover,
+    header.wide-header .nav .open > a:hover,
+    header.wide-header .nav .open > a:focus { background-color: #0091ea; }
 
-    .is_admin header.wide-header .weather-block .weather-label { display: none; }
+    header.wide-header .menu-item-weather { padding: 11px 10px; }
 
-    .is_admin header.wide-header .weather-block .weather-icon,
-    .is_admin header.wide-header .weather-block .weather-temp { display: inline-block; }
+    header.wide-header .weather-text { display: none; }
 
-    .is_admin header.wide-header .weather-block .weather-icon { height: 40px; }
+    header.wide-header .weather-block .weather-label { display: none; }
 
-    .is_admin header.wide-header .weather-block .weather-temp { font-size: 16px; padding-left: 5px; position: relative; top: 2px; }
+    header.wide-header .weather-block .weather-icon,
+    header.wide-header .weather-block .weather-temp { display: inline-block; }
 
-    .is_admin header.wide-header .menu-item-search .fa { position: relative; top: -1px; }
+    header.wide-header .weather-block .weather-icon { height: 28px; }
 
-    .is_admin header.wide-header .nav .open > a,
-    .is_admin header.wide-header .nav .open > a:hover,
-    .is_admin header.wide-header .nav .open > a:hover,
-    .is_admin header.wide-header .nav .open > a:focus { background-color: #0091ea; }
+    header.wide-header .weather-block .weather-temp { font-size: 14px; padding-left: 5px; position: relative; top: 2px; }
+
+    header.wide-header .menu-item-search .fa { position: relative; top: -1px; }
+
+    header.wide-header .search-container { position: relative; }
+
+    header.wide-header form.search-form { position: absolute; right: 0; top: 10px; overflow: hidden; box-shadow: 0 0 7px rgba(0, 0, 0, .5); width: 40px; opacity: 0; transition: all .4s ease; }
+
+    header.wide-header form.search-form.search-show { width: 210px; opacity: 1; }
+
+    header.wide-header form.search-form input.field-search { z-index: 15; }
+
+    header.wide-header form.search-form input.field-search::-webkit-input-placeholder { opacity: 0; }
+    header.wide-header form.search-form input.field-search::-moz-placeholder { opacity: 0; }
+    header.wide-header form.search-form input.field-search:-moz-placeholder { opacity: 0; }
+    header.wide-header form.search-form input.field-search:-ms-input-placeholder { opacity: 0; }
+
+    header.wide-header form.search-form.search-show input.field-search::-webkit-input-placeholder { opacity: .7; }
+    header.wide-header form.search-form.search-show input.field-search::-moz-placeholder { opacity: .7; }
+    header.wide-header form.search-form.search-show input.field-search:-moz-placeholder { opacity: .7; }
+    header.wide-header form.search-form.search-show input.field-search:-ms-input-placeholder { opacity: .7; }
+
+    header.wide-header form.search-form button.close { height: auto; right: -38px; top: -6px; font-size: 30px; color: #fff; opacity: 0; z-index: 10; }
+
+    header.wide-header form.search-form.search-show button.close { opacity: 1; right: -38px; }
+
+    header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; }
+
+    header.wide-header .btn-search:hover, 
+    header.wide-header .btn-search:focus { background-color: #40c4ff; }
 
     .news-old .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 }
@@ -5321,6 +5349,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip{height: 77px;}
+
+    header.wide-header .navbar-nav > li > a { font-size: 14px; padding: 15px; }
 
     .navpanel .cat a { padding: 5px; }
 
