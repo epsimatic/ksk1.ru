@@ -370,8 +370,11 @@ if (jQuery('.btn-scroll-up').length) {
         jQuery('html,body,#content').animate({ scrollTop: 0 }, 'slow');
         btn_home.blur();
         event.preventDefault();
-    }).appendTo('.container');  //footer.hidden-print
-
+    });
+    var url = document.location.href;
+    if(url.match(/ob.ksk66/))
+       btn_home.appendTo('.container');
+    else btn_home.appendTo('footer.hidden-print');
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
 }
