@@ -367,10 +367,10 @@ if (jQuery('.btn-scroll-up').length) {
         title: 'К верху страницы',
         html: '<i class="fa fa-angle-up fa-5x"></i> <div>НАВЕРХ</div>'
     }).click(function(event){
-        jQuery('html,body').animate({ scrollTop: 0 }, 'slow');
+        jQuery('html,body,#content').animate({ scrollTop: 0 }, 'slow');
         btn_home.blur();
         event.preventDefault();
-    }).appendTo('footer.hidden-print');
+    }).appendTo('body');  //footer.hidden-print
 
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
