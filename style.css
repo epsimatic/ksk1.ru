@@ -5303,11 +5303,17 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .btn-search:hover, 
     header.wide-header .btn-search:focus { background-color: #40c4ff; }
 
+    header.wide-header .menu-item-dropdown { position: unset; }
+
     header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 160px; background-color: #fff; left: 0px; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.125); }
+    
+    header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
+
+    header.wide-header .menu-item-dropdown .dropdown-panel .row { margin: 0 -15px; }
 
     header.wide-header .menu-item-dropdown:hover .dropdown-panel { display: block; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel .col-md-3 { padding: 0; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .col-md-3 { padding: 0 15px; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn { text-align: left; }
 
