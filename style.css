@@ -547,6 +547,12 @@ footer h3 {
     justify-content: space-around;
 }
 
+/* --- Loader ---*/
+
+.loader-wrap { position: relative; height: 300px; width: 100%; }
+
+.loader-wrap .loader { position: absolute; left: 50%; top: 50%; margin: -20px; font-size: 40px; color: #555; }
+
 /*
 Собственно сам сниппет
 <div class="spinner"><i class="fa fa-circle-o-notch fa-spin margin-bottom"></i></div>
@@ -989,6 +995,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
 
+.dropdown-menu.weather-forecast-panel { padding: 0 10px 15px; white-space: normal; width: 530px; }
 .weather-forecast-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
 .weather-forecast-panel .gsInformer { margin-top: 15px; }
@@ -5349,6 +5356,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-info .features-toolbar .map-feature img,
     .navpanel-info .features-toolbar .schedule-feature img { max-height: 28px; }
 
+    .dropdown-menu.weather-forecast-panel { width: 650px }
     .weather-forecast-panel .day-row .day,
     .weather-forecast-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
 
@@ -5565,6 +5573,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .potential-cond-active .arrow { left: 35%; }
 
     .btn-feature .arrow { left: 42%; }
+
+    .dropdown-menu.weather-forecast-panel { width: 760px }
 
     #navpanel-shopping .pr-bar.multilavka-bar { max-height: 405px; }
 
