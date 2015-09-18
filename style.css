@@ -5249,7 +5249,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a { padding: 15px 10px; }
+    header.wide-header .navbar-nav > li > a { padding: 15px 10px; font-size: 13px; }
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
