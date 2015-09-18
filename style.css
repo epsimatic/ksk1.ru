@@ -5324,6 +5324,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-action { font-size: 15px; padding: 6px 12px 8px; margin-top: 15px; border-radius: 5px; }
 
+    header.wide-header .dropdown-panel ul.popular-categories { list-style: none; padding: 0; }
+
+    header.wide-header .dropdown-panel .ob-promo h3.ob-promo-heading { margin: 0; font-size: 17px; font-weight: 600; text-transform: uppercase; color: #00b0ff; }
+
+    header.wide-header .dropdown-panel .ob-promo h3.ob-promo-heading > a { position: absolute; right: 0; top: 2px; font-size: 13px; font-weight: 400; text-transform: none; color: #888888; }
+
+    header.wide-header .dropdown-panel .ob-promo .ob-promo-body article.ob { display: inline-block; }
+
     .news-old .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 }
 
