@@ -4704,7 +4704,7 @@ header.wide-header .search-form-header input.field-search:-moz-placeholder { opa
 header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
 
 .snap-drawer .search-form-header button,
-header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 2; color: #222; }
+header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 16; color: #222; }
 
 .snap-drawer .search-form-header button:hover,
 .snap-drawer .search-form-header button:focus,
@@ -5256,7 +5256,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .nav .open > a:hover,
     header.wide-header .nav .open > a:focus { background-color: #0091ea; }
 
-    header.wide-header .menu-item-weather { padding: 11px 10px; }
+    header.wide-header .navbar-nav .menu-item-weather { padding: 11px 10px; }
 
     header.wide-header .weather-text { display: none; }
 
@@ -5273,9 +5273,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .search-container { position: relative; }
 
-    header.wide-header form.search-form { position: absolute; right: 0; top: 10px; overflow: hidden; box-shadow: 0 0 7px rgba(0, 0, 0, .5); width: 40px; opacity: 0; transition: all .4s ease; }
+    header.wide-header form.search-form { padding: 10px 0; position: absolute; right: 0; top: 10px; width: 40px; opacity: 0; transition: all .4s ease; visibility: hidden; }
 
-    header.wide-header form.search-form.search-show { width: 210px; opacity: 1; }
+    header.wide-header form.search-form.search-show { width: 210px; opacity: 1; visibility: visible; }
 
     header.wide-header form.search-form input.field-search { z-index: 15; }
 
@@ -5289,7 +5289,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header form.search-form.search-show input.field-search:-moz-placeholder { opacity: .7; }
     header.wide-header form.search-form.search-show input.field-search:-ms-input-placeholder { opacity: .7; }
 
-    header.wide-header form.search-form button.close { height: auto; right: -38px; top: -6px; font-size: 30px; color: #fff; opacity: 0; z-index: 10; }
+    header.wide-header form.search-form button .fa-search { position: relative; right: 1px; top: 1px; font-size: 1.2em; }
+
+    header.wide-header form.search-form button.close { height: auto; right: -38px; top: 3px; font-size: 30px; color: #fff; opacity: 0; z-index: 10; }
 
     header.wide-header form.search-form.search-show button.close { opacity: 1; right: -38px; }
 
