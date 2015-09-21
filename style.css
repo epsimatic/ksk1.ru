@@ -5264,6 +5264,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .nav .open > a:hover,
     header.wide-header .nav .open > a:focus { background-color: #0091ea; }
 
+    header.wide-header .dropdown-vote > a { padding: 10px 7px; }
+
+    header.wide-header .dropdown-vote > a > .fa { font-size: 2em; color: #ffd740; }
+
     header.wide-header .navbar-nav .menu-item-weather { padding: 11px 10px; }
 
     header.wide-header .weather-text { display: none; }
