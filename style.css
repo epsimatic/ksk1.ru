@@ -5305,7 +5305,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown { position: unset; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 160px; background-color: #fff; left: 0px; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.125); }
+    header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0px; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.125); }
     
     header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
 
@@ -5319,8 +5319,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-link { color: #333; padding: 0; margin: 0px 0px 5px; }
 
+    header.wide-header .ob-categoy:last-child > a { margin: 0 !important; }
+
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-link:hover,
-    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link:focus { text-decoration: none; color: #666; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link:focus { text-decoration: none; color: #999; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-action { font-size: 15px; padding: 6px 12px 8px; margin-top: 15px; border-radius: 5px; }
 
