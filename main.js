@@ -38,7 +38,10 @@ jQuery(".btn-search").click(function(){
             cx = '003704283744183876190:woiuqgnl_eg';
         }
     }
+    jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
+    const searchbox_lazy = jQuery(this);
     LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+    searchbox_lazy.remove();
 });
 jQuery(".close").click(function(){
     jQuery(".search-form").removeClass("search-show");
