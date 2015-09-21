@@ -1775,6 +1775,11 @@ iframe.fullstory__video { max-width: 100%; }
 
 .news-old .column-center .panel-heading .btn-primary { color: #fff; }
 
+.news-old .post-news .post-title,
+.news-old .post-news .post-description-text,
+.news-old .fullstory .newstitle,
+.news-old .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
+
 .news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
 .news-old .post-news h4.post-title .fa { padding-left: 6px; }
@@ -1789,7 +1794,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .news-old .post-news figure.post-thumb img { max-width: 100% !important; }
 
-.news-old .post-news .post-description-text { margin-bottom: 10px; font-family: Times,serif; font-size: 14px; line-height: 1.2em; }
+.news-old .post-news .post-description-text { margin-bottom: 10px; font-size: 14px; line-height: 1.2em; }
 
 .news-old .post-news a { color: #433822; text-decoration: none; transition: border-color 0.7s ease-out 0s; }
 
@@ -1812,9 +1817,6 @@ iframe.fullstory__video { max-width: 100%; }
 
 .news-old .news-list_secondary .post-news.type-radio .post-title,
 .news-old .news-list_secondary .post-news.type-radio .block-audio { display: table-cell; }
-
-.news-old .fullstory .newstitle,
-.news-old .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
 .news-old .fullstory .newstext { padding: 0 5px; font-size: 1.285em; line-height: 1.61em; }
 
