@@ -28,6 +28,17 @@
 // по щелчку кнопки поиска
 jQuery(".btn-search").click(function(){
     jQery(".search-form").addClass("search-show");
+    const meta_generator = jQuery("meta[name='generator']").attr("content");
+    if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
+        // Пусто. У сайтов на WordPress свой поиск
+    } else {
+        if (document.location.href.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
+            var cx = '003704283744183876190:qchgmzsmjkc';
+        } else { // Поиск по новостям
+            cx = '003704283744183876190:woiuqgnl_eg';
+        }
+    }
+    LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
 });
 jQuery(".close").click(function(){
     jQery(".search-form").remove("search-show");
