@@ -1780,11 +1780,11 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .fullstory .newstitle,
 .news-old .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
-.news-old .post-news h4.post-title { margin-bottom: 5px; margin-top: 0; font-size: 16px; font-weight: 700; }
+.news-old .post-news h4.post-title { margin-bottom: 9px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
 .news-old .post-news h4.post-title .fa { padding-left: 6px; }
 
-.news-old .panel-news .post-news h4.post-title { font-size: 17px; padding: 5px 0 7px; }
+.news-old .panel-news .post-news h4.post-title { font-size: 18px; padding: 5px; }
 
 .news-old .panel-news .post-news figure.post-thumb { width: 160px; }
 
