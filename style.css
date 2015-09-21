@@ -5253,7 +5253,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .snap-drawer { display: none; }
 
-    .is_admin header.wide-header { display: block; }
+    header.wide-header { display: block; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
