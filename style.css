@@ -1827,6 +1827,8 @@ iframe.fullstory__video { max-width: 100%; }
 .news-old .fullstory .newstext br, 
 .news-old .fullstory .newstext p { margin-bottom: 1.61em; }
 
+.news-old .fullstory .newstext table { font-family: sans-serif; }
+
 .news-old .newstext img { padding: 10px 15px; margin: 0; }
 
 
