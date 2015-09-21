@@ -637,7 +637,7 @@ a.media-heading:focus {text-decoration: none;}
 .nav > li > a:focus { color: #fff; background-color: #40c4ff; }
 
 .nav .current-page-parent > a { position: relative; }
-.nav .current-page-parent > a::after { content: ""; height: 3px; left: 0; pointer-events: none; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+.nav .current-page-parent > a::after { content: ""; height: 8px; left: 0; pointer-events: none; position: absolute; right: 0; bottom: 0; background-color: #fff; }
 
 .nav .open > a,
 .nav .open > a:hover,
