@@ -5303,6 +5303,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .search-container { position: relative; }
 
+    header.wide-header .search-container .btn-search { outline: 0 none; }
+
+    header.wide-header .search-container .btn-search:focus { background-color: transparent; }
+
     header.wide-header .searchbox-container { bottom: 0; position: relative; }
 
     header.wide-header form.search-form { padding: 10px 0; position: absolute; right: 0; top: -50px; width: 40px; opacity: 0; transition: all .4s ease; visibility: hidden; }
