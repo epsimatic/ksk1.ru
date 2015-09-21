@@ -27,7 +27,7 @@
 })();
 // по щелчку кнопки поиска
 jQuery(".btn-search").click(function(){
-    jQery(".search-form").addClass("search-show");
+    jQuery(".search-form").addClass("search-show");
     const meta_generator = jQuery("meta[name='generator']").attr("content");
     if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
         // Пусто. У сайтов на WordPress свой поиск
