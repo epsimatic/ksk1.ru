@@ -22,30 +22,21 @@
                 }, 500);
             });
         });
+        // по щелчку кнопки поиска
+        jQuery(".btn-search").click(function(){
+            jQuery(".search-form").addClass("search-show");
+
+            LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+
+        });
+        jQuery(".close").click(function(){
+            jQuery(".search-form").removeClass("search-show");
+        });
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }
 })();
-// по щелчку кнопки поиска
-jQuery(".btn-search").click(function(){
-    jQuery(".search-form").addClass("search-show");
-    const meta_generator = jQuery("meta[name='generator']").attr("content");
-    if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
-        // Пусто. У сайтов на WordPress свой поиск
-    } else {
-        if (document.location.href.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
-            var cx = '003704283744183876190:qchgmzsmjkc';
-        } else { // Поиск по новостям
-            cx = '003704283744183876190:woiuqgnl_eg';
-        }
-    }
-    jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
-    const searchbox_lazy = jQuery(this);
-    LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
-    searchbox_lazy.remove();
-});
-jQuery(".close").click(function(){
-    jQuery(".search-form").removeClass("search-show");
-});
+
+
 var map, layersControl;
 // Подгоняем высоту карты
 function setMapHeight() {
