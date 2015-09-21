@@ -41,7 +41,7 @@ jQuery(".btn-search").click(function(){
     LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
 });
 jQuery(".close").click(function(){
-    jQuery(".search-form").remove("search-show");
+    jQuery(".search-form").removeClass("search-show");
 });
 var map, layersControl;
 // Подгоняем высоту карты
