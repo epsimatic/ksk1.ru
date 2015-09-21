@@ -20,6 +20,20 @@ body {
     font-weight: normal;
 }
 
+body.site-ob { background: #fff; }
+
+body.site-ob .container { box-shadow: none; }
+
+body.site-ob .row.columns { padding-top: 15px; margin-left: -15px; margin-right: -15px; }
+
+body.site-ob .panel,
+body.site-ob .yummies,
+body.site-ob nav.navbar { margin-bottom: 15px; }
+
+body.site-ob .col-mid,
+body.site-ob .sidebar,
+body.site-ob .leftbar { padding: 0 15px; }
+
 figure { position: relative; text-align: center; }
 
 .tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
@@ -1290,7 +1304,7 @@ body.ob     .cond-active.cond-active-ob,
 
 .sidebar .yu {padding: 0 !important;}
 
-.site-ob .sidebar .yummies {margin-bottom: 7px !important;}
+.site-ob .sidebar .yummies {margin-bottom: 10px !important;}
 
 .header .yummies {margin: 0;}
 
