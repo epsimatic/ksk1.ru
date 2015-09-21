@@ -569,7 +569,7 @@ footer h3 {
 
 header.wide-header .dropdown-weather .loader-wrap { height: 300px; }
 
-header.wide-header .dropdown-panel .loader-wrap { height: 100px; }
+header.wide-header .dropdown-panel .loader-wrap { height: 75px; }
 
 .loader-wrap .loader { position: absolute; left: 50%; top: 50%; margin: -20px; font-size: 40px; color: #555; }
 
