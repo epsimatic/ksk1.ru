@@ -25,7 +25,13 @@
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }
 })();
-
+// по щелчку кнопки поиска
+jQuery(".btn-search").click(function(){
+    jQery(".search-form").addClass("search-show");
+});
+jQuery(".close").click(function(){
+    jQery(".search-form").remove("search-show");
+});
 var map, layersControl;
 // Подгоняем высоту карты
 function setMapHeight() {
