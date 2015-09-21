@@ -5282,10 +5282,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote > a { padding: 10px 7px !important; }
 
-    header.wide-header .dropdown-vote  { display: none; }
-
-    .is_admin header.wide-header .dropdown-vote { display: block; }
-
     header.wide-header .dropdown-vote > a > .fa { font-size: 2em; color: #ffd740; }
 
     header.wide-header .dropdown-vote .dropdown-panel { display: none; }
