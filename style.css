@@ -5370,6 +5370,40 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-action { font-size: 15px; padding: 6px 12px 8px; margin-top: 15px; border-radius: 5px; }
 
+    /* Стили для панели новостей*/
+    header.wide-header .news-list { padding-left: 30px; }
+
+    header.wide-header .post-news { padding: 0; }
+
+    header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    header.wide-header .news-list .post-news h4 { line-height: 20px; margin-bottom: 10px; max-height: 40px; white-space: normal; }
+
+    header.wide-header .post-news h4 a { color: #00b0ff; }
+
+    header.wide-header .news-list .post-news h4 a { color: #666; font-weight: 400; }
+
+    header.wide-header .news-list .post-news h4 a:hover,
+    header.wide-header .news-list .post-news h4 a:focus,
+    header.wide-header .post-news h4 a:hover,
+    header.wide-header .post-news h4 a:focus { text-decoration: none; color: #0091ea; }
+
+    header.wide-header .post-news figure { float: left; margin-right: 10px; }
+
+    header.wide-header .post-news figure img { width: 100px; }
+
+    header.wide-header .post-news .post-description { overflow-y: hidden; }
+
+    header.wide-header .post-news .post-description-text { height: 80px; margin-top: -5px; font-size: 13px; line-height: 20px; white-space: normal; }
+
+    header.wide-header .post-news .post-actions { margin-top: 8px; }
+
+    header.wide-header .post-news .post-actions a { color: #777; }
+
+    header.wide-header .post-news .post-actions a:hover,
+    header.wide-header .post-news .post-actions a:focus { text-decoration: none; color: #00c853; }
+
+    /* Стили для панели объявлений*/
     header.wide-header ul.popular-categories { list-style: none; padding: 0; }
 
     header.wide-header .ob-promo h3.ob-promo-heading { margin: 0; font-size: 17px; font-weight: 600; text-transform: uppercase; color: #00b0ff; }
