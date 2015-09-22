@@ -5334,18 +5334,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header form.search-form.search-show button.close { opacity: 1; right: -38px; }
 
-    header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; }
+    header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; z-index: 12; }
 
     header.wide-header .btn-search:hover, 
     header.wide-header .btn-search:focus { background-color: #40c4ff; }
 
-    header.wide-header .searchbox-container .close { position: absolute; top: -44px; right: 0; z-index: 10; font-size: 34px; opacity: 1; color: #fff; transition: right 0.4s ease 0s; }
+    header.wide-header .searchbox-container .close { position: absolute; top: -44px; right: 17px; z-index: 20; font-size: 34px; opacity: 0; color: #fff; transition: opacity 0.4s ease 0s; pointer-events: none; }
 
-    header.wide-header .searchbox-container.search-show { width: 50px; transition: width 0.4s ease 0s; }
+    header.wide-header .searchbox-container .search-form { position: absolute; padding: 10px 50px 3px 10px; right: 0; top: -52px; height: 52px; background-color: #40c4ff; transition: all 0.4s ease 0s; width: 50px; z-index: 15; pointer-events: none; opacity: 0; }
 
-    header.wide-header .searchbox-container.search-show .search-form { position: absolute; right: 0; top: -52px; padding: 10px 0; width: 260px; z-index: 15; }
+    header.wide-header .searchbox-container.search-show .search-form { width: 300px; pointer-events: auto; opacity: 1; }
 
-    header.wide-header .searchbox-container.search-show .close { right: -30px; }
+    header.wide-header .searchbox-container.search-show .close { opacity: 1; pointer-events: auto; }
 
     header.wide-header .menu-item-dropdown { position: static; }
 
