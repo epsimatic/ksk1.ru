@@ -5334,7 +5334,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header form.search-form.search-show button.close { opacity: 1; right: -38px; }
 
-    header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; }
+    header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; z-index: 12; }
 
     header.wide-header .btn-search:hover, 
     header.wide-header .btn-search:focus { background-color: #40c4ff; }
