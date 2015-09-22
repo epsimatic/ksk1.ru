@@ -485,8 +485,8 @@ jQuery('.dropdown-weather').one('mouseenter',function(){
 });
 // Форма для сбора отзывов
 function showReviewHide() {
-    $("#review-hide").removeClass('hidden');
-    $("#review-text").focus();
+    $(".review-hide").removeClass('hidden');
+    $(".review-text").focus();
 }
 function formFade() {
     $('#review-submit').button('loading');
