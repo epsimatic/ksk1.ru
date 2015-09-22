@@ -4734,7 +4734,6 @@ header.wide-header .search-form-header button { background-color: transparent; b
 .snap-drawer .search-form-header button:focus,
 header.wide-header .search-form-header button:hover,
 header.wide-header .search-form-header button:focus { opacity: .7; }
-.review-hide {display: none; }
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
 
