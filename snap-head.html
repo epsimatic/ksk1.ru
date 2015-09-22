@@ -421,7 +421,21 @@
                                 <div class="row">
                                     <div class="alert alert-info alert-dismissible" role="alert">
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        Бла-бла-бла, что-то зачем-то. Голосуй, а то проиграешь! <a href="#"><i class="fa fa-fw fa-smile-o"></i></a> <a href="#"><i class="fa fa-fw fa-meh-o"></i></a>
+                                       <!-- Бла-бла-бла, что-то зачем-то. Голосуй, а то проиграешь! <a href="#"><i class="fa fa-fw fa-smile-o"></i></a> <a href="#"><i class="fa fa-fw fa-meh-o"></i></a>-->
+                                        <form class='review'>
+                                            <div class='review__line review__line-radiobutton'>
+                                                <div class='radio_button'>
+                                                    <input  type='radio'  name="inputradio" id="yes" value="yes" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'Yes',1]); showReviewHide()" >&nbsp;Да&nbsp;&nbsp;
+                                                    <input type='radio'  name="inputradio" value="no" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'No',-1]); showReviewHide()" >&nbsp;Нет
+                                                </div>
+                                                <label  for='yes'>Вам понравилась новая форма добавления?</label>
+                                            </div>
+                                            <div class="review-hide">
+                                                <div class='review__line ' >Что вам понравилось? Что не понравилось? Что можно улучшить?</div>
+                                                <textarea class="review__text"  name="review__text"></textarea>
+                                                <button class='wrapp__button wrapp__buttonSubmit' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', $('.review__text').val()]); return false;">Отправить</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
