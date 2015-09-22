@@ -5394,7 +5394,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .post-news .post-description { overflow-y: hidden; }
 
-    header.wide-header .post-news .post-description-text { height: 80px; margin-top: -5px; font-size: 13px; line-height: 20px; white-space: normal; }
+    header.wide-header .post-news .post-description-text { height: 80px; margin-top: -5px; font-size: 13px; line-height: 20px; white-space: normal; overflow-y: hidden; }
 
     header.wide-header .post-news .post-actions { margin-top: 8px; }
 
