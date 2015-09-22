@@ -24,13 +24,13 @@
         });
         // по щелчку кнопки поиска
         jQuery(".btn-search").click(function(){
-            jQuery(".search-form").addClass("search-show");
+            jQuery(".searchbox-container").addClass("search-show");
 
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
 
         });
         jQuery(".close").click(function(){
-            jQuery(".search-form").removeClass("search-show");
+            jQuery(".searchbox-container").removeClass("search-show");
         });
         //TODO: Уничтожить поиск Google, он весит больше мегабайта
     }
