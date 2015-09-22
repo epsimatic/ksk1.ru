@@ -489,7 +489,7 @@ function showReviewHide() {
     $(".review-text").focus();
 }
 function formFade() {
-    $('#review-submit').button('loading');
+    $('.wrapp__buttonSubmit').button('loading');
     window.setTimeout(function () {
         $('#review-form').fadeTo(1000, 0);
     }, 1000);
