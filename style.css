@@ -5268,7 +5268,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .snap-drawer { display: none; }
 
-    header.wide-header { display: block; }
+    header.wide-header { display: block; top: 0; z-index: 15; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
