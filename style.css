@@ -5425,6 +5425,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
     .news-old .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
+
 }
 
 /* Стили для размера -md- */
@@ -5621,7 +5622,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .site-radio #radioforge1 { text-align: right; }
 
-    .site-radio .radio-logo-container { padding: 10px 0 10px 10px; position: absolute; top: 17px; }
+    .site-radio .radio-logo-container { position: absolute; top:12px; right: 20px; padding: 10px 0 10px 10px; }
 
     #tp-subscribe .nav-pills > li > a { padding: 10px; }
 
@@ -5779,6 +5780,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .row-center-yummies object.yummies,
     .sidebar object.yummies { height: 328px !important; }
+
+    .site-radio .radio-logo-container { top: 7px; right: 60px; }
 }
 
 /*категории новостей*/
