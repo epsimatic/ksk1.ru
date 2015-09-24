@@ -393,9 +393,9 @@
                     <li class="dropdown menu-item dropdown-vote hidden-xs hidden-sm show-admin">
                         <a role="button" aria-haspopup="true" aria-expanded="false"  href="#"><i class="fa fa-fw fa-star"></i></a>
                         <div class="dropdown-menu dropdown-vote-panel">
-                            <form class='review' id="review-form">
+                            <form class='review form-horizontal' id="review-form">
                                 <div class='review__line review__line-radiobutton'>
-                                    <label >Мы сделали новую навигацию и строку меню. Вам нравится?</label>
+                                    <p >Мы сделали новую навигацию и строку меню. Вам нравится?</p>
                                     <div class='radio_button'>
                                         <input class="btn btn-action" type='button'  name="inputradio"  value="Да, удобно и понятно" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'Yes',1]); showReviewHide()" >&nbsp;&nbsp;&nbsp;
                                         <input class="btn btn-default" type='button'  name="inputradio" value="Нет, старая была лучше" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'No',-1]); showReviewHide()" >&nbsp;&nbsp;&nbsp;
@@ -404,9 +404,17 @@
 
                                 </div>
                                 <div class="review-hide hidden">
-                                    <div class='review__line ' >Что вам понравилось? Что не понравилось? Что можно улучшить?</div>
-                                    <textarea class="review__text"  name="review__text"></textarea>
-                                    <button class='wrapp__button wrapp__buttonSubmit' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', $('.review__text').val()]); return false;">Отправить</button>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label class='review__line ' >Что вам понравилось? Что не понравилось? Что можно улучшить?</label>
+                                            <textarea class="review__text"  name="review__text"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-3 col-sm-offset-9">
+                                            <button class='wrapp__button wrapp__buttonSubmit btn btn-action' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', $('.review__text').val()]); return false;">Отправить</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
