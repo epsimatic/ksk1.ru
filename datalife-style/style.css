@@ -326,3 +326,7 @@ div.block div.content .vsection:hover { background-color: white; }
 }
 
 @media (min-width: 1200px) {}
+
+#panel-vote-xs{width: 50%; float: left;}
+.btn-send-news{width: 50%; float: right;}
+.wp-polls{white-space: normal;}
