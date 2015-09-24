@@ -594,7 +594,7 @@ header.wide-header .dropdown-panel .loader-wrap { height: 75px; }
 }
 .btn-home.inactive {opacity: 0; cursor: default;}
 
-.btn-home svg { width: 60%; margin-bottom: -5px; }
+.btn-home svg { max-width: 60px; margin-bottom: -5px; }
 
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
 
