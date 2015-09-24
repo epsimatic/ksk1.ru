@@ -5384,9 +5384,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .post-news { padding: 0; }
 
-    header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; }
+    header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
-    header.wide-header .news-main .post-news h4 { float: right; width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; white-space: normal; }
+    header.wide-header .news-main .post-news h4 { float: right; width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
     header.wide-header .news-list .post-news h4 { line-height: 18px; margin-bottom: 11px; max-height: 36px; }
 
