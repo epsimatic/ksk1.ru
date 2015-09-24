@@ -592,15 +592,15 @@ header.wide-header .dropdown-panel .loader-wrap { height: 75px; }
     transition: opacity 0.7s ease;
     visibility: hidden;
 }
-.btn-home > div {position:relative; top:-15px;}
 .btn-home.inactive {opacity: 0; cursor: default;}
+
+.btn-home svg { width: 60%; margin-bottom: -5px; }
+
 .btn-home:hover {color: #666; background-color: #F9F9F9;}
 
 .site-ob .btn-home { margin: 0; padding: 100px 0 50px; position: absolute; right: 0; bottom: 0; text-align: center; width: 100px; border: none; background-color: transparent; box-shadow: none; opacity: .5; }
 
 .site-ob .btn-home:hover { opacity: 1; transition-duration: .4s; }
-
-.site-ob .btn-home img { width: 100%; display: block; }
 
 /* TODO: Избавиться от Alt-режима.  */
 body.alt .hide-alt.hide-alt.hide-alt,
