@@ -2162,6 +2162,10 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-vote .votes-num {}
 
+#panel-vote-xs{width: 50%; float: left;}
+.btn-send-news{width: 50%; float: right;}
+.wp-polls{white-space: normal;}
+
 .panel-vote .panel-footer {padding: 0 0 0 7px;}
 
 .panel-vote .panel-footer a.btn-action {color: #fff;}
