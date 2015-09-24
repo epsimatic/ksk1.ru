@@ -22,3 +22,9 @@ su www-data -c 'git submodule update --init'
 sudo -u www-data -- git clone https://github.com/glgc25/ksk1.ru.git .
 sudo -u www-data -- git submodule update --init
 </pre>
+
+### Игнорируем авто-созданные файлы:
+
+<pre>
+echo 'weather/*.html' >.git/info/exclude
+</pre>
