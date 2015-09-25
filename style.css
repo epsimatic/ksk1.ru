@@ -1020,8 +1020,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel h4 { font-size: 20px; text-align: center; color: #37474f; margin-bottom: 10px; margin-top: 10px }
 
-.dropdown-menu.dropdown-vote-panel { padding: 15px 15px 0; }
-
 .dropdown-menu.weather-forecast-panel { padding: 0 10px 15px; white-space: normal; width: 410px; }
 .weather-forecast-panel { padding: 0; overflow: hidden; border-top: 1px solid #ff8a80; margin-top: 10px; }
 
@@ -5279,7 +5277,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .snap-drawer { display: none; }
 
-    header.wide-header { display: block; top: 0; z-index: 15; }
+    header.wide-header { display: block; position: absolute; top: 0; z-index: 15; width: 100%; }
+
+    .snap-content { margin-top: 65px; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
@@ -5294,7 +5294,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote > a > .fa { font-size: 2em; color: #ffd740; }
 
-    header.wide-header .dropdown-vote .dropdown-panel { display: none; }
+    header.wide-header .dropdown-vote-panel { padding: 15px 15px 0; }
+
+    header.wide-header .dropdown-vote .review__line-radiobutton { height: 80px; margin-bottom: 0; overflow: hidden; transition: height 0.4s ease 0s; }
+
+    header.wide-header .dropdown-vote .review__line-radiobutton.voted { height: 0; }
 
     header.wide-header .navbar-nav .menu-item-weather { padding: 11px 10px; }
 
