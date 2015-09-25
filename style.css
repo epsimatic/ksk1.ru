@@ -5296,9 +5296,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote-panel { padding: 15px 15px 0; }
 
-    header.wide-header .dropdown-vote .review__line-radiobutton { height: 80px; margin-bottom: 0; overflow: hidden; transition: height 0.4s ease 0s; }
+    header.wide-header .dropdown-vote .feedback-note,
+    header.wide-header .dropdown-vote .feedback-defenition { overflow: hidden; transition: height 0.4s ease 0s; }
 
-    header.wide-header .dropdown-vote .review__line-radiobutton.voted { height: 0; }
+    header.wide-header .dropdown-vote .feedback-defenition { height: 80px; margin-bottom: 0; }
+    header.wide-header .dropdown-vote .feedback-note { height: 160px; }
+    
+    header.wide-header .dropdown-vote .feedback-note.feedback-sent,
+    header.wide-header .dropdown-vote .feedback-defenition.feedback-sent { height: 0; }
+
+    header.wide-header .dropdown-vote .feedback-appreciation-wrap { width: 100%; display: table; margin-top: -15px; height: 115px; overflow: hidden; }
+
+    header.wide-header .dropdown-vote .feedback-appreciation { display: table-cell; width: 100%; vertical-align: middle; font-weight: 300; letter-spacing: -0.015em; font-size: 2em; }
 
     header.wide-header .navbar-nav .menu-item-weather { padding: 11px 10px; }
 

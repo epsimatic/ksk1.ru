@@ -385,7 +385,7 @@
                     <a role="button" aria-haspopup="true" aria-expanded="false"  href="#"><i class="fa fa-fw fa-star"></i></a>
                     <div class="dropdown-menu dropdown-vote-panel">
                         <form class='review form-horizontal' id="review-form">
-                            <div class='review__line review__line-radiobutton form-group'>
+                            <div class='review__line review__line-radiobutton feedback-defenition form-group'>
                                 <div class="col-sm-12">
                                     <p >Мы сделали новую навигацию и строку меню. Вам нравится?</p>
 
@@ -396,7 +396,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="review-hide hidden">
+                            <div class="review-hide feedback-note hidden">
                                 <div class="form-group">
                                     <div class="col-sm-12">
                                         <label class='review__line ' >Что вам понравилось? Что не понравилось? Что можно улучшить?</label>
@@ -407,6 +407,11 @@
                                     <div class="col-sm-4 col-sm-offset-8">
                                         <button class='wrapp__button wrapp__buttonSubmit btn btn-action btn-block btn-lg' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', $('.review__text').val()]); return false;">ОТПРАВИТЬ</button>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="feedback-appreciation-wrap hidden">
+                                <div class="feedback-appreciation text-center">
+                                    Спасибо за отзыв!
                                 </div>
                             </div>
                         </form>
