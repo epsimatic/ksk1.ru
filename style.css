@@ -5296,10 +5296,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote-panel { padding: 15px 15px 0; opacity: 1; }
 
+    header.wide-header .dropdown-vote .feedback-appreciation-wrap,
     header.wide-header .dropdown-vote .feedback-note,
     header.wide-header .dropdown-vote .feedback-defenition { overflow: hidden; transition: height 0.4s ease 0s; }
 
     header.wide-header .dropdown-vote .feedback-defenition { height: 80px; margin-bottom: 0; }
+    
     header.wide-header .dropdown-vote .feedback-note { height: 160px; }
     
     header.wide-header .dropdown-vote.feedback-sent .feedback-note,
@@ -5308,7 +5310,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .dropdown-vote.feedback-sent,
     header.wide-header .dropdown-vote.feedback-sent .dropdown-vote-panel { opacity: 0; transition: opacity .4s ease 1.4s ; pointer-events: none; }
 
-    header.wide-header .dropdown-vote .feedback-appreciation-wrap { width: 100%; display: table; height: 0; overflow: hidden; }
+    header.wide-header .dropdown-vote .feedback-appreciation-wrap { width: 100%; display: table; height: 0; }
 
     header.wide-header .dropdown-vote.feedback-sent .feedback-appreciation-wrap { height: 115px; }
 
