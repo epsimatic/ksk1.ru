@@ -491,4 +491,5 @@ function showReviewHide() {
 }
 function formFade() {
     $('.wrapp__buttonSubmit').button('loading');
+    $(".dropdown-vote").addClass('feedback-sent');
 }
