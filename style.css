@@ -5308,7 +5308,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .dropdown-vote .feedback-defenition.feedback-sent { height: 0; }
     
     header.wide-header .dropdown-vote.feedback-sent,
-    header.wide-header .dropdown-vote.feedback-sent .dropdown-vote-panel { opacity: 0; transition: opacity 3s ease 2s ; pointer-events: none; }
+    header.wide-header .dropdown-vote.feedback-sent .dropdown-vote-panel { opacity: 0; transition: opacity 3s ease 2s ; }
+    header.wide-header .dropdown-vote.feedback-sent { pointer-events: none; }
 
     header.wide-header .dropdown-vote .feedback-appreciation-wrap { width: 100%; height: 0; }
 
