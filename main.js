@@ -491,8 +491,4 @@ function showReviewHide() {
 }
 function formFade() {
     $('.wrapp__buttonSubmit').button('loading');
-    $(".dropdown-vote").addClass('feedback-sent');
-    window.setTimeout(function () {
-        $('#review-form').fadeTo(1000, 0);
-    }, 1000);
 }
