@@ -5279,7 +5279,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header { display: block; position: absolute; top: 0; z-index: 15; width: 100%; }
 
-    .snap-content { margin-top: 65px; }
+    .snap-content .container { margin-top: 65px; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
