@@ -5438,8 +5438,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели объявлений*/
     header.wide-header ul.popular-categories { list-style: none; padding: 0; }
 
-    header.wide-header .ob-promo { overflow: hidden; }
-
     header.wide-header .ob-promo h3.ob-promo-heading { margin: 0; font-size: 17px; font-weight: 600; text-transform: uppercase; color: #00b0ff; }
 
     header.wide-header .ob-promo h3.ob-promo-heading > a { position: absolute; right: 0; top: 2px; font-size: 13px; font-weight: 400; text-transform: none; color: #888888; }
