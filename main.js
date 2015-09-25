@@ -486,10 +486,12 @@ jQuery('.dropdown-weather').one('mouseenter',function(){
 // Форма для сбора отзывов
 function showReviewHide() {
     $(".review-hide").removeClass('hidden');
+    $(".review__line-radiobutton").addClass('feedback-sent');
     $(".review-text").focus();
 }
 function formFade() {
     $('.wrapp__buttonSubmit').button('loading');
+    $(".dropdown-vote").addClass('feedback-sent');
     window.setTimeout(function () {
         $('#review-form').fadeTo(1000, 0);
     }, 1000);
