@@ -5302,10 +5302,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote .feedback-defenition { height: 80px; margin-bottom: 0; }
 
-    header.wide-header .dropdown-vote .feedback-note { display: table; height: 173px; }
+    header.wide-header .dropdown-vote .feedback-note { height: 173px; }
     
     header.wide-header .dropdown-vote.feedback-sent .feedback-note,
-    header.wide-header .dropdown-vote .feedback-defenition.feedback-sent { height: 0; }
+    header.wide-header .dropdown-vote .feedback-defenition.feedback-sent { height: 0; display: table; }
     
     header.wide-header .dropdown-vote.feedback-sent,
     header.wide-header .dropdown-vote.feedback-sent .dropdown-vote-panel { opacity: 0; transition: opacity .4s ease 2s ; pointer-events: none; }
