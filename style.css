@@ -2988,6 +2988,8 @@ article.ob a:focus { text-decoration: none; }
 
 
 
+
+
 .panel-notice a.super {background-color: #fffcdc !important;}
 
 .panel-notice a.super:hover,
@@ -3107,6 +3109,8 @@ a.super:focus {background-color: #fbea2d;}
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-footer a.btn-action { color: #fff; }
 
 .ob-pricing-table .panel-pricing-container .popover img { max-width: 150px; }
+
+.ob-paid-options .modal-dialog { margin-top: 60px; }
 
 .ob-paid-options .modal-content { box-shadow: 0 0 300px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.8); }
 
