@@ -2962,7 +2962,11 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-notice article.ob .ob-meta { float: right; color: #416484; font-size: .9em; }
 
+.panel-ob::after { clear: both; content: " "; }
+
 .panel-ob article.ob { padding: 10px 15px; }
+
+.panel-ob article.ob .ob-text { font-size: 16px; line-height: 1.5em; margin-bottom: 1.5em; }
 
 .panel-ob .ob-text { display: block; }
 
