@@ -238,65 +238,14 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-9 col-md-6 news-main">
-                                    <article class="post post-news list-group-item clearfix type-text" itemtype="http://schema.org/NewsArticle" itemscope="">
-                                        <h4 class="post-title">
-                                            <a href="http://ksk66.ru/14166-v-krasnoufimske-mozhet-poyavitsya-novaya-shkola.html">В Красноуфимске может появиться новая школа </a>
-                                        </h4>
-                                        <meta content="В Красноуфимске может появиться новая школа" itemprop="name">
-                                        <meta content="http://ksk66.ru/14166-v-krasnoufimske-mozhet-poyavitsya-novaya-shkola.html" itemprop="url">
-                                        <meta content="2015-09-21T20:58:53+0500" itemprop="dateCreated">
-                                        <div class="sr-only">Категория: <span itemprop="articleSection">Новости</span></div>
-                                        <div class="sr-only">Категория: <span itemprop="genre">Новости</span></div>
-                                        
-                                        <figure class="post-thumb">
-                                            <a href="http://ksk66.ru/14166-v-krasnoufimske-mozhet-poyavitsya-novaya-shkola.html">
-                                                <img alt="В Красноуфимске может появиться новая школа" src="http://ksk66.ru/uploads/posts/2015-09/thumbs/1442664125_2015916152017.jpg" itemprop="image" class="post-thumb">
-                                            </a>
-                                        </figure>
-                                        <div class="post-description">
-                                            <div class="post-description-text" itemprop="description">
-                                                Как стало известно, администрация городского округа Красноуфимск и управление образованием приступили к проектированию новой общеобразовательной школы на 500 - 550 мест
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <div class="loader-wrap">
+                                        <div class="loader"><i class="fa fa-cog fa-spin"></i></div>
+                                    </div>
                                 </div>
                                 <div class="col-md-3 hidden-sm news-list">
-                                    <article class="post post-news list-group-item clearfix  type-text" itemtype="http://schema.org/NewsArticle" itemscope="">
-                                        <h4 class="post-title">
-                                            <a href="http://ksk66.ru/14317-predprinimatel-reshil-postroit-dorogu.html">
-                                                Предприниматель решил построить дорогу самостоятельно 
-                                            </a>
-                                        </h4>
-                                        <meta content="Предприниматель решил построить дорогу самостоятельно" itemprop="name">
-                                        <meta content="http://ksk66.ru/14317-predprinimatel-reshil-postroit-dorogu.html" itemprop="url">
-                                        <meta content="2015-09-21T20:57:53+0500" itemprop="dateCreated">
-                                        <div class="sr-only">Категория: <span itemprop="articleSection">Новости</span></div>
-                                        <div class="sr-only">Категория: <span itemprop="genre">Новости</span></div>
-                                    </article>
-                                    <article class="post post-news list-group-item clearfix  type-text" itemtype="http://schema.org/NewsArticle" itemscope="">
-                                        <h4 class="post-title">
-                                            <a href="http://ksk66.ru/14225-chetverka-budet-ezdit-po-drugomu.html">
-                                                «Четверка» изменит маршрут 
-                                            </a>
-                                        </h4>
-                                        <meta content="«Четверка» изменит маршрут" itemprop="name">
-                                        <meta content="http://ksk66.ru/14225-chetverka-budet-ezdit-po-drugomu.html" itemprop="url">
-                                        <meta content="2015-09-21T20:57:52+0500" itemprop="dateCreated">
-                                        <div class="sr-only">Категория: <span itemprop="articleSection">Новости</span></div>
-                                        <div class="sr-only">Категория: <span itemprop="genre">Новости</span></div>
-                                    </article>
-                                    <article class="post post-news list-group-item clearfix  type-text" itemtype="http://schema.org/NewsArticle" itemscope="">
-                                        <h4 class="post-title">
-                                            <a href="http://ksk66.ru/14316-stoit-li-opasatsya-sbezhavshix-zaklyuchennyx.html">
-                                                Стоит ли опасаться сбежавших заключенных? 
-                                            </a>
-                                        </h4>
-                                        <meta content="Стоит ли опасаться сбежавших заключенных?" itemprop="name">
-                                        <meta content="http://ksk66.ru/14316-stoit-li-opasatsya-sbezhavshix-zaklyuchennyx.html" itemprop="url">
-                                        <meta content="2015-09-21T20:57:36+0500" itemprop="dateCreated">
-                                        <div class="sr-only">Категория: <span itemprop="articleSection">Новости</span></div>
-                                        <div class="sr-only">Категория: <span itemprop="genre">Новости</span></div>
-                                    </article>
+                                    <div class="loader-wrap">
+                                        <div class="loader"><i class="fa fa-cog fa-spin"></i></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -474,6 +423,12 @@
                     });
                 });
             });
+        });
+
+        jQuery(".menu-main-news").one("mouseenter",function() {
+            jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php?variant=1");
+            jQuery(".news-list").load("http://ksk66.ru/engine/navbar-articles.php?variant=3");
+
         });
     </script>
     <script type="application/javascript">
