@@ -636,6 +636,8 @@ a.media-heading:focus {text-decoration: none;}
 
 .nav > li > a.featured { background-color: #f44336; }
 
+.nav > li:hover > a.featured,
+.nav > li:focus > a.featured,
 .nav > li > a.featured:focus,
 .nav > li > a.featured:hover { background-color: #ef5350; }
 
