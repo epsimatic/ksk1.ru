@@ -5472,7 +5472,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
     /* Стили для панели магазинов*/
-    header.wide-header .menu-item-dropdown.menu-main-shop .dropdown-panel { height: 96px; }
+    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 47px; }
 
     header.wide-header .menu-main-shop .container a { display: inline-block; padding: 4px; width: 19.7%; }
 
@@ -5504,7 +5504,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-catalog a:focus { background-color: #f9f9f9; }
 
 
-    header.wide-header .menu-main-info .submenu-map a.submenu-er { background-color: #f7f7f7; line-height: 1.6; }
+    header.wide-header .menu-main-info .submenu-map a.submenu-er { background-color: #f7f7f7; line-height: 1.6; text-align: center; }
 
     header.wide-header .menu-main-info .submenu-map a.submenu-er:hover,
     header.wide-header .menu-main-info .submenu-map a.submenu-er:focus { text-decoration: none; background-color: #eee; }
@@ -5762,13 +5762,22 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .post-news .post-description-text { line-height: 1.4615em; max-height: 5.846em; }
 
+    header.wide-header .post-news .views_num::before,
+    header.wide-header .post-news .post-comment-num::before { font-family: FontAwesome; color: #607d8b; }
+
+    header.wide-header .post-news .views_num::before { content: " ";  }
+    header.wide-header .post-news .post-comment-num::before { content: " "; }
+
+    header.wide-header .post-news .views_num,
+    header.wide-header .post-news .post-comment-num { color: #777; font-size: 12px; padding-right: 8px; }
+
     header.wide-header .ob-promo .ob-promo-body a.ads-poster { padding: 20px 17px 0 0; }
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+5) { display: inline-block; }
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: none; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .dropdown-panel { height: 115px; }
+    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 38px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 50px; margin-right: 100px; width: 330px; }
     header.wide-header .menu-main-eda .eda-logo-wrap .phone-number { font-size: 18px; bottom: -1px; right: 78px; }
@@ -5921,7 +5930,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: inline-block; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .dropdown-panel { height: 131px; }
+    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding: 30px; }
 
     header.wide-header .menu-main-info .submenu-schedule > a { font-size: 1.15em; line-height: 2; }
 
