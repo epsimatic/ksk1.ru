@@ -591,6 +591,7 @@ header.wide-header .dropdown-panel .loader-wrap { height: 75px; }
     display: block;
     transition: opacity 0.7s ease;
     visibility: hidden;
+    z-index: 10;
 }
 .btn-home.inactive {opacity: 0; cursor: default;}
 
