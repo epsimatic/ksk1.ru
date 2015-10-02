@@ -5399,7 +5399,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown:hover .dropdown-panel { display: block; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel .col-md-3 { padding: 0 15px; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .col-md-3
+    header.wide-header .menu-item-dropdown .dropdown-panel .submenu-group { padding: 0 15px; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn { text-align: left; }
 
@@ -5487,6 +5488,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-item-dropdown.menu-main-info .submenu-schedule { padding-top: 10px; }
 
     header.wide-header .menu-main-info .submenu-schedule > a { display: block; line-height: 1.9; }
+
+    header.wide-header .menu-main-info .submenu-group a { display: block; padding: 10px; }
+    
+    header.wide-header .menu-main-info .submenu-item-icon { float: left; }
+
+    header.wide-header .menu-main-info .submenu-item-name { float: right; font-size: 19px; font-weight: 700; line-height: 1.2; padding-top: 20px; }
 
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
@@ -5888,6 +5895,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: inline-block; }
 
     header.wide-header .menu-item-dropdown.menu-main-shop .dropdown-panel { height: 131px; }
+
+    header.wide-header .menu-main-info .submenu-group a { padding: 20px; }
 }
 
 /*категории новостей*/
