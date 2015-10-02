@@ -5484,7 +5484,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели справки */
     header.wide-header .menu-main-info .dropdown-panel a { color: #333; }
 
-    header.wide-header .menu-main-info .submenu-schedule > a { display: block; }
+    header.wide-header .menu-item-dropdown.menu-main-info .submenu-schedule { padding-top: 10px; }
+
+    header.wide-header .menu-main-info .submenu-schedule > a { display: block; line-height: 1.9; }
 
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
