@@ -5504,7 +5504,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-catalog a,
     header.wide-header .menu-main-info .submenu-map a { display: block; }
 
-    header.wide-header .menu-main-info .submenu-catalog a { padding: 10px; margin: 10px 0; }
+    header.wide-header .menu-main-info .submenu-catalog a { padding: 10px; margin: 10px 0;  }
 
     header.wide-header .menu-main-info .submenu-map a.submenu-map  { padding: 10px; }
 
