@@ -1035,11 +1035,11 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .weather-forecast-panel .day-row .summary { padding-top: 15px; height: 40px; }
 
-.weather-forecast-panel .day-row .summary .weekday { display: inline-block; float: left; font-weight: 700; }
+.weather-forecast-panel .day-row .summary .weekday { display: inline-block; float: right; font-weight: 700; padding: 5px; }
 
-.weather-forecast-panel .day-row .summary .date { display: inline-block; float: left; padding: 0 5px; }
+.weather-forecast-panel .day-row .summary .date { display: inline-block; float: right; padding: 5px; }
 
-.weather-forecast-panel .day-row .summary .temps { display: inline-block; float: right; margin-right: 5px; }
+.weather-forecast-panel .day-row .summary .temps { display: inline-block; float: left; margin-left: 7px; margin-bottom: 5px; font-size: 25px; }
 
 .weather-forecast-panel .day-row .summary .temps .high { font-weight: 700; color: #f44336; }
 
@@ -1047,7 +1047,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .weather-forecast-panel .day-row .summary .temps .low { font-weight: 700; color: #1565c0; }
 
-.weather-forecast-panel .day-row .summary .pop { padding: 0 7px 0 5px; margin-right: 10px; float: right; border-radius: 3px; }
+.weather-forecast-panel .day-row .summary .pop { padding: 5px 7px 5px 5px; margin-right: 10px; float: right; border-radius: 3px; }
 
 .weather-forecast-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
 
@@ -5618,8 +5618,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel-info .features-toolbar .schedule-feature img { max-height: 28px; }
 
     .dropdown-menu.weather-forecast-panel { width: 650px }
+
+    .weather-forecast-panel .day-row .summary { display: table-cell; width: 26%; }
+
+    .weather-forecast-panel .day-row .summary .temps { font-size: 30px; }
+
+    .weather-forecast-panel .day-row .summary .date,
+    .weather-forecast-panel .day-row .summary .weekday { float: none; }
+
+    .weather-forecast-panel .day-row .summary .pop { padding: 2px 7px 2px 5px; margin-bottom: 5px; }
+
     .weather-forecast-panel .day-row .day,
-    .weather-forecast-panel .day-row .night { display: table-cell; width: 50%; padding: 7px 10px 10px 75px; min-height: 65px; }
+    .weather-forecast-panel .day-row .night { display: table-cell; width: 35%; padding: 7px 10px 10px 71px; min-height: 65px; }
 
     .navpanel-services .panel-map #panel-map { height: 411px; }
 
@@ -5925,6 +5935,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .sidebar object.yummies { height: 328px !important; }
 
     .site-radio .radio-logo-container { top: 7px; right: 60px; }
+
+    .weather-forecast-panel .day-row .summary { width: 22%; }
+
+    .weather-forecast-panel .day-row .day, 
+    .weather-forecast-panel .day-row .night { white-space: 39%; }
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
