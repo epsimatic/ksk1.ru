@@ -166,6 +166,7 @@ if ($hide_first_day_weather_on_evening)
 
 foreach ($array_forecast as $forecast_object) {
     if ((int)$forecast_object['temp_high']> 0 )  $forecast_object_high = "+".$forecast_object['temp_high'] ; else $forecast_object_high = $forecast_object['temp_high'];
+    if ((int)$forecast_object['temp_low']> 0 )  $forecast_object_low = "+".$forecast_object['temp_low'] ; else $forecast_object_low = $forecast_object['temp_low'];
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>${forecast_object['weekday']}</span>
@@ -173,7 +174,7 @@ foreach ($array_forecast as $forecast_object) {
 		                    <span class='temps'>
 		                        <span class='high'>$forecast_object_high</span>
                                 <span class='split'>|</span>
-		                        <span class='low'>${forecast_object['temp_low']}</span> ℃
+		                        <span class='low'>$forecast_object_low</span> ℃
 		                    </span>";
     if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
         $conditions_forecast .= "<span title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" .
