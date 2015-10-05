@@ -22,7 +22,7 @@ body {
 
 body.site-ob { background: #fff; }
 
-body.site-ob .container { box-shadow: none; }
+body.site-ob .container { box-shadow: none; padding-right: 15px; padding-left: 15px; }
 
 body.site-ob .row.columns { padding-top: 15px; margin-left: -15px; margin-right: -15px; }
 
@@ -1033,7 +1033,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .weather-forecast-panel .day-row { position: relative; }
 
-.weather-forecast-panel .day-row .summary { padding-top: 15px; height: 40px; }
+.weather-forecast-panel .day-row .summary { padding-top: 10px; padding-bottom: 10px; height: 40px; }
 
 .weather-forecast-panel .day-row .summary .weekday { display: inline-block; float: right; font-weight: 700; padding: 5px; }
 
@@ -2852,7 +2852,7 @@ a.link-neutral:focus {color: #3b437d;}
     .panel-ob-bottom .btn { font-size: 18px; }
 }
 
-.panel-cat {margin: 5px 0 25px; background-color: #fafbfc; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);}
+.panel-cat {margin: 5px 0 25px !important; background-color: #fafbfc; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);}
 
 .panel-cat:hover {box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);}
 
@@ -5503,7 +5503,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-info .submenu-catalog a,
     header.wide-header .menu-main-info .submenu-map a,
-    header.wide-header .menu-main-info .submenu-er a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; }
+    header.wide-header .menu-main-info .submenu-er a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
 
 
     header.wide-header .menu-main-info .submenu-catalog a:hover,
