@@ -5626,7 +5626,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .weather-forecast-panel .day-row .summary .date,
     .weather-forecast-panel .day-row .summary .weekday { float: none; }
 
-    .weather-forecast-panel .day-row .summary .pop { padding: 2px 7px 2px 5px; margin-bottom: 5px; }
+    .weather-forecast-panel .day-row .summary .pop { padding: 2px 7px 2px 5px; margin-bottom: 5px; float: left; }
 
     .weather-forecast-panel .day-row .day,
     .weather-forecast-panel .day-row .night { display: table-cell; width: 35%; padding: 7px 10px 10px 71px; min-height: 65px; }
