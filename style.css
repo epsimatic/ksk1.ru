@@ -2650,6 +2650,12 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-radio .jp-audio .jp-playlist,
 .panel-radio .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
 
+.site-radio .cue-skin-default.mejs-container .mejs-track-artwork,
+.site-radio .cue-skin-default.mejs-container .mejs-track-artwork::before { box-shadow: none; }
+
+.site-radio .cue-skin-default.mejs-container .mejs-controls .mejs-playpause-button { border-radius: 50%; height: 65px; left: 32px; top: 35px; width: 65px; }
+
+.site-radio .cue-skin-default.mejs-container .mejs-controls .mejs-playpause-button.mejs-play button { border-width: 15px 0 15px 23px; margin: 18px 18px 18px 23px; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Блок фишек"> */
