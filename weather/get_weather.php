@@ -165,13 +165,13 @@ if ($hide_first_day_weather_on_evening)
     prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
 
 foreach ($array_forecast as $forecast_object) {
-
+    if ((int)$forecast_object['temp_high']> 0 )  $forecast_object_high = "+".$forecast_object['temp_high'] ; else $forecast_object_high = $forecast_object['temp_high'];
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
                             <span class='weekday'>${forecast_object['weekday']}</span>
                             <span class='date'>${forecast_object['day']}</span>
 		                    <span class='temps'>
-		                        <span class='high'>${forecast_object['temp_high']}</span>
+		                        <span class='high'>$forecast_object_high</span>
                                 <span class='split'>|</span>
 		                        <span class='low'>${forecast_object['temp_low']}</span> ℃
 		                    </span>";
