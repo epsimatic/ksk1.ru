@@ -5515,6 +5515,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-info figure.submenu-item-icon { margin-bottom: 5px; }
 
+    /* Стили для панели радио и ТВ */
+    header.wide-header .menu-main-tv_radio .submenu-group a { display: block; color: #333; line-height: 2; }
+
+    header.wide-header .menu-main-tv_radio iframe { width: 100%; height: 130px; }
+
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
     header.wide-header .menu-main-eda .stores-group,
