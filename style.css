@@ -5518,6 +5518,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-tv_radio .submenu-group a { display: block; color: #333; line-height: 2; }
 
+    header.wide-header .menu-main-tv_radio .submenu-group .player-header a { display: inline-block; }
+
+    header.wide-header .menu-main-tv_radio .submenu-group .player-logo > img { width: 170px; }
+
+    header.wide-header .menu-main-tv_radio .submenu-group .player-playlist { margin-top: 8px; }
+
+    header.wide-header .menu-main-tv_radio .submenu-group .player-playlist a { background-color: #f9f9f9; margin-bottom: 1px; padding: 0 7px; }
+
+    header.wide-header .menu-main-tv_radio .submenu-group .player-playlist .fa { font-size: .75em; color: #ccc; }
+
     header.wide-header .menu-main-tv_radio iframe { width: 100%; height: 130px; }
 
     /* Стили для панели заказа еды */
