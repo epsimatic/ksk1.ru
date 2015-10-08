@@ -5802,7 +5802,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-catalog a,
     header.wide-header .menu-main-info .submenu-map a { text-align: left; padding: 15px; }
 
-    header.wide-header .menu-main-info .submenu-er a { padding: 15px 4px 15px 8px; }
+    header.wide-header .menu-main-info .submenu-er a { text-align: left; padding: 15px 4px 15px 8px; }
 }
 
 /* Стили для размера -lg- */
