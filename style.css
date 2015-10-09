@@ -5516,7 +5516,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info figure.submenu-item-icon { margin-bottom: 5px; }
 
     /* Стили для панели радио и ТВ */
-    header.wide-header .menu-main-tv_radio .submenu-group a { display: block; color: #333; line-height: 2; }
+    header.wide-header .menu-main-tv_radio .submenu-group a { display: block; }
+
+    header.wide-header .menu-main-tv_radio > a { display: inline-block; }
 
     header.wide-header .menu-main-tv_radio a.play-radio { margin-left: -3px; padding-left: 0; }
 
