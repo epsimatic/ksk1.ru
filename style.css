@@ -5520,9 +5520,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-tv_radio > a { display: inline-block; }
 
-    header.wide-header .menu-main-tv_radio > a.play-radio { margin-left: -10px; padding-left: 0; opacity: .7; }
-    header.wide-header .menu-main-tv_radio > a.play-radio:hover,
-    header.wide-header .menu-main-tv_radio > a.play-radio:focus { opacity: 1; }
+    header.wide-header .menu-main-tv_radio > a.play-radio { margin-left: -10px; padding-left: 0; }
+
+    header.wide-header .menu-main-tv_radio > a.play-radio > .fa { opacity: .7; }
+    
+    header.wide-header .menu-main-tv_radio > a.play-radio > .fa:hover,
+    header.wide-header .menu-main-tv_radio > a.play-radio > .fa:focus { opacity: 1; }
 
     header.wide-header .menu-main-tv_radio .player-controls > a { color: #333; }
 
