@@ -5544,7 +5544,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-tv_radio iframe { width: 100%; height: 130px; }
 
-    header.wide-header .menu-main-tv_radio .tv-about h4 { height: 4.5em; line-height: 1.5; margin-bottom: 0.5em; overflow: hidden; white-space: normal; }
+    header.wide-header .menu-main-tv_radio .tv-about h4 { line-height: 1.5; margin-bottom: 0.5em; margin-top: 0; }
+    header.wide-header .menu-main-tv_radio .tv-about p { white-space: normal; background-color: white; line-height: 1.5; font-size: 13px; }
 
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
