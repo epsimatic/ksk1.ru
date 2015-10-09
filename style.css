@@ -2770,7 +2770,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .sidebar .popover-content {width: 500px;}
 
-.sidebar .popover {max-width: 500px; !important;}
+.sidebar .popover {max-width: 500px !important;}
 
 .btn .badge_my-ob {top: 0 !important;}
 
@@ -5385,7 +5385,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header form.search-form button.close { height: auto; right: -11px; top: 3px; font-size: 30px; color: #fff; opacity: 0; z-index: 10; transition: right 0.4s ease 0s; }
 
-    header.wide-header form.search-form.search-show button.close  opacity: 1; right: -38px; 
+    header.wide-header form.search-form.search-show button.close  { opacity: 1; right: -38px; }
 
     header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; z-index: 12; }
 
