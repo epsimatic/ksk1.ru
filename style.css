@@ -5518,6 +5518,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-tv_radio .submenu-group a { display: block; color: #333; line-height: 2; }
 
+    header.wide-header .menu-main-tv_radio a.play-radio { margin-left: -3px; padding-left: 0; }
+
     header.wide-header .menu-main-tv_radio .submenu-group .player-header a { display: inline-block; }
 
     header.wide-header .menu-main-tv_radio .submenu-group .player-logo > img { width: 170px; }
