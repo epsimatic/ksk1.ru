@@ -265,9 +265,9 @@ object { display: none; }
 body.page-template-default .navbar,
 body.tax-movie .navbar,
 body.single-company .navbar,
-.site-ob .navbar {margin: 0 -10px 10px;}
+.site-ob .navbar { margin: 0 -10px 10px; }
 
-.navbar { margin: 0 0 10px; }
+.news-old .navbar { margin: 0 0 10px; }
 
 .navbar a {color: #fff;}
 
@@ -1801,8 +1801,10 @@ iframe.fullstory__video { max-width: 100%; }
 
 .home .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
-.column-center .panel-heading  { padding: 0; margin-bottom: 10px; }
+.col-main .panel-heading,
+.column-center .panel-heading { padding: 0; margin-bottom: 10px; }
 
+.col-main .panel-heading .btn-primary,
 .column-center .panel-heading .btn-primary { color: #fff; }
 
 .post-news .post-title,
