@@ -154,7 +154,6 @@ header .btn-group {margin-top: 10px;}
     width: 100%;
     display: none;
     margin-bottom: 10px;
-    display: none;
 }
 
 body.news .user-panel,
@@ -420,7 +419,7 @@ body.news .navbar .news-link-icon { display: none; }
 .sidebar .panel > .panel-heading h3,
 .sidebar .panel > .panel-heading h2 {font-size: 25px; padding: 1px 0 3px 5px;}
 
-.inset .panel > .panel-heading h3
+.inset .panel > .panel-heading h3,
 .inset .panel > .panel-heading h2 {font-size: 20px; font-weight: 400; padding: 0 0 2px 4px;}
 
 .panel-default > .panel-heading {background-color: #dce3e9; padding: 16px 22px;}
@@ -5405,7 +5404,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown { position: static; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0px; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.125); }
+    header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125); }
     
     header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
 
@@ -5418,7 +5417,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn { text-align: left; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link { color: #333; padding: 0; margin: 0px 0px 5px; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link { color: #333; padding: 0; margin: 0 0 5px; }
 
     header.wide-header .ob-categoy:last-child > a { margin: 0 !important; }
 
@@ -5998,7 +5997,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-er a { padding: 15px; }
     header.wide-header .menu-main-info .submenu-item-name { font-size: 19px; padding-right: 13px; }
 
-    header.wide-header .menu-main-tv_radio .videoplayer-wrap { padding-left: 0; padding-right: 0; }
+    header.wide-header .menu-main-tv_radio .submenu-group.videoplayer-wrap { padding-left: 0; padding-right: 0; }
 }
 
 /*категории новостей*/
