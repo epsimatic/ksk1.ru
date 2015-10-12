@@ -5997,6 +5997,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     
     header.wide-header .menu-main-info .submenu-er a { padding: 15px; }
     header.wide-header .menu-main-info .submenu-item-name { font-size: 19px; padding-right: 13px; }
+
+    header.wide-header .menu-main-tv_radio .videoplayer-wrap { padding-left: 0; padding-right: 0; }
 }
 
 /*категории новостей*/
