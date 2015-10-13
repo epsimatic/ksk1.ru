@@ -1801,10 +1801,10 @@ iframe.fullstory__video { max-width: 100%; }
 
 .home .comments-heading h2.comments-title {color: #666; padding: 6px 12px 7px; font-size: 23px;}
 
-.col-main .panel-heading,
+.col-main .panel-send-news,
 .column-center .panel-heading { padding: 0; margin-bottom: 10px; }
 
-.col-main .panel-heading .btn-primary,
+.col-main .panel-send-news .btn-primary,
 .column-center .panel-heading .btn-primary { color: #fff; }
 
 .post-news .post-title,
@@ -5432,6 +5432,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .news-list { padding-left: 30px; }
 
     header.wide-header .post-news { padding: 0; }
+
+    header.wide-header .post-news .post-title,
+    header.wide-header .post-news .post-description-text { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;}
 
     header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
