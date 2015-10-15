@@ -427,12 +427,15 @@ nav.navbar { margin: 0 -10px !important; }
 
 /* <editor-fold desc="Оформление checkout'a"> */
 
-.site-eda .dmbs-main { padding: 0; }
+.site-eda .dmbs-main { padding-top: 10px; }
+
+.site-eda .dmbs-main .woocommerce .content_block { padding: 20px; }
 
 .site-eda .dmbs-main h2.page-header { border-bottom: 2px dashed #ff6347; color: #ff6347; font-size: 25px; font-weight: 700; text-transform: uppercase; padding: 3px 21px 15px; }
 
 .site-eda .checkout { padding: 0 10px; }
 
+.site-eda .woocommerce-billing-fields { margin-bottom: 40px; }
 /* </editor-fold> */
 
 
