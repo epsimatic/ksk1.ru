@@ -1309,11 +1309,11 @@ body.ob     .cond-active.cond-active-ob,
 
 .row-yu-half .yummies {max-height: none;}
 
-.home .sidebar .yummies,
-.page .sidebar .yummies,
-#text-16 .yu, #text-20 .yu,
-.page .row-yu-half,
-.single-post .row-yu-half {margin-bottom: 10px;}
+/*.home .sidebar .yummies,*/
+/*.page .sidebar .yummies,*/
+/*#text-16 .yu, #text-20 .yu,*/
+/*.page .row-yu-half,*/
+/*.single-post .row-yu-half {margin-bottom: 10px;}*/
 
 .sidebar .yu {padding: 0 !important;}
 
