@@ -4600,6 +4600,8 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 /*Стили для бокового меню snap.js*/
 header.mobile-header { background-color: #00e676; height: 40px; }
 
+body.admin-bar header.mobile-header { top: 46px; z-index: 10; }
+
 header.mobile-header button.menu-button { background-color: transparent; border: none; position: absolute; top: 5px; color: #fff; }
 
 header.mobile-header .logo-placeholder { margin: 0 50px; padding-top: 7px; }
