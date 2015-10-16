@@ -5607,7 +5607,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .panel-news h4 {font-size: 22px;}
 
-    .cat-pills > li > a { height: 44px; padding: 0 12px; }
+    .news .cat-pills > li > a { height: 44px; padding: 0 12px; }
 
     .fullstory .newstext { padding: 0 25px; }
 
