@@ -20,6 +20,9 @@ body {
     font-weight: normal;
 }
 
+body.single-post,
+body.home { background: #fff }
+
 body.site-ob { background: #fff; }
 
 body.site-ob .container { box-shadow: none; padding-right: 15px; padding-left: 15px; }
@@ -52,6 +55,10 @@ body.site-ob header#header { display: block; }
 #stripe.container { padding: 0; }
 
 .container { background-color: #ffffff; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); padding-left: 10px; padding-right: 10px; }
+
+.home .container,
+.single-post .container { box-shadow: none; }
+
 
 /*#page.container {padding: 0 10px;}*/
 
@@ -2367,9 +2374,9 @@ a.link-neutral:focus {color: #3b437d;}
 /* <editor-fold desc="Панель тела новости"> */
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
 
-.panel-news-body > .panel-body { padding: 40px; background-color: #fff; }
+.single-post .panel-news-body > .panel-body { padding: 40px; background-color: #fff; }
 
-.panel-news-body > .panel-body article.post { font-size: 1.285em; line-height: 1.61; }
+.single-post .panel-news-body > .panel-body article.post { font-size: 1.285em; line-height: 1.61; }
 
 .panel-news-body .panel-body .row {margin-left: -10px; margin-right: -10px}
 
@@ -5311,6 +5318,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .snap-drawer { display: none; }
 
     header.wide-header { display: block; position: absolute; top: 0; z-index: 15; width: 100%; }
+
+    .admin-bar header.wide-header { top: 32px; }
 
     .snap-content .container { margin-top: 65px; }
 
