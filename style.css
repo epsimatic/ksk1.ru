@@ -35,8 +35,9 @@ body.site-ob header#header { display: block; }
 
 #stripe.container { padding: 0; }
 
-.container { background-color: #ffffff; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); padding-left: 15px; padding-right: 15px; }
+.container { background-color: #ffffff; }
 
+.news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }
 
 /*#page.container {padding: 0 10px;}*/
 
@@ -49,36 +50,9 @@ body.archive,
 body.page,
 body.site-ob { background: #fff }
 
-body.single .container,
-body.home .container,
-body.archive .container,
-body.page .container,
-body.site-ob .container { box-shadow: none; padding-right: 15px; padding-left: 15px; }
-
-body.single .row.columns,
-body.home .row.columns,
-body.archive .row.columns,
-body.page .row.columns,
-body.site-ob .row.columns { padding-top: 15px; margin-left: -15px; margin-right: -15px; }
-
-body.single .row,
-body.home .row,
-body.archive .row,
-body.page .row { margin-left: -15px; margin-right: -15px; }
-
-body.site-ob .panel,
-body.site-ob .yummies,
-body.site-ob nav.navbar { margin-bottom: 15px; }
+body.site-ob .yummies { margin-bottom: 15px; }
 
 body.site-ob .panel-cat { padding: 5px 0 25px; }
-
-body.single .sidebar,
-body.home .sidebar,
-body.archive .sidebar,
-body.page .sidebar,
-body.site-ob .col-mid,
-body.site-ob .sidebar,
-body.site-ob .leftbar { padding: 0 15px; }
 
 /*CSS-fix для «негоризонтальных» форм*/
 
@@ -214,7 +188,6 @@ header .weather-icon {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 44px;
-    /*width: 100%;*/
     z-index: 5;
 }
 
@@ -272,23 +245,13 @@ object { display: none; }
 
 .navbar {background-color: #00b0ff;
     margin: 0 -10px 10px;
-    /*margin: 0 0 10px;*/
     border: none;}
 
-.cat .navbar,
-.site-rk .navbar,
-.site-copy .navbar,
-.site-e96 .navbar,
-body.page-template-default .navbar,
-body.tax-movie .navbar,
-body.single-company .navbar,
-.site-ob .navbar { margin: 0 -10px 10px; }
+.news-old .navbar { margin: 0 0 15px; }
 
-.news-old .navbar { margin: 0 0 10px; }
+.navbar a { color: #fff; }
 
-.navbar a {color: #fff;}
-
-.navbar-collapse {margin-right: -40px;}
+.navbar-collapse { margin-right: -40px; }
 
 .navbar .news-link-name { display: none; }
 
@@ -301,7 +264,7 @@ body.news .navbar .news-link-name { display: inline; }
 
 body.news .navbar .news-link-icon { display: none; }
 
-.nav-list .active a{background-color: #42BAEA; color: #fff;}
+.nav-list .active a { background-color: #42BAEA; color: #fff; }
 
 .navbar-toggle {border-color: #dddddd;}
 
