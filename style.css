@@ -30,7 +30,7 @@ header#header { margin-bottom: 0 !important; display: none; }
 body.news header#header,
 body.site-ob header#header { display: block; }
 
-.container .yummies[src*="stripe"] {margin: 0;}
+#stripe.container .yummies[src*="stripe"] { margin: 0; }
 
 #stripe.container { padding: 0; }
 
