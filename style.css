@@ -5480,8 +5480,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .post-actions {background-color: #ecd8ce; padding: 4px 10px 5px; position: relative;}
 
-.news-old .panel-news .post-actions {bottom: -10px; left: 20px; border-top-left-radius: 5px;}
-
 .news-old .panel-official .post-actions,
 .news-old .panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
 
