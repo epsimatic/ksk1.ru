@@ -2655,6 +2655,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
+/*
 .panel-radio .jp-audio .jp-interface { height: 45px; width: 46px; }
 
 .panel-radio .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
@@ -2671,6 +2672,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .jp-audio .jp-playlist,
 .panel-radio .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
+
+*/
 
 .site-radio .cue-playlist { margin-bottom: 30px; }
 
@@ -5270,8 +5273,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 50px; }
 
+    /*
     .panel-radio .jp-audio .jp-playlist,
     .panel-radio .jp-audio .jp-title { width: 90px; }
+    */
 
     .panel-event .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; height: 1.45em; }
 
@@ -5628,8 +5633,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
 
+    /*
     .panel-radio .jp-audio .jp-playlist,
     .panel-radio .jp-audio .jp-title { width: 140px; }
+    */
 
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 14px;}
@@ -5965,8 +5972,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-movies .today-movies .movie-poster img { height: 220px; }
 
+    /*
     .panel-radio .jp-audio .jp-playlist,
     .panel-radio .jp-audio .jp-title { width: 190px; }
+    */
 
     .post-news figure.post-thumb { width: 120px; }
 
