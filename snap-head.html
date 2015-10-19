@@ -740,7 +740,7 @@
         supplied: "mp3, m4a"
         });
 
-        jQuery(".play_btn , .play-radio ").click(function () {
+        jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
             $("#jquery_jplayer_1").jPlayer("setMedia", {
@@ -758,6 +758,12 @@
             m4a: 'http://news.kskmedia.ru/files/2015/08/Miss-poliziya-14.10.2015.m4a'
             }).jPlayer("play");
             }
+        });
+        jQuery(".play-radio").click(function (){
+            $("#jquery_jplayer_1").jPlayer("setMedia", {
+                m4a: "http://news.kskmedia.ru/files/2015/08/Novosti-27.08.15.m4a"
+            }).jPlayer("play");
+            jQuery(".play-radio i").toggleClass("hide");
         });
     });
     </script>
