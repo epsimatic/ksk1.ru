@@ -50,6 +50,7 @@ body.archive,
 body.page,
 body.site-ob { background: #fff }
 
+#stripe .yummies,
 body.site-ob .yummies { margin-bottom: 15px; }
 
 body.site-ob .panel-cat { padding: 5px 0 25px; }
