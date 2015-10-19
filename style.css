@@ -5526,18 +5526,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old ul#sendsms li {display: inline-block; min-height: 50px; vertical-align: top;}
 
-.news-old .newstitle {font-size: 24px; padding: 5px 10px; margin-bottom: 10px;}
-
-.news-old .newstext {font-size: 16px; line-height: 1.4em; padding: 0 10px;}
-
-.news-old .newstext br,
-.news-old .newstext p {margin-bottom: 1em;}
-
-.news-old .newstext img {margin: 10px;}
-
-.news-old .newstitle,
-.news-old .newstext {font-family: Times,serif; font-weight: normal; text-align: left;}
-
 .news-old .page .footer {margin-top: 20px;}
 
 .news-old .page .footer .meta {font-size: 120%; font-style: italic; margin-bottom: 8px; text-align: left; color: #4d5359; line-height: 1.2em;}
