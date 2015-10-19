@@ -760,10 +760,20 @@
             }
         });
         jQuery(".play-radio").click(function (){
-            $("#jquery_jplayer_1").jPlayer("setMedia", {
-                m4a: "http://news.kskmedia.ru/files/2015/08/Novosti-27.08.15.m4a"
-            }).jPlayer("play");
-            jQuery(".play-radio i").toggleClass("hide");
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function() {
+                    $(this).jPlayer("setMedia", {
+                        m4a: "http://radio.ksk66.ru:8000/aac"
+                    }).jPlayer("play");
+                    jQuery(".play-radio .fa-pause").removeClass("hide");
+                    jQuery(".play-radio .fa-play").addClass("hide");
+                },
+                ended: function(event) {
+                    $(this).jPlayer("play");
+                    jQuery(".play-radio .fa-pause").addClass("hide");
+                    jQuery(".play-radio .fa-play").removeClass("hide");
+                }
+            });
         });
     });
     </script>
