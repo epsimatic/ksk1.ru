@@ -1839,7 +1839,11 @@ iframe.fullstory__video { max-width: 100%; }
 .column-center .panel-heading { padding: 0; margin-bottom: 10px; }
 
 .home .panel-sendnews .btn-primary,
-.column-center .panel-heading .btn-primary { color: #fff; }
+.column-center .panel-heading .btn-primary
+.home .panel-sendnews .btn-primary:hover,
+.column-center .panel-heading .btn-primary:hover,
+.home .panel-sendnews .btn-primary:focus,
+.column-center .panel-heading .btn-primary:focus { color: #fff; }
 
 .post-news .post-title,
 .post-news .post-description-text,
