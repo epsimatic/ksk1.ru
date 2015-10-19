@@ -392,7 +392,7 @@ body.news .navbar .news-link-icon { display: none; }
 
 .widget { margin-bottom: 15px !important; }
 
-.panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; margin-bottom: 10px; }
+.panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; }
 
 .panel.panel-page { box-shadow: none; }
 
@@ -400,13 +400,9 @@ body.news .navbar .news-link-icon { display: none; }
 
 .panel > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
 
-.panel-heading {border: none; padding: 8px 15px;
-    /*background-color: #ffffff;*/
-}
+.panel-heading { border: none; padding: 8px 15px; }
 
-.panel-body {background-color: #fcfcfc;}
-
-/*.panel-body .row {margin-left: -15px; margin-right: -15px;}*/
+.panel-body { background-color: #fcfcfc; }
 
 .panel-footer {
     padding: 3px 7px;
@@ -469,7 +465,6 @@ body.news .navbar .news-link-icon { display: none; }
 
 .panel.panel-pricing .panel-heading { padding: 25px; }
 
-/*.panel-pricing-container:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #2196f3; }*/
 .panel-pricing-container:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #f06292; }
 .panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading { background-color: #ffd740; }
 .panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading h3 { color: #3e2723; }
@@ -556,6 +551,7 @@ footer h3 {
     color: #0080c7;
     margin-top: 0;
 }
+
 .site-ob .footer-email{display: none;}
 .footer-email_site-ob {display: none;}
 .site-ob .footer-email_site-ob{display: block;}
