@@ -30,7 +30,7 @@ header#header { margin-bottom: 0 !important; display: none; }
 body.news header#header,
 body.site-ob header#header { display: block; }
 
-.container .yummies[src*="stripe"] {margin: 0;}
+#stripe.container .yummies[src*="stripe"] { margin: 0; }
 
 #stripe.container { padding: 0; }
 
@@ -4830,7 +4830,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .post-news h4 a:hover,
     header.wide-header .post-news h4 a:focus { text-decoration: none; color: #0091ea; }
 
-    header.wide-header .post-news figure { float: left; white-space: 220px }
+    header.wide-header .post-news figure { float: left; width: 219px }
 
     header.wide-header .post-news figure img { max-width: 220px; max-height: 130px; }
 
@@ -5165,7 +5165,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: block; padding: 10px 20px 20px; top:0; width: auto; }
 
-    header.wide-header .post-news figure { width: 200px; }
+    header.wide-header .post-news figure { width: 194px; }
 
     header.wide-header .post-news figure img { margin-top: 5px; max-width: 200px; max-height: 125px; }
 
@@ -5342,7 +5342,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
-    header.wide-header .post-news figure { width: 230px; }
+    header.wide-header .post-news figure { width: 229px; }
 
     header.wide-header .post-news figure img { max-width: 230px; max-height: 130px; margin-top: 0; }
 
@@ -5444,11 +5444,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .news-old .panel-news-list .list-group-item img {max-width: 100%;max-height: 100px;}
 
 .news-old .panel-news-list .yummies {margin-bottom: 0;}
-
-.news-old .post-title,
-.news-old .post-text {font-family: Times,serif; font-weight: normal; text-align: left;}
-
-.news-old .post-text {font-size: 14px; line-height: 1.2em;}
 
 .news-old .panel-news-list .post-text {margin-bottom: 10px;}
 
