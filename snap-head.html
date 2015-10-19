@@ -340,7 +340,7 @@
                     <a role="button" aria-haspopup="true" aria-expanded="false" href="http://news.kskmedia.ru/radio/">Радио и ТВ</a>
                     <a class="play-radio" href="#">
                         <i class="fa fa-fw fa-lg fa-play"></i>
-                        <i class="fa fa-fw fa-lg fa-pause"></i>
+                        <i class="fa fa-fw fa-lg fa-pause hide"></i>
                     </a>
                     <div class="dropdown-panel">
                         <div class="container">
@@ -740,7 +740,7 @@
         supplied: "mp3, m4a"
         });
 
-        jQuery(".play_btn").click(function () {
+        jQuery(".play_btn , .play-radio ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
             $("#jquery_jplayer_1").jPlayer("setMedia", {
