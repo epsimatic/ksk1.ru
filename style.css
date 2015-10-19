@@ -20,25 +20,6 @@ body {
     font-weight: normal;
 }
 
-body.single-post,
-body.home { background: #fff }
-
-body.site-ob { background: #fff; }
-
-body.site-ob .container { box-shadow: none; padding-right: 15px; padding-left: 15px; }
-
-body.site-ob .row.columns { padding-top: 15px; margin-left: -15px; margin-right: -15px; }
-
-body.site-ob .panel,
-body.site-ob .yummies,
-body.site-ob nav.navbar { margin-bottom: 15px; }
-
-body.site-ob .panel-cat { padding: 5px 0 25px; }
-
-body.site-ob .col-mid,
-body.site-ob .sidebar,
-body.site-ob .leftbar { padding: 0 15px; }
-
 figure { position: relative; text-align: center; }
 
 .tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
@@ -57,21 +38,51 @@ body.site-ob header#header { display: block; }
 .container { background-color: #ffffff; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); padding-left: 10px; padding-right: 10px; }
 
 
-body.home .container,
-body.single .container,
-body.archive .container,
-body.page .container { box-shadow: none; }
-
-
 /*#page.container {padding: 0 10px;}*/
 
 .leftbar {padding-right: 0;}
 
 .sidebar {padding-left: 0; padding-right: 0;}
 
-.inset {padding-left: 0;}
+.mid-col,
+.inset { padding-left: 15px; padding-right: 15px; }
 
-.home .inset {padding-left: 10px; padding-right: 0;}
+body.single,
+body.home,
+body.archive,
+body.page,
+body.site-ob { background: #fff }
+
+body.single .container,
+body.home .container,
+body.archive .container,
+body.page .container,
+body.site-ob .container { box-shadow: none; padding-right: 15px; padding-left: 15px; }
+
+body.single .row.columns,
+body.home .row.columns,
+body.archive .row.columns,
+body.page .row.columns,
+body.site-ob .row.columns { padding-top: 15px; margin-left: -15px; margin-right: -15px; }
+
+body.single .row,
+body.home .row,
+body.archive .row,
+body.page .row { margin-left: -15px; margin-right: -15px; }
+
+body.site-ob .panel,
+body.site-ob .yummies,
+body.site-ob nav.navbar { margin-bottom: 15px; }
+
+body.site-ob .panel-cat { padding: 5px 0 25px; }
+
+body.single .sidebar,
+body.home .sidebar,
+body.archive .sidebar,
+body.page .sidebar,
+body.site-ob .col-mid,
+body.site-ob .sidebar,
+body.site-ob .leftbar { padding: 0 15px; }
 
 /*CSS-fix для «негоризонтальных» форм*/
 
@@ -383,7 +394,7 @@ body.news .navbar .news-link-icon { display: none; }
 /* <editor-fold desc="Панели"> */
 .alert {margin-bottom: 0;}
 
-.widget {margin-bottom: 10px !important;}
+.widget { margin-bottom: 15px !important; }
 
 .panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; margin-bottom: 10px; }
 
@@ -1309,6 +1320,16 @@ body.ob     .cond-active.cond-active-ob,
 
 #header .yummies { margin-bottom: 0; max-width: 100%; }
 
+body.home .widget.yummies,
+body.single .widget.yummies,
+body.archive .widget.yummies,
+body.page .widget.yummies { margin: 0 !important; }
+
+body.home .widget.yummies .textwidget > *,
+body.single .widget.yummies .textwidget > *,
+body.archive .widget.yummies .textwidget > *,
+body.page .widget.yummies .textwidget > * { display: block; margin-bottom: 15px; }
+
 .news header#header {margin: 0;}
 
 .news .container > #header {margin: 0 -10px;}
@@ -1534,7 +1555,7 @@ header#header .weather-text { display: none; }
 
 /* <editor-fold desc="Новостной сайт"> */
 /* <editor-fold desc="Главная новостная"> */
-.main-content-inner {padding: 0;}
+.main-content-inner { padding: 0; }
 
 .not-really-panel {background-color: transparent;}
 
@@ -5181,7 +5202,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .media-main-primary {padding-right: 10px;}
 
-    .main-content-inner {padding: 0 10px;}
+    .main-content-inner { padding: 0 15px; }
 
     .header-logo { width: 100%; height: 100px; }
 
