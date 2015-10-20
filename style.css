@@ -2261,7 +2261,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-controls-holder .jp-progress { width: 220px; margin-top: 10px; }
 
-.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 15px; background-color: #ccc; }
+.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 15px; background-color: #ccc; cursor: pointer; }
 
 .jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
 
