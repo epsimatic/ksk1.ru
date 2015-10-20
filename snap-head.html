@@ -339,8 +339,8 @@
                 <li class="menu-item-dropdown menu-item menu-main-tv_radio show-admin">
                     <a role="button" aria-haspopup="true" aria-expanded="false" href="http://news.kskmedia.ru/radio/">Радио и ТВ</a>
                     <a class="play-radio" href="#">
-                        <i class="fa fa-fw fa-lg fa-play"></i>
-                        <i class="fa fa-fw fa-lg fa-pause hide"></i>
+                        <i class="fa fa-fw fa-lg fa-play" id="play"></i>
+                        <i class="fa fa-fw fa-lg fa-pause hide" id="pause"></i>
                     </a>
                     <div class="dropdown-panel">
                         <div class="container">
@@ -760,9 +760,14 @@
             }
         });
         jQuery(".play-radio .fa-play").click(function (){
-            $("#jquery_jplayer_1").jPlayer({
+            if(jQuery(this).prop("id")=="play")
+            jQuery("#jquery_jplayer_1").jPlayer({
                 m4a: "http://radio.ksk66.ru:8000/aac"
             }).jPlayer("play");
+            if(jQuery(this).prop("id")=="pause")
+                jQuery("#jquery_jplayer_1").jPlayer({
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                }).jPlayer("stop");
             jQuery(".play-radio i").toggleClass("hide");
 
         });
