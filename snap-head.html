@@ -759,17 +759,20 @@
             }).jPlayer("play");
             }
         });
-        jQuery(".play-radio i").click(function (){
-            if(jQuery(this).prop("id")=="play")
+
+    });
+    (function () {
+    jQuery(".play-radio i").click(function (){
+        if(jQuery(this).prop("id")=="play")
             jQuery("#jquery_jplayer_1").jPlayer({
                 m4a: "http://radio.ksk66.ru:8000/aac"
             }).jPlayer("play");
-            if(jQuery(this).prop("id")=="pause")
-                jQuery("#jquery_jplayer_1").jPlayer({
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("stop");
-            jQuery(".play-radio i").toggleClass("hide");
+        if(jQuery(this).prop("id")=="pause")
+            jQuery("#jquery_jplayer_1").jPlayer({
+                m4a: "http://radio.ksk66.ru:8000/aac"
+            }).jPlayer("stop");
+        jQuery(".play-radio i").toggleClass("hide");
 
-        });
     });
+    })();
     </script>
