@@ -376,8 +376,8 @@
                                                     </div>-->
                                                     <div class="jp-controls-holder">
                                                         <ul class="jp-controls">
-                                                            <li><a tabindex="1" class="jp-play" href="#" onclick="jQuery('.play-radio i').click();"><i class="fa fa-fw fa-play"></i></a></li>
-                                                            <li><a tabindex="1" class="jp-pause" href="#" onclick="jQuery('.play-radio i').click();"><i class="fa fa-fw fa-pause"></i></a></li>
+                                                            <li><a tabindex="1" class="jp-play" href="#" onclick="jQuery('.play-radio i').trigger('click');"><i class="fa fa-fw fa-play"></i></a></li>
+                                                            <li><a tabindex="1" class="jp-pause" href="#" onclick="jQuery('.play-radio i').trigger('click');"><i class="fa fa-fw fa-pause"></i></a></li>
                                                         </ul>
                                                         <div class="jp-progress">
                                                             <div class="jp-seek-bar" style="width: 100%;">
@@ -759,20 +759,17 @@
             }).jPlayer("play");
             }
         });
-
-    });
-    (function () {
-    jQuery(".play-radio i").click(function (){
-        if(jQuery(this).prop("id")=="play")
+        jQuery(".play-radio i").bind("click",function (){
+            if(jQuery(this).prop("id")=="play")
             jQuery("#jquery_jplayer_1").jPlayer({
                 m4a: "http://radio.ksk66.ru:8000/aac"
             }).jPlayer("play");
-        if(jQuery(this).prop("id")=="pause")
-            jQuery("#jquery_jplayer_1").jPlayer({
-                m4a: "http://radio.ksk66.ru:8000/aac"
-            }).jPlayer("stop");
-        jQuery(".play-radio i").toggleClass("hide");
+            if(jQuery(this).prop("id")=="pause")
+                jQuery("#jquery_jplayer_1").jPlayer({
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                }).jPlayer("stop");
+            jQuery(".play-radio i").toggleClass("hide");
 
+        });
     });
-    })();
     </script>
