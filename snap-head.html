@@ -749,6 +749,7 @@
             $("#jquery_jplayer_1").jPlayer("setMedia", {
             m4a: "http://news.kskmedia.ru/files/2015/08/Novosti-"+news_date+".m4a"
             }).jPlayer("play");
+
             }
             if (id=="on_air") {
             $("#jquery_jplayer_1").jPlayer("setMedia", {
@@ -761,6 +762,7 @@
             m4a: 'http://news.kskmedia.ru/files/2015/08/Miss-poliziya-14.10.2015.m4a'
             }).jPlayer("play");
             }
+            jQuery('.play-radio i.fa-play').trigger('click');
         });
         jQuery(".play-radio i").bind("click",function (){
             if(jQuery(this).prop("id")=="play")
