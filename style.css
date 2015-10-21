@@ -2261,9 +2261,13 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-controls-holder .jp-progress { width: 220px; margin-top: 10px; }
 
-.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAfAgMAAADfDWqaAAAACVBMVEXMzMwIjv/////HGhJmAAAAHElEQVR4XmMYsWAUjIJVJAOGUJLB8NAyqmVUCwC8fBpKr8uqSQAAAABJRU5ErkJggg==") repeat-x scroll 0 0; }
+.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background-color: #eee; }
 
-.jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAfAgMAAADfDWqaAAAACVBMVEXMzMwIjv/////HGhJmAAAAHElEQVR4XmMYsWAUjIJVJAOGUJLB8NAyqmVUCwC8fBpKr8uqSQAAAABJRU5ErkJggg==") repeat-x scroll 0 -16px; height: 100%; width: 0; }
+.jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background-color: #70bfff; height: 100%; width: 0; transition: width 0.2s ease 0s; }
+
+.jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-seek-bar { background-color: #cccccc; }
+
+.jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
 
 .jp-audio .jp-controls-holder .jp-current-time,
 .jp-audio .jp-controls-holder .jp-duration { position: absolute; font-size: .81em; color: #888; }
