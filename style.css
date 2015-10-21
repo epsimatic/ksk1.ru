@@ -2251,9 +2251,9 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-controls li { display: inline; }
 
-.jp-audio .jp-controls a { position: absolute; padding: 10px 13px; background-color: #fff; border: 1px solid #ccefff; border-radius: 10px; box-shadow: 0 3px #cecece; z-index: 1; color: #0089db; }
+.jp-audio .jp-controls a { position: absolute; padding: 9px 12px; background-color: #fff; border: 3px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 9px; z-index: 1; color: #0089db; }
 
-.jp-audio .jp-controls a:hover { border-color: #97e6fc; box-shadow: 0 2px #cecece; top: 1px; color: #0072b2; }
+.jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 1px; }
 
 .jp-audio .jp-controls-holder { position: relative; }
 
@@ -2279,12 +2279,16 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
 
+.jp-audio .playlist .playlist-item label:before { content: ""; font-family: FontAwesome; padding-right: 7px; padding-left: 7px; color: #aaa; }
+
 .jp-audio .playlist .playlist-item label:hover,
 .jp-audio .playlist .playlist-item label:focus { background-color: #eee; }
 
 .jp-audio .playlist .playlist-item input.play_btn { display: none; }
 
 .jp-audio .playlist .playlist-item input.play_btn:checked + label { background-color: #cee9ff; }
+
+.jp-audio .playlist .playlist-item input.play_btn:checked + label:before { color: #666; }
 
 .site-radio .cue-playlist { margin-bottom: 30px; }
 
