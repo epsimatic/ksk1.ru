@@ -394,9 +394,9 @@
                                                     Прослушивание радио, к сожалению, сейчас не доступно.
                                                 </div>
                                                 <div class="playlist">
-                                                    <label for="on_air" class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn">Прямой эфир</label>
-                                                    <label for="last_news" class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn">Выпуск новостей</label>
-                                                    <label for="last_comment" class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn">Комментарий дня</label>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label></div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn"><label for="last_news" >Выпуск новостей</label></div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn"><label for="last_comment" >Комментарий дня</label></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -630,7 +630,7 @@
             }
         })();
     </script>
-    <style>
+    <!--<style>
         .panel-radio .panel-heading {
             padding: 15px 21px;
             background-color: #088eff;
@@ -717,7 +717,7 @@
         }
 
 
-    </style>
+    </style>-->
     <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
     <script>
     $(document).ready(function() {
@@ -762,7 +762,7 @@
             if(jQuery(this).prop("id")=="pause")
                 jQuery("#jquery_jplayer_1").jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("stop");
+                }).jPlayer("pause");
             jQuery(".play-radio i").toggleClass("hide");
 
         });
