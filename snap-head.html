@@ -378,13 +378,14 @@
                                                             <li><a tabindex="1" class="jp-play" href="#" onclick="jQuery('.play-radio i.fa-play').trigger('click');"><i class="fa fa-fw fa-play"></i></a></li>
                                                             <li><a tabindex="1" class="jp-pause" href="#" onclick="jQuery('.play-radio i.fa-pause').trigger('click');"><i class="fa fa-fw fa-pause"></i></a></li>
                                                         </ul>
-                                                        <div class="jp-progress">
+                                                        <div class="jp-progress hide">
                                                             <div class="jp-seek-bar" style="width: 100%;">
                                                                 <div class="jp-play-bar" style="width: 51.4233%; overflow: hidden;"></div>
                                                             </div>
                                                         </div>
-                                                        <div aria-label="time" role="timer" class="jp-current-time">01:47</div>
-                                                        <div aria-label="duration" role="timer" class="jp-duration">-01:41</div>
+                                                        <div class="track-info">В эфире: <span class="track-info-artist"></span>—<span class="track-info-title"></span></div>
+                                                        <div aria-label="time" role="timer" class="jp-current-time hide">01:47</div>
+                                                        <div aria-label="duration" role="timer" class="jp-duration hide">-01:41</div>
                                                         <!-- <div class="jp-toggles">
                                                              <button tabindex="0" role="button" class="jp-repeat">repeat</button>
                                                          </div>-->
@@ -394,7 +395,7 @@
                                                     Прослушивание радио, к сожалению, сейчас не доступно.
                                                 </div>
                                                 <div class="playlist">
-                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label></div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label><span>Слушают <span class="listeners"></span> чел.</span> </div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn"><label for="last_news" >Выпуск новостей</label></div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn"><label for="last_comment" >Комментарий дня</label></div>
                                                 </div>
@@ -554,6 +555,17 @@
             jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
 
         });
+        jQuery(".menu-main-tv_radio").mouseenter(function(){
+            jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
+                var track = jQuery(data).find("TRACK").first();
+                jQuery(".track-info-artist").text(track.attr("ARTIST"));
+                jQuery(".track-info-title").text(track.attr("TITLE"));
+                jQuery(".listeners").text(track.attr("LISTENERS"));
+
+            });
+
+        });
+
     </script>
     <script type="application/javascript">
 
@@ -630,94 +642,6 @@
             }
         })();
     </script>
-    <!--<style>
-        .panel-radio .panel-heading {
-            padding: 15px 21px;
-            background-color: #088eff;
-        }
-        .panel-radio .panel-heading img {
-            max-width: 100%;
-        }
-
-        .panel-radio .panel-body {
-            border-bottom: 1px solid #088eff;
-            background-color: #efefef;
-        }
-
-        .panel-radio .jp-audio .jp-interface {
-            height: 45px;
-            width: 46px;
-        }
-
-        .panel-radio .jp-audio .jp-controls {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-
-        .panel-radio .jp-audio .jp-controls li {
-            display: inline;
-        }
-
-        .panel-radio .jp-audio .jp-controls a {
-            position: absolute;
-            padding: 10px 13px;
-            background-color: #fff;
-            border: 1px solid #ccefff;
-            border-radius: 10px;
-            box-shadow: 0 3px #cecece;
-            z-index: 1;
-        }
-
-        .panel-radio .jp-audio .jp-controls a:hover {
-            border-color: #97e6fc;
-            box-shadow: 0 2px #cecece;
-            top: 1px;
-            color: #0072b2;
-        }
-
-        .panel-radio .jp-audio .jp-type-single {
-            position: relative;
-        }
-
-        .panel-radio .jp-audio #panel-on-air { transition: opacity .1s linear; }
-        .panel-radio .jp-audio #panel-on-air.is-updating { transition: opacity .7s linear; opacity: 0.2; }
-
-        .panel-radio .jp-audio .playlist-title {
-            position: absolute;
-            left: 60px;
-            top: 2px;
-            color: #777;
-            cursor: help;
-            padding-right: 60px;
-            width: 100%;
-        }
-
-        .panel-radio .jp-audio .playlist-title .live-info {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            max-width: 100%;
-        }
-
-        .panel-radio .jp-audio .playlist-title .artist:not(:empty)::after {
-            content: " — ";
-        }
-
-        .panel-radio .jp-audio .jp-playlist,
-        .panel-radio .jp-audio .jp-title {
-            position: absolute;
-            left: 60px;
-            top: 22px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 190px;
-            font-weight: 600;
-        }
-
-
-    </style>-->
     <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
     <script>
     $(document).ready(function() {
