@@ -2265,6 +2265,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background-color: #70bfff; height: 100%; width: 0; transition: width 0.2s ease 0s; }
 
+.jp-audio.jp-state-playing .jp-controls-holder .jp-progress { overflow: hidden; }
+
 .jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-seek-bar { background-color: #cccccc; }
 
 .jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
