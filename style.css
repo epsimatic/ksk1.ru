@@ -2245,7 +2245,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
-.jp-audio .jp-interface { height: 30px; width: 100%; }
+.jp-audio .jp-interface { height: 25px; width: 100%; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
 
@@ -2261,9 +2261,9 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-controls-holder .jp-progress { width: 220px; margin-top: 10px; }
 
-.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 15px; background-color: #ccc; cursor: pointer; }
+.jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAfAgMAAADfDWqaAAAACVBMVEXMzMwIjv/////HGhJmAAAAHElEQVR4XmMYsWAUjIJVJAOGUJLB8NAyqmVUCwC8fBpKr8uqSQAAAABJRU5ErkJggg==") repeat-x scroll 0 0; }
 
-.jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
+.jp-audio .jp-controls-holder .jp-progress .jp-play-bar { background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAfAgMAAADfDWqaAAAACVBMVEXMzMwIjv/////HGhJmAAAAHElEQVR4XmMYsWAUjIJVJAOGUJLB8NAyqmVUCwC8fBpKr8uqSQAAAABJRU5ErkJggg==") repeat-x scroll 0 -16px; height: 100%; width: 0; }
 
 .jp-audio .jp-controls-holder .jp-current-time,
 .jp-audio .jp-controls-holder .jp-duration { position: absolute; font-size: .81em; color: #888; }
@@ -2276,6 +2276,15 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-playlist,
 .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
+
+.jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
+
+.jp-audio .playlist .playlist-item label:hover,
+.jp-audio .playlist .playlist-item label:focus { background-color: #eee; }
+
+.jp-audio .playlist .playlist-item input.play_btn { display: none; }
+
+.jp-audio .playlist .playlist-item input.play_btn:checked + label { background-color: #cee9ff; }
 
 .site-radio .cue-playlist { margin-bottom: 30px; }
 
@@ -4940,9 +4949,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-tv_radio .submenu-group .player-playlist { margin-top: 8px; }
 
-    header.wide-header .menu-main-tv_radio .submenu-group .player-playlist a { background-color: #f9f9f9; margin-bottom: 1px; padding: 0 7px; overflow: hidden; text-overflow: hidden; }
+    /*header.wide-header .menu-main-tv_radio .submenu-group .player-playlist a { background-color: #f9f9f9; margin-bottom: 1px; padding: 0 7px; overflow: hidden; text-overflow: hidden; }*/
 
-    header.wide-header .menu-main-tv_radio .submenu-group .player-playlist .fa { font-size: .75em; color: #ccc; }
+    /*header.wide-header .menu-main-tv_radio .submenu-group .player-playlist .fa { font-size: .75em; color: #ccc; }*/
 
     header.wide-header .menu-main-tv_radio iframe { width: 100%; height: 130px; }
 
