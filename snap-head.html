@@ -369,14 +369,14 @@
                                                             <li><a tabindex="1" class="jp-play" href="#" onclick="jQuery('.play-radio i.fa-play').trigger('click');"><i class="fa fa-fw fa-play"></i></a></li>
                                                             <li><a tabindex="1" class="jp-pause" href="#" onclick="jQuery('.play-radio i.fa-pause').trigger('click');"><i class="fa fa-fw fa-pause"></i></a></li>
                                                         </ul>
-                                                        <div class="jp-progress hide">
+                                                        <div class="jp-progress hidden">
                                                             <div class="jp-seek-bar" style="width: 100%;">
                                                                 <div class="jp-play-bar" style="width: 51.4233%; overflow: hidden;"></div>
                                                             </div>
                                                         </div>
                                                         <div class="track-info"></div>
-                                                        <div aria-label="time" role="timer" class="jp-current-time hide">01:47</div>
-                                                        <div aria-label="duration" role="timer" class="jp-duration hide">-01:41</div>
+                                                        <div aria-label="time" role="timer" class="jp-current-time hidden">01:47</div>
+                                                        <div aria-label="duration" role="timer" class="jp-duration hidden">-01:41</div>
                                                         <!-- <div class="jp-toggles">
                                                              <button tabindex="0" role="button" class="jp-repeat">repeat</button>
                                                          </div>-->
@@ -659,32 +659,32 @@
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hide");
-                jQuery(".jp-current-time").removeClass("hide");
-                jQuery(".jp-duration").removeClass("hide");
-                jQuery(".track-info").addClass("hide");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
             }
             if (id=="on_air") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
                 mp3: 'http://radio.ksk66.ru:8000/mp3',
                 m4a: 'http://radio.ksk66.ru:8000/aac'
                 }).jPlayer("play");
-                jQuery(".jp-progress").addClass("hide");
-                jQuery(".jp-current-time").addClass("hide");
-                jQuery(".jp-duration").addClass("hide");
-                jQuery(".track-info").removeClass("hide");
+                jQuery(".jp-progress").addClass("hidden");
+                jQuery(".jp-current-time").addClass("hidden");
+                jQuery(".jp-duration").addClass("hidden");
+                jQuery(".track-info").removeClass("hidden");
             }
             if (id=="last_comment") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
                 m4a: 'http://ksk1.ru/radio-news/news.m4a'
                 }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hide");
-                jQuery(".jp-current-time").removeClass("hide");
-                jQuery(".jp-duration").removeClass("hide");
-                jQuery(".track-info").addClass("hide");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
             }
-            jQuery(".play-radio i.fa-play").addClass('hide');
-            jQuery(".play-radio i.fa-pause").removeClass('hide');
+            jQuery(".play-radio i.fa-play").addClass('hidden');
+            jQuery(".play-radio i.fa-pause").removeClass('hidden');
         });
         jQuery(".play-radio i").bind("click",function (){
             if(jQuery(this).prop("id")=="play")
@@ -695,13 +695,13 @@
                 jQuery("#jquery_jplayer_1").jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
-            jQuery(".play-radio i").toggleClass("hide");
+            jQuery(".play-radio i").toggleClass("hidden");
 
         });
         // при окончании трека
         $("#jquery_jplayer_1").bind($.jPlayer.event.ended , function(event) {
-            jQuery(".play-radio i.fa-play").removeClass('hide');
-            jQuery(".play-radio i.fa-pause").addClass('hide');
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
     });
     </script>
