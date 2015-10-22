@@ -395,7 +395,7 @@
                                                     Прослушивание радио, к сожалению, сейчас не доступно.
                                                 </div>
                                                 <div class="playlist">
-                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label><span>Слушают <span class="listeners"></span> чел.</span> </div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label><span id="listen-text">Слушают <span class="listeners"></span> чел.</span> </div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn"><label for="last_news" >Выпуск новостей</label></div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn"><label for="last_comment" >Комментарий дня</label></div>
                                                 </div>
@@ -666,6 +666,7 @@
                 jQuery(".jp-current-time").removeClass("hide");
                 jQuery(".jp-duration").removeClass("hide");
                 jQuery(".track-info").addClass("hide");
+                jQuery("#listen-text").addClass("hide");
             }
             if (id=="on_air") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
@@ -676,6 +677,7 @@
                 jQuery(".jp-current-time").addClass("hide");
                 jQuery(".jp-duration").addClass("hide");
                 jQuery(".track-info").removeClass("hide");
+                jQuery("#listen-text").removeClass("hide");
             }
             if (id=="last_comment") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
@@ -685,6 +687,7 @@
                 jQuery(".jp-current-time").removeClass("hide");
                 jQuery(".jp-duration").removeClass("hide");
                 jQuery(".track-info").addClass("hide");
+                jQuery("#listen-text").addClass("hide");
             }
             jQuery(".play-radio i.fa-play").addClass('hide');
             jQuery(".play-radio i.fa-pause").removeClass('hide');
