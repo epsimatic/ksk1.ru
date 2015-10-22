@@ -395,7 +395,7 @@
                                                     Прослушивание радио, к сожалению, сейчас не доступно.
                                                 </div>
                                                 <div class="playlist">
-                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир</label><span id="listen-text">Слушают <span class="listeners"></span> чел.</span> </div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" class="play_btn"><label for="on_air" >Прямой эфир <span id="listen-text">Слушают <span class="listeners"></span> чел.</span></label></div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn"><label for="last_news" >Выпуск новостей</label></div>
                                                     <div class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn"><label for="last_comment" >Комментарий дня</label></div>
                                                 </div>
@@ -559,10 +559,10 @@
             jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
                 var track = jQuery(data).find("TRACK").first();
                 if(track.attr("ARTIST")){
-                    var track_text ="В эфире:"+track.attr("ARTIST")+"—"+track.attr("TITLE");
+                    var track_text ="В эфире: "+track.attr("ARTIST")+" — "+track.attr("TITLE");
                 }
                 else if(track.attr("TITLE")){
-                    track_text ="В эфире:"+track.attr("TITLE");
+                    track_text ="В эфире: "+track.attr("TITLE");
                 }  else  track_text="";
                 jQuery(".track-info").text(track_text.replace(/\[.*\]/,""));
                 jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
