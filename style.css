@@ -2245,21 +2245,23 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
-.jp-audio .jp-interface { height: 25px; width: 100%; }
+.jp-audio .jp-interface { height: 25px; width: 100%; margin-top: 9px; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
 
 .jp-audio .jp-controls li { display: inline; }
 
-.jp-audio .jp-controls a { position: absolute; padding: 9px 12px; background-color: #fff; border: 3px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 9px; z-index: 1; color: #0089db; }
+.jp-audio .jp-controls a { position: absolute; padding: 8px 11px; background-color: #fff; border: 2px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 9px; z-index: 1; color: #0089db; }
 
 .jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 1px; }
 
 .jp-audio .jp-controls-holder { position: relative; }
 
-.jp-audio .jp-controls-holder .jp-controls { position: absolute; right: 45px; top: -50px; }
+.jp-audio .jp-controls-holder .jp-controls { position: absolute; right: 45px; top: -45px; }
 
-.jp-audio .jp-controls-holder .jp-progress { width: 220px; margin-top: 10px; }
+.playlist-item #listen-text { font-style: italic; color: #999; }
+
+.jp-audio .jp-controls-holder .jp-progress { width: 220px; }
 
 .jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background-color: #eee; }
 
@@ -2282,6 +2284,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .jp-audio .jp-playlist,
 .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
+
+.jp-audio .track-info { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
 
 .jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
 
@@ -5242,6 +5246,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-er a { text-align: left; padding: 15px 4px 15px 8px; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
+
+    .playlist-item #listen-text { padding-left: 60px; }
 }
 
 /* Стили для размера -lg- */
@@ -5403,6 +5409,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-tv_radio .submenu-group.videoplayer-wrap { padding-left: 0; padding-right: 0; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 263px; }
+
+    .playlist-item #listen-text { padding-left: 35px; }
 }
 
 /*категории новостей*/
