@@ -701,5 +701,10 @@
             jQuery(".play-radio i").toggleClass("hide");
 
         });
+        // при окончании трека
+        $("#jquery_jplayer_1").bind($.jPlayer.event.ended , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hide');
+            jQuery(".play-radio i.fa-pause").add('hide');
+        });
     });
     </script>
