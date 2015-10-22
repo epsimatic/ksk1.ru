@@ -4985,6 +4985,32 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-eda .stores-group > a:hover,
     header.wide-header .menu-main-eda .stores-group > a:focus { background-color: #f7f7f7; }
+
+    footer.wide-footer { margin: 30px 0 0; width: 100%; background: #607d8b; padding: 50px 0; }
+
+    footer.wide-footer .container { margin-top: 0; background-color: transparent; }
+
+    footer.info a,
+    footer.wide-footer a { color: #fff; }
+
+    footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 0; font-size: 1.7em; line-height: 1.8; font-weight: 300; }
+
+    footer.wide-footer ul.contacts .fa { margin-right: 5px; }
+
+    footer.info { margin: -5px 0; padding: 10px 0; width: 100%; background: #455a64; }
+
+    footer.info .container { margin-top: 5px; background-color: transparent; color: #fff; }
+
+    footer.info .copyright { position: relative; top: 11px; }
+
+    footer.info .copyright > a { margin-left: 9px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; }
+
+    footer.info .social > a { margin-right: 9px; opacity: .7; }
+
+    footer.info .social > a:hover,
+    footer.info .social > a:focus { opacity: 1; }
+
+    footer.info .social img { width: 48px; }
 }
 
 /* Стили для размера -md- */
