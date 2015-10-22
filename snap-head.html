@@ -560,13 +560,13 @@
             jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
                 var track = jQuery(data).find("TRACK").first();
                 if(track.attr("ARTIST")){
-                    var track_text ="В эфире: "+track.attr("ARTIST")+" — "+track.attr("TITLE");
+                    var track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("ARTIST")+" — "+track.attr("TITLE");
                 }
                 else if(track.attr("TITLE")){
-                    track_text ="В эфире: "+track.attr("TITLE");
+                    track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("TITLE");
                 }  else  track_text="";
-                jQuery(".track-info").text(track_text.replace(/\[.*\]/,""));
-                jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
+                jQuery(".track-info").html(track_text.replace(/\[.*\]/,""));
+                jQuery(".listeners").html(track.attr("LISTENERS").replace(/\[.*\]/,""));
 
             });
 
