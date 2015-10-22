@@ -4948,8 +4948,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-tv_radio .play-radio { outline: none; }
 
-    header.wide-header .menu-main-tv_radio .play-radio:focus { background-color: transparent; }
-
     header.wide-header .menu-main-tv_radio .submenu-group a { display: block; }
 
     header.wide-header .menu-main-tv_radio > a { display: inline-block; }
