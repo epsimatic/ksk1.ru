@@ -566,7 +566,7 @@
                     track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("TITLE");
                 }  else  track_text="";
                 jQuery(".track-info").html(track_text.replace(/\[.*\]/,""));
-                jQuery(".listeners").html(track.attr("LISTENERS").replace(/\[.*\]/,""));
+                jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
 
             });
 
