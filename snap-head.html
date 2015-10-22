@@ -657,13 +657,12 @@
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
-                    m4a: "http://news.kskmedia.ru/files/2015/08/Novosti-19.10.2015.m4a"
+                    m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hide");
                 jQuery(".jp-current-time").removeClass("hide");
                 jQuery(".jp-duration").removeClass("hide");
                 jQuery(".track-info").addClass("hide");
-                jQuery("#listen-text").addClass("hide");
             }
             if (id=="on_air") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
@@ -674,17 +673,15 @@
                 jQuery(".jp-current-time").addClass("hide");
                 jQuery(".jp-duration").addClass("hide");
                 jQuery(".track-info").removeClass("hide");
-                jQuery("#listen-text").removeClass("hide");
             }
             if (id=="last_comment") {
                 $("#jquery_jplayer_1").jPlayer("setMedia", {
-                m4a: 'http://news.kskmedia.ru/files/2015/08/Miss-poliziya-14.10.2015.m4a'
+                m4a: 'http://ksk1.ru/radio-news/news.m4a'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hide");
                 jQuery(".jp-current-time").removeClass("hide");
                 jQuery(".jp-duration").removeClass("hide");
                 jQuery(".track-info").addClass("hide");
-                jQuery("#listen-text").addClass("hide");
             }
             jQuery(".play-radio i.fa-play").addClass('hide');
             jQuery(".play-radio i.fa-pause").removeClass('hide');
