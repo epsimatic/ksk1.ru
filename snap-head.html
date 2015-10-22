@@ -558,9 +558,9 @@
         jQuery(".menu-main-tv_radio").mouseenter(function(){
             jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
                 var track = jQuery(data).find("TRACK").first();
-                jQuery(".track-info-artist").text(track.attr("ARTIST"));
-                jQuery(".track-info-title").text(track.attr("TITLE"));
-                jQuery(".listeners").text(track.attr("LISTENERS"));
+                jQuery(".track-info-artist").text(track.attr("ARTIST").replace(/\[.*\]/,""));
+                jQuery(".track-info-title").text(track.attr("TITLE").replace(/\[.*\]/,""));
+                jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
 
             });
 
