@@ -383,7 +383,7 @@
                                                                 <div class="jp-play-bar" style="width: 51.4233%; overflow: hidden;"></div>
                                                             </div>
                                                         </div>
-                                                        <div class="track-info">В эфире: <span class="track-info-artist"></span>—<span class="track-info-title"></span></div>
+                                                        <div class="track-info"></div>
                                                         <div aria-label="time" role="timer" class="jp-current-time hide">01:47</div>
                                                         <div aria-label="duration" role="timer" class="jp-duration hide">-01:41</div>
                                                         <!-- <div class="jp-toggles">
@@ -558,8 +558,13 @@
         jQuery(".menu-main-tv_radio").mouseenter(function(){
             jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
                 var track = jQuery(data).find("TRACK").first();
-                jQuery(".track-info-artist").text(track.attr("ARTIST").replace(/\[.*\]/,""));
-                jQuery(".track-info-title").text(track.attr("TITLE").replace(/\[.*\]/,""));
+                if(track.attr("ARTIST")){
+                    var track_text ="В эфире:"+track.attr("ARTIST")+"—"+track.attr("TITLE");
+                }
+                else if(track.attr("TITLE")){
+                    track_text ="В эфире:"+track.attr("TITLE");
+                }  else  track_text="";
+                jQuery(".track-info").text(track_text.replace(/\[.*\]/,""));
                 jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
 
             });
