@@ -486,7 +486,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-8">
-                                        <button class='wrapp__button wrapp__buttonSubmit btn btn-action btn-block btn-lg' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', $('.review__text').val()]); return false;">ОТПРАВИТЬ</button>
+                                        <button class='wrapp__button wrapp__buttonSubmit btn btn-action btn-block btn-lg' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', jQuery('.review__text').val()]); return false;">ОТПРАВИТЬ</button>
                                     </div>
                                 </div>
                             </div>
@@ -641,10 +641,10 @@
     </script>
     <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
     <script>
-    $(document).ready(function() {
-        jQuery ("#jquery_jplayer_1").jPlayer({
+    jQuery(document).ready(function() {
+        jQuery("#jquery_jplayer_1").jPlayer({
         ready: function() {
-        $(this).jPlayer("setMedia", {
+        jQuery(this).jPlayer("setMedia", {
         mp3: "http://radio.ksk66.ru:8000/mp3",
         m4a: "http://radio.ksk66.ru:8000/aac"
         }); //.jPlayer("play");
@@ -656,7 +656,7 @@
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
-                $("#jquery_jplayer_1").jPlayer("setMedia", {
+                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -665,7 +665,7 @@
                 jQuery(".track-info").addClass("hidden");
             }
             if (id=="on_air") {
-                $("#jquery_jplayer_1").jPlayer("setMedia", {
+                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
                 mp3: 'http://radio.ksk66.ru:8000/mp3',
                 m4a: 'http://radio.ksk66.ru:8000/aac'
                 }).jPlayer("play");
@@ -675,7 +675,7 @@
                 jQuery(".track-info").removeClass("hidden");
             }
             if (id=="last_comment") {
-                $("#jquery_jplayer_1").jPlayer("setMedia", {
+                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
                 m4a: 'http://ksk1.ru/radio-news/comment.m4a'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -699,7 +699,7 @@
 
         });
         // при окончании трека
-        $("#jquery_jplayer_1").bind($.jPlayer.event.ended , function(event) {
+        jQuery("#jquery_jplayer_1").bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
