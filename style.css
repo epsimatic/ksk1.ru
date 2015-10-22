@@ -2245,7 +2245,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
-.jp-audio .jp-interface { height: 33px; width: 100%; }
+.jp-audio .jp-interface { height: 34px; width: 100%; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
 
@@ -2285,7 +2285,9 @@ a.link-neutral:focus {color: #3b437d;}
 .jp-audio .jp-playlist,
 .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
 
-.jp-audio .track-info { position: absolute; top: 7px; width: 100%; padding-left: 4px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
+.jp-audio .track-info { position: absolute; top: 7px; width: 100%; padding-left: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
+
+.jp-audio .track-info > span.track-info-air { color: #999; }
 
 .jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
 
@@ -4944,6 +4946,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info figure.submenu-item-icon { margin-bottom: 5px; }
 
     /* Стили для панели радио и ТВ */
+    header.wide-header .menu-main-tv_radio .play-radio { outline: none; }
+
     header.wide-header .menu-main-tv_radio .submenu-group a { display: block; }
 
     header.wide-header .menu-main-tv_radio > a { display: inline-block; }
