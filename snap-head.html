@@ -528,84 +528,6 @@
         </div>
     </header>
     <!--<script src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflsGqMeC/www-widgetapi.js"></script>-->
-    <script>
-        jQuery(".menu-main-ads").one("mouseenter",function() {
-            jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
-                jQuery('.ads-poster').each(function () {
-                    jQuery(this).popover({
-                        content: jQuery('#content-' + jQuery(this)[0].id).html(),
-                        html: true,
-                        placement: "bottom",
-                        trigger: 'hover',
-                        container: '.ads-margin',
-                        viewport: 'body'
-                    });
-                });
-            });
-        });
-
-        jQuery(".menu-main-news").one("mouseenter",function() {
-
-            jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
-
-        });
-
-
-        jQuery(".menu-main-tv_radio").mouseenter(function(){
-            jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
-                var track = jQuery(data).find("TRACK").first();
-                if(track.attr("ARTIST")){
-                    var track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("ARTIST")+" — "+track.attr("TITLE");
-                }
-                else if(track.attr("TITLE")){
-                    track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("TITLE");
-                }  else  track_text="";
-                jQuery(".track-info").html(track_text.replace(/\[.*\]/,""));
-                jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
-
-            });
-            jQuery("#video-old").remove();
-            var tag = document.createElement('script');
-
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            var player;
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player-youtube', {
-                    height: '390',
-                    width: '400',
-                    videoId: 'okFTjgq7b7M',
-                    events: {
-                        'onStateChange': onPlayerStateChange
-                    }
-
-
-                });
-            }
-            function onPlayerReady(event) {
-                event.target.playVideo();
-            }
-
-
-
-            function onPlayerStateChange(event) {
-
-                if (event.data == YT.PlayerState.PLAYING) {
-
-                    jquery_jplayer_1.jPlayer({
-                        m4a: "http://radio.ksk66.ru:8000/aac"
-                    }).jPlayer("pause");
-
-                }
-            }
-
-            function stopVideo() {
-                player.stopVideo();
-            }
-        });
-
-    </script>
     <script type="application/javascript">
 
         if (!Array.prototype.indexOf) {
@@ -659,7 +581,8 @@
         function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
         function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
 
-        //TODO: отрефакторить, заменить на CSS вообще.
+        //TODO: отрефакторить, заменить на CSS / PHP вообще.
+        //TODO: Это используется?
         (function () {
             const url = document.location.href;
             const classList = document.getElementsByTagName("body")[0].classList;
@@ -683,9 +606,10 @@
     </script>
     <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
     <script>
+    var radio_player;
     jQuery(document).ready(function() {
-        var jquery_jplayer_1 = jQuery("#jquery_jplayer_1");
-        jquery_jplayer_1.jPlayer({
+        radio_player = jQuery("#jquery_jplayer_1");
+        radio_player.jPlayer({
         ready: function() {
         jQuery(this).jPlayer("setMedia", {
         mp3: "http://radio.ksk66.ru:8000/mp3",
@@ -699,7 +623,7 @@
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
-                jquery_jplayer_1.jPlayer("setMedia", {
+                radio_player.jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -708,7 +632,7 @@
                 jQuery(".track-info").addClass("hidden");
             }
             if (id=="on_air") {
-                jquery_jplayer_1.jPlayer("setMedia", {
+                radio_player.jPlayer("setMedia", {
                 mp3: 'http://radio.ksk66.ru:8000/mp3',
                 m4a: 'http://radio.ksk66.ru:8000/aac'
                 }).jPlayer("play");
@@ -718,7 +642,7 @@
                 jQuery(".track-info").removeClass("hidden");
             }
             if (id=="last_comment") {
-                jquery_jplayer_1.jPlayer("setMedia", {
+                radio_player.jPlayer("setMedia", {
                 m4a: 'http://ksk1.ru/radio-news/comment.m4a'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -731,14 +655,14 @@
         });
         jQuery(".play-radio i").bind("click",function (){
             if(jQuery(this).prop("id")=="play"){
-                jquery_jplayer_1.jPlayer({
+                radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
                 jQuery(".play-radio i.fa-play").addClass('hidden');
                 jQuery(".play-radio i.fa-pause").removeClass('hidden');
             }
             if(jQuery(this).prop("id")=="pause"){
-                jquery_jplayer_1.jPlayer({
+                radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
                 jQuery(".play-radio i.fa-play").removeClass('hidden');
@@ -746,15 +670,15 @@
             }
         });
         // при окончании трека
-        jquery_jplayer_1.bind(jQuery.jPlayer.event.ended , function(event) {
+        radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
-        jquery_jplayer_1.bind(jQuery.jPlayer.event.pause , function(event) {
+        radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
-        jquery_jplayer_1.bind(jQuery.jPlayer.event.play , function(event) {
+        radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
             stopVideo();
@@ -804,5 +728,67 @@
 
 
 
+    jQuery(".menu-main-ads").one("mouseenter",function() {
+        jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
+            jQuery('.ads-poster').each(function () {
+                jQuery(this).popover({
+                    content: jQuery('#content-' + jQuery(this)[0].id).html(),
+                    html: true,
+                    placement: "bottom",
+                    trigger: 'hover',
+                    container: '.ads-margin',
+                    viewport: 'body'
+                });
+            });
+        });
+    });
+
+    jQuery(".menu-main-news").one("mouseenter",function() {
+        jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
+    });
+
+
+    jQuery(".menu-main-tv_radio").mouseenter(function(){
+
+        jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
+            var track = jQuery(data).find("TRACK").first();
+            if(track.attr("ARTIST")){
+                var track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("ARTIST")+" — "+track.attr("TITLE");
+            }
+            else if(track.attr("TITLE")){
+                track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("TITLE");
+            }  else  track_text="";
+            jQuery(".track-info").html(track_text.replace(/\[.*\]/,""));
+            jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
+
+        });
+
+        LoadJS("https://www.youtube.com/iframe_api", function() {
+            jQuery("#video-old").remove();
+        });
+    });
+
+    //        var player;
+    function onYouTubeIframeAPIReady() {
+        /*player = */new YT.Player('player-youtube', {
+            height: '390',
+            width: '400',
+            videoId: 'okFTjgq7b7M',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            radio_player.jPlayer("pause");
+        }
+    }
 
     </script>
