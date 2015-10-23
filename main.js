@@ -631,7 +631,7 @@ function onYouTubeIframeAPIReady() {
     video_player = new YT.Player('player-youtube', {
         height: '390',
         width: '400',
-        videoId: 'wL5x5SvMBss?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_',
+        videoId: 'list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_',
         events: {
             'onStateChange': onPlayerStateChange
         }
