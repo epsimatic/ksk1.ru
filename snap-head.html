@@ -696,11 +696,16 @@
                 jQuery("#jquery_jplayer_1").jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
-            jQuery(".play-radio i").toggleClass("hidden");
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
 
         });
         // при окончании трека
         jQuery("#jquery_jplayer_1").bind(jQuery.jPlayer.event.ended , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+        });
+        jQuery("#jquery_jplayer_1").bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
