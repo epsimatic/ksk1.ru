@@ -688,15 +688,21 @@
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
         });
         jQuery(".play-radio i").bind("click",function (){
-            if(jQuery(this).prop("id")=="play")
-            jQuery("#jquery_jplayer_1").jPlayer({
-                m4a: "http://radio.ksk66.ru:8000/aac"
-            }).jPlayer("play");
-            if(jQuery(this).prop("id")=="pause")
+            if(jQuery(this).prop("id")=="play"){
+                jQuery("#jquery_jplayer_1").jPlayer({
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                }).jPlayer("play");
+                jQuery(".play-radio i.fa-play").addClass('hidden');
+                jQuery(".play-radio i.fa-pause").removeClass('hidden');
+            }
+            if(jQuery(this).prop("id")=="pause"){
                 jQuery("#jquery_jplayer_1").jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
-            jQuery(".play-radio i").toggleClass("hidden");
+                jQuery(".play-radio i.fa-play").removeClass('hidden');
+                jQuery(".play-radio i.fa-pause").addClass('hidden');
+            }
+           // jQuery(".play-radio i").toggleClass("hidden");
 
         });
         // при окончании трека
