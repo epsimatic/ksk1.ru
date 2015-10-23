@@ -627,13 +627,29 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
 
 // Callback-функции для Youtube API должны бфть объявлены глобально
-function onYouTubeIframeAPIReady() {
+/*function onYouTubeIframeAPIReady() {
     video_player = new YT.Player('player-youtube', {
         height: '390',
         width: '400',
         videoId: 'watch?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_',
         events: {
             'onStateChange': onPlayerStateChange
+        }
+    });
+}*/
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player("player-youtube", {
+        height: "390",
+        width: "400",
+        playerVars: {
+            listType: "playlist",
+            list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
+            color: "white",
+            modestbranding: 1,
+            theme: "light"
+        },
+        events: {
+            "onStateChange": onPlayerStateChange
         }
     });
 }
