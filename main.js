@@ -622,8 +622,6 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
     // Видео плеер
     LoadJS("https://www.youtube.com/iframe_api", function() {
-        //TODO: Удали меня
-        jQuery("#video-old").remove();
     });
 });
 
