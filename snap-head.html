@@ -527,7 +527,7 @@
             <a href="/" class="logo-ksk"><span class="sr-only">Красноуфимск онлайн</span></a>
         </div>
     </header>
-
+    <script src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflsGqMeC/www-widgetapi.js"></script>
     <script>
         jQuery(".menu-main-ads").one("mouseenter",function() {
             jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
@@ -549,6 +549,8 @@
             jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
 
         });
+
+
         jQuery(".menu-main-tv_radio").mouseenter(function(){
             jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
                 var track = jQuery(data).find("TRACK").first();
@@ -563,11 +565,11 @@
 
             });
             jQuery("#video-old").remove();
-            var tag = document.createElement('script');
+           /* var tag = document.createElement('script');
 
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player-youtube', {
