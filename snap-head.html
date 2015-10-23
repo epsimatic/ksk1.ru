@@ -733,35 +733,35 @@
 
             // Видео плеер
             LoadJS("https://www.youtube.com/iframe_api", function() {
-
                 //TODO: Удали меня
                 jQuery("#video-old").remove();
-
-                function onYouTubeIframeAPIReady() {
-                    video_player = new YT.Player('player-youtube', {
-                        height: '390',
-                        width: '400',
-                        videoId: 'okFTjgq7b7M',
-                        events: {
-                            'onStateChange': onPlayerStateChange
-                        }
-                    });
-                }
-
-                // Не работает сейчас
-                function onPlayerReady(event) {
-                    event.target.playVideo();
-                }
-
-                // Останавливать радио, когда начинает играть видео
-                function onPlayerStateChange(event) {
-                    if (event.data == YT.PlayerState.PLAYING) {
-                        radio_player.jPlayer("pause");
-                    }
-                }
-
             });
         });
+
+
+        // Callback-функции для Youtube API должны бфть объявлены глобально
+        function onYouTubeIframeAPIReady() {
+            video_player = new YT.Player('player-youtube', {
+                height: '390',
+                width: '400',
+                videoId: 'okFTjgq7b7M',
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        // Не работает сейчас
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // Останавливать радио, когда начинает играть видео
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                radio_player.jPlayer("pause");
+            }
+        }
 
 
     </script>
