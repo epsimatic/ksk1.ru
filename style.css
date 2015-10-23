@@ -5005,7 +5005,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.info .copyright > a { margin-left: 9px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; }
 
-    footer.info .social > a { margin-right: 9px; opacity: .7; }
+    footer.info .social > a { margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
 
     footer.info .social > a:hover,
     footer.info .social > a:focus { opacity: 1; }
