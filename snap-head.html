@@ -603,11 +603,9 @@
                 classList.add('taxi');
             }
         })();
-    </script>
-    <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
-    <script>
     var radio_player;
-    jQuery(document).ready(function() {
+
+    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
         radio_player = jQuery("#jquery_jplayer_1");
         radio_player.jPlayer({
         ready: function() {
@@ -683,47 +681,6 @@
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
             stopVideo();
         });
-
-      /*  jQuery("#video-old").remove();
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player-youtube', {
-                height: '390',
-                width: '400',
-                videoId: 'okFTjgq7b7M',
-                events: {
-                    'onStateChange': onPlayerStateChange
-                }
-
-
-            });
-        }
-        function onPlayerReady(event) {
-            event.target.playVideo();
-        }
-
-
-
-        function onPlayerStateChange(event) {
-
-            if (event.data == YT.PlayerState.PLAYING) {
-
-                jquery_jplayer_1.jPlayer({
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("pause");
-
-            }
-        }
-
-        function stopVideo() {
-            player.stopVideo();
-        }
-        console.log("Произошло");*/
     });
 
 
@@ -749,7 +706,6 @@
 
 
     jQuery(".menu-main-tv_radio").mouseenter(function(){
-
         jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
             var track = jQuery(data).find("TRACK").first();
             if(track.attr("ARTIST")){
