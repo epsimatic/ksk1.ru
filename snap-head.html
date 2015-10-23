@@ -377,9 +377,6 @@
                                                         <div class="track-info"></div>
                                                         <div aria-label="time" role="timer" class="jp-current-time hidden">01:47</div>
                                                         <div aria-label="duration" role="timer" class="jp-duration hidden">-01:41</div>
-                                                        <!-- <div class="jp-toggles">
-                                                             <button tabindex="0" role="button" class="jp-repeat">repeat</button>
-                                                         </div>-->
                                                     </div>
                                                 </div>
                                                 <div class="jp-no-solution">
@@ -396,13 +393,14 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-lg-3 text-center submenu-group videoplayer-wrap">
-                                    <iframe width="280" height="130" src="https://www.youtube.com/embed/videoseries?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_&fs=1&controls=2&showinfo=0&modestbranding=1" allowfullscreen></iframe>
+                                    <div id="player-youtube" ><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></div>
+                                    <!--<iframe width="280" height="130" id="video-old"  src="https://www.youtube.com/embed/videoseries?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_&fs=1&controls=2&showinfo=0&modestbranding=1" allowfullscreen></iframe>-->
                                 </div>
                                 <div class="col-lg-3 hidden-sm hidden-md submenu-group tv-about">
                                     <h4>Итоги недели</h4>
                                     <p>Обзор самых важных событий города и района, поздравления земляков, видео из истории города, афиша культурных и спортивных мероприятий</p>
                                 </div>
-                                <div id="player-youtube" class="show-admin"></div>
+
                             </div>
                         </div>
                     </div>
@@ -526,45 +524,7 @@
             <a href="/" class="logo-ksk"><span class="sr-only">Красноуфимск онлайн</span></a>
         </div>
     </header>
-
-    <script>
-        jQuery(".menu-main-ads").one("mouseenter",function() {
-            jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
-                jQuery('.ads-poster').each(function () {
-                    jQuery(this).popover({
-                        content: jQuery('#content-' + jQuery(this)[0].id).html(),
-                        html: true,
-                        placement: "bottom",
-                        trigger: 'hover',
-                        container: '.ads-margin',
-                        viewport: 'body'
-                    });
-                });
-            });
-        });
-
-        jQuery(".menu-main-news").one("mouseenter",function() {
-
-            jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
-
-        });
-        jQuery(".menu-main-tv_radio").mouseenter(function(){
-            jQuery.get("http://ksk1.ru/nowplaying.xml", function(data){
-                var track = jQuery(data).find("TRACK").first();
-                if(track.attr("ARTIST")){
-                    var track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("ARTIST")+" — "+track.attr("TITLE");
-                }
-                else if(track.attr("TITLE")){
-                    track_text ="<span class='track-info-air'>В эфире: </span>"+track.attr("TITLE");
-                }  else  track_text="";
-                jQuery(".track-info").html(track_text.replace(/\[.*\]/,""));
-                jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/,""));
-
-            });
-
-        });
-
-    </script>
+    <!--<script src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflsGqMeC/www-widgetapi.js"></script>-->
     <script type="application/javascript">
 
         if (!Array.prototype.indexOf) {
@@ -618,7 +578,8 @@
         function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
         function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
 
-        //TODO: отрефакторить, заменить на CSS вообще.
+        //TODO: отрефакторить, заменить на CSS / PHP вообще.
+        //TODO: Это используется?
         (function () {
             const url = document.location.href;
             const classList = document.getElementsByTagName("body")[0].classList;
@@ -639,70 +600,8 @@
                 classList.add('taxi');
             }
         })();
-    </script>
-    <script src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
-    <script>
-    jQuery(document).ready(function() {
-        jQuery("#jquery_jplayer_1").jPlayer({
-        ready: function() {
-        jQuery(this).jPlayer("setMedia", {
-        mp3: "http://radio.ksk66.ru:8000/mp3",
-        m4a: "http://radio.ksk66.ru:8000/aac"
-        }); //.jPlayer("play");
-        },
-        swfPath: "js",
-        supplied: "mp3, m4a"
-        });
 
-        jQuery(".play_btn ").click(function () {
-            var id= jQuery(this).prop("id");
-            if (id=="last_news") {
-                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/news.m4a"
-                }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hidden");
-                jQuery(".jp-current-time").removeClass("hidden");
-                jQuery(".jp-duration").removeClass("hidden");
-                jQuery(".track-info").addClass("hidden");
-            }
-            if (id=="on_air") {
-                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
-                mp3: 'http://radio.ksk66.ru:8000/mp3',
-                m4a: 'http://radio.ksk66.ru:8000/aac'
-                }).jPlayer("play");
-                jQuery(".jp-progress").addClass("hidden");
-                jQuery(".jp-current-time").addClass("hidden");
-                jQuery(".jp-duration").addClass("hidden");
-                jQuery(".track-info").removeClass("hidden");
-            }
-            if (id=="last_comment") {
-                jQuery("#jquery_jplayer_1").jPlayer("setMedia", {
-                m4a: 'http://ksk1.ru/radio-news/comment.m4a'
-                }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hidden");
-                jQuery(".jp-current-time").removeClass("hidden");
-                jQuery(".jp-duration").removeClass("hidden");
-                jQuery(".track-info").addClass("hidden");
-            }
-            jQuery(".play-radio i.fa-play").addClass('hidden');
-            jQuery(".play-radio i.fa-pause").removeClass('hidden');
-        });
-        jQuery(".play-radio i").bind("click",function (){
-            if(jQuery(this).prop("id")=="play")
-            jQuery("#jquery_jplayer_1").jPlayer({
-                m4a: "http://radio.ksk66.ru:8000/aac"
-            }).jPlayer("play");
-            if(jQuery(this).prop("id")=="pause")
-                jQuery("#jquery_jplayer_1").jPlayer({
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("pause");
-            jQuery(".play-radio i").toggleClass("hidden");
 
-        });
-        // при окончании трека
-        jQuery("#jquery_jplayer_1").bind(jQuery.jPlayer.event.ended , function(event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
-        });
-    });
+
+
     </script>
