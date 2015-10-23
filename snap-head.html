@@ -696,8 +696,7 @@
                 jQuery("#jquery_jplayer_1").jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
+            jQuery(".play-radio i").toggleClass("hidden");
 
         });
         // при окончании трека
