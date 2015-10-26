@@ -4776,6 +4776,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .snap-content .container { margin-top: 65px; }
 
+    .admin-bar .snap-content .container { margin-top: 97px; }
+
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
     header.wide-header .navbar-nav > li > a { padding: 15px 10px; font-size: 13px; }
