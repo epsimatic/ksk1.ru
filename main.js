@@ -610,7 +610,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
           /*  radio_player.jPlayer("setMedia",{
                 m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
             }).jPlayer("play");*/
-
+        });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
