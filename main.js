@@ -605,19 +605,11 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         });
         // при окончании трека
         radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
-          //  jQuery(".play-radio i.fa-play").removeClass('hidden');
-          //  jQuery(".play-radio i.fa-pause").addClass('hidden');
-            radio_player.jPlayer({
-                ready: function() {
-                    jQuery(this).jPlayer("setMedia", {
-                        m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-                    });
-                },
-                swfPath: "js",
-                supplied: "m4a"
-            });
-
-
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+            radio_player.jPlayer("setMedia",{
+                m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+            }).jPlayer("play");
         });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
@@ -628,6 +620,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
             video_player.stopVideo();
         });
+
     });
 
 
