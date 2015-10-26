@@ -664,6 +664,7 @@ function onPlayerReady(event) {
 
 // Останавливать радио, когда начинает играть видео
 function onPlayerStateChange(event) {
+    console.log(event);
     if (event.data == YT.PlayerState.PLAYING) {
         radio_player.jPlayer("pause");
     }
