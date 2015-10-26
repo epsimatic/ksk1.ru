@@ -608,8 +608,14 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
           //  jQuery(".play-radio i.fa-play").removeClass('hidden');
           //  jQuery(".play-radio i.fa-pause").addClass('hidden');
             radio_player.jPlayer({
-                m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-            }).jPlayer("play");
+                ready: function() {
+                    jQuery(this).jPlayer("setMedia", {
+                        m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+                    });
+                },
+                swfPath: "js",
+                supplied: "m4a"
+            });
 
 
         });
