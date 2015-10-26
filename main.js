@@ -646,7 +646,10 @@ function onYouTubePlayerAPIReady() {
             list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
             color: "white",
             modestbranding: 1,
-            theme: "light"
+            theme: "light",
+            controls: 2,
+            fs:1,
+            showinfo:0
         },
         events: {
             "onStateChange": onPlayerStateChange
