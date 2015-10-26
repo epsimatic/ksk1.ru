@@ -4264,6 +4264,14 @@ footer.wide-footer .container { margin-top: 0; background-color: transparent; }
 footer.info a,
 footer.wide-footer a { color: #fff; }
 
+footer.info a:hover,
+footer.info a:focus,
+footer.wide-footer a:hover,
+footer.wide-footer a:focus { text-decoration: none }
+
+footer.wide-footer .btn-link:hover,
+footer.wide-footer .btn-link:focus { background-color: #ffffff; }
+
 footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.7em; line-height: 1.8; font-weight: 300; }
 
 footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; margin-bottom: 2px; }
@@ -4271,9 +4279,6 @@ footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; ma
 footer.wide-footer ul.contacts > li:hover { background-color: #8097a2; }
 
 footer.wide-footer ul.contacts a { display: block; }
-
-footer.wide-footer ul.contacts a:hover,
-footer.wide-footer ul.contacts a:focus { text-decoration: none; }
 
 footer.wide-footer ul.contacts .fa { margin-right: 5px; }
 
@@ -4286,7 +4291,7 @@ footer.info .copyright { text-align: center; margin-bottom: 30px; margin-top: 20
 footer.info .copyright > a { display: block; margin-top: 10px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; }
 
 footer.info .copyright > a:hover,
-footer.info .copyright > a:focus { text-decoration: none; background-color: #37474f; }
+footer.info .copyright > a:focus { background-color: #37474f; }
 
 footer.info .social { margin-bottom: 20px; }
 
