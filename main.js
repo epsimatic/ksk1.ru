@@ -557,23 +557,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
-               /* radio_player.jPlayer("setMedia", {
+                radio_player.jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
-                }).jPlayer("play");*/
-                radio_player.jPlayer("clearMedia");
-                radio_player.jPlayer({
-                    ready: function() {
-                        radio_player.jPlayer("setMedia", {
-                            m4a: "http://ksk1.ru/radio-news/news.m4a"
-                        });
-                    },
-                    ended : function(){
-                        radio_player.jPlayer("setMedia", {
-                            m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-                        });
-                    },
-                    swfPath: "js",
-                    supplied: "m4a"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
@@ -585,7 +570,6 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                     mp3: 'http://radio.ksk66.ru:8000/mp3',
                     m4a: 'http://radio.ksk66.ru:8000/aac'
                 }).jPlayer("play");
-
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
                 jQuery(".jp-duration").addClass("hidden");
@@ -620,11 +604,11 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             }
         });
         // при окончании трека
-     /*   radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
+        radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
 
-            radio_player.jPlayer({
+           /* radio_player.jPlayer({
                ready: function() {
                    radio_player.jPlayer("setMedia", {
                    m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
@@ -637,8 +621,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                },
                swfPath: "js",
                supplied: "m4a"
-            }).jPlayer("play");
-        });*/
+            }).jPlayer("play");*/
+        });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
