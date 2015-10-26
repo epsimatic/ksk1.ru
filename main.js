@@ -607,11 +607,24 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
-            console.log("wwww");
+            console.log(event);
             radio_player.jPlayer("setMedia",{
                 m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
             }).jPlayer("play");
-            console.log(event);
+            radio_player.jPlayer({
+               ready: function() {
+                   radio_player.jPlayer("setMedia", {
+                   m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+                   });
+               },
+               ended : function(){
+                   radio_player.jPlayer("setMedia", {
+                        m4a: "http://radio.ksk66.ru:8000/aac"
+                    });
+               },
+               swfPath: "js",
+               supplied: "m4a"
+            }).jPlayer("play");
         });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
