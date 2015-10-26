@@ -667,6 +667,5 @@ function onPlayerStateChange(event) {
 
     if (event.data == YT.PlayerState.PLAYING) {
         radio_player.jPlayer("pause");
-        video_player.setFullscreen(1);
     }
 }
