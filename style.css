@@ -4272,7 +4272,7 @@ footer.wide-footer a:focus { text-decoration: none }
 footer.wide-footer .btn-link:hover,
 footer.wide-footer .btn-link:focus { background-color: #ffffff; }
 
-footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.7em; line-height: 1.8; font-weight: 300; }
+footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.2em; line-height: 1.8; font-weight: 300; }
 
 footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; margin-bottom: 2px; }
 
@@ -5033,6 +5033,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-eda .stores-group > a:hover,
     header.wide-header .menu-main-eda .stores-group > a:focus { background-color: #f7f7f7; }
 
+    footer.wide-footer ul.contacts { font-size: 1.7em; }
+
     footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
 }
 
@@ -5295,6 +5297,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     footer.wide-footer ul.contacts { margin-bottom: 0; }
 
     footer.info .copyright { position: relative; top: 8px; text-align: left; margin: 0; }
+
+    footer.info .social { margin-bottom: 0; }
 
     footer.info .social > a { margin-right: 6px; }
 
