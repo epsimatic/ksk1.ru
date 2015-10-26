@@ -560,6 +560,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                /* radio_player.jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");*/
+                radio_player.jPlayer("clearMedia");
                 radio_player.jPlayer({
                     ready: function() {
                         radio_player.jPlayer("setMedia", {
