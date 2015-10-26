@@ -607,7 +607,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
-            jQuery("#jquery_jplayer_1").jPlayer({
+            radio_player.jPlayer( "clearMedia" );
+            radio_player.jPlayer({
                ready: function() {
                    jQuery(this).jPlayer("setMedia", {
                    m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
