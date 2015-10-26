@@ -618,8 +618,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                         m4a: "http://radio.ksk66.ru:8000/aac"
                     });
                },
-               swfPath: "js",
-               supplied: "mp3, m4a"
+               supplied: "m4a"
             }).jPlayer("play");
         });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
