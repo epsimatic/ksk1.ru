@@ -638,7 +638,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
     });
 }*/
 function onYouTubePlayerAPIReady() {
-    player = new YT.Player("player-youtube", {
+    video_player = new YT.Player("player-youtube", {
         height: "390",
         width: "400",
         playerVars: {
