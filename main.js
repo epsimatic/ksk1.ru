@@ -555,6 +555,10 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                     mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
+                jQuery(".jp-progress").addClass("hidden");
+                jQuery(".jp-current-time").addClass("hidden");
+                jQuery(".jp-duration").addClass("hidden");
+                jQuery(".track-info").removeClass("hidden");
             },
             swfPath: "js",
             supplied: "mp3, m4a"
