@@ -552,7 +552,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             },
             swfPath: "js",
             supplied: "mp3, m4a"
-        });
+        }).jPlayer("play");
 
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
