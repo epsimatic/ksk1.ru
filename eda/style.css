@@ -648,6 +648,10 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .modal-body p { color: #455a64; }
 
+.modal .modal-body .images { width: 100% !important; padding: 20px; margin: 0 !important; }
+
+.modal .modal-body .images img { box-shadow: none !important; }
+
 .woocommerce .modal div.product p.price,
 .woocommerce-page .modal div.product p.price { color: #37474f; font-size: 2em; font-weight: 600; margin-bottom: 15px; }
 
