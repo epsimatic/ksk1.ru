@@ -543,7 +543,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
     // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
         radio_player = jQuery("#jquery_jplayer_1");
-        radio_player.jPlayer({
+       /* radio_player.jPlayer({
             ready: function() {
                 jQuery(this).jPlayer("setMedia", {
                     mp3: "http://radio.ksk66.ru:8000/mp3",
@@ -552,6 +552,20 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             },
             swfPath: "js",
             supplied: "mp3, m4a"
+        });*/
+        radio_player.jPlayer({
+            ready: function() {
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+                });
+            },
+            ended : function(){
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                });
+            },
+            swfPath: "js",
+            supplied: "m4a"
         });
 
         jQuery(".play_btn ").click(function () {
