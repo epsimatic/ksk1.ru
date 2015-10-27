@@ -539,7 +539,7 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 });
 if (getCookie("player_state")) {jQuery(".menu-main-tv_radio").trigger('mouseenter');
     deleteCookie("player_state");
-    radio_player.jPlayer("play");}
+    jQuery("#jquery_jplayer_1").jPlayer("play");}
 
 jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
