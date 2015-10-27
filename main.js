@@ -552,7 +552,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             },
             ended: function() {
                 jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+                    mp3: "http://radio.ksk66.ru:8000/mp3",
+                    m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
             },
             swfPath: "js",
