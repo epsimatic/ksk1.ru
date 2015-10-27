@@ -697,7 +697,7 @@ function onPlayerStateChange(event) {
 
 
 // Работа с cookies
-function deleteCookie(key) { setCookieTimed(key, null, 0); }
+function deleteCookie(key) { setCookie(key, null, 0); }
 function setCookie(key, value, time) {
     var expires = new Date();
     expires.setTime(expires.getTime() + time);
