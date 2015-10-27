@@ -559,6 +559,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                 jQuery(".jp-current-time").addClass("hidden");
                 jQuery(".jp-duration").addClass("hidden");
                 jQuery(".track-info").removeClass("hidden");
+                jQuery("#on_air").click();
             },
             swfPath: "js",
             supplied: "mp3, m4a"
