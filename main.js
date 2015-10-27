@@ -561,11 +561,12 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             },
             ended : function(){
                 jQuery(this).jPlayer("setMedia", {
+                    mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
             },
             swfPath: "js",
-            supplied: "m4a"
+            supplied: "mp3, m4a"
         });
 
         jQuery(".play_btn ").click(function () {
