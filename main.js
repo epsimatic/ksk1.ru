@@ -537,10 +537,14 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 
     });
 });
-if (getCookie("player_state")) {jQuery(".menu-main-tv_radio").trigger('mouseenter');
-    console.log("Нашли куку");
-    deleteCookie("player_state");
-    jQuery("#jquery_jplayer_1").jPlayer("play");}
+jQuery(window).ready(function () {
+    if (getCookie("player_state")) {
+        jQuery(".menu-main-tv_radio").trigger('mouseenter');
+        console.log("Нашли куку");
+        deleteCookie("player_state");
+        jQuery("#jquery_jplayer_1").jPlayer("play");
+    }
+});
 
 jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
