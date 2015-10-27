@@ -2929,7 +2929,7 @@ ul.page-cat > li.cat-item {padding: 20px 0 0; background-color: #F7F8F9; margin-
 
 ul.page-cat > li.cat-item:hover {box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);}
 
-ul.page-cat > li.cat-item > a {color: #0A79DB; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; padding: 0 20px 20px;}
+ul.page-cat > li.cat-item > a { display: block; color: #0A79DB; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; padding: 0 20px 20px; }
 
 ul.page-cat ul.children > li.cat-item {border-left: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #F6F7F8; margin-bottom: 1px; background-color: #FCFCFC; padding: 0;}
 
