@@ -615,7 +615,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                 jQuery(".play-radio i.fa-pause").addClass('hidden');
             }
         });
-        // при окончании трека
+        // при окончании трека уже есть выше ended
        /* radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
@@ -684,3 +684,7 @@ function onPlayerStateChange(event) {
         radio_player.jPlayer("pause");
     }
 }
+// при закрытии вкладки или браузера
+window.onbeforeunload = function () {
+    console.log("закрытие страницы");
+};
