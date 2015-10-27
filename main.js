@@ -558,9 +558,22 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
-                radio_player.jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/news.m4a"
-                }).jPlayer("play");
+                radio_player.jPlayer({
+                    ready: function() {
+                        jQuery(this).jPlayer("setMedia", {
+                            m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
+                        });
+                    },
+                    ended : function(){
+                        jQuery(this).jPlayer("setMedia", {
+                            mp3: "http://radio.ksk66.ru:8000/mp3",
+                            m4a: "http://radio.ksk66.ru:8000/aac"
+                        }).jPlayer("play");
+                    },
+                    swfPath: "js",
+                    supplied: "mp3, m4a"
+                });
+                radio_player.jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
                 jQuery(".jp-duration").removeClass("hidden");
@@ -609,22 +622,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
 
-            radio_player.jPlayer({
-                ready: function() {
-                    jQuery(this).jPlayer("setMedia", {
-                        m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-                    });
-                },
-                ended : function(){
-                    jQuery(this).jPlayer("setMedia", {
-                        mp3: "http://radio.ksk66.ru:8000/mp3",
-                        m4a: "http://radio.ksk66.ru:8000/aac"
-                    }).jPlayer("play");
-                },
-                swfPath: "js",
-                supplied: "mp3, m4a"
-            });
-            radio_player.jPlayer("play");
+
         });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
