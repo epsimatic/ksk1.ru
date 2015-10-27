@@ -543,31 +543,17 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
     // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
         radio_player = jQuery("#jquery_jplayer_1");
-       /* radio_player.jPlayer({
-            ready: function() {
-                jQuery(this).jPlayer("setMedia", {
-                    mp3: "http://radio.ksk66.ru:8000/mp3",
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                });
-            },
-            swfPath: "js",
-            supplied: "mp3, m4a"
-        });*/
         radio_player.jPlayer({
             ready: function() {
                 jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-                });
-            },
-            ended : function(){
-                jQuery(this).jPlayer("setMedia", {
                     mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("play");
+                });
             },
             swfPath: "js",
             supplied: "mp3, m4a"
         });
+
 
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
@@ -623,20 +609,22 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
 
-           /* radio_player.jPlayer({
-               ready: function() {
-                   radio_player.jPlayer("setMedia", {
-                   m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
-                   });
-               },
-               ended : function(){
-                   radio_player.jPlayer("setMedia", {
-                        m4a: "http://radio.ksk66.ru:8000/aac"
+            radio_player.jPlayer({
+                ready: function() {
+                    jQuery(this).jPlayer("setMedia", {
+                        m4a: "http://ksk1.ru/radio-news/radiokruf.m4a"
                     });
-               },
-               swfPath: "js",
-               supplied: "m4a"
-            }).jPlayer("play");*/
+                },
+                ended : function(){
+                    jQuery(this).jPlayer("setMedia", {
+                        mp3: "http://radio.ksk66.ru:8000/mp3",
+                        m4a: "http://radio.ksk66.ru:8000/aac"
+                    }).jPlayer("play");
+                },
+                swfPath: "js",
+                supplied: "mp3, m4a"
+            });
+            radio_player.jPlayer("play");
         });
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
