@@ -4300,7 +4300,7 @@ footer.info .social > a { margin-right: 9px; opacity: .7; transition: opacity .2
 footer.info .social > a:hover,
 footer.info .social > a:focus { opacity: 1; }
 
-footer.info .social img { width: 72px; }
+footer.info .social img { width: 25%; }
 
 /*анонс фильма*/
 .movie-announce {margin-top: 15px; overflow: hidden;}
@@ -5038,6 +5038,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     footer.wide-footer ul.contacts { font-size: 1.7em; }
 
     footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
+
+    footer.info .social img { width: 11%; }
 }
 
 /* Стили для размера -md- */
@@ -5304,7 +5306,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.info .social > a { margin-right: 6px; }
 
-    footer.info .social img { width: 36px; }
+    footer.info .social img { width: 13%; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
 
@@ -5476,8 +5478,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     footer.info .copyright { top: 11px; }
 
     footer.info .social > a { margin-right: 9px; }
-
-    footer.info .social img { width: 48px; }
 }
 
 /*категории новостей*/
