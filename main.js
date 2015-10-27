@@ -537,6 +537,7 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 
     });
 });
+if (getCookie("player_state")) {jQuery(".menu-main-tv_radio").trigger('mouseenter'); }
 
 jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
@@ -549,6 +550,11 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                     mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 });
+                if (getCookie("player_state")){
+                    deleteCookie("player_state");
+                    radio_player.jPlayer("play");
+                }
+                //TODO: Если есть cookie, запустить музыку и удалить
             },
             ended: function() {
                 jQuery(this).jPlayer("setMedia", {
@@ -684,7 +690,24 @@ function onPlayerStateChange(event) {
         radio_player.jPlayer("pause");
     }
 }
+
+
+
+// Работа с cookies
+function deleteCookie(key) { setCookieTimed(key, null, 0); }
+function setCookie(key, value, time) {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + time);
+    document.cookie = key + '=' + encodeURIComponent(value || '') + ';expires=' + expires.toUTCString();
+}
+function getCookie(key) {
+    var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+    return keyValue ? decodeURIComponent(keyValue[2]) : null;
+}
+
+
+
 // при закрытии вкладки или браузера
 window.onbeforeunload = function () {
-    console.log("закрытие страницы");
+    setCookieTimed("player_state", "live", 30000)
 };
