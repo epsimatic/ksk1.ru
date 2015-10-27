@@ -537,7 +537,9 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 
     });
 });
-if (getCookie("player_state")) {jQuery(".menu-main-tv_radio").trigger('mouseenter'); }
+if (getCookie("player_state")) {jQuery(".menu-main-tv_radio").trigger('mouseenter');
+    deleteCookie("player_state");
+    radio_player.jPlayer("play");}
 
 jQuery(".menu-main-tv_radio").one('mouseenter', function(){
 
@@ -550,11 +552,6 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                     mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 });
-                if (getCookie("player_state")){
-                    deleteCookie("player_state");
-                    radio_player.jPlayer("play");
-                }
-                //TODO: Если есть cookie, запустить музыку и удалить
             },
             ended: function() {
                 jQuery(this).jPlayer("setMedia", {
