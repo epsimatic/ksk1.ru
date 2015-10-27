@@ -610,12 +610,12 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             }
         });
         // при окончании трека
-        radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
+       /* radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
 
 
-        });
+        });*/
         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
