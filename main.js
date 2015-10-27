@@ -562,7 +562,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             ended : function(){
                 jQuery(this).jPlayer("setMedia", {
                     m4a: "http://radio.ksk66.ru:8000/aac"
-                });
+                }).jPlayer("play");
             },
             swfPath: "js",
             supplied: "m4a"
