@@ -540,12 +540,6 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 jQuery(window).load(function () {
     if (getCookie("player_state")) {
         jQuery(".menu-main-tv_radio").trigger('mouseenter');
-    //    console.log("Нашли куку");
-     //   deleteCookie("player_state");
-     //   window.setTimeout(function(){
-     //       radio_player.jPlayer("play");
-    //    }, 2000);
-
     }
 });
 
@@ -561,7 +555,6 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 });
                 if (getCookie("player_state")) {
-                    console.log("Нашли куку");
                     deleteCookie("player_state");
                     radio_player.jPlayer("play");
                 }
