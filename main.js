@@ -551,6 +551,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         radio_player = jQuery("#jquery_jplayer_1");
         radio_player.jPlayer({
             ready: function() {
+                radio_player.parent().removeClass("loading").addClass("ready");
                 jQuery(this).jPlayer("setMedia", {
                     mp3: "http://radio.ksk66.ru:8000/mp3",
                     m4a: "http://radio.ksk66.ru:8000/aac"
