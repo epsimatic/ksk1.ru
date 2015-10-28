@@ -715,12 +715,9 @@ function getCookie(key) {
 
 
 // при закрытии вкладки или браузера
-(function () {
-if (jQuery(".play-radio #play.hidden").length){
 window.onbeforeunload = function () {
-
+    var play_radio = jQuery(".play-radio #play.hidden");
+    if (typeof play_radio !== "undefined"){
     setCookie("player_state", "live", "30000");
-
+    }
 };
-}
-})();
