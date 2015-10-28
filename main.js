@@ -542,7 +542,10 @@ jQuery(window).load(function () {
         jQuery(".menu-main-tv_radio").trigger('mouseenter');
         console.log("Нашли куку");
       //  deleteCookie("player_state");
-        jQuery("#jquery_jplayer_1").jPlayer("play");
+        window.setTimeout(function(){
+            jQuery("#jquery_jplayer_1").jPlayer("play");
+        }, 2000);
+
     }
 });
 
