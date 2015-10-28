@@ -537,7 +537,7 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 
     });
 });
-jQuery(window).ready(function () {
+jQuery(window).load(function () {
     if (getCookie("player_state")) {
         jQuery(".menu-main-tv_radio").trigger('mouseenter');
         console.log("Нашли куку");
@@ -712,5 +712,5 @@ function getCookie(key) {
 
 // при закрытии вкладки или браузера
 window.onbeforeunload = function () {
-    setCookie("player_state", "live", 30000);
+    setCookie("player_state", "live", "30000");
 };
