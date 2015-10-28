@@ -540,8 +540,8 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 jQuery(window).load(function () {
     if (getCookie("player_state")) {
         jQuery(".menu-main-tv_radio").trigger('mouseenter');
-        console.log("Нашли куку");
-        deleteCookie("player_state");
+    //    console.log("Нашли куку");
+     //   deleteCookie("player_state");
      //   window.setTimeout(function(){
             radio_player.jPlayer("play");
     //    }, 2000);
@@ -576,7 +576,15 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             supplied: "mp3, m4a"
         });
 
+        if (getCookie("player_state")) {
+            jQuery(".menu-main-tv_radio").trigger('mouseenter');
+            console.log("Нашли куку");
+            deleteCookie("player_state");
+            //   window.setTimeout(function(){
+            radio_player.jPlayer("play");
+            //    }, 2000);
 
+        }
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
