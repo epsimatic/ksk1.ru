@@ -712,5 +712,5 @@ function getCookie(key) {
 
 // при закрытии вкладки или браузера
 window.onbeforeunload = function () {
-    setCookie("player_state", "live", 3000000);
+    setCookie("player_state", "live", 30000);
 };
