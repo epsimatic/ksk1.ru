@@ -640,8 +640,9 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
         radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            if(video_player)
-            video_player.stopVideo();
+            if(video_player.length) {
+                video_player.stopVideo();
+            }
         });
 
     });
