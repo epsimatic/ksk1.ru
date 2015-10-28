@@ -543,7 +543,7 @@ jQuery(window).load(function () {
     //    console.log("Нашли куку");
      //   deleteCookie("player_state");
      //   window.setTimeout(function(){
-            radio_player.jPlayer("play");
+     //       radio_player.jPlayer("play");
     //    }, 2000);
 
     }
