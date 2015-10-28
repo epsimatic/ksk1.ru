@@ -716,7 +716,7 @@ function getCookie(key) {
 
 // при закрытии вкладки или браузера
 window.onbeforeunload = function () {
-    if (event.data == YT.PlayerState.PLAYING){
+    if (jQuery(".play-radio #play.hidden")){
     setCookie("player_state", "live", "30000");
     }
 };
