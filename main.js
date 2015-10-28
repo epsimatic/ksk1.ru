@@ -541,7 +541,7 @@ jQuery(window).load(function () {
     if (getCookie("player_state")) {
         jQuery(".menu-main-tv_radio").trigger('mouseenter');
         console.log("Нашли куку");
-      //  deleteCookie("player_state");
+        deleteCookie("player_state");
         window.setTimeout(function(){
             radio_player.jPlayer("play");
         }, 2000);
