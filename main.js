@@ -717,7 +717,7 @@ function getCookie(key) {
 // при закрытии вкладки или браузера
 window.onbeforeunload = function () {
     var play_radio = jQuery(".play-radio #play.hidden");
-    if (typeof play_radio !== "undefined"){
-    setCookie("player_state", "live", "30000");
+    if (play_radio.length){
+        setCookie("player_state", "live", "30000");
     }
 };
