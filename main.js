@@ -534,6 +534,7 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
         } else  track_text = "";
         jQuery(".track-info").html(track_text.replace(/\[.*\]/, ""));
         jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/, ""));
+        jQuery("#listen-text").removeClass("hidden");
 
     });
 });
