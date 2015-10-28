@@ -580,7 +580,7 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             window.setTimeout(function(){
                radio_player.jPlayer("play");
             }, 2000);
-        };
+        }
 
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
