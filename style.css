@@ -2249,11 +2249,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 .player-playlist { transition: opacity .3s ease 0; }
 
-.player-playlist.jp-loading { opacity: .6; }
+.jp-loading { opacity: .3; }
 
-.player-playlist.jp-loading *:hover { cursor: wait !important; }
+.jp-loading *:hover { cursor: wait !important; }
 
-.player-playlist.jp-ready { opacity: 1; }
+.jp-ready { opacity: 1; }
 
 .jp-audio .jp-interface { height: 34px; width: 100%; }
 
