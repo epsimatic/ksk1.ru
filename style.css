@@ -38,6 +38,8 @@ body.site-ob header#header { display: block; }
 
 .news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }
 
+.admin-bar .snap-content .container { margin-top: 46px; }
+
 #stripe .yummies,
 body.site-ob .yummies { margin-bottom: 15px; }
 
