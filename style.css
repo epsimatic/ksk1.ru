@@ -2245,6 +2245,14 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
+.player-playlist { transition: opacity .3s ease 0; }
+
+.player-playlist.jp-loading { opacity: .6; }
+
+.player-playlist.jp-loading *:hover { cursor: wait; }
+
+.player-playlist.jp-ready { opacity: 1; }
+
 .jp-audio .jp-interface { height: 34px; width: 100%; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
