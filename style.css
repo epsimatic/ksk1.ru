@@ -2251,7 +2251,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .player-playlist.jp-loading { opacity: .6; }
 
-.player-playlist.jp-loading *:hover { cursor: wait; }
+.player-playlist.jp-loading *:hover { cursor: wait !important; }
 
 .player-playlist.jp-ready { opacity: 1; }
 
