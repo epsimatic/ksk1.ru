@@ -974,7 +974,7 @@
                     "duration": duration
 
                 });
-
+                 console.log("TOP="+currentDiv.offset().top);
             });
 
             // Maintains chainability
