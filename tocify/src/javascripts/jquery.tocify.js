@@ -182,7 +182,7 @@
                 self._setActiveElement(true);
 
                 // Once all animations on the page are complete, this callback function will be called
-                $("html, body").promise().done(function() {
+                $("#content").promise().done(function() {
 
                     setTimeout(function() {
 
