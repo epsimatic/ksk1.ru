@@ -2019,12 +2019,12 @@ iframe.fullstory__video { max-width: 100%; }
 .panel-social .social-tabs li:first-child {margin-left: -3px;}
 .panel-social .social-tabs li:last-child {margin-right: 6px;}
 
-.panel-social .social-tabs li a {padding: 4px 4px 0;}
+.panel-social .nav.social-tabs > li > a {padding: 4px 4px 0;}
 
-.panel-social .social-tabs li.active a {background-color: #F1F1F1;}
+.panel-social .nav.social-tabs > li.active > a {background-color: #F1F1F1;}
 
-.panel-social .social-tabs li a:hover,
-.panel-social .social-tabs li a:focus {background-color: #CFDAE2;}
+.panel-social .nav.social-tabs > li > a:hover,
+.panel-social .nav.social-tabs > li > a:focus {background-color: #CFDAE2;}
 
 .panel-social .widget-ok {margin: -1px -1px -4px;}
 
