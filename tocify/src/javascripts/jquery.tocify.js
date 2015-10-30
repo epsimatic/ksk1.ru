@@ -960,13 +960,13 @@
             }
 
             // Once all animations on the page are complete, this callback function will be called
-            $("#content").promise().done(function() {
+            $("html,body").promise().done(function() {
 
                 // Animates the html and body element scrolltops
                 $("#content").animate({
 
                     // Sets the jQuery `scrollTop` to the top offset of the HTML div tag that matches the current list item's `data-unique` tag
-                    "scrollTop": currentDiv.offset().top
+                    "scrollTop": currentDiv.offset().top - ($.isFunction(scrollTo) ? scrollTo.call() : scrollTo) + "px"
 
                 }, {
 
