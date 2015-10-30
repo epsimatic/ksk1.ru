@@ -180,7 +180,7 @@ object { display: none; }
 /* </editor-fold> */
 
 .media,
-.media-body { overflow: auto; }
+.media-body { overflow: auto !important; }
 
 /* <editor-fold desc="navbar"> */
 
