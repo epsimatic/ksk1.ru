@@ -2167,7 +2167,7 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-comments-list .comment-list {background-color: #FFF;}
 
 .panel-comments-list > .panel-heading h3,
-.panel-comments-list > .panel-heading h2.comments-title {color: #777d82 !important; font-size: 20px !important; padding: 7px 12px !important; text-align: left !important; font-weight: 400 !important;;}
+.panel-comments-list > .panel-heading h2.comments-title {color: #777d82 !important; font-size: 20px !important; padding: 7px 12px !important; text-align: left !important; font-weight: 400 !important;}
 
 .panel-comments-list .btn-grey {margin-top: 3px;}
 
@@ -2218,7 +2218,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-comments-list time {color: #888888; font-weight: 400;}
 
-.panel-comments-list .comment-content p { color: #50575e; /*padding: 10px 100px 5px 0;*/ margin-bottom: 0; font-size: 0.98em; float: left; }
+.panel-comments-list .comment-content p { color: #50575e; margin-bottom: 0; font-size: 0.98em; float: left; }
 
 .panel-comments-list .comment-content p.comment-image { margin-top: -40px; float: right; }
 
@@ -3424,7 +3424,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 #tp-subscribe .nav-pills { margin-bottom: 15px; }
 
-#tp-subscribe .nav-pills > li > a { padding: 10px 12px; border-radius: 4px !important; /*border: 1px solid #dadada;*/ color: #333; }
+#tp-subscribe .nav-pills > li > a { padding: 10px 12px; border-radius: 4px !important; color: #333; }
 
 #tp-subscribe .nav-pills > li.active > a { background-color: #e1f5fe; color: #424242; }
 
@@ -3555,7 +3555,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .sidebar .affix { top: 0; display: none; }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
-.tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; /*line-height: 30px;*/}
+.tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; }
 
 .btn-scroll-up:focus,
 .btn-scroll-up:hover,
@@ -3563,7 +3563,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 .tocify .tocify-item > a:focus,
 .tocify .tocify-item > a:hover { background-color: #EFF6F8; color: #4a76bb; text-decoration: none;}
 
-.tocify-header > .tocify-item > a {padding: 5px 10px; /*text-indent: 10px;*/}
+.tocify-header > .tocify-item > a {padding: 5px 10px; }
 
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader { display: none;}
@@ -4025,7 +4025,7 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 
 .list-prime-item.active,
 .list-prime-item.active:hover,
-.list-prime-item.active:focus {z-index: 2; color: #47475F; background-color: #ffffff; /*border-color: #428bca;*/}
+.list-prime-item.active:focus {z-index: 2; color: #47475F; background-color: #ffffff; }
 
 /* Голубенький Navbar */
 .navbar-blue {background-color: transparent; border: none;}
@@ -4244,12 +4244,10 @@ header.wide-header { display: none; }
 .is_admin .snap-drawer .search-form-header { display: block; width: 100%; }
 
 /*хук с выпадающими менюшками по hover- не исчезают при переходе на dropdown-menu*/
-header.wide-header .dropdown:hover .dropdown-menu {
-    display: block;
-}
-.popover-weather:hover > .popover{
-    display: block;
-}
+header.wide-header .dropdown:hover .dropdown-menu { display: block; }
+
+.popover-weather:hover > .popover{ display: block; }
+
 .snap-drawer .search-form-header,
 header.wide-header .search-form-header input.field-search { border: none; height: 30px; border-radius: 3px; }
 
@@ -5351,7 +5349,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .block-features .btn-feature span { top: 7px; left: 2px; }
 
-    .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; /*bottom: 30px;*/}
+    .panel-news .post-info {height: 0; width: 100%; overflow: visible; white-space: nowrap; position: relative; }
 
     .panel-news .post-info > * {height: 30px; padding: 5px; background-color: rgba(222,222,222,0.9);}
 
