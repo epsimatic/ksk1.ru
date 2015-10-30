@@ -179,6 +179,9 @@ object { display: none; }
 
 /* </editor-fold> */
 
+.media,
+.media-body { overflow: auto; }
+
 /* <editor-fold desc="navbar"> */
 
 .navbar { background-color: #00b0ff; margin: 0 -10px 10px; border: none;}
@@ -2177,7 +2180,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-comments-list .media-body {margin: 3px 0 0;}
 
-.panel-comments-list .media-body .panel-heading {padding: 10px 10px 10px 20px;}
+.panel-comments-list .media-body .panel-heading {padding: 10px 10px 10px 30px;}
 
 .panel-comments-list .media-body .edit-link {padding-left: 4px;}
 
@@ -2224,7 +2227,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-comments-list .comment-content p.comment-image img { max-width: 300px; max-height: 300px; }
 
-.btn-reply {background-color: #fff; border: none; border-radius: 0; padding: 6px 20px; font-size: 13px; color: #858d93; position: relative; top: -30px;}
+.btn-reply {background-color: #fff; border: none; border-radius: 0; padding: 6px 20px; font-size: 13px; color: #858d93; }
 
 .btn-reply:hover,
 .btn-reply:focus {color: #383f44;}
