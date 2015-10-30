@@ -180,7 +180,7 @@ object { display: none; }
 /* </editor-fold> */
 
 .media,
-.media-body { overflow: auto; }
+.media-body { overflow: auto !important; }
 
 /* <editor-fold desc="navbar"> */
 
@@ -1500,14 +1500,18 @@ header#header .weather-text { display: none; }
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
+.single .panel .panel-heading,
 .home .panel .panel-heading  { background-color: #EDB194; padding: 7px 10px 9px; background-image: none; margin: 0; }
 
+.single .panel .panel-heading h3,
+.single .panel .panel-heading h2,
 .home .panel .panel-heading h3,
 .home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; text-align: center; margin: 0;}
 
 .single .panel.panel-notice .panel-heading,
 .home .panel.panel-notice .panel-heading { background-color: #ff4b3d; padding: 0; }
 
+.single .panel.panel-congrats .panel-heading,
 .home .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; padding: 0; }
 
 .home .panel.panel-congrats .panel-heading h3,
@@ -2015,12 +2019,12 @@ iframe.fullstory__video { max-width: 100%; }
 .panel-social .social-tabs li:first-child {margin-left: -3px;}
 .panel-social .social-tabs li:last-child {margin-right: 6px;}
 
-.panel-social .social-tabs li a {padding: 4px 4px 0;}
+.panel-social .nav.social-tabs > li > a {padding: 4px 4px 0;}
 
-.panel-social .social-tabs li.active a {background-color: #F1F1F1;}
+.panel-social .nav.social-tabs > li.active > a {background-color: #F1F1F1;}
 
-.panel-social .social-tabs li a:hover,
-.panel-social .social-tabs li a:focus {background-color: #CFDAE2;}
+.panel-social .nav.social-tabs > li > a:hover,
+.panel-social .nav.social-tabs > li > a:focus {background-color: #CFDAE2;}
 
 .panel-social .widget-ok {margin: -1px -1px -4px;}
 
