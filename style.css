@@ -1500,14 +1500,18 @@ header#header .weather-text { display: none; }
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
+.single .panel .panel-heading,
 .home .panel .panel-heading  { background-color: #EDB194; padding: 7px 10px 9px; background-image: none; margin: 0; }
 
+.single .panel .panel-heading h3,
+.single .panel .panel-heading h2,
 .home .panel .panel-heading h3,
 .home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; text-align: center; margin: 0;}
 
 .single .panel.panel-notice .panel-heading,
 .home .panel.panel-notice .panel-heading { background-color: #ff4b3d; padding: 0; }
 
+.single .panel.panel-congrats .panel-heading,
 .home .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; padding: 0; }
 
 .home .panel.panel-congrats .panel-heading h3,
