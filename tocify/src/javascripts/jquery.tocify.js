@@ -340,8 +340,6 @@
                 }
 
             }
-            if(snapper)
-            snapper.close();
             return self;
 
         },
@@ -976,6 +974,8 @@
                 });
                  console.log("TOP="+currentDiv.position().top);
                 console.log(elem.attr("data-unique"));
+                if(snapper)
+                    snapper.close();
             });
 
             // Maintains chainability
