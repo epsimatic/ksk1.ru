@@ -412,7 +412,7 @@ nav.navbar { margin: 0 -10px !important; }
 .woocommerce-page div.product span.price,
 .woocommerce-page div.product p.price,
 .woocommerce-page #content div.product span.price,
-.woocommerce-page #content div.product p.price { font-size: 1em; }
+.woocommerce-page #content div.product p.price { font-size: 1em; color: #333; }
 
 
 .woocommerce #content div.product div.images,
