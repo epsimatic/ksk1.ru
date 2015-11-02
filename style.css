@@ -1974,6 +1974,22 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-comments > .panel-heading { background: #46a2f9 url("img/panel-comments.png") no-repeat right; background-size: contain; }
 
+.panel-comments .nav-tabs { border-bottom: none; }
+.panel-comments .comments-filter { background-color: #fff; border-bottom: 1px solid #ccc; padding: 3px 10px 6px; }
+.panel-comments .comments-filter input { display: none; }
+.panel-comments .comments-filter label { margin-bottom: 0; font-weight: 400; padding-right: 10px; }
+.panel-comments .comments-filter label:before { font-family: FontAwesome; }
+
+.panel-comments .comments-filter label:hover { cursor: pointer; }
+
+.panel-comments .comments-filter input + label:before { color: #666; display: inline-block; width: 1.2em; }
+
+.panel-comments .comments-filter input[type=checkbox] + label:before { content: ""; }
+.panel-comments .comments-filter input[type=checkbox]:checked + label:before { content: ""; }
+
+.panel-comments .comments-filter input[type=radio] + label:before { content: ""; }
+.panel-comments .comments-filter input[type=radio]:checked + label:before { content: ""; }
+
 .panel-comments a .inset { color: #444; }
 
 .panel-comments a .oneliner { color: #555; }
