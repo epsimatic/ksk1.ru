@@ -188,6 +188,9 @@ function AddLayerTravel(){
     var Thunderforest_OpenCycleMap = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
+    layersControl.addBaseLayer( L.layerGroup( [ new L.TileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {maxZoom: 18}),
+        Thunderforest_OpenCycleMap] ), "Туристическая" );
+
 }
 
 function AddOverlayHills() {
