@@ -174,7 +174,6 @@
 
             // Adds jQuery event handlers to the newly generated table of contents
             self._setEventHandlers();
-            console.log("self = "+self);
             // Binding to the Window load event to make sure the correct scrollTop is calculated
             $(window).load(function() {
 
@@ -972,8 +971,6 @@
                     "duration": duration
 
                 });
-                 console.log("TOP="+currentDiv.position().top);
-                console.log(elem.attr("data-unique"));
                 if(snapper)
                     snapper.close();
             });
