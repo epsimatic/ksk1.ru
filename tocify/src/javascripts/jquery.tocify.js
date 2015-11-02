@@ -174,7 +174,6 @@
 
             // Adds jQuery event handlers to the newly generated table of contents
             self._setEventHandlers();
-
             // Binding to the Window load event to make sure the correct scrollTop is calculated
             $(window).load(function() {
 
@@ -182,7 +181,7 @@
                 self._setActiveElement(true);
 
                 // Once all animations on the page are complete, this callback function will be called
-                $("#content").promise().done(function() {
+                $("html, body").promise().done(function() {
 
                     setTimeout(function() {
 
@@ -307,7 +306,6 @@
             var self = this,
 
                 hash = window.location.hash.substring(1),
-
                 elem = self.element.find('li[data-unique="' + hash + '"]');
 
             if(hash.length) {
@@ -341,7 +339,6 @@
                 }
 
             }
-
             return self;
 
         },
@@ -974,8 +971,8 @@
                     "duration": duration
 
                 });
-                 console.log("TOP="+currentDiv.position().top);
-                console.log(elem.attr("data-unique"));
+                if(snapper)
+                    snapper.close();
             });
 
             // Maintains chainability
