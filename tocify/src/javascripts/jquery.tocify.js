@@ -951,7 +951,7 @@
             var self = this,
                 duration = self.options.smoothScroll || 0,
                 scrollTo = self.options.scrollTo,
-                currentDiv = $('div[data-unique="' + elem.attr("data-unique") + '"]');
+                currentDiv = $('div[data-unique="' + elem.attr("data-unique") + '"]').parent();
 
             if(!currentDiv.length) {
 
@@ -966,7 +966,7 @@
                 $("#content").animate({
 
                     // Sets the jQuery `scrollTop` to the top offset of the HTML div tag that matches the current list item's `data-unique` tag
-                    "scrollTop": currentDiv.offset().top    //- ($.isFunction(scrollTo) ? scrollTo.call() : scrollTo) + "px"
+                    "scrollTop": currentDiv..position().top    //- ($.isFunction(scrollTo) ? scrollTo.call() : scrollTo) + "px"
 
                 }, {
 
@@ -974,7 +974,7 @@
                     "duration": duration
 
                 });
-                 console.log("TOP="+currentDiv.offset().top);
+                 console.log("TOP="+currentDiv.position().top);
                 console.log(elem.attr("data-unique"));
             });
 
