@@ -340,7 +340,8 @@
                 }
 
             }
-
+            if(snapper)
+            snapper.close();
             return self;
 
         },
