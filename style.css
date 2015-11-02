@@ -2980,7 +2980,7 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 .company-page .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
 
-.single-company .entry-meta_phone div:first-child{font-weight: 700;}
+.single-company .entry-meta_phone div:first-child{ line-height: 2; font-size: 1.1em; letter-spacing: -0.01em; font-weight: 600; color: #222; }
 
 .company-page .schedule {color: #ad2100; display: inline;}
 
