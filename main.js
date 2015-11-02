@@ -185,6 +185,7 @@ function AddLayerYandex(){
     });
 }
 
+
 function AddOverlayHills() {
     var tiles_OpenMapSurfer_hills_hybrid = L.tileLayer('http://129.206.74.245:8004/tms_hs.ashx?x={x}&y={y}&z={z}', {
         opacity: 0.3
@@ -292,15 +293,20 @@ function AddMap(name_id,map_height){
         map = L.map(name_id,{drawControl: true});
         map.setView([56.6132, 57.7689], 13);
         layersControl = new L.Control.Layers(null, null, { 'collapsed': false }).addTo(map);
-        var tiles_OpenMapSurfer = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+        /*var tiles_OpenMapSurfer = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
             minZoom: 8,
             maxZoom: 20,
             attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
             'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
         });
-        tiles_OpenMapSurfer.addTo(map);
-        layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
-
+        tiles_OpenMapSurfer.addTo(map);*/
+       // layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
+        var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">Карта OpenStreetMap</a>'
+        });
+        OpenStreetMap_Mapnik.addTo(map);
+        layersControl.addBaseLayer( OpenStreetMap_Mapnik, 'Карта OpenStreetMap');
         AddControlLoading();
         AddButtonFullScreen();
         AddButtonRouting();
