@@ -1982,7 +1982,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-comments .comments-filter label:hover { cursor: pointer; }
 
-.panel-comments .comments-filter input + label:before { color: #666; display: inline-block; width: 1.2em; }
+.panel-comments .comments-filter input + label:before { color: #666; display: inline-block; width: 1em; }
 
 .panel-comments .comments-filter input[type=checkbox] + label:before { content: ""; }
 .panel-comments .comments-filter input[type=checkbox]:checked + label:before { content: ""; }
