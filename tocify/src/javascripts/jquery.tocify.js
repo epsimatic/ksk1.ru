@@ -182,7 +182,7 @@
                 self._setActiveElement(true);
 
                 // Once all animations on the page are complete, this callback function will be called
-                $("#content").promise().done(function() {
+                $("html, body").promise().done(function() {
 
                     setTimeout(function() {
 
@@ -307,7 +307,6 @@
             var self = this,
 
                 hash = window.location.hash.substring(1),
-
                 elem = self.element.find('li[data-unique="' + hash + '"]');
 
             if(hash.length) {
