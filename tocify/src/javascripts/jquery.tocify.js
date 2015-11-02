@@ -975,6 +975,7 @@
 
                 });
                  console.log("TOP="+currentDiv.offset().top);
+                console.log(elem.attr("data-unique"));
             });
 
             // Maintains chainability
