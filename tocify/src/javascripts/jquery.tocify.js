@@ -174,7 +174,7 @@
 
             // Adds jQuery event handlers to the newly generated table of contents
             self._setEventHandlers();
-
+            console.log("self = "+self);
             // Binding to the Window load event to make sure the correct scrollTop is calculated
             $(window).load(function() {
 
