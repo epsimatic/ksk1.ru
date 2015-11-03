@@ -22,6 +22,12 @@ nav.navbar { margin: 0 -10px !important; }
     .admin-bar .sticky-cart { top: 82px; }
 }
 
+.modal-dialog { margin-top: 60px; }
+.admin-bar .modal-dialog { margin-top: 90px; }
+.modal-dialog .modal-header { border-radius: 5px 5px 0 0; }
+
+.modal-dialog .modal-header h4 { padding-top: 1px; padding-left: 10px; }
+
 /* Вписываем вручную ширину панели для Chrome */
 .sticky-cart.fixedsticky-on { width: 100%; }
 @media (min-width: 768px) {
