@@ -201,6 +201,8 @@ object { display: none; }
 
 .navbar .news-link-icon { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
 
+.site-eda .navbar-nav > li > a { padding: 15px 10px; }
+
 body.news .navbar .news-link-name { display: inline; }
 
 body.news .navbar .news-link-icon { display: none; }
