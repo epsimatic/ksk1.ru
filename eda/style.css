@@ -64,43 +64,43 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-eda .eda-phone a:hover { text-decoration: none; }
 
-.admin-bar .header-eda { margin-bottom: 15px; text-align: center; }
-.admin-bar .header-eda .logo-placeholder { display: inline-block; padding: 10px 0 0 15px; width: 44%; }
-.admin-bar .header-eda .eda-phone { background-color: transparent; display: inline-block; width: 52%; margin: 0; }
-.admin-bar .header-eda .eda-phone a { color: rgb(255, 144, 0); padding: 0; }
-.admin-bar .header-eda .eda-phone:hover { background-color: transparent; }
-.admin-bar .header-eda .vendor-info { display: inline-block; width: 100%; }
-.admin-bar .header-eda .vendor-logo-placeholder { display: inline-block; width: 100%; margin-top: 10px; text-align: center; }
-.admin-bar .header-eda .vendor-logo-placeholder > img { width: 100%; max-width: 200px; }
-.admin-bar .header-eda .vendor-info .more-info { display: block; text-align: center; margin-top: -9px; }
+.header-eda { margin-bottom: 15px; text-align: center; }
+.header-eda .logo-placeholder { display: inline-block; padding: 10px 0 0 15px; width: 44%; }
+.header-eda .eda-phone { background-color: transparent; display: inline-block; width: 52%; margin: 0; }
+.header-eda .eda-phone a { color: rgb(255, 144, 0); padding: 0; }
+.header-eda .eda-phone:hover { background-color: transparent; }
+.header-eda .vendor-info { display: inline-block; width: 100%; }
+.header-eda .vendor-logo-placeholder { display: inline-block; width: 100%; margin-top: 10px; text-align: center; }
+.header-eda .vendor-logo-placeholder > img { width: 100%; max-width: 200px; }
+.header-eda .vendor-info .more-info { display: block; text-align: center; margin-top: -9px; }
 
 @media (min-width: 480px) {
-    .admin-bar .header-eda { margin-bottom: 5px; }
-    .admin-bar .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
-    .admin-bar .header-eda .eda-phone { width: 35%; position: relative; top: -30px; }
-    .admin-bar .header-eda .vendor-info { width: 29%; }
-    .admin-bar .header-eda .vendor-logo-placeholder > img { margin-right: 0; }
+    .header-eda { margin-bottom: 5px; }
+    .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
+    .header-eda .eda-phone { width: 35%; position: relative; top: -30px; }
+    .header-eda .vendor-info { width: 29%; }
+    .header-eda .vendor-logo-placeholder > img { margin-right: 0; }
 }
 
 @media (min-width: 768px) {
-    .admin-bar .header-eda .logo-placeholder { top: -30px; width: 19%; }
-    .admin-bar .header-eda .eda-phone { padding-left: 2%; top: -25px; text-align: left; font-size: 25px; }
-    .admin-bar .header-eda .vendor-info { margin-right: 1%; width: 17%; position: relative; top: 5px; }
-    .admin-bar .header-eda .vendor-status-group { display: inline-block; width: 20%; position: relative; top: -5px; }
+    .header-eda .logo-placeholder { top: -30px; width: 19%; }
+    .header-eda .eda-phone { padding-left: 2%; top: -25px; text-align: left; font-size: 25px; }
+    .header-eda .vendor-info { margin-right: 1%; width: 17%; position: relative; top: 5px; }
+    .header-eda .vendor-status-group { display: inline-block; width: 20%; position: relative; top: -5px; }
 }
 
 @media (min-width: 992px) {
-    .admin-bar .header-eda .logo-placeholder { top: -37px; }
-    .admin-bar .header-eda .eda-phone { top: -30px; }
-    .admin-bar .header-eda .vendor-info { top: 9px; }
-    .admin-bar .header-eda .vendor-status-group { top: -8px; }
+    .header-eda .logo-placeholder { top: -37px; }
+    .header-eda .eda-phone { top: -30px; }
+    .header-eda .vendor-info { top: 9px; }
+    .header-eda .vendor-status-group { top: -8px; }
 }
 
 @media (min-width: 1200px) {
-    .admin-bar .header-eda .logo-placeholder { top: -40px; }
-    .admin-bar .header-eda .eda-phone { font-size: 30px; top: -33px; }
-    .admin-bar .header-eda .vendor-info { top: 12px; margin-right: 2%; }
-    .admin-bar .header-eda .vendor-status-group { top: -13px; }
+    .header-eda .logo-placeholder { top: -40px; }
+    .header-eda .eda-phone { font-size: 30px; top: -33px; }
+    .header-eda .vendor-info { top: 12px; margin-right: 2%; }
+    .header-eda .vendor-status-group { top: -13px; }
 }
 
 .woocommerce { color: #37474f; }
