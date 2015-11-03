@@ -1996,6 +1996,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-comments a .oneliner { color: #555; }
 
+.panel-official ul.nav,
 .panel-comments ul.nav { background-color: #f8f3f1; padding: 5px; }
 
 .panel-comments .nav > li > a { color: #333; border: none; }
