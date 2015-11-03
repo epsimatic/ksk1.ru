@@ -13,13 +13,13 @@ nav.navbar { margin: 0 -10px !important; }
 .products .wc-forward { display: none; }
 
 /* Поправка на admin-bar */
-.sticky-cart { top: 0; z-index: 10; }
+.sticky-cart { top: 50px; z-index: 10; }
 
 @media screen and ( min-width: 601px) {
-    .admin-bar .sticky-cart { top: 46px; }
+    .admin-bar .sticky-cart { top: 86px; }
 }
 @media screen and ( min-width: 783px ) {
-    .admin-bar .sticky-cart { top: 32px; }
+    .admin-bar .sticky-cart { top: 82px; }
 }
 
 /* Вписываем вручную ширину панели для Chrome */
