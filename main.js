@@ -184,7 +184,14 @@ function AddLayerYandex(){
         });
     });
 }
+function AddLayerTravel(){
+    var Thunderforest_OpenCycleMap = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    layersControl.addBaseLayer( L.layerGroup( [ new L.TileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {maxZoom: 18}),
+        Thunderforest_OpenCycleMap] ), "Туристическая" );
 
+}
 
 function AddOverlayHills() {
     var tiles_OpenMapSurfer_hills_hybrid = L.tileLayer('http://129.206.74.245:8004/tms_hs.ashx?x={x}&y={y}&z={z}', {
@@ -324,6 +331,7 @@ function AddMap(name_id,map_height){
             AddLayerBing();
             AddLayerYandex();
             AddOverlayHills();
+            AddLayerTravel();
         }, 100)
     });
 }
