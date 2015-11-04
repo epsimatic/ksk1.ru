@@ -573,7 +573,7 @@
             if (self.options.extendPage || self.options.highlightOnScroll || self.options.scrollHistory || self.options.showAndHideOnScroll)
             {
             // Window scroll event handler
-                $(window).on("scroll.tocify", function() {
+                $("#content").on("scroll.tocify", function() {
                        console.log("обработчик навешен");
                     // Once all animations on the page are complete, this callback function will be called
                     $("html, body").promise().done(function() {
