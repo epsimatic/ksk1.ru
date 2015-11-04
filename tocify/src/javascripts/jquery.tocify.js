@@ -679,6 +679,8 @@
 
                                 // Highlights the corresponding list item
                                 elem.addClass(self.focusClass);
+                                console.log("элемент= "+elem);
+                                console.log("фокус= "+self.focusClass);
 
                             }
 
