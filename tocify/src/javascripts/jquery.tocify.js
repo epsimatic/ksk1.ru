@@ -574,10 +574,10 @@
             {
             // Window scroll event handler
                 $("#content").on("scroll.tocify", function() {
-                       console.log("обработчик навешен");
+
                     // Once all animations on the page are complete, this callback function will be called
                     $("html, body").promise().done(function() {
-                        console.log("обработчик навешен 2");
+
                         // Local variables
 
                         // Stores how far the user has scrolled
@@ -607,12 +607,12 @@
 
                                 if(!$(extendPageClass).length) {
 
-                                    lastElem = $('div[data-unique="' + $(itemClass).last().attr("data-unique") + '"]').parent();
+                                    lastElem = $('div[data-unique="' + $(itemClass).last().attr("data-unique") + '"]');
 
                                     if(!lastElem.length) return;
 
                                     // Gets the top offset of the page header that is linked to the last toc item
-                                    lastElemOffset = lastElem.position().top;
+                                    lastElemOffset = lastElem.offset().top;
 
                                     // Appends a div to the bottom of the page and sets the height to the difference of the window scrollTop and the last element's position top offset
                                     $(self.options.context).append($("<div />", {
@@ -629,7 +629,7 @@
 
                                         currentElem = self.element.find('li.active');
 
-                                        self._scrollTo($('div[data-unique="' + currentElem.attr("data-unique") + '"]')).parent();
+                                        self._scrollTo($('div[data-unique="' + currentElem.attr("data-unique") + '"]'));
 
                                     }
 
@@ -651,7 +651,7 @@
                                 closestAnchorIdx = null,
 
                                 // Keeps a reference to all anchors
-                                anchors = $(self.options.context).find("div[data-unique]").parent(),
+                                anchors = $(self.options.context).find("div[data-unique]"),
 
                                 anchorText;
 
@@ -670,7 +670,7 @@
 
                             // Stores the list item HTML element that corresponds to the currently traversed anchor tag
                             elem = $('li[data-unique="' + anchorText + '"]');
-                             console.log("elem li"+elem);
+
                             // If the `highlightOnScroll` option is true and a next element is found
                             if(self.options.highlightOnScroll && elem.length) {
 
@@ -679,8 +679,6 @@
 
                                 // Highlights the corresponding list item
                                 elem.addClass(self.focusClass);
-                                console.log("элемент= "+elem);
-                                console.log("фокус= "+self.focusClass);
 
                             }
 
