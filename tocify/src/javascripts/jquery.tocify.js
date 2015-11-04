@@ -577,7 +577,7 @@
                        console.log("обработчик навешен");
                     // Once all animations on the page are complete, this callback function will be called
                     $("html, body").promise().done(function() {
-
+                        console.log("обработчик навешен 2");
                         // Local variables
 
                         // Stores how far the user has scrolled
