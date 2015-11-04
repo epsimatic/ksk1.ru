@@ -573,7 +573,7 @@
             if (self.options.extendPage || self.options.highlightOnScroll || self.options.scrollHistory || self.options.showAndHideOnScroll)
             {
             // Window scroll event handler
-                $("#content").on("scroll.tocify", function() {
+                $(window).on("scroll.tocify", function() {
                        console.log("обработчик навешен");
                     // Once all animations on the page are complete, this callback function will be called
                     $("html, body").promise().done(function() {
@@ -670,7 +670,7 @@
 
                             // Stores the list item HTML element that corresponds to the currently traversed anchor tag
                             elem = $('li[data-unique="' + anchorText + '"]');
-
+                             console.log("elem li"+elem);
                             // If the `highlightOnScroll` option is true and a next element is found
                             if(self.options.highlightOnScroll && elem.length) {
 
