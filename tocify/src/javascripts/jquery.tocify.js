@@ -576,7 +576,7 @@
                 $(window).on("scroll.tocify", function() {
 
                     // Once all animations on the page are complete, this callback function will be called
-                    $("#content").promise().done(function() {
+                    $("html, body").promise().done(function() {
 
                         // Local variables
 
@@ -607,12 +607,12 @@
 
                                 if(!$(extendPageClass).length) {
 
-                                    lastElem = $('div[data-unique="' + $(itemClass).last().attr("data-unique") + '"]');
+                                    lastElem = $('div[data-unique="' + $(itemClass).last().attr("data-unique") + '"]').parent();
 
                                     if(!lastElem.length) return;
 
                                     // Gets the top offset of the page header that is linked to the last toc item
-                                    lastElemOffset = lastElem.offset().top;
+                                    lastElemOffset = lastElem.position().top;
 
                                     // Appends a div to the bottom of the page and sets the height to the difference of the window scrollTop and the last element's position top offset
                                     $(self.options.context).append($("<div />", {
@@ -629,7 +629,7 @@
 
                                         currentElem = self.element.find('li.active');
 
-                                        self._scrollTo($('div[data-unique="' + currentElem.attr("data-unique") + '"]'));
+                                        self._scrollTo($('div[data-unique="' + currentElem.attr("data-unique") + '"]')).parent();
 
                                     }
 
@@ -651,7 +651,7 @@
                                 closestAnchorIdx = null,
 
                                 // Keeps a reference to all anchors
-                                anchors = $(self.options.context).find("div[data-unique]"),
+                                anchors = $(self.options.context).find("div[data-unique]").parent(),
 
                                 anchorText;
 
