@@ -307,7 +307,7 @@
 
                 hash = window.location.hash.substring(1),
                 elem = self.element.find('li[data-unique="' + hash + '"]');
-
+                console.log("hash= "+window.location.hash);
             if(hash.length) {
 
                 // Removes highlighting from all of the list item's
@@ -977,7 +977,6 @@
                 });
                 if(snapper)
                     snapper.close();
-                console.log("Равен scroll="+scrollTo);
             });
 
             // Maintains chainability
