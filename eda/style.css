@@ -87,9 +87,9 @@ nav.navbar { margin: 0 -10px !important; }
 .eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; }
 .eda-footer .vendor-list > a.vendor-link:hover,
 .eda-footer .vendor-list > a.vendor-link:focus { background-color: #f7f7f7; }
-.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf;
+.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf;}
 .eda-footer .vendor-list > a.vendor-link.active:hover,
-.eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }}
+.eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }
 
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
