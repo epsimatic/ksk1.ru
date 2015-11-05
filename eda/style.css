@@ -82,6 +82,15 @@ nav.navbar { margin: 0 -10px !important; }
 
 .admin-bar .snap-content .container { margin-top: 46px; }
 
+.eda-footer > h2 { font-size: 23px; margin: 0 0 20px; }
+.eda-footer .vendor-list { margin-bottom: 20px; }
+.eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; }
+.eda-footer .vendor-list > a.vendor-link:hover,
+.eda-footer .vendor-list > a.vendor-link:focus { background-color: #f7f7f7; }
+.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf; }
+.eda-footer .vendor-list > a.vendor-link.active:hover,
+.eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }
+
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
     .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
@@ -93,26 +102,43 @@ nav.navbar { margin: 0 -10px !important; }
 @media (min-width: 768px) {
     .site-eda .snap-content .container { margin-top: 55px; }
     .admin-bar .snap-content .container { margin-top: 85px; }
-    .header-eda .logo-placeholder { top: -30px; width: 19%; }
+    .header-eda .logo-placeholder { top: -30px; width: 18%; }
     .header-eda .eda-phone { padding-left: 2%; top: -25px; text-align: left; font-size: 25px; }
-    .header-eda .vendor-info { margin-right: 1%; width: 17%; position: relative; top: 5px; }
-    .header-eda .vendor-status-group { display: inline-block; width: 20%; position: relative; top: -5px; }
+    .header-eda .vendor-info { margin-right: 1%; width: 15%; position: relative; top: 5px; }
+    .header-eda .vendor-status-group { display: inline-block; width: 20%; position: relative; top: -3px; }
+
+    .vendor-list { position: relative; padding: 10px 0 15px; left: -20px; }
+    .vendor-list .title { color: #666; margin-right: 10px; }
+    .vendor-list a.vendor-link { border-radius: 5px; color: #424242; padding: 7px 15px; background-color: #f7f7f7; margin-left: 10px; margin-right: 10px; }
+    .vendor-list a.vendor-link.active { background-color: #fffccf; font-weight: 600; }
+    .vendor-list a.vendor-link:hover,
+    .vendor-list a.vendor-link:focus { text-decoration: none; background-color: #e7e7e7; }
+    .vendor-list a.vendor-link.active:hover,
+    .vendor-list a.vendor-link.active:focus { background-color: #fffab5; }
+
+    .eda-footer > h2 { margin-bottom: 15px; }
+    .eda-footer .vendor-list > a.vendor-link { width: 18%; margin: 7px; }
 }
 
 @media (min-width: 992px) {
     .site-eda .snap-content .container { margin-top: 50px; }
     .admin-bar .snap-content .container { margin-top: 80px; }
-    .header-eda .logo-placeholder { top: -37px; }
-    .header-eda .eda-phone { top: -30px; }
-    .header-eda .vendor-info { top: 9px; }
-    .header-eda .vendor-status-group { top: -8px; }
+    .header-eda .logo-placeholder { top: -27px; width: 15%; }
+    .header-eda .eda-phone { top: -20px; }
+    .header-eda .vendor-info { top: 5px; width: 12%; }
+    .header-eda .vendor-status-group { top: 0; width: 18%; }
+
+    .eda-footer > h2 { font-size: 27px; margin-bottom: 10px; }
+    .eda-footer .vendor-list > a.vendor-link { width: 13%; margin: 16px; }
 }
 
 @media (min-width: 1200px) {
-    .header-eda .logo-placeholder { top: -40px; }
-    .header-eda .eda-phone { font-size: 30px; top: -33px; }
-    .header-eda .vendor-info { top: 12px; margin-right: 2%; }
-    .header-eda .vendor-status-group { top: -13px; }
+    .header-eda .logo-placeholder { top: -23px; }
+    .header-eda .eda-phone { font-size: 30px; top: -16px; }
+    .header-eda .vendor-info { top: 5px; margin-right: 2%; width: 10%; }
+    .header-eda .vendor-status-group { top: 1px; }
+
+    .eda-footer .vendor-list > a.vendor-link { width: 11%; }
 }
 
 .woocommerce { color: #37474f; }
@@ -245,7 +271,9 @@ nav.navbar { margin: 0 -10px !important; }
 
 .side_nav-container.tocify .nav-list > li > a { padding: 8px 15px 9px; }
 
-.tocify-header > .tocify-item > a { color: #666; }
+.tocify .tocify-header > .tocify-item > a { line-height: 2.5; font-size: 1.1em; padding-left: 20px; }
+
+.tocify-header > .tocify-item > a { color: #fff; }
 
 .tocify-header > .tocify-item > a:hover { color: #4E342E; background-color: #FFE57F; }
 
@@ -763,6 +791,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .tocify-header > .tocify-item > a { color: #666; }
+    .tocify .tocify-header > .tocify-item > a { line-height: 18px; font-size: 1em; padding-left: 10px; }
+
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { left: 32px; }
 
