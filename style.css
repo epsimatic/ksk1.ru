@@ -1521,8 +1521,8 @@ header#header .weather-text { display: none; }
 .single .panel.panel-vote > .panel-heading,
 .home .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right; background-size: contain; }
 
-.single .panel.panel-vote .panel-heading h3,
-.home .panel.panel-vote .panel-heading h3,
+.single .panel.panel-vote .panel-heading h2,
+.home .panel.panel-vote .panel-heading h2,
 .single .panel.panel-congrats .panel-heading h3,
 .home .panel.panel-congrats .panel-heading h3,
 .single .panel.panel-notice .panel-heading h3,
