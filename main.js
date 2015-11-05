@@ -567,8 +567,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             ready: function() {
                 radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
-                    mp3: "http://radio.ksk66.ru:8000/mp3",
-                    m4a: "http://radio.ksk66.ru:8000/aac"
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
                 });
                 if (getCookie("player_state")) {
                     deleteCookie("player_state");
@@ -577,8 +577,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             },
             ended: function() {
                 jQuery(this).jPlayer("setMedia", {
-                    mp3: "http://radio.ksk66.ru:8000/mp3",
-                    m4a: "http://radio.ksk66.ru:8000/aac"
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
@@ -604,8 +604,8 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
             }
             if (id=="on_air") {
                 radio_player.jPlayer("setMedia", {
-                    mp3: 'http://radio.ksk66.ru:8000/mp3',
-                    m4a: 'http://radio.ksk66.ru:8000/aac'
+                    m4a: 'http://radio.ksk66.ru:8000/aac',
+                    mp3: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
