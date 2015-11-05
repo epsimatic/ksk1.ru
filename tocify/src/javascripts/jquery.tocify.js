@@ -948,7 +948,11 @@
             var self = this,
                 duration = self.options.smoothScroll || 0,
                 scrollTo = self.options.scrollTo,
-                currentDiv = $('div[data-unique="' + elem.attr("data-unique") + '"]');
+                href= document.location.href,
+                currentDiv=$('div[data-unique="' + elem.attr("data-unique") + '"]');
+            if (url.match(/eda./))
+               currentDiv = currentDiv.parent();
+
 
             if(!currentDiv.length) {
 
