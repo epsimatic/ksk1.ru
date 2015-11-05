@@ -370,14 +370,14 @@ body.news .navbar .news-link-icon { display: none; }
 
 .panel-pricing-container:nth-of-type(1) .panel.panel-pricing .panel-heading { background-color: #f06292; }
 .panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading { background-color: #ffd740; }
-.panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading h3 { color: #3e2723; }
+.panel-pricing-container:nth-of-type(2) .panel.panel-pricing .panel-heading .panel-title { color: #3e2723; }
 .panel-pricing-container:nth-of-type(3) .panel.panel-pricing .panel-heading { background-color: #3f51b5; color: #fff; }
 .panel-pricing-container:nth-of-type(4) .panel.panel-pricing .panel-heading { background-color: #00e676; }
 
 
 .panel-pricing-group { margin-bottom: 40px; }
 
-.panel.panel-pricing .panel-heading h3 { margin: 0 0 3px; padding: 0; font-size: 23px; text-transform: uppercase; }
+.panel.panel-pricing .panel-heading .panel-title { margin: 0 0 3px; padding: 0; font-size: 21px; text-transform: uppercase; }
 
 .panel.panel-pricing .panel-heading p { margin: 0; font-size: 13px; line-height: 1.15em; }
 
