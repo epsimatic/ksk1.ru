@@ -977,7 +977,7 @@
                 });
                 if(snapper)
                     snapper.close();
-                console.log("Равен scroll="+scrollTo.call());
+                console.log("Равен scroll="+scrollTo);
             });
 
             // Maintains chainability
