@@ -977,6 +977,7 @@
                 });
                 if(snapper)
                     snapper.close();
+                console.log("Равен scroll="+scrollTo.call());
             });
 
             // Maintains chainability
@@ -985,5 +986,5 @@
         }
 
     });
-     console.log("href= "+document.location.href);
+
 })); //end of plugin
