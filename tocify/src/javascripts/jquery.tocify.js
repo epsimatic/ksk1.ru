@@ -305,9 +305,9 @@
 
             var self = this,
 
-                hash = window.location.hash.substring(1),
+                hash = decodeURIComponent(window.location.hash.substring(1)),
                 elem = self.element.find('li[data-unique="' + hash + '"]');
-                console.log("hash= "+window.location.hash);
+                console.log("hash= "+window.location.hash.substring(1));
             if(hash.length) {
 
                 // Removes highlighting from all of the list item's
