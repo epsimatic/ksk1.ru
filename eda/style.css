@@ -87,7 +87,7 @@ nav.navbar { margin: 0 -10px !important; }
 .eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; }
 .eda-footer .vendor-list > a.vendor-link:hover,
 .eda-footer .vendor-list > a.vendor-link:focus { background-color: #f7f7f7; }
-.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf;}
+.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf; }
 .eda-footer .vendor-list > a.vendor-link.active:hover,
 .eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }
 
@@ -271,7 +271,9 @@ nav.navbar { margin: 0 -10px !important; }
 
 .side_nav-container.tocify .nav-list > li > a { padding: 8px 15px 9px; }
 
-.tocify-header > .tocify-item > a { color: #666; }
+.tocify .tocify-header > .tocify-item > a { line-height: 2.5; font-size: 1.1em; padding-left: 20px; }
+
+.tocify-header > .tocify-item > a { color: #fff; }
 
 .tocify-header > .tocify-item > a:hover { color: #4E342E; background-color: #FFE57F; }
 
@@ -789,6 +791,9 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .tocify-header > .tocify-item > a { color: #666; }
+    .tocify .tocify-header > .tocify-item > a { line-height: 18px; font-size: 1em; padding-left: 10px; }
+
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { left: 32px; }
 
