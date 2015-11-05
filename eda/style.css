@@ -82,6 +82,15 @@ nav.navbar { margin: 0 -10px !important; }
 
 .admin-bar .snap-content .container { margin-top: 46px; }
 
+.eda-footer > h2 { font-size: 23px; margin: 0 0 20px; }
+.eda-footer .vendor-list { margin-bottom: 20px; }
+.eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; }
+.eda-footer .vendor-list > a.vendor-link:hover,
+.eda-footer .vendor-list > a.vendor-link:focus { background-color: #f7f7f7; }
+.eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf;
+.eda-footer .vendor-list > a.vendor-link.active:hover,
+.eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }}
+
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
     .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
@@ -106,6 +115,9 @@ nav.navbar { margin: 0 -10px !important; }
     .vendor-list a.vendor-link:focus { text-decoration: none; background-color: #e7e7e7; }
     .vendor-list a.vendor-link.active:hover,
     .vendor-list a.vendor-link.active:focus { background-color: #fffab5; }
+
+    .eda-footer > h2 { margin-bottom: 15px; }
+    .eda-footer .vendor-list > a.vendor-link { width: 18%; margin: 7px; }
 }
 
 @media (min-width: 992px) {
@@ -115,6 +127,9 @@ nav.navbar { margin: 0 -10px !important; }
     .header-eda .eda-phone { top: -20px; }
     .header-eda .vendor-info { top: 5px; width: 12%; }
     .header-eda .vendor-status-group { top: 0; width: 18%; }
+
+    .eda-footer > h2 { font-size: 27px; margin-bottom: 10px; }
+    .eda-footer .vendor-list > a.vendor-link { width: 13%; margin: 16px; }
 }
 
 @media (min-width: 1200px) {
@@ -123,7 +138,7 @@ nav.navbar { margin: 0 -10px !important; }
     .header-eda .vendor-info { top: 5px; margin-right: 2%; width: 10%; }
     .header-eda .vendor-status-group { top: 1px; }
 
-    .vendor-list .vendor-link { font-size: 1.2em; }
+    .eda-footer .vendor-list > a.vendor-link { width: 11%; }
 }
 
 .woocommerce { color: #37474f; }
