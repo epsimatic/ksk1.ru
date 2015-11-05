@@ -981,5 +981,5 @@
         }
 
     });
-
+     console.log("href= "+document.location.href);
 })); //end of plugin
