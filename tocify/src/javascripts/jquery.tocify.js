@@ -948,7 +948,7 @@
             var self = this,
                 duration = self.options.smoothScroll || 0,
                 scrollTo = self.options.scrollTo,
-                currentDiv = $('div[data-unique="' + elem.attr("data-unique") + '"]').parent();
+                currentDiv = $('div[data-unique="' + elem.attr("data-unique") + '"]');
 
             if(!currentDiv.length) {
 
