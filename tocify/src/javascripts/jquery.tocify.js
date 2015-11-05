@@ -981,5 +981,5 @@
         }
 
     });
-
+       console.log(extendPageClassName);
 })); //end of plugin
