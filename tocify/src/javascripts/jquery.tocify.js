@@ -950,7 +950,7 @@
                 scrollTo = self.options.scrollTo,
                 href= document.location.href,
                 currentDiv=$('div[data-unique="' + elem.attr("data-unique") + '"]');
-            if (url.match(/eda\./))
+            if (href.match(/eda\./))
                currentDiv = currentDiv.parent();
 
 
