@@ -1687,7 +1687,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .post-news .post-title,
 .post-news .post-description-text,
-.single-post article.post.post-news,
+.single-post .container article.post.post-news,
 .fullstory .newstitle,
 .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
@@ -2094,14 +2094,14 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница новости"> */
-.single-post article.post.post-news {
+.single-post .container article.post.post-news {
     font-size: 18px;
     line-height: 1.5;
     padding: 18px 27px;
     color: #494746;
 }
 
-.single-post article.post.post-news h1 {
+.single-post .container article.post.post-news h1 {
     font-size: 21px;
     line-height: 1.2857;
     font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
@@ -2110,26 +2110,32 @@ a.link-neutral:focus {color: #3b437d;}
     color: #373633;
 }
 
-.single-post article.post.post-news p { margin: 1em 0; }
+.single-post .container article.post.post-news p { margin: 1em 0; }
 
-.single-post article.post.post-news h2 + p,
-.single-post article.post.post-news h3 + p,
-.single-post article.post.post-news h4 + p { margin-bottom: 0; margin-top: 0; }
+.single-post .container article.post.post-news h2 + p,
+.single-post .container article.post.post-news h3 + p,
+.single-post .container article.post.post-news h4 + p { margin-bottom: 0; margin-top: 0; }
 
-.single-post article.post.post-news h2 + *,
-.single-post article.post.post-news h3 + *,
-.single-post article.post.post-news h4 + * { }
+.single-post .container article.post.post-news h2 + *,
+.single-post .container article.post.post-news h3 + *,
+.single-post .container article.post.post-news h4 + * { }
 
-.single-post article.post.post-news p + p { margin: 0; text-indent: 1em; }
+.single-post .container article.post.post-news p + p { margin: 0; text-indent: 1em; }
 
-.single-post article.post.post-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
+.single-post .container article.post.post-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
 
-.single-post article.post.post-news > p:first-of-type + p,
-.single-post article.post.post-news img + p { text-indent: 0; }
+.single-post .container article.post.post-news > p:first-of-type + p,
+.single-post .container article.post.post-news img + p { text-indent: 0; }
 
-.single-post article.post.post-news blockquote {
+.single-post .container article.post.post-news ul,
+.single-post .container article.post.post-news ol { padding: 0; margin: 1.6em 0; }
+
+.single-post .container article.post.post-news ul li,
+.single-post .container article.post.post-news ol li { margin-bottom: .5em; }
+
+.single-post .container article.post.post-news blockquote {
     margin: 1.3em 0;
-    padding: .9em 0;
+    padding: .4em 0;
     border: solid #c6edff;
     border-width: 3px 0;
     font-size: 18px;
@@ -2139,17 +2145,17 @@ a.link-neutral:focus {color: #3b437d;}
 }
 
 @media (min-width: 768px) {
-    .single-post article.post.post-news { padding: 18px; }
-    .single-post article.post.post-news blockquote { margin-left: -1em; }
+    .single-post .container article.post.post-news { padding: 18px; }
+    .single-post .container article.post.post-news blockquote { margin-left: -1em; }
 }
 @media (min-width: 992px) {
-    .single-post article.post.post-news { padding: 18px 27px; }
+    .single-post .container article.post.post-news { padding: 18px 27px; }
 
-    .single-post article.post.post-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
+    .single-post .container article.post.post-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
 }
 @media (min-width: 1200px) {
-    .single-post article.post.post-news h1 { font-size: 27px; }
-    .single-post article.post.post-news blockquote { margin-left: -2em; }
+    .single-post .container article.post.post-news h1 { font-size: 27px; }
+    .single-post .container article.post.post-news blockquote { margin-left: -2em; }
 }
 
 
