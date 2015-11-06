@@ -1519,14 +1519,14 @@ header#header .weather-text { display: none; }
 .home .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; padding: 0; }
 
 .single .panel.panel-vote > .panel-heading,
-.home .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right; background-size: contain; }
+.home .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right; background-size: contain; padding: 0; }
 
 .single .panel.panel-vote .panel-heading h2,
 .home .panel.panel-vote .panel-heading h2,
 .single .panel.panel-congrats .panel-heading h3,
 .home .panel.panel-congrats .panel-heading h3,
 .single .panel.panel-notice .panel-heading h3,
-.home .panel.panel-notice .panel-heading h3 { color: #ffffff; font-size: 21px; line-height: 2; padding: 0 0 5px 15px; text-align: left; }
+.home .panel.panel-notice .panel-heading h3 { color: #ffffff; font-size: 21px; font-weight: 400; line-height: 2; padding: 0 0 5px 15px; text-align: left; }
 
 .home .panel-week > .panel-heading { border-bottom: none; }
 .home .panel-social .panel-heading h2 {text-align: left;}
@@ -1621,7 +1621,9 @@ header#header .weather-text { display: none; }
 
 .home .sidebar .block .vsection:hover {background-color: #ffe0c9;}
 
+.single .panel-nav .nav > li.active > a,
 .home .panel-nav .nav > li.active > a,
+.single .panel-comments .nav > li.active > a
 .home .panel-comments .nav > li.active > a {background-color: #ebd9d0; color: #333; font-weight: 600;}
 
 
@@ -1685,7 +1687,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .post-news .post-title,
 .post-news .post-description-text,
-.panel-news-body article.post,
+.single-post article.post.category-news,
 .fullstory .newstitle,
 .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
@@ -2097,7 +2099,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .panel-news-body > .panel-body { padding: 40px; background-color: #fff; }
 
-.single-post .panel-news-body > .panel-body article.post { font-size: 1.285em; line-height: 1.61; }
+.single-post article.post.category-news { font-size: 1.285em; line-height: 1.61; }
 
 .panel-news-body .panel-body .row {margin-left: -10px; margin-right: -10px}
 
