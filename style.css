@@ -1687,7 +1687,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .post-news .post-title,
 .post-news .post-description-text,
-.single-post article.post.category-news,
+.single-post article.post.post-news,
 .fullstory .newstitle,
 .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
@@ -2094,14 +2094,14 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница новости"> */
-.single-post article.post.category-news {
+.single-post article.post.post-news {
     font-size: 18px;
     line-height: 1.5;
     padding: 18px 27px;
     color: #494746;
 }
 
-.single-post article.post.category-news h1 {
+.single-post article.post.post-news h1 {
     font-size: 21px;
     line-height: 1.2857;
     font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
@@ -2110,14 +2110,14 @@ a.link-neutral:focus {color: #3b437d;}
     color: #373633;
 }
 
-.single-post article.post.category-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
+.single-post article.post.post-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
 
-.single-post article.post.category-news p + p { margin: 0; text-indent: 1em; }
+.single-post article.post.post-news p + p { margin: 0; text-indent: 1em; }
 
-.single-post article.post.category-news > p:first-of-type + p,
-.single-post article.post.category-news img + p { text-indent: 0; }
+.single-post article.post.post-news > p:first-of-type + p,
+.single-post article.post.post-news img + p { text-indent: 0; }
 
-.single-post article.post.category-news blockquote {
+.single-post article.post.post-news blockquote {
     margin: 1.3em 0;
     padding: .9em 0;
     border: solid #c6edff;
@@ -2129,17 +2129,17 @@ a.link-neutral:focus {color: #3b437d;}
 }
 
 @media (min-width: 768px) {
-    .single-post article.post.category-news { padding: 18px; }
-    .single-post article.post.category-news blockquote { margin-left: -1em; }
+    .single-post article.post.post-news { padding: 18px; }
+    .single-post article.post.post-news blockquote { margin-left: -1em; }
 }
 @media (min-width: 992px) {
-    .single-post article.post.category-news { padding: 18px 27px; }
+    .single-post article.post.post-news { padding: 18px 27px; }
 
-    .single-post article.post.category-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
+    .single-post article.post.post-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
 }
 @media (min-width: 1200px) {
-    .single-post article.post.category-news h1 { font-size: 27px; }
-    .single-post article.post.category-news blockquote { margin-left: -2em; }
+    .single-post article.post.post-news h1 { font-size: 27px; }
+    .single-post article.post.post-news blockquote { margin-left: -2em; }
 }
 
 
