@@ -2094,12 +2094,48 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница новости"> */
+.single-post article.post.category-news {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px 27px;
+    color: #494746;
+}
+
+.single-post article.post.category-news h1 {
+    font-size: 21px;
+    line-height: 1.2857;
+    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.2857em;
+    color: #373633;
+}
+
+.single-post article.post.category-news p.standfirst { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
+
+.single-post article.post.category-news p + p { margin: 0; text-indent: 1em; }
+
+.single-post article.post.category-news p.standfirst + p,
+.single-post article.post.category-news img + p { text-indent: 0; }
+
+@media (min-width: 768px) {
+    .single-post article.post.category-news { padding: 18px; }
+}
+@media (min-width: 992px) {
+    .single-post article.post.category-news { padding: 18px 27px; }
+
+    .single-post article.post.category-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
+}
+@media (min-width: 1200px) {
+    .single-post article.post.category-news h1 { font-size: 27px; }
+}
+
+
+
+
 /* <editor-fold desc="Панель тела новости"> */
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
 
 .single-post .panel-news-body > .panel-body { padding: 40px; background-color: #fff; }
-
-.single-post article.post.category-news { font-size: 1.285em; line-height: 1.61; }
 
 .panel-news-body .panel-body .row {margin-left: -10px; margin-right: -10px}
 
@@ -4963,7 +4999,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .post-news { padding: 0; }
 
     header.wide-header .post-news .post-title,
-    header.wide-header .post-news .post-description-text { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;}
+    header.wide-header .post-news .post-description-text { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
     header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
