@@ -2101,24 +2101,24 @@ a.link-neutral:focus {color: #3b437d;}
     color: #494746;
 }
 
-.single-post .container article.post.post-news h1 {
-    font-size: 21px;
-    line-height: 1.2857;
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif;
-    font-weight: 700;
-    margin-bottom: 1.2857em;
-    color: #373633;
-}
+.single-post .container article.post.post-news h1,
+.single-post .container article.post.post-news h2,
+.single-post .container article.post.post-news h3,
+.single-post .container article.post.post-news h4 { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; font-weight: 700; }
+
+.single-post .container article.post.post-news h1 { font-size: 21px; line-height: 1.2857; margin-bottom: 1.2857em; color: #373633; }
+
+.single-post .container article.post.post-news h2 { font-size: 21px; margin-bottom: 0.5714em; margin-top: 1.7142em !important; }
+
+.single-post .container article.post.post-news h3 { font-size: 18px; margin-bottom: 1em; margin-top: 2em !important; }
+
+.single-post .container article.post.post-news h3 { font-size: 16px; margin-bottom: 1.125em; margin-top: 2.25em !important; }
 
 .single-post .container article.post.post-news p { margin: 1em 0; }
 
 .single-post .container article.post.post-news h2 + p,
 .single-post .container article.post.post-news h3 + p,
 .single-post .container article.post.post-news h4 + p { margin-bottom: 0; margin-top: 0; }
-
-.single-post .container article.post.post-news h2 + *,
-.single-post .container article.post.post-news h3 + *,
-.single-post .container article.post.post-news h4 + * { }
 
 .single-post .container article.post.post-news p + p { margin: 0; text-indent: 1em; }
 
