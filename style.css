@@ -2110,15 +2110,27 @@ a.link-neutral:focus {color: #3b437d;}
     color: #373633;
 }
 
-.single-post article.post.category-news p.standfirst { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
+.single-post article.post.category-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
 
 .single-post article.post.category-news p + p { margin: 0; text-indent: 1em; }
 
-.single-post article.post.category-news p.standfirst + p,
+.single-post article.post.category-news > p:first-of-type + p,
 .single-post article.post.category-news img + p { text-indent: 0; }
+
+.single-post article.post.category-news blockquote {
+    margin: 1.3em 0;
+    padding: .9em 0;
+    border: solid #c6edff;
+    border-width: 3px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #777777;
+}
 
 @media (min-width: 768px) {
     .single-post article.post.category-news { padding: 18px; }
+    .single-post article.post.category-news blockquote { margin-left: -1em; }
 }
 @media (min-width: 992px) {
     .single-post article.post.category-news { padding: 18px 27px; }
@@ -2127,9 +2139,8 @@ a.link-neutral:focus {color: #3b437d;}
 }
 @media (min-width: 1200px) {
     .single-post article.post.category-news h1 { font-size: 27px; }
+    .single-post article.post.category-news blockquote { margin-left: -2em; }
 }
-
-
 
 
 /* <editor-fold desc="Панель тела новости"> */
