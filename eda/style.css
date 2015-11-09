@@ -307,7 +307,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .dishes-cat .cat-label { position: absolute; left: 10px; top: -8px; width: 41px; }
 
-.dishes-cat .btn-collapse { background-color: #ccff90; color: #33691e; letter-spacing: 0.025em; margin: 0; padding: 12px; text-align: center; text-transform: uppercase; cursor: pointer; width: 100%; }
+.dishes-cat .btn-collapse { margin: 0; padding: 12px; width: 100%; background-color: #d9ffab; color: #37474f; text-align: center; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; }
 
 .dishes-cat .btn-collapse .fa { margin: 0 10px; }
 
