@@ -1404,22 +1404,10 @@ header#header .weather-text { display: none; }
 
 #text-11 .yu {max-height: 72px; padding-left: 10px; background-color: #f9fafb;}
 
-.panel-nav {/*color: #0d3349;*/
-    /*background-color: #C7D1E0; */
-    /*border: none; */
-    border-bottom: 3px solid #C7D1E0;
-    padding: 5px;
-    /*padding: 10px;*/
-}
-
-.panel-nav > ul > li > a {color: #47475f;}
-
-.nav-pills .open > a, .nav-pills .open > a:hover, .nav-pills .open > a:focus,
-.panel-nav > ul > li > a:hover,
-.panel-nav > ul > li > a:focus {
+.nav-pills .open > a,
+.nav-pills .open > a:hover,
+.nav-pills .open > a:focus {
     background-color: #f5f5f5;
-    /*background-color: #eeeeee;*/
-    /*color: #47475f;*/
     color: #333333;
 }
 
@@ -1505,7 +1493,7 @@ header#header .weather-text { display: none; }
 .home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; margin: 0;}
 
 .single .panel.panel-notice .panel-heading,
-.home .panel.panel-notice .panel-heading { background-color: #ff4b3d; padding: 0; }
+.home .panel.panel-notice .panel-heading { background-color: #ff4b3d; }
 
 .single .panel.panel-congrats .panel-heading,
 .home .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
@@ -1613,8 +1601,6 @@ header#header .weather-text { display: none; }
 
 .home .sidebar .block .vsection:hover {background-color: #ffe0c9;}
 
-.single .panel-nav .nav > li.active > a,
-.home .panel-nav .nav > li.active > a,
 .single .panel-comments .nav > li.active > a
 .home .panel-comments .nav > li.active > a {background-color: #ebd9d0; color: #333; font-weight: 600;}
 
@@ -2014,7 +2000,9 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-comments .comment-author:after {content: ""; color: #bcbec0; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 5px;}
 
-.panel-comments .list-group { margin-bottom: 10px; padding-bottom: 0; border-bottom: 1px solid #97d0ff; }
+.panel-comments .list-group { margin-bottom: 10px; padding-bottom: 0; border-bottom: 2px solid #97d0ff; }
+
+.panel-comments .list-group .list-group-item:last-child { margin-bottom: -1px; }
 
 .panel-comments a.list-group-item { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; padding: 5px 12px; }
 
