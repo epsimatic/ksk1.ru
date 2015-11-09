@@ -2088,7 +2088,19 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news p { margin: 1em 0; }
 
-.single-post .main-content article.post-news img { margin: 0; width: 100%; height: auto; }
+.single-post .main-content article.post-news img[class*="wp-image-"] { margin: 0; width: 100%; height: auto; }
+
+.single-post .main-content article.post-news hr { margin: 27px 0; }
+
+.single-post .main-content article.post-news hr + p { margin: 0; height: 0; }
+
+.single-post .main-content article.post-news table { margin: 54px 0; }
+
+.single-post .main-content article.post-news .wp-caption { padding: 0; margin: .4em 1em; }
+
+.single-post .main-content article.post-news .wp-caption.alignright { margin-right: 0; }
+
+.single-post .main-content article.post-news .wp-caption.alignleft { margin-left: 0; }
 
 .single-post .main-content article.post-news h2 + p,
 .single-post .main-content article.post-news h3 + p,
