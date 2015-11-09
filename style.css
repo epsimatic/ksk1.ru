@@ -2148,9 +2148,25 @@ a.link-neutral:focus {color: #3b437d;}
     color: #777777;
 }
 
-.single-post .main-content article.post-news blockquote.letter { padding: 0.7em 2em; background-color: #f7f7f7; border: none; color: #333; }
+.single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.7em 2em; background-color: #f7f7f7; border: none; color: #333; }
 
 .single-post .main-content article.post-news blockquote footer { font-size: 16px; line-height: 1.6875; margin: 0; padding: .75em 0 .5375em; text-align: right; background: transparent; }
+
+.single-post .main-content article.post-news blockquote.question,
+.single-post .main-content article.post-news blockquote.answer { border: none; margin: 0; padding: 0; }
+
+.single-post .main-content article.post-news blockquote.question { color: #333; font-style: normal; font-weight: bold; }
+
+.single-post .main-content article.post-news blockquote.question:first-of-type { margin-top: 0; }
+
+.single-post .main-content article.post-news blockquote.answer { color: #555; }
+
+.single-post .main-content article.post-news blockquote.question > p:first-child::before,
+.single-post .main-content article.post-news blockquote.answer > p:first-child:before { font-family: FontAwesome; display: inline-block; width: 30px; text-align: center; font-style: normal; padding-right: 5px; color: #40c4ff; }
+
+.single-post .main-content article.post-news blockquote.question > p:first-child:before { content: ""; font-size: 24px; }
+
+.single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: ""; font-size: 21px; }
 
 .single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em; padding: 0 20px; font-size: 14px; line-height: 1.9285; background-color: #fbfbfb; border: 1px solid #ebebeb;  }
 .single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
@@ -2163,14 +2179,15 @@ a.link-neutral:focus {color: #3b437d;}
 @media (min-width: 768px) {
     .single-post .main-content article.post-news { padding: 18px; }
     .single-post .main-content article.post-news blockquote { margin-left: -1em; }
+    .single-post .main-content article.post-news blockquote.letter { padding: 0.7em 2em; margin-right: 0; margin-left: 0; }
 }
 @media (min-width: 992px) {
     .single-post .main-content article.post-news { padding: 18px 27px; }
-
-    .single-post .main-content article.post-news h1 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em;  }
+    .single-post .main-content article.post-news h1,
+    .single-post .main-content article.post-news h2 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em; }
 }
 @media (min-width: 1200px) {
-    .single-post .main-content article.post-news h1 { font-size: 27px; }
+    .single-post .main-content article.post-news h1 { font-size: 27px; letter-spacing: .025em; }
     .single-post .main-content article.post-news blockquote { margin-left: -2em; }
 }
 
