@@ -1487,14 +1487,11 @@ header#header .weather-text { display: none; }
 .home .panel .panel-heading h3,
 .home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; margin: 0;}
 
-.single .panel.panel-notice .panel-heading,
-.home .panel.panel-notice .panel-heading { background-color: #ff4b3d; }
+.panel.panel-notice .panel-heading { background-color: #ff4b3d !important; }
 
-.single .panel.panel-congrats .panel-heading,
-.home .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
+.panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
-.single .panel.panel-vote > .panel-heading,
-.home .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
+.panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
 
 .single .panel.panel-vote .panel-heading h2,
 .home .panel.panel-vote .panel-heading h2,
