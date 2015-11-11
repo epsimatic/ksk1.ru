@@ -1478,10 +1478,6 @@ header#header .weather-text { display: none; }
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
-.news-old .panel .panel-heading,
-.single .panel .panel-heading,
-.home .panel .panel-heading  { background-color: #EDB194; padding: 9px 15px 10px; background-image: none; margin: 0; }
-
 .single .panel .panel-heading h3,
 .single .panel .panel-heading h2,
 .home .panel .panel-heading h3,
@@ -1492,6 +1488,10 @@ header#header .weather-text { display: none; }
 .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
 .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
+
+.news-old .panel .panel-heading,
+.single .panel .panel-heading,
+.home .panel .panel-heading  { background-color: #EDB194; padding: 9px 15px 10px; background-image: none; margin: 0; }
 
 .single .panel.panel-vote .panel-heading h2,
 .home .panel.panel-vote .panel-heading h2,
@@ -1862,7 +1862,7 @@ iframe.fullstory__video { max-width: 100%; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Важно»"> */
-.panel-notice > .panel-heading { background-color: #FF4B3D; }
+.panel.panel-notice > .panel-heading { background-color: #FF4B3D; }
 
 .panel-notice a.news-link { background-color: #fcfcfc; display: block; padding: 10px 15px; }
 
