@@ -2058,10 +2058,13 @@ a.link-neutral:focus {color: #3b437d;}
 
 /* <editor-fold desc="Страница новости"> */
 .single-post .main-content article.post-news {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 18px 27px;
+    padding: 18px 13px;
     color: #494746;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 .single-post .main-content article.post-news h1,
@@ -2140,7 +2143,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news .wp-caption img[class*="wp-image-"] { margin: 0; }
 
 .single-post .main-content article.post-news ul,
-.single-post .main-content article.post-news ol { padding: 0; margin: 1.6em 0; }
+.single-post .main-content article.post-news ol { padding: 0 0 0 15px; margin: 1.6em 0; }
 
 .single-post .main-content article.post-news ul li,
 .single-post .main-content article.post-news ol li { margin-bottom: .5em; }
@@ -2150,14 +2153,14 @@ a.link-neutral:focus {color: #3b437d;}
     padding: .4em 0;
     border: solid #c6edff;
     border-width: .2em 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     font-style: italic;
     color: #777777;
     clear:both;
 }
 
-.single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.7em 2em; background-color: #f7f7f7; border: none; color: #333; }
+.single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.1em 1.3em; background-color: #f7f7f7; border: none; color: #333; }
 
 .single-post .main-content article.post-news blockquote footer { font-size: 16px; line-height: 1.6875; margin: 0; padding: .75em 0 .5375em; text-align: right; background: transparent; }
 
@@ -2181,8 +2184,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: ""; font-size: 17px; }
 
-.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; }
-.single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
+.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em auto; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; }
 
 .single-post .main-content article.post-news aside.inset h3 { line-height: 1.6875; margin: 1.687em 0 0 !important; padding-left: 18px; padding-right: 18px; letter-spacing: .05em; }
 
@@ -2195,8 +2197,15 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news .table { clear: both; }
 
 @media (min-width: 768px) {
-    .single-post .main-content article.post-news { padding: 18px; }
-    .single-post .main-content article.post-news blockquote { margin-left: -1em; }
+    .single-post .main-content article.post-news { padding: 18px; font-size: 18px; }
+
+    .single-post .main-content article.post-news ul,
+    .single-post .main-content article.post-news ol { padding: 0; }
+
+    .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 1.6875em; }
+    .single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
+
+    .single-post .main-content article.post-news blockquote { margin-left: -1em; font-size: 18px; }
     .single-post .main-content article.post-news blockquote.letter { padding: 0.7em 2em; margin-right: 0; margin-left: 0; }
     .single-post .main-content article.post-news blockquote.pullout { font-size: 21px; line-height: 1.714; }
     .single-post .main-content article.post-news blockquote.graph { padding-left: 36px; }
@@ -2207,6 +2216,8 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news h2 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em; }
 
     .single-post .main-content article.post-news h2 { margin-bottom: 1.125em; margin-top: 2.25em !important; }
+
+    .single-post .main-content article.post-news aside.inset { max-width: 300px; }
 }
 @media (min-width: 1200px) {
     .single-post .main-content article.post-news h1 { font-size: 27px; letter-spacing: .025em; }
