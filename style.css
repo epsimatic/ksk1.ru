@@ -2112,9 +2112,9 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news a:visited:hover,
 .single-post .main-content article.post-news a:visited:focus { color: #6735ce; }
 
-.single-post .main-content article.post-news em.hilight { background-color: #f1fff5; color: #333; padding: 2px 4px; }
+.single-post .main-content article.post-news em.hilight { background-color: #deffe8; color: #333; padding: 2px 4px; }
 
-.single-post .main-content article.post-news em.hilight:hover { background-color: #d3ffe0; }
+.single-post .main-content article.post-news em.hilight:hover { background-color: #9efed0; }
 
 .single-post .main-content article.post-news strong { color: #222; letter-spacing: .0125em; }
 
