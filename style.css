@@ -2105,7 +2105,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news img[class*="wp-image-"].aligncenter { margin: 1.5em 0; }
 
-.single-post .main-content article.post-news hr { margin: 27px 0; }
+.single-post .main-content article.post-news hr { margin: 27px 0 26px; background-color: #ccc; }
 
 .single-post .main-content article.post-news hr + p { margin: 0; height: 0; }
 
@@ -2119,8 +2119,14 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news h2 + p,
 .single-post .main-content article.post-news h3 + p,
-.single-post .main-content article.post-news h4 + p { margin-bottom: 0; margin-top: 0; }
+.single-post .main-content article.post-news h4 + p,
+.single-post .main-content article.post-news blockquote + p,
+.single-post .main-content article.post-news ol + p,
+.single-post .main-content article.post-news ul + p,
+.single-post .main-content article.post-news div + p,
+.single-post .main-content article.post-news table + p { margin: 0; }
 
+.single-post .main-content article.post-news aside + p,
 .single-post .main-content article.post-news p + p { margin: 0; text-indent: 1em; }
 
 .single-post .main-content article.post-news > p:first-of-type  { font-size: 21px; line-height: 1.2857; color: #111; margin-bottom: 1em; margin-top: 1em; }
@@ -2135,14 +2141,15 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news ol li { margin-bottom: .5em; }
 
 .single-post .main-content article.post-news blockquote {
-    margin: 1.3em 0;
+    margin: 1.4em 0;
     padding: .4em 0;
     border: solid #c6edff;
-    border-width: 3px 0;
+    border-width: .2em 0;
     font-size: 18px;
     line-height: 1.6;
     font-style: italic;
     color: #777777;
+    clear:both;
 }
 
 .single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.7em 2em; background-color: #f7f7f7; border: none; color: #333; }
@@ -2169,16 +2176,18 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: ""; font-size: 17px; }
 
-.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff;  }
+.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; }
 .single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
 
-.single-post .main-content article.post-news aside.inset h3 { line-height: 1.6875; margin: 1.187em 0 0 !important; padding-left: 18px; }
+.single-post .main-content article.post-news aside.inset h3 { line-height: 1.6875; margin: 1.687em 0 0 !important; padding-left: 18px; padding-right: 18px; letter-spacing: .05em; }
 
 .single-post .main-content article.post-news aside.inset ol,
-.single-post .main-content article.post-news aside.inset ul { margin: 0.1em 0 1.6em; padding-left: 18px; }
+.single-post .main-content article.post-news aside.inset ul { margin: 0.1em 0 1.6875em; padding-left: 18px; }
 
 .single-post .main-content article.post-news aside.inset ol > li,
 .single-post .main-content article.post-news aside.inset ul > li { margin-bottom: 0; }
+
+.single-post .main-content article.post-news .table { clear: both; }
 
 @media (min-width: 768px) {
     .single-post .main-content article.post-news { padding: 18px; }
@@ -2392,7 +2401,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-radio .panel-body { border-bottom: 1px solid #088eff; background-color: #efefef; }
 
-.player-playlist { transition: opacity .3s ease 0; }
+.player-playlist { transition: opacity .3s ease 0s; }
 
 .jp-loading { opacity: .3; }
 
@@ -4423,13 +4432,17 @@ footer.wide-footer a:hover,
 footer.wide-footer a:focus { text-decoration: none }
 
 footer.wide-footer .btn-link:hover,
-footer.wide-footer .btn-link:focus { background-color: #ffffff; }
+footer.wide-footer .btn-link:focus { background-color: #eff2f4; color: #455a64; }
 
 footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.2em; line-height: 1.8; font-weight: 300; }
 
 footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; margin-bottom: 2px; }
 
 footer.wide-footer ul.contacts > li:hover { background-color: #8097a2; }
+
+footer.info a,
+footer.wide-footer a,
+footer.wide-footer ul.contacts > li { transition: background-color 0.2s ease 0s; }
 
 footer.wide-footer ul.contacts a { display: block; }
 
