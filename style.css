@@ -2177,6 +2177,9 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news blockquote.answer { color: #555; }
 
+.single-post .main-content article.post-news blockquote.question > p:first-child,
+.single-post .main-content article.post-news blockquote.answer > p:first-child { margin-bottom: 0; }
+
 .single-post .main-content article.post-news blockquote.question > p:first-child::before,
 .single-post .main-content article.post-news blockquote.answer > p:first-child:before { font-family: FontAwesome; display: inline-block; width: 18px; text-align: center; font-style: normal; padding-right: 5px; color: #c2c2c2; }
 
@@ -2219,7 +2222,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news aside.inset { max-width: 300px; }
 
-    .single-post .main-content article.post-news .aligncenter + p,
+    .single-post .main-content article.post-news .alignleft + p,
     .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 }
 @media (min-width: 1200px) {
