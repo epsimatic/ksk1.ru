@@ -2130,7 +2130,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news hr + p { margin: 0; height: 0; }
 
-.single-post .main-content article.post-news table { margin: 54px 0; }
+.single-post .main-content article.post-news table { margin: 54px 0; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
 .single-post .main-content article.post-news .wp-caption { padding: 0; margin: .3em 1em; }
 
@@ -2211,13 +2211,16 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news blockquote.graph { padding-left: 36px; }
 }
 @media (min-width: 992px) {
-    .single-post .main-content article.post-news { padding: 18px 27px; }
+    .single-post .main-content article.post-news { padding: 18px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
     .single-post .main-content article.post-news h1,
     .single-post .main-content article.post-news h2 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em; }
 
     .single-post .main-content article.post-news h2 { margin-bottom: 1.125em; margin-top: 2.25em !important; }
 
     .single-post .main-content article.post-news aside.inset { max-width: 300px; }
+
+    .single-post .main-content article.post-news .aligncenter + p,
+    .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 }
 @media (min-width: 1200px) {
     .single-post .main-content article.post-news h1 { font-size: 27px; letter-spacing: .025em; }
