@@ -2128,7 +2128,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news hr { margin: 27px 0 26px; border-color: #ccc; }
 
-.single-post .main-content article.post-news hr + p { margin: 0; height: 0; }
+/*.single-post .main-content article.post-news hr + p { margin: 0; height: 0; }*/
 
 .single-post .main-content article.post-news table { margin: 54px 0; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
