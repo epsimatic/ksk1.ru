@@ -2057,6 +2057,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Страница новости"> */
+/* body copy 18px/1.5 */
 .single-post .main-content article.post-news {
     font-size: 16px;
     line-height: 1.5;
@@ -2112,9 +2113,9 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news a:visited:hover,
 .single-post .main-content article.post-news a:visited:focus { color: #6735ce; }
 
-.single-post .main-content article.post-news em.hilight { background-color: #deffe8; color: #333; padding: 2px 4px; }
+.single-post .main-content article.post-news mark { background-color: #deffe8; color: #333; padding: 2px 4px; }
 
-.single-post .main-content article.post-news em.hilight:hover { background-color: #9efed0; }
+.single-post .main-content article.post-news mark:hover { background-color: #9efed0; }
 
 .single-post .main-content article.post-news strong { color: #222; letter-spacing: .0125em; }
 
@@ -2190,15 +2191,15 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: ""; font-size: 17px; }
 
-.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 1.6875em auto; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; }
+.single-post .main-content article.post-news .inset { max-width: 300px; margin: 1.6875em auto; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; background-color: #fff; border-radius: 0; box-shadow: none; }
 
-.single-post .main-content article.post-news aside.inset h3 { line-height: 1.6875; margin: 1.687em 0 0 !important; padding-left: 18px; padding-right: 18px; letter-spacing: .05em; }
+.single-post .main-content article.post-news .inset h3 { line-height: 1.6875; margin: 1.687em 0 0 !important; padding-left: 18px; padding-right: 18px; letter-spacing: .05em; }
 
-.single-post .main-content article.post-news aside.inset ol,
-.single-post .main-content article.post-news aside.inset ul { margin: 0.1em 0 1.6875em; padding-left: 18px; }
+.single-post .main-content article.post-news .inset ol,
+.single-post .main-content article.post-news .inset ul { margin: 0.1em 0 1.6875em; padding-left: 18px; }
 
-.single-post .main-content article.post-news aside.inset ol > li,
-.single-post .main-content article.post-news aside.inset ul > li { margin-bottom: 0; }
+.single-post .main-content article.post-news .inset ol > li,
+.single-post .main-content article.post-news .inset ul > li { margin-bottom: 0; }
 
 .single-post .main-content article.post-news .table { clear: both; }
 
