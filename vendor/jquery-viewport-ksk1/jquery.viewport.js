@@ -13,22 +13,23 @@
 (function($) {
     
     $.belowthefold = function(element, settings) {
-        var fold = $('#content').height() + $('#content').scrollTop();
+        var fold = $(window).height() + $(window).scrollTop();
+        console.log("threshold= "+settings.threshold);
         return fold <= $(element).offset().top - settings.threshold;
     };
 
     $.abovethetop = function(element, settings) {
-        var top = $('#content').scrollTop();
+        var top = $(window).scrollTop();
         return top >= $(element).offset().top + $(element).height() - settings.threshold;
     };
     
     $.rightofscreen = function(element, settings) {
-        var fold = $('#content').width() + $('#content').scrollLeft();
+        var fold = $(window).width() + $(window).scrollLeft();
         return fold <= $(element).offset().left - settings.threshold;
     };
     
     $.leftofscreen = function(element, settings) {
-        var left = $('#content').scrollLeft();
+        var left = $(window).scrollLeft();
         return left >= $(element).offset().left + $(element).width() - settings.threshold;
     };
     
@@ -54,5 +55,5 @@
         }
     });
 
-    console.log("threshold= "+threshold);
+
 })(jQuery);
