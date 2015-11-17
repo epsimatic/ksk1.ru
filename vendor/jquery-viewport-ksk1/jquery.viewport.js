@@ -14,7 +14,6 @@
     
     $.belowthefold = function(element, settings) {
         var fold = $(window).height() + $(window).scrollTop();
-        console.log("threshold= "+settings.threshold);
         return fold <= $(element).offset().top - settings.threshold;
     };
 
