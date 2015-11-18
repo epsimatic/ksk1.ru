@@ -2626,7 +2626,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .kaleidoscope__item {position: relative; float: right; width: 33%;}
 
-.kaleidoscope__item__tooltip {height: 96px;}
+.kaleidoscope__item__tooltip {height: 95px;}
 
 .kaleidoscope__item__img {width: 100%; height: auto; border: 1px white solid; border-right-width: 0;}
 
@@ -5555,7 +5555,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .btn-home {margin-left: 1160px;}
 
-    .kaleidoscope__item__tooltip {height: 94px;}
+    .kaleidoscope__item__tooltip {height: 88px;}
 
     .header-logo img { width:75%; top: 16px; }
 
