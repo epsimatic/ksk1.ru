@@ -370,6 +370,7 @@ nav.navbar { margin: 0 -10px !important; }
 .tag-container .tag-popular::before { content: ""; background-color: #FFC400; padding: 2px 4px; }
 
 .tag-container .tag-recommended::before { content: ""; background-color: #00E5FF; padding: 2px 4px; }
+.tag-container .tag-mekcika::before { content: ""; background-color: #00E5FF; padding: 2px 4px; }
 
 .tag-container .tag-2persons::before,
 .tag-container .tag-3persons::before,
