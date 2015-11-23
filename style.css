@@ -4005,7 +4005,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 #movie-col-left .btn-group {margin-top: 20px;}
 
-#movie-col-left .certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; top: 20px; color: #333333; padding: 0 7px; position: absolute; text-shadow: 0 0 3px #ffffff; font-size: 16px; }
+#movie-col-left .certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: 150px; color: #333333; padding: 0 7px; position: absolute; text-shadow: 0 0 3px #ffffff; font-size: 21px; font-weight: 700; }
 
 #movie-col-right .production-flag {padding-right: 2px;}
 
