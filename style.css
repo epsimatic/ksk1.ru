@@ -4445,7 +4445,7 @@ header.wide-header .search-form-header button:hover,
 header.wide-header .search-form-header button:focus { opacity: .7; }
 
 
-footer.wide-footer { margin: 30px 0 0; width: 100%; background: #607d8b; padding: 50px 0; }
+footer.wide-footer { margin: 30px 0 0; width: 100%; background: #607d8b; padding: 40px 0; }
 
 footer.wide-footer .container { margin-top: 0; background-color: transparent; }
 
@@ -4474,7 +4474,9 @@ footer.wide-footer ul.contacts a { display: block; }
 
 footer.wide-footer ul.contacts .fa { margin-right: 5px; }
 
-.wide-footer .counter a { display: block; text-align: center; margin-top: 10px; }
+.wide-footer .counter { text-align: center; margin-top: 15px; }
+
+.wide-footer .counter a { display: block; }
 
 .wide-footer .counter span { position: relative; top: 1px; }
 
