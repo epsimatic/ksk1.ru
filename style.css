@@ -4474,6 +4474,10 @@ footer.wide-footer ul.contacts a { display: block; }
 
 footer.wide-footer ul.contacts .fa { margin-right: 5px; }
 
+.wide-footer .counter a { display: block; text-align: center; margin-top: 10px; }
+
+.wide-footer .counter span { position: relative; top: 1px; }
+
 footer.info { margin: -5px 0; padding: 10px 0; width: 100%; background: #455a64; }
 
 footer.info .container { margin-top: 5px; background-color: transparent; color: #fff; }
