@@ -5729,6 +5729,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old img { vertical-align: middle; }
 
+.news-old .comment .well.disabled { opacity: .5; }
+
 /* .login-panel */
 .news-old .login-panel.user .user_pic a { display: inline-block; float: right; border: 5px solid rgba(255, 255, 255, 0.6); width: 70px; height: 70px; }
 
