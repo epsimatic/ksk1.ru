@@ -15,19 +15,17 @@
                 <div class="counter">
                     <a href="#">
                         <span>Счетчик посещений: </span>
-
-
                         <!--LiveInternet counter--><script type="text/javascript"><!--
-                    new Image().src = "//counter.yadro.ru/hit?r"+
+                    document.write("<a href='//www.liveinternet.ru/click' "+
+                    "target=_blank><img src='//counter.yadro.ru/hit?t12.6;r"+
                     escape(document.referrer)+((typeof(screen)=="undefined")?"":
                     ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
                             screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-                    ";"+Math.random();//--></script><!--/LiveInternet-->
-
-                        <!--LiveInternet logo--><a href="//www.liveinternet.ru/click"
-                                                   target="_blank"><img src="//counter.yadro.ru/logo?12.6"
-                                                                        title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
-                                                                        alt="" border="0" width="88" height="31"/></a><!--/LiveInternet-->
+                    ";"+Math.random()+
+                    "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                    " часа, посетителей за 24 часа и за сегодня' "+
+                    "border='0' width='88' height='31'><\/a>")
+                    //--></script><!--/LiveInternet-->
                     </a>
                 </div>
             </div>
