@@ -428,6 +428,8 @@ footer h3 { font-size: 2em; font-weight: 300; color: #0080c7; margin-top: 0; }
 
 .openstat-container img { margin: -2px -3px -1px -60px; display: block; }
 
+.liveinternet-container{display: inline-block; overflow: hidden; vertical-align: middle;height: 14px;}
+.liveinternet-container img{display: block; height: 64px; margin: -25px -45px -7px -16px;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Другие общие элементы"> */
