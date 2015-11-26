@@ -205,7 +205,7 @@ object { display: none; }
 
 body.news .navbar .news-link-name { display: inline; }
 
-body.news .navbar .news-link-icon { display: none; }
+
 
 .nav-list .active a { background-color: #42BAEA; color: #fff; }
 
@@ -6021,4 +6021,3 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .news-old .sidebar .panel .body { margin-bottom: 15px; }
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
-.site-ob .social.site-ob{display: block; visibility: visible;}
