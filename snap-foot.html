@@ -40,7 +40,7 @@
                 <div class="copyright">&copy; 2008-2015 Красноуфимск Онлайн <a href="#">Официальная информация</a></div>
             </div>
             <div class="col-sm-12 col-md-4 text-center">
-                <div class="social site-news">
+                <div class="social site-news hidden">
                     <a href="http://vk.com/ksk66"><span class="social-logo vk"></span></a>
                     <a href="http://ok.ru/ksk66"><span class="social-logo ok"></span></a>
                     <a href="https://www.facebook.com/ksk66"><span class="social-logo facebook"></span></a>
@@ -119,3 +119,29 @@
         </div>
     </div>
 </footer>
+<script>
+    /*(function () {
+        const url = document.location.href;
+       jQuery(".social").addClass("hidden");
+
+        if (url.match(/ob.ksk66.ru/)) {
+            vk.attr('href','http://vk.com/ob_ksk66');
+        } else if (url.match(/radio/)) {
+            vk.attr('href','http://vk.com/kskradio');
+        } else if (url.match(/telev/)) {
+            vk.attr('href','http://vk.com/ksk_tv');
+        } else if (url.match(/agenda/) || url.match(/event/)) {
+            vk.attr('href','http://vk.com/afisha_ksk');
+        } else if (url.match(/city-transport/) || url.match(/bus-schedule/)) {
+            vk.attr('href','http://vk.com/kskekb');
+            ok.attr('href','http://ok.ru/kskekb?st._aid=ExternalGroupWidget_OpenGroup');
+
+        } else if (url.match(/eda/)) {
+            classList.add('eda');
+        } else if (url.match(/taxi/)) {
+            classList.add('taxi');
+        } else{
+            vk.attr('href','http://vk.com/ksk66');
+        }
+    })();*/
+</script>
