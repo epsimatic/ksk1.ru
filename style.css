@@ -19,7 +19,7 @@ body {
     background: #fff;
 }
 
-body.news-old { background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat; background-color: #edeeef; }
+/*body.news-old { background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat; background-color: #edeeef; }*/
 
 figure { position: relative; text-align: center; }
 
@@ -36,7 +36,7 @@ body.site-ob header#header { display: block; }
 
 .container { background-color: #ffffff; }
 
-.news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }
+/*.news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }*/
 
 .admin-bar .snap-content .container { margin-top: 46px; }
 
@@ -194,17 +194,10 @@ object { display: none; }
 
 .navbar-collapse { margin-right: -40px; }
 
-.navbar .news-link-name { display: none; }
-
-
-
-
+.navbar .news-link { font-size: 25px !important; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
 
 
 .site-eda .navbar-nav > li > a { padding: 15px 10px; }
-
-body.news .navbar .news-link-name { display: inline; }
-
 
 
 .nav-list .active a { background-color: #42BAEA; color: #fff; }
@@ -6021,4 +6014,3 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .news-old .sidebar .panel .body { margin-bottom: 15px; }
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
-.navbar .news-link { font-size: 25px !important; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
