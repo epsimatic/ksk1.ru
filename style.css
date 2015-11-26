@@ -197,9 +197,9 @@ object { display: none; }
 .navbar .news-link-name { display: none; }
 
 
-.navbar .news-link-icon::before { content: "КСК66"; }
 
-.navbar .news-link-icon { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
+
+.navbar .news-link { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
 
 .site-eda .navbar-nav > li > a { padding: 15px 10px; }
 
