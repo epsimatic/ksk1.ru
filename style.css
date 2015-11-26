@@ -199,7 +199,7 @@ object { display: none; }
 
 
 
-.navbar .news-link { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
+
 
 .site-eda .navbar-nav > li > a { padding: 15px 10px; }
 
@@ -5011,7 +5011,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
     header.wide-header .navbar-nav > li > a { padding: 15px 10px; font-size: 13px; }
-
+    .navbar .news-link { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
     header.wide-header .nav .open > a:hover,
