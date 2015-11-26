@@ -6021,4 +6021,4 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .news-old .sidebar .panel .body { margin-bottom: 15px; }
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
-.navbar .news-link { font-size: 25px; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
+.navbar .news-link { font-size: 25px !important; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; }
