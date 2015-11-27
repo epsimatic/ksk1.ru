@@ -390,12 +390,12 @@ object { display: none; }
 
 /* <editor-fold desc="Подвал"> */
 
-footer {
+/*footer {
     margin: 20px -10px 0 -10px;
     background-image: url("http://ksk1.ru/img/footer_bg.png");
     background-size: cover;
     padding: 25px 0;
-}
+}*/
 
 footer p { font-size: 0.9em; color: #444f56; padding: 0 0 5px 30px; margin-bottom: 5px; }
 
