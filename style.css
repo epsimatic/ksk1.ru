@@ -38,7 +38,7 @@ body.site-ob header#header { display: block; }
 
 /*.news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }*/
 
-.admin-bar .snap-content .container { margin-top: 46px; }
+.admin-bar .snap-content .main-content .container { margin-top: 46px; }
 
 #stripe .yummies,
 body.site-ob .yummies { margin-bottom: 15px; }
@@ -5006,7 +5006,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .snap-content .container { margin-top: 65px; }
 
-    .admin-bar .snap-content .container { margin-top: 97px; }
+    .admin-bar .snap-content .main-content .container { margin-top: 97px; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
