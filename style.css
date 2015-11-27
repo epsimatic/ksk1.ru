@@ -4442,7 +4442,7 @@ header.wide-header .search-form-header button:hover,
 header.wide-header .search-form-header button:focus { opacity: .7; }
 
 
-footer.wide-footer { margin: 30px 0 0; width: 100%; background: #607d8b; padding: 40px 0; }
+footer.wide-footer { margin:0; width: 100%; background: #607d8b; padding: 40px 0; }
 
 footer.wide-footer .container { margin-top: 0; background-color: transparent; }
 
