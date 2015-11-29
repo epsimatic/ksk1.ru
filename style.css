@@ -4517,6 +4517,17 @@ body.site-rk footer.info .social.site-rk,
 body.page-template-page-custom-transport footer.info .social.site-schedule,
 body.page-template-page-custom-posrednik footer.info .social.site-tp { display: block; }
 
+/*официальная информация*/
+footer.info .official-info .official{display: none;}
+
+footer.info .official-info .online {display: block;}
+body.page-template-page-custom-radio  footer.info .official-info .online {display: none;}
+body.page-template-page-custom-tv  footer.info .official-info .online {display: none;}
+
+body.page-template-page-custom-radio footer.info .official-info .radio {display: block;}
+body.page-template-page-custom-tv footer.info .official-info .tv {display: block;}
+
+
 footer.info .social > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
 
 footer.info .social > a:hover,
