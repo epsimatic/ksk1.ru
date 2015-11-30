@@ -1856,6 +1856,8 @@ iframe.fullstory__video { max-width: 100%; }
 .panel-event > .panel-heading { background: #52be7f url("img/panel-event.png") no-repeat right; background-size: contain; }
 /* </editor-fold> */
 
+.panel.panel-complaint > .panel-heading { background-color: #31a689; }
+
 /* <editor-fold desc="Панель «Важно»"> */
 .panel.panel-notice > .panel-heading { background-color: #FF4B3D; }
 
