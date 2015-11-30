@@ -5136,6 +5136,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-link { color: #333; padding: 0; margin: 0 0 5px; }
 
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link.active { box-shadow: none; background-color: #dcfaff; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link.active:hover,
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link.active:focus { background-color: #edfdff; }
+
     header.wide-header .ob-categoy:last-child > a { margin: 0 !important; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-link:hover,
