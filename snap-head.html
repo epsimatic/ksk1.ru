@@ -447,42 +447,6 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown menu-item dropdown-vote hidden-xs hidden-sm hidden">
-                    <a role="button" aria-haspopup="true" aria-expanded="false"  href="#"><i class="fa fa-fw fa-star"></i></a>
-                    <div class="dropdown-menu dropdown-vote-panel">
-                        <form class='review form-horizontal' id="review-form">
-                            <div class='review__line review__line-radiobutton feedback-defenition form-group'>
-                                <div class="col-sm-12">
-                                    <p >Мы сделали новую навигацию и строку меню. Вам нравится?</p>
-
-                                    <div class='radio_button'>
-                                        <input class="btn btn-action" type='button'  name="inputradio"  value="Да, удобно и понятно" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'Yes',1]); showReviewHide()" >&nbsp;&nbsp;&nbsp;
-                                        <input class="btn btn-default" type='button'  name="inputradio" value="Нет, старая была лучше" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'No',-1]); showReviewHide()" >&nbsp;&nbsp;&nbsp;
-                                        <!-- <input type='button'  name="inputradio" value="Мне все равно" onclick="_gaq.push(['_trackEvent','new-form-feedback', 'Clicked Yes/No', 'No',-1]); showReviewHide()" >&nbsp; -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-hide feedback-note hidden">
-                                <div class="form-group">
-                                    <div class="col-sm-12">
-                                        <label class='review__line ' >Что вам понравилось? Что не понравилось? Что можно улучшить?</label>
-                                        <textarea class="review__text form-control"  name="review__text"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-4 col-sm-offset-8">
-                                        <button class='wrapp__button wrapp__buttonSubmit btn btn-action btn-block btn-lg' type="submit" onclick="formFade();_gaq.push(['_trackEvent','new-form-feedback', 'Sent feedback', jQuery('.review__text').val()]); return false;">ОТПРАВИТЬ</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feedback-appreciation-wrap">
-                                <div class="feedback-appreciation text-center">
-                                    Спасибо за отзыв!
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </li>
                 <li class="dropdown menu-item dropdown-weather"><a class="menu-item-weather" href="#"><!--# include virtual="/weather/conditions.html" --></a>
                  <div class="dropdown-menu weather-forecast-panel"><div class="loader-wrap"><i class="fa fa-cog fa-spin loader"></i></div></div>
                 </li>
