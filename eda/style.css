@@ -84,7 +84,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .eda-footer > h2 { font-size: 23px; margin: 0 0 20px; }
 .eda-footer .vendor-list { margin-bottom: 20px; }
-.eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; }
+.eda-footer .vendor-list > a.vendor-link { display: inline-block; padding: 8px; width: 31%; background-color: transparent; }
 .eda-footer .vendor-list > a.vendor-link:hover,
 .eda-footer .vendor-list > a.vendor-link:focus { background-color: #f7f7f7; }
 .eda-footer .vendor-list > a.vendor-link.active { background-color: #fffccf; }
