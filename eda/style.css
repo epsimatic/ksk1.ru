@@ -15,6 +15,8 @@ nav.navbar { margin: 0 -10px !important; }
 /* Поправка на admin-bar */
 .sticky-cart { top: 50px; z-index: 10; }
 
+.sticky-cart .container { background-color: transparent; }
+
 @media screen and ( min-width: 601px) {
     .admin-bar .sticky-cart { top: 86px; }
 }
@@ -29,19 +31,19 @@ nav.navbar { margin: 0 -10px !important; }
 .modal-dialog .modal-header h4 { padding-top: 1px; padding-left: 10px; }
 
 /* Вписываем вручную ширину панели для Chrome */
-.sticky-cart.fixedsticky-on { width: 100%; }
-@media (min-width: 768px) {
-    .sticky-cart.fixedsticky-on {width: 740px;}
-}
-@media (min-width: 992px) {
-    .sticky-cart.fixedsticky-on {width: 960px;  }
-}
-@media (min-width: 1200px) {
-    .sticky-cart.fixedsticky-on { width: 1160px; }
-}
+/*.sticky-cart.fixedsticky-on { width: 100%; }*/
+/*@media (min-width: 768px) {*/
+    /*.sticky-cart.fixedsticky-on {width: 740px;}*/
+/*}*/
+/*@media (min-width: 992px) {*/
+    /*.sticky-cart.fixedsticky-on {width: 960px;  }*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+    /*.sticky-cart.fixedsticky-on { width: 1160px; }*/
+/*}*/
 
 /**/
-#container { margin-left: -10px; margin-right: -10px; }
+#container { margin-left: -15px; margin-right: -15px; }
 
 .list-stores { padding: 0 20px 20px; margin-bottom: 0; }
 
@@ -116,9 +118,9 @@ nav.navbar { margin: 0 -10px !important; }
     .vendor-list a.vendor-link.active:hover,
     .vendor-list a.vendor-link.active:focus { background-color: #fffab5; }
 
-    .vendor-list .vendor-link .label { background-color: #f44336; font-weight: 400; position: absolute; right: -50px; top: 9px; }
+    .vendor-list .vendor-link .label { background-color: #f44336; font-weight: 400; position: absolute; right: 8px; top: -11px; }
 
-    .eda-footer .vendor-link .label { right: -10px; }
+    .eda-footer .vendor-link .label { right: 36px; top: 5px; }
 
     .eda-footer > h2 { margin-bottom: 15px; }
     .eda-footer .vendor-list > a.vendor-link { width: 18%; margin: 7px; }
