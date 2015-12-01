@@ -15,7 +15,7 @@ nav.navbar { margin: 0 -10px !important; }
 /* Поправка на admin-bar */
 .sticky-cart { top: 50px; z-index: 10; }
 
-.sticky-cart .container { background-color: transparent; }
+.sticky-cart .container { background-color: transparent; padding: 0; }
 
 @media screen and ( min-width: 601px) {
     .admin-bar .sticky-cart { top: 86px; }
