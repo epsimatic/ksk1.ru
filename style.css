@@ -1860,6 +1860,8 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel.panel-complaint > .panel-heading { background-color: #16a372; }
 
+.panel-complaint .btn-action { font-size: 14px; }
+
 /* <editor-fold desc="Панель «Важно»"> */
 .panel.panel-notice > .panel-heading { background-color: #FF4B3D; }
 
@@ -5506,6 +5508,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: block; width: auto; }
 
     .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: block; padding: 10px 20px 20px; top:0; width: auto; }
+
+    .panel-complaint .btn-action { font-size: 18px; }
 
     header.wide-header .post-news figure { width: 194px; }
 
