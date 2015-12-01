@@ -31,7 +31,7 @@ nav.navbar { margin: 0 -10px !important; }
 .modal-dialog .modal-header h4 { padding-top: 1px; padding-left: 10px; }
 
 /* Вписываем вручную ширину панели для Chrome */
-/*.sticky-cart.fixedsticky-on { width: 100%; }*/
+.sticky-cart.fixedsticky-on { width: 100%; }
 /*@media (min-width: 768px) {*/
     /*.sticky-cart.fixedsticky-on {width: 740px;}*/
 /*}*/
