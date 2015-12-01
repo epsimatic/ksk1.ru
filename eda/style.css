@@ -109,12 +109,15 @@ nav.navbar { margin: 0 -10px !important; }
 
     .vendor-list { position: relative; padding: 10px 0 15px; left: -20px; }
     .vendor-list .title { color: #666; margin-right: 10px; }
-    .vendor-list a.vendor-link { border-radius: 5px; color: #424242; padding: 7px 15px; background-color: #f7f7f7; margin-left: 10px; margin-right: 10px; }
+    .vendor-list a.vendor-link { border-radius: 5px; color: #424242; padding: 7px 15px; background-color: #f7f7f7; margin-left: 10px; margin-right: 10px; position: relative; }
     .vendor-list a.vendor-link.active { background-color: #fffccf; font-weight: 600; }
     .vendor-list a.vendor-link:hover,
     .vendor-list a.vendor-link:focus { text-decoration: none; background-color: #e7e7e7; }
     .vendor-list a.vendor-link.active:hover,
     .vendor-list a.vendor-link.active:focus { background-color: #fffab5; }
+
+    .vendor-list .vendor-link .label { background-color: #f44336; font-weight: 400; position: absolute; right: -50px; top: 9px;
+    }
 
     .eda-footer > h2 { margin-bottom: 15px; }
     .eda-footer .vendor-list > a.vendor-link { width: 18%; margin: 7px; }
