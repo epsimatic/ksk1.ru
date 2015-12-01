@@ -194,7 +194,7 @@ object { display: none; }
 
 .navbar-collapse { margin-right: -40px; }
 
-.navbar .news-link { font-size: 25px !important; font-weight: 700; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
+.navbar .news-link { font-size: 25px !important; font-weight: 700 !important; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
 
 
 .site-eda .navbar-nav > li > a { padding: 15px 10px; }
