@@ -5273,11 +5273,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-eda .stores-group,
     header.wide-header .menu-main-eda .stores-group > a { display: inline-block; }
 
+    header.wide-header .menu-main-eda .stores-group > a img { width: 90px; }
+
     header.wide-header .menu-main-eda .eda-logo-wrap { position: relative; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { width: 280px; margin-left: 20px; margin-right: 20px; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap .phone-number { position: absolute; right: 0; bottom: 0; font-size: 15px; font-weight: 700; color: #fa463e; }
+    header.wide-header .menu-main-eda .eda-logo-wrap .phone-number { position: absolute; right: 0; bottom: -20px; font-size: 26px; font-weight: 700; color: #fa463e; }
 
     header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
 
