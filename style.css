@@ -5528,7 +5528,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .post-news .post-comment-num::before { content: " "; }
 
     header.wide-header .post-news .views_num,
-    header.wide-header .post-news .post-comment-num { color: #777; font-size: 12px; padding-right: 8px; }
+    header.wide-header .post-news .post-comment-num { color: #777; font-size: 12px; padding-right: 8px; font-weight: 400; }
 
     header.wide-header .ob-promo .ob-promo-body a.ads-poster { padding: 20px 17px 0 0; }
 
