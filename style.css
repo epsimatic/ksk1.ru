@@ -5801,14 +5801,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 /* <editor-fold desc="Временные стили для главной новости и новостной ленты"> */
 
 .news-old .panel-sendsms .panel-heading,
-.news-old .panel-official .panel-heading,
+.panel-official .panel-heading,
 .news-old .panel-comments .panel-heading,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading,
 .news-old .panel-news-list .panel-heading  { padding: 9px 15px 10px; background: #EDB194 none; margin: 0; }
 
 .news-old .panel-sendsms .panel-heading h2,
-.news-old .panel-official .panel-heading h2,
+.panel-official .panel-heading h2,
 .news-old .panel-comments .panel-heading h2,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading h2,
@@ -5830,17 +5830,17 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .block .vsection .oneliner a,
 .news-old .panel-sendsms a,
-.news-old .panel-official a,
+.panel-official a,
 .news-old .panel-news a,
 .news-old .panel-news-list a {color: #433822; text-decoration: none;}
 
 .news-old .block .vsection .oneliner a:hover,
 .news-old .panel-sendsms a:hover,
-.news-old .panel-official a:hover,
+.panel-official a:hover,
 .news-old .panel-news a:hover,
 .news-old .panel-news-list a:hover {border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none;}
 
-.news-old .panel-official .panel-footer,
+.panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
 .news-old .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
@@ -5851,12 +5851,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old h1.post-title a {color: #333;}
 
-.news-old .panel-official .list-group-item,
+.panel-official .list-group-item,
 .news-old .panel-news-list .list-group-item {background-color: #fbf8f7; margin-bottom: 2px; padding-bottom: 0;}
 
 .news-old .post-actions {background-color: #ecd8ce; padding: 4px 10px 5px; position: relative;}
 
-.news-old .panel-official .post-actions,
+.panel-official .post-actions,
 .news-old .panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
 
 .news-old .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
@@ -5888,11 +5888,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .block .vsection .inset {background-color: inherit; cursor: default; float: right; font-size: 80%; font-style: italic; padding-bottom: 1px; padding-left: 3px; padding-top: 1px;}
 
-.news-old .panel-official .post-text {margin-bottom: 10px;}
+.panel-official .post-text {margin-bottom: 10px;}
 
-.news-old .panel-official .post-actions {margin-bottom: 5px;}
+.panel-official .post-actions {margin-bottom: 5px;}
 
-.news-old .panel-official .list-group-item:hover {background-color: #fff1e5;}
+.panel-official .list-group-item:hover {background-color: #fff1e5;}
 
 .news-old .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
