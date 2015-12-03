@@ -25,7 +25,7 @@ figure { position: relative; text-align: center; }
 
 .tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
-header#header { margin-bottom: 0 !important; display: none; }
+header#header { margin: 0 0 15px !important; display: none; }
 
 body.news header#header,
 body.site-ob header#header { display: block; }
@@ -96,7 +96,7 @@ header .btn-group { margin-top: 10px; }
 
 
 .row_header {
-    background: url("http://ksk1.ru/img/spring-header.png") no-repeat center center;
+    background: url("http://ksk1.ru/img/winter-header.png") no-repeat center center;
     background-size: cover;
     font-size: 18px;
     height: auto;
@@ -5236,14 +5236,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
     /* Стили для панели магазинов*/
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 47px; }
+    header.wide-header .menu-main-shop .container .shop-list { padding: 0; }
 
-    header.wide-header .menu-main-shop .container a { display: inline-block; padding: 4px; width: 19.7%; }
+    header.wide-header .menu-main-shop .container .shop-list a { display: block; padding: 6px 4px; text-align: center; }
 
-    header.wide-header .menu-main-shop .container a:hover,
-    header.wide-header .menu-main-shop .container a:focus { background-color: #f6f6f6; }
+    header.wide-header .menu-main-shop .container .shop-list a:hover,
+    header.wide-header .menu-main-shop .container .shop-list a:focus { background-color: #f6f6f6; }
 
-    header.wide-header .menu-main-shop .container a > img { width: 100%; }    
+    header.wide-header .menu-main-shop .container .shop-list a > img { width: 79%; }
+
 
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
@@ -5563,7 +5564,20 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: none; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 38px; }
+    header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
+
+    header.wide-header .menu-main-shop .shop-promo { border: 1px solid #ffae8c; border-radius: 7px; }
+
+    header.wide-header .menu-main-shop .shop-promo .logo { display: block; text-align: center; margin-top: 5px; }
+
+    header.wide-header .menu-main-shop .shop-promo .logo img { width: 88%; }
+
+    header.wide-header .menu-main-shop .shop-promo .goods-list { padding: 13px 0; }
+
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #333333; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
+
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap { top: -15px; }
 
@@ -5742,7 +5756,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: inline-block; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding: 30px; }
+    header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
+
+    header.wide-header .menu-main-shop .shop-promo .logo { margin-top: 0; }
+    header.wide-header .menu-main-shop .shop-promo .logo img { width: 56%; }
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 140px; margin-right: 90px; width: 200px; }
 
