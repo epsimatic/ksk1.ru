@@ -5236,14 +5236,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
     /* Стили для панели магазинов*/
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 47px; }
+    header.wide-header .menu-main-shop .container .shop-list a { display: block; padding: 6px 4px; text-align: center; }
 
-    header.wide-header .menu-main-shop .container a { display: inline-block; padding: 4px; width: 19.7%; }
+    header.wide-header .menu-main-shop .container .shop-list a:hover,
+    header.wide-header .menu-main-shop .container .shop-list a:focus { background-color: #f6f6f6; }
 
-    header.wide-header .menu-main-shop .container a:hover,
-    header.wide-header .menu-main-shop .container a:focus { background-color: #f6f6f6; }
-
-    header.wide-header .menu-main-shop .container a > img { width: 100%; }    
+    header.wide-header .menu-main-shop .container .shop-list a > img { width: 79%; }
 
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
@@ -5563,7 +5561,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: none; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding-top: 38px; }
+    header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap { top: -15px; }
 
@@ -5742,7 +5740,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: inline-block; }
 
-    header.wide-header .menu-item-dropdown.menu-main-shop .container { padding: 30px; }
+    header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 140px; margin-right: 90px; width: 200px; }
 
