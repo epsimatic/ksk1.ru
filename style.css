@@ -672,6 +672,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 /* <editor-fold desc="navpanel-shopping"> */
 .navpanel { max-height: 0; transition: max-height 0.6s ease-in-out 0s; overflow-y: hidden; }
 
+.archive .navpanel { margin-bottom: 30px; }
+
 .archive .navpanel,
 .page .navpanel { max-height: 100%; }
 
