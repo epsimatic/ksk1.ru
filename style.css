@@ -3258,7 +3258,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
     text-align: center;
 }
 
-.panel-default.panel-schedule { box-shadow: none; }
+.panel-default.panel-schedule { box-shadow: none; margin-bottom: 0; }
 
 .panel-default.panel-schedule .panel-heading { background-color: #fff; padding: 0; }
 
