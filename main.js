@@ -107,7 +107,6 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');
-        console.log('день = '+day_num);
         jQuery("#day"+day_num).load("http://news.kskmedia.ru/movies-block/",{"day_week":day_num}, function() {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="'+(day_num+1)+'"]').trigger('shown.bs.tab');
@@ -400,7 +399,7 @@ if (jQuery('.btn-scroll-up').length) {
     if(url.match(/ob.ksk66/))
        btn_home.appendTo('body');
     else {btn_home.appendTo('footer.hidden-print');
-      console.log("Создание кнопки");}
+      }
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
 }
