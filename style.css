@@ -5247,6 +5247,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели справки */
     header.wide-header .menu-main-info .dropdown-panel a { color: #333; }
 
+    header.wide-header .menu-main-info .dropdown-panel a.btn-action { color: #fff; }
+
     header.wide-header .menu-main-info .submenu-schedule > a { display: block; line-height: 2.2; padding-left: 3px; }
 
     header.wide-header .menu-main-info .submenu-schedule > a:hover,
