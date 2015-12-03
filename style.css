@@ -5574,7 +5574,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-shop .shop-promo .goods-list { padding: 13px 0; }
 
-    header.wide-header .menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #333333; display: inline-block; font-size: 12px; margin: 0 5px; padding: 3px 7px; }
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #333333; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
 
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
@@ -5760,7 +5760,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-shop .shop-promo .logo { margin-top: 0; }
     header.wide-header .menu-main-shop .shop-promo .logo img { width: 56%; }
-    header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 3px 7px; }
+    header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 140px; margin-right: 90px; width: 200px; }
 
