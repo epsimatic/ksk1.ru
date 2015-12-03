@@ -734,3 +734,9 @@ window.onbeforeunload = function () {
     setCookie("player_state", "live", 30000);
     }
 };
+
+jQuery('span.our-projects').on('mouseenter', function() {
+    jQuery(this).addClass( 'active' );
+}).on('mouseleave',function() {
+    jQuery(this).removeClass( 'active' );
+});

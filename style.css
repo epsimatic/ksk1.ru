@@ -4470,6 +4470,7 @@ footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; ma
 footer.wide-footer ul.contacts > li:hover { background-color: #8097a2; }
 
 footer.info a,
+footer.info .our-projects,
 footer.wide-footer a,
 footer.wide-footer ul.contacts > li { transition: background-color 0.2s ease 0s; }
 
@@ -4489,10 +4490,29 @@ footer.info .container { margin-top: 5px; background-color: transparent; color: 
 
 footer.info .copyright { text-align: center; margin-bottom: 30px; margin-top: 20px; }
 
-footer.info .copyright > a { display: block; margin-top: 10px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; }
+footer.info .copyright .our-projects,
+footer.info .copyright > a { display: block; margin-top: 10px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; cursor: pointer; }
 
+footer.info .copyright .our-projects:hover,
+footer.info .copyright .our-projects:focus,
 footer.info .copyright > a:hover,
 footer.info .copyright > a:focus { background-color: #37474f; }
+
+
+footer.info .our-projects { position: relative; visibility: hidden; }
+
+footer.info .our-projects .list-group { display: none; position: absolute; width: 250px; }
+
+footer.info .our-projects.active .list-group { bottom: 0; display: block; left: 0; }
+
+footer.info .our-projects .arrow { border-bottom-width: 0; bottom: -11px; left: 50%; margin-left: -11px; }
+
+footer.info .our-projects .arrow,
+footer.info .our-projects .arrow::after { position: absolute; }
+
+footer.info .our-projects .arrow::after { border-width: 10px 10px 0; border-color: #fff transparent; border-style: solid; bottom: 1px; content: " "; margin-left: -10px; }
+
+
 
 footer.info .social { margin-bottom: 20px; display: none; }
 
@@ -4508,8 +4528,7 @@ body.page-template-page-custom-transport footer.info .social.site-news,
 body.page-template-page-custom-posrednik footer.info .social.site-news,
 body.single-event footer.info .social.site-news,
 body.single-company footer.info .social.site-news,
-body.tax-company_cat footer.info .social.site-news
-{ display: none; }
+body.tax-company_cat footer.info .social.site-news { display: none; }
 
 body.site-ob footer.info .social.site-ob,
 body.page.agenda footer.info .social.site-agenda,
@@ -5290,6 +5309,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.wide-footer ul.contacts { font-size: 1.7em; }
 
+    footer.info .copyright .our-projects,
     footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
 }
 
