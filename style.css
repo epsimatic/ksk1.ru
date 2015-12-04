@@ -4276,17 +4276,21 @@ header.mobile-header .logo-ksk { width: 80px; display: block; height: 23px; marg
 
 header.wide-header { display: none; }
 
-.snap-drawer { color: white; background-color: #00b0ff; margin: 0; border: none; padding: 0; font-size: 16px; }
+.snap-drawer { margin: 0; border: none; padding: 0; font-size: 16px; }
 
-.snap-drawer-left { padding: 5px 0; }
+.snap-drawer-left { color: white; background-color: #00b0ff; padding: 5px 0; }
 
-.snap-drawer-right { /*display: none;*/ font-size: 14px; }
+.snap-drawer-right { font-size: 14px; color: #333; background-color: #f5f5f5; }
 
 .snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
 .snap-drawer a .triangle { border-left-color: #fff; }
 
+.snap-drawer-right a .triangle { color: #333; }
+
 .snap-drawer .menu-sidenav a { color: #fff; }
+
+.snap-drawer-right .menu-sidenav a { color: #333; }
 
 .snap-drawer .menu-sidenav a:hover,
 .snap-drawer .menu-sidenav a:focus { text-decoration: none; outline:none; }
@@ -4333,10 +4337,19 @@ header.wide-header { display: none; }
     transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
+.snap-drawer ul.menu-sidenav > li.menu-item > a:focus,
 .snap-drawer ul.menu-sidenav > li.menu-item > a:hover { background-color: #00bfff; }
+
+.snap-drawer-right ul.menu-sidenav > li.menu-item > a:focus,
+.snap-drawer-right ul.menu-sidenav > li.menu-item > a:hover {  }
 
 .snap-drawer ul.sub-menu li.menu-item > a:hover,
 .snap-drawer ul.sub-menu li.menu-item > a:focus { background-color: #c4cced; }
+
+.snap-drawer-right ul.sub-menu li.menu-item > a:hover,
+.snap-drawer-right ul.sub-menu li.menu-item > a:focus { background-color: #d4d9ee; }
+
+.snap-drawer ul.sub-menu li.menu-item.active > a { background-color: #fff; }
 
 .snap-drawer ul.sub-menu li.menu-item:nth-child(2) > a {
     -webkit-transform: translate3d(0,1000px,0);
@@ -4372,6 +4385,10 @@ header.wide-header { display: none; }
 .snap-drawer li.current-page-parent > a:hover,
 .snap-drawer li.current-page-parent > a:focus { background-color: #7d83ff; }
 
+.snap-drawer-right li.current-page-parent > a,
+.snap-drawer-right li.current-page-parent > a:hover,
+.snap-drawer-right li.current-page-parent > a:focus { background-color: #cfd1ff; }
+
 .snap-drawer li.current-page-parent ul.sub-menu {
     background-color: #d4dcff;
     max-height: 400px;
@@ -4381,7 +4398,7 @@ header.wide-header { display: none; }
     transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-.snap-drawer-right li.current-page-parent ul.sub-menu  { max-height: 600px; }
+.snap-drawer-right li.current-page-parent ul.sub-menu  { max-height: 600px; background-color: #e4e9ff; }
 
 .snap-drawer li.current-page-parent ul.sub-menu .menu-item > a {
     color: #333;
