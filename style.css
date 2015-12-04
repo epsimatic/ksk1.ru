@@ -4468,7 +4468,7 @@ header.wide-header .search-form-header button { background-color: transparent; b
 .snap-drawer .search-form-header button:focus,
 header.wide-header .search-form-header button:hover,
 header.wide-header .search-form-header button:focus { opacity: .7; }
-
+.snap-drawer input{color: #000;}
 
 footer.wide-footer { margin:0; width: 100%; background: #607d8b; padding: 40px 0; }
 
