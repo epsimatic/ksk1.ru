@@ -13,6 +13,10 @@
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
         }
+        var client_width = document.documentElement.clientWidth;
+        if (client_width>768)
+        jQuery('.navbar-right .searchbox-container .search-form-header').append('<gcse:searchbox></gcse:searchbox>');
+        else jQuery('.menu-sidenav-aux .searchbox-container .search-form-header').append('<gcse:searchbox></gcse:searchbox>');
         jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
         jQuery('#searchbox-lazy').hover(function () {
             const searchbox_lazy = jQuery(this);
@@ -23,12 +27,17 @@
             });
         });
         // по щелчку кнопки поиска
+        if (client_width>768)
         jQuery(".btn-search").click(function(){
             jQuery(".searchbox-container").addClass("search-show");
 
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
 
         });
+        else {
+
+            LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+        }
         jQuery(".close").click(function(){
             jQuery(".searchbox-container").removeClass("search-show");
         });
