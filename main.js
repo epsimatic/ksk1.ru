@@ -16,7 +16,7 @@
         var client_width = document.documentElement.clientWidth;
         if (client_width>768)
         jQuery('.navbar-right .searchbox-container .search-form-header').append('<gcse:searchbox></gcse:searchbox>');
-        else jQuery('.menu-sidenav-aux .searchbox-container .search-form-header').append('<gcse:searchbox></gcse:searchbox>');
+        else jQuery('.menu-sidenav-aux .search-container .search-form-header').append('<gcse:searchbox></gcse:searchbox>');
         jQuery('.searchbox').append('<div id="searchbox-lazy"><div class="form-group clearfix"><i class="fa fa-search"></i><input type="text" placeholder="Поиск..." class="form-control" size="40"></div></div>');
         jQuery('#searchbox-lazy').hover(function () {
             const searchbox_lazy = jQuery(this);
