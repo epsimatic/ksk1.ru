@@ -196,7 +196,7 @@ object { display: none; }
 
 .navbar .news-link { font-size: 25px !important; font-weight: 700 !important; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
 
-body.news { background-color: #00e676; }
+body.news .navbar .news-link { background-color: #00e676; }
 
 body.news .nav > li:focus > a.news-link,
 body.news .nav > li:hover > a.news-link,
