@@ -35,7 +35,6 @@
 
         });
         else {
-
             LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
         }
         jQuery(".close").click(function(){
