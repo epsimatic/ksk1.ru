@@ -4506,7 +4506,7 @@ footer.info .copyright > a:focus { background-color: #37474f; }
 
 footer.info .our-projects { position: relative; visibility: hidden; }
 
-footer.info .our-projects .list-group { display: none; position: absolute; width: 190px; left: -26%; bottom: 42px; font-weight: 400; }
+footer.info .our-projects .list-group { display: none; position: absolute; width: 190px; left: -26%; bottom: 0; font-weight: 400; }
 
 footer.info .our-projects.active .list-group { display: block; }
 
