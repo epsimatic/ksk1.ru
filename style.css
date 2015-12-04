@@ -1846,7 +1846,7 @@ iframe.fullstory__video { max-width: 100%; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Некролог»"> */
-.panel-necro > .panel-heading {background-color: #707070;}
+.panel-necro > .panel-heading { background-color: #707070 !important; }
 
 .panel-necro > .panel-body p {color: #47475f;}
 /* </editor-fold> */
