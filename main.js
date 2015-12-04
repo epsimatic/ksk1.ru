@@ -35,8 +35,10 @@
 
         });
         else {
-
-            LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+            jQuery(".menu-button").click(function(){
+              //  jQuery(".searchbox-container").addClass("search-show");
+                LoadJS('//www.google.com/cse/cse.js?cx=' + cx);
+            });
         }
         jQuery(".close").click(function(){
             jQuery(".searchbox-container").removeClass("search-show");
