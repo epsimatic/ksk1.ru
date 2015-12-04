@@ -329,7 +329,7 @@ function AddMap(name_id,map_height){
             AddLayerGoogle();
             AddLayerBing();
             AddLayerYandex();
-            AddOverlayHills();
+            //AddOverlayHills();
             AddLayerTravel();
         }, 100)
     });
