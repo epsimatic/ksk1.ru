@@ -524,6 +524,12 @@ a.media-heading:focus {text-decoration: none;}
 
 .nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; bottom: 0; background-color: #fff; }
 
+.nav .current-page-parent > a.news-link::after { background-color: transparent; }
+
+.navbar .news-link { background-color: #00e676; }
+
+.navbar .news-link:hover { background-color: #00dd73; }
+
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:hover,
