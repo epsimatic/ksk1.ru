@@ -5086,7 +5086,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .admin-bar .snap-content .main-content > .container { margin-top: 97px; }
 
-    header.wide-header .navbar { pointer-events: auto; }
+    header.wide-header .navbar .container { pointer-events: auto; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
