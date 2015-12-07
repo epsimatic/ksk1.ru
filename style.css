@@ -759,7 +759,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 #navpanel-shopping .vodmag-bar .cat-list a:hover,
 #navpanel-shopping .vodmag-bar .cat-list a:focus { color: #f44639; text-decoration: none; background-color: #f1f3f5; }
 
-#navpanel-shopping .svetodom-bar { border-bottom: 3px solid #ec1191; margin-bottom: 10px; padding-bottom: 20px; }
+#navpanel-shopping .svetodom-bar { margin-bottom: 10px; padding-bottom: 20px; }
+
+.svetodom-bar .pr-logo img { padding-bottom: 20px; padding-top: 25px; }
 
 #navpanel-shopping .svetodom-bar .cat-list a { color: #333; padding-top: 2px; padding-bottom: 3px; }
 
@@ -4286,15 +4288,15 @@ header.wide-header { display: none; }
 
 .snap-drawer { margin: 0; border: none; padding: 0; font-size: 16px; }
 
-.snap-drawer-left { color: white; background-color: #00b0ff; padding: 5px 0; }
+.snap-drawer-left { color: white; background-color: #00b0ff; padding: 5px 0; left: 1px; }
 
-.snap-drawer-right { font-size: 14px; color: #333; background-color: #f5f5f5; }
+.snap-drawer-right { font-size: 14px; color: #333; background-color: #f5f5f5; right: 1px; }
 
 .snap-drawer .triangle { border-width: 5px 0 5px 5px; top: 0; position: relative; display: inline-block; border-style: solid; border-color: rgba(255,255,255,0); margin-right: 10px }
 
 .snap-drawer a .triangle { border-left-color: #fff; }
 
-.snap-drawer-right a .triangle { color: #333; }
+.snap-drawer-right a .triangle { border-left-color: #333; }
 
 .snap-drawer .menu-sidenav a { color: #fff; }
 
@@ -4349,7 +4351,7 @@ header.wide-header { display: none; }
 .snap-drawer ul.menu-sidenav > li.menu-item > a:hover { background-color: #00bfff; }
 
 .snap-drawer-right ul.menu-sidenav > li.menu-item > a:focus,
-.snap-drawer-right ul.menu-sidenav > li.menu-item > a:hover {  }
+.snap-drawer-right ul.menu-sidenav > li.menu-item > a:hover { background-color: #fff; }
 
 .snap-drawer ul.sub-menu li.menu-item > a:hover,
 .snap-drawer ul.sub-menu li.menu-item > a:focus { background-color: #c4cced; }
@@ -4980,7 +4982,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .vodmag-bar  { border: 2px dashed #7ad7ff; border-radius: 10px; margin-top: 10px; }
 
-    #navpanel-shopping .svetodom-bar { padding-top: 5px; border: 2px dashed #ff9f4a; border-radius: 10px; }
+    #navpanel-shopping .svetodom-bar { padding-top: 5px; border: 2px dashed #a6ffb0; border-radius: 10px; }
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { text-align: center; width: 100%; }
 
