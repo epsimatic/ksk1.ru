@@ -148,7 +148,7 @@ header .btn-group { margin-top: 10px; }
 /* <editor-fold desc="Погода"> */
 header .weather-icon { background-repeat: no-repeat; background-size: 100% auto; height: 44px; z-index: 5; }
 
-header .weather-label { color: #808080; font-size: 56%; font-weight: 300; text-align: center; line-height: 1.2em; white-space: normal; z-index: 5; }
+header .weather-label { color: #808080; font-size: 56%; font-weight: 400; text-align: center; line-height: 1.2em; white-space: normal; z-index: 5; }
 
 header .weather-temp { font-size: 20px; font-weight: 600; z-index: 5; }
 
@@ -411,9 +411,9 @@ footer h4 { color: #185481; font-size: 16px; }
 
 footer h4 { padding-bottom: 15px; margin: 0; }
 
-footer h4 a { color: #444f56; font-size: 21px; font-weight: 300; }
+footer h4 a { color: #444f56; font-size: 21px; font-weight: 400; }
 
-footer h3 { font-size: 2em; font-weight: 300; color: #0080c7; margin-top: 0; }
+footer h3 { font-size: 2em; font-weight: 400; color: #0080c7; margin-top: 0; }
 
 .site-ob .footer-email {display: none;}
 
@@ -572,7 +572,7 @@ h4 {margin-top: 5px; margin-bottom: 0; color: #202020; font-size: 18px;}
 
 h5 {margin-top: 5px; margin-bottom: 0; color: #202020; font-size: 18px;}
 
-h6 {margin-top: 5px; margin-bottom: 0; color: #202020; font-size: 14px; font-weight: 300;}
+h6 {margin-top: 5px; margin-bottom: 0; color: #202020; font-size: 14px; font-weight: 400;}
 
 h4.media-heading {font-size: 1.5em; color: #2590d8; font-weight: 600;}
 
@@ -669,7 +669,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 
 /* </editor-fold> */
 
-.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 300; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0 20px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
+.navpanel .btn-collapse { background-color: #cfd8dc; color: #333; font-size: 13px; font-weight: 400; letter-spacing: 0.025em; border-radius: 0; margin: 10px 0 20px; padding: 5px 20px 6px !important; text-align: center; width: 100%; }
 
 .navpanel .btn-collapse:hover, .navpanel .btn-collapse:focus { background-color: #b0bec5 !important; color: #ffffff; text-decoration: none; }
 
@@ -1790,7 +1790,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .content-padder > header .taxonomy-description {position: relative; top: 3px;}
 
-.content-padder > header > .page-title {color: #666666; font-size: 30px; font-weight: 300; padding: 10px 20px 0;}
+.content-padder > header > .page-title {color: #666666; font-size: 30px; font-weight: 400; padding: 10px 20px 0;}
 
 .content-padder > header p {color: #7d9d91; margin: 0; padding-left: 22px;}
 
@@ -2005,7 +2005,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments a.list-group-item { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; padding: 5px 12px; }
 
-.panel-comments .comment-link { color: #555; font-weight: 300; }
+.panel-comments .comment-link { color: #555; font-weight: 400; }
 
 .panel-comments a.list-group-item:nth-of-type(2n+1) {background-color: #f7f8f9;}
 
@@ -2285,7 +2285,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-news-body .entry-meta {color:#434C56; margin-bottom: 10px}
 
-.panel-news-body .entry-meta .meta-label {font-weight: 300;}
+.panel-news-body .entry-meta .meta-label {font-weight: 400;}
 
 .panel-news-body .entry-meta .meta-value {font-weight: 600;}
 
@@ -2353,7 +2353,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .news-more .crp_date {color: #999; display: block; font-size: 12px; font-style: oblique; margin: 5px 0;}
 
-.news-more .crp_excerpt {color: #2b2b38; display: block; font-size: 13px; font-weight: 300; height: 2.8em; overflow: hidden; text-overflow: ellipsis; white-space: normal;}
+.news-more .crp_excerpt {color: #2b2b38; display: block; font-size: 13px; font-weight: 400; height: 2.8em; overflow: hidden; text-overflow: ellipsis; white-space: normal;}
 .news-more .media { margin: 5px; }
 /* </editor-fold> */
 
@@ -2388,7 +2388,7 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-comments-list .media-body .thumblock .gdup a.gdt-classical:hover,
 .panel-comments-list .media-body .thumblock .gdup a.gdt-classical:focus {color: #74cd87; text-decoration: none;}
 
-.panel-comments-list .media-body .thumblock .gdthumbtext .badge {font-size: 14px; font-weight: 300; padding-top: 1px;}
+.panel-comments-list .media-body .thumblock .gdthumbtext .badge {font-size: 14px; font-weight: 400; padding-top: 1px;}
 
 .panel-comments-list .comment-awaiting-moderation {margin: 10px 0 0;}
 
@@ -3322,7 +3322,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .panel-default.panel-schedule .panel-heading .weekdays { display: none; position: absolute; bottom: 2px; right: 0; text-transform: uppercase; font-size: 11px; color: #aaa; }
 
-.panel-default.panel-schedule .panel-body .weekdays { text-align: center; font-size: 20px; font-weight: 300; }
+.panel-default.panel-schedule .panel-body .weekdays { text-align: center; font-size: 20px; font-weight: 400; }
 
 .panel-default.panel-schedule .panel-body .stations { padding-left: 5px; padding-right: 5px; margin-bottom: 15px; font-size: 13px; opacity: .8; }
 
@@ -3720,7 +3720,7 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 
 /* Бэджи формата бумаги для типографии */
-.paper-format {background-color: white; border: 1px solid #aaa; border-radius: 0; font-weight: 300; color: #666; text-transform: uppercase; padding: 2px 4px; font-size: 12px;}
+.paper-format {background-color: white; border: 1px solid #aaa; border-radius: 0; font-weight: 400; color: #666; text-transform: uppercase; padding: 2px 4px; font-size: 12px;}
 
 .paper-format-a3 {font-size: 13px; padding: 3px 6px;}
 
@@ -3864,7 +3864,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .sidebar .panel-shoutbox #respond { padding: 15px; }
 
-.sidebar .panel-shoutbox #respond #comment-image-wrapper label { padding-top: 10px; font-size: 13px; font-weight: 300; }
+.sidebar .panel-shoutbox #respond #comment-image-wrapper label { padding-top: 10px; font-size: 13px; font-weight: 400; }
 
 .sidebar .panel-shoutbox .commentlist { padding: 10px 20px; list-style-type: none; }
 
@@ -3888,7 +3888,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-event .panel-heading,
 .panel-event .panel-body {padding: 0;}
 
-.panel-event .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 300; margin: 0;}
+.panel-event .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 400; margin: 0;}
 
 .panel-event-today .panel-heading h1 {background-color: #ff6372;}
 
@@ -4207,7 +4207,7 @@ strong.author {font-weight: 600; color: #2c3033;}
 .next-article a:focus,
 .next-article a:hover {text-decoration: none; color: #1e6db0;}
 
-.list-event {padding-left: 0; margin-bottom: 0; font-weight: 300; color: #0f0f0f;}
+.list-event {padding-left: 0; margin-bottom: 0; font-weight: 400; color: #0f0f0f;}
 
 .list-event-item {position: relative; display: block; padding: 10px 15px; margin-bottom: 2px; background-color: #F5F7F7; border: none; text-decoration: none;}
 
@@ -4217,7 +4217,7 @@ a.list-event-item:hover,
 a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color: #fcfcfc; cursor: pointer;}
 
 /*список новостей*/
-.list-prime {padding-left: 0; margin-bottom: 5px; font-weight: 300; color: #47475F; border: none;}
+.list-prime {padding-left: 0; margin-bottom: 5px; font-weight: 400; color: #47475F; border: none;}
 
 .list-prime-item {position: relative; display: block; padding: 10px 15px; margin-bottom: 2px; background-color: #EDEFEF; border: none;}
 
@@ -4495,7 +4495,7 @@ footer.wide-footer a:focus { text-decoration: none }
 footer.wide-footer .btn-link:hover,
 footer.wide-footer .btn-link:focus { background-color: #eff2f4; color: #455a64; }
 
-footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.2em; line-height: 1.8; font-weight: 300; }
+footer.wide-footer ul.contacts { list-style: none; padding: 0; margin-bottom: 40px; font-size: 1.2em; line-height: 1.8; font-weight: 400; }
 
 footer.wide-footer ul.contacts > li { padding: 0 5px 3px; border-radius: 5px; margin-bottom: 2px; }
 
@@ -4630,9 +4630,9 @@ footer.info .social .social-logo.instagram { background-image: url("data:image/s
 
 .movie-announce__rating {display: inline;}
 
-.movie-announce__price {font-size: 12px; font-weight: 300;}
+.movie-announce__price {font-size: 12px; font-weight: 400;}
 
-.movie-announce__session {font-size: 12px; font-weight: 300; overflow: hidden; max-width: 240px;}
+.movie-announce__session {font-size: 12px; font-weight: 400; overflow: hidden; max-width: 240px;}
 
 .label-post {padding-left: 5px;}
 
@@ -4770,7 +4770,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* <editor-fold desc="Что нового на сайте"> */
 
-#post-2844 h1 {font-size: 37px; font-weight: 300; padding: 40px 0 0; text-align: center;}
+#post-2844 h1 {font-size: 37px; font-weight: 400; padding: 40px 0 0; text-align: center;}
 
 #post-2844 .img-shadow {box-shadow: 0 6px 5px rgba(0, 0, 0, 0.4);}
 
@@ -5123,7 +5123,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .dropdown-vote.feedback-sent .feedback-appreciation-wrap { display: table; height: 115px; }
 
-    header.wide-header .dropdown-vote .feedback-appreciation { display: table-cell; width: 100%; vertical-align: middle; font-weight: 300; letter-spacing: -0.015em; font-size: 2em; }
+    header.wide-header .dropdown-vote .feedback-appreciation { display: table-cell; width: 100%; vertical-align: middle; font-weight: 400; letter-spacing: -0.015em; font-size: 2em; }
 
     header.wide-header .navbar-nav .menu-item-weather { padding: 11px 10px; }
 
@@ -5403,7 +5403,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /*панель «читать ещё» на странице новости*/
     .news-more .crp_title {font-size: 14px;}
 
-    .news-more .crp_excerpt {font-size: 14px; font-weight: 300;}
+    .news-more .crp_excerpt {font-size: 14px; font-weight: 400;}
     .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip, .kaleidoscope__item__img{height: 77px;}
