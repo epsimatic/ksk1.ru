@@ -5301,17 +5301,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info .submenu-schedule > a:hover,
     header.wide-header .menu-main-info .submenu-schedule > a:focus { text-decoration: none; background-color: #f5f5f5; }
 
-    header.wide-header .menu-main-info .submenu-catalog a,
-    header.wide-header .menu-main-info .submenu-map a,
-    header.wide-header .menu-main-info .submenu-er a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
+    header.wide-header .menu-main-info .submenu a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
 
-
-    header.wide-header .menu-main-info .submenu-catalog a:hover,
-    header.wide-header .menu-main-info .submenu-catalog a:focus,
-    header.wide-header .menu-main-info .submenu-map a:hover,
-    header.wide-header .menu-main-info .submenu-map a:focus,
-    header.wide-header .menu-main-info .submenu-er a:hover,
-    header.wide-header .menu-main-info .submenu-er a:focus { background-color: #f9f9f9; text-decoration: none; }
+    header.wide-header .menu-main-info .submenu a:hover,
+    header.wide-header .menu-main-info .submenu a:focus { background-color: #f9f9f9; text-decoration: none; }
 
     header.wide-header .menu-main-info figure.submenu-item-icon { margin-bottom: 5px; }
 
@@ -5634,10 +5627,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-info .submenu-item-name { float: right; font-size: 16px; font-weight: 700; padding-right: 7px; padding-top: 23px; }
 
-    header.wide-header .menu-main-info .submenu-catalog a,
-    header.wide-header .menu-main-info .submenu-map a { text-align: left; padding: 15px; }
+    header.wide-header .menu-main-info .submenu a { text-align: left; padding: 15px; }
 
-    header.wide-header .menu-main-info .submenu-er a { text-align: left; padding: 15px 4px 15px 8px; }
+    header.wide-header .menu-main-info .submenu-agenda .submenu-item-name { padding-top: 37px; }
 
     footer.wide-footer ul.contacts { margin-bottom: 0; }
 
@@ -5809,10 +5801,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 140px; margin-right: 90px; width: 200px; }
 
-    header.wide-header .menu-main-info .submenu-catalog a,
-    header.wide-header .menu-main-info .submenu-map a { padding: 15px 25px; }
-    
-    header.wide-header .menu-main-info .submenu-er a { padding: 15px; }
+    header.wide-header .menu-main-info .submenu a { padding: 15px 25px; }
+
     header.wide-header .menu-main-info .submenu-item-name { font-size: 19px; padding-right: 13px; }
 
     header.wide-header .menu-main-tv_radio .submenu-group.videoplayer-wrap { padding-left: 0; padding-right: 0; }
