@@ -469,7 +469,7 @@ header.wide-header .dropdown-panel .loader-wrap { height: 75px; }
 .btn-home { color: #999; display: block; transition: opacity 0.7s ease; visibility: hidden; z-index: 10; margin: 0; padding: 100px 0 50px; position: absolute; right: 15px; bottom: 0; text-align: center; width: 100px; border: none; background-color: transparent; opacity: .5; }
 .btn-home.inactive {opacity: 0; cursor: default; visibility: hidden;}
 
-.btn-home:hover { opacity: 1; transition-duration: .4s; color: #666; background-color: #F9F9F9; }
+.btn-home:hover { opacity: 1; transition-duration: .4s; color: #666; }
 
 .btn-home svg { max-width: 60px; margin-bottom: -5px; margin-top: -30px; }
 
