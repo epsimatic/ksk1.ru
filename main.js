@@ -492,7 +492,7 @@ jQuery('.wide-header .popover-weather').popover({
 
 jQuery('.dropdown-weather').one('mouseenter',function(){
     jQuery.ajax({
-        url: "http://ob.ksk66.ru/weather/forecast.html",
+        url: "http://ksk1.ru/weather/forecast.html",
         timeout: 2000,
         success: function (data) {
             jQuery('.dropdown-weather').find('.dropdown-menu').html(data)
