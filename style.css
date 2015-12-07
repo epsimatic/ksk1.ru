@@ -4582,6 +4582,8 @@ body.site-rk footer.info .social.site-rk,
 body.page-template-page-custom-transport footer.info .social.site-schedule,
 body.page-template-page-custom-posrednik footer.info .social.site-tp { display: block; }
 
+body.agenda .modal-dialog {margin-top: 50px;}
+
 /*официальная информация*/
 footer.info .official-info .official{display: none;}
 
