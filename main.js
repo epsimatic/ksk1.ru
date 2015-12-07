@@ -548,10 +548,10 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
     jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
         var track = jQuery(data).find("TRACK").first();
         if (track.attr("ARTIST")) {
-            var track_text = "<span class='track-info-air'>В эфире: </span>" + track.attr("ARTIST") + " — " + track.attr("TITLE");
+            var track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("ARTIST") + " — " + track.attr("TITLE");
         }
         else if (track.attr("TITLE")) {
-            track_text = "<span class='track-info-air'>В эфире: </span>" + track.attr("TITLE");
+            track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("TITLE");
         } else  track_text = "";
         jQuery(".track-info").html(track_text.replace(/\[.*\]/, ""));
         jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/, ""));
