@@ -5313,29 +5313,29 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .menu-main-info figure.submenu-item-icon { margin-bottom: 5px; }
 
     /* Стили для панели радио и ТВ */
-    header.wide-header .menu-main-tv_radio .play-radio { outline: none; }
+    header.wide-header .menu-main-radio .play-radio { outline: none; }
 
-    header.wide-header .menu-main-tv_radio .submenu-group a { display: block; }
+    header.wide-header .menu-main-radio .submenu-group a { display: block; }
 
-    header.wide-header .menu-main-tv_radio > a { display: inline-block; }
+    header.wide-header .menu-main-radio > a { display: inline-block; }
 
-    header.wide-header .menu-main-tv_radio > a.play-radio { margin-left: -10px; padding-left: 0; }
+    header.wide-header .menu-main-radio > a.play-radio { margin-left: -10px; padding-left: 0; }
 
-    header.wide-header .menu-main-tv_radio > a.play-radio > .fa { opacity: .7; }
+    header.wide-header .menu-main-radio > a.play-radio > .fa { opacity: .7; }
 
-    header.wide-header .menu-main-tv_radio > a.play-radio > .fa:hover,
-    header.wide-header .menu-main-tv_radio > a.play-radio > .fa:focus { opacity: 1; }
+    header.wide-header .menu-main-radio > a.play-radio > .fa:hover,
+    header.wide-header .menu-main-radio > a.play-radio > .fa:focus { opacity: 1; }
 
-    header.wide-header .menu-main-tv_radio .player-controls > a { color: #333; }
+    header.wide-header .menu-main-radio .player-controls > a { color: #333; }
 
-    header.wide-header .menu-main-tv_radio .submenu-group .player-header a { display: inline-block; }
+    header.wide-header .menu-main-radio .submenu-group .player-header a { display: inline-block; }
 
-    header.wide-header .menu-main-tv_radio .submenu-group .player-logo > img { width: 170px; }
+    header.wide-header .menu-main-radio .submenu-group .player-logo > img { width: 170px; }
 
-    header.wide-header .menu-main-tv_radio iframe { width: 100%; height: 130px; }
+    header.wide-header .menu-main-tv iframe { width: 100%; height: 130px; }
 
-    header.wide-header .menu-main-tv_radio .tv-about h4 { line-height: 1.5; margin: 0 0 .5em 0; }
-    header.wide-header .menu-main-tv_radio .tv-about p { white-space: normal; background-color: white; line-height: 1.5; font-size: 13px; }
+    header.wide-header .menu-main-tv .tv-about h4 { line-height: 1.5; margin: 0 0 .5em 0; }
+    header.wide-header .menu-main-tv .tv-about p { white-space: normal; background-color: white; line-height: 1.5; font-size: 13px; }
 
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
