@@ -538,8 +538,8 @@ jQuery(".menu-main-news").one("mouseenter",function() {
 });
 
 
-var radio_player;
-var video_player;
+var radio_player="";
+var video_player="";
 
 // При наведении мыши на панель Радио
 jQuery(".menu-main-radio").mouseenter(function() {
