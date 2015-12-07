@@ -406,7 +406,7 @@ if (jQuery('.btn-scroll-up').length) {
     var url = document.location.href;
     if(url.match(/ob.ksk66/))
        btn_home.appendTo('body');
-    else {btn_home.appendTo('footer.info');
+    else {btn_home.appendTo('footer.wide-footer');
       }
     jQuery(window).scroll(ShowHideBtnHome);
     jQuery('#content').scroll(ShowHideBtnHome);
