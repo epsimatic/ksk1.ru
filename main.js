@@ -662,7 +662,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
         window.radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            if(window.video_player.length) {
+            if(window.video_player) {
                 window.video_player.stopVideo();
             }
         });
