@@ -569,7 +569,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
 
     // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
-        radio_player = jQuery("#jquery_jplayer_1");
+        window.radio_player = jQuery("#jquery_jplayer_1");
         radio_player.jPlayer({
             ready: function() {
                 radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
@@ -691,7 +691,7 @@ jQuery(".menu-main-tv").one('mouseenter', function(){
     });
 }*/
 function onYouTubePlayerAPIReady() {
-    video_player = new YT.Player("player-youtube", {
+    window.video_player = new YT.Player("player-youtube", {
         height: "390",
         width: "400",
         playerVars: {
@@ -719,7 +719,7 @@ function onPlayerReady(event) {
 function onPlayerStateChange(event) {
 
     if (event.data == YT.PlayerState.PLAYING) {
-        radio_player.jPlayer("pause");
+        window.radio_player.jPlayer("pause");
     }
 }
 
