@@ -542,7 +542,7 @@ var radio_player;
 var video_player;
 
 // При наведении мыши на панель Радио
-jQuery(".menu-main-tv_radio").mouseenter(function() {
+jQuery(".menu-main-radio").mouseenter(function() {
 
     // Получить текущий трек
     jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
@@ -561,11 +561,11 @@ jQuery(".menu-main-tv_radio").mouseenter(function() {
 });
 jQuery(window).load(function () {
     if (getCookie("player_state")) {
-        jQuery(".menu-main-tv_radio").trigger('mouseenter');
+        jQuery(".menu-main-radio").trigger('mouseenter');
     }
 });
 
-jQuery(".menu-main-tv_radio").one('mouseenter', function(){
+jQuery(".menu-main-radio").one('mouseenter', function(){
 
     // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
@@ -669,12 +669,16 @@ jQuery(".menu-main-tv_radio").one('mouseenter', function(){
     });
 
 
+
+});
+
+jQuery(".menu-main-tv").one('mouseenter', function(){
+
     // Видео плеер
     LoadJS("https://www.youtube.com/iframe_api", function() {
     });
+
 });
-
-
 // Callback-функции для Youtube API должны бфть объявлены глобально
 /*function onYouTubeIframeAPIReady() {
     video_player = new YT.Player('player-youtube', {
