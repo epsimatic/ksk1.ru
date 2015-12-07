@@ -5315,6 +5315,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-radio .play-radio { outline: none; }
 
+    header.wide-header .menu-main-tv .submenu-group a,
     header.wide-header .menu-main-radio .submenu-group a { display: block; }
 
     header.wide-header .menu-main-radio > a { display: inline-block; }
