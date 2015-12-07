@@ -661,8 +661,8 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
         radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            if(video_player.length) {
-                video_player.stopVideo();
+            if(window.video_player.length) {
+                window.video_player.stopVideo();
             }
         });
 
