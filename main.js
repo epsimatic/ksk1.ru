@@ -570,8 +570,8 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
 
     // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
-       window.radio_player = jQuery("#jquery_jplayer_1");
-        window.radio_player.jPlayer({
+        radio_player = jQuery("#jquery_jplayer_1");
+         radio_player.jPlayer({
             ready: function() {
                 radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
@@ -580,7 +580,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
                 });
                 if (getCookie("player_state")) {
                     deleteCookie("player_state");
-                    window.radio_player.jPlayer("play");
+                     radio_player.jPlayer("play");
                 }
             },
             ended: function() {
@@ -602,7 +602,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
         jQuery(".play_btn ").click(function () {
             var id= jQuery(this).prop("id");
             if (id=="last_news") {
-                window.radio_player.jPlayer("setMedia", {
+                 radio_player.jPlayer("setMedia", {
                     m4a: "http://ksk1.ru/radio-news/news.m4a"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -611,7 +611,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
                 jQuery(".track-info").addClass("hidden");
             }
             if (id=="on_air") {
-                window.radio_player.jPlayer("setMedia", {
+                 radio_player.jPlayer("setMedia", {
                     m4a: 'http://radio.ksk66.ru:8000/aac',
                     mp3: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
@@ -621,7 +621,7 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
                 jQuery(".track-info").removeClass("hidden");
             }
             if (id=="last_comment") {
-                window.radio_player.jPlayer("setMedia", {
+                 radio_player.jPlayer("setMedia", {
                     m4a: 'http://ksk1.ru/radio-news/comment.m4a'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
@@ -634,14 +634,14 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
         });
         jQuery(".play-radio i").bind("click",function (){
             if(jQuery(this).prop("id")=="play"){
-                window.radio_player.jPlayer({
+                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
                 jQuery(".play-radio i.fa-play").addClass('hidden');
                 jQuery(".play-radio i.fa-pause").removeClass('hidden');
             }
             if(jQuery(this).prop("id")=="pause"){
-                window.radio_player.jPlayer({
+                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
                 jQuery(".play-radio i.fa-play").removeClass('hidden');
@@ -655,15 +655,15 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
 
 
         });*/
-        window.radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
+         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
-        window.radio_player.bind(jQuery.jPlayer.event.play , function(event) {
+         radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            if(window.video_player) {
-                window.video_player.stopVideo();
+            if( video_player) {
+                 video_player.stopVideo();
             }
         });
 
@@ -692,7 +692,7 @@ jQuery(".menu-main-tv").one('mouseenter', function(){
     });
 }*/
 function onYouTubePlayerAPIReady() {
-    window.video_player = new YT.Player("player-youtube", {
+     video_player = new YT.Player("player-youtube", {
         height: "390",
         width: "400",
         playerVars: {
@@ -719,8 +719,8 @@ function onPlayerReady(event) {
 // Останавливать радио, когда начинает играть видео
 function onPlayerStateChange(event) {
 
-    if (event.data == YT.PlayerState.PLAYING) {
-        window.radio_player.jPlayer("pause");
+    if (radio_player && event.data == YT.PlayerState.PLAYING) {
+         radio_player.jPlayer("pause");
     }
 }
 
