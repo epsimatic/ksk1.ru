@@ -659,6 +659,10 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
         });
+        radio_player.bind(jQuery.jPlayer.event.error , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+        });
          radio_player.bind(jQuery.jPlayer.event.play , function(event) {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
