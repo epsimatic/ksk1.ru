@@ -663,6 +663,8 @@ jQuery(".menu-main-radio").one('mouseenter', function(){
             jQuery(".play-radio i.fa-play").removeClass('hidden');
             jQuery(".play-radio i.fa-pause").addClass('hidden');
             jQuery(".track-info").html("<span class='error'><strong>Ошибка:</strong> "+event.jPlayer.error.message+"</span>");
+            console.log("Ошибка: " + event.jPlayer.error.message);
+            console.log(event.jPlayer.error);
             console.error(event.jPlayer.error);
         });
          radio_player.bind(jQuery.jPlayer.event.play , function(event) {
