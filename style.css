@@ -5591,11 +5591,11 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
 
-    header.wide-header .menu-main-shop .shop-promo { border: 1px solid #ffae8c; border-radius: 7px; }
+    header.wide-header .menu-main-shop .shop-promo { border: 1px solid #66e2e8; border-radius: 7px; }
 
     header.wide-header .menu-main-shop .shop-promo .logo { display: block; text-align: center; margin-top: 5px; }
 
-    header.wide-header .menu-main-shop .shop-promo .logo img { width: 88%; }
+    header.wide-header .menu-main-shop .shop-promo .logo img { width: 88%; margin-top: 17px; margin-bottom: 17px; }
 
     header.wide-header .menu-main-shop .shop-promo .goods-list { padding: 13px 0; }
 
