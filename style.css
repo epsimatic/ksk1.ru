@@ -11,7 +11,7 @@
 /* <editor-fold desc="Колонки и основные элементы страницы"> */
 
 body {
-    font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important;
+    font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
@@ -23,7 +23,7 @@ body {
 
 figure { position: relative; text-align: center; }
 
-.tooltip, .popover { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+.tooltip, .popover { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
 header#header { margin: 0 0 15px !important; display: none; }
 
@@ -1010,7 +1010,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda .post-event { padding: 7px 15px 5px !important; }
 
-.navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; display: inline; }
+.navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; display: inline; }
 
 .navpanel #panel-agenda .post-event figure.post-thumb { display: none; }
 
@@ -1649,10 +1649,12 @@ iframe.fullstory__video { max-width: 100%; }
 .post-news .post-title,
 .post-news .post-description-text,
 .single-post .main-content article.post.post-news,
-.fullstory .newstitle,
 .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
-.post-news h4.post-title { margin-bottom: 9px; margin-top: 0; font-size: 16px; font-weight: 700; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+.fullstory .newstitle,
+.post-news h4.post-title { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+
+.post-news h4.post-title { margin-bottom: 9px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
 .post-news h4.post-title .fa { padding-left: 6px; }
 
@@ -2071,7 +2073,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news h1,
 .single-post .main-content article.post-news h2,
 .single-post .main-content article.post-news h3,
-.single-post .main-content article.post-news h4 { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; font-weight: 700; }
+.single-post .main-content article.post-news h4 { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; font-weight: 700; }
 
 .single-post .main-content article.post-news h1 { font-size: 21px; line-height: 1.2857; margin-bottom: 1.2857em; color: #263238; letter-spacing: .05em; text-transform: uppercase; }
 
@@ -2134,7 +2136,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 /*.single-post .main-content article.post-news hr + p { margin: 0; height: 0; }*/
 
-.single-post .main-content article.post-news table { margin: 54px 0; font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+.single-post .main-content article.post-news table { margin: 54px 0; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
 .single-post .main-content article.post-news .wp-caption { padding: 0; margin: .3em 1em; }
 
@@ -3050,7 +3052,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 .level4 { display: block; overflow: hidden; font-size: 14px; text-transform: none; color: #000; padding: 8px 0 8px 22px; white-space: nowrap; }
 
-.level4:hover:after { content: "← добавить объявление сюда"; font-family: "Open Sans Condensed", "Open Sans", "Arial Narrow", Verdana, sans-serif; font-size: 90%; margin-left: 1em; opacity: 0.4; }
+.level4:hover:after { content: "← добавить объявление сюда"; font-family: "OpenSans Condensed", "OpenSans", "Arial Narrow", Verdana, sans-serif; font-size: 90%; margin-left: 1em; opacity: 0.4; }
 
 .level4:hover { background-color: #e7e7e7; cursor: pointer; }
 
@@ -3064,7 +3066,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 .preselect option:hover { background-color: #e7e7e7; cursor: pointer; }
 
-.preselect option:hover:after { content: "← добавить объявление сюда"; font-family: "Open Sans Condensed", "Open Sans", "Arial Narrow", Verdana, sans-serif; font-size: 90%; margin-left: 1em; opacity: 0.4; }
+.preselect option:hover:after { content: "← добавить объявление сюда"; font-family: "OpenSans Condensed", "OpenSans", "Arial Narrow", Verdana, sans-serif; font-size: 90%; margin-left: 1em; opacity: 0.4; }
 
 .preselect #add_select-category { background-color: #f7f8fa; border: medium none; margin-top: -11px; padding-top: 13px; overflow: visible; }
 
@@ -5204,7 +5206,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     header.wide-header .post-news { padding: 0; }
 
     header.wide-header .post-news .post-title,
-    header.wide-header .post-news .post-description-text { font-family: 'Open Sans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+    header.wide-header .post-news .post-description-text { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
     header.wide-header .post-news h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
