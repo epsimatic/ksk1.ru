@@ -1692,7 +1692,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .fullstory .newstext { padding: 0 5px; font-size: 1.285em; line-height: 1.61em; }
 
-.fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 15px; padding-top: 15px; padding-bottom: 10px; font-size: 27px; line-height: 1.05; font-weight: 600; color: #424242; font-variant: small-caps; }
+.fullstory .newstitle  { margin-bottom: 15px; margin-top: 5px; padding-left: 15px; padding-top: 15px; padding-bottom: 10px; font-size: 32px; line-height: 1.05; font-weight: 700; color: #424242; }
 
 .fullstory .newstext h2 { font-size: 21px; font-weight: bold; color: #666; }
 
