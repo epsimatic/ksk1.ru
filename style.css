@@ -4500,7 +4500,7 @@ footer.wide-footer ul.contacts .fa { margin-right: 5px; }
 
 .wide-footer .counter { text-align: center; margin-top: 15px; }
 
-.wide-footer .counter a { display: inline-block; margin-left: 10px; }
+.wide-footer .counter a { display: inline-block; }
 
 .wide-footer .counter span { position: relative; top: 1px; }
 
@@ -4509,6 +4509,8 @@ footer.info { margin: -5px 0; padding: 10px 0; width: 100%; background: #455a64;
 footer.info .container { margin-top: 5px; background-color: transparent; color: #fff; }
 
 footer.info .copyright { text-align: center; margin-bottom: 30px; margin-top: 20px; }
+
+footer.info .rating {border: 1px solid #fff; padding: 3px 5px; border-radius: 6px; margin-right: 10px;}
 
 footer.info .copyright .our-projects,
 footer.info .copyright > a { display: block; margin-top: 10px; padding: 5px 10px; border-radius: 3px; background-color: #586b74; font-weight: 600; cursor: pointer; }
