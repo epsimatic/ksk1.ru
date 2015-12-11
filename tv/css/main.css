@@ -111,7 +111,7 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board * { width: 100%; }
 
-.board-main { height: calc(100% - 4.854rem); background-color: tomato; }
+.board-main { height: calc(100% - 4.045rem); background-color: tomato; }
 
 .board-weather,
 .board-on-air { height: 3.236rem; } 
