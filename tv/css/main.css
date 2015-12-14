@@ -194,7 +194,9 @@ time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
 
-.board-chat { min-height: 20rem; background-color: #a7ffeb; }
+.board-chat { min-height: 20rem; background-color: #a7ffeb; position: relative; overflow: hidden; }
+
+.chat-wrap { position: absolute; bottom: 0; }
 
 .board-heading { margin: 0; font-size: 0.809rem; }
 
