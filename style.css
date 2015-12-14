@@ -928,7 +928,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .weather-forecast-panel .day-row .summary .pop .drop-icon:before { opacity: .6; content:"💧"; }
 
-.weather-forecast-panel p.conditions { display: none; }
+.wide-header .weather-forecast-panel p.conditions { display: none; }
 
 .weather-forecast-panel h6 { text-align: right; margin-top: 15px; margin-bottom: 5px; }
 
