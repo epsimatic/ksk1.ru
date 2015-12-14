@@ -2653,10 +2653,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .row-center-yummies { margin-left: -10px; }
 
-.row-center-yummies .col-xs-4 { padding-right: 0; }
-
-.row-center-yummies .col-xs-4:last-child { padding-right: 0; }
-
 .site-ob .row-center-yummies .col-xs-4:last-child { padding-right: 10px; }
 
 /*Стили для баннеров спонсоров*/
