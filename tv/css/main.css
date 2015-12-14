@@ -180,6 +180,8 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board-main .message-wrap .board-heading + * { margin-top: .809rem; }
 
+.yummies { height: auto; }
+
 .board-main .message-wrap p { margin: .809rem 0; }
 
 .board-weather { height: 3.236rem; }
