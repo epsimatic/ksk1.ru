@@ -118,6 +118,8 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board-main .forecast .day-row { display: flex; flex-direction: column; justify-content: space-around; height: 100%; background-color: #fafafa; margin: 0 2px; }
 
+.forecast-wrap { height: 100%; }
+
 .forecast-wrap .board-heading { line-height: 3.236rem; font-size: 1rem; text-transform: uppercase; text-align: center; color: #0091ea; }
 
 .board-main .forecast .summary { height: 45%; display: flex; flex-direction: column; justify-content: space-between; }
