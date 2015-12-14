@@ -150,7 +150,7 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast .pop:after { content: " осадков" }
 
 /*Анимация погоды*/
-.board-main .forecast .day-row,
+/*.board-main .forecast .day-row,
 .board-main .forecast .weekday,
 .board-main .forecast .date,
 .board-main .forecast .temps,
@@ -169,7 +169,7 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast .date { transition-delay: .4s; }
 .board-main .forecast .temps { transition-delay: .6s; }
 .board-main .forecast .pop { transition-delay: .8s; }
-.board-main .forecast img { transition-delay: 1s; }
+.board-main .forecast img { transition-delay: 1s; }*/
 
 
 .board-weather { height: 3.236rem; }
