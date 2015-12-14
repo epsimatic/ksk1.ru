@@ -111,7 +111,66 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board * { width: 100%; }
 
-.board-main { height: calc(100% - 2.427rem); background-color: tomato; }
+.board-main { height: calc(100% - 2.427rem); overflow: hidden; }
+
+/*Стили погоды на ближайшие дни на основной доске*/
+.board-main .forecast { display: flex; height: 90%; align-content: stretch; }
+
+.board-main .forecast .day-row { display: flex; flex-direction: column; justify-content: space-around; height: 100%; background-color: #fafafa; margin: 0 2px; }
+
+.forecast-wrap .board-heading { line-height: 3.236rem; font-size: 1rem; text-transform: uppercase; text-align: center; color: #0091ea; }
+
+.board-main .forecast .summary { height: 45%; display: flex; flex-direction: column; justify-content: space-between; }
+
+.board-main .forecast .day-row img { width: 71%; }
+
+.board-main .forecast .day,
+.board-main .forecast .night { text-align: center; }
+
+.board-main .forecast .day p,
+.board-main .forecast .night,
+.board-main .forecast h6 { display: none; }
+
+.board-main .forecast .day p.conditions { display: block; }
+
+.board-main .forecast .pop,
+.board-main .forecast .temps,
+.board-main .forecast .date,
+.board-main .forecast .weekday { display: block; text-align: center; }
+
+.board-main .forecast .weekday { font-size: 1.33rem; }
+
+.board-main .forecast .temps { font-size: 1.33rem; }
+
+.board-main .forecast .temps .high { font-weight: 700; color: #ff1744; }
+.board-main .forecast .temps .low { font-weight: 700; color: #03a9f4; }
+.board-main .forecast .temps .split { opacity: .2; } 
+
+.board-main .forecast .drop-icon::before { content: "💧"; opacity: .6; }
+.board-main .forecast .pop:after { content: " осадков" }
+
+/*Анимация погоды*/
+.board-main .forecast .day-row,
+.board-main .forecast .weekday,
+.board-main .forecast .date,
+.board-main .forecast .temps,
+.board-main .forecast .pop,
+.board-main .forecast img { transition: opacity .25s ease-in-out; opacity: 0; }
+
+.board-main .forecast .day-row.show,
+.board-main .forecast .show .weekday,
+.board-main .forecast .show .date,
+.board-main .forecast .show .temps,
+.board-main .forecast .show .pop,
+.board-main .forecast .show img { opacity: 1; }
+
+.board-main .forecast .day-row { transition-delay: 0s; }
+.board-main .forecast .weekday { transition-delay: .2s; }
+.board-main .forecast .date { transition-delay: .4s; }
+.board-main .forecast .temps { transition-delay: .6s; }
+.board-main .forecast .pop { transition-delay: .8s; }
+.board-main .forecast img { transition-delay: 1s; }
+
 
 .board-weather { height: 3.236rem; }
 .board-on-air { height: 1.618rem; }
