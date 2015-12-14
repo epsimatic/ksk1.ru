@@ -174,7 +174,7 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast img { transition-delay: 1s; }*/
 
 /* Стили для сообщения на основной доске */
-.board-main .message-wrap { background-color: #f5f5f5; height: 100%; padding: 1.618rem; width: calc(100% - 3.236rem); }
+.board-main .message-wrap { background-color: #f5f5f5; height: calc(100% - 3.236rem); padding: 1.618rem; width: calc(100% - 3.236rem); display: flex; flex-direction: column; justify-content: center; }
 
 .board-main .message-wrap .board-heading { font-size: 1.333rem; text-align: center; }
 
