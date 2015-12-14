@@ -186,6 +186,7 @@ foreach ($array_forecast as $forecast_object) {
         $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
 
 
+    $condions   = $forecast_object['conditions'];
     $text_day   = $forecast_object['text_day'];
     $text_night = $forecast_object['text_night'];
     $text_day   = str_replace("C.", "℃.", $text_day);
@@ -202,6 +203,7 @@ foreach ($array_forecast as $forecast_object) {
     $conditions_forecast .= "</div>
                         <div class='day hidden-xs $hide_first_day_weather_on_evening'> 
                             <img src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
+                            <p class='conditions'>$conditions</p>
                             <p>$text_day</p>
                         </div>
                         <div class='night hidden-xs'>
