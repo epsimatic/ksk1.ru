@@ -180,6 +180,11 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board-main .message-wrap .board-heading + * { margin-top: .809rem; }
 
+
+.youtube-video { display: flex; flex-direction: column; height: 100%; justify-content: center; }
+
+.youtube-video .board-heading { font-size: 1.333rem; margin-bottom: 0.809rem; }
+
 .yummies { height: auto; }
 
 .board-main .message-wrap p { margin: .809rem 0; }
