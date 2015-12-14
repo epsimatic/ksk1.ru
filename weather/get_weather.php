@@ -169,7 +169,9 @@ foreach ($array_forecast as $forecast_object) {
     if ((int)$forecast_object['temp_low']> 0 )  $forecast_object_low = "+".$forecast_object['temp_low'] ; else $forecast_object_low = $forecast_object['temp_low'];
     $conditions_forecast .= " <div class='day-row'>
                         <div class='summary'>
-                            <span class='weekday'>${forecast_object['weekday']}</span>
+                            <span class='weekday'>${forecast_object['weekday']}
+                                <span class='weekday_is-night hidden not-really-$hide_first_day_weather_on_evening'>ночью</span>
+                            </span>
                             <span class='date'>${forecast_object['day']}</span>
 		                    <span class='temps'>
 		                        <span class='high'>$forecast_object_high</span>
