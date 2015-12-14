@@ -1171,7 +1171,7 @@ body.ob     .cond-active.cond-active-ob,
 /* <editor-fold desc="Реклама"> */
 /*.news #page > #header object {width: 366px !important; height: 34px !important; margin-left: -10px; margin-bottom: -5px;}*/
 
-.yummies { width: 100%; height: auto; margin-bottom: 15px; }
+.yummies { max-width: 100%; height: auto; margin-bottom: 15px; }
 
 #header .yummies { margin-bottom: 0; max-width: 100%; }
 
