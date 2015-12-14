@@ -5915,6 +5915,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .news-old .panel-news a,
 .news-old .panel-news-list a {color: #433822; text-decoration: none;}
 
+.vsection .tooltip { display: none; }
+
 .news-old .block .vsection .oneliner a:hover,
 .news-old .panel-sendsms a:hover,
 .panel-official a:hover,
