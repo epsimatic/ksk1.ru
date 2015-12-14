@@ -129,11 +129,15 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast .day,
 .board-main .forecast .night { text-align: center; }
 
-.board-main .forecast .day p,
+.board-main .forecast p,
 .board-main .forecast .night,
 .board-main .forecast h6 { display: none; }
 
-.board-main .forecast .day p.conditions { display: block; }
+.board-main .forecast p.conditions { display: block; }
+
+.board-main .forecast .not-really-hidden { display: inline; }
+
+.board-main .forecast .day.hidden + .night { display: block; }
 
 .board-main .forecast .pop,
 .board-main .forecast .temps,
