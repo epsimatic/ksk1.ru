@@ -173,8 +173,15 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast .pop { transition-delay: .8s; }
 .board-main .forecast img { transition-delay: 1s; }*/
 
+/* Стили для сообщения на основной доске */
+.board-main .message-wrap { background-color: #f5f5f5; height: 100%; padding: 1.618rem; width: calc(100% - 3.236rem); }
+
+.board-main .message-wrap .board-heading { font-size: 1.333rem; text-align: center; }
+
+.board-main .message-wrap p { margin: .809rem 0; }
 
 .board-weather { height: 3.236rem; }
+
 .board-on-air { height: 1.618rem; }
 
 .weather-text { display: none; }
@@ -190,6 +197,8 @@ main { width: 61.81%; padding-right: .5rem; }
 .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; }
 
 .board-time-and-logo { display: flex; }
+
+.logo { height: 3.236rem; }
 time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
