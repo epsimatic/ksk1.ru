@@ -133,9 +133,9 @@ main { width: 61.81%; padding-right: .5rem; }
 .board-main .forecast .night,
 .board-main .forecast h6 { display: none; }
 
-.board-main .forecast p.conditions { display: block; }
+.board-main .forecast p.conditions { display: block; text-align: center; }
 
-.board-main .forecast .not-really-hidden { display: inline !important; }
+.board-main .forecast .hidden.not-really-hidden { display: block !important; font-size: 1rem; line-height: .809rem; }
 
 .board-main .forecast .day.hidden + .night { display: block; }
 
