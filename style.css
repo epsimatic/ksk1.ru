@@ -2932,7 +2932,6 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price { color: #20172c; opacity: 0.8; text-transform: uppercase; font-size: 33px; }
 
-.ob-pricing-table .panel-pricing-container:nth-child(1) .panel-pricing .panel-body .price { font-size: 21px; }
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price-description { color: #20172c; opacity: 0.6; text-transform: uppercase; }
 
