@@ -67,3 +67,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/fsck-ablock"]
 	path = vendor/fsck-ablock
 	url = https://github.com/sitexw/FuckAdBlock.git
+[submodule "vendor/bootstrap"]
+	path = vendor/bootstrap
+	url = https://github.com/twbs/bootstrap.git
