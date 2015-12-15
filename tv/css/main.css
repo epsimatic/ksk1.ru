@@ -189,7 +189,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-main .forecast .temps .high { font-weight: 700; color: #ff1744; }
 .board-main .forecast .temps .low { font-weight: 700; color: #03a9f4; }
-.board-main .forecast .temps .split { opacity: .2; }
+.board-main .forecast .temps .split { opacity: .2; } 
 
 .board-main .forecast .drop-icon::before { content: "💧"; opacity: .6; }
 .board-main .forecast .pop:after { content: " осадков" }
@@ -236,20 +236,22 @@ time { padding-right: 1rem; text-align: right; }
 /* Стили для объявлений на основной доске */
 .board-main .ob-wrap { height: 100%; }
 
-.board-main .ob-wrap article.ob { background-color: #f5f5f5; margin-bottom: 1.618rem; }
+.board-main .ob-wrap article.ob { background-color: #f5f5f5; margin-bottom: .809rem; }
 
 .board-main article.ob figure { float: right; margin: 0 0 0 1rem; width: auto; }
 
 .board-main article.ob figure .ob-thumb { width: 8.09rem; }
 
-.board-main article.ob > a { text-decoration: none; }
+.board-main article.ob > a { text-decoration: none; color: #333; }
 
 .board-main article.ob .ob-text-group { padding: 0.809rem 1rem; margin: 0; width: calc(100% - 2rem); }
 
-.board-main article.ob .ob-meta { padding: 0 1rem 0.809rem; width: calc(100% - 2rem); }
+.board-main article.ob .ob-meta { padding: 0 1rem 0.809rem; width: calc(100% - 2rem); color: #57346b; }
+
+.board-main article.ob .ob-category-name { text-decoration: none; color: #57346b; }
 
 
-
+    
 
 
 
@@ -338,9 +340,9 @@ time { padding-right: 1rem; text-align: right; }
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
