@@ -120,6 +120,8 @@ time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
 
+.fa { display: inline; }
+
 .board-chat { min-height: 7rem; background-color: #a7ffeb; position: relative; overflow: hidden; }
 
 .chat-wrap { position: absolute; bottom: 0; }
@@ -248,7 +250,10 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-main article.ob .ob-meta { padding: 0 1rem 0.809rem; width: calc(100% - 2rem); color: #57346b; }
 
+.board-main article.ob .ob-publish-date:before { content: ""; padding-right: 2px; display: inline-block; font-family: FontAwesome; text-align: center; width: 1.28571em; }
+
 .board-main article.ob .ob-category-name { text-decoration: none; color: #57346b; }
+
 
 
     
