@@ -8,7 +8,7 @@ function updateClock ( )
     var currentDay   = currentTime.getDate();
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
-    var currentSeconds = currentTime.getSeconds ( );
+    //var currentSeconds = currentTime.getSeconds ( );
     var nameMonth = {0: "января",
          1: "февраля",
          2: "марта",
@@ -25,7 +25,7 @@ function updateClock ( )
 
     // Pad the minutes and seconds with leading zeros, if required
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-    currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+    //currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
 
     // Choose either "AM" or "PM" as appropriate
     /*var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";*/
