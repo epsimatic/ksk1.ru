@@ -71,6 +71,26 @@ LoadJS('//openstat.net/cnt.js');
 // noscript: <img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/>
 
 
+// Обнаруживаем плохих мальчиков / девочек
+function markAs( isNice ) {
+    clearTimeout(naughtyTimer);
+    jQuery('body').toggleClass('is-naughty', !isNice)
+                  .toggleClass('is-nice',     isNice);
+    console.log("User is " + isNice? 'nice' : 'naughty');
+}
+
+var naughtyTimer = setTimeout( function(){ markAs(false) }, 2000);
+
+LoadJS('/ksk1.ru/vendor/fsck-ablock.js', function() {
+    if(typeof fuckAdBlock === 'undefined' || typeof fuckAdBlock.emitEvent !== 'function') {
+        markAs(false);
+    } else {
+        fuckAdBlock.onDetected(markAs(false))
+            .onNotDetected(markAs(true));
+    }
+});
+
+
 // Включаем Snap.js
 var snapper = new Snap({
     element: document.getElementById('content')
