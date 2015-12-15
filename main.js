@@ -76,7 +76,8 @@ function markAs( isNice ) {
     clearTimeout(naughtyTimer);
     jQuery('body').toggleClass('is-naughty', !isNice)
                   .toggleClass('is-nice',     isNice);
-    console.log("User is " + (isNice? 'nice' : 'naughty'));
+    console.log("User is " + (isNice ? 'nice' : 'naughty'));
+    console.debug();
 }
 
 var naughtyTimer = setTimeout( function(){ markAs(false) }, 10000);
@@ -85,8 +86,8 @@ LoadJS('//ksk1.ru/vendor/fsck-ablock.js', function() {
     if(typeof fuckAdBlock === 'undefined') {
         markAs(false);
     } else {
-        fuckAdBlock.onDetected(markAs(false))
-            .onNotDetected(markAs(true));
+        fuckAdBlock.onDetected   (markAs(false));
+        fuckAdBlock.onNotDetected(markAs(true));
     }
 });
 
