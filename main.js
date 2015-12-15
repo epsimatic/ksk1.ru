@@ -81,12 +81,14 @@ function markAs( isNaughty ) {
 
 var naughtyTimer = setTimeout( function(){ markAs(true) }, 10000);
 
+var fuckAdBlock = undefined;
 LoadJS('//ksk1.ru/vendor/fsck-ablock.js', function() {
     if(typeof FuckAdBlock === 'undefined') {
         markAs(true);
     } else {
-        fuckAdBlock.on(true,  function(){markAs(true);} )
-                   .on(false, function(){markAs(false);} );
+        fuckAdBlock.onDetected(   function(){markAs(true);} )
+                   .onNotDetected(function(){markAs(false);} );
+        //FuckAdBlock = fuckAdBlock = undefined;
     }
 });
 
