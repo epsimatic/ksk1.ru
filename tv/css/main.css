@@ -236,7 +236,10 @@ time { padding-right: 1rem; text-align: right; }
 
 
 /* Стили для объявлений на основной доске */
-.board-main .ob-wrap { height: 100%; transition: transform linear; transition-delay: 0s; transform: translateY(0rem); }
+.board-main .shutter { background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff); height: 3.236rem; position: absolute; z-index: 5; }
+
+.board-main .ob-wrap { transition: transform linear; transition-delay: 0s; transform: translateY(0rem); }
+
 .board-main .ob-wrap h2.board-heading { text-align: center; font-size: 1.333rem; margin-bottom: .809rem; }
 
 .board-main .ob-wrap article.ob { background-color: #f5f5f5; margin-bottom: .809rem; }
