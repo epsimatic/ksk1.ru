@@ -4607,7 +4607,7 @@ footer.info .social .social-logo.twitter { background-image: url("data:image/svg
 footer.info .social .social-logo.instagram { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzkzNjM1Nzt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTkyLjIgNTguMmgtOS42Yy0xLjcgMC0zIDEuMy0zIDN2OS42YzAgMS43IDEuMyAzIDMgM2g5LjZjMS43IDAgMy0xLjMgMy0zdi05LjZjMC0xLjctMS4zLTMtMy0zem0uOSAxLjhoLjN2Mi42aC0yLjd2LTIuNmgyLjR6bS03LjkgNC40Yy41LS43IDEuMy0xLjEgMi4yLTEuMXMxLjcuNSAyLjIgMS4xYy4zLjUuNSAxIC41IDEuNiAwIDEuNS0xLjMgMi43LTIuNyAyLjdzLTIuNy0xLjItMi43LTIuN2MwLS42LjItMS4xLjUtMS42em04LjUgNi40YzAgLjgtLjcgMS41LTEuNSAxLjVoLTkuNmMtLjggMC0xLjUtLjctMS41LTEuNXYtNi40aDIuM2MtLjIuNS0uMyAxLjEtLjMgMS42IDAgMi4zIDEuOSA0LjMgNC4zIDQuM3M0LjMtMS45IDQuMy00LjNjMC0uNS0uMS0xLjEtLjMtMS42aDIuM3Y2LjR6Ii8+PC9zdmc+"); }
 */
 
-footer.info .social .fa { font-size: 1.5em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; }
+footer.info .social .fa { font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
 
 footer.info .social .fa-vk { color: #597da3; }
 footer.info .social .fa-odnoklassniki { color: #f2720c; }
@@ -5650,7 +5650,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.info .social > a { margin-right: 6px; }
 
-    footer.info .social .fa { width: 35px; height: 35px; }
+    footer.info .social .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.5em; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
 
@@ -5823,8 +5823,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.info .social > a { margin-right: 9px; }
 
-    footer.info .social img,
-    footer.info .social .social-logo { width: 42px; height: 42px; }
+    footer.info .social .fa { width: 42px; height: 42px; line-height: 42px; font-size: 1.75em; }
 }
 
 /*категории новостей*/
