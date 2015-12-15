@@ -79,10 +79,10 @@ function markAs( isNice ) {
     console.log("User is " + (isNice? 'nice' : 'naughty'));
 }
 
-var naughtyTimer = setTimeout( function(){ markAs(false) }, 2000);
+var naughtyTimer = setTimeout( function(){ markAs(false) }, 10000);
 
 LoadJS('//ksk1.ru/vendor/fsck-ablock.js', function() {
-    if(typeof fuckAdBlock === 'undefined' || typeof fuckAdBlock.emitEvent !== 'function') {
+    if(typeof fuckAdBlock === 'undefined') {
         markAs(false);
     } else {
         fuckAdBlock.onDetected(markAs(false))
