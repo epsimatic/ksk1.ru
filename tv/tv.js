@@ -3,9 +3,9 @@
  */
 function updateClock ( )
 {
-    var currentTime = new Date ( )+(5*60*60);
+    var currentTime = new Date ( );
 
-    var currentHours = currentTime.getHours ( );
+    var currentHours = currentTime.getUTCHours() ( );
     var currentMinutes = currentTime.getMinutes ( );
     var currentSeconds = currentTime.getSeconds ( );
 
