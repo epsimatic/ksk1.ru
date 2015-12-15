@@ -72,22 +72,21 @@ LoadJS('//openstat.net/cnt.js');
 
 
 // Обнаруживаем плохих мальчиков / девочек
-function markAs( isNice ) {
+function markAs( isNaughty ) {
     clearTimeout(naughtyTimer);
-    jQuery('body').toggleClass('is-naughty', !isNice)
-                  .toggleClass('is-nice',     isNice);
-    console.log("User is " + (isNice ? 'nice' : 'naughty'));
-    console.debug();
+    jQuery('body').toggleClass('is-naughty', isNaughty)
+                  .toggleClass('is-nice',   !isNaughty);
+    console.log("User is " + (isNaughty ? 'naughty' : 'nice'));
 }
 
-var naughtyTimer = setTimeout( function(){ markAs(false) }, 10000);
+var naughtyTimer = setTimeout( function(){ markAs(true) }, 10000);
 
 LoadJS('//ksk1.ru/vendor/fsck-ablock.js', function() {
-    if(typeof fuckAdBlock === 'undefined') {
-        markAs(false);
+    if(typeof FuckAdBlock === 'undefined') {
+        markAs(true);
     } else {
-        fuckAdBlock.onDetected   (markAs(false));
-        fuckAdBlock.onNotDetected(markAs(true));
+        fuckAdBlock.on(true,  function(){markAs(true);} )
+                   .on(false, function(){markAs(false);} );
     }
 });
 
