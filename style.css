@@ -2930,7 +2930,7 @@ a.super:focus {background-color: #fbea2d;}
 .ob-pricing-table .panel-pricing-container:nth-child(2) .panel-pricing .panel-heading { border-color: #fff7a9; }
 .ob-pricing-table .panel-pricing-container:nth-child(3) .panel-pricing .panel-heading { border-color: #fff04e; }
 
-.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price { color: #20172c; opacity: 0.8; text-transform: uppercase; font-size: 33px; }
+.ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price { color: #20172c; opacity: 0.8; text-transform: uppercase; font-size: 28px; }
 
 
 .ob-pricing-table .panel-pricing-container .panel-pricing .panel-body .price-description { color: #20172c; opacity: 0.6; text-transform: uppercase; }
