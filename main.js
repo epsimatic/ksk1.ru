@@ -8,7 +8,7 @@
     if (meta_generator && meta_generator.substring(0, 9) == "WordPress") {
         // Пусто. У сайтов на WordPress свой поиск
     } else {
-        if (document.location.href.match(/^[http:\/\/]+ob/)) { // Поиск по объявлениям
+        if (document.location.href.match(/^[htp:\/]+ob/)) { // Поиск по объявлениям
             var cx = '003704283744183876190:qchgmzsmjkc';
         } else { // Поиск по новостям
             cx = '003704283744183876190:woiuqgnl_eg';
@@ -46,6 +46,7 @@
 
 
 //  Openstat
+// FIXME: загружать, только если есть подходящий элемент.
 var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat,
     part: jQuery('body').prop('class').split(' ')[0] };
 LoadJS('//openstat.net/cnt.js');
@@ -68,6 +69,7 @@ LoadJS('//openstat.net/cnt.js');
 // noscript: <img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/>
 
 // Кнопка «Наверх»
+(function () {
 const topOffsetToShowBtn = 1000;
 if (jQuery('.btn-scroll-up').length) {
     // У нас уже есть кнопка «Наверх», ничего делать не надо
@@ -96,6 +98,7 @@ function ShowHideBtnHome() {
     else
         btn_home.addClass("inactive");
 }
+})();
 
 
 // Включаем Snap.js
