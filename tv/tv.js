@@ -5,10 +5,23 @@ function updateClock ( )
 {
     var currentTime = new Date ( );
     var currentMonth = currentTime.getMonth();
-    var currentDay   = currentTime.getDay();
+    var currentDay   = currentTime.getDate();
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
     var currentSeconds = currentTime.getSeconds ( );
+    var nameMonth = {0: "января",
+         1: "февраля",
+         2: "марта",
+         3: "апреля",
+         4: "мая",
+         5: "июня",
+         6: "июля",
+         7: "августа",
+         8: "сентября",
+         9: "октября",
+         10: "ноября",
+         11: "декабря"
+    };
 
     // Pad the minutes and seconds with leading zeros, if required
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
@@ -25,7 +38,7 @@ function updateClock ( )
 
     // Compose the string for display
     var currentTimeString = currentHours + ":" + currentMinutes ;
-    var currentDateString = currentDay + " " + currentMonth ;
+    var currentDateString = currentDay + " " + nameMonth[currentMonth] ;
 
     // Update the time display
     document.getElementById("clock").firstChild.nodeValue = currentTimeString;
