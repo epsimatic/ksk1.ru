@@ -45,6 +45,394 @@
 })();
 
 
+//  Openstat
+var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat,
+    part: jQuery('body').prop('class').split(' ')[0] };
+LoadJS('//openstat.net/cnt.js');
+
+
+// Yandex.Metrika counter
+/*
+    (w[c] = w[c] || []).push(function () {
+    try {
+    w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
+    webvisor: true,
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true});
+    } catch (e) {}
+    });
+    LoadJS('//mc.yandex.ru/metrika/watch.js');
+*/
+
+// noscript: <img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/>
+
+// Кнопка «Наверх»
+const topOffsetToShowBtn = 1000;
+if (jQuery('.btn-scroll-up').length) {
+    // У нас уже есть кнопка «Наверх», ничего делать не надо
+} else {
+    var btn_home = jQuery('<a/>', {
+        href: '#header',
+        class: 'btn-home inactive text-center',
+        title: 'К верху страницы',
+        html: '<div><svg baseProfile="basic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 70"><path fill="#999" d="M44.546 60.295l-2.251 2.251c-.273.273-.634.454-1.038.454-.362 0-.766-.181-1.039-.454l-17.718-17.718-17.718 17.718c-.273.273-.677.454-1.039.454s-.766-.181-1.039-.454l-2.251-2.251c-.272-.273-.453-.677-.453-1.038 0-.362.181-.766.454-1.039l21.007-21.008c.273-.273.677-.454 1.039-.454s.766.181 1.039.454l21.008 21.008c.272.273.453.677.453 1.039 0 .361-.181.765-.454 1.038z"/></svg></div> <div>&#1053;&#1040;&#1042;&#1045;&#1056;&#1061;</div>'
+    }).click(function(event){
+        jQuery('html,body,#content').animate({ scrollTop: 0 }, 'slow');
+        btn_home.blur();
+        event.preventDefault();
+    });
+    var url = document.location.href;
+    if(url.match(/ob.ksk66/))
+       btn_home.appendTo('body');
+    else {btn_home.appendTo('body');
+      }
+    jQuery(window).scroll(ShowHideBtnHome);
+    jQuery('#content').scroll(ShowHideBtnHome);
+}
+function ShowHideBtnHome() {
+    if (jQuery(this).scrollTop() > topOffsetToShowBtn)
+        btn_home.removeClass("inactive");
+    else
+        btn_home.addClass("inactive");
+}
+
+
+// Включаем Snap.js
+var snapper = new Snap({
+    element: document.getElementById('content')
+    //disable: 'right'
+});
+jQuery('#menu-button').on('click', function() {
+    if (snapper.state().state == "left") {
+        snapper.close();
+    } else {
+        snapper.open('left');
+    }
+});
+// Автоматическое скрытие snap.js на больших экранах
+jQuery(window).resize(function() {
+    if (jQuery(this).width() < 768) {
+        snapper.enable();
+    } else {
+        snapper.close();
+        snapper.disable();
+    }
+}).trigger('resize');
+
+
+// Разворачивание меню по щелчку
+jQuery('.menu-item-has-children > a').click(function(event){
+    event.preventDefault();
+    var thisParent = jQuery(this).parent();
+    if (thisParent.hasClass('current-page-parent')) {
+        thisParent.removeClass('current-page-parent');
+    } else {
+        thisParent.addClass('current-page-parent');
+        jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-page-parent');
+    }
+});
+
+
+/*  поповер по hover
+jQuery('.wide-header .popover-weather').popover({
+        content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>",
+        title: "Прогноз погоды на 3 дня",
+//        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
+//<button type="button" class="close" aria-hidden="true">&times;</button>\
+//<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
+        html: true,
+        placement: "bottom",
+        trigger:"hover"
+    }).one('show.bs.popover', function(event){
+        jQuery.ajax({
+            url: "http://ob.ksk66.ru/weather/forecast.html",
+            timeout: 2000,
+            success: function (data) {
+                // Надо обновить уже висящую подсказку и изменить options.content для новых подсказок
+                var popover = jQuery('.wide-header .popover-weather').data('bs.popover');
+                popover.tip().find(".popover-content").html(data);
+                popover.options.content = data;
+            },
+            error: function(msg){
+                result = msg.responseText ? msg.responseText : msg.statusText;
+                    jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
+            }
+
+        });
+    });*/
+
+jQuery('.dropdown-weather').one('mouseenter',function(){
+    jQuery.ajax({
+        url: "http://ksk1.ru/weather/forecast.html",
+        timeout: 2000,
+        success: function (data) {
+            jQuery('.dropdown-weather').find('.dropdown-menu').html(data)
+        },
+        error: function(msg){
+            result = msg.status + ' ' + msg.statusText;
+            jQuery('.dropdown-weather').find('.dropdown-menu').html("<div class='alert alert-danger'>Ошибка: <b>"+result+"</b><br>Вот погода от Яндекса:</div> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a>");
+        }
+
+    });
+});
+
+
+// Форма для сбора отзывов
+function showReviewHide() {
+    $(".review-hide").removeClass('hidden');
+    $(".review__line-radiobutton").addClass('feedback-sent');
+    $(".review-text").focus();
+}
+function formFade() {
+    $('.wrapp__buttonSubmit').button('loading');
+    $(".dropdown-vote").addClass('feedback-sent');
+}
+
+
+// Загрузить срочные объявления при наведении на панель Объявления
+jQuery(".menu-main-ads").one("mouseenter",function() {
+    jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
+        jQuery('.ads-poster').each(function () {
+            jQuery(this).popover({
+                content: jQuery('#content-' + jQuery(this)[0].id).html(),
+                html: true,
+                placement: "bottom",
+                trigger: 'hover',
+                container: '.ads-margin',
+                viewport: 'body'
+            });
+        });
+    });
+});
+
+
+// Загрузить главную новость при наведении на панель Новости
+jQuery(".menu-main-news").one("mouseenter",function() {
+    jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
+});
+
+
+
+// <editor-fold desc="Видео и аудиоплееры">
+
+var radio_player="";
+var video_player="";
+
+// При наведении мыши на панель Радио
+jQuery(".menu-main-radio").mouseenter(function() {
+
+    // Получить текущий трек
+    jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
+        var track = jQuery(data).find("TRACK").first();
+        if (track.attr("ARTIST")) {
+            var track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("ARTIST") + " — " + track.attr("TITLE");
+        }
+        else if (track.attr("TITLE")) {
+            track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("TITLE");
+        } else  track_text = "";
+        jQuery(".track-info").html(track_text.replace(/\[.*\]/, ""));
+        jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/, ""));
+        jQuery("#listen-text").removeClass("hidden");
+
+    });
+});
+jQuery(window).load(function () {
+    if (getCookie("player_state")) {
+        jQuery(".menu-main-radio").trigger('mouseenter');
+    }
+});
+
+
+jQuery(".menu-main-radio").one('mouseenter', function(){
+
+    // Радио плеер
+    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
+        radio_player = jQuery("#jquery_jplayer_1");
+         radio_player.jPlayer({
+            ready: function() {
+                radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                });
+                if (getCookie("player_state")) {
+                    deleteCookie("player_state");
+                     radio_player.jPlayer("play");
+                }
+            },
+            ended: function() {
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                }).jPlayer("play");
+                jQuery(".jp-progress").addClass("hidden");
+                jQuery(".jp-current-time").addClass("hidden");
+                jQuery(".jp-duration").addClass("hidden");
+                jQuery(".track-info").removeClass("hidden");
+                jQuery("#on_air").click();
+            },
+            swfPath: "js",
+            supplied: "mp3, m4a"
+        });
+
+
+        jQuery(".play_btn ").click(function () {
+            var id= jQuery(this).prop("id");
+            if (id=="last_news") {
+                 radio_player.jPlayer("setMedia", {
+                    m4a: "http://ksk1.ru/radio-news/news.m4a"
+                }).jPlayer("play");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
+            }
+            if (id=="on_air") {
+                 radio_player.jPlayer("setMedia", {
+                    m4a: 'http://radio.ksk66.ru:8000/aac',
+                    mp3: 'http://radio.ksk66.ru:8000/mp3'
+                }).jPlayer("play");
+                jQuery(".jp-progress").addClass("hidden");
+                jQuery(".jp-current-time").addClass("hidden");
+                jQuery(".jp-duration").addClass("hidden");
+                jQuery(".track-info").removeClass("hidden");
+            }
+            if (id=="last_comment") {
+                 radio_player.jPlayer("setMedia", {
+                    m4a: 'http://ksk1.ru/radio-news/comment.m4a'
+                }).jPlayer("play");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
+            }
+            jQuery(".play-radio i.fa-play").addClass('hidden');
+            jQuery(".play-radio i.fa-pause").removeClass('hidden');
+        });
+        jQuery(".play-radio i").bind("click",function (){
+            if(jQuery(this).prop("id")=="play"){
+                 radio_player.jPlayer({
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                }).jPlayer("play");
+                jQuery(".play-radio i.fa-play").addClass('hidden');
+                jQuery(".play-radio i.fa-pause").removeClass('hidden');
+            }
+            if(jQuery(this).prop("id")=="pause"){
+                 radio_player.jPlayer({
+                    m4a: "http://radio.ksk66.ru:8000/aac"
+                }).jPlayer("pause");
+                jQuery(".play-radio i.fa-play").removeClass('hidden');
+                jQuery(".play-radio i.fa-pause").addClass('hidden');
+            }
+        });
+        // при окончании трека уже есть выше ended
+       /* radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+
+
+        });*/
+         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+        });
+        radio_player.bind(jQuery.jPlayer.event.error , function(event) {
+            jQuery(".play-radio i.fa-play").removeClass('hidden');
+            jQuery(".play-radio i.fa-pause").addClass('hidden');
+            jQuery(".track-info").html("<span class='error'><strong>Ошибка:</strong> "+event.jPlayer.error.message+"</span>");
+            console.log("Ошибка: " + event.jPlayer.error.message);
+            console.log(event.jPlayer.error);
+            console.error(event.jPlayer.error);
+        });
+         radio_player.bind(jQuery.jPlayer.event.play , function(event) {
+            jQuery(".play-radio i.fa-play").addClass('hidden');
+            jQuery(".play-radio i.fa-pause").removeClass('hidden');
+            if( video_player) {
+                 video_player.stopVideo();
+            }
+        });
+
+    });
+
+
+
+});
+
+jQuery(".menu-main-tv").one('mouseenter', function(){
+
+    // Видео плеер
+    LoadJS("https://www.youtube.com/iframe_api", function() {
+    });
+
+});
+// Callback-функции для Youtube API должны бфть объявлены глобально
+/*function onYouTubeIframeAPIReady() {
+    video_player = new YT.Player('player-youtube', {
+        height: '390',
+        width: '400',
+        videoId: 'watch?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_',
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}*/
+function onYouTubePlayerAPIReady() {
+     video_player = new YT.Player("player-youtube", {
+        height: "390",
+        width: "400",
+        playerVars: {
+            listType: "playlist",
+            list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
+            color: "white",
+            modestbranding: 1,
+            theme: "light",
+            controls: 2,
+            fs:1,
+            showinfo:0
+        },
+        events: {
+            "onStateChange": onPlayerStateChange
+        }
+    });
+}
+
+// Не работает сейчас
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+// Останавливать радио, когда начинает играть видео
+function onPlayerStateChange(event) {
+
+    if (radio_player && event.data == YT.PlayerState.PLAYING) {
+         radio_player.jPlayer("pause");
+    }
+}
+
+
+// Функции для работы с cookies
+function deleteCookie(key) { setCookie(key, null, 0); }
+function setCookie(key, value, time) {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + time);
+    document.cookie = key + '=' + encodeURIComponent(value || '') + ';expires=' + expires.toUTCString();
+}
+function getCookie(key) {
+    var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+    return keyValue ? decodeURIComponent(keyValue[2]) : null;
+}
+
+// Сохранить на N сек. состояние плеера радио при закрытии вкладки или браузера
+window.onbeforeunload = function () {
+    if (jQuery(".play-radio #play.hidden").length){
+    setCookie("player_state", "live", 30000);
+    }
+};
+
+// </editor-fold>
+
+
 /* <editor-fold desc="Карта leaflet"> */
 
 var map, layersControl;
@@ -78,13 +466,13 @@ jQuery('.triggers-weather').click( function() {jQuery('#btn-feature-info').click
 
 jQuery('.btn-feature').not('.cat-feature , .map-feature').click(function () {
     const was_active = jQuery(this).hasClass('active'),
-          potential_cond_active = jQuery('.potential-cond-active');
+        potential_cond_active = jQuery('.potential-cond-active');
     jQuery('.navpanel, .btn-feature').removeClass('active');
     potential_cond_active.removeClass('cond-active');
     if (!was_active) {
-       if (jQuery(this).attr("id")=="btn-feature-info"){  // панель с погодой внизу
-           jQuery("#weather-panel").appendTo(".panel_movie_weather");
-       }
+        if (jQuery(this).attr("id")=="btn-feature-info"){  // панель с погодой внизу
+            jQuery("#weather-panel").appendTo(".panel_movie_weather");
+        }
         jQuery(this).addClass('active');
         jQuery('.' + jQuery(this)[0].id.replace('btn-feature', 'navpanel'))
             .removeClass('hidden').addClass('active').trigger('first-load');
@@ -310,13 +698,13 @@ function AddMap(name_id,map_height){
         map.setView([56.6132, 57.7689], 13);
         layersControl = new L.Control.Layers(null, null, { 'collapsed': false }).addTo(map);
         /*var tiles_OpenMapSurfer = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-            minZoom: 8,
-            maxZoom: 20,
-            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
-            'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
-        });
-        tiles_OpenMapSurfer.addTo(map);*/
-       // layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
+         minZoom: 8,
+         maxZoom: 20,
+         attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+         'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+         });
+         tiles_OpenMapSurfer.addTo(map);*/
+        // layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
         var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 20,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">Карта OpenStreetMap</a>'
@@ -348,81 +736,12 @@ function AddMap(name_id,map_height){
 
 
 
-jQuery('#navpanel-services').one('first-load', function () {
-// Загружаем карту
-    if (typeof map ==="undefined")
-    AddMap('panel-map',428);
-   /* setMapHeight();
-    LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
-    LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
-// TODO: загружать локальный leaflet
-    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
-
-        map = L.map('panel-map');
-        map.setView([56.6132, 57.7689], 13);
-        L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-            minZoom: 8,
-            maxZoom: 20,
-            attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
-                         'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
-        }).addTo(map);
-
-        AddGeosearch();
-    });*/
+// FIXME: понять, что это за фигня, и удалить
+jQuery('span.our-projects').on('mouseenter', function() {
+    jQuery(this).addClass( 'active' );
+}).on('mouseleave',function() {
+    jQuery(this).removeClass( 'active' );
 });
-
-//  Openstat
-var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat,
-    part: jQuery('body').prop('class').split(' ')[0] };
-LoadJS('//openstat.net/cnt.js');
-
-
-// Yandex.Metrika counter
-/*
-    (w[c] = w[c] || []).push(function () {
-    try {
-    w.yaCounter5036764 = new Ya.Metrika({id: 5036764,
-    webvisor: true,
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true});
-    } catch (e) {}
-    });
-    LoadJS('//mc.yandex.ru/metrika/watch.js');
-*/
-
-// noscript: <img src="//mc.yandex.ru/watch/5036764" style="position:absolute; left:-9999px;" alt=""/>
-
-// Кнопка «Наверх»
-const topOffsetToShowBtn = 1000;
-if (jQuery('.btn-scroll-up').length) {
-    // У нас уже есть кнопка «Наверх», ничего делать не надо
-} else {
-    var btn_home = jQuery('<a/>', {
-        href: '#header',
-        class: 'btn-home inactive text-center',
-        title: 'К верху страницы',
-        html: '<div><svg baseProfile="basic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 70"><path fill="#999" d="M44.546 60.295l-2.251 2.251c-.273.273-.634.454-1.038.454-.362 0-.766-.181-1.039-.454l-17.718-17.718-17.718 17.718c-.273.273-.677.454-1.039.454s-.766-.181-1.039-.454l-2.251-2.251c-.272-.273-.453-.677-.453-1.038 0-.362.181-.766.454-1.039l21.007-21.008c.273-.273.677-.454 1.039-.454s.766.181 1.039.454l21.008 21.008c.272.273.453.677.453 1.039 0 .361-.181.765-.454 1.038z"/></svg></div> <div>&#1053;&#1040;&#1042;&#1045;&#1056;&#1061;</div>'
-    }).click(function(event){
-        jQuery('html,body,#content').animate({ scrollTop: 0 }, 'slow');
-        btn_home.blur();
-        event.preventDefault();
-    });
-    var url = document.location.href;
-    if(url.match(/ob.ksk66/))
-       btn_home.appendTo('body');
-    else {btn_home.appendTo('body');
-      }
-    jQuery(window).scroll(ShowHideBtnHome);
-    jQuery('#content').scroll(ShowHideBtnHome);
-}
-function ShowHideBtnHome() {
-    if (jQuery(this).scrollTop() > topOffsetToShowBtn)
-        btn_home.removeClass("inactive");
-    else
-        btn_home.addClass("inactive");
-}
-
 
 
 // Browser-update
@@ -430,338 +749,3 @@ var $buoop = { text: "Ваш браузер (%s) <b>устарел</b>. Он <b>
 <a%s>Узнайте, как обновить ваш браузер</a>" };
 LoadJS('//browser-update.org/update.js');
 
-
-// Включаем Snap.js
-var snapper = new Snap({
-    element: document.getElementById('content')
-    //disable: 'right'
-});
-jQuery('#menu-button').on('click', function() {
-    if (snapper.state().state == "left") {
-        snapper.close();
-    } else {
-        snapper.open('left');
-    }
-});
-
-// Автоматическое скрытие на больших экранах
-jQuery(window).resize(function() {
-    if (jQuery(this).width() < 768) {
-        snapper.enable();
-    } else {
-        snapper.close();
-        snapper.disable();
-    }
-}).trigger('resize');
-
-// Разворачивание меню по щелчку
-jQuery('.menu-item-has-children > a').click(function(event){
-    event.preventDefault();
-    var thisParent = jQuery(this).parent();
-    if (thisParent.hasClass('current-page-parent')) {
-        thisParent.removeClass('current-page-parent');
-    } else {
-        thisParent.addClass('current-page-parent');
-        jQuery('.menu-item-has-children > a').parent().not(thisParent).removeClass('current-page-parent');
-    }
-});
-
-
-/*  поповер по hover
-jQuery('.wide-header .popover-weather').popover({
-        content: "<h1 style='padding: 50px 50px;'>Загрузка...</h1>",
-        title: "Прогноз погоды на 3 дня",
-//        template: '<div class="popover popover-weather-temp"><div class="arrow"></div><div class="popover-header">\
-//<button type="button" class="close" aria-hidden="true">&times;</button>\
-//<h3 class="popover-title"></h3></div><div class="popover-content"></div></div>',
-        html: true,
-        placement: "bottom",
-        trigger:"hover"
-    }).one('show.bs.popover', function(event){
-        jQuery.ajax({
-            url: "http://ob.ksk66.ru/weather/forecast.html",
-            timeout: 2000,
-            success: function (data) {
-                // Надо обновить уже висящую подсказку и изменить options.content для новых подсказок
-                var popover = jQuery('.wide-header .popover-weather').data('bs.popover');
-                popover.tip().find(".popover-content").html(data);
-                popover.options.content = data;
-            },
-            error: function(msg){
-                result = msg.responseText ? msg.responseText : msg.statusText;
-                    jQuery('.popover-weather + .popover > .popover-content').html("<p>Ошибка: "+result+"<br>Посмотрите на Яндекс.Погода<br> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a></p>");
-            }
-
-        });
-    });*/
-
-jQuery('.dropdown-weather').one('mouseenter',function(){
-    jQuery.ajax({
-        url: "http://ksk1.ru/weather/forecast.html",
-        timeout: 2000,
-        success: function (data) {
-            jQuery('.dropdown-weather').find('.dropdown-menu').html(data)
-        },
-        error: function(msg){
-            result = msg.status + ' ' + msg.statusText;
-            jQuery('.dropdown-weather').find('.dropdown-menu').html("<div class='alert alert-danger'>Ошибка: <b>"+result+"</b><br>Вот погода от Яндекса:</div> <a class='ya-weather-forecast' href='https://pogoda.yandex.ru/krasnoufimsk/details' target='_blank'><img alt='Погода' src='//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru'></a>");
-        }
-
-    });
-});
-// Форма для сбора отзывов
-function showReviewHide() {
-    $(".review-hide").removeClass('hidden');
-    $(".review__line-radiobutton").addClass('feedback-sent');
-    $(".review-text").focus();
-}
-function formFade() {
-    $('.wrapp__buttonSubmit').button('loading');
-    $(".dropdown-vote").addClass('feedback-sent');
-}
-
-// Загрузить срочные объявления при наведении на панель Объявления
-jQuery(".menu-main-ads").one("mouseenter",function() {
-    jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
-        jQuery('.ads-poster').each(function () {
-            jQuery(this).popover({
-                content: jQuery('#content-' + jQuery(this)[0].id).html(),
-                html: true,
-                placement: "bottom",
-                trigger: 'hover',
-                container: '.ads-margin',
-                viewport: 'body'
-            });
-        });
-    });
-});
-
-
-// Загрузить главную новость при наведении на панель Новости
-jQuery(".menu-main-news").one("mouseenter",function() {
-    jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
-});
-
-
-var radio_player="";
-var video_player="";
-
-// При наведении мыши на панель Радио
-jQuery(".menu-main-radio").mouseenter(function() {
-
-    // Получить текущий трек
-    jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
-        var track = jQuery(data).find("TRACK").first();
-        if (track.attr("ARTIST")) {
-            var track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("ARTIST") + " — " + track.attr("TITLE");
-        }
-        else if (track.attr("TITLE")) {
-            track_text = "<span class='track-info-air'>&#1042;&#32;&#1101;&#1092;&#1080;&#1088;&#1077;: </span>" + track.attr("TITLE");
-        } else  track_text = "";
-        jQuery(".track-info").html(track_text.replace(/\[.*\]/, ""));
-        jQuery(".listeners").text(track.attr("LISTENERS").replace(/\[.*\]/, ""));
-        jQuery("#listen-text").removeClass("hidden");
-
-    });
-});
-jQuery(window).load(function () {
-    if (getCookie("player_state")) {
-        jQuery(".menu-main-radio").trigger('mouseenter');
-    }
-});
-
-
-jQuery(".menu-main-radio").one('mouseenter', function(){
-
-    // Радио плеер
-    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function(){
-        radio_player = jQuery("#jquery_jplayer_1");
-         radio_player.jPlayer({
-            ready: function() {
-                radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
-                jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
-                });
-                if (getCookie("player_state")) {
-                    deleteCookie("player_state");
-                     radio_player.jPlayer("play");
-                }
-            },
-            ended: function() {
-                jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
-                }).jPlayer("play");
-                jQuery(".jp-progress").addClass("hidden");
-                jQuery(".jp-current-time").addClass("hidden");
-                jQuery(".jp-duration").addClass("hidden");
-                jQuery(".track-info").removeClass("hidden");
-                jQuery("#on_air").click();
-            },
-            swfPath: "js",
-            supplied: "mp3, m4a"
-        });
-
-
-        jQuery(".play_btn ").click(function () {
-            var id= jQuery(this).prop("id");
-            if (id=="last_news") {
-                 radio_player.jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/news.m4a"
-                }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hidden");
-                jQuery(".jp-current-time").removeClass("hidden");
-                jQuery(".jp-duration").removeClass("hidden");
-                jQuery(".track-info").addClass("hidden");
-            }
-            if (id=="on_air") {
-                 radio_player.jPlayer("setMedia", {
-                    m4a: 'http://radio.ksk66.ru:8000/aac',
-                    mp3: 'http://radio.ksk66.ru:8000/mp3'
-                }).jPlayer("play");
-                jQuery(".jp-progress").addClass("hidden");
-                jQuery(".jp-current-time").addClass("hidden");
-                jQuery(".jp-duration").addClass("hidden");
-                jQuery(".track-info").removeClass("hidden");
-            }
-            if (id=="last_comment") {
-                 radio_player.jPlayer("setMedia", {
-                    m4a: 'http://ksk1.ru/radio-news/comment.m4a'
-                }).jPlayer("play");
-                jQuery(".jp-progress").removeClass("hidden");
-                jQuery(".jp-current-time").removeClass("hidden");
-                jQuery(".jp-duration").removeClass("hidden");
-                jQuery(".track-info").addClass("hidden");
-            }
-            jQuery(".play-radio i.fa-play").addClass('hidden');
-            jQuery(".play-radio i.fa-pause").removeClass('hidden');
-        });
-        jQuery(".play-radio i").bind("click",function (){
-            if(jQuery(this).prop("id")=="play"){
-                 radio_player.jPlayer({
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("play");
-                jQuery(".play-radio i.fa-play").addClass('hidden');
-                jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            }
-            if(jQuery(this).prop("id")=="pause"){
-                 radio_player.jPlayer({
-                    m4a: "http://radio.ksk66.ru:8000/aac"
-                }).jPlayer("pause");
-                jQuery(".play-radio i.fa-play").removeClass('hidden');
-                jQuery(".play-radio i.fa-pause").addClass('hidden');
-            }
-        });
-        // при окончании трека уже есть выше ended
-       /* radio_player.bind(jQuery.jPlayer.event.ended , function(event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
-
-
-        });*/
-         radio_player.bind(jQuery.jPlayer.event.pause , function(event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
-        });
-        radio_player.bind(jQuery.jPlayer.event.error , function(event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
-            jQuery(".track-info").html("<span class='error'><strong>Ошибка:</strong> "+event.jPlayer.error.message+"</span>");
-            console.log("Ошибка: " + event.jPlayer.error.message);
-            console.log(event.jPlayer.error);
-            console.error(event.jPlayer.error);
-        });
-         radio_player.bind(jQuery.jPlayer.event.play , function(event) {
-            jQuery(".play-radio i.fa-play").addClass('hidden');
-            jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            if( video_player) {
-                 video_player.stopVideo();
-            }
-        });
-
-    });
-
-
-
-});
-
-jQuery(".menu-main-tv").one('mouseenter', function(){
-
-    // Видео плеер
-    LoadJS("https://www.youtube.com/iframe_api", function() {
-    });
-
-});
-// Callback-функции для Youtube API должны бфть объявлены глобально
-/*function onYouTubeIframeAPIReady() {
-    video_player = new YT.Player('player-youtube', {
-        height: '390',
-        width: '400',
-        videoId: 'watch?list=PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_',
-        events: {
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}*/
-function onYouTubePlayerAPIReady() {
-     video_player = new YT.Player("player-youtube", {
-        height: "390",
-        width: "400",
-        playerVars: {
-            listType: "playlist",
-            list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
-            color: "white",
-            modestbranding: 1,
-            theme: "light",
-            controls: 2,
-            fs:1,
-            showinfo:0
-        },
-        events: {
-            "onStateChange": onPlayerStateChange
-        }
-    });
-}
-
-// Не работает сейчас
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
-
-// Останавливать радио, когда начинает играть видео
-function onPlayerStateChange(event) {
-
-    if (radio_player && event.data == YT.PlayerState.PLAYING) {
-         radio_player.jPlayer("pause");
-    }
-}
-
-
-
-// Работа с cookies
-function deleteCookie(key) { setCookie(key, null, 0); }
-function setCookie(key, value, time) {
-    var expires = new Date();
-    expires.setTime(expires.getTime() + time);
-    document.cookie = key + '=' + encodeURIComponent(value || '') + ';expires=' + expires.toUTCString();
-}
-function getCookie(key) {
-    var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
-    return keyValue ? decodeURIComponent(keyValue[2]) : null;
-}
-
-
-
-// при закрытии вкладки или браузера
-window.onbeforeunload = function () {
-    if (jQuery(".play-radio #play.hidden").length){
-    setCookie("player_state", "live", 30000);
-    }
-};
-
-jQuery('span.our-projects').on('mouseenter', function() {
-    jQuery(this).addClass( 'active' );
-}).on('mouseleave',function() {
-    jQuery(this).removeClass( 'active' );
-});
