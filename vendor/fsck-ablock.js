@@ -1,1 +1,1 @@
-fsck-ablock/fuckadblock.min.js
+fsck-ablock/fuckadblock.js
