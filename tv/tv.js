@@ -45,3 +45,8 @@ function updateClock ( )
     jQuery("#date").text(currentDateString);
 }
 
+jQuery(document).ready(function(){
+    updateClock();
+    setInterval('updateClock()', 10000 );
+});
+
