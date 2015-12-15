@@ -45,6 +45,8 @@
 })();
 
 
+/* <editor-fold desc="Карта leaflet"> */
+
 var map, layersControl;
 // Подгоняем высоту карты
 function setMapHeight() {
@@ -342,6 +344,9 @@ function AddMap(name_id,map_height){
         }, 100)
     });
 }
+/* </editor-fold> */
+
+
 
 jQuery('#navpanel-services').one('first-load', function () {
 // Загружаем карту
