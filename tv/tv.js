@@ -3,7 +3,7 @@
  */
 function updateClock ( )
 {
-    var currentTime = new Date ( );
+    var currentTime = new Date ( )+(5*60*60);
 
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
