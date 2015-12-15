@@ -67,3 +67,6 @@ url=https://github.com/glgc25/bootstrap
 [submodule "vendor/snap-js"]
 	path = vendor/snap-js
 	url = https://github.com/jakiestfu/Snap.js
+[submodule "vendor/fsck-ablock"]
+	path = vendor/fsck-ablock
+	url = https://github.com/sitexw/FuckAdBlock.git
