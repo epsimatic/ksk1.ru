@@ -41,7 +41,7 @@ function updateClock ( )
     var currentDateString = currentDay + " " + nameMonth[currentMonth] ;
 
     // Update the time display
-    document.getElementById("clock").firstChild.nodeValue = currentTimeString;
-    document.getElementById("date").firstChild.nodeValue = currentDateString;
+    jQuery("#clock").text(currentTimeString);
+    jQuery("#date").text(currentDateString);
 }
 
