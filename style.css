@@ -427,6 +427,9 @@ footer h3 { font-size: 2em; font-weight: 400; color: #0080c7; margin-top: 0; }
 
 .openstat-container img { margin: -2px -3px -1px -60px; display: block; }
 
+/*чтобы ссылка закрывала счётчик*/
+.openstat-container + * a{left: -40px; margin-right: -40px; padding-left: 40px; position: relative;}
+
 
 footer.wide-footer .counter { color: #545454; }
 .liveinternet-container{display: inline-block; overflow: hidden; vertical-align: middle;height: 14px;}
