@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="/tv/css/normalize.css">
         <link rel="stylesheet" href="/tv/css/main.css">
         <link rel="stylesheet" href="/opensans/opensans.min.css"/>
+        <script src="/tv/tv.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
         <div class="container">
             <main>
                 <div class="board board-on-air">
@@ -22,7 +23,7 @@
             </main>
             <div class="sidebar">
                 <div class="board board-time-and-logo">
-                    <time><div class="date">27 сентября</div><div class="current-time">18:23</div></time>
+                    <time><div class="date">27 сентября</div><div class="current-time"><span id="clock">&nbsp;</span></div></time>
                     <div class="logo-wrap"><img class="logo" src="/tv/logo.svg"></div> 
                 </div>
                 <div class="board board-weather">
