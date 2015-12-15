@@ -120,7 +120,7 @@ time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
 
-.fa { display: inline !important]; }
+.fa { display: inline !important; }
 
 .board-chat { min-height: 7rem; background-color: #a7ffeb; position: relative; overflow: hidden; }
 
