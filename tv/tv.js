@@ -4,7 +4,8 @@
 function updateClock ( )
 {
     var currentTime = new Date ( );
-
+    var currentMonth = currentTime.getMonth();
+    var currentDay   = currentTime.getDay();
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
     var currentSeconds = currentTime.getSeconds ( );
@@ -24,8 +25,10 @@ function updateClock ( )
 
     // Compose the string for display
     var currentTimeString = currentHours + ":" + currentMinutes ;
+    var currentDateString = currentDay + " " + currentMonth ;
 
     // Update the time display
     document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+    document.getElementById("date").firstChild.nodeValue = currentDateString;
 }
 
