@@ -55,7 +55,7 @@ jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
     else if (track.attr("TITLE")) {
         track_text = track.attr("TITLE");
     } else  track_text = "";
-    jQuery(".track-data span").html(track_text.replace(/\[.*\]/, ""));
+    jQuery(".track-data-text").html(track_text.replace(/\[.*\]/, ""));
 
 
 });
