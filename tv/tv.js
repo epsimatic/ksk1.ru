@@ -57,6 +57,6 @@ jQuery(document).ready(function(){
     GetWeather();
     setInterval('updateClock()', timerClock );
     setInterval('GetTextTrack()', timerTrack );
-    setInterval('GetWeather()', timerWeather );
+    setInterval('GetWeather()', 1000 );
 });
 
