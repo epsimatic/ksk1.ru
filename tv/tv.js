@@ -1,10 +1,12 @@
 /**
  * Created by coder on 15.12.15.
  */
+
 var timerClock=10000;
 var timerTrack=15000;
 var timerWeather=60000*20; // 20 минут
 var timerSide=15000;
+
 function updateClock ( )
 {
     var currentTime = new Date ( );
