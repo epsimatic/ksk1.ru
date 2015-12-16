@@ -154,6 +154,9 @@ header .weather-temp { font-size: 20px; font-weight: 600; z-index: 5; }
 
 header .weather-temp:after { content: " °"; }
 
+/*Стиль для опознания блокировщика рекламы*/
+body.is-naughty header .weather-temp:after { content: " °C"; } 
+
 header .weather-temp-sm { position: absolute; bottom: 0; left: 37px; }
 
 /*.weather-temp-sm .weather-label,*/
