@@ -4,6 +4,7 @@
 var timerClock=10000;
 var timerTrack=15000;
 var timerWeather=60000*20; // 20 минут
+var timerSide=15000;
 function updateClock ( )
 {
     var currentTime = new Date ( );
@@ -51,6 +52,9 @@ jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
 function GetWeather(){
     jQuery(".board-weather").load("http://ksk1.ru/weather/conditions.html");
 }
+function GetSide(){
+    jQuery(".board-yummie").load("http://ksk1.ru//yummies/ksk1.ru/side/");
+}
 jQuery(document).ready(function(){
     updateClock();
     GetTextTrack();
@@ -58,5 +62,6 @@ jQuery(document).ready(function(){
     setInterval('updateClock()', timerClock );
     setInterval('GetTextTrack()', timerTrack );
     setInterval('GetWeather()', timerWeather );
+    setInterval('GetSide()', timerSide );
 });
 
