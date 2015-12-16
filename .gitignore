@@ -1,7 +1,7 @@
-.idea/
+.idea
 .idea/deployment.xml
 .idea/inspectionProfiles/Project_Default.xml
 nowplaying.xml
-radio-news/
+radio-news
 weather/*.html
 
