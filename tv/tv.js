@@ -43,7 +43,6 @@ jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
     } else  track_text = "";
     jQuery(".track-data-text").html(track_text.replace(/\[.*\]/, ""));
 
-
 });
 }
 jQuery(document).ready(function(){
