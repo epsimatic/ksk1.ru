@@ -1172,9 +1172,7 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-/*.news #page > #header object {width: 366px !important; height: 34px !important; margin-left: -10px; margin-bottom: -5px;}*/
-
-.yummies { max-width: 100%; height: auto; margin-bottom: 15px; }
+.yummies { max-width: 100%; height: auto; margin-bottom: 15px; width: 100%; }
 
 #header .yummies { margin-bottom: 0; max-width: 100%; }
 
@@ -2656,10 +2654,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .row-center-yummies img {display: block; height: auto; max-width: 100%;}
 
-.row-center-yummies { margin-left: -10px; }
-
-.site-ob .row-center-yummies .col-xs-4:last-child { padding-right: 10px; }
-
 /*Стили для баннеров спонсоров*/
 .cat__banner-block {width: auto;}
 
@@ -2708,7 +2702,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-cat > .panel-body {padding: 0; background-color: transparent;}
 
-.panel-cat .yummies {padding-left: 5px;}
+.panel-cat .yummies { padding-left: 5px; }
 
 .panel-cat .list-group {padding: 0; margin: 0;}
 
