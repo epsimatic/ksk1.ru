@@ -53,7 +53,7 @@ function GetWeather(){
     jQuery(".board-weather").load("http://ksk1.ru/weather/conditions.html");
 }
 function GetSide(){
-    jQuery(".board-yummie").load("http://ksk1.ru//yummies/ksk1.ru/side/");
+    jQuery(".board-yummie").load("http://ksk1.ru/yummies/ksk1.ru/side/");
 }
 jQuery(document).ready(function(){
     updateClock();
