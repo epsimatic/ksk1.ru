@@ -62,6 +62,7 @@ jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
 }
 jQuery(document).ready(function(){
     updateClock();
+    GetTextTrack();
     setInterval('updateClock()', 10000 );
     setInterval('GetTextTrack()', 15000 );
 });
