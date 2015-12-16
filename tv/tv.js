@@ -34,15 +34,15 @@ function updateClock ( )
   /*  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;*/
 
     // Convert an hours component of "0" to "12"
-    currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+    currentHours = ( currentHours == 0 ) ? '00' : currentHours;
 
     // Compose the string for display
-    var currentTimeString = currentHours + ":" + currentMinutes ;
-    var currentDateString = currentDay + " " + nameMonth[currentMonth] ;
+  //  var currentTimeString = currentHours + ":" + currentMinutes ;
+  //  var currentDateString = currentDay + " " + nameMonth[currentMonth] ;
 
     // Update the time display
-    jQuery("#clock").text(currentTimeString);
-    jQuery("#date").text(currentDateString);
+    jQuery("#clock").text(currentHours + ":" + currentMinutes);
+    jQuery("#date").text(currentDay + " " + nameMonth[currentMonth]);
 }
 
 // Получить текущий трек
