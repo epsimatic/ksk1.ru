@@ -1,6 +1,8 @@
 /**
  * Created by coder on 15.12.15.
  */
+var timerClock=10000;
+var timerTrack=15000;
 function updateClock ( )
 {
     var currentTime = new Date ( );
@@ -48,7 +50,7 @@ jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
 jQuery(document).ready(function(){
     updateClock();
     GetTextTrack();
-    setInterval('updateClock()', 10000 );
-    setInterval('GetTextTrack()', 15000 );
+    setInterval('updateClock()', timerClock );
+    setInterval('GetTextTrack()', timerTrack );
 });
 
