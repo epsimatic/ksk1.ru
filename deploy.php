@@ -14,9 +14,8 @@
 		'git pull',
 		'git status',
 		'git log -3 --stat',
-        'git submodule init',
         'git submodule sync',
-		'git submodule update',
+		'git submodule update --init --force --recursive',
 		'git submodule status'
 	);
 
