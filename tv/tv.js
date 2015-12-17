@@ -4,9 +4,10 @@
 
 var timerClock=10000;
 var timerTrack=15000;
-var timerWeather=60000*20; // 20 минут
-var timerSide=15000;
+var timerWeather=60000*30; // 30 минут
+var timerSide=42000;
 var timerChat=15000;
+var timerMain=27000;
 
 function updateClock ( )
 {
@@ -61,16 +62,21 @@ function GetSide(){
 function GetChat(){
     jQuery(".board-chat").load("http://ksk1.ru/yummies/ksk1.ru/chat/");
 }
+function GetMain(){
+    jQuery(".board-main").load("http://ksk1.ru/yummies/ksk1.ru/main/");
+}
 jQuery(document).ready(function(){
     updateClock();
     GetTextTrack();
     GetWeather();
     GetSide();
     GetChat();
+    GetMain();
     setInterval('updateClock()', timerClock );
     setInterval('GetTextTrack()', timerTrack );
     setInterval('GetWeather()', timerWeather );
     setInterval('GetSide()', timerSide );
     setInterval('GetChat()', timerChat );
+    setInterval('GetMain()', timerMain );
 });
 
