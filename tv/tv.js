@@ -66,6 +66,7 @@ jQuery(document).ready(function(){
     GetTextTrack();
     GetWeather();
     GetSide();
+    GetChat();
     setInterval('updateClock()', timerClock );
     setInterval('GetTextTrack()', timerTrack );
     setInterval('GetWeather()', timerWeather );
