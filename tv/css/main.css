@@ -111,13 +111,13 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board * { width: 100%; }
 
-.board-main { height: calc(100% - 2.427rem); overflow: hidden; }
+.board-main { height: calc(100% - 2.427rem); overflow: hidden; position: relative; }
 
 .board-time-and-logo { display: flex; }
 
 .board-time-and-logo > div:not(.logo-wrap) { text-align: right; }
 
-.logo { height: 3.236rem; }
+.logo { width: 9rem; }
 time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
