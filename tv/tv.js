@@ -7,7 +7,7 @@ var timerTrack=15000;
 var timerWeather=60000*30; // 30 минут
 var timerSide=42000;
 var timerChat=15000;
-var timerMain=27000;
+var timerMain=60000*15;
 
 function updateClock ( )
 {
