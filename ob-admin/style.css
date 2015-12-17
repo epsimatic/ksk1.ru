@@ -430,7 +430,13 @@ h1 {
 .ob-admin .publish-group{margin: 3px 0;}
 
 .ob-admin .radio-ob-status .input-group > .input-group-addon:first-child,
-.ob-admin .radio-is-selected .input-group > .input-group-addon:first-child { background-color: transparent; border-color: transparent; padding-left: 19px; }
+.ob-admin .radio-is-selected .input-group > .input-group-addon:first-child { background-color: transparent; border-color: transparent; }
+
+
+.ob-admin .hidedays.input-group-addon { text-align: left; }
+.ob-admin .input-group-addon .date_add-not_today { display: block; }
+
+.ob-admin .radio-ob-status .inputdays.form-control { height: 4em; }
 
 .ob-admin #buisness-options .radio > input,
 .ob-admin #status-options .radio > input,
