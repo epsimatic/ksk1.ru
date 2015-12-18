@@ -156,7 +156,7 @@ h2.desciption-title { padding-left: 20px; color: #322a00; text-transform: upperc
 
 .taxi-content > div { padding: 10px 0; }
 
-footer { background-color: #161616; margin: 0 !important; background-image: none; display: none; }
+footer { background-color: #161616; margin: 0 !important; background-image: none;  }
 
 footer h5,
 footer h4 a,
