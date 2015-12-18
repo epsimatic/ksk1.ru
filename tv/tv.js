@@ -80,3 +80,6 @@ jQuery(document).ready(function(){
     setInterval('GetMain()', timerMain );
 });
 
+
+// Запускает бегущую строку
+jQuery('#webticker').webTicker();
