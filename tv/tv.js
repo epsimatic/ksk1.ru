@@ -82,4 +82,6 @@ jQuery(document).ready(function(){
 
 
 // Запускает бегущую строку
-jQuery('#webticker').webTicker();
+$( document ).ready(function() {
+    jQuery('#webticker').webTicker();
+});
