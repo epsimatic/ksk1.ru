@@ -2153,7 +2153,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news table tr > * { line-height: 24px; padding: 12px 6px; }
 
-.single-post .main-content article.post-news .wp-caption { padding: 0; margin: 24px auto; background-color: #fff; }
+.single-post .main-content article.post-news .wp-caption { padding: 0; margin: 24px 0; background-color: #fff; }
 
 .single-post .main-content article.post-news .wp-caption.aligncenter { margin-bottom: 24px; }
 
@@ -2251,7 +2251,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news table tr > * { line-height: 27px; padding: 13.5px 6.75px; }
 
-    .single-post .main-content article.post-news .wp-caption { padding: 0; margin: 27px auto; background-color: #fff; }
+    .single-post .main-content article.post-news .wp-caption { padding: 0; margin: 27px 0; background-color: #fff; }
 
     .single-post .main-content article.post-news .wp-caption.aligncenter { margin-bottom: 27px; }
 
