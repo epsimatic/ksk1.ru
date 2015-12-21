@@ -2078,8 +2078,6 @@ body.single-post { font-size: 16px; line-height: 25.888px; }
     hyphens: auto;
 }
 
-.single-post .main-content-inner { background-color: #fff; background-color: rgba(255, 255, 255, 0.75); border-radius: 3px; }
-
 .single-post .main-content article.post-news h1,
 .single-post .main-content article.post-news h2,
 .single-post .main-content article.post-news h3,
@@ -2108,7 +2106,7 @@ body.single-post { font-size: 16px; line-height: 25.888px; }
 .single-post .main-content article.post-news p + div + p,
 .single-post .main-content article.post-news p + p { margin: 0; text-indent: 1em; }
 
-.single-post .main-content article.post-news > p.standout  { font-size: 18px; line-height: 25.888px; color: #111; margin-bottom: 25.888px; margin-top: 25.888px; text-indent: 0; }
+.single-post .main-content article.post-news > p.standout  { font-size: 20.943px; line-height: 25.888px; color: #111; margin-bottom: 25.888px; margin-top: 25.888px; text-indent: 0; }
 
 .single-post .main-content article.post-news > p.standout + p,
 .single-post .main-content article.post-news img + p { text-indent: 0; }
@@ -2152,7 +2150,7 @@ body.single-post { font-size: 16px; line-height: 25.888px; }
 
 .single-post .main-content article.post-news table tr > * { line-height: 25.888px; padding: 12.944px 6.472px; }
 
-.single-post .main-content article.post-news .wp-caption { padding: 0; margin: 25.888px; background-color: #fff; }
+.single-post .main-content article.post-news .wp-caption { padding: 0; margin: 25.888px 0; }
 
 .single-post .main-content article.post-news .wp-caption.aligncenter { margin-bottom: 25.888px; }
 
@@ -2219,71 +2217,35 @@ body.single-post { font-size: 16px; line-height: 25.888px; }
 
 .single-post .main-content article.post-news .table { clear: both; }
 
-@media (min-width: 992px) {
-    body.single-post { font-size: 18px; line-height: 29.124px; }
-
-    .single-post .main-content article.post-news { -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
-    
-    .single-post .main-content article.post-news h1,
-    .single-post .main-content article.post-news h2,
-    .single-post .main-content article.post-news h3,
-    .single-post .main-content article.post-news h4 { line-height: 29.124px; margin-bottom: 19.416px; margin-top: 38.832px !important; }
-
-    .single-post .main-content article.post-news h1 { font-size: 29.124px; color: #263238; }
-
-    .single-post .main-content article.post-news h2 { font-size: 23.561px; }
-
-    .single-post .main-content article.post-news h3 { font-size: 18px; }
-
-    .single-post .main-content article.post-news h4 { font-size: 14.562px; }
-
-    .single-post .main-content article.post-news p { margin: 29.124px 0; }
-
-
-    .single-post .main-content article.post-news > p.standout  { font-size: 20px; line-height: 29.124px; margin-bottom: 29.124px; margin-top: 29.124px; }
-
-    .single-post .main-content article.post-news img[class*="wp-image-"] { margin: 29.124px 0; max-width: 100%; height: auto; }
-
-    .single-post .main-content article.post-news img[class*="wp-image-"].aligncenter { margin: 29.124px 0; }
-
-    .single-post .main-content article.post-news hr { margin: 29.124px 0 28.124pxpx; border-color: #ccc; }
-
-    .single-post .main-content article.post-news table { margin: 58.248px 0; }
-
-    .single-post .main-content article.post-news table tr > * { line-height: 29.124px; padding: 14.562px 7.281px; }
-
-    .single-post .main-content article.post-news .wp-caption { padding: 0; margin: 29.124px; background-color: #fff; }
-
-    .single-post .main-content article.post-news .wp-caption.aligncenter { margin-bottom: 29.124px; }
+@media (min-width: 768px) {
+    /*.single-post .main-content article.post-news { padding: 29.124px 18px; font-size: 18px; }
 
     .single-post .main-content article.post-news ul,
-    .single-post .main-content article.post-news ol { padding: 0 0 0 14.562px; margin: 29.124px 0; }
+    .single-post .main-content article.post-news ol { padding: 0; }
 
-    .single-post .main-content article.post-news ul li,
-    .single-post .main-content article.post-news ol li { margin-bottom: 7.281px; }
+    .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 1.6875em; }
+    .single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
 
-    .single-post .main-content article.post-news blockquote { font-size: 18px; margin: 26.124px 0; }
+    .single-post .main-content article.post-news blockquote { margin-left: -1em; font-size: 18px; }
+    .single-post .main-content article.post-news blockquote.letter { padding: 0.7em 2em; margin-right: 0; margin-left: 0; }
+    .single-post .main-content article.post-news blockquote.pullout { font-size: 21px; line-height: 1.714; }
+    .single-post .main-content article.post-news blockquote.graph { padding-left: 36px; }*/
+}
+@media (min-width: 992px) {
+    /*.single-post .main-content article.post-news { padding: 18px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
+    .single-post .main-content article.post-news h1,
+    .single-post .main-content article.post-news h2 { font-size: 24px; line-height: 1.125; margin-bottom: 1.2857em; }
 
-    .single-post .main-content article.post-news blockquote.letter { padding: 1px 29.124px; }
+    .single-post .main-content article.post-news h2 { margin-bottom: 1.125em; margin-top: 2.25em !important; }
 
-    .single-post .main-content article.post-news blockquote footer { font-size: 16px; line-height: 29.124px; margin: 29.124px 0; }    
-
-    .single-post .main-content article.post-news blockquote.graph { border-width: 0 0 0 5px; margin-left: -5px; padding: 1px 0 1px 24.124px; }
-
-    .single-post .main-content article.post-news blockquote.graph > p:first-child { margin: 28.124px 0; }
-
-    .single-post .main-content article.post-news .inset { max-width: 300px; margin: 26.124px; auto; padding: 0 23.561px; font-size: 14.562px; line-height: 29.124px; }
-
-    .single-post .main-content article.post-news .inset h3 { margin: 29.124px 0 0 !important; padding: 0 18px; }
-
-    .single-post .main-content article.post-news .inset ol,
-    .single-post .main-content article.post-news .inset ul { margin: 0.1em 0 29.124px; padding-left: 16px; }
+    .single-post .main-content article.post-news aside.inset { max-width: 300px; }
 
     .single-post .main-content article.post-news .alignleft + p,
-    .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+    .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }*/
 }
 @media (min-width: 1200px) {
-    .single-post .main-content article.post-news blockquote { margin-left: -2em; }
+    /*.single-post .main-content article.post-news h1 { font-size: 27px; }
+    .single-post .main-content article.post-news blockquote { margin-left: -2em; }*/
 }
 
 
