@@ -16,10 +16,9 @@ body {
     line-height: 1.428571429;
     color: #333333;
     font-weight: normal;
-    background: #fff;
+    /* background: #fff ; */
+    background: url('http://ksk1.ru/img/snow-bg.png') repeat-x;
 }
-
-/*body.news-old { background: url('img/bg_grad.png') left top repeat-x, url('img/triangles.svg') left top repeat; background-color: #edeeef; }*/
 
 figure { position: relative; text-align: center; }
 
@@ -34,9 +33,7 @@ body.site-ob header#header { display: block; }
 
 #stripe.container { padding: 0; }
 
-.container { background-color: #ffffff; }
-
-/*.news-old .container { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11); }*/
+/*.container { background-color: #ffffff; }*/
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
