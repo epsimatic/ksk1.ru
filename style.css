@@ -2151,9 +2151,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news table { margin: 48px 0; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
-.single-post .main-content article.post-news table tr > * { line-height: 24px; padding: 12px 6px; text-align: center; }
-
-.single-post .main-content article.post-news table tr > *:first-child { text-align: left; }
+.single-post .main-content article.post-news table tr > * { line-height: 24px; padding: 12px 6px; }
 
 .single-post .main-content article.post-news .wp-caption { padding: 0; margin: 24px auto; background-color: #fff; }
 
