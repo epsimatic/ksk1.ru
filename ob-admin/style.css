@@ -73,6 +73,8 @@
 .table-obs-admin .checked-edit:hover:after , .table-obs-admin .checked-no_paid:hover:after{ color: #666666; content: ""; }
 
 
+input.input-group .form-control { min-width: 65px; }
+
 
 .fa-archive { color: #666; }
 
