@@ -33,7 +33,7 @@ body.site-ob header#header { display: block; }
 
 #stripe.container { padding: 0; }
 
-/*.container { background-color: #ffffff; }*/
+.container { background-color: #ffffff; }
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
@@ -4820,6 +4820,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
         display: -ms-flexbox;
         display: flex;
     }
+
+    .container { background-color: transparent; }
 
     .site-ob header.row_header,
     .site-ob nav.navbar { display: block !important; }
