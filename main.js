@@ -96,10 +96,13 @@ LoadJS('//ksk1.ru/vendor/fsck-ablock.js', function() {
 });
 
 
+// Отключаем правую панель на сайте news-old
+var disable_panels = document.body.className.match('news-old') ? 'right' : 'none';
+
 // Включаем Snap.js
 var snapper = new Snap({
-    element: document.getElementById('content')
-    //disable: 'right'
+    element: document.getElementById('content'),
+    disable: disable_panels
 });
 jQuery('#menu-button').on('click', function () {
     if (snapper.state().state == "left") {
