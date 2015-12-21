@@ -2085,13 +2085,22 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news h3,
 .single-post .main-content article.post-news h4 { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; font-weight: 700; margin-bottom: 17.2586px; margin-top: 34.517px !important; }
 
-.single-post .main-content article.post-news h1 { font-size: 24px; color: #263238; margin-top: 0 !important; }
+.single-post .main-content article.post-news h1 { font-size: 24px; color: #263238; }
 
 .single-post .main-content article.post-news h2 { font-size: 21px; }
 
 .single-post .main-content article.post-news h3 { font-size: 18px; }
 
 .single-post .main-content article.post-news h4 { font-size: 12px;  letter-spacing: .05em; text-transform: uppercase; }
+
+
+.single-post .main-content article.post-news h1 { font-size: 30.375px; color: #263238; }
+
+.single-post .main-content article.post-news h2 { font-size: 27px; }
+
+.single-post .main-content article.post-news h3 { font-size: 20.25px; }
+
+.single-post .main-content article.post-news h4 { font-size: 13.5px; }
 
 
 .single-post .main-content article.post-news p { margin: 1em 0; }
