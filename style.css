@@ -2197,12 +2197,8 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news blockquote.question > p:first-child,
 .single-post .main-content article.post-news blockquote.answer > p:first-child { margin-bottom: 0; }
 
-.single-post .main-content article.post-news blockquote.question > p:first-child::before,
-.single-post .main-content article.post-news blockquote.answer > p:first-child:before { font-family: FontAwesome; display: inline-block; width: 18px; text-align: center; font-style: normal; padding-right: 5px; color: #c2c2c2; }
-
-.single-post .main-content article.post-news blockquote.question > p:first-child:before { content: ""; font-size: 14px; position: relative; top: -1px; }
-
-.single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: ""; font-size: 17px; }
+.single-post .main-content article.post-news blockquote.question > p:first-child:before,
+.single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: "— "; }
 
 .single-post .main-content article.post-news .inset { max-width: 300px; margin: 1.6875em auto; padding: 0 21px; font-size: 14px; line-height: 1.9285; border: 3px solid #c6edff; background-color: #fff; border-radius: 0; box-shadow: none; }
 
