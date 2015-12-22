@@ -2377,67 +2377,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель комментариев"> */
-.panel-comments-list .comment-list {background-color: #FFF;}
 
-.panel-comments-list .btn-grey {margin-top: 3px;}
-
-.panel-comments-list .comment > .panel > .panel-heading {border-left: 1px solid transparent;}
-
-.panel-comments-list .comment:hover > .panel > .panel-heading {border-left: 1px solid #9ed7f7;}
-
-.panel-comments-list .media-body {margin: 3px 0 0;}
-
-.panel-comments-list .media-body .panel-heading {padding: 10px 10px 10px 30px;}
-
-.panel-comments-list .media-body .edit-link {padding-left: 4px;}
-
-.panel-comments-list .media-body .thumblock {right: 5px; top: 12px;}
-
-.panel-comments-list .media-body .thumblock .gddw .gdt-classical,
-.panel-comments-list .media-body .thumblock .gdup .gdt-classical {color: #d1d3d4;}
-
-.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gddw a.gdt-classical:focus {color: #ff9087; text-decoration: none;}
-
-.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:hover,
-.panel-comments-list .media-body .thumblock .gdup a.gdt-classical:focus {color: #74cd87; text-decoration: none;}
-
-.panel-comments-list .media-body .thumblock .gdthumbtext .badge {font-size: 14px; font-weight: 400; padding-top: 1px;}
-
-.panel-comments-list .comment-awaiting-moderation {margin: 10px 0 0;}
-
-.panel-comments-list .media-body .panel-body {display: none;}
-
-.panel-comments-list ul.children {margin-top: 0;}
-
-.panel-comments-list .children li:hover {background-color: transparent;}
-
-.panel-comments-list .panel-neutral {background-color: #f9fafb;}
-
-.panel-comments-list .panel-positive {background-color: #f6fcf7;}
-
-.panel-comments-list .panel-negative {background-color: #fff8f7;}
-
-.panel-comments-list .panel-neutral .badge {color: #47475F;}
-
-.panel-comments-list .panel-positive .badge {color: #1ead3c;}
-
-.panel-comments-list .panel-negative .badge {color: #ff4b3d;}
-
-.panel-comments-list img.avatar {width: 40px; height: 40px;}
-
-.panel-comments-list time {color: #888888; font-weight: 400;}
-
-.panel-comments-list .comment-content p { color: #50575e; margin-bottom: 0; font-size: 0.98em; float: left; }
-
-.panel-comments-list .comment-content p.comment-image { margin-top: -40px; float: right; }
-
-.panel-comments-list .comment-content p.comment-image img { max-width: 300px; max-height: 300px; }
-
-.btn-reply {background-color: #fff; border: none; border-radius: 0; padding: 6px 20px; font-size: 13px; color: #858d93; }
-
-.btn-reply:hover,
-.btn-reply:focus {color: #383f44;}
 
 /* </editor-fold> */
 
