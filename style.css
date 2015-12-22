@@ -2100,9 +2100,12 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news h4 { font-size: 16px; margin-bottom: 1.125em; margin-top: 2.25em !important; }
 
-.single-post .main-content article.post-news .category-name { line-height: 24px; margin-bottom: 8px !important; margin-top: 16px !important; text-transform: uppercase; letter-spacing: 0.025em; font-size: 14px; }
+.single-post .main-content article.post-news .category-name { line-height: 24px; margin-bottom: 8px !important; margin-top: 16px !important; text-transform: uppercase; letter-spacing: 0.025em; font-size: 14px; color: #666; }
 
-.single-post .main-content article.post-news .category-name a { border-bottom: none; color: #666666; padding: 0; }
+.single-post .main-content article.post-news .category-name a { border-bottom: none; color: #666; padding: 0; }
+
+.single-post .main-content article.post-news .category-name a:hover,
+.single-post .main-content article.post-news .category-name a:focus { color: #333; }
 
 .single-post article.post-news .post-meta { font-size: 12px; line-height: 24px; }
 .single-post article.post-news .post-meta .meta { display: inline-block; margin-left: 1em; }
