@@ -2228,7 +2228,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post article.post-news .table { clear: both; }
 
-.single-post article.post-news .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px 0; text-align: center; }
+.single-post article.post-news + .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px 0; text-align: center; }
 
 
 @media (min-width: 768px) {
