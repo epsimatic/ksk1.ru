@@ -79,3 +79,7 @@ jQuery(document).ready(function(){
     setInterval('GetChat()', timerChat );
 });
 
+// Запускает бегущую строку
+$( document ).ready(function() {
+    jQuery('#webticker').webTicker();
+});

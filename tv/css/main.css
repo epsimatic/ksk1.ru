@@ -99,9 +99,12 @@ html, body { height: 100%; width: 100%; font-size: 18px; line-height: 1.618rem; 
 
 .container { display: flex; height: calc(100% - 4.045rem); }
 
-.newsticker { background-color: #f0f0f0; height: 3.236rem; line-height: 3.236rem; margin-bottom: 0.809rem; overflow: hidden; white-space: nowrap; width: calc(100% - 1rem); }
+.tickercontainer { background-color: #f0f0f0; height: 3.236rem; line-height: 3.236rem; margin-bottom: 0.809rem; overflow: hidden; white-space: nowrap; /* width: calc(100% - 1rem); */ }
+ul.newsticker { position: relative; list-style-type: none; padding: 0; margin: 0; transition: all 0s linear; }
+ul.newsticker li { float: left; margin: 0; padding-right: 3.236rem; font-size: 1.333rem; }
+
 main,
-.sidebar { display: flex; flex-direction: column; padding: .809rem 1rem; justify-content: space-between; }
+.sidebar { display: flex; flex-direction: column; padding: .809rem 1rem; justify-content: space-between; overflow-x: hidden; }
 
 main { width: 61.81%; padding-right: .5rem; }
 
@@ -111,15 +114,15 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board * { width: 100%; }
 
-.board-main { height: calc(100% - 2.427rem); overflow: hidden; }
+.board-main { height: calc(100% - 2.427rem); overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: center; }
 
 .board-time-and-logo { display: flex; }
 
-.board-time-and-logo > div:not(.logo-wrap) { text-align: right; }
+.board-time-and-logo > div:not(.logo-wrap) { text-align: right; display: flex; flex-direction: column; margin-right: .5rem; }
 
-.logo { height: 3.236rem; }
+.logo { width: 8rem; }
 time { padding-right: 1rem; text-align: right; }
-.date { font-size: .809rem; line-height: 1.0786rem; }
+.date { font-size: .809rem; line-height: 1.0786rem; height: 1.0786rem; }
 .current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
 
 .fa { display: inline !important; }
@@ -130,7 +133,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-heading { margin: 0; font-size: 0.809rem; }
 
-.track-data { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/*.track-data { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }*/
 
 .track-data strong { font-size: 0.809rem; }
 
@@ -140,7 +143,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-weather { height: 3.236rem; }
 
-.board-on-air { height: 1.618rem; }
+.board-on-air { height: 1.618rem; white-space: nowrap; }
 
 .weather-text { display: none; }
 
