@@ -4043,20 +4043,6 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-payment > .panel-heading {color: #6D6E71; cursor: pointer; font-size: 18px; margin-top: 10px; padding: 25px; text-align: center; text-decoration: underline; white-space: nowrap;}
 
 /* панель Список комментраиев*/
-.comments-list {list-style: none outside none;}
-
-.panel-comments-list > #respond {padding: 10px 10px 10px 20px;}
-
-#respond {padding-top: 10px;}
-
-#respond p.form-submit {margin-bottom: 0;}
-
-.comment-reply-title {left: 100px; position: relative;}
-
-h5.comment-notes-before {font-size: 16px; padding-bottom: 10px;}
-
-input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
-
 .comment-list article.comment-body { margin-bottom: 24px; }
 
 .comment-list .comment-author { margin-bottom: 1em; }
@@ -4085,11 +4071,22 @@ input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 
 .comment-list .reply .btn-reply { padding: 0 5px; }
 
+.comment-respond { margin-bottom: 48px; }
+
+#reply-title .reply-to { display: none; }
+#reply-title .not-reply-to { display: inline; }
+.comment-list #reply-title .reply-to { display: inline; }
+.comment-list #reply-title .not-reply-to { display: none; }
+
+
+
 @media (min-width: 768px) { 
 
     .comment-list article.comment-body { margin-bottom: 27px; }
 
     .comment-list .comment-content { line-height: 27px; }
+
+    .comment-respond { margin-bottom: 54px; }
 }
 
 
