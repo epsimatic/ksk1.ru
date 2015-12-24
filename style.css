@@ -4057,6 +4057,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .reply .btn-reply { padding: 0 5px; }
 
+.comments-title-wrap { margin-top: 24px; margin-bottom: 48px; }
+
 .comments-title-wrap .comments-title { margin: 0; font-size: 24px; line-height: 24px; }
 
 .comment-respond { margin-bottom: 48px; }
@@ -4066,17 +4068,31 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list #reply-title .reply-to { display: inline; }
 .comment-list #reply-title .not-reply-to { display: none; }
 
+.comment-form { display: table; }
 
+.comment-form .comment-form-author { display: table-header-group; }
+
+.comment-form label { display: block; font-size: 15px; margin-bottom: 12px; }
+
+.comment-form input, 
+.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 5px 10px; }
+
+.comment-form .form-submit .btn.submit { font-size: 16px; padding: 8px 16px; }
 
 @media (min-width: 768px) { 
 
     .comment-list .comment-content { line-height: 27px; }
+
+    .comments-title-wrap { margin-top: 27px; margin-bottom: 54px; }
 
     .comments-title-wrap .comments-title { font-size: 27px; line-height: 27px; }
 
     .comments-title-wrap .btn-default { line-height: 25px; padding: 0 15px; }
 
     .comment-respond { margin-bottom: 54px; }
+
+    .comment-form input, 
+    .comment-form textarea { line-height: 27px; margin-bottom: 27px; }
 }
 
 
