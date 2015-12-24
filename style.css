@@ -4029,9 +4029,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-payment > .panel-heading {color: #6D6E71; cursor: pointer; font-size: 18px; margin-top: 10px; padding: 25px; text-align: center; text-decoration: underline; white-space: nowrap;}
 
 /* панель Список комментраиев*/
-.comment-list article.comment-body { margin-bottom: 1em; }
+.comment-list { margin-bottom: 48px; }
 
-.comment-list .comment-author { margin-bottom: 1em; }
+.comment-list article.comment-body { margin-bottom: 1.5em; }
+
+.comment-list .comment-author { margin-bottom: .75em; }
 
 .comment-list .comment-author img.avatar,
 .comment-list .comment-author .comment-meta { float: left; }
@@ -4059,7 +4061,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comments-title-wrap { margin-top: 24px; margin-bottom: 48px; }
 
-.comments-title-wrap .comments-title { margin: 0; font-size: 24px; line-height: 24px; }
+.comments-title-wrap .comments-title, 
+.comment-reply-title  { margin: 0; font-size: 24px; line-height: 24px; }
+
+.comment-reply-title { margin-bottom: 24px; }
 
 .comment-respond { margin-bottom: 48px; }
 
@@ -4072,20 +4077,26 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-form .comment-form-author { display: table-header-group; }
 
-.comment-form label { display: block; font-size: 15px; margin-bottom: 12px; }
+.comment-form label { display: block; font-size: 15px; margin-bottom: 8px; }
 
 .comment-form input, 
-.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 5px 10px; }
+.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px 16px; }
 
-.comment-form .form-submit .btn.submit { font-size: 16px; padding: 8px 16px; }
+.comment-form textarea { width: 100%; }
+
+.comment-form .form-submit .btn.submit { font-size: 16px; }
 
 @media (min-width: 768px) { 
+    .comment-list { margin-bottom: 54px; }
 
     .comment-list .comment-content { line-height: 27px; }
 
     .comments-title-wrap { margin-top: 27px; margin-bottom: 54px; }
 
-    .comments-title-wrap .comments-title { font-size: 27px; line-height: 27px; }
+    .comments-title-wrap .comments-title, 
+    .comment-reply-title { font-size: 27px; line-height: 27px; }
+
+    .comment-reply-title { margin-bottom: 27px; }
 
     .comments-title-wrap .btn-default { line-height: 25px; padding: 0 15px; }
 
@@ -4093,6 +4104,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .comment-form input, 
     .comment-form textarea { line-height: 27px; margin-bottom: 27px; }
+}
+
+@media (min-width: 992px) { 
+    .comment-form textarea { width: 80%; height: 151px; }
 }
 
 
