@@ -2377,20 +2377,6 @@ a.link-neutral:focus {color: #3b437d;}
 .news-more .media { margin: 5px; }
 /* </editor-fold> */
 
-/* <editor-fold desc="Панель комментариев"> */
-
-
-/* </editor-fold> */
-
-/* <editor-fold desc="Элементы страницы новости"> */
-.comment {font-weight: 400; color: #47475f;}
-
-.nic {font-size: 16px; font-weight: 600; color: #3498db; line-height: 40px; padding-left: 7px;}
-
-.news-meta {background-color: #f9f9f9; margin-bottom: 5px; padding: 0;}
-
-.form-control {border-radius: 3px;}
-/* </editor-fold> */
 
 /* <editor-fold desc="Новый радио-виджет"> */
 
@@ -4043,7 +4029,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-payment > .panel-heading {color: #6D6E71; cursor: pointer; font-size: 18px; margin-top: 10px; padding: 25px; text-align: center; text-decoration: underline; white-space: nowrap;}
 
 /* панель Список комментраиев*/
-.comment-list article.comment-body { margin-bottom: 24px; }
+.comment-list article.comment-body { margin-bottom: 1em; }
 
 .comment-list .comment-author { margin-bottom: 1em; }
 
@@ -4071,6 +4057,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .reply .btn-reply { padding: 0 5px; }
 
+.comments-title-wrap .comments-title { margin: 0; font-size: 24px; line-height: 24px; }
+
 .comment-respond { margin-bottom: 48px; }
 
 #reply-title .reply-to { display: none; }
@@ -4082,9 +4070,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 @media (min-width: 768px) { 
 
-    .comment-list article.comment-body { margin-bottom: 27px; }
-
     .comment-list .comment-content { line-height: 27px; }
+
+    .comments-title-wrap .comments-title { font-size: 27px; line-height: 27px; }
+
+    .comments-title-wrap .btn-default { line-height: 25px; padding: 0 15px; }
 
     .comment-respond { margin-bottom: 54px; }
 }
