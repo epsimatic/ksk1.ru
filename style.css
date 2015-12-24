@@ -4061,14 +4061,13 @@ input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 
 .comment-list .comment-author { margin-bottom: 1em; }
 
-.comment-list .author-name { color: #333; }
-
 .comment-list .comment-author img.avatar,
 .comment-list .comment-author .comment-meta { float: left; }
 
 .comment-list .comment-author img.avatar { margin-right: 1em; background-color: #f0f0f0; }
 
-.comment-list .comment-author .comment-meta > * { line-height: 25px; }
+.comment-list .author-name { color: #333; line-height: 15px; }
+.comment-list .comment-controls { font-size: 12px; line-height: 12px; }
 
 .comment-list .comment time { color: #999; }
 
