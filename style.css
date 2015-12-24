@@ -4011,34 +4011,6 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .next-article .media-heading > .fa-3x {padding: 12px 10px;}
 
 .col-mid .btn-group .fa-play {color: #bbb; font-size: 0.9em;}
-
-.comment-list .fa-arrow-up,
-.comment-list .fa-arrow-down {color: #d1d3d4;}
-
-.comment-list .fa-arrow-up:hover,
-.comment-list .fa-arrow-up:focus {color: #8cbf94;}
-
-.comment-list .fa-arrow-down:hover,
-.comment-list .fa-arrow-down:focus {color: #f4a39f;}
-
-.comment-list .fa-pencil,
-.comment-list .fa-eye-slash {color: #98a3a3;}
-
-.comment-list .fa-exclamation-triangle:hover,
-.comment-list .fa-exclamation-triangle:focus {color: #ff6f36;}
-
-.comment-list .fa-link,
-.comment-list .fa-exclamation-triangle {color: #cacece; padding-left: 7px;}
-
-.comment-list .fa-link:hover,
-.comment-list .fa-link:focus {color: #1996f4;}
-
-.comment-list .fa-eye-slash:hover,
-.comment-list .fa-eye-slash:focus {color: #334daa;}
-
-.comment-list .fa-pencil:hover,
-.comment-list .fa-pencil:focus {color: #1f8689;}
-
 /* </editor-fold> */
 
 /* <editor-fold desc="Оформление панелей в оформление не используются"> */
@@ -4089,6 +4061,8 @@ input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 
 .comment-list .comment-author { margin-bottom: 1em; }
 
+.comment-list .author-name { color: #333; }
+
 .comment-list .comment-author img.avatar,
 .comment-list .comment-author .comment-meta { float: left; }
 
@@ -4096,7 +4070,12 @@ input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 
 .comment-list .comment-author .comment-meta > * { line-height: 25px; }
 
-.comment-list .comment-author .comment-meta > time { color: #999; }
+.comment-list .comment time { color: #999; }
+
+.comment-list .comment-controls a .fa { color: #aaa; }
+
+.comment-list .comment-controls a:hover .fa,
+.comment-list .comment-controls a:focus .fa { color: #0091ea; }
 
 .comment-list .comment-content { line-height: 24px; }
 .comment-list .comment-content > p { margin-bottom: 1em; }
