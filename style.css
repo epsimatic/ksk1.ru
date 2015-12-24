@@ -4077,17 +4077,19 @@ input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
 .comment-list .comment-controls a:focus .fa { color: #0091ea; }
 
 .comment-list .comment-content { line-height: 24px; }
-.comment-list .comment-content > p { margin-bottom: 1em; }
+.comment-list .comment-content > p { margin-bottom: 1em; display: inline; }
 
-.comment-list .reply .btn-reply { padding: 0; }
+.comment-list article.comment-body .reply { opacity: 0; transition: opacity .1s ease 0s; }
+
+.comment-list article.comment-body:hover .reply { opacity: 1; }
+
+.comment-list .reply .btn-reply { padding: 0 5px; }
 
 @media (min-width: 768px) { 
 
     .comment-list article.comment-body { margin-bottom: 27px; }
 
     .comment-list .comment-content { line-height: 27px; }
-
-    .comment-list .comment-content > p { font-size: 16px; }
 }
 
 
