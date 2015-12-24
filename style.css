@@ -2107,7 +2107,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post article.post-news .category-name a:hover,
 .single-post article.post-news .category-name a:focus { color: #333; }
 
-.single-post article.post-news .post-meta { font-size: 13x; line-height: 24px; }
+.single-post article.post-news .post-meta { font-size: 13px; line-height: 24px; }
 .single-post article.post-news .post-meta .meta { display: inline-block; margin-left: 1em; }
 
 .single-post article.post-news p { margin: 1em 0; }
