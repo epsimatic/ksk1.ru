@@ -2231,6 +2231,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post article.post-news + .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px 0; text-align: center; margin: 24px 0 48px; }
 
 
+
 @media (min-width: 768px) {
     .single-post article.post-news { padding: 18px; font-size: 18px; }
 
@@ -4083,6 +4084,34 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 h5.comment-notes-before {font-size: 16px; padding-bottom: 10px;}
 
 input#author,input#phone,input#order, textarea#comment {padding: 5px 10px;}
+
+.comment-list article.comment-body { margin-bottom: 24px; }
+
+.comment-list .comment-author { margin-bottom: 1em; }
+
+.comment-list .comment-author img.avatar,
+.comment-list .comment-author .comment-meta { float: left; }
+
+.comment-list .comment-author img.avatar { margin-right: 1em; background-color: #f0f0f0; }
+
+.comment-list .comment-author .comment-meta > * { line-height: 25px; }
+
+.comment-list .comment-author .comment-meta > time { color: #999; }
+
+.comment-list .comment-content { line-height: 24px; }
+.comment-list .comment-content > p { margin-bottom: 1em; }
+
+.comment-list .reply .btn-reply { padding: 0; }
+
+@media (min-width: 768px) { 
+
+    .comment-list article.comment-body { margin-bottom: 27px; }
+
+    .comment-list .comment-content { line-height: 27px; }
+
+    .comment-list .comment-content > p { font-size: 16px; }
+}
+
 
 /* панель Стандарт */
 
