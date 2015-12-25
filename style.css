@@ -34,7 +34,7 @@ body.site-ob header#header { display: block; }
 
 .container { background-color: #ffffff; }
 
-.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; margin-top: 32px; }
+.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; }
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
