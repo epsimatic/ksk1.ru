@@ -4443,7 +4443,7 @@ header.wide-header .search-form-header input.field-search:-moz-placeholder { opa
 header.wide-header .search-form-header input.field-search:-ms-input-placeholder { opacity: .7; }
 
 .snap-drawer .search-form-header button,
-header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 16; color: #222; }
+header.wide-header .search-form-header button { background-color: transparent; border: none; height: 30px; position: absolute; right: 0; z-index: 16; color: #222; top: 2px; }
 
 .snap-drawer .search-form-header button:hover,
 .snap-drawer .search-form-header button:focus,
