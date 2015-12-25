@@ -79,7 +79,7 @@ jQuery(document).ready(function(){
     setInterval('GetChat()', timerChat );
 });
 
-// Запускает бегущую строку
+// Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
 $( document ).ready(function() {
-    jQuery('#webticker').webTicker();
+    jQuery('#webticker').webTicker({speed: 150});
 });
