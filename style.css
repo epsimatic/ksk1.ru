@@ -2895,6 +2895,14 @@ a.super:focus {background-color: #fbea2d;}
 
 .site-ob .modal-dialog , .news-old .modal-dialog{ margin-top: 60px; }
 
+.ob-paid-options { margin-bottom: 30px; }
+
+.ob-paid-options > .alert { background-color: transparent; border: none; color: #ff6347; font-size: 18px; font-weight: 600; margin-bottom: 30px; text-align: center; }
+
+.ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; text-transform: uppercase; white-space: normal; }
+
+.ob-paid-options > .btn > .label { background-color: #ff6347; letter-spacing: .025em; }
+
 .ob-paid-options .modal-content { box-shadow: 0 0 300px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.8); }
 
 .ob-paid-options > .row { margin: 0 0 10px; }
