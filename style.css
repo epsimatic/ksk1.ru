@@ -2952,6 +2952,8 @@ a.super:focus {background-color: #fbea2d;}
 .site-ob .popover-content .payment-button { margin-top: 10px; margin-bottom: 5px; }
 
 .ob-paid-options .table-comparison .discount { margin-top: 0; margin-bottom: 10px; }
+
+#ob-commerce-before-paid .modal-header .close {margin-top: -22px !important; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Оформление логотипа «Твой Посредник» текстом"> */
