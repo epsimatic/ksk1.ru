@@ -128,6 +128,7 @@ time { padding-right: 1rem; text-align: right; }
 .fa { display: inline !important; }
 
 .board-chat { min-height: 7rem; background-color: #a7ffeb; position: relative; overflow: hidden; }
+.board-chat-frame { width: 100%; height: 100%; overflow: hidden; border: none; }
 
 .chat-wrap { position: absolute; bottom: 0; }
 
