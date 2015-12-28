@@ -2,32 +2,20 @@
  * Created by coder on 15.12.15.
  */
 
-var timerClock=10000;
-var timerTrack=15000;
-var timerWeather=60000*20; // 20 минут
-var timerSide=42000;
-var timerMain=27000;
-var timerChat=15000;
-function updateClock ( )
-{
+// Периоды обновления панелей в секундах
+const timerMain=27;
+const timerSidebar=42;
+const timerClock=10;
+const timerNowPlaying=15;
+const timerWeather=60*20;
+
+// Обновить часы
+function updateClock() {
     var currentTime = new Date ( );
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
 
-    var nameMonth = [
-         "января",
-         "февраля",
-         "марта",
-         "апреля",
-         "мая",
-         "июня",
-         "июля",
-         "августа",
-         "сентября",
-         "октября",
-         "ноября",
-         "декабря"
-    ];
+    const nameMonth = [ "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря" ];
 
     // Pad the minutes and seconds with leading zeros, if required
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
@@ -39,49 +27,41 @@ function updateClock ( )
 }
 
 // Получить текущий трек
-function GetTextTrack(){
-jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
-    var track = jQuery(data).find("TRACK").first();
-    if (track.attr("ARTIST")) {
-        var track_text = track.attr("ARTIST") + " — " + track.attr("TITLE");
-    }
-    else if (track.attr("TITLE")) {
-        track_text = track.attr("TITLE");
-    } else  track_text = "";
-    jQuery(".track-data-text").html(track_text.replace(/\[.*\]/, ""));
+function GetNowPlaying() {
+    jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
+        var track = jQuery(data).find("TRACK").first();
+        if (track.attr("ARTIST")) {
+            var track_text = track.attr("ARTIST") + " — " + track.attr("TITLE");
+        }
+        else if (track.attr("TITLE")) {
+            track_text = track.attr("TITLE");
+        } else  track_text = "";
+        jQuery(".track-data-text").html(track_text.replace(/\[.*\]/, ""));
 
-});
+    });
 }
-function GetWeather(){
-    jQuery(".board-weather").load("http://ksk1.ru/weather/conditions.html");
-}
-function GetSide(){
-    jQuery(".board-yummie").load("http://ksk1.ru/yummies/ksk1.ru/side/");
-}
-function GetMain(){
-    jQuery(".board-main").load("http://ksk1.ru/yummies/ksk1.ru/main/");
-}
-function GetChat(){
-    jQuery(".board-chat").load("http://ksk1.ru/yummies/ksk1.ru/chat/");
-}
-jQuery(document).ready(function(){
-    updateClock();
-    setInterval('updateClock()', timerClock );
 
-    GetTextTrack();
-    setInterval('GetTextTrack()', timerTrack );
+function GetMain(){    jQuery(".board-main").load("http://ksk1.ru/yummies/ksk1.ru/main/"); }
+function GetSidebar(){ jQuery(".board-yummie").load("http://ksk1.ru/yummies/ksk1.ru/side/"); }
+function GetWeather(){ jQuery(".board-weather").load("http://ksk1.ru/weather/conditions.html"); }
 
-    GetWeather();
-    setInterval('GetWeather()', timerWeather );
-
-    GetSide();
-    setInterval('GetSide()', timerSide );
+jQuery(document).ready(function() {
 
     GetMain();
-    setInterval('GetMain()', timerMain );
+    setInterval( GetMain, timerMain * 1000 );
 
-    //GetChat();
-    //setInterval('GetChat()', timerChat );
+    GetSidebar();
+    setInterval( GetSidebar, timerSidebar * 1000 );
+
+    updateClock();
+    setInterval( updateClock, timerClock * 1000 );
+
+    GetNowPlaying();
+    setInterval( GetNowPlaying, timerNowPlaying * 1000 );
+
+    GetWeather();
+    setInterval( GetWeather, timerWeather * 1000 );
+
 });
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
