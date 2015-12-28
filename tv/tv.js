@@ -62,9 +62,14 @@ jQuery(document).ready(function() {
     GetWeather();
     setInterval( GetWeather, timerWeather * 1000 );
 
+    // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
+    jQuery('#webticker').webTicker({
+        speed: 150,
+        rssurl:'http://brief.kskmedia.ru/feed/',
+        rssfrequency: 5, // minutes
+        hoverpause: false
+    });
+
 });
 
-// Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-$( document ).ready(function() {
-    jQuery('#webticker').webTicker({speed: 150});
 });
