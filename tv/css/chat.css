@@ -1,0 +1,14 @@
+
+/* Standard plugin styles only on full site */
+.container div#simple-ajax-chat { width: 100%; overflow: hidden }
+.container div#sac-content { display: none }
+.container div#sac-output { float: left; width: 58%; height: 250px; overflow: auto; border: 1px solid #efefef }
+.container div#sac-latest-message { padding: 5px 10px; background-color: #efefef }
+.container ul#sac-messages { margin: 0; padding: 0; font-size: 13px; line-height: 16px }
+.container ul#sac-messages li { margin: 0; padding: 3px 3px 3px 10px }
+.container ul#sac-messages li span { font-weight: bold }
+.container div#sac-panel { float: right; width: 40% }
+.container form#sac-form fieldset { border: 0; }
+.container form#sac-form fieldset label, form#sac-form fieldset input, form#sac-form fieldset textarea { float: left; clear: both; width: 94%; margin: 0 0 5px 2px }
+.container form#sac-form fieldset#sac-user-info label, form#sac-form fieldset#sac-user-url label, form#sac-form fieldset#sac-user-chat label { margin: 0 0 0 2px }
+
