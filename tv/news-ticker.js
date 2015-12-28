@@ -80,7 +80,7 @@
 		            item = {
 		                title: $this.find("title").text(),
 		                link: $this.find("link").text(),
-						description: $this.find("description").text
+						description: $this.find("description").text()
 		        }
 		        listItem = "<li><a href='"+item.link+"'>"+item.description+"</a></li>";
 		        list += listItem;
