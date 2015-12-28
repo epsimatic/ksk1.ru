@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
     setInterval('GetWeather()', timerWeather );
     setInterval('GetSide()', timerSide );
     setInterval('GetMain()', timerMain );
-    setInterval('GetChat()', timerChat );
+    //setInterval('GetChat()', timerChat );
 });
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
