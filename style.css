@@ -1953,7 +1953,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments > .panel-heading { background: #46a2f9 url("img/panel-comments.png") no-repeat right; background-size: contain; }
 
-.panel-comments .nav-tabs { border-bottom: none; }
+.panel-comments .nav-tabs { border-bottom: none; display: none; }
 .panel-comments .comments-filter { background-color: #fff; border-bottom: 1px solid #ccc; padding: 5px 10px 6px; }
 .panel-comments .comments-filter input { display: none; }
 .panel-comments .comments-filter label { margin-bottom: 0; font-weight: 400; padding-right: 10px; }
