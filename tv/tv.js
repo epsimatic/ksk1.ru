@@ -66,16 +66,21 @@ function GetChat(){
 }
 jQuery(document).ready(function(){
     updateClock();
-    GetTextTrack();
-    GetWeather();
-    GetSide();
-    GetMain();
-    GetChat();
     setInterval('updateClock()', timerClock );
+
+    GetTextTrack();
     setInterval('GetTextTrack()', timerTrack );
+
+    GetWeather();
     setInterval('GetWeather()', timerWeather );
+
+    GetSide();
     setInterval('GetSide()', timerSide );
+
+    GetMain();
     setInterval('GetMain()', timerMain );
+
+    //GetChat();
     //setInterval('GetChat()', timerChat );
 });
 
