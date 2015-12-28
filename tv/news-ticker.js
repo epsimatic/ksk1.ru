@@ -79,9 +79,10 @@
 		        var $this = $(this),
 		            item = {
 		                title: $this.find("title").text(),
-		                link: $this.find("link").text()
+		                link: $this.find("link").text(),
+						description: $this.find("description").text
 		        }
-		        listItem = "<li><a href='"+item.link+"'>"+item.title+"</a></li>";
+		        listItem = "<li><a href='"+item.link+"'>"+item.description+"</a></li>";
 		        list += listItem;
 		        //Do something with item here...
 		    });
