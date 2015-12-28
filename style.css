@@ -4081,6 +4081,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-respond { margin-bottom: 48px; }
 
+/*Показывать заголовок в зависимости от положения формы ответа*/
 #reply-title .reply-to { display: none; }
 #reply-title .not-reply-to { display: inline; }
 .comment-list #reply-title .reply-to { display: inline; }
