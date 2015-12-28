@@ -12,3 +12,5 @@
 .container form#sac-form fieldset label, form#sac-form fieldset input, form#sac-form fieldset textarea { float: left; clear: both; width: 94%; margin: 0 0 5px 2px }
 .container form#sac-form fieldset#sac-user-info label, form#sac-form fieldset#sac-user-url label, form#sac-form fieldset#sac-user-chat label { margin: 0 0 0 2px }
 
+.chat-area-ajax #sac-form { display: none; }
+.chat-area-ajax #sac-output { position: absolute; bottom: 0; }
