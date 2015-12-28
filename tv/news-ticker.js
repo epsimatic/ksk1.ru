@@ -83,7 +83,7 @@
 						description: $this.find("description").text(),
 						encoded: $this.find("ns3\:encoded").text()
 		        }
-		        listItem = "<li><a href='"+item.link+"'>"+item.encoded+"</a></li>";
+		        listItem = "<li><a href='"+item.link+"'>"+item.description+"</a></li>";
 		        list += listItem;
 		        //Do something with item here...
 		    });
