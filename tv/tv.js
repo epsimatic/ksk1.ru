@@ -126,7 +126,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
             radio_player = jQuery("#jquery_jplayer_1");
             radio_player.jPlayer({
                 ready: function () {
-                    radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
+                    radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
                     jQuery(this).jPlayer("setMedia", {
                         m4a: "http://radio.ksk66.ru:8000/aac",
                         mp3: "http://radio.ksk66.ru:8000/mp3"
