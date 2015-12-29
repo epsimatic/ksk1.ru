@@ -51,7 +51,7 @@ function GetNowPlaying(selector) {
 
 function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
     if (typeof (url_or_function) == 'function') {
-        function (selector);
+        url_or_function (selector);
     } else {
         jQuery(selector).load(url);
     }
