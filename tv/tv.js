@@ -11,6 +11,48 @@ const timers = { // Периоды обновления панелей в сек
     ticker: 15*60
 }
 
+window.libsAvail   = [];
+window.libsLoading = [];
+function LoadRes(src, type, callback) {
+    var resName = src.split("/").reverse()[0];
+    if (libsAvail.indexOf(resName) != -1) {
+        console.log("Available already: «" + resName + "» " + src +
+            ((typeof (callback) == "function") ? ", running callback" : ""));
+        if (typeof (callback) == "function") callback();
+    } else if (libsLoading.indexOf(resName) != -1) {
+        console.log("Still loading, retry: «" + resName + "» " + src);
+        window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
+    } else {
+        window.libsLoading.push(resName);
+        console.log("Loading «" + resName + "» " + src);
+        var e = document.createElement(type);
+        if (type == 'script') {
+            e.type = "text/javascript";
+            e.src = src;
+            e.async = true;
+        } else {
+            e.type = "text/css";
+            e.href = src;
+            e.rel = "stylesheet";
+        }
+        e.onerror = function () {
+            console.error("Error loading " + src);
+            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+        };
+        e.onload = function () {
+            resName = src.split("/").reverse()[0];
+            console.log("Loaded «" + resName + "» " + src +
+                ((typeof (callback) == "function") ? ", running callback" : ""));
+            window.libsAvail.push(resName);
+            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+            if (typeof (callback) == "function") callback();
+        };
+        document.getElementsByTagName("head")[0].appendChild(e);
+    }
+}
+function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
+function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
+
 /**
  * Обновить часы в селектор
  * @param {string} selector jQuery selector for 2 elements
@@ -112,46 +154,3 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
 
     });
 });
-
-
-window.libsAvail   = [];
-window.libsLoading = [];
-function LoadRes(src, type, callback) {
-    var resName = src.split("/").reverse()[0];
-    if (libsAvail.indexOf(resName) != -1) {
-        console.log("Available already: «" + resName + "» " + src +
-            ((typeof (callback) == "function") ? ", running callback" : ""));
-        if (typeof (callback) == "function") callback();
-    } else if (libsLoading.indexOf(resName) != -1) {
-        console.log("Still loading, retry: «" + resName + "» " + src);
-        window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
-    } else {
-        window.libsLoading.push(resName);
-        console.log("Loading «" + resName + "» " + src);
-        var e = document.createElement(type);
-        if (type == 'script') {
-            e.type = "text/javascript";
-            e.src = src;
-            e.async = true;
-        } else {
-            e.type = "text/css";
-            e.href = src;
-            e.rel = "stylesheet";
-        }
-        e.onerror = function () {
-            console.error("Error loading " + src);
-            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
-        };
-        e.onload = function () {
-            resName = src.split("/").reverse()[0];
-            console.log("Loaded «" + resName + "» " + src +
-                ((typeof (callback) == "function") ? ", running callback" : ""));
-            window.libsAvail.push(resName);
-            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
-            if (typeof (callback) == "function") callback();
-        };
-        document.getElementsByTagName("head")[0].appendChild(e);
-    }
-}
-function LoadJS (src, onload) {LoadRes(src, 'script', onload)}
-function LoadCSS(src, onload) {LoadRes(src, 'link', onload)}
