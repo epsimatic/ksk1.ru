@@ -178,19 +178,6 @@ jQuery('.dropdown-weather').one('mouseenter', function () {
     });
 });
 
-
-// Форма для сбора отзывов
-function showReviewHide() {
-    $(".review-hide").removeClass('hidden');
-    $(".review__line-radiobutton").addClass('feedback-sent');
-    $(".review-text").focus();
-}
-function formFade() {
-    $('.wrapp__buttonSubmit').button('loading');
-    $(".dropdown-vote").addClass('feedback-sent');
-}
-
-
 // Загрузить срочные объявления при наведении на панель Объявления
 jQuery(".menu-main-ads").one("mouseenter", function () {
     jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
