@@ -53,7 +53,7 @@ function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
     if (typeof (url_or_function) == 'function') {
         url_or_function (selector);
     } else {
-        jQuery(selector).load(url);
+        jQuery(selector).load(url_or_function);
     }
     setTimeout( function(){ UpdateBlockUpdateTimer(selector, url, seconds); }, seconds * 1000 );
 }
