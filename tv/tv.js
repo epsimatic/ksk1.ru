@@ -78,8 +78,41 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
                 hoverpause: false
             });
         });
+
+        // Радио плеер
+        LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
+            radio_player = jQuery("#jquery_jplayer_1");
+            radio_player.jPlayer({
+                ready: function () {
+                    radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
+                    jQuery(this).jPlayer("setMedia", {
+                        m4a: "http://radio.ksk66.ru:8000/aac",
+                        mp3: "http://radio.ksk66.ru:8000/mp3"
+                    });
+                    radio_player.jPlayer("play");
+                },
+                play: function (event) {
+                    //jQuery(".play-radio i.fa-play").addClass('hidden');
+                    //jQuery(".play-radio i.fa-pause").removeClass('hidden');
+                    if (video_player) {
+                        video_player.stopVideo();
+                    }
+                },
+                error: function (event) {
+                    //jQuery(".play-radio i.fa-play").removeClass('hidden');
+                    //jQuery(".play-radio i.fa-pause").addClass('hidden');
+                    console.log("Ошибка: " + event.jPlayer.error.message);
+                    console.log(event.jPlayer.error);
+                    console.error(event.jPlayer.error);
+                },
+                swfPath: "js",
+                supplied: "mp3, m4a"
+            });
+        });
+
     });
 });
+
 
 window.libsAvail   = [];
 window.libsLoading = [];
