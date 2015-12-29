@@ -271,6 +271,13 @@ time { padding-right: 1rem; text-align: right; }
 .tickercontainer p { margin: 0; }
 
 
+/*Стили для чата*/
+#simple-ajax-chat ul { list-style: none; padding: 0; }
+
+#sac-latest-message { display: none; }
+
+.sac-chat-message > span { font-weight: 700; }
+
 
 /* ==========================================================================
    Helper classes

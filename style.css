@@ -3337,6 +3337,10 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 /*Стили для чата*/
 #simple-ajax-chat ul { list-style: none; padding: 0; }
 
+#sac-latest-message { display: none; }
+
+.sac-chat-message > span { font-weight: 700; }
+
 
 .admin-bar.site-radio #radio-sidebar-features,
 .admin-bar.site-tv #tv-sidebar-features { top: 40px; }
