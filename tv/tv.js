@@ -136,7 +136,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
                 play: function (event) {
                     //jQuery(".play-radio i.fa-play").addClass('hidden');
                     //jQuery(".play-radio i.fa-pause").removeClass('hidden');
-                    if (video_player) {
+                    if (typeof(video_player) != 'undefined') {
                         video_player.stopVideo();
                     }
                 },
