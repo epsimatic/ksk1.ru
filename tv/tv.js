@@ -103,55 +103,52 @@ function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
 //LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
 
 LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
-    jQuery(document).ready(function() {
 
-        UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
-        UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
-        UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
-        UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
-        UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
+    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
+    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
+    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
+    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
+    UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
 
-        // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-        LoadJS('/tv/news-ticker.js', function(){
-            jQuery('#webticker').webTicker({
-                speed: 150,
-                rssurl: 'http://brief.kskmedia.ru/feed/',
-                rssfrequency: timers['ticker'] / 60,
-                hoverpause: false
-            });
+    // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
+    LoadJS('/tv/news-ticker.js', function(){
+        jQuery('#webticker').webTicker({
+            speed: 150,
+            rssurl: 'http://brief.kskmedia.ru/feed/',
+            rssfrequency: timers['ticker'] / 60,
+            hoverpause: false
         });
+    });
 
-        // Радио плеер
-        LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
-            radio_player = jQuery("#jquery_jplayer_1");
-            radio_player.jPlayer({
-                ready: function () {
-                    radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
-                    jQuery(this).jPlayer("setMedia", {
-                        m4a: "http://radio.ksk66.ru:8000/aac",
-                        mp3: "http://radio.ksk66.ru:8000/mp3"
-                    });
-                    radio_player.jPlayer("play");
-                },
-                play: function (event) {
-                    //jQuery(".play-radio i.fa-play").addClass('hidden');
-                    //jQuery(".play-radio i.fa-pause").removeClass('hidden');
-                    if (typeof(video_player) != 'undefined') {
-                        video_player.stopVideo();
-                    }
-                },
-                error: function (event) {
-                    //jQuery(".play-radio i.fa-play").removeClass('hidden');
-                    //jQuery(".play-radio i.fa-pause").addClass('hidden');
-                    console.log("Ошибка: " + event.jPlayer.error.message + ". Пробую повторно через 2с");
-                    console.log(event.jPlayer.error);
-                    console.error(event.jPlayer.error);
-                    setTimeout( function(){ radio_player.jPlayer("play"); }, 2000);
-                },
-                swfPath: "js",
-                supplied: "mp3, m4a"
-            });
+    // Радио плеер
+    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
+        radio_player = jQuery("#jquery_jplayer_1");
+        radio_player.jPlayer({
+            ready: function () {
+                radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                });
+                radio_player.jPlayer("play");
+            },
+            play: function (event) {
+                //jQuery(".play-radio i.fa-play").addClass('hidden');
+                //jQuery(".play-radio i.fa-pause").removeClass('hidden');
+                if (typeof(video_player) != 'undefined') {
+                    video_player.stopVideo();
+                }
+            },
+            error: function (event) {
+                //jQuery(".play-radio i.fa-play").removeClass('hidden');
+                //jQuery(".play-radio i.fa-pause").addClass('hidden');
+                console.log("Ошибка: " + event.jPlayer.error.message + ". Пробую повторно через 2с");
+                console.log(event.jPlayer.error);
+                console.error(event.jPlayer.error);
+                setTimeout( function(){ radio_player.jPlayer("play"); }, 2000);
+            },
+            swfPath: "js",
+            supplied: "mp3, m4a"
         });
-
     });
 });
