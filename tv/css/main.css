@@ -128,9 +128,6 @@ time { padding-right: 1rem; text-align: right; }
 
 .fa { display: inline !important; }
 
-.board-chat { min-height: 7rem; background-color: #a7ffeb; position: relative; overflow: hidden; }
-.board-chat-frame { width: 100%; height: 100%; overflow: hidden; border: none; }
-
 .chat-wrap { position: absolute; bottom: 0; }
 
 .board-heading { margin: 0; font-size: 0.809rem; }
@@ -272,6 +269,8 @@ time { padding-right: 1rem; text-align: right; }
 
 
 /*Стили для чата*/
+.board-chat-frame { width: 100%; height: 100%; overflow: hidden; border: none; }
+
 #simple-ajax-chat ul { list-style: none; padding: 0; }
 
 #sac-latest-message { display: none; }
