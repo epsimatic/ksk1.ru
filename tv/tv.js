@@ -11,8 +11,11 @@ const timers = { // Периоды обновления панелей в сек
     ticker: 15*60
 }
 
-// Обновить часы
-function updateClock() {
+/**
+ * Обновить часы в селектор
+ * @param {string} selector jQuery selector for 2 elements
+ */
+function updateClock(selector) {
     var currentTime = new Date ( );
     var currentHours = currentTime.getHours ( );
     var currentMinutes = currentTime.getMinutes ( );
@@ -24,12 +27,16 @@ function updateClock() {
     currentHours   = ( currentHours   < 10 ? "0" : "" ) + currentHours;
 
     // Update the time display
-    jQuery("#clock").text(currentHours + ":" + currentMinutes);
-    jQuery("#date").text(currentTime.getDate() + " " + nameMonth[currentTime.getMonth()]);
+    jQuery(selector).first().text(currentHours + ":" + currentMinutes);
+    jQuery(selector).last().text(currentTime.getDate() + " " + nameMonth[currentTime.getMonth()]);
 }
 
-// Получить текущий трек
-function GetNowPlaying() {
+
+/**
+ * Получить текущий трек в селектор
+ * @param {string} selector jQuery selector
+ */
+function GetNowPlaying(selector) {
     jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
         var track = jQuery(data).find("TRACK").first();
         if (track.attr("ARTIST")) {
@@ -38,31 +45,27 @@ function GetNowPlaying() {
         else if (track.attr("TITLE")) {
             track_text = track.attr("TITLE");
         } else  track_text = "";
-        jQuery(".track-data-text").html(track_text.replace(/\[.*\]/, ""));
-
+        jQuery(selector).html(track_text.replace(/\[.*\]/, ""));
     });
 }
 
-function GetMain(){    jQuery(".board-main").load("http://ksk1.ru/yummies/ksk1.ru/main/"); }
-function GetSidebar(){ jQuery(".board-yummie").load("http://ksk1.ru/yummies/ksk1.ru/side/"); }
-function GetWeather(){ jQuery(".board-weather").load("http://ksk1.ru/weather/conditions.html"); }
+function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
+    if (typeof (url_or_function) == 'function') {
+        function (selector);
+    } else {
+        jQuery(selector).load(url);
+    }
+    setTimeout( function(){ UpdateBlockUpdateTimer(selector, url, seconds); }, seconds * 1000 );
+}
+
 
 jQuery(document).ready(function() {
 
-    GetMain();
-    setInterval( GetMain, timers['main'] * 1000 );
-
-    GetSidebar();
-    setInterval( GetSidebar, timers['sidebar'] * 1000 );
-
-    updateClock();
-    setInterval( updateClock, timers['clock'] * 1000 );
-
-    GetNowPlaying();
-    setInterval( GetNowPlaying, timers['now_playing'] * 1000 );
-
-    GetWeather();
-    setInterval( GetWeather, timers['weather'] * 1000 );
+    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
+    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
+    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
+    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
+    UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
 
     // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     jQuery('#webticker').webTicker({
