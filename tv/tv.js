@@ -58,22 +58,25 @@ function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
     setTimeout( function(){ UpdateBlockUpdateTimer(selector, url_or_function, seconds); }, seconds * 1000 );
 }
 
+//LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
 
-jQuery(document).ready(function() {
+LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
+    jQuery(document).ready(function() {
 
-    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
-    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
-    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
-    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
-    UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
+        UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
+        UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
+        UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
+        UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
+        UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
 
-    // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-    LoadJS('/tv/news-ticker.js', function(){
-        jQuery('#webticker').webTicker({
-            speed: 150,
-            rssurl: 'http://brief.kskmedia.ru/feed/',
-            rssfrequency: timers['ticker'] / 60,
-            hoverpause: false
+        // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
+        LoadJS('/tv/news-ticker.js', function(){
+            jQuery('#webticker').webTicker({
+                speed: 150,
+                rssurl: 'http://brief.kskmedia.ru/feed/',
+                rssfrequency: timers['ticker'] / 60,
+                hoverpause: false
+            });
         });
     });
 });
