@@ -1674,7 +1674,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .post-news figure.post-thumb img { max-width: 100% !important; }
 
-.post-news .post-description-text { margin-bottom: 10px; font-size: 14px; line-height: 1.2em; }
+.post-news .post-description-text { margin-bottom: 10px; font-size: 14px; line-height: 1.2em; color: #333; }
 
 .post-news a { color: #433822; text-decoration: none; }
 
