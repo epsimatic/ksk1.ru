@@ -3334,6 +3334,9 @@ a.content-brief_title-commerce:focus {color: #ff9c00;}
 
 .site-tv article.main-video .post-title { margin-top: 0; margin-bottom: 15px; font-weight: 600; color: #1976d2; }
 
+/*Стили для чата*/
+#simple-ajax-chat ul { list-style: none; padding: 0; }
+
 
 .admin-bar.site-radio #radio-sidebar-features,
 .admin-bar.site-tv #tv-sidebar-features { top: 40px; }
