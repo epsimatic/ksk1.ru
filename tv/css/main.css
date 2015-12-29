@@ -135,8 +135,6 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-heading { margin: 0; font-size: 0.809rem; }
 
-/*.track-data { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }*/
-
 .track-data strong { font-size: 0.809rem; }
 
 .yummies { height: auto; }
@@ -226,7 +224,7 @@ time { padding-right: 1rem; text-align: right; }
 .board-main .forecast img { transition-delay: 1s; }*/
 
 
-/* Стили для сообщения на основной доске */
+/* Стили для сообщений на основной доске */
 .board-main .message-wrap { background-color: #f5f5f5; height: calc(100% - 3.236rem); padding: 1.618rem; width: calc(100% - 3.236rem); display: flex; flex-direction: column; justify-content: center; }
 
 .board-main .message-wrap .board-heading { font-size: 1.333rem; text-align: center; }
@@ -234,7 +232,7 @@ time { padding-right: 1rem; text-align: right; }
 .board-main .message-wrap .board-heading + * { margin-top: .809rem; }
 
 
-/* Стили для сообщения на основной доске */
+/* Стили для блоков видео с youtube на основной доске */
 .youtube-video { display: flex; flex-direction: column; height: 100%; justify-content: center; }
 
 .youtube-video .board-heading { font-size: 1.333rem; margin-bottom: 0.809rem; }
@@ -268,8 +266,10 @@ time { padding-right: 1rem; text-align: right; }
 .board-main article.ob .ob-category-name { text-decoration: none; color: #57346b; }
 
 
+/*Стили для бегущей строки*/
+.tickercontainer a { color: #333; text-decoration: none; }
 
-    
+.tickercontainer p { margin: 0; }
 
 
 
