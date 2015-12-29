@@ -102,7 +102,7 @@ html, body { height: 100%; width: 100%; font-size: 18px; line-height: 1.618rem; 
 .tickercontainer { background-color: #f0f0f0; height: 3.236rem; line-height: 3.236rem; margin-bottom: 0.809rem; overflow: hidden; white-space: nowrap; /* width: calc(100% - 1rem); */ }
 ul.newsticker { position: relative; list-style-type: none; padding: 0; margin: 0; transition: all 0s linear; }
 ul.newsticker li { float: left; margin: 0; padding-right: 3.236rem; font-size: 1.333rem; }
-.webticker-placeholder { text-align: center; width: 100%; opacity: 0.3; }
+.webticker-placeholder { padding-left: 3em; opacity: 0.3; }
 
 main,
 .sidebar { display: flex; flex-direction: column; padding: .809rem 1rem; justify-content: space-between; overflow-x: hidden; }
