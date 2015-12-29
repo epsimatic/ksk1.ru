@@ -55,7 +55,7 @@ function UpdateBlockUpdateTimer ( selector, url_or_function, seconds ) {
     } else {
         jQuery(selector).load(url_or_function);
     }
-    setTimeout( function(){ UpdateBlockUpdateTimer(selector, url, seconds); }, seconds * 1000 );
+    setTimeout( function(){ UpdateBlockUpdateTimer(selector, url_or_function, seconds); }, seconds * 1000 );
 }
 
 
