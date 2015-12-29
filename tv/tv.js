@@ -2,12 +2,14 @@
  * Created by coder on 15.12.15.
  */
 
-// Периоды обновления панелей в секундах
-const timerMain=27;
-const timerSidebar=42;
-const timerClock=10;
-const timerNowPlaying=15;
-const timerWeather=60*20;
+const timers = { // Периоды обновления панелей в секундах
+    main: 30,
+    sidebar: 42,
+    clock: 10,
+    now_playing: 15,
+    weather: 20*60,
+    ticker: 15*60
+}
 
 // Обновить часы
 function updateClock() {
@@ -48,25 +50,25 @@ function GetWeather(){ jQuery(".board-weather").load("http://ksk1.ru/weather/con
 jQuery(document).ready(function() {
 
     GetMain();
-    setInterval( GetMain, timerMain * 1000 );
+    setInterval( GetMain, timers['main'] * 1000 );
 
     GetSidebar();
-    setInterval( GetSidebar, timerSidebar * 1000 );
+    setInterval( GetSidebar, timers['sidebar'] * 1000 );
 
     updateClock();
-    setInterval( updateClock, timerClock * 1000 );
+    setInterval( updateClock, timers['clock'] * 1000 );
 
     GetNowPlaying();
-    setInterval( GetNowPlaying, timerNowPlaying * 1000 );
+    setInterval( GetNowPlaying, timers['now_playing'] * 1000 );
 
     GetWeather();
-    setInterval( GetWeather, timerWeather * 1000 );
+    setInterval( GetWeather, timers['weather'] * 1000 );
 
     // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     jQuery('#webticker').webTicker({
         speed: 150,
         rssurl: 'http://brief.kskmedia.ru/feed/',
-        rssfrequency: 15, // minutes
+        rssfrequency: timers['ticker'] / 60,
         hoverpause: false
     });
 
