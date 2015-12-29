@@ -68,11 +68,11 @@ jQuery(document).ready(function() {
     UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
 
     // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-    //jQuery('#webticker').webTicker({
-    //    speed: 150,
-    //    rssurl: 'http://brief.kskmedia.ru/feed/',
-    //    rssfrequency: timers['ticker'] / 60,
-    //    hoverpause: false
-    //});
+    jQuery('#webticker').webTicker({
+        speed: 150,
+        rssurl: 'http://brief.kskmedia.ru/feed/',
+        rssfrequency: timers['ticker'] / 60,
+        hoverpause: false
+    });
 
 });
