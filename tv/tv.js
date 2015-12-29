@@ -70,8 +70,8 @@ jQuery(document).ready(function() {
     // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     jQuery('#webticker').webTicker({
         speed: 150,
-        rssurl: 'http://brief.kskmedia.ru/feed/',
-        rssfrequency: timers['ticker'] / 60,
+        //rssurl: 'http://brief.kskmedia.ru/feed/',
+        //rssfrequency: timers['ticker'] / 60,
         hoverpause: false
     });
 
