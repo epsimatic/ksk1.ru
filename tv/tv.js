@@ -143,9 +143,10 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function(){
                 error: function (event) {
                     //jQuery(".play-radio i.fa-play").removeClass('hidden');
                     //jQuery(".play-radio i.fa-pause").addClass('hidden');
-                    console.log("Ошибка: " + event.jPlayer.error.message);
+                    console.log("Ошибка: " + event.jPlayer.error.message + ". Пробую повторно через 2с");
                     console.log(event.jPlayer.error);
                     console.error(event.jPlayer.error);
+                    setTimeout( function(){ radio_player.jPlayer("play"); }, 2000);
                 },
                 swfPath: "js",
                 supplied: "mp3, m4a"
