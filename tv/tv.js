@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
     jQuery('#webticker').webTicker({
         speed: 150,
         rssurl: 'http://brief.kskmedia.ru/feed/',
-        rssfrequency: 5, // minutes
+        rssfrequency: 15, // minutes
         hoverpause: false
     });
 
