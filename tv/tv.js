@@ -109,7 +109,7 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
         url_or_function(selector);
     } else if (typeof (url_or_function) == 'undefined') {
         // Загрузить стандартный URL
-        url_or_function = urls_or_functions[".board-main"];
+        url_or_function = urls_or_functions[selector];
     }
     if (typeof (url_or_function) == 'string') {
         // ... или загрузить url
