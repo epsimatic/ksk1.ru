@@ -123,13 +123,21 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
 
 //LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
 
+const urls_or_functions = {
+    ".board-main": "http://ksk1.ru/yummies/ksk1.ru/main/",
+    ".board-yummie": "http://ksk1.ru/yummies/ksk1.ru/side/",
+    ".board-weather": "http://ksk1.ru/weather/conditions.html",
+    ".track-data-text": GetNowPlaying,
+    "#clock, #date": updateClock
+};
+
 LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
-    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/");
-    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/");
-    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html");
-    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying);
-    UpdateBlockUpdateTimer("#clock, #date", updateClock);
+    UpdateBlockUpdateTimer(".board-main", urls_or_functions[".board-main"]);
+    UpdateBlockUpdateTimer(".board-yummie", urls_or_functions[".board-yummie"]);
+    UpdateBlockUpdateTimer(".board-weather",urls_or_functions[".board-weather"]);
+    UpdateBlockUpdateTimer(".track-data-text",  urls_or_functions[".track-data-text"]);
+    UpdateBlockUpdateTimer("#clock, #date", urls_or_functions["#clock, #date"]);
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
@@ -153,7 +161,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
                 });
                 radio_player.jPlayer("play");
             },
-            play: function (event) {
+            play: function (/*event*/) {
                 //jQuery(".play-radio i.fa-play").addClass('hidden');
                 //jQuery(".play-radio i.fa-pause").removeClass('hidden');
                 if (typeof(video_player) != 'undefined') {
