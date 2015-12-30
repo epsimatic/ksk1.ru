@@ -99,16 +99,13 @@ function GetNowPlaying(selector) {
     });
 }
 
-function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
+function UpdateBlockUpdateTimer(selector, seconds) {
     // Взять стандартный таймаут, если не передан параметром
     if (typeof (seconds) == 'undefined'){
         seconds = default_timeouts[selector];
     }
 
-    if (typeof (url_or_function) == 'undefined') {
-        // Загрузить стандартое действие, если не задано
-        url_or_function = urls_or_functions[selector];
-    }
+    var url_or_function = urls_or_functions[selector];
 
     if (typeof (url_or_function) == 'function') {
         // Вызвать функцию ...
@@ -116,19 +113,21 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
     } else if (typeof (url_or_function) == 'string') {
         // ... или загрузить url
         jQuery(selector).load(url_or_function);
+    } else {
+        console.log ("Unknown url_or_function for '"+selector+": "+url_or_function);
     }
-    UpdateTimer(selector, url_or_function, seconds);
+    UpdateTimer(selector, seconds);
 }
 
 
-function UpdateTimer(selector, url_or_function, seconds) {
+function UpdateTimer(selector, seconds) {
     // Очистить (если есть) предыдущий таймер
     if (typeof (timers[selector]) != 'undefined') {
         clearTimeout(timers[selector]);
     }
     // Задать новый таймер и сохранить его
     timers[selector] = setTimeout(function () {
-        UpdateBlockUpdateTimer(selector, url_or_function, seconds);
+        UpdateBlockUpdateTimer(selector, seconds);
     }, seconds * 1000);
 }
 
