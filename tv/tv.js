@@ -9,7 +9,7 @@ const timers = { // Периоды обновления панелей в сек
     now_playing: 15,
     weather: 20 * 60,
     ticker: 15 * 60
-}
+};
 
 window.libsAvail = [];
 window.libsLoading = [];
