@@ -2,14 +2,16 @@
  * Created by coder on 15.12.15.
  */
 
-const timers = { // Периоды обновления панелей в секундах
-    main: 30,
-    sidebar: 42,
-    clock: 10,
-    now_playing: 15,
-    weather: 20 * 60,
+const default_timeouts = { // Периоды обновления панелей в секундах
+    ".board-main": 30,
+    ".board-yummie": 42,
+    "#clock, #date": 10,
+    ".track-data-text": 15,
+    ".board-weather": 20 * 60,
     ticker: 15 * 60
 };
+
+var timers = {};
 
 window.libsAvail = [];
 window.libsLoading = [];
@@ -98,12 +100,23 @@ function GetNowPlaying(selector) {
 }
 
 function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
+    // Взять стандартный таймаут, если не передан параметром
+    if (typeof (seconds) == 'undefined'){
+        seconds = default_timeouts[selector];
+    }
+    // Очистить (если есть) предыдущий таймер
+    if (typeof (timers[selector]) != 'undefined') {
+        clearTimeout(timers[selector]);
+    }
     if (typeof (url_or_function) == 'function') {
+        // Вызвать функцию ...
         url_or_function(selector);
     } else {
+        // ... или загрузить url
         jQuery(selector).load(url_or_function);
     }
-    setTimeout(function () {
+    // Задать новый таймер и сохранить его
+    timers[selector] = setTimeout(function () {
         UpdateBlockUpdateTimer(selector, url_or_function, seconds);
     }, seconds * 1000);
 }
@@ -112,18 +125,18 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
 
 LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
-    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/", timers['main']);
-    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/", timers['sidebar']);
-    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html", timers['weather']);
-    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying, timers['now_playing']);
-    UpdateBlockUpdateTimer("#clock, #date", updateClock, timers['clock']);
+    UpdateBlockUpdateTimer(".board-main", "http://ksk1.ru/yummies/ksk1.ru/main/");
+    UpdateBlockUpdateTimer(".board-yummie", "http://ksk1.ru/yummies/ksk1.ru/side/");
+    UpdateBlockUpdateTimer(".board-weather", "http://ksk1.ru/weather/conditions.html");
+    UpdateBlockUpdateTimer(".track-data-text", GetNowPlaying);
+    UpdateBlockUpdateTimer("#clock, #date", updateClock);
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
         jQuery('#webticker').webTicker({
             speed: 150,
             rssurl: 'http://brief.kskmedia.ru/feed/',
-            rssfrequency: timers['ticker'] / 60,
+            rssfrequency: default_timeouts['ticker'] / 60,
             hoverpause: false
         });
     });
