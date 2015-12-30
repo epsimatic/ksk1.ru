@@ -104,16 +104,25 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
     if (typeof (seconds) == 'undefined'){
         seconds = default_timeouts[selector];
     }
-    // Очистить (если есть) предыдущий таймер
-    if (typeof (timers[selector]) != 'undefined') {
-        clearTimeout(timers[selector]);
-    }
     if (typeof (url_or_function) == 'function') {
         // Вызвать функцию ...
         url_or_function(selector);
-    } else {
+    } else if (typeof (url_or_function) == 'undefined') {
+        // Загрузить стандартный URL
+        url_or_function = urls_or_functions[".board-main"];
+    }
+    if (typeof (url_or_function) == 'string') {
         // ... или загрузить url
         jQuery(selector).load(url_or_function);
+    }
+    UpdateTimer(selector, url_or_function, seconds);
+}
+
+
+function UpdateTimer(selector, url_or_function, seconds) {
+    // Очистить (если есть) предыдущий таймер
+    if (typeof (timers[selector]) != 'undefined') {
+        clearTimeout(timers[selector]);
     }
     // Задать новый таймер и сохранить его
     timers[selector] = setTimeout(function () {
@@ -133,11 +142,11 @@ const urls_or_functions = {
 
 LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
-    UpdateBlockUpdateTimer(".board-main", urls_or_functions[".board-main"]);
-    UpdateBlockUpdateTimer(".board-yummie", urls_or_functions[".board-yummie"]);
-    UpdateBlockUpdateTimer(".board-weather",urls_or_functions[".board-weather"]);
-    UpdateBlockUpdateTimer(".track-data-text",  urls_or_functions[".track-data-text"]);
-    UpdateBlockUpdateTimer("#clock, #date", urls_or_functions["#clock, #date"]);
+    UpdateBlockUpdateTimer(".board-main");
+    UpdateBlockUpdateTimer(".board-yummie");
+    UpdateBlockUpdateTimer(".board-weather");
+    UpdateBlockUpdateTimer(".track-data-text");
+    UpdateBlockUpdateTimer("#clock, #date");
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
