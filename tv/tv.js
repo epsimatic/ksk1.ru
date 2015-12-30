@@ -104,14 +104,16 @@ function UpdateBlockUpdateTimer(selector, url_or_function, seconds) {
     if (typeof (seconds) == 'undefined'){
         seconds = default_timeouts[selector];
     }
+
+    if (typeof (url_or_function) == 'undefined') {
+        // Загрузить стандартое действие, если не задано
+        url_or_function = urls_or_functions[selector];
+    }
+
     if (typeof (url_or_function) == 'function') {
         // Вызвать функцию ...
         url_or_function(selector);
-    } else if (typeof (url_or_function) == 'undefined') {
-        // Загрузить стандартный URL
-        url_or_function = urls_or_functions[selector];
-    }
-    if (typeof (url_or_function) == 'string') {
+    } else if (typeof (url_or_function) == 'string') {
         // ... или загрузить url
         jQuery(selector).load(url_or_function);
     }
