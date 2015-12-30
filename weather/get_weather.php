@@ -189,10 +189,10 @@ foreach ($array_forecast as $forecast_object) {
 
 
     $short_conditions = $forecast_object['conditions'];
-    $text_day   = str_replace("Повышение","",$forecast_object['text_day']);
-    $text_day   = str_replace("Понижение","",$forecast_object['text_day']);
-    $text_night = str_replace("Повышение","",$forecast_object['text_night']);
-    $text_night = str_replace("Понижение","",$forecast_object['text_night']);
+    $text_day   = str_replace("Повышение","",$text_day);
+    $text_day   = str_replace("Понижение","",$text_day);
+    $text_night = str_replace("Повышение","",$text_night);
+    $text_night = str_replace("Понижение","",$text_night);
     $text_day   = str_replace("C.", "℃.", $text_day);
     $text_night = str_replace("C.", "℃.", $text_night);
     // Добавить «Ночью» и сделать первую букву маленькой
