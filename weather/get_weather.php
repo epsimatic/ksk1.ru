@@ -199,7 +199,7 @@ foreach ($array_forecast as $forecast_object) {
     // Не добавлять «Ночью», если в прогнозе на ночь есть «вечером» или «утром»
     if ( mb_strpos($text_night, "вечер") === false &&
          mb_strpos($text_night, "утр") === false ) {
-        $text_night = mbStringToArray($forecast_object['text_night']);
+        $text_night = mbStringToArray($text_night);
         $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
         $text_night = "<em>Ночью</em> " . implode("", $text_night);
     }
