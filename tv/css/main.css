@@ -198,6 +198,8 @@ time { padding-right: 1rem; text-align: right; }
 .board-main .forecast .drop-icon::before { content: "💧"; opacity: .6; }
 .board-main .forecast .pop:after { content: " осадков" }
 
+.board-main .forecast .pop-dry:after { content: "" }
+
 /*Анимация погоды*/
 /*.board-main .forecast .day-row,
 .board-main .forecast .weekday,
