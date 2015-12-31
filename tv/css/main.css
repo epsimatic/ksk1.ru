@@ -128,8 +128,6 @@ time { padding-right: 1rem; text-align: right; }
 
 .fa { display: inline !important; }
 
-.chat-wrap { position: absolute; bottom: 0; }
-
 .board-heading { margin: 0; font-size: 0.809rem; }
 
 .track-data strong { font-size: 0.809rem; }
@@ -277,7 +275,9 @@ time { padding-right: 1rem; text-align: right; }
 
 .tickercontainer p { margin: 0; }
 
-iframe { border: none; }
+
+.board-chat { height: 100%; }
+iframe { border: none; height: calc(100% - rem); }
 
 @media (min-width: 1200px) {
     html, body { font-size: 24px; }
