@@ -277,7 +277,7 @@ time { padding-right: 1rem; text-align: right; }
 
 
 .board-chat { height: 100%; }
-iframe { border: none; height: calc(100% - rem); }
+iframe { border: none; height: 100%; }
 
 @media (min-width: 1200px) {
     html, body { font-size: 24px; }
