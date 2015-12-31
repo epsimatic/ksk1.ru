@@ -24,6 +24,6 @@
 
 .sac-chat-message > span { font-weight: 700; }
 
-@media (min-width: 1200px) {
+@media (min-width: 431px) {
 	html, body { font-size: 18px; }
 }
