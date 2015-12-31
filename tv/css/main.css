@@ -248,6 +248,8 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-main .ob-wrap .list-group { padding: 0; margin: 0; }
 
+.board-main .ob-wrap .block_congrats__all_ob_link { display: none; }
+
 .board-main .ob-wrap article.ob { background-color: #f5f5f5; margin-bottom: .809rem; }
 
 .board-main article.ob figure { float: right; margin: 0 0 0 1rem; width: auto; }
