@@ -14,3 +14,12 @@
 
 .chat-area-ajax #sac-form { display: none; }
 .chat-area-ajax #sac-output { position: absolute; bottom: 0; }
+
+/*Стили для чата*/
+.board-chat-frame { width: 100%; height: 100%; overflow: hidden; border: none; }
+
+#simple-ajax-chat ul { list-style: none; padding: 0; }
+
+#sac-latest-message { display: none; }
+
+.sac-chat-message > span { font-weight: 700; }
