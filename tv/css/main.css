@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body { height: 100%; width: 100%; font-size: 18px; line-height: 1.618rem;  background-color: #fff; display: flex; flex-direction: column; }
+html, body { height: 100%; width: 100%; font-size: 17px; line-height: 1.618rem;  background-color: #fff; display: flex; flex-direction: column; }
 
 .container { display: flex; height: calc(100% - 4.045rem); }
 
