@@ -144,6 +144,7 @@ time { padding-right: 1rem; text-align: right; }
 .board-on-air.jp-loading .jp-pause { display: none; } /* Показывать крестик, пока радио не заиграет */
 
 .jp-type-single { display: none; } /* Скрыл часть плейера */
+.jp-audio { display: inline; }
 
 .weather-text { display: none; }
 
