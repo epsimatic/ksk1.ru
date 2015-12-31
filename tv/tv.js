@@ -152,7 +152,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
         jQuery('#webticker').webTicker({
-            speed: 150,
+            speed: 100,
             rssurl: 'http://brief.kskmedia.ru/feed/',
             rssfrequency: default_timeouts['ticker'] / 60,
             hoverpause: false
