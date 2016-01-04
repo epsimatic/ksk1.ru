@@ -4122,7 +4122,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .comment-reply-title { margin-bottom: 12px; font-size: 24px; }
 
-    .comments-title-wrap .btn-default { line-height: 25px; padding: 0 15px; }
+    .comments-title-wrap .btn-default { line-height: 25px; padding: 0 15px; position: relative; top: 3px; }
 
     .comment-respond { margin-bottom: 54px; }
 
