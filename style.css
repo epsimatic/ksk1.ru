@@ -4133,6 +4133,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 @media (min-width: 992px) { 
     .comment-form { width: 80%; }
     .comment-form textarea { width: 80%; height: 151px; }
+
+    .comment-respond .comment-form { width: 100%; }
+    .comment-respond .comment-form textarea { width: 100%; }
 }
 
 @media (min-width: 1200px) {
