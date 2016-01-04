@@ -4049,6 +4049,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-payment > .panel-heading {color: #6D6E71; cursor: pointer; font-size: 18px; margin-top: 10px; padding: 25px; text-align: center; text-decoration: underline; white-space: nowrap;}
 
 /* панель Список комментраиев*/
+#comments-list { padding: 0 12px; }
+
 .comment-list { margin-bottom: 48px; }
 
 .comment-list article.comment-body { margin-bottom: 1.5em; }
@@ -4063,21 +4065,22 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list .author-name { color: #333; line-height: 15px; }
 .comment-list .comment-controls { font-size: 12px; line-height: 12px; }
 
-.comment-list .comment time { color: #999; }
+.comment-list .comment-controls > a { color: #999; }
 
 .comment-list .comment-controls a .fa { color: #aaa; }
 
 .comment-list .comment-controls a:hover .fa,
 .comment-list .comment-controls a:focus .fa { color: #0091ea; }
 
-.comment-list .comment-content { line-height: 24px; }
+.comment-list .comment-content { line-height: 1.618; }
 .comment-list .comment-content > p { margin-bottom: 1em; display: inline; }
+.comment-content br { margin-bottom: 11.3px; }
 
 .comment-list article.comment-body .reply { opacity: 0; transition: opacity .1s ease 0s; }
 
 .comment-list article.comment-body:hover .reply { opacity: 1; }
 
-.comment-list .reply .btn-reply { padding: 0 5px; }
+.comment-list .reply .btn-reply { padding: 0 5px; font-size: 12px; }
 
 .comments-title-wrap { margin-top: 24px; margin-bottom: 48px; }
 
@@ -4108,9 +4111,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-form .form-submit .btn.submit { font-size: 16px; }
 
 @media (min-width: 768px) { 
-    .comment-list { margin-bottom: 54px; }
+    #comments-list { padding: 0; }
 
-    .comment-list .comment-content { line-height: 27px; }
+    .comment-list { margin-bottom: 54px; }
 
     .comments-title-wrap { margin-top: 27px; margin-bottom: 54px; }
 
@@ -4128,9 +4131,13 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 }
 
 @media (min-width: 992px) { 
+    .comment-form { width: 80%; }
     .comment-form textarea { width: 80%; height: 151px; }
 }
 
+@media (min-width: 1200px) {
+    .comment-list { width: 75%; }
+}
 
 /* панель Стандарт */
 
