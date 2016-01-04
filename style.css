@@ -2309,12 +2309,93 @@ a.link-neutral:focus {color: #3b437d;}
 .panel-news-body .entry-meta .meta-value {font-weight: 600;}
 
 
+/*Переформление плагина WP-Ulike*/
+.wpulike {  }
+
+.wpulike .counter a:before { color: #B0B1B3; cursor: pointer; font-family: FontAwesome; width: 1.28571em; display: inline-block; }
+
+.wpulike .counter a:hover::before,
+.wpulike .counter a:focus::before {}
+
+.wpulike .counter a.image-unlike:before,
+.wpulike .counter a.image:before { content: ""; }
+
+.wpulike .counter a.image-unlike:before { color: #1ac8ed; }
+
+.wpulike .counter a.image-unlike:hover:before,
+.wpulike .counter a.image-unlike:focus:before { color: #1ba5cb; }
+
+
+/*Анимация для кнопки "понравилось"*/
+@-webkit-keyframes like-animate {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(3,3);
+        transform: scale(3,3);
+    }
+}
+
+@keyframes like-animate {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(3,3);
+        transform: scale(1,1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(3,3);
+        transform: scale(3,3);
+    }
+}
+
+.wpulike .counter a.loading:before { content: ""; position: relative; top: -1px; left: -10px;
+    -webkit-animation: like-animate .4s 1 ease;
+    animation: like-animate .4s 1 ease;  }
+
+.wpulike .counter a.loading + .count-box { display: none; }
+
+.wpulike .count-box { color: #656a71; }
+
+
 .post-info-cats {text-align: center; white-space: normal;overflow: hidden;}
 
 .post-info-cats a {color: #555; *font-size: 13px; letter-spacing: 0.03em; text-transform: uppercase; display: none;}
 
 .post-info-cats a:hover {text-decoration: underline;}
 
+
+/*Переоформление плагина EVC для раздела поделиться записью*/
+.social-likes_notext.social-likes_light .social-likes__button {}
+
+.social-likes_notext.social-likes_light .social-likes__button:hover,
+.social-likes_notext.social-likes_light .social-likes__button:focus {}
+
+.social-likes__button .social-likes__icon {  }
+
+.social-likes__button .social-likes__icon_facebook {  }
+
+.social-likes__button .social-likes__icon_odnoklassniki {  }
+
+.social-likes__button .social-likes__icon_vkontakte { }
+
+.social-likes,
+.social-likes__widget_single {  }
+
+.social-likes_notext.social-likes_light .social-likes__button {  }
+
+
+/*Скрыл счетчик количества поделившихся для плагина EVC*/
+.social-likes__counter { display: none !important; }
+
+
+
+
+/*Оформление блока "поделиться" от Яндекса*/
 .post-info-share {background-color:#2B67B2; text-align: center;}
 
 .post-info-share a {color: #fff;}
