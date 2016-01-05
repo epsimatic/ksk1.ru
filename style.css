@@ -4133,7 +4133,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list .comment-author img.avatar { margin-right: 1em; background-color: #f0f0f0; }
 
 .comment-list .author-name { color: #333; line-height: 15px; }
-.comment-list .comment-controls { font-size: 12px; line-height: 12px; }
+.comment-list .comment-controls { font-size: 12px; line-height: 12px; display: inline; }
 
 .comment-list .comment-controls > a { color: #999; }
 
@@ -4142,11 +4142,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list .comment-controls a:hover .fa,
 .comment-list .comment-controls a:focus .fa { color: #0091ea; }
 
-.comment-list .comment-content { line-height: 1.618; }
+.comment-list .comment-content { line-height: 1.618; padding-left: 46px; margin-top: -20px; }
 .comment-list .comment-content > p { margin-bottom: 1em; display: inline; }
 .comment-content br { margin-bottom: 11.3px; }
 
-.comment-list article.comment-body .reply { opacity: 0; transition: opacity .1s ease 0s; }
+.comment-list article.comment-body .reply { transition: opacity .1s ease 0s; }
 
 .comment-list article.comment-body:hover .reply { opacity: 1; }
 
@@ -4160,6 +4160,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-reply-title { margin-bottom: 12px; }
 
 .comment-respond { margin-bottom: 48px; }
+
+.comment-list .children { padding-left: 20px; }
 
 /*Показывать заголовок в зависимости от положения формы ответа*/
 #reply-title .reply-to { display: none; }
@@ -4201,6 +4203,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 }
 
 @media (min-width: 992px) { 
+    .comment-list article.comment-body .reply { opacity: 0; }
+
     .comment-form { width: 80%; }
     .comment-form textarea { width: 80%; height: 151px; }
 
