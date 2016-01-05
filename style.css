@@ -1191,6 +1191,8 @@ body.page .widget.yummies .textwidget > * { display: block; margin-bottom: 15px;
 
 .news .container > #header {margin: 0 -15px;}
 
+.row-yu-half { display: none; }
+
 .row-yu-half .yummies {max-height: none;}
 
 
