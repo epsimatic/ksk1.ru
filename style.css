@@ -2041,6 +2041,10 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .post-info > * { height: auto; background-color: transparent; }
 .post-info span {display: inline-block;}
 
+.post-info-info { text-align: center; }
+
+.post-info-info { display: inline-block; }
+
 .post-info-views {white-space: nowrap;}
 
 .post-info-views:before {content: "";  display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 7px;}
@@ -2374,7 +2378,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 
 /*Переоформление плагина EVC для раздела поделиться записью*/
-.evc-social-likes { text-align: right; }
+.post-info-share-evc .share-title,
+.evc-social-likes { text-align: center; }
 
 .social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; }
 
