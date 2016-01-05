@@ -2370,12 +2370,14 @@ a.link-neutral:focus {color: #3b437d;}
 
 
 /*Переоформление плагина EVC для раздела поделиться записью*/
-.social-likes_notext.social-likes_light .social-likes__button {}
+.evc-social-likes { text-align: right; }
+
+.social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; }
 
 .social-likes_notext.social-likes_light .social-likes__button:hover,
 .social-likes_notext.social-likes_light .social-likes__button:focus {}
 
-.social-likes__button .social-likes__icon {  }
+.social-likes__button .social-likes__icon { font-size: 24px; }
 
 .social-likes__button .social-likes__icon_facebook {  }
 
@@ -2391,6 +2393,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 /*Скрыл счетчик количества поделившихся для плагина EVC*/
 .social-likes__counter { display: none !important; }
+
+@media (min-width: 768px) {
+    .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
+    .social-likes__button .social-likes__icon { font-size: 27px; }
+}
 
 
 
