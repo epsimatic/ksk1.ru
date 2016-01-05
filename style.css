@@ -2231,7 +2231,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .table { clear: both; }
 
-.single-post .main-content article.post-news .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px 0; text-align: center; margin: 0 0 24px; }
+.single-post .main-content article.post-news .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px 0; text-align: center; margin: 24px 0; }
 
 
 
@@ -2253,7 +2253,7 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news blockquote.pullout { font-size: 21px; line-height: 1.714; }
     .single-post .main-content article.post-news blockquote.graph { padding-left: 36px; }
 
-    .single-post .main-content article.post-news .spelling-text { line-height: 27px; padding: 13.5px 0; margin: 0 0 27px; }
+    .single-post .main-content article.post-news .spelling-text { line-height: 27px; padding: 13.5px 0; margin: 27px 0; }
 }
 @media (min-width: 992px) {
     .single-post .main-content article.post-news { padding: 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
