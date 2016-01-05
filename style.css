@@ -4155,7 +4155,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .reply .btn-reply { padding: 0 5px; font-size: 12px; }
 
-.comments-title-wrap { margin-top: 24px; margin-bottom: 48px; }
+.comments-title-wrap { margin-top: 24px; margin-bottom: 24px; }
 
 .comments-title-wrap .comments-title, 
 .comment-reply-title  { margin: 0; font-size: 24px; line-height: 24px; font-weight: 600; }
@@ -4190,7 +4190,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .comment-list { margin-bottom: 54px; }
 
-    .comments-title-wrap { margin-top: 27px; margin-bottom: 54px; }
+    .comments-title-wrap { margin-top: 27px; margin-bottom: 27px; }
 
     .comments-title-wrap .comments-title, 
     .comment-reply-title { font-size: 27px; line-height: 27px; }
