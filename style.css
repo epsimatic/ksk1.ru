@@ -2041,13 +2041,9 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .post-info > * { height: auto; background-color: transparent; }
 .post-info span {display: inline-block;}
 
-.post-info-date {white-space: nowrap; text-transform: lowercase;}
-
-.post-info-date:before {content: ""; color: #747474; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 7px;}
-
 .post-info-views {white-space: nowrap;}
 
-.post-info-views:before {content: ""; color: #4a76bb; display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 7px;}
+.post-info-views:before {content: "";  display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; padding-left: 7px;}
 
 .post-info-comments {white-space: nowrap;}
 
