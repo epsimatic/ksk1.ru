@@ -2398,11 +2398,13 @@ a.link-neutral:focus {color: #3b437d;}
 /*Оформление блока "поделиться" от Яндекса*/
 .post-info-share {background-color:#2B67B2; text-align: center;}
 
+#ya_share1.post-info-share { padding: 5px 0; }
+
 .post-info-share a {color: #fff;}
 
 .post-info-share a:before {content: ""; font-family: FontAwesome; padding-right: 5px;}
 
-.post-info-share .b-share {font: inherit; padding-bottom: 4px !important;}
+.post-info-share .b-share { font: inherit; }
 
 .post-info-share .b-share .b-share__handle {float: none;}
 
