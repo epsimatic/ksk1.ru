@@ -2047,13 +2047,15 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .post-info-info .post-comment { padding: 0; }
 
-.post-info-info .post-info-views:before,
+.post-info-info .post-info-views .fa,
 .post-info-info .wpulike .counter a:before,
 .post-info-info .post-comment a { font-size: 36px; }
 
-.post-info-views {white-space: nowrap;}
+.post-info-info .post-info-views,
+.post-info-info .wpulike .count-box,
+.post-info-info .post-comment .commetns-counter { font-size: 16px; color: #666; position: relative; bottom: 4px; padding-left: 6px; }
 
-.post-info-views:before {content: "";  display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; }
+.post-info-views {white-space: nowrap;}
 
 .post-info-comments {white-space: nowrap;}
 
@@ -2325,6 +2327,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 /*Переформление плагина WP-Ulike*/
 .wpulike {  }
+
+.wpulike .counter a { display: inline-block; }
 
 .wpulike .counter a:before { color: #B0B1B3; cursor: pointer; font-family: FontAwesome; width: 1.28571em; display: inline-block; }
 
