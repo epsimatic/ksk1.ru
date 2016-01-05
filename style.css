@@ -2107,7 +2107,10 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news .category-name a:focus { color: #333; }
 
 .single-post .main-content article.post-news .post-meta { font-size: 13px; line-height: 24px; }
-.single-post .main-content article.post-news .post-meta .meta { display: inline-block; margin-left: 1em; }
+
+.single-post .main-content article.post-news .post-meta .publish-date { margin-right: .8em; }
+
+.single-post .main-content article.post-news .post-meta .meta { display: inline-block; margin-right: 1em; }
 
 .single-post .main-content article.post-news p { margin: 1em 0; }
 
