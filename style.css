@@ -2051,9 +2051,9 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .post-info-info .wpulike .counter a:before,
 .post-info-info .post-comment a { font-size: 36px; }
 
-.post-info-info .post-info-views,
+.post-info-info .post-info-views .views-counter,
 .post-info-info .wpulike .count-box,
-.post-info-info .post-comment .commetns-counter { font-size: 16px; color: #666; position: relative; bottom: 4px; padding-left: 6px; }
+.post-info-info .post-comment .comments-counter { font-size: 16px; color: #666; position: relative; bottom: 4px; padding-left: 6px; }
 
 .post-info-views {white-space: nowrap;}
 
