@@ -2036,7 +2036,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {color: #777;}
-.post-info > * {height: auto; padding: 5px 0; background-color: transparent;}
+.post-info > * { height: auto; background-color: transparent; }
 .post-info span {display: inline-block;}
 
 .post-info-date {white-space: nowrap; text-transform: lowercase;}
