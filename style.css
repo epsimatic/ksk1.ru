@@ -4265,6 +4265,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .comment-respond .comment-form { width: 100%; }
     .comment-list .comment-respond .comment-form textarea { width: 100%; }
+
+    .comments-title-wrap { margin-top: 0; }
 }
 
 @media (min-width: 1200px) {
