@@ -2265,7 +2265,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px; text-align: center; margin: 24px 0; }
 
-.single-post .main-content article.post-news .spelling-text + .post-meta { margin: 24px 0; }
+.single-post .main-content article.post-news .post-info .post-meta { margin: 24px 0; text-align: center; }
 
 
 /* Панель тела новости*/
@@ -2456,7 +2456,8 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news aside.inset ul { margin: 1px 0 26px; padding-left: 18px; }
 
     .single-post .main-content article.post-news .spelling-text { line-height: 27px; padding: 13.5px; margin: 27px 0; }
-    .single-post .main-content article.post-news .spelling-text + .post-meta { margin: 27px 0; }
+
+    .single-post .main-content article.post-news .post-info .post-meta { margin: 27px 0; }
 
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
@@ -2485,6 +2486,8 @@ a.link-neutral:focus {color: #3b437d;}
     .social-likes__button .social-likes__icon { font-size: 18px; left: 10px !important; }
 
     .single-post .main-content article.post-news + #comments-list { padding: 0 15px; }
+
+    .single-post .main-content article.post-news .post-info .post-meta { margin: 0; text-align: left; }
 }
 @media (min-width: 1200px) {
     .single-post .main-content article.post-news h1 { font-size: 27px; }
