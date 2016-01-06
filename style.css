@@ -2105,7 +2105,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news h3,
 .single-post .main-content article.post-news h4 { font-weight: 700; line-height: 24px; }
 
-.single-post .main-content article.post-news h1 { font-size: 21px; color: #263238; margin-bottom: 24px; }
+.single-post .main-content article.post-news h1 { font-size: 21px; color: #263238; margin-bottom: 24px; margin-top: 0; }
 
 .single-post .main-content article.post-news h1 + .post-meta { margin-top: -24px; margin-bottom: 24px; }
 
@@ -2120,7 +2120,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .category-name { line-height: 24px; margin-bottom: 8px !important; margin-top: 16px !important; text-transform: uppercase; letter-spacing: 0.025em; font-size: 14px; color: #666; }
 
-.single-post .main-content article.post-news .category-name a { border-bottom: none; color: #666; padding: 0; }
+.single-post .main-content article.post-news .category-name a { border-bottom: none; color: #666; padding: 0; margin-right: 1em; }
 
 .single-post .main-content article.post-news .category-name a:hover,
 .single-post .main-content article.post-news .category-name a:focus { color: #333; }
@@ -2336,23 +2336,12 @@ a.link-neutral:focus {color: #3b437d;}
 /*Переоформление плагина EVC для раздела поделиться записью*/
 .post-info-share-evc { text-align: center; }
 
-.social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; }
+.social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; top: 3px; }
 
 .social-likes_notext.social-likes_light .social-likes__button:hover,
 .social-likes_notext.social-likes_light .social-likes__button:focus {}
 
-.social-likes__button .social-likes__icon { font-size: 24px; }
-
-.social-likes__button .social-likes__icon_facebook {  }
-
-.social-likes__button .social-likes__icon_odnoklassniki {  }
-
-.social-likes__button .social-likes__icon_vkontakte { }
-
-.social-likes,
-.social-likes__widget_single {  }
-
-.social-likes_notext.social-likes_light .social-likes__button {  }
+.social-likes__button .social-likes__icon { font-size: 24px; left: 16px !important; line-height: 24px; }
 
 
 /*Скрыл счетчик количества поделившихся для плагина EVC*/
@@ -2401,8 +2390,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 
 @media (min-width: 480px) { 
-    .single-post .main-content article.post-news .category-name .post-meta { display: inline; } 
-    .single-post .main-content article.post-news .post-meta .publish-date { margin-left: 1em; }
+    .single-post .main-content article.post-news .category-name .post-meta { display: inline; }
 
     .post-info-share-evc > * { display: inline-block; }
 }
@@ -2413,6 +2401,9 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news .category-name { line-height: 27px; margin-bottom: 9px; margin-top: 18px; }
 
     .single-post .main-content article.post-news .post-meta .meta { line-height: 27px; }
+
+    .single-post .main-content article.post-news h1 { font-size: 24px; margin-bottom: 27px; }
+    .single-post .main-content article.post-news h2 { font-size: 22px; }
 
     .single-post .main-content article.post-news h1,
     .single-post .main-content article.post-news h2,
@@ -2466,7 +2457,7 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news .spelling-text + .post-meta { margin: 27px 0; }
 
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
-    .social-likes__button .social-likes__icon { font-size: 27px; }
+    .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
 }
 @media (min-width: 992px) {
     .single-post .main-content article.post-news { padding: 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
