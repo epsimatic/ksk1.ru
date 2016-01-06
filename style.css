@@ -2473,6 +2473,10 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news .alignleft + p,
     .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+
+    .single-post .main-content article.post-news .share-title { font-size: 12px; }
+    .social-likes_notext.social-likes_light .social-likes__button { width: 36px; }
+    .social-likes__button .social-likes__icon { font-size: 18px; }
 }
 @media (min-width: 1200px) {
     .single-post .main-content article.post-news h1 { font-size: 27px; }
