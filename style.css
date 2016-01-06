@@ -2398,7 +2398,7 @@ a.link-neutral:focus {color: #3b437d;}
 }
 
 @media (min-width: 768px) {
-    .single-post .main-content article.post-news { padding: 18px; font-size: 18px; }
+    .single-post .main-content article.post-news { padding: 18px; font-size: 18px; line-height: 27px; }
 
     .single-post .main-content article.post-news .category-name { line-height: 27px; margin-bottom: 9px !important; margin-top: 18px !important; }
 
