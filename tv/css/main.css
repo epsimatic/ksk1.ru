@@ -117,6 +117,8 @@ main { width: 61.81%; padding-right: .5rem; }
 
 .board-main { height: calc(100% - 2.427rem); overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: center; }
 
+.board-main-ob { justify-content: flex-start; }
+
 .board-time-and-logo { display: flex; }
 
 .board-time-and-logo > div:not(.logo-wrap) { text-align: right; display: flex; flex-direction: column; margin-right: .5rem; }
