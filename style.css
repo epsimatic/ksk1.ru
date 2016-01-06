@@ -2267,6 +2267,16 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .post-info .post-meta { margin: 24px 0; text-align: center; }
 
+.single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
+
+.single-post .main-content .comment-list + .pagination { margin-bottom: 54px; margin-top: -27px; }
+
+.single-post .main-content .pagination .page-numbers { padding: 8px 16px; line-height: 1.5; }
+.single-post .main-content .pagination a.page-numbers { color: #00b0ff; border-radius: 3px; transition: background-color .15s ease 0s; }
+
+.single-post .main-content .pagination a.page-numbers:hover,
+.single-post .main-content .pagination a.page-numbers:focus { text-decoration: none; background-color: #f0f0f0; }
+
 
 /* Панель тела новости*/
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
