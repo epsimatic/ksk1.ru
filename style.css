@@ -4241,7 +4241,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-form label { display: block; font-size: 15px; margin-bottom: 8px; }
 
 .comment-form input, 
-.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px 16px; }
+.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px 0; }
 
 .comment-form textarea { width: 100%; }
 
