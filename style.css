@@ -2336,10 +2336,10 @@ a.link-neutral:focus {color: #3b437d;}
 /*Переоформление плагина EVC для раздела поделиться записью*/
 .post-info-share-evc { text-align: center; }
 
-.social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; top: 3px; }
+.social-likes_notext.social-likes_light .social-likes__button { padding: 0; width: 48px; top: 3px; opacity: .8; transition: opacity .2s ease 0s; }
 
 .social-likes_notext.social-likes_light .social-likes__button:hover,
-.social-likes_notext.social-likes_light .social-likes__button:focus {}
+.social-likes_notext.social-likes_light .social-likes__button:focus { opacity: 1; }
 
 .social-likes__button .social-likes__icon { font-size: 24px; left: 16px !important; line-height: 24px; }
 
@@ -2399,6 +2399,8 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news { padding: 18px; font-size: 18px; line-height: 27px; }
 
     .single-post .main-content article.post-news .category-name { line-height: 27px; margin-bottom: 9px; margin-top: 18px; }
+
+    .single-post .main-content article.post-news .post-meta { line-height: 27px; }  
 
     .single-post .main-content article.post-news .post-meta .meta { line-height: 27px; }
 
@@ -2474,13 +2476,24 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news .alignleft + p,
     .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 
+    .single-post .main-content article.post-news .post-meta { line-height: 36px; }
+
+    .single-post .main-content article.post-news .post-info { border-bottom: 3px solid #999; }
+
     .single-post .main-content article.post-news .share-title { font-size: 12px; }
     .social-likes_notext.social-likes_light .social-likes__button { width: 36px; }
-    .social-likes__button .social-likes__icon { font-size: 18px; }
+    .social-likes__button .social-likes__icon { font-size: 18px; left: 10px !important; }
+
+    .single-post .main-content article.post-news + #comments-list { padding: 0 15px; }
 }
 @media (min-width: 1200px) {
     .single-post .main-content article.post-news h1 { font-size: 27px; }
     .single-post .main-content article.post-news blockquote { margin-left: -2em; }
+    .single-post .main-content article.post-news .share-title { margin-right: 10px; }
+
+    .social-likes__button .social-likes__icon_vkontakte { top: 5px; }
+
+    .social-likes__button .social-likes__icon_odnoklassniki { top: 1px; }
 }
 
 /* </editor-fold> */
