@@ -2252,6 +2252,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .spelling-text { background-color: #fafafa; color: #666; font-size: 13px; line-height: 24px; padding: 12px; text-align: center; margin: 24px 0; }
 
+.single-post .main-content article.post-news .spelling-text + .post-meta { margin: 24px 0; }
+
 @media (min-width: 480px) { 
     .single-post .main-content article.post-news .category-name .post-meta { display: inline; } 
     .single-post .main-content article.post-news .post-meta .publish-date { margin-left: 1em; }
@@ -2276,6 +2278,7 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news blockquote.graph { padding-left: 36px; }
 
     .single-post .main-content article.post-news .spelling-text { line-height: 27px; padding: 13.5px; margin: 27px 0; }
+    .single-post .main-content article.post-news .spelling-text + .post-meta { margin: 27px 0; }
 }
 @media (min-width: 992px) {
     .single-post .main-content article.post-news { padding: 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
