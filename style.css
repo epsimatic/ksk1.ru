@@ -2102,7 +2102,9 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news h3,
 .single-post .main-content article.post-news h4 { font-weight: 700; }
 
-.single-post .main-content article.post-news h1 { font-size: 21px; line-height: 1.2857; color: #263238; }
+.single-post .main-content article.post-news h1 { font-size: 21px; line-height: 1.2857; color: #263238; margin-bottom: 24px; }
+
+.single-post .main-content article.post-news h1 + .post-meta { margin-top: -24px; }
 
 .single-post .main-content article.post-news h2 { font-size: 21px; margin-bottom: 0.5714em; margin-top: 1.7142em !important; }
 
@@ -2117,9 +2119,17 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news .category-name a:hover,
 .single-post .main-content article.post-news .category-name a:focus { color: #333; }
 
+.single-post .main-content article.post-news .category-name .post-meta { display: block; font-size: 12px; font-weight: 400; text-transform: none; }
+
+@media (min-width: 480px) { 
+    .single-post .main-content article.post-news .category-name .post-meta { display: inline; } 
+}
+
 .single-post .main-content article.post-news .post-meta { font-size: 13px; line-height: 24px; }
 
-.single-post .main-content article.post-news .post-meta .publish-date { margin-right: .8em; }
+.single-post .main-content article.post-news .post-meta .author-title { color: #999; }
+
+.single-post .main-content article.post-news .post-meta .publish-date { margin-right: .5em; margin-left: 1em; }
 
 .single-post .main-content article.post-news .post-meta .meta { display: inline; margin-right: 1em; }
 
@@ -2270,6 +2280,10 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news h1,
     .single-post .main-content article.post-news h2 { font-size: 24px; line-height: 1.125; }
+
+    .single-post .main-content article.post-news h1 { margin-bottom: 27px; }
+
+    .single-post .main-content article.post-news h1 + .post-meta { margin-top: -27px; }
 
     .single-post .main-content article.post-news h2 { margin-bottom: 1.125em; margin-top: 2.25em !important; }
 
