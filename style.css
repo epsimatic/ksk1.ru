@@ -2648,6 +2648,7 @@ a.link-neutral:focus {color: #3b437d;}
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Объявления"> */
+.modal-bottom{margin-top: 10px;}
 .site-ob .footer_registration,
 .site-ob .footer_opinion {display: none;}
 
