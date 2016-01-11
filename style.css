@@ -4244,7 +4244,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-form label { display: block; font-size: 15px; margin-bottom: 8px; }
 
 .comment-form input, 
-.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px 0; width: 100%;}
+.comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px; }
+
+.comment-form textarea { width: 100%; }
 
 .comment-form .form-submit .btn.submit { font-size: 16px; }
 
@@ -4265,7 +4267,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
     .comment-respond { margin-bottom: 54px; }
 
     .comment-form input, 
-    .comment-form textarea { line-height: 27px; margin-bottom: 27px; }
+    .comment-form textarea { line-height: 27px; margin-bottom: 27px; padding: 9px; }
 }
 
 @media (min-width: 992px) { 
