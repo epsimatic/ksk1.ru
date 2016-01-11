@@ -4191,7 +4191,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list { margin-bottom: 48px; }
 
-.comment-list article.comment-body { margin-bottom: 1.5em; }
+.comment-list article.comment-body { margin-bottom: 1.5em; font-size: 14px; }
 
 .comment-list .comment-author { margin-bottom: .75em; }
 
