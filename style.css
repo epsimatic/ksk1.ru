@@ -2140,6 +2140,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news p { margin: 24px 0; }
 
+.single-post .main-content article.post-news p.wp-caption-text { margin: 12px 0; }
+
 .single-post .main-content article.post-news h2 + p,
 .single-post .main-content article.post-news h3 + p,
 .single-post .main-content article.post-news h4 + p,
@@ -2431,6 +2433,8 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news h4 { margin-bottom: 9px; margin-top: 18px; }
 
     .single-post .main-content article.post-news p { margin: 27px 0; }
+
+    .single-post .main-content article.post-news p.wp-caption-text { margin: 13.5px 0; }
 
     .single-post .main-content article.post-news hr { margin: 27px 0 26px; }
     .single-post .main-content article.post-news table { margin: 54px 0; }
