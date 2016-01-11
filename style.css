@@ -4238,7 +4238,12 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list .comment-content > p { margin-bottom: 1em; display: inline; }
 .comment-content br { margin-bottom: 11.3px; }
 
+.comment-list article.comment-body .gdthumb,
 .comment-list article.comment-body .reply { transition: opacity .1s ease 0s; }
+
+.comment-list .comment-rating .gdthumb a { color: #bbb; }
+
+.comment-list .comment-rating .gdthumb a:hover { color: #666; }
 
 .comment-list article.comment-body:hover .reply { opacity: 1; }
 
@@ -4295,6 +4300,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 }
 
 @media (min-width: 992px) { 
+    .comment-list article.comment-body .gdthumb,
     .comment-list article.comment-body .reply { opacity: 0; }
 
     .comment-form { width: 80%; }
