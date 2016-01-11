@@ -2083,7 +2083,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news {
     font-size: 16px;
     line-height: 24px; /*1.5*/
-    padding: 16px;
+    padding: 0 16px 16px;
     color: #494746;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -2409,7 +2409,7 @@ a.link-neutral:focus {color: #3b437d;}
 }
 
 @media (min-width: 768px) {
-    .single-post .main-content article.post-news { padding: 18px; font-size: 18px; line-height: 27px; }
+    .single-post .main-content article.post-news { padding: 0 18px 18px; font-size: 18px; line-height: 27px; }
 
     .single-post .main-content article.post-news .category-name { line-height: 27px; margin-bottom: 9px; margin-top: 18px; }
 
@@ -2476,7 +2476,7 @@ a.link-neutral:focus {color: #3b437d;}
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
 }
 @media (min-width: 992px) {
-    .single-post .main-content article.post-news { padding: 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
+    .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
 
     .single-post .main-content article.post-news h1,
     .single-post .main-content article.post-news h2 { font-size: 24px; }
