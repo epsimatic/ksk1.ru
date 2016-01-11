@@ -4198,6 +4198,26 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list .comment-author img.avatar,
 .comment-list .comment-author .comment-meta { float: left; }
 
+.comment-list .comment-author .comment-rating { float: right; margin: 0; }
+
+.comment-list .comment-rating .thumblock { margin: 0; }
+
+.comment-list .comment-rating .thumblock > * { display: inline-block; line-height: 20px; }
+
+.comment-list .comment-rating .gdup > *:before {
+    content: "";
+    font-family: FontAwesome;
+}
+
+.comment-list .comment-rating .gddw > *:before {
+    content: "";
+    font-family: FontAwesome;
+}
+
+.comment-list .comment-rating .gdt-classical {
+    background: none !important;
+}
+
 .comment-list .comment-author img.avatar { margin-right: 1em; background-color: #f0f0f0; }
 
 .comment-list .author-name { color: #333; line-height: 15px; }
@@ -4324,8 +4344,6 @@ div > ul.comments-list:first-child {padding-left: 0;}
 .anonymous {color: #34495e;}
 
 .comment-info {margin-top: 25px;}
-
-.comment-rating {font-size: 14px; font-weight: 600; padding: 3px 7px;}
 
 .img-prime {padding-bottom: 7px;}
 
