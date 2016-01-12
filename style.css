@@ -4245,6 +4245,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .comment-rating .gdthumb a:hover { color: #666; }
 
+.comment-list .comment-rating .badge { padding: 0; color: #999; }
+
 .comment-list article.comment-body:hover .gdthumb,
 .comment-list article.comment-body:hover .reply { opacity: 1; }
 
