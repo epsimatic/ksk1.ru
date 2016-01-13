@@ -2032,7 +2032,11 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments a.list-group-item:hover,
 .panel-comments a.list-group-item:focus {background-color: #e0e6f0 !important;}
 
-.panel-comments .comment-rating { float: right; }
+.panel-comments .comment-rating { float: right; font-weight: 700; }
+
+.panel-comments .comment-rating.comment-neutral { display: none; }
+.panel-comments .comment-rating.comment-positive { color: #00c853; }
+.panel-comments .comment-rating.comment-negative { color: #f44336; }
 
 .panel-comments .comment-wrap { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* </editor-fold> */
@@ -4282,7 +4286,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .comment-rating .gdthumb a:hover { color: #666; }
 
-.comment-list .comment-rating .badge { padding: 0; color: #999; }
+.comment-list .comment-rating .badge { padding: 0; color: #ccc; font-weight: 600; }
+
+.comment-list .comment-rating .badge.comment-positive { color: #00c853; font-weight: 700; }
+.comment-list .comment-rating .badge.comment-negative { color: #f44336; font-weight: 700; }
 
 .comment-list article.comment-body:hover .gdthumb,
 .comment-list article.comment-body:hover .reply { opacity: 1; }
