@@ -1574,6 +1574,8 @@ header#header .weather-text { display: none; }
 .home .panel-official .post-actions,
 .home .panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
 
+.archive .post .post-actions { left: 0; }
+
 .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
 
 .post-edit, .post-comment {border-right: 1px solid rgba(255,255,255,0.3); padding-right: 7px;}
@@ -1683,7 +1685,7 @@ iframe.fullstory__video { max-width: 100%; }
 .panel-news .post-news figure.post-thumb img.post-thumb { max-height: 130px; }
 
 .post-archive figure.post-thumb,
-.post-news figure.post-thumb { margin-right: 15px; margin-bottom: 10px; width: 76px; float: left; }
+.post-news figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
 .post-archive figure.post-thumb img,
 .post-news figure.post-thumb img { max-width: 100% !important; }
@@ -2018,7 +2020,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments .list-group .list-group-item:last-child { margin-bottom: -1px; }
 
-.panel-comments a.list-group-item { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; padding: 5px 12px; }
+.panel-comments a.list-group-item { padding: 0 8px; }
 
 .panel-comments .comment-link { color: #555; font-weight: 400; }
 
@@ -2026,6 +2028,10 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments a.list-group-item:hover,
 .panel-comments a.list-group-item:focus {background-color: #e0e6f0 !important;}
+
+.panel-comments .comment-rating { float: right; }
+
+.panel-comments .comment-wrap { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* </editor-fold> */
 
 /*Панель «Мы в соцсетях»*/
