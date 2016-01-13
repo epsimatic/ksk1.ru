@@ -2733,7 +2733,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-my-ob a {color: #2c3e50;}
 
-.sidebar .popover-content {width: 500px;}
 
 .sidebar .popover {max-width: 500px !important;}
 
@@ -2793,6 +2792,11 @@ a.link-neutral:focus {color: #3b437d;}
 
 .panel-ob-bottom { margin-bottom: 20px; }
 
+
+@media (min-width: 768px) {
+    .sidebar .popover-content {width: 500px;}
+}
+
 /* Стили для размера -md- */
 @media (min-width: 992px) {
     .panel-ob-top > div:nth-child(1) { padding-right: 0; }
@@ -2801,6 +2805,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .panel-ob-top .btn,
     .panel-ob-bottom .btn { font-size: 14px; }
+
 }
 /* Стили для размера -lg- */
 @media (min-width: 1200px) {
