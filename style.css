@@ -2460,6 +2460,8 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news p { margin: 27px 0; }
 
+    .single-post .main-content article.post-news p.standout  { font-size: 20px; line-height: 27px; margin-bottom: 27px; margin-top: 27px; }
+
     .single-post .main-content article.post-news p.wp-caption-text { margin: 13.5px 0; }
 
     .single-post .main-content article.post-news hr { margin: 27px 0 26px; }
