@@ -2020,7 +2020,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments .list-group .list-group-item:last-child { margin-bottom: -1px; }
 
-.panel-comments a.list-group-item { padding: 0 8px; }
+.panel-comments a.list-group-item { padding: 1px 8px 2px; line-height: 28px; }
 
 .panel-comments .comment-link { color: #555; font-weight: 400; }
 
