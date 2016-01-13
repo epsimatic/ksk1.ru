@@ -1517,7 +1517,7 @@ header#header .weather-text { display: none; }
 .archive .post img,
 .home .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
-.home .panel-news-list .yummies {margin-bottom: 0;}
+.home .panel-news-list .yummies { margin-bottom: 0; margin-top: -2px; }
 
 .archive .post-description-text,
 .home .panel-news-list .post-description-text { margin-bottom: 10px; }
@@ -1559,7 +1559,7 @@ header#header .weather-text { display: none; }
 
 .archive .post,
 .home .panel-official .list-group-item,
-.home .panel-news-list .post-news {background-color: #fbf8f7; margin-bottom: 2px; padding-bottom: 0;}
+.home .panel-news-list .post-news {background-color: #fbf8f7; padding-bottom: 0; border-bottom: 2px solid #eee; }
 
 .archive .post { margin-bottom: 5px; }
 
@@ -1676,6 +1676,8 @@ iframe.fullstory__video { max-width: 100%; }
 
 .post-archive .post-title .fa,
 .post-news .post-title .fa { padding-left: 6px; }
+
+.panel-news { box-shadow: none; }
 
 .panel-news .post-news .post-title { font-size: 18px; padding: 5px; }
 
