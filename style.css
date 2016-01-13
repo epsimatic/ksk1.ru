@@ -2181,9 +2181,9 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news p + div + p,
 .single-post .main-content article.post-news p + p { margin: 0; text-indent: 1em; }
 
-.single-post .main-content article.post-news p.standout  { font-size: 18px; line-height: 24px; color: #333; margin-bottom: 24px; margin-top: 24px; text-indent: 0; }
+.single-post .main-content article.post-news p.lead  { font-size: 18px; line-height: 24px; color: #333; margin-bottom: 24px; margin-top: 24px; text-indent: 0; }
 
-.single-post .main-content article.post-news p.standout + p,
+.single-post .main-content article.post-news p.lead + p,
 .single-post .main-content article.post-news img + p { text-indent: 0; }
 
 .single-post .main-content article.post-news div.out > p { margin: 0; }
@@ -2460,7 +2460,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news p { margin: 27px 0; }
 
-    .single-post .main-content article.post-news p.standout  { font-size: 20px; line-height: 27px; margin-bottom: 27px; margin-top: 27px; }
+    .single-post .main-content article.post-news p.lead  { font-size: 20px; line-height: 27px; margin-bottom: 27px; margin-top: 27px; }
 
     .single-post .main-content article.post-news p.wp-caption-text { margin: 13.5px 0; }
 
