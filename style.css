@@ -1551,11 +1551,11 @@ header#header .weather-text { display: none; }
 
 .home .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
 
-.archive h1.post-title,
-.home h1.post-title {font-size: 18px; margin-top: 0; margin-bottom: 5px;}
+.archive .post-title,
+.home .post-title {font-size: 18px; margin-top: 0; margin-bottom: 5px;}
 
-.archive h1.post-title a,
-.home h1.post-title a {color: #333; font-weight: 700; font-size: 16px;}
+.archive .post-title a,
+.home .post-title a {color: #333; font-weight: 700; font-size: 16px;}
 
 .archive .post,
 .home .panel-official .list-group-item,
@@ -1669,16 +1669,16 @@ iframe.fullstory__video { max-width: 100%; }
 .fullstory .newstext { font-family: Georgia, Cambria, Times, "Times New Roman", serif; }
 
 .fullstory .newstitle,
-.post-archive h4.post-title,
-.post-news h4.post-title { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+.post-archive .post-title,
+.post-news .post-title { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
-.post-archive h4.post-title,
-.post-news h4.post-title { margin-bottom: 9px; margin-top: 0; font-size: 16px; font-weight: 700; }
+.post-archive .post-title,
+.post-news .post-title { margin-bottom: 9px; margin-top: 0; font-size: 16px; font-weight: 700; }
 
-.post-archive h4.post-title .fa,
-.post-news h4.post-title .fa { padding-left: 6px; }
+.post-archive .post-title .fa,
+.post-news .post-title .fa { padding-left: 6px; }
 
-.panel-news .post-news h4.post-title { font-size: 18px; padding: 5px; }
+.panel-news .post-news .post-title { font-size: 18px; padding: 5px; }
 
 .panel-news .post-news figure.post-thumb { width: 160px; }
 
@@ -6169,6 +6169,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .panel-official .list-group-item,
 .news-old .panel-news-list .list-group-item {background-color: #fbf8f7; margin-bottom: 2px; padding-bottom: 0;}
+
+.panel-official figure { display: none; }
 
 .news-old .post-actions {background-color: #ecd8ce; padding: 4px 10px 5px; position: relative;}
 
