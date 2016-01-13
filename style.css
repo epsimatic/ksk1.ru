@@ -1569,12 +1569,11 @@ header#header .weather-text { display: none; }
 .archive .post-actions > *,
 .home .post-actions > * {display: inline-block;}
 
-.archive .post .post-actions,
 .home .panel-news .post-actions {bottom: 0; left: 10px; border-top-left-radius: 5px;}
 
 .archive .post .post-actions,
 .home .panel-official .post-actions,
-.home .panel-news-list .post-actions {left: 15px; border-radius: 5px 0 0 5px;}
+.home .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px; }
 
 .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
 
