@@ -51,7 +51,7 @@
 
 	function moveFirstElement($strip){
 		var settings = $strip.data('settings') || { direction: "left" };
-		$strip.css('transition-duration','0s').css(settings.direction, '0');
+		$strip.css('transform','0s').css(settings.direction, '0');
 		var $first = $strip.children().first();
 		if ($first.hasClass('webticker-init'))
 			$first.remove();
@@ -68,7 +68,7 @@
 		var options = animationSettings($strip);
 		var time = options.time/1000;
 		time += 's';
-		$strip.css(options.css).css('transition-duration',time);
+		$strip.css(options.css).css('transform','translateX(-10)');
 	}
 
 	function updaterss(rssurl,type,$strip){
@@ -197,7 +197,7 @@
 
 				if (cssTransitionsSupported){
 					//fix for firefox not animating default transitions
-					$strip.css('transition-duration','0s').css(settings.direction, '0');
+					$strip.css('transform','0s').css(settings.direction, '0');
 
 					if (started){
 						//if list has items and set up start scrolling
@@ -221,7 +221,7 @@
 					$strip.hover(function(){
 						if (cssTransitionsSupported){
 							var currentPosition = $(this).css(settings.direction);
-							$(this).css('transition-duration','0s').css(settings.direction,currentPosition);
+							$(this).css('transform','0s').css(settings.direction,currentPosition);
 						} else
 							jQuery(this).stop();
 					},
@@ -246,7 +246,7 @@
 			return this.each(function(){
 				if (cssTransitionsSupported){
 					var currentPosition = $(this).css(settings.direction);
-					$(this).css('transition-duration','0s').css(settings.direction,currentPosition);
+					$(this).css('transform','0s').css(settings.direction,currentPosition);
 				} else
 					$(this).stop();
 			});
