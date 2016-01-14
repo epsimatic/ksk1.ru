@@ -32,11 +32,10 @@
 			moveFirstElement($strip);
 		}
 		var options = animationSettings($strip);
-	/*	$strip.animate(options.css, options.time, "linear", function(){
+		$strip.animate(options.css, options.time, "linear", function(){
 			$strip.css(settings.direction, '0');
 			scrollitems($strip,true);
-		});*/
-
+		});
 	}
 
 	function animationSettings($strip){
