@@ -36,6 +36,7 @@
 			$strip.css(settings.direction, '0');
 			scrollitems($strip,true);
 		});*/
+
 	}
 
 	function animationSettings($strip){
