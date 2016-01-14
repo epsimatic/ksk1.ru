@@ -68,7 +68,7 @@
 		var options = animationSettings($strip);
 		var time = options.time/1000;
 		time += 's';
-		$strip.css(options.css).css('transition-duration',time);
+		$strip.css(options.css).css('transform',' translateX(-5000)');
 	}
 
 	function updaterss(rssurl,type,$strip){
