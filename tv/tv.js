@@ -150,7 +150,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
     UpdateBlockUpdateTimer("#clock, #date");
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-    LoadJS('/tv/news-ticker.js', function () {
+    LoadJS('/news-ticker.js', function () {
         jQuery('#webticker').webTicker({
             speed: 100,
             rssurl: 'http://brief.kskmedia.ru/feed/',
