@@ -1575,7 +1575,7 @@ header#header .weather-text { display: none; }
 
 .archive .post .post-actions,
 .home .panel-official .post-actions,
-.home .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px; }
+.home .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px; font-size: 12px; }
 
 .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
 
