@@ -2288,7 +2288,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news .post-meta { line-height: 36px; }
 
-    .single .main-content article.post .post-info,
+    .single .main-content article.event .post-info,
     .single-post .main-content article.post-news .post-info { border-bottom: 3px solid #999; }
 
     .single-post .main-content article.post-news .share-title { font-size: 12px; }
@@ -3860,7 +3860,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .single-event article.event figure .certification { background-color: rgba(255, 255, 255, 0.75); bottom: 5px; font-size: 18px; font-weight: 600; padding: 0 6px; position: absolute; z-index: 3; }
 
-.single-event article.event h1.page-title { color: #263238; font-size: 24px; margin-bottom: 24px; line-height: 24px; }
+.single-event article.event h1.page-title { color: #263238; font-size: 24px; margin-bottom: 24px; line-height: 24px; font-weight: 700; }
+
+.single-event article.event .post-info { margin-top: 24px; }
 
 @media (min-width: 480px) {
     .events .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 22.652px; font-size: 22.652px; }
