@@ -218,9 +218,9 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel.widget .nav > li > a { padding: 5px 10px; font-size: 12px; }
 
-.cat-pills { padding: 7px 5px; background-color: #e6eaf1; }
+.cat-pills { background-color: #f0f0f0; }
 
-.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; border-radius: 3px !important; transition: width .5s ease; }
+.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; transition: width .5s ease; }
 
 .cat-pills.cat-pills > li > a:focus,
 .cat-pills.cat-pills > li > a:hover { background-color: #d2dae5; color: #263238; }
@@ -3926,7 +3926,7 @@ ul.list-days > li:nth-child(1) { padding-right: 5px; }
 
 ul.list-days > li:nth-child(2) { padding-left: 0; }
 
-ul.list-days > li > a { border-radius: 0; color: #fff; border-color: #D7583C; font-size: 17px; font-weight: 400; padding: 10px 15px 13px; }
+ul.list-days > li > a { border-radius: 0; color: #fff; font-size: 17px; font-weight: 400; padding: 10px 15px 13px; }
 
 ul.list-days > li.active > a { background-color: #c51162; }
 
@@ -3983,11 +3983,14 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
 
-.add-event {margin: 0; background-color: #fff7f8;}
+.add-event { margin: 11.326px 0; line-height: 22.652px; }
 
-.add-event span {padding: 6px 12px; color: #57585b;}
+.add-event span { padding: 0 12px; color: #57585b; }
 
-.add-event button {color: #7e707e;}
+.add-event button { color: #7e707e; padding: 0 12px; }
+
+.add-event button:hover, 
+.add-event button:focus { color: #3D353D; text-decoration: none; }
 
 body.agenda .entry-content.page-content:empty { margin: 0; }
 
