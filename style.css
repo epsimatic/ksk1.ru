@@ -2253,10 +2253,8 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news ol ul li { margin: 0; }
 
 .single-post .main-content article.post-news blockquote {
-    margin: 21px 0;
+    margin: 24px 0;
     padding: 0;
-    border: solid #c6edff;
-    border-width: 3px 0;
     font-size: 16px;
     line-height: 24px;
     font-style: italic;
@@ -2268,7 +2266,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news blockquote footer { font-size: 16px; line-height: 24px; margin: 0; padding: 12px 0; text-align: right; background: transparent; }
 
-.single-post .main-content article.post-news blockquote.pullout { border: none; }
+.single-post .main-content article.post-news blockquote.pullout { border: solid #c6edff; margin: 21px 0; border-width: 3px 0; }
 
 .single-post .main-content article.post-news blockquote.graph { border-width: 0 0 0 5px; margin-left: -5px; padding: 1px 0 1px 24px; }
 
@@ -2488,11 +2486,11 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 27px; }
 
-    .single-post .main-content article.post-news blockquote { font-size: 18px; margin: 24px 0 24px -1em; line-height: 27px; }
+    .single-post .main-content article.post-news blockquote { font-size: 21px; margin: 27px 0 27px -1em; line-height: 27px; }
     .single-post .main-content article.post-news blockquote.letter { padding: 1px 27px; margin-right: 0; margin-left: 0; }
     .single-post .main-content article.post-news blockquote footer { line-height: 27px; padding: 13.5px -0px; }
 
-    .single-post .main-content article.post-news blockquote.pullout { font-size: 21px; }
+    .single-post .main-content article.post-news blockquote.pullout { font-size: 18px; margin: 24px 0 24px -1em; }
     .single-post .main-content article.post-news blockquote.graph { padding-left: 27px; }
 
     .single-post .main-content article.post-news blockquote.question { margin-top: 27px; }

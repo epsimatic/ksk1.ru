@@ -153,7 +153,6 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
     LoadJS('/tv/news-ticker.js', function () {
         jQuery('#webticker').webTicker({
             speed: 100,
-            direction: "right",
             rssurl: 'http://krufimsk.ru/feed/',
             rssfrequency: default_timeouts['ticker'] / 60,
             hoverpause: false
