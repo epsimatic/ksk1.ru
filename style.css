@@ -996,12 +996,12 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
 
-.navpanel #panel-agenda .eventss .list-group-item { padding: 5px 10px; }
+.navpanel #panel-agenda .events .list-group-item { padding: 5px 10px; }
 
-.navpanel #panel-agenda .eventss .list-group-item:hover,
-.navpanel #panel-agenda .eventss .list-group-item:focus { background-color: #fafafa; }
+.navpanel #panel-agenda .events .list-group-item:hover,
+.navpanel #panel-agenda .events .list-group-item:focus { background-color: #fafafa; }
 
-.eventss .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
+.events .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
 
 .navpanel #panel-agenda .event-thumb { padding: 0; text-align: center; }
 
@@ -4025,9 +4025,6 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events-soon-heading {background-color: #1FA6F2;}
 
-/*FIXME: Костыль, чтобы показывать событие в одну строку. Явно неправильный */
-.events .event-brief .post-description { display: inline-block; }
-
 .events h3.events-date { font-size: 17.798px; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700; color: #616161; line-height: 22.652px; margin: 22.652px 0 0; padding: 0; }
 
 .events .event-thumb {padding-left: 0;}
@@ -4072,7 +4069,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event .post-title a:hover,
 .events .post-event .post-title a:focus { color: #0277bd; }
 
-.events .label { border-radius: 3px; font-weight: 400; background-color: #f0f3f5; color: #90a4ae; }
+.events .label { font-weight: 400; color: #888; line-height: 22.652px; padding: 0 3px; vertical-align: bottom; position: relative; top: 2px; font-size: 11px; display: inline-block; }
 
 .events .label.active { opacity: .5; }
 
@@ -4094,12 +4091,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
     .events .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 33px; }
 }
 
-.events .post-event .post-description { line-height: 1.41em; }
+.events .post-event .event-time { margin-right: 5px; font-weight: 600; color: #616161; }
 
-.eventss .post-event .event-time,
-.events .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
-
-.eventss .post-event .event-place:before,
+.events .post-event .event-place:before,
 .events .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
 .events .post-event .event-place,
@@ -4118,8 +4112,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event.has-post-thumbnail .event-more { display: block; }
 
 
-.eventss .post-event .event-place,
-.eventss .post-event .event-organizer-name,
+.events .post-event .event-place,
+.events .post-event .event-organizer-name,
 .events .post-event .event-place,
 .events .post-event .event-organizer-name { color: #fb700d; }
 
