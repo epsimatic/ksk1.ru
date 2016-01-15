@@ -2260,6 +2260,7 @@ a.link-neutral:focus {color: #3b437d;}
     font-style: italic;
     color: #777777;
     clear:both;
+    border: none;
 }
 
 .single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.1em 24px; background-color: #f7f7f7; border: none; color: #333; }
