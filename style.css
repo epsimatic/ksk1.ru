@@ -3806,6 +3806,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .label.active { opacity: .5; }
 
+.events .post-event.has-post-thumbnail.event-paid { padding: 15px; }
+
 .events .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 22.652px; float: left; margin-top: 5px; }
 
 .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 0; width: 100%; float: none; text-align: center; }
@@ -3864,13 +3866,13 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .events .post-event.has-post-thumbnail.event-paid { padding: 22.652px 15px; }
 
-    .events .post-event.has-post-thumbnail.event-paid .post-title { left: 15px; }
+    .events .post-event.has-post-thumbnail.event-paid .post-title { left: 15px; margin: 22.652px 0; }
 
     .events .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
 
     .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-bottom: 22.652px; position: relative; top: 39px; }
 
-    .events .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 150px; top: 15px; }
+    .events .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 135px; top: 0; height: 22.652px; }
 
     .events .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
 
