@@ -2288,7 +2288,7 @@ a.link-neutral:focus {color: #3b437d;}
 
     .single-post .main-content article.post-news .post-meta { line-height: 36px; }
 
-    .single-post .main-content article.post-news .post-info { border-bottom: 3px solid #999; }
+    .single-post .main-content article.post .post-info { border-bottom: 3px solid #999; }
 
     .single-post .main-content article.post-news .share-title { font-size: 12px; }
     .social-likes_notext.social-likes_light .social-likes__button { width: 36px; }
@@ -3841,7 +3841,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
-.events .post-event .event-price:after { content: " р."; margin-left: 2px; color: #000; }
+.events .post-event .event-price:after { content: "р. "; margin-left: 2px; color: #808080; }
 
 .events .post-event .post-more { padding: 0 12px; font-size: 12px; }
 
@@ -3850,6 +3850,16 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event .post-more a { color: #888; }
 
 .events .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
+
+.single-event article.event { line-height: 1.618; font-size: 16px; padding: 0 30px; margin-bottom: 48px; }
+
+.single-event article.event p { margin-bottom: 24px; }
+
+.single-event article.event figure { float: left; margin-right: 15px; position: relative; }
+
+.single-event article.event figure .certification { background-color: rgba(255, 255, 255, 0.75); bottom: 5px; font-size: 18px; font-weight: 600; padding: 0 6px; position: absolute; z-index: 3; }
+
+.single-event article.event h1 { color: #263238; font-size: 24px; margin-bottom: 24px; line-height: 24px; }
 
 @media (min-width: 480px) {
     .events .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 22.652px; font-size: 22.652px; }
@@ -3867,6 +3877,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 @media (min-width: 768px) {
     .events .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; }
+
+    .events .post-event.has-post-thumbnail { margin: 22.625px 0 45.304px; }
 
     .events .post-event.has-post-thumbnail.event-paid { padding: 22.652px 15px; }
 
