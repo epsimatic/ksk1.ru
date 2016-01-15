@@ -3791,8 +3791,6 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 /* Стили для унифициорованного макета в афише в списке событий */
 .events .post-event { margin: 0; padding: 0; font-size: 14px; line-height: 22.652px; }
 
-.events .post-event.has-post-thumbnail { padding: 15px; }
-
 .events .post-event.has-post-thumbnail.event-paid { background-color: #fff9c4; margin: 22.652px -15px; }
 
 .events .post-event .post-title { margin: 22.652px 0 0; font-size: 17.798px; font-weight: 600; line-height: 22.652px; }
@@ -3808,7 +3806,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .label.active { opacity: .5; }
 
-.events .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 22.652px; float: left; }
+.events .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 22.652px; float: left; margin-top: 5px; }
 
 .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 0; width: 100%; float: none; text-align: center; }
 
@@ -3824,11 +3822,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event .post-info > * { padding-top: 0; padding-bottom: 0; }
 
-.events .post-event.has-post-thumbnail .post-info,
-.events .post-event.has-post-thumbnail .post-description-text,
-.events .post-event.has-post-thumbnail .event-phone,
-.events .post-event.has-post-thumbnail .event-price,
-.events .post-event.has-post-thumbnail .event-more { display: block; }
+.events .post-event.event-paid .post-info,
+.events .post-event.event-paid .post-description-text,
+.events .post-event.event-paid .event-phone,
+.events .post-event.event-paid .event-price,
+.events .post-event.event-paid .event-more { display: block; }
 
 .events .post-event .event-place,
 .events .post-event .event-organizer-name { color: #333; margin-right: 18px; font-weight: 600; }
@@ -3841,7 +3839,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event .post-more { padding: 0 12px; font-size: 12px; }
 
-.events .post-event.has-post-thumbnail .post-more { float: right; }
+.events .post-event.event-paid .post-more { float: right; }
 
 .events .post-event .post-more a { color: #888; }
 
@@ -3850,27 +3848,27 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 @media (min-width: 480px) {
     .events .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 22.652px; font-size: 22.652px; }
 
-    .events .post-event.has-post-thumbnail .post-more { position: relative; top: 11.326px; }
+    .events .post-event.event-paid .post-more { position: relative; top: 11.326px; }
 
-    .events .post-event.has-post-thumbnail.event-paid { padding: 15px 15px 22.652px; }
+    .events .post-event.event-paid { padding: 15px 15px 22.652px; }
 
-    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; margin-bottom: 0; }
+    .events .post-event.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; margin-bottom: 0; }
 
-    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 200px; }
+    .events .post-event.event-paid figure.post-thumb img { width: 200px; }
 
-    .events .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 33px; }
+    .events .post-event.event-paid .post-description { position: relative; top: 33px; }
 }
 
 @media (min-width: 768px) {
     .events .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; }
 
-    .events .post-event.has-post-thumbnail.event-paid { padding: 22.652px 15px; }
+    .events .post-event.event-paid { padding: 22.652px 15px; }
 
-    .events .post-event.has-post-thumbnail.event-paid .post-title { left: 15px; }
+    .events .post-event.event-paid .post-title { left: 15px; }
 
     .events .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
 
-    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-bottom: 22.652px; position: relative; top: 39px; }
+    .events .post-event.event-paid figure.post-thumb { margin-bottom: 22.652px; position: relative; top: 39px; }
 
     .events .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 150px; top: 15px; }
 
@@ -3884,11 +3882,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .events .post-event.has-post-thumbnail .post-title { left: 180px; }
 
-    .events .post-event.has-post-thumbnail.event-paid .post-title { left: 300px; }
+    .events .post-event.event-paid .post-title { left: 300px; }
 
-    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { top: 0; margin-bottom: 0; }
+    .events .post-event.event-paid figure.post-thumb { top: 0; margin-bottom: 0; }
 
-    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 270px; }
+    .events .post-event.event-paid figure.post-thumb img { width: 270px; }
 }
 
 @media (min-width: 1200px) {
