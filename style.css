@@ -996,12 +996,12 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
 
-.navpanel #panel-agenda .panel-events .list-group-item { padding: 5px 10px; }
+.navpanel #panel-agenda .eventss .list-group-item { padding: 5px 10px; }
 
-.navpanel #panel-agenda .panel-events .list-group-item:hover,
-.navpanel #panel-agenda .panel-events .list-group-item:focus { background-color: #fafafa; }
+.navpanel #panel-agenda .eventss .list-group-item:hover,
+.navpanel #panel-agenda .eventss .list-group-item:focus { background-color: #fafafa; }
 
-.panel-events .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
+.eventss .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
 
 .navpanel #panel-agenda .event-thumb { padding: 0; text-align: center; }
 
@@ -1890,7 +1890,7 @@ iframe.fullstory__video { max-width: 100%; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Ближайшие события»"> */
-.panel-event > .panel-heading { background: #52be7f url("img/panel-event.png") no-repeat right; background-size: contain; }
+.events > .panel-heading { background: #52be7f url("img/panel-event.png") no-repeat right; background-size: contain; }
 /* </editor-fold> */
 
 .panel.panel-complaint > .panel-heading { background-color: #16a372; }
@@ -3944,11 +3944,11 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 /* Оформление фильмов */
 .movie-brief { min-height: 150px; }
 
-.panel-event .event-thumb,
+.events .event-thumb,
 .movie-brief .movie-poster, .today-movies .movie-poster { position:relative; }
 
 .movie-brief .movie-poster .certification,
-.panel-event .event-thumb .event-certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: 5px; color: #333333; font-size: 12px; left: 10px; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff; }
+.events .event-thumb .event-certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: 5px; color: #333333; font-size: 12px; left: 10px; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff; }
 
 .today-movies .movie-poster .certification { background-color: rgba(255, 255, 255, 0.9); border-radius: 0 3px 3px 0; bottom: 30px; color: #333333; font-size: 12px; left: 16px; padding: 0 5px; position: absolute; text-shadow: 0 0 3px #ffffff; }
 
@@ -3956,11 +3956,11 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 
 .movie-poster img { max-width: 100% }
 
-.panel-event .event-heading a,
+.events .event-heading a,
 .tax-movie #movie-col-right h2,
 .movie-brief .movie-info a > h4.movie-title { color: #0b97e4; font-weight: 600; letter-spacing: 0.01em; }
 
-.panel-event .event-heading a:hover,
+.events .event-heading a:hover,
 .movie-brief .movie-info a:hover > h4.movie-title { color: #0080c7; }
 
 .movie-brief .movie-info .production-flag { padding-right: 2px; }
@@ -4019,133 +4019,133 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .sidebar .panel-shoutbox #comment_image { overflow-x: hidden; text-overflow: ellipsis; width: 100% }
 
 /* Оформление списка событий */
-.panel-event .panel-heading,
-.panel-event .panel-body {padding: 0;}
+.events .panel-heading,
+.events .panel-body {padding: 0;}
 
-.panel-event .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 400; margin: 0;}
+.events .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 400; margin: 0;}
 
-.panel-event-today .panel-heading h1 {background-color: #ff6372;}
+.events-today .panel-heading h1 {background-color: #ff6372;}
 
 
-.panel-event-soon .panel-heading h1 {background-color: #1FA6F2;}
+.events-soon .panel-heading h1 {background-color: #1FA6F2;}
 
-.panel-event .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
+.events .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
 /*FIXME: Костыль, чтобы показывать событие в одну строку. Явно неправильный */
-.panel-events .event-brief .post-description { display: inline-block; }
+.eventss .event-brief .post-description { display: inline-block; }
 
-.panel-event .panel-date { margin-bottom: 0; padding: 13px 17px 16px; border-top: 3px dashed #e0e0e0; background-color: #fafafa; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
+.events h3.events-date { margin-bottom: 0; padding: 13px 17px 16px; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
 
-.panel-event .panel-body.panel-body-day { background-color: transparent; }
+.events .panel-body.panel-body-day { background-color: transparent; }
 
-.panel-event .panel-date strong { color: #00ae73; }
+.events h3.events-date strong { color: #00ae73; }
 
-.panel-event .event-thumb {padding-left: 0;}
+.events .event-thumb {padding-left: 0;}
 
-.panel-event .event-thumb img {width: 100%;}
+.events .event-thumb img {width: 100%;}
 
-.panel-event .event-heading {font-size: 21px;}
+.events .event-heading {font-size: 21px;}
 
-.panel-event .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
+.events .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
 
-.panel-event .event-heading .event-time {color: #888888; font-weight: 400;}
+.events .event-heading .event-time {color: #888888; font-weight: 400;}
 
-.panel-event .event-place,
-.panel-event .event-price {color: #888888; font-weight: 400;}
+.events .event-place,
+.events .event-price {color: #888888; font-weight: 400;}
 
-.panel-event .event-place {font-size: 14px;}
+.events .event-place {font-size: 14px;}
 
-.panel-event .event-price {font-size: 13px;}
+.events .event-price {font-size: 13px;}
 
-.panel-event .event-place-text {color: #fb700d;}
+.events .event-place-text {color: #fb700d;}
 
-.panel-event .event-price-number {color: #555555;}
+.events .event-price-number {color: #555555;}
 
-.panel-event .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
+.events .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
 .no_margin{margin-bottom: 0 ;}
 
 
 
 /* Стили для унифициорованного макета в афише в списке событий */
-.panel-event .post-event { margin: 0; padding: 10px 15px; border-top: 1px solid #f4f4f4; }
+.events .post-event { margin: 0; padding: 10px 15px; border-top: 1px solid #f4f4f4; }
 
-.panel-event .post-event.has-post-thumbnail { padding: 15px; }
+.events .post-event.has-post-thumbnail { padding: 15px; }
 
-.panel-event .post-event.has-post-thumbnail.event-paid { background-color: #ffff8d; }
+.events .post-event.has-post-thumbnail.event-paid { background-color: #ffff8d; }
 
-.panel-event .post-event .post-title { margin: 0 0 2px; font-size: 16px; font-weight: 600; }
+.events .post-event .post-title { margin: 0 0 2px; font-size: 16px; font-weight: 600; }
 
-.panel-event .post-event.has-post-thumbnail .post-title { margin: 0 0 15px; font-size: 18px; }
+.events .post-event.has-post-thumbnail .post-title { margin: 0 0 15px; font-size: 18px; }
 
-.panel-event .post-event .post-title a { color: #0091ea; }
+.events .post-event .post-title a { color: #0091ea; }
 
-.panel-event .post-event .post-title a:hover,
-.panel-event .post-event .post-title a:focus { color: #0277bd; }
+.events .post-event .post-title a:hover,
+.events .post-event .post-title a:focus { color: #0277bd; }
 
-.panel-event .label { border-radius: 3px; font-weight: 400; background-color: #f0f3f5; color: #90a4ae; }
+.events .label { border-radius: 3px; font-weight: 400; background-color: #f0f3f5; color: #90a4ae; }
 
-.panel-event .label.active { opacity: .5; }
+.events .label.active { opacity: .5; }
 
-.panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
+.events .post-event.has-post-thumbnail figure.post-thumb { margin-right: 15px; margin-bottom: 10px; float: left; }
 
-.panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 0; width: 100%; float: none; text-align: center; }
+.events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 0; width: 100%; float: none; text-align: center; }
 
-.panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
+.events .post-event.has-post-thumbnail figure.post-thumb img { width: 120px; }
 
-.panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 100%; }
+.events .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 100%; }
 
 @media (min-width: 480px) {
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; font-size: 23px; }
+    .events .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 1.2em; font-size: 23px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; }
+    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 200px; }
+    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 200px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 33px; }
+    .events .post-event.has-post-thumbnail.event-paid .post-description { position: relative; top: 33px; }
 }
 
-.panel-event .post-event .post-description { line-height: 1.41em; }
+.events .post-event .post-description { line-height: 1.41em; }
 
-.panel-events .post-event .event-time,
-.panel-event .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
+.eventss .post-event .event-time,
+.events .post-event .event-time { padding: 0 5px 0 3px; margin-right: 5px; border-radius: 3px; background-color: #ff1744; font-weight: 600; color: #ffffff; }
 
-.panel-events .post-event .event-place:before,
-.panel-event .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
+.eventss .post-event .event-place:before,
+.events .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
-.panel-event .post-event .event-place,
-.panel-event .post-event .event-organizer-name { display: inline; }
+.events .post-event .event-place,
+.events .post-event .event-organizer-name { display: inline; }
 
-.panel-event .post-event .post-description-text { line-height: 1.41em; margin-bottom: 3px; }
+.events .post-event .post-description-text { line-height: 1.41em; margin-bottom: 3px; }
 
-.panel-event .post-event .post-info { display: inline; }
+.events .post-event .post-info { display: inline; }
 
-.panel-event .post-event .post-info > * { padding-top: 0; padding-bottom: 0; }
+.events .post-event .post-info > * { padding-top: 0; padding-bottom: 0; }
 
-.panel-event .post-event.has-post-thumbnail .post-info,
-.panel-event .post-event.has-post-thumbnail .post-description-text,
-.panel-event .post-event.has-post-thumbnail .event-phone,
-.panel-event .post-event.has-post-thumbnail .event-price,
-.panel-event .post-event.has-post-thumbnail .event-more { display: block; }
+.events .post-event.has-post-thumbnail .post-info,
+.events .post-event.has-post-thumbnail .post-description-text,
+.events .post-event.has-post-thumbnail .event-phone,
+.events .post-event.has-post-thumbnail .event-price,
+.events .post-event.has-post-thumbnail .event-more { display: block; }
 
 
-.panel-events .post-event .event-place,
-.panel-events .post-event .event-organizer-name,
-.panel-event .post-event .event-place,
-.panel-event .post-event .event-organizer-name { color: #fb700d; }
+.eventss .post-event .event-place,
+.eventss .post-event .event-organizer-name,
+.events .post-event .event-place,
+.events .post-event .event-organizer-name { color: #fb700d; }
 
-.panel-event .post-event .event-organizer { color: #888; }
+.events .post-event .event-organizer { color: #888; }
 
-.panel-event .post-event .post-info-comments::before { padding-right: 5px; padding-left: 0; }
+.events .post-event .post-info-comments::before { padding-right: 5px; padding-left: 0; }
 
-.panel-event .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
+.events .post-event .event-price:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
 
-.panel-event .post-event .event-price:after { content: " р."; margin-left: 2px; color: #000; }
+.events .post-event .event-price:after { content: " р."; margin-left: 2px; color: #000; }
 
-.panel-event .post-event .post-more { padding: 0; }
+.events .post-event .post-more { padding: 0; }
 
-.panel-event .post-event.has-post-thumbnail .post-more { float: right; }
+.events .post-event.has-post-thumbnail .post-more { float: right; }
 
-.panel-event .post-event .post-more a { color: #888; }
+.events .post-event .post-more a { color: #888; }
 
 
 /* Страница фильма */
@@ -5273,19 +5273,19 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 50px; }
 
-    .panel-event .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; height: 1.45em; }
+    .events .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; height: 1.45em; }
 
-    .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
+    .events .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: -20px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-bottom: 0; }
+    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-bottom: 0; }
 
-    .panel-event .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 150px; top: 15px; }
+    .events .post-event.has-post-thumbnail .post-title { margin: 0; position: absolute; left: 150px; top: 15px; }
 
-    .panel-event .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
+    .events .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
 
-    .panel-event .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
+    .events .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
 
-    .panel-event .post-event .post-more { padding: 0; }
+    .events .post-event .post-more { padding: 0; }
 
     #transport-schedule-tabs.nav-tabs { font-size: 17px; }
 
@@ -5764,13 +5764,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
 
-    .panel-event .post-event.has-post-thumbnail figure.post-thumb img { width: 150px; }
+    .events .post-event.has-post-thumbnail figure.post-thumb img { width: 150px; }
 
-    .panel-event .post-event.has-post-thumbnail .post-title { left: 180px; }
+    .events .post-event.has-post-thumbnail .post-title { left: 180px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid .post-title { left: 300px; }
+    .events .post-event.has-post-thumbnail.event-paid .post-title { left: 300px; }
 
-    .panel-event .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 270px; }
+    .events .post-event.has-post-thumbnail.event-paid figure.post-thumb img { width: 270px; }
 
     .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
 
@@ -5997,7 +5997,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .community_square_user { width: 70px !important;}
 
-    .panel-event .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: 0; }
+    .events .post-event.has-post-thumbnail figure.post-thumb { margin-bottom: 0; }
 
     #transport-schedule-tabs.nav-tabs { font-size: 19px; }
 
