@@ -4019,24 +4019,18 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .sidebar .panel-shoutbox #comment_image { overflow-x: hidden; text-overflow: ellipsis; width: 100% }
 
 /* Оформление списка событий */
-.events .panel-heading,
-.events .panel-body {padding: 0;}
-
 .events .panel-heading h1 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 400; margin: 0;}
 
-.events-today .panel-heading h1 {background-color: #ff6372;}
+.events-today-heading {background-color: #ff6372;}
 
-
-.events-soon .panel-heading h1 {background-color: #1FA6F2;}
+.events-soon-heading {background-color: #1FA6F2;}
 
 .events .event-brief {margin: 0; padding: 15px; border-bottom: 1px solid #f4f4f4;}
 
 /*FIXME: Костыль, чтобы показывать событие в одну строку. Явно неправильный */
-.eventss .event-brief .post-description { display: inline-block; }
+.events .event-brief .post-description { display: inline-block; }
 
 .events h3.events-date { margin-bottom: 0; padding: 13px 17px 16px; font-size: 21px; text-transform: uppercase; letter-spacing: 0.014em; font-weight: 700; color: #00bf7e; }
-
-.events .panel-body.panel-body-day { background-color: transparent; }
 
 .events h3.events-date strong { color: #00ae73; }
 
