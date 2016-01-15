@@ -776,128 +776,6 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { max-width: 310px; }
 }
 
-.navpanel-services .panel-map { padding: 0; margin-bottom: 15px; }
-
-.navpanel-services .panel-map h4.panel-heading { position: absolute; z-index: 5; width: 100%; padding: 10px 15px 12px; margin: 0; text-align: left; background-color: #fff; color: #20172c; opacity: .7; }
-
-.navpanel-services .panel-map a:hover,
-.navpanel-services .panel-map a:focus { text-decoration: none; }
-
-.navpanel-services .panel-map h4.panel-heading .panel-title { opacity: .7; text-transform: uppercase; font-weight: 700; font-size: 19px; }
-
-.navpanel-services .panel-map h4.panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
-
-.navpanel-services .panel-map  a:hover > h4.panel-heading .btn-more { opacity: .7; }
-
-.navpanel-services .panel-map #panel-map { position: relative; width: 100%; overflow: hidden; height: 411px; }
-
-.navpanel-services .panel-map .leaflet-top .leaflet-control { margin-top: 10px; }
-
-.navpanel-services .panel-map .leaflet-control-geosearch { padding: 0; border-radius: 3px; width: 240px; }
-
-.navpanel-services .panel-map .leaflet-control-geosearch input { padding: 6px 12px; height: auto; border: 1px solid #cccccc; text-indent: 0; }
-
-.navpanel-services .panel-map .leaflet-control-geosearch input::-webkit-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.navpanel-services .panel-map .leaflet-control-geosearch input::-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.navpanel-services .panel-map .leaflet-control-geosearch input:-moz-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-.navpanel-services .panel-map .leaflet-control-geosearch input:-ms-input-placeholder { font-size: 14px; font-weight: 400; color: #999999; opacity: 1; }
-
-.navpanel-services .panel-cat-container { margin-bottom: 15px; padding: 0; }
-
-.navpanel-services .panel-cat { padding: 0; margin: 0; }
-
-.navpanel-services .panel-cat .panel-heading { padding: 10px 15px 12px; background-color: #ccff6d; text-align: left; color: #20172c; }
-
-.navpanel-services .panel-cat a:hover,
-.navpanel-services .panel-cat a:focus { text-decoration: none; }
-
-.navpanel-services .panel-cat .panel-heading .panel-title { margin: 0; font-size: 19px; font-weight: 700; text-transform: uppercase; opacity: .7; }
-
-.navpanel-services .panel-cat .panel-heading .btn-more { padding: 0; font-weight: 400; top: 3px; opacity: .3; }
-
-.navpanel-services .panel-cat a:hover > h4.panel-heading .btn-more { opacity: .7; }
-
-.navpanel-services .panel-cat .panel-body .list-group { background-color: #ECEFF1; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container { height: 55px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container form.search-form { position: absolute; width: 100%; right: 0; top: 10px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container .form-group { position: relative; padding-left: 15px; padding-right: 15px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container button[type="submit"] { position: absolute; height: 34px; right: 20px; }
-
-.navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 270px; }
-
-.navpanel-services .panel-cat .panel-footer .btn-more { position: inherit; padding: 5px; }
-
-.navpanel-services .panel-eda-container { padding: 0; }
-
-.navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
-
-.navpanel-services .panel-eda .eda-logo { width: 100%; }
-
-.navpanel-services .panel-eda .vendor-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: space-around;
-    margin-bottom: 18px; }
-
-.navpanel-services .panel-eda a.vendor-thumb { padding: 5px; border-radius: 5px; }
-
-.navpanel-services .panel-eda a.vendor-thumb:hover { background-color: #f9f9f9; }
-
-.navpanel-services .panel-eda a.vendor-thumb img { width: 100%; }
-
-.navpanel-services .panel-eda a.flowers-delivery { display: block; }
-
-.navpanel-services .icon-place { padding: 0; }
-
-.navpanel-services .icon-place a { color: #333; display: block; font-size: .9em; line-height: 1.25em; padding: 0; text-align: center; }
-
-.navpanel-services .icon-place a:hover,
-.navpanel-services .icon-place a:focus { background-color: #eee; text-decoration: none; }
-
-.navpanel-services .icon-place a > .features-item-name { margin: 3px -3px 0; padding: 0; }
-
-.navpanel-services .ksk-services { padding: 0; }
-
-.navpanel-services .ksk-services h2 { color: #00b8d4; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 5px; margin-top: 10px; text-align: center; text-transform: uppercase; }
-
-.navpanel-services .list-group-item > .badge { border-radius: 0.25em; padding: 0.3em 0.45em 0.35em; position: absolute; right: 10px; }
-
-
-
-.navpanel-services .panel-taxi { /*background-color: #ffd401;*/ text-align: center; }
-
-.navpanel-services .panel-taxi h2 { text-transform: uppercase; font-weight: 700; margin: 0; padding: 10px 0 11px; color: tomato; font-size: 17px; }
-
-.navpanel-services .panel-taxi img { width: 100%; }
-
-.navpanel-services .panel-taxi .taxi-description { font-size: 16px; margin-top: 10px; text-align: center; }
-
-.navpanel-services .panel-taxi .taxi-phone { text-align: center; margin-bottom: 20px; margin-top: 20px; }
-
-.navpanel-services .panel-taxi .taxi-phone > a { color: #161616; font-size: 20px; font-weight: 700; }
-
-.navpanel-services .panel-taxi .btn-warning { background-color: #ffd401; border-color: #161616; color: #161616; font-size: 15px; font-weight: 600; margin-bottom: 15px; margin-top: 20px; text-transform: uppercase; }
-
-.navpanel-services .panel-taxi .btn-warning:hover,
-.navpanel-services .panel-taxi .btn-warning:focus { background-color: #fff001; color: #222222; }
-
-.navpanel-services .panel-taxi .taxi-about { text-align: center; margin-bottom: 15px; }
-
-.navpanel-services .panel-taxi .taxi-about > a { color: #222; }
-
-.navpanel-services .panel-taxi .taxi-about > a:hover,
-.navpanel-services .panel-taxi .taxi-about > a:focus { color: #000; }
-
 .news .container > #header .navpanel.row { margin: 0; }
 
 .navpanel img.icon { margin-bottom: 10px; padding: 0; width: 100%; }
@@ -939,127 +817,9 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .weather-forecast-panel h6 a { color: #455a64; font-weight: 600; }
 
 
-#navpanel-info > div:nth-child(n+2) { margin-top: 20px; }
-
-.navpanel-info.active { overflow-y: visible; }
-
-.navpanel .cat { border-top: 1px solid #82b1ff; }
-
-.navpanel #panel-movies { background-color: #2d2d2d; padding: 0; }
-
-.navpanel .panel-movies-heading { margin: 0; padding: 0; color: #fff; font-size: 21px; font-weight: 700; text-align: left; text-transform: uppercase; }
-
-.navpanel .panel-movies-heading .btn-more { text-transform: none; font-weight: 400; color: rgba(255, 255, 255, .7); padding: 0; bottom: 38px; right: 7px; }
-
-.navpanel .panel-movies-heading ul.list-days { border-radius: 0; }
-
-.navpanel .panel-movies-heading ul.list-days > li.heading { display: none; }
-
-.navpanel .panel-movies-heading ul.list-days > li > a { font-size: 14px; padding: 9px; }
-
-.navpanel #panel-movies .today-movies-outer { border-collapse: separate; border-spacing: 3px; display: table; width: 100%; padding: 10px 5px; }
-
-.navpanel #panel-movies .today-movies { display: table-row; }
-
-.navpanel #panel-movies .today-movies .movie-poster { display: table-cell; background-position: center center; background-repeat: no-repeat; background-size: contain; text-align: center; }
-
-.navpanel #panel-movies .today-movies .movie-poster img { height: 92px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
-
-.navpanel #panel-movies .today-movies .movie-poster .movie-title { margin-bottom: 0; font-size: 13px; color: #fff; }
-
-.navpanel #panel-movies .popover { padding: 10px !important; min-width: 300px; }
-
-.navpanel #panel-movies .popover-content { min-width: 300px; padding: 0 10px 0 0 !important; }
-
-.navpanel #panel-movies .popover-content .movie-poster { padding: 0; }
-
-.navpanel #panel-movies .popover-content .movie-poster img { width: 100%; }
-
-.navpanel #panel-movies .popover-content h4.movie-title { text-align: left; margin-top: 0; margin-bottom: 5px; font-size: 18px; }
-
-.navpanel #panel-movies .popover-content .movie-title > span { background-color: #03a9f4; border-radius: 3px; color: #fff; font-size: 14px; padding: 0 5px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
-
-
-.navpanel #panel-movies .popover-content .movie-tagline { line-height: 1.25em; color: #607d8b; font-size: .9em; }
-
-.navpanel #panel-movies .popover-content .production-flag { padding-right: 2px; }
-
-.navpanel #panel-movies .popover-content .genres,
-.navpanel #panel-movies .popover-content .genre { color: #999999; font-size: 12px; padding-left: 3px; }
-
-.navpanel #panel-movies .popover-content .star-rating { margin: 4px 0; }
-
-.navpanel #panel-movies .popover-content .movie-price,
-.navpanel #panel-movies .popover-content .movie-sessions { color: #555555; font-size: 13px; margin-bottom: 0; }
-
-.navpanel #panel-agenda > h4 { margin-bottom: 0; padding: 10px 15px; background-color: #00e676; font-size: 19px; text-transform: uppercase; font-weight: 700; color: #fff; text-align: left; }
-
-.navpanel #panel-agenda > h4 > .btn-more { text-transform: none; font-weight: 400; color: rgba(32, 23, 44, 0.5); top: 3px; padding: 0; }
-
-.navpanel #panel-agenda .events .list-group-item { padding: 5px 10px; }
-
-.navpanel #panel-agenda .events .list-group-item:hover,
-.navpanel #panel-agenda .events .list-group-item:focus { background-color: #fafafa; }
-
-.navpanel #panel-agenda .event-thumb { padding: 0; text-align: center; }
-
-.navpanel #panel-agenda .event-thumb img { height: auto; width: auto; max-height: 70px; max-width: 100%; }
-
-.navpanel #panel-agenda h3.event-heading { font-size: 17px; height: 2.3em; margin-top: 0; overflow: hidden; margin-bottom: 0; font-weight: 600; }
-
-.navpanel #panel-agenda p.event-text { color: #666; font-size: 13px; height: 2.7em; line-height: 1.345em; overflow: hidden; }
-
-.navpanel #panel-agenda .event-date,
-.navpanel #panel-agenda .event-time { color: #888; font-weight: 400; }
-
-/*Стили для унифицированного макета в навигафионной панели для афиши*/
-
-.navpanel #panel-agenda .post-event { padding: 7px 15px 5px !important; }
-
-.navpanel #panel-agenda .post-event .post-title { margin-bottom: 5px; margin-top: 0; height: 1.2em; font-size: 16px; font-weight: 600; overflow: hidden; text-align: left; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; display: inline; }
-
-.navpanel #panel-agenda .post-event figure.post-thumb { display: none; }
-
-.navpanel #panel-agenda .post-event .post-description-text { color: #666666; font-size: 13px; line-height: 1.345em; height: 2.7em; overflow: hidden; display: none; }
-
-.navpanel #panel-agenda .post-event .event-time { background-color: #ff1744; border-radius: 3px; color: #ffffff; font-weight: 600; margin-right: 5px; padding: 0 5px 0 3px; }
-
-.navpanel #panel-agenda .post-event.has-post-thumbnail .post-title { margin-bottom: 5px; display: block; }
-
-.navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { display: block; }
-
-.navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { float: left; margin-right: 15px; margin-bottom: 10px; }
-
-.navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 100px; height: auto; }
-
-.navpanel #panel-agenda .post-event.has-post-thumbnail .post-description-text { display: block; }
-
-.navpanel-info .features-toolbar {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex; }
-
-.navpanel-info .cat-feature.cat-feature,
-.navpanel-info .map-feature.map-feature,
-.navpanel-info .schedule-feature.schedule-feature { padding: 8px; position: relative; }
-
-.navpanel-info .features-toolbar .cat-feature img,
-.navpanel-info .features-toolbar .map-feature img,
-.navpanel-info .features-toolbar .schedule-feature img { max-height: 23px; max-width: 100%; }
-
-.navpanel-info .cat-feature .fa-certificate,
-.navpanel-info .map-feature .fa-certificate,
-.navpanel-info .schedule-feature .fa-certificate { position: absolute; top: -7px; right: 0; color: #ff1744; }
-
 .sidebar .panel.panel-btn a { display: block; padding: 15px 25px; }
 
 .sidebar .panel.panel-btn img { max-height: 40px; }
-
-.navpanel-info .emergency-phones-feature { background-color: #ff1744; }
-
-.navpanel-info .emergency-phones-feature:hover { background-color: #ff5252; }
 
 
 .sidebar .panel.panel-btn.cat-feature,
@@ -4090,9 +3850,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 @media (min-width: 480px) {
     .events .post-event.has-post-thumbnail.event-paid .post-title { position: absolute; left: 230px; overflow-y: hidden; text-overflow: ellipsis; height: 22.652px; font-size: 22.652px; }
 
-    .events .post-event.has-post-thumbnail { padding: 15px 15px 22.652px; }
-
     .events .post-event.has-post-thumbnail .post-more { position: relative; top: 11.326px; }
+
+    .events .post-event.has-post-thumbnail.event-paid { padding: 15px 15px 22.652px; }
 
     .events .post-event.has-post-thumbnail.event-paid figure.post-thumb { margin-right: 15px; float: left; width: auto; margin-bottom: 0; }
 
@@ -4104,7 +3864,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 @media (min-width: 768px) {
     .events .post-event .post-title { margin-bottom: 0; overflow-y: hidden; text-overflow: ellipsis; }
 
-    .events .post-event.has-post-thumbnail { padding: 22.652px 15px; }
+    .events .post-event.has-post-thumbnail.event-paid { padding: 22.652px 15px; }
 
     .events .post-event.has-post-thumbnail.event-paid .post-title { left: 15px; }
 
@@ -4811,24 +4571,10 @@ body.page-template-page-custom-tv  footer.info .official-info .online {display: 
 body.page-template-page-custom-radio footer.info .official-info .radio {display: block;}
 body.page-template-page-custom-tv footer.info .official-info .tv {display: block;}
 
-
 footer.info .social > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
 
 footer.info .social > a:hover,
 footer.info .social > a:focus { opacity: 1; }
-
-/*footer.info .social .social-logo.vk { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLjUgMTkuNmMwIC44LS4xIDEuNC0uNCAycy0uNyAxLTEuMiAxLjRjLS42LjUtMS4yLjgtMS45IDEtLjcuMi0xLjYuMy0yLjYuM2gtNi4xdi0xNS4zaDUuNGMxLjEgMCAyIDAgMi41LjEuNi4xIDEuMS4zIDEuNi41LjUuMyAxIC43IDEuMiAxLjIuMy41LjQgMS4xLjQgMS43IDAgLjctLjIgMS40LS42IDItLjQuNi0uOSAxLTEuNSAxLjN2LjFjLjkuMiAxLjcuNiAyLjMgMS4yLjYuNi45IDEuNC45IDIuNXptLTQuOS02LjNjMC0uMi0uMS0uNS0uMi0uOC0uMS0uMy0uMy0uNC0uNi0uNi0uMy0uMS0uNi0uMi0uOS0uMmgtMS44djMuM2gxLjljLjMgMCAuNS0uMS44LS4yLjMtLjEuNS0uMy42LS42cy4yLS42LjItLjl6bS45IDYuMmMwLS41LS4xLS44LS4zLTEuMS0uMi0uMy0uNS0uNS0uOS0uNi0uMi0uMS0uNi0uMS0xLS4xaC0yLjN2My44aDIuMzAwMDAwMDAwMDAwMDAwM2MuNCAwIC44LS4xIDEuMi0uMy4zLS4yLjYtLjQuOC0uNy4yLS4zLjItLjYuMi0xeiIvPjwvc3ZnPg=="); }*/
-/*footer.info .social .social-logo.ok { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE2IDguOTc1YzEuMTg4IDAgMi4xNS45NjMgMi4xNSAyLjE1IDAgMS4xODgtLjk2MyAyLjE1LTIuMTUgMi4xNS0xLjE4OCAwLTIuMTUtLjk2My0yLjE1LTIuMTUgMC0xLjE3NS45NjMtMi4xNSAyLjE1LTIuMTV6bTAgNy4zNWMyLjg2MiAwIDUuMi0yLjMzNyA1LjItNS4yIDAtMi44NjItMi4zMzctNS4yLTUuMi01LjItMi44NjIgMC01LjIgMi4zMzctNS4yIDUuMiAwIDIuODc1IDIuMzM3IDUuMiA1LjIgNS4yem0yLjEgNC4yNWMxLjA2My0uMjM3IDIuMDc1LS42NjIgMy4wMjUtMS4yNS43MTMtLjQ1LjkyNS0xLjM4Ny40NzUtMi4xLS40NS0uNzEzLTEuMzg3LS45MjUtMi4xLS40NzUtMi4xMjUgMS4zMzctNC44NzUgMS4zMzctNyAwLS43MTMtLjQ1LTEuNjUtLjIzNy0yLjEuNDc1LS40NS43MTMtLjIzNyAxLjY1LjQ3NSAyLjEuOTM4LjU4OCAxLjk2MiAxLjAxMiAzLjAyNSAxLjI1bC0yLjkxMyAyLjkxM2MtLjYuNi0uNiAxLjU2MyAwIDIuMTUuMy4zLjY4OC40NSAxLjA3NS40NS4zODggMCAuNzc1LS4xNSAxLjA3NS0uNDVsMi44NS0yLjg2MiAyLjg2MiAyLjg2MmMuNi42IDEuNTYzLjYgMi4xNSAwIC42LS42LjYtMS41NjMgMC0yLjE1bC0yLjktMi45MTIiLz48L3N2Zz4="); }*/
-/*footer.info .social .social-logo.facebook { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEzLjcgMjQuOWgzLjd2LTguOWgyLjVsLjMtMy4xaC0yLjh2LTEuNWMwLS44LjEtMS4yIDEuMi0xLjJoMS41di0zLjFoLTIuNWMtMi45IDAtNCAxLjUtNCA0djEuOGgtMS44djMuMWgxLjhsLjEgOC45eiIvPjwvc3ZnPg=="); }*/
-/*footer.info .social .social-logo.twitter { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE4LjIgOC45Yy0xLjYuNi0yLjYgMi4xLTIuNSAzLjd2LjZsLS42LS4xYy0yLjMtLjMtNC4zLTEuMy02LjEtM2wtLjctLjgtLjMuNmMtLjUgMS40LS4yIDIuOC44IDMuOC41LjUuNC42LS41LjMtLjMtLjEtLjYtLjItLjYtLjFzLjMgMS4zLjUgMS43Yy4zLjYgMSAxLjMgMS43IDEuNmwuNi4zaC0uN2MtLjcgMC0uNyAwLS43LjMuMy44IDEuMyAxLjcgMi40IDIuMWwuOC4zLS43LjRjLTEgLjYtMi4yLjktMy40IDEtLjYgMC0xIC4xLTEgLjEgMCAuMSAxLjYuOCAyLjUgMS4xIDIuNy44IDUuOS41IDguMy0xIDEuNy0xIDMuNC0zIDQuMi01IC40LTEgLjktMi45LjktMy45IDAtLjYgMC0uNy44LTEuNC40LS40LjgtLjkuOS0xIC4xLS4yLjEtLjItLjUgMC0xLjIuNS0xLjMuNS0uOC0uMS40LS40LjktMS4yLjktMS40IDAgMC0uMiAwLS40LjFzLS43LjMtMS4xLjRsLS43LjItLjYtLjRjLS4zLS4yLS44LS41LTEuMS0uNi0uNyAwLTEuNyAwLTIuMy4yeiIvPjwvc3ZnPg=="); }*/
-/*footer.info .social .social-logo.instagram { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIwLjggOC4yaC05LjZjLTEuNyAwLTMgMS4zLTMgM3Y5LjYwMDAwMDAwMDAwMDAwMWMwIDEuNyAxLjMgMyAzIDNoOS42YzEuNyAwIDMtMS4zIDMtM3YtOS42MDAwMDAwMDAwMDAwMDFjMC0xLjctMS4zLTMtMy0zem0uOSAxLjhoLjN2Mi41OTk5OTk5OTk5OTk5OTk2aC0yLjd2LTIuNmgyLjR6bS03LjkgNC40Yy41LS43IDEuMy0xLjEgMi4yLTEuMS45IDAgMS43LjUgMi4yIDEuMS4zLjUuNSAxIC41IDEuNiAwIDEuNS0xLjMgMi43LTIuNyAyLjdzLTIuNy0xLjItMi43LTIuN2MwLS42LjItMS4xLjUtMS42em04LjUgNi40YzAgLjgtLjcgMS41LTEuNSAxLjVoLTkuNmMtLjggMC0xLjUtLjctMS41LTEuNXYtNi40aDIuM2MtLjIuNS0uMyAxLjEtLjMgMS42IDAgMi4zIDEuOSA0LjMgNC4zIDQuM3M0LjMtMS45IDQuMy00LjNjMC0uNS0uMS0xLjEtLjMtMS42aDIuM3Y2LjR6Ii8+PC9zdmc+"); }*/
-
-/*footer.info .social .social-logo.vk { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzU5N0RBMzt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTkwLjUgNjkuNmMwIC44LS4xIDEuNC0uNCAyLS4zLjYtLjcgMS0xLjIgMS40LS42LjUtMS4yLjgtMS45IDFzLTEuNi4zLTIuNi4zaC02LjF2LTE1LjNoNS40YzEuMSAwIDIgMCAyLjUuMS42LjEgMS4xLjMgMS42LjUuNS4zIDEgLjcgMS4yIDEuMi4zLjUuNCAxLjEuNCAxLjcgMCAuNy0uMiAxLjQtLjYgMi0uNC42LS45IDEtMS41IDEuM3YuMWMuOS4yIDEuNy42IDIuMyAxLjJzLjkgMS40LjkgMi41em0tNC45LTYuM2MwLS4yLS4xLS41LS4yLS44cy0uMy0uNC0uNi0uNmMtLjMtLjEtLjYtLjItLjktLjJoLTEuOHYzLjNoMS45Yy4zIDAgLjUtLjEuOC0uMi4zLS4xLjUtLjMuNi0uNi4xLS4zLjItLjYuMi0uOXptLjkgNi4yYzAtLjUtLjEtLjgtLjMtMS4xLS4yLS4zLS41LS41LS45LS42LS4yLS4xLS42LS4xLTEtLjFoLTIuM3YzLjhoMi4zYy40IDAgLjgtLjEgMS4yLS4zLjMtLjIuNi0uNC44LS43cy4yLS42LjItMXoiLz48L3N2Zz4="); }
-footer.info .social .social-logo.ok { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0YyNzIwQzt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTk3IDU5YzEuMiAwIDIuMiAxIDIuMiAyLjJzLTEgMi4yLTIuMiAyLjItMi4yLTEtMi4yLTIuMiAxLTIuMiAyLjItMi4yem0wIDcuM2MyLjkgMCA1LjItMi4zIDUuMi01LjIgMC0yLjktMi4zLTUuMi01LjItNS4yLTIuOSAwLTUuMiAyLjMtNS4yIDUuMiAwIDIuOSAyLjMgNS4yIDUuMiA1LjJ6bTIuMSA0LjNjMS4xLS4yIDIuMS0uNyAzLTEuMy43LS40LjktMS40LjUtMi4xcy0xLjQtLjktMi4xLS41Yy0yLjEgMS4zLTQuOSAxLjMtNyAwLS43LS40LTEuNy0uMi0yLjEuNS0uNS43LS4yIDEuNy41IDIuMS45LjYgMiAxIDMgMS4zbC0yLjkgMi45Yy0uNi42LS42IDEuNiAwIDIuMi4zLjMuNy40IDEuMS40cy44LS4xIDEuMS0uNGwyLjgtMi45IDIuOSAyLjljLjYuNiAxLjYuNiAyLjIgMCAuNi0uNi42LTEuNiAwLTIuMmwtMy0yLjkiLz48L3N2Zz4="); }
-footer.info .social .social-logo.facebook { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzNCNTk5ODt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTk5LjMgNzQuOWgzLjd2LTguOWgyLjVsLjMtMy4xaC0yLjh2LTEuNWMwLS44LjEtMS4yIDEuMi0xLjJoMS41di0zLjFoLTIuNWMtMi45IDAtNCAxLjUtNCA0djEuOGgtMS44djMuMWgxLjhsLjEgOC45eiIvPjwvc3ZnPg=="); }
-footer.info .social .social-logo.twitter { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzAwQUNFRTt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTk0LjggNTguOWMtMS42LjYtMi42IDIuMS0yLjUgMy43di42bC0uNi0uMWMtMi4zLS4zLTQuMy0xLjMtNi4xLTNsLS43LS44LS4zLjZjLS41IDEuNC0uMiAyLjguOCAzLjguNS41LjQuNi0uNS4zLS4zLS4xLS42LS4yLS42LS4xcy4zIDEuMy41IDEuN2MuMy42IDEgMS4zIDEuNyAxLjZsLjYuM2gtLjdjLS43IDAtLjcgMC0uNy4zLjMuOCAxLjMgMS43IDIuNCAyLjFsLjguMy0uNy40Yy0xIC42LTIuMi45LTMuNCAxLS42IDAtMSAuMS0xIC4xIDAgLjEgMS42LjggMi41IDEuMSAyLjcuOCA1LjkuNSA4LjMtMSAxLjctMSAzLjQtMyA0LjItNSAuNC0xIC45LTIuOS45LTMuOSAwLS42IDAtLjcuOC0xLjQuNC0uNC44LS45LjktMSAuMS0uMi4xLS4yLS41IDAtMS4yLjUtMS4zLjUtLjgtLjEuNC0uNC45LTEuMi45LTEuNCAwIDAtLjIgMC0uNC4xcy0uNy4zLTEuMS40bC0uNy4yLS42LS40Yy0uMy0uMi0uOC0uNS0xLjEtLjYtLjcgMC0xLjcgMC0yLjMuMnoiLz48L3N2Zz4="); }
-footer.info .social .social-logo.instagram { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMTMgNTAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTExMyA1MCAzMiAzMiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzkzNjM1Nzt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTkyLjIgNTguMmgtOS42Yy0xLjcgMC0zIDEuMy0zIDN2OS42YzAgMS43IDEuMyAzIDMgM2g5LjZjMS43IDAgMy0xLjMgMy0zdi05LjZjMC0xLjctMS4zLTMtMy0zem0uOSAxLjhoLjN2Mi42aC0yLjd2LTIuNmgyLjR6bS03LjkgNC40Yy41LS43IDEuMy0xLjEgMi4yLTEuMXMxLjcuNSAyLjIgMS4xYy4zLjUuNSAxIC41IDEuNiAwIDEuNS0xLjMgMi43LTIuNyAyLjdzLTIuNy0xLjItMi43LTIuN2MwLS42LjItMS4xLjUtMS42em04LjUgNi40YzAgLjgtLjcgMS41LTEuNSAxLjVoLTkuNmMtLjggMC0xLjUtLjctMS41LTEuNXYtNi40aDIuM2MtLjIuNS0uMyAxLjEtLjMgMS42IDAgMi4zIDEuOSA0LjMgNC4zIDQuM3M0LjMtMS45IDQuMy00LjNjMC0uNS0uMS0xLjEtLjMtMS42aDIuM3Y2LjR6Ii8+PC9zdmc+"); }
-*/
 
 footer.info .social .fa { font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
 
@@ -5081,19 +4827,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     body.ob .searchbox-container { padding-left: 10px; padding-right: 0; }
 
-    #navpanel-info > div:nth-child(n+2) { margin-top: 0; }
-
-    body.news .navpanel-info #category-other .dropdown-menu { top: 240px; left: 9px; }
-
-    .navpanel-info #category-other .dropdown-menu { top: 280px; }
-
-    .navpanel-info > .subpanel:first-child { padding-right: 0; }
-
-    .navpanel-services .icon-place a  > .features-item-name { font-size: 0.86em; margin: 0 -3px; padding: 8px; }
-
-
-    .navpanel-services .panel-taxi .taxi-phone { margin-bottom: 10px; }
-
     .navpanel img.icon { margin-bottom: 6px; }
     .navpanel .top-panel img {width: 100% ; height: 45px;}
 
@@ -5102,11 +4835,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .navpanel .cat,
     .navpanel .panel-map { border-top: none; }
 
-    .navpanel #panel-agenda h3.event-heading { font-size: 14px; }
-
     .weather-forecast-panel { min-height: 210px; border-top: none; }
-
-    #navpanel-search.navpanel.navpanel-search { overflow: visible; }
 
     .row_header > div:after { height: 140px; }
 
@@ -5197,9 +4926,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping.active { max-height: 1500px; }
 
-    .navpanel-services img.icon,
-    .navpanel-info img.icon { width: 100%; }
-
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 33%; }
 
@@ -5221,26 +4947,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 75%;}
 
-    .navpanel-services .panel-map #panel-map { height: 370px; }
-
-    .navpanel-services .panel-map .leaflet-control-geosearch { width: 280px; }
-
-    .navpanel-services .panel-cat-container { padding-left: 10px; }
-
-    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 320px; }
-
-    .navpanel-services .panel-eda-container { padding-left: 10px; }
-
-    .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px; }
-    
-    .navpanel #panel-movies .today-movies .movie-poster img { height: 139px; }
-
-    .navpanel .panel-movies-heading .btn-more { bottom: 39px; }
-
-    .navpanel-info .features-toolbar .cat-feature img,
-    .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .features-toolbar .schedule-feature img { max-height: 22px; }
-
     .weather-forecast-panel .day-row { border-bottom: 1px solid #dddddd; }
 
     .weather-forecast-panel .day-row .day,
@@ -5253,12 +4959,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .weather-forecast-panel .day-row .day p,
     .weather-forecast-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
-
-    .navpanel #panel-agenda .post-event .post-title { font-size: 14px; }
-
-    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb { margin-right: 10px; margin-bottom: 5px; }
-
-    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 50px; }
 
     #transport-schedule-tabs.nav-tabs { font-size: 17px; }
 
@@ -5641,26 +5341,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
 
-    .navpanel .panel-movies-heading ul.list-days > li.heading { display: inline; padding: 8px 10px; font-size: 18px; }
-
-    .navpanel .panel-movies-heading ul.list-days > li > a { font-size: 15px; padding: 10px; }
-
-    .navpanel .panel-movies-heading .btn-more { bottom: 40px; right: 10px; }
-
-    .navpanel #panel-movies .today-movies-outer { padding: 15px 5px; }
-
-    body.news .navpanel-info #category-other .dropdown-menu { top: 190px; }
-
-    .navpanel-info #category-other .dropdown-menu { top: 230px }
-
-    .navpanel-info .cat-feature.cat-feature,
-    .navpanel-info .map-feature.map-feature,
-    .navpanel-info .schedule-feature.schedule-feature { padding: 13px; }
-
-    .navpanel-info .features-toolbar .cat-feature img,
-    .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .features-toolbar .schedule-feature img { max-height: 28px; }
-
     .dropdown-menu.weather-forecast-panel { width: 650px }
 
     .weather-forecast-panel .day-row .summary { display: table-cell; width: 26%; }
@@ -5674,16 +5354,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .weather-forecast-panel .day-row .day,
     .weather-forecast-panel .day-row .night { display: table-cell; width: 35%; padding: 7px 10px 10px 71px; min-height: 65px; }
-
-    .navpanel-services .panel-map #panel-map { height: 411px; }
-
-    .navpanel-services .panel-map .leaflet-control-geosearch { width: 240px; }
-
-    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 275px; }
-
-    .navpanel-services .panel-eda .panel-heading { padding: 10px 40px 15px 35px; }
-
-    .navpanel-services .icon-place a > .features-item-name { /*font-size: 1em;*/ line-height: 1.35em; padding: 0; }
 
     #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
 
@@ -5729,10 +5399,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .svetodom-bar .cat-list a { margin-left: 30px; }
 
     #navpanel-shopping .pr-bar .pr-logo img { width: 90%; }
-
-    .navpanel #panel-movies .today-movies .movie-poster img { height: 180px; }
-
-    .navpanel #panel-agenda .post-event.has-post-thumbnail figure.post-thumb img { width: 90px; }
 
     .potential-cond-active .arrow,
     .btn-feature .arrow { left: 40%; }
@@ -5910,26 +5576,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .news-more .crp_excerpt {font-weight: 400;}
 
-    .navpanel .panel-movies-heading ul.list-days > li.heading { padding: 9px 15px 8px; font-size: 20px; }
-
-    .navpanel .panel-movies-heading ul.list-days > li > a { font-size: 17px; padding: 11px 13px; }
-
-    .navpanel .panel-movies-heading .btn-more { bottom: 42px; right: 15px; }
-
-    .navpanel-info .cat-feature.cat-feature,
-    .navpanel-info .map-feature.map-feature,
-    .navpanel-info .schedule-feature.schedule-feature { padding: 15px 18px; }
-
-    .navpanel-info .features-toolbar .cat-feature img,
-    .navpanel-info .features-toolbar .map-feature img,
-    .navpanel-info .features-toolbar .schedule-feature img { max-height: 24px; }
-
-    .navpanel-services .panel-map .leaflet-control-geosearch { width: 300px; }
-
-    .navpanel-services .panel-cat .panel-body .list-group .search-container .search-field { width: 340px; }
-
-    .navpanel-services .panel-eda .panel-heading { padding: 10px 70px 15px 60px; }
-
     .navpanel .cat a.btn.btn-default { padding-bottom: 6px; }
 
     .potential-cond-active .arrow { left: 35%; }
@@ -5955,8 +5601,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     #navpanel-shopping .svetodom-bar .cat-list a { margin-right: 40px; }
 
     #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { height: 110px; }
-
-    .navpanel #panel-movies .today-movies .movie-poster img { height: 220px; }
 
     .post-news figure.post-thumb { width: 120px; }
 
@@ -6053,10 +5697,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .checked-no_paid {color: orange;}
 .checked-no_paid ~ .badge {background-color: orange;}
 /*</admin>*/
-
-
-
-
 
 
 
