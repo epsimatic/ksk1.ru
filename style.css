@@ -4019,39 +4019,11 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .sidebar .panel-shoutbox #comment_image { overflow-x: hidden; text-overflow: ellipsis; width: 100% }
 
 /* Оформление списка событий */
-.events > h2 {color: #ffffff; padding: 13px 25px 16px; font-size: 30px; font-weight: 400; margin: 0;}
-
-.events-today-heading {background-color: #ff6372;}
-
-.events-soon-heading {background-color: #1FA6F2;}
+.events > h2 { color: #9a9a9a; font-size: 59.301px; font-weight: 700; margin: 22.652px 0; line-height: 45.304px; letter-spacing: -.05em; text-transform: lowercase; }
 
 .events h3.events-date { font-size: 17.798px; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700; color: #616161; line-height: 22.652px; margin: 22.652px 0 0; padding: 0; }
 
-.events .event-thumb {padding-left: 0;}
-
-.events .event-thumb img {width: 100%;}
-
-.events .event-heading {font-size: 21px;}
-
 .events .event-thumb .event-certification {bottom: 3px; font-size: 14px;}
-
-.events .event-heading .event-time {color: #888888; font-weight: 400;}
-
-.events .event-place,
-.events .event-price {color: #888888; font-weight: 400;}
-
-.events .event-place {font-size: 14px;}
-
-.events .event-price {font-size: 13px;}
-
-.events .event-place-text {color: #fb700d;}
-
-.events .event-price-number {color: #555555;}
-
-.events .event-text {margin-top: 6px; color: #525252; display: inline-block; line-height: 1.35em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
-.no_margin{margin-bottom: 0 ;}
-
-
 
 /* Стили для унифициорованного макета в афише в списке событий */
 .events .post-event { margin: 0; padding: 0; font-size: 14px; line-height: 22.652px; }
@@ -4093,13 +4065,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event .event-time { margin-right: 5px; font-weight: 600; color: #616161; }
 
-.events .post-event .event-place:before,
-.events .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
-
-.events .post-event .event-place,
-.events .post-event .event-organizer-name { display: inline; }
-
-.events .post-event .post-description-text { line-height: 1.41em; margin-bottom: 3px; }
+.events .post-event .event-place:before { content: ""; font-family: FontAwesome; margin-right: 5px; font-weight: 400; }
 
 .events .post-event .post-info { display: inline; }
 
@@ -4111,13 +4077,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event.has-post-thumbnail .event-price,
 .events .post-event.has-post-thumbnail .event-more { display: block; }
 
-
 .events .post-event .event-place,
-.events .post-event .event-organizer-name,
-.events .post-event .event-place,
-.events .post-event .event-organizer-name { color: #fb700d; }
-
-.events .post-event .event-organizer { color: #888; }
+.events .post-event .event-organizer-name { color: #333; margin-right: 18px; font-weight: 600; }
 
 .events .post-event .post-info-comments::before { padding-right: 5px; padding-left: 0; }
 
@@ -4125,7 +4086,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event .event-price:after { content: " р."; margin-left: 2px; color: #000; }
 
-.events .post-event .post-more { padding: 0; }
+.events .post-event .post-more { padding: 0 12px; font-size: 12px; }
 
 .events .post-event.has-post-thumbnail .post-more { float: right; }
 
@@ -5268,8 +5229,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .events .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
 
     .events .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
-
-    .events .post-event .post-more { padding: 0; }
 
     #transport-schedule-tabs.nav-tabs { font-size: 17px; }
 
