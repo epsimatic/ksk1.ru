@@ -5749,6 +5749,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .panel-sendsms .panel-heading,
 .panel-official .panel-heading,
+.panel-default .panel-heading,
 .news-old .panel-comments .panel-heading,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading,
@@ -5756,6 +5757,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .panel-sendsms .panel-heading h2,
 .panel-official .panel-heading h2,
+.panel-default .panel-heading h2,
 .news-old .panel-comments .panel-heading h2,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading h2,
