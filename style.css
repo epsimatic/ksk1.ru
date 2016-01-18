@@ -5824,7 +5824,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .post-more-photo:before {content: "?";}
 
+/*Стили для панели популярных новостей*/
+.sidebar .panel-default ul { padding: 0; }
+.sidebar .panel-default ul > li > a { display: block; line-height: 24px; overflow: hidden; padding: 0 12px; text-overflow: ellipsis; white-space: nowrap; border-bottom: none; }
 
+.sidebar .panel-default ul > li > a:hover,
+.sidebar .panel-default ul > li > a:focus { color: #333; background-color: #ebebeb; border-bottom: none; }
 
 /* </editor-fold> */
 
