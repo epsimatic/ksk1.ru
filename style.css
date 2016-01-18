@@ -1722,6 +1722,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-vote .panel-result {padding: 10px 15px;}
 
+.panel-vote .vote { margin-bottom: 12px; }
+
 .panel-result .wp-polls-ul li:nth-child(1) .progress-bar {background-color: #e35764 !important;}
 
 .panel-result .wp-polls-ul li:nth-child(2) .progress-bar {background-color: #12dbd6 !important;}
