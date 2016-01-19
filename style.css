@@ -3039,17 +3039,23 @@ ul.page-cat ul.children > li.cat-item:focus {background-color: #F0F1F2; border-l
 ul.page-cat > li.cat-item > .badge {display: none;}
 /* </editor-fold> */
 
+.company-page h1.page-header { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
+
 .company-page h2 {color: #345993; font-size: 25px; font-weight: 600; padding-top: 25px;}
 
-.company-page strong {font-weight: 600; line-height: 21px;}
+.company-page strong { font-weight: 600; }
+
+.company-page article.company { line-height: 24px; font-size: 16px; }
 
 .company-page .fa-home,
-.entry-meta_address .fa-home {color: #8d73ac;}
+.entry-meta_address .fa-home { color: #8d73ac; margin-right: 5px; }
 
 .entry-meta_email { background-color: transparent !important; color: #666; }
 
 .entry-meta_email:focus,
-.entry-meta_email:hover { color: #006048; }
+.entry-meta_email:hover { color: #888; }
+
+.company-cat-button { margin: 48px 0 24px; }
 
 .company-page .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
@@ -3062,7 +3068,7 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 label.control-label {font-weight: 600 !important;}
 
-.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; }
+.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 16px; }
 
 .content-brief_commerce h3 { font-size: 19px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; }
 
