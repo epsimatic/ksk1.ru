@@ -3068,20 +3068,22 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 label.control-label {font-weight: 600 !important;}
 
-.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 16px; }
+.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
 
-.content-brief_commerce h3 { font-size: 19px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; }
+.content-brief_commerce h3 { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; }
 
 a.content-brief_title-commerce { color: #f44336; }
 
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus { color: #ff9c00; text-decoration: none; }
 
-.content-brief_commerce .entry-meta_email { margin-top: 12px; margin-bottom: 12px; }
+.content-brief_commerce .entry-meta_email { margin-top: 12px; margin-bottom: 12px; padding: 0; }
 
-.content-brief { margin-bottom: 24px; line-height: 24px; }
+.content-brief { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
 article.company { padding: 0 30px; }
+
+.content-brief_title { color: #007bcd; font-size: 18px; font-weight: 600; }
 
 .modal .wpcf7-list-item { display: block; }
 
