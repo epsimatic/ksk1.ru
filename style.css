@@ -3046,10 +3046,10 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 .company-page .fa-home,
 .entry-meta_address .fa-home {color: #8d73ac;}
 
-.entry-meta_email {background-color: transparent !important; padding: 6px 12px !important; margin: 0 -13px; color: #666666;}
+.entry-meta_email { background-color: transparent !important; color: #666; }
 
 .entry-meta_email:focus,
-.entry-meta_email:hover {color: #006048;}
+.entry-meta_email:hover { color: #006048; }
 
 .company-page .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
@@ -3062,16 +3062,20 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 label.control-label {font-weight: 600 !important;}
 
-.content-brief_commerce {border-bottom: 1px solid #ffa500 !important; min-height: 140px !important;}
+.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; }
 
-.content-brief_commerce .content-brief_post {margin-bottom: 10px; margin-top: -5px;}
+.content-brief_commerce h3 { font-size: 19px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; }
 
-.content-brief_commerce .entry-meta_email {margin: 0 10px 0 -13px;}
-
-.content-brief_commerce h3 {font-size: 20px}
+a.content-brief_title-commerce { color: #f44336; }
 
 a.content-brief_title-commerce:hover,
-a.content-brief_title-commerce:focus {color: #ff9c00;}
+a.content-brief_title-commerce:focus { color: #ff9c00; text-decoration: none; }
+
+.content-brief_commerce .entry-meta_email { margin-top: 12px; margin-bottom: 12px; }
+
+.content-brief { margin-bottom: 24px; line-height: 24px; }
+
+article.company { padding: 0 30px; }
 
 .modal .wpcf7-list-item { display: block; }
 
