@@ -3047,7 +3047,11 @@ body.single-company h1.company-name { font-size: 25px; font-weight: 600; margin-
 
 body.single-company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
 
-body.single-company h2.contacts-heading { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
+body.single-company h2.contacts-heading { color: #345993; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 36px; margin-bottom: 12px; }
+
+body.single-company .company-meta-item { margin: 12px 0; }
+
+body.single-company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
 body.single-company strong { font-weight: 600; }
 
