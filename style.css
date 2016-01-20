@@ -3104,7 +3104,13 @@ article.company-paid .company-name a:focus { color: #ff1744; text-decoration: no
 
 body.single-company .mailform-and-button { margin: 48px 0; }
 
-article.company .fotorama--wp { margin: 0 0 24px; }
+article.company .fotorama--wp { margin: 0 0 48px; }
+
+article.company .modal-body { padding: 24px; }
+
+article.company .modal-body .wpcf7-form-control-wrap { display: block; margin: 24px 0; }
+
+article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px; }
 
 .modal .wpcf7-list-item { display: block; }
 
