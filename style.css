@@ -3040,34 +3040,37 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 /* </editor-fold> */
 
 
-
 body.single-company article.company { line-height: 24px; font-size: 16px; }
 
-body.single-company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
+article.company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
 
-body.single-company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
+article.company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
 
-body.single-company h2.contacts-heading { color: #345993; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 36px; margin-bottom: 12px; }
+article.company .company-description { color: #666; }
 
-body.single-company .company-meta-item { margin: 12px 0; }
+article.company h2.contacts-heading { color: #345993; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 36px; margin-bottom: 12px; }
 
-body.single-company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
+article.company .company-meta-item { margin: 12px 0; }
 
-body.single-company strong { font-weight: 600; }
+article.company .fa-home { color: #b39ddb; }
 
-body.single-company .fa-home { color: #8d73ac; }
+article.company .fa-phone { color: #81c784; }
+
+article.company .fa-globe { color: #26c6da; }
+
+article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
+
+article.company strong { font-weight: 600; }
 
 .company-cat-button { margin: 48px 0 24px; }
 
 .company-cat-text { font-size: 20px; }
 
-body.single-company .fa-phone { color: #76d682 !important; }
-
 body.single-company p { margin-bottom: 24px; }
 
 body.single-company .form-group .required { color: #f44336; }
 
-body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; margin-top: 24px; margin-bottom: 24px; }
+body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; }
 
 body.single-company .schedule { color: #ad2100; display: inline; }
 
