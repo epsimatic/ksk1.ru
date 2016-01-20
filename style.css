@@ -3042,7 +3042,7 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 body.single-company article.company { line-height: 24px; font-size: 16px; padding: 0 30px; }
 
-body.single-company article.company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
+body.single-company article.company h1.company-name { font-size: 25px; font-weight: 700; margin-bottom: 12px; margin-top: 36px; padding: 0; display: block; }
 
 body.single-company article.company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
 
