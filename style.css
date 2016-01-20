@@ -3088,7 +3088,7 @@ article.company { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
 .company-name a { color: #007bcd; font-size: 18px; font-weight: 600; }
 
-article.company .company-name { display: inline; }
+article.company .company-name { display: inline; font-size: 18px; line-height: 24px; }
 
 article.company-paid { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
 
