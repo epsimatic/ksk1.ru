@@ -3058,7 +3058,7 @@ article.company .fa-phone { color: #81c784; }
 
 article.company .fa-globe { color: #26c6da; }
 
-article.company .company-send-message { padding: 0; }
+article.company .company-send-message { padding: 0; color: #777; margin: 12px 0; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
