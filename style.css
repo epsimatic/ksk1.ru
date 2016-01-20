@@ -3048,7 +3048,10 @@ body.single-company article.company .entry-content { position: relative; margin-
 
 article.company .company-description { color: #666; }
 
+article.company h2.fotorama-heading,
 article.company h2.contacts-heading { color: #345993; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 36px; margin-bottom: 12px; }
+
+article.company h2.fotorama-heading { color: #333; }
 
 article.company .company-meta-item { color: #777; line-height: 24px; margin: 12px 0; padding: 0; }
 
