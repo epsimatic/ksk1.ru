@@ -3064,7 +3064,7 @@ article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px;
 
 article.company strong { font-weight: 600; }
 
-article.company .entry-content img.attachment-thumbnail { float: right; }
+article.company .entry-content img.attachment-thumbnail { float: right; margin: 0 0 15px 15px; }
 
 article.company-paid img.attachment-thumbnail { float: right; max-height: 130px; max-width: 160px; }
 
