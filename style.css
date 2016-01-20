@@ -3057,10 +3057,14 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 .company-cat-button { margin: 48px 0 24px; }
 
+.company-cat-text { font-size: 20px; }
+
 .company-page .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
 
 .company-page p { margin-bottom: 24px; }
+
+.company-page .form-group .required { color: #f44336; }
 
 .single-company .entry-meta_phone div:first-child { font-weight: 600; color: #333; margin-top: 24px; margin-bottom: 24px; }
 
