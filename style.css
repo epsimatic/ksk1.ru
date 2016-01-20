@@ -3040,7 +3040,7 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 /* </editor-fold> */
 
 
-body.single-company article.company { line-height: 24px; font-size: 16px; }
+body.single-company article.company { line-height: 24px; font-size: 16px; padding: 0 30px; }
 
 article.company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
 
@@ -3050,13 +3050,15 @@ article.company .company-description { color: #666; }
 
 article.company h2.contacts-heading { color: #345993; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 36px; margin-bottom: 12px; }
 
-article.company .company-meta-item { margin: 12px 0; }
+article.company .company-meta-item { color: #777; line-height: 24px; margin: 12px 0; padding: 0; }
 
 article.company .fa-home { color: #b39ddb; }
 
 article.company .fa-phone { color: #81c784; }
 
 article.company .fa-globe { color: #26c6da; }
+
+article.company .company-send-message { padding: 0; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
@@ -3078,20 +3080,20 @@ body.single-company .schedule { color: #ad2100; display: inline; }
 
 label.control-label {font-weight: 600 !important;}
 
-.content-brief_commerce { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
+article.company { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
-.content-brief_commerce h3 { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; }
+.company-name a { color: #007bcd; font-size: 18px; font-weight: 600; }
 
-a.content-brief_title-commerce { color: #f44336; }
+article.company .company-name { display: inline; }
 
-a.content-brief_title-commerce:hover,
-a.content-brief_title-commerce:focus { color: #ff9c00; text-decoration: none; }
+article.company-paid { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
 
-.content-brief { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
+article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; display: block; }
 
-article.company { padding: 0 30px; }
+article.company-paid .company-name a { color: #f44336; }
 
-.content-brief_title { color: #007bcd; font-size: 18px; font-weight: 600; }
+article.company-paid .company-name a:hover,
+article.company-paid .company-name a:focus { color: #ff1744; text-decoration: none; }
 
 .modal .wpcf7-list-item { display: block; }
 
