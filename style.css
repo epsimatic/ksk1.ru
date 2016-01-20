@@ -3045,7 +3045,7 @@ body.single-company article.company { line-height: 24px; font-size: 16px; }
 
 body.single-company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
 
-body.single-company .entry-content { position: relative; margin-bottom: 20px; }
+body.single-company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
 
 body.single-company h2. { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
 
