@@ -3047,24 +3047,17 @@ body.single-company h1.company-name { font-size: 25px; font-weight: 600; margin-
 
 body.single-company .entry-content { position: relative; margin-bottom: 20px; overflow: hidden; }
 
-body.single-company h2. { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
+body.single-company h2.contacts-heading { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
 
 body.single-company strong { font-weight: 600; }
 
-body.single-company .fa-home,
-.entry-meta_address .fa-home { color: #8d73ac; }
-
-.entry-meta_email { background-color: transparent !important; color: #666; }
-
-.entry-meta_email:focus,
-.entry-meta_email:hover { color: #888; }
+body.single-company .fa-home { color: #8d73ac; }
 
 .company-cat-button { margin: 48px 0 24px; }
 
 .company-cat-text { font-size: 20px; }
 
-body.single-company .fa-phone,
-.content-brief_phone .fa-phone {color: #76d682 !important;}
+body.single-company .fa-phone { color: #76d682 !important; }
 
 body.single-company p { margin-bottom: 24px; }
 
@@ -3072,7 +3065,7 @@ body.single-company .form-group .required { color: #f44336; }
 
 body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; margin-top: 24px; margin-bottom: 24px; }
 
-body.single-company .schedule {color: #ad2100; display: inline;}
+body.single-company .schedule { color: #ad2100; display: inline; }
 
 .fotorama__stage {background-color: #333 !important;}
 
@@ -3086,8 +3079,6 @@ a.content-brief_title-commerce { color: #f44336; }
 
 a.content-brief_title-commerce:hover,
 a.content-brief_title-commerce:focus { color: #ff9c00; text-decoration: none; }
-
-.content-brief_commerce .entry-meta_email { margin-top: 12px; margin-bottom: 12px; padding: 0; }
 
 .content-brief { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
