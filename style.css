@@ -5315,7 +5315,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .newstext p > img,
     .newstext div > img,
-    iframe.fullstory__video { max-width: auto; }
+    iframe.fullstory__video { max-width: inherit; }
 }
 
 /* Стили для размера -md- */
