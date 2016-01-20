@@ -3039,15 +3039,19 @@ ul.page-cat ul.children > li.cat-item:focus {background-color: #F0F1F2; border-l
 ul.page-cat > li.cat-item > .badge {display: none;}
 /* </editor-fold> */
 
-.company-page h1.page-header { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
 
-.company-page h2 { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
 
-.company-page strong { font-weight: 600; }
+body.single-company article.company { line-height: 24px; font-size: 16px; }
 
-.company-page article.company { line-height: 24px; font-size: 16px; }
+body.single-company h1.company-name { font-size: 25px; font-weight: 600; margin-bottom: 24px; margin-top: 48px; padding: 0; }
 
-.company-page .fa-home,
+body.single-company .entry-content { position: relative; margin-bottom: 20px; }
+
+body.single-company h2. { color: #345993; font-size: 25px; font-weight: 600; line-height: 24px; margin-top: 48px; margin-bottom: 24px; }
+
+body.single-company strong { font-weight: 600; }
+
+body.single-company .fa-home,
 .entry-meta_address .fa-home { color: #8d73ac; }
 
 .entry-meta_email { background-color: transparent !important; color: #666; }
@@ -3059,16 +3063,16 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 
 .company-cat-text { font-size: 20px; }
 
-.company-page .fa-phone,
+body.single-company .fa-phone,
 .content-brief_phone .fa-phone {color: #76d682 !important;}
 
-.company-page p { margin-bottom: 24px; }
+body.single-company p { margin-bottom: 24px; }
 
-.company-page .form-group .required { color: #f44336; }
+body.single-company .form-group .required { color: #f44336; }
 
-.single-company .entry-meta_phone div:first-child { font-weight: 600; color: #333; margin-top: 24px; margin-bottom: 24px; }
+body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; margin-top: 24px; margin-bottom: 24px; }
 
-.company-page .schedule {color: #ad2100; display: inline;}
+body.single-company .schedule {color: #ad2100; display: inline;}
 
 .fotorama__stage {background-color: #333 !important;}
 
