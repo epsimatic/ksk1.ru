@@ -3048,7 +3048,7 @@ ul.page-cat > li.cat-item > .badge {display: none;}
 .company-page article.company { line-height: 24px; font-size: 16px; }
 
 .company-page .fa-home,
-.entry-meta_address .fa-home { color: #8d73ac; margin-right: 5px; }
+.entry-meta_address .fa-home { color: #8d73ac; }
 
 .entry-meta_email { background-color: transparent !important; color: #666; }
 
@@ -5312,6 +5312,10 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     footer.info .copyright .our-projects,
     footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
+
+    .newstext p > img,
+    .newstext div > img,
+    iframe.fullstory__video { max-width: auto; }
 }
 
 /* Стили для размера -md- */
