@@ -3080,7 +3080,7 @@ article.company-paid img.attachment-thumbnail { float: right; max-height: 130px;
 
 body.single-company p { margin-bottom: 12px; }
 
-body.single-company .form-group .required { color: #f44336; }
+.form-group .required { color: #f44336; }
 
 body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; }
 
