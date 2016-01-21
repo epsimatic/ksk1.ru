@@ -3039,6 +3039,9 @@ ul.page-cat ul.children > li.cat-item:focus {background-color: #F0F1F2; border-l
 ul.page-cat > li.cat-item > .badge {display: none;}
 /* </editor-fold> */
 
+body.cat article.company { padding: 0 30px; }
+
+body.cat .cat-panel { margin-bottom: 24px; }
 
 body.single-company article.company { line-height: 24px; font-size: 16px; padding: 0 30px; }
 
