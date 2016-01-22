@@ -1888,6 +1888,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news h3,
 .single-post .main-content article.post-news h4,
 .single-post .main-content article.post-news .post-meta,
+.single-post .main-content article.post-news .meta,
 .single-post .main-content article.post-news .spelling-text,
 .single-post .main-content article.post-news table,
 .single-post .main-content article.post-news .share-title,
@@ -1927,7 +1928,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .post-meta { font-size: 14px; line-height: 24px; }
 
-.single-post .main-content article.post-news .post-meta .author-title { color: #999; }
+.single-post .main-content article.post-news .author-title { color: #999; }
 
 .single-post .main-content article.post-news .post-meta .publish-date { margin-right: .5em; }
 
