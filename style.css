@@ -1926,6 +1926,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news .category-name .post-meta { display: block; font-size: 12px; font-weight: 400; text-transform: none; }
 
+.single-post .main-content article.post-news .meta,
 .single-post .main-content article.post-news .post-meta { font-size: 14px; line-height: 24px; }
 
 .single-post .main-content article.post-news .author-title { color: #999; }
