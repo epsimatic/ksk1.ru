@@ -1902,6 +1902,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news h1 + .post-meta { margin-top: -24px; margin-bottom: 24px; }
 
+.post-info .post-meta span { display: inline; }
+
 .single-post .main-content article.post-news h2 { font-size: 20px; }
 
 .single-post .main-content article.post-news h3 { font-size: 18px; }
