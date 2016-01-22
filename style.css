@@ -1901,7 +1901,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news h1 { font-size: 21px; color: #263238; margin-bottom: 24px; margin-top: 0; }
 
-.single-post .main-content article.post-news h1 + .meta-author { margin-top: -24px; margin-bottom: 24px; }
+.single-post .main-content article.post-news h1 + .meta-author { margin-top: -24px; margin-bottom: 24px; display: block; }
 
 .post-info .post-meta span { display: inline; }
 
