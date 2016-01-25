@@ -13,6 +13,7 @@ const default_timeouts = { // Периоды обновления панелей
 
 var timers = {};
 
+// <editor-fold desc="LoadJS & LoadCSS">
 window.libsAvail = [];
 window.libsLoading = [];
 function LoadRes(src, type, callback) {
@@ -60,6 +61,7 @@ function LoadJS(src, onload) {
 function LoadCSS(src, onload) {
     LoadRes(src, 'link', onload)
 }
+// </editor-fold>
 
 /**
  * Обновить часы в селектор
