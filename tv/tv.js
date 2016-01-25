@@ -1,5 +1,5 @@
 /**
- * Created by coder on 15.12.15.
+ * Скрипты для телевизионного табло http://ksk1.ru
  */
 
 const default_timeouts = { // Периоды обновления панелей в секундах
