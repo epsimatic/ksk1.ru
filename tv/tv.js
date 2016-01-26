@@ -122,16 +122,16 @@ function UpdateBlockUpdateTimer(selector, seconds) {
                 var customized = "";
                 if (jQuery(selector).find('[data-duration]').length) {
                     seconds = jQuery(selector).find('[data-duration]').data('duration');
+                    customized = " (new timeout "+seconds+"s from banner)"
                     UpdateTimer(selector, seconds);
-                    customized = " (updated from banner)"
                 }
-                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"». Next in "+seconds+"s" + customized);
+                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
-                UpdateTimer(selector, seconds);
                 console.warn ("Zone «"+selector+"» failed loading «"+url_or_function+"». Retry in "+seconds+"s");
                 console.warn (error);
+                UpdateTimer(selector, seconds);
             });
             //.always(function() {});
     } else {
@@ -149,6 +149,9 @@ function UpdateTimer(selector, seconds) {
     timers[selector] = setTimeout(function () {
         UpdateBlockUpdateTimer(selector, seconds);
     }, seconds * 1000);
+
+    console.log ("New timeout for «"+selector+"»: "+seconds+"s");
+
 }
 
 //LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
