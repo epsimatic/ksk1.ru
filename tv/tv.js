@@ -119,11 +119,13 @@ function UpdateBlockUpdateTimer(selector, seconds) {
         jQuery.get( url_or_function )
             .done(function( content ) {
                 jQuery(selector).html( content );
+                var customized = "";
                 if (jQuery(selector).find('[data-duration]').length) {
                     seconds = jQuery(selector).find('[data-duration]').data('duration');
                     UpdateTimer(selector, seconds);
+                    customized = " (updated from banner)"
                 }
-                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"». Next in "+seconds+"s");
+                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"». Next in "+seconds+"s" + customized);
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
