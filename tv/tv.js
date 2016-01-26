@@ -121,7 +121,6 @@ function UpdateBlockUpdateTimer(selector, seconds) {
     UpdateTimer(selector, seconds);
 }
 
-
 function UpdateTimer(selector, seconds) {
     // Очистить (если есть) предыдущий таймер
     if (typeof (timers[selector]) != 'undefined') {
