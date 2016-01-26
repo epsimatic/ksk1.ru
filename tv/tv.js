@@ -150,8 +150,7 @@ function UpdateTimer(selector, seconds) {
         UpdateBlockUpdateTimer(selector, seconds);
     }, seconds * 1000);
 
-    console.log ("New timeout for «"+selector+"»: "+seconds+"s");
-
+    //console.log ("New timeout for «"+selector+"»: "+seconds+"s");
 }
 
 //LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
