@@ -102,7 +102,7 @@ function GetNowPlaying(selector) {
     });
 }
 
-function UpdateBlockUpdateTimer(selector, seconds) {
+function UpdateBlock(selector, seconds) {
     // Взять стандартный таймаут, если не передан параметром
     if (typeof (seconds) == 'undefined'){
         seconds = default_timeouts[selector];
@@ -146,7 +146,7 @@ function UpdateTimer(selector, seconds) {
     }
     // Задать новый таймер и сохранить его
     timers[selector] = setTimeout(function () {
-        UpdateBlockUpdateTimer(selector);
+        UpdateBlock(selector);
     }, seconds * 1000);
 
     //console.log ("New timeout for «"+selector+"»: "+seconds+"s");
@@ -166,7 +166,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
 // Инициализировать все блоки
     for (var block in urls_or_functions) {
-        UpdateBlockUpdateTimer(block);
+        UpdateBlock(block);
     }
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
