@@ -119,7 +119,7 @@ function UpdateBlockUpdateTimer(selector, seconds) {
         jQuery.get( url_or_function )
             .done(function( content ) {
                 jQuery(selector).html( content );
-                if (jQuery(content).find(*[data-duration]).length) {
+                if (jQuery(content).find('*[data-duration]').length) {
                     seconds = jQuery(content).find( * [data - duration]).data('duration');
                     UpdateTimer(selector, seconds);
                 }
