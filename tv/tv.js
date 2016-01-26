@@ -120,7 +120,7 @@ function UpdateBlockUpdateTimer(selector, seconds) {
             .done(function( content ) {
                 jQuery(selector).html( content );
                 if (jQuery(content).find('*[data-duration]').length) {
-                    seconds = jQuery(content).find( * [data - duration]).data('duration');
+                    seconds = jQuery(content).find('*[data-duration]').data('duration');
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"». Next in "+seconds+"s");
