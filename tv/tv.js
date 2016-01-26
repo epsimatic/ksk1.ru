@@ -146,7 +146,7 @@ function UpdateTimer(selector, seconds) {
     }
     // Задать новый таймер и сохранить его
     timers[selector] = setTimeout(function () {
-        UpdateBlockUpdateTimer(selector, seconds);
+        UpdateBlockUpdateTimer(selector);
     }, seconds * 1000);
 
     //console.log ("New timeout for «"+selector+"»: "+seconds+"s");
