@@ -8,7 +8,8 @@ const default_timeouts = { // Периоды обновления панелей
     "#clock, #date": 10,
     ".track-data-text": 15,
     ".board-weather": 20 * 60,
-    ticker: 15 * 60
+    ticker: 15 * 60,
+    retry_on_error: 5
 };
 
 var timers = {};
@@ -114,7 +115,23 @@ function UpdateBlockUpdateTimer(selector, seconds) {
         url_or_function(selector);
     } else if (typeof (url_or_function) == 'string') {
         // ... или загрузить url
-        jQuery(selector).load(url_or_function);
+        //jQuery(selector).load(url_or_function);
+        jQuery.get( url_or_function )
+            .done(function( content ) {
+                jQuery(selector).html( content );
+                if (jQuery(content).find(*[data-duration]).length) {
+                    seconds = jQuery(content).find( * [data - duration]).data('duration');
+                    UpdateTimer(selector, seconds);
+                }
+                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"». Next in "+seconds+"s");
+            })
+            .fail(function( error ) {
+                seconds = default_timeouts['retry_on_error'];
+                UpdateTimer(selector, seconds);
+                console.warn ("Zone «"+selector+"» failed loading «"+url_or_function+"». Retry in "+seconds+"s");
+                console.warn (error);
+            });
+            //.always(function() {});
     } else {
         console.log ("Unknown url_or_function for '"+selector+": "+url_or_function);
     }
