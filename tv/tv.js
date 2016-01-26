@@ -130,7 +130,6 @@ function UpdateBlockUpdateTimer(selector, seconds) {
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
                 console.warn ("Zone «"+selector+"» failed loading «"+url_or_function+"». Retry in "+seconds+"s");
-                console.warn (error);
                 UpdateTimer(selector, seconds);
             });
             //.always(function() {});
@@ -165,11 +164,10 @@ const urls_or_functions = {
 
 LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
-    UpdateBlockUpdateTimer(".board-main");
-    UpdateBlockUpdateTimer(".board-yummie");
-    UpdateBlockUpdateTimer(".board-weather");
-    UpdateBlockUpdateTimer(".track-data-text");
-    UpdateBlockUpdateTimer("#clock, #date");
+// Инициализировать все блоки
+    for (var block in urls_or_functions) {
+        UpdateBlockUpdateTimer(block);
+    }
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
