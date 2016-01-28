@@ -1680,6 +1680,9 @@ iframe.fullstory__video { max-width: 100%; }
 
 .panel-notice a.list-group-item:hover,
 .panel-notice a.list-group-item:focus {background-color: #f6f6f6;}
+
+.panel-notice article.ob .btn-link { white-space: inherit; text-align: left; }
+
 body.agenda .page-content{display: none;}  /*общий рейтинг в списке событий не нужен*/
 /* </editor-fold> */
 
