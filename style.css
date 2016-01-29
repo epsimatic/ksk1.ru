@@ -1681,7 +1681,7 @@ iframe.fullstory__video { max-width: 100%; }
 .panel-notice a.list-group-item:hover,
 .panel-notice a.list-group-item:focus {background-color: #f6f6f6;}
 
-.panel-notice article.ob .btn-link { white-space: inherit; text-align: left; }
+.panel-notice article.ob .site-link { white-space: inherit; text-align: left; margin-top: 12px; text-align: center; padding: 0; display: block; }
 
 body.agenda .page-content{display: none;}  /*общий рейтинг в списке событий не нужен*/
 /* </editor-fold> */
@@ -2630,6 +2630,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 .ob-large-thumbs article.ob { -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; background-color: #eceff1; padding: 0; border-bottom: 1px solid #cfd8dc; }
 
+.ob-list article.ob .site-link { border-bottom: 1px solid; padding: 0; margin-top: 12px; }
+
 .panel-notice article.ob:hover,
 .panel-notice article.ob:focus,
 .ob-list article.ob:hover,
@@ -2694,7 +2696,7 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-notice article.ob .ob-text-group strong { color: #da4200; font-weight: 600; }
 
-.panel-notice article.ob .ob-meta { float: right; color: #416484; font-size: .9em; }
+.panel-notice article.ob .ob-meta { color: #416484; font-size: .9em; text-align: right; }
 
 .panel-ob::after { clear: both; content: " "; }
 
