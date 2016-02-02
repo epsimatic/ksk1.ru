@@ -2483,9 +2483,6 @@ a.link-neutral:focus {color: #3b437d;}
 
 .ob-publish-date.has-icon::before { content: ""; padding-right: 2px; }
 
-.subcat__422::after,
-.subcat__461::after { content: "бесплатно"; padding: 2px 5px 3px; border-radius: 3px; font-size: 11px; background-color: #ef7131; color: #ffffff; }
-
 /* <editor-fold desc="Стили user-bar и панели «Мои объявления»"> */
 
 /*Панель «Мои объявления»*/
@@ -2880,6 +2877,11 @@ a.super:focus {background-color: #fbea2d;}
 .ob-paid-options .ob-media-options .ob-media-option { padding: 10px; border-width: 0 1px; border-style: solid; border-color: #ffffff; background-color: #1de9b6; font-size: 14px; font-weight: 600; text-transform: uppercase; color: rgba(32, 23, 44, 0.7); }
 
 .ob-paid-options .ob-media-options .ob-media-option:hover { background-color: #3affce; }
+
+.ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet { background-color: #f44336; color: #fff; }
+
+.ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet:hover, 
+.ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet:focus { background-color: #ef5350; }
 
 .ob-paid-options .ob-media-options .ob-media-option .label-default { background-color: #fff; color: #666; }
 
