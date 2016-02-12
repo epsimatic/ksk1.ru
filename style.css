@@ -2630,6 +2630,8 @@ a.link-neutral:focus {color: #3b437d;}
 
 article.ob .site-link { border-bottom: 1px solid; padding: 0; margin-top: 12px; }
 
+article.ob .social-item { opacity: .5; position: relative; top: 10px; padding: 0 20px; }
+
 .panel-notice article.ob:hover,
 .panel-notice article.ob:focus,
 .ob-list article.ob:hover,
