@@ -4608,11 +4608,11 @@ footer.info .our-projects .arrow::after { border-width: 10px 10px 0; border-colo
 
 
 
-footer.info .social { margin-bottom: 20px; display: none; }
+footer.info .social, footer .phone-number { margin-bottom: 20px; display: none; }
 
-footer.info .social.site-news { display: block; }
+footer.info .social.site-news, footer.wide-footer .phone-number.site-news  { display: block; }
 
-body.site-ob footer.info .social.site-news,
+body.site-ob footer.info .social.site-news, body.site-ob footer.wide-footer .phone-number.site-news,
 body.page.agenda footer.info .social.site-news,
 body.page.cat footer.info .social.site-news,
 body.site-radio footer.info .social.site-news,
@@ -4624,7 +4624,7 @@ body.single-event footer.info .social.site-news,
 body.single-company footer.info .social.site-news,
 body.tax-company_cat footer.info .social.site-news { display: none; }
 
-body.site-ob footer.info .social.site-ob,
+body.site-ob footer.info .social.site-ob,body.site-ob footer.wide-footer .phone-number.site-ob,
 body.page.agenda footer.info .social.site-agenda,
 body.single-event footer.info .social.site-agenda,
 body.page.cat footer.info .social.site-cat,
