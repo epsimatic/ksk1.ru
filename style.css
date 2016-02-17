@@ -198,7 +198,7 @@ object { display: none; }
 
 .navbar .news-link { font-size: 25px !important; font-weight: 700 !important; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
 
-body.news .navbar .news-link { background-color: #00e676; }
+body.news .navbar .news-link { background-color: #00e676; letter-spacing: -.05em; }
 
 body.news .nav > li:focus > a.news-link,
 body.news .nav > li:hover > a.news-link,
@@ -1954,7 +1954,7 @@ a.link-neutral:focus {color: #3b437d;}
 
 .single-post .main-content article.post-news p + aside + p,
 .single-post .main-content article.post-news p + div + p,
-.single-post .main-content article.post-news p + p { margin: 0; text-indent: 1em; }
+.single-post .main-content article.post-news p + p { margin: 0; text-indent: 1.618em; }
 
 .single-post .main-content article.post-news p.lead  { font-size: 18px; line-height: 24px; color: #333; margin-bottom: 24px; margin-top: 24px; text-indent: 0; }
 
@@ -2031,7 +2031,9 @@ a.link-neutral:focus {color: #3b437d;}
     border: none;
 }
 
-.single-post .main-content article.post-news blockquote.letter { margin-right: -1em; margin-left: -1em; padding: 0.1em 24px; background-color: #f7f7f7; border: none; color: #333; }
+.single-post .main-content article.post-news blockquote > p:first-child { margin-bottom: 0; }
+
+.single-post .main-content article.post-news blockquote.letter { padding: 1px 24px; border: 3px solid #9efed0; color: #333; font-size: 16px; }
 
 .single-post .main-content article.post-news blockquote footer { font-size: 16px; line-height: 24px; margin: 0; padding: 12px 0; text-align: right; background: transparent; }
 
@@ -2047,9 +2049,6 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content article.post-news blockquote.question:first-of-type { margin-top: 0; }
 
 .single-post .main-content article.post-news blockquote.answer { color: #555; }
-
-.single-post .main-content article.post-news blockquote.question > p:first-child,
-.single-post .main-content article.post-news blockquote.answer > p:first-child { margin-bottom: 0; }
 
 .single-post .main-content article.post-news blockquote.answer > p:first-child { margin-top: 12px; }
 
@@ -2255,7 +2254,7 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 27px; }
 
     .single-post .main-content article.post-news blockquote { font-size: 21px; margin: 27px 0 27px -1em; line-height: 27px; }
-    .single-post .main-content article.post-news blockquote.letter { padding: 1px 27px; margin-right: 0; margin-left: 0; }
+    .single-post .main-content article.post-news blockquote.letter { padding: 1px 27px; margin-right: 0; margin-left: 0; font-size: 18px; }
     .single-post .main-content article.post-news blockquote footer { line-height: 27px; padding: 13.5px -0px; }
 
     .single-post .main-content article.post-news blockquote.pullout { font-size: 18px; margin: 24px 0 24px -1em; }
@@ -2289,6 +2288,8 @@ a.link-neutral:focus {color: #3b437d;}
     .single-post .main-content article.post-news h1 { margin-bottom: 27px; }
 
     .single-post .main-content article.post-news h1 + .meta-author { margin-top: -27px; margin-bottom: 27px; }
+
+    .single-post .main-content article.post-news blockquote.letter { padding: 28px 54px; }
 
     .single-post .main-content article.post-news aside.inset { max-width: 300px; }
 
