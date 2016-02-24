@@ -2175,6 +2175,8 @@ article.post-radio .post-info .post-meta,
 
 article.post-radio .mejs-audio { margin: 48px 0; }
 
+article.post-radio .mejs-audio a { border-bottom: none; }
+
 .single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
 
 .single-post .main-content .comment-list + .pagination { margin-bottom: 54px; margin-top: -27px; }
