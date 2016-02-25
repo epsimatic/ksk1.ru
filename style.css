@@ -2190,6 +2190,8 @@ article.post-news .mejs-audio a { border-bottom: none !important; }
 .single-post .main-content .pagination a.page-numbers:hover,
 .single-post .main-content .pagination a.page-numbers:focus { text-decoration: none; background-color: #f0f0f0; }
 
+article.post-paper figure.thumb-wrap { padding-right: 30px; margin: 10px; }
+
 
 /* Панель тела новости*/
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
