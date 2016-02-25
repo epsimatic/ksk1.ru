@@ -2174,11 +2174,11 @@ article.post-radio .table,
 article.post-radio .post-info .post-meta,
 .single-post .main-content article.post-news .post-info .post-meta { margin: 24px 0; text-align: center; }
 
-article.post-radio .mejs-audio, 
-article.post-news .mejs-audio { margin: 48px 0; }
+article.post-radio .mejs-audio { margin: 48px 0; } 
+article.post-news .mejs-audio { margin: 48px 0 24px; }
 
 article.post-radio .mejs-audio a,
-article.post-news .mejs-audio a { border-bottom: none; }
+article.post-news .mejs-audio a { border-bottom: none !important; }
 
 .single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
 
@@ -2433,8 +2433,8 @@ article.post-news .mejs-audio a { border-bottom: none; }
     article.post-radio .post-info .post-meta,
     .single-post .main-content article.post-news .post-info .post-meta { margin: 27px 0; }
 
-    article.post-radio .mejs-audio,
-    article.post-news .mejs-audio { margin: 54px 0; }
+    article.post-radio .mejs-audio { margin: 54px 0; }
+    article.post-news .mejs-audio { margin: 54px 0 27px; }
 
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
