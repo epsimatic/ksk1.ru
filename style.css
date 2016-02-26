@@ -1910,6 +1910,7 @@ article.post-radio .wp-caption-text,
 .single-post .main-content article.post-news .share-title,
 .single-post .main-content article.post-news .wp-caption-text { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
+article.post-paper h1,
 article.post-radio h1,
 article.post-radio h2,
 article.post-radio h3,
@@ -1919,6 +1920,7 @@ article.post-radio h4,
 .single-post .main-content article.post-news h3,
 .single-post .main-content article.post-news h4 { font-weight: 700; line-height: 24px; }
 
+article.post-paper h1,
 article.post-radio h1,
 .single-post .main-content article.post-news h1 { font-size: 21px; color: #263238; margin-bottom: 24px; margin-top: 0; }
 
@@ -2334,12 +2336,14 @@ article.post-paper figure.thumb-wrap { padding-right: 30px; margin: 10px; }
     .single-post .main-content article.post-news .post-meta,
     .single-post .main-content article.post-news .meta { line-height: 27px; }
 
+    article.post-paper h1,
     article.post-radio h1,
     .single-post .main-content article.post-news h1 { font-size: 24px; margin-bottom: 27px; }
 
     article.post-radio h2,
     .single-post .main-content article.post-news h2 { font-size: 22px; }
 
+    article.post-paper h1,
     article.post-radio h1,
     article.post-radio h2,
     article.post-radio h3,
@@ -2490,6 +2494,7 @@ article.post-paper figure.thumb-wrap { padding-right: 30px; margin: 10px; }
     .single-post .main-content article.post-news .post-info .post-meta { margin: 0; text-align: left; }
 }
 @media (min-width: 1200px) {
+    article.post-paper h1,
     article.post-radio h1,
     .single-post .main-content article.post-news h1 { font-size: 27px; }
 
