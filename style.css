@@ -2501,7 +2501,7 @@ article.post-paper figure.thumb-wrap { width: 100%; }
 
     article.post-paper { padding: 0 20px; }
 
-    article.post-paper figure.thumb-wrap { padding-right: 30px; margin: 10px; }
+    article.post-paper figure.thumb-wrap { width: auto; padding-right: 30px; margin: 10px; }
 }
 @media (min-width: 1200px) {
     article.post-paper { padding: 0 30px; }
