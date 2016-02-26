@@ -2194,7 +2194,7 @@ article.post-news .mejs-audio a { border-bottom: none !important; }
 .single-post .main-content .pagination a.page-numbers:hover,
 .single-post .main-content .pagination a.page-numbers:focus { text-decoration: none; background-color: #f0f0f0; }
 
-article.post-paper { padding: 0 10px; }
+article.post-paper { padding: 0 10px; margin-bottom: 48px; }
 
 article.post-paper figure.thumb-wrap { width: 100%; }
 
@@ -2345,6 +2345,8 @@ article.post-paper em { background-color: #efefef; border-radius: 3px; font-size
     article.post-radio .post-meta,
     .single-post .main-content article.post-news .post-meta,
     .single-post .main-content article.post-news .meta { line-height: 27px; }
+
+    article.post-paper { margin-bottom: 54px; }
 
     article.post-paper h1,
     article.post-radio h1,
