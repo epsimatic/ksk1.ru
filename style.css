@@ -2204,6 +2204,8 @@ article.post-paper li { line-height: 1.618; margin-bottom: 11.326px; list-style:
 
 article.post-paper em { background-color: #efefef; border-radius: 3px; font-size: 12px; margin-left: 5px; padding: 2px 7px; }
 
+article.post-paper .btn-dl { margin-top: 22.652px; }
+
 
 /* Панель тела новости*/
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
