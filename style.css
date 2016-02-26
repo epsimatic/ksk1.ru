@@ -1924,6 +1924,8 @@ article.post-paper h1,
 article.post-radio h1,
 .single-post .main-content article.post-news h1 { font-size: 21px; color: #263238; margin-bottom: 24px; margin-top: 0; }
 
+article.post-paper h1 { margin-top: 24px; }
+
 .single-post .main-content article.post-news h1 + .meta-author { margin-top: -24px; margin-bottom: 24px; display: block; }
 
 .post-info .post-meta span { display: inline; }
@@ -2339,6 +2341,8 @@ article.post-paper figure.thumb-wrap { padding-right: 30px; margin: 10px; }
     article.post-paper h1,
     article.post-radio h1,
     .single-post .main-content article.post-news h1 { font-size: 24px; margin-bottom: 27px; }
+
+    article.post-paper h1 { margin-top: 27px; }
 
     article.post-radio h2,
     .single-post .main-content article.post-news h2 { font-size: 22px; }
