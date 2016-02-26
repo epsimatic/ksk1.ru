@@ -2200,7 +2200,7 @@ article.post-paper figure.thumb-wrap { width: 100%; }
 
 article.post-paper li:before { content: ""; height: 7px; width: 6px; display: inline-block; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgNyI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzAwOTFFQTt9PC9zdHlsZT48cGF0aCBkPSJNMCA3di03Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTYgMy41bC02IDMuNXYtN2w2IDMuNS02IDMuNXYtN3oiLz48L3N2Zz4='); position: relative; top: -1px; margin-right: 10px; margin-left: -17px; }
 
-article.post-paper li { line-height: 1.618; margin-bottom: 11.326px; }
+article.post-paper li { line-height: 1.618; margin-bottom: 11.326px; list-style: none; }
 
 article.post-paper em { background-color: #efefef; border-radius: 3px; font-size: 12px; margin-left: 5px; padding: 2px 7px; }
 
