@@ -206,7 +206,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
                 console.error(event.jPlayer.error);
                 setTimeout(function () {
                     radio_player.jPlayer("play");
-                }, 2000);
+                }, default_timeouts['retry_on_error'] * 1000);
             },
             swfPath: "js",
             supplied: "mp3, m4a"
