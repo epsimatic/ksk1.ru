@@ -3824,6 +3824,8 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 #tp-subscribe + .tp-cat-link:hover,
 #tp-subscribe + .tp-cat-link:focus { opacity: .8; }
 
+.panel-radio-news > .panel-heading { background-color: #2979ff; }
+.panel-radio-news > .list-group { padding-bottom: 0; }
 
 .e96-page { font-family: Helvetica,FreeSans,'Liberation Sans','Nimbus Sans L',Arial,sans-serif; font-size: 13px; color: #222; }
 
