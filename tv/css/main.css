@@ -105,9 +105,11 @@ ul.newsticker li { float: left; margin: 0; padding-right: 3.236rem; font-size: 1
 .webticker-placeholder { padding-left: 3em; opacity: 0.3; }
 
 main,
-.info-bar { display: flex; overflow-x: hidden; }
+.info-bar { display: flex; }
 
-main { height: calc(100% - 6rem); }
+main { height: calc(100% - 4.045rem); }
+
+.info-bar { height: 3.236rem; padding-top: .809rem; }
 
 /*.sidebar { width: 38.19%; padding-left: .5rem; }*/
 
@@ -115,18 +117,20 @@ main { height: calc(100% - 6rem); }
 
 .board * { width: 100%; }
 
-.board-main { height: calc(100% - 2.427rem); overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: center; }
+.board-main { height: 100%; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: center; }
 
 .board-main-ob { justify-content: flex-start; }
 
-.board-time-and-logo { display: flex; }
+.board-time-and-logo { display: flex; width: 35%; }
 
-.board-time-and-logo > div:not(.logo-wrap) { text-align: right; display: flex; flex-direction: column; margin-right: .5rem; }
+.board-time-and-logo > div:not(.logo-wrap) { text-align: right; display: flex; flex-direction: column; margin-right: .5rem; width: 50%; }
 
-.logo { width: 8rem; }
+.logo { height: 1.618rem; }
 time { padding-right: 1rem; text-align: right; }
 .date { font-size: .809rem; line-height: 1.0786rem; height: 1.0786rem; }
-.current-time { font-size: 1.618rem; font-weight: 700; text-align: right; line-height: 2.1573rem; }
+.current-time { font-size: 1.2rem; font-weight: 700; line-height: 1.618rem; }
+
+.logo-wrap { text-align: center; width: 50%; }
 
 .fa { display: inline !important; }
 
@@ -138,7 +142,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-main .message-wrap p { margin: .809rem 0; }
 
-.board-weather { height: 3.236rem; text-rendering: optimizeSpeed; }
+.board-weather { text-rendering: optimizeSpeed; }
 
 .board-on-air { height: 1.618rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .board-on-air.jp-loading .jp-pause { display: none; } /* Показывать крестик, пока радио не заиграет */
@@ -148,15 +152,17 @@ time { padding-right: 1rem; text-align: right; }
 
 .weather-text { display: none; }
 
-.weather-block { display: flex; align-items: center; height: 3.236rem; }
+.weather-block { display: flex; align-items: center; height: 2.1574rem; }
 
-.weather-icon { width: 2.427rem; height: 2.427rem; padding-left: 1rem; }
+.weather-icon { width: 1.618rem; height: 1.618rem; }
 
 .weather-temp:after { content: "°" }
 
 .weather-temp { order: -1; font-size: 1.618rem; font-weight: 700; text-align: right; }
 
 .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; }
+
+.info-bar .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; }
 
 /*Стили погоды на ближайшие дни на основной доске*/
 .board-main .forecast { display: flex; height: 90%; align-content: stretch; }
