@@ -144,7 +144,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .board-weather { text-rendering: optimizeSpeed; }
 
-.board-on-air { height: 1.618rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.board-on-air { line-height: 3.236rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .board-on-air.jp-loading .jp-pause { display: none; } /* Показывать крестик, пока радио не заиграет */
 
 .jp-type-single { display: none; } /* Скрыл часть плейера */
@@ -162,7 +162,7 @@ time { padding-right: 1rem; text-align: right; }
 
 .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; }
 
-.info-bar .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; }
+.info-bar .weather-label { line-height: 1rem; font-size: .809rem; text-align: center; display: none; }
 
 /*Стили погоды на ближайшие дни на основной доске*/
 .board-main .forecast { display: flex; height: 90%; align-content: stretch; }
