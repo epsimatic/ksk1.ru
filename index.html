@@ -14,6 +14,9 @@
     <body>
         <div class="container">
             <main>
+                <div class="board board-main"></div>
+            </main>
+            <div class="info-bar">
                 <div class="board board-on-air jp-loading">
                     <div class="track-data">
                         <div class="jp-jplayer" id="jquery_jplayer_1"></div>
@@ -30,12 +33,10 @@
                             </div>
                             <strong>Радио 103,3 FM: </strong>
                         </div>
-                        <span class="track-data-text"></span></div>
+                        <span class="track-data-text"></span>
+                    </div>
                 </div>
-                <div class="board board-main">
-                </div>
-            </main>
-            <div class="sidebar">
+                <div class="board board-weather"></div>
                 <div class="board board-time-and-logo">
                     <div>
                         <time class="date" id="date"></time>
@@ -43,22 +44,6 @@
                     </div>
                     <div class="logo-wrap"><img class="logo" src="/tv/logo.svg"></div>
                 </div>
-                <div class="board board-weather">
-                </div>
-                <div class="board board-yummie">
-                </div>
-                <div class="board board-chat">
-                    <!--<iframe class='board-chat-frame' src='http://news.kskmedia.ru/screen-chat/'></iframe>-->
-                </div>
-            </div>
-        </div>
-        <div class="tickercontainer">
-            <div class="mask">
-                <ul id="webticker" class="newsticker">
-                    <li class="webticker-placeholder">Добро пожаловать на Красноуфимск ТВ!</li>
-                </ul>
-                <span class="tickeroverlay-left">&nbsp;</span>
-                <span class="tickeroverlay-right">&nbsp;</span>
             </div>
         </div>
     </body>

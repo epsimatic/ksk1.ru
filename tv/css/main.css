@@ -97,7 +97,7 @@ textarea {
 
 html, body { height: 100%; width: 100%; font-size: 17px; line-height: 1.618rem;  background-color: #fff; display: flex; flex-direction: column; -moz-image-rendering: optimizeSpeed; shape-rendering: optimizeSpeed; }
 
-.container { display: flex; height: calc(100% - 4.045rem); }
+.container { height: calc(100% - 1.618rem); padding: 0.809rem 1rem; }
 
 .tickercontainer { background-color: #f0f0f0; height: 3.236rem; line-height: 3.236rem; margin-bottom: 0.809rem; overflow: hidden; white-space: nowrap; /* width: calc(100% - 1rem); */ text-rendering: optimizeSpeed; }
 ul.newsticker { position: relative; list-style-type: none; padding: 0; margin: 0; transition: left 0s linear; }
@@ -105,11 +105,11 @@ ul.newsticker li { float: left; margin: 0; padding-right: 3.236rem; font-size: 1
 .webticker-placeholder { padding-left: 3em; opacity: 0.3; }
 
 main,
-.sidebar { display: flex; flex-direction: column; padding: .809rem 1rem; justify-content: space-between; overflow-x: hidden; }
+.info-bar { display: flex; overflow-x: hidden; }
 
-main { width: 61.81%; padding-right: .5rem; }
+main { height: calc(100% - 6rem); }
 
-.sidebar { width: 38.19%; padding-left: .5rem; }
+/*.sidebar { width: 38.19%; padding-left: .5rem; }*/
 
 .board { width: 100%; }
 
