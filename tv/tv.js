@@ -126,10 +126,7 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
-               // var iframe = document.getElementsByTagName('iframe')[0];
-              //  if (iframe){
-             //   console.log ("frame="+iframe); window.video_player.stopVideo();
-             //   }
+
 
             })
             .fail(function( error ) {
@@ -202,8 +199,6 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
                 if (typeof(video_player) != 'undefined') {
                     video_player.stopVideo();
                 }
-              //  var iframe = document.getElementsByTagName('iframe')[0];
-              //  if(iframe) radio_player.jPlayer("pause");
             },
             error: function (event) {
                 //jQuery(".play-radio i.fa-play").removeClass('hidden');
