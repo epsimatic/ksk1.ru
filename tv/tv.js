@@ -203,7 +203,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
                     video_player.stopVideo();
                 }
                 var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) radio_player.jPlayer("stop");
+                if(iframe) radio_player.jPlayer("pause");
             },
             error: function (event) {
                 //jQuery(".play-radio i.fa-play").removeClass('hidden');
