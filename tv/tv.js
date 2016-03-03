@@ -126,10 +126,10 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
-                console.log ("content "+content);
                 var iframe = document.getElementsByTagName('iframe')[0];
-                console.log ("frame="+iframe);
-
+                if (iframe){
+                console.log ("frame="+iframe); video_player.stopVideo();
+                }
 
             })
             .fail(function( error ) {
