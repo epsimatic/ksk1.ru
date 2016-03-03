@@ -128,7 +128,7 @@ function UpdateBlock(selector, seconds) {
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 var iframe = document.getElementsByTagName('iframe')[0];
                 if (iframe){
-                console.log ("frame="+iframe); video_player.stopVideo();
+                console.log ("frame="+iframe); window.video_player.stopVideo();
                 }
 
             })
