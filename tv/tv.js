@@ -202,8 +202,8 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
                 if (typeof(video_player) != 'undefined') {
                     video_player.stopVideo();
                 }
-                var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) radio_player.jPlayer("pause");
+              //  var iframe = document.getElementsByTagName('iframe')[0];
+              //  if(iframe) radio_player.jPlayer("pause");
             },
             error: function (event) {
                 //jQuery(".play-radio i.fa-play").removeClass('hidden');
