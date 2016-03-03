@@ -183,7 +183,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             hoverpause: false
         });
     });
-     var radio_player;
+
 // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
         radio_player = jQuery("#jquery_jplayer_1");
