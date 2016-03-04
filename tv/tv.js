@@ -3,7 +3,7 @@
  */
 
 const default_timeouts = { // Периоды обновления панелей в секундах
-    ".board-main": 5,
+    ".board-main": 2,
     ".board-yummie": 42,
     "#clock, #date": 10,
     ".track-data-text": 15,
