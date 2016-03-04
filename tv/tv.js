@@ -104,7 +104,47 @@ function GetNowPlaying(selector) {
     });
 }
 
+function UpdateBlock(selector, seconds) {
+    // Взять стандартный таймаут, если не передан параметром
+    if (typeof (seconds) == 'undefined'){
+        seconds = default_timeouts[selector];
+    }
 
+    var url_or_function = urls_or_functions[selector];
+
+    if (typeof (url_or_function) == 'function') {
+        // Вызвать функцию ...
+        url_or_function(selector);
+    } else if (typeof (url_or_function) == 'string') {
+        // ... или загрузить url
+        //jQuery(selector).load(url_or_function);
+        jQuery.get( url_or_function )
+            .done(function( content ) {
+                jQuery(selector).html( content );
+                var customized = "";
+                if (jQuery(selector).find('[data-duration]').length) {
+                    seconds = jQuery(selector).find('[data-duration]').data('duration');
+                    customized = " (new timeout "+seconds+"s from banner)";
+                    UpdateTimer(selector, seconds);
+                }
+                console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
+                var iframe = document.getElementsByTagName('iframe')[0];
+                if(iframe) {console.log("Видео запущено");
+                             window.radio_player.jPlayer("pause");
+                 //   console.log(window.);
+                } else console.log("Видео НЕ запущено");
+            })
+            .fail(function( error ) {
+                seconds = default_timeouts['retry_on_error'];
+                console.warn ("Zone «"+selector+"» failed loading «"+url_or_function+"». Retry in "+seconds+"s");
+                UpdateTimer(selector, seconds);
+            });
+            //.always(function() {});
+    } else {
+        console.log ("Unknown url_or_function for '"+selector+": "+url_or_function);
+    }
+    UpdateTimer(selector, seconds);
+}
 
 function UpdateTimer(selector, seconds) {
     // Очистить (если есть) предыдущий таймер
@@ -181,47 +221,5 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             supplied: "mp3, m4a"
         });
     });
-
-    function UpdateBlock(selector, seconds) {
-        // Взять стандартный таймаут, если не передан параметром
-        if (typeof (seconds) == 'undefined'){
-            seconds = default_timeouts[selector];
-        }
-
-        var url_or_function = urls_or_functions[selector];
-
-        if (typeof (url_or_function) == 'function') {
-            // Вызвать функцию ...
-            url_or_function(selector);
-        } else if (typeof (url_or_function) == 'string') {
-            // ... или загрузить url
-            //jQuery(selector).load(url_or_function);
-            jQuery.get( url_or_function )
-                .done(function( content ) {
-                    jQuery(selector).html( content );
-                    var customized = "";
-                    if (jQuery(selector).find('[data-duration]').length) {
-                        seconds = jQuery(selector).find('[data-duration]').data('duration');
-                        customized = " (new timeout "+seconds+"s from banner)";
-                        UpdateTimer(selector, seconds);
-                    }
-                    console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
-                    var iframe = document.getElementsByTagName('iframe')[0];
-                    if(iframe) {console.log("Видео запущено");
-                        window.radio_player.jPlayer("pause");
-                        console.log(window.);
-                    } else console.log("Видео НЕ запущено");
-                })
-                .fail(function( error ) {
-                    seconds = default_timeouts['retry_on_error'];
-                    console.warn ("Zone «"+selector+"» failed loading «"+url_or_function+"». Retry in "+seconds+"s");
-                    UpdateTimer(selector, seconds);
-                });
-            //.always(function() {});
-        } else {
-            console.log ("Unknown url_or_function for '"+selector+": "+url_or_function);
-        }
-        UpdateTimer(selector, seconds);
-    }
 
 });
