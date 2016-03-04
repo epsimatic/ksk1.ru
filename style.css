@@ -2188,6 +2188,8 @@ article.post-news .mejs-audio a { border-bottom: none !important; }
 
 article.post-radio .post-info { margin-top: 24px; }
 
+article.post-radio + .pagination { display: block; padding: 0 16px; font-size: 16px; line-height: 24px; }
+
 .single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
 
 .single-post .main-content .comment-list + .pagination { margin-bottom: 54px; margin-top: -27px; }
@@ -2465,6 +2467,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
     article.post-radio .post-info { margin-top: 27px; }
 
+    article.post-radio + .pagination { padding: 0 18px; font-size: 18px; line-height: 27px; }
+
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
 }
@@ -2517,6 +2521,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
     article.post-radio .post-info .post-meta,
     .single-post .main-content article.post-news .post-info .post-meta { margin: 0; text-align: left; }
+
+    article.post-radio + .pagination { padding: 0 54px; }
 
     article.post-paper { padding: 0 20px; }
 
