@@ -127,7 +127,7 @@ function UpdateBlock(selector, seconds) {
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) window.radio_player.jPlayer("pause");
+                if(iframe) console.log("Видео запущено"); else console.log("Видео НЕ запущено");
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
