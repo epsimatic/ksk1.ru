@@ -13,8 +13,6 @@ const default_timeouts = { // Периоды обновления панелей
 };
 
 var timers = {};
-var radio_player = "";
-var video_player = "";
 
 // <editor-fold desc="LoadJS & LoadCSS">
 window.libsAvail = [];
@@ -129,7 +127,7 @@ function UpdateBlock(selector, seconds) {
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) radio_player.jPlayer("pause");
+                if(iframe) window.radio_player.jPlayer("pause");
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
@@ -182,7 +180,8 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             hoverpause: false
         });
     });
-
+    var radio_player = "";
+    var video_player = "";
 // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
         radio_player = jQuery("#jquery_jplayer_1");
@@ -198,8 +197,8 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             play: function (/*event*/) {
                 //jQuery(".play-radio i.fa-play").addClass('hidden');
                 //jQuery(".play-radio i.fa-pause").removeClass('hidden');
-             //   var iframe = document.getElementsByTagName('iframe')[0];
-             //   if(iframe) radio_player.jPlayer("pause");
+                var iframe = document.getElementsByTagName('iframe')[0];
+                if(iframe) radio_player.jPlayer("pause");
             //    if (typeof(video_player) != 'undefined') {
             //        video_player.stopVideo();
              //   }
