@@ -126,6 +126,7 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
+                console.log("selector"+selector);
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
