@@ -13,6 +13,8 @@ const default_timeouts = { // Периоды обновления панелей
 };
 
 var timers = {};
+var radio_player = "";
+var video_player = "";
 
 // <editor-fold desc="LoadJS & LoadCSS">
 window.libsAvail = [];
@@ -180,8 +182,7 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             hoverpause: false
         });
     });
-    var radio_player = "";
-    var video_player = "";
+
 // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
         radio_player = jQuery("#jquery_jplayer_1");
