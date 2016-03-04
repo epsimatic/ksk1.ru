@@ -126,7 +126,8 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
-                console.log (window.radio_player);
+                var iframe = document.getElementsByTagName('iframe')[0];
+                if(iframe) window.radio_player.jPlayer("pause");
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
@@ -196,8 +197,8 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             play: function (/*event*/) {
                 //jQuery(".play-radio i.fa-play").addClass('hidden');
                 //jQuery(".play-radio i.fa-pause").removeClass('hidden');
-                var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) radio_player.jPlayer("pause");
+             //   var iframe = document.getElementsByTagName('iframe')[0];
+             //   if(iframe) radio_player.jPlayer("pause");
             //    if (typeof(video_player) != 'undefined') {
             //        video_player.stopVideo();
              //   }
