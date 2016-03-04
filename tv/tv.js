@@ -188,8 +188,8 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
     var radio_player = "";
 // Радио плеер
     LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
-        window.radio_player = jQuery("#jquery_jplayer_1");
-        window.radio_player.jPlayer({
+        radio_player = jQuery("#jquery_jplayer_1");
+        radio_player.jPlayer({
             ready: function () {
                 radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
