@@ -16,6 +16,60 @@ var timers = {};
 
 var rrrr=55555;
 var video_player = "";
+LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
+
+// Инициализировать все блоки
+    for (var block in urls_or_functions) {
+        UpdateBlock(block);
+    }
+
+// Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
+    LoadJS('/tv/news-ticker.js', function () {
+        jQuery('#webticker').webTicker({
+            speed: 100,
+            rssurl: 'http://krufimsk.ru/feed/',
+            rssfrequency: default_timeouts['ticker'] / 60,
+            hoverpause: false
+        });
+    });
+    var radio_player = "";
+// Радио плеер
+    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
+        radio_player = jQuery("#jquery_jplayer_1");
+        radio_player.jPlayer({
+            ready: function () {
+                radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
+                jQuery(this).jPlayer("setMedia", {
+                    m4a: "http://radio.ksk66.ru:8000/aac",
+                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                });
+                radio_player.jPlayer("play");
+            },
+            play: function (/*event*/) {
+                //jQuery(".play-radio i.fa-play").addClass('hidden');
+                //jQuery(".play-radio i.fa-pause").removeClass('hidden');
+                //    var iframe = document.getElementsByTagName('iframe')[0];
+                //    if(iframe) radio_player.jPlayer("pause");
+                //    if (typeof(video_player) != 'undefined') {
+                //        video_player.stopVideo();
+                //   }
+            },
+            error: function (event) {
+                //jQuery(".play-radio i.fa-play").removeClass('hidden');
+                //jQuery(".play-radio i.fa-pause").addClass('hidden');
+                console.warn("Ошибка: " + event.jPlayer.error.message + ". Пробую повторно через 2с");
+                console.warn(event.jPlayer.error);
+                console.error(event.jPlayer.error);
+                setTimeout(function () {
+                    radio_player.jPlayer("play");
+                }, default_timeouts['retry_on_error'] * 1000);
+            },
+            swfPath: "js",
+            supplied: "mp3, m4a"
+        });
+    });
+
+});
 // <editor-fold desc="LoadJS & LoadCSS">
 window.libsAvail = [];
 window.libsLoading = [];
@@ -169,57 +223,3 @@ const urls_or_functions = {
     "#clock, #date": updateClock
 };
 
-LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
-
-// Инициализировать все блоки
-    for (var block in urls_or_functions) {
-        UpdateBlock(block);
-    }
-
-// Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
-    LoadJS('/tv/news-ticker.js', function () {
-        jQuery('#webticker').webTicker({
-            speed: 100,
-            rssurl: 'http://krufimsk.ru/feed/',
-            rssfrequency: default_timeouts['ticker'] / 60,
-            hoverpause: false
-        });
-    });
-    var radio_player = "";
-// Радио плеер
-    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
-        radio_player = jQuery("#jquery_jplayer_1");
-        radio_player.jPlayer({
-            ready: function () {
-                radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
-                jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
-                });
-                radio_player.jPlayer("play");
-            },
-            play: function (/*event*/) {
-                //jQuery(".play-radio i.fa-play").addClass('hidden');
-                //jQuery(".play-radio i.fa-pause").removeClass('hidden');
-            //    var iframe = document.getElementsByTagName('iframe')[0];
-            //    if(iframe) radio_player.jPlayer("pause");
-            //    if (typeof(video_player) != 'undefined') {
-            //        video_player.stopVideo();
-             //   }
-            },
-            error: function (event) {
-                //jQuery(".play-radio i.fa-play").removeClass('hidden');
-                //jQuery(".play-radio i.fa-pause").addClass('hidden');
-                console.warn("Ошибка: " + event.jPlayer.error.message + ". Пробую повторно через 2с");
-                console.warn(event.jPlayer.error);
-                console.error(event.jPlayer.error);
-                setTimeout(function () {
-                    radio_player.jPlayer("play");
-                }, default_timeouts['retry_on_error'] * 1000);
-            },
-            swfPath: "js",
-            supplied: "mp3, m4a"
-        });
-    });
-
-});
