@@ -126,11 +126,6 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
-                var iframe = document.getElementsByTagName('iframe')[0];
-                if(iframe) {console.log("Видео запущено");
-                             radio_player.jPlayer("pause");
-                 //   console.log(window.);
-                } else console.log("Видео НЕ запущено");
             })
             .fail(function( error ) {
                 seconds = default_timeouts['retry_on_error'];
