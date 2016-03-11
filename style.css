@@ -1950,7 +1950,7 @@ article.post-custom .category-name,
 article.post-custom .category-name a,
 article.post-custom .category-name a:visited,
 .single-post .main-content article.post-news .category-name a,
-.single-post .main-content article.post-news .category-name a:visited { border-bottom: none; color: #666; padding: 0; margin-right: 1em; }
+.single-post .main-content article.post-news .category-name a:visited { border-bottom: none; color: #666; padding: 0; margin-right: 1em; margin-left: .5em; }
 
 article.post-custom .category-name a:hover,
 article.post-custom .category-name a:focus,
