@@ -1899,6 +1899,7 @@ article.post-custom h2,
 article.post-custom h3,
 article.post-custom h4,
 article.post-custom .post-meta,
+article.post-custom .meta,
 article.post-custom table,
 article.post-custom .share-title,
 article.post-custom .wp-caption-text,
@@ -1965,6 +1966,7 @@ article.post-custom .category-name .post-meta,
 .single-post .main-content article.post-news .category-name .post-meta { display: block; font-size: 12px; font-weight: 400; text-transform: none; }
 
 article.post-custom .post-meta,
+article.post-custom .meta,
 .single-post .main-content article.post-news .meta,
 .single-post .main-content article.post-news .post-meta { font-size: 14px; line-height: 24px; }
 
@@ -2504,6 +2506,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .single-post .main-content article.post-news .alignright + p { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 
     article.post-custom .post-meta,
+    article.post-custom .meta,
     .single-post .main-content article.post-news .meta,
     .single-post .main-content article.post-news .post-meta { line-height: 36px; }
 
@@ -6111,7 +6114,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .news-old .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
 
-.news-old .post-edit, .post-comment {border-right: 1px solid rgba(255,255,255,0.3); padding-right: 7px;}
+.news-old .post-edit, .post-comment { border-right: 1px solid rgba(255,255,255,0.3); padding-right: 7px;}
+
+.post .post-comment { border-right: none; }
 
 .news-old .post-comment-num {font-weight: 700;}
 
