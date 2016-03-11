@@ -1930,6 +1930,7 @@ article.post-custom h1,
 
 article.post-paper h1 { margin-top: 24px; }
 
+article.post-custom h1 + .meta-author,
 .single-post .main-content article.post-news h1 + .meta-author { margin-top: -24px; margin-bottom: 24px; display: block; }
 
 .post-info .post-meta span { display: inline; }
@@ -1975,6 +1976,7 @@ article.post-custom .meta,
 article.post-custom .post-meta .publish-date,
 .single-post .main-content article.post-news .post-meta .publish-date { margin-right: .5em; }
 
+article.post-custom .meta
 .single-post .main-content article.post-news .meta { display: inline-block; margin-right: 1em; }
 
 article.post-custom p,
