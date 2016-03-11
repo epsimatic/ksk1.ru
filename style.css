@@ -1422,6 +1422,7 @@ iframe.fullstory__video { max-width: 100%; }
 .column-center .panel-heading .btn-primary:focus { color: #fff !important; }
 
 .post-radio,
+.post-custom,
 .post-news .post-title,
 .post-news .post-description-text,
 .post-archive .post-title,
