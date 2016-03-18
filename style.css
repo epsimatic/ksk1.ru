@@ -196,9 +196,9 @@ object { display: none; }
 
 .navbar-collapse { margin-right: -40px; }
 
-.navbar .news-link { font-size: 25px !important; font-weight: 700 !important; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; }
+.navbar .news-link { font-size: 25px !important; font-weight: 700 !important; display: block; line-height: 0.8; margin: 0; padding: 0; text-transform: uppercase; letter-spacing: -.05em; }
 
-body.news .navbar .news-link { background-color: #00e676; letter-spacing: -.05em; }
+body.news .navbar .news-link { background-color: #00e676; }
 
 body.news .nav > li:focus > a.news-link,
 body.news .nav > li:hover > a.news-link,
@@ -519,7 +519,7 @@ a.media-heading:focus {text-decoration: none;}
 
 .nav .current-page-parent > a { position: relative; font-weight: 600; }
 
-.nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+.nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
 
 .nav .current-page-parent > a.news-link::after { background-color: transparent; }
 
