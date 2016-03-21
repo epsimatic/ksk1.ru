@@ -422,7 +422,7 @@ window.onbeforeunload = function () {
 
 
 /* <editor-fold desc="Карта leaflet"> */
-
+/*
 var map, layersControl;
 // Подгоняем высоту карты
 function setMapHeight() {
@@ -446,7 +446,7 @@ function setMapHeight() {
     }
 }
 // кнопкa "Карта" на панели в Городе
-//jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});
+//jQuery('.map-feature').click( function() {jQuery('#btn-feature-services').click();});*/
 
 // Кнопки НавПанели и выдвижные панельки
 jQuery('.triggers-weather').click(function () {
