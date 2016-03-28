@@ -5171,7 +5171,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     background-position: center center; -webkit-background-size: cover; background-size: cover; 
 }
 
-.services-content section.taxi-section .bg-image { background-image: url("<?php bloginfo('stylesheet_directory');?>/images/taxi-bg.jpg"); }
+.services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
 @media (min-width: 480px) {
     .ob-large-thumbs {
