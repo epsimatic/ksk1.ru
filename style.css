@@ -5132,15 +5132,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.service-section { position: relative; overflow: hidden; }
 
-.services-content section.taxi-section .section-info-wrap { color: #fff; }
+.services-content section.taxi-section .taxi-info-wrap { color: #fff; }
 
-.services-content section.taxi-section .section-info-wrap h2 { font-size: 81px; font-weight: 700; letter-spacing: -0.025em; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
+.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; font-weight: 700; letter-spacing: -0.025em; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
 
-.services-content section.taxi-section .section-info-wrap p { font-size: 16px; width: 600px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
+.services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; width: 600px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
 
-.services-content section.taxi-section .section-info-wrap h4 { color: #fff; font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
+.services-content section.taxi-section .taxi-info-wrap h4 { color: #fff; font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
 
-.services-content section.taxi-section .section-info-wrap h4 > a { color: #fff; font-weight: 700; }
+.services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; font-weight: 700; }
 
 .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
 
