@@ -5091,6 +5091,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content .container { background-color: transparent; margin-top: 0; }
 
+.admin-bar .snap-content .services-content > .container { margin-top: 32pxs; }
+
 .services-content .services-header { background-color: #FFE700; height: 96px; margin-top: 29px; }
 
 .services-content .services-header .logo-placeholder { position: relative; }
@@ -5166,6 +5168,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content .form-wrap .phone-group .form-control { height: 60px; font-size: 24px; height: 60px; }
 
 .services-content .form-wrap .phone-group.form-group { margin-top: 16px; margin-bottom: 8px; }
+
+.services-content section.service-section .bg-image { position: absolute; top: -10px; left: -20px;  z-index: 0; width: 110%; height: 115%;
+    background-position: center center; -webkit-background-size: cover; background-size: cover; }
 
 .services-content section.service-section .bg-image { position: absolute; top: -10px; left: -20px;  z-index: 0; width: 110%; height: 115%;
     background-position: center center; -webkit-background-size: cover; background-size: cover; 
