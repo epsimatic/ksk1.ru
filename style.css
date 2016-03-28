@@ -5144,6 +5144,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
 
+.services-content section.taxi-section .qr-link {border: 10px solid white; margin: 25px 9px; width: 120px;
+}
+
 .services-content section.taxi-section .app-download-bages > a:first-child { margin-right: 6px; }
 
 .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; margin-top: 24px; border-radius: 12px; padding-top: 24px; padding-bottom: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
