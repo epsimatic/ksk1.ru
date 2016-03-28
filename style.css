@@ -5134,7 +5134,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .section-info-wrap { color: #fff; }
 
-.services-content section.taxi-section .section-info-wrap h2 { font-size: 81px; font-weight: 700; letter-spacing: -0.025em; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 3px rgba(0,0,0,.15) }
+.services-content section.taxi-section .section-info-wrap h2 { font-size: 81px; font-weight: 700; letter-spacing: -0.025em; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
 
 .services-content section.taxi-section .section-info-wrap p { font-size: 16px; width: 600px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
 
@@ -5172,11 +5172,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content .form-wrap .phone-group.form-group { margin-top: 16px; margin-bottom: 8px; }
 
-.services-content section.service-section .bg-image { position: absolute; top: -10px; left: -20px;  z-index: 0; width: 110%; height: 115%;
-    background-position: center center; -webkit-background-size: cover; background-size: cover; }
-
-.services-content section.service-section .bg-image { position: absolute; top: -10px; left: -20px;  z-index: 0; width: 110%; height: 115%;
-    background-position: center center; -webkit-background-size: cover; background-size: cover; 
+.services-content section.service-section .bg-image { position: absolute; bottom: 0; left: 0;  z-index: 0; width: 100%; height: 100%;
+    background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
 }
 
 .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
