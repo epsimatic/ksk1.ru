@@ -5176,6 +5176,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
 }
 
+.services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; font-weight: 700; }
+
 .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
 .services-content section.cargo-section .bg-image { background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
