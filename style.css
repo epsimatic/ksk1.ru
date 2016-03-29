@@ -5180,19 +5180,25 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; font-weight: 700; }
 
-.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 40px; }
+.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 60px; }
 
-.services-content section.cargo-section .form-wrap label { display: block; text-align: left; }
+.services-content section.cargo-section .form-wrap label { display: block; text-align: left; margin-bottom: 6px; }
 
-.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 17px; }
+.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 24px; }
 
-.services-content section.cargo-section .form-wrap .form-group .btn,
-.services-content section.cargo-section .form-wrap .form-control { width: 300px; }
- 
+
+.services-content section.cargo-section .form-wrap .btn,
+.services-content section.cargo-section .form-wrap .form-control { height: 60px; width: 300px;
+}
+.services-content section.cargo-section .form-wrap .form-group { margin: 0 15px; }
+
+.services-content section.cargo-section .form-wrap .btn { margin-top: 3px; border-color: #13af48; background-color: #13af48; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; }
+
+
 
 .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
-.services-content section.cargo-section .bg-image { background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
+.services-content section.cargo-section .bg-image { bottom: 20px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
 
 .services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
 
