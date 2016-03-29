@@ -5096,17 +5096,26 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
 
 .services-content .services-header .logo-placeholder { position: relative; text-align: center; }
-.services-content .services-header .logo { position: relative; top: -25px; right: 0; height: 79px; }
+.services-content .services-header .logo { position: relative; top: -35px; right: 0; height: 79px; }
+
+.services-content .services-header .page-title-placeholder { position: absolute; top: 25px; width: 100%; text-align: center; }
+
+.services-content .services-header .city-name { line-height: 24px; font-size: 16px; color: #000; margin: 20px 0 0; }
+
+.services-content .services-header .page-title { line-height: 24px; font-size: 24px; color: #000; margin: -6px 0 0; }
+
 
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
+
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
+
+    .services-content .services-header .page-title-placeholder { position: static; top: auto; text-align: left; }
+
+    .services-content .services-header .city-name { font-size: 18px; }
+
+    .services-content .services-header .page-title { font-size: 36px; }
 }
-
-
-.services-content .services-header .city-name { line-height: 24px; font-size: 18px; color: #000; margin: 20px 0 0; }
-
-.services-content .services-header .page-title { line-height: 24px; font-size: 36px; color: #000; margin: -6px 0 0; }
 
 .services-content .page-title { margin: 0; font-weight: 700; font-size: 81px; }
 
