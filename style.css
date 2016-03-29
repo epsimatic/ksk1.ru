@@ -5178,6 +5178,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
+.services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
+
 @media (min-width: 480px) {
     .ob-large-thumbs {
         -moz-column-count: 2;
