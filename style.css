@@ -5105,27 +5105,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content .services-header .page-title { line-height: 24px; font-size: 24px; color: #000; margin: -6px 0 0; }
 
 
-@media (min-width: 768px) {
-    .services-content .services-header { margin-top: 29px; height: 96px; }
-
-    .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
-
-    .services-content .services-header .page-title-placeholder { position: static; top: auto; text-align: left; }
-
-    .services-content .services-header .city-name { font-size: 18px; }
-
-    .services-content .services-header .page-title { font-size: 36px; }
-}
-
 .services-content .page-title { margin: 0; font-weight: 700; font-size: 81px; }
 
-.services-content .services-info-containter { padding: 60px 0; }
+.services-content .services-info-containter { padding: 24px 0; }
 
 .services-content .service-section .container { position: relative; z-index: 5; }
 
-.services-content section.service-selection { background-image: url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABVAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM5RDRDOEYzQ0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM5RDRDOEY0Q0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzlENEM4RjFDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzlENEM4RjJDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAQEBAQECAQECAwIBAgMDAgICAgMDAwMDAwMDBQMEBAQEAwUFBQYGBgUFBwcICAcHCgoKCgoMDAwMDAwMDAwMAQICAgQDBAcFBQcKCAcICgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAkACADAREAAhEBAxEB/8QAYwABAQEBAAAAAAAAAAAAAAAAAAECCQEBAAAAAAAAAAAAAAAAAAAAABABAAEDAgUDAwUAAAAAAAAAAREhAhIAMfBBYSIyUaETsfFiccFCggMRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO7clpAhbVm52g330EItG1cY2PRd3f25aCN6DyBneh1WePoFvcWRxibt5x3Jo1H04AXXBbyMav49YmpoDfbatygWmRWIGksJOgJbOUtpbNyz4+q1roF1y0tO47pOSi5RPN5cAR/0ttEUyt7m6dq71emgo3TksJ3JK4k7+VR9NBcriniFd9q7oPtoM8isNvd3MxMzc1J/TQLh/wAysW2i3TPi1J326aCyQj2x7MzO+gWsXYzEBcfjNDnz46AVtFaB4k+LUlh9uADnT49pccs4y+2gM/w8o7fKc6z+0fbQZPlxcfCH45zjOXj6aDT8s2/HM/2jLrFNB//Z"); }
+.services-content .service-info-inner { padding: 36px 20px; background-color: #fff; }
 
-.services-content .service-info-inner { border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #fff; box-shadow: 0 1px 2px #ddd; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); min-height: 166px; }
+
+
 
 .services-content .service-icon { width: 100px; height: 80px; margin-right: 15px; display: block; }
 
@@ -5141,23 +5130,52 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content .service-info .fa-taxi { font-size: 60px; position: relative; top: 9px; }
 
-.services-content .service-section { height: 720px; padding-top: 60px; }
-
 .services-content .app-download-bages { text-align: center; }
 
 .services-content section.service-section { position: relative; overflow: hidden; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #fff; }
 
-.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; font-weight: 700; letter-spacing: -0.025em; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
+.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 48px; margin-bottom: 24px; line-height: 24px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
 
-.services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; width: 600px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
+.services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
 
-.services-content section.taxi-section .taxi-info-wrap h4 { color: #fff; font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
+.services-content section.taxi-section .taxi-info-wrap h4 { color: #fff; font-size: 32px; line-height: 24px; margin: 0; }
 
 .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; font-weight: 700; }
 
-.services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
+.services-content section.taxi-section .app-download-bages { margin-top: 24px; }
+
+
+@media (min-width: 768px) {
+    .services-content .services-header { margin-top: 29px; height: 96px; }
+
+    .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
+
+    .services-content .services-header .page-title-placeholder { position: static; top: auto; text-align: left; }
+
+    .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
+
+    .services-content .services-header .page-title { font-size: 36px; }
+
+    .services-content section.service-selection { background-image: url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABVAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM5RDRDOEYzQ0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM5RDRDOEY0Q0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzlENEM4RjFDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzlENEM4RjJDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAQEBAQECAQECAwIBAgMDAgICAgMDAwMDAwMDBQMEBAQEAwUFBQYGBgUFBwcICAcHCgoKCgoMDAwMDAwMDAwMAQICAgQDBAcFBQcKCAcICgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAkACADAREAAhEBAxEB/8QAYwABAQEBAAAAAAAAAAAAAAAAAAECCQEBAAAAAAAAAAAAAAAAAAAAABABAAEDAgUDAwUAAAAAAAAAAREhAhIAMfBBYSIyUaETsfFiccFCggMRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO7clpAhbVm52g330EItG1cY2PRd3f25aCN6DyBneh1WePoFvcWRxibt5x3Jo1H04AXXBbyMav49YmpoDfbatygWmRWIGksJOgJbOUtpbNyz4+q1roF1y0tO47pOSi5RPN5cAR/0ttEUyt7m6dq71emgo3TksJ3JK4k7+VR9NBcriniFd9q7oPtoM8isNvd3MxMzc1J/TQLh/wAysW2i3TPi1J326aCyQj2x7MzO+gWsXYzEBcfjNDnz46AVtFaB4k+LUlh9uADnT49pccs4y+2gM/w8o7fKc6z+0fbQZPlxcfCH45zjOXj6aDT8s2/HM/2jLrFNB//Z"); }
+
+    .services-content .services-info-containter { padding: 60px 0; }
+
+    .services-content .service-info-inner { box-shadow: 0 1px 2px #ddd; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 8px; min-height: 166px; padding: 20px; }
+
+    .services-content .service-section { height: 720px; padding-top: 60px; }
+
+    .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; }
+
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; }
+
+    .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
+
+    .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
+
+    .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
+}
 
 .services-content section.taxi-section .qr-link {border: 10px solid white; margin: 25px 9px; width: 120px;
 }
