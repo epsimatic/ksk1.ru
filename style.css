@@ -5144,7 +5144,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 32px; line-height: 24px; margin: 0; }
 
-.services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; font-weight: 700; }
+.services-content section.taxi-section .taxi-info-wrap h4 > a { color: #000; font-weight: 700; }
 
 .services-content section.taxi-section .app-download-bages { margin-top: 24px; }
 
@@ -5153,10 +5153,57 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .app-download-bages > a:first-child { margin-right: 6px; }
 
-.services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; }
+.services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; padding-bottom: 24px; }
 
 .services-content section.taxi-section .bg-image { background-color: #FFE700;}
 
+
+.services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; }
+
+
+.services-content .form-wrap .form-group { position: relative; margin: 0; }
+
+.services-content .form-wrap .form-group .fa { position: absolute; top: 32px; left: 16px; z-index: 5; font-size: 24px; }
+
+.services-content .form-wrap .form-group .fa-mobile { font-size: 48px; left: 19px; top: 27px; }
+
+.services-content .form-wrap label { font-weight: 600; margin: 0; line-height: 12px; text-transform: uppercase; font-size: 12px; letter-spacing: .025em; }
+
+.services-content .form-wrap .form-control { margin-bottom: 12px; text-align: center; padding: 12px; line-height: 24px; font-size: 16px; height: 48px; }
+
+.services-content .form-wrap textarea.form-control { height: auto; padding-left: 24px; padding-right: 24px; text-align: left; }
+
+.services-content .form-wrap .phone-group .form-control { height: 60px; font-size: 24px; height: 60px; }
+
+.services-content .form-wrap .phone-group.form-group { margin-top: 16px; margin-bottom: 8px; }
+
+.services-content section.service-section .bg-image { position: absolute; bottom: 0; left: 0;  z-index: 0; width: 100%; height: 100%;
+    background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
+}
+
+.services-content section.cargo-section .section-info-wrap h2 { margin-top: 36px; margin-bottom: 12px; font-size: 32px; font-weight: 700; }
+
+.services-content section.cargo-section .section-info-wrap h2 + p { margin-bottom: 24px; }
+
+.services-content section.cargo-section .cargo-form-wrap { margin-top: 204px; margin-bottom: 24px; }
+
+.services-content section.cargo-section .form-wrap label { display: block; text-align: left; margin-bottom: 6px; }
+
+.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 24px; }
+
+
+.services-content section.cargo-section .form-wrap .btn,
+.services-content section.cargo-section .form-wrap .form-control { width: 300px; }
+
+.services-content section.cargo-section .form-wrap .form-group { margin: 0 15px; }
+
+.services-content section.cargo-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
+
+
+
+.services-content section.cargo-section .bg-image { bottom: 20px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
+
+.services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
 
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
@@ -5187,62 +5234,27 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
 
+    .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; }
+
     .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
 
-    .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 12px; padding-top: 24px; padding-bottom: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
+    .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 12px; padding-top: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
 
     .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
+
+    .services-content section.taxi-section .taxi-form-wrap .taxi-form { margin-left: 24px; margin-right: 24px; }
+
+    .services-content section.cargo-section .container { height: 100%; }
+
+    .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 60px; text-align: center; margin: 0; }
+
+    .services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; }
+
+    .services-content section.cargo-section .form-wrap .btn,
+    .services-content section.cargo-section .form-wrap .form-control { height: 60px; border: 3px solid #000; }
+
+    .services-content section.cargo-section .form-wrap .form-group { margin: 0; }
 }
-
-.services-content section.taxi-section .taxi-form-wrap .taxi-form { margin-left: 24px; margin-right: 24px; }
-
-.services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; }
-
-
-.services-content .form-wrap .form-group { position: relative; margin: 0; }
-
-.services-content .form-wrap .form-group .fa { position: absolute; top: 32px; left: 16px; z-index: 5; font-size: 24px; }
-
-.services-content .form-wrap .form-group .fa-mobile { font-size: 48px; left: 19px; top: 27px; }
-
-.services-content .form-wrap label { font-weight: 600; margin: 0; line-height: 12px; text-transform: uppercase; font-size: 12px; letter-spacing: .025em; }
-
-.services-content .form-wrap .form-control { margin-bottom: 12px; text-align: center; padding: 12px; line-height: 24px; font-size: 16px; height: 48px; }
-
-.services-content .form-wrap textarea.form-control { height: auto; padding-left: 24px; padding-right: 24px; text-align: left; }
-
-.services-content .form-wrap .phone-group .form-control { height: 60px; font-size: 24px; height: 60px; }
-
-.services-content .form-wrap .phone-group.form-group { margin-top: 16px; margin-bottom: 8px; }
-
-.services-content section.service-section .bg-image { position: absolute; bottom: 0; left: 0;  z-index: 0; width: 100%; height: 100%;
-    background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
-}
-
-.services-content section.cargo-section .container { height: 100%; }
-
-.services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; font-weight: 700; }
-
-.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 60px; }
-
-.services-content section.cargo-section .form-wrap label { display: block; text-align: left; margin-bottom: 6px; }
-
-.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 24px; }
-
-
-.services-content section.cargo-section .form-wrap .btn,
-.services-content section.cargo-section .form-wrap .form-control { height: 60px; width: 300px;
-border: 3px solid #000; }
-
-.services-content section.cargo-section .form-wrap .form-group { margin: 0 15px; }
-
-.services-content section.cargo-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
-
-
-
-.services-content section.cargo-section .bg-image { bottom: 20px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
-
-.services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
 
 @media (min-width: 480px) {
     .ob-large-thumbs {
