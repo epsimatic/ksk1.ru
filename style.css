@@ -5180,7 +5180,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; font-weight: 700; }
 
-.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; }
+.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 40px; }
 
 .services-content section.cargo-section .form-wrap label { display: block; text-align: left; }
 
