@@ -5130,13 +5130,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content .service-info .fa-taxi { font-size: 60px; position: relative; top: 9px; }
 
-.services-content .app-download-bages { text-align: center; }
+.services-content .app-download-bages { text-align: center;  }
+
+.services-content .service-info-inner .app-download-bages img { width: 120px; }
 
 .services-content section.service-section { position: relative; overflow: hidden; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #fff; }
 
-.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 48px; margin-bottom: 24px; line-height: 24px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
+.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 48px; margin-bottom: 24px; line-height: 24px; color: #fff; }
 
 .services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
 
@@ -5145,6 +5147,15 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; font-weight: 700; }
 
 .services-content section.taxi-section .app-download-bages { margin-top: 24px; }
+
+.services-content section.taxi-section .qr-link {border: 10px solid white; margin: 25px 9px; width: 120px;
+}
+
+.services-content section.taxi-section .app-download-bages > a:first-child { margin-right: 6px; }
+
+.services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; }
+
+.services-content section.taxi-section .bg-image { background-color: #FFE700;}
 
 
 @media (min-width: 768px) {
@@ -5158,6 +5169,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .services-header .page-title { font-size: 36px; }
 
+    .services-content .service-info-inner .app-download-bages img { width: auto; }
+
     .services-content section.service-selection { background-image: url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABVAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM5RDRDOEYzQ0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM5RDRDOEY0Q0QzNjExRTFBRTIwRkUzMzM4MTZCOEQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzlENEM4RjFDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzlENEM4RjJDRDM2MTFFMUFFMjBGRTMzMzgxNkI4RDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAQEBAQECAQECAwIBAgMDAgICAgMDAwMDAwMDBQMEBAQEAwUFBQYGBgUFBwcICAcHCgoKCgoMDAwMDAwMDAwMAQICAgQDBAcFBQcKCAcICgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAkACADAREAAhEBAxEB/8QAYwABAQEBAAAAAAAAAAAAAAAAAAECCQEBAAAAAAAAAAAAAAAAAAAAABABAAEDAgUDAwUAAAAAAAAAAREhAhIAMfBBYSIyUaETsfFiccFCggMRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO7clpAhbVm52g330EItG1cY2PRd3f25aCN6DyBneh1WePoFvcWRxibt5x3Jo1H04AXXBbyMav49YmpoDfbatygWmRWIGksJOgJbOUtpbNyz4+q1roF1y0tO47pOSi5RPN5cAR/0ttEUyt7m6dq71emgo3TksJ3JK4k7+VR9NBcriniFd9q7oPtoM8isNvd3MxMzc1J/TQLh/wAysW2i3TPi1J326aCyQj2x7MzO+gWsXYzEBcfjNDnz46AVtFaB4k+LUlh9uADnT49pccs4y+2gM/w8o7fKc6z+0fbQZPlxcfCH45zjOXj6aDT8s2/HM/2jLrFNB//Z"); }
 
     .services-content .services-info-containter { padding: 60px 0; }
@@ -5168,21 +5181,18 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; }
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
 
     .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
 
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
 
     .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
+
+    .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 12px; padding-top: 24px; padding-bottom: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
+
+    .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 }
-
-.services-content section.taxi-section .qr-link {border: 10px solid white; margin: 25px 9px; width: 120px;
-}
-
-.services-content section.taxi-section .app-download-bages > a:first-child { margin-right: 6px; }
-
-.services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; margin-top: 24px; border-radius: 12px; padding-top: 24px; padding-bottom: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
 
 .services-content section.taxi-section .taxi-form-wrap .taxi-form { margin-left: 24px; margin-right: 24px; }
 
@@ -5229,8 +5239,6 @@ border: 3px solid #000; }
 .services-content section.cargo-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
 
-
-.services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
 .services-content section.cargo-section .bg-image { bottom: 20px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
 
