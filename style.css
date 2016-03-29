@@ -4558,7 +4558,7 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 #header .navbar-nav { height: 50px; overflow-y: hidden; }
 
 /*Стили для бокового меню snap.js*/
-header.mobile-header { background-color: #00e676; height: 40px; }
+header.mobile-header { background-color: #00e676; height: 40px; z-index: 5; }
 
 body.admin-bar header.mobile-header { top: 46px; z-index: 10; }
 
@@ -5093,10 +5093,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .admin-bar .snap-content .services-content > .container { margin-top: 32pxs; }
 
-.services-content .services-header { background-color: #FFE700; height: 96px; margin-top: 29px; }
+.services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
 
-.services-content .services-header .logo-placeholder { position: relative; }
-.services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; right: 0; }
+.services-content .services-header .logo-placeholder { position: relative; text-align: center; }
+.services-content .services-header .logo { position: relative; top: -25px; right: 0; height: 79px; }
+
+@media (min-width: 768px) {
+    .services-content .services-header { margin-top: 29px; height: 96px; }
+    .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
+}
+
 
 .services-content .services-header .city-name { line-height: 24px; font-size: 18px; color: #000; margin: 20px 0 0; }
 
