@@ -5176,7 +5176,19 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
 }
 
+.services-content section.cargo-section .container { height: 100%; }
+
 .services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; font-weight: 700; }
+
+.services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; }
+
+.services-content section.cargo-section .form-wrap label { display: block; text-align: left; }
+
+.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 17px; }
+
+.services-content section.cargo-section .form-wrap .form-group .btn,
+.services-content section.cargo-section .form-wrap .form-control { width: 300px; }
+ 
 
 .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
 
