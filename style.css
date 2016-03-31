@@ -5340,7 +5340,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .form-wrap .form-control { font-size: 16px; line-height: 24px; height: 48px; padding: 12px; }
 
-    .services-content .form-wrap .phone-group .form-control { font-size: 24px; height: 60px; }
+    .services-content section.taxi-section .form-wrap .phone-group .form-control { font-size: 24px; height: 60px; }
+
+    .services-content section.taxi-section .form-wrap .form-group .fa-mobile { font-size: 48px; left: 19px; top: 27px; }
 }
 
 @media (min-width: 480px) {
