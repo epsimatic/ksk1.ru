@@ -5136,7 +5136,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.service-section { position: relative; overflow: hidden; }
 
-.services-content section.taxi-section .taxi-info-wrap { color: #000; }
+.services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
 
 .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 24px; margin-bottom: 24px; line-height: 24px; }
 
@@ -5226,7 +5226,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .service-section { height: 720px; padding-top: 60px; }
 
-    .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; }
+    .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
     .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
 
