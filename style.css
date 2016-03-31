@@ -5348,6 +5348,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section .form-wrap .form-group .fa-mobile { font-size: 48px !important; left: 19px !important; top: 27px !important; }
 
+    .services-content section.cargo-section .form-wrap .form-group .fa-mobile, 
+    .services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 24px !important; }
+
     .services-content section.cargo-section .section-info-wrap h2 + p,
     .services-content section.workers-section .section-info-wrap h2 + p { margin: 0 auto 24px; width: 740px; }
 
