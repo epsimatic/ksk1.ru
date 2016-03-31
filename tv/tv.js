@@ -122,9 +122,11 @@ function UpdateBlock(selector, seconds) {
                 var customized = "";
                 if (jQuery(selector).find('[data-duration]').length) {
                     seconds = jQuery(selector).find('[data-duration]').data('duration');
-                    customized = " (new timeout "+seconds+"s from banner)"
+                    customized = " (new timeout "+seconds+"s from banner)";
                     UpdateTimer(selector, seconds);
                 }
+               if  (document.getElementsByTagName('iframe')) radio_player.jPlayer("pause");
+                else radio_player.jPlayer("play");
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 console.log("selector"+selector);
             })
