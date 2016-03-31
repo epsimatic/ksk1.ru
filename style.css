@@ -5247,6 +5247,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .app-download-bages > a:first-child { display: block; margin-bottom: 6px; margin-top: 6px; }
 
+    .services-content .taxi-info-wrap .app-download-bages > a:first-child { display: inline; }
+
     .services-content .service-section { height: 540px; padding-top: 60px; }
 
     .services-content .service-section.workers-section { height: 440px; }
