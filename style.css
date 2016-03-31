@@ -5214,12 +5214,14 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content section.cargo-section .form-wrap .btn,
 .services-content section.cargo-section .form-wrap .form-control,
 .services-content section.workers-section .form-wrap .btn,
-.services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; }
+.services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; line-height: 24px; padding: 15px 24px; }
 
 .services-content section.cargo-section .bg-image { background-position: center top; background-repeat: repeat-x; -webkit-background-size: contain;
-background-size: contain; top: 75px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
+background-size: contain; top: 96px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
 
 .services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
+
+.services-content .btn-reviews { padding: 0 30px; line-height: 48; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
