@@ -5191,7 +5191,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .services-content section.workers-section .section-info-wrap h2 { margin-top: 36px; margin-bottom: 12px; font-size: 32px; font-weight: 700; line-height: 48px; }
 
 .services-content section.cargo-section .section-info-wrap h2 + p,
-.services-content section.workers-section .section-info-wrap h2 + p { margin-bottom: 24px; font-size: 16px; }
+.services-content section.workers-section .section-info-wrap h2 + p { margin-bottom: 24px; font-size: 16px; line-height: 24px; }
 
 .services-content section.cargo-section .cargo-form-wrap,
 .services-content section.workers-section .workers-form-wrap { margin-top: 48px; margin-bottom: 48px; }
@@ -5227,7 +5227,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
-    .services-content .services-header .page-title-placeholder { position: static; top: auto; text-align: left; }
+    .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
     .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
 
@@ -5314,13 +5314,16 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 }
 
 @media (min-width: 992px) { 
+    .services-content .services-header .page-title-placeholder { width: auto; }
+
     .services-content .service-icon { float: left; width: 100px; }
 
     .services-content .service-icon + h3 { font-size: 24px; margin-top: 0; }
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
-    .services-content .service-section { height: 600px; }
+    .services-content .service-section.workers-section,
+    .services-content .service-section { height: 650px; }
 
     .services-content .service-info-inner { min-height: 168px; }
 
@@ -5342,7 +5345,24 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.taxi-section .form-wrap .phone-group .form-control { font-size: 24px; height: 60px; }
 
-    .services-content section.taxi-section .form-wrap .form-group .fa-mobile { font-size: 48px; left: 19px; top: 27px; }
+    .services-content section .form-wrap .form-group .fa-mobile { font-size: 48px !important; left: 19px !important; top: 27px !important; }
+
+    .services-content section.cargo-section .section-info-wrap h2 + p,
+    .services-content section.workers-section .section-info-wrap h2 + p { margin: 0 auto 24px; width: 740px; }
+
+    .services-content section.cargo-section .form-wrap .btn,
+    .services-content section.cargo-section .form-wrap .form-control,
+    .services-content section.workers-section .form-wrap .btn,
+    .services-content section.workers-section .form-wrap .form-control { width: 300px; }
+
+    .services-content section.cargo-section .form-wrap .form-control,
+    .services-content section.workers-section .form-wrap .form-control { text-align: center; padding-left: 24px; }
+
+    .services-content section.cargo-section .phone-group .form-control,
+    .services-content section.workers-section .phone-group .form-control { font-size: 24px; }
+
+    .services-content section.cargo-section .bg-image { bottom: 0; -webkit-background-size: cover;
+    background-size: cover; }
 }
 
 @media (min-width: 480px) {
