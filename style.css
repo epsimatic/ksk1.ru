@@ -5185,19 +5185,28 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.cargo-section .section-info-wrap h2 + p { margin-bottom: 24px; }
 
-.services-content section.cargo-section .cargo-form-wrap { margin-top: 120px; margin-bottom: 24px; }
+.services-content section.cargo-section .cargo-form-wrap,
+.services-content section.workers-section .workers-form-wrap { margin-top: 144px; margin-bottom: 24px; }
 
-.services-content section.cargo-section .cargo-form { margin-left: -15px; margin-right: -15px; }
+.services-content section.cargo-section .cargo-form,
+.services-content section.workers-section .workers-form { margin-left: -15px; margin-right: -15px; }
 
-.services-content section.cargo-section .form-wrap label { display: block; text-align: left; margin-bottom: 6px; }
+.services-content section.cargo-section .form-wrap label,
+.services-content section.workers-section .form-wrap label { display: block; text-align: left; margin-bottom: 6px; }
 
-.services-content section.cargo-section .form-wrap .form-group .fa-mobile { top: 24px; }
+.services-content section.cargo-section .form-wrap .form-group,
+.services-content section.workers-section .form-wrap .form-group { margin: 0 15px; }
 
-.services-content section.cargo-section .form-wrap .form-group { margin: 0 15px; }
+.services-content section.cargo-section .form-wrap .form-group .fa-mobile,
+.services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 24px; }
 
-.services-content section.cargo-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
+.services-content section.cargo-section .form-wrap .btn,
+.services-content section.workers-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
-
+.services-content section.cargo-section .form-wrap .btn,
+.services-content section.cargo-section .form-wrap .form-control,
+.services-content section.workers-section .form-wrap .btn,
+.services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; }
 
 .services-content section.cargo-section .bg-image { background-position: center top; background-repeat: repeat-x; -webkit-background-size: contain;
 background-size: contain; top: 75px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
@@ -5248,9 +5257,6 @@ background-size: contain; top: 75px; background-image: url("http://ksk1.ru/img/c
     .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 60px; text-align: center; margin: 0; }
 
     .services-content section.cargo-section .section-info-wrap h2 { font-size: 72px; }
-
-    .services-content section.cargo-section .form-wrap .btn,
-    .services-content section.cargo-section .form-wrap .form-control { height: 60px; border: 3px solid #000; }
 
     .services-content section.cargo-section .form-wrap .form-group { margin: 0; }
 
