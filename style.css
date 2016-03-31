@@ -5185,7 +5185,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.workers-section .section-info-wrap { color: #fff; }
 
-.services-content section.workers-section .container { background-color: rgba(0, 0, 0, 0.65); }
+.services-content section.workers-section .container { background-color: rgba(0, 0, 0, 0.5); }
 
 .services-content section.cargo-section .section-info-wrap h2,
 .services-content section.workers-section .section-info-wrap h2 { margin-top: 36px; margin-bottom: 12px; font-size: 32px; font-weight: 700; }
@@ -5221,7 +5221,7 @@ background-size: contain; top: 96px; background-image: url("http://ksk1.ru/img/c
 
 .services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
 
-.services-content .btn-reviews { padding: 0 30px; line-height: 48; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
+.services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
