@@ -5322,8 +5322,9 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
-    .services-content .service-section.workers-section,
     .services-content .service-section { height: 650px; }
+
+    .services-content .service-section.workers-section { height: 600px; }
 
     .services-content .service-info-inner { min-height: 168px; }
 
@@ -5349,6 +5350,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.cargo-section .section-info-wrap h2 + p,
     .services-content section.workers-section .section-info-wrap h2 + p { margin: 0 auto 24px; width: 740px; }
+
+    .services-content section.workers-section .section-info-wrap h2 { margin-top: 48px; margin-bottom: 24px; }
+
+    .services-content section.workers-section .section-info-wrap h2 + p { margin-bottom: 48px; }
+
+    .services-content .btn-reviews {  }
 
     .services-content section.cargo-section .form-wrap .btn,
     .services-content section.cargo-section .form-wrap .form-control,
