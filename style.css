@@ -5155,7 +5155,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; margin-bottom: 24px; padding-bottom: 24px; }
 
-.services-content section.taxi-section .bg-image { background-color: #FFE700;}
+.services-content section.taxi-section .bg-image { background-color: #FFE700; }
 
 
 .services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; }
@@ -5255,7 +5255,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 48px; line-height: 48px; }
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 48px; line-height: 48px; text-shadow: 0 2px 5px rgba(0,0,0,.5); }
 
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 36px; line-height: 48px; margin: 0; color: #fff; }
 
@@ -5314,18 +5314,33 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 }
 
 @media (min-width: 992px) { 
+    .services-content .service-icon { float: left; width: 100px; }
 
-    .services-content .service-info-inner { min-height: 166px; }
+    .services-content .service-icon + h3 { font-size: 24px; margin-top: 0; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); } 
+    .services-content .app-download-bages > a:first-child { display: inline; }
+
+    .services-content .service-section {  }
+
+    .services-content .service-info-inner { min-height: 168px; }
+
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 48px; margin-bottom: 24px; line-height: 72px; }
 
     .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
 
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; margin-left: 16px; }
 
-    .services-content section.taxi-section .taxi-form-wrap { border-radius: 12px; padding-top: 24px; }
+    .services-content section.taxi-section .taxi-form-wrap { border-radius: 12px; padding-top: 24px; padding-bottom: 24px; }
 
     .services-content section.taxi-section .taxi-form-wrap .taxi-form { margin-left: 24px; margin-right: 24px; }
+
+    .services-content section.taxi-section .taxi-form-wrap .form-submit { line-height: 60px; font-size: 24px; }
+
+    .services-content .form-wrap .form-control { font-size: 16px; line-height: 24px; height: 48px; padding: 12px; }
+
+    .services-content .form-wrap .form-group .fa { font-size: 24px; left: 16px; top: 32px; }
+
+    .services-content .form-wrap .phone-group .form-control { font-size: 24px; height: 60px; }
 }
 
 @media (min-width: 480px) {
