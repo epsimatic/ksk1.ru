@@ -125,7 +125,6 @@ function UpdateBlock(selector, seconds) {
                     customized = " (new timeout "+seconds+"s from banner)";
                     UpdateTimer(selector, seconds);
                 }
-                radio_player = jQuery("#jquery_jplayer_1");
                 if  (document.getElementsByTagName('iframe')) {radio_player.jPlayer("pause");
                    UpdateTimer(".board-main", '1757');}
                 else radio_player.jPlayer("play");
