@@ -5185,7 +5185,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 .services-content section.workers-section .section-info-wrap { color: #fff; }
 
-.services-content section.workers-section .container { background-color: rgba(0, 0, 0, 0.5); }
+.services-content section.workers-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
 .services-content section.cargo-section .section-info-wrap h2,
 .services-content section.workers-section .section-info-wrap h2 { margin-top: 36px; margin-bottom: 12px; font-size: 32px; font-weight: 700; }
@@ -5245,10 +5245,6 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); color: #ffe700; }
-
-    .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
-
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0; margin-left: 16px; }
 
     .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; }
@@ -5258,6 +5254,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
     .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 12px; padding-top: 24px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
 
     .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
+
+    .services-content section.taxi-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
     .services-content section.taxi-section .taxi-form-wrap .taxi-form { margin-left: 24px; margin-right: 24px; }
 
@@ -5273,6 +5271,12 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
         .services-content section.cargo-section .form-wrap .form-control { width: 300px; }
 
     .services-content section.cargo-section .bg-image { bottom: 20px; background-image: url("http://ksk1.ru/img/cargo-bg.svg"); }
+}
+
+@media (min-width: 992px) { 
+
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 72px; margin-bottom: 48px; line-height: 72px; text-shadow: 0 2px 5px rgba(0,0,0,.5); } 
+    .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
 }
 
 @media (min-width: 480px) {
