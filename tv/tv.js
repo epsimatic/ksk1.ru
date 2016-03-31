@@ -125,8 +125,8 @@ function UpdateBlock(selector, seconds) {
                     customized = " (new timeout "+seconds+"s from banner)";
                     UpdateTimer(selector, seconds);
                 }
-               if  (document.getElementsByTagName('iframe')) {radio_player.jPlayer("pause");
-                   UpdateTimer(".board-main", '1757');}
+              /* if  (document.getElementsByTagName('iframe')) {radio_player.jPlayer("pause");
+                   UpdateTimer(".board-main", '1757');}*/
                 else radio_player.jPlayer("play");
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 console.log("selector"+selector);
