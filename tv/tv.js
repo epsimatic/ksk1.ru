@@ -126,7 +126,7 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 if  (document.getElementsByTagName('iframe')) {radio_player.jPlayer("pause");
-                   UpdateTimer(".board-main", '1757'); }
+                   UpdateTimer(".board-main", '1757'); console.log("radio ="+radio_player);}
                 else radio_player.jPlayer("play");
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 console.log("selector"+selector);
@@ -168,7 +168,10 @@ const urls_or_functions = {
 
 LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
 
-
+// Инициализировать все блоки
+    for (var block in urls_or_functions) {
+        UpdateBlock(block);
+    }
 
 // Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
@@ -213,10 +216,6 @@ LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
             swfPath: "js",
             supplied: "mp3, m4a"
         });
-        // Инициализировать все блоки
-        for (var block in urls_or_functions) {
-            UpdateBlock(block);
-        }
     });
 
 });
