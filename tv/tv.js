@@ -126,7 +126,7 @@ function UpdateBlock(selector, seconds) {
                     UpdateTimer(selector, seconds);
                 }
                 if  (document.getElementsByTagName('iframe')) {radio_player.jPlayer("pause");
-                   UpdateTimer(".board-main", '1757'); console.log("radio ="+radio_player);}
+                   UpdateTimer(".board-main", '1757'); }
                 else radio_player.jPlayer("play");
                 console.log ("Zone «"+selector+"» loaded «"+url_or_function+"»" + customized);
                 console.log("selector"+selector);
