@@ -5873,6 +5873,8 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .menu-main-tv .tv-about h4 { line-height: 1.5; margin: 0 0 .5em 0; }
     header.wide-header .menu-main-tv .tv-about p { white-space: normal; background-color: white; line-height: 1.5; font-size: 13px; }
 
+    header.wide-header .menu-main-radio.menu-main-tv .btn-action { margin-top: 42px; }
+
     /* Стили для панели заказа еды */
     header.wide-header .menu-main-eda .eda-logo-wrap,
     header.wide-header .menu-main-eda .stores-group,
