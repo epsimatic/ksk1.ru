@@ -5168,7 +5168,10 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 .services-content section.taxi-section .bg-image { background-color: #FFE700; }
 
 
-.services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; }
+.services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; transition: background-color .25s ease-in-out 0s; }
+
+.services-content section.taxi-section .taxi-form-wrap .form-submit:hover,
+.services-content section.taxi-section .taxi-form-wrap .form-submit:focus { background-color: #222; }
 
 
 .services-content .form-wrap .form-group { position: relative; margin: 0; }
@@ -5224,6 +5227,11 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .services-content section.cargo-section .form-wrap .btn,
 .services-content section.workers-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
+
+.services-content section.cargo-section .form-wrap .btn:hover,
+.services-content section.workers-section .form-wrap .btn:hover,
+.services-content section.cargo-section .form-wrap .btn:focus,
+.services-content section.workers-section .form-wrap .btn:focus { background-color: #ffde40; transition: background-color .25s ease-in-out 0s; }
 
 .services-content section.cargo-section .form-wrap .btn,
 .services-content section.cargo-section .form-wrap .form-control,
