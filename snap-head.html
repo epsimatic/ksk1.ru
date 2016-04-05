@@ -227,6 +227,69 @@
                     </div>
                 </li>
 
+                <li class="menu-item-dropdown menu-item menu-main-tv-radio hidden">
+                    <a role="button" aria-haspopup="true" aria-expanded="false" href="http://news.kskmedia.ru/radio/">Радио и ТВ</a>
+                    <a class="play-radio" href="#">
+                        <i class="fa fa-fw fa-lg fa-play" id="play1"></i>
+                        <i class="fa fa-fw fa-lg fa-pause hidden" id="pause1"></i>
+                    </a>
+                    <div class="dropdown-panel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-3 submenu-group">
+                                    <a class="btn btn-link tv_radio-radio" href="http://news.kskmedia.ru/radio/">Радио «Красноуфимск»</a>
+                                    <a class="btn btn-link tv_radio-tv" href="http://news.kskmedia.ru/telev/">Красноуфимск ТВ</a>
+                                    
+                                    <a class="btn btn-action" href="http://ob.ksk66.ru/new.html?is_selected=2"><i class="fa fa-fw fa-plus-circle"></i> Добавить объявление</a>
+                                </div>
+                                <div class="col-sm-4 col-lg-3 submenu-group">
+                                    <div class="player-header">
+                                        <a class="player-logo" href="http://news.kskmedia.ru/radio/">
+                                            <img alt="Радио «Красноуфимск». 103,3 FM" src="http://ksk1.ru/img/layout/player-logo.svg">
+                                        </a>
+                                    </div>
+                                    <div class="player-playlist jp-loading">
+                                        <div class="jp-jplayer" id="jquery_jplayer_1"></div>
+                                        <div class="jp-audio" id="jp_container_1">
+                                            <div class="jp-type-single">
+                                                <div class="jp-gui jp-interface">
+                                                    <div class="jp-controls-holder">
+                                                        <ul class="jp-controls">
+                                                            <li><a tabindex="1" class="jp-pause" href="#" onclick="jQuery('.play-radio i.fa-pause1').trigger('click');"><i class="fa fa-fw fa-pause"></i></a></li>
+                                                            <li><a tabindex="1" class="jp-play" href="#" onclick="jQuery('.play-radio i.fa-play1').trigger('click');"><i class="fa fa-fw fa-play"></i></a></li>
+                                                        </ul>
+                                                        <div class="jp-progress hidden">
+                                                            <div class="jp-seek-bar" style="width: 100%;">
+                                                                <div class="jp-play-bar" style="width: 51.4233%; overflow: hidden;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="track-info"></div>
+                                                        <div aria-label="time" role="timer" class="jp-current-time hidden">01:47</div>
+                                                        <div aria-label="duration" role="timer" class="jp-duration hidden">-01:41</div>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="jp-no-solution">Радио недоступно в этом браузере.</div>-->
+                                                <div class="playlist">
+                                                    <div class="playlist-item"><input type="radio" name="player" id="on_air" checked class="play_btn"><label for="on_air" >Прямой эфир <span id="listen-text" class="hidden">Слушают: <span class="listeners"></span></span></label></div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="last_news" class="play_btn"><label for="last_news" >Выпуск новостей</label></div>
+                                                    <div class="playlist-item"><input type="radio" name="player" id="last_comment" class="play_btn"><label for="last_comment" >Комментарий дня</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-3 text-center submenu-group videoplayer-wrap">
+                                    <div id="player-youtube" ><div class="loader-wrap"><i class="fa fa-cog fa-spin loader"></i></div></div>
+                                </div>
+                                <div class="col-sm-4 hidden-sm submenu-group tv-about">
+                                    <h4>Итоги недели</h4>
+                                    <p>Обзор самых важных событий города и района, поздравления земляков, видео из истории города, афиша культурных и спортивных мероприятий</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
                 <li class="menu-item-dropdown menu-item menu-main-tv">
                     <a role="button" aria-haspopup="true" aria-expanded="false" href="http://news.kskmedia.ru/telev/"><span class="hidden-md hidden-lg">ТВ</span><span class="hidden-sm">Телевидение</span></a>
                     <div class="dropdown-panel">
