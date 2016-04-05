@@ -5189,9 +5189,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .services-content .form-wrap .phone-group.form-group { margin-top: 16px; margin-bottom: 8px; }
 
-.services-content section.service-section .bg-image { position: absolute; bottom: 0; left: 0;  z-index: 0; width: 100%; height: 100%;
-    background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
-}
+.services-content section.service-section .bg-image { position: absolute; bottom: 0; left: 0;  z-index: 0; width: 100%; height: 100%; background-position: left bottom; -webkit-background-size: cover; background-size: cover; }
 
 .services-content section.cargo-section .bg-image { background: linear-gradient(to top, #5bdd95 0%,#5bdd95 53%,#fff1e7 54%,#fff1e7 100%); }
 
@@ -5208,7 +5206,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 .services-content section.cargo-section .cargo-form-wrap,
 .services-content section.workers-section .workers-form-wrap { margin-top: 48px; margin-bottom: 48px; }
 
-.services-content section.cargo-section img.cargo-bg { width: 111%; margin: -48px -15px; }
+.services-content section.cargo-section img.cargo-bg { width: 111%; margin: 0 -15px -48px; }
 
 .services-content section.cargo-section .cargo-form,
 .services-content section.workers-section .workers-form { margin-left: -15px; margin-right: -15px; }
