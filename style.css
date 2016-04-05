@@ -5223,12 +5223,12 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 .services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 24px; }
 
 .services-content section.cargo-section .form-wrap .btn,
-.services-content section.workers-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; }
+.services-content section.workers-section .form-wrap .btn { margin-top: 3px; background-color: #ffd600; font-size: 24px; letter-spacing: .025em; text-transform: uppercase; color: #000; transition: background-color .25s ease-in-out 0s; }
 
 .services-content section.cargo-section .form-wrap .btn:hover,
 .services-content section.workers-section .form-wrap .btn:hover,
 .services-content section.cargo-section .form-wrap .btn:focus,
-.services-content section.workers-section .form-wrap .btn:focus { background-color: #ffde40; transition: background-color .25s ease-in-out 0s; }
+.services-content section.workers-section .form-wrap .btn:focus { background-color: #ffe565; }
 
 .services-content section.cargo-section .form-wrap .btn,
 .services-content section.cargo-section .form-wrap .form-control,
