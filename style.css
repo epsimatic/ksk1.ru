@@ -5188,6 +5188,8 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     background-position: left bottom; -webkit-background-size: cover; background-size: cover; 
 }
 
+.services-content section.cargo-section .bg-image { background: linear-gradient(to top, #5bdd95 0%,#5bdd95 53%,#fff1e7 54%,#fff1e7 100%); }
+
 .services-content section.workers-section .section-info-wrap { color: #fff; }
 
 .services-content section.workers-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
@@ -5231,6 +5233,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .services-content .services-header { margin-top: 29px; height: 96px; }
 
     body.admin-bar .services-content .services-header { margin-top: 61px; }
+    body.admin-bar .services-content .services-header .logo { top: -20px; }
 
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
@@ -5381,7 +5384,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .services-content .service-info-inner .app-download-bages img { width: auto; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 48px; }
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 81px; margin-top: 24px; }
 }
 
 @media (min-width: 480px) {
