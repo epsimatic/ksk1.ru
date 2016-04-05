@@ -5314,8 +5314,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .services-content section.cargo-section .form-wrap .form-group .fa-mobile,
     .services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 30px; left: 16px; font-size: 36px; }
 
-    .services-content section.cargo-section .bg-image { bottom: 40px; background-image: url("http://ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: contain;
-    background-size: contain; }
+    .services-content section.cargo-section .bg-image { background-image: url("http://ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 }
 
 @media (min-width: 992px) { 
@@ -5375,14 +5374,9 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .services-content section.cargo-section .phone-group .form-control,
     .services-content section.workers-section .phone-group .form-control { font-size: 24px; padding-left: 54px; }
-
-    .services-content section.cargo-section .bg-image { bottom: 0; -webkit-background-size: cover;
-    background-size: cover; }
 }
 
 @media (min-width: 1200px) { 
-    .services-content section.cargo-section .bg-image { bottom: 40px; /*background-image: url("http://ksk1.ru/img/cargo-bg-lg.svg")*/; -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; bottom: 155px; } 
-
     .services-content .service-info-inner { min-height: 168px; }
 
     .services-content .service-info-inner .app-download-bages img { width: auto; }
