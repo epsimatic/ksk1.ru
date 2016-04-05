@@ -32,6 +32,12 @@ body.site-ob header#header { display: block; }
 
 #stripe.container { padding: 0; }
 
+.sidebar .yummies { display: none; }
+
+@media (min-width: 768px) {
+    .sidebar .yummies { display: block; }
+}
+
 .container { background-color: #ffffff; }
 
 /*Фон из снежинок*/
@@ -2798,7 +2804,6 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 .panel-ob-top > div { margin-bottom: 15px; }
 
 .panel-ob-bottom { margin-bottom: 20px; }
-
 
 @media (min-width: 768px) {
     .sidebar .popover-content {width: 500px;}
