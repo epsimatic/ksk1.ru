@@ -5762,7 +5762,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .btn-action { font-size: 15px; padding: 6px 12px 8px; margin-top: 15px; border-radius: 5px; }
 
-    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link.hidden + .btn-link.hidden + .btn-action { margin-top: 63px; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .btn-link.hidden + .btn-link.hidden + .btn-action { margin-top: 69px; }
 
     /* Стили для панели новостей*/
     header.wide-header .news-list { padding-left: 30px; }
