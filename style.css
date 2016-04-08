@@ -2093,7 +2093,7 @@ article.post-custom .wp-caption img,
 article.post-custom ul,
 article.post-custom ol,
 .single-post .main-content article.post-news ul,
-.single-post .main-content article.post-news ol { padding: 0 0 0 16px; margin: 24px 0; }
+.single-post .main-content article.post-news ol { padding: 0 0 0 16px; margin: 0; }
 
 article.post-custom ul li,
 article.post-custom ol li,
@@ -2423,7 +2423,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     article.post-custom ul,
     article.post-custom ol,
     .single-post .main-content article.post-news ul,
-    .single-post .main-content article.post-news ol { padding: 0; margin: 27px 0; }
+    .single-post .main-content article.post-news ol { padding: 0; }
 
     article.post-custom ul li,
     article.post-custom ol li,
