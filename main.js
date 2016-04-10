@@ -495,7 +495,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');
-        jQuery("#day" + day_num).load("http://news.kskmedia.ru/movies-block/", {"day_week": day_num}, function () {
+        jQuery("#day" + day_num).load("http://ksk66.ru/movies-block/", {"day_week": day_num}, function () {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="' + (day_num + 1) + '"]').trigger('shown.bs.tab');
         });
@@ -505,7 +505,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
 
     // Загружаем афишу
-    jQuery("#panel-agenda").load("http://news.kskmedia.ru/agenda-block/", setMapHeight);
+    jQuery("#panel-agenda").load("http://ksk66.ru/agenda-block/", setMapHeight);
 
 });
 
