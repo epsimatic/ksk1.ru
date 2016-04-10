@@ -334,7 +334,7 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-footer > .btn-link:hover {text-decoration: none;}
 
-.panel-default > .panel-heading {background-color: #dce3e9; padding: 16px 22px;}
+.panel-default > .panel-heading { padding: 16px; }
 
 .panel-default .panel-body {background-color: #f7f8fa;}
 
@@ -6371,7 +6371,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .news-old .panel-sendsms .panel-heading,
 .panel-official .panel-heading,
-.panel-default .panel-heading,
 .news-old .panel-comments .panel-heading,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading,
@@ -6379,7 +6378,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .news-old .panel-sendsms .panel-heading h2,
 .panel-official .panel-heading h2,
-.panel-default .panel-heading h2,
 .news-old .panel-comments .panel-heading h2,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading h2,
