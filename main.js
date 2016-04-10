@@ -297,20 +297,20 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             jQuery(".play-radio i.fa-play").addClass('hidden');
             jQuery(".play-radio i.fa-pause").removeClass('hidden');
         });
-        jQuery(".play-radio i").bind("click", function () {
+        jQuery(".play-radio div").bind("click", function () {
             if (jQuery(this).prop("id") == "play") {
                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("play");
-                jQuery(".play-radio i.fa-play").addClass('hidden');
-                jQuery(".play-radio i.fa-pause").removeClass('hidden');
+                jQuery(".play-radio #play").addClass('hidden');
+                jQuery(".play-radio #pause").removeClass('hidden');
             }
             if (jQuery(this).prop("id") == "pause") {
                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac"
                 }).jPlayer("pause");
-                jQuery(".play-radio i.fa-play").removeClass('hidden');
-                jQuery(".play-radio i.fa-pause").addClass('hidden');
+                jQuery(".play-radio #play").removeClass('hidden');
+                jQuery(".play-radio #pause").addClass('hidden');
             }
         });
         // при окончании трека уже есть выше ended
