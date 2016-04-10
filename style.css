@@ -1282,7 +1282,9 @@ header#header .weather-text { display: none; }
 .archive .post img,
 .home .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
-.home .panel-news-list article.post-cat-8:first-of-type { display: none; }
+.home .panel-news-list .list > article.post-cat-8 { display: none; }
+
+.home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
 .home .panel-news-list .yummies {margin-bottom: 0;}
 
