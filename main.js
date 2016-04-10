@@ -294,8 +294,8 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 jQuery(".jp-duration").removeClass("hidden");
                 jQuery(".track-info").addClass("hidden");
             }
-            jQuery(".play-radio i.fa-play").addClass('hidden');
-            jQuery(".play-radio i.fa-pause").removeClass('hidden');
+            jQuery(".play-radio #play").addClass('hidden');
+            jQuery(".play-radio #pause").removeClass('hidden');
         });
         jQuery(".play-radio div").bind("click", function () {
             if (jQuery(this).prop("id") == "play") {
@@ -321,20 +321,20 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
 
          });*/
         radio_player.bind(jQuery.jPlayer.event.pause, function (event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
+            jQuery(".play-radio #play").removeClass('hidden');
+            jQuery(".play-radio #pause").addClass('hidden');
         });
         radio_player.bind(jQuery.jPlayer.event.error, function (event) {
-            jQuery(".play-radio i.fa-play").removeClass('hidden');
-            jQuery(".play-radio i.fa-pause").addClass('hidden');
+            jQuery(".play-radio #fa-play").removeClass('hidden');
+            jQuery(".play-radio #pause").addClass('hidden');
             jQuery(".track-info").html("<span class='error'><strong>Ошибка:</strong> " + event.jPlayer.error.message + "</span>");
             console.log("Ошибка: " + event.jPlayer.error.message);
             console.log(event.jPlayer.error);
             console.error(event.jPlayer.error);
         });
         radio_player.bind(jQuery.jPlayer.event.play, function (event) {
-            jQuery(".play-radio i.fa-play").addClass('hidden');
-            jQuery(".play-radio i.fa-pause").removeClass('hidden');
+            jQuery(".play-radio #play").addClass('hidden');
+            jQuery(".play-radio #pause").removeClass('hidden');
             if (video_player) {
                 video_player.stopVideo();
             }
