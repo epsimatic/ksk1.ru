@@ -2022,7 +2022,7 @@ article.post-custom p + p,
 .single-post .main-content article.post-news p + p { margin: 0; text-indent: 1.618em; }
 
 article.post-custom p.lead,
-.single-post .main-content article.post-news p.lead  { font-size: 18px; line-height: 24px; color: #333; margin-bottom: 24px; margin-top: 24px; text-indent: 0; }
+.single-post .main-content article.post-news p.lead  { font-size: 18px; line-height: 24px; color: #333; margin-bottom: 24px; margin-top: 24px; text-indent: 0; color: #000; }
 
 article.post-custom p.lead + p,
 article.post-custom img + p,
@@ -2102,7 +2102,7 @@ article.post-custom ol,
 article.post-custom ul li,
 article.post-custom ol li,
 .single-post .main-content article.post-news ul li,
-.single-post .main-content article.post-news ol li { margin-bottom: 12px; }
+.single-post .main-content article.post-news ol li { margin: 12px 0; }
 
 article.post-custom ul ul,
 article.post-custom ul ol,
@@ -2432,7 +2432,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     article.post-custom ul li,
     article.post-custom ol li,
     .single-post .main-content article.post-news ul li,
-    .single-post .main-content article.post-news ol li { margin-bottom: 13.5px; }
+    .single-post .main-content article.post-news ol li { margin: 13.5px 0; }
 
     article.post-custom aside.inset,
     .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 27px; }
