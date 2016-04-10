@@ -1941,7 +1941,7 @@ article.post-custom h1,
 article.post-paper h1 { margin-top: 24px; }
 
 article.post-custom h1 + .meta-author,
-.single-post .main-content article.post-news h1 + .meta-author { margin-top: -24px; margin-bottom: 24px; display: block; }
+.single-post .main-content article.post-news h1 + .post-meta { margin-top: -24px; margin-bottom: 24px; display: block; }
 
 .post-info .post-meta span { display: inline; }
 
@@ -1980,6 +1980,8 @@ article.post-custom .post-meta,
 article.post-custom .meta,
 .single-post .main-content article.post-news .meta,
 .single-post .main-content article.post-news .post-meta { font-size: 14px; line-height: 24px; }
+
+.single-post .main-content article.post-news .author-name { color: #000; font-weight: 600; }
 
 .single-post .main-content article.post-news .author-title { color: #999; }
 
@@ -2504,7 +2506,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .single-post .main-content article.post-news h1 { margin-bottom: 27px; }
 
     article.post-custom h1 + .meta-author,
-    .single-post .main-content article.post-news h1 + .meta-author { margin-top: -27px; margin-bottom: 27px; }
+    .single-post .main-content article.post-news h1 + .post-meta { margin-top: -27px; margin-bottom: 27px; }
 
     article.post-custom blockquote.letter,
     .single-post .main-content article.post-news blockquote.letter { padding: 28px 54px; }
