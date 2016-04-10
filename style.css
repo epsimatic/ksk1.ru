@@ -4653,7 +4653,7 @@ header.wide-header { display: none; }
 .snap-drawer-right ul.sub-menu li.menu-item > a:hover,
 .snap-drawer-right ul.sub-menu li.menu-item > a:focus { background-color: #d4d9ee; }
 
-.snap-drawer ul.sub-menu li.menu-item.active > a { background-color: #fff; }
+.snap-drawer ul.sub-menu li.menu-item.active > a { background-color: #f2fdff; }
 
 .snap-drawer ul.sub-menu li.menu-item:nth-child(2) > a {
     -webkit-transform: translate3d(0,1000px,0);
