@@ -2084,6 +2084,15 @@ article.post-custom hr,
 article.post-custom table,
 .single-post .main-content article.post-news table { margin: 48px 0; }
 
+article.post-custom h1 + table, 
+article.post-custom h2 + table, 
+article.post-custom h3 + table, 
+article.post-custom h4 + table, 
+.single-post .main-content article.post-news h1 + table,
+.single-post .main-content article.post-news h2 + table,
+.single-post .main-content article.post-news h3 + table,
+.single-post .main-content article.post-news h4 + table { margin-top: 0; }
+
 article.post-custom .wp-caption,
 .single-post .main-content article.post-news .wp-caption { padding: 0; margin: 8px 24px 24px; font-size: 14px; color: #666; }
 
