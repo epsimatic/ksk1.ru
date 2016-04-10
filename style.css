@@ -950,7 +950,7 @@ body.page .widget.yummies { margin: 0 !important; }
 body.home .widget.yummies .textwidget > *,
 body.single .widget.yummies .textwidget > *,
 body.archive .widget.yummies .textwidget > *,
-body.page .widget.yummies .textwidget > * { display: block; margin-bottom: 15px; }
+body.page .widget.yummies .textwidget > * { display: block; /*margin-bottom: 15px;*/ }
 
 .news header#header {margin: 0;}
 
