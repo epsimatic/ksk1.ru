@@ -938,7 +938,7 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.yummies { max-width: 100%; height: auto; margin-bottom: 15px; width: 100%; }
+.yummies { max-width: 100%; height: auto; margin-bottom: 15px !important; width: 100%; }
 
 #header .yummies { margin-bottom: 0; max-width: 100%; }
 
