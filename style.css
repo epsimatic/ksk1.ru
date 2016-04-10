@@ -3273,21 +3273,26 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 /* <editor-fold desc="Каталог"> */
 /* <editor-fold desc="Страница списка категорий каталога (справочника)"> */
 ul.page-cat,
-ul.page-cat .children{padding: 0;}
+ul.page-cat .children{ padding: 0; list-style: none; }
 
 ul.page-cat > li.cat-item {padding: 20px 0 0; background-color: #F7F8F9; margin-bottom: 25px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; }
 
 ul.page-cat > li.cat-item:hover {box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);}
 
-ul.page-cat > li.cat-item > a { display: block; color: #0A79DB; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; padding: 0 20px 20px; }
+ul.page-cat > li.cat-item > a { display: block; color: #0A79DB; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; padding: 0 20px 20px; text-transform: uppercase; }
+
+ul.page-cat > li.cat-item > a:hover,
+ul.page-cat > li.cat-item > a:focus { text-decoration: none; }
+
+ul.page-cat > li.cat-item .badge { float: right; }
 
 ul.page-cat ul.children > li.cat-item {border-left: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #F6F7F8; margin-bottom: 1px; background-color: #FCFCFC; padding: 0;}
 
-ul.page-cat ul.children > li.cat-item > a {padding: 10px 5px 10px 15px; min-width: 100%; display: inline-block;}
+ul.page-cat ul.children > li.cat-item > a {padding: 10px 15px; min-width: 100%; display: inline-block;}
 
 ul.page-cat ul.children > li.cat-item > a:focus,
 ul.page-cat ul.children > li.cat-item > a:hover,
-ul.page-cat ul.children > li.cat-item > a {color: #333333;}
+ul.page-cat ul.children > li.cat-item > a { color: #333333; text-decoration: none; }
 
 ul.page-cat ul.children > li.cat-item:hover,
 ul.page-cat ul.children > li.cat-item:focus {background-color: #F0F1F2; border-left: 1px solid #56C4F4;}
