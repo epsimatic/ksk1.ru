@@ -2082,7 +2082,7 @@ article.post-custom hr,
 /*.single-post .main-content article.post-news hr + p { margin: 0; height: 0; }*/
 
 article.post-custom table,
-.single-post .main-content article.post-news table { margin: 48px 0; }
+.single-post .main-content article.post-news table { margin: 24px 0; }
 
 article.post-custom h1 + table, 
 article.post-custom h2 + table, 
@@ -2424,7 +2424,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .single-post .main-content article.post-news hr { margin: 27px 0 26px; }
 
     article.post-custom table,
-    .single-post .main-content article.post-news table { margin: 54px 0; }
+    .single-post .main-content article.post-news table { margin: 27px 0; }
 
     article.post-custom .wp-caption,
     .single-post .main-content article.post-news .wp-caption { margin: 9px 27px 27px; }
