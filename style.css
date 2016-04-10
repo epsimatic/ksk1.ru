@@ -2198,6 +2198,8 @@ article.post-custom aside.inset ul > li,
 .single-post .main-content article.post-news aside.inset ol > li,
 .single-post .main-content article.post-news aside.inset ul > li { margin-bottom: 0; }
 
+.single-post .main-content article.post-news iframe { margin-top: 24px; }
+
 article.post-custom .table,
 .single-post .main-content article.post-news .table { clear: both; }
 
@@ -2487,6 +2489,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
     article.post-custom .post-info .post-meta,
     .single-post .main-content article.post-news .post-info .post-meta { margin: 27px 0; }
+
+    .single-post .main-content article.post-news iframe { margin-top: 27px; }
 
     article.post-custom .mejs-audio,
     article.post-news .mejs-audio { margin: 54px 0 27px; }
