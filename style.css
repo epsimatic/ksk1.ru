@@ -3295,8 +3295,6 @@ ul.page-cat > li.cat-item > a { display: block; color: #0A79DB; font-weight: 700
 ul.page-cat > li.cat-item > a:hover,
 ul.page-cat > li.cat-item > a:focus { text-decoration: none; }
 
-ul.page-cat > li.cat-item .badge { float: right; }
-
 ul.page-cat ul.children > li.cat-item {border-left: 1px solid rgba(0, 0, 0, 0); border-bottom: 1px solid #F6F7F8; margin-bottom: 1px; background-color: #FCFCFC; padding: 0;}
 
 ul.page-cat ul.children > li.cat-item > a {padding: 10px 15px; min-width: 100%; display: inline-block;}
