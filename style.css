@@ -1983,7 +1983,7 @@ article.post-custom .meta,
 
 .single-post .main-content article.post-news .author-name { color: #000; font-weight: 600; }
 
-.single-post .main-content article.post-news .author-title { color: #999; }
+.single-post .main-content article.post-news .meta-title { color: #999; }
 
 article.post-custom .post-meta .publish-date,
 .single-post .main-content article.post-news .post-meta .publish-date { margin-right: .5em; }
