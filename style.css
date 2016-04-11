@@ -4376,6 +4376,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .comment-list article.comment-body .gdthumb,
 .comment-list article.comment-body .reply { transition: opacity .1s ease 0s; }
 
+.comment-list article.comment-body .reply { font-size: 12px; }
+
 .comment-list .comment-rating .gdthumb a { color: #bbb; }
 
 .comment-list .comment-rating .gdthumb a:hover { color: #666; }
