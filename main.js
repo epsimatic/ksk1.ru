@@ -726,8 +726,8 @@ function AddMap(name_id, map_height) {
 
 // Кнопка «Наверх»
 (function () {
+    const topOffsetToShowBtn = 1000;
     if (top.location.pathname !== '/service/') {
-        const topOffsetToShowBtn = 1000;
         if (jQuery('.btn-scroll-up').length) {
             // У нас уже есть кнопка «Наверх», ничего делать не надо
         } else {
