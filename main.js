@@ -729,7 +729,7 @@ function AddMap(name_id, map_height) {
     const topOffsetToShowBtn = 1000;
     if (jQuery('.btn-scroll-up').length) {
         // У нас уже есть кнопка «Наверх», ничего делать не надо
-    } else {
+    } else if (url.match("/ksk66.ru\/services/")) { return; } else {
         var btn_home = jQuery('<a/>', {
             href: '#header',
             class: 'btn-home inactive text-center',
