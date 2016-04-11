@@ -725,39 +725,39 @@ function AddMap(name_id, map_height) {
 
 
 // Кнопка «Наверх»
-if (!url.match(/http\:\/\/ksk66\.ru\/services\//)) { 
 (function () {
     const topOffsetToShowBtn = 1000;
-    if (jQuery('.btn-scroll-up').length) {
-        // У нас уже есть кнопка «Наверх», ничего делать не надо
-    } else {
-        var btn_home = jQuery('<a/>', {
-            href: '#header',
-            class: 'btn-home inactive text-center',
-            title: 'К верху страницы',
-            html: '<div><svg baseProfile="basic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 70"><path fill="#999" d="M44.546 60.295l-2.251 2.251c-.273.273-.634.454-1.038.454-.362 0-.766-.181-1.039-.454l-17.718-17.718-17.718 17.718c-.273.273-.677.454-1.039.454s-.766-.181-1.039-.454l-2.251-2.251c-.272-.273-.453-.677-.453-1.038 0-.362.181-.766.454-1.039l21.007-21.008c.273-.273.677-.454 1.039-.454s.766.181 1.039.454l21.008 21.008c.272.273.453.677.453 1.039 0 .361-.181.765-.454 1.038z"/></svg></div> <div>&#1053;&#1040;&#1042;&#1045;&#1056;&#1061;</div>'
-        }).click(function (event) {
-            jQuery('html,body,#content').animate({scrollTop: 0}, 'slow');
-            btn_home.blur();
-            event.preventDefault();
-        });
-        var url = document.location.href;
-        if (url.match(/ob.ksk66/))
-            btn_home.appendTo('body');
-        else {
-            btn_home.appendTo('body');
+    if (!url.match(/http\:\/\/ksk66\.ru\/services\//)) { 
+        if (jQuery('.btn-scroll-up').length) {
+            // У нас уже есть кнопка «Наверх», ничего делать не надо
+        } else {
+            var btn_home = jQuery('<a/>', {
+                href: '#header',
+                class: 'btn-home inactive text-center',
+                title: 'К верху страницы',
+                html: '<div><svg baseProfile="basic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 70"><path fill="#999" d="M44.546 60.295l-2.251 2.251c-.273.273-.634.454-1.038.454-.362 0-.766-.181-1.039-.454l-17.718-17.718-17.718 17.718c-.273.273-.677.454-1.039.454s-.766-.181-1.039-.454l-2.251-2.251c-.272-.273-.453-.677-.453-1.038 0-.362.181-.766.454-1.039l21.007-21.008c.273-.273.677-.454 1.039-.454s.766.181 1.039.454l21.008 21.008c.272.273.453.677.453 1.039 0 .361-.181.765-.454 1.038z"/></svg></div> <div>&#1053;&#1040;&#1042;&#1045;&#1056;&#1061;</div>'
+            }).click(function (event) {
+                jQuery('html,body,#content').animate({scrollTop: 0}, 'slow');
+                btn_home.blur();
+                event.preventDefault();
+            });
+            var url = document.location.href;
+            if (url.match(/ob.ksk66/))
+                btn_home.appendTo('body');
+            else {
+                btn_home.appendTo('body');
+            }
+            jQuery(window).scroll(ShowHideBtnHome);
+            jQuery('#content').scroll(ShowHideBtnHome);
         }
-        jQuery(window).scroll(ShowHideBtnHome);
-        jQuery('#content').scroll(ShowHideBtnHome);
-    }
-    function ShowHideBtnHome() {
-        if (jQuery(this).scrollTop() > topOffsetToShowBtn)
-            btn_home.removeClass("inactive");
-        else
-            btn_home.addClass("inactive");
+        function ShowHideBtnHome() {
+            if (jQuery(this).scrollTop() > topOffsetToShowBtn)
+                btn_home.removeClass("inactive");
+            else
+                btn_home.addClass("inactive");
+        }
     }
 })();
-}
 
 
 // FIXME: понять, что это за фигня, и удалить
