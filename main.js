@@ -727,7 +727,6 @@ function AddMap(name_id, map_height) {
 // Кнопка «Наверх»
 (function btnHome() {
     const topOffsetToShowBtn = 1000;
-    if (!url.match(/http\:\/\/ksk66\.ru\/services\//)) {}
     if (jQuery('.btn-scroll-up').length) {
         // У нас уже есть кнопка «Наверх», ничего делать не надо
     } else {
