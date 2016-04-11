@@ -5159,6 +5159,8 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .services-content .service-icon + h3 { margin-top: 0; }
 
+.services-content .service-icon + h3 > a { color: #000; text-decoration: none; }
+
 .services-content .service-info .fa { font-size: 72px; }
 
 .services-content .service-info .fa-taxi { font-size: 60px; position: relative; top: 9px; }
