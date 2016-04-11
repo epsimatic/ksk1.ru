@@ -197,7 +197,7 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
 
 // Загрузить главную новость при наведении на панель Новости
 jQuery(".menu-main-news").one("mouseenter", function () {
-    jQuery(".news-main").load("http://ksk66.ru/engine/navbar-articles.php");
+    jQuery(".news-main").load("http://ksk66.ru/wp-content/themes/rootstrap-ksk66/main-news.php");
 });
 
 
