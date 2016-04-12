@@ -2451,7 +2451,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .single-post .main-content article.post-news aside.inset { max-width: 250px; margin: 27px; }
 
     article.post-custom blockquote,
-    .single-post .main-content article.post-news blockquote { font-size: 21px; margin: 27px 0 27px -1em; line-height: 27px; }
+    .single-post .main-content article.post-news blockquote { font-size: 18px; margin: 27px 0 27px -1em; line-height: 27px; }
 
     article.post-custom blockquote.letter,
     .single-post .main-content article.post-news blockquote.letter { padding: 1px 27px; margin-right: 0; margin-left: 0; font-size: 18px; }
