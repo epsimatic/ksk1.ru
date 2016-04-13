@@ -5833,6 +5833,8 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news .post-actions a:hover,
     header.wide-header .post-news .post-actions a:focus { text-decoration: none; color: #00c853; }
+    .menu-main-news .menu-main-news .post-actions {display: none;}
+
 
     /* Стили для панели объявлений*/
     header.wide-header ul.popular-categories { list-style: none; padding: 0; }
