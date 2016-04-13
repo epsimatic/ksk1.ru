@@ -2240,6 +2240,8 @@ article.post-paper em { background-color: #efefef; border-radius: 3px; font-size
 
 article.post-paper .btn-dl { margin-top: 22.652px; }
 
+.single-post .main-content article.post-news .mistape_caption { display: none; }
+
 
 /* Панель тела новости*/
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
@@ -2558,6 +2560,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     article.post-paper { padding: 0 20px; }
 
     article.post-paper figure.thumb-wrap { width: auto; padding-right: 40px; margin: 10px; }
+
+    .single-post .main-content article.post-news .mistape_caption { display: block; }
 }
 @media (min-width: 1200px) {
     article.post-paper { padding: 0 30px; }
