@@ -43,11 +43,11 @@ body.site-ob header#header { display: block; }
 /*Фон из снежинок*/
 /*.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; }*/
 
-/*.snap-content .main-content > .container { padding: 0; }*/
+.snap-content .main-content > .container { padding: 0; }
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
-/*.container #stripe { padding: 0 15px; }*/
+.container #stripe { padding: 0 15px; }
 
 #stripe .yummies,
 body.site-ob .yummies { margin-bottom: 15px; }
