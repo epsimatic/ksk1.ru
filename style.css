@@ -2246,6 +2246,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
 .single-post .main-content article.post-news .mistape_caption { display: none; }
 
+.page-template-custom-tp article.post-paper [itemprop=description] img { display: none; }
+
 
 /* Панель тела новости*/
 .panel.panel-news-body { box-shadow: none; background-color: #fff; }
