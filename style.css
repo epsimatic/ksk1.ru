@@ -5855,11 +5855,11 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news .post-title { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
-    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
+    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; line-height: 23px; max-height: 46px; }
 
     header.wide-header .news-list .post-news .post-title { line-height: 18px; margin-bottom: 11px; max-height: 36px; }
 
-    header.wide-header .post-news .post-title a { color: #00b0ff; }
+    header.wide-header .post-news .post-title a { color: #00b0ff; font-size: 19px }
 
     header.wide-header .news-list .post-news .post-title a:hover,
     header.wide-header .news-list .post-news .post-title a:focus,
@@ -6173,7 +6173,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .panel-complaint .btn-action { font-size: 18px; }
 
-    header.wide-header .post-news figure { width: 194px; }
+    header.wide-header .post-news figure { width: 180px; }
 
     header.wide-header .post-news figure img { margin-top: 5px; max-width: 200px; max-height: 125px; }
 
