@@ -1613,11 +1613,11 @@ iframe.fullstory__video { max-width: 100%; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Местные новости»"> */
-.content-padder > header { background-color: #d1f9ea; padding-bottom: 15px; margin-bottom: 27px;}
+.content-padder > header { padding: 0; margin-bottom: 27px;}
 
 .content-padder > header .taxonomy-description {position: relative; top: 3px;}
 
-.content-padder > header > .page-title {color: #666666; font-size: 30px; font-weight: 400; padding: 10px 20px 0;}
+.content-padder > header > .page-title { color: #999; font-size: 54px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 81px; text-transform: lowercase; }
 
 .content-padder > header p {color: #7d9d91; margin: 0; padding-left: 22px;}
 
