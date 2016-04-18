@@ -5880,11 +5880,13 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .post-news .post-actions a:hover,
     header.wide-header .post-news .post-actions a:focus { text-decoration: none; color: #00c853; }
 
+    header.wide-header .posrednik-link-wrap a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
+
     header.wide-header .posrednik-link-wrap figure.submenu-item-icon { float: left; margin-top: 4px; }
 
-    header.wide-header .posrednik-link-wrap .submenu-item-name { float: right; color: #333; font-size: 17px; font-weight: 700; line-height: 20; padding-right: 6px; padding-top: 13px; }
+    header.wide-header .posrednik-link-wrap .submenu-item-name { float: right; color: #333; font-size: 17px; font-weight: 700; line-height: 20px; padding-right: 6px; padding-top: 13px; }
 
-    header.wide-header .posrednik-link-wrap .submenu-item-name { font-size: 13px; font-weight: 400; }
+    header.wide-header .posrednik-link-wrap .submenu-item-name small { font-size: 13px; font-weight: 400; }
 
 
     /* Стили для панели объявлений*/
@@ -5942,7 +5944,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .menu-main-info .submenu-schedule > a:hover,
     header.wide-header .menu-main-info .submenu-schedule > a:focus { text-decoration: none; background-color: #f5f5f5; }
 
-    header.wide-header .posrednik-link-wrap a,
     header.wide-header .menu-main-info .submenu a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
 
     
