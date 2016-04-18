@@ -563,9 +563,8 @@ a.media-heading:focus {text-decoration: none;}
 
 .nav .current-page-parent > a { position: relative; font-weight: 600; }
 
+.single-post .nav .menu-main-news  > a::after
 .nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
-
-.nav .current-page-parent > a.news-link::after { background-color: transparent; }
 
 .nav .open > a,
 .nav .open > a:hover,
