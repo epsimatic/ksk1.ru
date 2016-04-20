@@ -5868,7 +5868,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news figure { float: left; width: 219px }
 
-    header.wide-header .post-news figure img { max-width: 220px; max-height: 130px; }
+    header.wide-header .post-news figure img { max-width: 220px; max-height: 130px; height: auto; width: auto; }
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
