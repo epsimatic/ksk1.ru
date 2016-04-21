@@ -1882,6 +1882,18 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 /* </editor-fold> */
 
+.sidebar .panel-link-with-icon { border: 1px solid #eee !important; border-radius: 7px !important; margin-bottom: 27px; }
+
+.panel-link-with-icon a.panel-heading { border-radius: 7px !important; background-color: #fff; display: table; width: 100%; }
+
+.panel-link-with-icon .panel-icon-container { display: table-cell; }
+
+.sidebar .panel-link-with-icon .panel-icon-container { height: 108px; width: 115px; }
+
+.panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
+
+.panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 21px; font-weight: 700; line-height: 21px; padding-right: 15px; vertical-align: middle; }
+
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {color: #777;}
 .post-info > * { height: auto; background-color: transparent; }
