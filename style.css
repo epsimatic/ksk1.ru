@@ -1891,11 +1891,17 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-link-with-icon .panel-icon-container { display: table-cell; }
 
-.sidebar .panel-link-with-icon .panel-icon-container { height: 108px; width: 115px; }
+.sidebar .panel-link-with-icon .panel-icon-container { height: 81px; width: 86px; }
 
 .panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
 
-.panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 21px; font-weight: 700; line-height: 21px; padding-right: 15px; vertical-align: middle; }
+.panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 18px; font-weight: 600; line-height: 18px; padding-right: 15px; vertical-align: middle; }
+
+@media (min-width: 992px) {
+    .sidebar .panel-link-with-icon .panel-icon-container { height: 108px; width: 115px; }
+    .panel-link-with-icon .panel-title { font-size: 21px; font-weight: 700; line-height: 21px; }
+}
+@media (min-width: 1200px) {}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {color: #777;}
