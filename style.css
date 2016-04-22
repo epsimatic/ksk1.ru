@@ -1882,7 +1882,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 /* </editor-fold> */
 
-.sidebar .panel-link-with-icon { border: 1px solid #eee !important; border-radius: 7px !important; margin-bottom: 15px; }
+.sidebar .panel-link-with-icon { border: 1px solid #ddd !important; border-radius: 7px !important; margin-bottom: 15px; box-shadow: none; }
 
 .panel-link-with-icon a.panel-heading { border-radius: 7px !important; background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
 
