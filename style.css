@@ -28,8 +28,6 @@ header#header { margin: 0 0 15px !important; display: none; }
 body.news header#header,
 body.site-ob header#header { display: block; }
 
-#stripe.container .yummies[src*="stripe"] { margin: 0; }
-
 #stripe.container { padding: 0; }
 
 .sidebar .yummies { display: none; }
@@ -44,9 +42,6 @@ body.site-ob header#header { display: block; }
 /*.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; }*/
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
-
-#stripe .yummies,
-body.site-ob .yummies { margin-bottom: 15px; }
 
 body.site-ob .panel-cat { padding: 5px 0 25px; }
 
@@ -977,7 +972,13 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.yummies { max-width: 100%; height: auto; margin-bottom: 15px !important; width: 100%; }
+.yummies { max-width: 100%; height: auto; margin-bottom: 24px; width: 100%; }
+.site-ob .sidebar .yummies { margin-bottom: 12px !important; }
+
+@media (min-width: 1200px) {
+    .yummies { margin-bottom: 27px; }
+    .site-ob .sidebar .yummies { margin-bottom: 13.5px !important; }
+}
 
 #header .yummies { margin-bottom: 0; max-width: 100%; }
 
@@ -1001,8 +1002,6 @@ body.page .widget.yummies .textwidget > * { display: block; /*margin-bottom: 15p
 
 
 .sidebar .yu {padding: 0 !important;}
-
-.site-ob .sidebar .yummies {margin-bottom: 10px !important;}
 
 .header .yummies {margin: 0;}
 
