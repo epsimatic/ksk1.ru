@@ -1232,7 +1232,7 @@ header#header .weather-text { display: none; }
 .panel-notice > .list-group > .list-group-item > .media-object {padding: 3px 7px 0 0;}
 
 /* <editor-fold desc="Панель «Главные новости»"> */
-.panel-news { background-color: transparent; }
+.panel-news { background-color: transparent; margin-bottom: 0 !important; }
 
 .panel-news .row {margin-right: 0; margin-left: 0;}
 
@@ -1327,10 +1327,10 @@ header#header .weather-text { display: none; }
 
 .home .panel-news .post-description-text { font-size: 16px; line-height: 1.25; margin-bottom: 12px; }
 
-.home .panel-news + .yummies img .yummies,
+.home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .home .panel-news article.post-news .post-title { margin-bottom: 18px; margin-top: 9px; }
 
     .home article.post-news .post-title { margin-top: 18px; margin-bottom: 9px; }
@@ -1339,7 +1339,7 @@ header#header .weather-text { display: none; }
 
     .home .panel-news figure { margin-right: 21px; }
 
-    .home .panel-news + .yummies img .yummies,
+    .home .panel-news + .yummies img.yummies,
     .home .panel-news-list .yummies { margin: 13.5px 0 !important; }
 
     .home .panel-news .post-description-text { margin-bottom: 13.5px; }
