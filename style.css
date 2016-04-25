@@ -972,11 +972,11 @@ body.ob     .cond-active.cond-active-ob,
 /* </editor-fold> */
 
 /* <editor-fold desc="Реклама"> */
-.yummies { max-width: 100%; height: auto; margin-bottom: 24px; width: 100%; }
+.yummies { max-width: 100%; height: auto; margin-bottom: 24px !important; width: 100%; }
 .site-ob .sidebar .yummies { margin-bottom: 12px !important; }
 
 @media (min-width: 1200px) {
-    .yummies { margin-bottom: 27px; }
+    .yummies { margin-bottom: 27px !important; }
     .site-ob .sidebar .yummies { margin-bottom: 13.5px !important; }
 }
 
