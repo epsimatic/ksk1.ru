@@ -2019,7 +2019,7 @@ article.post-custom .post-meta .publish-date,
 .single-post .main-content article.post-news .post-meta .publish-date { margin-right: .5em; }
 
 article.post-custom .meta,
-.single-post .main-content article.post-news .meta { display: inline-block; margin-right: 1em; }
+.single-post .main-content article.post-news .meta { display: inline; margin-right: 1em; }
 
 article.post-custom p,
 .single-post .main-content article.post-news p { margin: 24px 0; }
