@@ -5325,7 +5325,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .services-content .services-header .page-title { font-size: 36px; }
 
-    .services-content .service-icon { /*width: 100%; background-position: center center; float: none; */}
+    /*.services-content .service-icon { width: 100%; background-position: center center; float: none; }*/
 
     .services-content .service-icon + h3 { font-size: 23px; margin-top: 12px; }
 
@@ -5467,6 +5467,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 @media (min-width: 1200px) { 
     /*.services-content .service-info-inner { min-height: 168px; }*/
+    .services-content .services-info-containter { padding: 60px; }
 
     .services-content .service-info-inner .app-download-bages img { width: auto; }
 
