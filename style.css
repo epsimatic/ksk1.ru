@@ -4652,7 +4652,7 @@ header.wide-header { display: none; }
 
 .snap-drawer { margin: 0; border: none; padding: 0; font-size: 16px; }
 
-.snap-drawer-left { color: white; background-color: #00b0ff; padding: 5px 0; left: 1px; }
+.snap-drawer-left { color: white; background-color: #00b0ff; padding-bottom: 5px; left: 1px; }
 
 .snap-drawer-right { font-size: 14px; color: #333; background-color: #f5f5f5; right: 1px; }
 
