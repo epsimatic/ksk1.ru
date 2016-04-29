@@ -1307,7 +1307,7 @@ header#header .weather-text { display: none; }
 .post-news figure.post-thumb img { max-width: 100% !important; }
 
 .post-archive .post-description-text,
-.post-news .post-description-text { margin-bottom: 10px; font-size: 14px; line-height: 1.2em; color: #333; }
+.post-news .post-description-text { font-size: 14px; line-height: 1.2em; color: #333; }
 
 .post-archive a,
 .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
@@ -1360,9 +1360,6 @@ header#header .weather-text { display: none; }
 
 .home .panel-news-list article + .yummies { margin-top: -2px; position: relative; }
 
-.archive .post-description-text,
-.home .panel-news-list .post-description-text { margin-bottom: 10px; }
-
 .home .panel-news .post-actions { font-size: 14px; }
 
 .home .panel-news-list .panel-footer .row {margin-bottom: 0;}
@@ -1390,7 +1387,7 @@ header#header .weather-text { display: none; }
 .home .panel-official .post-actions,
 .home .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px; font-size: 12px; }
 
-.post-edit, .post-comment, .post-more { padding: 5px 0; border-right: 1px solid rgba(255,255,255,0.3); }
+.post-edit, .post-comment, .post-more { border-right: 1px solid rgba(255,255,255,0.3); line-height: 24px; }
 
 .post-comment-num {font-weight: 700;}
 
@@ -2601,6 +2598,9 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     article.post-paper figure.thumb-wrap { width: auto; padding-right: 40px; margin: 10px; }
 
     .single-post .main-content article.post-news .mistape_caption { display: block; }
+
+    .post-edit, .post-comment, .post-more { line-height: 27px; }
+
 }
 @media (min-width: 1200px) {
     article.post-paper { padding: 0 30px; }
@@ -6521,13 +6521,13 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 .panel-official .post-actions,
 .news-old .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px;}
 
-.news-old .post-edit, .post-comment, .post-more {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
+.news-old .post-edit {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
 
-.news-old .post-edit, .post-comment { border-right: 1px solid rgba(255,255,255,0.3); padding-right: 7px;}
+.news-old .post-edit, .post-comment { border-right: 1px solid rgba(255,255,255,0.3); margin-right: 7px; }
 
 .post .post-comment { border-right: none; }
 
-.news-old .post-comment-num {font-weight: 700;}
+.news-old .post-comment-num { font-weight: 700; }
 
 .news-old .post-more-video:before, .post-more-photo:before {font-family: FontAwesome; padding-right: 5px;}
 
