@@ -5811,7 +5811,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125); }
     
-    header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
+    header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; text-align: center; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .row { margin: 0 -15px; }
 
