@@ -5847,16 +5847,16 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news .post-title { margin: 0 0 10px; font-size: 14px; font-weight: 600; overflow: hidden; white-space: normal; }
 
-    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; line-height: 23px; max-height: 46px; }
+    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; line-height: 20px; max-height: 46px; }
 
     header.wide-header .news-list .post-news .post-title { line-height: 18px; margin-bottom: 11px; max-height: 36px; }
 
-    header.wide-header .post-news .post-title a { color: #00b0ff; font-size: 19px }
+    header.wide-header .post-news .post-title a { color: #222; font-size: 19px }
 
     header.wide-header .news-list .post-news .post-title a:hover,
     header.wide-header .news-list .post-news .post-title a:focus,
     header.wide-header .post-news .post-title a:hover,
-    header.wide-header .post-news .post-title a:focus { text-decoration: none; color: #0091ea; }
+    header.wide-header .post-news .post-title a:focus { text-decoration: none; color: #555; }
 
     header.wide-header .post-news figure { float: left; width: 219px }
 
