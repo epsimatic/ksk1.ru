@@ -1307,7 +1307,7 @@ header#header .weather-text { display: none; }
 .post-news figure.post-thumb img { max-width: 100% !important; }
 
 .post-archive .post-description-text,
-.post-news .post-description-text { font-size: 14px; line-height: 1.2em; color: #333; }
+.post-news .post-description-text { font-size: 14px; line-height: 1.2em; color: #333; margin-bottom: 10px; }
 
 .post-archive a,
 .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
@@ -1377,15 +1377,8 @@ header#header .weather-text { display: none; }
 
 .archive .post { margin-bottom: 5px; }
 
-.archive .post-actions,
-.home .post-actions { padding: 0 10px; position: relative; }
-
 .archive .post-actions > *,
-.home .post-actions > * {display: inline-block;}
-
-.archive .post .post-actions,
-.home .panel-official .post-actions,
-.home .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px; font-size: 12px; }
+.home .post-actions > * { display: inline-block; }
 
 .post-edit, .post-comment, .post-more { border-right: 1px solid rgba(255,255,255,0.3); line-height: 24px; }
 
@@ -1846,6 +1839,15 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-social .widget-ok {margin: -1px -1px -4px;}
 
+.home .panel-social,
+.single .panel-social,
+.archive .panel-social { display: none; }
+
+@media (min-width: 768px) {
+    .home .panel-social,
+    .single .panel-social,
+    .archive .panel-social { display: block; }
+}
 
 /* </editor-fold> */
 
