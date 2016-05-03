@@ -5475,7 +5475,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     }
 
     .ob-large-thumbs article.ob { margin-bottom: 25px; }
-    .form-group_select{margin-top: 30px;}
 }
 
 /* Стили для размера -sm- */
@@ -5498,7 +5497,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .affix { max-height: 100%; max-width: 100%; }
 
     object { display: block; }
-    .form-group_select{margin-top: 30px;}
 
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
