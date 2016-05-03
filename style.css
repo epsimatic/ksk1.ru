@@ -1039,18 +1039,9 @@ header#header .weather-text { display: none; }
 
 .quick-nav {background-color: #428bca;}
 
-/*Старые стили для quick-nav*/
-/*.quick-nav .dropdown-header {text-transform: uppercase; color: #0275D3; font-size: 1.1em;}*/
-
 .quick-nav ul li {position: relative;}
 
 .quick-nav .name_cat {color: #ffffff;}
-
-/*.quick-nav ul li a {padding-right: 60px;}*/
-
-/*.quick-nav ul li .badge {position: absolute; right: 15px;}*/
-
-/*.quick-nav li > a {width: 100%;}*/
 
 .quick-nav li > a:hover,
 .quick-nav li > a:focus,
@@ -1064,16 +1055,10 @@ header#header .weather-text { display: none; }
 
 .panel > .quick-nav .btn-group {margin: 0;}
 
-/*.quick-nav .btn-link {color: #fff;}*/
-
-/*.quick-nav .btn > .badge {margin-top: 6px;}*/
-
 .quick-nav .active .badge,
 .quick-nav .btn > .badge {background-color: #FFFFFF; color: #428BCA;}
 
 .quick-nav .btn > .badge {font-size: 14px; padding: 4px 10px; border-radius: 6px; margin-left: 3px;}
-
-/*.quick-nav .fa-plus-circle {margin-right: -6px;}*/
 
 .name_cat {padding-left: 20px;}
 
@@ -1104,6 +1089,8 @@ header#header .weather-text { display: none; }
 .quick-nav ul > li.cat-item > ul.children > li > a:hover,
 .quick-nav ul > li.cat-item > ul.children > li > a:focus {text-decoration: none; background-color: #f2f1f0; cursor: pointer;}
 
+.quick-nav .fa-navicon { font-size: 1.5em; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
@@ -1117,6 +1104,7 @@ header#header .weather-text { display: none; }
 @media (min-width: 768px) {
     .table-comparison > .row > .col-sm-4:first-child {font-size: 14px; text-align: right;}
     .table-comparison > .row > div.col-sm-4:after {content: "";}
+    .quick-nav .fa-navicon { font-size: 1em; }
 }
 
 /* Другие */
