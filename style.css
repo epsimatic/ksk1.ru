@@ -73,8 +73,8 @@ body.site-ob .panel-cat { padding: 5px 0 25px; }
 
 /* </editor-fold> */
 
-:focus { outline: none; }
-::-moz-focus-inner { border: 0; }
+:focus { outline: none !important; }
+::-moz-focus-inner { border: 0 !important; }
 
 /*
     snap.js hack
