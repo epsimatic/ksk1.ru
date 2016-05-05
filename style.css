@@ -1508,6 +1508,10 @@ ul.lcp_paginator li { display: none; list-style-type: none; font-size: 16px; lin
 ul.lcp_paginator li a:hover,
 ul.lcp_paginator li a:focus { text-decoration: none; }
 
+ul.lcp_paginator li a:focus { outline: none !important; }
+
+ul.lcp_paginator li a::-moz-focus-inner { border: 0 !important; }
+
 ul.lcp_paginator li:first-child,
 ul.lcp_paginator li:last-child { display: inline; }
 
