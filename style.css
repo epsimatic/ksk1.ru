@@ -76,7 +76,7 @@ body.site-ob .panel-cat { padding: 5px 0 25px; }
 nav.navbar .menu-item a:focus,
 .yummies a:focus { outline: none !important; }
 
-nav.navbar .menu-item a::-moz-focus-inner
+nav.navbar .menu-item a::-moz-focus-inner,
 .yummies a::-moz-focus-inner { border: 0 !important; }
 
 /*
