@@ -73,6 +73,9 @@ body.site-ob .panel-cat { padding: 5px 0 25px; }
 
 /* </editor-fold> */
 
+:focus { outline: none; }
+::-moz-focus-inner { border: 0; }
+
 /*
     snap.js hack
     Переопределяем отступы у bootrap-колонок, .row, .container
