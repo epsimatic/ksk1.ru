@@ -279,7 +279,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .tocify .tocify-header > .tocify-item > a { line-height: 2.5; font-size: 1.1em; padding-left: 20px; }
 
-.tocify-header > .tocify-item > a { color: #fff; }
+.tocify-header > .tocify-item > a { color: #333; }
 
 .tocify-header > .tocify-item > a:hover { color: #4E342E; background-color: #FFE57F; }
 
