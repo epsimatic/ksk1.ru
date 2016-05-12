@@ -1346,7 +1346,16 @@ header#header .weather-text { display: none; }
 .archive .post img,
 .home .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
-.home .panel-news-list .list > article.post-cat-8 { display: none; }
+.home .panel-news-list .list > article.post-cat-8, 
+.home .panel-news-list .list > article.post-cat-7,
+.home .panel-news-list .list > article.post-cat-9,
+.home .panel-news-list .list > article.post-cat-11,
+.home .panel-news-list .list > article.post-cat-12,
+.home .panel-news-list .list > article.post-cat-18,
+.home .panel-news-list .list > article.post-cat-19,
+.home .panel-news-list .list > article.post-cat-271,
+.home .panel-news-list .list > article.post-cat-318,
+.home .panel-news-list .list > article.post-cat-319 { display: none; }
 
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
