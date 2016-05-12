@@ -131,7 +131,7 @@ input.input-group .form-control { min-width: 65px; }
 
 .ob-admin .popover-header .close { font-size: 30px; position: relative; right: 6px; }
 
-.popover-content .table-obs .ob-category-name { display: none; }
+.popover-content .table-obs .ob-category-name { /*display: none;*/ }
 
 .popover-content .table-obs .ob-thumb { width: 60px; }
 
@@ -374,7 +374,7 @@ h1 {
 #popover-search{ position: relative; right: 39px;}
 
 /* Всплывающая форма поиска */
-.popover-quick-search { max-width: 650px; }
+.popover-quick-search { max-width: 870px; }
 .popover-quick-search .popover-content { overflow-y: scroll; max-height: 600px; padding: 0; }
 .popover-quick-search .popover-content .table { min-width: 600px; }
 .popover-quick-search .popover-content .table thead { display: none; }
