@@ -375,6 +375,7 @@ h1 {
 
 /* Всплывающая форма поиска */
 .popover-quick-search { max-width: 870px; }
+
 .popover-quick-search .popover-content { overflow-y: scroll; max-height: 600px; padding: 0; }
 .popover-quick-search .popover-content .table { min-width: 600px; }
 .popover-quick-search .popover-content .table thead { display: none; }
