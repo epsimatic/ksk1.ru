@@ -3001,8 +3001,6 @@ article.ob a:focus { text-decoration: none; }
 
 
 
-
-
 .panel-notice a.super {background-color: #fffcdc !important;}
 
 .panel-notice a.super:hover,
@@ -3126,7 +3124,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options { margin-bottom: 30px; }
 
-.ob-paid-options > .alert { background-color: transparent; border: none; color: #ff6347; font-size: 18px; font-weight: 600; margin-bottom: 30px; text-align: center; }
+.ob-paid-options > .alert { background-color: transparent; border: none; color: #f44336; font-size: 18px; font-weight: 600; margin-bottom: 30px; text-align: center; }
 
 .ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; text-transform: uppercase; white-space: normal; }
 
@@ -3144,9 +3142,9 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options .payment-button { padding: 0; }
 
-.ob-paid-options .btn-lift-up { display: table-cell; vert-align: middle; min-height: 61px; padding: 12px; font-size: 12px; background-color: #fff89d; color: rgba(32, 23, 44, 0.7); border: none; }
+.ob-paid-options .btn-lift-up { display: table-cell; vert-align: middle; min-height: 61px; padding: 12px; font-size: 12px; background-color: #fffcdc; color: rgba(32, 23, 44, 0.7); border: none; }
 
-.ob-paid-options .btn-lift-up:hover { background-color: #fffbcb; }
+.ob-paid-options .btn-lift-up:hover { background-color: #fef8b7; }
 
 .ob-paid-options .btn-lift-up .lift-up-string { font-size: 14px; font-weight: 600; text-transform: uppercase; }
 
@@ -3189,6 +3187,16 @@ a.super:focus {background-color: #fbea2d;}
 
 #ob-commerce-before-paid .modal-header .close {margin-top: -22px !important; }
 #ob-commerce-before-paid form.payment-button button{margin-top: 10px;}
+
+@media (min-width: 992px) {
+    .ob-paid-options > .row:first-child { display: table; }
+    .ob-paid-options > .row:first-child > * { display: table-cell; }
+    .ob-paid-options .btn-lift-up { display: block; float: none; min-height: 87px; }
+}
+
+@media (min-width: 1200px) {
+    .ob-paid-options .btn-lift-up { min-height: 88px; }
+}
 /* </editor-fold> */
 
 /* <editor-fold desc="Оформление логотипа «Твой Посредник» текстом"> */
