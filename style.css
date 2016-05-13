@@ -676,7 +676,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary { background-color: #0288d1; border-color: #0277bd; }
 
-.btn-action { color: #ffffff; background-color: #2ecc71; border-color: #2ecc71; }
+.btn-action { color: #ffffff; background-color: #00D964; border-color: #00D964; }
 
 .btn-action .caret {border-top-color: #fff;}
 
@@ -686,7 +686,7 @@ a.list-group-item:focus {background-color: #f8f8f8;}
 .btn-action.active,
 .open .dropdown-toggle.btn-action {color: #ffffff; background-color: #00e676; border-color: #00e676;}
 
-.btn-action .label {background-color: #fff; color: #2ecc71; margin-left: 5px; padding: 0.2em 0.6em 0.15em;}
+.btn-action .label {background-color: #fff; color: #00D964; margin-left: 5px; padding: 0.2em 0.6em 0.15em;}
 
 .btn-danger { background-color: #f44336; border-color: #f44336; }
 
@@ -1776,7 +1776,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
 .panel-comments .comment-rating.comment-neutral { display: none; }
-.panel-comments .comment-rating.comment-positive { color: #2ecc71; }
+.panel-comments .comment-rating.comment-positive { color: #00D964; }
 .panel-comments .comment-rating.comment-negative { color: #f44336; }
 
 .panel-comments .comment-wrap { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -3128,7 +3128,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; text-transform: uppercase; white-space: normal; }
 
-.ob-paid-options .label-warning { background-color: #ff6347; letter-spacing: .025em; }
+.ob-paid-options .label-warning { background-color: #F44336; letter-spacing: .025em; }
 
 .ob-paid-options .modal-content { box-shadow: 0 0 300px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.8); }
 
@@ -3670,7 +3670,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 .site-services .menu-service a:hover div,
 .site-rk .menu-rk a:hover div {color: #333333;}
 
-.site-rk .menu-rk div:nth-child(1) a.active div {color: #2ecc71 !important;}
+.site-rk .menu-rk div:nth-child(1) a.active div {color: #00D964 !important;}
 
 .site-rk .menu-rk div:nth-child(2) a.active div {color: #31e5fd !important;}
 
@@ -3699,7 +3699,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 .site-services .menu-service a hr,
 .site-rk .menu-rk a hr {width: 75%; margin-top: 10px; border-bottom: 3px solid; border-top: none; opacity: 0;}
 
-.site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #2ecc71;}
+.site-rk .menu-rk div:nth-child(1) a hr {border-bottom-color: #00D964;}
 
 .site-rk .menu-rk div:nth-child(2) a hr {border-bottom-color: #31e5fd;}
 
@@ -4405,7 +4405,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .comment-list .comment-rating .badge { padding: 0; color: #ccc; font-weight: 600; }
 
-.comment-list .comment-rating .badge.comment-positive { color: #2ecc71; font-weight: 700; }
+.comment-list .comment-rating .badge.comment-positive { color: #00D964; font-weight: 700; }
 .comment-list .comment-rating .badge.comment-negative { color: #f44336; font-weight: 700; }
 
 .comment-list article.comment-body:hover .gdthumb,
@@ -5848,7 +5848,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .post-news .post-actions a { color: #777; }
 
     header.wide-header .post-news .post-actions a:hover,
-    header.wide-header .post-news .post-actions a:focus { text-decoration: none; color: #2ecc71; }
+    header.wide-header .post-news .post-actions a:focus { text-decoration: none; color: #00D964; }
 
     header.wide-header .posrednik-link-wrap a { display: block; padding: 15px 7px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; text-align: left; }
 
