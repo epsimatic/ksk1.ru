@@ -1354,8 +1354,8 @@ header#header .weather-text { display: none; }
 
 .home .panel-news-list .panel-footer .row {margin-bottom: 0;}
 
-.home .panel-official .panel-footer,
-.home .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
+.news-old .panel-official .panel-footer,
+.news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
 .home .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
 
@@ -1401,7 +1401,7 @@ header#header .weather-text { display: none; }
 
 .home .panel-official .post-actions {margin-bottom: 5px;}
 
-.home .panel-official .list-group-item:hover {background-color: #fff1e5;}
+.home .panel-official .list-group-item:hover { background-color: #f8f8f8; }
 
 .home .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
@@ -1614,16 +1614,8 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .panel-video > .panel-body {background-color: #848787;}
 /* </editor-fold> */
 
-/* <editor-fold desc="Панель «Областные новости»"> */
-.panel-global > .panel-heading { background: #2ebcb7 url(img/panel-global.png) no-repeat right; background-size: contain; }
-/* </editor-fold> */
-
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading { background: #ff794c url(img/panel-congrats.png) no-repeat right !important; background-size: contain; }
-/* </editor-fold> */
-
-/* <editor-fold desc="Панель «Официальная информация»"> */
-.panel-official > .panel-heading { background: #4a76bb url(img/panel-official.png) no-repeat right; background-size: contain; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Некролог»"> */
@@ -6449,14 +6441,14 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 /* <editor-fold desc="Временные стили для главной новости и новостной ленты"> */
 
 .news-old .panel-sendsms .panel-heading,
-.panel-official .panel-heading,
+.news-old .panel-official .panel-heading,
 .news-old .panel-comments .panel-heading,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading,
 .news-old .panel-news-list .panel-heading  { padding: 9px 15px 10px; background: #EDB194 none; margin: 0; }
 
 .news-old .panel-sendsms .panel-heading h2,
-.panel-official .panel-heading h2,
+.news-old .panel-official .panel-heading h2,
 .news-old .panel-comments .panel-heading h2,
 .news-old .panel-social .panel-heading,
 .news-old .panel-news .panel-heading h2,
@@ -6478,7 +6470,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .news-old .block .vsection .oneliner a,
 .news-old .panel-sendsms a,
-.panel-official a,
+.news-old .panel-official a,
 .news-old .panel-news a,
 .news-old .panel-news-list a {color: #433822; text-decoration: none;}
 
@@ -6486,11 +6478,11 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .news-old .block .vsection .oneliner a:hover,
 .news-old .panel-sendsms a:hover,
-.panel-official a:hover,
+.news-old .panel-official a:hover,
 .news-old .panel-news a:hover,
 .news-old .panel-news-list a:hover {border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none;}
 
-.panel-official .panel-footer,
+.news-old .panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
 .news-old .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
@@ -6501,14 +6493,14 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .news-old h1.post-title a {color: #333;}
 
-.panel-official .list-group-item,
+.news-old .panel-official .list-group-item,
 .news-old .panel-news-list .list-group-item {background-color: #fbf8f7; margin-bottom: 2px; padding-bottom: 0;}
 
 .panel-official figure { display: none; }
 
 .news-old .post-actions {background-color: #ecd8ce; padding: 4px 10px 5px; position: relative;}
 
-.panel-official .post-actions,
+.news-old .panel-official .post-actions,
 .news-old .panel-news-list .post-actions { left: 15px; border-radius: 5px 0 0 5px; margin-bottom: 10px;}
 
 .news-old .post-edit {padding-top: 4px; padding-bottom: 5px; padding-left: 2px;}
@@ -6551,7 +6543,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .panel-official .post-actions {margin-bottom: 5px;}
 
-.panel-official .list-group-item:hover {background-color: #fff1e5;}
+.news-old .panel-official .list-group-item:hover {background-color: #fff1e5;}
 
 .news-old .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
