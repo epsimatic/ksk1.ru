@@ -3541,7 +3541,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
 
-.panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #fff9c4; color: #a1887f; }
+.panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #FEF8B7; color: #a1887f; }
 
 .panel-default.panel-schedule .panel-heading .vehicle-type > img { width: 100%; }
 
@@ -4154,7 +4154,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 /* Стили для унифициорованного макета в афише в списке событий */
 .events .post-event { margin: 0; padding: 0; font-size: 14px; line-height: 22.652px; }
 
-.events .post-event.has-post-thumbnail.event-paid { background-color: #fff9c4; margin: 22.652px -15px; }
+.events .post-event.has-post-thumbnail.event-paid { background-color: #FEF8B7; margin: 22.652px -15px; }
 
 .events .post-event .post-title { margin: 22.652px 0 0; font-size: 17.798px; font-weight: 600; line-height: 22.652px; }
 
