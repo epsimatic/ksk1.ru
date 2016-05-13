@@ -375,6 +375,8 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-default > .panel-heading { padding: 16px; }
 
+.panel-default .panel-heading { background-color: #fff; }
+
 .panel-default .panel-body {background-color: #f7f8fa;}
 
 .panel-default h2:first-child {margin-top: 0;}
@@ -2969,6 +2971,8 @@ article.ob a:focus { text-decoration: none; }
 
 .panel-notice article.ob .ob-meta { color: #416484; font-size: .9em; text-align: right; }
 
+.panel.panel-ob { box-shadow: none; }
+
 .panel-ob::after { clear: both; content: " "; }
 
 .panel-ob article.ob { padding: 10px 15px; }
@@ -3124,7 +3128,7 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; text-transform: uppercase; white-space: normal; }
 
-.ob-paid-options > .btn > .label { background-color: #ff6347; letter-spacing: .025em; }
+.ob-paid-options .label-warning { background-color: #ff6347; letter-spacing: .025em; }
 
 .ob-paid-options .modal-content { box-shadow: 0 0 300px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.8); }
 
@@ -3132,9 +3136,9 @@ a.super:focus {background-color: #fbea2d;}
 
 .ob-paid-options .btn-emphasis-wrap { padding: 0; position: relative; }
 
-.ob-paid-options .btn-emphasis { padding: 15px; border: 3px dashed #f6d01e; background-color: #fff04e; font-size: 18px; font-weight: 600; letter-spacing: .013em; text-transform: uppercase; color: rgba(58, 43, 13, .68); }
+.ob-paid-options .btn-emphasis { padding: 15px; border: 3px dashed #f6d01e; background-color: #fffcdc; font-size: 18px; font-weight: 600; letter-spacing: .013em; text-transform: uppercase; color: rgba(58, 43, 13, .68); }
 
-.ob-paid-options .btn-emphasis:hover { background-color: #fff67e; color: rgba(58, 43, 13, 0.75); border-color: #f7c31e; }
+.ob-paid-options .btn-emphasis:hover { background-color: #FEF8B7; color: rgba(0, 0, 0, .65); }
 
 .ob-paid-options .payment-button { padding: 0; }
 
