@@ -43,8 +43,6 @@ body.site-ob header#header { display: block; }
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
-body.site-ob .panel-cat { padding: 5px 0 25px; }
-
 /*CSS-fix для «негоризонтальных» форм*/
 .site-rk .wpcf7 .form-group,
 .site-radio .wpcf7 .form-group,
@@ -353,7 +351,9 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
     .widget { margin-bottom: 27px !important; }
 }
 
-.panel { border: none; background-color: #F9FAFB; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); transition: box-shadow 0.45s ease 0s; }
+.panel { border: none; box-shadow: 0 1px 2px rgba(0, 0, 0, .07); transition: box-shadow 0.45s ease 0s; }
+
+.panel:hover { box-shadow: 0 1px 4px rgba(0, 0, 0, .07); }
 
 .panel.panel-page { box-shadow: none; }
 
@@ -369,7 +369,7 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-heading h3,
 .panel > .panel-heading h3,
-.panel > .panel-heading h2 { padding: 0 !important; font-size: 19px; font-weight: 700; letter-spacing: .025em; color: #fff; }
+.panel > .panel-heading h2 { padding: 0; font-size: 19px; font-weight: 700; letter-spacing: .025em; color: #fff; }
 
 .panel-footer a {color: #006048;}
 
@@ -547,9 +547,9 @@ body.alt .show-alt.show-alt.show-alt { display: block !important; position: stat
 
 .col-special {padding: 0 5px;}
 
-.badge { background-color: #909293; border-radius: 0.45em; font-weight: 600; font-size: 0.9em; letter-spacing: 0.04em; padding: 0.3em 0.7em 0.35em; }
+.badge { background-color: #999; border-radius: 3px; font-weight: 400; font-size: 12px; letter-spacing: 0.04em; padding: 0 5px; line-height: 19px; }
 
-.badge strong {font-weight: 700;}
+.badge strong { font-weight: 700; }
 
 a.media-heading:hover,
 a.media-heading:focus {text-decoration: none;}
@@ -1271,8 +1271,6 @@ header#header .weather-text { display: none; }
 .home .panel .panel-heading h3,
 .home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; margin: 0;}
 
-.panel.panel-notice .panel-heading { background-color: #ff4b3d !important; }
-
 .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
 .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
@@ -1674,7 +1672,7 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .panel-complaint .btn-action { font-size: 14px; }
 
 /* <editor-fold desc="Панель «Важно»"> */
-.panel.panel-notice > .panel-heading { background-color: #FF4B3D; }
+.panel.panel-notice > .panel-heading { background-color: #F44336; }
 
 .panel-notice a.news-link { background-color: #fcfcfc; display: block; padding: 10px 15px; }
 
@@ -2897,13 +2895,13 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .panel-ob-bottom .btn { font-size: 18px; }
 }
 
-.panel-cat { margin: 5px 0 25px !important; padding: 0 !important; background-color: #fafbfc; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); }
+.panel-cat { margin: 0 0 27px !important; padding: 0 !important; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); }
 
 .panel-cat:hover {box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);}
 
-.panel-cat .panel-heading {padding: 10px 0 0; margin: 0; background-color: #F7F8F9;}
+.panel-cat .panel-heading { padding: 0; margin: 0; }
 
-.panel-cat > .panel-heading > .row > div > h3 { margin: 0; color: #0A79DB; font-size: 1.7em; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 10px 5px 20px 20px !important; }
+.panel-cat > .panel-heading > .row > div > h3 { margin: 0; color: #2979ff; font-size: 27px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 10px 5px 20px 17px; }
 
 .panel-cat > .panel-body {padding: 0; background-color: transparent;}
 
@@ -2911,12 +2909,12 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
 .panel-cat .list-group {padding: 0; margin: 0;}
 
-.panel-cat > .panel-body a.list-group-item {background-color: #fcfcfc; border-left: 1px solid transparent; border-bottom: 1px solid #f6f7f8; margin-bottom: 1px; clear: both;}
+.panel-cat > .panel-body a.list-group-item { border-left: 1px solid transparent; border-bottom: 1px solid #f8f8f8; margin-bottom: 1px; clear: both; }
 
 .panel-cat > .panel-body a.list-group-item:hover,
-.panel-cat > .panel-body a.list-group-item:focus {background-color: #f0f1f2; color: #404145; border-left: 1px solid #56c4f4;}
+.panel-cat > .panel-body a.list-group-item:focus { background-color: #f8f8f8; color: #222; border-left: 1px solid #40C4FF; }
 
-.panel-cat .btn {margin-left: 12px; margin-right: 0;}
+.panel-cat .btn { margin-left: 12px; margin-right: 0; }
 
 .panel-cat > .panel-body .btn-primary .badge {font-weight: 600; background-color: rgba(255,255,255,0.8); color: #428BCA; padding: 0.3em 0.9em 0.4em; margin-left: 3px;}
 
@@ -2934,7 +2932,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
 .ob-list { padding-bottom: 0; }
 
-.ob-list article.ob { background-color: #fdfdfd; padding: 10px 10px 10px 15px; margin-bottom: 5px; display: table; width: 100%; }
+.ob-list article.ob { padding: 13.5px 15px; margin-bottom: 5px; display: table; width: 100%; }
 
 .ob-large-thumbs article.ob { -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; background-color: #eceff1; padding: 0; border-bottom: 1px solid #cfd8dc; }
 
@@ -2995,9 +2993,9 @@ article.ob a:focus { text-decoration: none; }
 .ob-meta .fa-clock-o {margin-left: 7px;}
 
 
-.panel-notice article.ob { padding: 10px 15px; display: table; background-color: #fdfdfd; }
+.panel-notice article.ob { padding: 13.5px 15px; display: table; }
 
-.panel-notice article.ob.is-super { padding: 15px 20px; border-top: 1px dashed #f6d01e; background-color: #fffcdc; }
+.panel-notice article.ob.is-super { padding: 13.5px 20px; border-top: 1px dashed #f6d01e; background-color: #fffcdc; }
 
 .panel-notice article.ob.is-super:hover,
 .panel-notice article.ob.is-super:focus { background-color: #fef8b7; }
