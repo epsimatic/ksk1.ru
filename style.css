@@ -365,10 +365,6 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-footer { padding: 3px 7px; background-color: #f8f8f8; border-top: none; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 
-.panel-heading h3,
-.panel > .panel-heading h3,
-.panel > .panel-heading h2 { padding: 0; font-size: 19px; font-weight: 700; letter-spacing: .025em; color: #fff; }
-
 .panel-footer a {color: #006048;}
 
 .panel-footer a:hover {color: forestgreen; text-decoration: none;}
@@ -1264,25 +1260,16 @@ header#header .weather-text { display: none; }
 
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
-.single .panel .panel-heading h3,
-.single .panel .panel-heading h2,
-.home .panel .panel-heading h3,
-.home .panel .panel-heading h2 {color: #333333; font-size: 18px; font-weight: 700 !important; margin: 0;}
+.panel .panel-heading h3,
+.panel .panel-heading h2 { color: #fff; font-size: 18px; font-weight: 600; margin: 0; letter-spacing: .0125em; }
 
 .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
 .panel.panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
 
-.news-old .panel .panel-heading,
-.single .panel .panel-heading,
-.home .panel .panel-heading  { background-color: #EDB194; padding: 9px 15px 10px; background-image: none; margin: 0; }
+.news-old .panel .panel-heading { background-color: #EDB194; padding: 9px 15px 10px; background-image: none; margin: 0; }
 
-.single .panel.panel-vote .panel-heading h2,
-.home .panel.panel-vote .panel-heading h2,
-.single .panel.panel-congrats .panel-heading h3,
-.home .panel.panel-congrats .panel-heading h3,
-.single .panel.panel-notice .panel-heading h3,
-.home .panel.panel-notice .panel-heading h3 { color: #ffffff; font-size: 19px; font-weight: 700; text-align: left; }
+.panel .panel-heading  { background-color: #00b0ff; padding: 9px 15px 10px; background-image: none; margin: 0; }
 
 .home .panel-social .panel-heading h2 { text-align: left; }
 
@@ -1754,9 +1741,6 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Комментарии»"> */
-
-.panel-comments > .panel-heading { background: #46a2f9 url("img/panel-comments.png") no-repeat right; background-size: contain; }
-
 .panel-comments .nav-tabs { border-bottom: none; display: none; }
 .panel-comments .comments-filter { background-color: #fff; border-bottom: 1px solid #ccc; padding: 5px 10px 6px; display: none; }
 .panel-comments .comments-filter input { display: none; }
