@@ -375,7 +375,9 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-default > .panel-heading { padding: 16px; }
 
-.panel-default .panel-heading { background-color: #fff; }
+.panel.panel-default .panel-heading { background-color: #fff; }
+
+.panel.panel-default { box-shadow: none; }
 
 .panel-default .panel-body {background-color: #f7f8fa;}
 
@@ -634,10 +636,10 @@ p.media-text {color: #4c4c56; font-size: 14px; font-weight: 400; text-indent: 5p
 
 .list-group-item {border: none;}
 
-a.list-group-item {color: #333333; background-color: #fdfdfd;}
+a.list-group-item { color: #333333; background-color: #fff; }
 
 a.list-group-item:hover,
-a.list-group-item:focus {background-color: #f8f8f8;}
+a.list-group-item:focus { background-color: #f8f8f8; }
 
 .list > .list-group-item > .list-group-item-heading {color: #1a4f8e; font-size: 18px; font-weight: 400; line-height: 1.25em;}
 
@@ -1768,10 +1770,10 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-comments .comment-link { color: #555; font-weight: 400; }
 
-.panel-comments a.list-group-item:nth-of-type(2n+1) {background-color: #f7f8f9;}
+.panel-comments a.list-group-item:nth-of-type(2n+1) {background-color: #f8f8f8;}
 
 .panel-comments a.list-group-item:hover,
-.panel-comments a.list-group-item:focus {background-color: #e0e6f0 !important;}
+.panel-comments a.list-group-item:focus {background-color: #E9E9E9 !important;}
 
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
