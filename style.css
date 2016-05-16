@@ -47,6 +47,7 @@ body.site-ob header#header { display: block; }
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
 /*CSS-fix для «негоризонтальных» форм*/
+.page-template-page-custom-service .wpcf7 .form-group,
 .site-rk .wpcf7 .form-group,
 .site-radio .wpcf7 .form-group,
 .site-tv .wpcf7 .form-group { margin-right: 0; margin-left: 0; }
