@@ -1264,7 +1264,7 @@ header#header .weather-text { display: none; }
 #dropmenudiv[style*="top"] { padding: 10px 15px; }
 
 .panel .panel-heading h3,
-.panel .panel-heading h2 { color: #fff; font-size: 18px; font-weight: 600; margin: 0; letter-spacing: .0125em; line-height: 27px; }
+.panel .panel-heading h2 { color: #fff; font-size: 21px; font-weight: 600; margin: 0; letter-spacing: .0125em; line-height: 27px; }
 
 .panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
@@ -1273,7 +1273,9 @@ header#header .weather-text { display: none; }
 .news-old .panel .panel-heading { background-color: #EDB194; padding: 9px 15px 10px; background-image: none; margin: 0; }
 
 .sidebar .panel.panel-default .panel-heading,
-.sidebar .panel .panel-heading  { background-color: #00b0ff; padding: 6.5px 15px 7px; background-image: none; margin: 0; }
+.sidebar .panel .panel-heading  { background-color: #00b0ff; padding: 13.5px 18px; background-image: none; margin: 0; }
+
+.sidebar .panel.panel-action .panel-heading { background-color: #00d964; }
 
 .home .panel-social .panel-heading h2 { text-align: left; }
 
@@ -3901,12 +3903,8 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 #tp-subscribe + .tp-cat-link:hover,
 #tp-subscribe + .tp-cat-link:focus { opacity: .8; }
 
-.panel-radio-news { margin-bottom: 15px !important; }
-
-.panel-radio-news > .panel-heading { background-color: #2979ff; }
+.sidebar .panel-radio-news > .panel-heading { background-color: #2979ff; }
 .panel-radio-news > .list-group { padding-bottom: 0; }
-
-.panel-radio-news .panel-heading h2 { line-height: 27px; padding: 13.5px 15px !important; }
 
 .e96-page { font-family: Helvetica,FreeSans,'Liberation Sans','Nimbus Sans L',Arial,sans-serif; font-size: 13px; color: #222; }
 
