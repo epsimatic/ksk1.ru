@@ -2868,7 +2868,10 @@ ul.page-cat ul.children > li.cat-item a:focus,
 .panel-cat > .panel-body a.list-group-item:hover,
 .panel-cat > .panel-body a.list-group-item:focus { background-color: #e9e9e9; color: #222; border-left: 1px solid #40C4FF; }
 
+ul.page-cat ul.children > li.cat-item a .badge,
 .panel-cat .badge { background-color: #e9e9e9; color: #222; }
+
+ul.page-cat ul.children > li.cat-item a .badge { float: right; }
 
 ul.page-cat ul.children > li.cat-item a:hover .badge,
 ul.page-cat ul.children > li.cat-item a:focus .badge,
