@@ -555,17 +555,17 @@ a.media-heading:focus {text-decoration: none;}
 
 .dropdown-menu > li .btn:hover {text-decoration: none;}
 
-.nav > li > a.featured { background-color: #f44336; }
+.navbar-nav > li > a.featured { background-color: #f44336; }
 
-.nav > li:hover > a.featured,
-.nav > li:focus > a.featured,
-.nav > li > a.featured:focus,
-.nav > li > a.featured:hover { background-color: #ef5350; }
+.navbar-nav > li:hover > a.featured,
+.navbar-nav > li:focus > a.featured,
+.navbar-nav > li > a.featured:focus,
+.navbar-nav > li > a.featured:hover { background-color: #ef5350; }
 
-.nav > li:focus > a,
-.nav > li:hover > a,
-.nav > li > a:hover, 
-.nav > li > a:focus { color: #fff; background-color: #40c4ff; }
+.navbar-nav > li:focus > a,
+.navbar-nav > li:hover > a,
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus { color: #fff; background-color: #40c4ff; }
 
 .nav .current-page-parent > a { position: relative; font-weight: 600; }
 
