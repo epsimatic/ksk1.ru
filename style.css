@@ -3192,7 +3192,7 @@ a.super:focus {background-color: #FEF01C;}
 #ob-commerce-before-paid form.payment-button button{margin-top: 10px;}
 
 @media (min-width: 992px) {
-    .ob-paid-options > .row:first-child { display: table; }
+    .ob-paid-options > .row:first-child { display: table; width: 100%; }
     .ob-paid-options > .row:first-child > * { display: table-cell; }
     .ob-paid-options .btn-lift-up { display: block; float: none; min-height: 87px; }
 }
