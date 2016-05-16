@@ -1598,16 +1598,6 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .panel-global > .panel-body > .media:focus {background-color: #f5f8fa;}
 /* </editor-fold> */
 
-/* <editor-fold desc="Панель «Письмо в редакцию»"> */
-.panel-mails > .panel-heading { background: #52be7f url("img/panel-mails.png") no-repeat right; background-size: contain; }
-/* </editor-fold> */
-
-/* <editor-fold desc="Панель «Красноуфимское-ТВ»"> */
-.panel-video > .panel-heading { background: #ff6e0b url("img/panel-video.png") no-repeat right; background-size: contain; }
-
-.panel-video > .panel-body {background-color: #848787;}
-/* </editor-fold> */
-
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading { background: #ff794c url(img/panel-congrats.png) no-repeat right !important; background-size: contain; }
 /* </editor-fold> */
@@ -1628,14 +1618,6 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .panel_events__time {display: inline-block; color: #0b1c14; font-weight: 600;}
 
 .name-guest {color: #1865B3; padding: 3px 10px 8px;}
-/* </editor-fold> */
-
-/* <editor-fold desc="Панель «Случайное фото»"> */
-.panel-rphoto > .panel-heading { background: #01bc85 url("img/panel-rphoto.png") no-repeat right; background-size: contain; }
-/* </editor-fold> */
-
-/* <editor-fold desc="Панель «Ближайшие события»"> */
-.panel-events > .panel-heading { background: #52be7f url("img/panel-event.png") no-repeat right; background-size: contain; }
 /* </editor-fold> */
 
 .panel.panel-complaint > .panel-heading { background-color: #16a372; }
@@ -3366,11 +3348,7 @@ article.company h2.fotorama-heading { margin-top: 36px; margin-bottom: 12px; }
 
 article.company .company-meta-item { color: #666; line-height: 24px; margin: 12px 0; padding: 0; }
 
-article.company .fa-home { color: #b39ddb; }
-
-article.company .fa-phone { color: #81c784; }
-
-article.company .fa-globe { color: #26c6da; }
+article.company .fa { color: #47B293; }
 
 article.company .company-send-message { padding: 0; color: #666; margin: 12px 0; }
 
@@ -3881,7 +3859,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 #tp-subscribe input.form-control { padding-left: 32px; }
 
-#tp-subscribe .fa { position: absolute; left: 6px; bottom: 9px; z-index: 5; font-size: 17px; color: #4db6ac; }
+#tp-subscribe .fa { position: absolute; left: 6px; bottom: 9px; z-index: 5; font-size: 17px; color: #47b293; }
 
 #tp-subscribe .fa.fa-mobile { font-size: 24px; bottom: 5px; left: 1px; }
 
