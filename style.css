@@ -1311,7 +1311,8 @@ header#header .weather-text { display: none; }
 
 .home .panel-news .post-description-text { margin-bottom: 12px; }
 
-article.post-news figure .post-meta { display: none; }
+article.post-news figure .post-meta,
+article.post-news figure .post-description { display: none; }
 
 .home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
