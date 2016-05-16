@@ -38,6 +38,9 @@ body.site-ob header#header { display: block; }
 
 .container { background-color: #ffffff; }
 
+::selection { background: #40c4ff; color: #fff; }
+::-moz-selection { background: #40c4ff; color: #fff; }
+
 /*Фон из снежинок*/
 /*.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; }*/
 
