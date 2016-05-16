@@ -3400,7 +3400,10 @@ label.control-label {font-weight: 600 !important;}
 
 article.company { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
-.company-name a { color: #007bcd; font-size: 18px; font-weight: 600; }
+.company-name a { color: #0091EA; font-size: 18px; font-weight: 600; }
+
+.company-name a:hover,
+.company-name a:focus { color: #0077BD; }
 
 article.company .company-name { display: inline; font-size: 18px; line-height: 24px; }
 
