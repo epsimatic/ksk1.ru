@@ -1336,6 +1336,8 @@ article.post-news .post-description .post-meta { display: none; }
 
 .home .panel-news-list figure { margin-right: 18px; }
 
+.home article.post-news { margin: 13.5px -15px; padding: 0 15px 13.5px; }
+
 .archive .post img,
 .home .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
@@ -1352,7 +1354,7 @@ article.post-news .post-description .post-meta { display: none; }
 
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
-.home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; margin: 13.5px -15px; padding: 0 15px 13.5px; }
+.home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; }
 
 .home .panel-news-list .list > article.post-news.post-cat-368 .post-title > a:after { background-color: #f44336; border-radius: 3px; color: #fff; content: "Новое"; display: inline; font-size: 12px; font-weight: 400; letter-spacing: 0.025em; margin: 0 7px; padding: 2px 7px; text-transform: uppercase; }
 
