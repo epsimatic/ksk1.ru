@@ -12,14 +12,14 @@
 
     /*!
      * GMaps.js v0.4.13
-     * http://hpneo.github.com/gmaps/
+     * //hpneo.github.com/gmaps/
      *
      * Copyright 2014, Gustavo Leon
      * Released under the MIT License.
      */
 
     if (!(typeof window.google === 'object' && window.google.maps)) {
-        throw 'Google Maps API is required. Please register the following JavaScript library http://maps.google.com/maps/api/js?sensor=true.'
+        throw 'Google Maps API is required. Please register the following JavaScript library //maps.google.com/maps/api/js?sensor=true.'
     }
 
     var extend_object = function (obj, new_obj) {
@@ -1607,7 +1607,7 @@
     GMaps.staticMapURL = function (options) {
         var parameters = [],
             data,
-            static_root = 'http://maps.googleapis.com/maps/api/staticmap';
+            static_root = '//maps.googleapis.com/maps/api/staticmap';
 
         if (options.url) {
             static_root = options.url;
@@ -2005,7 +2005,7 @@
 // Polygon containsLatLng
 // https://github.com/tparkin/Google-Maps-Point-in-Polygon
 // Poygon getBounds extension - google-maps-extensions
-// http://code.google.com/p/google-maps-extensions/source/browse/google.maps.Polygon.getBounds.js
+// //code.google.com/p/google-maps-extensions/source/browse/google.maps.Polygon.getBounds.js
     if (!google.maps.Polygon.prototype.getBounds) {
         google.maps.Polygon.prototype.getBounds = function (latLng) {
             var bounds = new google.maps.LatLngBounds();

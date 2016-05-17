@@ -1,5 +1,5 @@
 /**
- * Скрипты для телевизионного табло http://ksk1.ru
+ * Скрипты для телевизионного табло //ksk1.ru
  */
 
 const default_timeouts = { // Периоды обновления панелей в секундах
@@ -90,7 +90,7 @@ function updateClock(selector) {
  * @param {string} selector jQuery selector
  */
 function GetNowPlaying(selector) {
-    jQuery.get("http://ksk1.ru/nowplaying.xml", function (data) {
+    jQuery.get("//ksk1.ru/nowplaying.xml", function (data) {
         var track = jQuery(data).find("TRACK").first();
         if (track.attr("ARTIST")) {
             var track_text = track.attr("ARTIST") + " — " + track.attr("TITLE");
@@ -156,42 +156,42 @@ function UpdateTimer(selector, seconds) {
     //console.log ("New timeout for «"+selector+"»: "+seconds+"s");
 }
 
-//LoadJS("http://ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
+//LoadJS("//ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
 
 const urls_or_functions = {
-    ".board-main": "http://ksk1.ru/yummies/ksk1.ru/main/",
-    ".board-yummie": "http://ksk1.ru/yummies/ksk1.ru/side/",
-    ".board-weather": "http://ksk1.ru/weather/conditions.html",
+    ".board-main": "//ksk1.ru/yummies/ksk1.ru/main/",
+    ".board-yummie": "//ksk1.ru/yummies/ksk1.ru/side/",
+    ".board-weather": "//ksk1.ru/weather/conditions.html",
     ".track-data-text": GetNowPlaying,
     "#clock, #date": updateClock
 };
 
-LoadJS("http://ksk1.ru/js/jquery-1.js", function () {
+LoadJS("//ksk1.ru/js/jquery-1.js", function () {
 
 // Инициализировать все блоки
     for (var block in urls_or_functions) {
         UpdateBlock(block);
     }
 
-// Запускает бегущую строку  http://jonmifsud.com/open-source/jquery/jquery-webticker/
+// Запускает бегущую строку  //jonmifsud.com/open-source/jquery/jquery-webticker/
     LoadJS('/tv/news-ticker.js', function () {
         jQuery('#webticker').webTicker({
             speed: 100,
-            rssurl: 'http://krufimsk.ru/feed/',
+            rssurl: '//krufimsk.ru/feed/',
             rssfrequency: default_timeouts['ticker'] / 60,
             hoverpause: false
         });
     });
 
 // Радио плеер
-    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
+    LoadJS("//jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
         radio_player = jQuery("#jquery_jplayer_1");
         radio_player.jPlayer({
             ready: function () {
                 radio_player.parent().parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
-                    m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                    m4a: "//radio.ksk66.ru:8000/aac",
+                    mp3: "//radio.ksk66.ru:8000/mp3"
                 });
                 radio_player.jPlayer("play");
             },

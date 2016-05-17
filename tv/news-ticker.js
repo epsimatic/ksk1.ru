@@ -1,11 +1,11 @@
 /*!
  * webTicker 2.1.1
  * Examples and documentation at:
- * http://jonmifsud.com/open-source/jquery/jquery-webticker/
+ * //jonmifsud.com/open-source/jquery/jquery-webticker/
  * 2011 Jonathan Mifsud
  * Version: 2.1.1 (23-MAY-2013)
  * Dual licensed under the Creative Commons and DonationWare licenses:
- * http://creativecommons.org/licenses/by-nc/3.0/
+ * //creativecommons.org/licenses/by-nc/3.0/
  * https://github.com/jonmifsud/Web-Ticker/blob/master/licence.md
  * Requires:
  * jQuery v1.4.2 or later

@@ -308,7 +308,7 @@ iframe { border: none; height: calc(100% - 1rem); padding-top: 1rem; }
 
 /*
  * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * //snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
 .visuallyhidden {
@@ -388,7 +388,7 @@ iframe { border: none; height: calc(100% - 1rem); padding-top: 1rem; }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
+   //www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -397,7 +397,7 @@ iframe { border: none; height: calc(100% - 1rem); padding-top: 1rem; }
     *:after {
         background: transparent !important;
         color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+                                   //www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -433,7 +433,7 @@ iframe { border: none; height: calc(100% - 1rem); padding-top: 1rem; }
 
     /*
      * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     * //css-discuss.incutio.com/wiki/Printing_Tables
      */
 
     thead {

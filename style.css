@@ -42,7 +42,7 @@ body.site-ob header#header { display: block; }
 ::-moz-selection { background: #40c4ff; color: #fff; }
 
 /*Фон из снежинок*/
-/*.snap-content { background: url('http://ksk1.ru/img/snow-bg.png') repeat-x local; }*/
+/*.snap-content { background: url('//ksk1.ru/img/snow-bg.png') repeat-x local; }*/
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
@@ -144,7 +144,7 @@ header .btn-group { margin-top: 10px; }
 
 
 .row_header {
-    background: url("http://ksk1.ru/img/winter-header.png") no-repeat center center;
+    background: url("//ksk1.ru/img/winter-header.png") no-repeat center center;
     background-size: cover;
     font-size: 18px;
     height: auto;
@@ -454,7 +454,7 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 /*footer {
     margin: 20px -10px 0 -10px;
-    background-image: url("http://ksk1.ru/img/footer_bg.png");
+    background-image: url("//ksk1.ru/img/footer_bg.png");
     background-size: cover;
     padding: 25px 0;
 }*/
@@ -702,7 +702,7 @@ a.list-group-item:focus { background-color: #f8f8f8; }
 
 /* <editor-fold desc="Другие элемнты"> */
 
-.browser-deco:before {box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.25); content: url("http://ksk1.ru/img/browser-deco.svg"); display: block;}
+.browser-deco:before {box-shadow: 0 10px 6px -1px rgba(0, 0, 0, 0.25); content: url("//ksk1.ru/img/browser-deco.svg"); display: block;}
 
 .browser-deco img {box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25); height: auto; margin: -5px 0 0 !important; padding: 0 !important; width: 100%;}
 
@@ -1267,7 +1267,7 @@ header#header .weather-text { display: none; }
 .panel .panel-heading h3,
 .panel .panel-heading h2 { color: #fff; font-size: 21px; font-weight: 600; margin: 0; letter-spacing: .0125em; line-height: 27px; }
 
-.panel.panel-congrats .panel-heading { background: #ff794c url("http://ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
+.panel.panel-congrats .panel-heading { background: #ff794c url("//ksk1.ru/img/panel-congrats.png") no-repeat scroll right center !important; }
 
 .panel.panel-vote > .panel-heading { background: #00D964 url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
 
@@ -4094,7 +4094,7 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 body.agenda .entry-content.page-content:empty { margin: 0; }
 
 
-.panel-shoutbox > .panel-heading { background: #ff4081 url("http://ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
+.panel-shoutbox > .panel-heading { background: #ff4081 url("//ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
 /* Оформление списка событий */
 .events { padding: 0 15px; }
@@ -5252,7 +5252,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 .services-content section.workers-section .form-wrap .btn,
 .services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; line-height: 24px; padding: 15px 24px; }
 
-.services-content section.workers-section .bg-image { background-image: url("http://ksk1.ru/img/workers-bg.jpg"); }
+.services-content section.workers-section .bg-image { background-image: url("//ksk1.ru/img/workers-bg.jpg"); }
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
@@ -5318,7 +5318,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .services-content section.taxi-section .taxi-form-wrap .form-submit { font-size: 18px; line-height: 48px; }
 
-    .services-content section.taxi-section .bg-image { background-image: url("http://ksk1.ru/img/taxi-bg.jpg"); }
+    .services-content section.taxi-section .bg-image { background-image: url("//ksk1.ru/img/taxi-bg.jpg"); }
 
     .services-content section.taxi-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
@@ -5348,7 +5348,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .services-content section.cargo-section .form-wrap .form-group .fa-mobile,
     .services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 30px; left: 16px; font-size: 36px; }
 
-    .services-content section.cargo-section .bg-image { background-image: url("http://ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
+    .services-content section.cargo-section .bg-image { background-image: url("//ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 }
 
 @media (min-width: 992px) { 

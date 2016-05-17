@@ -1,5 +1,5 @@
 /*! jQuery UI - v1.11.0 - 2014-07-18
- * http://jqueryui.com
+ * //jqueryui.com
  * Includes: core.js, widget.js, mouse.js, sortable.js
  * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
