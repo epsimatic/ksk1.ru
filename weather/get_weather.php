@@ -32,7 +32,7 @@ function updateIconUrl($orig_url) {
     return str_replace('/k/', '/v4/', str_replace('.gif', '.svg', $orig_url));    
 }
 
-$json_string = file_get_contents("//api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
+$json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
 
