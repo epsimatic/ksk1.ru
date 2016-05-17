@@ -231,7 +231,7 @@ if ( false /*is_nan($temp_c) || $temp_c === null || $description == "" || $icon 
     header("Status: 503 Internal server error");
     prettyNotice('Weatherunderground (forecast) is offline, using Yandex', "danger");
     $forecast = '<a class="ya-weather-forecast" href="https://pogoda.yandex.ru/krasnoufimsk/details" target="_blank">
-                    <img alt="Погода" src="//info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
+                    <img alt="Погода" src="http://info.weather.yandex.net/krasnoufimsk/2_white.ru.png?domain=ru">
                  </a>';
 } else {
     $forecast = $conditions_forecast;
@@ -249,7 +249,7 @@ if (file_put_contents("forecast.html", $forecast)) {
 <div id='header'>
     <header class="row row_header hidden-print" id="header" data-version="1" xmlns="//www.w3.org/1999/html">
         <div class="header-logo-col col-xs-4 col-sm-4 col-md-5 col-lg-5">
-            <div itemscope itemtype="//schema.org/Organization" class="header-logo">
+            <div itemscope itemtype="http://schema.org/Organization" class="header-logo">
                 <a itemprop="url" href="/" title="На главную страницу" class="logo-container">
                     <img itemprop="logo" alt="Красноуфимск онлайн" src="//ksk1.ru/img/logo-mobile-ksk.svg" class="visible-xs">
                     <img alt="Красноуфимск онлайн" style="position: absolute" src="//ksk1.ru/img/logo-base.svg" class="hidden-xs">
