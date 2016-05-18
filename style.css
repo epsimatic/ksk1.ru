@@ -1336,7 +1336,7 @@ article.post-news .post-description .post-meta { display: none; }
 
 .home .panel-news-list figure { margin-right: 18px; }
 
-.home .mid-col article.post-news { margin: 13.5px -15px; padding: 0 15px 13.5px; }
+.home .mid-col article.post-news { margin: 0 -15px; padding: 0 15px 13.5px; }
 
 .archive .post img,
 .home .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
