@@ -1335,7 +1335,7 @@ article.post-news .post-description .post-meta { display: none; }
 .home .mid-col article.post-news { margin: 0 -15px; padding: 0 15px 13.5px; }
 
 .home .mid-col article.post-news:hover,
-.home .mid-col article.post-news:focus { background-color: #f8f8f8; }
+.home .mid-col article.post-news:focus { background-color: #f8f8f8; color: #222; }
 
 .home .mid-col article.post-news > a:focus { outline: none; }
 
