@@ -1302,6 +1302,8 @@ header#header .weather-text { display: none; }
 .post-news a:hover,
 .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
 
+.home article.post-news a { display: block; }
+
 .home .panel-news article.post-news .post-title { margin-bottom: 16px; margin-top: 8px; }
 
 .home article.post-news .post-title { margin-top: 16px; margin-bottom: 8px; font-size: 18px; }
