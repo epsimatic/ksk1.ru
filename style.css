@@ -1294,13 +1294,15 @@ header#header .weather-text { display: none; }
 .post-news .post-description-text { line-height: 1.618; }
 
 .post-archive a,
-.post-news .post-actions a,
-.sidebar .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
+.post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
 
 .post-archive a:hover,
 .post-archive a:focus,
 .post-news a:hover,
 .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
+
+.mid-col .post-news > a:hover,
+.mid-col .post-news > a:focus { border-bottom: 1px solid transparent; color: #222; }
 
 .home article.post-news a { display: block; }
 
