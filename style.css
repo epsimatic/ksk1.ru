@@ -1304,7 +1304,7 @@ header#header .weather-text { display: none; }
 .mid-col .post-news > a:hover,
 .mid-col .post-news > a:focus { border-bottom: 1px solid transparent; color: #222; }
 
-.home article.post-news a { display: block; }
+.home article.post-news > a { display: block; }
 
 .home .panel-news article.post-news .post-title { margin-bottom: 16px; margin-top: 8px; }
 
