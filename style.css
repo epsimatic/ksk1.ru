@@ -1217,7 +1217,7 @@ article.post-news .post-meta { display: none; }
 .post-image .post-format:before, 
 .post-video .post-format:before, 
 .post-image .post-more:before, 
-.post-video .post-more:before {font-family: FontAwesome; padding-right: 6px; padding-left: 6px;}
+.post-video .post-more:before {font-family: FontAwesome; padding-right: 6px; padding-left: 10px;}
 
 .post-actions .post-more aside {display: inline-block;}
 
@@ -1227,7 +1227,7 @@ article.post-news .post-meta { display: none; }
 .post-image .post-format:before,
 .post-image .post-more:before {content: "";}
 
-.post-news .post-format { display: none; }
+.post-news .post-format { display: none; font-weight: 400; text-transform: uppercase; }
 /* </editor-fold> */
 
 .home .block .vsection .inset {background-color: inherit; cursor: default; float: right; font-size: 80%; font-style: italic; padding-bottom: 1px; padding-left: 3px; padding-top: 1px;}
