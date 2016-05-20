@@ -1221,6 +1221,8 @@ article.post-news .post-meta { display: none; }
 
 .post-actions .post-more aside {display: inline-block;}
 
+.post-news .fa-comment-o { display: none; }
+
 .post-video .post-format:before,
 .post-video .post-more:before {content: "";}
 
