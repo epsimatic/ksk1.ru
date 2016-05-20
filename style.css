@@ -1130,8 +1130,6 @@ header#header .weather-text { display: none; }
 .mid-col .post-news > a:hover,
 .mid-col .post-news > a:focus { border-bottom: 1px solid transparent; color: #222; }
 
-.home article.post-news > a { display: block; }
-
 .home article.post-news .post-title { margin-top: 16px; margin-bottom: 8px; font-size: 18px; }
 
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 16px; margin-top: 8px; }
@@ -5490,12 +5488,10 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .news-list .post-news .post-title { line-height: 18px; margin-bottom: 11px; max-height: 36px; }
 
-    header.wide-header .post-news .post-title a { color: #222; font-size: 19px }
+    header.wide-header .post-news .post-title { color: #222; font-size: 19px }
 
-    header.wide-header .news-list .post-news .post-title a:hover,
-    header.wide-header .news-list .post-news .post-title a:focus,
-    header.wide-header .post-news .post-title a:hover,
-    header.wide-header .post-news .post-title a:focus { text-decoration: none; color: #555; }
+    header.wide-header .post-news:hover .post-title,
+    header.wide-header .post-news:focus .post-title { text-decoration: none; color: #555; }
 
     header.wide-header .post-news figure { float: left; width: 219px }
 
