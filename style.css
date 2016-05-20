@@ -5815,10 +5815,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news figure img { margin-top: 5px; max-width: 200px; max-height: 125px; }
 
-    header.wide-header .news-main .post-news h4 { width: 54%; font-size: 17px; line-height: 19px; max-height: 38px }
-
-    header.wide-header .post-news .post-description { width: 54%; }
-
     header.wide-header .post-news .post-description-text { line-height: 1.4615em; max-height: 5.846em; }
 
     header.wide-header .post-news .views_num::before,
@@ -5995,8 +5991,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .post-news figure { width: 229px; }
 
     header.wide-header .post-news figure img { max-width: 230px; max-height: 130px; margin-top: 0; }
-
-    header.wide-header .post-news .post-description { width: 56%; }
 
     header.wide-header .post-news .post-description-text { max-height: 63px; line-height: 21px;}
 
