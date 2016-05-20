@@ -1119,13 +1119,18 @@ header#header .weather-text { display: none; }
 .post-archive .post-description,
 .post-news .post-description { line-height: 1.618; }
 
-.post-archive a,
-.post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
+.post-news > a { color: #494746; text-decoration: none; }
 
-.post-archive a:hover,
-.post-archive a:focus,
-.post-news a:hover,
-.post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
+.post-news:focus > a,
+.post-news:hover > a { color: #222; text-decoration: none; }
+
+.post-news:focus > a .post-actions,
+.post-news:hover > a .post-actions { background-color: #F0F0F0; }
+
+.post-news a.post-comment { border-bottom: 1px solid transparent; text-decoration: none; color: #666; }
+
+.post-news a.post-comment:hover,
+.post-news a.post-comment:focus { border-bottom: 1px dotted #666; color: #494746; text-decoration: none; }
 
 .news-old .post-archive a,
 .news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
