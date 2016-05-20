@@ -31,6 +31,8 @@ figure { position: relative; text-align: center; }
     .sidebar .yummies { display: block; }
 }
 
+.user-panel { display: none; }
+
 .container { background-color: #fff; }
 
 ::selection { background: #40c4ff; color: #fff; }
@@ -1124,6 +1126,14 @@ header#header .weather-text { display: none; }
 .post-archive a:focus,
 .post-news a:hover,
 .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
+
+.news-old .post-archive a,
+.news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
+
+.news-old .post-archive a:hover,
+.news-old .post-archive a:focus,
+.news-old .post-news a:hover,
+.news-old .post-news a:focus { border-bottom: 1px dotted #60543b; color: #60543b; text-decoration: none; }
 
 .navbar-nav .post-news > a:hover,
 .navbar-nav .post-news > a:focus,
@@ -5191,10 +5201,6 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .navpanel .panel-map { border-top: none; }
 
     .weather-forecast-panel { min-height: 210px; border-top: none; }
-
-    .row_header > div:after { height: 140px; }
-
-    .user-panel { position: absolute; }
 
     .post-news figure.post-thumb { width: 100px; }
 
