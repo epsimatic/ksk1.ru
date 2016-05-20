@@ -1175,7 +1175,7 @@ header#header .weather-text { display: none; }
 
 .home .panel-news-list figure { margin-right: 18px; }
 
-.archive article.post-news
+.archive article.post-news,
 .home .mid-col article.post-news { margin: 0 -15px; padding: 0 15px 13.5px; }
 
 .sidebar article.post-news:hover,
