@@ -1114,8 +1114,8 @@ header#header .weather-text { display: none; }
 .post-archive figure.post-thumb img,
 .post-news figure.post-thumb img { max-width: 100% !important; }
 
-.post-archive .post-description-text,
-.post-news .post-description-text { line-height: 1.618; }
+.post-archive .post-description,
+.post-news .post-description { line-height: 1.618; }
 
 .post-archive a,
 .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
@@ -1296,8 +1296,8 @@ iframe.fullstory__video { max-width: 100%; }
 .post-archive.type-radio audio,
 .post-news.type-radio audio { width: 88%; }
 
-.post-archive.type-radio .post-description-text,
-.post-news.type-radio .post-description-text { display: none; }
+.post-archive.type-radio .post-description,
+.post-news.type-radio .post-description { display: none; }
 
 .news-list_secondary .post-news.type-radio { display: table; width: 100%; }
 
@@ -3946,7 +3946,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event .post-info > * { padding-top: 0; padding-bottom: 0; }
 
 .events .post-event.has-post-thumbnail.event-paid .post-info,
-.events .post-event.has-post-thumbnail.event-paid .post-description-text,
+.events .post-event.has-post-thumbnail.event-paid .post-description,
 .events .post-event.has-post-thumbnail.event-paid .event-phone,
 .events .post-event.has-post-thumbnail.event-paid .event-price,
 .events .post-event.has-post-thumbnail.event-paid .event-more { display: block; }
@@ -4011,7 +4011,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
     .events .post-event.has-post-thumbnail .post-description { margin-bottom: 40px; position: relative; top: 25px; }
 
-    .events .post-event.has-post-thumbnail .post-description-text { min-height: 2.5em; }
+    .events .post-event.has-post-thumbnail .post-description { min-height: 2.5em; }
 }
 
 @media (min-width: 992px) {
@@ -5480,7 +5480,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .post-news { padding: 0; }
 
     header.wide-header .post-news .post-title,
-    header.wide-header .post-news .post-description-text { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
+    header.wide-header .post-news .post-description { font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif; }
 
     header.wide-header .post-news .post-title { margin: 0 0 10px; font-size: 14px; overflow: hidden; white-space: normal; }
 
@@ -5499,7 +5499,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .post-news .post-description-text { max-height: 63px; margin-top: -5px; margin-bottom: 0; line-height: 21px; white-space: normal; overflow-y: hidden; }
+    header.wide-header .post-news .post-description { max-height: 63px; margin-top: -5px; margin-bottom: 0; line-height: 21px; white-space: normal; overflow-y: hidden; }
 
     header.wide-header .post-news .post-actions { display: none; }
 
@@ -5815,7 +5815,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news figure img { margin-top: 5px; max-width: 200px; max-height: 125px; }
 
-    header.wide-header .post-news .post-description-text { line-height: 1.4615em; max-height: 5.846em; }
+    header.wide-header .post-news .post-description { line-height: 1.4615em; max-height: 5.846em; }
 
     header.wide-header .post-news .views_num::before,
     header.wide-header .post-news .post-comment-num::before { font-family: FontAwesome; color: #607d8b; }
@@ -5992,7 +5992,7 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     header.wide-header .post-news figure img { max-width: 230px; max-height: 130px; margin-top: 0; }
 
-    header.wide-header .post-news .post-description-text { max-height: 63px; line-height: 21px;}
+    header.wide-header .post-news .post-description { max-height: 63px; line-height: 21px;}
 
     header.wide-header .posrednik-link-wrap a { padding: 15px 25px; }
 
