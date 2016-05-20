@@ -11,6 +11,7 @@
 	$commands = array(
 		'echo $PWD',
 		'whoami',
+		'df -h .',
 		'git pull',
 		'git status',
 		'git log -3 --stat',
