@@ -1134,9 +1134,6 @@ header#header .weather-text { display: none; }
 
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 12px; margin-top: 12px; }
 
-article.post-news .post-views,
-article.post-news .post-meta { display: none; }
-
 .home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
 
@@ -1221,7 +1218,7 @@ article.post-news .post-meta { display: none; }
 
 .post-actions .post-more aside {display: inline-block;}
 
-.post-news .fa-comment-o { display: none; }
+.sidebar .post-news .post-views { display: none; }
 
 .post-video .post-format:before,
 .post-video .post-more:before {content: "";}
