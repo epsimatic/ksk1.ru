@@ -1405,11 +1405,11 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .panel-forum  .fa-arrow-circle-right {margin-top: 3px;}
 /* </editor-fold> */
 
-/* <editor-fold desc="Панель «Местные новости»"> */
 .content-padder > header { padding: 0; margin-bottom: 27px;}
 
 .content-padder > header .taxonomy-description {position: relative; top: 3px;}
 
+body.search .page-title,
 .content-padder > header > .page-title { color: #999; font-size: 54px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 81px; text-transform: lowercase; }
 
 .content-padder > header p {color: #7d9d91; margin: 0; padding-left: 22px;}
@@ -1432,7 +1432,6 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .inset .panel-official .list > a.list-group-item > h2 { font-size: 21px; color: #333; font-weight: 400; }
 
 .inset .panel-official a.list-group-item { padding-bottom: 20px; }
-/* </editor-fold> */
 
 /* <editor-fold desc="Панель «Поздравления»"> */
 .panel-congrats > .panel-heading { background: #ff794c url(img/panel-congrats.png) no-repeat right !important; background-size: contain; }
