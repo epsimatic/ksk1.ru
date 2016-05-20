@@ -1412,6 +1412,11 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 body.search .page-title,
 .content-padder > header > .page-title { color: #999; font-size: 54px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 81px; text-transform: lowercase; }
 
+body.search header.page-header { padding: 0; margin-bottom: 57px; }
+body.search header.page-header .page-title { margin-bottom: 27px !important; }
+
+body.search header.page-header .page-title-sub { color: #494746; font-size: 18px; line-height: 27px; margin-top: 0; }
+
 .content-padder > header p {color: #7d9d91; margin: 0; padding-left: 22px;}
 
 .content-padder .panel-body {padding: 0;}
