@@ -1134,8 +1134,7 @@ header#header .weather-text { display: none; }
 
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 12px; margin-top: 12px; }
 
-article.post-news figure .post-meta,
-article.post-news .post-description .post-meta { display: none; }
+article.post-news .post-meta { display: none; }
 
 .home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
