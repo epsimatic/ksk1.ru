@@ -1145,6 +1145,9 @@ header#header .weather-text { display: none; }
 .archive article.post-news .post-actions .fa,
 .home article.post-news .post-actions .fa { color: #494746; }
 
+.archive article.post-news .post-actions .post-views,
+.home article.post-news .post-actions .post-views { color: #666; }
+
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 12px; margin-top: 12px; }
 
 .home .panel-news + .yummies img.yummies,
