@@ -4868,7 +4868,7 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content footer.service-footer { height: 90px; line-height: 50px; background-color: #000; }
 
-footer.service-footer > span.social-title { color: #fff; margin-right: 25px; }
+footer.service-footer span.social-title { color: #fff; margin-right: 25px; }
 
 footer.service-footer a { display: inline-block; transition: color .25s ease 0s }
 
