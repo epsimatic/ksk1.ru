@@ -4862,6 +4862,8 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 /*Стили для страниц такси 7-99-99 и городской службы 7-98-05*/
 body.page-template-page-custom-taxi { background-color: #000; }
 
+.page-template-page-custom-taxi .snap-content { background-color: transparent; }
+
 .services-content.main-content { background-color: #fff; }
 
 .services-content .container { background-color: transparent; margin-top: 0 !important; }
