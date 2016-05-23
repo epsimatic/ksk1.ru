@@ -25,6 +25,9 @@ figure { position: relative; text-align: center; }
 
 #stripe.container { padding: 0; }
 
+.page-template-page-custom-reklama #stripe,
+.page-template-page-custom-service #stripe { display: none; }
+
 .sidebar .yummies { display: none; }
 
 @media (min-width: 768px) { 
