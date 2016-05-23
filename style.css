@@ -5386,6 +5386,192 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .admin-bar .snap-content .main-content > .container { margin-top: 47px; }
 
+    footer.wide-footer ul.contacts { font-size: 1.7em; }
+
+    footer.info .copyright .our-projects,
+    footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
+}
+
+/* Стили для размера -md- */
+@media (min-width: 992px) {
+    .header-logo-col:first-child { width: 41.6667%; }
+
+    .header-logo-col:first-child .header-logo #sublogo,
+    #sublogo { bottom: -56px; height: 20px; left: 127px; }
+
+    .panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 { font-size: 35px; }
+
+    #post-2844 .page-content .row {padding-bottom: 50px;}
+
+    #post-2844 .col-md-6 h2 {padding-top: 40px;}
+
+    .block-features .btn-feature .fa { font-size: 1.4em; top: 15px; }
+
+    .block-features .btn-feature span { position: relative; top: 13px; }
+
+    .panel-news h4 {font-size: 22px;}
+
+    .news .cat-pills > li > a { height: 44px; padding: 0 12px; }
+
+    .fullstory .newstext { padding: 0 25px; }
+
+    .site-copy div.copy-header,
+    .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
+
+    .tocify {width: 230px;}
+
+    .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
+
+    .news-slide-block img {max-height: 144px;}
+
+    .news-slide-block:first-child img {max-height: none;}
+
+    .btn-home { display: block; visibility: visible; }
+
+    .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
+
+    /*панель «читать ещё» на странице новости*/
+    .news-more .crp_title {font-size: 14px;}
+
+    .news-more .crp_excerpt {font-size: 14px; font-weight: 400;}
+    .kaleidoscope__item {width: 33%;}
+
+    .kaleidoscope__item__tooltip, .kaleidoscope__item__img{height: 77px;}
+
+    .navpanel .cat a { padding: 5px; }
+
+    .navpanel .cat a.category { padding: 3px 7px 5px; }
+
+    .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
+
+    .weather-temp-sm .weather-label {top: -41px; left: 74px;}
+
+    .weather-temp-sm .weather-temp {top: -50px; font-size: 19px; left: 32px;}
+
+    .yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 10px;}
+
+    .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
+
+    .dropdown-menu.weather-forecast-panel { width: 650px }
+
+    .weather-forecast-panel .day-row .summary { display: table-cell; width: 26%; }
+
+    .weather-forecast-panel .day-row .summary .temps { font-size: 30px; }
+
+    .weather-forecast-panel .day-row .summary .date,
+    .weather-forecast-panel .day-row .summary .weekday { float: none; }
+
+    .weather-forecast-panel .day-row .summary .pop { padding: 2px 7px 2px 5px; margin-bottom: 5px; float: left; }
+
+    .weather-forecast-panel .day-row .day,
+    .weather-forecast-panel .day-row .night { display: table-cell; width: 35%; padding: 7px 10px 10px 71px; min-height: 65px; }
+
+    #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
+
+    body.news #navpanel-shopping { margin-left: 0; margin-right: 0; }
+
+    #navpanel-shopping .ozon-bar { border-bottom: none; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar { margin-left: 1%; width: 39.6666%; height: auto; }
+
+    #navpanel-shopping.active { border: none; background-color: #fff; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-top: 13px; margin-bottom: 5px; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar .pr-logo img { width: 69%; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar p { margin-bottom: 20px; margin-top: 20px; }
+
+    #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-bottom: 15px; }
+
+    #navpanel-shopping .pr-bar.e96-bar { border: none; }
+
+    #navpanel-shopping .e96-bar .pr-logo img { width: 100%; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops { padding-top: 15px; }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { width: 100% }
+
+    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
+
+    #navpanel-shopping .e96-bar p { padding-left: 10px; text-align: left; }
+
+    #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 7px; line-height: 1.2em; font-size: .9em; }
+
+    #navpanel-shopping .pr-bar .cat-list a { display: block !important; }
+
+    #navpanel-shopping .svetodom-bar,
+    #navpanel-shopping .vodmag-bar { border: 0 none; margin-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 0; }
+
+    #navpanel-shopping .vodmag-bar { padding-top: 10px; }
+
+    #navpanel-shopping .vodmag-bar .cat-list a { margin-left: 15px; }
+
+    #navpanel-shopping .svetodom-bar .cat-list a { margin-left: 30px; }
+
+    #navpanel-shopping .pr-bar .pr-logo img { width: 90%; }
+
+    .potential-cond-active .arrow,
+    .btn-feature .arrow { left: 40%; }
+
+    .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
+
+    #transport-schedule-tabs.nav-tabs { font-size: 16px; }
+
+    #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; text-decoration: underline; }
+
+    .site-tv .logo-tv { text-align: left; }
+
+    .site-tv .logo-tv img { width: 100%; padding: 0; }
+
+    .site-tv .page-heading { padding: 0 0 0 25px; }
+
+    .site-tv .page-heading h2 { margin-bottom: 0; font-size: 39px; line-height: 1em; }
+
+    .site-tv .page-desciption { padding-top: 20px; }
+
+    .site-tv .video-item.main-video figure iframe { height: 417px; }
+
+    .site-tv article.main-video .post-title { font-size: 23px; }
+
+    .site-radio #radioforge1 { text-align: right; }
+
+    .site-radio .radio-logo-container { position: absolute; top:12px; right: 20px; padding: 10px 0 10px 10px; }
+
+    #tp-subscribe .nav-pills > li > a { padding: 10px; }
+
+    #tp-subscribe .form-group.clearfix > label { font-size: 13px; }
+
+    .e96-page .e96-about,
+    .e96-page .e96-title {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .e96-page .row.trade-item { margin-left: 20px; }
+
+    .row-center-yummies object.yummies,
+    .sidebar object.yummies { height: 270px !important; }
+
+    .ob-pricing-table .panel-pricing-container .panel-pricing { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: block; width: auto; }
+
+    .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: block; padding: 10px 20px 20px; top:0; width: auto; }
+
+    .panel-complaint .btn-action { font-size: 18px; }
+
+    .snap-drawer { display: none; }
+
+    .snap-content .container { margin-top: 65px; }
+
+    .admin-bar .snap-content .main-content > .container { margin-top: 97px; }
+
     header.wide-header .navbar .container { pointer-events: auto; }
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
@@ -5671,194 +5857,9 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     header.wide-header .menu-main-eda .stores-group > a:hover,
     header.wide-header .menu-main-eda .stores-group > a:focus { background-color: #f7f7f7; }
 
-    footer.wide-footer ul.contacts { font-size: 1.7em; }
-
-    footer.info .copyright .our-projects,
-    footer.info .copyright > a { margin-left: 9px; display: inline; margin-top: 0; }
-}
-
-/* Стили для размера -md- */
-@media (min-width: 992px) {
-    .header-logo-col:first-child { width: 41.6667%; }
-
-    .header-logo-col:first-child .header-logo #sublogo,
-    #sublogo { bottom: -56px; height: 20px; left: 127px; }
-
-    .panel-notice .panel-body.panel-emergency .col-xs-6:nth-child(2) h1 { font-size: 35px; }
-
-    #post-2844 .page-content .row {padding-bottom: 50px;}
-
-    #post-2844 .col-md-6 h2 {padding-top: 40px;}
-
-    .block-features .btn-feature .fa { font-size: 1.4em; top: 15px; }
-
-    .block-features .btn-feature span { position: relative; top: 13px; }
-
-    .panel-news h4 {font-size: 22px;}
-
-    .news .cat-pills > li > a { height: 44px; padding: 0 12px; }
-
-    .fullstory .newstext { padding: 0 25px; }
-
-    .site-copy div.copy-header,
-    .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
-
-    .tocify {width: 230px;}
-
-    .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
-
-    .news-slide-block img {max-height: 144px;}
-
-    .news-slide-block:first-child img {max-height: none;}
-
-    .btn-home { display: block; visibility: visible; }
-
-    .header-logo img {width:80%; top: 18px !important; left: 57px !important;}
-
-    /*панель «читать ещё» на странице новости*/
-    .news-more .crp_title {font-size: 14px;}
-
-    .news-more .crp_excerpt {font-size: 14px; font-weight: 400;}
-    .kaleidoscope__item {width: 33%;}
-
-    .kaleidoscope__item__tooltip, .kaleidoscope__item__img{height: 77px;}
 
     header.wide-header .navbar-nav > li > a { font-size: 14px; padding: 15px; }
-
-    .navpanel .cat a { padding: 5px; }
-
-    .navpanel .cat a.category { padding: 3px 7px 5px; }
-
-    .navpanel .cat h2 img { margin-bottom: 4px !important; width: 35px !important; }
-
-    .weather-temp-sm .weather-label {top: -41px; left: 74px;}
-
-    .weather-temp-sm .weather-temp {top: -50px; font-size: 19px; left: 32px;}
-
-    .yummies.widget .row > .col-xs-6:nth-child(2n+1) {padding-right: 10px;}
-
-    .yummies.widget .row > .col-xs-6:nth-child(2n) {padding-left: 10px;}
-
-    .dropdown-menu.weather-forecast-panel { width: 650px }
-
-    .weather-forecast-panel .day-row .summary { display: table-cell; width: 26%; }
-
-    .weather-forecast-panel .day-row .summary .temps { font-size: 30px; }
-
-    .weather-forecast-panel .day-row .summary .date,
-    .weather-forecast-panel .day-row .summary .weekday { float: none; }
-
-    .weather-forecast-panel .day-row .summary .pop { padding: 2px 7px 2px 5px; margin-bottom: 5px; float: left; }
-
-    .weather-forecast-panel .day-row .day,
-    .weather-forecast-panel .day-row .night { display: table-cell; width: 35%; padding: 7px 10px 10px 71px; min-height: 65px; }
-
-    #navpanel-shopping { margin-left: -10px; margin-right: -10px; }
-
-    body.news #navpanel-shopping { margin-left: 0; margin-right: 0; }
-
-    #navpanel-shopping .ozon-bar { border-bottom: none; }
-
-    #navpanel-shopping .pr-bar.multilavka-bar { margin-left: 1%; width: 39.6666%; height: auto; }
-
-    #navpanel-shopping.active { border: none; background-color: #fff; }
-
-    #navpanel-shopping .pr-bar.multilavka-bar .shop-description { margin-top: 13px; margin-bottom: 5px; }
-
-    #navpanel-shopping .pr-bar.multilavka-bar .pr-logo img { width: 69%; }
-
-    #navpanel-shopping .pr-bar.multilavka-bar p { margin-bottom: 20px; margin-top: 20px; }
-
-    #navpanel-shopping .pr-bar.multilavka-bar .pr-description { margin-bottom: 15px; }
-
-    #navpanel-shopping .pr-bar.e96-bar { border: none; }
-
-    #navpanel-shopping .e96-bar .pr-logo img { width: 100%; }
-
-    #navpanel-shopping .pr-bar.sm-bar-shops { padding-top: 15px; }
-
-    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 { width: 100% }
-
-    #navpanel-shopping .pr-bar.sm-bar-shops .shop-row-1 img { width: 100%; }
-
-    #navpanel-shopping .e96-bar p { padding-left: 10px; text-align: left; }
-
-    #navpanel-shopping .e96-bar p a { display: block; padding: 0; margin-bottom: 7px; line-height: 1.2em; font-size: .9em; }
-
-    #navpanel-shopping .pr-bar .cat-list a { display: block !important; }
-
-    #navpanel-shopping .svetodom-bar,
-    #navpanel-shopping .vodmag-bar { border: 0 none; margin-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 0; }
-
-    #navpanel-shopping .vodmag-bar { padding-top: 10px; }
-
-    #navpanel-shopping .vodmag-bar .cat-list a { margin-left: 15px; }
-
-    #navpanel-shopping .svetodom-bar .cat-list a { margin-left: 30px; }
-
-    #navpanel-shopping .pr-bar .pr-logo img { width: 90%; }
-
-    .potential-cond-active .arrow,
-    .btn-feature .arrow { left: 40%; }
-
-    .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
-
-    #transport-schedule-tabs.nav-tabs { font-size: 16px; }
-
-    #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; text-decoration: underline; }
-
-    .site-tv .logo-tv { text-align: left; }
-
-    .site-tv .logo-tv img { width: 100%; padding: 0; }
-
-    .site-tv .page-heading { padding: 0 0 0 25px; }
-
-    .site-tv .page-heading h2 { margin-bottom: 0; font-size: 39px; line-height: 1em; }
-
-    .site-tv .page-desciption { padding-top: 20px; }
-
-    .site-tv .video-item.main-video figure iframe { height: 417px; }
-
-    .site-tv article.main-video .post-title { font-size: 23px; }
-
-    .site-radio #radioforge1 { text-align: right; }
-
-    .site-radio .radio-logo-container { position: absolute; top:12px; right: 20px; padding: 10px 0 10px 10px; }
-
-    #tp-subscribe .nav-pills > li > a { padding: 10px; }
-
-    #tp-subscribe .form-group.clearfix > label { font-size: 13px; }
-
-    .e96-page .e96-about,
-    .e96-page .e96-title {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .e96-page .row.trade-item { margin-left: 20px; }
-
-    .row-center-yummies object.yummies,
-    .sidebar object.yummies { height: 270px !important; }
-
-    .ob-pricing-table .panel-pricing-container .panel-pricing { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09); }
-
-    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: block; width: auto; }
-
-    .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: block; padding: 10px 20px 20px; top:0; width: auto; }
-
-    .panel-complaint .btn-action { font-size: 18px; }
-
-    .snap-drawer { display: none; }
-
-    .snap-content .container { margin-top: 65px; }
-
-    .admin-bar .snap-content .main-content > .container { margin-top: 97px; }
-
+    
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
