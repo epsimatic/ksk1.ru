@@ -1151,6 +1151,11 @@ header#header .weather-text { display: none; }
 .archive article.post-news .post-actions .fa,
 .home article.post-news .post-actions .fa { color: #57346B; }
 
+.archive article.post-news .post-actions a:hover .fa,
+.archive article.post-news .post-actions a:focus .fa,
+.home article.post-news .post-actions a:hover .fa,
+.home article.post-news .post-actions a:focus .fa { color: #222; }
+
 .archive article.post-news .post-actions .post-views,
 .home article.post-news .post-actions .post-views { color: #666; }
 
