@@ -1257,7 +1257,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .post-video .post-more:before {content: "";}
 
 .post-image .post-format:before,
-.post-image .post-more:before {content: "";}
+.post-image .post-more:before {content: "";}
 
 .post-news .post-format { font-weight: 400; text-transform: uppercase; }
 /* </editor-fold> */
