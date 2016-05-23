@@ -4866,6 +4866,8 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content .container { background-color: transparent; margin-top: 0 !important; }
 
+.services-content footer { height: 90px; line-height: 50px; background-color: #000; }
+
 .admin-bar .snap-content .services-content > .container { margin-top: 32pxs; }
 
 .services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
@@ -5110,6 +5112,8 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .services-content .app-download-bages > a:first-child { display: inline; }
 
     .services-content .service-section { height: 650px; }
+
+    .services-content .service-section.taxi-section { height: 630px; }
 
     .services-content .service-section.workers-section { height: 600px; }
 
