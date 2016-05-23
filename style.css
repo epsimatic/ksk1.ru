@@ -46,6 +46,8 @@ figure { position: relative; text-align: center; }
 
 .admin-bar .snap-content .main-content > .container { margin-top: 46px; }
 
+.snap-content { background-color: #fff; }
+
 /*CSS-fix для «негоризонтальных» форм*/
 .page-template-page-custom-service .wpcf7 .form-group,
 .site-rk .wpcf7 .form-group,
@@ -5380,9 +5382,9 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
     .admin-bar header.wide-header { top: 32px; }
 
-    .snap-content .container { margin-top: 65px; }
+    .snap-content .container { margin-top: 15px; }
 
-    .admin-bar .snap-content .main-content > .container { margin-top: 97px; }
+    .admin-bar .snap-content .main-content > .container { margin-top: 47px; }
 
     header.wide-header .navbar .container { pointer-events: auto; }
 
@@ -5852,6 +5854,11 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
     .panel-complaint .btn-action { font-size: 18px; }
 
     .snap-drawer { display: none; }
+
+    .snap-content .container { margin-top: 65px; }
+
+    .admin-bar .snap-content .main-content > .container { margin-top: 97px; }
+
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
