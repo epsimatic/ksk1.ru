@@ -4938,11 +4938,9 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
 .services-content .service-info-inner .app-download-bages img { width: 120px; }
 
-.services-content section.service-section { position: relative; overflow: hidden; }
+.services-content section.service-section { position: relative; overflow: hidden; padding: 0 15px; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
-
-.services-content section.taxi-section { padding: 0 15px; }
 
 .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 24px; margin-bottom: 12px; line-height: 24px; }
 
@@ -5039,9 +5037,9 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 .services-content .social-links { padding-top: 24px; }
 
 @media (min-width: 768px) {
-    .services-content .services-header { margin-top: 29px; height: 96px; }
+    .services-content .services-header { margin-top: -21px; height: 96px; }
 
-    body.taxi .services-content .services-header { margin-top: -21px; height: 72px; }
+    body.taxi .services-content .services-header { height: 72px; }
 
     body.admin-bar .services-content .services-header { margin-top: 11px; }
     body.admin-bar .services-content .services-header .logo { top: -20px; }
@@ -5117,7 +5115,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
     .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 36px; text-align: center; margin: 0; }
 
     .services-content section.cargo-section .section-info-wrap h2,
-    .services-content section.workers-section .section-info-wrap h2 { font-size: 48px; margin-top: 0; }
+    .services-content section.workers-section .section-info-wrap h2 { font-size: 48px; margin-top: 48px; }
 
     .services-content section.cargo-section .form-wrap .form-group,
     .services-content section.workers-section .form-wrap .form-group { margin: 0 6px; }
@@ -5142,7 +5140,8 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 }
 
 @media (min-width: 992px) { 
-    body.taxi .services-content .services-header { height: 96px; margin-top: 29px; }
+    .services-content .services-header { margin-top: 29px; }
+    body.taxi .services-content .services-header { height: 96px; }
 
     body.admin-bar.taxi .services-content .services-header { margin-top: 61px; }
 
