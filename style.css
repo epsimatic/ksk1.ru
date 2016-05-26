@@ -5032,6 +5032,8 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
 
+    body.taxi .services-content .services-header { margin-top: -21px; height: 96px; }
+
     body.admin-bar .services-content .services-header { margin-top: 61px; }
     body.admin-bar .services-content .services-header .logo { top: -20px; }
 
