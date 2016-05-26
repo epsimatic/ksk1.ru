@@ -5092,7 +5092,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content section.taxi-section .form-wrap .phone-group .form-control { height: 48px; font-size: 18px; }
 
-    .services-content section.taxi-section .form-wrap .form-group .fa-mobile { font-size: 36px; left: 16px; }
+    .services-content section.taxi-section .form-wrap .form-group .fa-mobile { font-size: 36px; left: 16px; top: 26px; }
 
     .services-content section.taxi-section .taxi-form-wrap .form-submit { font-size: 18px; line-height: 48px; }
 
