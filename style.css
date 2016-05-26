@@ -5066,6 +5066,8 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .service-section { height: 540px; padding-top: 60px; }
 
+    .services-content .service-section.taxi-section { height: 490px; }
+
     .services-content .service-section.workers-section { height: 440px; }
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
