@@ -5032,18 +5032,23 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 @media (min-width: 768px) {
     .services-content .services-header { margin-top: 29px; height: 96px; }
 
-    body.taxi .services-content .services-header { margin-top: -21px; height: 96px; }
+    body.taxi .services-content .services-header { margin-top: -21px; height: 72px; }
 
     body.admin-bar .services-content .services-header { margin-top: 61px; }
     body.admin-bar .services-content .services-header .logo { top: -20px; }
 
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
+    body.taxi .services-content .services-header .logo { right: 24px; width: 250px; height: 96px; top: -14px; width: 250px; }
+
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
     .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
 
+    body.taxi .services-content .services-header .page-title,
     .services-content .services-header .page-title { font-size: 36px; }
+
+    body.taxi .services-content .services-header .page-title { margin-top: 21px; }
 
     .services-content .service-icon + h3 { font-size: 23px; margin-top: 12px; }
 
@@ -5065,7 +5070,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 48px; line-height: 48px; text-shadow: 0 2px 5px rgba(0,0,0,.5); }
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 48px; line-height: 48px; text-shadow: 0 2px 5px rgba(0,0,0,.5); margin-top: 36px; }
 
     .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 36px; line-height: 48px; margin: 0; color: #fff; }
 
@@ -5073,7 +5078,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
 
-    .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 6px; padding-top: 12px; padding-bottom: 12px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); margin-top: 0; }
+    .services-content section.taxi-section .taxi-form-wrap { background-color: #FFE700; border-radius: 6px; padding-top: 12px; padding-bottom: 12px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); margin-top: 24px; }
 
     .services-content .form-wrap .form-control { padding: 6px 12px; line-height: 24px; height: 36px; font-size: 14px; }
 
