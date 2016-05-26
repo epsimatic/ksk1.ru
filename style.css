@@ -5130,7 +5130,13 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 }
 
 @media (min-width: 992px) { 
+    body.taxi .services-content .services-header { height: 96px; margin-top: 29px; }
+
+    body.taxi .services-content .services-header .logo { right: 0; height: 139px; width: 304px; top: -20px; }
+
     .services-content .services-header .page-title-placeholder { width: auto; }
+
+    body.taxi .services-content .services-header .page-title { font-size: 40.5px; letter-spacing: .0125em; margin-top: 33px; }
 
     .services-content .service-icon { float: left; width: 100px; }
 
@@ -5144,7 +5150,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .service-section.workers-section { height: 600px; }
 
-    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 60px; margin-top: 24px; margin-bottom: 24px; line-height: 72px; }
+    .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 60px; margin-top: 48px; margin-bottom: 24px; line-height: 72px; }
 
     .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
 
