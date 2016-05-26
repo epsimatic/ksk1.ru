@@ -5072,7 +5072,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .taxi-info-wrap .app-download-bages > a:first-child { display: inline; }
 
-    .services-content .service-section { height: 540px; }
+    .services-content .service-section.cargo-section { height: 450px; }
 
     .services-content .service-section.taxi-section { height: 490px; }
 
@@ -5112,7 +5112,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content section.cargo-section .container { height: 100%; }
 
-    .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 36px; text-align: center; margin: 0; }
+    .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 9px; text-align: center; margin: 0; }
 
     .services-content section.cargo-section .section-info-wrap h2,
     .services-content section.workers-section .section-info-wrap h2 { font-size: 48px; margin-top: 48px; }
@@ -5159,7 +5159,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
-    .services-content .service-section { height: 650px; }
+    .services-content .service-section.cargo-section { height: 470px; }
 
     .services-content .service-section.taxi-section { height: 600px; }
 
