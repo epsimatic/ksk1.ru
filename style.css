@@ -4885,7 +4885,7 @@ footer.service-footer a:focus > .fa { color: #FFE700; }
 
 body.taxi .services-content .services-header { height: auto; }
 
-body.admin-bar .services-content .services-header { margin-top: 25px; }
+body.admin-bar .services-content .services-header { margin-top: 25px; height: 125px; }
 
 .services-content .services-header .logo-placeholder { position: relative; text-align: center; }
 
