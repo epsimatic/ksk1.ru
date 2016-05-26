@@ -5072,7 +5072,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .taxi-info-wrap .app-download-bages > a:first-child { display: inline; }
 
-    .services-content .service-section { height: 540px; padding-top: 60px; }
+    .services-content .service-section { height: 540px; }
 
     .services-content .service-section.taxi-section { height: 490px; }
 
@@ -5136,7 +5136,8 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content section.cargo-section .bg-image { background-image: url("//ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 
-    .services-content .social-links { padding-top: 0; }
+    body.taxi .services-content .social-links { padding-top: 0; }
+    .services-content .social-links { padding-top: 20px; }
 }
 
 @media (min-width: 992px) { 
@@ -5162,7 +5163,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
     .services-content .service-section.taxi-section { height: 600px; }
 
-    .services-content .service-section.workers-section { height: 600px; }
+    .services-content .service-section.workers-section { height: 520px; }
 
     .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 60px; margin-top: 48px; margin-bottom: 24px; line-height: 72px; }
 
