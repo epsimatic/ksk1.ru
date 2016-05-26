@@ -5144,7 +5144,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
     .services-content .services-header { margin-top: 29px; }
     body.taxi .services-content .services-header { height: 96px; }
 
-    body.admin-bar.taxi .services-content .services-header { margin-top: 61px; }
+    body.admin-bar .services-content .services-header { margin-top: 61px; }
 
     body.taxi.admin-bar .services-content .services-header .logo,
     body.taxi .services-content .services-header .logo { right: 0; height: 139px; width: 304px; top: -20px; }
