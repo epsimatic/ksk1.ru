@@ -4883,22 +4883,27 @@ footer.service-footer a:focus > .fa { color: #FFE700; }
 
 .services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
 
+body.taxi .services-content .services-header { height: auto; }
+
 body.admin-bar .services-content .services-header { margin-top: 25px; }
 
 .services-content .services-header .logo-placeholder { position: relative; text-align: center; }
 
 .services-content .services-header .logo { position: relative; top: -35px; right: 0; height: 79px; }
 
+body.taxi .services-content .services-header .logo { top: 12px; right: -4px; }
+
 body.admin-bar .services-content .services-header .logo { top: -13px; }
+
+body.taxi.admin-bar .services-content .services-header .logo { top: 44px; }
 
 .services-content .services-header .page-title-placeholder { position: absolute; top: 25px; width: 100%; text-align: center; }
 
 .services-content .services-header .city-name { line-height: 24px; font-size: 16px; color: #000; margin: 36px 0 0; }
 
-.services-content .services-header .page-title { line-height: 24px; font-size: 24px; color: #000; margin: -6px 0 0; }
+.services-content .services-header .page-title { font-weight: 700; line-height: 24px; font-size: 24px; color: #000; margin: -6px 0 0; }
 
-
-.services-content .page-title { margin: 0; font-weight: 700; font-size: 81px; }
+body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
 .services-content .services-info-containter { padding: 24px 0; }
 
@@ -4930,7 +4935,9 @@ body.admin-bar .services-content .services-header .logo { top: -13px; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
 
-.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 36px; margin-bottom: 12px; line-height: 24px; }
+.services-content section.taxi-section { padding: 0 15px; }
+
+.services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 24px; margin-bottom: 12px; line-height: 24px; }
 
 .services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
 
