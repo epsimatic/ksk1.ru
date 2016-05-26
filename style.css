@@ -1662,6 +1662,11 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .sidebar .donation-form input[name='Sum'] { width: 110px; }
 
+.sidebar .donation-form input[type='number'] { -moz-appearance:textfield; }
+
+.sidebar .donation-form input[type='number']::-webkit-outer-spin-button,
+.sidebar .donation-form input[type='number']::-webkit-inner-spin-button { -webkit-appearance: none; }
+
 .sidebar .donation-form .fa-rub { margin-left: 6px; line-height: 25.888px; color: #666; font-size: 16px; }
 
 .sidebar .donation-form .form-group { margin-bottom: 19px; }
