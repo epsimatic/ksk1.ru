@@ -1474,7 +1474,7 @@ body.search header.page-header .page-title-sub { color: #494746; font-size: 18px
 .inset .panel-official a.list-group-item { padding-bottom: 20px; }
 
 /* <editor-fold desc="Панель «Поздравления»"> */
-.panel-congrats > .panel-heading { background: #ff794c url(img/panel-congrats.png) no-repeat right !important; background-size: contain; }
+.panel-congrats > .panel-heading { background: #ff794c url(img/panel-congrats.png) no-repeat right !important; background-size: contain; background-position: center; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Некролог»"> */
@@ -5014,7 +5014,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
 .services-content section.taxi-section .app-download-bages { margin-top: 24px; }
 
-.services-content section.taxi-section .qr-link { border: 10px solid white; margin: 25px 9px; width: 120px; height: 120px; }
+.services-content section.taxi-section .qr-link { border: 10px solid white; margin: 25px 9px; width: 120px; height: 120px; -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; }
 
 .services-content section.taxi-section .qr-link.qr-play-market { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQAQMAAAC6caSPAAAABlBMVEX///8AAABVwtN+AAACV0lEQVR4nO2buY3EMAxFCThwOCW4FJfmLU2luASHEyzAtXhKe8HeI9L/kUbSm+iD5JAaIgi6pYVdO9HK/PKQFc2x/yR6xIcDyOjIqzmH96k5LkTbQQJT3bNLGxAgP0FWsZvY8kmNKvwqeyeyiEGBAElk6mOWRLTJVkCA/AVCtpK985jZVt86GchwiMo9RmTHde9UmcVjKiBAfoCw60Ts2GypsU33XEBGRz6o+knctrFEr/LZJSDDIot7hzudzuL4+da4DQiQ20hVLuPiGg0pK64oSi8gwyPqItaa6dFFr0m6SxbRGo8BAXIZWTxyZUnVV+PdKQEZHama/aDMeUl/tE3e8ua+zAIC5BZCMS4RJJtPTW/cTg8ggyOL+qmdvrUVuiTDTXuZ1CU+IGMifS2kK1WmQNuLxAcEyC3El2pFMaitrCGVBs0CHsiwSExGvFt5xNe0g1vxoic+IEDuIJ3xVlbj+RzOc6WSJXMlkGGRhcNZ7bi2kK7Cge+6CkCAXEf8iYkYjzx6ecz6IlcCGReJ+KS/6TKiuTQF7k2uBDIyEhf3nLTp+8cIShaySlONAwFyCzFF4ou63PqWmz0YyMQHZGREK6Dqseq2Kk9y9jzbVPLxJBAg15FGng0zosnFyKTrEwiQJSy0x2vbbBHs/mJJEG7nL0CAXEU8V1oce9GvKfEQgNn3qg4gQFbW6JVJrpu1ZDJsciUQIPvU1EKr9pn2GNIu+egICJBfIUQdnMmQ2sQHZGSE8uLsf702mPNdyfSxqwAEyCWEXYG8m/XGH048fwIZGYGg/9UbqwvJV/+ywQYAAAAASUVORK5CYII=); }
 
