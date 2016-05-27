@@ -504,6 +504,7 @@ a.media-heading:focus {text-decoration: none;}
 
 body.admin-bar .menu-main-eda .featured > span,
 body.is_admin .menu-main-eda .featured > span,
+body .menu-main-eda .featured > span.show-wpadmin,
 .menu-main-more,
 .menu-main-services,
 .menu-main-taxi { display: none !important; }
