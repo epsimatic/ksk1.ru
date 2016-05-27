@@ -503,11 +503,12 @@ a.media-heading:focus {text-decoration: none;}
 
 
 body.admin-bar .menu-main-eda .featured > span,
+body.is_admin .menu-main-eda .featured > span,
 .menu-main-more,
 .menu-main-services,
 .menu-main-taxi { display: none !important; }
 
-
+body.is_admin .menu-main-eda .featured > span.show-wpadmin,
 body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
 body.admin-bar .menu-main-more,
 body.admin-bar .menu-main-taxi,
