@@ -510,7 +510,7 @@ body.admin-bar .menu-main-eda .featured > span,
 
 body.admin-bar .menu-main-eda .featured > span.show-admin { display: inline !important; }
 body.admin-bar .menu-main-more,
-/*body.admin-bar .menu-main-taxi,*/
+body.admin-bar .menu-main-taxi,
 body.admin-bar .menu-main-services { display: block !important; }
 
 /*Таблицы*/
