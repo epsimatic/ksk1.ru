@@ -4964,7 +4964,7 @@ body.taxi .services-content .services-header .logo { top: 12px; right: -4px; }
 
 body.admin-bar .services-content .services-header .logo { top: -13px; }
 
-body.taxi.admin-bar .services-content .services-header .logo { top: 44px; }
+body.taxi.admin-bar .services-content .services-header .logo { margin-top: 44px; }
 
 .services-content .services-header .page-title-placeholder { position: absolute; top: 25px; width: 100%; text-align: center; }
 
@@ -5113,7 +5113,7 @@ body.taxi .services-content .services-header .page-title { font-size: 30px; }
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
     body.taxi.admin-bar .services-content .services-header .logo,
-    body.taxi .services-content .services-header .logo { right: 24px; width: 250px; height: 96px; top: -14px; width: 250px; }
+    body.taxi .services-content .services-header .logo { right: 24px; width: 250px; height: 96px; top: -14px; width: 250px; margin: 0; }
 
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
