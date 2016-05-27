@@ -510,6 +510,10 @@ body.is_admin .menu-main-eda .featured > span,
 
 body.is_admin .menu-main-eda .featured > span.show-wpadmin,
 body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
+
+body.is_admin .menu-main-more,
+body.is_admin .menu-main-taxi,
+body.is_admin .menu-main-services,
 body.admin-bar .menu-main-more,
 body.admin-bar .menu-main-taxi,
 body.admin-bar .menu-main-services { display: block !important; }
