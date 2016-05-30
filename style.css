@@ -5244,7 +5244,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-main-services .service-icon + h3 { line-height: 24px; margin-bottom: 8px; font-size: 21px; }
 
-    header.wide-header .menu-main-services p { white-space: normal; }
+    header.wide-header .menu-main-services p { white-space: normal; margin: 0; }
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
@@ -5310,6 +5310,10 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .services-content section.taxi-section .taxi-form-wrap { border-radius: 13.5px; padding: 27px 0; margin-top: 54px; }
 
     .services-content .service-section.taxi-section { height: 630px; }
+
+    header.wide-header .menu-main-services .service-icon + h3 { font-size: 24px; line-height: 27px; margin-bottom: 9px; }
+
+    header.wide-header .menu-main-services .services-info-containter { padding: 1px 60px; }
 
     header.wide-header .menu-main-services .service-icon { margin-top: 0; }
     header.wide-header .menu-main-services .service-info-inner { padding: 20px; }
