@@ -4982,7 +4982,7 @@ header.wide-header .menu-main-service .container,
 header.wide-header .menu-main-services .service-info-inner,
 .services-content .service-info-inner { padding: 24px 20px; background-color: #fff; }
 
-header.wide-header .menu-main-services .service-info-inner { display: block; color: #222; text-decoration: none; padding: 10px 20px; }
+header.wide-header .menu-main-services .service-info-inner { display: block; color: #222; text-decoration: none; }
 
 header.wide-header .menu-main-services .service-icon,
 .services-content .service-icon { width: 100px; height: 80px; margin-right: 15px; display: block; background-repeat: no-repeat; float: left; }
@@ -5139,7 +5139,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .services-content .services-info-containter { padding: 60px 0; }
 
     header.wide-header .menu-main-services .service-info-inner,
-    .services-content .service-info-inner { border-radius: 8px; border: 1px solid #fff; padding: 20px; }
+    .services-content .service-info-inner { border-radius: 8px; border: 1px solid #fff; padding: 10px 20px; }
 
     header.wide-header .menu-main-services .service-info-inner:hover,
     header.wide-header .menu-main-services .service-info-inner:focus,
@@ -5310,6 +5310,9 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .services-content section.taxi-section .taxi-form-wrap { border-radius: 13.5px; padding: 27px 0; margin-top: 54px; }
 
     .services-content .service-section.taxi-section { height: 630px; }
+
+    header.wide-header .menu-main-services .service-icon { margin-top: 0; }
+    header.wide-header .menu-main-services .service-info-inner { padding: 20px; }
 }
 
 @media (min-width: 480px) {
