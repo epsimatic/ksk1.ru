@@ -5835,7 +5835,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-item-dropdown { position: static; }
 
-    header.wide-header .menu-item-dropdown .menu-main-more { position: relative; }
+    header.wide-header .menu-item-dropdown.menu-main-more { position: relative; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125); }
 
