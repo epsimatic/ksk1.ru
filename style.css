@@ -5244,7 +5244,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-main-services .service-icon + h3 { line-height: 24px; margin-bottom: 8px; font-size: 21px; }
 
-    header.wide-header .menu-main-services p { white-space: normal; margin: 0; }
+    header.wide-header .menu-main-services p { white-space: normal; }
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
@@ -5737,7 +5737,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a { padding: 15px 10px; font-size: 13px; }
+    header.wide-header .navbar-nav > li > a { padding: 15px; }
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
@@ -5835,7 +5835,16 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-item-dropdown { position: static; }
 
+    header.wide-header .menu-item-dropdown .menu-main-more { position: relative; }
+
     header.wide-header .menu-item-dropdown .dropdown-panel { display: none; height: 163px; background-color: #fff; left: 0; z-index: 1000; width: 100%; position: absolute; border-bottom: 3px solid #00b0ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.125); }
+
+    header.wide-header .menu-main-more .dropdown-panel { width: auto; height: auto; padding: 0; list-style: none; }
+
+    header.wide-header .menu-main-more .dropdown-panel a { display: block; color: #222; text-decoration: none; line-height: 50px; padding: 0 20px; }
+
+    header.wide-header .menu-main-more .dropdown-panel a:hover,
+    header.wide-header .menu-main-more .dropdown-panel a:focus { background-color: #e9e9e9; }
     
     header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
 
@@ -6195,8 +6204,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .weather-forecast-panel .day-row .day, 
     .weather-forecast-panel .day-row .night { white-space: 39%; }
-
-    header.wide-header .navbar-nav > li > a { font-size: 14px; padding: 15px; }
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
