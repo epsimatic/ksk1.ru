@@ -1693,12 +1693,12 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .sidebar .donation-form .payment-methods > * { background-position: center center; background-repeat: no-repeat; background-size: contain; display: inline-block; }
 
-.sidebar .donation-form .payment-methods .visa { background-image: url('https://demomoney.yandex.ru/b/libs/_/f6-6n0x5nV8MSLkkixt4lcTnsIM.svg'); height: 31px; width: 38px; margin-right: 5px; }
+.sidebar .donation-form .payment-methods .visa { background-image: url('https://money.yandex.ru/b/libs/_/f6-6n0x5nV8MSLkkixt4lcTnsIM.svg'); height: 31px; width: 38px; margin-right: 5px; }
 
-.sidebar .donation-form .payment-methods .master-card { background-image: url('https://demomoney.yandex.ru/b/libs/_/kHJIseSS6uG75HtoB1KkGROKwxw.svg'); height: 33px;
+.sidebar .donation-form .payment-methods .master-card { background-image: url('https://money.yandex.ru/b/libs/_/kHJIseSS6uG75HtoB1KkGROKwxw.svg'); height: 33px;
     width: 34px; }
 
-.sidebar .donation-form .payment-methods .yandex-money { background-image: url('https://demomoney.yandex.ru/b/libs/_/uDftMQXR8pQKYR9NT08a17NSQ64.svg'); height: 35px; width: 68px; }
+.sidebar .donation-form .payment-methods .yandex-money { background-image: url('https://money.yandex.ru/b/libs/_/uDftMQXR8pQKYR9NT08a17NSQ64.svg'); height: 35px; width: 68px; }
 
 .btn-yandex { background-color: #ffdb4d; font-size: 16px; transition: background-color 0.1s ease-out 0s; text-transform: uppercase; letter-spacing: .025em; }
 
