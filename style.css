@@ -5134,7 +5134,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     header.wide-header .menu-main-services .service-icon + h3,
     .services-content .service-icon + h3 { font-size: 23px; margin-top: 12px; }
 
-    header.wide-header .menu-main-services .services-info-containter,
     .services-content .services-info-containter { padding: 60px 0; }
 
     header.wide-header .menu-main-services .service-info-inner,
@@ -5231,11 +5230,15 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     body.taxi .services-content .services-header .page-title { font-size: 40.5px; letter-spacing: .0125em; margin-top: 33px; }
 
+    header.wide-header .menu-main-services .services-info-containter { padding: 0 60px; }
+
     header.wide-header .menu-main-services .service-icon,
     .services-content .service-icon { float: left; width: 100px; }
 
     header.wide-header .menu-main-services .service-icon + h3,
     .services-content .service-icon + h3 { font-size: 24px; margin-top: 0; }
+
+    header.wide-header .menu-main-services p { white-space: normal; }
 
     .services-content .app-download-bages > a:first-child { display: inline; }
 
