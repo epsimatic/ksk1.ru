@@ -1700,7 +1700,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .sidebar .donation-form .payment-methods .yandex-money { background-image: url('https://demomoney.yandex.ru/b/libs/_/uDftMQXR8pQKYR9NT08a17NSQ64.svg'); height: 35px; width: 68px; }
 
-.btn-yandex { background-color: #ffdb4d; font-size: 16px; transition: background-color 0.1s ease-out 0s; }
+.btn-yandex { background-color: #ffdb4d; font-size: 16px; transition: background-color 0.1s ease-out 0s; text-transform: uppercase; letter-spacing: .025em; }
 
 .btn-yandex:hover,
 .btn-yandex:focus { background-color: #ffd633 }
