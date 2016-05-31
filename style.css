@@ -2733,7 +2733,8 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 .panel-ob-bottom { margin-bottom: 20px; }
 
 ul.page-cat > li.cat-item,
-.panel-cat { margin: 0 0 24px !important; padding: 0 !important; box-shadow: 0 1px 2px transparent; position: relative; }
+.panel-cat { margin: 0 0 24px !important; padding: 0 !important; box-shadow: 0 1px 2px transparent; }
+.panel-cat{position: relative;}
 
 ul.page-cat > li.cat-item:hover { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 
