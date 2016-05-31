@@ -2734,7 +2734,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
 ul.page-cat > li.cat-item,
 .panel-cat { margin: 0 0 24px !important; padding: 0 !important; box-shadow: 0 1px 2px transparent; }
-.panel-cat{position: relative;}
+
 
 ul.page-cat > li.cat-item:hover { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 
@@ -2744,7 +2744,7 @@ ul.page-cat > li.cat-item > a,
 .panel-cat > .panel-heading > .row > div > h3 { margin: 0; color: #2979ff; font-size: 24px; font-weight: 700; letter-spacing: .025em; text-transform: uppercase; padding: 24px; line-height: 24px; display: block; }
 
 .panel-cat .panel-heading h3 .cat-views { display: none; }
-.panel-cat .cat-views{position: absolute; right: 17px; top: 33px;}
+
 
 ul.page-cat > li.cat-item > a:hover,
 ul.page-cat > li.cat-item > a:focus { text-decoration: none; }
