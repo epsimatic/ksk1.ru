@@ -2075,7 +2075,7 @@ article.post-custom blockquote.answer > p:first-child:before,
 .single-post .main-content article.post-news blockquote.answer > p:first-child:before { content: "— "; }
 
 article.post-custom aside.inset,
-.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 21px auto; padding: 0 21px; font-size: 14px; line-height: 24px; border: 3px solid #c6edff; background-color: #fff; border-radius: 0; box-shadow: none; }
+.single-post .main-content article.post-news aside.inset { max-width: 300px; margin: 21px auto; padding: 21px; font-size: 14px; line-height: 24px; border: 3px solid #c6edff; background-color: #fff; border-radius: 0; box-shadow: none; }
 
 article.post-custom aside.inset h3,
 .single-post .main-content article.post-news aside.inset h3 { line-height: 24px; margin: 24px 0 0 !important; padding-left: 16px; padding-right: 16px; letter-spacing: .05em; padding-top: 24px; }
@@ -2375,7 +2375,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .single-post .main-content article.post-news blockquote.answer > p:first-child { margin-top: 13.5px; }
 
     article.post-custom aside.inset,
-    .single-post .main-content article.post-news aside.inset { margin: 24px; padding: 27px 27px 0; line-height: 27px; }
+    .single-post .main-content article.post-news aside.inset { margin: 24px; padding: 27px; line-height: 27px; }
 
     article.post-custom aside.inset.alignright,
     .single-post .main-content article.post-news aside.inset.alignright { margin-right: 0; }
