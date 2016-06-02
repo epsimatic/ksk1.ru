@@ -6110,7 +6110,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .playlist-item #listen-text { padding-left: 60px; }
 
-    .add-event { margin: 13.5em 0 27px; line-height: 27px; }
+    .add-event { margin: 13.5px 0 27px; line-height: 27px; }
 }
 
 /* Стили для размера -lg- */
