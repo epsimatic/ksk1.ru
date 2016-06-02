@@ -3305,6 +3305,9 @@ label.control-label {font-weight: 600 !important;}
 
 article.company { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
+article.company .post-views { color: #666; margin-right: 6px; margin-left: 3px; line-height: inherit; }
+article.company .post-views:before { content: ""; font-family: FontAwesome; margin-right: 6px; color: #57346b; }
+
 .company-name a { color: #0091EA; font-size: 18px; font-weight: 600; }
 
 .company-name a:hover,
