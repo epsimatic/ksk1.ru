@@ -208,18 +208,16 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel.widget .nav > li > a { padding: 5px 10px; font-size: 12px; }
 
-.cat-pills { background-color: #f0f0f0; }
-
-.cat-pills.cat-pills > li > a { padding: 5px 12px; color: #333; transition: width .5s ease; }
+.cat-pills.cat-pills > li > a { padding: 0 12px; color: #494746; line-height: 40px; }
 
 .cat-pills.cat-pills > li > a:focus,
-.cat-pills.cat-pills > li > a:hover { background-color: #bbb; color: #fff; }
+.cat-pills.cat-pills > li > a:hover { background-color: #E9E9E9; }
 
 .cat-pills.cat-pills > li.active > a:hover,
 .cat-pills.cat-pills > li.active > a:focus,
 .cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #222; }
 
-.cat-pills > li > a > .badge { padding: 3px 5px; margin-left: 5px; border-radius: 3px; position: relative; top: -1px; font-size: 12px; display: none; opacity: 0; transition: opacity .5s ease; }
+.cat-pills > li > a > .badge { padding: 0 5px; margin-left: 5px; border-radius: 3px; position: relative; top: -1px; font-size: 12px; background-color: #fff; color: #666; line-height: 20px; }
 
 .cat-pills.cat-pills > li.active > a > .badge  { display: inline-block; opacity: 1; }
 
@@ -4005,7 +4003,7 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 .movie-brief .movie-info .movie-sessions strong {font-weight: 600;}
 
 
-.add-event { margin: 11.326px 0; line-height: 22.652px; }
+.add-event { margin: 12px 0 24px; line-height: 24px; }
 
 .add-event span { padding: 0 12px; color: #666; }
 
@@ -6106,6 +6104,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
 
     .playlist-item #listen-text { padding-left: 60px; }
+
+    .add-event { margin: 13.5em 0 27px; line-height: 27px; }
 }
 
 /* Стили для размера -lg- */
