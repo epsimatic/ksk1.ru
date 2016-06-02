@@ -3305,8 +3305,10 @@ label.control-label {font-weight: 600 !important;}
 
 article.company { margin-bottom: 24px; line-height: 24px; font-size: 13.5px; }
 
-article.company .post-views { color: #666; margin-right: 6px; margin-left: 3px; line-height: inherit; }
+article.company .post-views { color: #666; margin-right: 6px; margin-left: 12px; line-height: inherit; }
 article.company .post-views:before { content: ""; font-family: FontAwesome; margin-right: 6px; color: #57346b; }
+
+article.company.company-paid .post-views { margin-left: 15px; font-size: 14px; font-weight: 400; }
 
 .company-name a { color: #0091EA; font-size: 18px; font-weight: 600; }
 
