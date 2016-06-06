@@ -2741,8 +2741,10 @@ ul.page-cat > li.cat-item:hover { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 ul.page-cat > li.cat-item > a,
 .panel-cat > .panel-heading > .row > div > h3 { margin: 0; color: #2979ff; font-size: 24px; font-weight: 700; letter-spacing: .025em; text-transform: uppercase; padding: 24px 72px 24px 24px; line-height: 24px; display: block; position: relative; }
 
+ul.page-cat > li.cat-item > a .cat-views,
 .panel-cat .panel-heading h3 .cat-views { color: #666; font-size: 14px; font-weight: 400; position: absolute; right: 12px; top: 24px; background-color: #fff; background-color: rgba(255,255,255,.8); border-radius: 3px; line-height: 24px; }
 
+ul.page-cat > li.cat-item > a .cat-views::before,
 .panel-cat .panel-heading h3 .cat-views::before { font-family: FontAwesome; content: ""; display: inline-block; margin-right: 6px; color: #57346B; }
 
 ul.page-cat > li.cat-item > a:hover,
@@ -2801,6 +2803,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
     ul.page-cat > li.cat-item > a,
     .panel-cat > .panel-heading > .row > div > h3 { font-size: 27px; padding: 27px 81px 27px 27px; line-height: 27px; }
 
+    ul.page-cat > li.cat-item > a .cat-views,
     .panel-cat .panel-heading h3 .cat-views { right: 13.5px; top: 27px; line-height: 27px; }
 
 }
