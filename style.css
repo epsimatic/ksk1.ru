@@ -2889,7 +2889,7 @@ article.ob a:focus { text-decoration: none; }
 .panel-notice article.ob.is-super:hover,
 .panel-notice article.ob.is-super:focus { background-color: #fef8b7; }
 
-.panel-notice article.ob .ob-thumb-group { float: left; margin-right: 7px; margin-top: 3px; }
+.panel-notice article.ob .ob-thumb-group { float: left; margin-right: 10px; margin-top: 3px; }
 
 .panel-notice article.ob .ob-text-group strong { color: #F44336; font-weight: 600; }
 
