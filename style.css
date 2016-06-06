@@ -2404,7 +2404,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     .events .pagination,
     article.post-custom + .pagination { padding: 0 18px; font-size: 18px; line-height: 27px; }
 
-    .events .pagination { margin-top: 54px; }
+    .events .pagination { margin-top: 54px; padding-left: 0; }
 
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
