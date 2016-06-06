@@ -382,6 +382,8 @@ function onYouTubePlayerAPIReady() {
             "onStateChange": onPlayerStateChange
         }
     });
+}
+function onYouTubePlayerAPIReadyTwo() {
     video_player = new YT2.Player("player-youtube2", {
         height: "390",
         width: "400",
