@@ -1243,11 +1243,15 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
+.home .panel-news article.post-cat-368,
 .home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; }
 
+.home .panel-news article.post-cat-368:hover,
+.home .panel-news article.post-cat-368:focus,
 .home .panel-news-list .list > article.post-cat-368:hover,
 .home .panel-news-list .list > article.post-cat-368:focus { background-color: #FEF8B7; }
 
+.home .panel-news article.post-news.post-cat-368 .post-title:after,
 .home .panel-news-list .list > article.post-news.post-cat-368 .post-title:after { background-color: #f44336; border-radius: 3px; color: #fff; content: "Новое"; display: inline; font-size: 12px; font-weight: 400; letter-spacing: 0.025em; margin: 0 7px; padding: 2px 7px; text-transform: uppercase; }
 
 .home .panel-news-list article + .yummies { margin-top: -2px; position: relative; }
