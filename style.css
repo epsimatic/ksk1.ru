@@ -6266,7 +6266,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-main-info .submenu-item-name { font-size: 19px; padding-right: 13px; }
 
-    header.wide-header .menu-main-info .submenu-timetable > a { padding: 15px 25px 15px 15px; }
+    header.wide-header .menu-main-info .submenu-timetable > a { padding: 15px 25px 15px 15px !important; }
 
     header.wide-header .menu-main-info .submenu-timetable .submenu-item-name { padding-top: 20px; }
 
