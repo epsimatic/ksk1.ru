@@ -2747,6 +2747,9 @@ ul.page-cat > li.cat-item > a .cat-views,
 ul.page-cat > li.cat-item > a .cat-views::before,
 .panel-cat .panel-heading h3 .cat-views::before { font-family: FontAwesome; content: ""; display: inline-block; margin-right: 6px; color: #57346B; }
 
+ul.page-cat > li.cat-item > a .cat-views,
+ul.page-cat > li.cat-item > a .cat-views::before { color: #999; }
+
 ul.page-cat > li.cat-item > a:hover,
 ul.page-cat > li.cat-item > a:focus { text-decoration: none; }
 
