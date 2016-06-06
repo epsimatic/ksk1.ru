@@ -382,6 +382,23 @@ function onYouTubePlayerAPIReady() {
             "onStateChange": onPlayerStateChange
         }
     });
+    video_player = new YT2.Player("player-youtube2", {
+        height: "390",
+        width: "400",
+        playerVars: {
+            listType: "playlist",
+            list: "PLQl3YfO6YBrg3j78sOmPSV-SAtB_JWpeL",
+            color: "white",
+            modestbranding: 1,
+            theme: "light",
+            controls: 2,
+            fs: 1,
+            showinfo: 0
+        },
+        events: {
+            "onStateChange": onPlayerStateChange
+        }
+    });
 }
 
 // Не работает сейчас
