@@ -5997,6 +5997,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-main-info .submenu a { display: block; padding: 5px; text-align: center; width: 100%; border-radius: 7px; border: 1px solid #eee; }
 
+    header.wide-header .menu-main-info .submenu-timetable > a { padding: 15px 13px 15px 3px; }
     
     header.wide-header .posrednik-link-wrap a:hover,
     header.wide-header .posrednik-link-wrap a:focus,
@@ -6102,7 +6103,11 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .menu-main-info figure.submenu-item-icon { float: left; }
 
+    header.wide-header .submenu-timetable figure.submenu-item-icon > img { margin-top: 4px; margin-bottom: 4px; }
+
     header.wide-header .menu-main-info .submenu-item-name { float: right; font-size: 16px; font-weight: 700; padding-right: 7px; padding-top: 23px; }
+
+    header.wide-header .menu-main-info .submenu-timetable .submenu-item-name { padding-right: 0; padding-top: 24px; }
 
     header.wide-header .menu-main-info .submenu a { text-align: left; padding: 15px; }
 
@@ -6260,6 +6265,10 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     header.wide-header .menu-main-info .submenu a { padding: 15px 25px; }
 
     header.wide-header .menu-main-info .submenu-item-name { font-size: 19px; padding-right: 13px; }
+
+    header.wide-header .menu-main-info .submenu-timetable > a { padding: 15px 25px 15px 15px; }
+
+    header.wide-header .menu-main-info .submenu-timetable .submenu-item-name { padding-top: 20px; }
 
     header.wide-header .menu-main-tv_radio .submenu-group.videoplayer-wrap { padding-left: 0; padding-right: 0; }
 
