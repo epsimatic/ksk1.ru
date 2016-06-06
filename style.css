@@ -2460,7 +2460,6 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
     article.post-custom .post-info .post-meta,
     .single-post .main-content article.post-news .post-info .post-meta { margin: 0; text-align: left; }
 
-    .events .pagination,
     article.post-custom + .pagination { padding: 0 54px; }
 
     article.post-paper { padding: 0 20px; }
