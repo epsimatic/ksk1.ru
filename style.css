@@ -3406,16 +3406,6 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 /* </editor-fold> */
 
 /* <editor-fold desc="Расписание"> */
-#transport-schedule-tabs.nav-tabs { margin-bottom: 20px; font-size: 15px; }
-
-#transport-schedule-tabs.nav-tabs a { padding: 10px 8px 12px 7px; color: #666; }
-
-#transport-schedule-tabs.nav-tabs .active a { color: #212121; }
-
-#transport-schedule-tabs.nav-tabs .active a:hover { color: #555; }
-
-#transport-schedule-tabs.nav-tabs a:hover { background-color: #b9f6ca; color: #333; border-color: transparent; }
-
 #city-transpost .table tr > th { text-align: center; vertical-align: bottom; line-height: 1.2; }
 
 #city-transpost .table tr > td:first-child .badge { padding: 4px 5px 5px; border-radius: 3px; background-color: #a1acb2; }
@@ -5562,10 +5552,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .weather-forecast-panel .day-row .day p,
     .weather-forecast-panel .day-row .night p { clear: both; margin: 0; font-size: .91em; line-height: 1.3em; }
 
-    #transport-schedule-tabs.nav-tabs { font-size: 17px; }
-
-    #transport-schedule-tabs.nav-tabs a { padding: 10px 22px 12px 20px; }
-
     .panel-default.panel-schedule .panel-heading .weekdays { display: inline; }
 
     .site-tv .logo-tv { padding: 0 0 0 5px; }
@@ -5730,8 +5716,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .btn-feature .arrow { left: 40%; }
 
     .panel.panel-pricing .panel-heading p { min-height: 2.3em; }
-
-    #transport-schedule-tabs.nav-tabs { font-size: 16px; }
 
     #railroad-transpost.tab-pane h1 { top: 25px; left: 30px; font-size: 35px; text-decoration: underline; }
 
@@ -6238,8 +6222,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     .post-news figure.post-thumb { width: 120px; }
 
     .community_square_user { width: 70px !important;}
-
-    #transport-schedule-tabs.nav-tabs { font-size: 19px; }
 
     .site-tv .logo-tv img { margin-top: 3px; width: 85%; }
 
