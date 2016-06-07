@@ -5964,9 +5964,9 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .ob-promo h3.ob-promo-heading > a { position: absolute; right: 0; top: 2px; font-size: 13px; font-weight: 400; text-transform: none; color: #999; }
 
-    header.wide-header .ob-promo .ob-promo-body a.ads-poster { display: inline-block; padding: 20px 13px 0 0; }
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { display: inline-block; padding: 20px 13px 0 0; }
 
-    header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+5) { display: none; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+5) { display: none; }
     
     header.wide-header .ob-promo .popover { padding: 10px; max-width: 410px; }
 
@@ -6088,11 +6088,11 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     header.wide-header .post-news .views_num,
     header.wide-header .post-news .post-comment-num { color: #666; font-size: 12px; padding-right: 8px; font-weight: 400; }
 
-    header.wide-header .ob-promo .ob-promo-body a.ads-poster { padding: 20px 17px 0 0; }
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
 
-    header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+5) { display: inline-block; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+5) { display: inline-block; }
 
-    header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: none; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: none; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
 
@@ -6266,7 +6266,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     header.wide-header .posrednik-link-wrap .submenu-item-name { padding-top: 13px; font-size: 17px; }
 
-    header.wide-header .ob-promo .ob-promo-body .ads > a.ads-poster:nth-of-type(n+6) { display: inline-block; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: inline-block; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
 
