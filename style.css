@@ -1462,7 +1462,17 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .content-padder > header .taxonomy-description {position: relative; top: 3px;}
 
 body.search .page-title,
-.content-padder > header > .page-title { color: #999; font-size: 54px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 81px; text-transform: lowercase; }
+.content-padder > header > .page-title { color: #999; font-size: 48px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 48px; text-transform: lowercase; }
+
+@media (min-width: 992px) { 
+    body.search .page-title,
+    .content-padder > header > .page-title { font-size: 54px; line-height: 54px; }
+}
+
+@media (min-width: 992px) {
+    body.search .page-title,
+    .content-padder > header > .page-title { line-height: 81px; }
+}
 
 body.search header.page-header { padding: 0; margin-bottom: 57px; }
 body.search header.page-header .page-title { margin-bottom: 27px !important; }
