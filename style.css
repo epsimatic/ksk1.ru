@@ -2119,6 +2119,8 @@ article.post-custom + .pagination { display: block; padding: 0 16px; font-size: 
 
 .paging-navigation { padding: 0; margin-bottom: 24px; }
 
+.paging-navigation:after { clear: both; content: ""; display: table; }
+
 .paging-navigation a { text-decoration: none; }
 
 .single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
