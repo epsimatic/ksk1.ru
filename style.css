@@ -3424,7 +3424,11 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .table-schedule th { color: #666; }
 
-.table-schedule tr > th:first-child { font-size: 37px; font-weight: 600; color: #444; }
+.table-schedule tr > th:nth-child(2) { font-size: 24px; font-weight: 400; line-height: 48px; }
+
+@media (min-width: 992px) {
+    .table-schedule tr > th:nth-child(2) { font-size: 27px; line-height: 54px; }
+}
 
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
