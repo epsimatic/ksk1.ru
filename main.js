@@ -180,15 +180,15 @@ jQuery('.dropdown-weather').one('mouseenter', function () {
 });
 
 // Загрузить срочные объявления при наведении на панель Объявления
-jQuery(".menu-main-ads").one("mouseenter", function () {
+jQuery(".menu-main-ob").one("mouseenter", function () {
     jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
-        jQuery('.ads-poster').each(function () {
+        jQuery('.vip-poster').each(function () {
             jQuery(this).popover({
                 content: jQuery('#content-' + jQuery(this)[0].id).html(),
                 html: true,
                 placement: "bottom",
                 trigger: 'hover',
-                container: '.ads-margin',
+                container: '.vip-margin',
                 viewport: 'body'
             });
         });
