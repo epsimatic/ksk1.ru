@@ -949,6 +949,14 @@ header#header .weather-text { display: none; }
 
 .quick-nav ul li {position: relative;}
 
+.quick-nav .main-cat-item > a::before { font-family: FontAwesome; content: ""; }
+
+.quick-nav .main-cat-item > a { color: #0091EA; line-height: 24px; padding: 0 15px 24px; }
+
+@media (min-width: 992px) {
+    .quick-nav .main-cat-item > a { line-height: 27px; padding: 0 15px 27px;}    
+}
+
 .quick-nav .name_cat {color: #fff;}
 
 .quick-nav li > a:hover,
