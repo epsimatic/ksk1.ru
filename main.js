@@ -390,7 +390,7 @@ function onYouTubePlayerAPIReadyTwo() {
         width: "400",
         playerVars: {
             listType: "playlist",
-            list: "PLQl3YfO6YBrg3j78sOmPSV-SAtB_JWpeL",
+            list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
             color: "white",
             modestbranding: 1,
             theme: "light",
