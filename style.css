@@ -2110,10 +2110,16 @@ article.post-news .mejs-audio a { border-bottom: none !important; }
 
 article.post-custom .post-info { margin-top: 24px; }
 
+.paging-navigation,
 .events .pagination,
 article.post-custom + .pagination { display: block; padding: 0 16px; font-size: 16px; line-height: 24px; }
 
+.paging-navigation,
 .events .pagination { margin-top: 48px; }
+
+.paging-navigation { padding: 0; margin-bottom: 24px; }
+
+.paging-navigation a { text-decoration: none; }
 
 .single-post .main-content .pagination { display: block; text-align: center; margin: 0 0 14px; font-size: 18px;}
 
@@ -2405,10 +2411,14 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
     article.post-custom .post-info { margin-top: 27px; }
 
+    .paging-navigation,
     .events .pagination,
     article.post-custom + .pagination { padding: 0 18px; font-size: 18px; line-height: 27px; }
 
+    .paging-navigation,
     .events .pagination { margin-top: 54px; padding-left: 0; }
+
+    .paging-navigation { padding: 0; margin-bottom: 27px; }
 
     .social-likes_notext.social-likes_light .social-likes__button { width: 54px; }
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
