@@ -383,6 +383,23 @@ function onYouTubePlayerAPIReady() {
             "onStateChange": onPlayerStateChange
         }
     });
+    video_player2 = new YT.Player("player-youtube2", {
+        height: "390",
+        width: "400",
+        playerVars: {
+            listType: "playlist",
+            list: "PLQl3YfO6YBrinuwe9JkZuqJLZj0U9TZH_",
+            color: "white",
+            modestbranding: 1,
+            theme: "light",
+            controls: 2,
+            fs: 1,
+            showinfo: 0
+        },
+        events: {
+            "onStateChange": onPlayerStateChange
+        }
+    });
 }
 function onYouTubePlayerAPIReadyTwo() {
     video_player2 = new YT.Player("player-youtube2", {
