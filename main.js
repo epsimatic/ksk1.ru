@@ -385,7 +385,7 @@ function onYouTubePlayerAPIReady() {
     });
 }
 function onYouTubePlayerAPIReadyTwo() {
-    video_player = new YT.Player("player-youtube2", {
+    video_player2 = new YT.Player("player-youtube2", {
         height: "390",
         width: "400",
         playerVars: {
