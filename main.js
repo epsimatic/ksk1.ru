@@ -169,7 +169,7 @@ jQuery('.dropdown-weather').one('mouseenter', function () {
         crossDomain: true,
         timeout: 2000,
         success: function (data) {
-            jQuery('.dropdown-weather').find('.dropdown-menu').html(data)
+            jQuery('.dropdown-weather').find('.dropdown-menu').html(data);
         },
         error: function (msg) {
             result = msg.status + ' ' + msg.statusText;
