@@ -3445,10 +3445,6 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .table-schedule .weekdays { white-space: nowrap; }
 
-.table-schedule .weekdays .badge { margin-left: 1px; padding: 2px 2px 4px 3px; border-radius: 0; background-color: #b3e5fc; font-size: 10px; font-weight: 400; color: #666; color: rgba(0,0,0,.5); }
-
-.table-schedule .weekdays .badge.inactive { background-color: #ddd; color: #fff; display: none; }
-
 #schedule-heading.panel-default .panel-heading { padding: 15px 10px; line-height: 1.1em; font-size: 21px; background-color: #f0f0f0; color: #666; }
 
 
