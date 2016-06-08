@@ -3494,7 +3494,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 .panel-default.panel-schedule .route-name { padding: 0 15px; }
 
 .panel-schedule a.collapsed .time-interval:after { color: #bbb; }
-.panel-schedule .time-interval:after { color: #fff; content: ""; font-family: FontAwesome; margin-left: 7px; position: absolute; }
+.panel-schedule .time-interval:after { color: transparent; content: ""; font-family: FontAwesome; margin-left: 7px; position: absolute; }
 
 #accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
 
