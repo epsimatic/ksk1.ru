@@ -3504,7 +3504,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 #accordion-schedule a.collapsed .minutes { display: block; color: #999; opacity: 1; }
 
-.panel-default.panel-schedule .panel-heading { display: none; position: absolute; bottom: 2px; right: 0; text-transform: uppercase; font-size: 11px; }
+.panel-default.panel-schedule .panel-heading .weekdays { display: none; position: absolute; bottom: 2px; right: 0; text-transform: uppercase; font-size: 11px; }
 
 .panel-schedule .panel-heading a.collapsed .weekdays { color: #aaa; }
 
