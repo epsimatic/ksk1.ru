@@ -3470,7 +3470,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .panel-heading { background-color: #fff; padding: 0; }
 
-.panel-default.panel-schedule .panel-heading a { display: block; padding: 15px 15px 15px 10px; color: #fff; background-color: #ff6347; }
+.panel-default.panel-schedule .panel-heading a { display: block; padding: 15px 30px 15px 10px; color: #fff; background-color: #ff6347; }
 
 .panel-default.panel-schedule .panel-heading a:hover { background-color: #ff755c; }
 
@@ -3483,27 +3483,24 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    margin: 0 auto;
-    height: 50px; width: 50px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 18px; font-weight: 600; color: #ff6347; }
+.panel-default.panel-schedule .panel-heading .route-number.badge { display: table-cell; margin: 0 auto; height: 40px; width: 40px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 16px; font-weight: 600; color: #ff6347; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
+.panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 18px; }
 
 .panel-default.panel-schedule .panel-heading a.collapsed .route-number.badge { background-color: #FEF8B7; color: #a1887f; }
 
 .panel-default.panel-schedule .panel-heading .vehicle-type > img { width: 100%; }
 
-.panel-default.panel-schedule .panel-heading .route-name { font-size: 16px; }
+@media (min-width: 992px) {
+
+    .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
+
+    .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
+
+    .panel-default.panel-schedule .panel-heading .route-name { font-size: 16px; }
+}
+
+.panel-schedule .time-interval:after { color: #bbb; content: ""; font-family: FontAwesome; margin-left: 7px; position: absolute; }
 
 #accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
 
