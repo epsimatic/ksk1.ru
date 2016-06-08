@@ -1012,7 +1012,7 @@ header#header .weather-text { display: none; }
 /* </editor-fold> */
 
 /* <editor-fold desc="Таблица сравнения тарифов"> */
-.table-comparison > .row > .col-sm-4:first-child {font-size: 16px; color: #999; min-height: 36px; padding: 16px 10px 10px; text-align: left;}
+.table-comparison > .row > .col-sm-4:first-child {font-size: 16px; color: #999; min-height: 36px; padding: 0 10px 10px; text-align: left;}
 
 .table-comparison > .row > .col-sm-4:after {content: ":";}
 @media (min-width: 768px) {
@@ -5589,7 +5589,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .ob-paid-options .ob-media-options .ob-media-option { font-size: 16px; }
 
-    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: inline-block; padding-left: 0; padding-right: 0; width: 30%; }
+    .ob-pricing-table .panel-pricing-container:first-child .panel-body { display: inline-block; padding-left: 0; padding-right: 0; }
 
     .ob-pricing-table .panel-pricing-container:first-child .panel-footer { display: inline-block; padding: 0; position: relative; top: -15px; width: 66%; }
 
