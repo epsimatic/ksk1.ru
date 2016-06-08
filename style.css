@@ -3491,6 +3491,12 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .panel-heading .vehicle-type > img { width: 100%; }
 
+.panel-default.panel-schedule .route-name { padding: 0 15px; }
+
+@media (min-width: 786px) { 
+    .panel-default.panel-schedule .route-name { padding: 0; }
+}
+
 @media (min-width: 992px) {
 
     .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
