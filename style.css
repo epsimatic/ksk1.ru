@@ -1016,7 +1016,7 @@ header#header .weather-text { display: none; }
 
 .table-comparison > .row > .col-sm-4:after {content: ":";}
 @media (min-width: 768px) {
-    .table-comparison > .row > .col-sm-4:first-child {font-size: 14px;}
+    .table-comparison > .row > .col-sm-4:first-child {font-size: 14px;text-align: center;}
     .table-comparison > .row > div.col-sm-4:after {content: "";}
     .quick-nav .fa-navicon { font-size: 1em; }
 }
