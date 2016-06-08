@@ -3493,19 +3493,6 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .route-name { padding: 0 15px; }
 
-@media (min-width: 786px) { 
-    .panel-default.panel-schedule .route-name { padding: 0; }
-}
-
-@media (min-width: 992px) {
-
-    .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
-
-    .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
-
-    .panel-default.panel-schedule .panel-heading .route-name { font-size: 16px; }
-}
-
 .panel-schedule .time-interval:after { color: #bbb; content: ""; font-family: FontAwesome; margin-left: 7px; position: absolute; }
 
 #accordion-schedule .panel-schedule .fa-clock-o { color: #aaa; display: none; }
@@ -3529,6 +3516,31 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 .panel-default.panel-schedule .panel-body .stations > .station:last-child::after { content: ""; }
 
 .panel-default.panel-schedule .panel-body .found-error a { color: #999; }
+
+@media (min-width: 786px) { 
+    .panel-default.panel-schedule .route-name { padding: 0; }
+
+    .panel-default.panel-schedule .panel-heading .weekdays { right: -9px; }
+
+    .panel-schedule .time-interval:after { margin-left: 14px; font-size: 18px; line-height: 1; }
+}
+
+@media (min-width: 992px) {
+
+    .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
+
+    .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 23px; }
+
+    .panel-default.panel-schedule .panel-heading .route-name { font-size: 16px; }
+
+    .panel-default.panel-schedule .panel-heading .weekdays { right: 0; }
+
+    .panel-schedule .time-interval:after { margin-left: 16px; font-size: 20px; }
+}
+
+@media (min-width: 992px) {
+    .panel-schedule .time-interval:after { margin-left: 21px; }
+}
 
 
 #railroad-transpost.tab-pane a { display: block; position: relative; text-align: center; }
