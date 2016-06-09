@@ -5307,6 +5307,10 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     body.admin-bar .services-content .services-header .logo { top: -20px; }
 
+    body.admin-bar .services-content section.taxi-section { margin-top: 0; }
+
+    .taxi-section .container { padding: 0 15px; }
+
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
     .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; }
