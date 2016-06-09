@@ -3474,9 +3474,9 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule { box-shadow: none; margin-bottom: 0; }
 
-.panel-schedule .transport-nav { margin-bottom: 24px; }
+.transport-nav { margin-bottom: 24px; }
 
-.panel-schedule .transport-nav .btn { font-size: 21px; line-height: 48px; padding: 0 15px; text-decoration: none; }
+.transport-nav .btn { font-size: 21px; line-height: 48px; padding: 0 15px; text-decoration: none; }
 
 .panel-default.panel-schedule .panel-heading { background-color: #fff; padding: 0; }
 
@@ -3549,9 +3549,9 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 }
 
 @media (min-width: 992px) {
-    .panel-schedule .transport-nav { margin-bottom: 27px; }
+    .transport-nav { margin-bottom: 27px; }
 
-    .panel-schedule .transport-nav .btn { font-size: 21px; line-height: 54px; padding: 0 15px; }
+    .transport-nav .btn { font-size: 21px; line-height: 54px; padding: 0 15px; }
 
     .city-transport-heading { line-height: 27px; padding: 13.5px 30px 13.5px 10px; }
 
