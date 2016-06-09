@@ -3468,6 +3468,10 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .autostation-info { line-height: 27px; font-size: 12px; background-color: rgb(240, 240, 240); padding: 13.5px; letter-spacing: -0.0125em; text-align: center; }
 
+.city-transport-heading { background-color: #f0f0f0; line-height: 24px; padding: 24px 30px 24px 10px; text-align: center; }
+
+.city-transport-heading > .row > * { color: #666; font-size: 12px; letter-spacing: .025em; text-transform: uppercase; }
+
 .panel-default.panel-schedule { box-shadow: none; margin-bottom: 0; }
 
 .panel-schedule .transport-nav { margin-bottom: 24px; }
@@ -3489,7 +3493,17 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge { display: table-cell; margin: 0 auto; height: 40px; width: 40px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 16px; font-weight: 600; color: #ff6347; }
+.panel-default.panel-schedule .panel-heading .route-number.badge { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto; height: 40px; width: 40px; border-radius: 50%; padding: 0; background-color: #fff; font-size: 16px; font-weight: 600; color: #ff6347; }
 
 .panel-default.panel-schedule .panel-heading .route-number.badge.single-digit { font-size: 18px; }
 
@@ -3538,6 +3552,8 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
     .panel-schedule .transport-nav { margin-bottom: 27px; }
 
     .panel-schedule .transport-nav .btn { font-size: 21px; line-height: 54px; padding: 0 15px; }
+
+    .city-transport-heading { line-height: 27px; padding: 27px 30px 27px 10px; }
 
     .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
 
