@@ -3466,6 +3466,8 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
     text-align: center;
 }
 
+.autostation-info { line-height: 27px; font-size: 12px; background-color: rgb(240, 240, 240); padding: 13.5px; letter-spacing: -0.0125em; text-align: center; }
+
 .panel-default.panel-schedule { box-shadow: none; margin-bottom: 0; }
 
 .panel-schedule .transport-nav { margin-bottom: 24px; }
