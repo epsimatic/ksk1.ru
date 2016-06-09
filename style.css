@@ -5220,6 +5220,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 @media (min-width: 768px) {
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
+    body.admin-bar .services-content .services-header { margin-top: 11px; }
+
     body.taxi .services-content .services-header .logo { position: relative; }
 
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
@@ -5295,7 +5297,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
     
     body.taxi .services-content .services-header { height: 72px; }
 
-    body.admin-bar .services-content .services-header { margin-top: 11px; }
     body.admin-bar .services-content .services-header .logo { top: -20px; }
 
     
