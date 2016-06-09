@@ -5313,6 +5313,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .taxi-section .container { padding: 0 15px; }
 
+    body.taxi .services-content .services-header .page-title-placeholder,
     body.taxi.admin-bar .services-content .services-header .page-title-placeholder,
     body.taxi .services-content .services-header .logo-placeholder { top: 0; }
 
