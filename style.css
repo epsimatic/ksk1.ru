@@ -5224,9 +5224,13 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
-    body.taxi .services-content .services-header .page-title-placeholder { text-align: center; top: -110px; }
+    body.taxi .services-content .services-header .page-title-placeholder { text-align: center; top: -100px; }
 
-    body.taxi.admin-bar .services-content .services-header .page-title-placeholder { top: -155px; }
+    body.taxi .services-content .services-header .page-title-placeholder .page-title { font-size: 39px; }
+
+    body.taxi .services-content .services-header .logo-placeholder { top: 30px; }
+
+    body.taxi.admin-bar .services-content .services-header .page-title-placeholder { top: -145px; }
 
     .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
 
