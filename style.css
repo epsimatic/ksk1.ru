@@ -5224,7 +5224,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
-    body.taxi .services-content .services-header .page-title-placeholder { text-align: center; position: absolute; top: 25px;}
+    body.taxi .services-content .services-header .page-title-placeholder { text-align: center; top: -155px; }
 
     .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
 
