@@ -3468,7 +3468,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .autostation-info { line-height: 27px; font-size: 12px; background-color: rgb(240, 240, 240); padding: 13.5px; letter-spacing: -0.0125em; text-align: center; }
 
-.city-transport-heading { background-color: #f0f0f0; line-height: 24px; padding: 24px 30px 24px 10px; text-align: center; }
+.city-transport-heading { background-color: #f0f0f0; line-height: 24px; padding: 12px 30px 12px 10px; text-align: center; }
 
 .city-transport-heading > .row > * { color: #666; font-size: 12px; letter-spacing: .025em; text-transform: uppercase; }
 
@@ -3553,7 +3553,7 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
     .panel-schedule .transport-nav .btn { font-size: 21px; line-height: 54px; padding: 0 15px; }
 
-    .city-transport-heading { line-height: 27px; padding: 27px 30px 27px 10px; }
+    .city-transport-heading { line-height: 27px; padding: 13.5px 30px 13.5px 10px; }
 
     .panel-default.panel-schedule .panel-heading .route-number.badge { height: 50px; width: 50px; font-size: 18px; }
 
