@@ -3466,17 +3466,24 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
     text-align: center;
 }
 
-.autostation-info { line-height: 27px; font-size: 12px; background-color: rgb(240, 240, 240); padding: 13.5px; letter-spacing: -0.0125em; text-align: center; }
+.autostation-info { line-height: 27px; font-size: 12px; background-color: #f8f8f8; padding: 13.5px; letter-spacing: -0.0125em; text-align: center; }
 
 .city-transport-heading { background-color: #f0f0f0; line-height: 24px; padding: 12px 30px 12px 10px; text-align: center; }
 
 .city-transport-heading > .row > * { color: #666; font-size: 12px; letter-spacing: .025em; text-transform: uppercase; }
 
+.city-transport-heading > .row > .tooltip { text-transform: none; }
+
 .panel-default.panel-schedule { box-shadow: none; margin-bottom: 0; }
 
 .transport-nav { margin-bottom: 24px; }
 
-.transport-nav .btn { font-size: 21px; line-height: 48px; padding: 0 15px; text-decoration: none; }
+.transport-nav .btn { font-size: 21px; line-height: 48px; padding: 0 15px; text-decoration: none; border-bottom: 3px solid transparent; color: #2979ff; }
+
+.transport-nav .btn:hover,
+.transport-nav .btn:focus { color: #0F5CDE; }
+
+.transport-nav .btn.active { border-bottom-color: #2979ff; }
 
 .panel-default.panel-schedule .panel-heading { background-color: #fff; padding: 0; }
 
