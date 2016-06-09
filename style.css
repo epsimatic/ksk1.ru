@@ -5272,6 +5272,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     body.taxi .services-content .form-wrap .form-control { height: 48px; }
 
+    body.taxi .services-content .form-wrap .phone-group .form-control { height: 60px; }
+
     body.taxi  .services-content .form-wrap textarea.form-control { height: auto; }
 
     .services-content section.cargo-section .container { height: 100%; }
