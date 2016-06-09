@@ -5270,6 +5270,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     .services-content .form-wrap .form-control { padding: 6px 12px; line-height: 24px; height: 36px; font-size: 14px; }
 
+    body.taxi .services-content .form-wrap .form-control { height: 48px; }
+
     .services-content section.cargo-section .container { height: 100%; }
 
     .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 9px; text-align: center; margin: 0; }
