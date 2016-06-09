@@ -5218,6 +5218,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 .services-content .social-links { padding-top: 24px; }
 
 @media (min-width: 768px) {
+    body.admin-bar .services-content .services-header .logo { top: -20px; }
+
     .services-content .services-header .logo { position: absolute; height: 139px; width: 304px; top: -20px; }
 
     body.admin-bar .services-content .services-header { margin-top: 11px; }
@@ -5306,9 +5308,6 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 }
 
 @media (min-width: 992px) { 
-
-    body.admin-bar .services-content .services-header .logo { top: -20px; }
-
     body.admin-bar .services-content section.taxi-section { margin-top: 0; }
 
     .taxi-section .container { padding: 0 15px; }
