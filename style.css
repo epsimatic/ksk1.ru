@@ -5232,6 +5232,8 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
     body.taxi.admin-bar .services-content .services-header .page-title-placeholder { top: -145px; }
 
+    .taxi-section .container { padding: 0 100px; }
+
     .services-content .services-header .city-name { font-size: 18px; margin: 20px 0 0; }
 
     .services-content .services-header .page-title { font-size: 36px; }
