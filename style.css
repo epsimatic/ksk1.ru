@@ -5115,7 +5115,9 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 
 .services-content .service-info-inner .app-download-bages img { width: 120px; }
 
-.services-content section.service-section { position: relative; overflow: hidden; padding: 0 15px; }
+.services-content section.service-section { position: relative; padding: 0 15px; margin-top: -24px; }
+
+section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: -24px; padding: 0 15px; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
 
@@ -5308,7 +5310,12 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 }
 
 @media (min-width: 992px) { 
+    .services-content section.service-section { overflow: hidden; margin-top: 0; }
+
     body.admin-bar .services-content section.taxi-section { margin-top: 0; }
+
+    section.taxi-section .taxi-order-description { margin-bottom: 27px; margin-top: -27px; }
+
 
     .taxi-section .container { padding: 0 15px; }
 
