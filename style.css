@@ -5170,7 +5170,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .services-content section.taxi-section .bg-image { background-color: #FFE700; }
 
-.services-content footer.service-footer .form-wrap .form-submit,
+.services-content footer.service-footer .form-submit,
 .services-content section.taxi-section .taxi-form-wrap .form-submit {  background-color: #000; color: #ffff00; letter-spacing: 0.05em; text-transform: uppercase; line-height: 60px; font-size: 24px; padding: 0; border: none; transition: background-color .25s ease-in-out 0s; }
 
 .services-content footer.service-footer .form-wrap .form-submit + .ajax-loader { position: absolute; top: 14px; left: 15px; }
