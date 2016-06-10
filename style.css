@@ -5051,7 +5051,7 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content footer.service-footer .form-wrap .form-control { text-align: left; padding: 12px; }
 
-.services-content footer.service-footer .footer-btns-wrap > * { padding: 12px; }
+.services-content footer.service-footer .footer-btns-wrap-xs > * { padding: 12px; }
 
 .services-content footer.service-footer .btn-hollow { background-color: transparent; border: 1px solid #fff; border-radius: 7px; color: #fff; line-height: 24px; padding: 12px; transition: background-color .25s ease .0s; }
 
@@ -5339,7 +5339,8 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
     .services-content section.cargo-section .bg-image { background-image: url("//ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 
-    .services-content .social-links { padding-top: 20px; }
+    body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
+    .services-content .social-links { padding-top: 10px; }
 }
 
 @media (min-width: 992px) { 
