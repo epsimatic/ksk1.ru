@@ -5043,7 +5043,7 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content .container { background-color: transparent; margin-top: 0 !important; }
 
-.services-content footer.service-footer { height: 90px; line-height: 50px; background-color: #000; }
+.services-content footer.service-footer { line-height: 50px; background-color: #000; padding: 24px 0; }
 
 .services-content footer.service-footer .form-wrap { background-color: #ffe700; padding: 24px 15px; }
 
@@ -5139,6 +5139,11 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 body.admin-bar.taxi .services-content section.service-section { margin-top: -24px; }
 
 section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: -24px; padding: 0 15px; }
+
+section.taxi-section .taxi-order-description > a { text-decoration: none; color: #000; border-bottom: 1px solid #000; transition: border-bottom-color .125s ease .0s; }
+
+section.taxi-section .taxi-order-description > a:hover,
+section.taxi-section .taxi-order-description > a:focus { border-bottom-color: transparent; color: #494746; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
 
