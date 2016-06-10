@@ -5143,7 +5143,7 @@ section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: 
 section.taxi-section .taxi-order-description > a { text-decoration: none; color: #000; border-bottom: 1px solid #000; transition: border-bottom-color .125s ease .0s; }
 
 section.taxi-section .taxi-order-description > a:hover,
-section.taxi-section .taxi-order-description > a:focus { border-bottom-color: transparent; color: #494746; }
+section.taxi-section .taxi-order-description > a:focus { border-bottom-color: transparent; opacity: .7; }
 
 .services-content section.taxi-section .taxi-info-wrap { color: #000; text-align: center; }
 
@@ -5468,6 +5468,8 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
     .services-content section.workers-section .phone-group .form-control { font-size: 24px; padding-left: 54px; }
 
     body.taxi .services-content .social-links { padding-top: 0; }
+
+    section.taxi-section .taxi-order-description > a { color: #FFE700; border-bottom-color: #FFE700; }
 }
 
 @media (min-width: 1200px) { 
