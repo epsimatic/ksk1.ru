@@ -5349,7 +5349,8 @@ section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: 
 
     .services-content section.taxi-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
-    
+    body.taxi header.services-header .logo-placeholder > a { position: absolute; right: 0; }
+    body.taxi header.services-header .logo-placeholder > a::before { display: none; }
 
     .services-content .services-header { margin-top: 29px; }
     body.taxi .services-content .services-header { height: 96px; }
