@@ -5345,6 +5345,11 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
     #taxiReviewsMD { height: 990px; }
 
     body.taxi .modal-dialog { top: 400px; }
+
+    .services-content footer.service-footer .form-submit { background-color: #FFE700; color: #000; }
+
+    .services-content footer.service-footer .form-submit:hover,
+    .services-content footer.service-footer .form-submit:focus { background-color: #FFEE5C; }
 }
 
 @media (min-width: 992px) { 
