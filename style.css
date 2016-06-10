@@ -5079,6 +5079,8 @@ body.taxi header.services-header .logo-placeholder > a { position: relative; dis
 
 body.taxi header.services-header .logo-placeholder > a::before { color: #000; content: ""; font-family: FontAwesome; font-size: 38px; left: -14px; position: absolute; top: 24px; }
 
+body.admin-bar.taxi header.services-header .logo-placeholder > a::before { top: 43px; }
+
 body.admin-bar .services-content .services-header { margin-top: 25px; }
 
 .services-content .services-header .logo-placeholder { position: relative; text-align: center; }
