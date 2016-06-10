@@ -5051,6 +5051,15 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content footer.service-footer .form-wrap .form-control { text-align: left; padding: 12px; }
 
+.services-content footer.service-footer .footer-btns-wrap > * { padding: 12px; }
+
+.services-content footer.service-footer .btn-hollow { background-color: transparent; border: 1px solid #fff; border-radius: 7px; color: #fff; line-height: 24px; padding: 12px; transition: background-color .25s ease .0s; }
+
+.services-content footer.service-footer .btn-hollow:hover,
+.services-content footer.service-footer .btn-hollow:focus { background-color: #fff; color: #000; }
+
+.services-content footer.service-footer .btn-hollow.btn-block { display: block; }
+
 footer.service-footer span.social-title { color: #fff; margin-right: 25px; }
 
 footer.service-footer a { display: inline-block; }
