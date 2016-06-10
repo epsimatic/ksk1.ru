@@ -5340,7 +5340,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
     .services-content section.cargo-section .bg-image { background-image: url("//ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 
     body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
-    .services-content .social-links { padding-top: 10px; }
+    .services-content .social-links { padding-top: 15px; }
 }
 
 @media (min-width: 992px) { 
