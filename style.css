@@ -5363,7 +5363,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
     #taxiReviewsMD { height: 836px; }
 
-    body.taxi .modal-dialog { top: 200px; }
+    body.taxi .modal-dialog { top: 300px; }
 
     .services-content footer.service-footer form { line-height: 27px; }
 
