@@ -5045,6 +5045,8 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content footer.service-footer { height: 90px; line-height: 50px; background-color: #000; }
 
+.services-content footer.service-footer form { line-height: 24px; }
+
 footer.service-footer span.social-title { color: #fff; margin-right: 25px; }
 
 footer.service-footer a { display: inline-block; }
@@ -5331,7 +5333,7 @@ section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: 
 
     body.taxi .modal-dialog { top: 200px; }
 
-    .services-content footer.service-footer .modal-dialog { line-height: 27px; }
+    .services-content footer.service-footer form { line-height: 27px; }
 
 
     .taxi-section .container { padding: 0 15px; }
