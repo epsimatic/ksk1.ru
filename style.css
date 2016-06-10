@@ -5329,7 +5329,9 @@ section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: 
 
     #taxiReviewsMD { height: 836px; }
 
-    body.taxi .modal-dialog { top: 500px; }
+    body.taxi .modal-dialog { top: 200px; }
+
+    .services-content footer.service-footer .modal-dialog { line-height: 27px; }
 
 
     .taxi-section .container { padding: 0 15px; }
