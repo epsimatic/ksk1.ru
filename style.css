@@ -5341,6 +5341,10 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
     body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
     .services-content .social-links { padding-top: 15px; }
+
+    #taxiReviewsMD { height: 990px; }
+
+    body.taxi .modal-dialog { top: 400px; }
 }
 
 @media (min-width: 992px) { 
