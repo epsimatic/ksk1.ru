@@ -5232,7 +5232,7 @@ section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: 
 
     .services-content .services-header { margin-top: -21px; height: 96px; }
 
-    body.taxi .services-content .services-header .logo { position: relative; }
+    body.taxi .services-content .services-header .logo { position: relative; right: -12px; }
 
     .services-content .services-header .page-title-placeholder { position: relative; top: 0; text-align: left; }
 
