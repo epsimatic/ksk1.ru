@@ -5139,6 +5139,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 .services-content section.service-section { position: relative; padding: 0 15px; }
 
 body.admin-bar.taxi .services-content section.service-section { margin-top: -24px; }
+body.admin-bar.taxi .services-content section.taxi-driver-section.service-section { margin-top: 0; }
 
 section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: -24px; padding: 0 15px; }
 
@@ -5246,6 +5247,20 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 .services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; line-height: 24px; padding: 15px 24px; }
 
 .services-content section.workers-section .bg-image { background-image: url("//ksk1.ru/img/workers-bg.jpg"); }
+
+.services-content header.taxi-driver-header { height: 120px !important; }
+
+.services-content header.taxi-driver-header .page-title { margin-top: 0; }
+
+.services-content header.taxi-driver-header .logo-placeholder > a:before { text-outline: 50px !important; }
+.services-content header.taxi-driver-header .logo { top: -6px !important; }
+
+
+.services-content section.taxi-driver-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
+
+.services-content section.taxi-driver-section h4 + ol { padding-left: 15px; margin-bottom: 48px; }
+
+.services-content section.taxi-driver-section li { font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
