@@ -5375,6 +5375,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.taxi .modal-dialog { top: 400px; }
 
+    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2150px; }
+
+    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1600px; }
+
     .services-content footer.service-footer .form-submit { background-color: #FFE700; color: #000; }
 
     .services-content footer.service-footer .form-submit:hover,
@@ -5522,6 +5526,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content section.taxi-driver-section h4 + ol { margin-bottom: 54px; }
 
     .services-content section.taxi-driver-section li { line-height: 27px; margin-bottom: 13.5px; }
+
+    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2100px; }
+
+    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
 
     body.taxi .modal-title { line-height: 27px; }
 }
