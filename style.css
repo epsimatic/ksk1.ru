@@ -5252,8 +5252,8 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .services-content header.taxi-driver-header .page-title { margin-top: 0; }
 
-.services-content header.taxi-driver-header .logo-placeholder > a:before { text-outline: 50px !important; }
-.services-content header.taxi-driver-header .logo { top: -6px !important; }
+body.admin-bar .services-content header.taxi-driver-header .logo-placeholder > a:before { top: 50px !important; }
+body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !important; }
 
 
 .services-content section.taxi-driver-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
