@@ -5366,6 +5366,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-driver-section .container { padding: 12px 50px; }
 
+    .services-content section.taxi-driver-section h4 + ol { padding-left: 0; }
+
     body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
     .services-content .social-links { padding-top: 15px; }
 
@@ -5508,6 +5510,16 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     body.taxi .services-content .social-links { padding-top: 0; }
 
     section.taxi-section .taxi-order-description > a { color: #FFE700; border-bottom-color: #FFE700; }
+
+    .services-content header.taxi-driver-header { height: 96px !important; }
+
+    .services-content section.taxi-driver-section .container { padding: 13.5px 150px; }
+
+    .services-content section.taxi-driver-section h4 { font-size: 27px; line-height: 27px; margin-bottom: 19.5px; margin-top: 34.5px; font-weight: 600; letter-spacing: .015em; }
+
+    .services-content section.taxi-driver-section h4 + ol { margin-bottom: 54px; }
+
+    .services-content section.taxi-driver-section li { line-height: 27px; margin-bottom: 13.5px; }
 
     body.taxi .modal-title { line-height: 27px; }
 }
