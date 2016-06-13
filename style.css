@@ -5358,6 +5358,12 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content header.taxi-driver-header { height: 180px !important; }
 
+    body.admin-bar .services-content header.taxi-driver-header .page-title { margin-top: 26px; }
+
+    body.admin-bar .services-content header.taxi-driver-header .logo-placeholder > a::before { top: 40px !important; }
+
+    body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 18px !important; }
+
     .services-content section.taxi-driver-section .container { padding: 12px 50px; }
 
     body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
