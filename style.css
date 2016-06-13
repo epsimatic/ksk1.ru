@@ -5368,7 +5368,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-driver-section h4 + ol { padding-left: 0; }
 
-    body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
+    body.taxi .footer-btns-wrap-sm { margin-top: 10px; }
     .services-content .social-links { padding-top: 12px; }
 
     #taxiReviewsMD { height: 930px; }
@@ -5536,6 +5536,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content section.taxi-section .taxi-form-wrap { border-radius: 13.5px; padding: 27px 0; margin-top: 54px; }
 
     .services-content .service-section.taxi-section { height: 630px; }
+
+    .services-content section.taxi-driver-section .container { padding: 13.5px 200px; }
 
     header.wide-header .menu-main-services .service-icon + h3 { font-size: 24px; line-height: 27px; margin-bottom: 9px; }
 
