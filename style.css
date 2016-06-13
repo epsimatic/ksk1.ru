@@ -5356,6 +5356,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.cargo-section .bg-image { background-image: url("//ksk1.ru/img/cargo-bg-v2.svg"); -webkit-background-size: cover; background-size: cover; }
 
+    .services-content header.taxi-driver-header { height: 180px !important; }
+
+    .services-content section.taxi-driver-section .container { padding: 12px 50px; }
+
     body.taxi .footer-btns-wrap-sm { margin-top: 15px; }
     .services-content .social-links { padding-top: 15px; }
 
