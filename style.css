@@ -3399,6 +3399,8 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 
 .modal .wpcf7-list-item { display: block; }
 
+article.company .mailform-and-button .popover { max-width: none; width: 420px; }
+
 /*Панель «Экстренные телефоны»*/
 
 .panel-notice .panel-body.panel-emergency .col-xs-6:first-child h1 { font-size: 21px; font-weight: 600; line-height: 1em; padding: 0; margin-left: 0; margin-top: 10px; }
