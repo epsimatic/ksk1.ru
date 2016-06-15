@@ -3921,6 +3921,14 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 .sidebar .panel-radio-news > .panel-heading { background-color: #2979ff; }
 .panel-radio-news > .list-group { padding-bottom: 0; }
 
+
+.emergency-numbers .numbers-section { margin-top: 12px; margin-bottom: 12px; }
+
+.emergency-numbers .service-name { font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px; text-align: center; text-transform: uppercase; }
+
+.emergency-numbers .main-number { font-size: 62px; font-weight: 700; line-height: 63px; text-align: center; }
+
+
 .e96-page { font-family: Helvetica,FreeSans,'Liberation Sans','Nimbus Sans L',Arial,sans-serif; font-size: 13px; color: #222; }
 
 .e96-page .button { background-color: #F2F2F2; background-image: -moz-linear-gradient(center top , #fff, #DEDEDE);
