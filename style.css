@@ -3930,13 +3930,17 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 .emergency-numbers .numbers-section > a.phone-group:hover,
 .emergency-numbers .numbers-section > a.phone-group:focus { background-color: #f0f0f0; }
 
-.emergency-numbers .service-name { font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px 12px 0; text-align: center; text-transform: uppercase; }
+.emergency-numbers .service-heading { font-size: 24px; font-weight: 700; line-height: 24px; padding: 12px; text-align: center; text-transform: uppercase; letter-spacing: .0125em; }
 
 .emergency-numbers .police-section .service-heading,
+.emergency-numbers .police-section .service-heading a,
+.emergency-numbers .firefighters-section .service-heading a,
 .emergency-numbers .firefighters-section .service-heading { color: #fff; }
 
+.emergency-numbers .er-section .service-heading a,
 .emergency-numbers .er-section .service-heading { color: #f02; }
 
+.emergency-numbers .gaz-section .service-heading a,
 .emergency-numbers .gaz-section .service-heading { color: #000; }
 
 .emergency-numbers .main-number { font-size: 24px; font-weight: 700; line-height: 24px; text-align: center; padding-bottom: 12px; }
