@@ -3921,6 +3921,8 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 .sidebar .panel-radio-news > .panel-heading { background-color: #2979ff; }
 .panel-radio-news > .list-group { padding-bottom: 0; }
 
+.emergency-numbers h2 { font-size: 24px; line-height: 24px; font-weight: 600; text-align: center; margin-bottom: 24px; margin-top: 24px; }
+
 .emergency-numbers h3 { margin-top: 36px; margin-bottom: 12px; font-weight: 600; font-size: 24px; line-height: 24px; }
 
 .emergency-numbers .numbers-section { margin-bottom: 36px; }
@@ -3930,7 +3932,7 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 .emergency-numbers .numbers-section > a.phone-group:hover,
 .emergency-numbers .numbers-section > a.phone-group:focus { background-color: #f0f0f0; }
 
-.emergency-numbers .service-heading { font-size: 24px; font-weight: 700; line-height: 24px; padding: 12px; text-align: center; text-transform: uppercase; letter-spacing: .0125em; }
+.emergency-numbers .service-heading { font-size: 24px; font-weight: 600; line-height: 24px; padding: 12px; text-align: center; text-transform: uppercase; letter-spacing: .0125em; }
 
 .emergency-numbers .police-section .service-heading,
 .emergency-numbers .police-section .service-heading a,
@@ -3997,7 +3999,10 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 }
 
 @media (min-width: 992px) {
+    .emergency-numbers h2,
     .emergency-numbers h3 { font-size: 27px; font-weight: 600; letter-spacing: .0125em; line-height: 27px; margin-bottom: 27px; margin-top: 27px; }
+
+    .emergency-numbers .service-heading { line-height: 27px; padding: 13.5px; }
 
     .emergency-numbers .table-group { display: table; }
 
