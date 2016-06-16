@@ -1753,6 +1753,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .sidebar .panel-link-with-icon { margin-bottom: 13.5px; box-shadow: none; }
 
+.sidebar .panel-link-with-icon + .hr { border-bottom: 13.5px solid #e9e9e9; margin-bottom: -13.5px; width: 100%; }
+
 .panel-link-with-icon a.panel-heading { background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
 
 .panel-link-with-icon a.panel-heading:hover,
