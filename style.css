@@ -3973,6 +3973,8 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .emergency-numbers .city-code { color: #999; font-size: 12px; }
 
+.emergency-numbers .table-group { width: 100%; }
+
 .emergency-numbers .table-group .list-group-item { padding: 12px 0; }
 
 .emergency-numbers .table-group .list-group-item .company-name,
