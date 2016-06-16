@@ -3988,6 +3988,8 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 }
 
 @media (min-width: 992px) {
+    .emergency-numbers .table-group { display: table; }
+
     .emergency-numbers .table-group .list-group-item { padding: 12px 0; display: table-row; }
 
     .emergency-numbers .table-group .list-group-item:nth-child(odd) { background-color: #F8F8F8; }
