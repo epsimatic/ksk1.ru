@@ -3989,7 +3989,7 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .emergency-numbers .company-phone { font-size: 19px; line-height: 24px; color: #666; font-weight: 600; }
 
-.emergency-numbers .company-phone::before { bottom: -3px; content: ""; display: inline; font-family: FontAwesome; font-size: 26px; line-height: 24px; margin-right: 6px; position: relative; font-weight: 400; }
+.emergency-numbers .company-phone::before { bottom: -3px; content: ""; display: inline; font-family: FontAwesome; font-size: 26px; line-height: 24px; margin-right: 6px; position: relative; font-weight: 400; color: #999; }
 
 .emergency-numbers .company-phone .city-code { font-size: 18px; font-weight: 400; color: #666; }
 
@@ -3997,6 +3997,7 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 @media (min-width: 768px) {
     .emergency-numbers { margin-right: -15px; margin-left: -15px; }
+    .emergency-numbers .company-name a { font-size: 18px; }
 }
 
 @media (min-width: 992px) {
@@ -4011,6 +4012,14 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
     .emergency-numbers .table-group .list-group-item .company-extra { display: table-cell; vertical-align: middle; line-height: 27px; padding: 6.75px 13.5px; }
 
     .emergency-numbers .company-phone::before { display: none; }
+
+    .emergency-numbers .company-extra,
+    .emergency-numbers .company-phone .city-code,
+    .emergency-numbers .company-phone,
+    .emergency-numbers .company-name,
+    .emergency-numbers .company-name a { font-size: 14px; }
+
+     {  }
 }
 
 
