@@ -3973,13 +3973,13 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .emergency-numbers .city-code { color: #999; font-size: 12px; }
 
-.emergency-numbers .list-group-item { padding: 12px 0; display: table-row; }
+.emergency-numbers .list-group-item.table-group { padding: 12px 0; display: table-row; }
 
-.emergency-numbers .list-group-item:nth-child(odd) { background-color: #F8F8F8; }
+.emergency-numbers .list-group-item.table-group:nth-child(odd) { background-color: #F8F8F8; }
 
-.emergency-numbers .list-group-item .company-name,
-.emergency-numbers .list-group-item .company-phone,
-.emergency-numbers .list-group-item .company-extra { display: table-cell; line-height: 24px; padding: 6px 12px; vertical-align: middle; }
+.emergency-numbers .list-group-item.table-group .company-name,
+.emergency-numbers .list-group-item.table-group .company-phone,
+.emergency-numbers .list-group-item.table-group .company-extra { display: table-cell; line-height: 24px; padding: 6px 12px; vertical-align: middle; }
 
 .emergency-numbers .company-name a { font-size: 16px; font-weight: 400; }
 
