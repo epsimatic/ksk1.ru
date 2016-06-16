@@ -1751,7 +1751,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     .sidebar .donation-widget .donation-text { font-size: 14px; line-height: 22.652px; margin-bottom: 22.652px; }
 }
 
-.sidebar .panel-link-with-icon { margin-bottom: 15px; box-shadow: none; }
+.sidebar .panel-link-with-icon { margin-bottom: 13.5px; box-shadow: none; }
 
 .panel-link-with-icon a.panel-heading { background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
 
@@ -1765,7 +1765,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
 
 @media (min-width: 992px) {
-    .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 18px; font-weight: 400; line-height: 18px; padding-right: 15px; vertical-align: middle; }
+    .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
 
 }
 @media (min-width: 1200px) {
