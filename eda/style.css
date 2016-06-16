@@ -64,7 +64,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-eda .logo-placeholder { padding: 30px; text-align: center; }
 
-.header-eda .eda-phone { font-weight: 700; border-radius: 5px; font-size: 17px; margin: -10px 50px 20px; background-color: #FFAB40; }
+.header-eda .eda-phone { font-weight: 700; font-size: 33px; margin: -10px 50px 20px; position: relative; top: 7px; }
 
 .header-eda .eda-phone:hover { background-color: #ff9100; }
 
@@ -74,6 +74,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .header-eda { margin-bottom: 15px; text-align: center; }
 .header-eda .logo-placeholder { display: inline-block; padding: 10px 0 0 15px; width: 44%; }
+
 .header-eda .eda-phone { background-color: transparent; display: inline-block; width: 52%; margin: 0; }
 .header-eda .eda-phone a { color: rgb(255, 144, 0); padding: 0; }
 .header-eda .eda-phone:hover { background-color: transparent; }
@@ -96,16 +97,14 @@ nav.navbar { margin: 0 -10px !important; }
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
     .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
-    .header-eda .eda-phone { width: 35%; position: relative; top: -30px; }
+    .header-eda .eda-phone { width: 35%; top: -28px; font-size: 40px; }
     .header-eda .vendor-info { width: 29%; }
     .header-eda .vendor-logo-placeholder > img { margin-right: 0; }
 }
 
 @media (min-width: 768px) {
-    .site-eda .snap-content .container { margin-top: 55px; }
-    .admin-bar .snap-content .container { margin-top: 85px; }
     .header-eda .logo-placeholder { top: -30px; width: 18%; }
-    .header-eda .eda-phone { padding-left: 2%; top: -25px; text-align: left; font-size: 25px; }
+    .header-eda .eda-phone { padding-left: 2%; top: -21px; text-align: left; }
     .header-eda .vendor-info { margin-right: 1%; width: 15%; position: relative; top: 5px; }
     .header-eda .vendor-status-group { display: inline-block; width: 20%; position: relative; top: -3px; }
 
@@ -140,7 +139,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 @media (min-width: 1200px) {
     .header-eda .logo-placeholder { top: -23px; }
-    .header-eda .eda-phone { font-size: 30px; top: -16px; }
+    .header-eda .eda-phone { font-size: 45px; top: -11px; }
     .header-eda .vendor-info { top: 5px; margin-right: 2%; width: 10%; }
     .header-eda .vendor-status-group { top: 1px; }
 
