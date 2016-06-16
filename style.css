@@ -1751,26 +1751,24 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     .sidebar .donation-widget .donation-text { font-size: 14px; line-height: 22.652px; margin-bottom: 22.652px; }
 }
 
-.sidebar .panel-link-with-icon { border: 1px solid #ddd !important; border-radius: 7px !important; margin-bottom: 15px; box-shadow: none; }
+.sidebar .panel-link-with-icon { margin-bottom: 15px; box-shadow: none; }
 
-.panel-link-with-icon a.panel-heading { border-radius: 7px !important; background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
+.panel-link-with-icon a.panel-heading { background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
 
 .panel-link-with-icon a.panel-heading:hover,
 .panel-link-with-icon a.panel-heading:focus { background-color: #f0f0f0 !important; text-decoration: none; }
 
 .panel-link-with-icon .panel-icon-container { display: table-cell; }
 
-.sidebar .panel-link-with-icon .panel-icon-container { height: 81px; width: 86px; }
+.sidebar .panel-link-with-icon .panel-icon-container { height: 70px; width: 80px; }
 
 .panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
 
-.panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 18px; font-weight: 600; line-height: 18px; padding-right: 15px; vertical-align: middle; }
-
 @media (min-width: 992px) {
-    .panel-link-with-icon .panel-title { font-weight: 700; font-size: 17px; }
+    .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 18px; font-weight: 400; line-height: 18px; padding-right: 15px; vertical-align: middle; }
+
 }
 @media (min-width: 1200px) {
-    .sidebar .panel-link-with-icon .panel-icon-container { height: 108px; width: 115px; }
     .panel-link-with-icon .panel-title { font-size: 21px; line-height: 21px; }
 }
 
@@ -6418,6 +6416,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-eda .stores-group > a img { width: 100px; }
 
+    header.wide-header .menu-main-info .submenu { padding: 0; width: 20%; }
+
     header.wide-header .menu-main-info .submenu-item-name { display: block; font-size: 14px; padding-top: 12px; text-align: center; }
 
     header.wide-header .menu-main-info figure.submenu-item-icon > img { height: 70px; }
@@ -6568,8 +6568,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { margin-right: 90px; width: 200px; height: 35px; }
-
-    header.wide-header .menu-main-info .submenu { padding: 0; width: 20%; }
 
     header.wide-header .menu-main-info .submenu-item-name { font-size: 16px; padding-top: 10px; }
 
