@@ -4001,6 +4001,8 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 }
 
 @media (min-width: 992px) {
+    .emergency-numbers h3 { font-size: 27px; font-weight: 600; letter-spacing: .0125em; line-height: 27px; margin-bottom: 27px; margin-top: 27px; }
+
     .emergency-numbers .table-group { display: table; }
 
     .emergency-numbers .table-group .list-group-item { padding: 12px 0; display: table-row; }
