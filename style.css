@@ -1768,9 +1768,6 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
 
 }
-@media (min-width: 1200px) {
-    .panel-link-with-icon .panel-title { font-size: 21px; line-height: 21px; }
-}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info {color: #666;}
