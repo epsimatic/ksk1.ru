@@ -3924,9 +3924,37 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .emergency-numbers .numbers-section { margin-top: 12px; margin-bottom: 12px; }
 
-.emergency-numbers .service-name { font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px; text-align: center; text-transform: uppercase; }
+.emergency-numbers .numbers-section > a { border-bottom: 1px solid #e9e9e9; padding: 0 15px; }
 
-.emergency-numbers .main-number { font-size: 62px; font-weight: 700; line-height: 63px; text-align: center; }
+.emergency-numbers .numbers-section > a:hover,
+.emergency-numbers .numbers-section > a:focus { background-color: #f0f0f0; }
+
+.emergency-numbers .service-name { font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px 12px 0; text-align: center; text-transform: uppercase; }
+
+.emergency-numbers .police-section .main-number,
+.emergency-numbers .police-section .service-name a,
+.emergency-numbers .firefighters-section .main-number,
+.emergency-numbers .firefighters-section .service-name a { color: #fff; }
+
+.emergency-numbers .er-section .main-number,
+.emergency-numbers .er-section .service-name a { color: #f02; }
+
+.emergency-numbers .gaz-section .main-number,
+.emergency-numbers .gaz-section .service-name a { color: #000; }
+
+.emergency-numbers .main-number { font-size: 62px; font-weight: 700; line-height: 63px; text-align: center; padding-bottom: 12px; }
+
+.emergency-numbers .firefighters-section .service-name, 
+.emergency-numbers .firefighters-section .main-number { background-color: #F02; }
+
+.emergency-numbers .police-section .service-name, 
+.emergency-numbers .police-section .main-number { background-color: #0065FF; }
+
+.emergency-numbers .gaz-section .service-name, 
+.emergency-numbers .gaz-section .main-number { background-color: #FFE300; }
+
+.emergency-numbers .er-section .service-name { border: solid #F02; border-width: 1px 1px 0; padding-top: 11px; }
+.emergency-numbers .er-section .main-number { border: solid #F02; border-width: 0 1px 1px; padding-bottom: 11px; }
 
 .emergency-numbers .icon-placeholder::before { background-position: right center; background-repeat: no-repeat; background-size: contain; content: " "; height: 24px; margin: 12px 0; position: absolute; width: 100%; }
 
