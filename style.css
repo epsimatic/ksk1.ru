@@ -3987,7 +3987,7 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .emergency-numbers .company-name > small { color: #999; }
 
-.emergency-numbers .company-phone { font-size: 19px; line-height: 24px; color: #666; }
+.emergency-numbers .company-phone { font-size: 19px; line-height: 24px; color: #666; font-weight: 600; }
 
 .emergency-numbers .company-phone::before { bottom: -3px; content: ""; display: inline; font-family: FontAwesome; font-size: 26px; line-height: 24px; margin-right: 6px; position: relative; font-weight: 400; }
 
