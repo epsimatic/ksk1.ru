@@ -5397,6 +5397,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .services-content section.taxi-section .social-links a:hover,
 .services-content section.taxi-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
+.services-content section.taxi-section .taxi-form-wrap .taxi-form { position: relative; }
+
+.services-content section.taxi-section .alert { background-color: #fff; border: 3px solid #fff; border-radius: 6px; bottom: 0; box-shadow: 0 5px 9px #222; box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); color: #222 !important; font-size: 16px; left: 0; line-height: 24px; padding: 13.5px 40.5px 13.5px 13.5px; position: absolute; width: 100%; z-index: 10; }
+
+.services-content section.taxi-section .alert-success { border-color: #00e676; }
+
+.services-content section.taxi-section .alert-danger { border-color: #F44336; }
+
+.services-content section.taxi-section .alert-dismissible .close { top: 1px; }
 
 @media (min-width: 768px) {
     body.admin-bar .services-content .services-header .logo { top: -20px; }
@@ -5671,7 +5680,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
 
+    .services-content section.taxi-section .alert,
     body.taxi .modal-title { line-height: 27px; }
+
+    .services-content section.taxi-section .alert-dismissible .close { top: 3px; }
 }
 
 @media (min-width: 1200px) { 
