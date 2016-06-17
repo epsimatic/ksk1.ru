@@ -5550,7 +5550,14 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; }
 
-    .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 48px; }
+    .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 27px; }
+
+    .services-content section.taxi-section .app-download-bages-title { font-size: 16px; line-height: 27px; margin-bottom: 13.5px; }
+
+    .services-content section.taxi-section .social-links a { color: #fff; }
+
+    .services-content section.taxi-section .social-links a:hover,
+    .services-content section.taxi-section .social-links a:focus { color: #FFE700; }
 
     .services-content section.taxi-section .form-wrap textarea.form-control { padding-left: 18px; padding-right: 18px; }
 
