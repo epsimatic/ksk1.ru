@@ -214,6 +214,10 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 .cat-pills.cat-pills > li > a:focus,
 .cat-pills.cat-pills > li > a:hover { background-color: #E9E9E9; }
 
+.cat-pills.cat-pills > li > a#town_day { color: #f44336; }
+
+.cat-pills.cat-pills > li > a#town_day .badge { border: 1px solid #f44336; color: #f44336; }
+
 .cat-pills.cat-pills > li.active > a:hover,
 .cat-pills.cat-pills > li.active > a:focus,
 .cat-pills.cat-pills > li.active > a { background-color: #64ffda; color: #222; }
