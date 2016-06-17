@@ -5290,7 +5290,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .services-content section.taxi-section .app-download-bages > a:first-child { margin-right: 6px; }
 
-.services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; margin-bottom: 24px; padding-bottom: 24px; }
+.services-content section.taxi-section .taxi-form-wrap { margin-top: 24px; margin-bottom: 24px; }
 
 .services-content section.taxi-section .bg-image { background-color: #FFE700; }
 
@@ -5387,6 +5387,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
 .services-content .social-links { padding-top: 24px; }
+
+.services-content section.taxi-section .social-links { padding: 0; margin-bottom: 24px; }
 
 @media (min-width: 768px) {
     body.admin-bar .services-content .services-header .logo { top: -20px; }
