@@ -3450,7 +3450,15 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .table-schedule th .fa-clock-o { padding-right: 5px; }
 
+.schedule-header { line-height: 24px; margin: 12px 0 36px; text-align: center; }
+
+.schedule-header .btn-link:first-child { margin-top: 6px; }
+
+.schedule-header .btn-link { display: inline-block; line-height: 24px; padding: 6px; }
+
 ul.schedule-list { list-style-type: none; padding: 0; }
+
+ul.schedule-list li.heading { display: none; }
 
 .table-schedule li.schedule-list-item { border-bottom: 1px solid #bbb; padding: 12px; }
 
@@ -3483,7 +3491,7 @@ li.schedule-list-item .time-wrap .time-arrival:before { content: "от Мизе�
 
 li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
-.table-schedule li.direction h4.table-subheader { font-size: 21px; font-weight: 600; line-height: 24px; margin-bottom: 12px; margin-top: 12px; text-align: center; }
+.table-schedule li.direction h4.table-subheader { font-size: 21px; font-weight: 600; line-height: 24px; margin-bottom: 12px; margin-top: 12px; text-align: center; padding: 0 12px; }
 
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
