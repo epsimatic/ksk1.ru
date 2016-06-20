@@ -3454,7 +3454,7 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .schedule-header .btn-link:first-child { margin-top: 6px; }
 
-.schedule-header .btn-link { display: inline-block; line-height: 24px; padding: 6px; }
+.schedule-header .btn-link { display: block; line-height: 24px; padding: 6px; }
 
 ul.schedule-list { list-style-type: none; padding: 0; }
 
@@ -3487,7 +3487,7 @@ li.schedule-list-item .time-wrap > span:before { display: block; font-size: 11px
 
 li.schedule-list-item .time-wrap .time-departure:before { content: "от вокзала"; }
 li.schedule-list-item .time-wrap .time-departure-2:before { content: "от Мизерова"; }
-li.schedule-list-item .time-wrap .time-arrival:before { content: "от Мизерова"; }
+li.schedule-list-item .time-wrap .time-arrival:before { content: "прибытие"; }
 
 li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
@@ -3629,11 +3629,46 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     .panel-default.panel-schedule .panel-heading .weekdays { right: 0; }
 
-    .panel-schedule .time-interval:after { margin-left: 16px; font-size: 20px; }
+    .panel-schedule .time-interval:after { margin-left: 21px; font-size: 20px; }
+
+    ul.schedule-list { display: table; width: 100%; }
+
+    ul.schedule-list li.heading,
+    ul.schedule-list li.schedule-list-item { display: table-row; float: none; }
+
+    .table-schedule li.schedule-list-item > span { display: table-cell; vertical-align: middle; }
+
+    .table-schedule li.schedule-list-item .route-wrap { width: 50%; }
+
+    .table-schedule li.schedule-list-item .time-wrap { width: 30%; }
+
+    li.schedule-list-item span.weekdays { width: 20%; }
+
+    .table-schedule li.schedule-list-item::after,
+    .table-schedule li.schedule-list-item .route-wrap::after,
+    .table-schedule li.schedule-list-item .time-wrap::after { display: none; }
+
+    li.schedule-list-item .time-wrap > span:before { display: none; }
+
+    li.schedule-list-item .time-wrap > span { width: 35%; }
+
+    li.schedule-list-item .time-wrap > span.time-arrival { width: 25%; font-size: 14px; }
+
+    .schedule-header .btn-link:first-child { margin-top: 0; }
+    .schedule-header .btn-link { display: inline-block; padding: 0 6px; vertical-align: baseline; }
+
+
+    .table-schedule li.schedule-list-item span { float: none; line-height: 27px; }
+
+
+    ul.schedule-list li.heading > span,
+    ul.schedule-list li.schedule-list-item > span {  }
+
+
 }
 
-@media (min-width: 992px) {
-    .panel-schedule .time-interval:after { margin-left: 21px; }
+@media (min-width: 1200px) {
+    
 }
 
 
