@@ -3655,7 +3655,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     ul.schedule-list li.heading > span.route-number { width: 35px; text-align: center; }
 
-    ul.schedule-list li.heading > span.route-name { width: 35px; text-align: center; }
+    ul.schedule-list li.heading > span.route-name { width: 314px; text-align: center; font-size: 27px; }
 
     ul.schedule-list li.schedule-list-item { display: table-row; float: none; }
 
@@ -3665,7 +3665,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     li.schedule-list-item span.route-wrap > span { display: table-cell; float: none; line-height: 19px; vertical-align: middle; }
 
-    li.schedule-list-item span.route-wrap > .route-number { width: 35px; padding: 0; }
+    li.schedule-list-item span.route-wrap > .route-number { width: 35px; padding: 0; font-size: 18px; }
     li.schedule-list-item span.route-wrap > .route-name-depart { width: 157px; }
     li.schedule-list-item span.route-wrap > .route-name-divider { width: 20px; }
     li.schedule-list-item span.route-wrap > .route-name-arrive { width: 137px; }
