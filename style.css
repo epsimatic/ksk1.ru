@@ -3483,6 +3483,8 @@ li.schedule-list-item .time-wrap .time-arrival:before { content: "от Мизе�
 
 li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
+.table-schedule li.direction h4.table-subheader { font-size: 21px; font-weight: 600; line-height: 24px; margin-bottom: 12px; margin-top: 12px; text-align: center; }
+
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
 .table-schedule .route-name-divider { text-align: center; }
