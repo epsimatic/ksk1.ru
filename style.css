@@ -3450,18 +3450,39 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 .table-schedule th .fa-clock-o { padding-right: 5px; }
 
+ul.schedule-list { list-style-type: none; padding: 0; }
+
 .table-schedule li.schedule-list-item { border-bottom: 1px solid #bbb; }
 
-.table-schedule li.schedule-list-item::after { clear: both; content: " "; display: block; }
+.table-schedule li.schedule-list-item,
+.table-schedule li.schedule-list-item .route-wrap,
+.table-schedule li.schedule-list-item .time-wrap { width: 100%; }
 
-.table-schedule li.schedule-list-item > span { float: left; line-height: 24px; padding: 6px 0; display: inline-block; }
+.table-schedule li.schedule-list-item::after,
+.table-schedule li.schedule-list-item .route-wrap::after,
+.table-schedule li.schedule-list-item .time-wrap::after { clear: both; content: " "; display: block; }
 
-li.schedule-list-item > span.route-number { text-align: center; width: 12%; }
+.table-schedule li.schedule-list-item span { float: left; line-height: 24px; padding: 6px 0; display: inline-block; }
 
-li.schedule-list-item > span.route-name-depart,
-li.schedule-list-item > span.route-name-arrive { width: 42%; }
+li.schedule-list-item > span.route-wrap,
+li.schedule-list-item > span.time-wrap { padding: 0; }
 
-li.schedule-list-item > span.route-name-divider { width: 4%; }
+li.schedule-list-item .time-wrap > span { width: 33.3333%; font-weight: 600; font-size: 14px; }
+
+li.schedule-list-item .time-wrap > span:before { display: block; font-size: 11px; font-weight: 400; line-height: 12px; }
+
+li.schedule-list-item .time-wrap .time-departure:before { content: "от вокзала"; }
+li.schedule-list-item .time-wrap .time-departure-2:before { content: "от Мизерова"; }
+li.schedule-list-item .time-wrap .time-arrival:before { content: "от Мизерова"; }
+
+li.schedule-list-item span.route-number { text-align: center; width: 12%; }
+
+li.schedule-list-item span.route-name-depart,
+li.schedule-list-item span.route-name-arrive { width: 40%; }
+
+li.schedule-list-item span.route-name-divider { width: 8%; }
+
+li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
