@@ -3631,28 +3631,58 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     .panel-schedule .time-interval:after { margin-left: 21px; font-size: 20px; }
 
+    .table-schedule li.direction h4.table-subheader { margin-top: 13.5px; margin-bottom: 13.5px; line-height: 27px; }
+
+    ul.schedule-list li.schedule-list-item:nth-of-type(2n+1) { background-color: #f8f8f8; }
+
     ul.schedule-list { display: table; width: 100%; }
 
-    ul.schedule-list li.heading,
+    ul.schedule-list li.heading { display: block; border-bottom: 2px solid #ddd; }
+
+    ul.schedule-list li.heading .time-departure, 
+    ul.schedule-list li.heading .time-departure-2 { width: 77px; }
+
+    ul.schedule-list li.heading .fa-clock-o,
+    ul.schedule-list li.heading .fa-arrow-circle-right { font-size: 28px; }
+
+    ul.schedule-list li.heading .small { font-weight: 400; font-size: 11px; }
+
+    ul.schedule-list li.heading .time-arrival { text-align: center; width: 52px; }
+
+    ul.schedule-list li.heading .weekdays { width: 142px; padding-left: 12px; }
+
+    ul.schedule-list li.heading > span { display: table-cell; height: 54px; color: #999; vertical-align: middle; }
+
+    ul.schedule-list li.heading > span.route-number { width: 35px; text-align: center; }
+
+    ul.schedule-list li.heading > span.route-name { width: 35px; text-align: center; }
+
     ul.schedule-list li.schedule-list-item { display: table-row; float: none; }
 
-    .table-schedule li.schedule-list-item > span { display: table-cell; vertical-align: middle; }
+    .table-schedule li.schedule-list-item > span { display: table-cell; vertical-align: middle; padding: 6.75px 0; }
 
-    .table-schedule li.schedule-list-item .route-wrap { width: 50%; }
+    .table-schedule li.schedule-list-item .route-wrap { width: 50%; text-align: left; }
+
+    li.schedule-list-item span.route-wrap > span { display: table-cell; float: none; line-height: 19px; vertical-align: middle; }
+
+    li.schedule-list-item span.route-wrap > .route-number { width: 35px; padding: 0; }
+    li.schedule-list-item span.route-wrap > .route-name-depart { width: 157px; }
+    li.schedule-list-item span.route-wrap > .route-name-divider { width: 20px; }
+    li.schedule-list-item span.route-wrap > .route-name-arrive { width: 137px; }
 
     .table-schedule li.schedule-list-item .time-wrap { width: 30%; }
 
-    li.schedule-list-item span.weekdays { width: 20%; }
+    li.schedule-list-item .time-wrap > span:before { display: none; }
+
+    li.schedule-list-item .time-wrap > span { width: 35%; font-size: 18px; }
+
+    li.schedule-list-item .time-wrap > span.time-arrival { width: 25%; font-size: 14px; font-weight: 400; }
+
+    li.schedule-list-item span.weekdays { width: 20%; letter-spacing: -.025em; padding-left: 7px; text-align: left; }
 
     .table-schedule li.schedule-list-item::after,
     .table-schedule li.schedule-list-item .route-wrap::after,
     .table-schedule li.schedule-list-item .time-wrap::after { display: none; }
-
-    li.schedule-list-item .time-wrap > span:before { display: none; }
-
-    li.schedule-list-item .time-wrap > span { width: 35%; }
-
-    li.schedule-list-item .time-wrap > span.time-arrival { width: 25%; font-size: 14px; }
 
     .schedule-header .btn-link:first-child { margin-top: 0; }
     .schedule-header .btn-link { display: inline-block; padding: 0 6px; vertical-align: baseline; }
