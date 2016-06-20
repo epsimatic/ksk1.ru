@@ -3448,13 +3448,26 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
     .table-schedule tr > th:nth-child(2) { font-size: 27px; line-height: 54px; }
 }
 
+.table-schedule th .fa-clock-o { padding-right: 5px; }
+
+.table-schedule li.schedule-list-item { border-bottom: 1px solid #bbb; }
+
+.table-schedule li.schedule-list-item::after { clear: both; content: " "; display: block; }
+
+.table-schedule li.schedule-list-item > span { float: left; line-height: 24px; padding: 6px 0; display: inline-block; }
+
+li.schedule-list-item > span.route-number { text-align: center; width: 12%; }
+
+li.schedule-list-item > span.route-name-depart,
+li.schedule-list-item > span.route-name-arrive { width: 42%; }
+
+li.schedule-list-item > span.route-name-divider { width: 4%; }
+
 .table-schedule .fa.fa-arrow-circle-right { color: #66bb6a; }
 
 .table-schedule .route-name-divider { text-align: center; }
 
 .table-schedule .route-number { font-weight: 600; }
-
-.table-schedule th .fa-clock-o { padding-right: 5px; }
 
 .table-schedule .time-departure,
 .table-schedule .time-departure-2 { font-size: 19px; font-weight: 600; text-align: center; }
