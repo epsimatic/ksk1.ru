@@ -3343,7 +3343,7 @@ article.company .fa { color: #bbb; }
 
 .company-page article.company .fa { color: #00B0FF; }
 
-article.company .company-send-message { padding: 0; color: #666; margin-bottom: 12px; }
+article.company .company-send-message { padding: 0; color: #666; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
@@ -3383,13 +3383,17 @@ article.company .company-name { display: inline; font-size: 18px; line-height: 2
 
 article.company-paid { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
 
-article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-top: 12px; margin-bottom: 12px; display: block; }
+body.cat article.company-paid { border-bottom: 1px solid #999; padding-bottom: 24px; }
 
-article.company-paid .company-address { margin-bottom: 12px; }
+article.company-paid .company-name { line-height: 24px; font-weight: 600; margin-top: 12px; margin-bottom: 12px; display: block; }
+
+article.company-paid .company-name a { font-size: 20.25px; }
 
 article.company .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #999; color: #222; }
 
 article.company-paid .company-description { overflow: visible; white-space: normal; line-height: 21px; }
+
+body.cat article.company-paid .company-description { margin-bottom: 13.5px; }
 
 body.single-company .mailform-and-button { margin: 48px 0; }
 
@@ -3407,8 +3411,6 @@ article.company .mailform-and-button .popover { max-width: none; width: 420px; }
 
 article.company .mailform-and-button .collapse { margin-top: 24px; }
 
-article.company .company-phone { margin-bottom: 12px; }
-
 @media (min-width: 400px){
     article.company-paid img.attachment-thumbnail { float: right; max-height: 130px; max-width: 160px; margin-left: 15px; }
 }
@@ -3423,14 +3425,11 @@ article.company .company-phone { margin-bottom: 12px; }
 @media (min-width: 992px) {
     body.cat article.company { padding: 0 27px; }
 
+    body.cat article.company-paid { padding-bottom: 27px; }
+
     article.company { line-height: 27px; }
 
     article.company-paid .company-name { line-height: 27px; margin: 13.5px 0; }
-
-    article.company-paid .company-description,
-    article.company-paid .company-address,
-    article.company-paid .company-phone,
-    article.company-paid .company-send-message
 
     article.company .company-phone { margin-bottom: 13.5px; }
     article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
