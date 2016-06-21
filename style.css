@@ -4153,7 +4153,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     .emergency-numbers table.main-er-numbers .icon-placeholder::before { margin: 0; height: 27px; right: 13px; }
 
-    .emergency-numbers table.main-er-numbers tr > *:nth-child(n+2) {  }
+    .emergency-numbers table.main-er-numbers tr > *:nth-child(n+2) { text-align: center; }
 
 }
 
