@@ -3651,7 +3651,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     ul.schedule-list li.heading .weekdays { width: 142px; padding-left: 12px; }
 
-    ul.schedule-list li.heading > span { display: table-cell; height: 54px; color: #999; vertical-align: middle; }
+    ul.schedule-list li.heading > span { display: table-cell; height: 54px; color: #666; vertical-align: middle; }
 
     ul.schedule-list li.heading > span.route-number { width: 35px; text-align: center; }
 
@@ -4140,7 +4140,12 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
     .emergency-numbers .company-name,
     .emergency-numbers .company-name a { font-size: 14px; }
 
-     {  }
+    .emergency-numbers table.main-er-numbers th,
+    .emergency-numbers table.main-er-numbers .phone-number { line-height: 27px; }
+
+    .emergency-numbers table.main-er-numbers tr > *:first-child { position: relative; }
+
+
 }
 
 
