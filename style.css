@@ -3389,7 +3389,9 @@ article.company-paid .company-name { line-height: 24px; font-weight: 600; margin
 
 article.company-paid .company-name a { font-size: 20.25px; }
 
-article.company .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #999; color: #222; }
+article.company .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+article.company-paid .company-description { color: #222; }
 
 article.company-paid .company-description { overflow: visible; white-space: normal; line-height: 21px; }
 
