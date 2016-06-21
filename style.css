@@ -3395,8 +3395,6 @@ article.company-paid .company-description { color: #222; }
 
 article.company-paid .company-description { overflow: visible; white-space: normal; line-height: 21px; }
 
-body.cat article.company-paid .company-description { margin-bottom: 13.5px; }
-
 body.single-company .mailform-and-button { margin: 48px 0; }
 
 article.company .fotorama--wp { margin: 0 0 48px; }
@@ -3426,16 +3424,28 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
     article.company .company-address,
     article.company .company-url,
     article.company .company-send-message { text-indent: -1em; }
+
+    body.cat article.company-paid .company-description,
+    body.cat article.company-paid .company-address,
+    body.cat article.company-paid .company-phone,
+    body.cat article.company-paid .company-send-message { margin-bottom: 12px; }
 }
 
 @media (min-width: 992px) {
 
     body.cat article.company-paid { padding-bottom: 27px; }
 
+    article.company .company-name,
     article.company { line-height: 27px; }
 
-    article.company h2.fotorama-heading,
-    article.company h2.contacts-heading { line-height: 27px; margin-top: 27px; }
+    article.company-paid h1.company-name { line-height: 27px; margin-bottom: 13.5px; margin-top: 13.5px; }
+
+    body.cat article.company-paid .company-description,
+    body.cat article.company-paid .company-address,
+    body.cat article.company-paid .company-phone { margin-bottom: 13.5px; }
+
+    body.single-company article.company h2.fotorama-heading,
+    body.single-company article.company h2.contacts-heading { line-height: 27px; margin-top: 27px; }
 
     body.single-company article.company h1.company-name { font-size: 27px; margin-top: 27px; line-height: 27px; margin-bottom: 13.5px; }
 }
