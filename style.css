@@ -4140,11 +4140,20 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
     .emergency-numbers .company-name,
     .emergency-numbers .company-name a { font-size: 14px; }
 
+    .emergency-numbers table.main-er-numbers th { font-weight: 600; }
+
     .emergency-numbers table.main-er-numbers th,
-    .emergency-numbers table.main-er-numbers .phone-number { line-height: 27px; }
+    .emergency-numbers table.main-er-numbers .phone-number,
+    .emergency-numbers table.main-er-numbers tbody > tr > td,
+    .emergency-numbers table.main-er-numbers .icon-placeholder { line-height: 27px; }
 
-    .emergency-numbers table.main-er-numbers tr > *:first-child { position: relative; }
+    .emergency-numbers table.main-er-numbers .phone-number { padding-left: 5px; }
 
+    .emergency-numbers table.main-er-numbers tr > *:first-child { position: relative; width: 150px; padding: 8px 16px; }
+
+    .emergency-numbers table.main-er-numbers .icon-placeholder::before { margin: 0; height: 27px; right: 13px; }
+
+    .emergency-numbers table.main-er-numbers tr > *:nth-child(n+2) {  }
 
 }
 
