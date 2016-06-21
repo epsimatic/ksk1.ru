@@ -3383,10 +3383,7 @@ article.company-paid { min-height: 140px; line-height: 24px; margin-bottom: 24px
 
 article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; display: block; }
 
-article.company-paid .company-name a { color: #f44336; }
-
-article.company-paid .company-name a:hover,
-article.company-paid .company-name a:focus { color: #ff1744; text-decoration: none; }
+.company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #9b9b9b; }
 
 body.single-company .mailform-and-button { margin: 48px 0; }
 
@@ -3403,6 +3400,19 @@ article.company .modal-body label { font-weight: 600; margin: 0; font-size: 14px
 article.company .mailform-and-button .popover { max-width: none; width: 420px; }
 
 article.company .mailform-and-button .collapse { margin-top: 24px; }
+
+article.company .company-phone { margin-bottom: 12px; }
+
+@media (min-width: 768px) {
+    article.company .company-phone,
+    article.company .company-address,
+    article.company .company-url { text-indent: -1em; }
+}
+
+@media (min-width: 992px) {
+    article.company .company-phone { margin-bottom: 13.5px; }
+    article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
+}
 
 /*Панель «Экстренные телефоны»*/
 
