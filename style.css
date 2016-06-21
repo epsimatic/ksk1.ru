@@ -3423,16 +3423,10 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 }
 
 @media (min-width: 992px) {
-    body.cat article.company { padding: 0 27px; }
 
     body.cat article.company-paid { padding-bottom: 27px; }
 
     article.company { line-height: 27px; }
-
-    article.company-paid .company-name { line-height: 27px; margin: 13.5px 0; }
-
-    article.company .company-phone { margin-bottom: 13.5px; }
-    article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
 
     article.company h2.fotorama-heading,
     article.company h2.contacts-heading { line-height: 27px; margin-top: 27px; }
