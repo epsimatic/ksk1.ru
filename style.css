@@ -3685,20 +3685,29 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
     .table-schedule li.schedule-list-item .time-wrap::after { display: none; }
 
     .schedule-header .btn-link:first-child { margin-top: 0; }
+
     .schedule-header .btn-link { display: inline-block; padding: 0 6px; vertical-align: baseline; }
 
-
     .table-schedule li.schedule-list-item span { float: none; line-height: 27px; }
-
-
-    ul.schedule-list li.heading > span,
-    ul.schedule-list li.schedule-list-item > span {  }
-
-
 }
 
 @media (min-width: 1200px) {
-    
+    ul.schedule-list li.heading > span.route-number { width: 60px; }
+
+    ul.schedule-list li.heading > span.route-name { width: 364px; }
+
+    ul.schedule-list li.heading .time-departure, 
+    ul.schedule-list li.heading .time-departure-2 { width: 90px; }
+
+    ul.schedule-list li.heading .time-arrival { width: 71px; }
+
+    ul.schedule-list li.heading .weekdays { width: 172px; }
+
+    li.schedule-list-item span.route-wrap > .route-number { padding-left: 10px; width: 60px; }
+
+    li.schedule-list-item span.route-wrap > .route-name-depart { width: 175px; }
+    li.schedule-list-item span.route-wrap > .route-name-arrive { width: 169px; }
+
 }
 
 
