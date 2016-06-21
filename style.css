@@ -3412,7 +3412,11 @@ article.company .mailform-and-button .popover { max-width: none; width: 420px; }
 article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 @media (min-width: 400px){
-    article.company-paid img.attachment-thumbnail { float: right; max-height: 130px; max-width: 160px; margin-left: 15px; }
+    article.company-paid figure { float: right; margin-left: 15px; }
+
+    article.company-paid figure .attachment-thumbnail { max-height: 130px; max-width: 160px; }
+
+    article.company-paid:after { clear: both; content: " "; display: block; }
 }
 
 @media (min-width: 768px) {
