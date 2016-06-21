@@ -3337,6 +3337,8 @@ article.company h2.fotorama-heading { margin-top: 36px; margin-bottom: 12px; }
 
 article.company .company-meta-item { color: #222; line-height: 24px; margin: 12px 0; padding: 0; }
 
+.single-company article.company .company-phone { margin-bottom: 12px; }
+
 article.company .fa { color: #bbb; }
 
 .company-page article.company .fa { color: #00B0FF; }
@@ -3446,6 +3448,8 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
     body.single-company article.company h2.contacts-heading { line-height: 27px; margin-top: 27px; }
 
     body.single-company article.company h1.company-name { font-size: 27px; margin-top: 27px; line-height: 27px; margin-bottom: 13.5px; }
+
+    .single-company article.company .company-phone { margin-bottom: 13.5px; }
 }
 
 /*Панель «Экстренные телефоны»*/
