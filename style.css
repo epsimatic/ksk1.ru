@@ -3318,7 +3318,7 @@ ul.page-cat ul.children > li.cat-item > a { color: #222; text-decoration: none; 
 ul.page-cat > li.cat-item > .badge { display: none; }
 /* </editor-fold> */
 
-body.cat article.company { padding: 0 30px; }
+body.cat article.company { padding: 0 24px; }
 
 body.cat .cat-panel { margin-bottom: 24px; }
 
@@ -3331,23 +3331,23 @@ body.single-company article.company .entry-content { position: relative; margin-
 article.company .company-description { color: #666; }
 
 article.company h2.fotorama-heading,
-article.company h2.contacts-heading { color: #333; font-size: 20px; font-weight: 700; line-height: 24px; margin-top: 24px; margin-bottom: 0; }
+article.company h2.contacts-heading { color: #333; font-size: 18px; font-weight: 700; line-height: 24px; margin-top: 24px; margin-bottom: 0; }
 
 article.company h2.fotorama-heading { margin-top: 36px; margin-bottom: 12px; }
 
-article.company .company-meta-item { color: #666; line-height: 24px; margin: 12px 0; padding: 0; }
+article.company .company-meta-item { color: #222; line-height: 24px; margin: 12px 0; padding: 0; }
 
-article.company .fa { color: #47B293; }
+article.company .fa { color: #bbb; }
 
-article.company .company-send-message { padding: 0; color: #666; margin: 12px 0; }
+.company-page article.company .fa { color: #00B0FF; }
+
+article.company .company-send-message { padding: 0; color: #666; margin-bottom: 12px; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
 article.company strong { font-weight: 600; }
 
 article.company .entry-content img.attachment-thumbnail { float: right; margin: 0 0 15px 15px; }
-
-article.company-paid img.attachment-thumbnail { float: right; max-height: 130px; max-width: 160px; margin-left: 15px; }
 
 .company-cat-button { margin: 48px 0 24px; }
 
@@ -3357,9 +3357,9 @@ body.single-company p { margin-bottom: 12px; }
 
 .form-group .required { color: #f44336; }
 
-body.single-company .company-phones .company-phone:first-child { font-weight: 600; color: #333; }
+body.single-company .company-phones .company-phone:first-child { font-weight: 600; }
 
-body.single-company .schedule { color: #ad2100; display: inline; }
+body.single-company .schedule { color: #fa463e; display: inline; }
 
 .fotorama__stage {background-color: #333 !important;}
 
@@ -3381,9 +3381,11 @@ article.company .company-name { display: inline; font-size: 18px; line-height: 2
 
 article.company-paid { min-height: 140px; line-height: 24px; margin-bottom: 24px; font-size: 13.5px; }
 
-article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-bottom: 0; margin-top: 24px; display: block; }
+article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font-weight: 600; margin-top: 12px; margin-bottom: 12px; display: block; }
 
-.company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #9b9b9b; }
+article.company-paid .company-address { margin-bottom: 12px; }
+
+article.company-paid .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #9b9b9b; }
 
 body.single-company .mailform-and-button { margin: 48px 0; }
 
@@ -3403,15 +3405,31 @@ article.company .mailform-and-button .collapse { margin-top: 24px; }
 
 article.company .company-phone { margin-bottom: 12px; }
 
+@media (min-width: 400px){
+    article.company-paid img.attachment-thumbnail { float: right; max-height: 130px; max-width: 160px; margin-left: 15px; }
+}
+
 @media (min-width: 768px) {
     article.company .company-phone,
     article.company .company-address,
-    article.company .company-url { text-indent: -1em; }
+    article.company .company-url,
+    article.company .company-send-message { text-indent: -1em; }
 }
 
 @media (min-width: 992px) {
+    body.cat article.company { padding: 0 27px; }
+
+    article.company { line-height: 27px; }
+
+    article.company-paid .company-name { line-height: 27px; margin: 13.5px 0; }
+
     article.company .company-phone { margin-bottom: 13.5px; }
     article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
+
+    article.company h2.fotorama-heading,
+    article.company h2.contacts-heading { line-height: 27px; margin-top: 27px; }
+
+    body.single-company article.company h1.company-name { font-size: 27px; margin-top: 27px; line-height: 27px; margin-bottom: 13.5px; }
 }
 
 /*Панель «Экстренные телефоны»*/
