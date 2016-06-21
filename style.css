@@ -3385,7 +3385,9 @@ article.company-paid .company-name { font-size: 20.25px; line-height: 24px; font
 
 article.company-paid .company-address { margin-bottom: 12px; }
 
-article.company .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #9b9b9b; }
+article.company .company-description { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #999; color: #222; }
+
+article.company-paid .company-description { overflow: visible; white-space: normal; line-height: 21px; }
 
 body.single-company .mailform-and-button { margin: 48px 0; }
 
@@ -3422,6 +3424,11 @@ article.company .company-phone { margin-bottom: 12px; }
     article.company { line-height: 27px; }
 
     article.company-paid .company-name { line-height: 27px; margin: 13.5px 0; }
+
+    article.company-paid .company-description,
+    article.company-paid .company-address,
+    article.company-paid .company-phone,
+    article.company-paid .company-send-message
 
     article.company .company-phone { margin-bottom: 13.5px; }
     article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
