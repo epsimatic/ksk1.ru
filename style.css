@@ -4341,7 +4341,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .tocify .tocify-item > a:hover { background-color: #F0F0F0; color: #0F5CDE; text-decoration: none;}
 
 .tocify .active,
-.tocify .active a { background-color: #00b0ff; color: #fff !important; }
+.tocify .active a { background-color: #00b0ff; color: #fff ; }
 
 .tocify-header > .tocify-item > a {padding: 5px 10px; }
 
