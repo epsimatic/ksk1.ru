@@ -71,9 +71,9 @@ figure { position: relative; text-align: center; }
 .fixedsticky-dummy { display: none; }
 .fixedsticky-on + .fixedsticky-dummy { display: block; }
 
-.fixedsticky.panel-top { top: 10px; }
+.fixedsticky.panel-top { top: 60px; }
 
-.admin-bar .fixedsticky.panel-top { top: 40px; }
+.admin-bar .fixedsticky.panel-top { top: 90px; }
 
 
 /* </editor-fold> */
