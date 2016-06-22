@@ -1819,6 +1819,7 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content-inner { background-color: #fff; background-color: rgba(255,255,255,.75); border-radius: 3px; }
 
 article.post-custom,
+article.page,
 .single-post .main-content article.post-news {
     font-size: 16px;
     line-height: 24px; /*1.5*/
