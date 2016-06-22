@@ -3961,7 +3961,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
 .site-services .table,
 .site-rk .table,
-.site-copy .table { margin-bottom: 48px; }
+.site-copy .table { margin-bottom: 48px; font-size: 14px; }
 
 .site-services .table th:first-child,
 .site-rk .table th:first-child,
@@ -3971,9 +3971,11 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .site-rk .table th,
 .site-copy .table th { text-align: center; }
 
-.table-notes { color: #666; margin: -24px 0 48px; padding: 0; }
+.table-notes { color: #666; margin: -24px 0 48px; padding: 0; font-size: 14px; }
 
-.site-copy .col-md-2 {padding-left: 0 !important;}
+.table-notes li { margin-bottom: 12px; }
+
+.table-notes ul { padding-left: 24px; }
 
 .site-services .table tr > td,
 .site-rk .table tr > td {vertical-align: middle}
