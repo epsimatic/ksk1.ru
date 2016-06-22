@@ -6175,8 +6175,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .site-copy div.copy-header,
     .site-copy h3.copy-header {margin-left: 0; margin-right: 0;}
 
-    .tocify {width: 230px;}
-
     .post-info-share .b-share {font-size: 13px !important; padding-left: 1px !important;}
 
     .news-slide-block img {max-height: 144px;}
@@ -6717,10 +6715,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .news .cat-pills.cat-pills > li > a { height: 50px; padding: 0 15px; }
 
     .fullstory .newstext { padding: 0 40px 40px; }
-
-    .tocify {width: 280px;}
-
-    .sidebar .affix { width: 280px !important; }
 
     .post-info-share .b-share {font-size: 14px !important; padding: inherit;}
 
