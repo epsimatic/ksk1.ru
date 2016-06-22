@@ -2460,7 +2460,8 @@ article.page h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
 }
 @media (min-width: 992px) {
     article.post-custom,
-    .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }
+    article.page,
+    .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; font-size: 18px; line-height: 27px; }
 
     body[class*="page-template-page-custom-radio2"] .page-title { padding: 0 54px 27px; font-size: 54px; }
 
@@ -4009,6 +4010,14 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .browser-sceenshot {width: 70%; border-radius: 9px; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); padding: 0;}
 
 .row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
+
+@media (max-width: 786px) {
+    body.site-rk .lead { font-size: 18px; }
+}
+
+@media (max-width: 992px) {
+
+}
 
 /* Поддержка скрытия столбцов */
 .site-copy .table-print tr > *:first-child,
