@@ -4318,12 +4318,9 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .btn-scroll-up::before,
 .btn-scroll-up::after { content: ""; display: inline-block; font-family: FontAwesome; padding: 0 10px; }
 
-.btn-scroll-up { color: #0d47a1; font-size: 16px; font-weight: 600; letter-spacing: 0.019em; margin-bottom: 5px; margin-top: 15px; text-transform: uppercase; }
+.btn-scroll-up { color: #2979FF; font-size: 16px; font-weight: 600; letter-spacing: 0.019em; margin-bottom: 5px; margin-top: 15px; text-transform: uppercase; }
 
 .tocify {max-height: 90%; font-size: 15px;}
-
-.tocify .active,
-.tocify .active a {background-color: #56a9f0;}
 
 .tocify .nav-list > li > a {line-height: 18px;}
 
@@ -4335,11 +4332,16 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; }
 
+.tocify a { color: #2979FF; }
+
 .btn-scroll-up:focus,
 .btn-scroll-up:hover,
 .tocify .tocify-item:hover,
 .tocify .tocify-item > a:focus,
-.tocify .tocify-item > a:hover { background-color: #EFF6F8; color: #4a76bb; text-decoration: none;}
+.tocify .tocify-item > a:hover { background-color: #F0F0F0; color: #0F5CDE; text-decoration: none;}
+
+.tocify .active,
+.tocify .active a { background-color: #00b0ff; color: #fff !important; }
 
 .tocify-header > .tocify-item > a {padding: 5px 10px; }
 
