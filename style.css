@@ -4013,6 +4013,9 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
 @media (max-width: 786px) {
     body.site-rk .lead { font-size: 18px; }
+
+    .site-services h3.rk-header, 
+    .site-rk h3.rk-header { text-align: center; }
 }
 
 @media (max-width: 992px) {
