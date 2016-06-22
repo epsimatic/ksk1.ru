@@ -1964,18 +1964,24 @@ article.post-custom div.out > p,
 .single-post .main-content article.post-news div.out > p { margin: 0; }
 
 article.post-custom a,
+article.page a,
 .single-post .main-content article.post-news a { border-bottom: 1px solid #2979ff; color: #2979ff; padding-bottom: 2px; }
 
 article.post-custom a:hover,
 article.post-custom a:focus,
+article.page a:hover,
+article.page a:focus,
 .single-post .main-content article.post-news a:hover,
 .single-post .main-content article.post-news a:focus { border-bottom: none; text-decoration: none; color: #0f5cde; }
 
 article.post-custom a:visited,
+article.page a:visited,
 .single-post .main-content article.post-news a:visited { border-color: #b39ddb; color: #7e57c2; }
 
 article.post-custom a:visited:hover,
 article.post-custom a:visited:focus,
+article.page a:visited:hover,
+article.page a:visited:focus,
 .single-post .main-content article.post-news a:visited:hover,
 .single-post .main-content article.post-news a:visited:focus { color: #6735ce; }
 
@@ -3833,12 +3839,8 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 /*------------------------------------------------------------------------------------------*/
 
 /* <editor-fold desc="Копицентр и Прайс на рекламу"> */
-
 .site-services article.page,
-.site-rk article.page {background-color: #fff; padding-top: 0;}
-
-.site-services article.page,
-.site-rk article.page {padding: 0;}
+.site-rk article.page { padding: 0 15px; }
 
 .site-services .menu-service,
 .site-rk .menu-rk {padding: 20px 20px 0;}
@@ -3920,26 +3922,29 @@ body.site-rk .page-header { margin: 0 !important; padding: 0; }
 
 body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-weight: 700; letter-spacing: 0.0125em; line-height: 24px; margin-bottom: 24px !important; }
 
+body.site-rk .lead { color: #F44336; line-height: 24px; margin-bottom: 24px; }
 
+body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
 .site-services h3.rk-header,
-.site-rk h3.rk-header {font-size: 32px; font-weight: 600; margin: 40px 0 20px !important; color: #0676d9;}
+.site-rk h3.rk-header { font-size: 20px; font-weight: 700; margin: 48px 0 24px !important; color: #222; line-height: 24px;}
 
 .site-services h4.rk-header,
-.site-rk h4.rk-header {font-size: 30px; margin: 40px 0 20px; color: #0676d9;}
+.site-rk h4.rk-header { font-size: 18px; margin: 36px 0 12px; color: #222; }
 
 .site-services .divider,
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
 .site-services table,
 .site-rk table,
-.site-copy table {text-align: center;}
+.site-copy table { text-align: center; }
 
 .site-services .table tr > td:first-child,
 .site-rk .table tr > td:first-child,
 .site-copy .table td:first-child { text-align: left; }
 
-.site-copy .main-content-inner h1, .site-copy .main-content-inner h2 {text-align: center;}
+.site-copy .main-content-inner h1, 
+.site-copy .main-content-inner h2 {text-align: center;}
 
 .site-copy .copy-header {background-color: #75cee4; text-align: center; margin-bottom: 30px;}
 
@@ -3953,28 +3958,21 @@ body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-w
 
 .site-copy small {font-size: 80%;}
 
-.site-services .table-striped > tbody > tr.special > td,
-.site-rk .table-striped > tbody > tr.special > td {background-color: #ffe188 !important;}
-
-.site-services .table-hover > tbody > tr.special:hover > td,
-.site-rk .table-hover > tbody > tr.special:hover > td {background-color: #ffcc33 !important;}
-
 .site-services .table,
 .site-rk .table,
-.site-copy .table {margin-bottom: 40px;}
+.site-copy .table { margin-bottom: 48px; }
 
 .site-services .table th:first-child,
 .site-rk .table th:first-child,
-.site-copy .table th:first-child {text-align: left;}
+.site-copy .table th:first-child { text-align: left; }
 
 .site-services .table th,
 .site-rk .table th,
-.site-copy .table th {text-align: center;}
+.site-copy .table th { text-align: center; }
 
 .table-notes { color: #666; margin: -24px 0 48px; padding: 0; }
 
 .site-copy .col-md-2 {padding-left: 0 !important;}
-
 
 .site-services .table tr > td,
 .site-rk .table tr > td {vertical-align: middle}
@@ -3985,10 +3983,10 @@ body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-w
 .site-rk .per100 {display: block;}
 
 .site-services .per50,
-.site-rk .per50 {color: #127ee2;}
+.site-rk .per50 { color: #0091EA; }
 
 .site-services .per100,
-.site-rk .per100 {color: #009815;}
+.site-rk .per100 { color: #009815; }
 
 .site-services .table small,
 .site-rk .table small {opacity: 0.8;}
