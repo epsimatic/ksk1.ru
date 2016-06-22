@@ -298,8 +298,6 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel:hover { box-shadow: 0 1px 4px rgba(0, 0, 0, .15); }
 
-.panel.panel-page { box-shadow: none; }
-
 .panel > .panel-heading + .panel-collapse .panel-body {border-top: none;}
 
 .panel > .panel-footer + .panel-collapse .panel-body {border-bottom: none;}
@@ -2186,16 +2184,9 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 
 
 /* Панель тела новости*/
-.panel.panel-news-body { box-shadow: none; background-color: #fff; }
+article.page header.page-header { margin-bottom: 10px; }
 
-.single-post .panel-news-body > .panel-body { padding: 40px; background-color: #fff; }
-
-.page .panel-page,
-.page .panel-page .panel-body { background-color: transparent; }
-
-.panel-page .panel-body header.page-header {margin-bottom: 10px;}
-
-.panel-page .panel-body h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
+article.page h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
 
 
 /*Переформление плагина WP-Ulike*/
@@ -3843,11 +3834,11 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 /* <editor-fold desc="Копицентр и Прайс на рекламу"> */
 
-.site-services .panel-page .panel-body,
-.site-rk .panel-page .panel-body {background-color: #fff; padding-top: 0;}
+.site-services article.page,
+.site-rk article.page {background-color: #fff; padding-top: 0;}
 
-.site-services .panel-news-body .panel-body,
-.site-rk .panel-news-body .panel-body {padding: 0;}
+.site-services article.page,
+.site-rk article.page {padding: 0;}
 
 .site-services .menu-service,
 .site-rk .menu-rk {padding: 20px 20px 0;}
@@ -3924,6 +3915,12 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .site-services img.pic,
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
+
+body.site-rk .page-header { margin: 0 !important; padding: 0; }
+
+body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-weight: 700; letter-spacing: 0.0125em; line-height: 24px; margin-bottom: 24px !important; }
+
+
 
 .site-services h3.rk-header,
 .site-rk h3.rk-header {font-size: 32px; font-weight: 600; margin: 40px 0 20px !important; color: #0676d9;}
