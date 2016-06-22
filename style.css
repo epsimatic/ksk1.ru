@@ -4022,6 +4022,10 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
     .site-services h3.rk-header, 
     .site-rk h3.rk-header { font-size: 24px; line-height: 27px; margin: 54px 0 27px !important; }
+
+    .site-services .table, 
+    .site-rk .table, 
+    .site-copy .table { margin-bottom: 54px; }
 }
 
 /* Поддержка скрытия столбцов */
