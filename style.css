@@ -4016,7 +4016,12 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 }
 
 @media (max-width: 992px) {
-    body.site-rk .lead { font-size: 21px; line-height: 27px; }
+    body.site-rk .page-header > h1.page-title { font-size: 27px; line-height: 27px; margin-bottom: 27px !important; }
+
+    body.site-rk .lead { font-size: 18px; line-height: 27px; }
+
+    .site-services h3.rk-header, 
+    .site-rk h3.rk-header { font-size: 24px; line-height: 27px; margin: 54px 0 27px !important; }
 }
 
 /* Поддержка скрытия столбцов */
