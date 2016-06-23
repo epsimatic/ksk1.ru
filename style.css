@@ -6366,12 +6366,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a { padding: 15px; }
+    header.wide-header .navbar-nav > li > a , header.wide-header .navbar-nav > li > span { padding: 15px; }
+    header.wide-header .navbar-nav > li > span{display: inline-block;color: #fff;}
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
     header.wide-header .nav .open > a:hover,
-    header.wide-header .nav .open > a:focus { background-color: #0091ea; }
+    header.wide-header .nav .open > a:focus
+    header.wide-header .nav .open > span,
+    header.wide-header .nav .open > span:hover,
+    header.wide-header .nav .open > span:hover,
+    header.wide-header .nav .open > span:focus{ background-color: #0091ea; }
 
     header.wide-header .dropdown-vote > a { padding: 10px 7px !important; }
 
