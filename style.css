@@ -4037,7 +4037,7 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 @media (min-width: 992px) {
 
     body.site-services .page-header > h1.page-title,
-    body.site-rk .page-header > h1.page-title { font-size: 27px; line-height: 27px; margin-bottom: 27px !important; }
+    body.site-rk .page-header > h1.page-title { font-size: 30px; line-height: 27px; margin: 13.5px 0 27px !important; }
 
     body.site-rk .lead { font-size: 18px; line-height: 27px; }
 
