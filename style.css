@@ -3850,9 +3850,21 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .site-rk .menu-rk a img { opacity: 0.3; padding-bottom: 15px; transition: opacity 0.31s ease-in-out 0s; width: 80%; }
 
-.site-services .menu-service img.menu-service-item-icon { padding-bottom: 15px; display: none; }
+.site-services .menu-service .menu-sevice-item { display: table; }
 
-.site-services .menu-service .menu-service-item-name { padding: 6px; line-height: 24px; }
+.site-services .menu-sevice-item > a { display: table-row; }
+
+.site-services .menu-sevice-item > a.active { background-color: #f8f8f8; }
+
+.site-services .menu-sevice-item > a:hover,
+.site-services .menu-sevice-item > a:focus,
+.site-services .menu-sevice-item > a.active:hover,
+.site-services .menu-sevice-item > a.active:focus { background-color: #f0f0f0; }
+
+.site-services .menu-service img.menu-service-item-icon { display: table-cell; padding: 12px 0 12px 24px; height: 70px; width: 66px; }
+
+.site-services .menu-service .menu-service-item-name { display: table-cell; font-size: 16px; line-height: 24px; padding: 12px; text-align: left; vertical-align: middle; }
+
 
 .site-rk .menu-rk a:hover img { opacity: 0.86; }
 
@@ -3873,14 +3885,6 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 .site-rk .menu-rk div:nth-child(5) a.active div {color: #1abc9c !important;}
 
 .site-rk .menu-rk div:nth-child(6) a.active div {color: #3498db !important;}
-
-.site-services .menu-service div:nth-child(1) a.active div {color: #bb9a4b !important;}
-
-.site-services .menu-service div:nth-child(2) a.active div {color: #fb485e !important;}
-
-.site-services .menu-service div:nth-child(3) a.active div {color: #53687d !important;}
-
-.site-services .menu-service div:nth-child(4) a.active div {color: #f7ae00 !important;}
 
 .site-rk .menu-rk a.active div {font-weight: 600;}
 
