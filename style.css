@@ -71,10 +71,14 @@ figure { position: relative; text-align: center; }
 .fixedsticky-dummy { display: none; }
 .fixedsticky-on + .fixedsticky-dummy { display: block; }
 
-.fixedsticky.panel-top { top: 60px; }
+.fixedsticky.panel-top { top: 10px; }
 
-.admin-bar .fixedsticky.panel-top { top: 120px; }
+.admin-bar .fixedsticky.panel-top { top: 45px; }
 
+@media (min-width: 992px) { 
+    .fixedsticky.panel-top { top: 60px; }
+    .admin-bar .fixedsticky.panel-top { top: 90px; }
+}
 
 /* </editor-fold> */
 
