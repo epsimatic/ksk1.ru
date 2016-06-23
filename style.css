@@ -4028,7 +4028,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
     .site-services .menu-service .menu-sevice-item > a,
     .site-services .menu-service .menu-sevice-item { display: block; }
 
-    .site-services .menu-service img.menu-service-item-icon { display: block; height: auto; width: auto; margin: 0 auto; }
+    .site-services .menu-service img.menu-service-item-icon { display: block; height: auto; width: auto; margin: 0 auto; padding: 12px; }
 
     .site-services .menu-service .menu-service-item-name { text-align: center; display: block; padding: 0 0 12px; font-size: 14px; }
 }
@@ -4040,6 +4040,11 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
     .site-services h3.rk-header, 
     .site-rk h3.rk-header { font-size: 24px; line-height: 27px; margin: 54px 0 27px !important; }
+
+    .site-services .menu-service,
+    .site-services .menu-service img.menu-service-item-icon { padding: 13.5px; }
+
+    .site-services .menu-service .menu-service-item-name { padding: 0 0 13.5px; line-height: 27px; }
 
     .site-services .table, 
     .site-rk .table, 
