@@ -3923,6 +3923,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 .site-services img.pic,
 .site-copy img.pic {padding: 0; width: 100%; max-width: 500px;}
 
+body.site-services .page-header,
 body.site-rk .page-header { margin: 0 !important; padding: 0; }
 
 body.site-services .page-header > h1.page-title,
@@ -3949,28 +3950,12 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .site-rk .table tr > td:first-child,
 .site-copy .table td:first-child { text-align: left; }
 
-.site-copy .main-content-inner h1, 
-.site-copy .main-content-inner h2 {text-align: center;}
-
-.site-copy .copy-header {background-color: #75cee4; text-align: center; margin-bottom: 30px;}
-
-.site-copy div.copy-header {margin-top: -30px; margin-left: -20px; margin-right: -20px;}
-
-.site-copy h3.copy-header {color: #fff; font-size: 27px; font-weight: 600; letter-spacing: 0.035em; margin: 30px -20px; padding: 30px 20px; text-transform: uppercase;}
-
-.site-copy .copy-header img {margin-top: -30px;}
-
-.site-copy h5 {margin-bottom: 15px;}
-
-.site-copy small {font-size: 80%;}
-
 .site-services .table,
 .site-rk .table,
 .site-copy .table { margin-bottom: 48px; font-size: 14px; }
 
 .site-services .table th:first-child,
-.site-rk .table th:first-child,
-.site-copy .table th:first-child { text-align: left; }
+.site-rk .table th:first-child { text-align: left; }
 
 .site-services .table th,
 .site-rk .table th,
