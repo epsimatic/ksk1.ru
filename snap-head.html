@@ -277,7 +277,7 @@
                     </div>
                 </li>
                 <li class="menu-item-dropdown menu-item menu-main-info">
-                    <a role="button" aria-haspopup="true" aria-expanded="false" href="">Справка</a>
+                    <span role="button" aria-haspopup="true" aria-expanded="false" >Справка</span>
                     <div class="dropdown-panel">
                         <div class="container">
                             <div class="row">
@@ -386,7 +386,7 @@
                 </li>
 
                 <li class="menu-item-dropdown menu-item menu-main-shop">
-                    <a   role="button" aria-haspopup="true" aria-expanded="false" href="">Магазины</a>
+                    <span   role="button" aria-haspopup="true" aria-expanded="false">Магазины</span>
                     <div class="dropdown-panel">
                         <div class="container">
                             <div class="row">
@@ -601,10 +601,4 @@
                 classList.add('taxi');
             }
         })();
-
-        jQuery(".menu-item-dropdown.menu-main-info , .menu-item-dropdown.menu-main-shop").click( function(event){
-            event.preventDefault();
-            event.stopImmediatePropagation();
-        });
-
     </script>
