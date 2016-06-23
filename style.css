@@ -499,8 +499,12 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-taxi > a.featured:focus,
 .navbar-nav > li.menu-main-taxi > a.featured:hover { background-color: #FFFE77; }
 
+.navbar-nav > li:focus > span,
+.navbar-nav > li:hover > span,
 .navbar-nav > li:focus > a,
 .navbar-nav > li:hover > a,
+.navbar-nav > li > span:hover, 
+.navbar-nav > li > span:focus,
 .navbar-nav > li > a:hover, 
 .navbar-nav > li > a:focus { color: #fff; background-color: #40c4ff; }
 
@@ -6366,6 +6370,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
+    header.wide-header .navbar-nav > li > span { display: block; }
+
+    header.wide-header .navbar-nav > li > span,
     header.wide-header .navbar-nav > li > a { padding: 15px; }
 
     header.wide-header .nav .open > a,
