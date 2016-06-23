@@ -3944,6 +3944,12 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 .site-services article.page h4,
 .site-rk h4.rk-header { font-size: 18px; margin: 36px 0 12px; color: #222; font-weight: 700; }
 
+.site-copy h4 + ul { padding-left: 0; }
+
+.site-copy h4 + ul > li { margin-bottom: 12px; }
+
+.site-copy h4 + ul > li > ul { margin: 8px 0 16px; }
+
 .site-services .divider,
 .site-copy .divider {height: 3px; background-color: #77cce4; margin-bottom: 20px;}
 
@@ -4037,6 +4043,9 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
     .site-services article.page h4,
     .site-rk h4.rk-header { font-size: 20px; margin: 50.5px 0 13.5px; }
 
+    .site-copy h4 + ul > li { margin-bottom: 13.5px; }
+
+    .site-copy h4 + ul > li > ul { margin: 9px 0 18px; }
 
     body.site-services article.page p,
     body.site-rk article.page p { line-height: 27px; margin-bottom: 13.5px; }
