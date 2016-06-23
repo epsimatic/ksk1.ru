@@ -4014,7 +4014,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
 .row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
 
-@media (min-width: 480) {
+@media (min-width: 480px) {
     .site-services .menu-service img.menu-service-item-icon { margin-left: 32px; }
 }
 
