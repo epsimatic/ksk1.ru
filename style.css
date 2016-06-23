@@ -73,7 +73,7 @@ figure { position: relative; text-align: center; }
 
 .fixedsticky.panel-top { top: 60px; }
 
-.admin-bar .fixedsticky.panel-top { top: 90px; }
+.admin-bar .fixedsticky.panel-top { top: 120px; }
 
 
 /* </editor-fold> */
@@ -4343,7 +4343,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .tocify .active,
 .tocify .active a { background-color: #f0f0f0; border-left-color: #40C4FF !important; color: #494746; }
 
-.tocify-header > .tocify-item > a { padding: 5px 10px; border-left: 3px solid transparent; }
+.tocify-header > .tocify-item > a { padding: 5px 10px; border-left: 3px solid transparent; font-size: 12px; }
 
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader { display: none;}
