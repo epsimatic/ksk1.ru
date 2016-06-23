@@ -4318,7 +4318,7 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 .btn-scroll-up::before,
 .btn-scroll-up::after { content: ""; display: inline-block; font-family: FontAwesome; padding: 0 10px; }
 
-.btn-scroll-up { color: #2979FF; font-size: 16px; font-weight: 600; letter-spacing: 0.019em; margin-bottom: 5px; margin-top: 15px; text-transform: uppercase; }
+.btn-scroll-up { color: #666; font-size: 16px; font-weight: 600; letter-spacing: 0.019em; margin-bottom: 5px; margin-top: 15px; text-transform: uppercase; }
 
 .tocify {max-height: 90%; font-size: 15px;}
 
