@@ -3863,7 +3863,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .site-services .menu-service img.menu-service-item-icon { display: table-cell; padding: 12px 0 12px 24px; height: 70px; width: 66px; }
 
-.site-services .menu-service .menu-service-item-name { display: table-cell; font-size: 16px; line-height: 24px; padding: 12px; text-align: left; vertical-align: middle; }
+.site-services .menu-service .menu-service-item-name { display: table-cell; font-size: 16px; line-height: 24px; padding: 12px; text-align: left; vertical-align: middle; color: #666; }
 
 
 .site-rk .menu-rk a:hover img { opacity: 0.86; }
