@@ -4014,11 +4014,23 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 
 .row-price-base > td:first-child:after {content: "базовая линия"; font-style: italic; opacity: 0.5; padding-left: 15px;}
 
+@media (min-width: 480) {
+    .site-services .menu-service img.menu-service-item-icon { margin-left: 32px; }
+}
+
+
 @media (min-width: 786px) {
     body.site-rk .lead { font-size: 18px; }
 
     .site-services h3.rk-header, 
     .site-rk h3.rk-header { text-align: center; }
+
+    .site-services .menu-service .menu-sevice-item > a,
+    .site-services .menu-service .menu-sevice-item { display: block; }
+
+    .site-services .menu-service img.menu-service-item-icon { display: block; height: auto; width: auto; margin: 0 auto; }
+
+    .site-services .menu-service .menu-service-item-name { text-align: center; display: block; padding: 0 0 12px; font-size: 14px; }
 }
 
 @media (min-width: 992px) {
