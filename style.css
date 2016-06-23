@@ -646,7 +646,7 @@ a.list-group-item:focus { background-color: #f8f8f8; }
 
 /* <editor-fold desc="Другие элемнты"> */
 
-.browser-deco:before { content: url("//ksk1.ru/img/browser-deco.svg"); display: block; margin: 0 1px; }
+.browser-deco:before { content: url("//ksk1.ru/img/browser-deco.svg"); display: block; margin: 0 -1px; }
 
 .browser-deco img { height: auto; margin: -5px 0 0 !important; padding: 0 !important; width: 100%; }
 
@@ -4024,7 +4024,6 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 @media (min-width: 786px) {
     body.site-rk .lead { font-size: 18px; }
 
-    .site-services article.page h3,
     .site-rk h3.rk-header { text-align: center; }
 
     .site-services .menu-service .menu-sevice-item > a,
