@@ -4332,18 +4332,18 @@ body.site-rk p { line-height: 24px; margin-bottom: 12px; }
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {list-style: none; margin: 0; padding: 0; border: none; }
 
-.tocify a { color: #494746; }
+.tocify a { color: #666; }
 
 .btn-scroll-up:focus,
 .btn-scroll-up:hover,
 .tocify .tocify-item:hover,
 .tocify .tocify-item > a:focus,
-.tocify .tocify-item > a:hover { background-color: #F0F0F0; color: #0F5CDE; text-decoration: none;}
+.tocify .tocify-item > a:hover { background-color: #F0F0F0; color: #222; text-decoration: none;}
 
 .tocify .active,
-.tocify .active a { background-color: #00b0ff; color: #fff ; }
+.tocify .active a { background-color: #f0f0f0; border-left-color: #40C4FF !important; color: #494746; }
 
-.tocify-header > .tocify-item > a {padding: 5px 10px; }
+.tocify-header > .tocify-item > a { padding: 5px 10px; border-left: 3px solid transparent; }
 
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader { display: none;}
