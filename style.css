@@ -3847,10 +3847,11 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 .site-services .menu-service,
 .site-rk .menu-rk {padding: 20px 20px 0;}
 
-.site-services .menu-service a img,
-.site-rk .menu-rk a img { opacity: 0.3; padding-bottom: 15px; transition: opacity 0.31s ease-in-out 0s; }
+.site-rk .menu-rk a img { opacity: 0.3; padding-bottom: 15px; transition: opacity 0.31s ease-in-out 0s; width: 80%; }
 
-.site-rk .menu-rk a img { width: 80%; }
+.site-services .menu-service img.menu-service-item-icon { padding-bottom: 15px; display: none; }
+
+.site-services .menu-service .menu-service-item-name { padding: 6px; line-height: 24px; }
 
 .site-services .menu-service a:hover img,
 .site-rk .menu-rk a:hover img { opacity: 0.86; }
