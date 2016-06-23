@@ -502,12 +502,16 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:focus > a,
 .navbar-nav > li:hover > a,
 .navbar-nav > li > a:hover, 
-.navbar-nav > li > a:focus { color: #fff; background-color: #40c4ff; }
+.navbar-nav > li > a:focus,
+.navbar-nav > li:focus > span,
+.navbar-nav > li:hover > span,
+.navbar-nav > li > span:hover,
+.navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
 
-.nav .current-page-parent > a { position: relative; font-weight: 600; }
+.nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
 .single-post .nav .menu-main-news  > a::after,
-.nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
+.nav .current-page-parent > a::after , .nav .current-page-parent > span::after{ content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
 
 
 body.admin-bar .menu-main-eda .featured > span,
@@ -6372,11 +6376,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
     header.wide-header .nav .open > a:hover,
-    header.wide-header .nav .open > a:focus
-    header.wide-header .nav .open > span,
-    header.wide-header .nav .open > span:hover,
-    header.wide-header .nav .open > span:hover,
-    header.wide-header .nav .open > span:focus{ background-color: #0091ea; }
+    header.wide-header .nav .open > a:focus { background-color: #0091ea; }
 
     header.wide-header .dropdown-vote > a { padding: 10px 7px !important; }
 
