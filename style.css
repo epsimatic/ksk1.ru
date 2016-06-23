@@ -3844,8 +3844,9 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 .site-services article.page,
 .site-rk article.page { padding: 0 15px; }
 
-.site-services .menu-service,
-.site-rk .menu-rk {padding: 20px 20px 0;}
+.site-rk .menu-rk { padding: 20px 20px 0; }
+
+.site-services .menu-service { padding: 12px; text-align: center; }
 
 .site-rk .menu-rk a img { opacity: 0.3; padding-bottom: 15px; transition: opacity 0.31s ease-in-out 0s; width: 80%; }
 
@@ -3853,17 +3854,13 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .site-services .menu-service .menu-service-item-name { padding: 6px; line-height: 24px; }
 
-.site-services .menu-service a:hover img,
 .site-rk .menu-rk a:hover img { opacity: 0.86; }
 
-.site-services .menu-service a.active img,
-.site-rk .menu-rk a.active img {opacity: 1 !important;}
+.site-rk .menu-rk a.active img { opacity: 1 !important; }
 
-.site-services .menu-service a div,
-.site-rk .menu-rk a div {font-size: 15px; line-height: 1.3; color: #666;}
+.site-rk .menu-rk a div { font-size: 15px; line-height: 1.3; color: #666; }
 
-.site-services .menu-service a:hover div,
-.site-rk .menu-rk a:hover div {color: #222;}
+.site-rk .menu-rk a:hover div { color: #222; }
 
 .site-rk .menu-rk div:nth-child(1) a.active div {color: #00D964 !important;}
 
@@ -3885,7 +3882,6 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .site-services .menu-service div:nth-child(4) a.active div {color: #f7ae00 !important;}
 
-.site-services .menu-service a.active div,
 .site-rk .menu-rk a.active div {font-weight: 600;}
 
 .site-services .menu-service a:hover,
