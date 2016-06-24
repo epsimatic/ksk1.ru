@@ -5663,7 +5663,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 .services-content section.taxi-section .taxi-form-wrap .taxi-form { position: relative; }
 
-.services-content section.taxi-section .alert { background-color: #fff; border: 3px solid #fff; border-radius: 6px; bottom: 0; box-shadow: 0 5px 9px #222; box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); color: #222 !important; font-size: 16px; left: 0; line-height: 24px; padding: 13.5px 40.5px 13.5px 13.5px; position: absolute; width: 100%; z-index: 10; }
+.services-content section.taxi-section .alert { background-color: #fff; border: 3px solid #fff; border-radius: 6px; top: -80px;
+    box-shadow: 0 5px 9px #222; box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); color: #222 !important; font-size: 16px; left: 0;
+    line-height: 24px; padding: 20.5px 40.5px 20.5px 13.5px; position: absolute; width: 100%; z-index: 10; }
+
 
 .services-content section.taxi-section .alert-success { border-color: #00e676; }
 
