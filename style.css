@@ -1294,6 +1294,8 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .home .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
 
+.panel-official article.post { padding: 10px 15px; }
+
 .archive .post-title,
 .home .post-title {font-size: 18px; margin-top: 0; margin-bottom: 5px;}
 
