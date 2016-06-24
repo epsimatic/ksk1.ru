@@ -502,12 +502,16 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:focus > a,
 .navbar-nav > li:hover > a,
 .navbar-nav > li > a:hover, 
-.navbar-nav > li > a:focus { color: #fff; background-color: #40c4ff; }
+.navbar-nav > li > a:focus,
+.navbar-nav > li:focus > span,
+.navbar-nav > li:hover > span,
+.navbar-nav > li > span:hover,
+.navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
 
-.nav .current-page-parent > a { position: relative; font-weight: 600; }
+.nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
 .single-post .nav .menu-main-news  > a::after,
-.nav .current-page-parent > a::after { content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
+.nav .current-page-parent > a::after , .nav .current-page-parent > span::after{ content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
 
 
 body.admin-bar .menu-main-eda .featured > span,
@@ -5022,7 +5026,10 @@ header.wide-header { display: none; }
 
 .snap-drawer li.current-page-parent > a,
 .snap-drawer li.current-page-parent > a:hover,
-.snap-drawer li.current-page-parent > a:focus { background-color: #7d83ff; }
+.snap-drawer li.current-page-parent > a:focus,
+.snap-drawer li.current-page-parent > span,
+.snap-drawer li.current-page-parent > span:hover,
+.snap-drawer li.current-page-parent > span:focus{ background-color: #7d83ff; }
 
 .snap-drawer-right li.current-page-parent > a,
 .snap-drawer-right li.current-page-parent > a:hover,
@@ -5032,7 +5039,7 @@ header.wide-header { display: none; }
 
 .snap-drawer-right li.current-page-parent ul.sub-menu  { max-height: 600px; background-color: #e4e9ff; }
 
-.snap-drawer li.current-page-parent ul.sub-menu .menu-item > a { color: #333;
+.snap-drawer li.current-page-parent ul.sub-menu .menu-item > a , .snap-drawer li.current-page-parent ul.sub-menu .menu-item > span { color: #333;
     -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 
 .snap-drawer li.menu-item.current-page-parent .triangle {
@@ -6366,7 +6373,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a { padding: 15px; }
+    header.wide-header .navbar-nav > li > a , header.wide-header .navbar-nav > li > span { padding: 15px; }
+    header.wide-header .navbar-nav > li > span{display: inline-block;color: #fff;}
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
