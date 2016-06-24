@@ -1980,19 +1980,19 @@ article.post-custom a,
 
 article.post-custom a:hover,
 article.post-custom a:focus,
-article.page a:hover,
-article.page a:focus,
+.site-rk article.page a:hover,
+.site-rk article.page a:focus,
 .single-post .main-content article.post-news a:hover,
 .single-post .main-content article.post-news a:focus { border-bottom: none; text-decoration: none; color: #0f5cde; }
 
 article.post-custom a:visited,
-article.page a:visited,
+.site-rk article.page a:visited,
 .single-post .main-content article.post-news a:visited { border-color: #b39ddb; color: #7e57c2; }
 
 article.post-custom a:visited:hover,
 article.post-custom a:visited:focus,
-article.page a:visited:hover,
-article.page a:visited:focus,
+.site-rk article.page a:visited:hover,
+.site-rk article.page a:visited:focus,
 .single-post .main-content article.post-news a:visited:hover,
 .single-post .main-content article.post-news a:visited:focus { color: #6735ce; }
 
