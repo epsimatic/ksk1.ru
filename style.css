@@ -58,8 +58,7 @@ figure { position: relative; text-align: center; }
 
 /* Блок стилей для fixed sticky */
 
-/*noinspection CssInvalidElement*/
-.fixedsticky { position: -webkit-sticky; position: sticky; }
+.fixedsticky { position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; position: sticky; }
 
 /* When position: sticky is supported but native behavior is ignored */
 .fixedsticky-withoutfixedfixed .fixedsticky-off,
@@ -69,6 +68,7 @@ figure { position: relative; text-align: center; }
 .fixed-supported .fixedsticky-on { position: fixed; }
 
 .fixedsticky-dummy { display: none; }
+
 .fixedsticky-on + .fixedsticky-dummy { display: block; }
 
 .fixedsticky.panel-top { top: 10px; }
@@ -499,12 +499,8 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-taxi > a.featured:focus,
 .navbar-nav > li.menu-main-taxi > a.featured:hover { background-color: #FFFE77; }
 
-.navbar-nav > li:focus > span,
-.navbar-nav > li:hover > span,
 .navbar-nav > li:focus > a,
 .navbar-nav > li:hover > a,
-.navbar-nav > li > span:hover, 
-.navbar-nav > li > span:focus,
 .navbar-nav > li > a:hover, 
 .navbar-nav > li > a:focus { color: #fff; background-color: #40c4ff; }
 
@@ -1975,7 +1971,7 @@ article.post-custom div.out > p,
 .single-post .main-content article.post-news div.out > p { margin: 0; }
 
 article.post-custom a,
-article.page a,
+.site-rk article.page a,
 .single-post .main-content article.post-news a { border-bottom: 1px solid #2979ff; color: #2979ff; padding-bottom: 2px; }
 
 article.post-custom a:hover,
@@ -6370,9 +6366,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > span { display: block; }
-
-    header.wide-header .navbar-nav > li > span,
     header.wide-header .navbar-nav > li > a { padding: 15px; }
 
     header.wide-header .nav .open > a,
