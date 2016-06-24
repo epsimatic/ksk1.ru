@@ -2507,6 +2507,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
     article.post-custom .post-info,
     .single .main-content article.event .post-info,
+    article.event .post-info,
     .single-post .main-content article.post-news .post-info { border-bottom: 3px solid #999; }
 
     article.post-custom .share-title,
