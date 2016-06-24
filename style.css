@@ -567,9 +567,7 @@ h6 {margin-top: 5px; margin-bottom: 0; color: #222; font-size: 14px; font-weight
 
 p.media-text {color: #4c4c56; font-size: 14px; font-weight: 400; text-indent: 5px; line-height: 1.4em;}
 
-.page-header {border: none; margin: 0;}
-
-.page-header h1 {margin: 0 !important;}
+.page-header { border: none; margin: 0; }
 
 .alert h3,
 .alert h2 {margin: 0 0 15px;}
@@ -1513,7 +1511,7 @@ body.search header.page-header .page-title-sub { color: #494746; font-size: 18px
 
 .content-padder .media .page-title a:hover {color: #428bca;}
 
-.content-padder .media .page-header {padding: 0;}
+.content-padder .media .page-header { padding: 0; }
 
 .content-padder .media .page-header h2 {font-size: 18px;}
 
@@ -2200,10 +2198,7 @@ article.post-paper .btn-dl { margin-top: 22.652px; }
 .page-template-page-custom-tp .post-paper [itemprop="description"] img { display: none; }
 
 
-/* Панель тела новости*/
-article.page header.page-header { margin-bottom: 10px; }
-
-article.page h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
+article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 24px; margin: 24px 0; }
 
 
 /*Переформление плагина WP-Ulike*/
@@ -2329,6 +2324,8 @@ article.page h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
 }
 
 @media (min-width: 768px) {
+    article.page h1 { margin: 12px 0 36px; }
+
     article.post-custom,
     .single-post .main-content article.post-news { padding: 0 18px 18px; font-size: 18px; line-height: 27px; }
 
@@ -2469,6 +2466,8 @@ article.page h1 {color: #4a76bb; font-weight: 700; font-size: 28px;}
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
 }
 @media (min-width: 992px) {
+    article.page h1 { margin: 13.5px 0 40.5px; line-height: 27px; font-size: 30px; }
+
     article.post-custom,
     article.page,
     .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; font-size: 18px; line-height: 27px; }
@@ -4159,7 +4158,9 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 .sidebar .panel-radio-news > .panel-heading { background-color: #2979ff; }
 .panel-radio-news > .list-group { padding-bottom: 0; }
 
-.emergency-numbers h2 { font-size: 24px; line-height: 24px; font-weight: 600; text-align: center; margin-bottom: 24px; margin-top: 24px; }
+.page-id-7433 article.page header.page-header { margin-left: -15px; }
+
+.emergency-numbers h2 { font-size: 24px; line-height: 24px; font-weight: 600; margin-bottom: 24px; margin-top: 24px; }
 
 .emergency-numbers h3 { margin-top: 36px; margin-bottom: 12px; font-weight: 600; font-size: 24px; line-height: 24px; }
 
