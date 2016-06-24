@@ -4388,10 +4388,12 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 
 .tocify-header > .tocify-item > a { padding: 5px 10px; border-left: 3px solid transparent; font-size: 12px; }
 
+.tocify-subheader > .tocify-item > a { border-left: 1px solid transparent; }
+
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader { display: none;}
 
-.tocify-subheader > .tocify-item > a {padding-left: 15px !important;}
+.tocify-subheader > .tocify-item > a { padding-left: 20px !important; }
 
 /* Makes the font smaller for all subheader elements. */
 .tocify-subheader li {font-size: 12px;}
