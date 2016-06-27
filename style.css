@@ -2286,7 +2286,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 .post-info-share .b-share .b-share__handle {float: none;}
 
-.post-info-share .b-share a.b-share__handle:hover .b-share__text { color: #0f5cde; }
+.post-info-share .b-share a.b-share__handle:hover .b-share__text { color: #0f5cde; text-decoration: none; }
 
 .b-share__handle {padding: 0 !important;}
 
