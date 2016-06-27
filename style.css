@@ -1785,9 +1785,11 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 }
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
-.post-info {color: #666;}
+.post-info { color: #666; margin-top: 24px; }
 .post-info > * { height: auto; background-color: transparent; }
 .post-info span {display: inline-block;}
+
+.post-info .btn-link { border-bottom: none !important; }
 
 .post-info-info { text-align: center; line-height: 36px; margin-bottom: 12px; }
 
@@ -2278,7 +2280,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 /*Оформление блока "поделиться" от Яндекса*/
 .post-info-share { text-align: center;}
 
-.post-info-share a { color: #2979ff; border-bottom: none !important; text-decoration: none; }
+.post-info-share a { color: #2979ff; border-bottom: none !important ; text-decoration: none; }
 
 .post-info-share a:before { content: ""; font-family: FontAwesome; padding-right: 5px; }
 
@@ -2471,6 +2473,8 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
     .social-likes__button .social-likes__icon { font-size: 27px; left: 18px !important; line-height: 24px; }
 }
 @media (min-width: 992px) {
+    .post-info { margin-top: 27px; }
+
     article.page h1 { margin: 13.5px 0 40.5px; line-height: 27px; font-size: 30px; }
 
     article.post-custom,
