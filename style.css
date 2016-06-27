@@ -538,7 +538,16 @@ body.admin-bar .menu-main-services { display: block !important; }
 .table tfoot > tr > th,
 .table thead > tr > td,
 .table tbody > tr > td,
-.table tfoot > tr > td {padding: 8px; line-height: 1.428571429; vertical-align: top; border-top: 0;}
+.table tfoot > tr > td { padding: 8px; line-height: 24px; vertical-align: top; border-top: 0;}
+
+@media (min-width: 992px) {
+    .table thead > tr > th,
+    .table tbody > tr > th,
+    .table tfoot > tr > th,
+    .table thead > tr > td,
+    .table tbody > tr > td,
+    .table tfoot > tr > td { line-height: 27px; }
+}
 
 /*для таблицы кноафишы в taxonomy-movie включим border бутстроповский*/
 .table-movie-sessions td { border-top: 1px solid #ddd !important; }
