@@ -2796,6 +2796,10 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 /* <editor-fold desc="Левая колонка"> */
 .block_congrats article,.block_necro article{margin-top: 15px}
 /*Калейдоскоп*/
+.kaleidoscope::after { clear: both; content: " "; display: block; }
+
+.kaleidoscope__left-column { display: block; margin-bottom: 24px; }
+
 .kaleidoscope__item__img, .kaleidoscope__item__tooltip {background-color: #fff; padding: 3px;}
 
 .kaleidoscope__item {position: relative; float: right; width: 33%;}
@@ -6316,6 +6320,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .news-more .crp_title {font-size: 14px;}
 
     .news-more .crp_excerpt {font-size: 14px; font-weight: 400;}
+
+    .kaleidoscope__left-column { margin-bottom: 27px; }
+
     .kaleidoscope__item {width: 33%;}
 
     .kaleidoscope__item__tooltip, .kaleidoscope__item__img{height: 77px;}
