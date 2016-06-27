@@ -88,6 +88,8 @@ nav.navbar .menu-item a:focus,
 nav.navbar .menu-item a::-moz-focus-inner,
 .yummies a::-moz-focus-inner { border: 0 !important; }
 
+.sidebar .yummies { display: none; }
+
 /*
     snap.js hack
     Переопределяем отступы у bootrap-колонок, .row, .container
@@ -126,6 +128,8 @@ nav.navbar .menu-item a::-moz-focus-inner,
     .container { padding-left: 15px; padding-right: 15px; }
 
     .row { margin-left: -15px; margin-right: -15px; }
+
+    .sidebar .yummies { display: block; }
 }
 
 /* <editor-fold desc="Шапка"> */
