@@ -5612,6 +5612,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 .services-content section.taxi-section .taxi-form-wrap .form-submit:hover,
 .services-content section.taxi-section .taxi-form-wrap .form-submit:focus { background-color: #222; }
 
+.datetimepicker-wrap { position: relative; }
 
 .services-content .form-wrap .form-group { position: relative; margin: 0; }
 
