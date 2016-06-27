@@ -1238,6 +1238,9 @@ header#header .weather-text { display: none; }
 
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 12px; margin-top: 12px; }
 
+.home article.post-news a:visited .post-title { color: #7E57C2; }
+.home article.post-news a:visited .post-description { color: #666; }
+
 .home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
 
