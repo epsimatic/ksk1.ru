@@ -5624,14 +5624,16 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 .datetimepicker table tr td.active.disabled.active:hover { background: #FFE700; color: #222; }
 
 .datetimepicker .datetimepicker-days td, 
-.datetimepicker .datetimepicker-days th { width: 35px; }
+.datetimepicker .datetimepicker-days th { width: 40px; }
 
+.datetimepicker .datetimepicker-minutes td,
+.datetimepicker .datetimepicker-minutes th,
 .datetimepicker .datetimepicker-hours td, 
-.datetimepicker .datetimepicker-hours th { width: 65px; }
+.datetimepicker .datetimepicker-hours th { width: 94px; }
 
 .datetimepicker .datetimepicker-days span,
 .datetimepicker .datetimepicker-hours span,
-.datetimepicker .datetimepicker-minutes span { height: 28px; line-height: 28px; }
+.datetimepicker .datetimepicker-minutes span { height: 30px !important; line-height: 30px !important; }
 
 .datetimepicker table tr td span { font-size: 16px; }
 
