@@ -3154,7 +3154,7 @@ a.super:focus {background-color: #FEF01C;}
 
 .ob-pricing-table .panel-pricing-container .popover img { max-width: 150px; }
 
-.site-ob .modal-dialog , .news-old .modal-dialog, .single-company .modal-dialog{ margin-top: 60px; }
+.site-ob .modal-dialog , .news-old .modal-dialog { margin-top: 60px; }
 
 .ob-paid-options { margin-bottom: 30px; }
 
@@ -3226,6 +3226,7 @@ a.super:focus {background-color: #FEF01C;}
     .ob-paid-options > .row:first-child { display: table; width: 100%; }
     .ob-paid-options > .row:first-child > * { display: table-cell; }
     .ob-paid-options .btn-lift-up { display: block; float: none; min-height: 87px; }
+    .single-company .modal-dialog {margin-top: 60px;}
 }
 
 @media (min-width: 1200px) {
