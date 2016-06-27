@@ -626,13 +626,22 @@ a.list-group-item:focus { background-color: #f8f8f8; }
 
 .btn-action { color: #fff; background-color: #00D964; border-color: #00D964; }
 
-.btn-action .caret {border-top-color: #fff;}
+.btn-action-hollow { background-color: #fff; color: #00D964; border-color: #00D964; }
+
+.btn-action .caret { border-top-color: #fff; }
+
+.btn-action-hollow .caret { border-top-color: #00D964; }
 
 .btn-action:hover,
 .btn-action:focus,
 .btn-action:active,
 .btn-action.active,
-.open .dropdown-toggle.btn-action {color: #fff; background-color: #00e676; border-color: #00e676;}
+.btn-action-hollow:hover,
+.btn-action-hollow:focus,
+.btn-action-hollow:active,
+.btn-action-hollow.active,
+.open .dropdown-toggle.btn-action-hollow,
+.open .dropdown-toggle.btn-action { color: #fff; background-color: #00e676; border-color: #00e676; }
 
 .btn-action .label {background-color: #fff; color: #00D964; margin-left: 5px; padding: 0.2em 0.6em 0.15em;}
 
@@ -5139,6 +5148,8 @@ footer.info a,
 footer.info .our-projects,
 footer.wide-footer a,
 footer.wide-footer ul.contacts > li { transition: background-color 0.1s ease 0s; }
+
+footer.info a.btn-action-hollow { transition: none; }
 
 footer.wide-footer ul.contacts a { display: block; }
 
