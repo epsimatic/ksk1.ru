@@ -626,7 +626,7 @@ a.list-group-item:focus { background-color: #f8f8f8; }
 
 .btn-action { color: #fff; background-color: #00D964; border-color: #00D964; }
 
-.btn-action-hollow { background-color: #fff; color: #00D964; border-color: #00D964; }
+.btn-action-hollow { background-color: #fff; color: #00D964 !important; border-color: #00D964; }
 
 .btn-action .caret { border-top-color: #fff; }
 
@@ -641,7 +641,7 @@ a.list-group-item:focus { background-color: #f8f8f8; }
 .btn-action-hollow:active,
 .btn-action-hollow.active,
 .open .dropdown-toggle.btn-action-hollow,
-.open .dropdown-toggle.btn-action { color: #fff; background-color: #00e676; border-color: #00e676; }
+.open .dropdown-toggle.btn-action { color: #fff !important; background-color: #00e676; border-color: #00e676; }
 
 .btn-action .label {background-color: #fff; color: #00D964; margin-left: 5px; padding: 0.2em 0.6em 0.15em;}
 
@@ -1787,6 +1787,21 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .sidebar .panel-link-with-icon .panel-icon-container { height: 70px; width: 80px; }
 
 .panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
+
+body.cat .sidebar .panel-link-cat,
+body.single-company .sidebar .panel-link-cat,
+body.page-id-17810 .sidebar .panel-link-add-company,
+body.page-id-8356 .sidebar .panel-link-add-event,
+body.page-id-31611 .sidebar .panel-link-past-events,
+body.tax-movie .sidebar .panel-link-agenda,
+body.single-event .sidebar .panel-link-agenda,
+body.agenda .sidebar .panel-link-agenda,
+body.page-map .sidebar .panel-link-map,
+body.page-id-33969 .sidebar .panel-link-add-address,
+body.page-template-page-custom-transport .sidebar .panel-link-transport,
+body.page-id-33971 .sidebar .panel-link-edit-transport,
+body.page-id-7433 .sidebar .panel-link-er,
+body.page-id-33973 .sidebar .panel-link-add-er { background-color: #f8f8f8; }
 
 @media (min-width: 786px) {
     .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
