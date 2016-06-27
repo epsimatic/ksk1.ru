@@ -1779,8 +1779,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-link-with-icon a.panel-heading { background-color: #fff !important; display: table; width: 100%; padding: 0 !important; }
 
-.panel-link-with-icon a.panel-heading:hover,
-.panel-link-with-icon a.panel-heading:focus { background-color: #f0f0f0 !important; text-decoration: none; }
+.sidebar .panel-link-with-icon a.panel-heading:hover,
+.sidebar .panel-link-with-icon a.panel-heading:focus { background-color: #f0f0f0 !important; text-decoration: none; }
 
 .panel-link-with-icon .panel-icon-container { display: table-cell; }
 
