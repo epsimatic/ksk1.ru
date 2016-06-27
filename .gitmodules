@@ -67,9 +67,6 @@
 [submodule "vendor/bootstrap"]
 	path = vendor/bootstrap
 	url = https://github.com/twbs/bootstrap.git
-[submodule "/vendor/bootstrap-datetimepicker"]
+[submodule "vendor/bootstrap-datetimepicker"]
 	path = vendor/bootstrap-datetimepicker
-	url = https://github.com/smalot/bootstrap-datetimepicker
-[submodule "bootstrap-datetimepicker"]
-	path = bootstrap-datetimepicker
-	url = git://github.com/Eonasdan/bootstrap-datetimepicker.git
+	url = git://github.com/smalot/bootstrap-datetimepicker.git
