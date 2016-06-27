@@ -3699,6 +3699,8 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .panel-default.panel-schedule .panel-heading .vehicle-type > img { width: 100%; }
 
+.panel-default.panel-schedule .panel-collapse { font-size: 14px; }
+
 .panel-default.panel-schedule .route-name { padding: 0 15px; }
 
 .panel-schedule a.collapsed .time-interval:after { color: #bbb; }
