@@ -2278,7 +2278,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 /*Оформление блока "поделиться" от Яндекса*/
 .post-info-share { text-align: center;}
 
-.post-info-share a { color: #2979ff; border-bottom: none; text-decoration: none; }
+.post-info-share a { color: #2979ff; border-bottom: none !important; text-decoration: none; }
 
 .post-info-share a:before { content: ""; font-family: FontAwesome; padding-right: 5px; }
 
