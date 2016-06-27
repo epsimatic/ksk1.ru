@@ -5612,7 +5612,26 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 .services-content section.taxi-section .taxi-form-wrap .form-submit:hover,
 .services-content section.taxi-section .taxi-form-wrap .form-submit:focus { background-color: #222; }
 
-.datetimepicker-wrap { position: relative; }
+.datetimepicker-wrap { position: relative; left: 12px; top: -5px; }
+
+.datetimepicker table tr td span.active, 
+.datetimepicker table tr td span.active:hover, 
+.datetimepicker table tr td span.active.disabled, 
+.datetimepicker table tr td span.active.disabled:hover { background: #FFE700; }
+
+.datetimepicker .datetimepicker-days td, 
+.datetimepicker .datetimepicker-days th { width: 35px; }
+
+.datetimepicker .datetimepicker-hours td, 
+.datetimepicker .datetimepicker-hours th { width: 65px; }
+
+.datetimepicker .datetimepicker-days span,
+.datetimepicker .datetimepicker-hours span,
+.datetimepicker .datetimepicker-minutes span { height: 28px; line-height: 28px; }
+
+.datetimepicker table tr td span { font-size: 16px; }
+
+.datetimepicker .datetimepicker-hours span { line-height: 28px; height: 28px; }
 
 .services-content .form-wrap .form-group { position: relative; margin: 0; }
 
