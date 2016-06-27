@@ -2939,7 +2939,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 
 .ob-list article.ob { padding: 13.5px 15px; margin-bottom: 5px; display: table; width: 100%; }
 
-.ob-large-thumbs article.ob { -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; background-color: #eceff1; padding: 0; border-bottom: 1px solid #e9e9e9; }
+.ob-large-thumbs article.ob { -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; background-color: #fff; padding: 0; border-bottom: 5px solid #f0f0f0; }
 
 article.ob .site-link { border-bottom: 1px solid; padding: 0; margin-top: 12px; }
 
@@ -2951,7 +2951,7 @@ article.ob .social-item { opacity: .5; position: relative; top: 10px; padding: 0
 .ob-list article.ob:focus { background-color: #f8f8f8; }
 
 .ob-large-thumbs article.ob:hover,
-.ob-large-thumbs article.ob:focus { background-color: #f5f8fa; box-shadow: 0 0 3px rgba(0, 0, 0, 0.09); }
+.ob-large-thumbs article.ob:focus { background-color: #f0f0f0; box-shadow: 0 0 3px rgba(0, 0, 0, 0.09); }
 
 article.ob .ob-text-group { color: #333; margin: 0; line-height: 24px; }
 
