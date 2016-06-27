@@ -1788,20 +1788,20 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .panel-link-with-icon .panel-icon { height: 100%; padding: 10px; width: auto !important; }
 
-body.cat .sidebar .panel-link-cat,
-body.single-company .sidebar .panel-link-cat,
-body.page-id-17810 .sidebar .panel-link-add-company,
-body.page-id-8356 .sidebar .panel-link-add-event,
-body.page-id-31611 .sidebar .panel-link-past-events,
-body.tax-movie .sidebar .panel-link-agenda,
-body.single-event .sidebar .panel-link-agenda,
-body.agenda .sidebar .panel-link-agenda,
-body.page-map .sidebar .panel-link-map,
-body.page-id-33969 .sidebar .panel-link-add-address,
-body.page-template-page-custom-transport .sidebar .panel-link-transport,
-body.page-id-33971 .sidebar .panel-link-edit-transport,
-body.page-id-7433 .sidebar .panel-link-er,
-body.page-id-33973 .sidebar .panel-link-add-er { background-color: #f8f8f8; }
+body.cat .sidebar .panel-link-cat a,
+body.single-company .sidebar .panel-link-cat a,
+body.page-id-17810 .sidebar .panel-link-add-company a,
+body.page-id-8356 .sidebar .panel-link-add-event a,
+body.page-id-31611 .sidebar .panel-link-past-events a,
+body.tax-movie .sidebar .panel-link-agenda a,
+body.single-event .sidebar .panel-link-agenda a,
+body.agenda .sidebar .panel-link-agenda a,
+body.page-map .sidebar .panel-link-map a,
+body.page-id-33969 .sidebar .panel-link-add-address a,
+body.page-template-page-custom-transport .sidebar .panel-link-transport a,
+body.page-id-33971 .sidebar .panel-link-edit-transport a,
+body.page-id-7433 .sidebar .panel-link-er a,
+body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !important; }
 
 @media (min-width: 786px) {
     .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
