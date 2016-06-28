@@ -4607,6 +4607,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .event-date { color: gray; margin-right: 10px; }
 
+.event-date .past-event { background-color: #bbb; border-radius: 3px; color: #fff; font-size: 14px; font-weight: 600; margin-left: 9px; padding: 2px 10px; text-transform: uppercase; }
+
 .event-certification { background-color: gray; color: white; margin-right: 5px; padding: 0 3px; }
 
 .event-header-today { color: #428bca; }
