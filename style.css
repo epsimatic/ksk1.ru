@@ -3463,7 +3463,9 @@ article.company-paid .company-description { color: #222; }
 
 article.company-paid .company-description { overflow: visible; white-space: normal; line-height: 21px; }
 
-body.single-company .mailform-and-button { margin: 48px 0; text-align: center; }
+body.single-company .mailform-and-button { margin: 48px 0 0; text-align: center; }
+
+body.single-company .mailform-and-button .btn { margin-bottom: 24px; }
 
 article.company .fotorama--wp { margin: 0 0 48px; }
 
@@ -3507,7 +3509,9 @@ body.single-company article.company .company-description { color: #222; }
 
 @media (min-width: 992px) {
 
-    body.single-company .mailform-and-button { margin: 54px 0; }
+    body.single-company .mailform-and-button { margin: 54px 0 0; }
+
+    body.single-company .mailform-and-button .btn { margin-bottom: 27px; }
 
     body.cat article.company-paid { padding-bottom: 27px; }
 
