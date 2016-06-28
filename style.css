@@ -4088,7 +4088,7 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 .row-collapsible-kvad, .row-collapsible-kvad td,
 .row-collapsible-kvad, .row-collapsible-kvad td,
 .row-collapsible-kv, .row-collapsible-kv td,
-.row-collapsible, .row-collapsible td { font-size: 0; height: 0; line-height: 0; margin: 0; padding: 0 !important; visibility: hidden; transition: visibility .6s ease-out, padding .6s ease-out, font-size .6s ease-out; }
+.row-collapsible, .row-collapsible td { font-size: 0; height: 0; line-height: 0 !important; margin: 0; padding: 0 !important; visibility: hidden; transition: visibility .6s ease-out, padding .6s ease-out, font-size .6s ease-out; }
 
 .row-collapsible-bm.show-extra-rows, .row-collapsible-bm.show-extra-rows td,
 .row-collapsible-kvad.show-extra-rows, .row-collapsible-kvad.show-extra-rows td,
