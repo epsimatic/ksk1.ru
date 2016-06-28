@@ -910,6 +910,7 @@ body.ob     .cond-active.cond-active-ob,
 /* <editor-fold desc="Реклама"> */
 .yummies { max-width: 100%; height: auto; margin-bottom: 24px !important; width: 100%; }
 .site-ob .sidebar .yummies { margin-bottom: 12px !important; }
+.site-ob .sidebar .visible-sm-12 { padding: 0 15px; }
 
 @media (min-width: 1200px) {
     .yummies { margin-bottom: 27px !important; }
