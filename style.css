@@ -538,16 +538,7 @@ body.admin-bar .menu-main-services { display: block !important; }
 .table tfoot > tr > th,
 .table thead > tr > td,
 .table tbody > tr > td,
-.table tfoot > tr > td { padding: 8px; line-height: 24px; vertical-align: top; border-top: 0;}
-
-@media (min-width: 992px) {
-    .table thead > tr > th,
-    .table tbody > tr > th,
-    .table tfoot > tr > th,
-    .table thead > tr > td,
-    .table tbody > tr > td,
-    .table tfoot > tr > td { line-height: 27px; }
-}
+.table tfoot > tr > td { padding: 8px; vertical-align: top; border-top: 0;}
 
 /*для таблицы кноафишы в taxonomy-movie включим border бутстроповский*/
 .table-movie-sessions td { border-top: 1px solid #ddd !important; }
@@ -4088,19 +4079,12 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 .row-collapsible-kvad, .row-collapsible-kvad td,
 .row-collapsible-kvad, .row-collapsible-kvad td,
 .row-collapsible-kv, .row-collapsible-kv td,
-.row-collapsible, .row-collapsible td { font-size: 0; height: 0; line-height: 0 !important; margin: 0; padding: 0 !important; visibility: hidden; transition: visibility .6s ease-out, padding .6s ease-out, font-size .6s ease-out; }
+.row-collapsible, .row-collapsible td { font-size: 0; height: 0; line-height: 0; margin: 0; padding: 0 !important; visibility: hidden; transition: visibility .6s ease-out, padding .6s ease-out, font-size .6s ease-out; }
 
 .row-collapsible-bm.show-extra-rows, .row-collapsible-bm.show-extra-rows td,
 .row-collapsible-kvad.show-extra-rows, .row-collapsible-kvad.show-extra-rows td,
 .row-collapsible-kv.show-extra-rows, .row-collapsible-kv.show-extra-rows td,
-.row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { padding: 8px !important; visibility: visible; font-size: 14px; line-height: 24px !important; }
-
-@media (min-width: 992px) {
-    .row-collapsible-bm.show-extra-rows, .row-collapsible-bm.show-extra-rows td,
-    .row-collapsible-kvad.show-extra-rows, .row-collapsible-kvad.show-extra-rows td,
-    .row-collapsible-kv.show-extra-rows, .row-collapsible-kv.show-extra-rows td,
-    .row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { line-height: 27px !important; }
-}
+.row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { padding: 8px !important; visibility: visible; font-size: 14px; }
 
 .site-services .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td,
 .site-rk .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td {background-color: #f4f9fe;}
