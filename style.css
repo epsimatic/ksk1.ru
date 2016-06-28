@@ -4436,6 +4436,14 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 
 /* <editor-fold desc="Навигация по разделам Tocify"> */
 /* The Table of Contents container element */
+.site-services .btn-scroll-up,
+.site-rk .btn-scroll-up { display: none; }
+
+@media (min-width: 992px) {
+    .site-services .btn-scroll-up,
+    .site-rk .btn-scroll-up { display: block; }
+}
+
 .btn-scroll-up::before,
 .btn-scroll-up::after { content: ""; display: inline-block; font-family: FontAwesome; padding: 0 10px; }
 
