@@ -4093,7 +4093,14 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 .row-collapsible-bm.show-extra-rows, .row-collapsible-bm.show-extra-rows td,
 .row-collapsible-kvad.show-extra-rows, .row-collapsible-kvad.show-extra-rows td,
 .row-collapsible-kv.show-extra-rows, .row-collapsible-kv.show-extra-rows td,
-.row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { padding: 8px !important; visibility: visible; font-size: 14px; }
+.row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { padding: 8px !important; visibility: visible; font-size: 14px; line-height: 24px !important; }
+
+@media (min-width: 992px) {
+    .row-collapsible-bm.show-extra-rows, .row-collapsible-bm.show-extra-rows td,
+    .row-collapsible-kvad.show-extra-rows, .row-collapsible-kvad.show-extra-rows td,
+    .row-collapsible-kv.show-extra-rows, .row-collapsible-kv.show-extra-rows td,
+    .row-collapsible.show-extra-rows, .row-collapsible.show-extra-rows td { line-height: 27px !important; }
+}
 
 .site-services .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td,
 .site-rk .table-striped > tbody > tr.row-collapsible:nth-child(odd) > td {background-color: #f4f9fe;}
