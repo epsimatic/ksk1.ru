@@ -1696,6 +1696,12 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments .comment-rating.comment-negative { color: #f44336; }
 
 .panel-comments .comment-wrap { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.panel-comments .comment-wrap::before { color: #999; display: inline; font-family: FontAwesome; position: relative; font-weight: 400; }
+
+.panel-comments .type-event .comment-wrap::before { content: "";  font-size: 17px; line-height: 14px; margin-right: 2px; }
+
+.panel-comments .type-company .comment-wrap::before { content: ""; margin-left: 2px; margin-right: 2px; top: 2px; font-size: 18px; }
 /* </editor-fold> */
 
 /*Панель «Мы в соцсетях»*/
@@ -6647,7 +6653,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-title { margin: 0 0 10px; font-size: 14px; overflow: hidden; white-space: normal; }
 
-    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; line-height: 20px; max-height: 46px; }
+    header.wide-header .news-main .post-news .post-title { float: right; width: 56%; line-height: 20px; max-height: 42px; }
 
     header.wide-header .news-list .post-news .post-title { line-height: 18px; margin-bottom: 11px; max-height: 36px; }
 
