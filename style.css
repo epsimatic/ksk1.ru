@@ -4598,6 +4598,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 /* Оформление списка событий */
 .events { padding: 0 15px; }
 
+.single-event article.event .certification { background-color: #ff5855; border-radius: 3px; color: #fff; font-weight: 400; margin-left: 10px; padding: 3px 8px; position: relative; font-size: 14px;    top: -2px; }
+
 .movie-poster img { max-height: 123px; }
 
 .event-brief img { height: auto; }
