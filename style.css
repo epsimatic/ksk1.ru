@@ -1843,10 +1843,11 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 .post-info-views {white-space: nowrap;}
 
-.post-event .post-info-views { color: #666; display: inline; font-size: 12px; font-weight: 400; margin-left: 7px; position: relative; top: -1px; }
+.post-event .post-views { color: #666; font-size: 12px; }
 
 .post-event .post-comment { color: #666; display: inline-block; font-size: 12px; margin-left: 0; border-bottom: 1px dotted transparent; line-height: 22.652px; }
 
+.post-event .post-views .fa-eye,
 .post-event .post-comment .fa-comment-o { color: #57346b; }
 
 .post-event .post-comment:hover,
@@ -4646,7 +4647,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .events .post-event .post-title a:hover,
 .events .post-event .post-title a:focus { color: #0277bd; }
 
-.events .label { font-weight: 400; color: #999; line-height: 22.652px; padding: 0 3px; vertical-align: bottom; position: relative; top: -1px; font-size: 11px; display: inline-block; }
+.events .label { font-weight: 400; color: #999; line-height: 22.652px; padding: 0 3px; vertical-align: bottom; position: relative; top: 1px; font-size: 11px; display: inline-block; }
 
 .events .label.active { opacity: .5; }
 
