@@ -4694,7 +4694,7 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 .events .post-event.has-post-thumbnail .post-description { display: inline; position: relative; }
 
-.single-event article.event { line-height: 1.618; font-size: 16px; padding: 0 30px 24px; margin-bottom: 48px; }
+.single-event article.event { line-height: 1.618; font-size: 16px; padding: 0 15px 24px; margin-bottom: 48px; }
 
 .single-event article.event p { margin-bottom: 24px; }
 
