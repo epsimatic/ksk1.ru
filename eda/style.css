@@ -960,6 +960,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 
     .dishes-cat .btn-collapse { margin: 0; }
+
+    .modal-open #container-id { width: 750px; }
 }
 
 /* Стили для размера -md- */
@@ -1087,6 +1089,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .item-description p { padding: 0; margin: 0 }
 
     .dishes-cat .btn-collapse { margin: 0 -10px; width: 960px; }
+
+    .modal-open #container-id { width: 970px; }
 }
 
 /* Стили для размера -lg- */
@@ -1135,6 +1139,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .order-controls .add_to_cart_button { margin: 0 auto; }
 
     .dishes-cat .btn-collapse { width: 1160px; }
+
+    .modal-open #container-id { width: 1170px; }
 }
 /* с сайта eda style.css*/
 .products .wc-forward { display: none; }
