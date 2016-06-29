@@ -3435,7 +3435,12 @@ article.company .company-meta-item { color: #222; line-height: 24px; margin: 12p
 
 article.company .fa { color: #bbb; }
 
-article.company .company-send-message { padding: 0; color: #666; }
+article.company .company-send-message { padding: 0; display: block; background-color: transparent; font-size: 16px; margin-bottom: 24px; }
+
+article.company .company-send-message:hover,
+article.company .company-send-message:focus { box-shadow: none; border-bottom: 1px solid #bbb; color: #999; }
+
+article.company .company-send-message + .btn-link { margin-bottom: 24px; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
 
@@ -3533,6 +3538,8 @@ body.single-company article.company .company-description { color: #222; }
 
 @media (min-width: 992px) {
 
+    article.company .company-meta-item { line-height: 27px; margin: 13.5px 0; }
+
     body.single-company .mailform-and-button { margin: 54px 0 0; }
 
     body.single-company .mailform-and-button .btn { margin-bottom: 27px; }
@@ -3559,6 +3566,10 @@ body.single-company article.company .company-description { color: #222; }
 
     .single-company article.company .company-address,
     .single-company article.company .company-phone { margin-bottom: 13.5px; }
+
+    article.company .company-send-message { margin-bottom: 27px; }
+
+    article.company .company-send-message + .btn-link { margin-bottom: 27px; }
 }
 
 /*Панель «Экстренные телефоны»*/
