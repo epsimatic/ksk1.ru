@@ -3430,6 +3430,7 @@ article.company h2.fotorama-heading { margin-top: 36px; margin-bottom: 12px; }
 
 article.company .company-meta-item { color: #222; line-height: 24px; margin: 12px 0; padding: 0; }
 
+.single-company article.company .company-address,
 .single-company article.company .company-phone { margin-bottom: 12px; }
 
 article.company .fa { color: #bbb; }
@@ -3555,6 +3556,8 @@ body.single-company article.company .company-description { color: #222; }
     body.single-company article.company h1.company-name { font-size: 27px; margin-top: 27px; line-height: 27px; margin-bottom: 13.5px; }
 
     .single-company article.company img { margin-bottom: 27px; margin-top: 27px; }
+
+    .single-company article.company .company-address,
     .single-company article.company .company-phone { margin-bottom: 13.5px; }
 }
 
