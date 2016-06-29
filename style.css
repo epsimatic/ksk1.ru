@@ -5622,16 +5622,20 @@ body.page-template-page-custom-taxi { background-color: #000; }
 
 .services-content footer.service-footer .btn-hollow.btn-block { display: block; }
 
+.services-content footer.info-footer { background-color: #222; }
+
+.services-content footer.info-footer .btn-link { color: #999; font-size: 12px; }
+
 footer.service-footer span.social-title { color: #fff; margin-right: 25px; }
 
 footer.service-footer a { display: inline-block; }
 
-footer.service-footer a > .fa { color: #fff; line-height: 50px; padding: 0 15px; font-size: 30px; margin-left: 10px; transition: color .25s ease 0s }
+footer.service-footer a > .fa { color: #fff; line-height: 50px; padding: 0 15px; font-size: 30px; margin-left: 10px; transition: color .25s ease 0s; }
 
 footer.service-footer a:hover > .fa,
 footer.service-footer a:focus > .fa { color: #FFE700; }
 
-.admin-bar .snap-content .services-content > .container { margin-top: 32pxs; }
+.admin-bar .snap-content .services-content > .container { margin-top: 32px; }
 
 .services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
 
