@@ -1038,6 +1038,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish .order-controls .quantity { width: 50px; }
 
+
+
     .dishes .dish .order-controls .qty { width: 30px;}
 
     .dishes.dishes-col-6 .dish .order-controls .quantity { width: 60px; }
@@ -1078,7 +1080,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 120px; }
 
-    .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px; }
+    .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px !important; }
 
     .dishes.dishes-col-6 .dish-container.variable .item-description p { padding: 0; margin: 0 }
 
