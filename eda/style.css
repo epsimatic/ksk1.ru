@@ -432,6 +432,13 @@ nav.navbar { margin: 0 -10px !important; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
 
+.dish .price-wrap .variations,
+.dishes .dish .order-controls .cart { margin-bottom: 0 !important; }
+
+.dishes .dish .quantity { float: none !important; margin: 0 auto 10px !important; }
+
+.dishes .dish .button { float: none !important; }
+
 .dishes .dish .order-controls .order-row {
     display: -webkit-box;
     display: -webkit-flex;
