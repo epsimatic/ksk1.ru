@@ -6776,9 +6776,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-shop .container .shop-list a { display: block; padding: 6px 4px; text-align: center; }
 
-    header.wide-header .menu-main-shop .container .shop-list a:hover,
-    header.wide-header .menu-main-shop .container .shop-list a:focus { background-color: #f6f6f6; }
-
     header.wide-header .menu-main-shop .container .shop-list a > img { height: 87px; }
 
 
@@ -6794,6 +6791,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-info .submenu a { display: block; padding: 14px 0; width: 100%; }
 
+    header.wide-header .menu-main-eda .stores-group > a:hover,
+    header.wide-header .menu-main-eda .stores-group > a:focus,
+    header.wide-header .menu-main-shop .shop-list a:hover,
+    header.wide-header .menu-main-shop .shop-list a:focus,
     header.wide-header .posrednik-link-wrap a:hover,
     header.wide-header .posrednik-link-wrap a:focus,
     header.wide-header .menu-main-info .submenu a:hover,
@@ -6840,10 +6841,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-eda .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
 
     header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
-
-    header.wide-header .menu-main-eda .stores-group > a:hover,
-    header.wide-header .menu-main-eda .stores-group > a:focus { background-color: #f7f7f7; }
-    
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
