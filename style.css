@@ -3456,6 +3456,8 @@ article.company .company-send-message { padding: 0; display: block; background-c
 article.company .company-send-message:hover,
 article.company .company-send-message:focus { box-shadow: none; border-bottom: 1px solid #bbb; color: #999; }
 
+article.company.company-brief .company-send-message { display: inline-block; margin-bottom: 0 !important; font-size: 14px; }
+
 article.company .company-send-message + .btn-link { margin-bottom: 24px; }
 
 article.company .legal-name { color: #999; font-size: 12px; margin-bottom: 24px; }
