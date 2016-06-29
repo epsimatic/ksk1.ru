@@ -792,6 +792,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .weight { display: inline-block; background-color: #eceff1; padding: 3px 6px; border-radius: 3px }
 
+.modal-open #container-id { top: 0; left: 0; width: auto; }
+
 .panel.panel-promo { margin-top: 20px; border-top: 3px dashed #ffebdc; box-shadow: none; background-color: transparent; }
 
 .panel-promo .panel-heading { padding-top: 15px; background-color: transparent; }
