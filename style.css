@@ -1180,6 +1180,8 @@ header#header .weather-text { display: none; }
 
 .sidebar .panel.panel-action .panel-heading { background-color: #00d964; }
 
+.panel-radio-news .list-group { padding-bottom: 0; }
+
 .home .panel-social .panel-heading h2 { text-align: left; }
 
 .panel-news .post-news figure.post-thumb { width: 160px; }
