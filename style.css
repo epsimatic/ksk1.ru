@@ -1965,7 +1965,7 @@ article.post-custom .category-name a:visited:hover,
 .single-post .main-content article.post-news .category-name a:visited:focus { color: #333; }
 
 article.post-custom .category-name .post-meta,
-.single-post .main-content article.post-news .category-name .post-meta { display: block; font-size: 12px; font-weight: 400; text-transform: none; }
+.single-post .main-content article.post-news .category-name .post-meta { display: inline; font-size: 12px; font-weight: 400; text-transform: none; }
 
 article.post-custom .post-meta,
 article.post-custom .meta,
@@ -2386,9 +2386,6 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 
 @media (min-width: 480px) { 
-    article.post-custom .category-name .post-meta,
-    .single-post .main-content article.post-news .category-name .post-meta { display: inline; }
-
     .post-info-share-evc > * { display: inline-block; }
 }
 
