@@ -4061,7 +4061,7 @@ body.site-services .page-header,
 body.site-rk .page-header { margin: 0 !important; padding: 0; }
 
 body.site-services .page-header > h1.page-title,
-body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-weight: 700; letter-spacing: 0.0125em; line-height: 24px; margin-bottom: 24px !important; }
+body.site-rk .page-header > h1.page-title { color: #222; font-size: 24px; font-weight: 700; letter-spacing: 0.0125em; line-height: 24px; margin: 24px 0 !important; }
 
 body.site-rk .lead { color: #F44336; line-height: 24px; margin-bottom: 24px; }
 
@@ -4185,7 +4185,7 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 @media (min-width: 992px) {
 
     body.site-services .page-header > h1.page-title,
-    body.site-rk .page-header > h1.page-title { font-size: 30px; line-height: 27px; margin: 13.5px 0 27px !important; }
+    body.site-rk .page-header > h1.page-title { font-size: 30px; line-height: 27px; margin: 27px 0 !important; }
 
     body.site-rk .lead { font-size: 18px; line-height: 27px; }
 
