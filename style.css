@@ -5661,7 +5661,7 @@ body.taxi.admin-bar .services-content .services-header .logo { margin-top: 44px;
 
 .services-content .services-header .page-title-placeholder { position: absolute; top: 25px; width: 100%; text-align: center; }
 
-.services-content .services-header .page-description { line-height: 24px; font-size: 16px; color: #000; margin: 36px 0 0; }
+.services-content .services-header .page-description { line-height: 24px; font-size: 16px; color: #000; margin: 0; }
 
 .services-content .services-header .page-title { font-weight: 700; line-height: 24px; font-size: 24px; color: #000; margin: 40px 0 0; }
 
@@ -5884,6 +5884,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .services-content section.taxi-section .alert-dismissible .close { top: 1px; }
 
 @media (min-width: 768px) {
+    .services-content .services-header .page-title { margin: 20px 0 0; }
+
     body.admin-bar .services-content .services-header .logo { top: -20px; }
 
     body.taxi header.services-header .logo-placeholder > a::before { font-size: 60px; top: 38px; }
