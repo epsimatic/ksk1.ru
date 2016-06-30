@@ -1232,6 +1232,19 @@ header#header .weather-text { display: none; }
 .archive article.post-news .post-actions .fa,
 .home article.post-news .post-actions .fa { color: #57346B; }
 
+.post-custom .btn-more { border-bottom: medium none; color: #999; display: inline; font-size: 22px; line-height: 24px; margin-left: 10px; padding: 0; position: relative; top: -2px; }
+
+.post-custom .btn-more:visited { color: #666; }
+
+.post-custom .btn-more:hover,
+.post-custom .btn-more:focus,
+.post-custom .btn-more:visited:hover,
+.post-custom .btn-more:visited:focus { color: #222; }
+
+@media (min-width: 992px) { 
+    .post-custom .btn-more { line-height: 27px; }
+}
+
 .archive article.post-news .post-actions a:hover .fa,
 .archive article.post-news .post-actions a:focus .fa,
 .home article.post-news .post-actions a:hover .fa,
