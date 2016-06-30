@@ -5682,7 +5682,7 @@ body.taxi.admin-bar .services-content .services-header .logo { margin-top: 44px;
 
 .services-content .services-header .page-title { font-weight: 700; line-height: 24px; font-size: 24px; color: #000; margin: 40px 0 0; }
 
-body.taxi .services-content .services-header .page-title { font-size: 30px; }
+body.taxi .services-content .services-header .page-title { font-size: 30px; margin: 0; }
 
 .services-content .services-info-containter { padding: 24px 0; }
 
