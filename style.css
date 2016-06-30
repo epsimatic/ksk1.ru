@@ -5958,7 +5958,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.cargo-section .container { height: 100%; }
 
-    .services-content section.cargo-section .cargo-form-wrap { position: absolute; width: 100%; bottom: 9px; text-align: center; margin: 0; }
+    .services-content section.cargo-section .cargo-form-wrap { float: right; }
 
     .services-content section.cargo-section .section-info-wrap h2,
     .services-content section.workers-section .section-info-wrap h2 { font-size: 48px; margin-top: 48px; }
