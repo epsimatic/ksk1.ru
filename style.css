@@ -5596,9 +5596,13 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 
 /* </editor-fold> */
 
-/*Стили для страниц такси 7-99-99 и городской службы 7-98-05*/
+/*Стили для страниц такси 7-99-99 и городской службы 7-98-15*/
+body.page-template-page-custom-workers,
+body.page-template-page-custom-cargo-delivery,
 body.page-template-page-custom-taxi { background-color: #000; }
 
+body.page-template-page-custom-workers .snap-content,
+body.page-template-page-custom-cargo-delivery .snap-content,
 .page-template-page-custom-taxi .snap-content { background-color: #000; }
 
 .services-content.main-content { background-color: #fff; }
@@ -5804,6 +5808,9 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .services-content section.workers-section .section-info-wrap { color: #fff; }
 
+.services-content section.workers-section .section-info-wrap,
+.services-content section.cargo-section .section-info-wrap { text-align: center; }
+
 .services-content section.workers-section .bg-image::before { background-color: rgba(0, 0, 0, 0.5); content: " "; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
 .services-content section.cargo-section .section-info-wrap h2,
@@ -5937,6 +5944,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content .service-section.cargo-section { height: 450px; }
 
     .services-content .service-section.workers-section { height: 440px; }
+
+    .services-content section.workers-section .section-info-wrap,
+    .services-content section.cargo-section .section-info-wrap { text-align: left; float: left; width: 60%; }
 
     .services-content .form-wrap .form-control { padding: 6px 12px; line-height: 24px; height: 36px; font-size: 14px; }
 
