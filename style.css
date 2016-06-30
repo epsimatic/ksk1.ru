@@ -5881,9 +5881,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
-.services-content .social-links { padding-top: 24px; }
-
-.services-content section.taxi-section .social-links { padding: 0; margin-bottom: 24px; }
+.services-content section.taxi-section .social-links { margin-bottom: 24px; }
 
 .services-content section.taxi-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
@@ -6008,7 +6006,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content section.taxi-driver-section h4 + ol { padding-left: 0; }
 
     body.taxi .footer-btns-wrap-sm { margin-top: 10px; }
-    .services-content .social-links { padding-top: 12px; }
 
     #taxiReviewsMD { height: 930px; }
 
