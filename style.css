@@ -5609,7 +5609,7 @@ body.page-template-page-custom-cargo-delivery .snap-content,
 
 .services-content .container { background-color: transparent; margin-top: 0 !important; }
 
-.services-content footer.service-footer { line-height: 50px; background-color: #000; padding: 24px 0 12px; }
+.services-content footer.service-footer { line-height: 50px; background-color: #000; padding: 24px 0; }
 
 .services-content footer.service-footer .form-wrap { background-color: #ffe700; padding: 24px 15px; }
 
@@ -6032,7 +6032,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.taxi .modal-dialog { top: 300px; }
 
-    .services-content footer.service-footer { padding: 27px 0 13.5px; }
+    .services-content footer.service-footer { padding: 27px 0; }
 
     .services-content footer.service-footer .form-wrap { padding: 27px 15px; }
 
