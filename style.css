@@ -5637,7 +5637,7 @@ footer.service-footer a:focus > .fa { color: #FFE700; }
 
 .admin-bar .snap-content .services-content > .container { margin-top: 32px; }
 
-.services-content .services-header { background-color: #FFE700; height: 125px; margin-top: -21px; }
+.services-content .services-header { background-color: #FFE700; height: 135px; margin-top: -21px; }
 
 body.taxi .services-content .services-header { height: auto; }
 
@@ -5663,7 +5663,7 @@ body.taxi.admin-bar .services-content .services-header .logo { margin-top: 44px;
 
 .services-content .services-header .page-description { line-height: 24px; font-size: 16px; color: #000; margin: 36px 0 0; }
 
-.services-content .services-header .page-title { font-weight: 700; line-height: 24px; font-size: 24px; color: #000; margin: -6px 0 0; }
+.services-content .services-header .page-title { font-weight: 700; line-height: 24px; font-size: 24px; color: #000; margin: 40px 0 0; }
 
 body.taxi .services-content .services-header .page-title { font-size: 30px; }
 
@@ -5912,7 +5912,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .taxi-section .container { padding: 0 100px; }
 
-    .services-content .services-header .page-description { font-size: 18px; margin: 20px 0 0; }
+    .services-content .services-header .page-description { font-size: 18px; margin: 0; }
 
     .services-content .services-header .page-title { font-size: 36px; }
 
