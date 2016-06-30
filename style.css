@@ -5847,7 +5847,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 .services-content section.cargo-section .form-wrap .btn,
 .services-content section.cargo-section .form-wrap .form-control,
 .services-content section.workers-section .form-wrap .btn,
-.services-content section.workers-section .form-wrap .form-control { height: 60px; border: 3px solid #000; line-height: 24px; padding: 15px 24px; }
+.services-content section.workers-section .form-wrap .form-control { border: 3px solid #000; line-height: 24px; padding: 15px 24px; }
 
 .services-content section.workers-section .bg-image { background-image: url("//ksk1.ru/img/workers-bg.jpg"); }
 
