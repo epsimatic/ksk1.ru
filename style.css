@@ -1879,8 +1879,11 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 .panel-event .list-of-movies .movie-title .certification { color: #F44336; }
 
-.panel-event .list-of-movies .genres,
+.panel-event .list-of-movies .genres { display: inline; }
+
 .panel-event .list-of-movies .genre { line-height: 10px; font-size: 10px; padding-left: 0; display: inline-block; color: #999; }
+
+.panel-event .list-of-movies .comma-separator { display: inline-block; }
 
 .panel-event .list-of-movies .production-flags { display: inline-block; height: 10px; }
 
