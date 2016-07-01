@@ -5966,13 +5966,12 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content .services-info-containter { padding: 60px 0; }
 
     header.wide-header .menu-main-services .service-info-inner,
-    .services-content .service-info-inner { border-radius: 8px; border: 1px solid #fff; padding: 10px 20px; }
+    .services-content .service-info-inner { border: 1px solid #fff; padding: 10px 20px; }
 
     header.wide-header .menu-main-services .service-info-inner:hover,
     header.wide-header .menu-main-services .service-info-inner:focus,
     .services-content .service-info-inner:hover,
-    .services-content .service-info-inner:focus { border-color: #ffd600;
-    transition: border-color .125s ease-in-out 0s; }
+    .services-content .service-info-inner:focus { background-color: #f0f0f0; }
 
     .services-content .app-download-bages > a:first-child { display: block; margin-bottom: 6px; margin-top: 6px; }
 
