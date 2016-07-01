@@ -1851,7 +1851,7 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 /*Виджет Ближайшие события (Афиша)*/
 .panel-event .textwidget { padding: 0 15px 24px; }
 
-.panel-event .events-date { font-size: 14px; }
+.panel-event .events-date { font-size: 14px; margin-top: 24px; }
 
 .panel-event .event { display: block; padding: 6px 0; text-decoration: none; }
 
