@@ -1896,11 +1896,11 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-default ul.most-viewed-list .post-meta { text-align: right; display: block; }
 
 .panel-default ul.most-viewed-list .post-date,
-.panel-default ul.most-viewed-list .postviews-count { font-size: 12px; color: #666; display: inline-block; }
+.panel-default ul.most-viewed-list .postviews-count { font-size: 12px; color: #666; display: inline-block; margin-right: 10px; }
 
 .panel-default ul.most-viewed-list .date::before { content: ""; font-family: FontAwesome; margin-right: 3px; }
 
-.panel-default ul.most-viewed-list .post-title { height: 24px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+.panel-default ul.most-viewed-list .post-title { height: 24px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; font-size: 14px; line-height: 24px; margin: 0; }
 
 .panel-default ul.most-viewed-list .postviews-count::before { color: #57346b; content: ""; font-family: FontAwesome; margin-right: 3px; }
 
