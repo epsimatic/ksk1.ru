@@ -314,10 +314,6 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-footer { padding: 3px 7px; background-color: #f8f8f8; border-top: none; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 
-.panel-footer a {color: #006048;}
-
-.panel-footer a:hover {color: forestgreen; text-decoration: none;}
-
 .panel-footer > .btn:hover {text-decoration: none;}
 
 .panel-footer > .btn-link:hover {text-decoration: none;}
@@ -1866,10 +1862,13 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 .panel-event .event-place { font-size: 10px; margin: 0; }
 
+.panel-event .panel-footer { line-height: 24px; text-align: right; }
+
 @media (min-width: 992px) {
     .panel-event .textwidget { padding-bottom: 27px; }
     .panel-event .events-date { margin-top: 18px; margin-bottom: 9px; line-height: 13.5px; }
     .panel-event .event { padding: 13.5px 15px; }
+    .panel-event .panel-footer { line-height: 27px; }
 }
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
