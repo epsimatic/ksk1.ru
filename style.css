@@ -1377,7 +1377,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .panel-official .post-comment-num { font-weight: 400; }
 
-.panel-official .post-actions { text-align: right; }
+.panel-official .post-actions { text-align: right; display: inline; }
 
 .home .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
