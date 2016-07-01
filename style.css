@@ -4688,7 +4688,9 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-shoutbox > .panel-heading { background: #ff4081 url("//ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
 /* Оформление списка событий */
-#events-start { position: relative; top: -32px; }
+#events-start { position: relative; top: -50px; }
+
+body.admin-bar #events-start { top: -82px; }
 
 .events { padding: 0 15px; }
 
