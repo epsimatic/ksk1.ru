@@ -1309,7 +1309,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
 .home .panel-news article.post-news.post-cat-19 .post-title:after,
-.home .panel-news-list .list > article.post-news.post-cat-19 .post-title:after { background-color: #f44336; border-radius: 3px; color: #fff; content: "Важно"; display: inline; font-size: 17px; font-weight: 400; letter-spacing: 0.05em; margin: 0 9px; padding: 2px 9px; text-transform: uppercase; }
+.home .panel-news-list .list > article.post-news.post-cat-19 .post-title:after { background-color: #f44336Е; border-radius: 3px; color: #fff; content: "Важно"; display: inline; font-size: 17px; font-weight: 400; letter-spacing: 0.05em; margin: 0 9px; padding: 2px 9px; text-transform: uppercase; }
 
 .home .panel-news article.post-cat-368,
 .home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; }
@@ -1327,7 +1327,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .news-old .panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
-.home .sidebar .panel-official .post-title {font-size: 17px; font-weight: 600; margin-bottom: 7px;}
+.sidebar .panel-official .post-title { font-size: 16px; font-weight: 600; margin: 0; line-height: 24px; }
 
 .panel-official article.post { padding: 10px 15px; }
 
@@ -1369,9 +1369,13 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .home .block .vsection .inset {background-color: inherit; cursor: default; float: right; font-size: 80%; font-style: italic; padding-bottom: 1px; padding-left: 3px; padding-top: 1px;}
 
-.home .panel-official .post-text {margin-bottom: 10px;}
+.panel-official .post-text {margin-bottom: 10px;}
 
-.home .panel-official .post-actions { text-align: right; }
+.panel-official article.post-news { padding: 0; }
+
+.panel-official article.post-news a { display: block; padding: 12px 15px; }
+
+.panel-official .post-actions { text-align: right; display: none; }
 
 .home .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
