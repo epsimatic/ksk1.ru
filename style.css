@@ -1868,6 +1868,15 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
     .panel-event .panel-footer { line-height: 27px; }
 }
 
+/*Виджет «Сегодня в кино»*/
+.panel-event .list-of-movies { padding: 12px 15px; }
+
+.panel-event .list-of-movies .movie-brief { min-height: auto; margin-bottom: 24px; }
+
+.panel-event .list-of-movies .movie-title { margin: 0; font-size: 14px; }
+
+.panel-event .list-of-movies .movie-title .certification { color: #F44336; }
+
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info { color: #666; margin-top: 24px; }
 .post-info > * { height: auto; background-color: transparent; }
