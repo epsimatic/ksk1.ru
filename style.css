@@ -1869,7 +1869,7 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 }
 
 /*Виджет «Сегодня в кино»*/
-.panel-event .list-of-movies { padding: 12px 15px; }
+.panel-event .list-of-movies { padding: 12px 15px 0; }
 
 .panel-event .list-of-movies .movie-brief { min-height: auto; margin-bottom: 24px; }
 
@@ -1892,7 +1892,7 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-event .list-of-movies .movie-sessions { font-size: 12px; line-height: 12px; margin-top: 4px; }
 
 @media (min-width: 992px) {
-    .panel-event .list-of-movies { padding: 13.5px 15px; }
+    .panel-event .list-of-movies { padding-top: 13.5px; }
     .panel-event .list-of-movies .movie-brief { margin-bottom: 27px; }
 }
 
