@@ -314,10 +314,6 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
 
 .panel-footer { padding: 3px 7px; background-color: #f8f8f8; border-top: none; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 
-.panel-footer a {color: #006048;}
-
-.panel-footer a:hover {color: forestgreen; text-decoration: none;}
-
 .panel-footer > .btn:hover {text-decoration: none;}
 
 .panel-footer > .btn-link:hover {text-decoration: none;}
@@ -1296,16 +1292,6 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .archive .post img,
 .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
-.home .panel-news-list .list > article.post-cat-8, 
-.home .panel-news-list .list > article.post-cat-7,
-.home .panel-news-list .list > article.post-cat-9,
-.home .panel-news-list .list > article.post-cat-11,
-.home .panel-news-list .list > article.post-cat-12,
-.home .panel-news-list .list > article.post-cat-18,
-.home .panel-news-list .list > article.post-cat-271,
-.home .panel-news-list .list > article.post-cat-318,
-.home .panel-news-list .list > article.post-cat-319 { display: none; }
-
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
 .home .panel-news article.post-news.post-cat-19 .post-title:after,
@@ -1327,7 +1313,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .news-old .panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
-.sidebar .panel-official h1.post-title { font-size: 16px; font-weight: 600; margin: 0; line-height: 24px; display: inline; }
+.sidebar .panel-official h1.post-title { font-size: 14px; font-weight: 600; margin: 0; line-height: 1.618; display: inline; }
 
 .panel-official article.post { padding: 10px 15px; }
 
@@ -1847,6 +1833,61 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 
 .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
+
+/*Виджет Ближайшие события (Афиша)*/
+.panel-event .events-date { font-size: 12px; margin-top: 16px; margin-bottom: 8px; padding: 0 15px; text-transform: uppercase; line-height: 12px; letter-spacing: .025em; font-weight: 700; }
+
+.panel-event .event { display: block; padding: 12px 15px; text-decoration: none; }
+
+.panel-event .event:hover,
+.panel-event .event:focus { background-color: #f0f0f0; }
+
+.panel-event .event-name { font-size: 14px; font-weight: 600; color: #0091ea; margin: 0; }
+
+.panel-event .event-name .age-restriction { color: #f44336; padding-left: 5px; }
+
+.panel-event .event-place::before { content: ""; font-family: FontAwesome; line-height: 1; margin-right: 3px; }
+
+.panel-event .event-place { font-size: 10px; margin: 0; }
+
+.panel-event .panel-footer { line-height: 24px; text-align: right; }
+
+@media (min-width: 992px) {
+    .panel-event .events-date { margin-top: 18px; margin-bottom: 9px; line-height: 13.5px; }
+    .panel-event .event { padding: 13.5px 15px; }
+    .panel-event .panel-footer { line-height: 27px; }
+}
+
+/*Виджет «Сегодня в кино»*/
+.panel-event .list-of-movies { padding: 12px 15px 0; }
+
+.panel-event .list-of-movies .movie-brief { min-height: auto; margin-bottom: 24px; }
+
+.panel-event .list-of-movies .movie-info > a { display: block; }
+
+.panel-event .list-of-movies .movie-title { margin: 0; font-size: 14px; }
+
+.panel-event .list-of-movies .movie-title .certification { color: #F44336; }
+
+.panel-event .list-of-movies .genres { display: inline; }
+
+.panel-event .list-of-movies .genre { line-height: 10px; font-size: 10px; padding-left: 0; display: inline-block; color: #999; }
+
+.panel-event .list-of-movies .comma-separator { display: inline-block; }
+
+.panel-event .list-of-movies .production-flags { display: inline-block; height: 10px; }
+
+.panel-event .list-of-movies .production-flag { height: 10px; display: block; }
+
+.panel-event .list-of-movies .star-rating { margin: 0; }
+
+.panel-event .list-of-movies .movie-price,
+.panel-event .list-of-movies .movie-sessions { font-size: 12px; line-height: 12px; margin-top: 4px; }
+
+@media (min-width: 992px) {
+    .panel-event .list-of-movies { padding-top: 13.5px; }
+    .panel-event .list-of-movies .movie-brief { margin-bottom: 27px; }
+}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info { color: #666; margin-top: 24px; }
@@ -4668,6 +4709,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-shoutbox > .panel-heading { background: #ff4081 url("//ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
 /* Оформление списка событий */
+#events-start { position: relative; top: -74px; }
+
+body.admin-bar #events-start { top: -106px; }
+
 .events { padding: 0 15px; }
 
 .single-event article.event .certification { background-color: #ff5855; border-radius: 3px; color: #fff; font-weight: 400; margin-left: 10px; padding: 3px 8px; position: relative; font-size: 14px; top: -2px; }
@@ -4698,6 +4743,8 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 
 @media (min-width: 992px) {
     .page-id-524 .page-title { font-size: 54px; line-height: 54px; margin: 27px 0; }
+    #events-start { top: -77px; }
+    body.admin-bar #events-start { top: -109px; }
 }
 
 .events h3.events-date { font-size: 17.798px; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700; color: #666; line-height: 22.652px; margin: 45.304px 0 0; padding: 0; }
@@ -5950,13 +5997,12 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content .services-info-containter { padding: 60px 0; }
 
     header.wide-header .menu-main-services .service-info-inner,
-    .services-content .service-info-inner { border-radius: 8px; border: 1px solid #fff; padding: 10px 20px; }
+    .services-content .service-info-inner { border: 1px solid #fff; padding: 10px 20px; }
 
     header.wide-header .menu-main-services .service-info-inner:hover,
     header.wide-header .menu-main-services .service-info-inner:focus,
     .services-content .service-info-inner:hover,
-    .services-content .service-info-inner:focus { border-color: #ffd600;
-    transition: border-color .125s ease-in-out 0s; }
+    .services-content .service-info-inner:focus { background-color: #f0f0f0; }
 
     .services-content .app-download-bages > a:first-child { display: block; margin-bottom: 6px; margin-top: 6px; }
 
