@@ -1845,8 +1845,6 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
 
 /*Виджет Ближайшие события (Афиша)*/
-.panel-event .textwidget { padding-bottom: 24px; }
-
 .panel-event .events-date { font-size: 12px; margin-top: 16px; margin-bottom: 8px; padding: 0 15px; text-transform: uppercase; line-height: 12px; letter-spacing: .025em; font-weight: 700; }
 
 .panel-event .event { display: block; padding: 12px 15px; text-decoration: none; }
@@ -1865,7 +1863,6 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-event .panel-footer { line-height: 24px; text-align: right; }
 
 @media (min-width: 992px) {
-    .panel-event .textwidget { padding-bottom: 27px; }
     .panel-event .events-date { margin-top: 18px; margin-bottom: 9px; line-height: 13.5px; }
     .panel-event .event { padding: 13.5px 15px; }
     .panel-event .panel-footer { line-height: 27px; }
