@@ -1292,6 +1292,8 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .archive .post img,
 .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
 
+.home .panel-news-list .list > article.post-cat-8 { display: none; }
+
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
 .home .panel-news article.post-news.post-cat-19 .post-title:after,
@@ -1888,6 +1890,20 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
     .panel-event .list-of-movies { padding-top: 13.5px; }
     .panel-event .list-of-movies .movie-brief { margin-bottom: 27px; }
 }
+
+.panel-default ul.most-viewed-list > li > a { overflow: visible; white-space: normal; padding: 6px 15px; }
+
+.panel-default ul.most-viewed-list > li > a > span { display: block; }
+
+.panel-default ul.most-viewed-list .postview_day,
+.panel-default ul.most-viewed-list .postview_count { font-size: 12px; color: #666; }
+
+.panel-default ul.most-viewed-list .postview_day::before { content: ""; font-family: FontAwesome; margin-right: 3px; }
+
+.panel-default ul.most-viewed-list .postview_title { height: 24px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.panel-default ul.most-viewed-list .postview_count::before { color: #57346b; content: ""; font-family: FontAwesome; margin-right: 3px; }
+
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info { color: #666; margin-top: 24px; }
