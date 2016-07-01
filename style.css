@@ -1327,7 +1327,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .news-old .panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
-.sidebar .panel-official .post-title { font-size: 16px; font-weight: 600; margin: 0; line-height: 24px; }
+.sidebar .panel-official h1.post-title { font-size: 16px; font-weight: 600; margin: 0; line-height: 24px; display: inline; }
 
 .panel-official article.post { padding: 10px 15px; }
 
@@ -1356,8 +1356,6 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-actions .post-more aside {display: inline-block;}
 
-.sidebar .post-news .post-views { display: none; }
-
 .post-video .post-format:before,
 .post-video .post-more:before {content: "";}
 
@@ -1372,6 +1370,12 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .panel-official .post-text {margin-bottom: 10px;}
 
 .panel-official article.post-news { padding: 12px 15px; }
+
+.panel-official article.post-news > a { display: inline; }
+
+.panel-official article.post-news .post-description { display: none; }
+
+.panel-official .post-comment-num { font-weight: 400; }
 
 .panel-official .post-actions { text-align: right; }
 
