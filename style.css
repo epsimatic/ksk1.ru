@@ -1849,13 +1849,16 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-link-with-icon .panel-title { color: #333; display: table-cell; font-size: 16px; font-weight: 400; line-height: 20px; padding-right: 15px; vertical-align: middle; }
 
 /*Виджет Ближайшие события (Афиша)*/
-.panel-event .textwidget { padding: 0 15px 24px; }
+.panel-event .textwidget { padding-bottom: 24px; }
 
-.panel-event .events-date { font-size: 14px; margin-top: 24px; }
+.panel-event .events-date { font-size: 12px; margin-top: 16px; margin-bottom: 8px; padding: 0 15px; text-transform: uppercase; line-height: 12px; letter-spacing: .025em; font-weight: 700; }
 
-.panel-event .event { display: block; padding: 6px 0; text-decoration: none; }
+.panel-event .event { display: block; padding: 12px 15px; text-decoration: none; }
 
-.panel-event .event-name { font-size: 14px; font-weight: 600; }
+.panel-event .event:hover,
+.panel-event .event:focus { background-color: #f0f0f0; }
+
+.panel-event .event-name { font-size: 14px; font-weight: 600; color: #0091ea; margin: 0; }
 
 .panel-event .event-name .age-restriction { color: #f44336; padding-left: 5px; }
 
@@ -1863,6 +1866,11 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 .panel-event .event-place { font-size: 10px; margin: 0; }
 
+@media (min-width: 992px) {
+    .panel-event .textwidget { padding-bottom: 27px; }
+    .panel-event .events-date { margin-top: 18px; margin-bottom: 9px; line-height: 13.5px; }
+    .panel-event .event { padding: 13.5px 15px; }
+}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info { color: #666; margin-top: 24px; }
