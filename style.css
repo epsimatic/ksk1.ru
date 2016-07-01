@@ -1327,7 +1327,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 .news-old .panel-official .panel-footer,
 .news-old .panel-news-list .panel-footer {padding: 3px 10px 5px; background-color: #ecd8ce;}
 
-.sidebar .panel-official h1.post-title { font-size: 16px; font-weight: 600; margin: 0; line-height: 24px; display: inline; }
+.sidebar .panel-official h1.post-title { font-size: 14px; font-weight: 600; margin: 0; line-height: 1.618; display: inline; }
 
 .panel-official article.post { padding: 10px 15px; }
 
