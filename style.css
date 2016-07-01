@@ -1873,9 +1873,28 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 
 .panel-event .list-of-movies .movie-brief { min-height: auto; margin-bottom: 24px; }
 
+.panel-event .list-of-movies .movie-info > a { display: block; }
+
 .panel-event .list-of-movies .movie-title { margin: 0; font-size: 14px; }
 
 .panel-event .list-of-movies .movie-title .certification { color: #F44336; }
+
+.panel-event .list-of-movies .genres,
+.panel-event .list-of-movies .genre { line-height: 10px; font-size: 10px; padding-left: 0; display: inline-block; color: #999; }
+
+.panel-event .list-of-movies .production-flags { display: inline-block; height: 10px; }
+
+.panel-event .list-of-movies .production-flag { height: 10px; display: block; }
+
+.panel-event .list-of-movies .star-rating { margin: 0; }
+
+.panel-event .list-of-movies .movie-price,
+.panel-event .list-of-movies .movie-sessions { font-size: 12px; line-height: 12px; margin-top: 4px; }
+
+@media (min-width: 992px) {
+    .panel-event .list-of-movies { padding: 13.5em 15px; }
+    .panel-event .list-of-movies .movie-brief { margin-bottom: 27px; }
+}
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
 .post-info { color: #666; margin-top: 24px; }
