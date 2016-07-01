@@ -1371,11 +1371,9 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .panel-official .post-text {margin-bottom: 10px;}
 
-.panel-official article.post-news { padding: 0; }
+.panel-official article.post-news { padding: 12px 15px; }
 
-.panel-official article.post-news a { display: block; padding: 12px 15px; }
-
-.panel-official .post-actions { text-align: right; display: none; }
+.panel-official .post-actions { text-align: right; }
 
 .home .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
