@@ -308,7 +308,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 /* <editor-fold desc="Оформление категорий товаров"> */
 
-.dishes-cat { position: relative; padding-bottom: 10px; }
+.dishes-cat { position: relative; padding-bottom: 10px; margin-top: 30px; }
 
 .dishes-cat .cat-label { position: absolute; left: 10px; top: -8px; width: 41px; }
 
@@ -432,6 +432,13 @@ nav.navbar { margin: 0 -10px !important; }
 
 .dishes .dish .order-controls { padding-bottom: 15px; }
 
+.dish .price-wrap .variations,
+.dishes .dish .order-controls .cart { margin-bottom: 0 !important; }
+
+.dishes .dish .quantity { float: none !important; margin: 0 auto 10px !important; }
+
+.dishes .dish .button { float: none !important; }
+
 .dishes .dish .order-controls .order-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -516,7 +523,7 @@ nav.navbar { margin: 0 -10px !important; }
 
 .site-eda .dmbs-main .woocommerce .content_block { padding: 20px; }
 
-.site-eda .dmbs-main h2.page-header { border-bottom: 2px dashed #ff6347; color: #ff6347; font-size: 25px; font-weight: 700; text-transform: uppercase; padding: 3px 21px 15px; }
+.site-eda .dmbs-main h2.page-header { border-bottom: 2px dashed #ff6347; color: #ff6347; font-size: 25px; font-weight: 700; text-transform: uppercase; padding: 3px 21px 15px; border-top: none; }
 
 .site-eda .checkout { padding: 0 10px; }
 
@@ -785,6 +792,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 .modal .weight { display: inline-block; background-color: #eceff1; padding: 3px 6px; border-radius: 3px }
 
+.modal-open #container-id { top: 0; left: 0; width: auto; }
+
 .panel.panel-promo { margin-top: 20px; border-top: 3px dashed #ffebdc; box-shadow: none; background-color: transparent; }
 
 .panel-promo .panel-heading { padding-top: 15px; background-color: transparent; }
@@ -868,6 +877,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
         justify-content: space-between;
         height: 145px; }
 
+    .dishes .dish .quantity { margin: 0 !important; }
+
     .dishes .dish .order-controls .amount { margin-bottom: 0; }
 
     .dishes .dish .order-controls .order-row {
@@ -892,7 +903,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish .order-controls .amount { margin-bottom: 10px; }
 
-    .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 10px;}
+    .dishes.dishes-col-6 .dish .order-controls .price { padding-left: 10px !important; }
 
     .dishes.dishes-col-6 .order-controls hr { margin-top: 2px; }
 
@@ -949,6 +960,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 
     .dishes-cat .btn-collapse { margin: 0; }
+
+    .modal-open #container-id { width: 750px; }
 }
 
 /* Стили для размера -md- */
@@ -1029,6 +1042,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes .dish .order-controls .quantity { width: 50px; }
 
+
+
     .dishes .dish .order-controls .qty { width: 30px;}
 
     .dishes.dishes-col-6 .dish .order-controls .quantity { width: 60px; }
@@ -1069,11 +1084,13 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
     .dishes.dishes-col-6 .dish-container.variable .order-controls table.variations td select { width: 120px; }
 
-    .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px; }
+    .dishes.dishes-col-6 .dish-container.variable .order-controls .quantity { margin: 0 auto 10px !important; }
 
     .dishes.dishes-col-6 .dish-container.variable .item-description p { padding: 0; margin: 0 }
 
     .dishes-cat .btn-collapse { margin: 0 -10px; width: 960px; }
+
+    .modal-open #container-id { width: 970px; }
 }
 
 /* Стили для размера -lg- */
@@ -1122,6 +1139,8 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
     .dishes.dishes-col-6 .dish-container.variable .order-controls .add_to_cart_button { margin: 0 auto; }
 
     .dishes-cat .btn-collapse { width: 1160px; }
+
+    .modal-open #container-id { width: 1170px; }
 }
 /* с сайта eda style.css*/
 .products .wc-forward { display: none; }
