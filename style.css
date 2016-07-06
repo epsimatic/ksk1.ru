@@ -6909,10 +6909,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .important-info .post-description p:last-child { margin-bottom: 0; }
 
-    header.wide-header .important-info .post-news > a { padding: 10px 27px; display: block; }
+    header.wide-header .important-info .post-news > a { padding: 10px 27px; display: block; border: none; }
 
     header.wide-header .important-info .post-news > a:hover,
-    header.wide-header .important-info .post-news > a:focus { border-bottom-color: transparent; background-color: #f8f8f8; }
+    header.wide-header .important-info .post-news > a:focus { background-color: #f8f8f8; }
 
     header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; color: #494746 !important; }
 
