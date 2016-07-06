@@ -4735,8 +4735,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-shoutbox > .panel-heading { background: #ff4081 url("//ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
 /* Оформление списка событий */
+#movies-start,
 #events-start { position: relative; top: -74px; }
 
+body.admin-bar #movies-start,
 body.admin-bar #events-start { top: -106px; }
 
 .events { padding: 0 15px; }
@@ -4769,7 +4771,11 @@ body.admin-bar #events-start { top: -106px; }
 
 @media (min-width: 992px) {
     .page-id-524 .page-title { font-size: 54px; line-height: 54px; margin: 27px 0; }
+
+    #movies-start,
     #events-start { top: -77px; }
+
+    body.admin-bar #movies-start,
     body.admin-bar #events-start { top: -109px; }
 }
 
