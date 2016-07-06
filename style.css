@@ -6939,11 +6939,29 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-agenda .event-place { display: none; }
 
+    header.wide-header .menu-main-agenda .movie-brief { min-height: auto; padding-right: 0; }
+
+    header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }
+
     header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; }
 
-    header.wide-header .menu-main-agenda .movie-poster { padding: 0; }
+    header.wide-header .menu-main-agenda .movie-poster { padding: 0 10px 0 0 !important; }
 
     header.wide-header .menu-main-agenda .movie-poster > a { display: block; }
+
+    header.wide-header .menu-main-agenda .movie-poster .certification { left: 0; }
+
+    header.wide-header .menu-main-agenda .movie-info { padding: 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-title { font-size: 14px; overflow: hidden; text-overflow: ellipsis; }
+
+    header.wide-header .menu-main-agenda .movie-brief .production-flags,
+    header.wide-header .menu-main-agenda .movie-brief .star-rating { display: none; }
+
+    header.wide-header .menu-main-agenda .genres { padding: 0; -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; overflow: hidden; display: block; }
+
+    header.wide-header .menu-main-agenda .genre { padding: 0; }
 
     /* Стили для панели магазинов*/
     header.wide-header .menu-main-shop .container .shop-list { padding: 0; height: 128px;
