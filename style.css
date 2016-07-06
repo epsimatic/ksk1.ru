@@ -6867,11 +6867,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 15.1px; }
+    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 5.1px; }
 
-    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0 27px; width: 100%; line-height: 1.618; margin: 0; }
-
+    
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
+
+    header.wide-header .important-info .post-news > a { color: #222; padding: 10px 27px; display: block; }
+
+    header.wide-header .important-info .post-news > a:hover,
+    header.wide-header .important-info .post-news > a:focus { border-bottom-color: transparent; background-color: #f8f8f8; }
+
+    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; }
 
     header.wide-header .important-info .btn-more { color: #999; padding: 0 10px; display: inline; font-size: 12px; }
 
