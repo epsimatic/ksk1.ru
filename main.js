@@ -203,6 +203,12 @@ jQuery(".menu-main-news").one("mouseenter", function () {
 });
 
 
+// Загружаем события и сегодняшние сеансы
+jQuery(".menu-main-agenda").one("mouseenter", function () {
+    jQuery(".menu-main-agenda-events").load("http://ksk66.ru/main-main-agenda-events/");
+    jQuery(".menu-main-agenda-movies").load("http://ksk66.ru/main-main-agenda-movies/");
+})`;
+
 // <editor-fold desc="Видео и аудиоплееры">
 
 var radio_player = "";
