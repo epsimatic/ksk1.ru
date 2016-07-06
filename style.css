@@ -6867,13 +6867,19 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 10px; width: 100%; }
+    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 15.1px; }
 
-    header.wide-header .important-info .important-info-heading { font-size: 25.888px; font-weight: 700; margin: 9px 0 4.5px; }
+    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0 27px; width: 100%; line-height: 1.618; margin: 0; }
 
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
 
     header.wide-header .important-info .btn-more { color: #999; padding: 0 10px; display: inline; font-size: 12px; }
+
+    header.wide-header .important-info .post-news > a:hover .btn-more,
+    header.wide-header .important-info .post-news > a:focus .btn-more { color: #222; }
+
+    header.wide-header .important-info .post-news > a:hover .btn-more span,
+    header.wide-header .important-info .post-news > a:focus .btn-more span { border-bottom: 1px solid #bbb; padding-bottom: 2px; }
 
     header.wide-header .post-news .post-description { max-height: 63px; margin-top: -5px; margin-bottom: 0; line-height: 21px; white-space: normal; overflow-y: hidden; }
 
