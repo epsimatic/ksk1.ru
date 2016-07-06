@@ -5970,14 +5970,14 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
-.services-content section.taxi-section .social-links { margin-bottom: 24px; }
+.services-content section.service-section .social-links { margin-bottom: 24px; }
 
-.services-content section.taxi-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
+.services-content section.service-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
-.services-content section.taxi-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
+.services-content section.service-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
 
-.services-content section.taxi-section .social-links a:hover,
-.services-content section.taxi-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
+.services-content section.service-section .social-links a:hover,
+.services-content section.service-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
 .services-content section.taxi-section .taxi-form-wrap .taxi-form { position: relative; }
 
@@ -6114,7 +6114,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content footer.service-footer .form-submit + .ajax-loader { left: 25px; top: 8px; }
 
-    .services-content section.taxi-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
+    .services-content section.service-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
 
     .services-content footer.service-footer .footer-btns-wrap > * { padding-top: 0; padding-bottom: 0; }
 }
@@ -6158,10 +6158,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-section .app-download-bages-title { font-size: 16px; line-height: 27px; margin-bottom: 13.5px; }
 
-    .services-content section.taxi-section .social-links a { color: #fff; }
+    .services-content section.service-section .social-links a { color: #fff; }
 
-    .services-content section.taxi-section .social-links a:hover,
-    .services-content section.taxi-section .social-links a:focus { color: #FFE700; }
+    .services-content section.service-section .social-links a:hover,
+    .services-content section.service-section .social-links a:focus { color: #FFE700; }
 
     .services-content section.taxi-section .form-wrap textarea.form-control { padding-left: 18px; padding-right: 18px; }
 
