@@ -6314,6 +6314,12 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-services .service-info-inner { padding: 20px; }
 }
 
+@media (min-width: 1700px) {
+    .services-content .service-section.cargo-section { min-height: 520px; }
+}
+
+@media (min-width: 1900px) { .services-content .service-section.cargo-section { min-height: 600px; } }
+
 @media (min-width: 480px) {
     .ob-large-thumbs {
         -moz-column-count: 2;
