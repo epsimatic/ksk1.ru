@@ -517,16 +517,19 @@ a.media-heading:focus {text-decoration: none;}
 body.admin-bar .menu-main-eda .featured > span,
 body.is_admin .menu-main-eda .featured > span,
 body .menu-main-eda .featured > span.show-wpadmin,
+.menu-main-agenda,
 .menu-main-services,
 .menu-main-taxi { display: none !important; }
 
 body.is_admin .menu-main-eda .featured > span.show-wpadmin,
 body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
 
+/*body.admin-bar .menu-main-services,*/
+/*body.is_admin .menu-main-services,*/
+body.is_admin .menu-main-agenda,
+body.admin-bar .menu-main-agenda,
 body.is_admin .menu-main-taxi,
-body.is_admin .menu-main-services,
-body.admin-bar .menu-main-taxi,
-body.admin-bar .menu-main-services { display: block !important; }
+body.admin-bar .menu-main-taxi { display: block !important; }
 
 /*Таблицы*/
 .table thead > tr > th,
@@ -1365,7 +1368,7 @@ rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .panel-official .post-comment-num { font-weight: 400; }
 
-.panel-official .post-actions { text-align: right; display: inline; }
+.panel-official .post-actions { text-align: right; display: inline; font-size: 12px; }
 
 .home .panel-sendsms .body {background-color: #fbf8f7; padding: 10px 15px;}
 
@@ -6867,11 +6870,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 15.1px; }
+    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 5.1px; }
 
-    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0 27px; width: 100%; line-height: 1.618; margin: 0; }
-
+    
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
+
+    header.wide-header .important-info .post-news > a { color: #222; padding: 10px 27px; display: block; }
+
+    header.wide-header .important-info .post-news > a:hover,
+    header.wide-header .important-info .post-news > a:focus { border-bottom-color: transparent; background-color: #f8f8f8; }
+
+    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; }
 
     header.wide-header .important-info .btn-more { color: #999; padding: 0 10px; display: inline; font-size: 12px; }
 
@@ -7018,11 +7027,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .post-news .views_num,
     header.wide-header .post-news .post-comment-num { color: #666; font-size: 12px; padding-right: 8px; font-weight: 400; }
 
-    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 25px 0 0; }
 
     header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+5) { display: inline-block; }
 
-    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: none; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+8) { display: none; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
 
@@ -7186,7 +7195,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .posrednik-link-wrap .submenu-item-name { padding-top: 13px; font-size: 17px; }
 
-    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: inline-block; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+8) { display: inline-block; }
+
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
 
