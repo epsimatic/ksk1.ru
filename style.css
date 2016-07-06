@@ -6945,19 +6945,22 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-agenda .movie-brief { min-height: auto; padding-right: 0; }
 
+    header.wide-header .menu-main-agenda .movie-brief > a:hover .row,
+    header.wide-header .menu-main-agenda .movie-brief > a:focus .row { background-color: #f8f8f8; }
+
     header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }
 
     header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; }
 
     header.wide-header .menu-main-agenda .movie-poster { padding: 0 10px 0 0 !important; }
 
-    header.wide-header .menu-main-agenda .movie-poster > a { display: block; }
+    header.wide-header .menu-main-agenda .movie-poster > a { display: block; min-height: 104px; overflow: hidden; }
 
     header.wide-header .menu-main-agenda .movie-poster .certification { left: 0; }
 
     header.wide-header .menu-main-agenda .movie-info { padding: 0; }
 
-    header.wide-header .menu-main-agenda .movie-brief .movie-title { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: normal; max-height: 36px; line-height: 18px; margin-bottom: 3px; }
+    header.wide-header .menu-main-agenda .movie-brief .movie-title { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: normal; max-height: 36px; line-height: 18px; margin-bottom: 3px; color: #0091ea; font-weight: 600; letter-spacing: 0.01em; }
 
     header.wide-header .menu-main-agenda .movie-brief .production-flags,
     header.wide-header .menu-main-agenda .movie-brief .star-rating { display: none; }
@@ -6966,6 +6969,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     text-overflow: ellipsis; overflow: hidden; display: block; margin-bottom: 3px; }
 
     header.wide-header .menu-main-agenda .genre { padding: 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-price,
+    header.wide-header .menu-main-agenda .movie-brief .movie-session { font-size: 12px; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-session {  }
 
     /* Стили для панели магазинов*/
     header.wide-header .menu-main-shop .container .shop-list { padding: 0; height: 128px;
