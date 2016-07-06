@@ -6115,6 +6115,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content footer.service-footer .form-submit + .ajax-loader { left: 25px; top: 8px; }
 
     .services-content section.taxi-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
+
+    .services-content footer.service-footer .footer-btns-wrap > * { padding-top: 0; padding-bottom: 0; }
 }
 
 @media (min-width: 992px) { 
