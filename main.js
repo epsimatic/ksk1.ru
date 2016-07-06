@@ -198,8 +198,8 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
 
 // Загрузить главную новость при наведении на панель Новости
 jQuery(".menu-main-news").one("mouseenter", function () {
-    jQuery(".news-main").load("http://ksk66.ru/main-news/");
-    jQuery(".main-info").load("http://ksk66.ru/main-info/");
+    // jQuery(".news-main").load("http://ksk66.ru/main-news/");
+    jQuery(".important-info").load("http://ksk66.ru/main-info/");
 });
 
 
