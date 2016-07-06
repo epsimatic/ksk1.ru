@@ -524,8 +524,8 @@ body .menu-main-eda .featured > span.show-wpadmin,
 body.is_admin .menu-main-eda .featured > span.show-wpadmin,
 body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
 
-/*body.admin-bar .menu-main-services,*/
-/*body.is_admin .menu-main-services,*/
+body.admin-bar .menu-main-services,
+body.is_admin .menu-main-services,
 body.is_admin .menu-main-agenda,
 body.admin-bar .menu-main-agenda,
 body.is_admin .menu-main-taxi,
@@ -6715,8 +6715,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a , header.wide-header .navbar-nav > li > span { padding: 15px; }
-    header.wide-header .navbar-nav > li > span{display: inline-block;color: #fff;}
+    header.wide-header .navbar-nav > li > a,
+    header.wide-header .navbar-nav > li > span { padding: 15px; line-height: 20px; }
+
+    body.admin-bar header.wide-header .navbar-nav > li > a,
+    body.admin-bar header.wide-header .navbar-nav > li > span,
+    body.is_admin header.wide-header .navbar-nav > li > a,
+    body.is_admin header.wide-header .navbar-nav > li > span { font-size: 12px; }
+
+    header.wide-header .navbar-nav > li > span { display: inline-block; color: #fff; }
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
@@ -7246,6 +7253,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .weather-forecast-panel .day-row .day, 
     .weather-forecast-panel .day-row .night { white-space: 39%; }
+
+    body.admin-bar header.wide-header .navbar-nav > li > a,
+    body.admin-bar header.wide-header .navbar-nav > li > span,
+    body.is_admin header.wide-header .navbar-nav > li > a,
+    body.is_admin header.wide-header .navbar-nav > li > span { font-size: 14px; }
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
