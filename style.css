@@ -6934,6 +6934,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
+    /* Стили для панели афиши*/
+    header.wide-header .menu-main-agenda .agenda-heading { font-size: 18px; margin: 0; }
+
+    header.wide-header .menu-main-agenda .event-place { display: none; }
+
+    header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; }
+
+    header.wide-header .menu-main-agenda .movie-poster { padding: 0; }
+
+    header.wide-header .menu-main-agenda .movie-poster > a { display: block; }
+
     /* Стили для панели магазинов*/
     header.wide-header .menu-main-shop .container .shop-list { padding: 0; height: 128px;
         display: -webkit-box;
