@@ -5811,7 +5811,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 .services-content section.service-section { position: relative; padding: 0 15px; }
 
 body.admin-bar.taxi .services-content section.service-section { margin-top: -24px; }
-body.admin-bar.taxi .services-content section.taxi-driver-section.service-section { margin-top: 0; }
+body.admin-bar.taxi .services-content section.partners-section.service-section { margin-top: 0; }
 
 section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: -24px; padding: 0 15px; }
 
@@ -5961,11 +5961,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo-placeholder > a
 body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !important; }
 
 
-.services-content section.taxi-driver-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
+.services-content section.partners-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
 
-.services-content section.taxi-driver-section h4 + ol { padding-left: 15px; margin-bottom: 48px; }
+.services-content section.partners-section h4 + ol { padding-left: 15px; margin-bottom: 48px; }
 
-.services-content section.taxi-driver-section li { font-size: 16px; line-height: 24px; margin-bottom: 12px; }
+.services-content section.partners-section li { font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
@@ -6089,9 +6089,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 18px !important; }
 
-    .services-content section.taxi-driver-section .container { padding: 12px 50px; }
+    .services-content section.partners-section .container { padding: 12px 50px; }
 
-    .services-content section.taxi-driver-section h4 + ol { padding-left: 0; }
+    .services-content section.partners-section h4 + ol { padding-left: 0; }
 
     body.taxi .footer-btns-wrap-sm { margin-top: 10px; }
 
@@ -6099,9 +6099,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.taxi .modal-dialog { top: 400px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2150px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD { height: 2150px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1600px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1600px; }
 
     .services-content footer.service-footer .form-submit { background-color: #FFE700; color: #000; }
 
@@ -6265,17 +6265,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 0 !important; top: -20px !important; }
 
-    .services-content section.taxi-driver-section .container { padding: 13.5px 150px; }
+    .services-content section.partners-section .container { padding: 13.5px 150px; }
 
-    .services-content section.taxi-driver-section h4 { font-size: 27px; line-height: 27px; margin-bottom: 19.5px; margin-top: 34.5px; font-weight: 600; letter-spacing: .015em; }
+    .services-content section.partners-section h4 { font-size: 27px; line-height: 27px; margin-bottom: 19.5px; margin-top: 34.5px; font-weight: 600; letter-spacing: .015em; }
 
-    .services-content section.taxi-driver-section h4 + ol { margin-bottom: 54px; }
+    .services-content section.partners-section h4 + ol { margin-bottom: 54px; }
 
-    .services-content section.taxi-driver-section li { line-height: 27px; margin-bottom: 13.5px; }
+    .services-content section.partners-section li { line-height: 27px; margin-bottom: 13.5px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2100px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD { height: 2100px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
 
     .services-content section.taxi-section .alert,
     body.taxi .modal-title { line-height: 27px; }
@@ -6294,7 +6294,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content .service-section.taxi-section { height: 630px; }
 
-    .services-content section.taxi-driver-section .container { padding: 13.5px 200px; }
+    .services-content section.partners-section .container { padding: 13.5px 200px; }
 
     header.wide-header .menu-main-services .service-icon + h3 { font-size: 24px; line-height: 27px; margin-bottom: 9px; }
 
