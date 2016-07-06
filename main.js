@@ -207,7 +207,7 @@ jQuery(".menu-main-news").one("mouseenter", function () {
 jQuery(".menu-main-agenda").one("mouseenter", function () {
     jQuery(".menu-main-agenda-events").load("http://ksk66.ru/menu-main-agenda-events/");
     jQuery(".menu-main-agenda-movies").load("http://ksk66.ru/menu-main-agenda-movies/");
-})`;
+});
 
 // <editor-fold desc="Видео и аудиоплееры">
 
