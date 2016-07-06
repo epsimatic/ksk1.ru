@@ -6935,11 +6935,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
 
     /* Стили для панели афиши*/
-    header.wide-header .menu-main-agenda .agenda-heading { font-size: 18px; margin: 0 0 5px; font-weight: 700; }
+    header.wide-header .menu-main-agenda .agenda-heading { font-size: 16px; margin: 0 0 5px; font-weight: 700; line-height: 18px;    }
 
     header.wide-header .menu-main-agenda .agenda-heading::after { content: " "; clear: both; display: block; }
 
-    header.wide-header .menu-main-agenda .agenda-heading .btn-link { margin-bottom: 0; }
+    header.wide-header .menu-main-agenda .agenda-heading .btn-link { margin-bottom: 0; line-height: 18px; font-size: 12px; }
 
     header.wide-header .menu-main-agenda .event-place { display: none; }
 
@@ -6950,9 +6950,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }
 
-    header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; }
+    header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; min-height: 104px; }
 
-    header.wide-header .menu-main-agenda .movie-poster { padding: 0 10px 0 0 !important; }
+    header.wide-header .menu-main-agenda .movie-poster { padding: 0 10px 0 0 !important; min-height: 104px; overflow: hidden; }
 
     header.wide-header .menu-main-agenda .movie-poster > a { display: block; min-height: 104px; overflow: hidden; }
 
