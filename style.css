@@ -2734,15 +2734,15 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 .jp-ready { opacity: 1; }
 
-.jp-audio .jp-interface { height: 34px; width: 100%; }
+.jp-audio .jp-interface { height: 26px; width: 100%; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
 
 .jp-audio .jp-controls li { display: inline; }
 
-.jp-audio .jp-controls a { position: absolute; padding: 7px 10px; background-color: #fff; border: 2px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 9px; z-index: 1; color: #0089db; }
+.jp-audio .jp-controls a { position: absolute; padding: 3px 12px; background-color: #fff; border: 2px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 7px; z-index: 1; color: #0089db; top: 6px; left: -4px; }
 
-.jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 1px; }
+.jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 7px; }
 
 .jp-audio .jp-controls-holder { position: relative; }
 
@@ -2774,11 +2774,11 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .jp-audio .jp-playlist,
 .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
 
-.jp-audio .track-info { position: absolute; top: 7px; width: 100%; padding-left: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
+.jp-audio .track-info { position: absolute; top: 3px; width: 100%; padding-left: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
 
 .jp-audio .track-info > span.track-info-air { color: #999; }
 
-.jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
+.jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 17px; font-size: .85em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
 
 .jp-audio .playlist .playlist-item label:before { content: ""; font-family: FontAwesome; padding-right: 9px; padding-left: 7px; color: #bbb; }
 
@@ -7051,7 +7051,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-radio .submenu-group .player-header a { display: inline-block; }
 
-    header.wide-header .menu-main-radio .submenu-group .player-logo > img { width: 170px; height: 35px; }
+    header.wide-header .menu-main-radio .submenu-group .player-logo > img { width: 120px; height: 25px; }
 
     header.wide-header .menu-main-tv iframe { width: 100%; height: 130px; }
 

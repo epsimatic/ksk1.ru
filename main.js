@@ -302,6 +302,15 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 jQuery(".jp-duration").removeClass("hidden");
                 jQuery(".track-info").addClass("hidden");
             }
+            if (id == "itogiDnya") {
+                radio_player.jPlayer("setMedia", {
+                    m4a: 'http://ksk1.ru/radio-news/itogi.m4a'
+                }).jPlayer("play");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
+            }
             jQuery(".play-radio #play").addClass('hidden');
             jQuery(".play-radio #pause").removeClass('hidden');
         });
