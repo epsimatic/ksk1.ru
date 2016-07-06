@@ -6867,7 +6867,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .main-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 20px; width: 100%; }
+    header.wide-header .main-info { max-height: 100%; overflow: visible; padding: 20px; width: 100%; }
 
     header.wide-header .post-news .post-description { max-height: 63px; margin-top: -5px; margin-bottom: 0; line-height: 21px; white-space: normal; overflow-y: hidden; }
 
