@@ -6089,6 +6089,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 18px !important; }
 
+    .services-content section.workers-section .social-links a { color: #fff; }
+
+    .services-content section.workers-section .social-links a:hover,
+    .services-content section.workers-section .social-links a:focus { color: #FFE700; }
+
     .services-content section.partners-section .container { padding: 12px 50px; }
 
     .services-content section.partners-section h4 + ol { padding-left: 0; }
@@ -6162,6 +6167,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.service-section .social-links a:hover,
     .services-content section.service-section .social-links a:focus { color: #FFE700; }
+
+    .services-content section.cargo-section .social-links a { color: #222; }
+
+    .services-content section.cargo-section .social-links a:hover,
+    .services-content section.cargo-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
     .services-content section.taxi-section .form-wrap textarea.form-control { padding-left: 18px; padding-right: 18px; }
 
