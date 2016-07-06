@@ -6875,12 +6875,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
 
-    header.wide-header .important-info .post-news > a { color: #222; padding: 10px 27px; display: block; }
+    header.wide-header .important-info .post-news > a { padding: 10px 27px; display: block; }
 
     header.wide-header .important-info .post-news > a:hover,
     header.wide-header .important-info .post-news > a:focus { border-bottom-color: transparent; background-color: #f8f8f8; }
 
-    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; }
+    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; color: #494746 !important; }
+
+    header.wide-header .important-info .post-news > a:hover .post-description,
+    header.wide-header .important-info .post-news > a:focus .post-description { color: #222 !important; }
 
     header.wide-header .important-info .btn-more { color: #999; padding: 0 10px; display: inline; font-size: 12px; }
 
