@@ -2750,7 +2750,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 .playlist-item #listen-text { font-style: italic; color: #999; }
 
-.jp-audio .jp-controls-holder .jp-progress { position: absolute; top: 8px; width: 220px; }
+.jp-audio .jp-controls-holder .jp-progress { position: absolute; top: 5px; width: 220px; }
 
 .jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background-color: #eee; }
 
@@ -2763,7 +2763,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
 
 .jp-audio .jp-controls-holder .jp-current-time,
-.jp-audio .jp-controls-holder .jp-duration { position: absolute; top: 15px; font-size: .81em; color: #999; }
+.jp-audio .jp-controls-holder .jp-duration { position: absolute; top: 9px; font-size: .81em; color: #999; }
 
 .jp-audio .jp-controls-holder .jp-duration { right: 0; }
 
