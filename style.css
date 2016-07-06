@@ -7027,11 +7027,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .post-news .views_num,
     header.wide-header .post-news .post-comment-num { color: #666; font-size: 12px; padding-right: 8px; font-weight: 400; }
 
-    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 25px 0 0; }
 
     header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+5) { display: inline-block; }
 
-    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: none; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+8) { display: none; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 8px 4px; }
 
@@ -7195,7 +7195,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .posrednik-link-wrap .submenu-item-name { padding-top: 13px; font-size: 17px; }
 
-    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+6) { display: inline-block; }
+    header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+8) { display: inline-block; }
+
+    header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
 
