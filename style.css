@@ -524,8 +524,8 @@ body .menu-main-eda .featured > span.show-wpadmin,
 body.is_admin .menu-main-eda .featured > span.show-wpadmin,
 body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
 
-/*body.admin-bar .menu-main-services,*/
-/*body.is_admin .menu-main-services,*/
+body.admin-bar .menu-main-services,
+body.is_admin .menu-main-services,
 body.is_admin .menu-main-agenda,
 body.admin-bar .menu-main-agenda,
 body.is_admin .menu-main-taxi,
@@ -2735,15 +2735,15 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 .jp-ready { opacity: 1; }
 
-.jp-audio .jp-interface { height: 34px; width: 100%; }
+.jp-audio .jp-interface { height: 26px; width: 100%; }
 
 .jp-audio .jp-controls { margin: 0; padding: 0; list-style-type: none; }
 
 .jp-audio .jp-controls li { display: inline; }
 
-.jp-audio .jp-controls a { position: absolute; padding: 7px 10px; background-color: #fff; border: 2px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 9px; z-index: 1; color: #0089db; }
+.jp-audio .jp-controls a { position: absolute; padding: 3px 12px; background-color: #fff; border: 2px solid #b5e8ff; box-shadow: 0 1px #b5e8ff; border-radius: 7px; z-index: 1; color: #0089db; top: 6px; left: -4px; }
 
-.jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 1px; }
+.jp-audio .jp-controls a:hover { border-color: #97e6fc; color: #0072b2; box-shadow: none; top: 7px; }
 
 .jp-audio .jp-controls-holder { position: relative; }
 
@@ -2751,7 +2751,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
 .playlist-item #listen-text { font-style: italic; color: #999; }
 
-.jp-audio .jp-controls-holder .jp-progress { position: absolute; top: 8px; width: 220px; }
+.jp-audio .jp-controls-holder .jp-progress { position: absolute; top: 5px; width: 220px; }
 
 .jp-audio .jp-controls-holder .jp-progress .jp-seek-bar { width: 220px; height: 7px; cursor: pointer; background-color: #eee; }
 
@@ -2764,7 +2764,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .jp-audio.jp-state-playing .jp-controls-holder .jp-progress .jp-play-bar { background-color: #088eff; }
 
 .jp-audio .jp-controls-holder .jp-current-time,
-.jp-audio .jp-controls-holder .jp-duration { position: absolute; top: 15px; font-size: .81em; color: #999; }
+.jp-audio .jp-controls-holder .jp-duration { position: absolute; top: 9px; font-size: .81em; color: #999; }
 
 .jp-audio .jp-controls-holder .jp-duration { right: 0; }
 
@@ -2775,11 +2775,11 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .jp-audio .jp-playlist,
 .jp-audio .jp-title { position: absolute; left: 60px; top: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; font-weight: 600; }
 
-.jp-audio .track-info { position: absolute; top: 7px; width: 100%; padding-left: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
+.jp-audio .track-info { position: absolute; top: 3px; width: 100%; padding-left: 3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: .9em; font-style: italic; }
 
 .jp-audio .track-info > span.track-info-air { color: #999; }
 
-.jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 1.4; font-size: .9em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
+.jp-audio .playlist .playlist-item label { display: block; margin-bottom: 1px; padding-bottom: 2px; line-height: 17px; font-size: .85em; font-weight: 400; cursor: pointer; background-color: #fafafa; color: #666; }
 
 .jp-audio .playlist .playlist-item label:before { content: ""; font-family: FontAwesome; padding-right: 9px; padding-left: 7px; color: #bbb; }
 
@@ -4736,8 +4736,10 @@ body.agenda .entry-content.page-content:empty { margin: 0; }
 .panel-shoutbox > .panel-heading { background: #ff4081 url("//ksk1.ru/img/panel-news.png") no-repeat scroll right center / contain ; }
 
 /* Оформление списка событий */
+#movies-start,
 #events-start { position: relative; top: -74px; }
 
+body.admin-bar #movies-start,
 body.admin-bar #events-start { top: -106px; }
 
 .events { padding: 0 15px; }
@@ -4770,7 +4772,11 @@ body.admin-bar #events-start { top: -106px; }
 
 @media (min-width: 992px) {
     .page-id-524 .page-title { font-size: 54px; line-height: 54px; margin: 27px 0; }
+
+    #movies-start,
     #events-start { top: -77px; }
+
+    body.admin-bar #movies-start,
     body.admin-bar #events-start { top: -109px; }
 }
 
@@ -5714,7 +5720,7 @@ body.page-template-page-custom-cargo-delivery .snap-content,
 
 .services-content footer.service-footer .form-wrap .form-control { text-align: left; padding: 12px; }
 
-.services-content footer.service-footer .footer-btns-wrap-xs > * { padding: 12px; }
+.services-content footer.service-footer .footer-btns-wrap > * { padding: 12px; }
 
 .services-content footer.service-footer .btn-hollow { background-color: transparent; border: 1px solid #fff; border-radius: 7px; color: #fff; line-height: 24px; padding: 12px; transition: background-color .25s ease .0s; }
 
@@ -5806,7 +5812,7 @@ header.wide-header .menu-main-services .service-icon + h3 > a,
 .services-content section.service-section { position: relative; padding: 0 15px; }
 
 body.admin-bar.taxi .services-content section.service-section { margin-top: -24px; }
-body.admin-bar.taxi .services-content section.taxi-driver-section.service-section { margin-top: 0; }
+body.admin-bar.taxi .services-content section.partners-section.service-section { margin-top: 0; }
 
 section.taxi-section .taxi-order-description { margin-bottom: 24px; margin-top: -24px; padding: 0 15px; }
 
@@ -5956,23 +5962,23 @@ body.admin-bar .services-content header.taxi-driver-header .logo-placeholder > a
 body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !important; }
 
 
-.services-content section.taxi-driver-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
+.services-content section.partners-section h4 { font-size: 24px; line-height: 24px; margin-top: 30px; margin-bottom: 18px; }
 
-.services-content section.taxi-driver-section h4 + ol { padding-left: 15px; margin-bottom: 48px; }
+.services-content section.partners-section h4 + ol { padding-left: 15px; margin-bottom: 48px; }
 
-.services-content section.taxi-driver-section li { font-size: 16px; line-height: 24px; margin-bottom: 12px; }
+.services-content section.partners-section li { font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
-.services-content section.taxi-section .social-links { margin-bottom: 24px; }
+.services-content section.service-section .social-links { margin-bottom: 24px; }
 
-.services-content section.taxi-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
+.services-content section.service-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
 
-.services-content section.taxi-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
+.services-content section.service-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
 
-.services-content section.taxi-section .social-links a:hover,
-.services-content section.taxi-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
+.services-content section.service-section .social-links a:hover,
+.services-content section.service-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
 .services-content section.taxi-section .taxi-form-wrap .taxi-form { position: relative; }
 
@@ -6084,9 +6090,14 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 18px !important; }
 
-    .services-content section.taxi-driver-section .container { padding: 12px 50px; }
+    .services-content section.workers-section .social-links a { color: #fff; }
 
-    .services-content section.taxi-driver-section h4 + ol { padding-left: 0; }
+    .services-content section.workers-section .social-links a:hover,
+    .services-content section.workers-section .social-links a:focus { color: #FFE700; }
+
+    .services-content section.partners-section .container { padding: 12px 50px; }
+
+    .services-content section.partners-section h4 + ol { padding-left: 0; }
 
     body.taxi .footer-btns-wrap-sm { margin-top: 10px; }
 
@@ -6094,9 +6105,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.taxi .modal-dialog { top: 400px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2150px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD { height: 2150px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1600px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1600px; }
 
     .services-content footer.service-footer .form-submit { background-color: #FFE700; color: #000; }
 
@@ -6109,7 +6120,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content footer.service-footer .form-submit + .ajax-loader { left: 25px; top: 8px; }
 
-    .services-content section.taxi-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
+    .services-content section.service-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
+
+    .services-content footer.service-footer .footer-btns-wrap > * { padding-top: 0; padding-bottom: 0; }
 }
 
 @media (min-width: 992px) { 
@@ -6151,10 +6164,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-section .app-download-bages-title { font-size: 16px; line-height: 27px; margin-bottom: 13.5px; }
 
-    .services-content section.taxi-section .social-links a { color: #fff; }
+    .services-content section.service-section .social-links a { color: #fff; }
 
-    .services-content section.taxi-section .social-links a:hover,
-    .services-content section.taxi-section .social-links a:focus { color: #FFE700; }
+    .services-content section.service-section .social-links a:hover,
+    .services-content section.service-section .social-links a:focus { color: #FFE700; }
+
+    .services-content section.cargo-section .social-links a { color: #222; }
+
+    .services-content section.cargo-section .social-links a:hover,
+    .services-content section.cargo-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
     .services-content section.taxi-section .form-wrap textarea.form-control { padding-left: 18px; padding-right: 18px; }
 
@@ -6258,17 +6276,17 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     body.admin-bar .services-content header.taxi-driver-header .logo { margin-top: 0 !important; top: -20px !important; }
 
-    .services-content section.taxi-driver-section .container { padding: 13.5px 150px; }
+    .services-content section.partners-section .container { padding: 13.5px 150px; }
 
-    .services-content section.taxi-driver-section h4 { font-size: 27px; line-height: 27px; margin-bottom: 19.5px; margin-top: 34.5px; font-weight: 600; letter-spacing: .015em; }
+    .services-content section.partners-section h4 { font-size: 27px; line-height: 27px; margin-bottom: 19.5px; margin-top: 34.5px; font-weight: 600; letter-spacing: .015em; }
 
-    .services-content section.taxi-driver-section h4 + ol { margin-bottom: 54px; }
+    .services-content section.partners-section h4 + ol { margin-bottom: 54px; }
 
-    .services-content section.taxi-driver-section li { line-height: 27px; margin-bottom: 13.5px; }
+    .services-content section.partners-section li { line-height: 27px; margin-bottom: 13.5px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD { height: 2100px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD { height: 2100px; }
 
-    section.taxi-driver-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
+    section.partners-section + footer.service-footer #taxiReviewsMD .modal-dialog { top: 1650px; }
 
     .services-content section.taxi-section .alert,
     body.taxi .modal-title { line-height: 27px; }
@@ -6287,7 +6305,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content .service-section.taxi-section { height: 630px; }
 
-    .services-content section.taxi-driver-section .container { padding: 13.5px 200px; }
+    .services-content section.partners-section .container { padding: 13.5px 200px; }
 
     header.wide-header .menu-main-services .service-icon + h3 { font-size: 24px; line-height: 27px; margin-bottom: 9px; }
 
@@ -6296,6 +6314,12 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-services .service-icon { margin-top: 0; }
     header.wide-header .menu-main-services .service-info-inner { padding: 20px; }
 }
+
+@media (min-width: 1700px) {
+    .services-content .service-section.cargo-section { min-height: 520px; }
+}
+
+@media (min-width: 1900px) { .services-content .service-section.cargo-section { min-height: 600px; } }
 
 @media (min-width: 480px) {
     .ob-large-thumbs {
@@ -6710,8 +6734,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .container { background-color: transparent; box-shadow: none; }
 
-    header.wide-header .navbar-nav > li > a , header.wide-header .navbar-nav > li > span { padding: 15px; }
-    header.wide-header .navbar-nav > li > span{display: inline-block;color: #fff;}
+    header.wide-header .navbar-nav > li > a,
+    header.wide-header .navbar-nav > li > span { padding: 15px; line-height: 20px; }
+
+    body.admin-bar header.wide-header .navbar-nav > li > a,
+    body.admin-bar header.wide-header .navbar-nav > li > span,
+    body.is_admin header.wide-header .navbar-nav > li > a,
+    body.is_admin header.wide-header .navbar-nav > li > span { font-size: 12px; }
+
+    header.wide-header .navbar-nav > li > span { display: inline-block; color: #fff; }
 
     header.wide-header .nav .open > a,
     header.wide-header .nav .open > a:hover,
@@ -6871,17 +6902,21 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
-    header.wide-header .important-info .important-info-heading { font-size: 22.652px; font-weight: 700; margin: 7.55px 0 5.1px; }
-
+    header.wide-header .important-info .important-info-heading { font-size: 18px; font-weight: 700; margin: 0 0 5.1px; }
     
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
 
-    header.wide-header .important-info .post-news > a { color: #222; padding: 10px 27px; display: block; }
+    header.wide-header .important-info .post-description p:last-child { margin-bottom: 0; }
+
+    header.wide-header .important-info .post-news > a { padding: 3px 10px; display: block; border: none; }
 
     header.wide-header .important-info .post-news > a:hover,
-    header.wide-header .important-info .post-news > a:focus { border-bottom-color: transparent; background-color: #f8f8f8; }
+    header.wide-header .important-info .post-news > a:focus { background-color: #f8f8f8; }
 
-    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; }
+    header.wide-header .important-info .post-news .post-description { max-height: 100%; overflow: visible; padding: 0; width: 100%; line-height: 1.618; margin: 0; float:none; color: #494746 !important; }
+
+    header.wide-header .important-info .post-news > a:hover .post-description,
+    header.wide-header .important-info .post-news > a:focus .post-description { color: #222 !important; }
 
     header.wide-header .important-info .btn-more { color: #999; padding: 0 10px; display: inline; font-size: 12px; }
 
@@ -6931,6 +6966,61 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .ob-promo .popover .ob-email { margin-top: 2px; margin-left: 5px; }
 
     header.wide-header .ob-promo .popover .ob-price { font-size: 1.3em; margin-top: 5px; }
+
+    /* Стили для панели афиши*/
+    header.wide-header .menu-main-agenda .agenda-heading { font-size: 16px; margin: 0 0 5px; font-weight: 700; line-height: 18px; }
+
+    header.wide-header .menu-main-agenda .agenda-heading::after { content: " "; clear: both; display: block; }
+
+    header.wide-header .menu-main-agenda .agenda-heading .btn-link { margin-bottom: 0; line-height: 18px; font-size: 12px; }
+
+    header.wide-header .menu-main-agenda .menu-main-agenda-events { max-height: 125px; overflow: hidden; }
+
+    header.wide-header .menu-main-agenda .event { display: block; }
+
+    header.wide-header .menu-main-agenda .events-date { font-size: 12px; color: #999; }
+
+    header.wide-header .menu-main-agenda .event-name { font-size: 14px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #0091ea; }
+
+    header.wide-header .menu-main-agenda a:hover .event-name,
+    header.wide-header .menu-main-agenda a:focus .event-name { color: #0277bd; }
+
+    header.wide-header .menu-main-agenda .events-date,
+    header.wide-header .menu-main-agenda .event-name { line-height: 16px; margin: 5px 0 0; }
+
+    header.wide-header .menu-main-agenda .event-place { display: none; }
+
+    header.wide-header .menu-main-agenda .movie-brief { min-height: auto; padding-right: 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief > a:hover .row,
+    header.wide-header .menu-main-agenda .movie-brief > a:focus .row { background-color: #f8f8f8; }
+
+    header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }
+
+    header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; min-height: 104px; }
+
+    header.wide-header .menu-main-agenda .movie-poster { padding: 0 10px 0 0 !important; min-height: 104px; overflow: hidden; }
+
+    header.wide-header .menu-main-agenda .movie-poster > a { display: block; min-height: 104px; overflow: hidden; }
+
+    header.wide-header .menu-main-agenda .movie-poster .certification { left: 0; bottom: 15px; }
+
+    header.wide-header .menu-main-agenda .movie-info { padding: 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-title { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: normal; max-height: 36px; line-height: 18px; margin-bottom: 3px; color: #0091ea; font-weight: 600; letter-spacing: 0.01em; }
+
+    header.wide-header .menu-main-agenda .movie-brief .production-flags,
+    header.wide-header .menu-main-agenda .movie-brief .star-rating { display: none; }
+
+    header.wide-header .menu-main-agenda .genres { padding: 0; -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; overflow: hidden; display: block; margin-bottom: 3px; }
+
+    header.wide-header .menu-main-agenda .genre { padding: 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-price,
+    header.wide-header .menu-main-agenda .movie-brief .movie-session { font-size: 12px; }
+
+    header.wide-header .menu-main-agenda .movie-brief .movie-session {  }
 
     /* Стили для панели магазинов*/
     header.wide-header .menu-main-shop .container .shop-list { padding: 0; height: 128px;
@@ -6988,7 +7078,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-radio .submenu-group .player-header a { display: inline-block; }
 
-    header.wide-header .menu-main-radio .submenu-group .player-logo > img { width: 170px; height: 35px; }
+    header.wide-header .menu-main-radio .submenu-group .player-logo > img { width: 120px; height: 25px; }
 
     header.wide-header .menu-main-tv iframe { width: 100%; height: 130px; }
 
@@ -7184,6 +7274,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .weather-forecast-panel .day-row .day, 
     .weather-forecast-panel .day-row .night { white-space: 39%; }
 
+    body.admin-bar header.wide-header .navbar-nav > li > a,
+    body.admin-bar header.wide-header .navbar-nav > li > span,
+    body.is_admin header.wide-header .navbar-nav > li > a,
+    body.is_admin header.wide-header .navbar-nav > li > span { font-size: 14px; }
+
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
     header.wide-header .post-news figure { width: 229px; }
@@ -7199,6 +7294,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+8) { display: inline-block; }
 
     header.wide-header .ob-promo .ob-promo-body a.vip-poster { padding: 20px 17px 0 0; }
+
+    header.wide-header .menu-main-agenda .movie-brief { padding-right: 15px !important; }
+
+    header.wide-header .menu-main-agenda .movie-poster { padding-right: 15px !important; }
 
     header.wide-header .menu-main-shop .container .shop-list a { padding: 5px 4px; }
 

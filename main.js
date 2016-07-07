@@ -203,6 +203,12 @@ jQuery(".menu-main-news").one("mouseenter", function () {
 });
 
 
+// Загружаем события и сегодняшние сеансы
+jQuery(".menu-main-agenda").one("mouseenter", function () {
+    jQuery(".menu-main-agenda-events").load("http://ksk66.ru/menu-main-agenda-events/");
+    jQuery(".menu-main-agenda-movies").load("http://ksk66.ru/menu-main-agenda-movies/");
+});
+
 // <editor-fold desc="Видео и аудиоплееры">
 
 var radio_player = "";
@@ -290,6 +296,15 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             if (id == "last_comment") {
                 radio_player.jPlayer("setMedia", {
                     m4a: 'http://ksk1.ru/radio-news/comment.m4a'
+                }).jPlayer("play");
+                jQuery(".jp-progress").removeClass("hidden");
+                jQuery(".jp-current-time").removeClass("hidden");
+                jQuery(".jp-duration").removeClass("hidden");
+                jQuery(".track-info").addClass("hidden");
+            }
+            if (id == "itogiDnya") {
+                radio_player.jPlayer("setMedia", {
+                    m4a: 'http://ksk1.ru/radio-news/itogi.m4a'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
