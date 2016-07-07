@@ -1899,7 +1899,8 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-default ul.most-viewed-list .post-meta { display: block; }
 
 .panel-default ul.most-viewed-list .post-date,
-.panel-default ul.most-viewed-list .postviews-count { font-size: 12px; color: #666; display: inline-block; margin-right: 10px; line-height: 24px; }
+.panel-default ul.most-viewed-list .postviews-count,
+.panel-default ul.most-viewed-list .post-comment{ font-size: 12px; color: #666; display: inline-block; margin-right: 10px; line-height: 24px; }
 
 .panel-default ul.most-viewed-list .post-date::before { content: ""; font-family: FontAwesome; margin-right: 3px; }
 
