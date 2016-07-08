@@ -516,18 +516,15 @@ a.media-heading:focus {text-decoration: none;}
 
 body.admin-bar .menu-main-eda .featured > span,
 body.is_admin .menu-main-eda .featured > span,
-body .menu-main-eda .featured > span.show-wpadmin,
-.menu-main-agenda,
+body .menu-main-eda span.show-wpadmin,
 .menu-main-services,
 .menu-main-taxi { display: none !important; }
 
-body.is_admin .menu-main-eda .featured > span.show-wpadmin,
-body.admin-bar .menu-main-eda .featured > span.show-wpadmin { display: inline !important; }
+body.is_admin .menu-main-eda span.show-wpadmin,
+body.admin-bar .menu-main-eda span.show-wpadmin { display: inline !important; }
 
 body.admin-bar .menu-main-services,
 body.is_admin .menu-main-services,
-body.is_admin .menu-main-agenda,
-body.admin-bar .menu-main-agenda,
 body.is_admin .menu-main-taxi,
 body.admin-bar .menu-main-taxi { display: block !important; }
 
@@ -7150,6 +7147,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-eda .stores-group > a img { width: 100px; }
 
+    header.wide-header .menu-main-info .submenu:first-child { margin-left: 97px; }
+
     header.wide-header .menu-main-info .submenu { padding: 0; width: 20%; }
 
     header.wide-header .menu-main-info .submenu-item-name { display: block; font-size: 14px; padding-top: 12px; text-align: center; }
@@ -7309,6 +7308,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
     header.wide-header .menu-main-eda .eda-logo-wrap img { width: 200px; }
+
+    header.wide-header .menu-main-info .submenu:first-child { margin-left: 117px; }
 
     header.wide-header .menu-main-info .submenu-item-name { font-size: 16px; padding-top: 10px; }
 
