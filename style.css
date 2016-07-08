@@ -2479,9 +2479,10 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 @media (min-width: 480px) { 
     .post-info-share-evc > * { display: inline-block; }
 }
-@media (max-width: 580px) {
+@media (max-width: 767px) {
        .sidebar #text-24 { display: none;}
 }
+/*виджет комментариев*/
 @media (min-width: 768px) {
     article.page h1 { margin: 12px 0 36px; }
 
