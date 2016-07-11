@@ -1461,7 +1461,7 @@ iframe.fullstory__video { max-width: 100%; }
 
 .lcp_paginator { margin: 0; padding: 0; }
 
-ul.lcp_paginator li { display: none; list-style-type: none; font-size: 16px; line-height: 24px; }
+ul.lcp_paginator li { display: none; list-style-type: none; font-size: 16px; line-height: 24px; border: none; }
 
 ul.lcp_paginator li a:hover,
 ul.lcp_paginator li a:focus { text-decoration: none; }
