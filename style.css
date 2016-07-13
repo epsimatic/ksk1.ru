@@ -1653,6 +1653,12 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .dem-poll-shortcode { padding: 0 15px; }
 
+.dem-poll-title { font-size: 16px !important; font-weight: 600; margin-bottom: 13.5px !important; }
+
+.dem-graph { background: #f0f0f0 !important; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important; }
+
+.dem-fill { background-color: #8edbff !important; background-image: none !important; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Комментарии»"> */
