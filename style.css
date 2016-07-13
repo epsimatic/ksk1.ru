@@ -812,7 +812,7 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 
 .weather-forecast-panel .weather-icon-wrap { margin: 13.5px 0 27px; text-align: center; }
 
-.weather-forecast-panel .weather-icon-wrap .weather-icon { height: 94.5px; }
+.weather-forecast-panel .weather-icon-wrap img { height: 94.5px; }
 
 .wide-header .weather-forecast-panel .conditions { text-align: center; margin-bottom: 13.5px; }
 
