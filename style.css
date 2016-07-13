@@ -1665,6 +1665,9 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .dem-begin-date { display: none !important; }
 
+.dem-link,
+.dem-poll-info { font-style: normal !important; }
+
 .panel-vote .read-more { line-height: 27px; padding: 7px 0 20px; }
 
 /* </editor-fold> */
