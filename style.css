@@ -2471,16 +2471,14 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .image_name_visa { height: 9px !important; width: 26px !important; }
 .image_name_mastercard { height: 15px !important; width: 25px !important; }
 .image_name_yamoney { -webkit-background-size: cover; background-size: cover; height: 19px !important; width: 50px !important; margin-left: 5px; }
-
-
+/*виджет комментариев*/
+.sidebar #text-24 { display: none;}
 @media (min-width: 480px) { 
     .post-info-share-evc > * { display: inline-block; }
 }
-@media (max-width: 767px) {
-       .sidebar #text-24 { display: none;}
-}
-/*виджет комментариев*/
+
 @media (min-width: 768px) {
+    .sidebar #text-24 { display: block;}
     article.page h1 { margin: 12px 0 36px; }
 
     article.post-custom,
