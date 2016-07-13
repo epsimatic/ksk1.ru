@@ -1659,6 +1659,10 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .dem-fill { background-color: #8edbff !important; background-image: none !important; }
 
+.dem-voted-this .dem-fill { background-color: #00E676 !important; }
+
+.panel-vote .read-more { line-height: 27px; padding: 7px 0 20px; }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Панель «Комментарии»"> */
