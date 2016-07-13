@@ -1661,7 +1661,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .dem-graph { background: #f0f0f0 !important; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important; }
 
-.dem-fill { background-color: #8edbff !important; background-image: none !important; }
+.dem-fill { background-color: #00b0ff !important; background-image: none !important; }
 
 .dem-voted-this .dem-fill { background-color: #00E676 !important; }
 
