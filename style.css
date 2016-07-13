@@ -1724,7 +1724,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     /*display: inline-block;*/
     position: absolute;
     right: 0;
-    top: -46px;
+    top: -33px;
 }
 
 .gdrts-inner-wrapper,
@@ -1736,6 +1736,9 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     margin-left: 15px !important;
 }
 
+.gdrts-rating-text { display: none; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb { background: transparent !important; }
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-up:hover,
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-up { color: #00d964 !important; }
@@ -1746,8 +1749,6 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { opacity: .5; }
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb:hover .gdrts-thumb-link { opacity: 1; }
-
-.gdrts-thumbs-theme-plain-inline.gdrts-state-active:not(.gdrts-vote-saving):not(.gdrts-with-image) .gdrts-thumb { background: transparent !important; }
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { max-height: 0 5px 0 0; }
 
@@ -5066,8 +5067,10 @@ body.admin-bar #events-start { top: -106px; }
 .comment-list .comment-controls a:hover .fa,
 .comment-list .comment-controls a:focus .fa { color: #0091ea; }
 
-.comment-list .comment-content { line-height: 1.618; padding-left: 46px; margin-top: -20px; }
+.comment-list .comment-content { line-height: 1.618; padding-left: 46px; margin-top: -20px; position: relative; }
+
 .comment-list .comment-content > p { margin-bottom: 1em; display: inline; }
+
 .comment-content br { margin-bottom: 11.3px; }
 
 .comment-list article.comment-body .gdthumb,
