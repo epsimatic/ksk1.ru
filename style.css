@@ -1718,6 +1718,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments a.list-group-item:hover,
 .panel-comments a.list-group-item:focus {background-color: #E9E9E9 !important;}
 
+.gdrts-rating-block { display: none; }
+
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
 .panel-comments .comment-rating.comment-neutral { display: none; }
