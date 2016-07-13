@@ -173,7 +173,7 @@ foreach ($array_forecast as $forecast_object) {
             <span class='date'>${forecast_object['day']}</span>
         </div>
         <div class='weather-icon-wrap'>
-            <img src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
+            <img class='weather-icon' src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
         </div>
         <div class='temps'>
             <span class='high'>$forecast_object_high</span>
