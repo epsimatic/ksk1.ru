@@ -1727,18 +1727,29 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     top: -46px;
 }
 
-.gdrts-inner-wrapper {
-    display: inline-block;
-}
-
-.gdrts-block-thumb {
-    display: inline-block;
-}
+.gdrts-inner-wrapper,
+.gdrts-block-thumb { display: inline-block; }
 
 .gdrts-thumb {
-    font-size: 16px !important;
+    font-size: 14px !important;
     padding: 0 !important;
+    margin-left: 15px !important;
 }
+
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-up:hover,
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-up { color: #00d964 !important; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-down:hover,
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb.gdrts-thumb-down { color: #f44336 !important; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { opacity: .5; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb:hover .gdrts-thumb-link { opacity: 1; }
+
+.gdrts-thumbs-theme-plain-inline.gdrts-state-active:not(.gdrts-vote-saving):not(.gdrts-with-image) .gdrts-thumb { background: transparent !important; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { max-height: 0 5px 0 0; }
 
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
