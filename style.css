@@ -1718,7 +1718,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments a.list-group-item:hover,
 .panel-comments a.list-group-item:focus {background-color: #E9E9E9 !important;}
 
-.gdrts-rating-block { display: inline-block; position: absolute; right: 0; top: -18px; margin: 0; }
+.gdrts-rating-block { display: inline-block; position: absolute; right: 0; top: -21px; margin: 0; }
 
 .gdrts-inner-wrapper,
 .gdrts-block-thumb { display: inline-block; }
@@ -1731,7 +1731,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .gdrts-rating-thanks,
 .gdrts-rating-text { display: none; }
 
-.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-count { font-size: 12px; font-weight: 400; position: relative; top: -3px; }
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-count { font-size: 12px; font-weight: 400; position: relative; top: -1px; width: 14px; text-align: center; }
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb { background: transparent !important; }
 
