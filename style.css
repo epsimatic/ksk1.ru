@@ -1720,6 +1720,26 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .gdrts-rating-block { display: none; }
 
+.gdrts-rating-block {
+    /*display: inline-block;*/
+    position: absolute;
+    right: 0;
+    top: -46px;
+}
+
+.gdrts-inner-wrapper {
+    display: inline-block;
+}
+
+.gdrts-block-thumb {
+    display: inline-block;
+}
+
+.gdrts-thumb {
+    font-size: 16px !important;
+    padding: 0 !important;
+}
+
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
 .panel-comments .comment-rating.comment-neutral { display: none; }
