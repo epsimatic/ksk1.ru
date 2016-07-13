@@ -1718,15 +1718,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-comments a.list-group-item:hover,
 .panel-comments a.list-group-item:focus {background-color: #E9E9E9 !important;}
 
-.gdrts-rating-block { display: none; }
-
-.gdrts-rating-block {
-    /*display: inline-block;*/
-    position: absolute;
-    right: 0;
-    top: -18px;
-    margin: 0;
-}
+.gdrts-rating-block { display: inline-block; position: absolute; right: 0; top: -18px; margin: 0; }
 
 .gdrts-inner-wrapper,
 .gdrts-block-thumb { display: inline-block; }
@@ -5036,7 +5028,7 @@ body.admin-bar #events-start { top: -106px; }
 .comment-list .comment-author img.avatar,
 .comment-list .comment-author .comment-meta { float: left; }
 
-.comment-list .comment-author .comment-rating { float: right; margin: 0; }
+.comment-list .comment-author .comment-rating { float: right; margin: 0; display: none; }
 
 .comment-list .comment-rating .thumblock { margin: 0; }
 
