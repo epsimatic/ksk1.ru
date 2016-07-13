@@ -1724,19 +1724,20 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
     /*display: inline-block;*/
     position: absolute;
     right: 0;
-    top: -33px;
+    top: -18px;
+    margin: 0;
 }
 
 .gdrts-inner-wrapper,
 .gdrts-block-thumb { display: inline-block; }
 
-.gdrts-thumb {
-    font-size: 14px !important;
-    padding: 0 !important;
-    margin-left: 15px !important;
-}
+.gdrts-thumb { font-size: 14px !important; padding: 0 !important; margin-left: 15px !important; }
 
+.gdrts-rating-user,
+.gdrts-rating-thanks,
 .gdrts-rating-text { display: none; }
+
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-count { font-size: 12px; font-weight: 400; position: relative; top: -3px; }
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb { background: transparent !important; }
 
@@ -1750,7 +1751,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .gdrts-thumbs-theme-plain-inline .gdrts-thumb:hover .gdrts-thumb-link { opacity: 1; }
 
-.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { max-height: 0 5px 0 0; }
+.gdrts-thumbs-theme-plain-inline .gdrts-thumb .gdrts-thumb-link { margin: 0 5px 0 0; }
 
 .panel-comments .comment-rating { float: right; font-weight: 700; }
 
