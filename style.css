@@ -1657,6 +1657,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .dem-answers .dem-label { color: #222; font-size: 14px; margin-bottom: 5px !important; }
 
+.dem-voted-this { font-weight: 400 !important; }
+
 .dem-graph { background: #f0f0f0 !important; font-family: 'OpenSans',Tahoma,Verdana,Segoe,"Gill Sans","Gill Sans MT",Calibri,sans-serif !important; }
 
 .dem-fill { background-color: #8edbff !important; background-image: none !important; }
