@@ -1605,7 +1605,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 /* <editor-fold desc="Панель «Голосование»"> */
 .panel-vote > .panel-heading { background: #3db65a url("img/panel-vote.png") no-repeat right !important; background-size: contain; }
 
-.panel-vote .panel-question {padding-bottom: 0;}
+.panel-vote .panel-question { padding-bottom: 0;}
 
 .panel-vote .panel-question .btn {white-space: normal;}
 
@@ -1650,6 +1650,8 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .panel-result .wp-polls-ul li:nth-child(4) .progress-bar {background-color: #656ccf !important;}
 
 .panel-result .wp-polls-ul li:nth-child(5) .progress-bar {background-color: #36e796 !important;}
+
+.dem-poll-shortcode { padding: 0 15px; }
 
 /* </editor-fold> */
 
