@@ -156,71 +156,40 @@ foreach ($forecasts as $forecast) {
 }
 
 array_pop($array_forecast);
-$conditions_forecast = "";
+$conditions_forecast = "<div class='row'>";
 $array_forecast[0]['weekday']="Сегодня";
 $array_forecast[1]['weekday']="Завтра";
-
-$hide_first_day_weather_on_evening = (intval(date("G")) >= 18) ? "hidden" : "";
-if ($hide_first_day_weather_on_evening)
-    prettyNotice("Сейчас " . date("G") . " часов. Прогноз на день скрыт.", "warning");
 
 foreach ($array_forecast as $forecast_object) {
     if ((int)$forecast_object['temp_high']> 0 )  $forecast_object_high = "+".$forecast_object['temp_high'] ; else $forecast_object_high = $forecast_object['temp_high'];
     if ((int)$forecast_object['temp_low']> 0 )  $forecast_object_low = "+".$forecast_object['temp_low'] ; else $forecast_object_low = $forecast_object['temp_low'];
-    $conditions_forecast .= " <div class='day-row'>
-                        <div class='summary'>
-                            <span class='weekday'>${forecast_object['weekday']}
-                                <span class='weekday_is-night hidden not-really-$hide_first_day_weather_on_evening'>ночью</span>
-                            </span>
-                            <span class='date'>${forecast_object['day']}</span>
-		                    <span class='temps'>
-		                        <span class='high'>$forecast_object_high</span>
-                                <span class='split'>|</span>
-		                        <span class='low'>$forecast_object_low</span> ℃
-		                    </span>";
-    if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
-        $conditions_forecast .= "<span title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" .
-                                "Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " .
-                        "style='background-color: rgba(41, 182, 246, ${forecast_object['pop']});'>
-                            <span class='drop-icon'></span>
-                                <strong>${forecast_object['mm']}</strong> мм</span>";
-    else
-        $conditions_forecast .= "<span title='Осадков не ожидается' class='pop pop-dry'>Сухо</span>";
-
-
     $short_conditions = $forecast_object['conditions'];
-    $text_day   = str_replace("Повышение","",$forecast_object['text_day']);
-    $text_day   = str_replace("Понижение","",$text_day);
-    $text_night = str_replace("Повышение","",$forecast_object['text_night']);
-    $text_night = str_replace("Понижение","",$text_night);
-    $text_day   = str_replace("C.", "℃.", $text_day);
-    $text_night = str_replace("C.", "℃.", $text_night);
-    // Добавить «Ночью» и сделать первую букву маленькой
-    // Не добавлять «Ночью», если в прогнозе на ночь есть «вечером» или «утром»
-    if ( mb_strpos($text_night, "вечер") === false &&
-         mb_strpos($text_night, "утр") === false ) {
-        $text_night = mbStringToArray($text_night);
-        $text_night[0] = mb_convert_case($text_night[0], MB_CASE_LOWER);
-        $text_night = "<em>Ночью</em> " . implode("", $text_night);
+    $conditions_forecast .= " 
+    <div class='day'>
+        <div class='text-center'>
+            <span class='weekday'>${forecast_object['weekday']}
+                <span class='weekday_is-night hidden not-really-$hide_first_day_weather_on_evening'>ночью</span>
+            </span>
+            <span class='date'>${forecast_object['day']}</span>
+        </div>
+        <div class='weather-icon-wrap'>
+            <img src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
+        </div>
+        <div class='temps'>
+            <span class='high'>$forecast_object_high</span>
+            <span class='split'></span>
+            <span class='low'>$forecast_object_low</span> ℃
+        </div>
+        <p class='conditions'>$short_conditions</p>";
+        if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
+            $conditions_forecast .= "<div title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" ."Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " ."style='background-color: rgba(41, 182, 246, ${forecast_object['pop']});'><span class='drop-icon'></span><strong>${forecast_object['mm']}</strong> мм</div>";
+        else $conditions_forecast .= "<div title='Осадков не ожидается' class='pop pop-dry'>Сухо</div>";
+
+        $conditions_forecast .= "</div>";
     }
 
-    $conditions_forecast .= "</div>
-                        <div class='day hidden-xs $hide_first_day_weather_on_evening'> 
-                            <img src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
-                            <p>$text_day</p>
-                        </div>
-                        <div class='night hidden-xs'>
-                            <img src='${forecast_object['icon_url_night']}' alt='Значок погоды'>
-                            <p>$text_night</p>
-                        </div>
-                        <p class='conditions'>$short_conditions</p>
-                    </div>";
 
-    $hide_first_day_weather_on_evening = "";
-}
-
-
-$conditions_forecast .= "<h6 class='text-center'><a href='https://pogoda.yandex.ru/krasnoufimsk/details'>
+$conditions_forecast .= "</div><h6 class='text-center'><a href='https://pogoda.yandex.ru/krasnoufimsk/details'>
 П<span class='hidden-xs'>одробный п</span>рогноз погоды на 10 дней <i class='fa fa-arrow-right'></i></a></h6>";
 
 //echo $conditions_forecast;
