@@ -2283,6 +2283,8 @@ article.post-custom aside.inset ul > li,
 
 .single-post .main-content article.post-news iframe { margin-top: 24px; margin-bottom: 24px; width: 100%; }
 
+.single-post .main-content article.post-news p iframe { margin-left: -1.618em; }
+
 article.post-custom .table,
 .single-post .main-content article.post-news .table { clear: both; }
 
