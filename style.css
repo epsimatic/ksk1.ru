@@ -1725,6 +1725,7 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 
 .gdrts-thumb { font-size: 14px !important; padding: 0 !important; margin-left: 15px !important; }
 
+.gdrts-dynamic-loading,
 .gdrts-rating-user,
 .gdrts-rating-thanks,
 .gdrts-rating-text { display: none; }
