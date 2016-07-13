@@ -4698,7 +4698,7 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 .movie-poster img { max-width: 100% }
 
 .events .event-heading a,
-.tax-movie #movie-col-right h2,
+.tax-movie h2.movie-title,
 .movie-brief .movie-info a > h4.movie-title { color: #0091EA; font-weight: 600; letter-spacing: 0.01em; }
 
 .events .event-heading a:hover,
@@ -4939,13 +4939,15 @@ body.admin-bar #events-start { top: -106px; }
 
 .tax-movie .star-rating > .fa {font-size: 1.2em; padding-right: 5px;}
 
-.tax-movie #movie-col-right h2 {margin-bottom: 5px; margin-top: 5px !important;}
+.tax-movie h2.movie-title { font-size: 27px; font-weight: 700 !important; line-height: 27px; margin-bottom: 13.5px; margin-top: 13.5px !important; }
 
-.tax-movie .movie-info-line {color: #999; font-size: 13px !important; margin-bottom: 15px !important;}
+.tax-movie .movie-info-line { color: #999; font-size: 13px !important; margin-bottom: 13.5px !important; line-height: 27px; }
 
-.tax-movie .overview {color: #444; margin-bottom: 20px;}
+.tax-movie .overview { color: #494746; font-size: 16px; line-height: 1.618; margin-bottom: 27px; }
 
-.tax-movie h3.table-header { color: #0091EA; font-size: 19px; }
+.tax-movie h3.table-header { color: #0091EA; font-size: 18px; margin: 27px 0 13.5px; }
+
+.table-movie-sessions { margin-bottom: 40.5px; }
 
 .table-movie-sessions > thead > tr > th { font-weight: 600; color: #666; }
 
