@@ -487,10 +487,6 @@ a.media-heading:focus {text-decoration: none;}
 
 
 
-.navbar-nav > li:hover > a.featured,
-.navbar-nav > li:focus > a.featured,
-.navbar-nav > li > a.featured:focus,
-.navbar-nav > li > a.featured:hover { background-color: #ef5350; }
 
 .navbar-nav > li.menu-main-taxi > a.featured { background-color: #fef01c; color: #222; letter-spacing: .025em; }
 
