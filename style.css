@@ -5708,7 +5708,7 @@ strong.ob {font-weight: 600; color: #da4200;}
 .is_admin .message-one__edit-button_edit-admin {display: block !important;}
 
 .is_admin.is_owner .message-one__edit-button_edit-owner {display: none !important;}
-
+.inputdays {min-width: 65px;}
 /* Кнопка «Удалить объявление» */
 .is_owner .message-one__edit-button_remove-owner,
 .is_admin .message-one__edit-button_remove-admin {display: block !important;}
