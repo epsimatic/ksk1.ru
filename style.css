@@ -4441,7 +4441,9 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 #tp-subscribe + .tp-cat-link { background-image: url("//ksk1.ru/img/tp-contact.svg"); background-position: center center; background-repeat: no-repeat; display: block; height: 115px;  }
 #tp-subscribe + .tp-cat-link:hover,
 #tp-subscribe + .tp-cat-link:focus { opacity: .8; }
-
+.tv-cat-link { background-image: url("//ksk1.ru/img/tv-contact.svg"); background-position: center center; background-repeat: no-repeat; display: block; height: 115px;  }
+.tv-cat-link:hover,
+.tv-cat-link:focus { opacity: .8; }
 .sidebar .panel-site-radio > .panel-heading { background-color: #2979ff; }
 .panel-site-radio > .list-group { padding-bottom: 0; }
 
