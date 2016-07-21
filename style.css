@@ -3558,6 +3558,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 /* <editor-fold desc="Каталог"> */
 /* <editor-fold desc="Страница списка категорий каталога (справочника)"> */
+.register-doctor .clinic-name a{margin-top: 15px; display: inline-block;}
 ul.page-cat,
 ul.page-cat .children { padding: 0; list-style: none; }
 
