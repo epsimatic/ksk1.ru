@@ -1212,3 +1212,10 @@ body {overflow-y: scroll;}
 .shop-page_text { color: gray; font-size: 16px; margin-bottom: 10px; }
 /*комментарии*/
 #form-allowed-tags,.reply {display: none;}
+
+@media print
+{
+    .noprint, header, .eda-footer {display:none;}
+
+}
+
