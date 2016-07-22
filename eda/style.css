@@ -1215,7 +1215,7 @@ body {overflow-y: scroll;}
 
 @media print
 {
-    .noprint, header, .eda-footer {display:none;}
+    .noprint, header, .eda-footer, .mobile-header {display:none;}
 
 }
 
