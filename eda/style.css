@@ -1216,6 +1216,7 @@ body {overflow-y: scroll;}
 @media print
 {
     .noprint{display:none;}
+    header{display: none;}
 
 }
 
