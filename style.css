@@ -5733,7 +5733,21 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 .payment-panel_before-paid {text-align: center; border: 1px dotted grey;}
 
 .col-mid .list-group > .sponsor {margin-bottom: 10px;}
-
+.subcat.subcat__481.list-group-item::before {
+    background-color: #ff98a6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: "Новое";
+    left: -1px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    position: absolute;
+    top: -13px;
+}
 /* </editor-fold> */
 
 /* <editor-fold desc="Что нового на сайте"> */
