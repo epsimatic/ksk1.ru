@@ -1285,7 +1285,7 @@ header#header .weather-text { display: none; }
 article.post-news > a:focus { outline: none; }
 
 .navbar-nav article.post-news > a::-moz-focus-inner,
-rticle.post-news > a::-moz-focus-inner { border: 0 !important; }
+article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .archive .post img,
 .panel-news-list .post-news img { height: 100%; width: 120px; float: left; margin-right: 15px; }
