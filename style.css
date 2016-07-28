@@ -5776,6 +5776,7 @@ a.news-slide-block {color: #0f0f0f; text-decoration: none;}
 /* </editor-fold> */
 
 /*Стили для страниц такси 7-99-99 и городской службы 7-98-15*/
+.list_streets .street_option, .list_streets .house_option {cursor: pointer;}
 body.page-template-page-custom-workers,
 body.page-template-page-custom-cargo-delivery,
 body.page-template-page-custom-taxi { background-color: #000; }
