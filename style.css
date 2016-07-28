@@ -7070,7 +7070,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-agenda .movie-brief > a:hover .row,
     header.wide-header .menu-main-agenda .movie-brief > a:focus .row { background-color: #f8f8f8; }
 
-    header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }
+   /* header.wide-header .menu-main-agenda .row > .movie-brief:nth-child(n+4) { display: none; }*/
 
     header.wide-header .menu-main-agenda .movie-brief .row { margin: 0 !important; min-height: 104px; }
 
