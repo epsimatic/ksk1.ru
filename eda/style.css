@@ -116,7 +116,7 @@ nav.navbar { margin: 0 -10px !important; }
     .vendor-list a.vendor-link:focus { text-decoration: none; background-color: #e7e7e7; }
     .vendor-list a.vendor-link.active:hover,
     .vendor-list a.vendor-link.active:focus { background-color: #fffab5; }
-
+    .stores-group .vacabi{position: relative;}
     .vendor-list .vendor-link .label, .stores-group .label { background-color: #f44336; font-weight: 400; position: absolute; right: 30%; top: -11px; }
 
     .eda-footer .vendor-link .label , .stores-group .label { right: 36px; top: 5px; }
