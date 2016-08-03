@@ -3264,7 +3264,7 @@ a.super:focus {background-color: #FEF01C;}
 .full-size{display: none; margin-top: 5px;}
 .is_owner .full-size{display: block;}
     article.status-no {
-    background-color: rgb(221, 221, 221);
+    background-color: #ebebeb;
     border-radius: 9px;}
 /* <editor-fold desc="Панель объявления"> */
 .ob-panel-redaktor{text-align: right;margin-bottom: 10px;padding-top: 10px;clear: both;}
