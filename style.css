@@ -2684,7 +2684,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 
     article.post-custom,
     article.page,
-    .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; font-size: 18px; line-height: 1.618; }
+    .single-post .main-content article.post-news { padding: 0 27px 27px; -webkit-hyphens:auto; -moz-hyphens: auto; hyphens: auto; font-size: 18px; line-height: 1.618; }
 
     body[class*="page-template-page-custom-radio2"] .page-title { padding: 0 54px 27px; font-size: 54px; }
 
