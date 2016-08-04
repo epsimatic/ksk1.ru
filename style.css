@@ -5066,7 +5066,7 @@ body.admin-bar #events-start { top: -106px; }
 .comment-list .comment-author img.avatar { margin-right: 1em; background-color: #f0f0f0; }
 
 .comment-list .author-name { color: #333; line-height: 15px; }
-.comment-list .comment-controls { font-size: 12px; line-height: 12px; display: inline; }
+.comment-list .comment-controls, .comment-ip { font-size: 12px; line-height: 12px; display: inline; }
 
 .comment-list .comment-controls > a { color: #999; }
 
