@@ -269,7 +269,7 @@ body.news .nav > li > a.news-link:focus { background-color: #00dd73; }
     height: 29px !important;
     width: auto !important;
 }
-.menu-main-voiting{background-color: red;}
+.menu-main-voiting, menu-main-voiting:hover{background-color: red;}
 .gsc-input {padding-right: 0 !important;}
 
 .gsc-input-box {height: auto !important;}
