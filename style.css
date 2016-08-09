@@ -503,7 +503,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:hover > span,
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
-li.menu-main-voiting >a:hover,li.menu-main-voiting >a:focus{background-color: red;}
+.navbar-nav > li.menu-main-voiting >a:hover,.navbar-nav > li.menu-main-voiting >a:focus{background-color: redж}
 
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
@@ -5335,6 +5335,10 @@ header.wide-header { display: none; }
 
 .snap-drawer ul.menu-sidenav > li.menu-item > a:focus,
 .snap-drawer ul.menu-sidenav > li.menu-item > a:hover { background-color: #00bfff; }
+
+.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:focus,
+.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:hover { background-color: #00bfff; }
+
 
 .snap-drawer-right ul.menu-sidenav > li.menu-item > a:focus,
 .snap-drawer-right ul.menu-sidenav > li.menu-item > a:hover { background-color: #fff; }
