@@ -47,10 +47,10 @@
 
 //  Openstat
 // FIXME: загружать, только если есть подходящий элемент.
-var openstat = {
+/*var openstat = {
     counter: 2173092, image: 5088, color: "828282", next: openstat,
     part: jQuery('body').prop('class').split(' ')[0]
-};
+};*/
 LoadJS('//openstat.net/cnt.js');
 
 
