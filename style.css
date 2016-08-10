@@ -3148,7 +3148,7 @@ article.ob .ob-text-group { color: #333; margin: 0; line-height: 24px; }
 
 .ob-large-thumbs article.ob .ob-text-group { padding: 15px 20px 0; }
 
-.ob-list article.ob.is-selected { background-color: #FFFCDC; }
+.ob-list article.ob.is-selected { background-color: #FEF8B7; }
 
 .ob-list article.ob.is-selected:hover,
 .ob-list article.ob.is-selected:focus  { background-color: #FEF8B7; }
