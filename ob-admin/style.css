@@ -1,3 +1,8 @@
+@media (max-width: 1500px) {
+    .ob-admin .container { margin-top: 87px; }
+}
+
+
 @media (min-width: 1500px) {
     .container { width: 1500px !important; }
 }
