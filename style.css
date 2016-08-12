@@ -2021,7 +2021,9 @@ a.link-neutral:focus {color: #3b437d;}
 /* body copy 18px/1.5 */
 
 .single-post .main-content-inner { background-color: #fff; background-color: rgba(255,255,255,.75); border-radius: 3px; }
-
+@media (max-width: 768px) {
+    .single-post #text-144{display: none;}
+}
 article.post-custom,
 article.page,
 .single-post .main-content article.post-news {
