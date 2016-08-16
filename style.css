@@ -2024,6 +2024,8 @@ a.link-neutral:focus {color: #3b437d;}
 @media (max-width: 768px) {
     .single-post #text-144{display: none;}
 }
+
+
 article.post-custom,
 article.page,
 .single-post .main-content article.post-news {
@@ -2035,6 +2037,7 @@ article.page,
     -moz-hyphens: auto;
     hyphens: auto;
 }
+
 
 
 article.post-custom { padding: 0 32px 32px; }
