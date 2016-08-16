@@ -5393,6 +5393,8 @@ header.wide-header { display: none; }
 .snap-drawer li.current-page-parent > span:hover,
 .snap-drawer li.current-page-parent > span:focus{ background-color: #7d83ff; }
 
+.snap-drawer li.menu-main-taxi,.snap-drawer li.menu-main-taxi:hover,.snap-drawer li.menu-main-taxi:focus{background-color: #ff0;}
+
 .snap-drawer-right li.current-page-parent > a,
 .snap-drawer-right li.current-page-parent > a:hover,
 .snap-drawer-right li.current-page-parent > a:focus { background-color: #cfd1ff; }
