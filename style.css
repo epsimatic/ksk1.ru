@@ -5406,7 +5406,7 @@ header.wide-header { display: none; }
 .snap-drawer li.current-page-parent ul.sub-menu .menu-item > a , .snap-drawer li.current-page-parent ul.sub-menu .menu-item > span { color: #333;
     -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 
-.snap-drawer li.menu-main-taxi.current-page-parent a,.snap-drawer li.menu-main-taxi:hover,.snap-drawer li.menu-main-taxi:focus{background-color: #ff0!important;color: #000;}
+.snap-drawer li.menu-main-taxi.current-page-parent a,.snap-drawer li.menu-main-taxi:hover,.snap-drawer li.menu-main-taxi:focus{background-color: #fff!important;color: #000;}
 
 .snap-drawer li.menu-item.current-page-parent .triangle {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
