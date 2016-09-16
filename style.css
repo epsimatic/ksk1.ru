@@ -1339,9 +1339,11 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-comment-num {font-weight: 700;}
 
-.post-image .post-format:before, 
+.post-image .post-format:before,
+.post-audio .post-format:before,
 .post-video .post-format:before, 
-.post-image .post-more:before, 
+.post-image .post-more:before,
+.post-audio .post-more:before,
 .post-video .post-more:before {font-family: FontAwesome; padding-right: 6px; padding-left: 10px;}
 
 .post-actions .post-more aside {display: inline-block;}
