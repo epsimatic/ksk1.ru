@@ -1349,6 +1349,9 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .post-video .post-format:before,
 .post-video .post-more:before {content: "";}
 
+.post-audio .post-format:before,
+.post-audio .post-more:before {content: "";}
+
 .post-image .post-format:before,
 .post-image .post-more:before {content: "";}
 
