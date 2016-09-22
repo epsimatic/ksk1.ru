@@ -7741,4 +7741,4 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .news-old .sidebar .panel .body { margin-bottom: 15px; }
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
-.snap-drawer li.menu-main-taxi a{padding: 0;}
+.navbar-nav > li.menu-main-taxi > a.featured{padding: 0;}
