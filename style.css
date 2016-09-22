@@ -7742,3 +7742,5 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
 .navbar-nav > li.menu-main-taxi > a.featured{padding: 0;}
+.navbar-nav > li.menu-main-taxi{background-color: yellow; width: 78px; overflow: hidden;}
+.navbar-nav > li.menu-main-taxi > a > span.taxi_tel {position: absolute; color: black; bottom: 12px; left: 13px;}
