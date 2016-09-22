@@ -5412,7 +5412,7 @@ header.wide-header { display: none; }
     -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 
 .snap-drawer li.menu-main-taxi a,.snap-drawer li.menu-main-taxi:hover,.snap-drawer li.menu-main-taxi:focus{background-color: #ffe700!important;color: #000;}
-.snap-drawer li.menu-main-taxi a{padding: 0;}
+
 .snap-drawer li.menu-item.current-page-parent .triangle {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
     -ms-transform: rotate(90deg);
@@ -7741,3 +7741,4 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .news-old .sidebar .panel .body { margin-bottom: 15px; }
 
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 12px; width: 272px; }
+.snap-drawer li.menu-main-taxi a{padding: 0;}
