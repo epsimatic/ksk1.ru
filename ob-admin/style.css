@@ -388,6 +388,7 @@ h1 {
 
 
 /* Стили для панели редактирования лбъявления*/
+body.ob-admin{font-size: 16px;}
 .ob-admin h1.ob-edit-header { text-align: center; font-size: 19px; color: #263238; margin-bottom: 20px; }
 .ob-admin h1.ob-edit-header .btn { margin-left: 10px; }
 
