@@ -3644,6 +3644,10 @@ article.company .company-meta-item { color: #222; line-height: 24px; margin: 12p
 
 article.company .fa { color: #bbb; }
 
+article.company .fa-odnoklassniki { color: #F58220; }
+
+article.company .fa-vk { color: #507299; }
+
 article.company .company-send-message { padding: 0; display: block; background-color: transparent; font-size: 16px; margin-bottom: 24px; border-bottom: 1px solid #666; }
 
 article.company .company-send-message:hover,
