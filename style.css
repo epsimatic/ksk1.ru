@@ -510,7 +510,7 @@ a.media-heading:focus {text-decoration: none;}
 
 .navbar-nav > li.menu-main-taxi .dropdown-panel .btn-group-featured { float: left; margin-top: 44px; margin-left: 25px; }
 
-.navbar-nav > li.menu-main-taxi .btn-group-featured .btn-featured { font-size: 37px; line-height: 33px; color: #000; display: inline-block; border-radius: 4px; margin-left: 36px; }
+.navbar-nav > li.menu-main-taxi .btn-group-featured .btn-featured { font-size: 37px; line-height: 33px; color: #000; display: inline-block; border-radius: 4px; }
 
 .navbar-nav > li.menu-main-taxi .btn-featured-apps { margin-right: 6px; transition: box-shadow .273s ease; }
 .navbar-nav > li.menu-main-taxi .btn-featured-social { margin-left: 8px; }
