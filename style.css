@@ -495,7 +495,7 @@ a.media-heading:focus {text-decoration: none;}
 
 .navbar-nav > li.menu-main-taxi .dropdown-panel .taxi-logo { margin: 18px 0 0; float: left; }
 
-.navbar-nav > li.menu-main-taxi .taxi-logo .word-taxi { font-size: 28px; margin-bottom: -5px; margin-left: 3px; }
+.navbar-nav > li.menu-main-taxi .taxi-logo .word-taxi { font-size: 26px; margin-bottom: -5px; margin-top: 7px; }
 
 .navbar-nav > li.menu-main-taxi .taxi-logo .word-phone { font-size: 47px; font-weight: 700; }
 
