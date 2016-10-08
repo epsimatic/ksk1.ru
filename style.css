@@ -5870,7 +5870,9 @@ body.page-template-page-custom-cargo-delivery .snap-content,
 
 .services-content footer.info-footer { background-color: #000; }
 
-.services-content section.taxi-section ~ footer.info-footer { background-color: #ffe700; padding: 24px; }
+.services-content section.taxi-section ~ footer.info-footer { padding: 24px; }
+
+.services-content section.taxi-section ~ footer.info-footer h4 { color: #fff; }
 
 .services-content section.taxi-section ~ footer.info-footer .payment-system-image { margin: 0 auto; }
 
@@ -6385,6 +6387,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content section.taxi-section .taxi-form-wrap .form-submit { line-height: 60px; font-size: 24px; }
 
     .services-content section.taxi-section ~ footer.info-footer { padding: 27px; }
+
+    .services-content section.taxi-section ~ footer.info-footer h4 { position: relative; top: 3px; display: inline; }
 
     .services-content .form-wrap .form-control { font-size: 14px; line-height: 24px; height: 48px; padding: 12px; }
 
