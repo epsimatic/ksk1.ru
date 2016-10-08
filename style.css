@@ -1396,6 +1396,9 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .post-news .post-format { font-weight: 400; text-transform: uppercase; }
 /* </editor-fold> */
 
+.home .post-audio figure { display: none; }
+.home .post-audio .wp-audio-shortcode { margin: 16px 0 8px; }
+
 .home .block .vsection .inset {background-color: inherit; cursor: default; float: right; font-size: 80%; font-style: italic; padding-bottom: 1px; padding-left: 3px; padding-top: 1px;}
 
 .panel-official .post-text {margin-bottom: 10px;}
@@ -2797,6 +2800,8 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
     .page-map h2 { font-size: 24px; line-height: 27px; margin: 36px 0 18px; }
 
     .page-map ul li { margin-bottom: 13.5px; }
+
+    .home .post-audio .wp-audio-shortcode { margin: 18px 0 9px; }
 
 }
 @media (min-width: 1200px) {
