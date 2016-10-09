@@ -1335,7 +1335,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
 .home .panel-news article.post-news.post-cat-19 .post-title:after,
-.home .panel-news-list .list > article.post-news.post-cat-19 .post-title:after { background-color: #f44336Е; border-radius: 3px; color: #fff; content: "Важно"; display: inline; font-size: 17px; font-weight: 400; letter-spacing: 0.05em; margin: 0 9px; padding: 2px 9px; text-transform: uppercase; }
+.home .panel-news-list .list > article.post-news.post-cat-19 .post-title:after { background-color: #f44336; border-radius: 3px; color: #fff; content: "Важно"; display: inline; font-size: 17px; font-weight: 400; letter-spacing: .05em; margin: 0 9px; padding: 2px 9px; text-transform: uppercase; }
 
 .home .panel-news article.post-cat-368,
 .home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; }
