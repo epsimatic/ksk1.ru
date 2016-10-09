@@ -493,11 +493,11 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-taxi > a.featured:focus,
 .navbar-nav > li.menu-main-taxi > a.featured:hover { background-color: #FFFE77; }
 
-.navbar-nav > li.menu-main-taxi .dropdown-panel .taxi-logo { margin: 18px 0 0; float: left; }
+.navbar-nav > li.menu-main-taxi .dropdown-panel .taxi-logo { margin: 17px 0 0; float: left; }
 
 .navbar-nav > li.menu-main-taxi .taxi-logo .word-taxi { font-size: 26px; margin-bottom: -5px; margin-top: 7px; }
 
-.navbar-nav > li.menu-main-taxi .taxi-logo .word-phone { font-size: 47px; font-weight: 700; }
+.navbar-nav > li.menu-main-taxi .taxi-logo .word-phone { font-size: 49px; font-weight: 700; }
 
 .navbar-nav > li.menu-main-taxi .dropdown-panel .btn-taxi-order { background-color: #ffe700;
     color: #000; float: left; letter-spacing: .025em; margin-top: 32px; margin-left: 32px; padding: 10px 27px; text-transform: uppercase; line-height: 40px; transition: background-color .273s ease; }
