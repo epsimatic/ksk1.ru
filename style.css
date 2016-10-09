@@ -1484,7 +1484,9 @@ iframe.fullstory__video { max-width: 100%; }
 .post-archive.type-radio .post-description,
 .post-news.type-radio .post-description { display: none; }
 
-.panel-categories .list-group-item { font-size: 18px; padding-left: 18px; }
+.panel-categories .list-group-item { font-size: 18px; padding-left: 14px; }
+
+.panel-categories .list-group-item .fa { margin-right: 6px; }
 
 .news-list_secondary .post-news.type-radio { display: table; width: 100%; }
 
