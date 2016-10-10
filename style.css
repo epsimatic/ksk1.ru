@@ -1415,7 +1415,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
     .post .post-format.post-format-radio { width: 21%; }
     .post-audio .post-title { width: 76%; }
 
-    .post .post-format.post-format-image { width: 28%; }
+    .post .post-format.post-format-photo { width: 28%; }
     .post-image .post-title { width: 69%; }
 
     .post .post-format.post-format-video { width: 21%; }
@@ -1439,7 +1439,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
     .post .post-format.post-format-radio { width: 18%; }
     .post-audio .post-title { width: 78%; }
 
-    .post .post-format.post-format-image { width: 23%; }
+    .post .post-format.post-format-photo { width: 23%; }
     .post-image .post-title { width: 74%; }
 
     .post .post-format.post-format-video { width: 18%; }
