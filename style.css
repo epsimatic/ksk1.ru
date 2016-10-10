@@ -1392,7 +1392,9 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-news .post-format { font-weight: 400; text-transform: uppercase; }
 
-.admin-bar .post .post-format { float: right; width: 13%; display: block !important; }
+.post .post-format { display: none; }
+
+.admin-bar .post .post-format { float: right; width: 13%; display: block; background-color: #f5f5f5; border-radius: 3px; font-size: 16px; }
 
 .admin-bar .post-audio .post-title,
 .admin-bar .post-image .post-title,
