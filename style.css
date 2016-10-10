@@ -1334,9 +1334,6 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .home .panel-news-list .list > article.post-cat-8 ~ article.post-cat-8 { display: block; }
 
-.home .panel-news article.post-news.post-cat-19 .post-title:after,
-.home .panel-news-list .list > article.post-news.post-cat-19 .post-title:after { background-color: #f44336; border-radius: 3px; color: #fff; content: "Важно"; display: inline; font-size: 17px; font-weight: 400; letter-spacing: .05em; margin: 0 9px; padding: 2px 9px; text-transform: uppercase; }
-
 .home .panel-news article.post-cat-368,
 .home .panel-news-list .list > article.post-cat-368 { background-color: #fffcdc; }
 
@@ -1344,9 +1341,6 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .home .panel-news article.post-cat-368:focus,
 .home .panel-news-list .list > article.post-cat-368:hover,
 .home .panel-news-list .list > article.post-cat-368:focus { background-color: #FEF8B7; }
-
-.home .panel-news article.post-news.post-cat-368 .post-title:after,
-.home .panel-news-list .list > article.post-news.post-cat-368 .post-title:after { background-color: #fff; border-radius: 3px; color: #f44336; content: "Новое"; display: inline; font-size: 12px; font-weight: 600; letter-spacing: 0.025em; margin: 0 7px; padding: 2px 7px; text-transform: uppercase; }
 
 .home .panel-news-list article + .yummies { margin-top: -2px; position: relative; }
 
@@ -1392,75 +1386,67 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-news .post-format { font-weight: 400; text-transform: uppercase; }
 
-.post .post-format,
 .post .post-cat-labels { display: none; }
-
-.admin-bar .post .post-format { float: right; display: block; background-color: #f5f5f5; border-radius: 3px; font-size: 16px; margin-top: 18px; padding: 5px 7px; }
-
 .admin-bar .post .post-cat-labels { display: inline-block; }
 
-.admin-bar .post .post-format.post-format-radio { width: 28%; }
+.post .post-format { float: right; display: block; background-color: #f5f5f5; border-radius: 3px; font-size: 16px; margin-top: 18px; padding: 5px 7px; text-align: center; }
 
-.admin-bar .post .post-format.post-format-photo { width: 38%; }
+.post .post-format.post-format-radio { width: 28%; }
 
-.admin-bar .post .post-format.post-format-video { width: 30%; }
+.post .post-format.post-format-photo { width: 38%; }
 
-.admin-bar .post .post-format.post-format-fresh { width: 21%; background-color: #fff; color: #f44336; text-align: center; }
+.post .post-format.post-format-video { width: 30%; }
 
-.admin-bar .post .post-format.post-format-notice { border: 1px solid #f44336; color: #f44336; letter-spacing: .05em; width: 27%; }
+.post .post-format.post-format-fresh { width: 21%; background-color: #fff; color: #f44336; }
 
-.admin-bar .post-cat-368 .post-title,
-.admin-bar .post-cat-19 .post-title,
-.admin-bar .post-audio .post-title,
-.admin-bar .post-image .post-title,
-.admin-bar .post-video .post-title { float: left; }
+.post .post-format.post-format-notice { border: 1px solid #f44336; color: #f44336; letter-spacing: .05em; width: 27%; text-align: center; margin-top: 20px; }
 
-.admin-bar .post-cat-368 .post-title { width: 78%; }
-.admin-bar .post-cat-19 .post-title { width: 72%; }
-.admin-bar .post-audio .post-title { width: 70%; }
-.admin-bar .post-image .post-title { width: 61%; }
-.admin-bar .post-video .post-title { width: 69%; }
+.post-cat-368 .post-title { width: 76%; float: left; }
+.post-cat-19 .post-title { width: 72%; float: left; }
+.post-audio .post-title { width: 68%; float: left; }
+.post-image .post-title { width: 59%; float: left; }
+.post-video .post-title { width: 67%; float: left; }
 
 @media (min-width: 786px) {
-    .admin-bar .post .post-format { margin-top: 16px; }
-    .admin-bar .post .post-format.post-format-fresh { width: 17%; }
-    .admin-bar .post-cat-368 .post-title { width: 82%; }
+    .post .post-format { margin-top: 16px; }
+    .post .post-format.post-format-fresh { width: 17%; }
+    .post-cat-368 .post-title { width: 80%; }
 
-    .admin-bar .post .post-format.post-format-radio { width: 21%; }
-    .admin-bar .post-audio .post-title { width: 78%; }
+    .post .post-format.post-format-radio { width: 21%; }
+    .post-audio .post-title { width: 76%; }
 
-    .admin-bar .post .post-format.post-format-image { width: 28%; }
-    .admin-bar .post-image .post-title { width: 71%; }
+    .post .post-format.post-format-image { width: 28%; }
+    .post-image .post-title { width: 69%; }
 
-    .admin-bar .post .post-format.post-format-video { width: 21%; }
-    .admin-bar .post-video .post-title { width: 78%; }
+    .post .post-format.post-format-video { width: 21%; }
+    .post-video .post-title { width: 76%; }
 
-    .admin-bar .post .post-format.post-format-notice { width: 16%; }
-    .admin-bar .post-cat-19 .post-title { width: 82%; }
+    .post .post-format.post-format-notice { width: 16%; }
+    .post-cat-19 .post-title { width: 80%; }
 }
 
 @media (min-width: 992px) {
-    .admin-bar .post .post-format { margin-top: 14px; }
+    .post .post-format { margin-top: 14px; }
 
-    .admin-bar .post .post-format.post-format-notice { width: 17%; }
-    .admin-bar .post-cat-19 .post-title { width: 80%; }
+    .post .post-format.post-format-notice { width: 17%; }
+    .post-cat-19 .post-title { width: 78%; }
 }
 
 @media (min-width: 1200px) {
-    .admin-bar .post .post-format.post-format-fresh { width: 15%; }
-    .admin-bar .post-cat-368 .post-title { width: 84%; }
+    .post .post-format.post-format-fresh { width: 15%; }
+    .post-cat-368 .post-title { width: 82%; }
 
-    .admin-bar .post .post-format.post-format-radio { width: 18%; }
-    .admin-bar .post-audio .post-title { width: 80%; }
+    .post .post-format.post-format-radio { width: 18%; }
+    .post-audio .post-title { width: 78%; }
 
-    .admin-bar .post .post-format.post-format-image { width: 23%; }
-    .admin-bar .post-image .post-title { width: 76%; }
+    .post .post-format.post-format-image { width: 23%; }
+    .post-image .post-title { width: 74%; }
 
-    .admin-bar .post .post-format.post-format-video { width: 18%; }
-    .admin-bar .post-video .post-title { width: 78%; }
+    .post .post-format.post-format-video { width: 18%; }
+    .post-video .post-title { width: 76%; }
 
-    .admin-bar .post .post-format.post-format-notice { width: 14%; }
-    .admin-bar .post-cat-19 .post-title { width: 84%; }
+    .post .post-format.post-format-notice { width: 14%; }
+    .post-cat-19 .post-title { width: 82%; }
 }
 /* </editor-fold> */
 
