@@ -1228,7 +1228,7 @@ header#header .weather-text { display: none; }
 .post-archive .post-description,
 .post-news .post-description { line-height: 1.618; }
 
-.post-news > a { color: #494746; text-decoration: none; transition: color .15s ease; }
+.post-news a { color: #494746; text-decoration: none; transition: color .15s ease; }
 
 .post-news:focus a,
 .post-news:hover a { color: #222; text-decoration: none; }
