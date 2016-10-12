@@ -1228,13 +1228,18 @@ header#header .weather-text { display: none; }
 .post-archive .post-description,
 .post-news .post-description { line-height: 1.618; }
 
-.post-news > a { color: #494746; text-decoration: none; }
+.post-news > a { color: #494746; text-decoration: none; transition: color .15s ease; }
 
-.post-news:focus > a,
-.post-news:hover > a { color: #222; text-decoration: none; }
+.post-news:focus a,
+.post-news:hover a { color: #222; text-decoration: none; }
 
 .post-news:focus > a .post-actions,
 .post-news:hover > a .post-actions { background-color: #F0F0F0; }
+
+.post-news a.post-format { transition: background-color .15s ease; }
+
+.post-news a.post-format:hover,
+.post-news a.post-format:focus { background-color: #eee; }
 
 .post-news a.post-comment { border-bottom: 1px solid transparent; text-decoration: none; color: #666; }
 
