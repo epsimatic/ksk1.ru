@@ -1241,6 +1241,13 @@ header#header .weather-text { display: none; }
 .post-news a.post-format:hover,
 .post-news a.post-format:focus { background-color: #eee; }
 
+.post-news a.post-cat-label { border-radius: 3px; font-size: .809em; font-weight: 400; padding: 2px 4px; margin-right: 3px; display: inline-block; transition: background-color .15s ease; }
+
+.post-news a.post-cat-label:hover,
+.post-news a.post-cat-label:focus { background-color: #eee; }
+
+.post-news a.post-cat-label .fa { font-size: 16px; margin-left: -3px; margin-right: 2px; position: relative; top: 1px; }
+
 .post-news a.post-comment { border-bottom: 1px solid transparent; text-decoration: none; color: #666; }
 
 .post-news a.post-comment:hover,
@@ -1391,8 +1398,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-news .post-format { font-weight: 400; text-transform: uppercase; }
 
-.post .post-cat-labels { display: none; }
-.admin-bar .post .post-cat-labels { display: inline-block; }
+.post .post-cat-labels { display: inline; }
 
 .post .post-format { float: right; display: block; background-color: #f5f5f5; border-radius: 3px; font-size: 16px; margin-top: 18px; padding: 5px 7px; text-align: center; }
 
