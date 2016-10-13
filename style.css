@@ -1369,6 +1369,8 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .archive .post-title a,
 .home .post-title a { color: #333; font-weight: 700; font-size: 16px; }
 
+.home .panel-news .post-news a { font-size: inherit; }
+
 .archive .post { margin-bottom: 5px; }
 
 .archive .post-actions,
