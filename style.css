@@ -1241,6 +1241,13 @@ header#header .weather-text { display: none; }
 .post-news a.post-format:hover,
 .post-news a.post-format:focus { background-color: #eee; }
 
+.post-news.post-cat-368 a.post-format { cursor: default; }
+
+.post-news.post-cat-368 a.post-format:hover,
+.post-news.post-cat-368 a.post-format:focus { background-color: rgba(255,255,255,.5); }
+
+.post-news .post-cat-labels { display: inline; }
+
 .post-news a.post-cat-label { border-radius: 3px; font-size: .809em !important; font-weight: 400 !important; padding: 2px 4px; margin-right: 3px; display: inline-block; transition: background-color .15s ease; }
 
 .post-news a.post-cat-label:hover,
