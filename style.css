@@ -1255,6 +1255,9 @@ header#header .weather-text { display: none; }
 
 .post-news a.post-cat-label .fa { font-size: 16px; margin-left: -3px; margin-right: 2px; position: relative; top: 1px; }
 
+.post-news .post-date { color: #9e9e9e; margin: 0 8px; }
+.post-news .post-date .fa { color: #999 !important; }
+
 .post-news a.post-comment { border-bottom: 1px solid transparent; text-decoration: none; color: #666; }
 
 .post-news a.post-comment:hover,
@@ -1436,7 +1439,10 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post .post-format.post-format-fresh { width: 21%; background-color: #fff; color: #f44336; }
 
-.post .post-format.post-format-notice { border: 1px solid #f44336; color: #f44336; letter-spacing: .05em; width: 27%; text-align: center; margin-top: 20px; }
+.post .post-format.post-format-notice { border: 1px solid #f44336; color: #f44336; letter-spacing: .05em; width: 27%; text-align: center; margin-top: 20px; background-color: #fff; }
+
+.post .post-format.post-format-notice:hover,
+.post .post-format.post-format-notice:focus { background-color: #fff; background-color: rgba(244, 67, 54,.03); }
 
 .post-cat-368 .post-title { width: 76%; float: left; }
 .post-cat-19 .post-title { width: 72%; float: left; }
@@ -1447,6 +1453,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 @media (min-width: 786px) {
     .post .post-format { margin-top: 16px; }
     .post .post-format.post-format-fresh { width: 17%; }
+    .post .post-format.post-format-notice { margin-top: 11px; }
     .post-cat-368 .post-title { width: 80%; }
 
     .post .post-format.post-format-radio { width: 21%; }
