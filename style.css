@@ -1265,9 +1265,15 @@ header#header .weather-text { display: none; }
 
 .admin-bar .post-image figure.post-thumb { float: none; margin: 0; width: 100%; }
 
-.admin-bar .post-image .post-thumb img { float: none; width: 100%; }
+.admin-bar .post-image img { float: none; width: 100%; }
 
+.admin-bar .post-image .large-thumb,
 .admin-bar .post-image .modal { cursor: pointer; }
+
+.admin-bar .post-image .large-thumb { opacity: .95; transition: opacity .15s ease; }
+
+.admin-bar .post-image .large-thumb:hover, 
+.admin-bar .post-image .large-thumb:focus { opacity: 1; }
 
 .admin-bar .post-image .modal-dialog { margin-top: 130px; width: auto; max-width: 90%; border: none; }
 
