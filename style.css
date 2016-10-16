@@ -1302,12 +1302,18 @@ header#header .weather-text { display: none; }
 .selected-photos .post-date,
 .selected-photos .post-actions { margin: 0 !important; }
 
+.selected-photos .prev-next-posts { font-size: 18px; line-height: 24px; margin-bottom: 48px; }
+
+.selected-photos .prev-next-posts a { text-decoration: none; }
+
 @media (min-width: 992px) {
     .selected-photos .post { margin-bottom: 40.5px; }
 
     .selected-photos .post figure.post-thumb { margin-bottom: 13.5px; }
 
     .selected-photos .post .post-title { line-height: 27px; max-height: 27px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+    .selected-photos .prev-next-posts { line-height: 27px; margin-bottom: 54px; }
 }
 
 @media (min-width: 1200px) {
