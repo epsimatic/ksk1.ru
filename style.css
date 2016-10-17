@@ -1325,7 +1325,7 @@ header#header .weather-text { display: none; }
 
 .admin-bar .post-video .post-content iframe { height: 310px; }
 
-.videos-list .post-content iframe { width: 100%; }
+.videos-list .post-content iframe { width: 100%; height: 479px !important; }
 
 .news-old .post-archive a,
 .news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
