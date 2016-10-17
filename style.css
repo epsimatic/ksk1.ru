@@ -1323,7 +1323,9 @@ header#header .weather-text { display: none; }
 .post-video { display: none; }
 .admin-bar .post-video { display: block; }
 
+.admin-bar .post-video .post-content iframe { height: 310px; }
 
+.videos-list .post-content iframe { width: 100%; }
 
 .news-old .post-archive a,
 .news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
@@ -1343,6 +1345,7 @@ header#header .weather-text { display: none; }
 .archive article.post-news .post-title,
 .home article.post-news .post-title { margin-top: 16px; margin-bottom: 8px; font-size: 18px; }
 
+.videos-list article .post-actions .fa,
 .selected-photos article .post-actions .fa,
 .site-radio article .post-actions .fa,
 .archive article.post-news .post-actions .fa,
@@ -1446,10 +1449,12 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .archive .post { margin-bottom: 5px; }
 
+.videos-list .post-actions,
 .selected-photos .post-actions,
 .archive .post-actions,
 .home .post-actions { margin-top: 5px; }
 
+.videos-list .post-actions > *,
 .selected-photos .post-actions > *,
 .archive .post-actions > *,
 .home .post-actions > * { display: inline-block; }
