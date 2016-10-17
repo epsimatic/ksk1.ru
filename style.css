@@ -1320,6 +1320,11 @@ header#header .weather-text { display: none; }
     .selected-photos figure.post-thumb > .photo { height: 243px; }
 }
 
+.post-video { display: none; }
+.admin-bar .post-video { display: block; }
+
+
+
 .news-old .post-archive a,
 .news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
 
