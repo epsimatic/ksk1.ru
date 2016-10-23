@@ -1329,14 +1329,11 @@ header#header .weather-text { display: none; }
 
 .videos-list .page-title { font-size: 28px !important; }
 
-.videos-list .page-title .fa { position: relative; top: 5px; }
-
 .videos-list .post-content iframe { width: 100%; height: auto !important; min-height: 214px; }
 
 .videos-list .post-video { margin-bottom: 48px; }
 
 @media (min-width: 480px) {
-    .videos-list .page-title { font-size: 42px !important; }
     .videos-list .post-content iframe { min-height: 290px; }
 }
 @media (min-width: 768px) {
@@ -1344,7 +1341,6 @@ header#header .weather-text { display: none; }
     .videos-list .post-video { margin-bottom: 36px; }
 }
 @media (min-width: 992px) {
-    .videos-list .page-title { font-size: 54px !important; }
     .videos-list .post-content iframe { min-height: 392px; }
     .videos-list .post-video { margin-bottom: 40px; }
 }
