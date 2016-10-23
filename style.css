@@ -1486,6 +1486,8 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post .post-id { color: #999; }
 
+.single-post .post-id { margin-left: 16px; }
+
 .post-comment-num { font-weight: 700; }
 
 .post-image .post-format:before,
