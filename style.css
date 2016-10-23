@@ -1241,6 +1241,11 @@ header#header .weather-text { display: none; }
 .post-news a.post-format:hover,
 .post-news a.post-format:focus { background-color: #eee; }
 
+.post-news a.post-format-radio { border: 1px solid #9e9e9e; background-color: #fff; }
+
+.post-news a.post-format-radio:hover,
+.post-news a.post-format-radio:focus { background-color: #fafafa; }
+
 .post-news.post-cat-368 a.post-format { cursor: default; }
 
 .post-news.post-cat-368 a.post-format:hover,
