@@ -1330,7 +1330,25 @@ header#header .weather-text { display: none; }
 
 .admin-bar .post-video .post-content iframe { height: 310px; }
 
-.videos-list .post-content iframe { width: 100%; height: 479px !important; }
+.videos-list .page-title .fa { position: relative; top: 5px; }
+
+.videos-list .post-content iframe { width: 100%; height: auto !important; min-height: 214px; }
+
+.videos-list .post-video { margin-bottom: 48px; }
+
+@media (min-width: 480px) { .videos-list .post-content iframe { min-height: 290px; } }
+@media (min-width: 768px) {
+    .videos-list .post-content iframe { min-height: 266px; }
+    .videos-list .post-video { margin-bottom: 36px; }
+}
+@media (min-width: 992px) {
+    .videos-list .post-content iframe { min-height: 392px; }
+    .videos-list .post-video { margin-bottom: 40px; }
+}
+@media (min-width: 1200px) {
+    .videos-list .post-content iframe { min-height: 230px; }
+    .videos-list .post-video { margin-bottom: 27px; }
+}
 
 .news-old .post-archive a,
 .news-old .post-news a { color: #433822; text-decoration: none; border-bottom: 1px solid transparent; }
