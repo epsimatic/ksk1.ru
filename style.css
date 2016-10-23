@@ -1327,8 +1327,6 @@ header#header .weather-text { display: none; }
 
 .post-video .post-content iframe { height: 310px; }
 
-.videos-list .page-title { font-size: 28px !important; }
-
 .videos-list .post-content iframe { width: 100%; height: auto !important; min-height: 214px; }
 
 .videos-list .post-video { margin-bottom: 48px; }
