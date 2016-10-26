@@ -1294,7 +1294,7 @@ header#header .weather-text { display: none; }
 
 .selected-photos .post { margin-bottom: 36px; }
 
-.selected-photos .post .post-title { font-weight: 400; font-size: 16px; line-height: 24px; margin: 0; }
+.selected-photos .post .post-title ,.videos-list .post .post-title { font-weight: 400; font-size: 16px; line-height: 24px; margin: 0; }
 
 .selected-photos .post figure.post-thumb { float: none; width: 100%; margin-bottom: 12px; }
 
@@ -1316,7 +1316,7 @@ header#header .weather-text { display: none; }
 
     .selected-photos .post figure.post-thumb { margin-bottom: 13.5px; }
 
-    .selected-photos .post .post-title { line-height: 27px; max-height: 27px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+    .selected-photos .post .post-title ,.videos-list .post .post-title{ line-height: 27px; max-height: 27px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
     .selected-photos .prev-next-posts { line-height: 27px; margin-bottom: 54px; }
 }
