@@ -1268,7 +1268,7 @@ header#header .weather-text { display: none; }
 .post-news a.post-comment:hover,
 .post-news a.post-comment:focus { border-bottom: 1px dotted #666; color: #494746; text-decoration: none; }
 
-.post-image figure.post-thumb { float: none; margin: 0; width: 100%; }
+.post-image figure.post-thumb { float: none; margin: 0; width: 100% !important; }
 
 .post-image img { float: none !important; width: 100% !important; }
 
