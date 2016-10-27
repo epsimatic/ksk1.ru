@@ -3830,6 +3830,7 @@ article.company .post-views { color: #666; margin-right: 6px; margin-left: 12px;
 article.company .post-views:before { content: ""; font-family: FontAwesome; margin-right: 6px; }
 
 article.company.company-paid .post-views { margin-left: 15px; font-size: 14px; font-weight: 400; }
+article.company.company-paid {background-color: #fef8b7;}
 
 .company-name a { color: #0091EA; font-size: 18px; font-weight: 600; }
 
