@@ -68,7 +68,8 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
 
     $conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
                                                 alt="Погода" ></div>';
-} else {
+}
+else {
     $sign = ($temp_c > 0) ? "+" : "";
     $week = array(
         "Sunday" => "воскресенье",
@@ -92,7 +93,7 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
         11 => "ноября",
         12 => "декабря",
     );
-    $conditions = '<div class="weather-text">'
+    $conditions = '<a href="https://pogoda.yandex.ru/krasnoufimsk/details"><div class="weather-text">'
                 . '<div class="weather-date">' .date("j", $parsed_conditions->{'observation_epoch'})." ".$month[date("n", $parsed_conditions->{'observation_epoch'})] . '</div>'
                 . '<div class="weather-label">' . $description . '</div>'
                 . '</div>'
@@ -107,7 +108,7 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
                 . 'Щёлкните для прогноза">'
                 . '<img class="weather-icon" src="' . $icon_url . '">'
                 . '<div class="weather-temp">' . $sign . $temp_c . '</div>'
-                . '<div class="weather-label">' . $description . '</div></div>';
+                . '<div class="weather-label">' . $description . '</div></div></a>';
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
