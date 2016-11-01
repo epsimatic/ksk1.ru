@@ -5605,7 +5605,7 @@ header.wide-header { display: none; }
 .snap-drawer .weather-text { float: left; width: 70%; height: 73px; margin-bottom: 10px; }
 
 .snap-drawer .weather-text .weather-date,
-.snap-drawer .weather-text .weather-label { padding-left: 20px; position: relative; top: 23px; }
+.snap-drawer .weather-text .weather-label, .snap-drawer .weather-text .weather-detail { padding-left: 20px; position: relative; top: 23px; }
 
 .snap-drawer .weather-text .weather-date:before { content: "Сегодня "; font-weight: 600; }
 
