@@ -97,7 +97,7 @@ else {
                 . '<div class="weather-date">' .date("j", $parsed_conditions->{'observation_epoch'})." ".$month[date("n", $parsed_conditions->{'observation_epoch'})] . '</div>'
                 . '<div class="weather-label">' . $description . '</div>'
                 . '</div>'
-                . '<a href="https://pogoda.yandex.ru/krasnoufimsk/details" class="weather-block"><div  title="По данным на '
+                . '<div class="weather-block" title="По данным на '
                 . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в "
                 . date("G.i", $parsed_conditions->{'observation_epoch'}) . ':' . PHP_EOL
                 . $temp . PHP_EOL
@@ -108,7 +108,7 @@ else {
                 . 'Щёлкните для прогноза">'
                 . '<img class="weather-icon" src="' . $icon_url . '">'
                 . '<div class="weather-temp">' . $sign . $temp_c . '</div>'
-                . '<div class="weather-label">' . $description . '</div></div></a>';
+                . '<div class="weather-label">' . $description . '</div></div><a href="https://pogoda.yandex.ru/krasnoufimsk/details" >Подробнее</a>';
 }
 
 if (file_put_contents("conditions.html", $conditions)) {
