@@ -268,7 +268,8 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 jQuery("#on_air").click();
             },
             swfPath: "js",
-            supplied: "mp3, m4a"
+            supplied: "mp3"
+            //supplied: "mp3, m4a"
         });
 
 
@@ -276,7 +277,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             var id = jQuery(this).prop("id");
             if (id == "last_news") {
                 radio_player.jPlayer("setMedia", {
-                    m4a: "http://ksk1.ru/radio-news/news.m4a"
+                    mp3: "http://ksk1.ru/radio-news/news.mp3"
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
@@ -295,7 +296,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (id == "last_comment") {
                 radio_player.jPlayer("setMedia", {
-                    m4a: 'http://ksk1.ru/radio-news/comment.m4a'
+                    mp3: 'http://ksk1.ru/radio-news/comment.mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
@@ -304,7 +305,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (id == "itogiDnya") {
                 radio_player.jPlayer("setMedia", {
-                    m4a: 'http://ksk1.ru/radio-news/itogi.m4a'
+                    mp3: 'http://ksk1.ru/radio-news/itogi.mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
