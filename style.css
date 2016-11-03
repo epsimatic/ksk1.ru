@@ -7942,9 +7942,4 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .navbar-right .weather-temp {color: #fff;}
 .panel-news-list .list .gdrts-rating-block{position: relative !important ; top: 6px !important;}
 .panel-news-list .list .gdrts-rating-please-wait{display: none !important; }
-.page-id-17332 .taxonomy-description, .page-id-17334 .taxonomy-description{color: #7d9d91;
-margin-bottom: 0;
-margin-left: 0;
-margin-right: 0;
-margin-top: 0;
-padding-left: 22px !important;}
+.page-id-17332 .taxonomy-description, .page-id-17334 .taxonomy-description{color: #7d9d91; margin: 0; padding-left: 54px !important;padding-right: 54px !important;}
