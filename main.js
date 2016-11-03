@@ -258,7 +258,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             },
             ended: function () {
                 jQuery(this).jPlayer("setMedia", {
-                    // m4a: "http://radio.ksk66.ru:8000/aac",
+                     m4a: "http://radio.ksk66.ru:8000/aac",
                     mp3: "http://radio.ksk66.ru:8000/mp3"
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
