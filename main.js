@@ -268,7 +268,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 jQuery("#on_air").click();
             },
             swfPath: "js",
-            supplied: "mp3"
+             supplied: "mp3, m4a"
             //supplied: "mp3, m4a"
         });
 
@@ -286,7 +286,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (id == "on_air") {
                 radio_player.jPlayer("setMedia", {
-                 //   m4a: 'http://radio.ksk66.ru:8000/aac',
+                    m4a: 'http://radio.ksk66.ru:8000/aac',
                     mp3: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
@@ -318,7 +318,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
         jQuery(".play-radio div").bind("click", function () {
             if (jQuery(this).prop("id") == "play") {
                 radio_player.jPlayer({
-                  //  m4a: "http://radio.ksk66.ru:8000/aac"
+                    m4a: "http://radio.ksk66.ru:8000/aac",
                     mp3: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
                 jQuery(".play-radio #play").addClass('hidden');
@@ -326,7 +326,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (jQuery(this).prop("id") == "pause") {
                 radio_player.jPlayer({
-                  //  m4a: "http://radio.ksk66.ru:8000/aac"
+                    m4a: "http://radio.ksk66.ru:8000/aac",
                     mp3: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("pause");
                 jQuery(".play-radio #play").removeClass('hidden');
