@@ -180,6 +180,7 @@ jQuery('.dropdown-weather').one('mouseenter', function () {
 });
 
 // Загрузить срочные объявления при наведении на панель Объявления
+/*
 jQuery(".menu-main-ads").one("mouseenter", function () {
     jQuery(".ob-promo-body").load("http://ob.ksk66.ru/core/vip_ajax_block.php", function () {
         jQuery('.vip-poster').each(function () {
@@ -193,7 +194,8 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
             });
         });
     });
-});
+})
+*/
 
 
 // Загрузить главную новость при наведении на панель Новости
