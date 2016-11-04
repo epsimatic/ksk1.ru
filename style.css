@@ -7940,6 +7940,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .sub-menu-krsk img{height: 15px;}
 .navbar-right .weather-block{padding-top: 12px;}
 .navbar-right .weather-temp {color: #fff;}
-.panel-news-list .list .gdrts-rating-block{position: relative !important ; top: 6px !important;}
-.panel-news-list .list .gdrts-rating-please-wait,.single-post .gdrts-rating-please-wait,.panel-news-list .list .gdrts-thumb-down{display: none !important; }
+.panel-news-list .list .gdrts-rating-block, .page-id-55914 .gdrts-rating-block{position: relative !important ; top: 6px !important;}
+.panel-news-list .list .gdrts-rating-please-wait,.single-post .gdrts-rating-please-wait,.panel-news-list .list .gdrts-thumb-down,.page-id-55914 .gdrts-thumb-down,.page-id-55914 .gdrts-rating-please-wait{display: none !important; }
 .page-id-17332 .taxonomy-description, .page-id-17334 .taxonomy-description{color: #7d9d91; margin: 0; padding-left: 54px !important;padding-right: 54px !important;}
