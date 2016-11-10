@@ -7946,6 +7946,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .page-id-17332 .taxonomy-description, .page-id-17334 .taxonomy-description{color: #7d9d91; margin: 0; padding-left: 54px !important;padding-right: 54px !important;}
 
 /*Рейтинговые новости*/
-.rating-post-item .post-title { display: block; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis;}
+.rating-post-item .post-title { display: block; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; color: #555;
+    font-weight: 400;}
 .rating-post-item .post-rating { color: green; float: right;}
-a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; padding-top: 1px;white-space:nowrap;}
+a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; padding-top: 1px;
+    white-space:nowrap; display: block;}
