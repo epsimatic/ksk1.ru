@@ -7948,6 +7948,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 /*Рейтинговые новости*/
 .rating-post-item .post-title { display: block; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; color: #555;
     font-weight: 400;}
-.rating-post-item .post-rating { color: green; float: right; font-weight: 700;}
+.rating-post-item .post-rating { color: #00d964; float: right; font-weight: 700;}
 a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; padding-top: 1px;
     white-space:nowrap; display: block; text-decoration: none;}
