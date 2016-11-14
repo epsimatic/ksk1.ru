@@ -251,7 +251,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
                      m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                    m4a: "http://radio.ksk66.ru:8000/mp3"
                 });
                 if (getCookie("player_state")) {
                     deleteCookie("player_state");
@@ -261,7 +261,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             ended: function () {
                 jQuery(this).jPlayer("setMedia", {
                      m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: "http://radio.ksk66.ru:8000/mp3"
+                    m4a: "http://radio.ksk66.ru:8000/mp3"
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
@@ -289,7 +289,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             if (id == "on_air") {
                 radio_player.jPlayer("setMedia", {
                     m4a: 'http://radio.ksk66.ru:8000/aac',
-                    mp3: 'http://radio.ksk66.ru:8000/mp3'
+                    m4a: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
@@ -298,7 +298,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (id == "last_comment") {
                 radio_player.jPlayer("setMedia", {
-                    mp3: 'http://ksk1.ru/radio-news/comment.mp3'
+                    m4a: 'http://ksk1.ru/radio-news/comment.mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
@@ -307,7 +307,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             }
             if (id == "itogiDnya") {
                 radio_player.jPlayer("setMedia", {
-                    mp3: 'http://ksk1.ru/radio-news/itogi.mp3'
+                    m4a: 'http://ksk1.ru/radio-news/itogi.mp3'
                 }).jPlayer("play");
                 jQuery(".jp-progress").removeClass("hidden");
                 jQuery(".jp-current-time").removeClass("hidden");
@@ -321,7 +321,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             if (jQuery(this).prop("id") == "play") {
                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: 'http://radio.ksk66.ru:8000/mp3'
+                    m4a: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("play");
                 jQuery(".play-radio #play").addClass('hidden');
                 jQuery(".play-radio #pause").removeClass('hidden');
@@ -329,7 +329,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             if (jQuery(this).prop("id") == "pause") {
                 radio_player.jPlayer({
                     m4a: "http://radio.ksk66.ru:8000/aac",
-                    mp3: 'http://radio.ksk66.ru:8000/mp3'
+                    m4a: 'http://radio.ksk66.ru:8000/mp3'
                 }).jPlayer("pause");
                 jQuery(".play-radio #play").removeClass('hidden');
                 jQuery(".play-radio #pause").addClass('hidden');
