@@ -1241,10 +1241,10 @@ header#header .weather-text { display: none; }
 .post-news a.post-format:hover,
 .post-news a.post-format:focus { background-color: #eee; }
 
-.post-news a.post-format-radio { border: 1px solid #9e9e9e; background-color: #fff; }
+.post-news a.post-format-radio { background-color: #088EFF; color: #fff; letter-spacing: .025em; }
 
 .post-news a.post-format-radio:hover,
-.post-news a.post-format-radio:focus { background-color: #fafafa; }
+.post-news a.post-format-radio:focus { background-color: #2979ff; }
 
 .post-news.post-cat-368 a.post-format { cursor: default; }
 
@@ -1394,8 +1394,8 @@ header#header .weather-text { display: none; }
 
 .home .panel-news article.post-news .post-title { font-size: 21px; line-height: 24px; margin-bottom: 12px; margin-top: 12px; }
 
-.home article.post-news a:visited .post-title { color: #7E57C2; }
-.home article.post-news a:visited .post-description { color: #666; }
+.home article.post-news .post-title > a:visited { color: #7E57C2; }
+.home article.post-news .post-description a:visited { color: #666; }
 
 .home .panel-news + .yummies img.yummies,
 .home .panel-news-list .yummies { margin: 12px 0 !important; }
@@ -1516,20 +1516,14 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 .post.post-cat-368 .post-cat-label:hover,
 .post.post-cat-368 .post-cat-label:focus { background-color: rgba(255,255,255,.65); }
 
-.post .post-format.post-format-notice { border: 1px solid #f44336; color: #f44336; letter-spacing: .05em; width: 27%; text-align: center; margin-top: 20px; background-color: #fff; }
+.post .post-format.post-format-notice { color: #f44336; letter-spacing: .05em; text-align: center; margin-top: 16px; background-color: #fff; padding: 0 5px; font-weight: 600; }
 
 .post .post-format.post-format-notice:hover,
 .post .post-format.post-format-notice:focus { background-color: #fff; background-color: rgba(244, 67, 54,.03); }
 
+@media (min-width: 786px) { .post .post-format { margin-top: 16px; } }
 
-@media (min-width: 786px) {
-    .post .post-format { margin-top: 16px; }
-    .post .post-format.post-format-notice { margin-top: 11px; }
-}
-
-@media (min-width: 992px) {
-    .post .post-format { margin-top: 14px; }
-}
+@media (min-width: 992px) { .post .post-format { margin-top: 14px; } }
 /* </editor-fold> */
 
 .home .post-audio figure { display: none; }
@@ -1700,7 +1694,7 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 .content-padder > header .taxonomy-description {position: relative; top: 3px;}
 
 body.search .page-title,
-.content-padder > header > .page-title { color: #999; font-size: 48px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 48px; text-transform: lowercase; }
+.content-padder > header > .page-title { color: #999; font-size: 48px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 48px; text-transform: lowercase; margin: 0; }
 
 @media (min-width: 992px) { 
     body.search .page-title,
@@ -1717,7 +1711,16 @@ body.search header.page-header .page-title { margin-bottom: 27px !important; }
 
 body.search header.page-header .page-title-sub { color: #494746; font-size: 18px; line-height: 27px; margin-top: 0; }
 
-.content-padder > header p {color: #7d9d91; margin: 0; padding-left: 22px;}
+.content-padder { padding: 0 16px; }
+
+.content-padder > header p { color: #bababa; margin: 10px 0 0; }
+
+@media (min-width: 768px) {
+    .content-padder { padding: 0; }
+    .content-padder > header p { margin-top: -10px; }
+}
+
+.category-news_with_photo h1.page-title::before { content: ""; font-family: FontAwesome; font-size: 40px; font-weight: 400; }
 
 .content-padder .panel-body {padding: 0;}
 
@@ -7938,7 +7941,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .news-old .user-panel-content{ position: absolute; right: 12px; top: 14px; width: 272px; }
 
 .sub-menu-krsk img{height: 15px;}
-.navbar-right .weather-block{padding-top: 12px;}
+
+.navbar-right .weather-block{ padding: 11px 0; }
+
 .navbar-right .weather-temp {color: #fff;}
 .panel-news-list .list .gdrts-rating-block, .page-id-55914 .gdrts-rating-block, .page-id-55651 .gdrts-rating-block{position: relative !important ; top: 5px !important;}
 .panel-news-list .list .gdrts-rating-please-wait,.single-post .gdrts-rating-please-wait,.panel-news-list .list .gdrts-thumb-down,
