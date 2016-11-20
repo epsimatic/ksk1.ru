@@ -1720,7 +1720,19 @@ body.search header.page-header .page-title-sub { color: #494746; font-size: 18px
     .content-padder > header p { margin-top: -10px; }
 }
 
-.category-news_with_photo h1.page-title::before { content: ""; font-family: FontAwesome; font-size: 40px; font-weight: 400; }
+@media (min-width: 992px) {
+    .content-padder > header p { margin-top: -4px; }
+}
+
+.category h1.page-title::before { font-family: FontAwesome; font-size: 40px; font-weight: 400; }
+
+.category-news_with_photo h1.page-title::before { content: ""; }
+.category-mail h1.page-title::before { content: ""; }
+.category-main_news h1.page-title::before { content: ""; }
+.category-competition h1.page-title::before { content: ""; }
+.category-young h1.page-title::before { content: ""; }
+.category-news_with_video h1.page-title::before { content: ""; }
+.category-vote h1.page-title::before { content: ""; }
 
 .content-padder .panel-body {padding: 0;}
 
