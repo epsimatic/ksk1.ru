@@ -355,7 +355,8 @@ nav.navbar { margin: 0 -10px !important; }
     justify-content: flex-start;
 
     /*transition: max-height 4s ease 0s;*/
-    max-height: 5000px; }
+    // max-height: 5000px;
+}
 
 .dishes.collapsed .woocommerce { max-height: 477px; }
 
