@@ -1272,7 +1272,7 @@ header#header .weather-text { display: none; }
 
 .post-image img { float: none !important; width: 100% !important; }
 
-.post-image .large-thumb,
+
 .post-image .modal { cursor: pointer; }
 
 .post-image .large-thumb { opacity: .95; transition: opacity .15s ease; }
