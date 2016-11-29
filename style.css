@@ -167,7 +167,7 @@ header .weather-temp-sm { position: absolute; bottom: 0; left: 37px; }
 
 .weather-block { cursor: pointer; transition: opacity 0.4s ease-in; }
 
-.ya-weather { border-radius: 5px; overflow: hidden; cursor: pointer; }
+.ya-weather { border-radius: 5px; overflow: hidden; cursor: pointer; margin-top:10px;}
 
 .ya-weather img { margin: -40px -15px -50px; mix-blend-mode: multiply; }
 
