@@ -2109,7 +2109,7 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 .panel-event .event-place { font-size: 10px; margin: 0; }
 
 .panel-event .panel-footer { line-height: 24px; text-align: right; }
-
+.movie-brief .movie-sessions{white-space: normal;}
 @media (min-width: 992px) {
     .panel-event .events-date { margin-top: 18px; margin-bottom: 9px; line-height: 13.5px; }
     .panel-event .event { padding: 13.5px 15px; }
