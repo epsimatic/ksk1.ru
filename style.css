@@ -3683,6 +3683,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 .add-ob__form textarea.add-ob__text-input { padding: 6px }
 .add-ob__hide__photo__file{margin-top: 10px;}
+.img-responsive > div{margin-top: 10px;}
 
 .time_delete{width: 45px;}
 /*изначальная загрузка формы Добавить объявление*/
