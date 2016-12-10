@@ -132,7 +132,7 @@ nav.navbar .menu-item a::-moz-focus-inner,
 
     .sidebar .yummies { display: block; }
 }
-
+.taxi .col-xs-6 {padding-left: 5px; padding-right: 5px;}
 /* <editor-fold desc="Шапка"> */
 
 /* <editor-fold desc="Блоки"> */
