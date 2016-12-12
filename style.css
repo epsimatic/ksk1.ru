@@ -6428,12 +6428,13 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content footer.service-footer .form-submit + .ajax-loader { left: 25px; top: 8px; }
 
-    .services-content section.service-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; color: #fff;}
+    .services-content section.service-section .social-links .social-title { display: inline-block; margin-bottom: 0; position: relative; bottom: 5px; margin-bottom: 0; margin-right: 24px; }
 
     .services-content footer.service-footer .footer-btns-wrap > * { padding: 0 6px; }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+    .services-content section.service-section .social-links .social-title{color: #fff;}
     .services-content section.service-section { overflow: hidden; }
 
     body.admin-bar.taxi .services-content section.service-section { margin-top: 0; }
