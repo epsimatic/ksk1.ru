@@ -6133,7 +6133,7 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .services-content section.taxi-section .taxi-info-wrap h2 { font-size: 36px; font-weight: 700; letter-spacing: -0.025em; margin-top: 24px; margin-bottom: 12px; line-height: 24px; }
 
-.services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; line-height: 24px; margin-top: 24px; margin-bottom: 24px; }
+.services-content section.taxi-section .taxi-info-wrap p { font-size: 16px; }
 
 .services-content section.taxi-section .taxi-info-wrap h4 {  line-height: 24px; margin: 0; }
 
