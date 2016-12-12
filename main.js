@@ -828,9 +828,11 @@ jQuery('span.our-projects').on('mouseenter', function () {
 
 
 // Browser-update
+/*
 var $buoop = {
     text: "Ваш браузер (%s) <b>устарел</b>. Он <b>небезопасен</b> и <b>не показывает все возможности</b> этого и других сайтов. \
 <a%s>Узнайте, как обновить ваш браузер</a>"
 };
 LoadJS('//browser-update.org/update.js');
+*/
 
