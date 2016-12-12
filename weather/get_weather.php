@@ -95,7 +95,7 @@ else {
     );
     $conditions = '<div class="weather-text">'
                 . '<div class="weather-date">' .date("j", $parsed_conditions->{'observation_epoch'})." ".$month[date("n", $parsed_conditions->{'observation_epoch'})] . '</div>'
-                . '<div class="weather-label">' . $description . '</div>'
+           //     . '<div class="weather-label">' . $description . '</div>'
                 . '<div class="weather-detail"><a href="https://pogoda.yandex.ru/krasnoufimsk/details" >Подробнее</a></div></div>'
                 . '<div class="weather-block" title="По данным на '
                 . $week[date("l", $parsed_conditions->{'observation_epoch'})] . " в "
