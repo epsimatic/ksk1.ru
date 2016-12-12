@@ -6279,9 +6279,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 .services-content .btn-reviews { padding: 0 30px; line-height: 48px; background-color: #fff; letter-spacing: .025em; text-transform: uppercase; color: #000; }
 
-.services-content section.service-section .social-links { margin-bottom: 24px; }
+.services-content section.service-section .social-links { margin-bottom: 24px; margin-left: 20px;}
 
-.services-content section.service-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; }
+.services-content section.service-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; color: #fff;}
 
 .services-content section.service-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
 
@@ -6422,7 +6422,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content footer.service-footer .form-submit:hover,
     .services-content footer.service-footer .form-submit:focus { background-color: #FFEE5C; }
 
-    body.taxi .modal-header { background-color: #FFE700; }
+
 
     body.taxi .modal-title { color: #000; padding: 0; line-height: 24px; font-size: 18px; }
 
@@ -6470,11 +6470,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-section .taxi-info-wrap { margin-left: 0; color: #fff; text-align: left; }
 
-    .services-content section.taxi-section .taxi-info-wrap h4 > a { color: #fff; }
 
     .services-content section.taxi-section .app-download-bages { text-align: left; margin-top: 27px; }
 
-    .services-content section.taxi-section .app-download-bages-title { font-size: 16px; line-height: 27px; margin-bottom: 13.5px; }
+    .services-content section.taxi-section .app-download-bages-title { font-size: 16px; line-height: 27px; margin-bottom: 13.5px; color: #fff;}
 
     .services-content section.service-section .social-links a { color: #fff; }
 
@@ -6539,7 +6538,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section.taxi-section .taxi-info-wrap p { width: 600px; }
 
-    .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0 16px 0 0; color: #fff; }
+    .services-content section.taxi-section .taxi-info-wrap h4 { font-size: 54px; line-height: 48px; margin: 0 16px 0 0;  }
 
     .services-content section.taxi-section .taxi-form-wrap { border-radius: 12px; padding-top: 24px; padding-bottom: 24px; background-color: #FFE700; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); margin-top: 24px; }
 
