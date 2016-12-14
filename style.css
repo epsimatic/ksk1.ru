@@ -6346,7 +6346,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content .service-info-inner:hover,
     .services-content .service-info-inner:focus { background-color: #f0f0f0; }
 
-    .services-content .app-download-bages > a:first-child { display: block; margin-bottom: 6px; margin-top: 6px; }
+    .services-content .app-download-bages > a:first-child { display: inline; margin-bottom: 6px; margin-top: 6px; }
 
     .services-content .taxi-info-wrap .app-download-bages > a:first-child { display: inline; }
 
