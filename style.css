@@ -2227,7 +2227,6 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content-inner { background-color: #fff; background-color: rgba(255,255,255,.75); border-radius: 3px; }
 @media (max-width: 768px) {
     .single-post #text-144{display: none;}
-    .page-template-page-custom-taxi   .info-footer_text {color:#8C8B8B;}
 }
 
 
@@ -7982,5 +7981,5 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .page-template-page-custom-radio2 .format-audio .more-link {margin-left: 10px;text-decoration: none;}
 .audio-views{margin-left: 10px;}
 .title-audio{    margin-top: 24px; display: block;}
-
+.page-template-page-custom-taxi   .info-footer_text {color:#8C8B8B;}
 
