@@ -7413,7 +7413,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
     header.wide-header .menu-main-eda{background-color: #fa463e;}
-    header.wide-header .menu-main-eda:hover{background-color: #fc746e;}
+    header.wide-header .menu-main-eda:hover{background-color: #fc746e !important;}
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
