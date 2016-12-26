@@ -4956,7 +4956,7 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 
 
 /* Оформление фильмов */
-.movie-brief { min-height: 150px; }
+.movie-brief { min-height: 180px; }
 
 .events .event-thumb,
 .movie-brief .movie-poster, .today-movies .movie-poster { position:relative; }
