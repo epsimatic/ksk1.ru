@@ -543,6 +543,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-voiting >a:hover,.navbar-nav > li.menu-main-voiting >a:focus{ background-color: red; }
 .navbar-nav > li.menu-main-eda >a:hover,.navbar-nav > li.menu-main-eda >a:focus{ background-color: #fc746e; }
 
+
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
 .single-post .nav .menu-main-news  > a::after,
