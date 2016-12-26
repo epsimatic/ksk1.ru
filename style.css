@@ -534,15 +534,21 @@ a.media-heading:focus {text-decoration: none;}
 
 .navbar-nav > li:focus > a,
 .navbar-nav > li:hover > a,
-.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > li:focus > span,
 .navbar-nav > li:hover > span,
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
-.navbar-nav > li.menu-main-voiting >a:hover,.navbar-nav > li.menu-main-voiting >a:focus{ background-color: red; }
-.navbar-nav > li.menu-main-eda >a:hover,.navbar-nav > li.menu-main-eda >a:focus{ background-color: #fc746e; }
-
+.navbar-nav > li.menu-main-eda:focus > a,
+.navbar-nav > li.menu-main-eda:hover > a,
+.navbar-nav > li.menu-main-eda > a:hover,
+.navbar-nav > li.menu-main-eda > a:focus,
+.navbar-nav > li.menu-main-eda:focus > span,
+.navbar-nav > li.menu-main-eda:hover > span,
+.navbar-nav > li.menu-main-eda > span:hover,
+.navbar-nav > li.menu-main-eda > span:focus
+{ background-color: #fc746e !important; }
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
