@@ -541,7 +541,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
 .navbar-nav > li.menu-main-voiting >a:hover,.navbar-nav > li.menu-main-voiting >a:focus{ background-color: red; }
-
+.navbar-nav > li.menu-main-eda >a:hover,.navbar-nav > li.menu-main-eda >a:focus{ background-color: #fc746e; }
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
@@ -7413,7 +7413,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
     header.wide-header .menu-main-eda{background-color: #fa463e;}
-    header.wide-header .menu-main-eda:hover{background-color: #fc746e !important;}
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
