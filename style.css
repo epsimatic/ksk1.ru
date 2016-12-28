@@ -2234,6 +2234,12 @@ a.link-neutral:focus {color: #3b437d;}
 .single-post .main-content-inner { background-color: #fff; background-color: rgba(255,255,255,.75); border-radius: 3px; }
 @media (max-width: 768px) {
     .single-post #text-144{display: none;}
+    .comment-list .comment-content{clear: both;}
+    .comment-list .comment-controls{display: block;}
+    .comment-list .comment-meta{max-width: 220px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;}
 }
 
 
