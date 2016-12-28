@@ -33,12 +33,7 @@ figure { position: relative; text-align: center; }
 @media (min-width: 768px) { 
     #stripe { padding: 0; }
     #stripe img.yummies { margin-bottom: 24px !important; margin-top: 0 !important; }
-    .comment-list .author-name{display: inline-block;
-    max-width: 361px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;}
+
 }
 
 .user-panel { display: none; }
@@ -80,10 +75,20 @@ figure { position: relative; text-align: center; }
 .fixedsticky.panel-top { top: 10px; }
 
 .admin-bar .fixedsticky.panel-top { top: 45px; }
+.comment-list .comment-content{clear: both;}
+.comment-list .comment-controls{display: block;}
+.comment-list .comment-meta{max-width: 220px; overflow-x: hidden; overflow-y: hidden; white-space: nowrap; text-overflow:ellipsis;}
+
 
 @media (min-width: 992px) { 
     .fixedsticky.panel-top { top: 60px; }
     .admin-bar .fixedsticky.panel-top { top: 90px; }
+    .comment-list .author-name{display: inline-block;
+        max-width: 361px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
 }
 
 /* </editor-fold> */
@@ -7995,9 +8000,6 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .title-audio{    margin-top: 24px; display: block;}
 .page-template-page-custom-taxi   .info-footer_text {color:#8C8B8B;}
 @media (max-width: 768px) {
-    .single-post #text-144{display: none;}
-    .comment-list .comment-content{clear: both;}
-    .comment-list .comment-controls{display: block;}
-    .comment-list .comment-meta{max-width: 220px; overflow-x: hidden; overflow-y: hidden; white-space: nowrap; text-overflow:ellipsis;}
+    .single-post #text-144 { display: none; }
 }
 
