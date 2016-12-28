@@ -7996,7 +7996,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .page-template-page-custom-taxi   .info-footer_text {color:#8C8B8B;}
 @media (max-width: 768px) {
     .single-post #text-144{display: none;}
-
+    .comment-list .comment-meta{max-width: 55%; }
 }
 @media (max-width: 992px) {
     .comment-list .comment-content{clear: both;}
