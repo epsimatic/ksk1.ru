@@ -34,7 +34,7 @@ figure { position: relative; text-align: center; }
     #stripe { padding: 0; }
     #stripe img.yummies { margin-bottom: 24px !important; margin-top: 0 !important; }
     .comment-list .author-name{display: inline-block;
-    max-width: 361px;
+    max-width: 230px;
     overflow-x: hidden;
     overflow-y: hidden;
     text-overflow: ellipsis;
