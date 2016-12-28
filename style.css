@@ -2232,15 +2232,7 @@ a.link-neutral:focus {color: #3b437d;}
 /* body copy 18px/1.5 */
 
 .single-post .main-content-inner { background-color: #fff; background-color: rgba(255,255,255,.75); border-radius: 3px; }
-@media (max-width: 768px) {
-    .single-post #text-144{display: none;}
-    .comment-list .comment-content{clear: both;}
-    .comment-list .comment-controls{display: block;}
-    .comment-list .comment-meta{max-width: 220px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;}
-}
+
 
 
 article.post-custom,
@@ -7996,4 +7988,10 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .audio-views{margin-left: 10px;}
 .title-audio{    margin-top: 24px; display: block;}
 .page-template-page-custom-taxi   .info-footer_text {color:#8C8B8B;}
+@media (max-width: 768px) {
+    .single-post #text-144{display: none;}
+    .comment-list .comment-content{clear: both;}
+    .comment-list .comment-controls{display: block;}
+    .comment-list .comment-meta{max-width: 220px; overflow-x: hidden; overflow-y: hidden; white-space: nowrap; text-overflow:ellipsis;}
+}
 
