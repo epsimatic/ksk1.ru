@@ -1319,7 +1319,7 @@ header#header .weather-text { display: none; }
 .selected-photos .post-edit { margin: 0 12px 0 0; }
 
 .selected-photos .post-date,
-.selected-photos .post-actions { margin: 0 !important; }
+.selected-photos .post-actions { margin: 0 0 0 6px !important; }
 
 .selected-photos .prev-next-posts { font-size: 18px; line-height: 24px; margin-bottom: 48px; }
 
