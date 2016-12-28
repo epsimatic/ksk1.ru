@@ -33,6 +33,12 @@ figure { position: relative; text-align: center; }
 @media (min-width: 768px) { 
     #stripe { padding: 0; }
     #stripe img.yummies { margin-bottom: 24px !important; margin-top: 0 !important; }
+    .comment-list .author-name{display: inline-block;
+    max-width: 361px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
 }
 
 .user-panel { display: none; }
