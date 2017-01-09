@@ -95,7 +95,7 @@ nav.navbar { margin: 0 -10px !important; }
 .eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }
 .stores-group .vacabi{position: relative;}
 .vacabi .label{ position: absolute;left: 34px;top: 23px;}
-
+.btn_review-order_back{margin-top: 9px;}
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
     .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
@@ -133,6 +133,7 @@ nav.navbar { margin: 0 -10px !important; }
 
     .eda-footer > h2 { margin-bottom: 15px; }
     .eda-footer .vendor-list > a.vendor-link { width: 18%; margin: 7px; }
+    .btn_review-order_back{margin-top: 0;}
 }
 
 @media (min-width: 992px) {
