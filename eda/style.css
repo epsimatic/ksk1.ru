@@ -95,8 +95,9 @@ nav.navbar { margin: 0 -10px !important; }
 .eda-footer .vendor-list > a.vendor-link.active:focus { background-color: #fffab5; }
 .stores-group .vacabi{position: relative;}
 .vacabi .label{ position: absolute;left: 34px;top: 23px;}
-.admin-bar .dmbs-content{margin-top: 50px;}
+
 .btn-back{margin-top: 9px !important;}
+#wpadminbar{position: fixed !important;}
 @media (min-width: 480px) {
     .header-eda { margin-bottom: 5px; }
     .header-eda .logo-placeholder { padding: 0; width: 29%; position: relative; top: -37px; }
