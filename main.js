@@ -163,7 +163,7 @@ jQuery('.menu-item-has-children > a').click(function (event) {
  });
  });*/
 
-jQuery('.dropdown-weather').one('mouseenter', function () {
+/*jQuery('.dropdown-weather').one('mouseenter', function () {
     jQuery.ajax({
         url: "https://ksk1.ru/weather/forecast.html",
         crossDomain: true,
@@ -177,7 +177,7 @@ jQuery('.dropdown-weather').one('mouseenter', function () {
         }
 
     });
-});
+});*/
 
 // Загрузить срочные объявления при наведении на панель Объявления
 /*
