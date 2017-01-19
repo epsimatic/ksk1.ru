@@ -84,6 +84,7 @@ figure { position: relative; text-align: center; }
 @media (min-width: 992px) { 
     .fixedsticky.panel-top { top: 60px; }
     .admin-bar .fixedsticky.panel-top { top: 90px; }
+    .page-template-page-custom-selected-photos article{height: 350px;} /*страница фото дня*/
 }
 
 /* </editor-fold> */
@@ -8004,4 +8005,3 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     .single-post #text-144{display: none;}
     .comment-list .comment-meta{max-width: 55%; }
 }
-.page-template-page-custom-selected-photos article{height: 350px;} /*страница фото дня*/
