@@ -214,7 +214,7 @@ if (file_put_contents("forecast.html", $forecast)) {
     header("Status: 503 Internal server error");
     prettyNotice("Не удалось сохранить <a href='/weather/forecast.html'>forecast.html</a>", "danger");
 }
-echo  "lable pogoda".$forecast_object['icon_url_day'];
+echo  "lable pogoda= ".$icon_url_day;
 ?>
 
 <div id='header'>
