@@ -58,7 +58,7 @@ $description[0] = mb_convert_case($description[0], MB_CASE_UPPER);
 $description = implode("", $description);
 
 $icon = $parsed_conditions->{'icon'};
-$icon_url = updateIconUrl($parsed_conditions->{'icon_url'});
+$icon_url = str_replace('http:','',updateIconUrl($parsed_conditions->{'icon_url'}));
 $img_weather = '<img class="weather-icon" src="' . $icon_url . '" alt="Значок погоды">';
 if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == "") {
     header("Status: 503 Internal server error");
@@ -184,7 +184,9 @@ foreach ($array_forecast as $forecast_object) {
         </div>
         <p class='conditions'>$short_conditions</p>";
         if ($forecast_object['mm'] > 0 || $forecast_object['pop'] > 0)
-            $conditions_forecast .= "<div title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" ."Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " ."style='background-color: rgba(41, 182, 246, ${forecast_object['pop']});'><span class='drop-icon'></span><strong>${forecast_object['mm']}</strong> мм</div>";
+            $conditions_forecast .= "<div title='Вероятность дождя: ". $forecast_object['pop']*100 ."%\n" .
+                "Выпадет ". $forecast_object['mm'] ." мм осадков. ' class='pop' " ."style='background-color: rgba(41, 182, 246, ${forecast_object['pop']});'>
+                <span class='drop-icon'></span><strong>${forecast_object['mm']}</strong> мм</div>";
         else $conditions_forecast .= "<div title='Осадков не ожидается' class='pop pop-dry'>Сухо</div>";
 
         $conditions_forecast .= "</div>";
