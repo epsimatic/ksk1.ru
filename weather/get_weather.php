@@ -32,7 +32,7 @@ function updateIconUrl($orig_url) {
     return str_replace('/k/', '/v4/', str_replace('.gif', '.svg', $orig_url));    
 }
 
-$json_string = file_get_contents("http://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
+$json_string = file_get_contents("https://api.wunderground.com/api/14a26adef7c89cc2/geolookup/conditions/forecast/lang:RU/q/Russia/Krasnoufimsk.json");
 $parsed_json = json_decode($json_string);
 $location = $parsed_json->{'location'}->{'city'};
 
@@ -165,6 +165,7 @@ foreach ($array_forecast as $forecast_object) {
     if ((int)$forecast_object['temp_high']> 0 )  $forecast_object_high = "+".$forecast_object['temp_high'] ; else $forecast_object_high = $forecast_object['temp_high'];
     if ((int)$forecast_object['temp_low']> 0 )  $forecast_object_low = "+".$forecast_object['temp_low'] ; else $forecast_object_low = $forecast_object['temp_low'];
     $short_conditions = $forecast_object['conditions'];
+    $icon_url_day = str_replace('http:','',$forecast_object['icon_url_day']);
     $conditions_forecast .= " 
     <div class='day'>
         <div class='text-center'>
@@ -174,7 +175,7 @@ foreach ($array_forecast as $forecast_object) {
             <span class='date'>${forecast_object['day']}</span>
         </div>
         <div class='weather-icon-wrap'>
-            <img class='weather-icon' src='${forecast_object['icon_url_day']}' alt='Значок погоды'>
+            <img class='weather-icon' src='$icon_url_day' alt='Значок погоды'>
         </div>
         <div class='temps'>
             <span class='high'>$forecast_object_high</span>
