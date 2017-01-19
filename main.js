@@ -163,7 +163,8 @@ jQuery('.menu-item-has-children > a').click(function (event) {
  });
  });*/
 
-/*jQuery('.dropdown-weather').one('mouseenter', function () {
+/*
+jQuery('.dropdown-weather').one('mouseenter', function () {
     jQuery.ajax({
         url: "https://ksk1.ru/weather/forecast.html",
         crossDomain: true,
