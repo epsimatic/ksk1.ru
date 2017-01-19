@@ -165,7 +165,7 @@ jQuery('.menu-item-has-children > a').click(function (event) {
 
 jQuery('.dropdown-weather').one('mouseenter', function () {
     jQuery.ajax({
-        url: "http://ksk1.ru/weather/forecast.html",
+        url: "https://ksk1.ru/weather/forecast.html",
         crossDomain: true,
         timeout: 2000,
         success: function (data) {
