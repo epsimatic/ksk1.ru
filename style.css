@@ -1327,7 +1327,7 @@ header#header .weather-text { display: none; }
 .selected-photos .prev-next-posts a { text-decoration: none; }
 
 @media (min-width: 992px) {
-    .selected-photos .post { margin-bottom: 40.5px; }
+    .selected-photos .post { margin-bottom: 40.5px; min-height:340px; }
 
     .selected-photos .post figure.post-thumb { margin-bottom: 13.5px; }
 
