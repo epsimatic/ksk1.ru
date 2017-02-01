@@ -1242,3 +1242,5 @@ body {overflow-y: scroll;}
 
 }
 
+.woocommerce-checkout .order-description .modal-batton a{color: white;}
+.woocommerce-checkout .order-description .modal-batton a:hover{color: white; text-underline-style:none;}
