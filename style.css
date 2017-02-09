@@ -6046,7 +6046,7 @@ body.page-template-page-custom-cargo-delivery .snap-content,
 
 .services-content footer.info-footer { background-color: #000; }
 
-.services-content section.taxi-section ~ footer.info-footer { padding: 24px; }
+.services-content section.taxi-section ~ footer.info-footer { padding: 24px; margin-bottom: 20px; }
 
 .services-content section.taxi-section ~ footer.info-footer h4 { color: #fff; }
 
