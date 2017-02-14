@@ -828,6 +828,7 @@ ul.woocommerce.alert-danger { background-color: #ffebee; }
 
 /* Стили для размера -sm- */
 @media (min-width: 768px) {
+    .site-eda .checkout{padding: 0 30px;}
     .tocify-header > .tocify-item > a { color: #666; }
     .tocify .tocify-header > .tocify-item > a { line-height: 18px; font-size: 1em; padding-left: 10px; }
 
