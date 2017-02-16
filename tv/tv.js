@@ -90,7 +90,7 @@ function updateClock(selector) {
  * @param {string} selector jQuery selector
  */
 function GetNowPlaying(selector) {
-    jQuery.get("//ksk1.ru/nowplaying.xml", function (data) {
+    jQuery.get("https://ksk1.ru/nowplaying.xml", function (data) {
         var track = jQuery(data).find("TRACK").first();
         if (track.attr("ARTIST")) {
             var track_text = track.attr("ARTIST") + " — " + track.attr("TITLE");
@@ -159,14 +159,14 @@ function UpdateTimer(selector, seconds) {
 //LoadJS("//ksk1.ru/bootstrap-3c/js/bootstrap.min.js");
 
 const urls_or_functions = {
-    ".board-main": "//ksk1.ru/yummies/ksk1.ru/main/",
-    ".board-yummie": "//ksk1.ru/yummies/ksk1.ru/side/",
-    ".board-weather": "//ksk1.ru/weather/conditions.html",
+    ".board-main": "https://ksk1.ru/yummies/ksk1.ru/main/",
+    ".board-yummie": "https://ksk1.ru/yummies/ksk1.ru/side/",
+    ".board-weather": "https://ksk1.ru/weather/conditions.html",
     ".track-data-text": GetNowPlaying,
     "#clock, #date": updateClock
 };
 
-LoadJS("//ksk1.ru/js/jquery-1.js", function () {
+LoadJS("https://ksk1.ru/js/jquery-1.js", function () {
 
 // Инициализировать все блоки
     for (var block in urls_or_functions) {

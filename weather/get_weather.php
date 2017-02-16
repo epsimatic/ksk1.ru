@@ -1,10 +1,10 @@
 <html> <!--запускается каждый час-->
 <head>
     <meta charset="utf-8">
-    <link href="//ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <script src="//ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
-    <link href="//ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="//ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://ksk1.ru/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ksk1.ru/vendor/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+    <link href="https://ksk1.ru/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://ksk1.ru/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -220,12 +220,12 @@ echo  "lable pogoda= ".$icon_url_day;
 ?>
 
 <div id='header'>
-    <header class="row row_header hidden-print" id="header" data-version="1" xmlns="//www.w3.org/1999/html">
+    <header class="row row_header hidden-print" id="header" data-version="1" xmlns="http://www.w3.org/1999/html">
         <div class="header-logo-col col-xs-4 col-sm-4 col-md-5 col-lg-5">
             <div itemscope itemtype="http://schema.org/Organization" class="header-logo">
                 <a itemprop="url" href="/" title="На главную страницу" class="logo-container">
-                    <img itemprop="logo" alt="Красноуфимск онлайн" src="//ksk1.ru/img/logo-mobile-ksk.svg" class="visible-xs">
-                    <img alt="Красноуфимск онлайн" style="position: absolute" src="//ksk1.ru/img/logo-base.svg" class="hidden-xs">
+                    <img itemprop="logo" alt="Красноуфимск онлайн" src="https://ksk1.ru/img/logo-mobile-ksk.svg" class="visible-xs">
+                    <img alt="Красноуфимск онлайн" style="position: absolute" src="https://ksk1.ru/img/logo-base.svg" class="hidden-xs">
                     <div id="sublogo"></div>
                 </a>
             </div>
