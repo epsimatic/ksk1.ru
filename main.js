@@ -202,14 +202,14 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
 // Загрузить главную новость при наведении на панель Новости
 jQuery(".menu-main-news").one("mouseenter", function () {
     // jQuery(".news-main").load("http://ksk66.ru/main-news/");
-    jQuery(".important-info").load("//ksk66.ru/main-info/");
+    jQuery(".important-info").load("http://ksk66.ru/main-info/");
 });
 
 
 // Загружаем события и сегодняшние сеансы
 jQuery(".menu-main-agenda").one("mouseenter", function () {
-    jQuery(".menu-main-agenda-events").load("//ksk66.ru/menu-main-agenda-events/");
-    jQuery(".menu-main-agenda-movies").load("//ksk66.ru/menu-main-agenda-movies/");
+    jQuery(".menu-main-agenda-events").load("http://ksk66.ru/menu-main-agenda-events/");
+    jQuery(".menu-main-agenda-movies").load("http://ksk66.ru/menu-main-agenda-movies/");
 });
 
 // <editor-fold desc="Видео и аудиоплееры">
@@ -538,7 +538,7 @@ jQuery('.btn-collapse').click(function () {
 
 jQuery('#navpanel-info').one('first-load', function () {
     // загружаем кнопку категории вместо кнопки другие категории
-    jQuery("#category-other").load("//ksk1.ru/cat-menu.html");
+    jQuery("#category-other").load("http://ksk1.ru/cat-menu.html");
     var tmp = new Date();
     var t = tmp.getDay();
     var week = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
@@ -555,7 +555,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');
-        jQuery("#day" + day_num).load("//ksk66.ru/movies-block/", {"day_week": day_num}, function () {
+        jQuery("#day" + day_num).load("http://ksk66.ru/movies-block/", {"day_week": day_num}, function () {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="' + (day_num + 1) + '"]').trigger('shown.bs.tab');
         });
@@ -565,12 +565,12 @@ jQuery('#navpanel-info').one('first-load', function () {
 
 
     // Загружаем афишу
-    jQuery("#panel-agenda").load("//ksk66.ru/agenda-block/", setMapHeight);
+    jQuery("#panel-agenda").load("http://ksk66.ru/agenda-block/", setMapHeight);
 
 });
 
 function AddGeosearch() {
-    LoadJS('//ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', function () {
+    LoadJS('http://ksk1.ru/vendor/leaflet-geosearch/src/js/l.control.geosearch.js', function () {
         L.GeoSearch.Provider.OpenStreetMapKsk = L.Class.extend({
             initialize: function (options) {
                 options = L.Util.setOptions(this, options);
@@ -578,7 +578,7 @@ function AddGeosearch() {
             /** @return {string} Service URL */
             GetServiceUrl: function (qry) {
                 var parameters = L.Util.extend({q: "Красноуфимск " + qry, format: 'json'}, this.options);
-                return '//nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
+                return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
             },
             ParseJSON: function (data) {
                 if (data.length == 0) return [];
@@ -599,34 +599,34 @@ function AddGeosearch() {
     });
 }
 function AddLayerGoogle() {
-    var tiles_OpenMapSurfer_hybrid = L.tileLayer('//korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
+    var tiles_OpenMapSurfer_hybrid = L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
         minZoom: 8,
         maxZoom: 20,
-        attribution: 'Карта: <a href="//openstreetmap.org">OpenStreetMap</a>, ' +
-        'плитки: <a href="//giscience.uni-hd.de/">GIScience</a>'
+        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
+        'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
     });
-    LoadJS('//ksk1.ru/vendor/leaflet-plugins/layer/tile/Google.js', function () {
+    LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Google.js', function () {
         layersControl.addBaseLayer(L.layerGroup([new L.Google(), tiles_OpenMapSurfer_hybrid]), 'Спутник Google');
     });
 }
 
 function AddLayerBing() {
-    var tiles_OpenMapSurfer_hybrid = L.tileLayer('//korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
+    var tiles_OpenMapSurfer_hybrid = L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
         minZoom: 8,
         maxZoom: 20,
-        attribution: 'Карта: <a href="//openstreetmap.org">OpenStreetMap</a>, ' +
+        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
         'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
     });
 
-    LoadJS('//ksk1.ru/vendor/leaflet-plugins/layer/tile/Bing.js', function () {
+    LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Bing.js', function () {
         layersControl.addBaseLayer(L.layerGroup([new L.BingLayer("AqYQy-mMupdP9Y5Ig8rx374e1-Rai_sBWOwD_FuUDp9b1exLtRRbMYxIcTmGZe2Z"),
             tiles_OpenMapSurfer_hybrid]), "Спутник Bing");
     });
 }
 
 function AddLayerYandex() {
-    LoadJS('//api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU', function () {
-        LoadJS('//ksk1.ru/vendor/leaflet-plugins/layer/tile/Yandex.js', function () {
+    LoadJS('http://api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU', function () {
+        LoadJS('http://ksk1.ru/vendor/leaflet-plugins/layer/tile/Yandex.js', function () {
             layersControl.addBaseLayer(new L.Yandex('map'), "Карта Яндекс");
         });
     });
@@ -652,8 +652,8 @@ function AddOverlayHills() {
 }
 
 function AddButtonFullScreen() {
-    LoadCSS('//ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.css');
-    LoadJS('//ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.js', function () {
+    LoadCSS('http://ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.css');
+    LoadJS('http://ksk1.ru/vendor/leaflet-fullscreen-brunob/Control.FullScreen.js', function () {
         L.control.fullscreen({
             position: 'topleft',
             title: 'Развернуть на весь экран',
@@ -664,8 +664,8 @@ function AddButtonFullScreen() {
     });
 }
 function AddControlLoading() {
-    LoadCSS('//ksk1.ru/vendor/leaflet-loading/src/Control.Loading.css');
-    LoadJS('//ksk1.ru/vendor/leaflet-loading/src/Control.Loading.js', function () {
+    LoadCSS('http://ksk1.ru/vendor/leaflet-loading/src/Control.Loading.css');
+    LoadJS('http://ksk1.ru/vendor/leaflet-loading/src/Control.Loading.js', function () {
         var loadingControl = L.Control.loading({
             separate: true
         });
@@ -673,20 +673,20 @@ function AddControlLoading() {
     });
 }
 function AddButtonHome() {
-    LoadCSS('//ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.css');
-    LoadJS('//ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.js', function () {
+    LoadCSS('http://ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.css');
+    LoadJS('http://ksk1.ru/vendor/leaflet-defaultextent/dist/leaflet.defaultextent.js', function () {
         L.control.defaultExtent({title: 'Возврат к первоначальному виду'}).addTo(map);
     });
 }
 function AddButtonLocate() {
-    LoadCSS('//ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.css');
-    LoadJS('//ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.js', function () {
+    LoadCSS('http://ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.css');
+    LoadJS('http://ksk1.ru/vendor/leaflet-locatecontrol/dist/L.Control.Locate.min.js', function () {
         L.control.locate({strings: {title: "Где я нахожусь"}}).addTo(map);
     });
 }
 function AddRoutingMachine() {
-    LoadCSS('//ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.css');
-    LoadJS('//ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.js', function () {
+    LoadCSS('http://ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.css');
+    LoadJS('http://ksk1.ru/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.js', function () {
         L.Routing.control({
             waypoints: [
                 L.latLng(map.getCenter().lat, map.getBounds().getEast() * .25 + map.getBounds().getWest() * .75),
@@ -699,7 +699,7 @@ function AddRoutingMachine() {
 }
 
 function AddButtonRouting() {
-    LoadJS("//ksk1.ru/vendor/leaflet-easybutton/easy-button.js", function () {
+    LoadJS("http://ksk1.ru/vendor/leaflet-easybutton/easy-button.js", function () {
         L.easyButton('fa-exchange', function () {
                 //TODO: Скрывать навигацию, если она есть (сделать кнопку-переключатель)
                 //TODO: Помечать кнопку как активную (не очень нужно)
@@ -738,8 +738,8 @@ function AddMeasureControl() {
 }
 function AddMap(name_id, map_height) {
     jQuery('#' + name_id).css('height', map_height);
-    LoadCSS('//ksk1.ru/vendor/leaflet/dist/leaflet.css');
-    LoadCSS('//ksk1.ru/vendor/leaflet-addon.css');
+    LoadCSS('http://ksk1.ru/vendor/leaflet/dist/leaflet.css');
+    LoadCSS('http://ksk1.ru/vendor/leaflet-addon.css');
 // TODO: загружать локальный leaflet
     LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
 
