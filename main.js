@@ -219,7 +219,6 @@ var video_player = "";
 
 // При наведении мыши на панель Радио
 jQuery(".menu-main-radio").mouseenter(function () {
-
     // Получить текущий трек
     jQuery.get("https://ksk1.ru/nowplaying.xml", function (data) {
         var track = jQuery(data).find("TRACK").first();
