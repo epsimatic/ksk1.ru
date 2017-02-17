@@ -233,6 +233,7 @@ jQuery(".menu-main-radio").mouseenter(function () {
         jQuery("#listen-text").removeClass("hidden");
 
     });
+    console.log("Обновление трека");
 });
 jQuery(window).load(function () {
     if (getCookie("player_state")) {
