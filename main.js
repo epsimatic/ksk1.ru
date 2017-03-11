@@ -555,7 +555,7 @@ jQuery('#navpanel-info').one('first-load', function () {
     jQuery('.list-days-ajax a[data-toggle="tab"]').one('shown.bs.tab', function () {
 
         var day_num = jQuery(this).data('day');
-        jQuery("#day" + day_num).load("http://ksk66.ru/movies-block/", {"day_week": day_num}, function () {
+        jQuery("#day" + day_num).load("//"+hostname+"/movies-block/", {"day_week": day_num}, function () {
             if (day_num > 1 && day_num < 7)
                 jQuery('.list-days-ajax a[data-day="' + (day_num + 1) + '"]').trigger('shown.bs.tab');
         });
@@ -578,7 +578,7 @@ function AddGeosearch() {
             /** @return {string} Service URL */
             GetServiceUrl: function (qry) {
                 var parameters = L.Util.extend({q: "Красноуфимск " + qry, format: 'json'}, this.options);
-                return 'http://nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
+                return '//nominatim.openstreetmap.org/search' + L.Util.getParamString(parameters);
             },
             ParseJSON: function (data) {
                 if (data.length == 0) return [];
@@ -602,8 +602,8 @@ function AddLayerGoogle() {
     var tiles_OpenMapSurfer_hybrid = L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/hybrid/x={x}&y={y}&z={z}', {
         minZoom: 8,
         maxZoom: 20,
-        attribution: 'Карта: <a href="http://openstreetmap.org">OpenStreetMap</a>, ' +
-        'плитки: <a href="http://giscience.uni-hd.de/">GIScience</a>'
+        attribution: 'Карта: <a href="//openstreetmap.org">OpenStreetMap</a>, ' +
+        'плитки: <a href="//giscience.uni-hd.de/">GIScience</a>'
     });
     LoadJS('https://ksk1.ru/vendor/leaflet-plugins/layer/tile/Google.js', function () {
         layersControl.addBaseLayer(L.layerGroup([new L.Google(), tiles_OpenMapSurfer_hybrid]), 'Спутник Google');
