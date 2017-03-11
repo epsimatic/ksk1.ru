@@ -208,8 +208,8 @@ jQuery(".menu-main-news").one("mouseenter", function () {
 
 // Загружаем события и сегодняшние сеансы
 jQuery(".menu-main-agenda").one("mouseenter", function () {
-    jQuery(".menu-main-agenda-events").load("http://ksk66.ru/menu-main-agenda-events/");
-    jQuery(".menu-main-agenda-movies").load("http://ksk66.ru/menu-main-agenda-movies/");
+    jQuery(".menu-main-agenda-events").load("//"+hostname+"/menu-main-agenda-events/");
+    jQuery(".menu-main-agenda-movies").load("//"+hostname+"/menu-main-agenda-movies/");
 });
 
 // <editor-fold desc="Видео и аудиоплееры">
@@ -565,7 +565,7 @@ jQuery('#navpanel-info').one('first-load', function () {
 
 
     // Загружаем афишу
-    jQuery("#panel-agenda").load("http://ksk66.ru/agenda-block/", setMapHeight);
+    jQuery("#panel-agenda").load("//"+hostname+"/agenda-block/", setMapHeight);
 
 });
 
