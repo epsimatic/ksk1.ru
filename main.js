@@ -741,7 +741,7 @@ function AddMap(name_id, map_height) {
     LoadCSS('https://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('https://ksk1.ru/vendor/leaflet-addon.css');
 // TODO: загружать локальный leaflet
-    LoadJS('https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
+    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
         map = L.map(name_id, {drawControl: true});
         map.setView([56.6132, 57.7689], 13);
         layersControl = new L.Control.Layers(null, null, {'collapsed': false}).addTo(map);
