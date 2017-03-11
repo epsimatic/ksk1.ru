@@ -1,7 +1,7 @@
 /**
  * Основные функции общего шаблона
  */
-
+var hostname=document.location.hostname;
 // Поисковая строка
 (function () {
     const meta_generator = jQuery("meta[name='generator']").attr("content");
@@ -202,7 +202,7 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
 // Загрузить главную новость при наведении на панель Новости
 jQuery(".menu-main-news").one("mouseenter", function () {
     // jQuery(".news-main").load("http://ksk66.ru/main-news/");
-    jQuery(".important-info").load("http://ksk66.ru/main-info/");
+    jQuery(".important-info").load("//"+hostname+"/main-info/");
 });
 
 
