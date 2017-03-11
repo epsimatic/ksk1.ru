@@ -741,7 +741,7 @@ function AddMap(name_id, map_height) {
     LoadCSS('https://ksk1.ru/vendor/leaflet/dist/leaflet.css');
     LoadCSS('https://ksk1.ru/vendor/leaflet-addon.css');
 // TODO: загружать локальный leaflet
-    LoadJS('http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
+    LoadJS('//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js', function () {
 
         map = L.map(name_id, {drawControl: true});
         map.setView([56.6132, 57.7689], 13);
@@ -754,9 +754,9 @@ function AddMap(name_id, map_height) {
          });
          tiles_OpenMapSurfer.addTo(map);*/
         // layersControl.addBaseLayer( tiles_OpenMapSurfer, 'Карта OpenStreetMap');
-        var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        var OpenStreetMap_Mapnik = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 20,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">Карта OpenStreetMap</a>'
+            attribution: '&copy; <a href="//www.openstreetmap.org/copyright">Карта OpenStreetMap</a>'
         });
         OpenStreetMap_Mapnik.addTo(map);
         layersControl.addBaseLayer(OpenStreetMap_Mapnik, 'Карта OpenStreetMap');
