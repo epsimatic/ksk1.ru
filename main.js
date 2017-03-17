@@ -245,7 +245,7 @@ jQuery(window).load(function () {
 jQuery(".menu-main-radio").one('mouseenter', function () {
 
     // Радио плеер
-    LoadJS("//jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
+    LoadJS("http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js", function () {
         radio_player = jQuery("#jquery_jplayer_1");
         radio_player.jPlayer({
             ready: function () {
