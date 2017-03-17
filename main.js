@@ -252,7 +252,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
                 radio_player.parent().removeClass("jp-loading").addClass("jp-ready");
                 jQuery(this).jPlayer("setMedia", {
                     // aac: "http://radio.ksk66.ru:8000/aac",
-                    m4a: "//radio.ksk66.ru:8000/mp3"
+                    m4a: "http://radio.ksk66.ru:8000/mp3"
                 });
                 if (getCookie("player_state")) {
                     deleteCookie("player_state");
@@ -262,7 +262,7 @@ jQuery(".menu-main-radio").one('mouseenter', function () {
             ended: function () {
                 jQuery(this).jPlayer("setMedia", {
                  //   aac: "http://radio.ksk66.ru:8000/aac",
-                    m4a: "//radio.ksk66.ru:8000/mp3"
+                    m4a: "http://radio.ksk66.ru:8000/mp3"
                 }).jPlayer("play");
                 jQuery(".jp-progress").addClass("hidden");
                 jQuery(".jp-current-time").addClass("hidden");
