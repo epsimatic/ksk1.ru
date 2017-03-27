@@ -202,14 +202,14 @@ jQuery(".menu-main-ads").one("mouseenter", function () {
 // Загрузить главную новость при наведении на панель Новости
 jQuery(".menu-main-news").one("mouseenter", function () {
     // jQuery(".news-main").load("http://ksk66.ru/main-news/");
-    jQuery(".important-info").load("//"+hostname+"/main-info/");
+    jQuery(".important-info").load("//ksk66.ru/main-info/");
 });
 
 
 // Загружаем события и сегодняшние сеансы
 jQuery(".menu-main-agenda").one("mouseenter", function () {
-    jQuery(".menu-main-agenda-events").load("//"+hostname+"/menu-main-agenda-events/");
-    jQuery(".menu-main-agenda-movies").load("//"+hostname+"/menu-main-agenda-movies/");
+    jQuery(".menu-main-agenda-events").load("//ksk66.ru/menu-main-agenda-events/");
+    jQuery(".menu-main-agenda-movies").load("//ksk66.ru/menu-main-agenda-movies/");
 });
 
 // <editor-fold desc="Видео и аудиоплееры">
