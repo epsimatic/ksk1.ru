@@ -2,7 +2,6 @@
  * Основные функции общего шаблона
  */
 var hostname=document.location.hostname;
-console.log("хост "+hostname);
 // Поисковая строка
 (function () {
     const meta_generator = jQuery("meta[name='generator']").attr("content");
