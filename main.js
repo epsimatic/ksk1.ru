@@ -47,12 +47,17 @@ var hostname=document.location.hostname;
 
 //  Openstat
 // FIXME: загружать, только если есть подходящий элемент.
-var openstat = {
+/*var openstat = {
     counter: 2173092, image: 5088, color: "828282", next: openstat,
     part: jQuery('body').prop('class').split(' ')[0]
 };
-LoadJS('//openstat.net/cnt.js');
-
+LoadJS('//openstat.net/cnt.js');*/
+var openstat = { counter: 2173092, image: 5081, color: "828282", next: openstat };
+(function(d, t, p) {
+    var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+    j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+    var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+})(document, "script", document.location.protocol);
 
 // Yandex.Metrika counter
 /*
