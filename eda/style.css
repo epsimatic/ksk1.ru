@@ -78,7 +78,7 @@ nav.navbar { margin: 0 -10px !important; }
 .header-eda .eda-phone { background-color: transparent; display: inline-block; width: 52%; margin: 0; }
 .header-eda .eda-phone a { color: rgb(255, 144, 0); padding: 0; }
 .header-eda .eda-phone:hover { background-color: transparent; }
-.header-eda .vendor-info { display: inline-block; width: 100%; }
+.header-eda .vendor-info { display: inline-block; width: 100%; top: -20px; }
 .header-eda .vendor-logo-placeholder { display: inline-block; width: 100%; margin-top: 10px; text-align: center; }
 .header-eda .vendor-logo-placeholder > img { width: 100%; max-width: 200px; }
 .header-eda .vendor-info .more-info { display: block; text-align: center; margin-top: -9px; }
