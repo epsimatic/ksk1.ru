@@ -7461,7 +7461,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-shop .shop-promo .goods-list { padding: 13px 0; }
 
-    header.wide-header .menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #222; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
+    menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #222; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
 
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
@@ -8009,3 +8009,4 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     .comment-list .comment-meta{max-width: 55%; }
 }
 
+.header.wide-header .menu-main-shop span {padding:0px 10px;}
