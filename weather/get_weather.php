@@ -11,7 +11,6 @@
 <div class="container">
 
 <?php
-
 error_reporting(-1);
 mb_internal_encoding('UTF-8');
 mb_regex_encoding('UTF-8');
