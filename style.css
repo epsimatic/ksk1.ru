@@ -5804,15 +5804,15 @@ body.page-template-page-custom-tv  footer.info .official-info .online {display: 
 body.page-template-page-custom-radio footer.info .official-info .radio {display: block;}
 body.page-template-page-custom-tv footer.info .official-info .tv {display: block;}
 
-footer.info .social > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
+footer.info .social > a, .more_photo > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
 
 footer.info .social > a:hover,
-footer.info .social > a:focus { opacity: 1; }
+footer.info .social > a:focus, .more_photo:hover > a,.more_photo:focus > a{ opacity: 1; }
 
-footer.info .social .fa { font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
+footer.info .social .fa, .more_photo .fa{ font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
 
-footer.info .social .fa-vk { color: #597da3; }
-footer.info .social .fa-odnoklassniki { color: #f2720c; }
+footer.info .social .fa-vk,.more_photo .fa-vk { color: #597da3; }
+footer.info .social .fa-odnoklassniki, .more_photo .fa-odnoklassniki{ color: #f2720c; }
 footer.info .social .fa-facebook { color: #3b5998; }
 footer.info .social .fa-twitter { color: #31baef; }
 footer.info .social .fa-youtube { color: #df2926; }
@@ -7490,9 +7490,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     footer.info .social { margin-bottom: 0; }
 
-    footer.info .social > a { margin-right: 6px; }
+    footer.info .social > a, .more_photo > a { margin-right: 6px; }
 
-    footer.info .social .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.5em; }
+    footer.info .social .fa,.more_photo .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.5em; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
 
@@ -7654,9 +7654,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     footer.info .copyright { top: 11px; }
 
-    footer.info .social > a { margin-right: 9px; }
+    footer.info .social > a ,.more_photo > a{ margin-right: 9px; }
 
-    footer.info .social .fa { width: 42px; height: 42px; line-height: 42px; font-size: 1.75em; }
+    footer.info .social .fa, .more_photo .fa { width: 42px; height: 42px; line-height: 42px; font-size: 1.75em; }
 }
 
 /*категории новостей*/
