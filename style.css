@@ -5805,7 +5805,7 @@ body.page-template-page-custom-radio footer.info .official-info .radio {display:
 body.page-template-page-custom-tv footer.info .official-info .tv {display: block;}
 
 footer.info .social > a, .more_photo > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
-.more_photo > a{border-bottom:none;}
+.single-post .more_photo > a{border-bottom:none;}
 footer.info .social > a:hover,
 footer.info .social > a:focus, .more_photo > a:hover,.more_photo > a:focus{ opacity: 1; }
 
