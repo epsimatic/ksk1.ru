@@ -5806,11 +5806,14 @@ body.page-template-page-custom-tv footer.info .official-info .tv {display: block
 
 footer.info .social > a, .more_photo > a { display: inline-block; margin-right: 9px; opacity: .7; transition: opacity .2s ease 0s; }
 .single-post .main-content article.post-news .more_photo > a{border-bottom:none;}
+.more_photo a:first-child {
+    margin-left: 15px;
+}
 footer.info .social > a:hover,
 footer.info .social > a:focus, .more_photo > a:hover,.more_photo > a:focus{ opacity: 1; }
 
-footer.info .social .fa, .more_photo .fa{ font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
-
+footer.info .social .fa { font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
+.more_photo .fa{ font-size: 1.3em; display: inline-block; vertical-align: middle; width: 42px; height: 42px; line-height: 42px; }
 footer.info .social .fa-vk,.more_photo .fa-vk { color: #597da3; }
 footer.info .social .fa-odnoklassniki, .more_photo .fa-odnoklassniki{ color: #f2720c; }
 footer.info .social .fa-facebook { color: #3b5998; }
@@ -7461,7 +7464,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-shop .shop-promo .goods-list { padding: 13px 0; }
 
-    menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #222; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
+    .menu-main-shop .shop-promo a.goods-cat { border-radius: 4px; color: #222; display: inline-block; font-size: 12px; margin: 0 3px; padding: 3px 7px; }
 
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
@@ -7492,7 +7495,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     footer.info .social > a, .more_photo > a { margin-right: 6px; }
 
-    footer.info .social .fa,.more_photo .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.5em; }
+    footer.info .social .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.5em; }
+    .more_photo .fa { width: 35px; height: 35px; line-height: 35px; font-size: 1.3em; }
 
     .jp-audio .jp-controls-holder .jp-progress { width: 293px; }
 
@@ -7656,7 +7660,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     footer.info .social > a ,.more_photo > a{ margin-right: 9px; }
 
-    footer.info .social .fa, .more_photo .fa { width: 42px; height: 42px; line-height: 42px; font-size: 1.75em; }
+    footer.info .social .fa { width: 42px; height: 42px; line-height: 42px; font-size: 1.75em; }
+
 }
 
 /*категории новостей*/
