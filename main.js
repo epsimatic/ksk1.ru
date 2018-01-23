@@ -101,9 +101,8 @@ LoadJS('https://ksk1.ru/vendor/fsck-ablock.js', function() {
 });
 
 
-// Отключаем правую панель на сайте news-old
-var disable_panels = document.body.className.match('news-old') ? 'right' : 'none';
-
+// Отключаем правую панель на сайте eda
+var disable_panels = document.body.className.match('site-eda') ? 'right' : 'none';
 // Включаем Snap.js
 var snapper = new Snap({
     element: document.getElementById('content'),
@@ -841,4 +840,41 @@ var $buoop = {
 };
 LoadJS('//browser-update.org/update.js');
 */
-
+function LoadRes(src, type, callback) {
+    var resName = src.split("/").reverse()[0];
+    if (libsAvail.indexOf(resName) != -1) {
+        console.log("Available already: «" + resName + "» " + src +
+        ((typeof (callback) == "function") ? ", running callback" : ""));
+        if (typeof (callback) == "function") callback();
+    } else if (libsLoading.indexOf(resName) != -1) {
+        console.log("Still loading, retry: «" + resName + "» " + src);
+        window.setTimeout( function() { LoadRes(src, type, callback) }, 100);
+    } else {
+        window.libsLoading.push(resName);
+        console.log("Loading «" + resName + "» " + src);
+        var e = document.createElement(type);
+        if (type == 'script') {
+            e.type = "text/javascript";
+            e.src = src;
+            e.async = true;
+        } else {
+            e.type = "text/css";
+            e.href = src;
+            e.rel = "stylesheet";
+        }
+        e.onerror = function () {
+            console.error("Error loading " + src);
+            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+        };
+        e.onload = function () {
+            resName = src.split("/").reverse()[0];
+            console.log("Loaded «" + resName + "» " + src +
+            ((typeof (callback) == "function") ? ", running callback" : ""));
+            window.libsAvail.push(resName);
+            window.libsLoading.splice(window.libsLoading.indexOf(resName),1);
+            if (typeof (callback) == "function") callback();
+        };
+        document.getElementsByTagName("head")[0].appendChild(e);
+    }
+}
+function LoadJS (src, onload) {LoadRes(src, 'script', onload)};
