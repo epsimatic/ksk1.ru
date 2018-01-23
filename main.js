@@ -103,6 +103,7 @@ LoadJS('https://ksk1.ru/vendor/fsck-ablock.js', function() {
 
 // Отключаем правую панель на сайте eda
 var disable_panels = document.body.className.match('site-eda') ? 'right' : 'none';
+
 // Включаем Snap.js
 var snapper = new Snap({
     element: document.getElementById('content'),
