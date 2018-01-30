@@ -555,7 +555,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-eda:focus > span,
 .navbar-nav > li.menu-main-eda:hover > span,
 .navbar-nav > li.menu-main-eda > span:hover,
-.navbar-nav > li.menu-main-eda > span:focus
+.navbar-nav > li.menu-main-button > span:focus
 { background-color: #fc746e !important; }
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
@@ -7369,10 +7369,11 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
     /* Стили для кнопки кнопка продаётся  */
-   .menu-main-button span {padding: 5px 20px!important; text-align: center; font-weight: 600;}
-   .menu-main-button a:focus, header.wide-header .menu-main-button a:hover{text-decoration: none;}
+    header.wide-header .menu-main-button span {padding: 5px 20px!important; text-align: center; font-weight: 600;}
+    header.wide-header .menu-main-button a:focus,header.wide-header .menu-main-button a:hover{text-decoration: none;}
     /* Стили для кнопки заказать рекламу  */
-    .menu-main-reklama span {padding: 5px 10px!important; text-align: center; font-weight: 600;}
+    header.wide-header .menu-main-reklama span {padding: 5px 10px!important; text-align: center; font-weight: 600;}
+    header.wide-header .menu-main-reklama a:focus, header.wide-header .menu-main-reklama a:hover{text-decoration: none;}
     /* Стили для панели справки */
     header.wide-header .menu-main-info .dropdown-panel a { color: #333; }
 
