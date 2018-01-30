@@ -548,14 +548,14 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:hover > span,
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
-.navbar-nav > li.menu-main-button:focus > a,
-.navbar-nav > li.menu-main-button:hover > a,
-.navbar-nav > li.menu-main-button > a:hover,
-.navbar-nav > li.menu-main-button > a:focus,
-.navbar-nav > li.menu-main-button:focus > span,
-.navbar-nav > li.menu-main-button:hover > span,
-.navbar-nav > li.menu-main-button > span:hover,
-.navbar-nav > li.menu-main-button > span:focus
+.navbar-nav > li.menu-main-eda:focus > a,
+.navbar-nav > li.menu-main-eda:hover > a,
+.navbar-nav > li.menu-main-eda > a:hover,
+.navbar-nav > li.menu-main-eda > a:focus,
+.navbar-nav > li.menu-main-eda:focus > span,
+.navbar-nav > li.menu-main-eda:hover > span,
+.navbar-nav > li.menu-main-eda > span:hover,
+.navbar-nav > li.menu-main-eda > span:focus
 { background-color: #fc746e !important; }
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
@@ -564,13 +564,13 @@ a.media-heading:focus {text-decoration: none;}
 .nav .current-page-parent > a::after , .nav .current-page-parent > span::after{ content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
 
 
-body.admin-bar .menu-main-button .featured > span,
-body.is_admin .menu-main-button .featured > span,
-body .menu-main-button span.show-wpadmin,
+body.admin-bar .menu-main-eda .featured > span,
+body.is_admin .menu-main-eda .featured > span,
+body .menu-main-eda span.show-wpadmin,
 .menu-main-services { display: none !important; }
 
-body.is_admin .menu-main-button span.show-wpadmin,
-body.admin-bar .menu-main-button span.show-wpadmin { display: inline !important; }
+body.is_admin .menu-main-eda span.show-wpadmin,
+body.admin-bar .menu-main-eda span.show-wpadmin { display: inline !important; }
 
 body.admin-bar .menu-main-services,
 body.is_admin .menu-main-services,
@@ -1293,7 +1293,7 @@ header#header .weather-text { display: none; }
 
 .post-image .large-thumb { opacity: .95; transition: opacity .15s ease; }
 
-.post-image .large-thumb:hover, 
+.post-image .large-thumb:hover,
 .post-image .large-thumb:focus { opacity: 1; }
 
 .post-image .modal-dialog { margin-top: 130px; width: auto; max-width: 90%; border: none; }
@@ -1396,7 +1396,7 @@ header#header .weather-text { display: none; }
 .post-custom .btn-more:visited:hover,
 .post-custom .btn-more:visited:focus { color: #222; }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .post-custom .btn-more { line-height: 27px; }
 }
 
@@ -1505,7 +1505,7 @@ article.post-news > a::-moz-focus-inner { border: 0 !important; }
 
 .post-image .post-format:before,
 .post-audio .post-format:before,
-.post-video .post-format:before, 
+.post-video .post-format:before,
 .post-image .post-more:before,
 .post-audio .post-more:before,
 .post-video .post-more:before {font-family: FontAwesome; padding-right: 6px; padding-left: 10px;}
@@ -1682,7 +1682,7 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 
 @media (min-width: 768px) {
     .lcp_paginator-wrap { margin-top: 54px; }
-    
+
     ul.lcp_paginator li { font-size: 18px; line-height: 27px; }
 }
 
@@ -1717,7 +1717,7 @@ ul.lcp_paginator li.lcp_currentpage { display: none; }
 body.search .page-title,
 .content-padder > header > .page-title { color: #999; font-size: 48px; font-weight: 700; padding: 0; letter-spacing: -.025em; line-height: 48px; text-transform: lowercase; margin: 0; }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     body.search .page-title,
     .content-padder > header > .page-title { font-size: 54px; line-height: 54px; }
 }
@@ -2066,12 +2066,12 @@ body.agenda .page-content{display: none;}  /*общий рейтинг в спи
 .btn-yandex:hover,
 .btn-yandex:focus { background-color: #ffd633 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .sidebar .donation-widget { padding: 18.5px 27px 27px; border-style: solid; border-color: #ffdb4d #e9e9e9 #e9e9e9; border-width: 13.5px 1px 1px; }
 
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .sidebar .donation-widget .donation-text { font-size: 14px; line-height: 22.652px; margin-bottom: 22.652px; }
 }
 
@@ -2443,10 +2443,10 @@ article.post-custom hr,
 article.post-custom table,
 .single-post .main-content article.post-news table { margin: 24px 0; }
 
-article.post-custom h1 + table, 
-article.post-custom h2 + table, 
-article.post-custom h3 + table, 
-article.post-custom h4 + table, 
+article.post-custom h1 + table,
+article.post-custom h2 + table,
+article.post-custom h3 + table,
+article.post-custom h4 + table,
 .single-post .main-content article.post-news h1 + table,
 .single-post .main-content article.post-news h2 + table,
 .single-post .main-content article.post-news h3 + table,
@@ -2751,7 +2751,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .image_name_yamoney { -webkit-background-size: cover; background-size: cover; height: 19px !important; width: 50px !important; margin-left: 5px; }
 /*виджет комментариев*/
 .sidebar #text-24 { display: none;}
-@media (min-width: 480px) { 
+@media (min-width: 480px) {
     .post-info-share-evc > * { display: inline-block; }
 }
 
@@ -3340,7 +3340,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 
 .subcat-sort_time .sort-ob { margin: 12px 0 24px; }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .subcat-sort_time { padding: 0; }
 }
 
@@ -3612,7 +3612,7 @@ a.super:focus {background-color: #FEF01C;}
 
 .ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet { background-color: #f44336; color: #fff; }
 
-.ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet:hover, 
+.ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet:hover,
 .ob-paid-options .ob-media-options .ob-media-option#ob-media-option-packet:focus { background-color: #ef5350; }
 
 .ob-paid-options .ob-media-options .ob-media-option .label-default { background-color: #fff; color: #666; }
@@ -3702,23 +3702,23 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin:
 
 .time_delete{width: 45px;}
 /*изначальная загрузка формы Добавить объявление*/
-.form-group_select, 
-.label-select, 
+.form-group_select,
+.label-select,
 .form-group_textarea,
-.form-group_price, 
-.label-price_cost, 
-.label-price_salary, 
-.form-group_phone, 
-.form-group_price, 
-.form-group_phone, 
-.form-group_price, 
+.form-group_price,
+.label-price_cost,
+.label-price_salary,
 .form-group_phone,
-.form-group_mail, 
-.form-group_photo, 
+.form-group_price,
+.form-group_phone,
+.form-group_price,
+.form-group_phone,
+.form-group_mail,
+.form-group_photo,
 .add-ob__info-law,
-.add-ob__info-license, 
-.add-ob__btn-submit, 
-.add-ob__submit-button_congrat-necro, 
+.add-ob__info-license,
+.add-ob__btn-submit,
+.add-ob__submit-button_congrat-necro,
 .add-ob__time_delete,
 .form-group_rebillingOn { display: none; }
 
@@ -4118,7 +4118,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .panel-default.panel-schedule .panel-heading a.collapsed:hover { background-color: #f7f7f7; }
 
-.panel-default.panel-schedule .panel-heading .route-number.badge { 
+.panel-default.panel-schedule .panel-heading .route-number.badge {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -4167,7 +4167,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
 .panel-default.panel-schedule .panel-body .found-error a { color: #999; }
 
-@media (min-width: 786px) { 
+@media (min-width: 786px) {
     .panel-default.panel-schedule .route-name { padding: 0; }
 
     .panel-default.panel-schedule .panel-heading .weekdays { right: -9px; }
@@ -4200,7 +4200,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     ul.schedule-list li.heading { display: block; border-bottom: 2px solid #ddd; }
 
-    ul.schedule-list li.heading .time-departure, 
+    ul.schedule-list li.heading .time-departure,
     ul.schedule-list li.heading .time-departure-2 { width: 77px; }
 
     ul.schedule-list li.heading .fa-clock-o,
@@ -4257,7 +4257,7 @@ li.schedule-list-item span.weekdays { width: 100%; text-align: center; }
 
     ul.schedule-list li.heading > span.route-name { width: 364px; }
 
-    ul.schedule-list li.heading .time-departure, 
+    ul.schedule-list li.heading .time-departure,
     ul.schedule-list li.heading .time-departure-2 { width: 90px; }
 
     ul.schedule-list li.heading .time-arrival { width: 71px; }
@@ -4563,7 +4563,7 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 
     body.site-rk .lead { font-size: 18px; line-height: 27px; }
 
-    .site-services article.page h3, 
+    .site-services article.page h3,
     .site-rk h3.rk-header { font-size: 24px; line-height: 27px; margin: 54px 0 27px !important; }
 
     .site-services article.page h4,
@@ -4583,8 +4583,8 @@ body.site-rk article.page p { line-height: 24px; margin-bottom: 12px; }
 
     .site-services .menu-service .menu-service-item-name { padding: 0 0 13.5px; line-height: 27px; }
 
-    .site-services .table, 
-    .site-rk .table, 
+    .site-services .table,
+    .site-rk .table,
     .site-copy .table { margin-bottom: 54px; }
 }
 
@@ -5012,7 +5012,7 @@ ul.list-days > li.heading { padding: 8px 15px; font-size: 21px; font-weight: 700
 
 .add-event button { color: #2979FF; padding: 0 12px; }
 
-.add-event button:hover, 
+.add-event button:hover,
 .add-event button:focus { color: #0F5CDE; text-decoration: none; }
 
 body.agenda .entry-content.page-content:empty { margin: 0; }
@@ -5043,7 +5043,7 @@ body.admin-bar #events-start { top: -106px; }
 
 .event-header-today { color: #428bca; }
 
-.event-place, 
+.event-place,
 .event-price { color: #666; margin-left: 5px; }
 
 .event-place-text { color: #1fa7f2; }
@@ -5330,7 +5330,7 @@ body.admin-bar #events-start { top: -106px; }
 
 .comments-title-wrap { margin-top: 24px; margin-bottom: 24px; }
 
-.comments-title-wrap .comments-title, 
+.comments-title-wrap .comments-title,
 .comment-reply-title  { margin: 0; font-size: 24px; line-height: 24px; font-weight: 600; }
 
 .comment-reply-title { margin-bottom: 12px; }
@@ -5351,21 +5351,21 @@ body.admin-bar #events-start { top: -106px; }
 
 .comment-form label { display: block; font-size: 15px; margin-bottom: 8px; }
 
-.comment-form input, 
+.comment-form input,
 .comment-form textarea { line-height: 24px; margin-bottom: 24px; padding: 8px; }
 
 .comment-form textarea { width: 100%; }
 
 .comment-form .form-submit .btn.submit { font-size: 16px; }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     #comments-list { padding: 0; }
 
     .comment-list { margin-bottom: 54px; }
 
     .comments-title-wrap { margin-top: 27px; margin-bottom: 27px; }
 
-    .comments-title-wrap .comments-title, 
+    .comments-title-wrap .comments-title,
     .comment-reply-title { font-size: 27px; line-height: 27px; }
 
     .comment-reply-title { margin-bottom: 12px; font-size: 24px; }
@@ -5374,11 +5374,11 @@ body.admin-bar #events-start { top: -106px; }
 
     .comment-respond { margin-bottom: 54px; }
 
-    .comment-form input, 
+    .comment-form input,
     .comment-form textarea { line-height: 27px; margin-bottom: 27px; padding: 9px; }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .comment-list article.comment-body .gdthumb,
     .comment-list article.comment-body .reply { opacity: 0; }
 
@@ -6184,25 +6184,25 @@ section.taxi-section .taxi-order-description > a:focus { border-bottom-color: tr
 
 .datetimepicker-wrap { position: relative; }
 
-.datetimepicker table tr td.active:active, 
-.datetimepicker table tr td.active:hover:active, 
-.datetimepicker table tr td.active.disabled:active, 
-.datetimepicker table tr td.active.disabled:hover:active, 
-.datetimepicker table tr td.active.active, 
-.datetimepicker table tr td.active.active:hover, 
-.datetimepicker table tr td.active.disabled.active, 
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active.active:hover,
+.datetimepicker table tr td.active.disabled.active,
 .datetimepicker table tr td.active.disabled.active:hover,
-.datetimepicker table tr td span.active, 
-.datetimepicker table tr td span.active:hover, 
-.datetimepicker table tr td span.active.disabled, 
+.datetimepicker table tr td span.active,
+.datetimepicker table tr td span.active:hover,
+.datetimepicker table tr td span.active.disabled,
 .datetimepicker table tr td span.active.disabled:hover { background: #FFE700 !important; color: #222; }
 
-.datetimepicker .datetimepicker-days td, 
+.datetimepicker .datetimepicker-days td,
 .datetimepicker .datetimepicker-days th { width: 40px; }
 
 .datetimepicker .datetimepicker-minutes td,
 .datetimepicker .datetimepicker-minutes th,
-.datetimepicker .datetimepicker-hours td, 
+.datetimepicker .datetimepicker-hours td,
 .datetimepicker .datetimepicker-hours th { width: 94px; }
 
 .datetimepicker .datetimepicker-days span,
@@ -6577,7 +6577,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .services-content section .form-wrap .form-group .fa-mobile { font-size: 48px !important; left: 19px !important; top: 27px !important; }
 
-    .services-content section.cargo-section .form-wrap .form-group .fa-mobile, 
+    .services-content section.cargo-section .form-wrap .form-group .fa-mobile,
     .services-content section.workers-section .form-wrap .form-group .fa-mobile { top: 24px !important; }
 
     .services-content section.cargo-section .section-info-wrap h2 + p,
@@ -6626,7 +6626,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .services-content section.taxi-section .alert-dismissible .close { top: 3px; }
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .services-content .services-info-containter { padding: 60px; }
 
     .services-content .service-info-inner .app-download-bages img { width: auto; }
@@ -6687,7 +6687,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .header-logo-col:first-child .header-logo #sublogo,
     #sublogo { bottom: -43px; height: 16px; left: 32px; background-position: right bottom; position: relative; }
-    
+
     body.admin-bar header.mobile-header,
     body.admin-bar .snap-drawers { top: 32px; }
 
@@ -7090,10 +7090,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .dropdown-vote .feedback-defenition { height: 80px; margin-bottom: 0; }
 
     header.wide-header .dropdown-vote .feedback-note { height: 173px; }
-    
+
     header.wide-header .dropdown-vote.feedback-sent .feedback-note,
     header.wide-header .dropdown-vote .feedback-defenition.feedback-sent { height: 0; }
-    
+
     header.wide-header .dropdown-vote.feedback-sent,
     header.wide-header .dropdown-vote.feedback-sent .dropdown-vote-panel { opacity: 0; transition: opacity 3s ease 2s ; pointer-events: none; }
 
@@ -7155,7 +7155,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .btn-search { padding: 12px 10px; margin: 0; font-size: 1.2em; color: #fff; border-radius: 0; z-index: 12; }
 
-    header.wide-header .btn-search:hover, 
+    header.wide-header .btn-search:hover,
     header.wide-header .btn-search:focus { background-color: #40c4ff; }
 
     header.wide-header .searchbox-container .close { position: absolute; top: -44px; right: 17px; z-index: 20; font-size: 34px; opacity: 0; color: #fff; transition: opacity 0.4s ease 0s; pointer-events: none; }
@@ -7178,7 +7178,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-more .dropdown-panel a:hover,
     header.wide-header .menu-main-more .dropdown-panel a:focus { background-color: #e9e9e9; }
-    
+
     header.wide-header .menu-item-dropdown .dropdown-panel .container { padding: 15px; }
 
     header.wide-header .menu-item-dropdown .dropdown-panel .row { margin: 0 -15px; }
@@ -7231,7 +7231,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .post-news .post-description { float: right; overflow-y: hidden; width: 56%; }
 
     header.wide-header .important-info .important-info-heading { font-size: 18px; font-weight: 700; margin: 0 0 5.1px; }
-    
+
     header.wide-header .important-info .important-info-heading .fa { font-weight: 400; }
 
     header.wide-header .important-info .post-description p:last-child { margin-bottom: 0; }
@@ -7281,7 +7281,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .ob-promo .ob-promo-body a.vip-poster { display: inline-block; padding: 20px 13px 0 0; }
 
     header.wide-header .ob-promo .ob-promo-body .vip > a.vip-poster:nth-of-type(n+5) { display: none; }
-    
+
     header.wide-header .ob-promo .popover { padding: 10px; max-width: 410px; }
 
     header.wide-header .ob-promo .popover h4.add-title { margin-bottom: 9px; margin-top: 0; font-size: 1.15em; color: #999; }
@@ -7289,7 +7289,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .ob-promo .popover .ob-contacts { margin-top: 7px; }
 
     header.wide-header .ob-promo .popover .ob-email,
-    header.wide-header .ob-promo .popover .ob-contacts a { color: #57346b; } 
+    header.wide-header .ob-promo .popover .ob-contacts a { color: #57346b; }
 
     header.wide-header .ob-promo .popover .ob-email { margin-top: 2px; margin-left: 5px; }
 
@@ -7368,6 +7368,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
+    /* Стили для кнопки кнопка продаётся  */
+    header.wide-header .menu-main-button span {padding: 5px 20px; text-align: center; font-weight: 600;}
+    header.wide-header .menu-main-button a:focus, header.wide-header .menu-main-button a:hover{text-decoration: none;}
     /* Стили для панели справки */
     header.wide-header .menu-main-info .dropdown-panel a { color: #333; }
 
@@ -7378,16 +7381,16 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-info .submenu a { display: block; padding: 14px 0; width: 100%; }
 
-    header.wide-header .menu-main-button .stores-group > a:hover,
-    header.wide-header .menu-main-button .stores-group > a:focus,
+    header.wide-header .menu-main-eda .stores-group > a:hover,
+    header.wide-header .menu-main-eda .stores-group > a:focus,
     header.wide-header .menu-main-shop .shop-list a:hover,
     header.wide-header .menu-main-shop .shop-list a:focus,
     header.wide-header .posrednik-link-wrap a:hover,
     header.wide-header .posrednik-link-wrap a:focus,
     header.wide-header .menu-main-info .submenu a:hover,
     header.wide-header .menu-main-info .submenu a:focus { background-color: #f0f0f0; text-decoration: none; }
-    header.wide-header .menu-main-button .stores-group .vacabi, header.wide-header .menu-main-button .stores-group a{position: relative;}
-    header.wide-header .menu-main-button .stores-group .label {background-color: red;position: absolute; left: 34px;top: 23px; }
+    header.wide-header .menu-main-eda .stores-group .vacabi, header.wide-header .menu-main-eda .stores-group a{position: relative;}
+    header.wide-header .menu-main-eda .stores-group .label {position: absolute; left: 34px;top: 23px; }
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-radio .play-radio { outline: none; }
 
@@ -7416,19 +7419,19 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 
     /* Стили для панели заказа еды */
-    header.wide-header .menu-main-button .eda-logo-wrap,
-    header.wide-header .menu-main-button .stores-group,
-    header.wide-header .menu-main-button .stores-group > a { display: inline-block; }
+    header.wide-header .menu-main-eda .eda-logo-wrap,
+    header.wide-header .menu-main-eda .stores-group,
+    header.wide-header .menu-main-eda .stores-group > a { display: inline-block; }
 
-    header.wide-header .menu-main-button .dropdown-panel .container { text-align: center; }
+    header.wide-header .menu-main-eda .dropdown-panel .container { text-align: center; }
 
-    header.wide-header .menu-main-button .stores-group > a img { width: 90px; }
+    header.wide-header .menu-main-eda .stores-group > a img { width: 90px; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap { position: relative; top: -5px; }
+    header.wide-header .menu-main-eda .eda-logo-wrap { position: relative; top: -5px; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
+    header.wide-header .menu-main-eda .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
 
-    header.wide-header .menu-main-button .stores-group > a { margin: 5px; padding: 10px; }
+    header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
     header.wide-header .menu-main-button{background-color: #fa463e;}
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
@@ -7469,15 +7472,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap { top: -15px; }
+    header.wide-header .menu-main-eda .eda-logo-wrap { top: -15px; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap img { margin-left: 70px; margin-right: 0; width: 210px; height: 24px; position: relative; top: -13.5px; }
+    header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 70px; margin-right: 0; width: 210px; height: 24px; position: relative; top: -13.5px; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap .phone-number { font-size: 61px; right: 25px; bottom: -62px; position: absolute; font-weight: 700; color: #fa463e; }
+    header.wide-header .menu-main-eda .eda-logo-wrap .phone-number { font-size: 61px; right: 25px; bottom: -62px; position: absolute; font-weight: 700; color: #fa463e; }
 
-    header.wide-header .menu-main-button .stores-group > a { margin-right: 20px; }
+    header.wide-header .menu-main-eda .stores-group > a { margin-right: 20px; }
 
-    header.wide-header .menu-main-button .stores-group > a img { width: 100px; }
+    header.wide-header .menu-main-eda .stores-group > a img { width: 100px; }
 
     header.wide-header .menu-main-info .submenu:first-child { margin-left: 97px; }
 
@@ -7602,7 +7605,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     .weather-forecast-panel .day .summary { width: 22%; }
 
-    .weather-forecast-panel .day .day, 
+    .weather-forecast-panel .day .day,
     .weather-forecast-panel .day .night { white-space: 39%; }
 
     body.admin-bar header.wide-header .navbar-nav > li > a,
@@ -7638,7 +7641,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo .logo img { width: 56%; }
     header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
-    header.wide-header .menu-main-button .eda-logo-wrap img { width: 200px; }
+    header.wide-header .menu-main-eda .eda-logo-wrap img { width: 200px; }
 
     header.wide-header .menu-main-info .submenu:first-child { margin-left: 117px; }
 
