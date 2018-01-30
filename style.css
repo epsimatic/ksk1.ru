@@ -5562,8 +5562,8 @@ header.wide-header { display: none; }
 .snap-drawer ul.menu-sidenav > li.menu-item > a:focus,
 .snap-drawer ul.menu-sidenav > li.menu-item > a:hover { background-color: #00bfff; }
 
-.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:focus,
-.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:hover { background-color: red; }
+.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:focus,.snap-drawer ul.menu-sidenav > li.menu-main-button > a:focus,
+.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:hover, .snap-drawer ul.menu-sidenav > li.menu-main-button > a:hover { background-color: red; }
 
 
 .snap-drawer-right ul.menu-sidenav > li.menu-item > a:focus,
