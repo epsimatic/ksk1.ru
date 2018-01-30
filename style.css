@@ -548,13 +548,13 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:hover > span,
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
-.navbar-nav > li.menu-main-eda:focus > a,
-.navbar-nav > li.menu-main-eda:hover > a,
-.navbar-nav > li.menu-main-eda > a:hover,
-.navbar-nav > li.menu-main-eda > a:focus,
-.navbar-nav > li.menu-main-eda:focus > span,
-.navbar-nav > li.menu-main-eda:hover > span,
-.navbar-nav > li.menu-main-eda > span:hover,
+.navbar-nav > li.menu-main-button:focus > a,
+.navbar-nav > li.menu-main-button:hover > a,
+.navbar-nav > li.menu-main-button > a:hover,
+.navbar-nav > li.menu-main-button > a:focus,
+.navbar-nav > li.menu-main-button:focus > span,
+.navbar-nav > li.menu-main-button:hover > span,
+.navbar-nav > li.menu-main-button > span:hover,
 .navbar-nav > li.menu-main-button > span:focus
 { background-color: #fc746e !important; }
 
@@ -564,13 +564,13 @@ a.media-heading:focus {text-decoration: none;}
 .nav .current-page-parent > a::after , .nav .current-page-parent > span::after{ content: ""; height: 5px; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; background-color: #fff; }
 
 
-body.admin-bar .menu-main-eda .featured > span,
-body.is_admin .menu-main-eda .featured > span,
-body .menu-main-eda span.show-wpadmin,
+body.admin-bar .menu-main-button .featured > span,
+body.is_admin .menu-main-button .featured > span,
+body .menu-main-button span.show-wpadmin,
 .menu-main-services { display: none !important; }
 
-body.is_admin .menu-main-eda span.show-wpadmin,
-body.admin-bar .menu-main-eda span.show-wpadmin { display: inline !important; }
+body.is_admin .menu-main-button span.show-wpadmin,
+body.admin-bar .menu-main-button span.show-wpadmin { display: inline !important; }
 
 body.admin-bar .menu-main-services,
 body.is_admin .menu-main-services,
@@ -7378,15 +7378,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
     header.wide-header .menu-main-info .submenu a { display: block; padding: 14px 0; width: 100%; }
 
-    header.wide-header .menu-main-eda .stores-group > a:hover,
-    header.wide-header .menu-main-eda .stores-group > a:focus,
+    header.wide-header .menu-main-button .stores-group > a:hover,
+    header.wide-header .menu-main-button .stores-group > a:focus,
     header.wide-header .menu-main-shop .shop-list a:hover,
     header.wide-header .menu-main-shop .shop-list a:focus,
     header.wide-header .posrednik-link-wrap a:hover,
     header.wide-header .posrednik-link-wrap a:focus,
     header.wide-header .menu-main-info .submenu a:hover,
     header.wide-header .menu-main-info .submenu a:focus { background-color: #f0f0f0; text-decoration: none; }
-    header.wide-header .menu-main-eda .stores-group .vacabi, header.wide-header .menu-main-eda .stores-group a{position: relative;}
+    header.wide-header .menu-main-button .stores-group .vacabi, header.wide-header .menu-main-button .stores-group a{position: relative;}
     header.wide-header .menu-main-button .stores-group .label {background-color: red;position: absolute; left: 34px;top: 23px; }
     /* Стили для панели радио и ТВ */
     header.wide-header .menu-main-radio .play-radio { outline: none; }
@@ -7416,19 +7416,19 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 
 
     /* Стили для панели заказа еды */
-    header.wide-header .menu-main-eda .eda-logo-wrap,
-    header.wide-header .menu-main-eda .stores-group,
-    header.wide-header .menu-main-eda .stores-group > a { display: inline-block; }
+    header.wide-header .menu-main-button .eda-logo-wrap,
+    header.wide-header .menu-main-button .stores-group,
+    header.wide-header .menu-main-button .stores-group > a { display: inline-block; }
 
-    header.wide-header .menu-main-eda .dropdown-panel .container { text-align: center; }
+    header.wide-header .menu-main-button .dropdown-panel .container { text-align: center; }
 
-    header.wide-header .menu-main-eda .stores-group > a img { width: 90px; }
+    header.wide-header .menu-main-button .stores-group > a img { width: 90px; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap { position: relative; top: -5px; }
+    header.wide-header .menu-main-button .eda-logo-wrap { position: relative; top: -5px; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
+    header.wide-header .menu-main-button .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
 
-    header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
+    header.wide-header .menu-main-button .stores-group > a { margin: 5px; padding: 10px; }
     header.wide-header .menu-main-button{background-color: #fa463e;}
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
@@ -7469,15 +7469,15 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:hover,
     header.wide-header .menu-main-shop .shop-promo a.goods-cat:focus { background-color: #f0f0f0; text-decoration: none; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap { top: -15px; }
+    header.wide-header .menu-main-button .eda-logo-wrap { top: -15px; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap img { margin-left: 70px; margin-right: 0; width: 210px; height: 24px; position: relative; top: -13.5px; }
+    header.wide-header .menu-main-button .eda-logo-wrap img { margin-left: 70px; margin-right: 0; width: 210px; height: 24px; position: relative; top: -13.5px; }
 
     header.wide-header .menu-main-button .eda-logo-wrap .phone-number { font-size: 61px; right: 25px; bottom: -62px; position: absolute; font-weight: 700; color: #fa463e; }
 
-    header.wide-header .menu-main-eda .stores-group > a { margin-right: 20px; }
+    header.wide-header .menu-main-button .stores-group > a { margin-right: 20px; }
 
-    header.wide-header .menu-main-eda .stores-group > a img { width: 100px; }
+    header.wide-header .menu-main-button .stores-group > a img { width: 100px; }
 
     header.wide-header .menu-main-info .submenu:first-child { margin-left: 97px; }
 
@@ -7638,7 +7638,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-shop .shop-promo .logo img { width: 56%; }
     header.wide-header .menu-main-shop .shop-promo a.goods-cat { padding: 4px 6px; }
 
-    header.wide-header .menu-main-eda .eda-logo-wrap img { width: 200px; }
+    header.wide-header .menu-main-button .eda-logo-wrap img { width: 200px; }
 
     header.wide-header .menu-main-info .submenu:first-child { margin-left: 117px; }
 
