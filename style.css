@@ -7369,7 +7369,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
     /* Стили для кнопки кнопка продаётся  */
-    header.wide-header .menu-main-button span {padding: 5px 20px!important; text-align: center; }
+    header.wide-header .menu-main-button span {padding: 4px 10px!important; text-align: center; font-size: 16px;
+        font-weight: 700;}
     header.wide-header .menu-main-button a:focus,header.wide-header .menu-main-button a:hover{text-decoration: none;}
     /* Стили для кнопки заказать рекламу  */
     header.wide-header .menu-main-reklama span {padding: 5px 10px!important; text-align: center; }
