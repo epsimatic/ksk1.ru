@@ -6302,7 +6302,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
 .services-content section.service-section .social-links .social-title {font-size: 16px; line-height: 24px; margin-bottom: 12px; color: #000;}
 
 .services-content section.service-section .social-links a { color: #222; font-size: 36px; line-height: 48px; text-decoration: none; margin: 0 5px; transition: color .25s ease 0s; }
-
+.services-content section.service-section .social-links .viber,
+.services-content section.service-section .social-links .telegram{position: relative;width: 50px; display: inline-block;}
+.services-content section.service-section .social-links .viber span,
+.services-content section.service-section .social-links .telegram span{position: absolute;top: -29px;}
 .services-content section.service-section .social-links a:hover,
 .services-content section.service-section .social-links a:focus { color: #666; color: rgba(0,0,0,.5); }
 
