@@ -190,9 +190,9 @@ object { display: none; }
 .media,
 .media-body { overflow: auto !important; }
 
-/* <editor-fold desc="navbar"> */
+/* <editor-fold desc="navbar">  #00b0ff  */
 
-.navbar { background-color: #00b0ff; margin: 0 -10px 10px; border: none;}
+.navbar { background-color:black; margin: 0 -10px 10px; border: none;}
 
 .news-old .navbar { margin: 0 0 15px; }
 
