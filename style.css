@@ -548,6 +548,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li:hover > span,
 .navbar-nav > li > span:hover,
 .navbar-nav > li > span:focus{ color: #fff; background-color: #40c4ff; }
+
 .navbar-nav > li.menu-main-button:focus > a,
 .navbar-nav > li.menu-main-button:hover > a,
 .navbar-nav > li.menu-main-button > a:hover,
@@ -5481,8 +5482,8 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 
 #header .navbar-nav { height: 50px; overflow-y: hidden; }
 
-/*Стили для бокового меню snap.js*/
-header.mobile-header { background-color: #00e676; height: 40px; z-index: 5; }
+/*Стили для бокового меню snap.js   #00e676*/
+header.mobile-header { background-color:black ; height: 40px; z-index: 5; }
 
 body.admin-bar header.mobile-header { top: 46px; z-index: 10; }
 
