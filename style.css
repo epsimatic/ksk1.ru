@@ -190,9 +190,9 @@ object { display: none; }
 .media,
 .media-body { overflow: auto !important; }
 
-/* <editor-fold desc="navbar">  #00b0ff  */
+/* <editor-fold desc="navbar">    */
 
-.navbar { background-color:black; margin: 0 -10px 10px; border: none;}
+.navbar { background-color:#00b0ff; margin: 0 -10px 10px; border: none;}
 
 .news-old .navbar { margin: 0 0 15px; }
 
@@ -5482,8 +5482,8 @@ a.list-event-item:focus {color: #0f0f0f; text-decoration: none; background-color
 
 #header .navbar-nav { height: 50px; overflow-y: hidden; }
 
-/*Стили для бокового меню snap.js   #00e676*/
-header.mobile-header { background-color:black ; height: 40px; z-index: 5; }
+/*Стили для бокового меню snap.js   */
+header.mobile-header { background-color:#00e676 ; height: 40px; z-index: 5; }
 
 body.admin-bar header.mobile-header { top: 46px; z-index: 10; }
 
