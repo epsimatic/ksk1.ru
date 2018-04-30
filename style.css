@@ -2187,7 +2187,7 @@ body.page-id-33973 .sidebar .panel-link-add-er a { background-color: #f8f8f8 !im
 }
 
 /* <editor-fold desc=""Элементы главной новостной страницы"> */
-.post-info { color: #666; margin-top: 24px; }
+.post-info { color: #666; }
 .post-info > * { height: auto; background-color: transparent; }
 .post-info span {display: inline-block;}
 
