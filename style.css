@@ -2392,8 +2392,9 @@ article.post-custom div.out > p,
 
 article.post-custom a,
 .site-rk article.page a,
-.single-post .main-content article.post-news a { border-bottom: 1px solid #2979ff; color: #2979ff; padding-bottom: 2px; }
+.single-post .main-content article.post-news a {  color: #2979ff; padding-bottom: 2px; }
 
+article.post-custom a,
 article.post-custom a:hover,
 article.post-custom a:focus,
 .site-rk article.page a:hover,
