@@ -5816,8 +5816,8 @@ footer.info .social > a:focus, .more_photo > a:hover,.more_photo > a:focus,.post
 
 footer.info .social .fa { font-size: 2em; display: inline-block; vertical-align: middle; width: 72px; height: 72px; line-height: 72px; }
 .more_photo .fa{ font-size: 1.3em; display: inline-block; vertical-align: middle; width:23px; height: 42px; line-height: 42px; }
-footer.info .social .fa-vk,.more_photo .fa-vk, .post-actions .fa-vk{ color: #597da3 !important; }
-footer.info .social .fa-odnoklassniki, .more_photo .fa-odnoklassniki, .post-actions .fa-odnoklassniki{ color: #f2720c !important; }
+footer.info .social .fa-vk,.more_photo .fa-vk, .post-actions .fa-vk{ color: #507299; }
+footer.info .social .fa-odnoklassniki, .more_photo .fa-odnoklassniki, .post-actions .fa-odnoklassniki{ color: #F58220; }
 footer.info .social .fa-facebook { color: #3b5998; }
 footer.info .social .fa-twitter { color: #31baef; }
 footer.info .social .fa-youtube { color: #df2926; }
