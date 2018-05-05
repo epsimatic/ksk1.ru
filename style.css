@@ -3338,7 +3338,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 /* </editor-fold> */
 
 /*Кнопки сортировки объявлений на странице категории*/
-.subcat-sort_time { margin-bottom: 24px; padding: 0 15px; text-align: center; }
+.subcat-sort_time { margin: 15px 0; padding: 0 15px; text-align: center; }
 
 .subcat-sort_time .sort-ob { margin: 12px 0 24px; }
 
