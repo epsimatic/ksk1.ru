@@ -3351,7 +3351,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 
 
 }
-.subcat-sort_time .btn-group,.subcat-sort_time .btn-action { margin: 13.5px 0; }
+.subcat-sort_time .btn-action { margin: 13.5px 0; }
 /* <editor-fold desc="Страница списка объявлений"> */
 
 .ob-list { padding-bottom: 0; }
