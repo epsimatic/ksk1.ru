@@ -3347,7 +3347,7 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 }
 
 @media (min-width: 992px) {
-    .subcat-sort_time { margin-bottom: 0; text-align: left; }
+    .subcat-sort_time { margin-bottom: 0;  }
 
     .subcat-sort_time .btn-group { margin: 13.5px 0; }
 }
