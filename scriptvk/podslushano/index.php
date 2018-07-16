@@ -36,8 +36,7 @@ setLog('Создаем обложку');
 $draw = new ImagickDraw(); 
 
 if(file_exists(BASEPATH.timeToDayBg())) {
-    //$bg = new Imagick(BASEPATH.timeToDayBg());
-    setLog('ОШИБКА! Не найден '.BASEPATH);
+    $bg = new Imagick(BASEPATH.timeToDayBg());
 } else {
     setLog('ОШИБКА! Не найден '.BASEPATH.timeToDayBg().' Загрузите файл либо отключите $show_time_of_day в config.php');
     print_r('ОШИБКА! Не найдена обложка, смотрите logs.txt');
