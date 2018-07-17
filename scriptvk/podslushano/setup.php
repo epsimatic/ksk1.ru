@@ -52,18 +52,18 @@ $roundingOff = true;
 /* ----- subscriber_1 ----- */
 // положение аватарки
 $last_subscriber_photo_1_x = 860;   // 816
-$last_subscriber_photo_1_y = 255;  //  117
+$last_subscriber_photo_1_y = 253;  //  117
 // Координаты имени и фамилии
 $last_subscriber_1_text_x = 911;  // 911
-$last_subscriber_1_text_y = 342;  //  342
+$last_subscriber_1_text_y = 270;  //  342
 
 /* ----- subscriber_2 ----- */
 // положение аватарки
-$last_subscriber_photo_2_x = 1071;
+$last_subscriber_photo_2_x = 450;
 $last_subscriber_photo_2_y = 117;
 // Координаты имени и фамилии
 $last_subscriber_2_text_x = 1166;
-$last_subscriber_2_text_y = 342;
+$last_subscriber_2_text_y = 270;
 
 /* ----- subscriber_3 ----- */
 // положение аватарки
