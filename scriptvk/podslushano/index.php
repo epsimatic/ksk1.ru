@@ -77,7 +77,7 @@ if($show_last_subscribe) {
     }
 }
 
-$date_today = date('Ymd');
+$date_today = date('Ymd',strtotime("yesterday"));
 
 if($show_top_comments) {
     setLog('Получаю посты группы');
@@ -123,7 +123,7 @@ if($show_top_comments) {
 
                         foreach($comments_get['response']['items'] as $comments) {
 
-                         //   if($date_today == date('Ymd', $comments['date'])) {
+                           if($date_today == date('Ymd', $comments['date'])) {
                                 // В двух словах мы заносим данные в массив, суммируя их
                                 if(!isset($countcomments[$comments['from_id']]) and !isset($countlike[$comments['from_id']])) {
                                     $countcomments[$comments['from_id']] = 1;
@@ -135,7 +135,7 @@ if($show_top_comments) {
                                 //var_dump($comments);
                             }
 
-                      //  }
+                        }
                     }
 
                     if($offset<$count)
