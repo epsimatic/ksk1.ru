@@ -54,7 +54,7 @@ $roundingOff = true;
 $last_subscriber_photo_1_x = 860;   // 816
 $last_subscriber_photo_1_y = 253;  //  117
 // Координаты имени и фамилии
-$last_subscriber_1_text_x = 880;  // 911
+$last_subscriber_1_text_x = 900;  // 911
 $last_subscriber_1_text_y = 380;  //  342
 
 /* ----- subscriber_2 ----- */
