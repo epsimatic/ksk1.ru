@@ -191,7 +191,7 @@ if($show_top_comments) {
 if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscribe.jpg';
 	$file_name_2 = BASEPATH.'cover/top_comments.jpg';
-	$file_name_3 = file_get_contents(BASEPATH.'weather/conditions.html');
+	$file_name_3 = file_get_contents('https://ksk1.ru/weather/conditions.html');
 
 	//последний ПОДПИСЧИК
     if($view_last_subscriber) {
