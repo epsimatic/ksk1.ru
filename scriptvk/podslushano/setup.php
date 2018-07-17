@@ -54,16 +54,16 @@ $roundingOff = true;
 $last_subscriber_photo_1_x = 860;   // 816
 $last_subscriber_photo_1_y = 253;  //  117
 // Координаты имени и фамилии
-$last_subscriber_1_text_x = 860;  // 911
-$last_subscriber_1_text_y = 280;  //  342
+$last_subscriber_1_text_x = 880;  // 911
+$last_subscriber_1_text_y = 380;  //  342
 
 /* ----- subscriber_2 ----- */
 // положение аватарки
-$last_subscriber_photo_2_x = 650;
+$last_subscriber_photo_2_x = 630;
 $last_subscriber_photo_2_y = 253;
 // Координаты имени и фамилии
 $last_subscriber_2_text_x = 650;
-$last_subscriber_2_text_y = 280;
+$last_subscriber_2_text_y = 380;
 
 /* ----- subscriber_3 ----- */
 // положение аватарки
