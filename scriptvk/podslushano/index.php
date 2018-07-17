@@ -45,7 +45,7 @@ if(file_exists(BASEPATH.timeToDayBg())) {
 
 $draw->setFont(BASEPATH."/font/".$font);
 $draw->setTextAlignment(Imagick::ALIGN_CENTER);
-
+$last_subscribe_photo="";
 if($show_last_subscribe) {
     sleep(5);
     // Теперь найдем последнего подписчика
@@ -71,7 +71,7 @@ if($show_last_subscribe) {
      //   echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
     //    if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
-    //        DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
+        $last_subscribe_photo=DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
 //        }
 
     }
