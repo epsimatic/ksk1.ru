@@ -77,13 +77,52 @@ if($show_last_subscribe) {
     }
 }
 
+if($show_top_comments) {
+    $day_comment_top = 0;
+    if(count($countcomments) > 0) {
+        // Теперь найдем кто суммарно написал больше всех комментариев
+        $value = max($countcomments);
+        $day_comment_top = array_search($value, $countcomments);
+        setLog('COUNT COMMENT: '.$countcomments[$day_comment_top]);
+        setLog('Получаю ID кто суммарно написал больше всех комментариев '.$day_comment_top);
+
+
+        sleep(5);
+
+        if($day_comment_top > 0) {
+            $user_top_comment = getApiMethod('users.get', array(
+                'user_ids' => $day_comment_top,
+                'fields' => 'photo_200'
+            ));
+
+            setLog('Ответ сервера #4 '.$user_top_comment);
+
+            if($user_top_comment) {
+                $user_top_comment = json_decode($user_top_comment, true);
+
+                $top_comment_name = $user_top_comment['response'][0]['first_name'];
+                $top_comment_lastname = $user_top_comment['response'][0]['last_name'];
+                $top_comment_photo = $user_top_comment['response'][0]['photo_200'];
+
+                setLog('И.Ф Комменты: '.$top_comment_name.' '.$top_comment_lastname);
+              //  echo '<p>*** Больше всех сегодня комментариев написал: '.$top_comment_name.' '.$top_comment_lastname.' - '.$countcomments[$day_comment_top].' шт.</p></br>';
+                // Скачиваем фото
+                if(!empty($top_comment_photo)){
+                    DownloadImages($top_comment_photo, 'cover/top_comments.jpg');
+                }
+            }
+        }
+    }
+}
+
+
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
 if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscribe.jpg';
-	$file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
+	$file_name_2 = BASEPATH.'cover/top_comments.jpg';
 	$file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
 
-	//ПОДПИСЧИК #1
+	//последний ПОДПИСЧИК
     if($view_last_subscriber) {
         $last_subscriber_photo_1 = new Imagick($file_name_1);
         if($roundingOff==true) {
@@ -94,11 +133,11 @@ if($view_last_subscriber) {
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
         $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
-        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname.' '.$last_subscriber_lastname));
+        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname.' '.$top_comment_lastname));
     }
 	
-	//ПОДПИСЧИК #2
-	/*if(file_exists($file_name_2) && $view_last_subscriber) {
+	//ПОДПИСЧИК с наибольшими комментариями
+	if(file_exists($file_name_2) && $view_last_subscriber) {
         $last_subscriber_photo_2 = new Imagick($file_name_2);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
@@ -108,8 +147,8 @@ if($view_last_subscriber) {
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
         $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
-        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_2.' '.$last_subscriber_lastname_2, 'UTF-8'));
-    }*/
+        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($top_comment_name.' '.$last_subscriber_lastname_2, 'UTF-8'));
+    }
 	
 	//ПОДПИСЧИК #3
 	/*if(file_exists($file_name_3) && $view_last_subscriber) {
