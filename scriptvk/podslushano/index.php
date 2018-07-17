@@ -45,7 +45,7 @@ if(file_exists(BASEPATH.timeToDayBg())) {
 
 $draw->setFont(BASEPATH."/font/".$font);
 $draw->setTextAlignment(Imagick::ALIGN_CENTER);
-$last_subscribe_photo="";
+
 if($show_last_subscribe) {
     sleep(5);
     // Теперь найдем последнего подписчика
@@ -66,34 +66,21 @@ if($show_last_subscribe) {
         $last_subscribe_firstname = $last_subscribe['response']['items'][0]['first_name'];
         $last_subscribe_lastname = $last_subscribe['response']['items'][0]['last_name'];
         $last_subscribe_photo = $last_subscribe['response']['items'][0]['photo_200'];
-
-    //    setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
-     //   echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
+        echo 'Последний подписчик '.$last_subscribe_photo ;
+        setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
+        echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
-    //    if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
+        if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
             DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
-//        }
+        }
 
     }
 }
 
-//ПОДПИСЧИК #2
-/*if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
-    $last_subscriber_photo_2 = new Imagick($last_subscribe_photo);
-    if($roundingOff==true) {
-        RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
-    }
-
-    $draw->setFontSize($last_subscriber_font_size);
-    $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
-
-    $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
-    $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
-}*/
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
-/*if($view_last_subscriber) {
+if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscriber_1.jpg';
-	//$last_subscribe_photo$file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
+	$file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
 	$file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
 
 	//ПОДПИСЧИК #1
@@ -106,11 +93,23 @@ if($show_last_subscribe) {
         $draw->setFontSize($last_subscriber_font_size);
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-        $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
-        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_1.' '.$last_subscriber_lastname_1, 'UTF-8'));
+        $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
+        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname_1.' '.$last_subscriber_lastname_1, 'UTF-8'));
     }
 	
+	//ПОДПИСЧИК #2
+	if(file_exists($file_name_2) && $view_last_subscriber) {
+        $last_subscriber_photo_2 = new Imagick($file_name_2);
+        if($roundingOff==true) {
+            RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
+        }
 
+        $draw->setFontSize($last_subscriber_font_size);
+        $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
+
+        $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_2.' '.$last_subscriber_lastname_2, 'UTF-8'));
+    }
 	
 	//ПОДПИСЧИК #3
 	if(file_exists($file_name_3) && $view_last_subscriber) {
@@ -125,7 +124,7 @@ if($show_last_subscribe) {
         $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
         $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, mb_strtoupper($last_subscriber_firstname_3.' '.$last_subscriber_lastname_3, 'UTF-8'));
     }
-}*/
+}
 
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
