@@ -191,7 +191,7 @@ if($show_top_comments) {
 if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscribe.jpg';
 	$file_name_2 = BASEPATH.'cover/top_comments.jpg';
-	$file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
+	$file_name_3 = BASEPATH.'weather/conditions.html';
 
 	//последний ПОДПИСЧИК
     if($view_last_subscriber) {
@@ -222,7 +222,7 @@ if($view_last_subscriber) {
     }
 	
 	//ПОДПИСЧИК #3
-	/*if(file_exists($file_name_3) && $view_last_subscriber) {
+	if(file_exists($file_name_3) && $view_last_subscriber) {
         $last_subscriber_photo_3 = new Imagick($file_name_3);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_3, $last_subscriber_width,$last_subscriber_height);
@@ -233,7 +233,7 @@ if($view_last_subscriber) {
 
         $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
         $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, mb_strtoupper($last_subscriber_firstname_3.' '.$last_subscriber_lastname_3, 'UTF-8'));
-    }*/
+    }
 }
 
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
