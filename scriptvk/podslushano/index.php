@@ -67,12 +67,12 @@ if($show_last_subscribe) {
         $last_subscribe_lastname = $last_subscribe['response']['items'][0]['last_name'];
         $last_subscribe_photo = $last_subscribe['response']['items'][0]['photo_200'];
 
-        setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
-        echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
+    //    setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
+     //   echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
-        if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
-            DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
-        }
+    //    if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
+    //        DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
+//        }
 
     }
 }
