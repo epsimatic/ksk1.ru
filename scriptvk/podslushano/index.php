@@ -123,7 +123,7 @@ if($show_top_comments) {
 
                         foreach($comments_get['response']['items'] as $comments) {
 
-                            if($date_today == date('Ymd', $comments['date'])) {
+                        //    if($date_today == date('Ymd', $comments['date'])) {
                                 // В двух словах мы заносим данные в массив, суммируя их
                                 if(!isset($countcomments[$comments['from_id']]) and !isset($countlike[$comments['from_id']])) {
                                     $countcomments[$comments['from_id']] = 1;
@@ -135,7 +135,7 @@ if($show_top_comments) {
                                 //var_dump($comments);
                             }
 
-                        }
+                      //  }
                     }
 
                     if($offset<$count)
@@ -187,7 +187,7 @@ if($show_top_comments) {
 }
 
 
-//ПОСЛЕДНИЕ ПОДПИСЧИКИ
+//
 if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscribe.jpg';
 	$file_name_2 = BASEPATH.'cover/top_comments.jpg';
@@ -204,7 +204,7 @@ if($view_last_subscriber) {
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
         $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
-        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname.' '.$top_comment_lastname));
+        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper('Вера'.' '.$top_comment_lastname, 'UTF-8'));
     }
 	
 	//ПОДПИСЧИК с наибольшими комментариями
