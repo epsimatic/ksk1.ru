@@ -87,8 +87,8 @@ if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
     $draw->setFontSize($last_subscriber_font_size);
     $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-    $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
-    $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
+    $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
+    $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
 }
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
 if($view_last_subscriber) {
@@ -106,8 +106,8 @@ if($view_last_subscriber) {
         $draw->setFontSize($last_subscriber_font_size);
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-        $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
-        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname_1.' '.$last_subscriber_lastname_1, 'UTF-8'));
+        $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_1.' '.$last_subscriber_lastname_1, 'UTF-8'));
     }
 	
 
