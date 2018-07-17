@@ -20,7 +20,8 @@ $font_date = "MyriadPro-Cond.otf";
 
 // Подписчики
 $last_subscriber_font_size = 26;
-$last_subscriber_font_color = '255,255,255';
+//$last_subscriber_font_color = '255,255,255';
+$last_subscriber_font_color = '0,0,0';
 
 // День недели
 $today_font_size = 55;
