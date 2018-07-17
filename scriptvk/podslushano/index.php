@@ -71,14 +71,14 @@ if($show_last_subscribe) {
      //   echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
     //    if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
-        $last_subscribe_photo=DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
+            DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
 //        }
 
     }
 }
 
 //ПОДПИСЧИК #2
-if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
+/*if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
     $last_subscriber_photo_2 = new Imagick($last_subscribe_photo);
     if($roundingOff==true) {
         RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
@@ -89,7 +89,7 @@ if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
 
     $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
     $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
-}
+}*/
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
 /*if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscriber_1.jpg';
