@@ -67,11 +67,11 @@ if($show_last_subscribe) {
         $last_subscribe_lastname = $last_subscribe['response']['items'][0]['last_name'];
         $last_subscribe_photo = $last_subscribe['response']['items'][0]['photo_200'];
         echo 'Последний подписчик '.$last_subscribe_photo ;
-        setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
-        echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
+      //  setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
+      //  echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
         if(!empty($last_subscribe_firstname) && !empty($last_subscribe_lastname) && !empty($last_subscribe_photo)){
-            DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
+       //     DownloadImages($last_subscribe_photo, 'header/last_subscribe.jpg');
         }
 
     }
@@ -85,7 +85,7 @@ if($view_last_subscriber) {
 
 	//ПОДПИСЧИК #1
     if(file_exists($file_name_1) && $view_last_subscriber) {
-        $last_subscriber_photo_1 = new Imagick($file_name_1);
+        $last_subscriber_photo_1 = new Imagick($last_subscribe_photo);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_1, $last_subscriber_width,$last_subscriber_height);
         }
@@ -98,7 +98,7 @@ if($view_last_subscriber) {
     }
 	
 	//ПОДПИСЧИК #2
-	if(file_exists($file_name_2) && $view_last_subscriber) {
+	/*if(file_exists($file_name_2) && $view_last_subscriber) {
         $last_subscriber_photo_2 = new Imagick($file_name_2);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
@@ -109,10 +109,10 @@ if($view_last_subscriber) {
 
         $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
         $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_2.' '.$last_subscriber_lastname_2, 'UTF-8'));
-    }
+    }*/
 	
 	//ПОДПИСЧИК #3
-	if(file_exists($file_name_3) && $view_last_subscriber) {
+	/*if(file_exists($file_name_3) && $view_last_subscriber) {
         $last_subscriber_photo_3 = new Imagick($file_name_3);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_3, $last_subscriber_width,$last_subscriber_height);
@@ -123,7 +123,7 @@ if($view_last_subscriber) {
 
         $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
         $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, mb_strtoupper($last_subscriber_firstname_3.' '.$last_subscriber_lastname_3, 'UTF-8'));
-    }
+    }*/
 }
 
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
