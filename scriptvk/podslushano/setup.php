@@ -43,16 +43,16 @@ $show_last_subscribe = true;
 $last_subscriber_count = '1';
 
 // Ширина аватарки
-$last_subscriber_width = 95; //
+$last_subscriber_width = 100; //
 // Высота аватарки
-$last_subscriber_height = 95; //
+$last_subscriber_height = 100; //
 // Аватарки [true - круглые false - квадратные]
 $roundingOff = true;
 
 /* ----- subscriber_1 ----- */
 // положение аватарки
-$last_subscriber_photo_1_x = 716;   // 816
-$last_subscriber_photo_1_y = 100;  //  117
+$last_subscriber_photo_1_x = 500;   // 816
+$last_subscriber_photo_1_y = 342;  //  117
 // Координаты имени и фамилии
 $last_subscriber_1_text_x = 911;  // 911
 $last_subscriber_1_text_y = 342;  //  342
