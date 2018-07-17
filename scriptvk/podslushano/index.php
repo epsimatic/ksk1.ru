@@ -91,7 +91,7 @@ if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
     $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
 }
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
-if($view_last_subscriber) {
+/*if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscriber_1.jpg';
 	//$last_subscribe_photo$file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
 	$file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
@@ -125,7 +125,7 @@ if($view_last_subscriber) {
         $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
         $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, mb_strtoupper($last_subscriber_firstname_3.' '.$last_subscriber_lastname_3, 'UTF-8'));
     }
-}
+}*/
 
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
