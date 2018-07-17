@@ -77,6 +77,77 @@ if($show_last_subscribe) {
     }
 }
 
+$date_today = date('Ymd');
+
+if($show_top_comments) {
+    setLog('Получаю посты группы');
+    // Получим посты со стены
+    // больше 100 постов получать нет смысла, так как в вк ограничение
+    // разрешено постить не больше 50 постов в сутки.
+    $wall_get = getApiMethod('wall.get', array(
+        'owner_id' => '-'.$group_id,
+        'count' => '100'
+    ));
+
+    setLog('Ответ сервера #1 '.$wall_get);
+
+    if($wall_get) {
+        $wall_get = json_decode($wall_get, true);
+
+        //checkApiError($wall_get);
+
+        $countlike = array();
+        $countcomments = array();
+
+        foreach($wall_get['response']['items'] as $wall) {
+
+            // Получим кол-во комментариев к посту
+            $count = $wall['comments']['count'];
+            $offset = 0;
+
+            if($count > 0) {
+                // Получим все комментарии, так как их может быть больше 100.
+                while($offset < $count) {
+                    setLog('Получаю кол-во комментариев к посту '.$wall['id']);
+                    // Отправим запрос на получение комментариев
+                    $comments_get = getApiMethod('wall.getComments', array(
+                        'owner_id' => '-'.$group_id,
+                        'post_id' => $wall['id'],
+                        'need_likes' => '1',
+                        'count' => '100',
+                        'offset' => $offset
+                    ));
+
+                    if($comments_get) {
+                        $comments_get = json_decode($comments_get, true);
+
+                        foreach($comments_get['response']['items'] as $comments) {
+
+                            if($date_today == date('Ymd', $comments['date'])) {
+                                // В двух словах мы заносим данные в массив, суммируя их
+                                if(!isset($countcomments[$comments['from_id']]) and !isset($countlike[$comments['from_id']])) {
+                                    $countcomments[$comments['from_id']] = 1;
+                                    $countlike[$comments['from_id']] = $comments['likes']['count'];
+                                } else {
+                                    $countcomments[$comments['from_id']]++;
+                                    $countlike[$comments['from_id']] += $comments['likes']['count'];
+                                }
+                                //var_dump($comments);
+                            }
+
+                        }
+                    }
+
+                    if($offset<$count)
+                        $offset = $offset + 100;
+
+                }
+            }
+
+        }
+    }
+}
+
 if($show_top_comments) {
     $day_comment_top = 0;
     if(count($countcomments) > 0) {
