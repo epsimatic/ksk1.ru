@@ -66,7 +66,7 @@ if($show_last_subscribe) {
         $last_subscribe_firstname = $last_subscribe['response']['items'][0]['first_name'];
         $last_subscribe_lastname = $last_subscribe['response']['items'][0]['last_name'];
         $last_subscribe_photo = $last_subscribe['response']['items'][0]['photo_200'];
-        echo 'Последний подписчик '.$last_subscribe_firstname ;
+       // echo 'Последний подписчик '.$last_subscribe_firstname ;
       //  setLog('Получаю последнего вступившего в группу: '.$last_subscribe_firstname.' '.$last_subscribe_lastname);
       //  echo '<p>*** Последний подписчик '.$last_subscribe_firstname.' '.$last_subscribe_lastname.'</p></br>';
         // Скачиваем фото
@@ -94,7 +94,7 @@ if($view_last_subscriber) {
         $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
         $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
-        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname.' '.$last_subscriber_lastname, 'UTF-8'));
+        $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname.' '.$last_subscriber_lastname));
     }
 	
 	//ПОДПИСЧИК #2
