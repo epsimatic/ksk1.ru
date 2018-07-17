@@ -33,7 +33,7 @@ require_once('groups_getMembers.php');
 // --- РИСОВАНИЕ ---------------------
 setLog('Создаем обложку');
 
-$draw = new ImagickDraw(); 
+$draw = new ImagickDraw();
 
 if(file_exists(BASEPATH.timeToDayBg())) {
     $bg = new Imagick(BASEPATH.timeToDayBg());
@@ -77,26 +77,13 @@ if($show_last_subscribe) {
     }
 }
 
-//ПОДПИСЧИК #2
-if(file_exists($last_subscribe_photo) && $view_last_subscriber) {
-    $last_subscriber_photo_2 = new Imagick($last_subscribe_photo);
-    if($roundingOff==true) {
-        RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
-    }
-
-    $draw->setFontSize($last_subscriber_font_size);
-    $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
-
-    $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
-    $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscribe_firstname.' '.$last_subscribe_lastname, 'UTF-8'));
-}
 //ПОСЛЕДНИЕ ПОДПИСЧИКИ
 if($view_last_subscriber) {
     $file_name_1 = BASEPATH.'cover/last_subscriber_1.jpg';
-	//$last_subscribe_photo$file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
-	$file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
+    $file_name_2 = BASEPATH.'cover/last_subscriber_2.jpg';
+    $file_name_3 = BASEPATH.'cover/last_subscriber_3.jpg';
 
-	//ПОДПИСЧИК #1
+    //ПОДПИСЧИК #1
     if(file_exists($file_name_1) && $view_last_subscriber) {
         $last_subscriber_photo_1 = new Imagick($file_name_1);
         if($roundingOff==true) {
@@ -109,11 +96,23 @@ if($view_last_subscriber) {
         $bg->compositeImage($last_subscriber_photo_1, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_1_x, $last_subscriber_photo_1_y);
         $bg->annotateImage($draw, $last_subscriber_1_text_x, $last_subscriber_1_text_y, 0, mb_strtoupper($last_subscriber_firstname_1.' '.$last_subscriber_lastname_1, 'UTF-8'));
     }
-	
 
-	
-	//ПОДПИСЧИК #3
-	if(file_exists($file_name_3) && $view_last_subscriber) {
+    //ПОДПИСЧИК #2
+    if(file_exists($file_name_2) && $view_last_subscriber) {
+        $last_subscriber_photo_2 = new Imagick($file_name_2);
+        if($roundingOff==true) {
+            RoundingOff($last_subscriber_photo_2, $last_subscriber_width,$last_subscriber_height);
+        }
+
+        $draw->setFontSize($last_subscriber_font_size);
+        $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
+
+        $bg->compositeImage($last_subscriber_photo_2, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+        $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, mb_strtoupper($last_subscriber_firstname_2.' '.$last_subscriber_lastname_2, 'UTF-8'));
+    }
+
+    //ПОДПИСЧИК #3
+    if(file_exists($file_name_3) && $view_last_subscriber) {
         $last_subscriber_photo_3 = new Imagick($file_name_3);
         if($roundingOff==true) {
             RoundingOff($last_subscriber_photo_3, $last_subscriber_width,$last_subscriber_height);
@@ -129,8 +128,8 @@ if($view_last_subscriber) {
 
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
-	$draw->setFont(BASEPATH."/font/".$font_date);
-	$draw->setTextAlignment(Imagick::ALIGN_LEFT);
+    $draw->setFont(BASEPATH."/font/".$font_date);
+    $draw->setTextAlignment(Imagick::ALIGN_LEFT);
     $draw->setFontSize($today_font_size);
     $draw->setFillColor("rgb(".$today_font_color.")");
     $bg->annotateImage($draw, $today_text_pixel_x, $today_text_pixel_y, 0, mb_strtoupper($days[(date('w'))], 'UTF-8'));
@@ -138,8 +137,8 @@ if($view_today){
 
 // ВЫВОДИМ ДАТУ
 if($view_date){
-	$draw->setFont(BASEPATH."/font/".$font_date);
-	$draw->setTextAlignment(Imagick::ALIGN_LEFT);
+    $draw->setFont(BASEPATH."/font/".$font_date);
+    $draw->setTextAlignment(Imagick::ALIGN_LEFT);
     $draw->setFontSize($date_font_size);
     $draw->setFillColor("rgb(".$date_font_color.")");
     $bg->annotateImage($draw, $date_text_pixel_x, $date_text_pixel_y, 0, mb_strtoupper(date('d ') . $monthes[(date('n'))] . date(' Y'), 'UTF-8'));
@@ -147,8 +146,8 @@ if($view_date){
 
 // ВЫВОДИМ ВРЕМЯ
 if($view_clock){
-	$draw->setFont(BASEPATH."/font/".$font_clock);
-	$draw->setTextAlignment(Imagick::ALIGN_LEFT);
+    $draw->setFont(BASEPATH."/font/".$font_clock);
+    $draw->setTextAlignment(Imagick::ALIGN_LEFT);
     $draw->setFontSize($clock_font_size);
     $draw->setFillColor("rgb(".$clock_font_color.")");
     $bg->annotateImage($draw, $clock_text_pixel_x, $clock_text_pixel_y, 0, mb_strtoupper(date('H:i'), 'UTF-8'));
@@ -175,7 +174,7 @@ if($getUrl) {
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
     curl_setopt($ch, CURLOPT_POSTFIELDS, array('photo' => new CURLFile($output_cover, 'image/jpeg', 'image0')));
     $upload = curl_exec( $ch );
@@ -188,7 +187,7 @@ if($getUrl) {
             'hash' => $upload['hash'],
             'photo' => $upload['photo'],
         ));
-        
+
         setLog('Загружаем обложку '.$getUrl);
 
         if(stripos($getUrl, 'response":{"images":[{')) {

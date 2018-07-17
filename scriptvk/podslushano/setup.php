@@ -35,6 +35,8 @@ $clock_font_size = 30;
 $clock_font_color = '255,255,255';
 
 /* ------------------------ ПОСЛЕДНИЙ ПОДПИСАВШИЙСЯ --------------------- */
+// Показывать последнего подписчика [true - показывать false - нет]
+$show_last_subscribe = true;
 
 // Необходимое кол-во подписчиков [1, 2 или 3]
 $last_subscriber_count = '1';
@@ -97,7 +99,7 @@ date_default_timezone_set('Europe/Moscow');
 // Путь к исходной обложке [размер 1590 x 400px]
 $show_time_of_day = true; 
 $image_bg = array(
-    'background' => 'cover/cover_bg.jpg',
+    'background' => 'cover/cover_bg2.jpg',
 );
 // Путь к готовой обложке 
 $output_cover = BASEPATH.'cover/output.png';
