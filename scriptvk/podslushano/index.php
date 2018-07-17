@@ -253,7 +253,7 @@ if($view_date){
     $draw->setFillColor("rgb(".$date_font_color.")");
     $bg->annotateImage($draw, $date_text_pixel_x, $date_text_pixel_y, 0, mb_strtoupper(date('d ') . $monthes[(date('n'))] . date(' Y'), 'UTF-8'));
 }
-date_default_timezone_set("UTC+2");
+date_default_timezone_set("Asia/Yekaterinburg");
 // ВЫВОДИМ ВРЕМЯ
 if($view_clock){
 	$draw->setFont(BASEPATH."/font/".$font_clock);
