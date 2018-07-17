@@ -99,7 +99,7 @@ date_default_timezone_set('Europe/Moscow');
 // Путь к исходной обложке [размер 1590 x 400px]
 $show_time_of_day = true; 
 $image_bg = array(
-    'background' => 'cover/cover_bg2.jpg',
+    'background' => 'cover/cover_bg.jpg',
 );
 // Путь к готовой обложке 
 $output_cover = BASEPATH.'cover/output.png';
