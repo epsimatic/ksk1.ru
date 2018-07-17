@@ -77,8 +77,8 @@ if($show_last_subscribe) {
     }
 }
 
-$date_today = date('Ymd',strtotime("yesterday"));
-
+//$date_today = date('Ymd',strtotime("yesterday"));
+$date_today = date('Ymd');
 if($show_top_comments) {
     setLog('Получаю посты группы');
     // Получим посты со стены
