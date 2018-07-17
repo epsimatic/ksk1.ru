@@ -51,8 +51,8 @@ $roundingOff = true;
 
 /* ----- subscriber_1 ----- */
 // положение аватарки
-$last_subscriber_photo_1_x = 500;   // 816
-$last_subscriber_photo_1_y = 342;  //  117
+$last_subscriber_photo_1_x = 560;   // 816
+$last_subscriber_photo_1_y = 270;  //  117
 // Координаты имени и фамилии
 $last_subscriber_1_text_x = 911;  // 911
 $last_subscriber_1_text_y = 342;  //  342
