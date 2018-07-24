@@ -241,7 +241,9 @@ $file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->f
 //DownloadImages($file_icon, 'cover/icon.jpg');
 $file = 'https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
 $file_name = basename('https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg');
-file_put_contents('https://ksk1.ru/scriptvk/cover/'.$file_name, file_get_contents($file));
+copy($file, 'cover/'.$file_name);
+
+//file_put_contents('https://ksk1.ru/scriptvk/cover/'.$file_name, file_get_contents($file));
 $file_name_3 = BASEPATH.'cover/'.$file_name;
 $icon_photo = new Imagick($file_name_3);
 if($roundingOff==true) {
