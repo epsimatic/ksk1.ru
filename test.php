@@ -14,4 +14,4 @@ echo "<pre>";
 var_dump($response);
 echo "</pre>";
 echo "<br>";
-echo $response->parts[1]->icon ;
+echo "icon= ".$response->forecast->parts[1]->icon ;
