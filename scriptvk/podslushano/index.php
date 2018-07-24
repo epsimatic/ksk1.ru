@@ -243,8 +243,8 @@ if($roundingOff==true) {
     RoundingOff($icon_photo, 30,20);
 }
 
-$draw->setFontSize($last_subscriber_font_size);
-$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
+//$draw->setFontSize($last_subscriber_font_size);
+//$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
 $bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
