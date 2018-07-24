@@ -221,21 +221,32 @@ if($view_last_subscriber) {
         $bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
     }
 	
-	//ПОДПИСЧИК #3
-	if(file_exists($file_name_3) && $view_last_subscriber) {
-        $last_subscriber_photo_3 = new Imagick($file_name_3);
-        if($roundingOff==true) {
-            RoundingOff($last_subscriber_photo_3, $last_subscriber_width,$last_subscriber_height);
-        }
 
-        $draw->setFontSize($last_subscriber_font_size);
-        $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
-
-        $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
-        $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, mb_strtoupper($last_subscriber_firstname_3.' '.$last_subscriber_lastname_3, 'UTF-8'));
-    }
 }
 
+// погоду получаем
+$ch = curl_init( "https://api.weather.yandex.ru/v1/informers?lat=56.618007&lon=57.779208");
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, TRUE );
+curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
+curl_setopt( $ch, CURLOPT_TIMEOUT, 3 );
+curl_setopt( $ch, CURLOPT_HTTPHEADER, array('X-Yandex-API-Key: 90b3db9b-dcf5-4b5e-b8e0-8c14d83620a9'));
+
+$response = json_decode(curl_exec( $ch ));
+$error_code = curl_errno($ch);
+curl_close($ch);
+// выводим иконку
+$file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->icon.'.svg';
+$icon_photo = new Imagick($file_icon);
+if($roundingOff==true) {
+    RoundingOff($icon_photo, 30,20);
+}
+
+$draw->setFontSize($last_subscriber_font_size);
+$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
+
+$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+//$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
 	$draw->setFont(BASEPATH."/font/".$font_date);
