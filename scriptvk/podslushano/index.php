@@ -238,7 +238,9 @@ curl_close($ch);
 // выводим иконку
 
 $file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
-$icon_photo = new Imagick($file_icon);
+DownloadImages($file_icon, 'cover/icon.jpg');
+$file_name_3 = BASEPATH.'cover/icon.jpg';
+$icon_photo = new Imagick($file_name_3);
 if($roundingOff==true) {
     RoundingOff($icon_photo, 30,20);
 }
