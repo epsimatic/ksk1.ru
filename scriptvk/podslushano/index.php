@@ -225,7 +225,7 @@ if($view_last_subscriber) {
 }
 
 // погоду получаем
-/*$ch = curl_init( "https://api.weather.yandex.ru/v1/informers?lat=56.618007&lon=57.779208");
+$ch = curl_init( "https://api.weather.yandex.ru/v1/informers?lat=56.618007&lon=57.779208");
 curl_setopt( $ch, CURLOPT_RETURNTRANSFER, TRUE );
 curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
 curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
@@ -236,6 +236,7 @@ $response = json_decode(curl_exec( $ch ));
 $error_code = curl_errno($ch);
 curl_close($ch);
 // выводим иконку
+/*
 $file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->icon.'.svg';
 $icon_photo = new Imagick($file_icon);
 if($roundingOff==true) {
