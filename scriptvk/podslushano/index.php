@@ -238,7 +238,10 @@ curl_close($ch);
 // выводим иконку
 
 $file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
-DownloadImages($file_icon, 'cover/icon.jpg');
+//DownloadImages($file_icon, 'cover/icon.jpg');
+$file = 'https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
+$file_name = 'icon.jpg';
+file_put_contents('https://ksk1.ru/scriptvk/cover'.$file_name, file_get_contents($file));
 $file_name_3 = BASEPATH.'cover/icon.jpg';
 $icon_photo = new Imagick($file_name_3);
 if($roundingOff==true) {
