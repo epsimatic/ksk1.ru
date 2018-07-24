@@ -225,7 +225,7 @@ if($view_last_subscriber) {
 }
 
 // погоду получаем
-$ch = curl_init( "https://api.weather.yandex.ru/v1/informers?lat=56.618007&lon=57.779208");
+/*$ch = curl_init( "https://api.weather.yandex.ru/v1/informers?lat=56.618007&lon=57.779208");
 curl_setopt( $ch, CURLOPT_RETURNTRANSFER, TRUE );
 curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
 curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
@@ -245,7 +245,7 @@ if($roundingOff==true) {
 $draw->setFontSize($last_subscriber_font_size);
 $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);*/
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
