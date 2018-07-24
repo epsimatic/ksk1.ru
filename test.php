@@ -10,4 +10,4 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array('X-Yandex-API-Key: 90b3db9b-dcf5-4b5
 $response = json_decode(curl_exec( $ch ));
 $error_code = curl_errno($ch);
 curl_close($ch);
-var_dump($response);
+echo $response->icon;
