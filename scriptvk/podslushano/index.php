@@ -236,8 +236,8 @@ $response = json_decode(curl_exec( $ch ));
 $error_code = curl_errno($ch);
 curl_close($ch);
 // выводим иконку
-/*
-$file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->icon.'.svg';
+
+$file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
 $icon_photo = new Imagick($file_icon);
 if($roundingOff==true) {
     RoundingOff($icon_photo, 30,20);
@@ -246,7 +246,7 @@ if($roundingOff==true) {
 $draw->setFontSize($last_subscriber_font_size);
 $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);*/
+$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
