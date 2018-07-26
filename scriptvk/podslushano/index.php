@@ -263,14 +263,14 @@ $im->writeImage('https://scriptvk/podslushano/cover/icon.jpg');
 $im->clear();
 $im->destroy();*/
 
-$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.svg';
-$icon_photo = new Imagick($file_name_3);
+$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/ksk-tv-ok.jpg';
+$icon_photo_3 = new Imagick($file_name_3);
 
 
 //$draw->setFontSize($last_subscriber_font_size);
 //$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+$bg->compositeImage($icon_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
