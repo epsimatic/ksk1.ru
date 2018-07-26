@@ -14,7 +14,7 @@ echo "<pre>";
 var_dump($response);
 echo "</pre>";
 echo "<br>";
-echo "icon= ".$response->forecast->parts[1]->icon ;
+echo "icon= ".$response->fact->icon ;
 
 function DownloadImages($url, $filename)
 {

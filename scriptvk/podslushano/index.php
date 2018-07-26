@@ -237,7 +237,7 @@ $error_code = curl_errno($ch);
 curl_close($ch);
 // выводим иконку
 
-$file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
+$file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->fact->icon.'.svg';
 DownloadImages($file_icon, 'cover/icon.svg');
 //$file = 'https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
 //$file_name = basename('https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg');
