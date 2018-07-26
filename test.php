@@ -15,3 +15,12 @@ var_dump($response);
 echo "</pre>";
 echo "<br>";
 echo "icon= ".$response->forecast->parts[1]->icon ;
+
+function DownloadImages($url, $filename){
+    $ch = curl_init($url);
+    $fp = fopen($filename, 'wb');
+    curl_setopt($ch, CURLOPT_FILE, $fp);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_exec($ch);
+    curl_close($ch);
+    fclose($fp);
