@@ -67,7 +67,7 @@ $last_subscriber_2_text_y = 380;
 
 /* ----- subscriber_3 ----- */
 // положение аватарки
-$last_subscriber_photo_3_x = 1326;
+$last_subscriber_photo_3_x = 300;
 $last_subscriber_photo_3_y = 117;
 // Координаты имени и фамилии
 $last_subscriber_3_text_x = 1421;
