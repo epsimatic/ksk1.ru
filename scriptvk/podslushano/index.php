@@ -266,9 +266,7 @@ $im->destroy();
 //file_put_contents('https://ksk1.ru/scriptvk/cover/'.$file_name, file_get_contents($file));
 $file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.jpg';
 $icon_photo = new Imagick($file_name_3);
-if($roundingOff==true) {
-    RoundingOff($icon_photo, 30,20);
-}
+
 
 //$draw->setFontSize($last_subscriber_font_size);
 //$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
