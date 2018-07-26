@@ -244,16 +244,16 @@ DownloadImages($file_icon, 'cover/icon.svg');
 //copy($file, 'cover/'.$file_name);
 
 //file_put_contents('https://ksk1.ru/scriptvk/cover/'.$file_name, file_get_contents($file));
-$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.svg';
-$icon_photo = new Imagick($file_name_3);
-if($roundingOff==true) {
-    RoundingOff($icon_photo, 30,20);
-}
+//$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.svg';
+//$icon_photo = new Imagick($file_name_3);
+//if($roundingOff==true) {
+ //   RoundingOff($icon_photo, 30,20);
+//}
 
 //$draw->setFontSize($last_subscriber_font_size);
 //$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+//$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
