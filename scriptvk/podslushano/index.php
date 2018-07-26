@@ -263,8 +263,8 @@ $im->writeImage('https://scriptvk/podslushano/cover/icon.jpg');
 $im->clear();
 $im->destroy();*/
 
-$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/ksk-tv-ok.jpg';
-$icon_photo_3 = new Imagick($file_name_3);
+$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.svg';
+//$icon_photo_3 = new Imagick($file_name_3);
 if(file_exists($file_name_3) && $view_last_subscriber) {
     $last_subscriber_photo_3 = new Imagick($file_name_3);
 
