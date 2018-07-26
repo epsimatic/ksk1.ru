@@ -266,13 +266,13 @@ $file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/ksk-tv-ok.jpg';
 //$icon_photo_3 = new Imagick($file_name_3);
 if(file_exists($file_name_3) && $view_last_subscriber) {
     $last_subscriber_photo_3 = new Imagick($file_name_3);
-    if($roundingOff==true) {
+   /* if($roundingOff==true) {
         RoundingOff($last_subscriber_photo_1, $last_subscriber_width,$last_subscriber_height);
-    }
+    }*/
 
 
-    $draw->setFontSize($last_subscriber_font_size);
-    $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
+   // $draw->setFontSize($last_subscriber_font_size);
+   // $draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
     $bg->compositeImage($last_subscriber_photo_3, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_3_x, $last_subscriber_photo_3_y);
     $bg->annotateImage($draw, $last_subscriber_3_text_x, $last_subscriber_3_text_y, 0, $file_name_3);
