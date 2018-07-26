@@ -239,21 +239,41 @@ curl_close($ch);
 
 $file_icon='https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->fact->icon.'.svg';
 DownloadImages($file_icon, 'cover/icon.svg');
+$usmap = 'https://scriptvk/podslushano/cover/icon.svg';
+$im = new Imagick();
+$svg = file_get_contents($usmap);
+
+
+
+
+$im->readImageBlob($svg);
+
+/*png settings*/
+$im->setImageFormat("png24");
+$im->resizeImage(720, 445, imagick::FILTER_LANCZOS, 1);  /*Optional, if you need to resize*/
+
+/*jpeg*/
+$im->setImageFormat("jpeg");
+$im->adaptiveResizeImage(720, 445); /*Optional, if you need to resize*/
+
+$im->writeImage('https://scriptvk/podslushano/cover/icon.jpg');/*(or .jpg)*/
+$im->clear();
+$im->destroy();
 //$file = 'https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg';
 //$file_name = basename('https://yastatic.net/weather/i/icons/blueye/color/svg/'.$response->forecast->parts[1]->icon.'.svg');
 //copy($file, 'cover/'.$file_name);
 
 //file_put_contents('https://ksk1.ru/scriptvk/cover/'.$file_name, file_get_contents($file));
-//$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.svg';
-//$icon_photo = new Imagick($file_name_3);
-//if($roundingOff==true) {
- //   RoundingOff($icon_photo, 30,20);
-//}
+$file_name_3 = 'https://ksk1.ru/scriptvk/podslushano/cover/icon.jpg';
+$icon_photo = new Imagick($file_name_3);
+if($roundingOff==true) {
+    RoundingOff($icon_photo, 30,20);
+}
 
 //$draw->setFontSize($last_subscriber_font_size);
 //$draw->setFillColor("rgb(".$last_subscriber_font_color.")");
 
-//$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
+$bg->compositeImage($icon_photo, Imagick::COMPOSITE_DEFAULT, $last_subscriber_photo_2_x, $last_subscriber_photo_2_y);
 //$bg->annotateImage($draw, $last_subscriber_2_text_x, $last_subscriber_2_text_y, 0, $file_name_3);
 // ВЫВОДИМ ДЕНЬ НЕДЕЛИ
 if($view_today){
