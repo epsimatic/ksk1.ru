@@ -59,8 +59,33 @@ var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat 
     var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
 })(document, "script", document.location.protocol);
 
+<!-- Yandex.Metrika counter -->
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter50339578 = new Ya.Metrika2({
+                id:50339578,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        } catch(e) { }
+    });
 
-// Yandex.Metrika counter
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+
+
 /*
  (w[c] = w[c] || []).push(function () {
  try {
@@ -841,7 +866,18 @@ var $buoop = {
 <a%s>Узнайте, как обновить ваш браузер</a>"
 };
 LoadJS('//browser-update.org/update.js');
+
 */
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function(obj, start) {
+        for (var i = (start || 0), j = this.length; i < j; i++) {
+            if (this[i] === obj) { return i; }
+        }
+        return -1;
+    }
+}
+window.libsAvail   = [];
+window.libsLoading = [];
 function LoadRes(src, type, callback) {
     var resName = src.split("/").reverse()[0];
     if (libsAvail.indexOf(resName) != -1) {
