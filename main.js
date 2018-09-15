@@ -59,7 +59,8 @@ var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat 
     var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
 })(document, "script", document.location.protocol);
 
-<!-- Yandex.Metrika counter -->
+
+    <!-- Yandex.Metrika counter -->
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
@@ -84,7 +85,7 @@ var openstat = { counter: 2173092, image: 5088, color: "828282", next: openstat 
     d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
     })(document, window, "yandex_metrika_callbacks2");
-
+    <!-- /Yandex.Metrika counter -->
 
 /*
  (w[c] = w[c] || []).push(function () {
