@@ -421,7 +421,7 @@ footer h3 { font-size: 2em; font-weight: 400; color: #0080c7; margin-top: 0; }
 
 .openstat-container a { pointer-events: none; }
 
-.openstat-container img { margin: -2px -3px -1px -60px; display: block; }
+.openstat-container img { margin: -26px -2px -21px -50px; display: block; }
 
 /*чтобы ссылка закрывала счётчик*/
 .openstat-container + * a{left: -40px; margin-right: -40px; padding-left: 40px; position: relative;}
@@ -5722,7 +5722,7 @@ footer.wide-footer ul.contacts .fa { margin-right: 5px; }
 
 .wide-footer .counter a { display: inline-block; }
 
-.wide-footer .counter span { position: relative; top: 1px; }
+.wide-footer .counter span { position: relative; top: 1px; height: 8px;}
 
 footer.info { margin: -5px 0; padding: 10px 0; width: 100%; background: #f2f2f2; }
 
