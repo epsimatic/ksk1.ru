@@ -3162,6 +3162,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .ob-email.has-icon::before { content: ""; }
 
 .ob-publish-date.has-icon::before { content: ""; padding-right: 2px; }
+.ob-publish-date{display: inline-block; float: right; margin-left: 6px;}
 
 /* <editor-fold desc="Стили user-bar и панели «Мои объявления»"> */
 

@@ -433,7 +433,7 @@ body.ob-admin{font-size: 15px;}
 .ob-admin .dialed-in-group { display: inline-block; padding-left: 15px; padding-bottom: 8px; padding-right: 20px; margin-left: 15px; background-color: rgb(236, 239, 241); }
 
 
-.ob-admin .ob-up input:checked ~ label { color: #ff0000; }
+.ob-admin .ob-up input:checked ~ label { color: #ff0000;}
 
 .ob-admin #publish-in-newspaper,.ob-admin #publish-in-tv,.ob-admin #publish-in-radio ,.ob-admin #publish-in-all{ text-align: center; display: inline-block; width: 55px; padding: 5px; }
 .ob-admin .publish-group{margin: 3px 0;}
