@@ -1239,9 +1239,8 @@ body {overflow-y: scroll;}
 
 @media print
 {
-    .noprint{display:none;}
-    header{display: none;}
-
+    .noprint, .noprint *{display:none !important;}
+    header{display: none !important;}
 }
 
 .woocommerce-checkout .order-description .modal-batton a{color: white;}

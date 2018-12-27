@@ -8031,3 +8031,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 
 .header.wide-header .menu-main-shop span {padding:0px 10px;}
 #div-comment-126528 .author-name{color: red; }
+@media print{
+.noprint, .noprint *{display:none !important;}
+ header{display: none !important;}
+}
