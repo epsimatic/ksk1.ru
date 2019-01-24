@@ -3585,7 +3585,7 @@ a.super:focus {background-color: #FEF01C;}
 
 .ob-paid-options > .alert { background-color: transparent; border: none; color: #f44336; font-size: 18px; font-weight: 600; margin-bottom: 30px; text-align: center; }
 
-.ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; text-transform: uppercase; white-space: normal; }
+.ob-paid-options > .btn { border-radius: 0; line-height: 30px; margin-top: 15px; white-space: normal; }
 
 .ob-paid-options .label-warning { background-color: #F44336; letter-spacing: .025em; }
 
