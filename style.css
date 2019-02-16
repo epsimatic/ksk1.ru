@@ -8035,3 +8035,5 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .noprint, .noprint *{display:none !important;}
  header{display: none !important;}
 }
+.price-description {height:18px;}
+.block-period ul a{margin-top:10px;padding:6px 12px;}
