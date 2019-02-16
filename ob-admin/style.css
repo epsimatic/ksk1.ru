@@ -59,18 +59,21 @@
 .table-obs-admin article.ob p.ob-text-group { display: inline; }
 
 .table-obs-admin .checked-no,
+.table-obs-admin .checked-card,
 .table-obs-admin .checked-archive,
 .table-obs-admin .checked-yes,
 .table-obs-admin .checked-edit,
 .table-obs-admin .checked-no_paid { position: relative;  cursor: pointer; }
 
 .table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-card:hover:after,
 .table-obs-admin .checked-archive:hover:after,
 .table-obs-admin .checked-yes:hover:after,
 .table-obs-admin .checked-edit:hover:after,
 .table-obs-admin .checked-no_paid:hover:after{ cursor: pointer; font-size: .6em; position: absolute; right: -9px; bottom: 0; text-shadow: 0 0 5px #fff; }
 
 .table-obs-admin .checked-no:hover:after,
+.table-obs-admin .checked-card:hover:after,
 .table-obs-admin .checked-archive:hover:after { color: #3d5afe; content: ""; }
 
 .table-obs-admin .checked-yes:hover:after { color: #00c853; content: ""; }
@@ -362,6 +365,7 @@ h1 {
 .col-obs-text .icon-business { display: none; }
 
 .status-no      > td > .icon-status-no,
+.status-card      > td > .icon-status-card,
 .status-yes     > td > .icon-status-yes,
 .status-edit    > td > .icon-status-edit,
 .status-no_paid > td > .icon-status-no_paid,
