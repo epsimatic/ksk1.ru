@@ -8029,7 +8029,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     .single-post #text-144{display: none;}
     .comment-list .comment-meta{max-width: 55%; }
     .panel-ob-top {margin-top: 15px;}
-    .nav .main-cat-item a{width: 85%;}
+    .nav .main-cat-item a,.nav .main-cat-item a:hover,.nav .main-cat-item a:focus{width: 85%;}
 }
 
 .header.wide-header .menu-main-shop span {padding:0px 10px;}
