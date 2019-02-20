@@ -1033,6 +1033,7 @@ header#header .weather-text { display: none; }
 .quick-nav .cat-home > a:focus,
 .quick-nav .main-cat-item > a:hover,
 .quick-nav .main-cat-item > a:focus { color: #0077BD; }
+.main-cat-item{width: 85%;}
 
 @media (min-width: 992px) {
     .quick-nav .main-cat-item > a { line-height: 27px; margin-bottom: 13.5px; margin-top: 13.5px; }
@@ -8038,3 +8039,11 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 }
 .price-description {height:18px;}
 .block-period ul a{margin-top:10px;padding:6px 12px;}
+
+.quick-nav-close{display: inline-block;
+    font-size: 25px;
+    border: solid 1px blue;
+    border-radius: 2px;
+    width: 38px;
+    text-align: center;
+    cursor: pointer;}
