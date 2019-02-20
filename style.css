@@ -3354,7 +3354,6 @@ ul.page-cat ul.children > li.cat-item a:focus .badge,
 }
 @media  (max-width: 992px){
 .subcat-sort_time .btn-action { margin: 13.5px 0; }
-.panel-ob-top {margin-top: 15px;}
 }
 /* <editor-fold desc="Страница списка объявлений"> */
 
@@ -8028,6 +8027,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 @media (max-width: 768px) {
     .single-post #text-144{display: none;}
     .comment-list .comment-meta{max-width: 55%; }
+    .panel-ob-top {margin-top: 15px;}
 }
 
 .header.wide-header .menu-main-shop span {padding:0px 10px;}
