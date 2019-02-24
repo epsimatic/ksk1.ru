@@ -8044,7 +8044,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 
 .quick-nav-close{display: inline-block;
     font-size: 25px;
-    border: solid 1px blue;
+    border: solid 1px #428bca;
     border-radius: 2px;
     width: 38px;
     text-align: center;
