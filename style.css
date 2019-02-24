@@ -8050,6 +8050,6 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     text-align: center;
     cursor: pointer;
     background-color: #428bca; }
-#pop_close {float: right;
+#pop_close {float: right;border: solid 1px blue;background-color: #428bca;
 font-size: 25px;
 cursor: pointer;}
