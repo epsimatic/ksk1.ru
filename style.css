@@ -8050,6 +8050,19 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     text-align: center;
     cursor: pointer;
     background-color: #428bca; }
-#pop_close {float: right;border: solid 1px blue;background-color: #428bca;height:23px;
-font-size: 25px;
-cursor: pointer;}
+#pop_close {float: right;
+    height: 23px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 26px;
+    opacity: 0.4;}
+.cat-panel .dropdown-menu .quick-nav-close:hover,#pop_close:hover{opacity: 0.6;}
+
+.ob-media-options .close{opacity:0.4;font-size: 25px;margin-top: 0;}
+.ob-media-options .close:hover{opacity:0.6;}
+/*Панель Афиша*/
+.movie-brief .movie-poster img { max-height: 123px; max-width: 100%;}
+.close{font-size: 30px !important; }
+
+.crest{position: absolute; top:5px; right: 10px;}
+
