@@ -70,7 +70,7 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
     $conditions='
 <link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
 
-<div id="gsInformerID-7S5nnOq1O06pY5" class="gsInformer" style="width:125px;height:68px">
+<div id="gsInformerID-Ymw546Ujmip25S" class="gsInformer" style="width:125px;height:68px">
     <div class="gsIContent">
         <div id="cityLink">
             <a href="https://www.gismeteo.ru/weather-krasnoufimsk-4515/" target="_blank" title="Погода в Красноуфимске"><img src="https://nst1.gismeteo.ru/assets/flat-ui/img/gisloader.svg" width="24" height="24" alt="Погода в Красноуфимске"></a>
@@ -80,7 +80,7 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
                 <tr>
                     <td>
                         <div class="leftCol">
-                            <a href="https://www.gismeteo.ru/" target="_blank" title="Погода в Красноуфимске">
+                            <a href="https://www.gismeteo.ru/" target="_blank" title="Погода в Красноуфимске" style="display: none;">
                                 <img alt="Погода в Красноуфимске" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" width="11" height="16" />
                                 <img src="https://nst1.gismeteo.ru/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
                             </a>
@@ -97,7 +97,8 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
     </div>
 </div>
 
-<script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=7S5nnOq1O06pY5" type="text/javascript"></script>';
+<script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=Ymw546Ujmip25S" type="text/javascript"></script>
+';
 }
 else {
     $sign = ($temp_c > 0) ? "+" : "";
