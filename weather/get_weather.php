@@ -65,9 +65,9 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
                   <pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>", "danger");
     echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
 
-    /*$conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
-                                                alt="Погода" ></div>';*/
-    $conditions='
+    $conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
+                                                alt="Погода" ></div>';
+   /* $conditions='
 <link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
 
 <div id="gsInformerID-Ymw546Ujmip25S" class="gsInformer" style="width:125px;height:68px">
@@ -98,7 +98,7 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
 </div>
 
 <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=Ymw546Ujmip25S" type="text/javascript"></script>
-';
+';*/
 }
 else {
     $sign = ($temp_c > 0) ? "+" : "";
