@@ -65,8 +65,39 @@ if (is_nan($temp_c) || $temp_c === null /*|| $description == ""*/ || $icon == ""
                   <pre> temp_c = $temp_c \n description = $description \n icon = $icon</pre>", "danger");
     echo "<h1>Сырые данные:</h1><pre>"; print_r($parsed_json); echo "</pre>";
 
-    $conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
-                                                alt="Погода" ></div>';
+    /*$conditions = '<div class="ya-weather"><img src="//info.weather.yandex.net/krasnoufimsk/3_white.ru.png?domain=ru"
+                                                alt="Погода" ></div>';*/
+    $conditions='
+<link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+
+<div id="gsInformerID-7S5nnOq1O06pY5" class="gsInformer" style="width:125px;height:68px">
+    <div class="gsIContent">
+        <div id="cityLink">
+            <a href="https://www.gismeteo.ru/weather-krasnoufimsk-4515/" target="_blank" title="Погода в Красноуфимске"><img src="https://nst1.gismeteo.ru/assets/flat-ui/img/gisloader.svg" width="24" height="24" alt="Погода в Красноуфимске"></a>
+        </div>
+        <div class="gsLinks">
+            <table>
+                <tr>
+                    <td>
+                        <div class="leftCol">
+                            <a href="https://www.gismeteo.ru/" target="_blank" title="Погода в Красноуфимске">
+                                <img alt="Погода в Красноуфимске" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" width="11" height="16" />
+                                <img src="https://nst1.gismeteo.ru/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
+                            </a>
+                            </div>
+                            <div class="rightCol">
+                                <a href="https://www.gismeteo.ru/weather-krasnoufimsk-4515/2-weeks/" target="_blank" title="Погода в Красноуфимске на 2 недели">
+                                    <img src="https://nst1.gismeteo.ru/assets/flat-ui/img/informer/forecast-2weeks.ru.svg" border="0" align="middle" style="top:auto" alt="Погода в Красноуфимске на 2 недели">
+                                </a>
+                            </div>
+                                            </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=7S5nnOq1O06pY5" type="text/javascript"></script>';
 }
 else {
     $sign = ($temp_c > 0) ? "+" : "";
