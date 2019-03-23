@@ -8060,7 +8060,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .ob-media-options .close:hover{opacity:0.4;}
 /*Панель Афиша*/
 .movie-brief .movie-poster img { max-height: 123px; max-width: 100%;}
-.close_btn{font-size: 30px !important; font-weight: normal !important;opacity: 0.8;}
-.close_btn:hover,.close_btn:focus{opacity: 0.4;}
+.close{font-size: 30px !important; font-weight: normal !important;opacity: 0.8;}
+
 .crest{position: absolute; top:5px; right: 10px;}
 
