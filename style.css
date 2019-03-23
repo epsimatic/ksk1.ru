@@ -1304,7 +1304,8 @@ header#header .weather-text { display: none; }
 
 .post-image .modal-header { padding: 0; height: 0; border: none; position: relative; }
 
-.post-image .modal-header .close { position: absolute; right: 7px; bottom: -27px; font-size: 32px; transform: translate3d(0,-32px,0); transition: transform 0.12s ease 0.35s, opacity .12s ease 0s; }
+.post-image .modal-header .close { position: absolute; right: 7px; bottom: -27px; font-size: 32px;
+    transform: translate3d(0,-32px,0); transition: transform 0.12s ease 0.35s, opacity .12s ease 0s; }
 
 .post-image .modal-body { padding: 0; }
 
@@ -7158,7 +7159,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header form.search-form button:hover .fa-search,
     header.wide-header form.search-form button:focus .fa-search { color: #00b0ff; }
 
-    header.wide-header form.search-form button.close { height: auto; right: -11px; top: 3px; font-size: 30px; color: #fff; opacity: 0; z-index: 10; transition: right 0.4s ease 0s; }
+    header.wide-header form.search-form button.close { height: auto; right: -11px; top: 3px;
+         font-size: 30px; color: #fff; opacity: 0; z-index: 10; transition: right 0.4s ease 0s; }
 
     header.wide-header .search-show form.search-form button.close  { opacity: 1; right: -38px; }
 
@@ -7167,7 +7169,8 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .btn-search:hover,
     header.wide-header .btn-search:focus { background-color: #40c4ff; }
 
-    header.wide-header .searchbox-container .close { position: absolute; top: -44px; right: 17px; z-index: 20; font-size: 34px; opacity: 0; color: #fff; transition: opacity 0.4s ease 0s; pointer-events: none; }
+    header.wide-header .searchbox-container .close { position: absolute; top: -44px; right: 17px; z-index: 20;
+        font-size: 34px; opacity: 0; color: #fff; transition: opacity 0.4s ease 0s; pointer-events: none; }
 
     header.wide-header .searchbox-container .search-form { position: absolute; padding: 10px 50px 3px 10px; right: 0; top: -52px; height: 52px; background-color: #40c4ff; transition: all 0.4s ease 0s; width: 50px; z-index: 15; pointer-events: none; opacity: 0; }
 
@@ -8043,7 +8046,7 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .block-period ul a{margin-top:10px;padding:6px 12px;}
 
 .cat-panel .dropdown-menu .quick-nav-close{display: inline-block;font-size: 30px;  width: 38px;
-    text-align: center;  cursor: pointer;  opacity: 0.4;  height: 38px; }
+    text-align: center;  cursor: pointer;  opacity: 0.8;  height: 38px; }
 
 #pop_close {float: right;
     height: 23px;
@@ -8053,8 +8056,8 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     opacity: 0.8;}
 .cat-panel .dropdown-menu .quick-nav-close:hover,#pop_close:hover{opacity: 0.4;}
 
-.ob-media-options .close{opacity:0.4;font-size: 25px;margin-top: 0;}
-.ob-media-options .close:hover{opacity:0.6;}
+.ob-media-options .close{opacity:0.8;font-size: 25px;margin-top: 0;}
+.ob-media-options .close:hover{opacity:0.4;}
 /*Панель Афиша*/
 .movie-brief .movie-poster img { max-height: 123px; max-width: 100%;}
 .close{font-size: 30px !important; }
