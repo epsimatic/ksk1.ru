@@ -8050,8 +8050,8 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
     font-size: 30px;
     cursor: pointer;
     width: 26px;
-    opacity: 0.4;}
-.cat-panel .dropdown-menu .quick-nav-close:hover,#pop_close:hover{opacity: 0.6;}
+    opacity: 0.8;}
+.cat-panel .dropdown-menu .quick-nav-close:hover,#pop_close:hover{opacity: 0.4;}
 
 .ob-media-options .close{opacity:0.4;font-size: 25px;margin-top: 0;}
 .ob-media-options .close:hover{opacity:0.6;}
