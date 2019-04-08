@@ -3697,8 +3697,8 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0;}
 
 .add-ob__form { padding: 0 30px; }
-.add-ob__form h3 {font-weight: 600; color: #0a79db; margin-top: 0; margin-bottom: 20px;}
-
+.add-ob__form h3 {font-weight: 600; margin-top: 0; margin-bottom: 20px;}
+/*color: #0a79db;*/
 .add-ob__info-law,
 .add-ob__info-license {display: none;}
 
