@@ -8067,4 +8067,4 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 .close{font-size: 30px !important; font-weight: normal !important;opacity: 0.8;}
 
 .crest{position: absolute; top:5px; right: 10px;}
-
+.is-add .col-mid .panel{margin-bottom:0 !important;}
