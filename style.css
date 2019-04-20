@@ -5689,8 +5689,8 @@ header.wide-header .search-form-header button:hover,
 header.wide-header .search-form-header button:focus { opacity: .7; }
 .snap-drawer input{color: #000;}
 
-.snap-drawer .menu-main-ads{font-size: 17px;}
-.navbar .menu-main-ads{font-size: 15px;}
+.snap-drawer .menu-main-ads{font-size: 18px;}
+.navbar .menu-main-ads{font-size: 16px;}
 
 footer.wide-footer { margin:0; width: 100%; background: #fff; padding: 40px 0; border-top: 1px solid #00b0ff; }
 
