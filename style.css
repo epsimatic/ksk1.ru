@@ -7635,8 +7635,10 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     body.is_admin header.wide-header .navbar-nav > li > a,
     body.is_admin header.wide-header .navbar-nav > li > span { font-size: 14px; }
 
-    body.admin-bar header.wide-header .navbar-nav > li.menu-main-ads > a,
-    body.admin-bar header.wide-header .navbar-nav > li.menu-main-button > a{font-size: 16px;}
+    body.admin-bar header.wide-header .navbar-nav  .menu-main-ads > a,
+    body.admin-bar header.wide-header .navbar-nav .menu-main-ads > span,
+    body.admin-bar header.wide-header .navbar-nav  .menu-main-button > a,
+    body.admin-bar header.wide-header .navbar-nav  .menu-main-button > span{font-size: 16px !important;}
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
