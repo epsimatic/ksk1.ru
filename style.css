@@ -5505,6 +5505,7 @@ header.mobile-header .logo-ksk { display: block; margin: 0 auto; color: #fff; fo
 header.wide-header { display: none; }
 
 .snap-drawer { margin: 0; border: none; padding: 0; font-size: 16px; }
+.snap-drawer .menu-main-button{font-size: 18px;}
 
 .snap-drawer-left { color: white; background-color: #00b0ff; padding-bottom: 5px; left: 1px; }
 
@@ -7633,6 +7634,9 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     body.admin-bar header.wide-header .navbar-nav > li > span,
     body.is_admin header.wide-header .navbar-nav > li > a,
     body.is_admin header.wide-header .navbar-nav > li > span { font-size: 14px; }
+
+    body.admin-bar header.wide-header .navbar-nav > li.menu-main-ads > a,
+    body.admin-bar header.wide-header .navbar-nav > li.menu-main-button > a{font-size: 16px;}
 
     header.wide-header .news-main .post-news h4 { width: 56%; font-size: 19px; line-height: 23px; max-height: 46px; }
 
