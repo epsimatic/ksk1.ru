@@ -7082,7 +7082,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .navbar-nav > li > span { padding: 15px; line-height: 20px; }
 
     body.admin-bar header.wide-header .navbar-nav > li > a,
-    body.admin-bar header.wide-header .navbar-nav > li > span,
     body.is_admin header.wide-header .navbar-nav > li > a,
     body.is_admin header.wide-header .navbar-nav > li > span { font-size: 12px; }
 
@@ -7631,7 +7630,6 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .weather-forecast-panel .day .night { white-space: 39%; }
 
     body.admin-bar header.wide-header .navbar-nav > li > a,
-    body.admin-bar header.wide-header .navbar-nav > li > span,
     body.is_admin header.wide-header .navbar-nav > li > a,
     body.is_admin header.wide-header .navbar-nav > li > span { font-size: 14px; }
 
