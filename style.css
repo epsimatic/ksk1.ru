@@ -899,6 +899,8 @@ body.news .navpanel .btn-collapse { margin-bottom: 10px; }
 .sidebar .panel.panel-btn.schedule-feature:hover,
 .navpanel-info .schedule-feature:hover { background-color: #ffff8d; }
 
+.sidebar .btn-group{width: 100%;}
+
 .navpanel .cat { padding: 0; }
 
 .navpanel .cat h4 img { margin-right: 10px; width: 40px !important; }
