@@ -8073,3 +8073,4 @@ a.rating-post-item  {line-height: 28px; padding-bottom: 2px; padding-left: 8px; 
 
 .crest{position: absolute; top:5px; right: 10px;}
 .is-add .col-mid .panel{margin-bottom:0 !important;}
+#no_paid_ob td{word-break: break-all;}
