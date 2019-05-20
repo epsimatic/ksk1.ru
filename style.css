@@ -3233,7 +3233,7 @@ article.page h1 { color: #222; font-weight: 700; font-size: 27px; line-height: 2
 .row-center-yummies img {display: block; height: auto; max-width: 100%;}
 
 /*Стили для баннеров спонсоров*/
-.cat__banner-block {width: auto;}
+.cat__banner-block {width: auto;margin-bottom: 15px;}
 
 .cat__banner-block img {height: auto; border-left: 1px solid transparent; border-bottom: 1px solid #F6F7F8; background-color: #fcfcfc;}
 
