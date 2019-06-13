@@ -557,7 +557,7 @@ a.media-heading:focus {text-decoration: none;}
 .navbar-nav > li.menu-main-button:hover > span,
 .navbar-nav > li.menu-main-button > span:hover,
 .navbar-nav > li.menu-main-button > span:focus
-{ background-color: #fc746e !important; }
+{ background-color: #ffffff !important; }
 
 .nav .current-page-parent > a ,.nav .current-page-parent > span { position: relative; font-weight: 600; }
 
@@ -5570,9 +5570,9 @@ header.wide-header { display: none; }
 
 .snap-drawer ul.menu-sidenav > li.menu-item > a:focus,
 .snap-drawer ul.menu-sidenav > li.menu-item > a:hover { background-color: #00bfff; }
-.snap-drawer ul.menu-sidenav > li.menu-main-button > a{background-color: red;}
+.snap-drawer ul.menu-sidenav > li.menu-main-button > a{background-color: transparent;}
 .snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:focus,.snap-drawer ul.menu-sidenav > li.menu-main-button > a:focus,
-.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:hover, .snap-drawer ul.menu-sidenav > li.menu-main-button > a:hover { background-color: #fc746e; }
+.snap-drawer ul.menu-sidenav > li.menu-main-voiting > a:hover, .snap-drawer ul.menu-sidenav > li.menu-main-button > a:hover { background-color: #ffffff; }
 
 
 .snap-drawer-right ul.menu-sidenav > li.menu-item > a:focus,
@@ -7386,7 +7386,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     .fullstory .newstext { padding: 0 10px; line-height: 1.61em; }
 
     /* Стили для кнопки кнопка продаётся  */
-    header.wide-header .menu-main-button span {padding: 5px 10px!important; text-align: center; font-size: 16px;
+    header.wide-header .menu-main-button span {padding: 0px 0px!important; text-align: center; font-size: 16px;
         font-weight: 700;}
     header.wide-header .menu-main-button a:focus,header.wide-header .menu-main-button a:hover{text-decoration: none;}
     /* Стили для кнопки заказать рекламу  */
@@ -7453,7 +7453,7 @@ body.admin-bar .services-content header.taxi-driver-header .logo { top: -6px !im
     header.wide-header .menu-main-eda .eda-logo-wrap img { width: 220px; margin-left: 0; margin-right: 20px; height: 38px; }
 
     header.wide-header .menu-main-eda .stores-group > a { margin: 5px; padding: 10px; }
-    header.wide-header .menu-main-button{background-color: #fa463e;}
+    header.wide-header .menu-main-button{background-color: #ffffff;}
 
     header.wide-header { display: block; position: fixed; top: 0; z-index: 15; width: 100%; pointer-events: none; }
 
